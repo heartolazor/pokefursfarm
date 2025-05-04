@@ -1,5 +1,8 @@
 # PokeFursFarm
 Ready to drop ModPack for Stardew Valley's PokeFurs Farm.
+Preview:
+[![Preview](https://img.youtube.com/vi/C_yXpM4nEAE/maxresdefault.jpg)](https://youtu.be/C_yXpM4nEAE)
+
 ## Description
 This is a ModPack created for the PokeFurs server. 
 The main theme is Pokemon mods mixed with Furry mods, expansion packs and QoL mods.
