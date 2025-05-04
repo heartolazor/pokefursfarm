@@ -1,2 +1,2 @@
 # PokeFursFarm
-Ready to drop ModPack for PokeFursFarm
+Ready to drop ModPack for Stardew Valley's PokeFurs Farm
