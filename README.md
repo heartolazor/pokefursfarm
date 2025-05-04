@@ -39,6 +39,7 @@ PokeFursFarm
 <details>
 <summary>Full list of Mods included in the ModPack.</summary>
 #Detailed Mod List (454):
+    
 Content Patcher v2.6.1 by Pathoschild:
 - https://www.nexusmods.com/stardewvalley/mods/1915
 Loads content packs which edit game data, images, and maps without changing the game files.
