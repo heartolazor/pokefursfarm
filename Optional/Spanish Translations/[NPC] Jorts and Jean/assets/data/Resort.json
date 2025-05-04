@@ -1,0 +1,125 @@
+{
+	"Changes": [
+	
+		//Removes Resort from NPC Exclusions
+		{
+			"LogName": "Jorts and Jean NPC exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+                "JortsCat": "ShopDialog WinterStar ItemDelivery MovieInvite",
+                "JeanCat": "ShopDialog WinterStar ItemDelivery MovieInvite",
+			},
+		},
+		
+	
+		//Adds Jorts/Jean group to GIMA
+		{
+			"Action": "EditData",
+			"LogName": "Cats GI group",
+			"Target": "Mods/atravita_Ginger_Island_Adjustments_groups",
+			"Entries": {
+				"HelperCats": "JortsCat, JeanCat"
+			}
+		},
+		
+		//Cats will still escort Pam home
+		{
+			"Action": "EditData",
+			"LogName": "Jorts GIRemainder",
+			"Target": "Characters/schedules/JortsCat",
+			"Entries": {
+				"GIRemainder": "1800 Town 51 71 1 JortsCat_cleaning/a2400 Town 44 73 0/2410 Town 72 70 0/2440 AdventureGuild 9 12 1 JortsCat_catnap"
+			}
+		},
+		{
+			"Action": "EditData",
+			"LogName": "Jean GIRemainder",
+			"Target": "Characters/schedules/JeanCat",
+			"Entries": {
+				"GIRemainder": "1800 Town 52 71 3 JeanCat_cleaning/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap"
+			}
+		},
+		
+		//Jorts cannot be left unattended
+		{
+			"Action": "EditData",
+			"LogName": "Cats GI Exclusions",
+			"Target": "Mods/atravita_Ginger_Island_Adjustments_exclusions",
+			"Entries": {
+				"JortsCat": "neveralone",
+				"JeanCat": "neveralone",
+			}
+		},
+
+		//Cats can explore
+		{
+        "LogName": "Kitty GI Explorers",
+        "Action": "EditData",
+        "Target": "Mods/atravita_Ginger_Island_Adjustments_explorers", 
+        "Entries": {
+            "HelperCats": "JortsCat, JeanCat",
+			}
+		},
+		
+		//Cats resort dialogue
+		{
+        "LogName": "Jorts GI dialogue",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/JortsCat", 
+        "Entries": {
+				//vanilla
+            	"Resort_Entering": "{{Random: La arena se mueve de un lado a otro, ¡igual que el océano!#$b$%Jorts tropieza y cae de cara. Parece que aún no recupera sus piernas terrestres. && ¡Oh vaya, oh vaya, oh vaya!$h && ¡Es hora de divertirse! Voy a divertirme MUY en serio. |inputSeparator=&&}}",
+				"Resort_Leaving": "{{Random: ¡Vaya, tenemos que volver a subir y bajar! && Voy a echarme un rato sobre Jean. No creo que a ella le gusten mucho los barcos. && ¡Voy en barco, señor granjero!$h^¡Estoy en un barco, hermana granjera!$h |inputSeparator=&&}}",
+				"Resort_Shore": "{{Random: Siempre dicen: 'Desde aquí veo mi casa'.#$b#Pensaba que mis ojos eran muy buenos, pero no lo veo.$4 && Mira, @, ¡estoy dejando huellas! ¡Puedes seguir mi rastro como un detective! && El agua del océano es buena, pero el sabor no es tan bueno. |inputSeparator=&&}}",
+				"Resort_Chair": "{{Random: Esta silla está caliente por el sol... Voy a... descansar un poco los ojos.... && ¿Quieres compartir asiento, @? ¡Seguro que cabría en tu regazo!$h && Hm, encajo, ¡así que supongo que me sentaré!$h |inputSeparator=&&}}",
+				"Resort_Bar": "{{Random: ¿De verdad vas a beber eso, @? Huele como el material que Pierre utiliza para limpiar sus ventanas.$4 && ¿Puedo tomar un poco de leche? ¡Jean dijo que un poco está bien! && Me gusta más cuando alguien se pone al otro lado de la barra. ¡Todos parecen tan felices cuando lo hacen! |inputSeparator=&&}}",
+				"Resort": "{{Random: ¡TENGO ZOOMIES!$h && ¡Esto es sucio! ¡Y eso es sucio! ¡Todo es sucio!$h && ¡Cuánta arena! ¡Podría enterrar mi caca EN CUALQUIER LUGAR! && Estoy tan emocionada que voy a frotar mi cara en TODO.$h && Siento lo del castillo de arena. ¡Estaba en mi camino! |inputSeparator=&&}}",
+				//GIMA
+				"Resort_IslandNorth": "{{Random: ¡Mira, @, monos! ¡El grande me recuerda a ti!$h && Me pregunto si alguien aquí necesita un gato que le ronronee en el regazo.#$b#¡No, no, Jorts, tienes que descansar! && ¡Pájaros! ¡Pájaros, venga a ser mis amigos! ¡Prometo que no dejaré que Jean los coma! |inputSeparator=&&}}", 
+				"Resort_Adventure": "{{Random: Ooh, ¿me pregunto qué hay por AQUÍ? && ¡Nos vamos de aventura, @! &&¡Vamos, Jean, yo también quiero ir a olerlo! |inputSeparator=&&}}", 
+				"Resort_Volcano": "{{Random: Wow, eso es realmente grande. Me pregunto ¿cuánto tiempo se tardó en hacer? && ¡Uno de los amigos profesores de Jean mencionó que los enanos podrían vivir aquí!#$b#¿Qué es un enano? ¿Es como un pájaro? && Yo también quería echar un vistazo adentro, pero Jean dijo que el suelo es de lava. Pensé que era un juego.$4 |inputSeparator=&&}}", 
+				"Resort_Tent": "{{Random: ¿Alguien más huele a setas?$4 && ¡Mira qué juguetes tan geniales tienen en la mesa! ¿Crees que los compartirán? && Jean dice que la persona que usa esta carpa es inteligente. No creo que puedan ser tan inteligentes como Jean, pero está bien. && ¡Hola, huesudo amigo!$h |inputSeparator=&&}}",
+				"Resort_Left": "{{Random: ¡Tuvimos una gran aventura! ¡Mañana será una aventura diferente en el pueblo! && Acabamos de volver de una isla tropical, @. ¿Qué hicistes hoy? && Todavía huelo a isla por todas partes. ¡Toma, huéleme! |inputSeparator=&&}}",
+				"Resort_Approach": "{{Random: Jean ha dicho que hoy podemos irnos de vacaciones, ¡así que vamos en barca!$h && ¡Hoy nos vamos de exploración, @! ¿Quizá tú también quieras venir? && Jean dijo que nos tomaremos un día de descanso, ¡y eso significa que puedo sentarme donde quiera!#$b#Bueno, casi en cualquier sitio. Los erizos de mar siguen estando prohibidos.  |inputSeparator=&&}}", 
+				
+			}
+		},		
+		
+		{
+        "LogName": "Jean GI dialogue",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/JeanCat", 
+        "Entries": {
+				//vanilla
+            	"Resort_Entering": "{{Random: ¿Sabías que los gatos pueden marearse? Aunque suele empeorar con el estrés.#$b#*sigh* Pregúntame cómo lo sé...$s && Vi muchos peces interesantes en el camino. Estoy impaciente por ver qué puedo pescar.$h && Es interesante cómo cambia el olor de la brisa marina a medida que nos acercamos al sur, ¿verdad?#$b#Bueno, tal vez tu nariz humana no lo notaría.$h |inputSeparator=&&}}",
+				"Resort_Leaving": "{{Random: %Jean murmura para sí misma.#$b#Es sólo un viaje corto en barco. No te estreses, mantén el pescado en el estómago. && Imagino que te veremos de vuelta en la ciudad. No te quedes hasta muy tarde afuera, @. |inputSeparator=&&}}",
+				"Resort_Shore": "{{Random: Estoy teniendo cuidado con meterme en el agua. Si tengo que lamer demasiada sal de mí y de Jorts, me deshidrataré. && Hm... Tal vez voy a tratar de pescar aquí. && ¿Has echado un vistazo a las vistas de por aquí, @? A veces es importante admirar el arte durante un rato.$h |inputSeparator=&&}}",
+				"Resort_Chair": "{{Random: Esta es mi silla. La reclamo ahora.$6 && %Jean duerme en una postura contorsionada en la que no parece posible estar cómoda. && El gato al que intenta acceder no se encuentra, inténtelo más tarde.$6 |inputSeparator=&&}}",
+				"Resort_Bar": "{{Random: ¿Alcohol? Cuando vienes a la playa, tiene que haber marisco, ¿no? && ¿Te importaría cortarme un poco de piña fresca, @?#$b#También es muy sabroso si le rallas un poco de jengibre por encima.$h && Por favor, no me des curry. Tengo lengua de gato.$s |inputSeparator=&&}}",
+				"Resort": "{{Random: Huele a que aquí hay mucha más variedad de seres vivos de lo que pensaba.#$b#Esperemos que ninguno sea peligroso.$3 && ¿La arena está caliente? No, sólo tiene la temperatura adecuada en mis dedos de las patas.$h && Dejaré que Jorts sea el que tenga los zoomies. Aunque tal vez me suba a un árbol más tarde.#$b#No te preocupes, yo también soy capaz de bajar. |inputSeparator=&&}}",
+				//GIMA
+				"Resort_IslandNorth": "{{Random: Es un poco más fresco lejos de la orilla gracias a toda la cubierta de árboles. También hay menos humedad. && ¿No son impresionantes los cambios que se producen en la flora y la fauna a pesar de que sólo estamos un poco lejos de la costa? && Esos loros parecen bastante listos. Eso solo significa que atrapar uno es un reto.|inputSeparator=&&}}", 
+				"Resort_Adventure": "{{Random: Jorts, no te alejes demasiado. Tenemos que asegurarnos de que más tarde tendremos que volver al barco...$s && Jorts. Jorts, no. Jorts, NO.$s && ¡Jorts, no me dejes atrás!$4 |inputSeparator=&&}}", 
+				"Resort_Volcano": "{{Random: No todos los días se ve un volcán de cerca. El calor es asombroso, incluso desde aquí. && Si pudiera sudar, creo que probablemente me ahogaría sólo con estar aquí....$s && Sigo oyendo cosas. ¿Hay... COSAS viviendo ahí?$4 && Alguien HA comprobado la actividad geológica para asegurarse de que no hay ninguna erupción prevista en un futuro próximo, ¿verdad?$3|inputSeparator=&&}}", 
+				"Resort_Tent": "{{Random: He oído que hay un becario estudiando aquí. Me pregunto si estará dispuesto a hablar conmigo. && El estudio ecológico es importante, pero espero que el profesor no esté planeando enviar todo esto a través del mar para que repose en un museo Ferngill. && Viendo algunos de los huesos que hay por ahí, me alegro mucho de que esas criaturas se hayan extinguido.#$b#...Eso espero.$4 |inputSeparator=&&}}",
+				"Resort_Fishing": "{{Random: Estos atunes se ven increíbles... y pronto, uno será MÍO.$h && Toma, @, puedes quedarte con este. Probablemente no deba comerlo. [837] && Aún no he pescado nada, pero está bien. Pescar es cuestión de paciencia. && Si no pesco nada, no pasa nada. Le pondré ojitos tristes a Willy hasta que me dé algún cangrejo.$h |inputSeparator=&&}}",
+				"Resort_Left": "{{Random: Hm, creo que todavía tenemos un poco de tiempo para hacer algunas rondas mientras los humanos están despiertos. No tiene sentido desperdiciar la luz del día. && Fue un buen descanso.$h#$b#Es una isla maravillosa, pero también es importante darse permiso para no trabajar. && Bien, Jorts, saquemos toda la arena de ti. |inputSeparator=&&}}",
+				"Resort_Approach": "{{Random: Hoy estamos de descanso, pero si necesitas ayuda, avísanos mañana.$h && Jorts puede ser un poco adicto al trabajo, porque no lo ve como trabajo. A veces tengo que obligarle a tomarse un descanso.$h && Hoy es nuestro día de descanso. El descanso es importante, @.#$b#Y no olvides que no tienes que 'ganártelo'. Es tan necesario como la comida y el refugio. && Hoy vamos a visitar una isla turística.#$b#He oído que tuviste algo que ver con su creación. Espero que eso signifique que lo disfrutas de vez en cuando.$h |inputSeparator=&&}}",
+				
+			}
+		},
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	]
+}

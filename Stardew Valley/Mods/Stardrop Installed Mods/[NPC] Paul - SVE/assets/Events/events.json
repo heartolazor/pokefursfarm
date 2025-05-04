@@ -1,0 +1,240 @@
+{
+  "Changes": [
+    {
+      "LogName": "Add Custom Beach For Events",
+      "Action": "Load",
+      "Target": "Data/Events/Custom_ginnyclaire_Beach",
+      "FromFile": "{{BlankFile}}"
+    },
+{
+      "LogName": "Introduction",
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "Entries": {
+        "50000/e 611439/w sunny/t 600 1500": "ocean/-1000 -1000/farmer -100 -100 0 Paul -100 -100 0 Demetrius -100 -100 0 Harvey -100 -100 0/skippable/changeLocation Custom_ginnyclaire_Beach/warp farmer 23 13/warp Demetrius 27 13/warp Harvey 25 20/faceDirection farmer 2/faceDirection Demetrius 2/faceDirection Harvey 2/skippable/viewport 22 26/viewport move 1 -1 3500/pause 4000/playMusic SettlingIn/playSound doorClose/warp Paul 20 24/faceDirection Paul 1/pause 200/move Paul 5 0 0/move Paul 0 -2 0/emote Harvey 32/pause 100/speak Harvey \"Paul! Welcome.$1\"/pause 100/speak Harvey \"We're all so happy to have you.$1#$b#Our little town may not have much in the way of medical resources...but it's home.#$b#I truly believe you may grow to love it here.\"/pause 100/emote Paul 32/pause 100/speak Paul \"I'm just happy to be here, Dr. Harvey.\"/move farmer 0 6 2/faceDirection Harvey 3/pause 100/speak Harvey \"@! What excellent timing.$1#$b#I want you to meet Pelican Town's new Optometrist.#$b#Paul, this is farmer @.\"/pause 200/emote Paul 32/pause 100/speak Paul \"Nice to-$1\"/speak Demetrius \"Paul!$1\"/pause 100/jump Paul 6/emote Paul 16/faceDirection farmer 1/faceDirection Harvey 1/speed Demetrius 4/move Demetrius 0 6 2/speak Demetrius \"You're a day early!$1#$b#If I had known I'd have been here to meet you.\"/pause 300/speak Demetrius \"There's so much to do. I've been preparing all week.\"/pause 200/emote Demetrius 16/pause 100/speak Demetrius \"Do you really think...$2\"/pause 200/speak Demetrius \"Could it really be curable?$0\"/pause 200/emote farmer 8/pause 100/playMusic SettlingIn/speak Demetrius  \"Nevermind. We have plenty of time to discuss.$1\"/pause 200/speak Demetrius \"Come on, we don't have a minute to lose.#$b#I've got the lab ready for you.$1\"/pause 200/speed Demetrius 4/move Demetrius 0 -8 0/pause 100/emote Paul 40/pause 100/move Harvey 2 0 2/speak Harvey \"Go ahead. I'll get your bags.$1\"/pause 200/speak Paul \"Thanks.\"/pause 100/speed Paul 4/move Paul 0 -3 0/pause 500/faceDirection Paul 3/pause 200/speak Paul \"Nice to meet you, @.$4\"/pause 200/faceDirection Paul 0/pause 200/speed Paul 4/move Paul 0 -5 0/pause 100/emote farmer 32/pause 500/end"
+      }
+    },
+{
+      "LogName": "Bonus Scene - Rats in the Attic",
+      "Action": "EditData",
+      "Target": "Data/Events/Hospital",
+      "Entries": {
+        "50001/e 50000/t 600 1500": "continue/7 12/farmer -100 -100 0 Paul 6 10 1 Harvey 8 10 3/pause 1500/speak Harvey \"I know it's small.#$b#Unfortunately we've just had to make due with the old attic space.\"/pause 100/faceDirection Paul 0/pause 100/faceDirection Paul 1/speak Paul \"It's perfect. Believe me, I don't need much.$1\"/pause 100/emote Harvey 60/pause 100/speak Harvey \"Well at the very least it's clean.$1#$b#And we fixed the rat problem a month ago.\"/pause 300/playSound dirtyHit/pause 500/playSound dirtyHit/pause 400/playSound dirtyHit/pause 300/jump Harvey 8/faceDirection Harvey 0/faceDirection Paul 0/pause 500/emote Harvey 12/pause 500/end"
+      }
+    },
+{
+      "LogName": "Two Heart Event",
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        "500021/e 50000/f Paul 500/w rainy/t 600 1700": "continue/100 101/farmer 102 91 2 Paul 97 100 0/skippable/pause 1500/shake Paul 2/playSound leafrustle/pause 300/shake Paul 2/playSound leafrustle/move farmer 0 9 3/faceDirection Paul 1/speak Paul \"@?#$b#What are you doing out in the rain?$1\"/pause 300/emote farmer 8/pause 200/speak Paul \"What, this? I'm just grabbing a few herbs for a new recipe. It's a fresh spin on Fiddlehead Risotto.$4\"/pause 600/speak Paul \"You hungry?$1#$b#Come on, let's get out of the rain.$1\"/speed farmer 4/move farmer 0 -9 0/faceDirection Paul 0/pause 300/shake Paul 2/playSound leafrustle/pause 300/faceDirection Paul 1/speed Paul 4/move Paul 5 0 1/speed Paul 4/move Paul 0 -9 0/fade/viewport -1000 -1000/playSound doorClose/changeLocation SeedShop/warp farmer 35 5/warp Paul 36 5/faceDirection Paul 0/faceDirection farmer 0/viewport 35 6/playMusic breezy/pause 1500/textAboveHead Paul \"Stir this for me?\"/pause 700/playSound clank clank/pause 700/faceDirection Paul 3/pause 500/faceDirection Paul 0/pause 700/playSound clank clank/pause 700/speak Paul \"You know...I grew up in a small town a lot like this one. I really never thought I'd end up here.#$b#Life is funny like that, isn't it?$1\"/pause 200/emote farmer 8/pause 200/speak Paul \"So why am I here?$1#$b#Well...you might have heard about this rare eye condition.$2#$b#An autosomal dominant form of retinitis pigmentosa.$2\"/pause 200/speak Paul \"It's an awful disease. My best friend just got the diagnosis. She's slowly going blind.$2\"/pause 200/faceDirection Paul 3/faceDirection farmer 1/ pause 300/speak Paul \"I knew I had to do something.$2#$b#Studies are showing that Pelican Town and regions like it have a staggeringly low number of cases.$2#$b#Almost as if...$2\"/pause 200/speak Paul \"Well, almost as if they're immune somehow.$2\"/pause 200/emote farmer 40/pause 400/jump Paul/pause 200/speak Paul \"Anyway...enough of that.$4\"/pause 200/speak Paul \"Here, eat up before it gets cold!#$b#There is nothing on this earth better than Fiddlehead Risotto on a rainy day.$4\"/pause 300/faceDirection farmer 2/farmerEat 649/pause 500/emote farmer 32/pause 500/emote Paul 32/pause 500/end"
+      }
+    },
+    {
+      "LogName": "Fiddlehead Risotto",
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "500022/f Paul 500/e 500021/t 600 800": "continue/64 15/farmer 64 16 2 Paul 64 18 0/skippable/pause 600/speak Paul \"Morning, @!$1\"/pause 300/emote farmer 32/speak Paul \"Thanks for listening yesterday. The recipe turned out so great I thought I'd pass it on.$1\"/pause 200/addCookingRecipe Fiddlehead Risotto/pause 500/playSound getNewSpecialItem/message \"Learned how to make 'Fiddlehead Risotto'\"/pause 800/speak Paul \"..enjoy!\"/pause 600/end"
+      }
+    },
+    {
+      "LogName": "Letter for Four Heart Event - Trigger",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+          "PaulEventLetter4": {
+              "Id": "PaulEventLetter4",
+              "Trigger": "DayEnding",
+              "Condition": "PLAYER_HAS_SEEN_EVENT Current 500021, PLAYER_HEARTS Current Paul 4",
+              "Actions": [
+                  "AddMail Current PaulEventLetter4 tomorrow"
+              ]
+          }
+    }},
+    {
+      "LogName": "Four Heart Event",
+      "Action": "EditData",
+      "Target": "Data/Events/ScienceHouse",
+      "Entries": {
+        "50004/n PaulEventLetter4/w sunny/t 1200 1700": "distantBanjo/19 20/farmer -100 -100 0 Paul 22 19 1 Demetrius 17 18 2 Willy 20 18 0/skippable/pause 1500/playSound doorClose/warp farmer 6 20/faceDirection farmer 0/move farmer 13 0 1/faceDirection Willy 2/faceDirection Paul 3/pause 200/speak Paul \"@, you made it!$1\"/move Paul 0 1 2/move Paul -1 0 3/speak Paul \"You're just the person I wanted to see.$1#$b#We're putting our heads together to figure out why Pelican Town seems completely unaffected by this particular disease.$2#$b#So of course, we've started with environmental factors.\"/move Demetrius 0 1 2/speak Demetrius \"That is, nature.\"/pause 100/speak Paul \"Right.$1#$b#Which is why we've been studying the valley's flora and fauna\"/move Willy 0 1 2/speak Willy \"There be all kinds o' fish.#$b#Nothin' out of the ordinary, though.$2\"/pause 200/speak Demetrius \"And from what I can tell by my soil samples,#$b#The findings are...unremarkable.$2\"/pause 200/speak Paul \"So we're at a bit of a dead end.$2#$b#There's no question that cases here in the valley are just...nonexistent.$2#$b#But why?$2\"/quickQuestion #Could it be a recurring natural phenomenon?#Maybe it's a special event that only happens here?(break)pause 200(break)pause 200/emote Demetrius 40/emote Paul 16/pause 100/speak Paul \"That's...$2#$b#That's it!$1\"/pause 200/speak Demetrius \"It all makes sense.$1#$b#Not the air or the soil...$0#$b#Something's coming to the valley at a regular interval.$1\"/pause 100/jump Willy 8/emote Willy 16/speak Willy \"The fish be seasonal.$1\"/speed Willy 4/move Willy 0 1 2/speed Willy 4/move Willy -7 0 3/speed Willy 4/move Willy 0 2 2/warp Willy -100 -100/playSound doorClose/emote Demetrius 8/emote Paul 32/emote farmer 32/fade/viewport -1000 -1000/changeLocation Mountain/warp farmer 12 26/warp Paul -100 -100/faceDirection farmer 2/faceDirection Paul 2/playSound doorClose/playMusic spring_day_ambient/viewport 12 28/move farmer 0 2 2/playSound doorClose/warp Paul 12 26/faceDirection Paul 2/faceDirection farmer 0/pause 300/speak Paul \"Hey, @?$4\"/pause 200/emote farmer 8/pause 200/speak Paul \"Uh...$4#$b#You were just awesome in there. You really bring something special to the table.$4\"/pause 200/speak Paul \"Just...thanks again.$4\"/pause 200/emote farmer 32/pause 500/end"
+      }
+    },
+    {
+      "LogName": "Six Heart Event",
+      "Action": "EditData",
+      "Target": "Data/Events/Mountain",
+      "Entries": {
+        "50006/e 50004/f Paul 1500/w sunny/t 600 1800": "spring_day_ambient/67 22/farmer 58 21 1 Paul 67 21 2/skippable/move farmer 5 0 1/playSound leafrustle/faceDirection Paul 3/pause 200/speak Paul \"Oh hi, @.\"/emote farmer 8/pause 100/speak Paul \"Oh, um...$4#$b#Yeah I bet this looks confusing.$4#$b#Turns out there's a big migration of the rose-hooded parrot this week.$1#$b#It could be just the recurring natural phenomenon we've been looking for.\"/pause 200/playSound leafrustle/faceDirection Paul 2/playSound leafrustle/faceDirection Paul 3/pause 300/speak Paul \"Want to join?#$b#This bush should be big enough for the both of us.$4\"/move farmer 3 0 1/playSound leafrustle/faceDirection farmer 2/pause 100/playSound leafrustle/faceDirection Paul 2/pause 300/speak Paul \"I heard they're not supposed to pass through for another few days but-\"/playMusic kindadumbautumn/jump Paul 8/emote Paul 16/pause 200/specificTemporarySprite parrots1/pause 4000/textAboveHead Paul \"They're incredible!\"/pause 4250/specificTemporarySprite parrots1/pause 3000/speak Paul \"You know...$2#$b#I really expected to feel stifled here.$2#$b#Stuck, you know?$2\"/specificTemporarySprite parrots1/pause 3000/speak Paul \"Another small town like the one I came from.$2#$b#I hated it there. I wanted to jump out of my own skin.$2\"/specificTemporarySprite parrots1/pause 3000/speak Paul \"But here it's different.$2#$b#I don't know why, it's just...\"/specificTemporarySprite parrots1/pause 3000/playSound leafrustle/faceDirection Paul 3/pause 200/playSound leafrustle/faceDirection farmer 1/pause 500/speak Paul \"...Just different.$4\"/specificTemporarySprite parrots1/pause 3000/emote farmer 32/pause 100/emote Paul 32/pause 100/playSound leafrustle/faceDirection Paul 2/playSound leafrustle/faceDirection farmer 2/speak Paul \"Anyway...$4#$b#I see a few perched in that tree over there.#$b#Those droppings samples aren't going to collect themselves!$4\"/emote farmer 60/pause 500/end"
+      }
+    },
+    {
+      "LogName": "Eight Heart Event - Part 1",
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "Entries": {
+        "500081/e 50006/f Paul 2000/w sunny/t 2000 2400": "ocean/12 40/farmer 12 31 2 Paul 12 39 2/skippable/speed farmer 2/move farmer 0 6 2/emote Paul 40/pause 200/speak Paul \"Hi, @.$2\"/pause 200/emote farmer 8/pause 300/playMusic echos/speak Paul \"Do you ever feel responsible for something,$2#$b#And that responsibility got you really, really far in life, so you kind of feel indebted to it,$2#\"/pause 200/speak Paul \"...But it's kind of crushing you,$2#$b#And nobody knows it.$2\"/pause 200/emote farmer 60/pause 200/speak Paul \"I don't know. I guess...$2#$b#This is just so very, very important to me.$2#$b#I *need* to find the answer. For my best friend. For my family.$2\"/pause 300/speak Paul \"Maybe to show everyone that where I came from never was...and never will be my limit.$2\"/pause 300/quickQuestion #You don't have to prove yourself.#Your limit doesn't exist.(break)pause 200(break)pause 200/emote Paul 60/pause 200/stopMusic/speak Paul \"Maybe the one I'm trying to prove myself to is...$2#$b#Myself.$2\"/pause 300/specificTemporarySprite moonlightJellies/playMusic moonlightJellies/speak Paul \"But you know something, @?$2#$b#I've never felt like I had to prove myself to you.$4\"/pause 200/speak Paul \"You've always made me feel totally accepted,$4#$b#Believed I was capable of so much more than even I did.$4\"/pause 200/speak Paul \"I really, really appreciate that,$4#$b#And even if I never find what I came here for...$2#$b#It'll be worth it because I met you, @.$4\"/pause 100/jump farmer 8/emote farmer 16/pause 300/move farmer 0 1 2/move farmer 1 0 2/move farmer 0 1 2/pause 12000/faceDirection Paul 1/pause 200/faceDirection farmer 3/emote Paul 32/emote farmer 32/pause 200/globalFade/viewport -1000 -1000/pause 2000/message \"Thank you for believing in me.\"/pause 200/ message \"You're a really great friend.\"/changeLocation Beach/warp farmer 38 6/warp Paul 39 8/faceDirection farmer 0/faceDirection Paul 0/viewport 38 7/move Paul 0 -2 0/pause 200/faceDirection Paul 3/speak Paul \"Wait...@.$2\"/pause 100/faceDirection farmer 1/emote farmer 8/jump Paul 8/speak Paul \"Bioluminescent marine life!$1\"/pause 200/emote farmer 8/pause 100/pause 100/speak Paul \"This autosomal dominant form of retinitis pigmentosa,$1#$b#Is not present in geographic locations with high amounts of bioluminescent marine life.$1\"/pause 100/emote farmer 8/pause 100/speak Paul \"The Moonlight jellies!\"/pause 100/jump Paul 8/pause 100/speak Paul \"Hurry! Let's catch one and bring it back to the lab!$1\"/faceDirection Paul 2/pause 100/speed Paul 4/move Paul 0 10 2/faceDirection farmer 2/emote farmer 20/jump farmer 8/pause 100/speed farmer 4/move farmer 0 11 2/globalFade/viewport -1000 -1000/pause 2000/playSound dropItemInWater/pause 1000/end"
+
+      }
+    },
+{
+      "LogName": "Eight Heart Event - Part 2 Trigger",
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "500082/f Paul 2000/e 500081/w sunny/t 600 800": "continue/64 15/farmer 64 16 2 Paul 64 18 0/skippable/pause 600/speak Paul \"Great news, @!$4#$b#The lab results are in. All our hard work has paid off.$1\"/pause 300/emote farmer 32/speak Paul \"After our little discovery, I'm presenting our findings to the world this afternoon.$1#$b#The whole town will be there so...look sharp!\"/pause 200/faceDirection Paul 2/emote Paul 40/faceDirection Paul 0/pause 200/speak Paul \"@, it's finally happening.#$b#We couldn't have done it without you.$4\"/emote farmer 32/pause 600/end"
+      }
+    },
+    {
+      "LogName": "Eight Heart Event Part 2",
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        "500083/e 500082/f Paul 2000/w sunny/t 1200 1700": "junimoStarSong/23 29/farmer 30 23 3 Evelyn 32 23 3 Gus 22 27 0 Pam 23 27 0 Vincent 28 24 2 Jas 29 24 2 George 32 24 3 Paul 26 22 1 Shane 31 26 3 Robin 20 29 0 Demetrius 22 29 0 Emily 23 23 2 Clint 22 22 1 Harvey 30 22 2 Lewis 30 25 3 Marnie 31 25 3 Elliott 24 30 3 Maru 29 22 2 Sebastian 30 28 1 Abigail 29 30 1 Sam 30 27 2 Penny 32 29 0 Pierre 27 30 1 Caroline 28 30 3 Linus 23 30 0 Haley 22 25 1 Alex 21 24 1 Ginny 24 23 2/skippable/viewport move 1 -1 3500/pause 4000/faceDirection Sebastian 2 true/faceDirection Alex 0 true/faceDirection Sebastian 1 true/faceDirection Maru 3 true/faceDirection Alex 1 true/faceDirection Maru 2 true/faceDirection Shane 0 true/faceDirection Emily 1 true/faceDirection Shane 3 true/faceDirection Emily 0/faceDirection Ginny 1/move Shane 1 0 2/pause 300/move farmer -4 0 0/faceDirection Paul 2/speak Paul \"@! So glad you're here.$4#$b#You ready?#$b#The longer I wait, the more nervous I get.$1\"/shake Paul 15/pause 300/move farmer 2 0 3/move Paul 0 1 2/faceDirection Paul 2/pause 800/faceDirection Paul 1/faceDirection Paul 2/faceDirection Paul 3/faceDirection Paul 2/speak Paul \"Hi, everyone. Good afternoon.$1\"/faceDirection Sebastian 0 true/faceDirection Ginny 2 true/faceDirection Emily 1/faceDirection Demetrius 0 true/faceDirection Elliott 0/faceDirection Pierre 0 true/faceDirection Caroline 0 true/faceDirection Shane 0/faceDirection Sam 0 true/faceDirection Abigail 0/speak Paul \"Thanks so much for coming to our presentation.$l\"/faceDirection Paul 1/speak Paul \"As many of you know, I first came to the valley in search of answers.#$b#The study of this rare condition led me to Pelican town,#$b#A place simply unaffected by the disease.\"/faceDirection Paul 3/speak Paul \"I never could have imagined how much I would come to love this place.#$b#And of course...all of you.$4\"/emote Lewis 32/ emote Emily 32/emote Elliott 32/speak Paul \"So, uh...$4#$b#Before I get emotional, I just want to say a quick thank you to everyone who put their hard work into these findings.$4\"/faceDirection Paul 3/faceDirection Paul 1/faceDirection Paul 2/speak Paul \"Demetrius, Willy, and so many others,$4\"/faceDirection Paul 2/speak Paul \"And a very special thanks to my good friend, @.#$b#Without him, who knows if we'd all be standing here today.^Without her, who knows if we'd all be standing here today.\"/faceDirection Emily 1/faceDirection Shane 3 true/faceDirection Haley 1/faceDirection Elliott 3/pause 400/speak Demetrius \"It was such a privilege working with you.$h\"/pause 100/textAboveHead George \"Heroes!\"/faceDirection Paul 1/speak Lewis \"What an amazing victory for our town.$h\"/textAboveHead Robin \"*Cheers*\"/speak Penny \"Thank you all for your service.$h\"/faceDirection Paul 3/emote Paul 32/faceDirection Paul 2/speak Paul \"Thanks, everyone!$h\"/emote Paul 20/pause 500/speak Paul \"Now without further ado, let's get to the presentation!\"/pause 200/viewport move 1 1 4000/pause 1750/globalFade/viewport -1000 -1000/changeLocation Town/warp farmer 39 81/warp Paul 44 78/warp Ginny 43 78/playMusic 50s/faceDirection farmer 1/faceDirection Paul 3/faceDirection Ginny 1/viewport 43 80/pause 200/move farmer 4 0 1/faceDirection Paul 2/pause 100/emote Paul 16/pause 100/faceDirection Ginny 2/speak Paul \"@! There's someone I'd like you to meet.$4\"/faceDirection farmer 0/pause 100/move farmer 0 -1 0/speak Paul \"This is Ginny.$4#$b#The one who inspired me to come here. She's been my best friend for many years.$4\"/pause 100/faceDirection Paul 3/pause 100/emote Ginny 32/emote farmer 32/pause 100/speak Ginny \"Oh I've heard so much about you!$1#$b#I can't thank you enough, @.\"/pause 200/faceDirection Ginny 1/pause 100/faceDirection Ginny 2/pause 100/speak Ginny \"...For everything.\"/pause 100/emote farmer 20/pause 1500/end"
+      }
+    },
+{
+      "LogName": "Letter for Ten Heart Event - Trigger",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+          "PaulEventLetter10": {
+              "Id": "PaulEventLetter10",
+              "Trigger": "DayEnding",
+              "Condition": "PLAYER_HAS_SEEN_EVENT Current 500083, PLAYER_HEARTS Current Paul 10",
+              "Actions": [
+                  "AddMail Current PaulEventLetter10 tomorrow"
+              ]
+          }
+      }
+    },
+    {
+      "LogName": "Ten Heart Event",
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "Entries": {
+        "500010/n PaulEventLetter10/w sunny/t 2000 2400": "moonlightJellies/-1000 -1000/farmer -100 -100 0 Paul -100 -100 0/skippable/changeLocation Custom_ginnyclaire_Beach/warp farmer 40 35/warp Paul 43 35/faceDirection farmer 1/faceDirection Paul 3/viewport 37 36/viewport move 1 0 5000/specificTemporarySprite moonlightJellies/pause 2000/emote Paul 32/pause 100/speak Paul \"You made it.$4\"/pause 100/emote farmer 8/pause 100/faceDirection Paul 2/pause 100/faceDirection Paul 3/pause 100/speak Paul \"Oh this?$4#$b#I figured we should send our little friend off with a bang.$1\"/pause 100/emote farmer 40/pause 100/textAboveHead Paul \"Kidding.\"/pause 1000/speak Paul \"I wanted to do something special for us.$4#$b#We accomplished a big thing, after all.$4\"/quickQuestion #YOU accomplished a big thing.#We make a great team.(break)pause 200(break)pause 200/emote Paul 32/pause 100/speak Paul \"Well,$4#$b#Shall we?$1#$b#The little guy's been cooped up in that box long enough don't you think?$4\"/speed Paul 2/move Paul 0 1 3/speed farmer 2/move farmer 1 0 1/speed farmer 2/move farmer 0 1 1/pause 100/shake Paul 2/playSound openChest/pause 1000/shake Paul 2/playSound dropItemInWater/pause 300/faceDirection Paul 2/faceDirection farmer 2/pause 500/textAboveHead Paul \"There he goes.\"/pause 1000/pause 1000/textAboveHead Paul \"Thanks for everything...\"/pause 2000/faceDirection Paul 3/pause 500/speak Paul \"Did you see what I brought?$4\"/speed farmer 2/move farmer 0 -1 0/speed Paul 2/move Paul 0 -1 0/speed Paul 2/move Paul -1 0 0/speak Paul \"Fiddlehead Risotto.$4\"/pause 100/emote farmer 32/pause 100/emote Paul 40/faceDirection Paul 3/pause 200/speak Paul \"Hey, @?$2\"/pause 200/faceDirection farmer 1/pause 100/emote farmer 8/pause 100/speak Paul \"I don't...um...$2#$b#@, I...$4#$b#Why is this so hard to say?\"/pause 100/emote farmer 32/pause 100/textAboveHead Paul \"Deep breaths.\"/pause 500/speak Paul \"@, I think I-$4\"/pause 500/showFrame 101/animate Paul true false 10000 28/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 1/pause 5/positionOffset Paul -1 1/pause 5/positionOffset Paul -1 1/pause 5/positionOffset Paul -1 1/pause 5/positionOffset Paul -1 1/positionOffset Paul -1 1/specificTemporarySprite heart 41 34/pause 3000/globalFade/viewport -1000 -1000/pause 2000/message \"The thing is...\"/pause 1000/message \"I really love you.\"/pause 1200/end"
+      }
+    },
+{
+      "LogName": "Letter for Engagement Event - Trigger",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+          "PaulEventLetter11": {
+              "Id": "PaulEventLetter11",
+              "Trigger": "DayEnding",
+              "Condition": "PLAYER_NPC_RELATIONSHIP Current Paul Engaged",
+              "Actions": [
+                  "AddMail Current PaulEventLetter11 tomorrow"
+              ]
+          }
+      }
+    },
+    {
+      "LogName": "Engagement Event",
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "Entries": {
+        "500011/n PaulEventLetter11/w sunny/t 2000 2400": "moonlightJellies/-1000 -1000/farmer -100 -100 0 Paul -100 -100 0/skippable/changeLocation Custom_ginnyclaire_Beach/warp farmer 87 24/warp Paul 87 40/faceDirection farmer 2/faceDirection Paul 0/viewport 87 31/viewport move 0 1 10000/pause 2000/move farmer 0 15 2/move farmer -1 0 3/move farmer 0 1 1/faceDirection Paul 3/pause 200/speak Paul \"@,$4\"/pause 100/emote farmer 32/pause 100/speak Paul \"Since the moment I met you, my world shifted.$4#$b#You've made me a better person,$4#$b#And I love you more than I could ever express.$4\"/pause 100/speak Paul \"So @...$4\"/pause 100/showFrame Paul 29/pause 500/speak Paul \"Will you marry me?$4\"/pause 400/jump farmer 8/emote farmer 20/pause 100/showFrame 101/animate Paul true false 10000 28/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 1/pause 5/positionOffset Paul -1 1/pause 5/positionOffset Paul -1 1/pause 5/positionOffset Paul -1 1/pause 5/positionOffset Paul -1 1/positionOffset Paul -1 1/specificTemporarySprite heart 87 39/pause 2000/viewport move 0 -1 6000/pause 4000/globalFade/viewport -1000 -1000/pause 1200/end"
+      }
+    },
+    {
+      "LogName": "Twelve Heart Event",
+      "Action": "EditData",
+      "Target": "Data/Events/FarmHouse",
+      "Entries": {
+        "500012/f Paul 3000/L": "spring_day_ambient/-1000 -1000/farmer 42 23 2 Paul 40 23 1/skippable/fade unfade/makeInvisible 25 13/makeInvisible 26 13/makeInvisible 20 4/makeInvisible 22 4/eyes 1 -6000/viewport 41 24/pause 2000/emote farmer 24/pause 1000/speak Paul \"@...$4#$b#...Are you awake?$4\"/jump farmer/pause 1000/speak Paul \"I just got the news.$1\"/faceDirection farmer 3/pause 100/emote farmer 8/pause 100/playMusic kindadumbautumn/speak Paul \"Our study...it's getting published by 'Zuzu Journal of Medicine.'$1#$b#They've asked me to co-write an article with Demetrius.$1#$b#They say it could be up for an award.$1\"/pause 100/emote farmer 16/speed farmer 4/move farmer -1 0 3/animate Paul false false 1000 28/animate farmer true true 100 101/positionOffset farmer -16 0/specificTemporarySprite heart 41 23/pause 1000/stopAnimation Paul/showFrame Paul 4/stopAnimation farmer/pause 500/speak Paul \"We really did it, @!$1\"/emote farmer 20/pause 300/speak Paul \"We're making a difference in this world.$4\"/pause 100/speak Paul \"Just like you said that night on the pier,$4#$b#You and me...we have no limits.$4\"/pause 100/animate Paul false false 4000 28/animate farmer true true 1500 101/positionOffset farmer -5 0/specificTemporarySprite heart 41 23/pause 1500/globalFade/viewport -1000 -1000/pause 1200/end dialogue Paul \"Will you read over this article for me?#$b#I'm hoping to send it over to Demetrius sometime today!$1\""
+      }
+    },
+{
+      "LogName": "Letter for Fourteen Heart Event - Trigger",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+          "PaulEventLetter14": {
+              "Id": "PaulEventLetter14",
+              "Trigger": "DayEnding",
+              "Condition": "PLAYER_HAS_SEEN_EVENT Current 500012, PLAYER_HEARTS Current Paul 14",
+              "Actions": [
+                  "AddMail Current PaulEventLetter14 tomorrow"
+              ]
+          }
+      }
+    },
+    {
+      "LogName": "Fourteen Heart Event",
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        "500014/n PaulEventLetter14/w sunny/t 2000 2300": "ocean/-1000 -1000/farmer -100 -100 0 Paul -100 -100 0 Ginny -100 -100 0/skippable/changeLocation Custom_ginnyclaire_Beach/warp farmer 26 20/warp Paul 25 20/faceDirection farmer 2/faceDirection Paul 2/viewport 22 26/fade unfade/viewport move 1 -1 3500/pause 4000/playMusic SettlingIn/playSound doorClose/warp Ginny 20 24/faceDirection Ginny 1/pause 200/move Ginny 5 0 0/move Ginny 0 -2 0/emote Paul 32/emote farmer 32/pause 100/speak Paul \"Ginny, you made it!$1#$b#It means the world to me that you're here.$4\"/pause 100/faceDirection Paul 1/pause 100/faceDirection Paul 2/pause 100/speak Paul \"To both of us.$4\"/pause 100/emote farmer 20/pause 100/speak Ginny \"I wouldn't miss it for the world.\"/pause 100/jump Ginny 8/speak Ginny \"Now hurry! Before they start without us!$1\"/globalFade/viewport -1000 -1000/pause 1000/message \"We present this year's Medical Discovery Award to Demetrius and Paul of Pelican Town.\"/playSound Stadium_cheer/pause 3000/message \"Because of your discovery, the world is a brighter and better place\"/stopMusic/pause 2000/playMusic echos/changeLocation Farm/warp farmer 63 15/warp Paul 64 15/faceDirection farmer 1/faceDirection Paul 3/viewport 61 20/fade unfade/viewport move 1 -1 3500/pause 4000/emote Paul 40/pause 100/speak Paul \"@...$4\"/pause 100/speak Paul \"You know I can't imagine having done this with anyone else.$4\"/pause 100/speak Paul \"Any of this...the research, falling in love with this town,$4\"/pause 100/speak Paul \"And this beautiful life we've built together.$4\"/pause 100/speak Paul \"In the end I just can't thank you enough, @.$4\"/pause 100/emote farmer 20/pause 100/speak Paul \"...For everything.\"/pause 100/showFrame 101/animate Paul true false 10000 28/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/positionOffset Paul -1 0/pause 5/specificTemporarySprite heart 65 15/pause 2000/viewport move 0 -1 6000/pause 4000/globalFade/viewport -1000 -1000/pause 1200/end"
+      }
+    },
+{
+      "LogName": "Letter for Quest 500 - Trigger",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+          "PaulQuestLetter500": {
+              "Id": "PaulQuestLetter500",
+              "Trigger": "DayEnding",
+              "Condition": "PLAYER_HAS_SEEN_EVENT Current 50000, PLAYER_HEARTS Current Paul 3",
+              "Actions": [
+                  "AddMail Current PaulQuestLetter500 tomorrow"
+              ]
+          }
+      }},
+{
+      "LogName": "Letter for Quest 501 - Trigger",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+          "PaulQuestLetter501": {
+              "Id": "PaulQuestLetter501",
+              "Trigger": "DayEnding",
+              "Condition": "PLAYER_HAS_SEEN_EVENT Current 50004, PLAYER_HEARTS Current Paul 7",
+              "Actions": [
+                  "AddMail Current PaulQuestLetter501 tomorrow"
+              ]
+          }
+      }},
+{
+      "LogName": "Letter for Quest 502 - Trigger",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+          "PaulQuestLetter502": {
+              "Id": "PaulQuestLetter502",
+              "Trigger": "DayEnding",
+              "Condition": "PLAYER_HAS_SEEN_EVENT Current 50006, PLAYER_HEARTS Current Paul 6",
+              "Actions": [
+                  "AddMail Current PaulQuestLetter501 tomorrow"
+              ]
+          }
+      }},
+{	
+		"LogName": "Mail",
+		"Action": "EditData",
+		"Target": "data/mail",
+		"Entries": {
+			"PaulEventLetter4": "Farmer @!^^We could really use an expert opinion on the agricultural climate in the valley. Could you stop by the lab one afternoon this week?^^See you there.^^-Paul",
+			"PaulEventLetter10": "Hi, @.^^It's time to release our little fiend back into the sea. Want to come help me do the honors?^^Meet me at the pier after dark.^^-Paul",
+			"PaulEventLetter11": "My @...^^^Meet me at the tide pools at 9.^^Love,^Paul",
+			"PaulEventLetter14": "Dear Paul,^^The Zuzu Academy of Medicine is pleased to inform you that you and your colleague have been chosen for the 'Medical Discovery of the Year' Award.^^The ceremony will commence this evening at 8:00 in Pelican Town, as members of the board are eager to visit  such a significant place of discovery.^^On behalf of the Academy, we thank you for your hard work and service to our community.^^Best regards,^^The Zuzu Academy of Medicine",
+			"PaulQuestLetter500": "Hi, @!^^I thought I'd try my hand at fixing up some old broken glasses.^^Have you seen any lying around?^^-Paul %item quest 500 %%",
+			"PaulQuestLetter501": "Hi, @!^^I've been studying the local wildlife and Willy said there are all kinds of aquatic creatures specific to the valley.^^You don't happen to have an extra crab pot lying around, do you?^^-Paul %item quest 501 %%",
+			"PaulQuestLetter502": "Okay, hear me out.^^Squid ink.^^I want to run some tests.^^Do you have any? %item quest 502 %%"
+			}
+		},
+	{
+		"LogName": "Quests",
+		"Action": "EditData",
+		"Target": "data/quests",
+		"Entries": {
+			"500": "ItemDelivery/Broken Glasses/Paul wants to fix up some old frames./Bring Paul a pair of Broken Glasses./Paul 170/-1/1000/-1/true/Yes! These are perfect! Thanks, @.",
+			"501": "ItemDelivery/Crab Pot/Paul needs a crab pot for his research./Bring Paul a crab pot./Paul 710/-1/1000/-1/true/Thanks, @! This will definitely do the trick.",
+			"502": "ItemDelivery/Squid Ink/Paul needs squid ink for his research./Bring Paul squid ink./Paul 814/-1/1000/-1/true/Thanks, @! This is exactly what I had in mind."
+				}
+		}
+  ]
+}

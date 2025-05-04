@@ -1,0 +1,142 @@
+{
+  "Format": "2.0.0",
+
+  "ConfigSchema": {
+    "PokemonOttersRequiredBuilding": {
+      "AllowValues": "Barn, Big Barn, Deluxe Barn",
+      "Default": "Big Barn",
+      "Section": "BalancingScaling"
+    },
+    "DeluxeProduceDewott": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "BalancingScaling"
+    },
+    "DeluxeProduceFloatzel": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "BalancingScaling"
+    },
+    "DeluxeProduceProbability": {
+      "Default": "1",
+      "Section": "BalancingScaling"
+    },
+    "UsePokemonFish": {
+      "AllowValues":"true, false",
+      "Default": "true",
+      "Section": "ModIntegration"
+    },
+    "UsePokemonRanchBarn": {
+      "AllowValues":"true, false",
+      "Default": "false",
+      "Section": "ModIntegration"
+    }
+  },
+
+  "DynamicTokens": [
+    {
+      "Name": "DeluxeProduceCareValidate",
+      "Value": "1"
+    },
+    {
+      "Name": "DeluxeProduceCareValidate",
+      "Value": "{{DeluxeProduceProbability}}",
+      "When": {
+        "DeluxeProduceProbability": "{{Range: 1, 100}}"
+      }
+    },
+    {
+      "Name": "DeluxeProduceCareDivisorChoice",
+      "Value": "{{Round: {{query: 1382.5 / {{DeluxeProduceCareValidate}} * 100 }}, 0, down }}"
+    },
+    {
+      "Name": "PokemonOttersBuilding",
+      "Value": "{{PokemonOttersRequiredBuilding}}"
+    },
+    {
+      "Name": "PokemonOttersBuilding",
+      "Value": "PokeBarn",
+      "When": {
+        "HasMod": "bees.pkr",
+        "UsePokemonRanchBarn": true,
+        "PokemonOttersRequiredBuilding": "Barn"
+      }
+    },
+    {
+      "Name": "PokemonOttersBuilding",
+      "Value": "BigPokeBarn",
+      "When": {
+        "HasMod": "bees.pkr",
+        "UsePokemonRanchBarn": true,
+        "PokemonOttersRequiredBuilding": "Big Barn"
+      }
+    },
+    {
+      "Name": "PokemonOttersBuilding",
+      "Value": "DeluxePokeBarn",
+      "When": {
+        "HasMod": "bees.pkr",
+        "UsePokemonRanchBarn": true,
+        "PokemonOttersRequiredBuilding": "Deluxe Barn"
+      }
+    },
+    {
+      "Name": "PokemonOttersHouse",
+      "Value": "Barn"
+    },
+    {
+      "Name": "PokemonOttersHouse",
+      "Value": "PokeBarn",
+      "When": {
+        "HasMod": "bees.pkr",
+        "UsePokemonRanchBarn": true
+      }
+    }
+  ],
+
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "{{ModId}}/Dewott, {{ModId}}/Oshawott, {{ModId}}/DewottShop, {{ModId}}/ShinyDewott, {{ModId}}/ShinyOshawott, {{ModId}}/Floatzel, {{ModId}}/Buizel, {{ModId}}/FloatzelShop, {{ModId}}/ShinyFloatzel, {{ModId}}/ShinyBuizel",
+      "FromFile": "Assets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+        "OshawottCry": {
+            "ID": "OshawottCry",
+            "Category": "Sound",
+            "StreamedVorbis": false, 
+            "Looped": false,
+            "FilePaths": [ "{{AbsoluteFilePath: Assets/SFX/Oshawott.wav}}" ]                
+        },
+        "DewottCry": {
+            "ID": "DewottCry",
+            "Category": "Sound",
+            "StreamedVorbis": false, 
+            "Looped": false,
+            "FilePaths": [ "{{AbsoluteFilePath: Assets/SFX/Dewott.wav}}" ]                
+        },
+        "BuizelCry": {
+            "ID": "BuizelCry",
+            "Category": "Sound",
+            "StreamedVorbis": false, 
+            "Looped": false,
+            "FilePaths": [ "{{AbsoluteFilePath: Assets/SFX/Buizel.wav}}" ]                
+        },
+        "FloatzelCry": {
+            "ID": "FloatzelCry",
+            "Category": "Sound",
+            "StreamedVorbis": false, 
+            "Looped": false,
+            "FilePaths": [ "{{AbsoluteFilePath: Assets/SFX/Floatzel.wav}}" ]                
+        }
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Animals/Dewott.json, Animals/Oshawott.json, Animals/ShinyDewott.json, Animals/ShinyOshawott.json, Animals/Floatzel.json, Animals/Buizel.json, Animals/ShinyFloatzel.json, Animals/ShinyBuizel.json"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+    "Changes": [
+                {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [ "(BC){{ModId}}_PresentOpener", "OutputRules" ],
+            "Entries": {
+                "{{ModId}}_GiftGoOpen": {
+                    "Id": "{{ModId}}_GiftGo",
+                    "Triggers": 
+                        [
+                            {
+                                "Trigger": "ItemPlacedInMachine",
+                                "RequiredItemId": "{{ModId}}_GiftGo",
+                                "RequiredCount": 1
+                            }
+                        ],
+                    "OutputItem": [
+                        {
+                            "Id": "RandomEgg", //White Egg or Brown Egg
+                            "ItemId": null,
+                            "RandomItemId": [ "(O)176", "(O)180" ],
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        },
+                        {
+                            "Id": "440", //Wool
+                            "ItemId": "440",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        },
+                        {
+                            "Id": "340", //Honey
+                            "ItemId": "340",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        },
+                        {
+                            "Id": "Letsgolilly.LillysRibombee_PollenPuff",
+                            "ItemId": "Letsgolilly.LillysRibombee_PollenPuff",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        },
+                        {
+                            "Id": "RandomPollenPuff", //Special Pollen Puff
+                            "ItemId": null,
+                            "RandomItemId": [ 
+                                "(O)Letsgolilly.LillysRibombee_PollenPuffTulip",
+                                "(O)Letsgolilly.LillysRibombee_PollenPuffBlueJazz",
+                                "(O)Letsgolilly.LillysRibombee_PollenPuffSweetPea",
+                                "(O)Letsgolilly.LillysRibombee_PollenPuffSunflower",
+                                "(O)Letsgolilly.LillysRibombee_PollenPuffSummerSpangle",
+                                "(O)Letsgolilly.LillysRibombee_PollenPuffPoppy",
+                                "(O)Letsgolilly.LillysRibombee_PollenPuffFairyRose",
+                                "(O)Letsgolilly.LillysRibombee_PollenPuffCrocus"
+                            ],
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        }
+                        ],
+                    "MinutesUntilReady": 180
+                }
+            }
+        }
+    ]
+}

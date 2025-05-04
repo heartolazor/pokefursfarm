@@ -1,0 +1,342 @@
+// This will be loaded when "Balanced Food Prices" in config.json is set to true. The file "foodVanilla.json" will instead be used if set to true.
+// Note: This also changes the price to buy cooked foods sold to the player at various shops
+{
+   "Changes": [
+      {
+         "Action": "EditData",
+         "Target": "Data/Objects",
+         "Fields": {
+			// Note: Each entry has a comment above it listing the name and Vanilla SELLING price (Selling price is usually half of the PURCHASE price).
+			// Under the comment listing the name and Vanilla price is the actual entry, where the first number inside " "s is the item's object ID, and the second number inside " "s is the new SELLING price.
+			
+				//Cooked Foods ------------------------------------------------------------------------
+				// Note: This section is duplicated below, so the prices can be different in case the "Late-Game Animal Product Effective Multiplier" is set to something other than 1
+				
+			// Fried Egg: 35
+			"194": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 40 * {{Animal Product Effective Multiplier}} }} }}"
+            },
+			// Omelet: 125
+			"195": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 115 * {{Animal Product Effective Multiplier}} }} }}"
+            },
+			// Salad: 110
+			"196": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 300 * ({{Farm Forage Value Multiplier}} * 100/300 + 1 * 200/300) }} }}"
+            },
+			// Cheese Cauliflower: 300
+			"197": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 360 * ({{Crops Value Multiplier}} * 210/360 + {{Animal Product Effective Multiplier}} * 150/360) }} }}"
+            },
+			// Baked Fish: 100
+			"198": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 125 * ({{Crops Value Multiplier}} * 50/125 + {{Fish Value Multiplier}} * 75/125) }} }}"
+            },
+			// Parsnip Soup: 120
+			"199": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 305 * ({{Crops Value Multiplier}} * 30/305 + {{Animal Product Effective Multiplier}} * 75/305 + 1 * 200/305) }} }}"
+            },
+			// Vegetable Medley: 120
+			"200": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 200 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Complete Breakfast: 350
+			"201": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 375 * ({{Animal Product Effective Multiplier}} * 75/375 + {{Animal Product Effective Multiplier}} * {{Cooked Food Value Multiplier}} * 80/375 + {{Crops Value Multiplier}} * {{Cooked Food Value Multiplier}} * 220/375) }} }}"
+            },
+			// Fried Calamari: 150
+			"202": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 230 * ({{Animal Product Effective Multiplier}} * 80/230 + {{Crops Value Multiplier}} * 150/230) }} }}"
+            },
+			// Strange Bun : 225
+			"203": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 175 * ({{Animal Product Effective Multiplier}} * 105/175 + {{Fish Value Multiplier}} * 20/175 + {{Crops Value Multiplier}} * 50/175) }} }}"
+            },
+			// Lucky Lunch: 250
+			"204": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 235 * ({{Fish Value Multiplier}} * 75/235 + {{Flower & Honey Value Multiplier}} * 50/235 + {{Crops Value Multiplier}} * {{Cooked Food Value Multiplier}} * 110/235) }} }}"
+            },
+			// Fried Mushroom: 200
+			"205": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 290 * ({{Crops Value Multiplier}} * 100/290 + {{Farm Forage Value Multiplier}} * 190/290) }} }}"
+            },
+			// Pizza: 300
+			"206": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 295 * ({{Animal Product Effective Multiplier}} * 150/295 + {{Crops Value Multiplier}} * 145/230) }} }}"
+            },
+			// Bean Hotpot: 100
+			"207": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 110 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Glazed Yams: 200
+			"208": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 390 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Carp Surprise: 150
+			"209": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 120 * {{Fish Value Multiplier}} }} }}"
+            },
+			// Hashbrowns: 120
+			"210": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 170 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Pancakes: 80
+			"211": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 90 * ({{Animal Product Effective Multiplier}} * 40/90 + {{Crops Value Multiplier}} * 50/90) }} }}"
+            },
+			// Salmon Dinner: 300
+			"212": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 405 * ({{Fish Value Multiplier}} * 75/405 + {{Crops Value Multiplier}} * 330/405) }} }}"
+            },
+			// Fish Taco: 500
+			"213": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 525 * ({{Fish Value Multiplier}} * 100/525 + {{Crops Value Multiplier}} * 240/525 + {{Animal Product Effective Multiplier}} * 75/525 + {{Crops Value Multiplier}} * {{Cooked Food Value Multiplier}} * 110/525) }} }}"
+            },
+			// Crispy Bass: 150
+			"214": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 250 * ({{Fish Value Multiplier}} * 100/250 + {{Crops Value Multiplier}} * 150/250) }} }}"
+            },
+			// Pepper Poppers: 200
+			"215": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 205 * ({{Animal Product Effective Multiplier}} * 150/205 + {{Crops Value Multiplier}} * 55/205) }} }}"
+            },
+			// Bread: 60
+			"216": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 50 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Tom Kha Soup: 250
+			"218": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 200 * ({{Fish Value Multiplier}} * 60/200 + {{Crops Value Multiplier}} * 40/200 + 1 * 100/200) }} }}"
+            },
+			// Trout Soup: 100
+			"219": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 80 * ({{Fish Value Multiplier}} * 65/80 + 1 * 15/80) }} }}"
+            },
+			// Chocolate Cake: 200
+			"220": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 165 * ({{Animal Product Effective Multiplier}} * 40/165 + {{Crops Value Multiplier}} * 125/165) }} }}"
+            },
+			// Pink Cake: 480
+			"221": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 385 * ({{Animal Product Effective Multiplier}} * 40/385 + {{Crops Value Multiplier}} * 345/385) }} }}"
+            },
+			// Rhubarb Pie: 400
+			"222": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 325 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Cookie: 140
+			"223": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 165 * ({{Animal Product Effective Multiplier}} * 40/165 + {{Crops Value Multiplier}} * 125/165) }} }}"
+            },
+			// Spaghetti: 120
+			"224": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 145 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Fried Eel: 120
+			"225": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 185 * ({{Fish Value Multiplier}} * 85/185 + {{Crops Value Multiplier}} * 100/185) }} }}"
+            },
+			// Spicy Eel: 175
+			"226": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 140 * ({{Fish Value Multiplier}} * 85/140 + {{Crops Value Multiplier}} * 55/140) }} }}"
+            },
+			// Sashimi: 75
+			"227": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 60 * {{Fish Value Multiplier}} }} }}"
+            },
+			// Maki Roll: 220
+			"228": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 345 * ({{Fish Value Multiplier}} * 80/345 + {{Crops Value Multiplier}} * 245/345 + 1 * 20/345) }} }}"
+            },
+			// Tortilla: 50
+			"229": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 110 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Red Plate: 400
+			"230": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 345 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Eggplant Parmesan: 200
+			"231": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 245 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Rice Pudding: 260
+			"232": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 395 * ({{Animal Product Effective Multiplier}} * 75/395 + {{Crops Value Multiplier}} * 320/395) }} }}"
+            },
+			// Ice Cream: 120
+			"233": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 150 * ({{Animal Product Effective Multiplier}} * 75/150 + {{Crops Value Multiplier}} * 75/150) }} }}"
+            },
+			// Blueberry Tart: 150
+			"234": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 190 * ({{Animal Product Effective Multiplier}} * 40/190 + {{Crops Value Multiplier}} * 150/190) }} }}"
+            },
+			// Autumn's Bounty: 350
+			"235": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 735 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Pumpkin Soup: 300
+			"236": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 495 * ({{Animal Product Effective Multiplier}} * 75/495 + {{Crops Value Multiplier}} * 420/495) }} }}"
+            },
+			// Super Meal: 220
+			"237": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 390 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Cranberry Sauce: 120
+			"238": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 145 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Stuffing: 165
+			"239": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 210 * ({{Crops Value Multiplier}} * 160/210 + {{Crops Value Multiplier}} * {{Cooked Food Value Multiplier}} * 50/210) }} }}"
+            },
+			// Farmer's Lunch: 150
+			"240": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 145 * ({{Crops Value Multiplier}} * 30/145 + {{Animal Product Effective Multiplier}} * {{Cooked Food Value Multiplier}} * 115/145) }} }}"
+            },
+			// Survival Burger: 180
+			"241": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 225 * ({{Crops Value Multiplier}} * 150/225 + {{Crops Value Multiplier}} * {{Cooked Food Value Multiplier}} * 60/225 + 1 * 25/225) }} }}"
+            },
+			// Dish O' The Sea: 220
+			"242": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 250 * ({{Fish Value Multiplier}} * 80/250 + {{Crops Value Multiplier}} * {{Cooked Food Value Multiplier}} * 170/250) }} }}"
+            },
+			// Miner's Treat: 200
+			"243": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 200 * ({{Animal Product Effective Multiplier}} * 75/200 + {{Crops Value Multiplier}} * 75/200 + 1 * 50/200) }} }}"
+            },
+			// Roots Platter: 100
+			"244": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 95 * ({{Crops Value Multiplier}} * 70/95 + 1 * 25/95) }} }}"
+            },
+			// Triple Shot Espresso: 450
+			"253": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 450 }} }}"
+            },
+			// Algae Soup: 100
+			"456": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 60 }} }}"
+            },
+			// Pale Broth: 150
+			"457": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 50 }} }}"
+            },
+			// Plum Pudding: 260
+			"604": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 285 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Artichoke Dip: 210
+			"605": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 315 * ({{Animal Product Effective Multiplier}} * 75/315 + {{Crops Value Multiplier}} * 240/315) }} }}"
+            },
+			// Stir Fry: 335
+			"606": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 280 * ({{Crops Value Multiplier}} * 215/280 + {{Farm Forage Value Multiplier}} * 40/280 + 1 * 25/280) }} }}"
+            },
+			// Roasted Hazelnuts: 270
+			"607": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 270 * {{Farm Forage Value Multiplier}} }} }}"
+            },
+			// Pumpkin Pie: 385
+			"608": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 620 * ({{Animal Product Effective Multiplier}} * 75/620 + {{Crops Value Multiplier}} * 545/620) }} }}"
+            },
+			// Radish Salad: 300
+			"609": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 405 * ({{Crops Value Multiplier}} * 205/405 + 1 * 200/405) }} }}"
+            },
+			// Fruit Salad: 450
+			"610": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 271 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Blackberry Cobbler: 260
+			"611": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 165 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Cranberry Candy: 175
+			"612": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 180 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Bruschetta: 210
+			"618": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 245 * ({{Crops Value Multiplier}} * 195/245 + {{Crops Value Multiplier}} * {{Cooked Food Value Multiplier}} * 50/245) }} }}"
+            },
+			// Coleslaw: 345
+			"648": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 515 * ({{Crops Value Multiplier}} * 240/515 + {{Animal Product Effective Multiplier}} * 75/515 + 1 * 200/515) }} }}"
+            },
+			// Fiddlehead Risotto: 350
+			"649": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 245 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Poppyseed Muffin: 250
+			"651": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 245 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Chowder: 135
+			"727": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 125 * ({{Animal Product Effective Multiplier}} * 75/125 + {{Fish Value Multiplier}} * 50/125) }} }}"
+            },
+			// Lobster Bisque: 205
+			"730": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 195 * ({{Animal Product Effective Multiplier}} * 75/195 + {{Fish Value Multiplier}} * 120/195) }} }}"
+            },
+			// Fish Stew: 175
+			"728": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 220 * ({{Crops Value Multiplier}} * 95/220 + {{Fish Value Multiplier}} * 125/220) }} }}"
+            },
+			// Escargot: 125
+			"729": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 125 * ({{Crops Value Multiplier}} * 55/125 + {{Fish Value Multiplier}} * 65/125) }} }}"
+            },
+			// Maple Bar: 300
+			"731": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 325 * ({{Crops Value Multiplier}} * 125/325 + 1 * 200/325) }} }}"
+            },
+			// Crab Cakes: 275
+			"732": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 290 * ({{Crops Value Multiplier}} * 150/290 + {{Fish Value Multiplier}} * 100/290 + {{Animal Product Effective Multiplier}} * 40/290) }} }}"
+            },
+			// Shrimp Cocktail: 160
+			"733": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 205 * ({{Crops Value Multiplier}} * 95/205 + {{Farm Forage Value Multiplier}} * 50/205 + {{Fish Value Multiplier}} * 60/205) }} }}"
+            },
+			// Seafoam Pudding: 300
+			"265": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 360 * ({{Fish Value Multiplier}} * 150/360 + 1 * 110/360) }} }}"
+            },
+			// Ginger Ale: 200
+			"903": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 255 * ({{Crops Value Multiplier}} * 75/255 + 1 * 180/255) }} }}"
+            },
+			// Banana Pudding: 260
+			"904": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 215 * ({{Crops Value Multiplier}} * 140/215 + {{Animal Product Effective Multiplier}} * 75/215) }} }}"
+            },
+			// Mango Sticky Rice: 250
+			"905": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 390 * ({{Crops Value Multiplier}} * 286/386 + 1 * 100/386) }} }}"
+            },
+			// Poi: 400
+			"906": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 660 * {{Crops Value Multiplier}} }} }}"
+            },
+			// Tropical Curry: 500
+			"907": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 365 * ({{Crops Value Multiplier}} * 265/365 + 1 * 100/365) }} }}"
+            },
+			// Squid Ink Ravioli: 150
+			"921": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 255 * ({{Crops Value Multiplier}} * 145/255 + 1 * 110/255) }} }}"
+            },
+			// Moss Soup: 80
+			"MossSoup": {
+               "Price": "{{Round: {{Query: {{Cooked Food Value Multiplier}} * 100 }} }}"
+            }
+		 }
+       }
+   ]
+}

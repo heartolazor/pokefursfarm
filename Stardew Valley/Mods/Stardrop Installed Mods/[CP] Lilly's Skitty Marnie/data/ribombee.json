@@ -1,0 +1,221 @@
+{
+    "Changes": [
+          //Items
+          {
+            "LogName": "Load data for Ribombee Doll",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_RibombeeDoll": {
+				"Name": "{{ModId}}_RibombeeDoll",
+				"DisplayName": "{{i18n:RibombeeDoll}}",
+				"Description": "{{i18n:RibombeeDollDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 170,
+				"Texture": "TileSheets/{{ModId}}_Skitty_items",
+				"SpriteIndex": 11,
+				"Edibility": 0,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 8,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"Speed": 10.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_yellow"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+		{
+            "LogName": "Load data for Shiny Ribombee Doll",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_ShinyRibombeeDoll": {
+				"Name": "{{ModId}}_ShinyRibombeeDoll",
+				"DisplayName": "{{i18n:ShinyRibombeeDoll}}",
+				"Description": "{{i18n:ShinyRibombeeDollDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 980,
+				"Texture": "TileSheets/{{ModId}}_Skitty_items",
+				"SpriteIndex": 12,
+				"Edibility": 0,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 16,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"Speed": 10.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_pink"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+		// MACHINE RULES //
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [ "(BC){{ModID}}_DollMaker", "OutputRules" ],
+            "Entries": {
+                "{{ModId}}_RibombeeDollMaker": {
+                    "Id": "{{ModId}}_RibombeeDoll",
+                    "Triggers":
+                    [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "Letsgolilly.LillysRibombee_PollenPuff",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem":[
+                        {
+                            "Id": "{{ModId}}_RibombeeDoll",
+                            "ItemId": "{{ModId}}_RibombeeDoll",
+                            "CopyQuality": false,
+                            "CopyPrice": true,
+                            "PriceModifiers": 
+                                    [
+                                        {
+                                        "Modification": "Multiply",
+                                        "Amount": 1.2
+                                        },
+                                        {
+                                        "Modification": "Add",
+                                        "Amount": 50
+                                        }
+                                    ]
+                        }
+                    ],
+                    "MinutesUntilReady": 300
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [ "(BC){{ModID}}_ShinyDollMaker", "OutputRules" ],
+            "Entries": {
+                "{{ModId}}_ShinyRibombeeDollMaker": {
+                    "Id": "{{ModId}}_ShinyRibombeeDoll",
+                    "Triggers":
+                    [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "{{ModId}}_RibombeeDoll",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem":[
+                        {
+                            "Id": "{{ModId}}_ShinyRibombeeDoll",
+                            "ItemId": "{{ModId}}_ShinyRibombeeDoll",
+                            "CopyQuality": false,
+                            "CopyPrice": true,
+                            "PriceModifiers": 
+                                    [
+                                        {
+                                        "Modification": "Multiply",
+                                        "Amount": 1.2
+                                        },
+                                        {
+                                        "Modification": "Add",
+                                        "Amount": 800
+                                        }
+                                    ]
+                        }
+                    ],
+                    "MinutesUntilReady": 600
+                }
+            }
+        },
+
+		//Furniture
+		{
+			"Action": "EditData",
+			"Target": "Data/Furniture",
+			"Entries": {
+				"{{ModId}}_RibombeeDollPlaceable": "{{ModId}}_RibombeeDollPlaceable/decor/1 1/1 1/1/1000/2/{{i18n:RibombeeDoll}}/7/TileSheets\\{{ModId}}_Skitty_big_stuff/true/",
+				"{{ModId}}_ShinyRibombeeDollPlaceable": "{{ModId}}_ShinyRibombeeDollPlaceable/decor/1 1/1 1/1/1000/2/{{i18n:ShinyRibombeeDoll}}/15/TileSheets\\{{ModId}}_Skitty_big_stuff/true/"
+			}
+		},
+			//Trades AnimalShop
+			{
+                "Action": "EditData",
+                "Target": "Data/Shops",
+                "TargetField": [ "AnimalShop", "Items"],
+                "Entries": {
+                "{{ModId}}_RibombeeDollPlaceable": {
+                    "Id": "{{ModId}}_RibombeeDollPlaceable",
+                    "ItemId": "{{ModId}}_RibombeeDollPlaceable",
+                    "TradeItemId":  "{{ModId}}_RibombeeDoll",
+                    "TradeItemAmount": 1
+                },
+				"{{ModId}}_ShinyRibombeeDollPlaceable": {
+					"Id": "{{ModId}}_ShinyRibombeeDollPlaceable",
+					"ItemId": "{{ModId}}_ShinyRibombeeDollPlaceable",
+					"TradeItemId":  "{{ModId}}_ShinyRibombeeDoll",
+					"TradeItemAmount": 1
+				}
+            }
+        },
+        				//Gift Tastes
+				{
+					"Action": "EditData",
+					"Target": "Data/NPCGiftTastes",
+					"LogName": "Gift tastes: Jas",
+					"TextOperations": [
+					  //Love
+					  {
+						"Operation": "Append",
+						"Target": [
+						  "Fields",
+						  "Jas",
+						  1
+						],
+						"Value": "{{ModId}}_RibombeeDoll {{ModId}}_ShinyRibombeeDoll",
+						"Delimiter": " "
+					}
+					]
+				}
+    ]
+}                

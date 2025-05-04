@@ -1,0 +1,39 @@
+{
+	"Format": "2.1.0",
+	"Changes": [
+		{
+            "Action": "EditData",
+            "Target": "Data/AdditionalWallpaperFlooring",
+            "Entries": {
+                "{{ModId}}_Flooring": {
+                    "ID": "{{ModId}}_Flooring",
+                    "Texture": "Mods/GudeFloors",
+                    "IsFlooring": true,
+                    "Count": 14
+                }
+            }
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/AdditionalWallpaperFlooring",
+            "Entries": {
+                "{{ModId}}_Wallpaper": {
+                    "ID": "{{ModId}}_Wallpaper",
+                    "Texture": "Mods/GudeWalls",
+                    "IsFlooring": false,
+                    "Count": 32
+                }
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/GudeFloors",
+            "FromFile": "assets/flooring.png",	
+        },
+		 {
+            "Action": "Load",
+            "Target": "Mods/GudeWalls",
+            "FromFile": "assets/wallpaper.png"
+        }
+    ]
+}

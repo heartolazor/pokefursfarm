@@ -1,0 +1,22 @@
+{
+    "Changes": [
+
+        //Invitation
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "1711937101/Friendship Silverinnia.Elian 2500/Weather sunny/Time 600 1100/Dating Silverinnia.Elian":"continue/64 15/farmer 64 16 2 Silverinnia.Elian 64 18 0/skippable/pause 1500/speak Silverinnia.Elian \"{{i18n:ten_heart_one.1}}\"/pause 1000/end"
+            }
+        },
+
+        //Actual Event//
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/BusStop",
+            "Entries": {
+                "1711937102/SawEvent 1711937101/Weather sunny/Time 1200 1700": "continue/-1000 -1000/farmer 22 19 0 Silverinnia.Elian 23 10 2 Alex 22 13 0 Penny 19 11 1 Pam 20 10 2/viewport 22 11 clamp true/setSkipActions AddMail Current {{ModId}}_Tulip tomorrow/skippable/move farmer 0 -4 0 true/move Alex 0 -4 0 true/proceedPosition Alex/playSound thudStep/warp Alex -100 -100/move farmer 0 -1 0/move Silverinnia.Elian 0 1 2/speak Silverinnia.Elian \"{{i18n:ten_heart_two.1}}\"/move Pam 2 0 0/move Pam 0 -1 0/warp Pam -500 -500/playSound thudStep/move Penny 3 0 0/move Penny 0 -2 0/faceDirection Silverinnia.Elian 3 true/playSound thudStep/warp Penny -500 -500/move farmer 0 -4 0 true/globalFade/viewport -1000 -1000/stopMusic/pause 800/playSound busDriveOff/pause 5000/changeToTemporaryMap {{ModId}}_Greenhouse_Date/viewport -1000 -1000/warp Silverinnia.Elian 7 11/faceDirection Silverinnia.Elian 3/positionOffset Silverinnia.Elian -25 0/warp farmer 6 11/faceDirection farmer 1/positionOffset farmer -25 15/playMusic kindadumbautumn/pause 500/fade/viewport 6 9/pause 500/speak Silverinnia.Elian \"{{i18n:ten_heart_two.2}}\"/pause 300/emote farmer 56/pause 500/speak Silverinnia.Elian \"{{i18n:ten_heart_two.3}}\"/pause 300/emote Silverinnia.Elian 28/pause 500/speak Silverinnia.Elian \"{{i18n:ten_heart_two.4}}\"/pause 1000/speak Silverinnia.Elian \"{{i18n:ten_heart_two.5}}\"/pause 200/faceDirection Silverinnia.Elian 0/pause 50/faceDirection farmer 0/pause 300/faceDirection Silverinnia.Elian 3/pause 50/faceDirection farmer 1/pause 300/speak Silverinnia.Elian \"{{i18n:ten_heart_two.6}}\"/pause 300/quickQuestion #{{i18n:ten_heart_two.7}}#{{i18n:ten_heart_two.8}}(break)pause 100\\speak Silverinnia.Elian \"{{i18n:ten_heart_two.9}}\"(break)pause 100\\speak Silverinnia.Elian \"{{i18n:ten_heart_two.10}}\"/pause 1000/speak Silverinnia.Elian \"{{i18n:ten_heart_two.11}}\"/pause 700/emote Silverinnia.Elian 40/pause 2000/showFrame Silverinnia.Elian 29/pause 600/positionOffset Silverinnia.Elian -2 0/pause 100/positionOffset Silverinnia.Elian -2 0/pause 100/positionOffset Silverinnia.Elian -2 0/pause 100/positionOffset Silverinnia.Elian -2 0/pause 100/positionOffset Silverinnia.Elian -2 0/pause 100/positionOffset Silverinnia.Elian -2 0/pause 100/positionOffset Silverinnia.Elian -2 0/pause 100/positionOffset Silverinnia.Elian -2 0/pause 100/positionOffset Silverinnia.Elian -2 0/pause 100/positionOffset Silverinnia.Elian -2 0/pause 100/positionOffset Silverinnia.Elian -2 0/pause 100/positionOffset Silverinnia.Elian -2 0/pause 100/showFrame 101/pause 2000/viewport move 0 -1 10000 true/pause 4000/globalFade/viewport -1000 -1000/action AddMail Current {{ModId}}_Tulip tomorrow/end dialogue Silverinnia.Elian \"{{i18n:ten_heart_two.12}}\"/"
+            }
+        }
+    ]
+}

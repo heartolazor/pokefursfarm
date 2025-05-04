@@ -1,0 +1,202 @@
+{
+    "Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": {
+				"(BC)nachonline.mps_SteelTapper": {
+					"OutputRules": [
+						{
+							"Id": "nachonline.mps_SteelTapperProduce",
+							"Triggers": [
+								{
+									"Trigger": "DayUpdate, MachinePutDown, OutputCollected"
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "Default",
+									"OutputMethod": "Selph.StardewMods.MachineTerrainFramework.Utils, CustomTapperFramework: OutputTapper",
+									"StackModifiers": [
+										{
+											"Id": "100ItemsForaged",
+											"Condition": "PLAYER_STAT Current itemsForaged 100",
+											"Modification": "Add",
+											"Amount": "{{S.T 100 Items Foraged Bonus}}"
+										},
+										{
+											"Id": "300ItemsForaged",
+											"Condition": "PLAYER_STAT Current itemsForaged 300",
+											"Modification": "Add",
+											"Amount": "{{S.T 300 Items Foraged Bonus}}"
+										},
+										{
+											"Id": "500ItemsForaged",
+											"Condition": "PLAYER_STAT Current itemsForaged 500",
+											"Modification": "Add",
+											"Amount": "{{S.T 500 Items Foraged Bonus}}"
+										}
+									],
+									"StackModifierMode": "Stack"
+								}
+							]
+						}
+					],
+					"ReadyTimeModifiers": [
+						{
+							"Modification": "Multiply",
+							"Amount": "{{S.T Production Time Reduction}}"
+						}
+					],
+					"ReadyTimeModifierMode": "Stack",
+					"HasOutput": true,
+					"AllowFairyDust": true
+				},
+				"(BC)nachonline.mps_GoldTapper": {
+					"OutputRules": [
+						{
+							"Id": "nachonline.mps_GoldTapperProduce",
+							"Triggers": [
+								{
+									"Trigger": "DayUpdate, MachinePutDown, OutputCollected"
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "Default",
+									"OutputMethod": "Selph.StardewMods.MachineTerrainFramework.Utils, CustomTapperFramework: OutputTapper",
+									"StackModifiers": [
+										{
+											"Id": "100ItemsForaged",
+											"Condition": "PLAYER_STAT Current itemsForaged 100",
+											"Modification": "Add",
+											"Amount": "{{G.T 100 Items Foraged Bonus}}"
+										},
+										{
+											"Id": "300ItemsForaged",
+											"Condition": "PLAYER_STAT Current itemsForaged 300",
+											"Modification": "Add",
+											"Amount": "{{G.T 300 Items Foraged Bonus}}"
+										},
+										{
+											"Id": "500ItemsForaged",
+											"Condition": "PLAYER_STAT Current itemsForaged 500",
+											"Modification": "Add",
+											"Amount": "{{G.T 500 Items Foraged Bonus}}"
+										}
+									],
+									"StackModifierMode": "Stack"
+								}
+							]
+						}
+					],
+					"ReadyTimeModifiers": [
+						{
+							"Modification": "Multiply",
+							"Amount": "{{G.T Production Time Reduction}}"
+						}
+					],
+					"ReadyTimeModifierMode": "Stack",
+					"HasOutput": true,
+					"AllowFairyDust": true
+				},
+				"(BC)nachonline.mps_DiamondTapper": {
+					"OutputRules": [
+						{
+							"Id": "nachonline.mps_DiamondTapperProduce",
+							"Triggers": [
+								{
+									"Trigger": "DayUpdate, MachinePutDown, OutputCollected"
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "Default",
+									"OutputMethod": "Selph.StardewMods.MachineTerrainFramework.Utils, CustomTapperFramework: OutputTapper",
+									"StackModifiers": [
+										{
+											"Id": "100ItemsForaged",
+											"Condition": "PLAYER_STAT Current itemsForaged 100",
+											"Modification": "Add",
+											"Amount": "{{D.T 100 Items Foraged Bonus}}"
+										},
+										{
+											"Id": "300ItemsForaged",
+											"Condition": "PLAYER_STAT Current itemsForaged 300",
+											"Modification": "Add",
+											"Amount": "{{D.T 300 Items Foraged Bonus}}"
+										},
+										{
+											"Id": "500ItemsForaged",
+											"Condition": "PLAYER_STAT Current itemsForaged 500",
+											"Modification": "Add",
+											"Amount": "{{D.T 500 Items Foraged Bonus}}"
+										}
+									],
+									"StackModifierMode": "Stack"
+								}
+							]
+						}
+					],
+					"ReadyTimeModifiers": [
+						{
+							"Modification": "Multiply",
+							"Amount": "{{D.T Production Time Reduction}}"
+						}
+					],
+					"ReadyTimeModifierMode": "Stack",
+					"HasOutput": true,
+					"AllowFairyDust": true
+				},
+				"(BC)nachonline.mps_IridiumTapper": {
+					"OutputRules": [
+						{
+							"Id": "nachonline.mps_IridiumTapperProduce",
+							"Triggers": [
+								{
+									"Trigger": "DayUpdate, MachinePutDown, OutputCollected"
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "Default",
+									"OutputMethod": "Selph.StardewMods.MachineTerrainFramework.Utils, CustomTapperFramework: OutputTapper",
+									"StackModifiers": [
+										{
+											"Id": "100ItemsForaged",
+											"Condition": "PLAYER_STAT Current itemsForaged 100",
+											"Modification": "Add",
+											"Amount": "{{I.T 100 Items Foraged Bonus}}"
+										},
+										{
+											"Id": "300ItemsForaged",
+											"Condition": "PLAYER_STAT Current itemsForaged 300",
+											"Modification": "Add",
+											"Amount": "{{I.T 300 Items Foraged Bonus}}"
+										},
+										{
+											"Id": "500ItemsForaged",
+											"Condition": "PLAYER_STAT Current itemsForaged 500",
+											"Modification": "Add",
+											"Amount": "{{I.T 500 Items Foraged Bonus}}"
+										}
+									],
+									"StackModifierMode": "Stack"
+								}
+							]
+						}
+					],
+					"ReadyTimeModifiers": [
+						{
+							"Modification": "Multiply",
+							"Amount": "{{I.T Production Time Reduction}}"
+						}
+					],
+					"ReadyTimeModifierMode": "Stack",
+					"HasOutput": true,
+					"AllowFairyDust": true
+				}
+			}
+		}
+	] 
+}

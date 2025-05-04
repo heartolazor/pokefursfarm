@@ -1,0 +1,31 @@
+{
+    "Changes": [
+
+        //Part One - Elian finds flower pot//
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/{{ModId}}_Cave",
+            "Entries": {
+                "1711937041/SawEvent 171193702/Friendship Silverinnia.Elian 1000/Time 600 2200":"sadpiano/6 7/farmer -500 -500 0 Silverinnia.Elian 8 9 3/addBigProp 7 9 62/setSkipActions addQuest 171191600/skippable/pause 300/emote Silverinnia.Elian 56/pause 300/warp farmer 8 13/pause 150/move farmer 0 -3 0/faceDirection Silverinnia.Elian 2/pause 400/speak Silverinnia.Elian \"{{i18n:four_heart_one.1}}\"/pause 1000/speak Silverinnia.Elian \"{{i18n:four_heart_one.2}}\"/pause 150/speak Silverinnia.Elian \"{{i18n:four_heart_one.3}}\"/pause 150/speak Silverinnia.Elian \"{{i18n:four_heart_one.4}}\"/pause 150/speak Silverinnia.Elian \"{{i18n:four_heart_one.5}}\"/pause 150/speak Silverinnia.Elian \"{{i18n:four_heart_one.6}}\"/pause 150/speak Silverinnia.Elian \"{{i18n:four_heart_one.7}}\"/pause 150/speak Silverinnia.Elian \"{{i18n:four_heart_one.8}}\"/pause 150/speak Silverinnia.Elian \"{{i18n:four_heart_one.9}}\"/pause 150/speak Silverinnia.Elian \"{{i18n:four_heart_one.10}}\"/pause 150/speak Silverinnia.Elian \"{{i18n:four_heart_one.11}}\"/pause 300/emote Silverinnia.Elian 16/pause 300/speak Silverinnia.Elian \"{{i18n:four_heart_one.12}}\"/pause 300/faceDirection Silverinnia.Elian 3/pause 1000/speak Silverinnia.Elian \"{{i18n:four_heart_one.13}}\"/pause 1000/speak Silverinnia.Elian \"{{i18n:four_heart_one.14}}\"/pause 300/quickQuestion #{{i18n:four_heart_one.15}}#{{i18n:four_heart_one.16}}(break)friendship Silverinnia.Elian 100\\pause 500\\speak Silverinnia.Elian \"{{i18n:four_heart_one.17}}\"(break)pause 500\\speak Silverinnia.Elian \"{{i18n:four_heart_one.18}}\"/pause 2000/speak Silverinnia.Elian \"{{i18n:four_heart_one.19}}\"/pause 1000/speak Silverinnia.Elian \"{{i18n:four_heart_one.20}}\"/pause 1000/globalFade/viewport -1000 -1000/addQuest 171191600/end"
+            }
+        },
+
+        //Part Two - Deliver poppy seeds//
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/{{ModId}}_Cave",
+            "Entries": {
+                "1711937042/SawEvent 1711937041/HasItem (O)453":"sadpiano/6 7/farmer 8 13 0 Silverinnia.Elian 9 10 1/removeItem (O)453/removeQuest 171191600/addConversationTopic Poppy1 0/pause 300/faceDirection Silverinnia.Elian 2/pause 150/emote Silverinnia.Elian 8/pause 300/move farmer 0 -2 0/move Silverinnia.Elian -1 0 2/pause 500/faceDirection farmer 1/pause 150/showFrame 35/addObject 9 11 (O)453/playSound cancel/pause 800/stopAnimation farmer/pause 400/faceDirection farmer 0/pause 500/speak Silverinnia.Elian \"{{i18n:four_heart_two.1}}\"/pause 300/emote farmer 32/pause 500/speak Silverinnia.Elian \"{{i18n:four_heart_two.2}}\"/pause 1000/globalFade/viewport -1000 -1000/end"
+            }
+        },
+
+        //Part Three - Poppy fully grown//
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/{{ModId}}_Cave",
+            "Entries": {
+                "1711937043/SawEvent 171191605/Time 600 2200":"kindadumbautumn/6 7/farmer 8 13 0 Silverinnia.Elian 10 9 2/skippable/playSound wateringCan/animate Silverinnia.Elian false true 120 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16/pause 150/move farmer 0 -3 0/move farmer 1 0 1/pause 300/stopAnimation Silverinnia.Elian/pause 500/speak Silverinnia.Elian \"{{i18n:four_heart_three.1}}\"/pause 150/quickQuestion #{{i18n:four_heart_three.2}}#{{i18n:four_heart_three.3}}(break)pause 300\\speak Silverinnia.Elian \"{{i18n:four_heart_three.4}}\"(break)pause 300\\speak Silverinnia.Elian \"{{i18n:four_heart_three.5}}\"/pause 500/speak Silverinnia.Elian \"{{i18n:four_heart_three.6}}\"/pause 1000/speak Silverinnia.Elian \"{{i18n:four_heart_three.7}}\"/pause 150/animate farmer false true 150 86 87 88/pause 500/emote Silverinnia.Elian 60/pause 1000/emote Silverinnia.Elian 32/pause 1000/globalFade/viewport -1000 -1000/end"
+            }
+        }
+    ]
+}

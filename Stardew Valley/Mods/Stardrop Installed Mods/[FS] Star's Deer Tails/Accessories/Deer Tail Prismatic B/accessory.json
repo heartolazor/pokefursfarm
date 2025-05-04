@@ -1,0 +1,108 @@
+﻿{
+    "Name": "Deer Tail Prismatic B",
+
+
+    // Left
+    "LeftAccessory": {
+        "HideWhileSwimming": true,
+        "IsPrismatic": true,
+        "PrismaticAnimationSpeedMultiplier": 1.0,
+        "DrawAfterPlayer": false,
+        "DrawBeforeHair": true,
+        "Flipped": false,
+        "StartingPosition": {
+            "X": 4,
+            "Y": 47
+        },
+        "HeadPosition": {
+            "X": 0,
+            "Y": -14
+        },
+        "AccessorySize": {
+            "Width": 32,
+            "Length": 32
+        },
+        "ColorMaskLayers": [
+            {
+                "Name": "Top",
+                "IgnoreUserColorChoice": false,
+                "Values": [
+                    [ 203, 198, 192 ]
+
+                ]
+            },
+            {
+                "Name": "Bottom (Non-Colorable)",
+                "IgnoreUserColorChoice": true,
+                "Values": [
+                    [ 52, 52, 52 ],
+                    [ 41, 41, 41 ],
+                    [ 29, 29, 29 ]
+
+                ]
+            }
+        ]
+    },
+
+    // Back
+    "BackAccessory": {
+        "HideWhileSwimming": true,
+        "DisableGrayscale": true,
+        "DrawAfterPlayer": true,
+        "DrawBeforeHair": false,
+        "StartingPosition": {
+            "X": 9,
+            "Y": -5
+        },
+        "HeadPosition": {
+            "X": 0,
+            "Y": 0
+        },
+        "AccessorySize": {
+            "Width": 32,
+            "Length": 32
+        }
+    },
+
+    // Right
+    "RightAccessory": {
+        "HideWhileSwimming": true,
+        "IsPrismatic": true,
+        "PrismaticAnimationSpeedMultiplier": 1.0,
+        "DrawAfterPlayer": false,
+        "DrawBeforeHair": true,
+        "Flipped": true,
+        "StartingPosition": {
+            "X": -7,
+            "Y": 33
+        },
+        "HeadPosition": {
+            "X": 5,
+            "Y": 0
+        },
+        "AccessorySize": {
+            "Width": 32,
+            "Length": 32
+        },
+        "ColorMaskLayers": [
+            {
+                "Name": "Top",
+                "IgnoreUserColorChoice": false,
+                "Values": [
+                    [ 203, 198, 192 ]
+
+                ]
+            },
+            {
+                "Name": "Bottom (Non-Colorable)",
+                "IgnoreUserColorChoice": true,
+                "Values": [
+                    [ 52, 52, 52 ],
+                    [ 41, 41, 41 ],
+                    [ 29, 29, 29 ]
+
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,99 @@
+{
+    "Changes": [
+        {
+            "LogName": "Crops textures",
+            "Action": "Load",
+            "Target": "Mods/otohime.AV/Crops",
+            "FromFile": "assets/Objects/Crops.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "{{ModId}}_Urn_Plant_Seeds": {
+                    "Seasons": [
+                        "Spring",
+                        "Summer"
+                    ],
+                    "DaysInPhase": [
+                        2,
+                        3,
+                        5,
+                        10
+                    ],
+                    "RegrowDays": -1,
+                    "IsRaised": false,
+                    "IsPaddyCrop": false,
+                    "PlantableLocationRules": null,
+                    "HarvestItemId": "{{ModId}}_Urn_Plant",
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 1,
+                    "HarvestMaxIncreasePerFarmingLevel": 0.0,
+                    "ExtraHarvestChance": 0.0,
+                    "HarvestMethod": "Grab",
+                    "HarvestMinQuality": 0,
+                    "HarvestMaxQuality": null,
+                    "TintColors": [],
+                    "Texture": "Mods\\otohime.AV\\Crops",
+                    "SpriteIndex": 0,
+                    "CustomFields": {}
+                },
+                "{{ModId}}_Rose_Grape_Seeds": {
+                    "Seasons": [
+                        "Spring",
+                    ],
+                    "DaysInPhase": [
+                        2,
+                        2,
+                        2,
+                        4,
+                        5
+                    ],
+                    "RegrowDays": 10,
+                    "IsRaised": true,
+                    "IsPaddyCrop": false,
+                    "PlantableLocationRules": null,
+                    "HarvestItemId": "{{ModId}}_Rose_Grape",
+                    "HarvestMinStack": 3,
+                    "HarvestMaxStack": 3,
+                    "HarvestMaxIncreasePerFarmingLevel": 0.0,
+                    "ExtraHarvestChance": 0.0,
+                    "HarvestMinQuality": 0,
+                    "HarvestMaxQuality": null,
+                    "TintColors": [],
+                    "Texture": "Mods\\otohime.AV\\Crops",
+                    "SpriteIndex": 1,
+                    "CustomFields": {}
+                },
+                "{{ModId}}_Flamingo_Flower_Seeds": {
+                    "Seasons": [
+                        "Spring",
+                        "Summer"
+                    ],
+                    "DaysInPhase": [
+                        2,
+                        3,
+                        4,
+                        5
+                    ],
+                    "RegrowDays": 5,
+                    "IsRaised": false,
+                    "IsPaddyCrop": false,
+                    "PlantableLocationRules": null,
+                    "HarvestItemId": "{{ModId}}_Flamingo_Flower",
+                    "HarvestMinStack": 3,
+                    "HarvestMaxStack": 5,
+                    "HarvestMaxIncreasePerFarmingLevel": 0.0,
+                    "ExtraHarvestChance": 0.0,
+                    "HarvestMethod": "Grab",
+                    "HarvestMinQuality": 0,
+                    "HarvestMaxQuality": null,
+                    "TintColors": [],
+                    "Texture": "Mods\\otohime.AV\\Crops",
+                    "SpriteIndex": 2,
+                    "CustomFields": {}
+                },
+            }
+        }
+    ]
+}

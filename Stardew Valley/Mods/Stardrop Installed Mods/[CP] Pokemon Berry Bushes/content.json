@@ -1,0 +1,30 @@
+{
+	"Format": "2.0.0",
+		"ConfigSchema": {
+			"Enable Old Seed Sprites": {
+				"AllowValues": "true, false",
+				"Default": "false",
+				"Description": "Replaces the seed sprites with those from the initial versions of the mod, and alters the names to make them a little more accurate."
+			},
+		},
+		"Changes": [
+		{
+			"Action": "Load",
+			"Target": "TntDove.PBB/objects, TntDove.PBB/crops, TntDove.PBB/giantcrops",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "data/shop_pierre.json, data/shop_oasis.json, data/shop_islandtrader.json, data/shop_travelingcart.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "data/objects.json, data/crops.json, data/giantcrops.json, data/objectreplacements.json, data/recipes.json, data/machines.json"
+		},
+		{
+			"Action": "Include",
+			//"When": {"HasMod |contains=spacechase0.SpaceCore": true},
+			"FromFile": "data/objectcategories.json",
+		},
+	],
+}

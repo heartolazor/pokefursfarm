@@ -1,0 +1,175 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "{{ModId}}.Buizel": {
+          "DisplayName": "{{i18n: Animal.Buizel.Name}}",
+          "House": "{{PokemonOttersHouse}}",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "SellPrice": 8000,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 0,
+            "Height": 0
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": "{{PokemonOttersBuilding}}",
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "{{i18n: Animal.Floatzel.BirthText}}",
+          "DaysToMature": 10,
+          "CanGetPregnant": true,
+          "DaysToProduce": 1,
+          "HarvestType": "DigUp",
+          "HarvestTool": null,
+          "ProduceItemIds": [
+            {
+              "Id": "{{ModId}}.Crayfish",
+              "Condition": null,
+              "MinimumFriendship": 0,
+              "ItemId": "716" 
+            },
+            {
+              "Id": "{{ModId}}.MidnightCarp",
+              "Condition": "RANDOM 0.7",
+              "MinimumFriendship": 400,
+              "ItemId": "269" 
+            },
+            {
+              "Id": "{{ModId}}.TigerTrout",
+              "Condition": "RANDOM 0.6",
+              "MinimumFriendship": 600,
+              "ItemId": "699" 
+            },
+            {
+              "Id": "{{ModId}}.Sturgeon",
+              "Condition": "RANDOM 0.5",
+              "MinimumFriendship": 800,
+              "ItemId": "698" 
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{ModId}}.FairyDust",
+              "Condition": null,
+              "MinimumFriendship": 0,
+              "ItemId": "872" 
+            }
+          ],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": "{{DeluxeProduceCareDivisorChoice}}",
+          "DeluxeProduceLuckMultiplier": 0.0,
+          "ProfessionForHappinessBoost": 3,
+          "ProfessionForQualityBoost": 3,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "BuizelCry",
+          "BabySound": "BuizelCry",
+
+          "Texture": "{{ModId}}/Buizel",
+          "HarvestedTexture": null,
+          "BabyTexture": "{{ModId}}/Buizel",
+
+          "UseFlippedRightForLeft": true,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "Skins": null,
+          "SleepFrame": 55,
+          "UseDoubleUniqueAnimationFrames": true,
+          "ShadowWhenBabySwims": {
+            "Visible": false
+          },
+          "ShadowWhenBaby": {
+            "Visible": false
+          },
+          "ShadowWhenAdultSwims": {
+            "Visible": false
+          },
+          "ShadowWhenAdult": {
+            "Visible": false
+          },
+          "CanSwim": true,
+          "SwimOffset": {
+            "X": 0,
+            "Y": 224
+          },
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 4,
+          "HappinessDrain": 5,
+          "UpDownPetHitboxTileSize": "1, 1.25",
+          "LeftRightPetHitboxTileSize": "1, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.25",
+          "BabyLeftRightPetHitboxTileSize": "1, 1.25",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": true,
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "TargetField": ["{{ModId}}.Buizel", "DeluxeProduceItemIds"],
+      "Entries": {
+        "{{ModId}}.RockCandy": {
+          "Id": "{{ModId}}.RockCandy",
+          "Condition": null,
+          "MinimumFriendship": 1000,
+          "ItemId": "279"
+        }
+      },
+      "When": {
+				"DeluxeProduceFloatzel": true
+			}
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "TargetField": ["{{ModId}}.Buizel", "ProduceItemIds"],
+      "Entries": {
+        "{{ModId}}.Poliwag": {
+          "Id": "{{ModId}}.Poliwag",
+          "Condition": null,
+          "MinimumFriendship": 0,
+          "ItemId": "otohime.pokemonfish_Poliwag" 
+        }
+      },
+      "When": {
+        "HasMod": "otohime.pokemonfish",
+        "UsePokemonFish": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "TargetField": ["{{ModId}}.Buizel", "ProduceItemIds"],
+      "Entries": {
+        "{{ModId}}.Barboach": {
+          "Id": "{{ModId}}.Barboach",
+          "Condition": "RANDOM 0.8",
+          "MinimumFriendship": 200,
+          "ItemId": "otohime.pokemonfish_Barboach" 
+        }
+      },
+      "When": {
+        "HasMod": "otohime.pokemonfish",
+        "UsePokemonFish": true
+      }
+    }
+  ]
+}

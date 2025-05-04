@@ -1,0 +1,933 @@
+{
+  "Changes": [
+    //deny movie
+    {
+      "Action": "EditData",
+      "Target": "Strings/Characters",
+      "Entries": {
+        "MovieInvite_CantInvite_Callum": "¿Eh? ¿Una película? Oh, @... Lo siento mucho... No puedo.",
+        "MovieInvite_CantInvite_David": "¿Una película, eh? Lo siento, @, no puedo acompañarte. Me voy de expedición...",
+        "MovieInvite_CantInvite_Kristoff": "Hmm? ¿Una película?  Lo siento, @, pero realmente no puedo. Estoy muy ocupado trabajando. Lo lamento",
+        "MovieInvite_CantInvite_Gwen": "Mmm.. ¿Una película? ¿Tú quieres ir a ver una película...? lo siento, @... No creo que pueda ir.",
+        "MovieInvite_CantInvite_Sadie": "¿Eh? ¿Quieres ir al cine?#$b#Me encantaría, pero tengo un vuelo reservado para entonces, lo siento.$s",
+        "MovieInvite_CantInvite_Buddy": "¿Quieres ir a ver una película juntos? Umm... nah. Estoy ocupado.$u",
+        "MovieInvite_CantInvite_Selena": "¿Una película? Lo siento, @, tengo otros compromisos... Quizás otro día.",
+        "MovieInvite_CantInvite_Hazel": "No puedo en este momento, @. ¡Lo siento!.",
+        "MovieInvite_CantInvite_Max": "lo lamento @. no puedo.",
+        "MovieInvite_CantInvite_Giovanni": "Ehhh...#$b#Nah.$h"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "{{ModId}}_Callum": {
+          "DisplayName": "Cal",
+          "Language": "Default",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Shy",
+          "Optimism": "Neutral",
+
+          "BirthSeason": "fall",
+          "BirthDay": 27,
+          "HomeRegion": "Other",
+          "IsDarkSkinned": false,
+
+          "CanSocialize": "TRUE",
+          "CanBeRomanced": true,
+          "CanReceiveGifts": true,
+
+          "CanCommentOnPurchaseShopItems": false,
+          "CanGreetNearbyCharacters": true,
+          "CanVisitIsland": false,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "UnknownUntilMet",
+          "SpouseGiftJealousy": "FALSE",
+          "SpouseRoom": {"MapAsset": "Custom_DTZ_CalRoom"},
+          "EndSlideShow": "TrailingGroup",
+          "FriendsAndFamily": {
+            "{{ModId}}_Gwen": "friend",
+            "{{ModId}}_Sadie": "friend",
+            "{{ModId}}_David": "friend",
+            "{{ModId}}_Buddy": "friend"
+          },
+
+          "DumpsterDiveEmote": 8,
+          "Home": [
+            {
+              "ID": "{{ModId}}_CalSpawn1",
+              "Location": "Custom_DTZ_Apartment1a",
+              "Tile": { "X": 20, "Y": 5},
+              "Direction": "down"
+            }
+          ],
+
+          "TextureName": "Callum",
+          "FormerCharacterNames": [ "Callum" ]
+        },
+
+        "{{ModId}}_David": {
+          "DisplayName": "David",
+          "Language": "Default",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+
+          "BirthSeason": "winter",
+          "BirthDay": 9,
+          "HomeRegion": "Other",
+          "IsDarkSkinned": false,
+
+          "CanSocialize": "TRUE",
+          "CanBeRomanced": true,
+          "CanReceiveGifts": true,
+
+          "CanCommentOnPurchaseShopItems": false,
+          "CanGreetNearbyCharacters": true,
+          "CanVisitIsland": false,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "UnknownUntilMet",
+          "SpouseGiftJealousy": "TRUE",
+          "SpouseRoom": {"MapAsset": "Custom_DTZ_DavidRoom"},
+          "EndSlideShow": "TrailingGroup",
+          "FriendsAndFamily": {
+            "{{ModId}}_Sadie": "friend",
+            "{{ModId}}_Callum": "friend"
+          },
+
+          "DumpsterDiveEmote": 12,
+          "Home": [
+            {
+              "ID": "{{ModId}}_DavidSpawn1",
+              "Location": "Custom_DTZ_DavidRoom",
+              "Tile": { "X": 1, "Y": 14},
+              "Direction": "down"
+            }
+          ],
+
+          "TextureName": "David",
+          "FormerCharacterNames": [ "David" ]
+        },
+
+      "{{ModId}}_Gwen": {
+        "DisplayName": "Gwen",
+        "Language": "Default",
+        "Gender": "Female",
+        "Age": "Teen",
+        "Manner": "Polite",
+        "SocialAnxiety": "Shy",
+        "Optimism": "Negative",
+
+        "BirthSeason": "fall",
+        "BirthDay": 20,
+        "HomeRegion": "Other",
+        "IsDarkSkinned": false,
+
+        "CanSocialize": "TRUE",
+        "CanBeRomanced": true,
+        "CanReceiveGifts": true,
+
+        "CanCommentOnPurchaseShopItems": false,
+        "CanGreetNearbyCharacters": true,
+        "CanVisitIsland": false,
+        "Calendar": "HiddenUntilMet",
+        "SocialTab": "UnknownUntilMet",
+        "SpouseGiftJealousy": "TRUE",
+        "SpouseRoom": {"MapAsset": "Custom_DTZ_GwenRoom"},
+        "EndSlideShow": "TrailingGroup",
+        "FriendsAndFamily": {
+          "{{ModId}}_Callum": "friend",
+          "{{ModId}}_Sadie": "friend",
+          "{{ModId}}_Buddy": "friend",
+          "{{ModId}}_Selena": "friend"
+        },
+
+        "DumpsterDiveEmote": 8,
+        "Home": [
+          {
+            "ID": "{{ModId}}_GwenSpawn1",
+            "Location": "Custom_DTZ_Apartment1a",
+            "Tile": { "X": 6, "Y": 5},
+            "Direction": "down"
+          }
+        ],
+
+        "TextureName": "Gwen",
+        "FormerCharacterNames": [ "Gwen" ]
+      },
+
+      "{{ModId}}_Kristoff": {
+        "DisplayName": "Kristoff",
+        "Language": "Default",
+        "Gender": "Male",
+        "Age": "Adult",
+        "Manner": "Rude",
+        "SocialAnxiety": "Neutral",
+        "Optimism": "Neutral",
+
+        "BirthSeason": "summer",
+        "BirthDay": 25,
+        "HomeRegion": "Other",
+        "IsDarkSkinned": false,
+
+        "CanSocialize": "TRUE",
+        "CanBeRomanced": true,
+        "CanReceiveGifts": true,
+
+        "CanCommentOnPurchaseShopItems": false,
+        "CanGreetNearbyCharacters": true,
+        "CanVisitIsland": false,
+        "Calendar": "HiddenUntilMet",
+        "SocialTab": "UnknownUntilMet",
+        "SpouseGiftJealousy": "TRUE",
+        "SpouseRoom": {"MapAsset": "Custom_DTZ_KristoffRoom"},
+        "EndSlideShow": "TrailingGroup",
+        "FriendsAndFamily": {
+          "{{ModId}}_Max": "assistant"
+        },
+
+        "DumpsterDiveEmote": 12,
+        "Home": [
+          {
+            "ID": "{{ModId}}_KristoffSpawn1",
+            "Location": "Custom_DTZ_JojaCEO",
+            "Tile": { "X": 4, "Y": 4},
+            "Direction": "down"
+          }
+        ],
+
+        "TextureName": "Kristoff",
+        "FormerCharacterNames": [ "Kristoff" ]
+      },
+
+      "{{ModId}}_Sadie": {
+        "DisplayName": "Sadie",
+        "Language": "Default",
+        "Gender": "Female",
+        "Age": "Adult",
+        "Manner": "Neutral",
+        "SocialAnxiety": "Outgoing",
+        "Optimism": "Positive",
+
+        "BirthSeason": "fall",
+        "BirthDay": 17,
+        "HomeRegion": "Other",
+        "IsDarkSkinned": false,
+
+        "CanSocialize": "TRUE",
+        "CanBeRomanced": true,
+        "CanReceiveGifts": true,
+
+        "CanCommentOnPurchaseShopItems": false,
+        "CanGreetNearbyCharacters": true,
+        "CanVisitIsland": false,
+        "Calendar": "HiddenUntilMet",
+        "SocialTab": "UnknownUntilMet",
+        "SpouseGiftJealousy": "TRUE",
+        "SpouseRoom": {"MapAsset": "Custom_DTZ_SadieRoom"},
+        "EndSlideShow": "TrailingGroup",
+        "FriendsAndFamily": {
+          "{{ModId}}_David": "friend",
+          "{{ModId}}_Selena": "friend",
+          "{{ModId}}_Buddy": "friend",
+          "{{ModId}}_Callum": "friend"
+        },
+
+        "DumpsterDiveEmote": 12,
+        "Home": [
+          {
+            "ID": "{{ModId}}_SadieSpawn1",
+            "Location": "Custom_DTZ_Apartment1c",
+            "Tile": { "X": 19, "Y": 18},
+            "Direction": "down"
+          }
+        ],
+
+        "TextureName": "Sadie",
+        "FormerCharacterNames": [ "Sadie" ]
+      },
+
+      "{{ModId}}_Buddy": {
+        "DisplayName": "Buddy",
+        "Language": "Default",
+        "Gender": "Male",
+        "Age": "Adult",
+        "Manner": "Rude",
+        "SocialAnxiety": "Shy",
+        "Optimism": "Neutral",
+
+        "BirthSeason": "spring",
+        "BirthDay": 3,
+        "HomeRegion": "Other",
+        "IsDarkSkinned": false,
+
+        "CanSocialize": "TRUE",
+        "CanBeRomanced": false,
+        "CanReceiveGifts": true,
+
+        "CanCommentOnPurchaseShopItems": false,
+        "CanGreetNearbyCharacters": true,
+        "CanVisitIsland": false,
+        "Calendar": "HiddenUntilMet",
+        "SocialTab": "UnknownUntilMet",
+        "SpouseGiftJealousy": "TRUE",
+        "EndSlideShow": "TrailingGroup",
+        "FriendsAndFamily": {
+          "{{ModId}}_Selena": "best friend",
+          "{{ModId}}_Sadie": "friend",
+          "{{ModId}}_Gwen": "friend",
+          "{{ModId}}_Callum": "friend"
+        },
+
+        "DumpsterDiveEmote": 12,
+        "Home": [
+          {
+            "ID": "{{ModId}}_BuddySpawn1",
+            "Location": "Custom_DTZ_Apartment1b",
+            "Tile": { "X": 7, "Y": 23},
+            "Direction": "down"
+          }
+        ],
+
+        "TextureName": "Buddy",
+        "FormerCharacterNames": [ "Buddy" ]
+      },
+
+      "{{ModId}}_Selena": {
+        "DisplayName": "Selena",
+        "Language": "Default",
+        "Gender": "Female",
+        "Age": "Adult",
+        "Manner": "Neutral",
+        "SocialAnxiety": "Neutral",
+        "Optimism": "Positive",
+
+        "BirthSeason": "spring",
+        "BirthDay": 4,
+        "HomeRegion": "Other",
+        "IsDarkSkinned": true,
+
+        "CanSocialize": "TRUE",
+        "CanBeRomanced": true,
+        "CanReceiveGifts": true,
+
+        "CanCommentOnPurchaseShopItems": false,
+        "CanGreetNearbyCharacters": true,
+        "CanVisitIsland": false,
+        "Calendar": "HiddenUntilMet",
+        "SocialTab": "UnknownUntilMet",
+        "SpouseGiftJealousy": "TRUE",
+        "SpouseRoom": {"MapAsset": "Custom_DTZ_SelenaRoom"},
+        "EndSlideShow": "TrailingGroup",
+        "FriendsAndFamily": {
+          "{{ModId}}_Callum": "friend",
+          "{{ModId}}_Sadie": "friend",
+          "{{ModId}}_Buddy": "best friend",
+          "{{ModId}}_Gwen": "friend"
+        },
+
+        "DumpsterDiveEmote": 8,
+        "Home": [
+          {
+            "ID": "{{ModId}}_SelenaSpawn1",
+            "Location": "Custom_DTZ_Apartment1b",
+            "Tile": { "X": 19, "Y": 23},
+            "Direction": "down"
+          }
+        ],
+
+        "TextureName": "Selena",
+        "FormerCharacterNames": [ "Selena" ]
+      },
+
+      "{{ModId}}_Max": {
+        "DisplayName": "Max",
+        "Language": "Default",
+        "Gender": "Male",
+        "Age": "Teen",
+        "Manner": "Neutral",
+        "SocialAnxiety": "Outgoing",
+        "Optimism": "Neutral",
+
+        "BirthSeason": "fall",
+        "BirthDay": 12,
+        "HomeRegion": "Other",
+        "IsDarkSkinned": false,
+
+        "CanSocialize": "TRUE",
+        "CanBeRomanced": false,
+        "CanReceiveGifts": true,
+
+        "CanCommentOnPurchaseShopItems": false,
+        "CanGreetNearbyCharacters": true,
+        "CanVisitIsland": false,
+        "Calendar": "HiddenUntilMet",
+        "SocialTab": "UnknownUntilMet",
+        "SpouseGiftJealousy": "TRUE",
+        "EndSlideShow": "TrailingGroup",
+        "FriendsAndFamily": {
+          "{{ModId}}_Kristoff": "boss"
+        },
+
+        "DumpsterDiveEmote": 8,
+        "Home": [
+          {
+            "ID": "{{ModId}}_MaxSpawn1",
+            "Location": "Custom_DTZ_MaxHouseUpstairs",
+            "Tile": { "X": 23, "Y": 20},
+            "Direction": "right"
+          }
+        ],
+
+        "TextureName": "Max"
+      },
+
+      "{{ModId}}_Hazel": {
+        "DisplayName": "Hazel",
+        "Language": "Default",
+        "Gender": "Female",
+        "Age": "Teen",
+        "Manner": "Neutral",
+        "SocialAnxiety": "Outgoing",
+        "Optimism": "Neutral",
+
+        "BirthSeason": "winter",
+        "BirthDay": 19,
+        "HomeRegion": "Other",
+        "IsDarkSkinned": false,
+
+        "CanSocialize": "TRUE",
+        "CanBeRomanced": false,
+        "CanReceiveGifts": true,
+
+        "CanCommentOnPurchaseShopItems": false,
+        "CanGreetNearbyCharacters": true,
+        "CanVisitIsland": false,
+        "Calendar": "HiddenUntilMet",
+        "SocialTab": "UnknownUntilMet",
+        "SpouseGiftJealousy": "TRUE",
+        "EndSlideShow": "TrailingGroup",
+        "FriendsAndFamily": {
+          "{{ModId}}_Giovanni": "Uncle",
+          "{{ModId}}_Callum": "friend",
+          "{{ModId}}_Sadie": "friend"
+        },
+
+        "DumpsterDiveEmote": 8,
+        "Home": [
+          {
+            "ID": "{{ModId}}_HazelSpawn1",
+            "Location": "Custom_DTZ_HazelHouse",
+            "Tile": { "X": 21, "Y": 21},
+            "Direction": "right"
+          }
+        ],
+
+        "TextureName": "Hazel"
+      },
+      "{{ModId}}_Bill": {
+        "DisplayName": "Bill",
+        "Language": "Default",
+        "Gender": "Male",
+        "Age": "Adult",
+        "Manner": "Neutral",
+        "SocialAnxiety": "Neutral",
+        "Optimism": "Neutral",
+        "HomeRegion": "Other",
+        "IsDarkSkinned": false,
+
+        "CanSocialize": "FALSE",
+        "CanBeRomanced": false,
+        "CanReceiveGifts": false,
+
+        "CanCommentOnPurchaseShopItems": false,
+        "CanGreetNearbyCharacters": true,
+        "CanVisitIsland": false,
+        "Calendar": "HiddenAlways",
+        "SocialTab": "HiddenAlways",
+        "SpouseGiftJealousy": "FALSE",
+        "EndSlideShow": "TrailingGroup",
+
+        "DumpsterDiveEmote": 12,
+        "Home": [
+          {
+            "ID": "{{ModId}}_BillSpawn1",
+            "Location": "Custom_DTZ_Builders",
+            "Tile": { "X": 7, "Y": 10},
+            "Direction": "down"
+          }
+        ],
+
+        "TextureName": "Bill"
+      },
+      "{{ModId}}_Giovanni": {
+        "DisplayName": "Gio",
+        "Language": "Default",
+        "Gender": "Male",
+        "Age": "Adult",
+        "Manner": "Rude",
+        "SocialAnxiety": "Outgoing",
+        "Optimism": "Neutral",
+
+        "BirthSeason": "spring",
+        "BirthDay": 2,
+        "HomeRegion": "Other",
+        "IsDarkSkinned": false,
+
+        "CanSocialize": "TRUE",
+        "CanBeRomanced": false,
+        "CanReceiveGifts": true,
+
+        "CanCommentOnPurchaseShopItems": false,
+        "CanGreetNearbyCharacters": true,
+        "CanVisitIsland": false,
+        "Calendar": "HiddenUntilMet",
+        "SocialTab": "UnknownUntilMet",
+        "SpouseGiftJealousy": "TRUE",
+        "EndSlideShow": "TrailingGroup",
+        "FriendsAndFamily": {
+          "{{ModId}}_Hazel": "Niece",
+          "{{ModId}}_David": "friend"
+        },
+
+        "DumpsterDiveEmote": 8,
+        "Home": [
+          {
+            "ID": "{{ModId}}_GioSpawn1",
+            "Location": "Custom_DTZ_GioRoom",
+            "Tile": { "X": 20, "Y": 19},
+            "Direction": "right"
+          }
+        ],
+
+        "TextureName": "Giovanni",
+      },
+    }
+      
+    
+    },
+    {
+      // Gift Tastes
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "{{ModId}}_Callum": "Oooh... por Yoba. @, ¡te amo! ¡ESTO ES INCREÍBLE!/-26 -27 74/Oh, ¡Oh, este es un maravilloso regalo, gracias!/-81 -4/Uy, ehh...¿Esto era para mí?/-2 -12/¡Ugh! ¿Por qué me diste esto, @? Pensé que éramos amigos.../330 416/Oh, un regalo. Gracias, @.//",
+        "{{ModId}}_David": "@...  está increíble! No sé qué decir, ¡Este regalo es precioso muchas gracias!/-2 -28/Esto me trae recuerdos muy lindos de mi infancia. Gracias @./-7/Ehm... gracias, ¿supongo?/-75/Te agradezco el detalle, @, pero para ser sincero no es lo que esperaba/190 25/Hmm... ¿un regalo? Gracias @.//",
+        "{{ModId}}_Kristoff": "¡No sé qué decir, @! Esto es increíble. Ni siquiera de mi equipo directivo hubiera esperado algo así. ¡Muchísimas gracias!/-2 148/ Ohh, ¿Un regalo? Vaya, @. ¡Te lo agradezco mucho!/-5 -26 -80/Um, @. Este regalo no es muy bueno. Espero algo mejor la próxima vez./-12 -81/¡Uy, qué horror No era lo que esperaba, @!/236 24 78/¿Un regalo, para mí? Gracias @.//",
+        "{{ModId}}_Gwen": "¿¡Eh?!¿D-de verdad es para mí? ¡Wow, muchísimas gracias!/575 215 410 708 308/¡¿Un regalo?! @, qué sorpresa tan agradable. ¡Muchas gracias!/422 769 395 -27 308/Ehm... ¿un regalo? Gracias, ¿supongo?/717 66 60 269/Y-yo... @, este regalo es... no lo quiero gracias..../239 18 88 90/@, ¿me trajiste un regalo? gracias.//",
+        "{{ModId}}_Sadie": "¿Qué es esto? ¿Un regalo? Que amable de tu parte, @./192 595 578 -27/¡Oh, un regalo! ¿Para mí? Gracias, @./-80 -25/Ehm... gracias./-4 -5 238 282/...mis suscriptores dan mejores regalos./-19 -20 -28 -18 -26/¡Hola, @! ¿Trajiste un regalo para mí? ¡Qué amable, gracias!//",
+        "{{ModId}}_Buddy": "¡Me encanta! Esto significa mucho para mí, @./348 232 829/¡Genial, muchas gracias!/-79 408 607 416/Uhg... está bien/167 404 257 422/¿Qué es esto?... ¿Acaso esto es una broma de mal gusto?/373 245 253 395 433 595/¿Un regalo? Genial./80 403 418 88 281 412/",
+        "{{ModId}}_Selena": "¡Wow! He estado buscando esto por todas partes, ¡muchísimas gracias!/124 215 238/¿Para mí? ¡Eres muy amable, @!/-2 121 122 123 125 410 96 97 98 99 100 119 548/Quizás haya potencial de investigación en esto.../-6 152/¿Qué te lleva a hacer pasar esto como un regalo? ¡Qué asco!/218 730 732 283/Eso es muy lindo de tu parte. Gracias.//",
+        "{{ModId}}_Max": "¡Vaya, @!! ¡Muchas gracias!/-2 148/Gracias, @. Esto es genial/-5 -26 -80/Oh.../-12 -81/¿Ew... para mí? ¿Es en serio?/236 24 78/Gracias, @. Es muy amable de tu parte.//",
+        "{{ModId}}_Hazel": "¡Oooh! ¡Muchas gracias, @!/-7/¿Esto es para mí? ¡Gracias @!/-27 -75 -81/Ehm... gracias.. creo.. /-12 {{ModId}}_MozzarellaSlice/¡Qué asco! ¿¡Qué rayos es esto?!/206 -12 -8/gracias Te lo agradezco mucho.//",
+        "{{ModId}}_Giovanni": "Eres muy amable, @. ¡Muchas gracias!/-7 424 206 {{ModId}}_MozzarellaSlice/¿Para mí? ¡wow, gracias, @!/-26 426/¿Qué es esto? emmmm, tal vez es agradable, @/-81 -4/¿Qué es esto? No quiero tu regalo.../-6 -5/Ahh @... gracias//"
+        
+      }
+    },
+
+    ///
+    /// Load Portraits, Sprites, Dialogue, etc...
+    ///
+
+    //cal's
+    {
+      "Action": "Load",
+      "Target": "Portraits/Callum",
+      "FromFile": "npc/Portraits/calPortraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Callum",
+      "FromFile": "npc/OverworldSprites/calSprites.png"
+    },
+
+    // (joja cal)
+    {
+      "Action": "Load",
+      "Target": "Characters/Callum_Custom_DTZ_JojaMini",
+      "FromFile": "npc/OverworldSprites/Callum_Custom_DTZ_JojaMini.png"
+    },
+    // (joja cal)
+    {
+      "Action": "Load",
+      "Target": "Portraits/Callum_Custom_DTZ_JojaMini",
+      "FromFile": "npc/Portraits/Callum_Custom_DTZ_JojaMini.png"
+    },
+    //before quit dialogue
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_Callum",
+      "FromFile": "npc/Dialogue/calDialogue.json",
+      "When": {
+        "HasFlag |contains=DTZ.CalQuit": false
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MarriageDialogue{{ModId}}_Callum",
+      "FromFile": "npc/Dialogue/calMarriageDialogue.json"
+    },
+    //before quit schedule
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/{{ModId}}_Callum",
+      "FromFile": "npc/Schedules/calSchedule.json",
+      "When": {
+        "HasFlag |contains=DTZ.CalQuit": false
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "Action": "Load",
+      "Target": "Strings/Schedules/{{ModId}}_Callum",
+      "FromFile": "npc/Schedules/calScheduleDialogue.json"
+    },
+    { //after quit schedule
+
+      "Action": "Load",
+      "Target": "Characters/Schedules/{{ModId}}_Callum",
+      "FromFile": "npc/Schedules/calScheduleQuit.json",
+      "When": {
+        "HasFlag": "DTZ.CalQuit"
+      },
+      "Update": "OnTimeChange"
+    },
+    { //after quit dialogue
+
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_Callum",
+      "FromFile": "npc/Dialogue/calDialogueQuit.json",
+      "When": {
+        "HasFlag": "DTZ.CalQuit"
+      },
+      "Update": "OnTimeChange"
+    },
+    //David's
+    {
+      "Action": "Load",
+      "Target": "Portraits/David",
+      "FromFile": "npc/Portraits/davidPortraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/David",
+      "FromFile": "npc/OverworldSprites/davidSprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_David",
+      "FromFile": "npc/Dialogue/davidDialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MarriageDialogue{{ModId}}_David",
+      "FromFile": "npc/Dialogue/davidMarriageDialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/{{ModId}}_David",
+      "FromFile": "npc/Schedules/davidSchedule.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Strings/Schedules/{{ModId}}_David",
+      "FromFile": "npc/Schedules/davidScheduleDialogue.json"
+    },
+    //Kristoff's
+    {
+      "Action": "Load",
+      "Target": "Portraits/Kristoff",
+      "FromFile": "npc/Portraits/kristoffPortraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Kristoff",
+      "FromFile": "npc/OverworldSprites/kristoffSprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_Kristoff",
+      "FromFile": "npc/Dialogue/kristoffDialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MarriageDialogue{{ModId}}_Kristoff",
+      "FromFile": "npc/Dialogue/kristoffMarriageDialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/{{ModId}}_Kristoff",
+      "FromFile": "npc/Schedules/kristoffSchedule.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Strings/Schedules/{{ModId}}_Kristoff",
+      "FromFile": "npc/Schedules/kristoffScheduleDialogue.json"
+    },
+    //Gwen's
+    {
+      "Action": "Load",
+      "Target": "Portraits/Gwen",
+      "FromFile": "npc/Portraits/gwenPortraits.png",
+      "When": {
+        "GwenGoth": "Less" // less goth portraits
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Gwen",
+      "FromFile": "npc/OverworldSprites/gwenSprites.png",
+      "When": {
+        "GwenGoth": "Less" // less goth overworld
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Gwen",
+      "FromFile": "npc/Portraits/gwenPortraitsGoth.png",
+      "When": {
+        "GwenGoth": "More" // more goth portraits
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Gwen",
+      "FromFile": "npc/OverworldSprites/gwenSpritesGoth.png",
+      "When": {
+        "GwenGoth": "More" // more goth overworld
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_Gwen",
+      "FromFile": "npc/Dialogue/gwenDialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MarriageDialogue{{ModId}}_Gwen",
+      "FromFile": "npc/Dialogue/gwenMarriageDialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/{{ModId}}_Gwen",
+      "FromFile": "npc/Schedules/gwenSchedule.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Strings/Schedules/{{ModId}}_Gwen",
+      "FromFile": "npc/Schedules/gwenScheduleDialogue.json"
+    },
+    //Sadie's
+    {
+      "Action": "Load",
+      "Target": "Portraits/Sadie",
+      "FromFile": "npc/Portraits/sadiePortraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Sadie",
+      "FromFile": "npc/OverworldSprites/sadieSprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_Sadie",
+      "FromFile": "npc/Dialogue/sadieDialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MarriageDialogue{{ModId}}_Sadie",
+      "FromFile": "npc/Dialogue/sadieMarriageDialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/{{ModId}}_Sadie",
+      "FromFile": "npc/Schedules/sadieSchedule.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Strings/Schedules/{{ModId}}_Sadie",
+      "FromFile": "npc/Schedules/sadieScheduleDialogue.json"
+    },
+    //Buddy's
+    {
+      "Action": "Load",
+      "Target": "Portraits/Buddy",
+      "FromFile": "npc/Portraits/buddyPortraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Buddy",
+      "FromFile": "npc/OverworldSprites/buddySprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_Buddy",
+      "FromFile": "npc/Dialogue/buddyDialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/{{ModId}}_Buddy",
+      "FromFile": "npc/Schedules/buddySchedule.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Strings/Schedules/{{ModId}}_Buddy",
+      "FromFile": "npc/Schedules/buddyScheduleDialogue.json"
+    },
+    //Selena's
+    {
+      "Action": "Load",
+      "Target": "Portraits/Selena",
+      "FromFile": "npc/Portraits/selenaPortraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Selena",
+      "FromFile": "npc/OverworldSprites/selenaSprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_Selena",
+      "FromFile": "npc/Dialogue/selenaDialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MarriageDialogue{{ModId}}_Selena",
+      "FromFile": "npc/Dialogue/selenaMarriageDialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/{{ModId}}_Selena",
+      "FromFile": "npc/Schedules/selenaSchedule.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Strings/Schedules/{{ModId}}_Selena",
+      "FromFile": "npc/Schedules/selenaScheduleDialogue.json"
+    },
+    //Max's
+    {
+      "Action": "Load",
+      "Target": "Portraits/Max",
+      "FromFile": "npc/Portraits/maxPortraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Max",
+      "FromFile": "npc/OverworldSprites/maxSprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_Max",
+      "FromFile": "npc/Dialogue/maxDialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/{{ModId}}_Max",
+      "FromFile": "npc/Schedules/maxSchedule.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Strings/Schedules/{{ModId}}_Max",
+      "FromFile": "npc/Schedules/maxScheduleDialogue.json"
+    },
+    //Gio's
+    {
+      "Action": "Load",
+      "Target": "Portraits/Giovanni",
+      "FromFile": "npc/Portraits/giovanniPortraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Giovanni",
+      "FromFile": "npc/OverworldSprites/giovanniSprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_Giovanni",
+      "FromFile": "npc/Dialogue/giovanniDialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/{{ModId}}_Giovanni",
+      "FromFile": "npc/Schedules/giovanniSchedule.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Strings/Schedules/{{ModId}}_Giovanni",
+      "FromFile": "npc/Schedules/giovanniScheduleDialogue.json"
+    },
+    //Hazel's
+    // (pizza hazel)
+    {
+      "Action": "Load",
+      "Target": "Characters/Hazel_Custom_DTZ_Pizzeria",
+      "FromFile": "npc/OverworldSprites/Hazel_Custom_DTZ_Pizzeria.png"
+    },
+    // (pizza hazel)
+    {
+      "Action": "Load",
+      "Target": "Portraits/Hazel_Custom_DTZ_Pizzeria",
+      "FromFile": "npc/Portraits/Hazel_Custom_DTZ_Pizzeria.png"
+    },
+    // normal
+    {
+      "Action": "Load",
+      "Target": "Portraits/Hazel",
+      "FromFile": "npc/Portraits/hazelPortraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Hazel",
+      "FromFile": "npc/OverworldSprites/hazelSprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_Hazel",
+      "FromFile": "npc/Dialogue/hazelDialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/{{ModId}}_Hazel",
+      "FromFile": "npc/Schedules/hazelSchedule.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Strings/Schedules/{{ModId}}_Hazel",
+      "FromFile": "npc/Schedules/hazelScheduleDialogue.json"
+    },
+
+    //Bill's **ANTI-SOCIAL**
+    {
+      "Action": "Load",
+      "Target": "Portraits/Bill",
+      "FromFile": "npc/Portraits/billPortraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Bill",
+      "FromFile": "npc/OverworldSprites/billSprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_Bill",
+      "FromFile": "npc/Dialogue/billDialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Schedules/{{ModId}}_Bill",
+      "FromFile": "npc/Schedules/billSchedule.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Strings/Schedules/{{ModId}}_Bill",
+      "FromFile": "npc/Schedules/billScheduleDialogue.json"
+    }
+  ]
+    
+}

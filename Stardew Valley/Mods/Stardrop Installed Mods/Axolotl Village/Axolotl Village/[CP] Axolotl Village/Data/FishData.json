@@ -1,0 +1,561 @@
+{
+  "Changes": [
+   {  
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Entries": {
+        "otohime.AV_Bonefish": "Bonefish/70/dart/17/18/1700 2400/winter/both/689 .4 680 .1/3/.2/.1/0",
+        "otohime.AV_Bonito": "Bonito/75/dart/25/30/1400 2300/spring winter/both/689 .4 680 .1/3/.2/.1/0",
+        "otohime.AV_Cobia": "Cobia/60/mixed/75/78/600 2000/spring summer fall/both/689 .4 680 .1/2/.4/.1/0",
+        "otohime.AV_Red_Drum": "Red Drum/40/mixed/40/45/600 2000/summer fall/both/689 .4 680 .1/1/.4/.1/0",
+        "otohime.AV_Roosterfish": "Roosterfish/70/mixed/40/70/600 2000/spring summer/both/689 .4 680 .1/3/.2/.1/0",
+        "otohime.AV_Sheepshead": "Sheepshead/40/mixed/25/30/900 2400/spring winter/both/689 .4 680 .1/2/.5/.1/0",
+        "otohime.AV_Tarpon": "Tarpon/75/dart/40/50/600 1800/summer/both/689 .4 680 .1/2/.3/.1/0",
+        "otohime.AV_Wahoo": "Wahoo/50/dart/65/98/600 2000/spring summer/both/689 .4 680 .1/5/.3/.1/0",
+        "otohime.AV_Yellowfin_Tuna": "Yellowfin Tuna/50/dart/30/45/800 2000/spring summer fall/both/689 .4 680 .1/2/.4/.1/0"
+      }
+    },
+{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"TargetField": [
+				"{{ModId}}_AxolotlTownSouth",
+				"Fish"
+			],
+			"Entries": {
+                "{{ModId}}_Bonefish": {
+                    "Id": "{{ModId}}_Bonefish",
+                    "ItemId": "(O){{ModId}}_Bonefish",
+                    "Condition": "LOCATION_SEASON Here winter",
+
+                }, "{{ModId}}_Bonito": {
+                    "Id": "{{ModId}}_Bonito",
+                    "ItemId": "(O){{ModId}}_Bonito",
+                    "Condition": "LOCATION_SEASON Here spring winter",
+
+                }, "{{ModId}}_Cobia": {
+                    "Id": "{{ModId}}_Cobia",
+                    "ItemId": "(O){{ModId}}_Cobia",
+                    "Condition": "LOCATION_SEASON Here spring summer fall",
+
+                }, "{{ModId}}_Red_Drum": {
+                    "Id": "{{ModId}}_Red_Drum",
+                    "ItemId": "(O){{ModId}}_Red_Drum",
+                    "Condition": "LOCATION_SEASON Here summer fall",
+
+                }, "{{ModId}}_Roosterfish": {
+                    "Id": "{{ModId}}_Roosterfish",
+                    "ItemId": "(O){{ModId}}_Roosterfish",
+                    "Condition": "LOCATION_SEASON Here spring summer",
+
+                }, "{{ModId}}_Sheepshead": {
+                    "Id": "{{ModId}}_Sheepshead",
+                    "ItemId": "(O){{ModId}}_Sheepshead",
+                    "Condition": "LOCATION_SEASON Here spring winter",
+
+                }, "{{ModId}}_Tarpon": {
+                    "Id": "{{ModId}}_Tarpon",
+                    "ItemId": "(O){{ModId}}_Tarpon",
+                    "Condition": "LOCATION_SEASON Here summer",
+
+                }, "{{ModId}}_Wahoo": {
+                    "Id": "{{ModId}}_Wahoo",
+                    "ItemId": "(O){{ModId}}_Wahoo",
+                    "Condition": "LOCATION_SEASON Here spring summer",
+
+                }, "{{ModId}}_Yellowfin_Tuna": {
+                    "Id": "{{ModId}}_Yellowfin_Tuna",
+                    "ItemId": "(O){{ModId}}_Yellowfin_Tuna",
+                    "Condition": "LOCATION_SEASON Here spring summer fall",
+                }, 
+            },
+        },
+{ ///Bonefish
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "fish_avbonefish": {
+          "RequiredTags": [
+            "fish_avbonefish"
+          ],
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.02,
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.01,
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.01,
+              "ItemID": "(O)203",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)720 2"
+            ],
+            "7": [
+              "(O)717 1"
+            ]
+          }
+        }
+      }
+    },
+    { ///Bonito
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "fish_bonito": {
+          "RequiredTags": [
+            "fish_bonito"
+          ],
+          "Precedence": 0,
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.02,
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.01,
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.01,
+              "ItemID": "(O)203",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)814",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)129 2"
+            ],
+            "7": [
+              "(O)131 3"
+            ]
+          }
+        }
+      }
+    },
+    { ///Cobia
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "fish_cobia": {
+          "RequiredTags": [
+            "fish_cobia"
+          ],
+          "Precedence": 0,
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.02,
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.01,
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.01,
+              "ItemID": "(O)203",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)720 2"
+            ],
+            "7": [
+              "(O)717 1"
+            ]
+          }
+        }
+     }
+    },
+    { ///Red Drum
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "fish_red_drum": {
+          "RequiredTags": [
+            "fish_red_drum"
+          ],
+          "Precedence": 0,
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.02,
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.01,
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.01,
+              "ItemID": "(O)203",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)720 2"
+            ],
+            "7": [
+              "(O)717 1"
+            ]
+          }
+        }
+      }
+    },
+    { ///Roosterfish
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "fish_roosterfish": {
+          "RequiredTags": [
+            "fish_roosterfish"
+          ],
+          "Precedence": 0,
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.02,
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.01,
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.01,
+              "ItemID": "(O)203",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.2,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)129 2"
+            ],
+            "7": [
+              "(O)131 3"
+            ]
+          }
+        }
+      }
+    },
+    { ///Sheepshead
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "fish_sheepshead": {
+          "RequiredTags": [
+            "fish_sheepshead"
+          ],
+          "Precedence": 0,
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.02,
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.01,
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.01,
+              "ItemID": "(O)203",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)723 2"
+            ],
+            "7": [
+              "(O)372 3"
+            ]
+          }
+        }
+      }
+    },
+ { ///Tarpon
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "fish_tarpon": {
+          "RequiredTags": [
+            "fish_tarpon"
+          ],
+          "Precedence": 0,
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.02,
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.01,
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.01,
+              "ItemID": "(O)203",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)129 2"
+            ],
+            "7": [
+              "(O)131 3"
+            ]
+          }
+        }
+      }
+    },
+ { ///Wahoo
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "fish_wahoo": {
+          "RequiredTags": [
+            "fish_wahoo"
+          ],
+          "Precedence": 0,
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.02,
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.01,
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.01,
+              "ItemID": "(O)203",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)131 2"
+            ],
+            "7": [
+              "(O)151 1"
+            ]
+          }
+        }
+      }
+    },
+ { ///Yellowfin Tuna
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "fish_yellowfin_tuna": {
+          "RequiredTags": [
+            "fish_yellowfin_tuna"
+          ],
+          "Precedence": 0,
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.02,
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.01,
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.01,
+              "ItemID": "(O)203",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)717 1"
+            ],
+            "7": [
+              "(O)151 1"
+            ]
+          }
+        }
+      }
+    },
+{
+      "LogName": "Aquarium Data",
+      "Action": "EditData",
+      "Target": "Data/AquariumFish",
+      "Entries": {
+        "otohime.AV_Bonefish": "0/fish/////Mods\\otohime.av\\AquariumFish",
+        "otohime.AV_Bonito": "1/fish/////Mods\\otohime.av\\AquariumFish",
+        "otohime.AV_Cobia": "2/fish/////Mods\\otohime.av\\AquariumFish",
+        "otohime.AV_Red_Drum": "3/fish/////Mods\\otohime.av\\AquariumFish",
+        "otohime.AV_Roosterfish": "4/fish/////Mods\\otohime.av\\AquariumFish",
+        "otohime.AV_Sheepshead": "5/fish/////Mods\\otohime.av\\AquariumFish",
+        "otohime.AV_Tarpon": "6/fish/////Mods\\otohime.av\\AquariumFish",
+        "otohime.AV_Wahoo": "7/fish/////Mods\\otohime.av\\AquariumFish",
+        "otohime.AV_Yellowfin_Tuna": "8/fish/////Mods\\otohime.av\\AquariumFish",
+      }
+    },
+      { 
+		
+		"Action": "EditImage",
+		"Target": "LooseSprites/AquariumFish",
+		"FromFile": "assets/LooseSprites/AquariumSprites.png",
+		"ToArea": { "X": 120, "Y": 240, "Width": 144, "Height": 96 }
+		},
+       {
+            "LogName": "Aquarium Sprites",
+            "Action": "Load",
+            "Target": "Mods/otohime.av/AquariumFish",
+            "FromFile": "assets/LooseSprites/AquariumSprites.png",
+        }, 
+]
+}

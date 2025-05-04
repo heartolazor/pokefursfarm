@@ -1,0 +1,242 @@
+{
+	"Changes": [
+	{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Saloon", "Items"],
+            "Entries": {
+				"PBB_FigyBerryQuiche_Recipe": {
+                    "Id": "PBB_FigyBerryQuiche_Recipe",
+                    "ItemId": "PBB_FigyBerryQuiche",
+                    "Price": 725,
+                    "IsRecipe": true
+				},
+				"PBB_KasibBerryCake_Recipe": {
+					"Id": "PBB_KasibBerryCake_Recipe",
+					"ItemId": "PBB_KasibBerryCake",
+					"Price": 1450,
+					"IsRecipe": true
+				},
+				"PBB_NanabSplit_Recipe": {
+					"Id": "PBB_NanabSplit_Recipe",
+					"ItemId": "PBB_NanabSplit",
+					"Price": 925,
+					"IsRecipe": true
+				},
+				"PBB_Nomelade_Recipe": {
+					"Id": "PBB_Nomelade_Recipe",
+					"ItemId": "PBB_Nomelade",
+					"Price": 450,
+					"IsRecipe": true
+				},
+				"PBB_RoseliBerryTea_Recipe": {
+					"Id": "PBB_RoseliBerryTea_Recipe",
+					"ItemId": "PBB_RoseliBerryTea",
+					"Price": 400,
+					"IsRecipe": true
+				},
+				"PBB_SodaPop_Recipe": {
+					"Id": "PBB_SodaPop_Recipe",
+					"ItemId": "PBB_SodaPop",
+					"Price": 350,
+					"IsRecipe": true
+				},
+				"PBB_StarfShapedCookie_Recipe": {
+					"Id": "PBB_StarfShapedCookie_Recipe",
+					"ItemId": "PBB_StarfShapedCookie",
+					"Price": 2000,
+					"IsRecipe": true
+				},
+				"PBB_SweetRowapSouffle_Recipe": {
+					"Id": "PBB_SweetRowapSouffle_Recipe",
+					"ItemId": "PBB_SweetRowapSouffle",
+					"Price": 3000,
+					"IsRecipe": true
+				},
+				"PBB_CurlyTatsugiriSushi_Recipe": {
+					"Id": "PBB_CurlyTatsugiriSushi_Recipe",
+					"ItemId": "PBB_CurlyTatsugiriSushi",
+					"Price": 400,
+					"IsRecipe": true
+				},
+				"PBB_DroopyTatsugiriSushi_Recipe": {
+					"Id": "PBB_DroopyTatsugiriSushi_Recipe",
+					"ItemId": "PBB_DroopyTatsugiriSushi",
+					"Price": 400,
+					"IsRecipe": true
+				},
+				"PBB_StretchyTatsugiriSushi_Recipe": {
+					"Id": "PBB_StretchyTatsugiriSushi_Recipe",
+					"ItemId": "PBB_StretchyTatsugiriSushi",
+					"Price": 400,
+					"IsRecipe": true
+				},
+				"PBB_GrepaBerrySalad_Recipe": {
+					"Id": "PBB_GrepaBerrySalad_Recipe",
+					"ItemId": "PBB_GrepaBerrySalad",
+					"Price": 220,
+					"IsRecipe": true
+				},
+				"PBB_JabocaCider_Recipe": {
+					"Id": "PBB_JabocaCider_Recipe",
+					"ItemId": "PBB_JabocaCider",
+					"Price": 500,
+					"IsRecipe": true
+				},
+				"PBB_ConcentratedBlukBerryJuice_Recipe": {
+					"Id": "PBB_ConcentratedBlukBerryJuice_Recipe",
+					"ItemId": "PBB_ConcentratedBlukBerryJuice",
+					"Price": 1000,
+					"IsRecipe": true
+				},
+				"PBB_MiniorKonpeito_Recipe": {
+					"Id": "PBB_MiniorKonpeito_Recipe",
+					"ItemId": "PBB_MiniorKonpeito",
+					"Price": 600,
+					"IsRecipe": true
+				},
+			},
+		},
+			{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["ShadowShop", "Items"],
+            "Entries": {
+				"PBB_NightmareSmoothie_Recipe": {
+					"Id": "PBB_NightmareSmoothie_Recipe",
+					"ItemId": "PBB_NightmareSmoothie",
+					"Price": 3600,
+					"IsRecipe": true
+				},
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+				"PBB_FigyBerryQuiche": "PBB_FigyBerry 6 -5 2 -6 1/10 10/PBB_FigyBerryQuiche",
+				"PBB_NightmareSmoothie": "PBB_EnigmaBerry 4 PBB_TamatoBerry 2 PBB_CobaBerry 1 -6 1/10 10/PBB_NightmareSmoothie",
+				"PBB_SpicyBerrySalad": "PBB_TamatoBerry 5/10 10/PBB_SpicyBerrySalad/s Combat 6/{{i18n:SpicyBerrySalad_name}}",
+				"PBB_DryBerrySalad": "PBB_CornnBerry 5/10 10/PBB_DryBerrySalad/s Mining 6/{{i18n:DryBerrySalad_name}}",
+				"PBB_SweetBerrySalad": "PBB_MagostBerry 5/10 10/PBB_SweetBerrySalad/s Farming 6/{{i18n:SweetBerrysalad_name}}",
+				"PBB_BitterBerrySalad": "PBB_RabutaBerry 5/10 10/PBB_BitterBerrySalad/s Foraging 6/{{i18n:BitterBerrySalad_name}}",
+				"PBB_SourBerrySalad": "PBB_NomelBerry 5/10 10/PBB_SourBerrySalad/s Fishing 6/{{i18n:SourBerrySalad_name}}",
+				"PBB_KasibBerryCake": "PBB_KasibBerry 12 PBB_OccaBerry 7 246 1 245 1 -5 1/10 10/PBB_KasibBerryCake",
+				"PBB_NanabSplit": "PBB_NanabBerry 1 PBB_CheriBerry 1 -6 2/10 10/PBB_NanabSplit",
+				"PBB_Nomelade": "PBB_NomelBerry 7 245 1/10 10/PBB_Nomelade",
+				"PBB_RoseliBerryTea": "PBB_RoseliBerry 7 815 2 245 1/10 10/PBB_RoseliBerryTea",
+				"PBB_SodaPop": "PBB_CornnBerry 5 PBB_PasshoBerry 2 PBB_RawstBerry 2 PBB_OranBerry 2/10 10/PBB_SodaPop",
+				"PBB_StarfShapedCookie": "PBB_SpelonBerry 8 PBB_PasshoBerry 16 PBB_MagostBerry 12 PBB_DurinBerry 8 PBB_NomelBerry 12 246 1 245 1 -5 1/10 10/PBB_StarfShapedCookie",
+				"PBB_SweetRowapSouffle": "PBB_MicleBerry 1 PBB_RowapBerry 12 -5 3/10 10/PBB_SweetRowapSouffle",
+				"PBB_CurlyTatsugiriSushi": "423 1 PBB_IapapaBerry 1 PBB_KeeSpice 1/10 10/PBB_CurlyTatsugiriSushi",
+				"PBB_DroopyTatsugiriSushi": "423 1 PBB_SpelonBerry 1 PBB_KeeSpice 1/10 10/PBB_DroopyTatsugiriSushi",
+				"PBB_StretchyTatsugiriSushi": "423 1 PBB_ChilanBerry 1 PBB_KeeSpice 1/10 10/PBB_StretchyTatsugiriSushi",
+				"PBB_GrepaBerrySalad": "PBB_GrepaBerry 9 278 1 266 1/10 10/PBB_GrepaBerrySalad",
+				"PBB_JabocaCider": "PBB_JabocaBerry 7 245 1/10 10/PBB_JabocaCider",
+				"PBB_ConcentratedBlukBerryJuice": "PBB_BlukBerry 250/10 10/PBB_ConcentratedBlukBerryJuice",
+				"PBB_MiniorKonpeito": "245 1 PBB_RoseliBerry 1 PBB_OccaBerry 1 PBB_ShucaBerry 1 PBB_RindoBerry 1 PBB_YacheBerry 1 PBB_PasshoBerry 1 PBB_PayapaBerry 1 PBB_BlukBerry 1/10 10/PBB_MiniorKonpeito",
+			}
+		},
+		{
+			"Action": "EditData",
+            "Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
+            "Entries": {
+				"PBB_SpicyBerrySalad": {
+					"ProductQualifiedId": "(O)PBB_SpicyBerrySalad",
+					"ProductAmount": 1,
+					"Ingredients": [
+					{
+						"Type": "ContextTag",
+						"Value": "spicy_berry",
+						"Amount": 75,
+						"OverrideText": "Any Spicy Berry",
+						"OverrideTexturePath": "TntDove.PBB/Objects",
+						"OverrideTextureRect": {
+							"X": 0,
+							"Y": 192,
+							"Width": 16,
+							"Height": 16
+							},
+						}
+					]
+				},
+				"PBB_DryBerrySalad": {
+					"ProductQualifiedId": "(O)PBB_DryBerrySalad",
+					"ProductAmount": 1,
+					"Ingredients": [
+					{
+						"Type": "ContextTag",
+						"Value": "dry_berry",
+						"Amount": 75,
+						"OverrideText": "Any Dry Berry",
+						"OverrideTexturePath": "TntDove.PBB/Objects",
+						"OverrideTextureRect": {
+							"X": 96,
+							"Y": 32,
+							"Width": 16,
+							"Height": 16
+							},
+						}
+					]
+				},
+				"PBB_SweetBerrySalad": {
+					"ProductQualifiedId": "(O)PBB_SweetBerrySalad",
+					"ProductAmount": 1,
+					"Ingredients": [
+					{
+						"Type": "ContextTag",
+						"Value": "sweet_berry",
+						"Amount": 75,
+						"OverrideText": "Any Sweet Berry",
+						"OverrideTexturePath": "TntDove.PBB/Objects",
+						"OverrideTextureRect": {
+							"X": 96,
+							"Y": 96,
+							"Width": 16,
+							"Height": 16
+							},
+						}
+					]
+				},
+				"PBB_BitterBerrySalad": {
+					"ProductQualifiedId": "(O)PBB_BitterBerrySalad",
+					"ProductAmount": 1,
+					"Ingredients": [
+					{
+						"Type": "ContextTag",
+						"Value": "bitter_berry",
+						"Amount": 75,
+						"OverrideText": "Any Bitter Berry",
+						"OverrideTexturePath": "TntDove.PBB/Objects",
+						"OverrideTextureRect": {
+							"X": 128,
+							"Y": 144,
+							"Width": 16,
+							"Height": 16
+							},
+						}
+					]
+				},
+				"PBB_SourBerrySalad": {
+					"ProductQualifiedId": "(O)PBB_SourBerrySalad",
+					"ProductAmount": 1,
+					"Ingredients": [
+					{
+						"Type": "ContextTag",
+						"Value": "sour_berry",
+						"Amount": 75,
+						"OverrideText": "Any Sour Berry",
+						"OverrideTexturePath": "TntDove.PBB/Objects",
+						"OverrideTextureRect": {
+							"X": 64,
+							"Y": 112,
+							"Width": 16,
+							"Height": 16
+							},
+						}
+					]
+				},
+			}
+		}
+	]
+}

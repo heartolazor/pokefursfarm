@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="9" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="18">
+ <properties>
+  <property name="DayTiles" value="Front 6 1 1224"/>
+  <property name="Light" value="4 5 4"/>
+ </properties>
+ <tileset firstgid="1" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2241" name="untitled tile sheet2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="townInterior_2.png" width="512" height="656"/>
+ </tileset>
+ <tileset firstgid="3553" name="z_willy_furniture" tilewidth="16" tileheight="16" tilecount="20" columns="5">
+  <image source="willy_bed.png" width="80" height="64"/>
+ </tileset>
+ <layer id="1" name="Back" width="9" height="10">
+  <data encoding="csv">
+65,65,65,65,65,65,65,65,65,
+65,98,99,99,99,99,99,100,65,
+65,131,131,131,131,131,131,131,65,
+65,163,131,131,131,131,131,131,65,
+65,2211,2211,2211,2211,2211,2211,2211,65,
+65,1657,1658,2211,2211,1625,1214,1215,1216,
+65,2211,2179,2211,2211,2210,1246,1247,1248,
+65,2211,2211,2211,2178,2211,2211,2179,65,
+65,2211,2211,2211,2211,2211,1657,2211,65,
+65,65,65,65,65,65,65,65,65
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="9" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,
+0,1584,0,0,0,1652,0,2405,0,
+129,1616,1320,1141,1142,1679,500,2437,133,
+129,0,2180,389,390,1711,532,2469,133,
+129,1224,2212,421,422,1743,564,2501,133,
+129,0,0,2211,2211,0,0,0,133,
+129,0,0,385,386,0,0,0,133,
+129,0,0,0,0,0,0,0,133,
+129,465,466,0,0,0,0,0,133,
+65,65,65,65,65,65,65,65,65
+</data>
+ </layer>
+ <layer id="3" name="Front" width="9" height="10">
+  <data encoding="csv">
+0,66,75,75,75,75,75,68,0,
+97,106,0,0,0,0,0,108,101,
+0,0,0,0,0,0,0,0,0,
+0,0,399,0,0,0,0,0,0,
+0,0,0,423,424,0,0,0,0,
+0,0,0,455,456,0,0,0,0,
+0,401,402,0,0,0,0,0,0,
+0,433,434,0,0,0,0,0,0,
+225,226,230,230,230,230,230,231,232,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Paths" width="9" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,9,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back"/>
+ <objectgroup id="6" name="Buildings">
+  <properties>
+   <property name="Action" value="Warp 1 4 Hospital 7 1"/>
+  </properties>
+ </objectgroup>
+ <objectgroup id="7" name="Front"/>
+ <objectgroup id="8" name="Paths"/>
+</map>

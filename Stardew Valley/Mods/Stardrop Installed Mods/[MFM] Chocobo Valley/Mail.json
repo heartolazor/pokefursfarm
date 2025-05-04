@@ -1,0 +1,55 @@
+[
+    //Buckwheat's mail
+    {
+		"Id": "Kitsutsune.Chocobovalley_BuckwheatGreeting",
+		"GroupId": null,
+		"Title": "Chocobovalley_BuckwheatGreeting_Title",
+		"Text": "Chocobovalley_BuckwheatGreeting_Text",
+		"Attachments": [
+			{
+				"Type": "Object",
+				"Name": "Kitsutsune.Chocobovalley_FerngillEggCommon",
+				"Stack": 1
+			}
+		],
+		"LetterBG": "ChocoboMailV2.png",
+		"Date": "7 spring Y1"
+    },
+	{
+		"Id": "Kitsutsune.Chocobovalley_BuckwheatAdvice1",
+		"GroupId": null,
+		"Title": "Chocobovalley_BuckwheatAdvice1_Title",
+		"Text": "Chocobovalley_BuckwheatAdvice1_Text",
+		"LetterBG": "ChocoboMail.png",
+		"Date": "20 spring Y1",
+		"Buildings": ["Big Coop"]
+    },
+	{
+		"Id": "Kitsutsune.Chocobovalley_BuckwheatAdvice2",
+		"GroupId": null,
+		"Title": "Chocobovalley_BuckwheatAdvice2_Title",
+		"Text": "Chocobovalley_BuckwheatAdvice2_Text",
+		"LetterBG": "ChocoboMail.png",
+		"Date": "1 summer Y1",
+		"Buildings": ["Big Coop"]
+    },
+	{
+		"Id": "Kitsutsune.Chocobovalley_BuckwheatSpecialgift1",
+		"GroupId": null,
+		"Title": "Chocobovalley_BuckwheatSpecialgift1_Title",
+		"Text": "Chocobovalley_BuckwheatSpecialgift1_Text",
+		"Attachments": [
+			{
+				"Type": "Object",
+				"Name": "Kitsutsune.Chocobovalley_EorzeanEggLegacy",
+				"Stack": 1
+			}
+		],
+		"LetterBG": "ChocoboMailV2.png",
+		"Date": "1 summer Y2",
+		"SkillConditions": [
+            { "SkillName": "Fishing", "SkillLevel": 10 },
+			{ "SkillName": "Farming", "SkillLevel": 10 }
+        ]
+    },
+]

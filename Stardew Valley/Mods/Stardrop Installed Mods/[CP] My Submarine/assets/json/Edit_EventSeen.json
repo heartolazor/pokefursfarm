@@ -1,0 +1,1104 @@
+{
+
+    "Changes": [
+
+//■■■ 移動用のカットシーン 関係 ■■■
+
+
+  //★★★移動用カットシーンイベントデータ★★★
+
+    //●バレー➡アイランド用
+      {
+        "Action": "EditData",
+        "Target": "Data/Events/Beach",
+        "Entries":{
+          "12285001/U 28":
+          "submarine_song/
+           -100 -100/
+           farmer 0 0 1/
+           pause 250/
+           changeToTemporaryMap Custom_MySubmarine_EventSeen_Beach false/
+           addTemporaryActor MySubmarine_Event_A 176 192 8 11 1 false/
+           addTemporaryActor MySubmarine_Event_B 128 32 10 8 1 false/
+           addTemporaryActor MySubmarine_Event_C 16 32 8 7 1 false/
+           hideShadow MySubmarine_Event_C true/
+           warp farmer 14 9/
+           faceDirection farmer 2/
+           positionOffset farmer 10 -23/
+           positionOffset MySubmarine_Event_C -32 32/
+           animate MySubmarine_Event_C false true 500 0 1 2/
+           ambientLight {{DT_EventAmbientLight_Beach}}/
+           fade/
+           viewport 16 9/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           positionOffset MySubmarine_Event_A 2 0/
+           positionOffset MySubmarine_Event_B 2 0/
+           positionOffset MySubmarine_Event_C 2 0/
+           positionOffset farmer 2 0/
+           fade/
+           viewport -1000 -1000/
+           pause 250/
+           end warpOut/
+          "
+        },
+        "When": {
+          "SubmarineAction": "Cutscene(OnceADay), Cutscene(PlaybackEachTime)",
+          "HasReadLetter": "MySubmarine.AvailableMailId",
+        },
+        "Update": "OnTimeChange"
+      },
+
+    //●バレー➡アイランド用
+      {
+        "Action": "EditData",
+        "Target": "Data/Events/IslandSouth",
+        "Entries":{
+          "12285002/U 28":
+          "submarine_song/
+           -100 -100/
+           farmer 0 0 2/
+           pause 250/
+           changeToTemporaryMap Custom_MySubmarine_EventSeen_Island false/
+           addTemporaryActor MySubmarine_Event_A 176 192 13 11 1 false/
+           addTemporaryActor MySubmarine_Event_B 128 32 14 8 1 false/
+           addTemporaryActor MySubmarine_Event_C 16 32 23 7 1 false/
+           hideShadow MySubmarine_Event_C true/
+           warp farmer 17 9/
+           faceDirection farmer 2/
+           positionOffset farmer -10 -23/
+           positionOffset MySubmarine_Event_C 32 32/
+           animate MySubmarine_Event_A true true 60000 0/
+           animate MySubmarine_Event_B true true 60000 0/
+           animate MySubmarine_Event_C true true 500 0 1 2/
+           ambientLight {{DT_EventAmbientLight_Island}}/
+           fade/
+           viewport 15 9/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           positionOffset MySubmarine_Event_A -2 0/
+           positionOffset MySubmarine_Event_B -2 0/
+           positionOffset MySubmarine_Event_C -2 0/
+           positionOffset farmer -2 0/
+           fade/
+           viewport -1000 -1000/
+           pause 250/
+           end warpOut/
+          "
+        },
+        "When": {
+          "SubmarineAction": "Cutscene(OnceADay), Cutscene(PlaybackEachTime)",
+          "HasReadLetter": "MySubmarine.AvailableMailId",
+        },
+        "Update": "OnTimeChange"
+      },
+
+
+  //★★★潜水艦に触る部分のマップ編集(アクションの変更)★★★
+
+     //●バレービーチ の編集(バニラ環境)
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Beach",
+        "FromFile": "assets/tmx/MySubmarine_Event_Beach.tmx",
+        "ToArea": { "X": 92, "Y": 31, "Width": 8, "Height": 1 },
+        "When": {
+          "SubmarineAction": "Cutscene(OnceADay), Cutscene(PlaybackEachTime)",
+          "HasReadLetter": "MySubmarine.AvailableMailId",
+          "HasMod: |contains=Lnh.IslandOverhaul": "false",
+          "HasMod: |contains= VoidWitchCult.CP.TheFishmongerNPC": "false"
+        }
+      }, 
+
+     //●アイランドビーチ の編集(バニラ環境)
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Island_S",
+        "FromFile": "assets/tmx/MySubmarine_Event_IslandSouth.tmx",
+        "ToArea": { "X": 36, "Y": 53, "Width": 2, "Height": 1 },
+        "When": {
+          "SubmarineAction": "Cutscene(OnceADay), Cutscene(PlaybackEachTime)",
+          "HasReadLetter": "MySubmarine.AvailableMailId",
+          "HasMod: |contains=Lnh.IslandOverhaul": "false",
+          "HasMod: |contains= VoidWitchCult.CP.TheFishmongerNPC": "false"
+        }
+      },
+
+
+  //★★★移動用カットシーンのイベント視聴フラグの削除用トリガーアクション★★★
+
+     //●バレー➡アイランド用
+      {
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "MySubmarine_Ev12285001_Removal": {
+            "Id": "MySubmarine_Ev12285001_Removal",
+            "Trigger": "{{Trigger_EvRemoveTiming}}",
+            "Actions": [
+              "MarkEventSeen Current 12285001 false"
+            ],
+            "MarkActionApplied": "false"
+          }
+        },
+        "When": {
+          "SubmarineAction": "Cutscene(OnceADay), Cutscene(PlaybackEachTime)",
+          "HasReadLetter": "MySubmarine.AvailableMailId",
+        }
+      },
+
+     //●アイランド➡バレー用
+      {
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "MySubmarine_Ev12285002_Remove": {
+            "Id": "MySubmarine_Ev12285002_Remove",
+            "Trigger": "{{Trigger_EvRemoveTiming}}",
+            "Actions": [
+              "MarkEventSeen Current 12285002 false"
+            ],
+            "MarkActionApplied": "false"
+          }
+        },
+        "When": {
+          "SubmarineAction": "Cutscene(OnceADay), Cutscene(PlaybackEachTime)",
+          "HasReadLetter": "MySubmarine.AvailableMailId",
+        }
+      }
+
+
+    ]//▼▼"Changes"の終了▼▼
+}

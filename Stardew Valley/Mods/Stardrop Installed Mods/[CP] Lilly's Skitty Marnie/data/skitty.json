@@ -1,0 +1,864 @@
+{
+    "Changes": [  
+        //Animals
+        { 
+            "LogName": "Load data for Skitty",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Skitty": {
+                    "DisplayName": "{{i18n:Skitty}}",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 4500,
+					"SellPrice": 9000,
+                    "ShopTexture": "Animals/{{ModId}}_shop_Skitty_icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "ShopDisplayName": "{{i18n:Skitty}}",
+                    "ShopDescription": "{{i18n:SkittyDescription}}",
+                    "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5936]",
+                    "RequiredBuilding": "Big Barn",
+
+                   "DaysToMature": "4",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}_FluffyTail"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}_FluffyTail"
+                        },
+						{
+                            "Id": "Default",
+                            "Condition": null,                            
+							"MinimumFriendship": 200,
+                            "ItemId": "{{ModId}}_PokeDoll"
+							
+                        },
+						{
+                            "Id": "Default",
+                            "Condition": null,  
+                            "MinimumFriendship": 500,
+                            "ItemId": "{{ModId}}_SubsituteDoll"
+                        }
+                    ],
+                    "DaysToProduce": "1",
+                    "ProduceOnMature": true,
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": "null",
+                    "Sound": "{{ModId}}_SkittyCry",
+                    "Texture": "Animals/{{ModId}}_Skitty",
+                    "UseFlippedRightForLeft": false,
+                    "CanSwim": false,
+                    "SpriteWidth": "28",
+                    "SpriteHeight": "28",
+					"Skins": [
+						{
+							"id": "SkittyShiny",
+							"Texture": "Animals/{{ModId}}_Skitty_shiny",
+							"Weight": 0.1
+							}
+					],
+					"ShadowWhenAdult": {
+                        "Visible": false
+                      },
+					"ShadowWhenBaby": {
+						"Visible": false
+					  },
+                    "ShowInSummitCredits": true
+                }
+            }
+        },
+	    //Items
+        {
+            "LogName": "Load data for Fluffy Tail",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_FluffyTail": {
+				"Name": "{{ModId}}_FluffyTail",
+				"DisplayName": "{{i18n:FluffyTail}}",
+				"Description": "{{i18n:FluffyTailDescription}}",
+				"Type": "Basic",
+				"Category": -18,
+				"Price": 75,
+				"Texture": "TileSheets/{{ModId}}_Skitty_items",
+				"SpriteIndex": 0,
+				"Edibility": 0,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 3,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"Speed": 10.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_pink"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+		{
+            "LogName": "Load data for Doll Stuffing",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_DollStuffing": {
+				"Name": "{{ModId}}_DollStuffing",
+				"DisplayName": "{{i18n:DollStuffing}}",
+				"Description": "{{i18n:DollStuffingDescription}}",
+				"Type": "Basic",
+				"Category": -16,
+				"Price": 25,
+				"Texture": "TileSheets/{{ModId}}_Skitty_items",
+				"SpriteIndex": 1,
+				"Edibility": -300,
+				"IsDrink": false,
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_white"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+		{
+            "LogName": "Load data for Shiny Cloth",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_ShinyCloth": {
+				"Name": "{{ModId}}_ShinyCloth",
+				"DisplayName": "{{i18n:ShinyCloth}}",
+				"Description": "{{i18n:ShinyClothDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 800,
+				"Texture": "TileSheets/{{ModId}}_Skitty_items",
+				"SpriteIndex": 2,
+				"Edibility": -300,
+				"IsDrink": false,
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_purple"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+		{
+            "LogName": "Load data for Poke Doll",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_PokeDoll": {
+				"Name": "{{ModId}}_PokeDoll",
+				"DisplayName": "{{i18n:PokeDoll}}",
+				"Description": "{{i18n:PokeDollDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 190,
+				"Texture": "TileSheets/{{ModId}}_Skitty_items",
+				"SpriteIndex": 3,
+				"Edibility": 0,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 8,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"Speed": 10.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_pink"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+		{
+            "LogName": "Load data for Shiny Poke Doll",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_ShinyPokeDoll": {
+				"Name": "{{ModId}}_ShinyPokeDoll",
+				"DisplayName": "{{i18n:ShinyPokeDoll}}",
+				"Description": "{{i18n:ShinyPokeDollDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 1000,
+				"Texture": "TileSheets/{{ModId}}_Skitty_items",
+				"SpriteIndex": 4,
+				"Edibility": 0,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 16,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"Speed": 10.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_pink"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+		{
+            "LogName": "Load data for Skitty Doll",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_SkittyDoll": {
+				"Name": "{{ModId}}_SkittyDoll",
+				"DisplayName": "{{i18n:SkittyDoll}}",
+				"Description": "{{i18n:SkittyDollDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 105,
+				"Texture": "TileSheets/{{ModId}}_Skitty_items",
+				"SpriteIndex": 5,
+				"Edibility": 0,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 8,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"Speed": 10.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_pink"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+		{
+            "LogName": "Load data for Shiny Skitty Doll",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_ShinySkittyDoll": {
+				"Name": "{{ModId}}_ShinySkittyDoll",
+				"DisplayName": "{{i18n:ShinySkittyDoll}}",
+				"Description": "{{i18n:ShinySkittyDollDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 915,
+				"Texture": "TileSheets/{{ModId}}_Skitty_items",
+				"SpriteIndex": 6,
+				"Edibility": 0,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 16,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"Speed": 10.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_pink"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+		{
+            "LogName": "Load data for Subsitute Doll",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_SubsituteDoll": {
+				"Name": "{{ModId}}_SubsituteDoll",
+				"DisplayName": "{{i18n:SubsituteDoll}}",
+				"Description": "{{i18n:SubsituteDollDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 250,
+				"Texture": "TileSheets/{{ModId}}_Skitty_items",
+				"SpriteIndex": 7,
+				"Edibility": 0,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 20,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"Speed": 10.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_jade"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+		{
+            "LogName": "Load data for Shiny Subsitute Doll",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_ShinySubsituteDoll": {
+				"Name": "{{ModId}}_ShinySubsituteDoll",
+				"DisplayName": "{{i18n:ShinySubsituteDoll}}",
+				"Description": "{{i18n:ShinySubsituteDollDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 1060,
+				"Texture": "TileSheets/{{ModId}}_Skitty_items",
+				"SpriteIndex": 8,
+				"Edibility": 0,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 30,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"Speed": 10.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_gray"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+		//Machines
+		{
+            "LogName": "Load data for Doll Maker",
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries":	{
+			  "{{ModId}}_DollMaker": {
+				"Name": "{{ModId}}_DollMaker",
+				"DisplayName": "{{i18n:DollMaker}}",
+				"Description": "{{i18n:DollMakerDescription}}",
+				"Price": 50,
+				"Fragility": 0,
+				"CanBePlacedOutdoors": true,
+				"CanBePlacedIndoors": true,
+				"IsLamp": false,
+				"Texture": "TileSheets/{{ModId}}_Skitty_big_stuff",
+				"SpriteIndex": 0,
+				"CustomFields": null
+			  }
+              
+			}
+		},
+		{
+            "LogName": "Load data for Shiny Doll Maker",
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries":	{
+			  "{{ModId}}_ShinyDollMaker": {
+				"Name": "{{ModId}}_ShinyDollMaker",
+				"DisplayName": "{{i18n:ShinyDollMaker}}",
+				"Description": "{{i18n:ShinyDollMakerDescription}}",
+				"Price": 50,
+				"Fragility": 0,
+				"CanBePlacedOutdoors": true,
+				"CanBePlacedIndoors": true,
+				"IsLamp": false,
+				"Texture": "TileSheets/{{ModId}}_Skitty_big_stuff",
+				"SpriteIndex": 1,
+				"CustomFields": null
+			  }
+              
+			}
+		},
+
+
+
+		// MACHINE RULES //
+
+{
+    "LogName": "Add Lilly's Skitty Machine Rules",
+    "Action": "EditData",
+    "Target": "Data/Machines",
+    "Entries": {
+        "(BC){{ModId}}_DollMaker": {
+            "OutputRules": [
+                {
+                    "Id": "{{ModId}}_SkittyDoll",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "{{ModId}}_FluffyTail",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "{{ModId}}_SkittyDoll",
+                            "ItemId": "{{ModId}}_SkittyDoll",
+                            "CopyQuality":false,
+                            "CopyPrice": true,
+                            "PriceModifiers": 
+                            [
+                                {
+                                "Modification": "Multiply",
+                                "Amount": 1.2
+                                },
+                                {
+                                "Modification": "Add",
+                                "Amount": 50
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 300
+                }
+                             
+            ],
+            "AdditionalConsumedItems":[
+                {
+                    "ItemId":"{{ModId}}_DollStuffing",
+                    "RequiredCount":3,
+                    "InvalidCountMessage":"{{i18n:MissingItemDollMaker}}"
+                }
+            ],
+            "InvalidItemMessage":"{{i18n:InvalidItemDollMaker}}",
+            "ShowNextIndexWhileWorking":false,
+            "ShowNextIndexWhenReady":false,
+            "WobbleWhileWorking":true
+        },
+        "(BC){{ModId}}_ShinyDollMaker": {
+            "OutputRules": [
+				{
+                    "Id": "{{ModId}}_ShinyPokeDoll",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "{{ModId}}_PokeDoll",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "{{ModId}}_ShinyPokeDoll",
+                            "ItemId": "{{ModId}}_ShinyPokeDoll",
+                            "CopyQuality":false,
+                            "CopyPrice": true,
+                            "PriceModifiers": 
+                            [
+                                {
+                                "Modification": "Multiply",
+                                "Amount": 1.2
+                                },
+                                {
+                                "Modification": "Add",
+                                "Amount": 800
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 600
+                },
+                {
+                    "Id": "{{ModId}}_ShinySkittyDoll",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "{{ModId}}_SkittyDoll",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "{{ModId}}_ShinySkittyDoll",
+                            "ItemId": "{{ModId}}_ShinySkittyDoll",
+                            "CopyQuality":false,
+                            "CopyPrice": true,
+                            "PriceModifiers": 
+                            [
+                                {
+                                "Modification": "Multiply",
+                                "Amount": 1.2
+                                },
+                                {
+                                "Modification": "Add",
+                                "Amount": 800
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 600
+                },
+				{
+                    "Id": "{{ModId}}_ShinySubsituteDoll",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "{{ModId}}_SubsituteDoll",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "{{ModId}}_ShinySubsituteDoll",
+                            "ItemId": "{{ModId}}_ShinySubsituteDoll",
+                            "CopyQuality":false,
+                            "CopyPrice": true,
+                            "PriceModifiers": 
+                            [
+                                {
+                                "Modification": "Multiply",
+                                "Amount": 1.2
+                                },
+                                {
+                                "Modification": "Add",
+                                "Amount": 800
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 600
+                }
+                             
+            ],
+            "AdditionalConsumedItems":[
+                {
+                    "ItemId":"{{ModId}}_ShinyCloth",
+                    "RequiredCount":1,
+                    "InvalidCountMessage":"{{i18n:MissingItemShinyDollMaker}}"
+                }
+            ],
+            "InvalidItemMessage":"{{i18n:InvalidItemShinyDollMaker}}",
+            "ShowNextIndexWhileWorking":false,
+            "ShowNextIndexWhenReady":false,
+            "WobbleWhileWorking":true
+        }
+	}
+},
+{
+	"Action": "EditData",
+	"Target": "Data/Machines",
+	"TargetField": [ "(BC)20", "OutputRules" ],
+	"Entries": {
+		"{{ModId}}_DollStuffingFluffyTail": {
+			"Id": "{{ModId}}_FluffyTail",
+			"Triggers": 
+				[
+					{
+						"Trigger": "ItemPlacedInMachine",
+						"RequiredItemId": "{{ModId}}_FluffyTail",
+						"RequiredCount": 2
+					}
+				],
+			"OutputItem": [
+				{
+					"Id": "{{ModId}}_DollStuffing",
+					"ItemId": "{{ModId}}_DollStuffing",
+					"CopyQuality":false,
+					"MinStack": 1,
+					"MaxStack": -1
+
+				}
+				],
+			"MinutesUntilReady": 180
+		},
+		"{{ModId}}_DollStuffingPokeDoll": {
+			"Id": "{{ModId}}_PokeDoll",
+			"Triggers": 
+				[
+					{
+						"Trigger": "ItemPlacedInMachine",
+						"RequiredItemId": "{{ModId}}_PokeDoll"
+					}
+				],
+			"OutputItem": [
+				{
+					"Id": "{{ModId}}_DollStuffing",
+					"ItemId": "{{ModId}}_DollStuffing",
+					"CopyQuality":false,
+					"MinStack": 1,
+					"MaxStack": 2
+
+				}
+				],
+			"MinutesUntilReady": 180
+		},
+		"{{ModId}}_DollStuffingSubsituteDoll": {
+			"Id": "{{ModId}}_SubsituteDoll",
+			"Triggers": 
+				[
+					{
+						"Trigger": "ItemPlacedInMachine",
+						"RequiredItemId": "{{ModId}}_SubsituteDoll"
+					}
+				],
+			"OutputItem": [
+				{
+					"Id": "{{ModId}}_DollStuffing",
+					"ItemId": "{{ModId}}_DollStuffing",
+					"CopyQuality":false,
+					"MinStack": 2,
+					"MaxStack": 3
+
+				}
+				],
+			"MinutesUntilReady": 180
+		}
+	}
+}, 
+
+		//Furniture
+		{
+			"Action": "EditData",
+			"Target": "Data/Furniture",
+			"Entries": {
+				"{{ModId}}_PokeDollPlaceable": "{{ModId}}_PokeDollPlaceable/decor/1 1/1 1/1/1000/2/{{i18n:PokeDoll}}/3/TileSheets\\{{ModId}}_Skitty_big_stuff/true/",
+				"{{ModId}}_ShinyPokeDollPlaceable": "{{ModId}}_ShinyPokeDollPlaceable/decor/1 1/1 1/1/1000/2/{{i18n:ShinyPokeDoll}}/4/TileSheets\\{{ModId}}_Skitty_big_stuff/true/",
+				"{{ModId}}_SkittyDollPlaceable": "{{ModId}}_SkittyDollPlaceable/decor/1 1/1 1/1/1000/2/{{i18n:SkittyDoll}}/11/TileSheets\\{{ModId}}_Skitty_big_stuff/true/",
+				"{{ModId}}_ShinySkittyDollPlaceable": "{{ModId}}_ShinySkittyDollPlaceable/decor/1 1/1 1/1/1000/2/{{i18n:ShinySkittyDoll}}/12/TileSheets\\{{ModId}}_Skitty_big_stuff/true/",
+				"{{ModId}}_SubsituteDollPlaceable": "{{ModId}}_SubsituteDollPlaceable/decor/1 2/1 1/1/1000/2/{{i18n:SubsituteDoll}}/5/TileSheets\\{{ModId}}_Skitty_big_stuff/true/",
+				"{{ModId}}_ShinySubsituteDollPlaceable": "{{ModId}}_ShinySubsituteDollPlaceable/decor/1 2/1 1/1/1000/2/{{i18n:ShinySubsituteDoll}}/6/TileSheets\\{{ModId}}_Skitty_big_stuff/true/",
+			}
+		},
+
+		//Craftables
+		{
+			"LogName": "Add Crafting Recipes",
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Entries": {
+				"{{ModId}}_DollMaker": "335 5 388 50/Home/{{ModId}}_DollMaker/true/farming 3",
+				"{{ModId}}_ShinyCloth": "428 1 872 1/Home/{{ModId}}_ShinyCloth/false/farming 7",	
+				"{{ModId}}_ShinyDollMaker": "{{ModId}}_DollMaker 1 336 5 72 1/Home/{{ModId}}_ShinyDollMaker/true/farming 7"
+			}
+			},
+
+        
+            //Sounds
+            {
+                "Action": "EditData",
+                "Target": "Data/AudioChanges",
+                "Entries": {
+                    "{{ModId}}_SkittyCry": {
+                        "ID": "{{ModId}}_SkittyCry",
+                        "Category": "Sound",
+                        "FilePaths": [ "{{AbsoluteFilePath: assets/SkittySound.wav}}" ],
+                        "StreamedVorbis": false
+                    }
+                }
+            },
+
+
+						//Trades AnimalShop
+						{
+							"Action": "EditData",
+							"Target": "Data/Shops",
+							"TargetField": [ "AnimalShop", "Items"],
+							"Entries": {
+							"{{ModId}}_PokeDollPlaceable": 	{
+								"Id": "{{ModId}}_PokeDollPlaceable",
+								"ItemId": "{{ModId}}_PokeDollPlaceable",
+								"TradeItemId":  "{{ModId}}_PokeDoll",
+								"TradeItemAmount": 1
+							},
+							"{{ModId}}_ShinyPokeDollPlaceable": {
+								"Id": "{{ModId}}_ShinyPokeDollPlaceable",
+								"ItemId": "{{ModId}}_ShinyPokeDollPlaceable",
+								"TradeItemId":  "{{ModId}}_ShinyPokeDoll",
+								"TradeItemAmount": 1
+							},
+							"{{ModId}}_SkittyDollPlaceable": {
+								"Id": "{{ModId}}_SkittyDollPlaceable",
+								"ItemId": "{{ModId}}_SkittyDollPlaceable",
+								"TradeItemId":  "{{ModId}}_SkittyDoll",
+								"TradeItemAmount": 1
+							},
+							"{{ModId}}_ShinySkittyDollPlaceable":{
+								"Id": "{{ModId}}_ShinySkittyDollPlaceable",
+								"ItemId": "{{ModId}}_ShinySkittyDollPlaceable",
+								"TradeItemId":  "{{ModId}}_ShinySkittyDoll",
+								"TradeItemAmount": 1
+							},
+							"{{ModId}}_SubsituteDollPlaceable":{
+								"Id": "{{ModId}}_SubsituteDollPlaceable",
+								"ItemId": "{{ModId}}_SubsituteDollPlaceable",
+								"TradeItemId":  "{{ModId}}_SubsituteDoll",
+								"TradeItemAmount": 1
+							},
+							"{{ModId}}_ShinySubsituteDollPlaceable":{
+								"Id": "{{ModId}}_ShinySubsituteDollPlaceable",
+								"ItemId": "{{ModId}}_ShinySubsituteDollPlaceable",
+								"TradeItemId":  "{{ModId}}_ShinySubsituteDoll",
+								"TradeItemAmount": 1
+							}
+						}
+					},
+				
+				//Gift Tastes
+				{
+					"Action": "EditData",
+					"Target": "Data/NPCGiftTastes",
+					"LogName": "Gift tastes: Jas",
+					"TextOperations": [
+					  //Love
+					  {
+						"Operation": "Append",
+						"Target": [
+						  "Fields",
+						  "Jas",
+						  1
+						],
+						"Value": "{{ModId}}_PokeDoll {{ModId}}_ShinyPokeDoll {{ModId}}_SkittyDoll {{ModId}}_ShinySkittyDoll",
+						"Delimiter": " "
+					}
+					]
+				},
+				{
+					"Action": "EditData",
+					"Target": "Data/NPCGiftTastes",
+					"LogName": "Gift tastes: Vincent",
+					"TextOperations": [
+					  //Love
+					  {
+						"Operation": "Append",
+						"Target": [
+						  "Fields",
+						  "Vincent",
+						  1
+						],
+						"Value": "{{ModId}}_SubsituteDoll {{ModId}}_ShinySubsituteDoll",
+						"Delimiter": " "
+					}
+					]
+				}
+	]
+}

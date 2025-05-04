@@ -1,0 +1,71 @@
+{
+	"Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "Maps/ZCCC_FoodCourt_Tilesheet",
+            "FromFile": "assets/Maps/recolour/RPTE/{{TargetWithoutPath}}.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"When": { "HasMod": "JefGrizli.RedrawPelicanTownSVE" }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/GrampletonTrainStationTilesheet",
+            "FromFile": "assets/Maps/recolour/RPTE/{{TargetWithoutPath}}.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"FromArea": { "X": 0, "Y": 0, "Width": 800, "Height": 199 },
+			"ToArea": { "X": 0, "Y": 104, "Width": 800, "Height": 199 },
+			"When": { "HasMod": "JefGrizli.RedrawPelicanTownSVE" }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/GrampletonTrainStationTilesheet",
+            "FromFile": "assets/Maps/recolour/RPTE/{{TargetWithoutPath}}.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"FromArea": { "X": 48, "Y": 240, "Width": 128, "Height": 32 },
+			"ToArea": { "X": 48, "Y": 624, "Width": 128, "Height": 32 },
+			"When": { "HasMod": "JefGrizli.RedrawPelicanTownSVE" }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/ZCCC_Stage_Tilesheet",
+            "FromFile": "assets/Maps/recolour/RPTE/{{TargetWithoutPath}}.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"FromArea": { "X": 0, "Y": 0, "Width": 32, "Height": 16 },
+			"ToArea": { "X": 256, "Y": 236, "Width": 32, "Height": 16 },
+			"When": { "HasMod": "JefGrizli.RedrawPelicanTownSVE" }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/ZCCC_Stage_Tilesheet",
+            "FromFile": "assets/Maps/recolour/RPTE/{{TargetWithoutPath}}.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"FromArea": { "X": 32, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 416, "Y": 268, "Width": 16, "Height": 16 },
+			"When": { "HasMod": "JefGrizli.RedrawPelicanTownSVE" }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/ZCCC_VendorFloor_Tilesheet",
+            "FromFile": "assets/Maps/recolour/RPTE/{{TargetWithoutPath}}.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"FromArea": { "X": 0, "Y": 0, "Width": 12, "Height": 22 },
+			"ToArea": { "X": 95, "Y": 264, "Width": 12, "Height": 22 },
+			"When": { "HasMod": "JefGrizli.RedrawPelicanTownSVE" }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+            "FromFile": "assets/Maps/recolour/RPTE/z_extras_bus.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 18, "Y": 1740, "Width": 72, "Height": 19 },
+			"When": { "HasMod": "JefGrizli.RedrawPelicanTownSVE" }
+        },
+	]
+}

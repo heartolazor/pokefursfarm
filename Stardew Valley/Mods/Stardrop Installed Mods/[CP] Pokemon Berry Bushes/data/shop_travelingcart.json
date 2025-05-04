@@ -1,0 +1,40 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Traveler", "Items" ],
+			"Entries": {
+			"PBB_LansatBerrySeeds": {
+				"Id": "PBB_LansatBerrySeeds",
+				"ItemId": "PBB_LansatBerrySeeds",
+				"AvailableStock": 1,
+				"AvailableStockLimit": "Player",
+				"MaxItems": 1,
+				"UseObjectDataPrice": true,
+				"IgnoreShopPriceModifiers": false,
+				"PriceModifiers": [
+					{
+						"Id": "RandomPrice",
+						"Condition": null,
+						"Modification": 4,
+						"Amount": 0.0,
+						"RandomAmount": [
+							1000.0,
+							1200.0,
+							1400.0,
+							1700.0,
+							2200.0,
+							2500.0,
+							2900.0,
+							3100.0,
+							3500.0,
+							3800.0
+							],
+						},
+					],
+				}
+			}
+		}
+	]
+}

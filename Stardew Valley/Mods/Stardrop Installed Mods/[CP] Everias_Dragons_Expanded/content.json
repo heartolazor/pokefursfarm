@@ -1,0 +1,53 @@
+{
+    "Format": "2.0.0",
+    "ConfigSchema": {
+        "MoveDragonsToCavern": {
+            "AllowValues": "true, false",
+            "AllowMultiple": false,
+            "AllowBlank": false,
+            "Default": "false"
+        },
+        "DragonPurchasePriceWhenUsingDwarvenExpansion": {
+            "AllowValues": "-1, 11500, 18000, 36000",
+            "AllowMultiple": false,
+            "AllowBlank": false,
+            "Default": "-1"
+        }
+    },
+    "DynamicTokens": [
+        {
+            "Name": "DragonHouse",
+            "Value": "Barn"
+        },
+        {
+            "Name": "DragonHouse",
+            "Value": "mytigio.dwarven_expansion_LargeCavern",
+            "When": {
+                "MoveDragonsToCavern": "true",
+                "HasMod": "mytigio.dwarven_expansion"
+            }
+        }
+    ],
+    "Changes": [
+        {
+            "Action": "Include",
+            "FromFile": "assets/Animals/animals.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Machines/machines.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Objects/objects.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Objects/recipes.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Shops/shops.json"
+        }
+    ]
+}

@@ -1,0 +1,638 @@
+{
+	"Changes": [
+		{
+			"LogName": "NPC Dispositions",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Entries": {
+				"Captain": {
+					"Manner": "Neutral",
+					"SocialAnxiety": "Neutral",
+					"Optimism": "Neutral",
+					"Gender": "Male",
+					"CanBeRomanced": false,
+					"LoveInterest": "null",
+					"HomeRegion": "Town",
+					"BirthSeason": "summer",
+					"BirthDay": 1,
+					"FriendsAndFamily": {},
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_CaptainHouse",
+                            "Tile": {
+                                "X": 15,
+                                "Y": 13
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Captain",
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+				},
+				"Hiro": {
+					"Manner": "Neutral",
+					"SocialAnxiety": "Outgoing",
+					"Optimism": "Positive",
+					"Gender": "Male",
+					"CanBeRomanced": false,
+					"LoveInterest": "Puka",
+					"HomeRegion": "Town",
+					"BirthSeason": "fall",
+					"BirthDay": 25,
+					"FriendsAndFamily": {},
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_HiroHouse",
+                            "Tile": {
+                                "X": 2,
+                                "Y": 12
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Hiro",
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+				},
+		                "Jinx": {
+					"Manner": "Rude",
+					"SocialAnxiety": "Neutral",
+					"Optimism": "Neutral",
+					"Gender": "Male",
+					"CanBeRomanced": false,
+					"LoveInterest": "Olina",
+					"HomeRegion": "Town",
+					"BirthSeason": "fall",
+					"BirthDay": 6,
+					"FriendsAndFamily": {},
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_JinxHouse",
+                            "Tile": {
+                                "X": 1,
+                                "Y": 0
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Jinx",
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+				},
+				"Aukai": {
+					"Manner": "Neutral",
+					"SocialAnxiety": "Neutral",
+					"Optimism": "Neutral",
+					"Gender": "Male",
+					"CanBeRomanced": false,
+					"LoveInterest": "null",
+					"HomeRegion": "Town",
+					"BirthSeason": null,
+					"BirthDay": 0,
+					"FriendsAndFamily": {},
+                                        "SocialTab": "HiddenAlways",
+                                        "CanVisitIsland": "FALSE",
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_BlueHouse",
+                            "Tile": {
+                                "X": 2,
+                                "Y": 8
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Aukai",
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+				},	
+				"Hau": {
+					"Manner": "Neutral",
+					"SocialAnxiety": "Neutral",
+					"Optimism": "Neutral",
+					"Gender": "Male",
+					"CanBeRomanced": false,
+					"LoveInterest": "null",
+					"HomeRegion": "Town",
+					"BirthSeason": null,
+					"BirthDay": 0,
+					"FriendsAndFamily": {},
+                                        "SocialTab": "HiddenAlways",
+                                        "CanVisitIsland": "FALSE",
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_LightPinkHouse",
+                            "Tile": {
+                                "X": 8,
+                                "Y": 8
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Hau",
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+				},
+                                "Kekoa": {
+					"Manner": "Neutral",
+					"SocialAnxiety": "Neutral",
+					"Optimism": "Neutral",
+					"Gender": "Male",
+					"CanBeRomanced": false,
+					"LoveInterest": "null",
+					"HomeRegion": "Town",
+					"BirthSeason": null,
+					"BirthDay": 0,
+					"FriendsAndFamily": {},
+                                        "SocialTab": "HiddenAlways",
+                                        "CanVisitIsland": "FALSE",
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_PinkHouse",
+                            "Tile": {
+                                "X": 2,
+                                "Y": 8
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Kekoa",
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+				},
+                                "Lilia": {
+					"Manner": "Neutral",
+					"SocialAnxiety": "Neutral",
+					"Optimism": "Neutral",
+					"Gender": "Female",
+					"CanBeRomanced": false,
+					"LoveInterest": "null",
+					"HomeRegion": "Town",
+					"BirthSeason": null,
+					"BirthDay": 0,
+					"FriendsAndFamily": {},
+                                        "SocialTab": "HiddenAlways",
+                                        "CanVisitIsland": "FALSE",
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_PurpleHouse",
+                            "Tile": {
+                                "X": 8,
+                                "Y": 8
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Lilia",
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+				},	
+                                "Lotus": {
+					"Manner": "Neutral",
+					"SocialAnxiety": "Outgoing",
+					"Optimism": "Positive",
+					"Gender": "Female",
+					"CanBeRomanced": false,
+					"LoveInterest": "null",
+					"HomeRegion": "Town",
+					"BirthSeason": "summer",
+					"BirthDay": 11,
+					"FriendsAndFamily": {},
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_LotusHouse",
+                            "Tile": {
+                                "X": 18,
+                                "Y": 10
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Lotus",
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+				},
+                                "Shiso": {
+					"Manner": "Neutral",
+					"SocialAnxiety": "Neutral",
+					"Optimism": "Positive",
+					"Gender": "Male",
+					"CanBeRomanced": false,
+					"LoveInterest": "null",
+					"HomeRegion": "Town",
+					"BirthSeason": "summer",
+					"BirthDay": 23,
+					"FriendsAndFamily": {},
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_LotusHouse",
+                            "Tile": {
+                                "X": 16,
+                                "Y": 10
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Shiso",
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+				},
+                                "Mamo": {
+					"Manner": "Neutral",
+					"SocialAnxiety": "Neutral",
+					"Optimism": "Neutral",
+					"Gender": "Male",
+					"CanBeRomanced": false,
+					"LoveInterest": "null",
+					"HomeRegion": "Town",
+					"BirthSeason": null,
+					"BirthDay": 0,
+					"FriendsAndFamily": {},
+                                        "SocialTab": "HiddenAlways",
+                                        "CanVisitIsland": "FALSE",
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_YellowHouse",
+                            "Tile": {
+                                "X": 8,
+                                "Y": 8
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Mamo",
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+				},	
+                                "Nico": {
+					"Manner": "Neutral",
+					"SocialAnxiety": "Neutral",
+					"Optimism": "Neutral",
+					"Gender": "Male",
+					"CanBeRomanced": false,
+					"LoveInterest": "null",
+					"HomeRegion": "Town",
+					"BirthSeason": null,
+					"BirthDay": 0,
+					"FriendsAndFamily": {},
+                                        "SocialTab": "HiddenAlways",
+                                        "CanVisitIsland": "FALSE",
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_BlackHouse",
+                            "Tile": {
+                                "X": 2,
+                                "Y": 8
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Nico",
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+				},
+                                "Ipo": {
+					"Manner": "Neutral",
+					"SocialAnxiety": "Neutral",
+					"Optimism": "Neutral",
+					"Gender": "Male",
+					"CanBeRomanced": false,
+					"LoveInterest": "null",
+					"HomeRegion": "Other",
+					"BirthSeason": null,
+					"BirthDay": 0,
+					"FriendsAndFamily": {},
+                                        "SocialTab": "HiddenAlways",
+                                        "CanSocialize": "FALSE",
+                                        "CanVisitIsland": "FALSE",
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_AxolotlLake",
+                            "Tile": {
+                                "X": 0,
+                                "Y": 0
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Ipo",
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+				},	
+                                "MissLily": {
+					"Manner": "Neutral",
+					"SocialAnxiety": "Neutral",
+					"Optimism": "Neutral",
+					"Gender": "Female",
+					"CanBeRomanced": false,
+					"LoveInterest": "null",
+					"HomeRegion": "Other",
+					"BirthSeason": null,
+					"BirthDay": 0,
+					"FriendsAndFamily": {},
+                                        "SocialTab": "HiddenAlways",
+                                        "CanSocialize": "FALSE",
+                                        "CanVisitIsland": "FALSE",
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_AxolotlLake",
+                            "Tile": {
+                                "X": 0,
+                                "Y": 1
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "MissLily",
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+				},
+                                "Lala": {
+					"Manner": "Neutral",
+					"SocialAnxiety": "Outgoing",
+					"Optimism": "Positive",
+					"Gender": "Male",
+					"CanBeRomanced": false,
+					"LoveInterest": "null",
+					"HomeRegion": "Town",
+					"BirthSeason": "winter",
+					"BirthDay": 4,
+					"FriendsAndFamily": {"Lulu": "sister"},
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_LalaHouse",
+                            "Tile": {
+                                "X": 12,
+                                "Y": 9
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Lala",
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+				},
+                                "Lulu": {
+					"Manner": "Rude",
+					"SocialAnxiety": "Shy",
+					"Optimism": "Negative",
+					"Gender": "Female",
+					"CanBeRomanced": false,
+					"LoveInterest": "null",
+					"HomeRegion": "Town",
+					"BirthSeason": "winter",
+					"BirthDay": 4,
+					"FriendsAndFamily": {"Lala": "brother"},
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_LuluHouse",
+                            "Tile": {
+                                "X": 2,
+                                "Y": 9
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Lulu",
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+				},
+                                "Nimue": {
+					"Manner": "Rude",
+					"SocialAnxiety": "Shy",
+					"Optimism": "Negative",
+					"Gender": "Female",
+					"CanBeRomanced": false,
+					"LoveInterest": "null",
+					"HomeRegion": "Town",
+					"BirthSeason": "fall",
+					"BirthDay": 9,
+					"FriendsAndFamily": {},
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_NimueHouse",
+                            "Tile": {
+                                "X": 9,
+                                "Y": 5
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Nimue",
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+				},
+                                "Noa": {
+					"Manner": "Neutral",
+					"SocialAnxiety": "Neutral",
+					"Optimism": "Neutral",
+					"Gender": "Male",
+					"CanBeRomanced": false,
+					"LoveInterest": "null",
+					"HomeRegion": "Town",
+					"BirthSeason": "winter",
+					"BirthDay": 21,
+					"FriendsAndFamily": {},
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_NoaHouse",
+                            "Tile": {
+                                "X": 9,
+                                "Y": 6
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Noa",
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+				},	
+                                "Olina": {
+					"Manner": "Polite",
+					"SocialAnxiety": "Neutral",
+					"Optimism": "Positive",
+					"Gender": "Female",
+					"CanBeRomanced": false,
+					"LoveInterest": "Jinx",
+					"HomeRegion": "Town",
+					"BirthSeason": "spring",
+					"BirthDay": 9,
+					"FriendsAndFamily": {},
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_OlinaHouse",
+                            "Tile": {
+                                "X": 11,
+                                "Y": 9
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Olina",
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+				},	
+                                "Puka": {
+					"Manner": "Neutral",
+					"SocialAnxiety": "Neutral",
+					"Optimism": "Positive",
+					"Gender": "Male",
+					"CanBeRomanced": false,
+					"LoveInterest": "Hiro",
+					"HomeRegion": "Town",
+					"BirthSeason": "summer",
+					"BirthDay": 18,
+					"FriendsAndFamily": {},
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_PukaHouse",
+                            "Tile": {
+                                "X": 7,
+                                "Y": 5
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Puka",
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+				},	
+                                "Bonbon": {
+					"Manner": "Neutral",
+					"SocialAnxiety": "Outgoing",
+					"Optimism": "Positive",
+					"Gender": "Female",
+					"CanBeRomanced": false,
+					"LoveInterest": "null",
+					"HomeRegion": "Town",
+					"BirthSeason": "winter",
+					"BirthDay": 22,
+					"FriendsAndFamily": {},
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_BonbonHouse",
+                            "Tile": {
+                                "X": 8,
+                                "Y": 4
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Bonbon",
+                    "WinterStarParticipant": false,
+                    "Breather": false,	
+                                },	
+                                "Kandi": {
+					"Manner": "Rude",
+					"SocialAnxiety": "Outgoing",
+					"Optimism": "Neutral",
+					"Gender": "Female",
+					"CanBeRomanced": false,
+					"LoveInterest": "null",
+					"HomeRegion": "Town",
+					"BirthSeason": "spring",
+					"BirthDay": 6,
+					"FriendsAndFamily": {},
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_KandiHouse",
+                            "Tile": {
+                                "X": 20,
+                                "Y": 6
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "DisplayName": "Kandi",
+                    "WinterStarParticipant": false,
+                    "Breather": false,	
+             },		
+          }
+        }
+      ]
+   }

@@ -1,0 +1,410 @@
+{
+	"Changes": [
+		{
+
+      "LogName": "Portraits",
+      "Action": "Load",
+      "Target": "Portraits/Aukai, Portraits/Captain, Portraits/Hau, Portraits/Hiro, Portraits/Jinx, Portraits/Kekoa, Portraits/Lala, Portraits/Lilia, Portraits/Lulu, Portraits/Mamo, Portraits/Nico, Portraits/Olina, Portraits/Puka, Portraits/Noa, Portraits/Nimue, Portraits/Ipo, Portraits/Lotus, Portraits/Shiso, Portraits/MissLily, Portraits/Bonbon, Portraits/Kandi",
+      "FromFile": "Assets/{{Target}}.png"
+
+    },
+    {
+
+      "LogName": "Alternate Outfit Portraits",
+      "Action": "Load",
+      "Target": "Portraits/Lala_Clown, Portraits/Lulu_Clown, Portraits/Kandi_Bunni, Portraits/Lala_Halloween, Portraits/Lulu_Halloween, Portraits/Hiro_Halloween, Portraits/Jinx_Halloween, Portraits/Jinx_Halloween2, Portraits/Noa_Halloween, Portraits/Olina_Halloween, Portraits/Olina_Halloween2, Portraits/Puka_Halloween, Portraits/Bonbon_Halloween, Portraits/Kandi_Halloween, Portraits/Hiro_Winter, Portraits/Jinx_Winter, Portraits/Lala_Winter, Portraits/Lulu_Winter, Portraits/Noa_Winter, Portraits/Olina_Winter, Portraits/Puka_Winter, Portraits/Lotus_Winter, Portraits/Shiso_Winter, Portraits/Bonbon_Winter, Portraits/Lotus_Halloween, Portraits/Shiso_Halloween, Portraits/Captain_Santa, Portraits/Hiro_Tanabata, Portraits/Puka_Tanabata, Portraits/Captain_BOF, Portraits/Hiro_BOF, Portraits/Jinx_BOF, Portraits/Lala_BOF, Portraits/Lulu_BOF, Portraits/Lotus_BOF, Portraits/Nimue_BOF, Portraits/Noa_BOF, Portraits/Olina_BOF, Portraits/Puka_BOF, Portraits/Shiso_BOF, Portraits/Jinx_HumanPast, Portraits/Olina_HumanPast",
+      "FromFile": "Assets/{{Target}}.png"
+
+    },
+   {
+		"LogName": "Clown Lala Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Lala",
+		"FromFile": "Assets/Portraits/Lala_Clown.png",
+		"When": {
+			"DayOfWeek": "Wednesday",
+		},
+	},
+        {
+		"LogName": "Clown Lulu Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Lulu",
+		"FromFile": "Assets/Portraits/Lulu_Clown.png",
+		"When": {
+			"DayOfWeek": "Wednesday",
+		}
+	},
+        {
+		"LogName": "Bunni Kandi Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Kandi",
+		"FromFile": "Assets/Portraits/Kandi_Bunni.png",
+		"When": {
+			"DayOfWeek": "Saturday",
+		}
+	},
+     {
+		"LogName": "Halloween Hiro Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Hiro",
+		"FromFile": "Assets/Portraits/Hiro_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+     {
+		"LogName": "Halloween Jinx Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Jinx",
+		"FromFile": "Assets/Portraits/Jinx_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+{
+		"LogName": "Halloween Jinx Portrait 2",
+		"Action": "EditImage",
+		"Target": "Portraits/Jinx",
+		"FromFile": "Assets/Portraits/Jinx_Halloween2.png",
+		"When": {
+                        "Day": "28",
+                        "Season": "fall",
+                        "HasSeenEvent": "98890073"
+
+		}
+	},
+      {
+		"LogName": "Halloween Noa Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Noa",
+		"FromFile": "Assets/Portraits/Noa_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+      {
+		"LogName": "Halloween Olina Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Olina",
+		"FromFile": "Assets/Portraits/Olina_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+{
+		"LogName": "Halloween Olina Portrait 2",
+		"Action": "EditImage",
+		"Target": "Portraits/Olina",
+		"FromFile": "Assets/Portraits/Olina_Halloween2.png",
+		"When": {
+                        "Day": "28",
+                        "Season": "fall",
+                        "HasSeenEvent": "98890073"
+		}
+	},
+      {
+		"LogName": "Halloween Puka Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Puka",
+		"FromFile": "Assets/Portraits/Puka_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+{
+		"LogName": "Halloween Lala Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Lala",
+		"FromFile": "Assets/Portraits/Lala_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+{
+		"LogName": "Halloween Lulu Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Lulu",
+		"FromFile": "Assets/Portraits/Lulu_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+{
+		"LogName": "Halloween Lotus Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Lotus",
+		"FromFile": "Assets/Portraits/Lotus_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+{
+		"LogName": "Halloween Shiso Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Shiso",
+		"FromFile": "Assets/Portraits/Shiso_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+{
+		"LogName": "Halloween Bonbon Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Bonbon",
+		"FromFile": "Assets/Portraits/Bonbon_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+{
+		"LogName": "Halloween Kandi Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Kandi",
+		"FromFile": "Assets/Portraits/Kandi_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+{
+		"LogName": "Winter Hiro Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Hiro",
+		"FromFile": "Assets/Portraits/Hiro_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}
+	},
+     {
+		"LogName": "Winter Jinx Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Jinx",
+		"FromFile": "Assets/Portraits/Jinx_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}
+	},
+      {
+		"LogName": "Winter Noa Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Noa",
+		"FromFile": "Assets/Portraits/Noa_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}
+	},
+      {
+		"LogName": "Winter Olina Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Olina",
+		"FromFile": "Assets/Portraits/Olina_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}
+	},
+      {
+		"LogName": "Winter Puka Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Puka",
+		"FromFile": "Assets/Portraits/Puka_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}
+	},
+{
+		"LogName": "Winter Lala Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Lala",
+		"FromFile": "Assets/Portraits/Lala_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}
+	},
+{
+		"LogName": "Winter Lulu Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Lulu",
+		"FromFile": "Assets/Portraits/Lulu_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}
+	     },
+{
+		"LogName": "Winter Lotus Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Lotus",
+		"FromFile": "Assets/Portraits/Lotus_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}
+	     },
+{
+		"LogName": "Winter Shiso Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Shiso",
+		"FromFile": "Assets/Portraits/Shiso_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}
+	     },
+{
+		"LogName": "Winter Bonbon Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Bonbon",
+		"FromFile": "Assets/Portraits/Bonbon_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}
+	     },
+{
+		"LogName": "Santa Captain Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Captain",
+		"FromFile": "Assets/Portraits/Captain_Santa.png",
+		"When": {
+                "Day": "25",
+                "Season": "winter"
+		}
+	     },
+{
+		"LogName": "Tanabata Hiro Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Hiro",
+		"FromFile": "Assets/Portraits/Hiro_Tanabata.png",
+		"When": {
+                "Day": "7",
+                "Season": "summer"
+		}
+	     },
+{
+		"LogName": "Tanabata Puka Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Puka",
+		"FromFile": "Assets/Portraits/Puka_Tanabata.png",
+		"When": {
+                "Day": "7",
+                "Season": "summer"
+		}
+	     },
+{
+		"LogName": "Birth of Flowers Captain Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Captain",
+		"FromFile": "Assets/Portraits/Captain_BOF.png",
+		"When": {
+                "Day": "21",
+                "Season": "spring"
+		}
+	     },
+{
+		"LogName": "Birth of Flowers Hiro Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Hiro",
+		"FromFile": "Assets/Portraits/Hiro_BOF.png",
+		"When": {
+                "Day": "21",
+                "Season": "spring"
+		}
+	     },
+{
+		"LogName": "Birth of Flowers Jinx Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Jinx",
+		"FromFile": "Assets/Portraits/Jinx_BOF.png",
+		"When": {
+                "Day": "21",
+                "Season": "spring"
+		}
+	     },
+{
+		"LogName": "Birth of Flowers Lala Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Lala",
+		"FromFile": "Assets/Portraits/Lala_BOF.png",
+		"When": {
+                "Day": "21",
+                "Season": "spring"
+		}
+	     },
+{
+		"LogName": "Birth of Flowers Lulu Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Lulu",
+		"FromFile": "Assets/Portraits/Lulu_BOF.png",
+		"When": {
+                "Day": "21",
+                "Season": "spring"
+		}
+	     },
+{
+		"LogName": "Birth of Flowers Lotus Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Lotus",
+		"FromFile": "Assets/Portraits/Lotus_BOF.png",
+		"When": {
+                "Day": "21",
+                "Season": "spring"
+		}
+	     },
+{
+		"LogName": "Birth of Flowers Nimue Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Nimue",
+		"FromFile": "Assets/Portraits/Nimue_BOF.png",
+		"When": {
+                "Day": "21",
+                "Season": "spring"
+		}
+	     },
+{
+		"LogName": "Birth of Flowers Noa Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Noa",
+		"FromFile": "Assets/Portraits/Noa_BOF.png",
+		"When": {
+                "Day": "21",
+                "Season": "spring"
+		}
+	     },
+{
+		"LogName": "Birth of Flowers Olina Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Olina",
+		"FromFile": "Assets/Portraits/Olina_BOF.png",
+		"When": {
+                "Day": "21",
+                "Season": "spring"
+		}
+	     },
+{
+		"LogName": "Birth of Flowers Puka Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Puka",
+		"FromFile": "Assets/Portraits/Puka_BOF.png",
+		"When": {
+                "Day": "21",
+                "Season": "spring"
+		}
+	     },
+{
+		"LogName": "Birth of Flowers Shiso Portrait",
+		"Action": "EditImage",
+		"Target": "Portraits/Shiso",
+		"FromFile": "Assets/Portraits/Shiso_BOF.png",
+		"When": {
+                "Day": "21",
+                "Season": "spring"
+		}
+	     },
+      ]
+   }

@@ -1,0 +1,35 @@
+{
+"Changes": [
+
+	{
+		"LogName": "Jinx Schedule",
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Jinx",
+		"Entries": {
+
+			//Regular Schedule
+			"spring": "610 {{ModId}}_JinxHouse 1 1 2/700 {{ModId}}_JinxHouse 7 7 0/900 {{ModId}}_AxolotlTown 105 22 2/1200 {{ModId}}_DrinkShop 7 8 0/1600 {{ModId}}_DrinkShop 2 6 2/2200 {{ModId}}_JinxHouse 5 8 3",
+			"summer": "610 {{ModId}}_JinxHouse 1 1 2/700 {{ModId}}_JinxHouse 7 7 0/900 {{ModId}}_JinxHouse 4 12 2/1200 {{ModId}}_AxolotlTown 104 22 1/1600 {{ModId}}_DrinkShop 13 6 1/2200 {{ModId}}_JinxHouse 5 8 3",
+			"fall": "610 {{ModId}}_JinxHouse 1 1 2/700 {{ModId}}_JinxHouse 7 7 0/900 {{ModId}}_AxolotlTown 105 22 2/1100 {{ModId}}_DrinkShop 2 6 2/1500 {{ModId}}_AxolotlLake 88 37 3/2200 {{ModId}}_JinxHouse 5 8 3",
+			"winter": "610 {{ModId}}_JinxHouse 1 1 2/700 {{ModId}}_JinxHouse 7 7 0/900 {{ModId}}_AxolotlTown 105 22 2/1400 {{ModId}}_AxolotlLake 88 37 3/2200 {{ModId}}_JinxHouse 5 8 3",
+			"rain": "610 {{ModId}}_JinxHouse 1 1 2/700 {{ModId}}_JinxHouse 7 7 0/1000 {{ModId}}_DrinkShop 7 8 0/1500 {{ModId}}_DrinkShop 2 6 2/2200 {{ModId}}_JinxHouse 5 8 3",
+			"Fri": "610 {{ModId}}_JinxHouse 1 1 2/700 {{ModId}}_JinxHouse 7 7 0/900 {{ModId}}_DrinkShop 7 8 0/1200 {{ModId}}_DrinkShop 2 6 2/1600 {{ModId}}_AxolotlCommunityCenter 28 18 3/2200 {{ModId}}_JinxHouse 5 8 3",
+                        "Wed": "610 {{ModId}}_JinxHouse 1 1 2/700 {{ModId}}_JinxHouse 7 7 0/1000 {{ModId}}_AxolotlTown 43 41 3/2200 {{ModId}}_JinxHouse 5 8 3",
+                        "fall_28": "610 {{ModId}}_JinxHouse 1 1 2/700 {{ModId}}_JinxHouse 7 7 0/900 {{ModId}}_AxolotlTown 105 22 2/1100 {{ModId}}_DrinkShop 2 6 2/1500 {{ModId}}_AxolotlLake 88 37 3/1850 {{ModId}}_AxolotlTown 30 51 2/2350 {{ModId}}_JinxHouse 5 8 3",
+                        "winter_25": "610 {{ModId}}_JinxHouse 1 1 2/700 {{ModId}}_JinxHouse 7 7 0/900 {{ModId}}_AxolotlTown 30 51 2/2200 {{ModId}}_JinxHouse 5 8 3",
+                        "summer_7": "610 {{ModId}}_JinxHouse 1 1 2/700 {{ModId}}_JinxHouse 7 7 0/900 {{ModId}}_JinxHouse 4 12 2/1200 {{ModId}}_AxolotlTown 104 22 1/1600 {{ModId}}_DrinkShop 13 6 1/1800 {{ModId}}_AxolotlTown 26 78 1/2350 {{ModId}}_JinxHouse 5 8 3",
+                        "spring_21": "610 {{ModId}}_JinxHouse 1 1 2/700 {{ModId}}_JinxHouse 7 7 0/800 {{ModId}}_AxolotlTown 26 78 1/2200 {{ModId}}_JinxHouse 5 8 3",
+			}
+	},
+{
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Jinx",
+		"Entries": {
+			"Sun": "610 {{ModId}}_JinxHouse 1 1 2/900 {{ModId}}_AxolotlTownSouth 77 35 3/2000 {{ModId}}_JinxHouse 5 8 3",
+			},
+		"When": {
+			"HasSeenEvent: hostPlayer |contains=98890063": true
+                        },
+	},
+]
+}

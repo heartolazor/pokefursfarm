@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="left-down" width="12" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="8">
+ <properties>
+  <property name="NPCWarp" value="8 14 Silverinnia.Elian_Warp 2 2"/>
+  <property name="Warp" value="8 14 Custom_CrimsonBadlands 227 113"/>
+ </properties>
+ <tileset firstgid="1" name="mine_desert_dangerous" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine_desert_dangerous.png" width="256" height="288"/>
+  <tile id="137">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="138">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="139">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="140">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="149">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="150">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="151">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="152">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="153">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="154">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="155">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="165">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="166">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="167">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="168">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="169">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="170">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="171">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="172">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="181">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="182">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="183">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="184">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="185">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="186">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="187">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="188">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="198">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="199">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="200">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="201">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="202">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="203">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="217">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="218">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="219">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="233">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="234">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="235">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="289" name="elian_furniture" tilewidth="16" tileheight="16" tilecount="90" columns="10">
+  <image source="z_elian_furniture.png" width="160" height="144"/>
+ </tileset>
+ <tileset firstgid="379" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <layer id="1" name="Back" width="12" height="15">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,41,0,0,0,0,
+139,219,219,219,219,219,219,219,113,113,113,139,
+235,235,235,235,235,235,235,235,337,235,235,235,
+139,336,139,139,139,139,139,139,138,139,139,139,
+139,139,139,172,155,139,138,139,139,139,169,139,
+139,139,155,139,172,139,139,172,139,139,139,139,
+0,139,139,139,139,139,139,139,139,155,139,139,
+0,0,139,139,139,171,139,139,139,139,139,139,
+0,0,0,169,139,139,139,139,139,171,139,139,
+0,0,0,0,139,138,139,156,139,139,139,0,
+0,0,0,0,0,139,139,167,168,169,0,0,
+0,0,0,0,0,0,0,166,166,166,0,0,
+0,0,0,0,0,0,0,0,166,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="12" height="15">
+  <data encoding="csv">
+69,74,75,8,77,75,76,9,75,76,77,112,
+85,81,49,24,99,81,81,25,81,99,81,128,
+101,97,65,40,115,97,97,313,97,115,97,144,
+117,113,113,56,307,308,113,323,327,299,300,160,
+149,326,336,0,317,318,0,333,316,309,310,240,
+165,326,0,0,0,0,0,0,0,0,0,208,
+149,336,0,0,0,0,0,0,0,329,330,224,
+165,0,0,0,0,0,0,0,0,337,337,240,
+197,0,0,0,0,0,0,0,0,0,0,208,
+79,214,0,0,314,0,0,0,0,0,0,224,
+79,79,214,0,0,0,0,0,0,0,0,240,
+79,79,79,214,0,0,0,0,0,0,0,207,
+79,79,79,79,214,0,0,0,0,0,222,79,
+79,79,79,79,79,79,79,233,0,237,79,79,
+79,79,79,79,79,79,79,214,0,222,79,79
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="3" name="TileData" x="64" y="32" width="32" height="48">
+   <properties>
+    <property name="Action" value="Message &quot;ElianCave.2&quot;"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="128" y="48" width="16" height="32">
+   <properties>
+    <property name="Action" value="Message &quot;ElianCave.1&quot;"/>
+   </properties>
+  </object>
+  <object id="5" x="144" y="80" width="32" height="16"/>
+ </objectgroup>
+ <layer id="5" name="Paths" width="12" height="15">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,387,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,387,0,387,0,0,
+0,0,0,0,0,0,0,0,387,0,0,0,
+0,0,0,0,0,0,0,0,387,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Paths"/>
+ <layer id="7" name="Front" width="12" height="15">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,297,298,0,0,0,0,0,0,
+0,0,326,0,0,0,0,0,306,0,0,0,
+0,0,0,0,0,0,0,0,0,311,312,0,
+0,0,0,0,0,0,0,0,0,321,322,0,
+0,0,0,0,0,0,0,0,0,327,327,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,315,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Front"/>
+ <layer id="9" name="AlwaysFront" width="12" height="15">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,198,0,0,0,0,0,0,0,0,0,0,
+0,214,198,0,0,0,0,0,0,0,0,0,
+0,0,214,198,0,0,0,0,0,0,0,0,
+0,0,0,214,198,0,0,0,0,0,206,0,
+0,0,0,0,214,215,216,217,0,221,222,0,
+0,0,0,0,0,0,0,233,0,237,0,0,
+0,0,0,0,0,0,0,214,216,222,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

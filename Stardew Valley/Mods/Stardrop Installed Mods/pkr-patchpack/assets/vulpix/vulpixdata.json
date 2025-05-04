@@ -1,0 +1,884 @@
+{
+   "Changes":[
+      {
+         "LogName":"firing foxes",
+         "Action":"EditData",
+         "Target":"Data/FarmAnimals",
+         "TargetField":[
+            "vulpix"
+         ],
+         "Entries":{
+            "DaysToMature":"4",
+            "DaysToProduce":"1",
+            "GrassEatAmount":"2",
+            "ProfessionForHappinessBoost":3,
+            "ProfessionForQualityBoost":3,
+            "ProfessionForFasterProduce":3,
+            "PurchasePrice":1750,
+            "SellPrice":3500,
+            "ProduceItemIds":[
+               {
+                  "Id":"Default",
+                  "Condition":"!SEASON winter",
+                  "MinimumFriendship":0,
+                  "ItemId":"404"
+               }
+            ],
+			"DeluxeProduceItemIds": [],
+         }
+      },
+      {
+         "LogName":"firing foxes",
+         "Action":"EditData",
+         "Target":"Data/FarmAnimals",
+         "TargetField":[
+            "tails"
+         ],
+         "Entries":{
+            "DaysToMature":"7",
+            "DaysToProduce":"1",
+            "GrassEatAmount":"3",
+            "ProfessionForHappinessBoost":3,
+            "ProfessionForQualityBoost":3,
+            "ProfessionForFasterProduce":3,
+            "SellPrice":2250,
+            "ProduceItemIds":[
+               {
+                  "Id":"Default",
+                  "Condition":"!SEASON winter",
+                  "MinimumFriendship":0,
+                  "ItemId":"404"
+               }
+            ]
+         }
+      },
+      {
+         "LogName":"icing foxes? this joke doesnt work as well",
+         "Action":"EditData",
+         "Target":"Data/FarmAnimals",
+         "TargetField":[
+            "alovulpix"
+         ],
+         "Entries":{
+            "DaysToMature":"4",
+            "DaysToProduce":"1",
+            "GrassEatAmount":"2",
+            "ProfessionForHappinessBoost":3,
+            "ProfessionForQualityBoost":3,
+            "ProfessionForFasterProduce":3,
+            "PurchasePrice":1750,
+            "SellPrice":3500,
+            "ProduceItemIds":[
+               {
+                  "Id":"Default",
+                  "Condition":"!WEATHER Target Rain Storm",
+                  "MinimumFriendship":0,
+                  "ItemId":"404"
+               }
+            ],
+			"DeluxeProduceItemIds": [],
+         }
+      },
+      {
+         "LogName":"icing foxes? this joke doesnt work as well",
+         "Action":"EditData",
+         "Target":"Data/FarmAnimals",
+         "TargetField":[
+            "alotails"
+         ],
+         "Entries":{
+            "DaysToMature":"7",
+            "DaysToProduce":"1",
+            "GrassEatAmount":"1",
+            "ProfessionForHappinessBoost":3,
+            "ProfessionForQualityBoost":3,
+            "ProfessionForFasterProduce":3,
+            "SellPrice":2250,
+            "ProduceItemIds":[
+               {
+                  "Id":"Default",
+                  "Condition":"!WEATHER Target Rain Storm",
+                  "MinimumFriendship":0,
+                  "ItemId":"404"
+               }
+            ],
+			"DeluxeProduceItemIds": [],
+         }
+      },
+      {
+         "LogName":"teaching vulpix to find candy",
+         "Action":"EditData",
+         "Target":"selph.ExtraAnimalConfig/AnimalExtensionData",
+         "Entries":{
+            "vulpix":{
+               "MalePercentage":0.25,
+               "IgnoreRain":true,
+               "ExtraProduceSpawnList":[
+                  {
+                     "Id":"egg",
+                     "DaysToProduce":3,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Default",
+                           "Condition":null,
+                           "MinimumFriendship":0,
+                           "ItemId":"bees.pkr_vulpixegg"
+                        }
+                     ]
+                  },
+                  {
+                     "Id":"helditem",
+                     "DaysToProduce":3,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Default",
+                           "Condition":"RANDOM 0.25",
+                           "MinimumFriendship":250,
+                           "ItemId":"bees.pkr_charcoal"
+                        },
+                        {
+                           "Id":"Default",
+                           "Condition":"RANDOM 0.25",
+                           "MinimumFriendship":750,
+                           "ItemId":"bees.pkr_infernotm"
+                        }
+                     ]
+                  },
+                  {
+                     "Id":"tm",
+                     "DaysToProduce":3,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Default",
+                           "Condition":"RANDOM 0.07 @adddailyluck",
+                           "MinimumFriendship":750,
+                           "ItemId":"bees.pkr_infernotm"
+                        }
+                     ]
+                  },
+                  {
+                     "Id":"treasure",
+                     "DaysToProduce":3,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Default",
+                           "Condition":"RANDOM 0.25, !SEASON winter",
+                           "MinimumFriendship":0,
+                           "ItemId":"bees.pkr_gummitreasurebox"
+                        }
+                     ]
+                  }
+               ],
+               "AnimalProduceExtensionData":{
+				   "(O)bees.pkr_infernotm":{
+                     "HarvestTool":"DropOvernight",
+                  },
+				  "(O)bees.bees.pkr_vulpixegg":{
+                     "HarvestTool":"DropOvernight",
+                  },
+				  "(O)bees.pkr_charcoal":{
+                     "HarvestTool":"DropOvernight",
+                  },
+                  "(O)bees.pkr_gummitreasurebox":{
+                     "HarvestTool":"DigUp",
+                     "ItemQueries":[
+                        {
+                           "ItemId":"bees.pkr_deluxetreasurebox",
+                           "Condition":"selph.ExtraAnimalConfig_ANIMAL_FRIENDSHIP 700, RANDOM 0.25"
+                        },
+                        {
+                           "ItemId":"bees.pkr_candytreasurebox",
+                           "Condition":"selph.ExtraAnimalConfig_ANIMAL_FRIENDSHIP 500, RANDOM 0.25"
+                        },
+                        {
+                           "ItemId":"bees.pkr_bowtreasurebox",
+                           "Condition":"selph.ExtraAnimalConfig_ANIMAL_FRIENDSHIP 500, RANDOM 0.25"
+                        },
+                        {
+                           "ItemId":"bees.pkr_gummitreasurebox"
+                        }
+                     ]
+                  },
+                  "(O)404":{
+                     "ItemQuery":{
+                        "RandomItemId":[
+                           "(O)404",
+                           "(O)420",
+                           "(O)422",
+                           "(O)430",
+                           "(O)257",
+                           "(O)281",
+                           "(O)259"
+                        ]
+                     }
+                  },
+                  "(O)Morghoula.AlchemistryCP_DragonRoot":{
+                     "HarvestTool":"DigUp",
+                     "ItemQuery":{
+                        "ItemId":"RANDOM_ITEMS (O)",
+                        "PerItemCondition":"ANY \"ITEM_ID Target Morghoula.AlchemistryCP_DragonRoot Morghoula.AlchemistryCP_BeachedOyster HeyImAmethyst.CP.ArsVenefici_Tarma_Root HeyImAmethyst.CP.ArsVenefici_Wakebloom HeyImAmethyst.CP.ArsVenefici_Cerublossom HeyImAmethyst.CP.ArsVenefici_Aum\" \"SEASON spring, ITEM_ID Target Morghoula.AlchemistryCP_LostSouls Morghoula.AlchemistryCP_WizardsEye Morghoula.AlchemistryCP_NightCap Morghoula.AlchemistryCP_SunriseGlory Morghoula.AlchemistryCP_SwampLighter\" \"SEASON summer, ITEM_ID Target Morghoula.AlchemistryCP_LunarGlowcap Morghoula.AlchemistryCP_FalseMorel Morghoula.AlchemistryCP_RedSmilers Morghoula.AlchemistryCP_ForestWisp Morghoula.AlchemistryCP_SwampLighter\" \"SEASON fall, ITEM_ID Target Morghoula.AlchemistryCP_MeteorCap Morghoula.AlchemistryCP_InkCap Morghoula.AlchemistryCP_CapOLantern Morghoula.AlchemistryCP_HellfireBolete Morghoula.AlchemistryCP_SwampLighter\" \"SEASON winter, ITEM_ID Target Morghoula.AlchemistryCP_DawnsingerToadstool Morghoula.AlchemistryCP_ForestWisp Morghoula.AlchemistryCP_FairieWings\""
+                     }
+                  },
+                  "(O)Morghoula.AlchemistryCP_LostSouls":{
+                     "HarvestTool":"DigUp",
+                     "ItemQuery":{
+                        "ItemId":"RANDOM_ITEMS (O)",
+                        "PerItemCondition":"ANY \"ITEM_ID Target Morghoula.AlchemistryCP_DragonRoot Morghoula.AlchemistryCP_BeachedOyster\" \"SEASON spring, ITEM_ID Target Morghoula.AlchemistryCP_LostSouls Morghoula.AlchemistryCP_WizardsEye Morghoula.AlchemistryCP_NightCap Morghoula.AlchemistryCP_SunriseGlory Morghoula.AlchemistryCP_SwampLighter\" \"SEASON summer, ITEM_ID Target Morghoula.AlchemistryCP_LunarGlowcap Morghoula.AlchemistryCP_FalseMorel Morghoula.AlchemistryCP_RedSmilers Morghoula.AlchemistryCP_ForestWisp Morghoula.AlchemistryCP_SwampLighter\" \"SEASON fall, ITEM_ID Target Morghoula.AlchemistryCP_MeteorCap Morghoula.AlchemistryCP_InkCap Morghoula.AlchemistryCP_CapOLantern Morghoula.AlchemistryCP_HellfireBolete Morghoula.AlchemistryCP_SwampLighter\" \"SEASON winter, ITEM_ID Target Morghoula.AlchemistryCP_DawnsingerToadstool Morghoula.AlchemistryCP_ForestWisp Morghoula.AlchemistryCP_FairieWings\""
+                     }
+                  },
+                  "(O)HeyImAmethyst.CP.ArsVenefici_Cerublossom":{
+                     "HarvestTool":"DigUp",
+                     "ItemQuery":{
+                        "ItemId":"RANDOM_ITEMS (O)",
+                        "PerItemCondition":"ANY \"ITEM_ID Target HeyImAmethyst.CP.ArsVenefici_Tarma_Root HeyImAmethyst.CP.ArsVenefici_Wakebloom HeyImAmethyst.CP.ArsVenefici_Cerublossom HeyImAmethyst.CP.ArsVenefici_Aum\""
+                     }
+                  }
+               }
+            },
+            "alovulpix":{
+               "MalePercentage":0.25,
+               "IgnoreWinter":true,
+               "ExtraProduceSpawnList":[
+                  {
+                     "Id":"egg",
+                     "DaysToProduce":3,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Default",
+                           "Condition":null,
+                           "MinimumFriendship":0,
+                           "ItemId":"bees.pkr_vulpixegg"
+                        }
+                     ]
+                  },
+                  {
+                     "Id":"helditem",
+                     "DaysToProduce":3,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Default",
+                           "Condition":"RANDOM 0.25",
+                           "MinimumFriendship":250,
+                           "ItemId":"bees.pkr_snowball"
+                        },
+                        {
+                           "Id":"Default",
+                           "Condition":"RANDOM 0.25",
+                           "MinimumFriendship":750,
+                           "ItemId":"bees.pkr_blizzardtm"
+                        }
+                     ]
+                  },
+                  {
+                     "Id":"tm",
+                     "DaysToProduce":3,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Default",
+                           "Condition":"RANDOM 0.07 @adddailyluck",
+                           "MinimumFriendship":750,
+                           "ItemId":"bees.pkr_blizzardtm"
+                        }
+                     ]
+                  },
+                  {
+                     "Id":"treasure",
+                     "DaysToProduce":3,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Default",
+                           "Condition":"RANDOM 0.25, !WEATHER Target Rain Storm",
+                           "MinimumFriendship":0,
+                           "ItemId":"bees.pkr_gummitreasurebox"
+                        }
+                     ]
+                  }
+               ],
+               "AnimalProduceExtensionData":{
+				  "(O)bees.pkr_blizzardtm":{
+                     "HarvestTool":"DropOvernight",
+                  },
+				  "(O)bees.bees.pkr_vulpixegg":{
+                     "HarvestTool":"DropOvernight",
+                  },
+				  "(O)bees.pkr_snowball":{
+                     "HarvestTool":"DropOvernight",
+                  },
+                  "(O)bees.pkr_gummitreasurebox":{
+                     "HarvestTool":"DigUp",
+                     "ItemQueries":[
+                        {
+                           "ItemId":"bees.pkr_deluxetreasurebox",
+                           "Condition":"selph.ExtraAnimalConfig_ANIMAL_FRIENDSHIP 700, RANDOM 0.25"
+                        },
+                        {
+                           "ItemId":"bees.pkr_candytreasurebox",
+                           "Condition":"selph.ExtraAnimalConfig_ANIMAL_FRIENDSHIP 500, RANDOM 0.25"
+                        },
+                        {
+                           "ItemId":"bees.pkr_bowtreasurebox",
+                           "Condition":"selph.ExtraAnimalConfig_ANIMAL_FRIENDSHIP 500, RANDOM 0.25"
+                        },
+                        {
+                           "ItemId":"bees.pkr_gummitreasurebox"
+                        }
+                     ]
+                  },
+                  "(O)404":{
+                     "ItemQuery":{
+                        "RandomItemId":[
+                           "(O)404",
+                           "(O)420",
+                           "(O)422",
+                           "(O)430",
+                           "(O)257",
+                           "(O)281",
+                           "(O)259"
+                        ]
+                     }
+                  },
+                  "(O)Morghoula.AlchemistryCP_DragonRoot":{
+                     "HarvestTool":"DigUp",
+                     "ItemQuery":{
+                        "ItemId":"RANDOM_ITEMS (O)",
+                        "PerItemCondition":"ANY \"ITEM_ID Target Morghoula.AlchemistryCP_DragonRoot Morghoula.AlchemistryCP_BeachedOyster HeyImAmethyst.CP.ArsVenefici_Tarma_Root HeyImAmethyst.CP.ArsVenefici_Wakebloom HeyImAmethyst.CP.ArsVenefici_Cerublossom HeyImAmethyst.CP.ArsVenefici_Aum\" \"SEASON spring, ITEM_ID Target Morghoula.AlchemistryCP_LostSouls Morghoula.AlchemistryCP_WizardsEye Morghoula.AlchemistryCP_NightCap Morghoula.AlchemistryCP_SunriseGlory Morghoula.AlchemistryCP_SwampLighter\" \"SEASON summer, ITEM_ID Target Morghoula.AlchemistryCP_LunarGlowcap Morghoula.AlchemistryCP_FalseMorel Morghoula.AlchemistryCP_RedSmilers Morghoula.AlchemistryCP_ForestWisp Morghoula.AlchemistryCP_SwampLighter\" \"SEASON fall, ITEM_ID Target Morghoula.AlchemistryCP_MeteorCap Morghoula.AlchemistryCP_InkCap Morghoula.AlchemistryCP_CapOLantern Morghoula.AlchemistryCP_HellfireBolete Morghoula.AlchemistryCP_SwampLighter\" \"SEASON winter, ITEM_ID Target Morghoula.AlchemistryCP_DawnsingerToadstool Morghoula.AlchemistryCP_ForestWisp Morghoula.AlchemistryCP_FairieWings\""
+                     }
+                  },
+                  "(O)Morghoula.AlchemistryCP_LostSouls":{
+                     "HarvestTool":"DigUp",
+                     "ItemQuery":{
+                        "ItemId":"RANDOM_ITEMS (O)",
+                        "PerItemCondition":"ANY \"ITEM_ID Target Morghoula.AlchemistryCP_DragonRoot Morghoula.AlchemistryCP_BeachedOyster\" \"SEASON spring, ITEM_ID Target Morghoula.AlchemistryCP_LostSouls Morghoula.AlchemistryCP_WizardsEye Morghoula.AlchemistryCP_NightCap Morghoula.AlchemistryCP_SunriseGlory Morghoula.AlchemistryCP_SwampLighter\" \"SEASON summer, ITEM_ID Target Morghoula.AlchemistryCP_LunarGlowcap Morghoula.AlchemistryCP_FalseMorel Morghoula.AlchemistryCP_RedSmilers Morghoula.AlchemistryCP_ForestWisp Morghoula.AlchemistryCP_SwampLighter\" \"SEASON fall, ITEM_ID Target Morghoula.AlchemistryCP_MeteorCap Morghoula.AlchemistryCP_InkCap Morghoula.AlchemistryCP_CapOLantern Morghoula.AlchemistryCP_HellfireBolete Morghoula.AlchemistryCP_SwampLighter\" \"SEASON winter, ITEM_ID Target Morghoula.AlchemistryCP_DawnsingerToadstool Morghoula.AlchemistryCP_ForestWisp Morghoula.AlchemistryCP_FairieWings\""
+                     }
+                  },
+                  "(O)HeyImAmethyst.CP.ArsVenefici_Cerublossom":{
+                     "HarvestTool":"DigUp",
+                     "ItemQuery":{
+                        "ItemId":"RANDOM_ITEMS (O)",
+                        "PerItemCondition":"ANY \"ITEM_ID Target HeyImAmethyst.CP.ArsVenefici_Tarma_Root HeyImAmethyst.CP.ArsVenefici_Wakebloom HeyImAmethyst.CP.ArsVenefici_Cerublossom HeyImAmethyst.CP.ArsVenefici_Aum\""
+                     }
+                  }
+               }
+            },
+            "tails":{
+               "MalePercentage":0.25,
+               "IgnoreRain":true,
+               "ProduceItemIds":[
+                  {
+                     "Id":"egg",
+                     "DaysToProduce":3,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Default",
+                           "Condition":null,
+                           "MinimumFriendship":0,
+                           "ItemId":"bees.pkr_vulpixegg"
+                        }
+                     ]
+                  },
+                  {
+                     "Id":"helditem",
+                     "DaysToProduce":3,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Default",
+                           "Condition":"RANDOM 0.25",
+                           "MinimumFriendship":250,
+                           "ItemId":"bees.pkr_goldleaf"
+                        },
+                        {
+                           "Id":"Default",
+                           "Condition":"RANDOM 0.25",
+                           "MinimumFriendship":250,
+                           "ItemId":"bees.pkr_charcoal"
+                        },
+                        {
+                           "Id":"Default",
+                           "Condition":"RANDOM 0.25",
+                           "MinimumFriendship":750,
+                           "ItemId":"bees.pkr_burningtm"
+                        }
+                     ]
+                  },
+                  {
+                     "Id":"tm",
+                     "DaysToProduce":3,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Default",
+                           "Condition":"RANDOM 0.07 @adddailyluck",
+                           "MinimumFriendship":750,
+                           "ItemId":"bees.pkr_burningtm"
+                        }
+                     ]
+                  },
+                  {
+                     "Id":"treasure",
+                     "DaysToProduce":3,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Default",
+                           "Condition":"RANDOM 0.25, !SEASON winter",
+                           "MinimumFriendship":0,
+                           "ItemId":"bees.pkr_gummitreasurebox"
+                        }
+                     ]
+                  }
+               ],
+               "AnimalProduceExtensionData":{
+				  "(O)bees.pkr_burningtm":{
+                     "HarvestTool":"DropOvernight",
+                  },
+				  "(O)bees.bees.pkr_vulpixegg":{
+                     "HarvestTool":"DropOvernight",
+                  },
+				  "(O)bees.pkr_charcoal":{
+                     "HarvestTool":"DropOvernight",
+                  },
+				 "(O)bees.pkr_goldleaf":{
+                     "HarvestTool":"DropOvernight",
+                  },
+                  "(O)bees.pkr_gummitreasurebox":{
+                     "HarvestTool":"DigUp",
+                     "ItemQueries":[
+                        {
+                           "ItemId":"bees.pkr_deluxetreasurebox",
+                           "Condition":"selph.ExtraAnimalConfig_ANIMAL_FRIENDSHIP 700, RANDOM 0.25"
+                        },
+                        {
+                           "ItemId":"bees.pkr_candytreasurebox",
+                           "Condition":"selph.ExtraAnimalConfig_ANIMAL_FRIENDSHIP 500, RANDOM 0.25"
+                        },
+                        {
+                           "ItemId":"bees.pkr_bowtreasurebox",
+                           "Condition":"selph.ExtraAnimalConfig_ANIMAL_FRIENDSHIP 500, RANDOM 0.25"
+                        },
+                        {
+                           "ItemId":"bees.pkr_gummitreasurebox"
+                        }
+                     ]
+                  },
+                  "(O)404":{
+                     "ItemQuery":{
+                        "RandomItemId":[
+                           "(O)404",
+                           "(O)420",
+                           "(O)422",
+                           "(O)430",
+                           "(O)257",
+                           "(O)281",
+                           "(O)259"
+                        ]
+                     }
+                  },
+                  "(O)Morghoula.AlchemistryCP_DragonRoot":{
+                     "HarvestTool":"DigUp",
+                     "ItemQuery":{
+                        "ItemId":"RANDOM_ITEMS (O)",
+                        "PerItemCondition":"ANY \"ITEM_ID Target Morghoula.AlchemistryCP_DragonRoot Morghoula.AlchemistryCP_BeachedOyster HeyImAmethyst.CP.ArsVenefici_Tarma_Root HeyImAmethyst.CP.ArsVenefici_Wakebloom HeyImAmethyst.CP.ArsVenefici_Cerublossom HeyImAmethyst.CP.ArsVenefici_Aum\" \"SEASON spring, ITEM_ID Target Morghoula.AlchemistryCP_LostSouls Morghoula.AlchemistryCP_WizardsEye Morghoula.AlchemistryCP_NightCap Morghoula.AlchemistryCP_SunriseGlory Morghoula.AlchemistryCP_SwampLighter\" \"SEASON summer, ITEM_ID Target Morghoula.AlchemistryCP_LunarGlowcap Morghoula.AlchemistryCP_FalseMorel Morghoula.AlchemistryCP_RedSmilers Morghoula.AlchemistryCP_ForestWisp Morghoula.AlchemistryCP_SwampLighter\" \"SEASON fall, ITEM_ID Target Morghoula.AlchemistryCP_MeteorCap Morghoula.AlchemistryCP_InkCap Morghoula.AlchemistryCP_CapOLantern Morghoula.AlchemistryCP_HellfireBolete Morghoula.AlchemistryCP_SwampLighter\" \"SEASON winter, ITEM_ID Target Morghoula.AlchemistryCP_DawnsingerToadstool Morghoula.AlchemistryCP_ForestWisp Morghoula.AlchemistryCP_FairieWings\""
+                     }
+                  },
+                  "(O)Morghoula.AlchemistryCP_LostSouls":{
+                     "HarvestTool":"DigUp",
+                     "ItemQuery":{
+                        "ItemId":"RANDOM_ITEMS (O)",
+                        "PerItemCondition":"ANY \"ITEM_ID Target Morghoula.AlchemistryCP_DragonRoot Morghoula.AlchemistryCP_BeachedOyster\" \"SEASON spring, ITEM_ID Target Morghoula.AlchemistryCP_LostSouls Morghoula.AlchemistryCP_WizardsEye Morghoula.AlchemistryCP_NightCap Morghoula.AlchemistryCP_SunriseGlory Morghoula.AlchemistryCP_SwampLighter\" \"SEASON summer, ITEM_ID Target Morghoula.AlchemistryCP_LunarGlowcap Morghoula.AlchemistryCP_FalseMorel Morghoula.AlchemistryCP_RedSmilers Morghoula.AlchemistryCP_ForestWisp Morghoula.AlchemistryCP_SwampLighter\" \"SEASON fall, ITEM_ID Target Morghoula.AlchemistryCP_MeteorCap Morghoula.AlchemistryCP_InkCap Morghoula.AlchemistryCP_CapOLantern Morghoula.AlchemistryCP_HellfireBolete Morghoula.AlchemistryCP_SwampLighter\" \"SEASON winter, ITEM_ID Target Morghoula.AlchemistryCP_DawnsingerToadstool Morghoula.AlchemistryCP_ForestWisp Morghoula.AlchemistryCP_FairieWings\""
+                     }
+                  },
+                  "(O)HeyImAmethyst.CP.ArsVenefici_Cerublossom":{
+                     "HarvestTool":"DigUp",
+                     "ItemQuery":{
+                        "ItemId":"RANDOM_ITEMS (O)",
+                        "PerItemCondition":"ANY \"ITEM_ID Target HeyImAmethyst.CP.ArsVenefici_Tarma_Root HeyImAmethyst.CP.ArsVenefici_Wakebloom HeyImAmethyst.CP.ArsVenefici_Cerublossom HeyImAmethyst.CP.ArsVenefici_Aum\""
+                     }
+                  }
+               }
+            },
+            "alotails":{
+               "MalePercentage":0.25,
+               "IgnoreWinter":true,
+               "ProduceItemIds":[
+                  {
+                     "Id":"egg",
+                     "DaysToProduce":3,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Default",
+                           "Condition":null,
+                           "MinimumFriendship":0,
+                           "ItemId":"bees.pkr_vulpixegg"
+                        }
+                     ]
+                  },
+                  {
+                     "Id":"helditem",
+                     "DaysToProduce":3,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Default",
+                           "Condition":"RANDOM 0.25",
+                           "MinimumFriendship":250,
+                           "ItemId":"bees.pkr_goldleaf"
+                        },
+                        {
+                           "Id":"Default",
+                           "Condition":"RANDOM 0.25",
+                           "MinimumFriendship":250,
+                           "ItemId":"bees.pkr_snowball"
+                        }
+                     ]
+                  },
+                  {
+                     "Id":"tm",
+                     "DaysToProduce":3,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Default",
+                           "Condition":"RANDOM 0.07 @adddailyluck",
+                           "MinimumFriendship":750,
+                           "ItemId":"bees.pkr_icicletm"
+                        }
+                     ]
+                  },
+                  {
+                     "Id":"treasure",
+                     "DaysToProduce":3,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Default",
+                           "Condition":"RANDOM 0.25, !WEATHER Target Rain Storm",
+                           "MinimumFriendship":0,
+                           "ItemId":"bees.pkr_gummitreasurebox"
+                        }
+                     ]
+                  }
+               ],
+               "AnimalProduceExtensionData":{
+				  "(O)bees.pkr_icicletm":{
+                     "HarvestTool":"DropOvernight",
+                  },
+				  "(O)bees.bees.pkr_vulpixegg":{
+                     "HarvestTool":"DropOvernight",
+                  },
+				  "(O)bees.pkr_charcoal":{
+                     "HarvestTool":"DropOvernight",
+                  },
+				 "(O)bees.pkr_goldleaf":{
+                     "HarvestTool":"DropOvernight",
+                  },
+                  "(O)bees.pkr_gummitreasurebox":{
+                     "HarvestTool":"DigUp",
+                     "ItemQueries":[
+                        {
+                           "ItemId":"bees.pkr_deluxetreasurebox",
+                           "Condition":"selph.ExtraAnimalConfig_ANIMAL_FRIENDSHIP 700, RANDOM 0.25"
+                        },
+                        {
+                           "ItemId":"bees.pkr_candytreasurebox",
+                           "Condition":"selph.ExtraAnimalConfig_ANIMAL_FRIENDSHIP 500, RANDOM 0.25"
+                        },
+                        {
+                           "ItemId":"bees.pkr_bowtreasurebox",
+                           "Condition":"selph.ExtraAnimalConfig_ANIMAL_FRIENDSHIP 500, RANDOM 0.25"
+                        },
+                        {
+                           "ItemId":"bees.pkr_gummitreasurebox"
+                        }
+                     ]
+                  },
+                  "(O)404":{
+                     "ItemQuery":{
+                        "RandomItemId":[
+                           "(O)404",
+                           "(O)420",
+                           "(O)422",
+                           "(O)430",
+                           "(O)257",
+                           "(O)281",
+                           "(O)259"
+                        ]
+                     }
+                  },
+                  "(O)Morghoula.AlchemistryCP_DragonRoot":{
+                     "HarvestTool":"DigUp",
+                     "ItemQuery":{
+                        "ItemId":"RANDOM_ITEMS (O)",
+                        "PerItemCondition":"ANY \"ITEM_ID Target Morghoula.AlchemistryCP_DragonRoot Morghoula.AlchemistryCP_BeachedOyster HeyImAmethyst.CP.ArsVenefici_Tarma_Root HeyImAmethyst.CP.ArsVenefici_Wakebloom HeyImAmethyst.CP.ArsVenefici_Cerublossom HeyImAmethyst.CP.ArsVenefici_Aum\" \"SEASON spring, ITEM_ID Target Morghoula.AlchemistryCP_LostSouls Morghoula.AlchemistryCP_WizardsEye Morghoula.AlchemistryCP_NightCap Morghoula.AlchemistryCP_SunriseGlory Morghoula.AlchemistryCP_SwampLighter\" \"SEASON summer, ITEM_ID Target Morghoula.AlchemistryCP_LunarGlowcap Morghoula.AlchemistryCP_FalseMorel Morghoula.AlchemistryCP_RedSmilers Morghoula.AlchemistryCP_ForestWisp Morghoula.AlchemistryCP_SwampLighter\" \"SEASON fall, ITEM_ID Target Morghoula.AlchemistryCP_MeteorCap Morghoula.AlchemistryCP_InkCap Morghoula.AlchemistryCP_CapOLantern Morghoula.AlchemistryCP_HellfireBolete Morghoula.AlchemistryCP_SwampLighter\" \"SEASON winter, ITEM_ID Target Morghoula.AlchemistryCP_DawnsingerToadstool Morghoula.AlchemistryCP_ForestWisp Morghoula.AlchemistryCP_FairieWings\""
+                     }
+                  },
+                  "(O)Morghoula.AlchemistryCP_LostSouls":{
+                     "HarvestTool":"DigUp",
+                     "ItemQuery":{
+                        "ItemId":"RANDOM_ITEMS (O)",
+                        "PerItemCondition":"ANY \"ITEM_ID Target Morghoula.AlchemistryCP_DragonRoot Morghoula.AlchemistryCP_BeachedOyster\" \"SEASON spring, ITEM_ID Target Morghoula.AlchemistryCP_LostSouls Morghoula.AlchemistryCP_WizardsEye Morghoula.AlchemistryCP_NightCap Morghoula.AlchemistryCP_SunriseGlory Morghoula.AlchemistryCP_SwampLighter\" \"SEASON summer, ITEM_ID Target Morghoula.AlchemistryCP_LunarGlowcap Morghoula.AlchemistryCP_FalseMorel Morghoula.AlchemistryCP_RedSmilers Morghoula.AlchemistryCP_ForestWisp Morghoula.AlchemistryCP_SwampLighter\" \"SEASON fall, ITEM_ID Target Morghoula.AlchemistryCP_MeteorCap Morghoula.AlchemistryCP_InkCap Morghoula.AlchemistryCP_CapOLantern Morghoula.AlchemistryCP_HellfireBolete Morghoula.AlchemistryCP_SwampLighter\" \"SEASON winter, ITEM_ID Target Morghoula.AlchemistryCP_DawnsingerToadstool Morghoula.AlchemistryCP_ForestWisp Morghoula.AlchemistryCP_FairieWings\""
+                     }
+                  },
+                  "(O)HeyImAmethyst.CP.ArsVenefici_Cerublossom":{
+                     "HarvestTool":"DigUp",
+                     "ItemQuery":{
+                        "ItemId":"RANDOM_ITEMS (O)",
+                        "PerItemCondition":"ANY \"ITEM_ID Target HeyImAmethyst.CP.ArsVenefici_Tarma_Root HeyImAmethyst.CP.ArsVenefici_Wakebloom HeyImAmethyst.CP.ArsVenefici_Cerublossom HeyImAmethyst.CP.ArsVenefici_Aum\""
+                     }
+                  }
+               }
+            }
+         }
+      },
+      {
+         "LogName":"Vulpix Finds magic forage if Alchemistry is loaded",
+         "Action":"EditData",
+         "Target":"Data/FarmAnimals",
+         "TargetField":[
+            "vulpix"
+         ],
+         "When":{
+            "HasMod":"Morghoula.AlchemistryCP"
+         },
+         "Entries":{
+            "ProduceItemIds":[
+               {
+                  "Id":"Default",
+                  "Condition":null,
+                  "MinimumFriendship":0,
+                  "ItemId":"Morghoula.AlchemistryCP_LostSouls"
+               }
+            ]
+         }
+      },
+      {
+         "LogName":"Alolan Vulpix Finds magic forage if Alchemistry is loaded",
+         "Action":"EditData",
+         "Target":"Data/FarmAnimals",
+         "TargetField":[
+            "alovulpix"
+         ],
+         "When":{
+            "HasMod":"Morghoula.AlchemistryCP"
+         },
+         "Entries":{
+            "ProduceItemIds":[
+               {
+                  "Id":"Default",
+                  "Condition":null,
+                  "MinimumFriendship":0,
+                  "ItemId":"Morghoula.AlchemistryCP_LostSouls"
+               }
+            ]
+         }
+      },
+      {
+         "LogName":"Ninetails Finds magic forage if Alchemistry is loaded",
+         "Action":"EditData",
+         "Target":"Data/FarmAnimals",
+         "TargetField":[
+            "tails"
+         ],
+         "When":{
+            "HasMod":"Morghoula.AlchemistryCP"
+         },
+         "Entries":{
+            "ProduceItemIds":[
+               {
+                  "Id":"Default",
+                  "Condition":null,
+                  "MinimumFriendship":0,
+                  "ItemId":"Morghoula.AlchemistryCP_LostSouls"
+               }
+            ]
+         }
+      },
+      {
+         "LogName":"Alolan Ninetails Finds magic forage if Alchemistry is loaded",
+         "Action":"EditData",
+         "Target":"Data/FarmAnimals",
+         "TargetField":[
+            "alotails"
+         ],
+         "When":{
+            "HasMod":"Morghoula.AlchemistryCP"
+         },
+         "Entries":{
+            "ProduceItemIds":[
+               {
+                  "Id":"Default",
+                  "Condition":null,
+                  "MinimumFriendship":0,
+                  "ItemId":"Morghoula.AlchemistryCP_LostSouls"
+               }
+            ]
+         }
+      },
+      {
+         "LogName":"Vulpix Finds magic forage if Ars Venefici is loaded",
+         "Action":"EditData",
+         "Target":"Data/FarmAnimals",
+         "TargetField":[
+            "vulpix"
+         ],
+         "When":{
+            "HasMod":"HeyImAmethyst.CP.ArsVenefici"
+         },
+         "Entries":{
+            "ProduceItemIds":[
+               {
+                  "Id":"Default",
+                  "Condition":null,
+                  "MinimumFriendship":0,
+                  "ItemId":"ArsVenefici_Cerublossom"
+               }
+            ]
+         }
+      },
+      {
+         "LogName":"Alolan Vulpix Finds magic forage if Ars Venefici is loaded",
+         "Action":"EditData",
+         "Target":"Data/FarmAnimals",
+         "TargetField":[
+            "alovulpix"
+         ],
+         "When":{
+            "HasMod":"HeyImAmethyst.CP.ArsVenefici"
+         },
+         "Entries":{
+            "ProduceItemIds":[
+               {
+                  "Id":"Default",
+                  "Condition":null,
+                  "MinimumFriendship":0,
+                  "ItemId":"ArsVenefici_Cerublossom"
+               }
+            ]
+         }
+      },
+      {
+         "LogName":"Ninetails Finds magic forage if Ars Venefici is loaded",
+         "Action":"EditData",
+         "Target":"Data/FarmAnimals",
+         "TargetField":[
+            "tails"
+         ],
+         "When":{
+            "HasMod":"HeyImAmethyst.CP.ArsVenefici"
+         },
+         "Entries":{
+            "ProduceItemIds":[
+               {
+                  "Id":"Default",
+                  "Condition":null,
+                  "MinimumFriendship":0,
+                  "ItemId":"ArsVenefici_Cerublossom"
+               }
+            ]
+         }
+      },
+      {
+         "LogName":"Alolan Nintales Finds magic forage if Ars Venefici is loaded",
+         "Action":"EditData",
+         "Target":"Data/FarmAnimals",
+         "TargetField":[
+            "alotails"
+         ],
+         "When":{
+            "HasMod":"HeyImAmethyst.CP.ArsVenefici"
+         },
+         "Entries":{
+            "ProduceItemIds":[
+               {
+                  "Id":"Default",
+                  "Condition":null,
+                  "MinimumFriendship":0,
+                  "ItemId":"ArsVenefici_Cerublossom"
+               }
+            ]
+         }
+      },
+      {
+         "LogName":"Vulpix Finds magic forage if Alchemistry is loaded",
+         "Action":"EditData",
+         "Target":"Data/FarmAnimals",
+         "TargetField":[
+            "vulpix"
+         ],
+         "When":{
+            "HasMod |contains=Morghoula.AlchemistryCP": "true",
+			"HasMod |contains=HeyImAmethyst.CP.ArsVenefici": "true"
+         },
+         "Entries":{
+            "ProduceItemIds":[
+               {
+                  "Id":"Default",
+                  "Condition":null,
+                  "MinimumFriendship":0,
+                  "ItemId":"Morghoula.AlchemistryCP_DragonRoot"
+               }
+            ]
+         }
+      },
+      {
+         "LogName":"Alolan Vulpix Finds magic forage if Alchemistry is loaded",
+         "Action":"EditData",
+         "Target":"Data/FarmAnimals",
+         "TargetField":[
+            "alovulpix"
+         ],
+         "When":{
+            "HasMod |contains=Morghoula.AlchemistryCP": "true",
+			"HasMod |contains=HeyImAmethyst.CP.ArsVenefici": "true"
+         },
+         "Entries":{
+            "ProduceItemIds":[
+               {
+                  "Id":"Default",
+                  "Condition":null,
+                  "MinimumFriendship":0,
+                  "ItemId":"Morghoula.AlchemistryCP_DragonRoot"
+               }
+            ]
+         }
+      },
+      {
+         "LogName":"Ninetails Finds magic forage if Alchemistry is loaded",
+         "Action":"EditData",
+         "Target":"Data/FarmAnimals",
+         "TargetField":[
+            "tails"
+         ],
+         "When":{
+           "HasMod |contains=Morghoula.AlchemistryCP": "true",
+		   "HasMod |contains=HeyImAmethyst.CP.ArsVenefici": "true"
+         },
+         "Entries":{
+            "ProduceItemIds":[
+               {
+                  "Id":"Default",
+                  "Condition":null,
+                  "MinimumFriendship":0,
+                  "ItemId":"Morghoula.AlchemistryCP_DragonRoot"
+               }
+            ]
+         }
+      },
+      {
+         "LogName":"Alolan Ninetails Finds magic forage if Alchemistry is loaded",
+         "Action":"EditData",
+         "Target":"Data/FarmAnimals",
+         "TargetField":[
+            "alotails"
+         ],
+         "When":{
+			"HasMod |contains=Morghoula.AlchemistryCP": "true",
+			"HasMod |contains=HeyImAmethyst.CP.ArsVenefici": "true"
+         },
+         "Entries":{
+            "ProduceItemIds":[
+               {
+                  "Id":"Default",
+                  "Condition":null,
+                  "MinimumFriendship":0,
+                  "ItemId":"Morghoula.AlchemistryCP_DragonRoot"
+               }
+            ]
+         }
+      }
+   ]
+}

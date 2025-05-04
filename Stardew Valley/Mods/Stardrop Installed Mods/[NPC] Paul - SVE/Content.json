@@ -1,0 +1,476 @@
+{
+    "Format": "2.0.0",
+	"Changes": [
+
+
+    	{
+		"Action": "EditData",
+		"Target": "Data/SpouseRooms",
+		"Entries":
+	{
+                "Paul": "PaulSpouseRoom/0"
+	}
+        },
+        {
+		"Action": "Load",
+		"Target": "Maps/PaulSpouseRoom",
+		"FromFile": "Assets/Maps/{{TargetWithoutPath}}.tmx"
+        },           
+	{
+      		"LogName": "Load Map File",
+     		"Action": "Load",
+      		"Target": "Maps/Custom_ginnyclaire_Beach",
+      		"FromFile": "assets/Maps/Custom_ginnyclaire_Beach.tmx"
+   	},
+	{
+      		"LogName": "Add Location",
+      		"Action": "EditData",
+      		"Target": "Data/Locations",
+      		"Entries": {
+        	"Custom_ginnyclaire_Beach": {
+         	"DisplayName": "Custom Beach",
+          	"DefaultArrivalTile": { "X": 39, "Y": 1 },
+          	"CreateOnLoad": {
+            	"MapPath": "Maps/Custom_ginnyclaire_Beach"
+        }
+        }
+        }},
+	{
+            	"Action": "EditMap",
+            	"Target": "Maps/Hospital",
+            	"FromFile": "assets/Maps/Hospital.tmx",
+            	"ToArea": {
+                "X": 6,
+                "Y": 6,
+                "Width": 3,
+                "Height": 5
+        }
+        },
+	{
+      		"LogName": "Add Warp From Hospital to Paul's Room",
+      		"Action": "EditMap",
+      		"Target": "Maps/Hospital",
+      		"MapTiles": [
+        {
+          	"Position": {
+            	"X": 7,
+            	"Y": 9
+        },
+          	"Layer": "Buildings",
+          	"SetProperties": {
+            	"Action": "LockedDoorWarp 1 5 Custom_ginnyclaire_PaulRoom 600 2200 Paul 500"
+        }
+        }
+        ]
+    	},
+    	{
+      		"LogName": "Add Warp From Paul's Room to Hospital",
+      		"Action": "EditMap",
+      		"Target": "Maps/Custom_ginnyclaire_PaulRoom",
+      		"MapTiles": [
+        {
+          	"Position": {
+            	"X": 1,
+            	"Y": 4
+        },
+          	"Layer": "Buildings",
+          	"SetProperties": {
+        	"Action": "Warp 7 10 Hospital"
+        }
+        }
+      	]
+    	},
+	{
+      		"LogName": "Location Strings",
+      		"Action": "EditData",
+      		"Target": "Strings/StringsFromMaps",
+      		"Entries": {
+        	"paulroom.1": "A small but well-kept indoor garden.",
+        	"paulroom.2": "There's a picture on the fridge of Paul and all seven of his siblings at his graduation.",
+        	"paulroom.3": "A sticky note reads, 'Tikka Masala with jalapeno? Will try Monday.'"
+      	}
+    	},
+	{
+      		"LogName": "Strings",
+      		"Action": "EditMap",
+      		"Target": "Maps/Custom_ginnyclaire_PaulRoom",
+      		"MapTiles": [
+   	{
+          	"Position": {
+            	"X": 2,
+            	"Y": 8
+        },
+          	"Layer": "Buildings",
+          	"SetProperties": {
+            	"Action": "Message \"paulroom.1\""
+        }},
+	{
+          	"Position": {
+            	"X": 7,
+            	"Y": 4
+        },
+          	"Layer": "Buildings",
+          	"SetProperties": {
+            	"Action": "Message \"paulroom.2\""
+        }},
+	{
+          	"Position": {
+           	"X": 2,
+            	"Y": 4
+        },
+          	"Layer": "Buildings",
+          	"SetProperties": {
+            	"Action": "Message \"paulroom.3\""
+        }
+        }
+      	]
+    	},
+
+
+
+
+
+    	{
+      		"LogName": "Animations",
+      		"Action": "EditData",
+      		"Target": "Data/animationDescriptions",
+      		"Entries": {
+        	"paul_read": "16/17 17 17 17 17 17 17 17 17 18 16 17/18",
+		"paul_write": "24/24 24 24 24 24 24 24 24 24 25 25 25 25 25 25 25 25 25 25/24",
+		"paul_fish_left": "23/22 22 21 21 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 21 21 22 22/23",
+		"paul_fish_forward": "43/42 42 41 41 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 41 41 42 42/43",
+        	"paul_garden": "38/38 38 38 38 38 38 38 38 38 37 37 36 36 37 37/38"
+      	}},
+
+
+
+
+
+    	{
+     		"Action": "EditData",
+      		"Target": "Data/Festivals/spring13",
+      		"TextOperations": [
+        {
+          	"Operation": "Append",
+          	"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+          	"Value": "Paul 38 69 left",
+          	"Delimiter": "/"
+        }
+      	]
+    	},
+	{
+     		"Action": "EditData",
+      		"Target": "Data/Festivals/spring24",
+      		"TextOperations": [
+        {
+          	"Operation": "Append",
+          	"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+          	"Value": "Paul 6 41 down",
+          	"Delimiter": "/"
+        },
+        {
+          	"Operation": "Append",
+          	"Target": [ "Entries", "MainEvent_additionalCharacters" ],
+          	"Value": "Paul 5 27 right",
+          	"Delimiter": "/"
+        }
+      	]
+    	},
+    	{
+      		"Action": "EditData",
+      		"Target": "Data/Festivals/summer11",
+      		"TextOperations": [
+        {
+          	"Operation": "Append",
+          	"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+          	"Value": "Paul 45 9 down",
+          	"Delimiter": "/"
+        }
+      	]
+    	},
+    	{
+      		"Action": "EditData",
+      		"Target": "Data/Festivals/summer28",
+      		"TextOperations": [
+        {
+          	"Operation": "Append",
+          	"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+          	"Value": "Paul 22 20 down",
+          	"Delimiter": "/"
+        }
+      	]
+    	},
+
+    	{
+      		"Action": "EditData",
+      		"Target": "Data/Festivals/fall16",
+      		"TextOperations": [
+        {
+          	"Operation": "Append",
+          	"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+          	"Value": "Paul 40 80 left",
+          	"Delimiter": "/"
+        }
+      	]
+    	},
+
+    	{
+      		"Action": "EditData",
+      		"Target": "Data/Festivals/fall27",
+      		"TextOperations": [
+        {
+          	"Operation": "Append",
+          	"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+          	"Value": "Paul 27 57 left",
+          	"Delimiter": "/"
+        }
+      	]
+    	},
+
+    	{
+      		"Action": "EditData",
+      		"Target": "Data/Festivals/winter8",
+      		"TextOperations": [
+        {
+          	"Operation": "Append",
+          	"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+          	"Value": "Paul 73 24 down",
+          	"Delimiter": "/"
+        }
+      	]
+    	},
+
+    	{
+      		"Action": "EditData",
+      		"Target": "Data/Festivals/winter25",
+      		"TextOperations": [
+        {
+          	"Operation": "Append",
+          	"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+          	"Value": "Paul 25 62 down",
+          	"Delimiter": "/"
+        }
+      	]
+    	},
+	{	
+		"LogName": "Egg Festival",
+		"Action": "EditData",
+		"Target": "Data/Festivals/spring13",
+		"entries": 
+	{	
+		"Paul": "Did you see those bluejays flying overhead? I bet they're after these eggs...$2",
+		"Paul_spouse": "I know you'll win the egg hunt this year, sweetie!$1"
+	}
+	},
+	{	
+		"LogName": "Flower Dance",
+		"Action": "EditData",
+		"Target": "Data/Festivals/spring24",
+		"entries": 
+	{	
+		"Paul": "Wow, now I know where all the birds hang out! It's such a shame they block off these woods during the year.$1",
+		"Paul_spouse": "I've been waiting to dance with you all year, sweetie!$1"
+	}
+	},
+	{	
+		"LogName": "Luau",
+		"Action": "EditData",
+		"Target": "Data/Festivals/summer11",
+		"entries": 
+	{	
+		"Paul": "Look how thick Pierre's glasses look from this angle. I wonder what his prescription is.",
+		"Paul_spouse": "Do you think anyone would notice if I ran back to the farm to get my fishing rod?$2"
+	}
+	},
+	{	
+		"LogName": "Dance of the Moonlight Jellies",
+		"Action": "EditData",
+		"Target": "Data/Festivals/summer40",
+		"entries": 
+	{	
+		"Paul": "Amazing. I read about these guys in my field journal last week... I wonder what they eat.",
+		"Paul_spouse": "What a sight. I'll always be indebted to these magnificent creatures.$1"
+	}
+	},
+	{	
+		"LogName": "Stardew Valley Fair",
+		"Action": "EditData",
+		"Target": "Data/Festivals/fall16",
+		"entries": 
+	{	
+		"Paul": "I know I'm supposed to be enjoying the festival but I can't stop thinking about fishing the river over there.$2",
+		"Paul_spouse": "I can't wait to see your display! I'm so proud of you, sweetie.$1"
+	}
+	},
+	{	
+		"LogName": "Spirit's Eve",
+		"Action": "EditData",
+		"Target": "Data/Festivals/fall27",
+		"entries": 
+	{	
+		"Paul": "Do you like candy corn? I can't stand it.$2",
+		"Paul_spouse": "Next year we should totally come dressed up as a phoropter and an occluder.$1"
+	}
+	},
+	{	
+		"LogName": "Festival of Ice",
+		"Action": "EditData",
+		"Target": "Data/Festivals/winter8",
+		"entries": 
+	{	
+		"Paul": "I can't believe I forgot my fishing rod... of ALL days!$2",
+		"Paul_spouse": "You've got to win the ice fishing contest this year, sweetie! I made a bet with Willy.$2"
+	}
+	},
+
+
+
+
+
+    	{
+      		"LogName": "Blank Dialogue",
+      		"Action": "Load",
+      		"Target": "Characters/Dialogue/Paul",
+      		"FromFile": "{{BlankFile}}"
+    	},
+    	{
+      		"LogName": "Main Dialogue",
+      		"Action": "Include",
+      		"FromFile": "assets/Dialogue/Dialogue.json"
+    	},
+    	{
+      		"LogName": "Marriage Dialogue",
+      		"Action": "Load",
+      		"Target": "Characters/Dialogue/marriageDialoguePaul",
+      		"FromFile": "assets/Dialogue/marriageDialogue.json"
+    	},
+        {
+            	"LogName": "Gift Tastes Include",
+            	"Action": "Include",
+            	"FromFile": "assets/GiftTastes/GiftTastes.json"
+        },
+	{	
+		"LogName": "Feast of the Winter Star",
+		"Action": "EditData",
+		"Target": "Data/Festivals/winter25",
+		"entries": 
+	{	
+		"Paul": "Merry Christmas! I hope your year was as good as mine was!",
+		"Paul_spouse": "Merry Christmas, sweetie! Oh I love you so.$4"
+	}
+	},
+	{	
+		"LogName": "Engagement/Flowers Responses",
+		"Action": "EditData",
+		"Target": "Strings/StringsFromCSFiles",
+		"entries": 
+	{	
+		 "NPC.cs.3962": "Oh I'm so glad you said something! @...will you be my boyfriend?$4^Oh I'm so glad you said something! @...will you be my girlfriend?",
+        	"NPC.cs.3963": "@! I feel the same way...will you be my boyfriend?$4^@! I feel the same way...will you be my girlfriend?$4",
+        	"NPC.cs.3980": "Oh, @...You really mean it?$4#$b#I've felt the same way for such a long time!$4"
+	}},
+	{	
+		"LogName": "Engagement Dialogue",
+		"Action": "EditData",
+		"Target": "Data/EngagementDialogue",
+		"entries": 
+	{	
+		"Paul0": "@...How did I get so lucky?$4",
+       		"Paul1": "Ginny called the other day.$1#$b#She said if you're wondering, she *wholeheartedly* approves.$4"
+	}},
+	{
+      		"LogName": "Rainy Day Dialogue",
+      		"Action": "EditData",
+      		"Target": "Characters/Dialogue/rainy",
+      		"Entries": {
+        	"Paul": "Oh I love rainy days.#$b#They're the perfect excuse to spend the entire day reading."
+      	}},
+
+
+
+
+
+
+    	{
+            	"LogName": "Disposition",
+            	"Action": "Include",
+            	"FromFile": "assets/Disposition/Disposition.json"
+        },
+	{
+            	"LogName": "Ginny Sprites",
+            	"Action": "Load",
+            	"Target": "Characters/Ginny",
+            	"FromFile": "assets/Characters/Ginny.png"
+        },
+	{
+            	"LogName": "Ginny Portraits",
+            	"Action": "Load",
+            	"Target": "Portraits/Ginny",
+            	"FromFile": "assets/Portraits/Ginny.png"
+        },
+	{
+            	"LogName": "Paul's Sprites",
+            	"Action": "Load",
+            	"Target": "Characters/Paul",
+            	"FromFile": "assets/Characters/Paul_Spring.png"
+        },
+        {
+            	"LogName": "Paul's Portraits",
+            	"Action": "Load",
+            	"Target": "Portraits/Paul",
+            	"FromFile": "assets/Portraits/Paul_Spring.png"
+        },
+	{
+      		"LogName": "Paul's Beach Portraits",
+      		"Action": "Load",
+      		"Target": "Portraits/Paul_Beach",
+      		"FromFile": "assets/Portraits/Paul_Beach.png"
+
+    	},
+	{
+      		"LogName": "Paul's Beach Sprites",
+      		"Action": "Load",
+     		"Target": "Characters/Paul_Beach",
+      		"FromFile": "assets/Characters/Paul_Beach.png"
+    	},
+
+
+
+
+
+    	{
+      		"LogName": "Paul Blank Schedule",
+      		"Action": "Load",
+      		"Target": "Characters/Schedules/Paul",
+      		"FromFile": "{{BlankFile}}"
+    	},
+    	{
+      		"LogName": "Paul Regular Schedule",
+      		"Action": "Include",
+      		"FromFile": "assets/Schedules/Schedule.json"
+    	},
+ 	{
+     		"LogName": "Events",
+      		"Action": "Include",
+      		"FromFile": "assets/Events/Events.json"
+    	}
+    	],
+    
+		"DynamicTokens": [
+    	{
+      		"Name": "BlankFile",
+      		"Value": "assets/blank.json"
+    	}
+	],
+    		"CustomLocations": [
+        {
+            	"Name": "Custom_ginnyclaire_PaulRoom",
+            	"FromMapFile": "assets/Maps/Custom_ginnyclaire_PaulRoom.tmx"
+        },
+	{
+            	"Name": "Custom_ginnyclaire_Beach",
+            	"FromMapFile": "assets/Maps/Custom_ginnyclaire_Beach.tmx"
+        }
+
+    	]
+	}

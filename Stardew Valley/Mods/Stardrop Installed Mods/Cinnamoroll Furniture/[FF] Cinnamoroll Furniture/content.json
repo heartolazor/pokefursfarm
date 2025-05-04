@@ -1,0 +1,914 @@
+{
+	"Format": 3,
+	"Furniture": {
+
+                "[[ModID]].cinna_window_panes": {
+			"Display Name": "Cinnamoroll Window Panes",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {"Width": 2, "Height": 3},
+
+			"Placement Restriction": 0,
+			"Placement Type": "Mural",
+
+			"Source Image": {
+                          "Without Drapes": "assets/cinnawindowpanes.png",
+                          "With Drapes": "assets/cinnawindowpanes2.png"
+                        },
+
+			"Shows in Shops": ["Carpenter"],
+          "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 32, "Height": 48
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].cinna_wall_bow": {
+			"Display Name": "Cinnamoroll Wall Bow",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {"Width": 1, "Height": 2},
+
+			"Placement Restriction": 0,
+			"Placement Type": "Mural",
+
+			"Source Image": "assets/cinnawallbow.png",
+
+			"Shows in Shops": ["Carpenter"],
+         "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 26,"Height": 18
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].small_plush": {
+			"Display Name": "Small Plush",
+                        "Context Tags": "placeable",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {"Width": 1, "Height": 1},
+
+			"Placement Restriction": 2,
+
+			"Source Image": {
+                          "Cappuccino": "assets/cappuccino.png",
+                          "Chiffon": "assets/chiffon.png",
+                          "Cinnamoroll": "assets/cinnamoroll.png",
+                          "Espresso": "assets/espresso.png",
+                          "Mocha": "assets/mocha.png"
+                                        },
+
+			"Shows in Shops": ["Carpenter"],
+         "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 18, "Height": 11
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].small_milk_plush": {
+			"Display Name": "Small Plush",
+                        "Context Tags": "placeable",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {"Width": 1, "Height": 1},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/milk.png",
+
+			"Shows in Shops": ["Carpenter"],
+         "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 16,"Height": 10
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].cinna_squish": {
+			"Display Name": "Cinnamoroll Squishmallow",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {"Width": 2, "Height": 1},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/cinnasquish.png",
+
+			"Shows in Shops": ["Carpenter"],
+         "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 43,"Height": 29
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].cinnamoroll_balloon": {
+                        "Display Name": "Cinnamoroll Balloon",
+
+                        "Rotations": 1,
+	                "Collisions": {"Width": 2, "Height": 1},
+
+                        "Placement Restriction": 2,
+
+                        "Source Image": "assets/cinnaballoon.png",
+
+                        "Shows in Shops": ["Carpenter"],
+         "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 34,"Height": 51
+               }
+            }
+         ],
+         "Animation": {
+				"Frame Count": 8,
+				"Frame Duration": 300,
+				"Offset": {
+					"X": 34,
+					"Y": 0
+				}
+			}
+      },
+
+                "[[ModID]].cinna_chair": {
+
+			"Display Name": "Cinnamoroll Chair",
+
+			"Rotations": 4,
+			"Collisions": {
+				"Width": 1,
+				"Height": 1
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/cinnachair.png",
+			"Source Rect": {
+				"Down":		{"X": 0,  "Y": 0, "Width": 34, "Height": 39},
+				"Right":	{"X": 34, "Y": 0, "Width": 16, "Height": 39},
+				"Up":		{"X": 50, "Y": 0, "Width": 34, "Height": 39},
+				"Left":		{"X": 84, "Y": 0, "Width": 16, "Height": 39}
+			},
+"Layers": {
+            "Down": {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 34, "Height": 39
+               }
+            },
+            "Right": [
+               {
+                  "Source Rect": {
+                     "X": 34, "Y": 0,
+                     "Width": 16, "Height": 39
+                  }
+               }
+             ],
+            "Up": [
+               {
+                  "Source Rect": {
+                     "X": 50, "Y": 0,
+                     "Width": 34, "Height": 39
+                  }
+               },
+               {
+                  "Source Rect": {
+                     "X": 100, "Y": 0,
+                     "Width": 34, "Height": 39
+                  },
+                  "Draw Pos": { "X": 0, "Y": 0 }
+               }
+            ],
+            "Left": [
+               {
+                  "Source Rect": {
+                     "X": 84, "Y": 0,
+                     "Width": 16, "Height": 39
+                  }
+                }
+              ]
+         },
+
+			"Seats": [
+				{
+					"Position": {"X": 0, "Y": 0},	
+					"Player Direction": {
+						"Up": 0,
+						"Right": 1,
+						"Down": 2,
+						"Left": 3
+					}
+
+				}
+			],
+
+			"Shows in Shops": ["Carpenter"]
+		},
+
+		"[[ModID]].cinna_double_bed": {
+			"Display Name": "Cinnamoroll Double Bed",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 3,
+				"Height": 3,
+				"Map": "XXX/.../XXX"
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/cinnadoublebed.png",
+                        "Layers": [
+				{
+					"Source Rect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 76,
+						"Height": 72
+					}
+				},
+				{
+					"Source Rect": {
+						"X": 76,
+						"Y": 0,
+						"Width": 76,
+						"Height": 72
+					},
+					"Depth": 2,
+					"Draw Pos": {
+						"X": 0,
+						"Y": 0
+					}
+				}
+			],
+
+			"Shows in Shops": ["Carpenter"],
+
+			"Special Type": "Bed",
+                        "Bed Type": "Double",
+			"Bed Spot": {"X": 1, "Y": 1},
+		},
+
+                "[[ModID]].cinna_dresser": {
+			"Display Name": "Cinnamoroll Dresser",
+                        "Force Type": "dresser",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 2,
+				"Height": 1
+			},	
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/cinnadresser.png",
+
+			"Shows in Shops": ["Carpenter"],
+ "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 32,"Height": 35
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].cinna_medium_plush": {
+			"Display Name": "Medium Cinnamoroll Plush",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {"Width": 2, "Height": 1},
+
+			"Placement Restriction": 0,
+
+			"Source Image": "assets/cinnamedplush.png",
+
+			"Shows in Shops": ["Carpenter"],
+ "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 28,"Height": 19
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].cinna_moon_light": {
+                        "Display Name": "Cinnamoroll Moon Light",
+
+                        "Rotations": 1,
+	                "Collisions": {"Width": 3, "Height": 2},
+
+                        "Placement Restriction": 2,
+
+                        "Source Image": "assets/cinnamoonlight.png",
+
+			"Light Sources": [
+				{
+					"Position": {"X": 11, "Y": 31},
+					"Source Image": "Content/LooseSprites/Lighting/indoorWindowLight.png",
+					"Mode": "always_on"
+				}
+			],
+                        "Shows in Shops": ["Carpenter"],
+ "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 55,"Height": 71
+               }
+            }
+         ]
+                 },
+
+                "[[ModID]].cinna_painting": {
+			"Display Name": "Cinnamoroll Painting",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {"Width": 1, "Height": 2},
+
+			"Placement Restriction": 0,
+			"Placement Type": "Mural",
+
+			"Source Image": "assets/cinnapainting.png",
+
+			"Shows in Shops": ["Carpenter"],
+ "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 32,"Height": 25
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].cinna_shelves": {
+			"Display Name": "Cinnamoroll Shelves",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 2,
+				"Height": 1
+			},	
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/cinnashelves.png",
+
+			"Shows in Shops": ["Carpenter"],
+ "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 38,"Height": 58
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].cinna_single_bed": {
+			"Display Name": "Cinnamoroll Single Bed",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 2,
+				"Height": 3,
+				"Map": "XX/../XX"
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/cinnasinglebed.png",
+                        "Layers": [
+				{
+					"Source Rect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 38,
+						"Height": 62
+					}
+				},
+				{
+					"Source Rect": {
+						"X": 38,
+						"Y": 0,
+						"Width": 38,
+						"Height": 62
+					},
+					"Depth": 2,
+					"Draw Pos": {
+						"X": 0,
+						"Y": 0
+					}
+				}
+			],
+
+			"Shows in Shops": ["Carpenter"],
+
+			"Special Type": "Bed",
+			"Bed Type": "Single",
+			"Bed Spot": {"X": 1, "Y": 1}
+		},
+
+		"[[ModID]].cinna_sofa": {
+
+			"Display Name": "Cinnamoroll Sofa",
+
+			"Rotations": 4,
+			"Collisions": {
+				"Down": 	{"Width": 3, "Height": 1},
+				"Right": 	{"Width": 2, "Height": 2},
+				"Up": 		{"Width": 3, "Height": 1},
+				"Left": 	{"Width": 2, "Height": 2}
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/cinnasofa.png",
+			"Source Rect": {
+				"Down":		{"X": 0,	"Y": 0, "Width": 47, "Height": 32},
+				"Right":	{"X": 48,	"Y": 0, "Width": 31, "Height": 48},
+				"Up":		{"X": 80,	"Y": 0, "Width": 47, "Height": 32},
+				"Left":		{"X": 128,	"Y": 0, "Width": 31, "Height": 48}
+			},
+ "Layers": {
+            "Down": {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 47, "Height": 32
+               }
+            },
+            "Right": [
+               {
+                  "Source Rect": {
+                     "X": 48, "Y": 0,
+                     "Width": 31, "Height": 48
+                  }
+               },
+               {
+                  "Source Rect": {
+                     "X": 48, "Y": 49,
+                     "Width": 31, "Height": 48
+                  },
+                  "Depth": { "Tile": 2, "Sub": 1000 },
+                  "Draw Pos": { "X": 0, "Y": 0 }
+               }
+            ],
+            "Up": [
+               {
+                  "Source Rect": {
+                     "X": 80, "Y": 0,
+                     "Width": 47, "Height": 32
+                  }
+               },
+               {
+                  "Source Rect": {
+                     "X": 80, "Y": 49,
+                     "Width": 47, "Height": 32
+                  },
+                  "Depth": { "Tile": 0, "Sub": 1000 },
+                  "Draw Pos": { "X": 0, "Y": 0 }
+               }
+            ],
+            "Left": [
+               {
+                  "Source Rect": {
+                     "X": 128, "Y": 0,
+                     "Width": 31, "Height": 48
+                  }
+               },
+               {
+                  "Source Rect": {
+                     "X": 128, "Y": 49,
+                     "Width": 31, "Height": 48
+                  },
+                  "Depth": { "Tile": 2, "Sub": 1000 },
+                  "Draw Pos": { "X": 0, "Y": 0 }
+               }
+            ]
+         },
+
+
+			"Seats": {
+				"Up": [
+					{
+						"Position": {"X": 0.5, "Y": 0},
+						"Player Direction": 0
+					},
+					{
+						"Position": {"X": 1.5, "Y": 0},
+						"Player Direction": 0
+					}
+				],
+				"Right": [
+					{
+						"Position": {"X": 1, "Y": 0},
+						"Player Direction": 1
+					},
+					{
+						"Position": {"X": 1, "Y": 1},
+						"Player Direction": 1
+					}
+				],
+				"Down": [
+					{
+						"Position": {"X": 0.5, "Y": 0},
+						"Player Direction": 2
+					},
+					{
+						"Position": {"X": 1.5, "Y": 0},
+						"Player Direction": 2
+					}
+				],
+				"Left": [
+					{
+						"Position": {"X": 0, "Y": 0},
+						"Player Direction": 3
+					},
+					{
+						"Position": {"X": 0, "Y": 1},
+						"Player Direction": 3
+					}
+				]
+			},
+
+			"Shows in Shops": ["Carpenter"]
+		},
+
+		"[[ModID]].cinna_statue": {
+			"Display Name": "Cinnamoroll Statue",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 3,
+				"Height": 1
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/cinnastatue.png",
+
+			"Shows in Shops": ["Carpenter"],
+ "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 52,"Height": 29
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].cinna_statue2": {
+			"Display Name": "Cinnamoroll Statue",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 3,
+				"Height": 1
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/cinnastatue2.png",
+
+			"Shows in Shops": ["Carpenter"],
+ "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 52,"Height": 34
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].cinnamiku_statue": {
+			"Display Name": "Cinnamiku Statue",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 1,
+				"Height": 2
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": {
+                          "Clothed": "assets/cinnamikustatue.png",
+                          "Nakey": "assets/cinnamikustatue2.png"
+                                        },
+
+			"Shows in Shops": ["Carpenter"],
+ "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 22,"Height": 41
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].large_cinna_statue": {
+			"Display Name": "Large Cinnamoroll Statue",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 3,
+				"Height": 2
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/cinnastatuelarge.png",
+
+			"Shows in Shops": ["Carpenter"],
+ "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 50,"Height": 55
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].jumbo_cinna_bab": {
+			"Display Name": "Jumbo Cinnamoroll Build-A-Bear",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 3,
+				"Height": 2
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/jumbocinnabab.png",
+
+			"Shows in Shops": ["Carpenter"],
+ "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 57,"Height": 49
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].cinna_stool": {
+			"Display Name": "Cinnamoroll Stool",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 1,
+				"Height": 1
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/cinnastool.png",
+
+			"Shows in Shops": ["Carpenter"],
+ "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 16,"Height": 16
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].cinna_stool2": {
+			"Display Name": "Cinnamoroll Stool",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 1,
+				"Height": 1
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/cinnastool2.png",
+
+			"Shows in Shops": ["Carpenter"],
+ "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 18,"Height": 21
+               }
+            }
+         ]
+		},
+
+		"[[ModID]].cinna_table": {
+			"Display Name": "Cinnamoroll Table",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 4,
+				"Height": 1
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/cinnatable.png",
+
+			"Shows in Shops": ["Carpenter"],
+ "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 75,"Height": 30
+               }
+            }
+         ]
+		},
+
+		"[[ModID]].cinna_table2": {
+			"Display Name": "Cinnamoroll Table",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 2,
+				"Height": 1
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/cinnatable2.png",
+
+			"Shows in Shops": ["Carpenter"],
+ "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 35,"Height": 30
+               }
+            }
+         ]
+		},
+
+		"[[ModID]].cinna_head_rug": {
+			"Display Name": "Cinnamoroll Head Rug",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 1,
+				"Height": 1
+			},
+
+			"Placement Restriction": 2,
+                        "Placement Type": "Rug",
+
+			"Source Image": "assets/headcinnarug.png",
+
+			"Shows in Shops": ["Carpenter"],
+ "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 75,"Height": 26
+               }
+            }
+         ]
+		},
+
+		"[[ModID]].round_cinna_rug": {
+			"Display Name": "Round Cinna Rug",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 1,
+				"Height": 1
+			},
+
+			"Placement Restriction": 2,
+                        "Placement Type": "Rug",
+
+			"Source Image": "assets/roundcinnarug.png",
+
+			"Shows in Shops": ["Carpenter"],
+ "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 80,"Height": 79
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].cinna_plush_stack": {
+			"Display Name": "Cinnamoroll Plush Stack",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 2,
+				"Height": 1
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/plushstack.png",
+
+			"Shows in Shops": ["Carpenter"],
+ "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 34,"Height": 61
+               }
+            }
+         ]
+		},
+
+
+                "[[ModID]].cinna_TV": {
+                        "Display Name": "Cinnamoroll TV",
+
+                        "Rotations": 1,
+	                "Collisions": {"Width": 2, "Height": 1},
+
+                        "Placement Restriction": 2,
+
+                        "Source Image": "assets/cinnaTV.png",
+                        "Source Rect": {"X": 0, "Y": 0, "Width": 31, "Height": 46},
+
+			"Light Sources": [
+				{
+					"Position": {"X": 16, "Y": 20},
+					"Source Image": "Content/LooseSprites/Lighting/indoorWindowLight.png",
+					"Mode": "always_on"
+				}
+			],
+                        "Shows in Shops": ["Carpenter"],
+         "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 31,"Height": 46
+               }
+            }
+         ],
+         "Animation": {
+				"Frame Count": 4,
+				"Frame Duration": 300,
+				"Offset": {
+					"X": 31,
+					"Y": 0
+				}
+			}
+               }
+	}
+}

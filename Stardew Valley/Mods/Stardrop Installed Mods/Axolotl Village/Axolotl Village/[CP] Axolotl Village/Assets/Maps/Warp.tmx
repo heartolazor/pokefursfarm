@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="1" height="1" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="14">
+ <properties>
+  <property name="AmbientLight" value="95 95 95"/>
+  <property name="DayTiles" value="Front 3 1 225 Front 3 2 257 Front 7 1 225 Front 7 2 257"/>
+  <property name="NightTiles" value="Front 3 1 1222 Front 3 2 1254 Front 7 1 1222 Front 7 2 1254"/>
+  <property name="Warp" value="5 13 otohime.AV_AxolotlTown 95 42"/>
+ </properties>
+ <tileset firstgid="1" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths" width="64" height="144"/>
+  <tile id="0">
+   <properties>
+    <property name="PathType" value="NE"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="PathType" value="SE"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="PathType" value="WS"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="PathType" value="WN"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="PathType" value="Crossroad"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="PathType" value="End"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="37" name="z_walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
+  <image source="z_walls_and_floors.png" width="256" height="560"/>
+ </tileset>
+ <tileset firstgid="597" name="z_townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="z_townInterior.png" width="512" height="1088"/>
+  <tile id="1824">
+   <animation>
+    <frame tileid="1824" duration="1500"/>
+    <frame tileid="1825" duration="200"/>
+    <frame tileid="1826" duration="200"/>
+    <frame tileid="1827" duration="200"/>
+    <frame tileid="1831" duration="5000"/>
+    <frame tileid="1826" duration="200"/>
+    <frame tileid="1825" duration="200"/>
+    <frame tileid="1824" duration="5000"/>
+    <frame tileid="1830" duration="3000"/>
+    <frame tileid="1828" duration="200"/>
+    <frame tileid="1829" duration="200"/>
+    <frame tileid="1828" duration="200"/>
+    <frame tileid="1829" duration="200"/>
+    <frame tileid="1828" duration="200"/>
+    <frame tileid="1829" duration="200"/>
+    <frame tileid="1828" duration="5000"/>
+    <frame tileid="1830" duration="1000"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="2773" name="z_Cursors" tilewidth="16" tileheight="16" tilecount="6204" columns="44">
+  <image source="z_Cursors.png" width="704" height="2256"/>
+ </tileset>
+ <tileset firstgid="8977" name="z_furniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="z_furniture.png" width="512" height="1488"/>
+ </tileset>
+ <tileset firstgid="11953" name="z_Craftables" tilewidth="16" tileheight="16" tilecount="576" columns="8">
+  <image source="z_Craftables.png" width="128" height="1152"/>
+ </tileset>
+ <tileset firstgid="12529" name="z_rugs" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="z_rugs.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="13553" source="z_night_market_tilesheet_objects.tsx"/>
+ <tileset firstgid="14921" source="z_boat_tilesheet.tsx"/>
+ <tileset firstgid="16289" source="z_vanilla_spring_beach.tsx"/>
+ <layer id="1" name="Back" width="1" height="1">
+  <data encoding="csv">
+16793
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="1" height="1">
+  <data encoding="csv">
+15138
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="1" height="1">
+  <data encoding="csv">
+0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="1" height="1">
+  <data encoding="csv">
+0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back"/>
+ <objectgroup id="6" name="Buildings" class="TileData">
+  <properties>
+   <property name="Action" value="Warp 31 109 otohime.AV_AxolotlLake"/>
+  </properties>
+ </objectgroup>
+ <objectgroup id="7" name="Paths"/>
+ <objectgroup id="8" name="Front"/>
+</map>

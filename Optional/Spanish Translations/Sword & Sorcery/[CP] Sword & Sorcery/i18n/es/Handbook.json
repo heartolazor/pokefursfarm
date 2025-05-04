@@ -1,0 +1,2595 @@
+{
+  /* 
+  _____  _           __     ________ _____  _  _____   _    _          _   _ _____  ____   ____   ____  _  __
+ |  __ \| |        /\\ \   / /  ____|  __ \( )/ ____| | |  | |   /\   | \ | |  __ \|  _ \ / __ \ / __ \| |/ /
+ | |__) | |       /  \\ \_/ /| |__  | |__) |/| (___   | |__| |  /  \  |  \| | |  | | |_) | |  | | |  | | ' / 
+ |  ___/| |      / /\ \\   / |  __| |  _  /   \___ \  |  __  | / /\ \ | . ` | |  | |  _ <| |  | | |  | |  <  
+ | |    | |____ / ____ \| |  | |____| | \ \   ____) | | |  | |/ ____ \| |\  | |__| | |_) | |__| | |__| | . \ 
+ |_|    |______/_/    \_\_|  |______|_|  \_\ |_____/  |_|  |_/_/    \_\_| \_|_____/|____/ \____/ \____/|_|\_\
+ 
+ */
+
+  "Mail.PHB": "¡Hola, @!^^Gracias por comprar el Manual del Jugador. Contiene todo lo que necesitas saber para Espada y Hechicería, 2da Edición. ¡Juega a tu manera con nuevas habilidades, misiones, PNJs, localizaciones y mucho más!^^Que los dados te favorezcan,^Hechiceros del Sonido%item id DN.SnS_PlayersHandbook%%[#]Manual del Jugador",
+
+  "Furniture.PlayersHandbook": "S&S Manual del jugador",
+
+  "guidebook.chapter.Miscellaneous.Name": "Varios",
+  "guidebook.chapter.Mechanics.Name": "Mecánica",
+  "guidebook.chapter.Characters.name": "Personajes",
+  "guidebook.chapter.Dedication.name": "Dedicación",
+  "guidebook.chapter.Dedication.IsModComplete.true": "por dar una oportunidad a este proyecto",
+  "guidebook.chapter.Dedication.IsModComplete.false": "por ver esta historia hasta el final",
+  "guidebook.chapter.Title.name": "Introducción",
+  "guidebook.chapter.Chapters.name": "Capítulos",
+  "guidebook.chapter.Skills.name": "Habilidades",
+  "guidebook.chapter.DeepDark.Name": "La oscuridad profunda",
+  "guidebook.title": "Espada y Hechicería",
+  "guidebook.chapter.Title.TitlePage.ConfigLinks": "[nospacing][nextposition=0,40][center=300][font=dialogue][texttooltip=:Abre GMCM para el componente Content Patcher de S&S.][action=spacechase0.GenericModConfigMenu_OpenModConfig DN.SnS]Config del CP[/action][/texttooltip][/font][/center][offset=300,0][center=300][font=dialogue][texttooltip=:Abre GMCM para el componente Content Patcher de S&S.][action=spacechase0.GenericModConfigMenu_OpenModConfig KCC.SnS]Config del SMAPI[/action][/texttooltip][/font][/center][/nospacing]",
+  "guidebook.chapter.Title.TitlePage": "{{ConfigMenuLinks}}
+[nospacing][nextposition=120,110][image=SMAPI/dn.sns/assets/guidebook/logo.png:null:1][nextposition=0,null][offset=0,250][/nospacing]
+[nospacing]
+[center=200][font=dialogue][link=https://www.patreon.com/profile/creators?u=12021226]Patreon[/link][/font][/center]
+[offset=200,0][center=200][font=dialogue][link=https://www.nexusmods.com/stardewvalley/mods/12369]Nexus[/link][/font][/center]
+[offset=200,0][center=200][font=dialogue][link=https://ko-fi.com/destynova]Ko-fi[/link][/font][/center]
+[nextposition=0,null]
+[/nospacing]",
+"guidebook.chapter.Title.Introduction": "[center][font=dialogue][offset=0,8]Acerca de[/font][/center]
+ 
+Espada y Hechicería es una aventura mágica adyacente a la vainilla inspirada en juegos como Dungeons & Dragons, Baldur's Gate y Final Fantasy. Sigue la compleja historia del Gremio de Aventureros de la Costa mientras sus miembros aprenden, crecen y cambian gracias a la intervención del Granjero. Comienza con una tienda de campaña solitaria en la playa y termina en una batalla para salvar East Scarp de los restos de una tragedia que hace tiempo que se creía superada.",
+  "guidebook.chapter.Chapters.JumpList": "[center][font=dialogue][offset=0,8]Introducción[/font][/center]
+ 
+Los capítulos de esta historia, desde una tienda de campaña solitaria en la playa hasta una batalla para salvar East Scarp de los restos de una tragedia que hace tiempo que se creía superada, pasando por una serie de epílogos para todos los principales PNJ.
+ 
+[font=dialogue]Índice[/font]
+> [link=Chapters/IntroNEA]Aventura sin fin[/link] - ([link=Characters/Mateo]Mateo[/link])
+  = [link=Chapters/NEA]Eventos[/link]
+ 
+> [if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.14][link=Chapters/IntroCOT]Círculo de espinas[/link][/if][else]Círculo de espinas[/else] - ([link=Characters/Hector]{{TrueName}}[/link])
+  = [if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.14][link=Chapters/COT]Eventos[/link][/if][else]Eventos [color=DarkRed](Locked)[/color][/else]
+ 
+> [if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.16][link=Chapters/IntroUP]Bajo presión[/link][/if][else]Bajo presión[/else] - ([link=Characters/Cirrus]Cirrus[/link])
+  = [if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.16][link=Chapters/UP]Eventos[/link][/if][else]Eventos [color=DarkRed](Locked)[/color][/else]
+ 
+> [if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.14][link=Chapters/IntroTOP]La otra promesa[/link][/if][else]La otra promesa[/else] - ([link=Characters/Roslin]Roslin[/link] y [link=Characters/Dandelion]Dandelion[/link])
+  = [if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.14][link=Chapters/TOP]Eventos[/link][/if][else]Eventos [color=DarkRed](Locked)[/color][/else]
+ 
+> [if=PLAYER_HAS_MAIL Current DuskspireDefeated][link=Chapters/IntroEpilogue]Epílogo[/link][/if][else]Epílogo[/else]
+  = [if=PLAYER_HAS_MAIL Current DuskspireDefeated][link=Chapters/Epilogue]Eventos[/link][/if][else]Eventos[color=DarkRed](Locked)[/color][/else]
+",
+
+"guidebook.chapter.Title.TableOfContents": "[center][font=dialogue][offset=0,8]Índice[/font][/center]
+ 
+> [link=Chapters/TableOfContents]Capítulos de la historia[/link]
+  = Enumera todos los capítulos de la historia y los eventos con sus requisitos a medida que avanzas en la historia.
+ 
+> [link=Characters/TableOfContents]Todos los personajes[/link]
+  = Sprites, retratos y descripciones de todos los personajes del mod.
+ 
+> [link=Skills/TableOfContents]Todas las habilidades[/link]
+  = Todas las habilidades añadidas por Espada y Hechicería y sus profesiones.
+ 
+> [link=Mechanics/TableOfContents]Mecánica y explicaciones[/link]
+  = Explicación de las diferentes mecánicas añadidas por Espada y Hechicería.
+ 
+> [link=DeepDark/TableOfContents]La oscuridad Profunda[/link]
+  = Los entresijos de la mazmorra Oscuridad Profunda explicados.
+ 
+> [link=Miscellaneous/TableOfContents]Preguntas frecuentes y trucos[/link]
+  = Responder a tus preguntas y proporcionar algunos trucos útiles.
+ 
+> [link=Dedication/LoreSeeker]Dedicación[/link]
+  = Una dedicatoria para alguien grande.
+",
+"guidebook.chapter.Misc.TableOfContents": "[center][font=dialogue][offset=0,8]Varios[/font][/center]
+ 
+¿Tienes preguntas sobre el mod? Tenemos respuestas.
+ 
+[font=dialogue]Índice[/font]
+> Preguntas frecuentes
+  = [link=Miscellaneous/FAQNPCs]PNJs[/link]
+  = [link=Miscellaneous/FAQItems]Artículos[/link]
+  = [link=Miscellaneous/FAQOther]Otros[/link]
+ 
+> Otros
+  = [link=Miscellaneous/Cheats]Trucos[/link]",
+"guidebook.chapter.Title.FAQ.NPCs": "[center][font=dialogue][offset=0,8]Preguntas frecuentes[/font][/center]
+[center][font=dialogue]PNJs[/font][/center]
+ 
+[color=maroon]¿Cómo avanzo en la historia?[/color]
+Todo este mod progresa linealmente. Ver todos los eventos de [link=Characters/Mateo]Mateo[/link], conocer a [link=Characters/Hector]{{TrueName}}[/link]. Ver todos los eventos de {{TrueName}}, conoce a [link=Characters/Cirrus]Cirrus[/link]. Ver todos los eventos de Cirrus, conocer a [link=Characters/Roslin]Roslin[/link]. Ve la mayoría de los eventos de Roslin, conoce a [link=Characters/Dandelion]Dandelion[/link]. Ve sus eventos restantes, y avanza hasta la [link=DeepDark/TableOfContents]mazmorra final[/link] y el [link=DeepDark/DuskspireBehemoth]jefe final[/link] asociado. Para entonces, habrás desbloqueado casi todo. Lo que quede se documentará aquí.
+ 
+[color=maroon]¿Cuáles son los horarios de los PNJ?[/color]
+Debido a su complejidad, los horarios no se documentan aquí. Por favor, utiliza [link=https://www.nexusmods.com/stardewvalley/mods/239]NPC Map Locations[/link] o [link=https://www.nexusmods.com/stardewvalley/mods/19305]Schedule Viewer[/link] if you need help locating the NPCs.
+ 
+[color=maroon]¿Cuáles son los gustos en regalos de los PNJ?[/color]
+Debido a la variabilidad de los gustos en materia de regalos, no se documentan aquí. Por favor, utiliza [link=https://www.nexusmods.com/stardewvalley/mods/541]Lookup Anything[/link] y la tecla F1 en el PNJ para mostrar automáticamente sus gustos de regalo.
+ 
+[color=maroon]¿Cómo salgo/me caso con [link=Characters/Mateo]Mateo[/link], [link=Characters/Hector]{{TrueName}}[/link] o [link=Characters/Cirrus]Cirrus[/link]?[/color]
+Sólo puedes salir con estos PNJ después de completar sus [link=Chapters/TableOfContents]capítulos[/link]. Si intentas regalarles un ramo de flores antes, te rechazarán. También debes salir con el PNJ durante {{DatingCooldown}} días antes de que se te permita casarte con él.
+ 
+[color=maroon]¿Cómo consigo las sudaderas de [link=Characters/Mateo]Mateo[/link], [link=Characters/Hector]{{TrueName}}[/link], y [link=Characters/Cirrus]Cirrus[/link]?[/color]
+Cásate con ellos.
+ 
+[color=maroon]¿Quién es Stiles Siddell?[/color]
+Un personaje previsto para Espada y Hechicería: Final Mix, un remake independiente de este mod. En esta versión, es una cetrera de la Feria Renacentista de Ferngill que tiene algunas interacciones ocasionales fuera de la pantalla.",
+"guidebook.chapter.Title.FAQ.Items": "[center][font=dialogue][offset=0,8]Preguntas frecuentes[/font][/center]
+[center][font=dialogue]Artículos[/font][/center]
+ 
+[color=maroon]¿Dónde están los peces?[/color]
+La mayoría de los peces añadidos por S&S están disponibles en la [color=green]Arboleda del Druida[/color] o en la [color=green]Dimensión de Bolsillo[/color], y no tienen restricciones de tiempo.
+ 
+> [itemtooltip=(O)DN.SnS_SalmonOfKnowledge][icon=Textures/DN.SnS/SnSObjects:32,144,16,16] [color=blue]Salmón del conocimiento[/color][/itemtooltip]: 
+Disponible en primavera y verano con cualquier tiempo.
+> [itemtooltip=(O)DN.SnS_Fastitocalon][icon=Textures/DN.SnS/SnSObjects:48,144,16,16] [color=blue]Fastitocalon[/color][/itemtooltip]: 
+Siempre disponible en cualquier estación y con cualquier tiempo.
+> [itemtooltip=(O)DN.SnS_PallidSailfin][icon=Textures/DN.SnS/SnSObjects:64,144,16,16] [color=blue]Aleta pálida[/color][/itemtooltip]: 
+Disponible en primavera e invierno con tiempo soleado.
+> [itemtooltip=(O)DN.SnS_GiantDragonfish][icon=Textures/DN.SnS/SnSObjects:80,144,16,16] [color=blue]Pez dragón gigante[/color][/itemtooltip]: 
+Disponible en otoño e invierno con tiempo lluvioso.
+> [itemtooltip=(O)DN.SnS_FiveLinedConstellationFish][icon=Textures/DN.SnS/SnSObjects:96,144,16,16] [color=blue]Pez de Constelación de Cinco Líneas[/color][/itemtooltip]: 
+Disponible en verano y otoño con tiempo soleado.
+> [itemtooltip=(O)DN.SnS_GoldieTheBatteryPoweredFish][icon=Textures/DN.SnS/SnSObjects:144,160,16,16] [color=blue]Goldie el pez a pilas[/color][/itemtooltip]: 
+Siempre disponible en la [color=green]Torre del Druida[/color].
+ 
+[color=maroon]¿Cómo consigo todas las recetas de comida?[/color]
+Algunas se envían por correo, otras forman parte de la clasificación de las [link=Skills/DruidicsSkill]Habilidades de los druidas[/link], la mayoría se dan durante los eventos, y una se vende en la Melena de León tras desbloquear la [link=DeepDark/TableOfContents]Oscuridad profunda[/link].
+ 
+> [itemtooltip=(O)DN.SnS_Steak_on_a_Stake][icon=Textures/DN.SnS/VioletMoonFood:0,0,16,16] [color=blue]Filete en una estaca[/color][/itemtooltip]: Enviado por Stiles.
+> [itemtooltip=(O)DN.SnS_ScotchEgg][icon=Textures/DN.SnS/VioletMoonFood:16,0,16,16] [color=blue]Huevo escocés[/color][/itemtooltip]: Enviado por Stiles.
+> [itemtooltip=(O)DN.SnS_Hand_Pressed_Apple_Cider][icon=Textures/DN.SnS/VioletMoonFood:32,0,16,16] [color=blue]Sidra de manzana prensada a mano[/color][/itemtooltip]: Enviado por Stiles.
+> [itemtooltip=(O)DN.SnS_Fruit_Hand_Pie][icon=Textures/DN.SnS/VioletMoonFood:48,0,16,16] [color=blue]Pastel de frutas[/color][/itemtooltip]: Enviado por Stiles.
+> [itemtooltip=(O)DN.SnS_Smoked_TurkeyLeg][icon=Textures/DN.SnS/VioletMoonFood:64,0,16,16] [color=blue]Muslo de pavo ahumado[/color][/itemtooltip]: Enviado por Stiles.
+> [itemtooltip=(O)DN.SnS_autumnalstew][icon=Textures/DN.SnS/SnSObjects:128,16,16,16] [color=blue]Estofado otoñal[/color][/itemtooltip]: Enviado por Mateo.
+> [itemtooltip=(O)DN.SnS_salishbourbon][icon=Textures/DN.SnS/SnSObjects:112,16,16,16] [color=blue]Burbón Mar salado[/color][/itemtooltip]: Enviado por Mateo.
+> [itemtooltip=(O)DN.SnS_dandeliongreens][icon=Textures/DN.SnS/SnSObjects:144,16,16,16] [color=blue]Verduras con Dientes de León[/color][/itemtooltip]: Enviado por Dandelion.
+> [itemtooltip=(O)DN.SnS_mushroomsredsauce][icon=Textures/DN.SnS/SnSObjects:112,32,16,16] [color=blue]Setas con salsa roja[/color][/itemtooltip]: a través de los druidas.
+> [itemtooltip=(O)DN.SnS_ferngreensandpineapple][icon=Textures/DN.SnS/SnSObjects:128,32,16,16] [color=blue]Verduras con helecho y piña[/color][/itemtooltip]: a través de los druidas.
+> [itemtooltip=(O)DN.SnS_ancienthuckleberryicecream][icon=Textures/DN.SnS/SnSObjects:144,32,16,16] [color=blue]Helado de arándano rojo milenario[/color][/itemtooltip]: a través de los druidas.
+> [itemtooltip=(O)DN.SnS_lavaeelandstirfriedancientbottlegourd][icon=Textures/DN.SnS/SnSObjects:0,48,16,16] [color=blue]Anguila de lava y calabaza botella[/color][/itemtooltip]: a través de los druidas.
+> [itemtooltip=(O)DN.SnS_portfiredrakesparkler][icon=Textures/DN.SnS/SnSObjects:0,32,16,16] [color=blue]Espumoso Puerto de fuego Drake[/color][/itemtooltip]: Otorgado por Cirrus.
+> [itemtooltip=(O)DN.SnS_zuzustylepizza][icon=Textures/DN.SnS/SnSObjects:96,64,16,16] [color=blue]Pizza al estilo ZuZu[/color][/itemtooltip]: Otorgado por Cirrus.
+> [itemtooltip=(O)DN.SnS_zuzustylebagelwithlox][icon=Textures/DN.SnS/SnSObjects:112,64,16,16] [color=blue]Bagel con salmón al estilo ZuZu[/color][/itemtooltip]: Otorgado por Cirrus.
+> [itemtooltip=(O)DN.SnS_zuzustylecheesecake][icon=Textures/DN.SnS/SnSObjects:128,64,16,16] [color=blue]Tarta de queso al estilo ZuZu[/color][/itemtooltip]: Otorgado por Cirrus.
+> [itemtooltip=(O)DN.SnS_zuzustyleclamchowder][icon=Textures/DN.SnS/SnSObjects:144,64,16,16] [color=blue]Sopa de almejas al estilo ZuZu[/color][/itemtooltip]: Otorgado por Cirrus.
+> [itemtooltip=(O)DN.SnS_ancientsweettea][icon=Textures/DN.SnS/SnSObjects:64,128,16,16] [color=blue]Té dulce milenario[/color][/itemtooltip]: Otorgado por Dandelion.
+> [itemtooltip=(O)DN.SnS_farafieldsnack][icon=Textures/DN.SnS/SnSObjects:128,176,16,16] [color=blue]Bocadillo Lejano[/color][/itemtooltip]: La Melena de León.",
+"guidebook.chapter.Title.FAQ.Other": "[center][font=dialogue][offset=0,8]Preguntas frecuentes[/font][/center]
+[center][font=dialogue]Otros[/font][/center]
+ 
+[color=maroon]¿Cómo desactivo la Barra de Aventura?[/color]
+Ctrl+U es la tecla de acceso rápido por defecto. Esto se puede cambiar en la {{Config}} del S&S. 
+ 
+[color=maroon]¡Las misiones estacionales de {{TrueName}} han desaparecido![/color]
+Se eliminaron definitivamente en 2.1.0. Ahora puedes progresar sin ellas como estaba previsto.
+ 
+[color=maroon]¡El plus no coincide con mi recoloración![/color] 
+Este menú es utilizado por S&S pero es añadido por Spacecore. S&S cubre la mayoría de los principales recoloraciones, pero en caso de que quieras añadir uno, puede ser orientado: 
+> spacechase0.SpaceCore/ExtraEquipmentIcon 
+ 
+[color=maroon]¡Otro elemento de la interfaz de usuario que no coincide con mi recoloración![/color] 
+Si se trata de una recoloración tuya y has creado los recursos para ella, háznoslo saber y podremos incluirla. Si tienes alguna petición, ponte en contacto con nosotros en [link=https://discord.gg/sdv-east-scarp-community-702333912722178059]Discord[/link] o en los [link=https://www.nexusmods.com/stardewvalley/mods/12369?tab=posts]comentarios de Nexus[/link].
+ 
+[color=maroon]¿Existe un componente Skills independiente?[/color]
+No. Si te interesan los mods exclusivamente mecánicos, hay otras alternativas. S&S es, ante todo, una expansión de contenidos. 
+ 
+[color=maroon]¿Es S&S compatible con los mods de varios cónyuges?[/color]
+Utilízalo bajo tu propia responsabilidad, e informa de los problemas asociados a los respectivos autores - no al equipo de S&S. Los PNJ románticos de S&S no están diseñados para ser poliamorosos, y {{TrueName}} es monógamo por diseño debido a razones mecánicas.
+ 
+[color=maroon]He encontrado un error. ¿Qué debo hacer?[/color]
+Informa del error en [link=https://discord.gg/sdv-east-scarp-community-702333912722178059]Discord[/link] o en [link=https://www.nexusmods.com/stardewvalley/mods/12369?tab=bugs]Nexus[/link].
+ 
+[color=maroon]¿Este mod es compatible con el modo multijugador?[/color]
+Espada y Hechicería es, ante todo, una experiencia para un jugador. Aunque puedes informar de errores relacionados con el modo multijugador, no podemos prometer que se solucionen todos.",
+
+"guidebook.chapter.Title.Cheats": "[center][font=dialogue][offset=0,8]Trucos[/font][/center]
+ 
+[color=maroon]¿Cómo se utilizan los códigos de trucos?[/color]
+Escríbelos en la consola SMAPI (cuadro negro que aparece al cargar) y pulsa enter. Estos son principalmente para propósitos de prueba, por favor no reportes errores/bugs que sean resultado directo de su uso.
+ 
+[color=maroon]Artificiero[/color] 
+> sns_encrustweapon ItemID 
+> sns_coatweapon ItemID
+> sns_alloyweapon ItemID
+ 
+[color=maroon]Bardo[/color] 
+> sns_playsong SongID#
+  = Fantasia Alla Marcia - song_buff
+  = Obertura del campo de batalla - song_battle
+  = Repetición Vigorizante - song_restoration
+  = Melodía Duradera - song_protection
+  = Humor Pícaro - song_npcbuff
+  = Scherzo D'Inganno - song_attack
+  = Balada de Cronomancia - song_time
+  = Pista de {{HorseName}} - song_horse
+  = Canción de cuna del Druida - song_crop
+  = Un Paseo por Adante - song_obelisk
+ 
+[color=maroon]Éter[/color] 
+> sns_setmaxaether #
+> sns_refillaether
+ 
+[color=maroon]Menús[/color] 
+> sns_transmute
+> sns_research
+> sns_shieldmenu
+> sns_alchemy
+> sns_arsenal
+ 
+[color=maroon]Habilidades[/color] 
+> player_giveexp SkillID EXPAmount
+  = DestyNova.SwordAndSorcery.Rogue
+  = DestyNova.SwordAndSorcery.Druidics 
+  = DestyNova.SwordAndSorcery.Bardics
+  = DestyNova.SwordAndSorcery.Witchcraft 
+  = DestyNova.SwordAndSorcery.Paladin
+ 
+[color=maroon]Varios[/color] 
+> sns_repairarmor
+> sns_finishorders
+> sns_startfinalephase2",
+  "guidebook.chapter.NEA.Intro": "[center][font=dialogue][offset=0,8]Chapter 1[/font][/center]
+  [center][font=dialogue]Aventura sin fin[/font][/center]
+   
+Este primer capítulo de S&S te presenta a Mateo, un encantador pícaro con una sórdida historia. Desentraña su conexión con el contenido desaparecido del Museo, ayúdale a reconectar con la gente del pueblo, aprende la habilidad Artífice, desbloquea la Forja Subterránea, el sistema de Arsenal y funda una nueva rama del Gremio de Aventureros.",
+  "guidebook.chapter.NEA.Mateo": "[nospacing]
+[nextposition=0,10][center=300][font=dialogue]Mateo[/font][/center]
+[offset=118,50][image=Characters/Mateo:0,0,16,32:4]
+[offset=-118,144][center=300]Pronombres: Ellos/de ellos[/center]
+[offset=0,32][center=300]Cumpleaños: Otoño 25[/center]
+[nextposition=322,16][image=Portraits/Mateo:0,0,64,64:4]
+[nextposition=0,288]
+[/nospacing]
+Mateo es un experimentado aventurero de corazón bondadoso que creció en Pueblo Pelícano. No sólo es un hábil Pícaro, sino que tiene inclinación por la herrería. Un buen líder y mejor amigo que siempre te cubrirá las espaldas.",
+"guidebook.chapter.NEA.Emeritus": "[nospacing]
+[nextposition=0,10][center=300][font=dialogue]Emeritus[/font][/center]
+[offset=90,50][image=Characters/MateoEmeritus:0,0,32,32:4]
+[offset=-118,144][center=300]Pronombres: Él/de él[/center]
+[offset=0,32][center=300]No Amigable[/center]
+[nextposition=322,16][image=Portraits/MateoEmeritus:0,0,64,64:4]
+[nextposition=0,288]
+[/nospacing]
+Emeritus es un jovial Pimienta Rex que nace con un único objetivo: proteger a East Scarp de la amenaza de los cangrejos. Es el compañero más leal que existe y le encantan los besos en la frente. ¡Te lo devolverá con un extra de babas!",
+  "guidebook.chapter.NEA.Events": "[center][font=dialogue][offset=0,8]La historia hasta ahora:[/font][/center]
+   
+[font=dialogue]Evento Mateo: 0 Corazones pt 1[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.0]¡Completado![/if]
+[else]Pista: Visita la [color=green]planta superior de las Minas[/color] antes de las 12 de la madrugada.[/else]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.0]
+[font=dialogue]Evento Mateo: 0 Corazones pt 2[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.1]¡Completado![/if]
+[else]Pista: Visita el [color=green]Museo y Biblioteca de Stardew Valley[/color] entre las 8 y la 1 de la madrugada.[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.1]
+[font=dialogue]Evento Mateo: 2 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.2]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Mateo 500]Pista: Visita [color=green]Pueblo Pelícano[/color] entre las 17 y la 1 de la madrugada con tiempo soleado.[/if]
+[else]Requisito: 2 Corazones de amistad con [color=red]Mateo[/color][/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.2]
+[font=dialogue]Evento Mateo: 4 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.3]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Mateo 1000, !PLAYER_HAS_CONVERSATION_TOPIC Current MateoLibrary]Pista: Visita la [color=green]Playa[/color] entre las 18 y las 24 horas con tiempo soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Mateo 1000]Requisito: 4 Corazones con [color=red]Mateo[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current MateoLibrary]Requisito: Esperar {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.3]
+[font=dialogue]Evento Mateo: 4 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.4]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Mateo 1250, !PLAYER_HAS_CONVERSATION_TOPIC Current MateoAdmission]Pista: Visita la [color=green]planta superior de las Minas[/color] entre las 18 y la 1 de la madrugada.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Mateo 1250]Requisito: 5 Corazones con [color=red]Mateo[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current MateoAdmission]Requisito: Esperar {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.4]
+[font=dialogue]Dandelion y Roslin: Pt 1[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Roslin]¡Completado![/if]
+[else]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.4]Pista: Visita la [color=green]Casa del alcalde Lewis[/color] entre las 9 y las 18 horas.[/if]
+[else]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.4]
+[font=dialogue]Evento Mateo: 5 Corazones pt 1[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.5]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Mateo 1250]Pista: Visita el [color=green]Salón[/color] entre las 12 de la tarde y las 12 de la madrugada.[/if]
+[else]Requisito: 5 Corazones con [color=red]Mateo[/color][/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.5]
+[font=dialogue]Evento Mateo: 5 Corazones pt 2[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.6]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Mateo 1250, !PLAYER_HAS_CONVERSATION_TOPIC Current MateoConfrontation]Pista: Visita el [color=green]Gremio de Aventureros[/color] entre las 14 y las 22 horas.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Mateo 1250]Requisito: 5 Corazones con [color=red]Mateo[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current MateoConfrontation]Requisito: Esperar {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.6]
+[font=dialogue]Evento Mateo: 5 Corazones pt 3[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.7]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Mateo 1500]Pista: Visita [color=green]Pueblo Pelícano[/color] entre las 10 y las 18 horas.[/if]
+[else]Requisito: 6 Corazones con [color=red]Mateo[/color][/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.7]
+[font=dialogue]Evento Mateo: 6 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.8]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Mateo 1500]Pista: Visita el [color=green]Bosque[/color] entre las 18 y las 24 horas en caso de mal tiempo.[/if]
+[else]Requisito: 6 Corazones con [color=red]Mateo[/color][/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.8]
+[font=dialogue]Evento Mateo: 7 Corazones pt 1[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.9]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Mateo 1750, PLAYER_HAS_MET Current Krobus, !PLAYER_HAS_CONVERSATION_TOPIC Current MateoAcceptance]Pista: Visita el [color=green]Hospital[/color] entre las 9 y las 17 horas cuando no sea viernes.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Mateo 1750]Requisito: 7 Corazones con [color=red]Mateo[/color][/if]
+[if=!PLAYER_HAS_MET Current Krobus]Requisito: Conocer a [color=red]Krobus[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current MateoAcceptance]Requisito: Esperar {{VariableTimegate}} días después de ver el evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.9]
+[font=dialogue]Evento Mateo: 7 Corazones pt 2[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.10]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Mateo 1750, !PLAYER_HAS_CONVERSATION_TOPIC Current MateoPain]Pista: Visita [color=green]Pueblo Pelícano[/color] entre las 17 y las 24 horas cuando no sea viernes.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Mateo 1750]Requisito: 7 Corazones con [color=red]Mateo[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current MateoPain]Requisito: Esperar {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.10]
+[font=dialogue]Evento Mateo: 8 Corazones pt 1[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.11]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Mateo 2000, !PLAYER_HAS_CONVERSATION_TOPIC Current MateoRecovery]Pista: Visita [color=green]East Scarp[/color] entre las 8 y las 18 horas con tiempo soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Mateo 2000]Requisito: 8 Corazones con [color=red]Mateo[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current MateoRecovery]Requisito: Esperar {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.11]
+[font=dialogue]Pedido Especial: La petición de Mateo[/font]
+[if=PLAYER_SPECIAL_ORDER_COMPLETE Current Mateo.SpecialOrders.BuildGuild]Has reunido materiales para [color=red]Mateo[/color].[/if]
+[else]Reúne materiales para la nueva rama del gremio de aventureros:
+> 500 [itemtooltip=(O)388][icon=Maps/springobjects:64,256,16,16] [color=blue]Madera[/color][/itemtooltip]
+> 300 [itemtooltip=(O)390][icon=Maps/springobjects:96,256,16,16] [color=blue]Piedra[/color][/itemtooltip]
+> 100 [itemtooltip=(O)709][icon=Maps/springobjects:208,464,16,16] [color=blue]Madera Noble[/color][/itemtooltip]
+[if=!PLAYER_SPECIAL_ORDER_ACTIVE Current Mateo.SpecialOrders.BuildGuild]Parece que te falta el pedido especial.
+[onceaction=AddSpecialOrder Mateo.SpecialOrders.BuildGuild]Haz clic aquí para volver a añadirlo a tu diario.[/onceaction][/if]
+[/else]
+[/if]
+ 
+[if=PLAYER_SPECIAL_ORDER_COMPLETE Current Mateo.SpecialOrders.BuildGuild]
+[font=dialogue]Evento Mateo: 8 Corazones pt 2[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.12]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Mateo 2000]Pista: Visita [color=green]East Scarp[/color] entre las 8 y las 18 horas con tiempo soleado.[/if]
+[else]Requisito: 8 Corazones con [color=red]Mateo[/color][/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.12]
+[font=dialogue]Evento Mateo: 10 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.14]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Mateo 2500, !PLAYER_HAS_CONVERSATION_TOPIC Current CGuildComplete]Pista: Visita el [color=green]Ferrocarril[/color] entre las 17 y las 24 horas cuando no sea viernes.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Mateo 2500]Requisito: 10 Corazones con [color=red]Mateo[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current CGuildComplete]Requisito: Espera un día después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.14]
+[font=dialogue]Evento: Desbloqueo de la habilidad de Artífice[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.18]¡Completado![/if]
+[else]
+Pista: Visita el [color=green]Gremio de Aventureros de la Costa[/color] entre las 8 y las 22 horas.
+[/else]
+[/if]
+ 
+[if=PLAYER_NPC_RELATIONSHIP Current Mateo Married Engaged Roommate]
+[font=dialogue]Evento Mateo: 12 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.16]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Mateo 3000]Pista: Visita [color=green]las Minas[/color] entre las 6 y las 12 horas en cualquier estación, excepto en invierno.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Mateo 3000]Requisito: 12 Corazones con [color=red]Mateo[/color][/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SNS.Ch1.Mateo.16]
+[font=dialogue]Evento Mateo: 14 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.17]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Mateo 3500]Pista: Visita [color=green]East Scarp[/color] entre las 6 y las 18 horas con tiempo lluvioso, nevado o tormentoso.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Mateo 3500]Requisito: 14 Corazones con [color=red]Mateo[/color][/if]
+[/else]
+[/else]
+[/if]", 
+
+"guidebook.chapter.NEA.Underforge": "[center][font=dialogue][offset=0,8]Forja subterránea[/font][/center]
+ 
+Después de desbloquear la habilidad de [link=Skills/ArtificerSkill]Artífice[/link], puedes entrar en la [color=green]Forja subterránea[/color] dentro del [color=green]Gremio de Aventureros de la Costa[/color] pasando por la puerta de la derecha. En la esquina superior izquierda encontrarás la forja.
+  
+Aquí, puedes añadir tres tipos diferentes de objetos de mejora a tu arma una vez que hayas alcanzado el nivel adecuado en la habilidad [link=Skills/ArtificerSkill]Artífice[/link].
+  
+[font=dialogue]Aleación de espadas[/font]
+Añade 25 menas puras para aumentar la capacidad de infligir daño:
+ 
+   > [itemtooltip=(O)DN.SnS_PureCopperOre][icon=Textures/DN.SnS/SnSArsenal:64,32,16,16] [color=blue]Mena de cobre puro[/color][/itemtooltip] - +5% de daño
+   > [itemtooltip=(O)DN.SnS_PureIronOre][icon=Textures/DN.SnS/SnSArsenal:80,32,16,16] [color=blue]Mena de hierro puro[/color][/itemtooltip] - +10% de daño
+   > [itemtooltip=(O)DN.SnS_PureGoldOre][icon=Textures/DN.SnS/SnSArsenal:96,32,16,16] [color=blue]Mena de oro puro[/color][/itemtooltip] - +15% de daño
+   > [itemtooltip=(O)DN.SnS_PureIridiumOre][icon=Textures/DN.SnS/SnSArsenal:0,48,16,16] [color=blue]Mena de iridio puro[/color][/itemtooltip] - +20% de daño
+   > [itemtooltip=(O)DN.SnS_PureRadioactiveOre][icon=Textures/DN.SnS/SnSArsenal:16,48,16,16] [color=blue]Mineral radiactivo puro[/color][/itemtooltip] - +25% de daño
+ 
+Nota: Las menas puras pueden fundirse en su forma de mena no pura:
+ 
+> [color=blue]Horno[/color]: 3-5 piezas por 1 mena
+> [color=blue]Horno pesado[/color]: 75-130 piezas por 25 menas
+
+ 
+[font=dialogue]Zócalo de gemas exquisitas[/font]
+Coloca una gema exquisita para conseguir nuevos efectos:
+ 
+   > [itemtooltip=(O)DN.SnS_ExquisiteEmerald][icon=Textures/DN.SnS/SnSArsenal:0,0,16,16] [color=blue]Esmeralda exquisita[/color][/itemtooltip] - [texttooltip=Evasiva:Aumenta tu velocidad en +1.5 por 5 segundos después de golpear a un enemigo.] [color=purple]Evasiva[/color][/texttooltip]
+   > [itemtooltip=(O)DN.SnS_ExquisiteTopaz][icon=Textures/DN.SnS/SnSArsenal:16,0,16,16] [color=blue]Topacio exquisito[/color][/itemtooltip] - [texttooltip=Defensiva:Reduce el daño recibido en 15%.] [color=purple]Defensiva[/color][/texttooltip]
+   > [itemtooltip=(O)DN.SnS_ExquisiteRuby][icon=Textures/DN.SnS/SnSArsenal:32,0,16,16] [color=blue]Rubí exquisito[/color][/itemtooltip] - [texttooltip=Dañar:Inflige un 10% de daño adicional a un enemigo una vez cada segundo durante 3 segundos tras golpearlo.] [color=purple]Dañar[/color][/texttooltip]
+   > [itemtooltip=(O)DN.SnS_ExquisiteJade][icon=Textures/DN.SnS/SnSArsenal:48,0,16,16] [color=blue]Jade exquisito[/color][/itemtooltip] - [texttooltip=Descansado:Otorga +2 de Aguante al golpear a un enemigo.] [color=purple]Descansado[/color][/texttooltip]
+   > [itemtooltip=(O)DN.SnS_ExquisiteAmethyst][icon=Textures/DN.SnS/SnSArsenal:64,0,16,16] [color=blue]Amatista exquisita[/color][/itemtooltip] - [texttooltip=Congelación:15% de probabilidad de congelar a un enemigo al golpearlo.] [color=purple]Congelación[/color][/texttooltip]
+   > [itemtooltip=(O)DN.SnS_ExquisiteDiamond][icon=Textures/DN.SnS/SnSArsenal:80,0,16,16] [color=blue]Diamante exquisito[/color][/itemtooltip] - [texttooltip=Curación:Otorga +1 de Vida al golpear a un enemigo.] [color=purple]Curación[/color][/texttooltip]
+   > [itemtooltip=(O)DN.SnS_ExquisiteAquamarine][icon=Textures/DN.SnS/SnSArsenal:96,0,16,16] [color=blue]Aguamarina exquisita[/color][/itemtooltip] - [texttooltip=Crítico:Proporciona un 15% de probabilidad de golpe crítico al golpear a un enemigo.
+(Si el golpe ya es un golpe crítico, el daño se multiplicará de nuevo.)] [color=purple]Crítico[/color][/texttooltip]
+ 
+[font=dialogue]Recubrimiento de armas[/font]
+Adjunta botín de monstruos para nuevos efectos:
+ 
+   > 999 [itemtooltip=(O)766][icon=Maps/springobjects:352,496,16,16] [color=blue]Baba[/color][/itemtooltip] - [texttooltip=Baboso:Ralentiza a los enemigos al golpearlos. Funciona una vez por enemigo.] [color=purple]Baboso[/color][/texttooltip]
+   > 300 [itemtooltip=(O)769][icon=Maps/springobjects:16,512,16,16] [color=blue]Esencia sombría[/color][/itemtooltip] - [texttooltip=Sombra Duplicada:Los ataques básicos afectan a las cuatro direcciones cardinales. (Los ataques en las otras direcciones son invisibles.)] [color=purple]Sombra Duplicada[/color][/texttooltip]
+   > 300 [itemtooltip=(O)768][icon=Maps/springobjects:0,512,16,16] [color=blue]Esencia solar[/color][/itemtooltip] - [texttooltip=Muerte explosiva:Al matar a una turba, esta explota. No daña al granjero.] [color=purple]Muerte explosiva[/color][/texttooltip]
+   > 500 [itemtooltip=(O)684][icon=Maps/springobjects:192,448,16,16] [color=blue]Carne de insecto[/color][/itemtooltip] - [texttooltip=Codicioso:Las gotas de la mafia se tiran dos veces.] [color=purple]Codicioso[/color][/texttooltip]
+   > 300 [itemtooltip=(O)767][icon=Maps/springobjects:368,496,16,16] [color=blue]Ala de murciélago[/color][/itemtooltip] - [texttooltip=Flotante:Puedes atacar a través de piedras y otros objetos.] [color=purple]Flotante[/color][/texttooltip]",
+
+"guidebook.chapter.NEA.ArtificerSkill": "[center][font=dialogue][offset=0,8]Artífice[/font][/center]
+[offset=200,0][image=SMAPI/kcc.sns/assets/rogue/icon.png:0,0,10,10:5]Una de las habilidades de Espada y Hechicería, desbloqueada durante el evento [link=Mechanics/Underforge]Forja subterránea[/link] de Mateo. El artífice puede subir de nivel matando monstruos y minando.
+ 
+[font=dialogue]Desbloqueo[/font]
+> Nivel 1 - Desbloqueo de recetas: 
+  = [itemtooltip=(O)DN.SnS_ClothArmor][icon=Textures/DN.SnS/SnSArsenal:32,48,16,16] [color=blue]Armadura de tela[/color][/itemtooltip]
+  = [itemtooltip=(W)DN.SnS_Bow][icon=Textures/DN.SnS/SnSArsenal:32,80,16,16] [color=blue]Arco[/color][/itemtooltip]
+  = [itemtooltip=(O)DN.SnS_Arrow][icon=Textures/DN.SnS/SnSArsenal:16,64,16,16] [color=blue]Flecha[/color][/itemtooltip]
+  
+> Nivel 2 - Desbloqueo de mecánicas:
+  = Las menas puras ahora tienen la posibilidad de
+    caer desde sus respectivos nodos de mineral
+    para usarlo en la [link=Mechanics/Underforge]Forja subterránea[/link].
+  
+> Nivel 3 - Desbloqueo de recetas:
+  = [itemtooltip=(O)DN.SnS_CopperArmor][icon=Textures/DN.SnS/SnSArsenal:48,48,16,16] [color=blue]Armadura de cobre[/color][/itemtooltip]
+  = [itemtooltip=(O)DN.SnS_FirestormArrow][icon=Textures/DN.SnS/SnSArsenal:32,64,16,16] [color=blue]Flecha Tormenta de fuego[/color][/itemtooltip]
+  = [itemtooltip=(O)DN.SnS_IcicleArrow][icon=Textures/DN.SnS/SnSArsenal:48,64,16,16] [color=blue]Flecha estalactita[/color][/itemtooltip]
+   
+> Nivel 4 - Desbloqueo de mecánicas y recetas:
+  = Las gemas exquisitas ahora tienen la posibilidad
+     de caer desde sus respectivos nodos de gemas
+     para usarlas en la [link=Mechanics/Underforge]Forja subterránea[/link].
+  = [itemtooltip=(O)DN.SnS_IronArmor][icon=Textures/DN.SnS/SnSArsenal:64,48,16,16] [color=blue]Armadura de hierro[/color][/itemtooltip]
+ 
+> Nivel 5 - Consulta la página [link=Skills/ArtificerProfessions]Profesiones de artífice[/link].
+ 
+> Desbloqueo de recetas y mecánicas de nivel 6:
+  = Ahora puedes realizar Revestimiento de Espada
+     en [link=Mechanics/Underforge]Forja subterránea[/link] usando grandes cantidades
+     de cierto botín de monstruos.
+  = [itemtooltip=(O)DN.SnS_WindwakerArrow][icon=Textures/DN.SnS/SnSArsenal:80,64,16,16] [color=blue]Flecha despertadora de los vientos[/color][/itemtooltip]
+   
+> Receta de nivel 7 y Desbloqueo de mecánicas:
+  = [itemtooltip=(O)DN.SnS_GoldArmor][icon=Textures/DN.SnS/SnSArsenal:80,48,16,16] [color=blue]Armadura de oro[/color][/itemtooltip]
+   
+> Nivel 8 - Desbloqueo de recetas:
+  = [itemtooltip=(O)DN.SnS_IridiumArmor][icon=Textures/DN.SnS/SnSArsenal:96,48,16,16] [color=blue]Armadura de iridio[/color][/itemtooltip]
+  = [itemtooltip=(O)DN.SnS_RicochetArrow][icon=Textures/DN.SnS/SnSArsenal:0,80,16,16] [color=blue]Flecha Ricochet[/color][/itemtooltip]
+   
+> Nivel 9 - Desbloqueo de recetas:
+  = [itemtooltip=(O)DN.SnS_LightbringerArrow][icon=Textures/DN.SnS/SnSArsenal:16,80,16,16] [color=blue]Flecha Lumbrera[/color][/itemtooltip]
+  = [itemtooltip=(O)DN.SnS_RadioactiveArmor][icon=Textures/DN.SnS/SnSArsenal:0,64,16,16] [color=blue]Armadura radiactiva[/color][/itemtooltip]
+  = [itemtooltip=(O)DN.SnS_StygiumArmor][icon=Textures/DN.SnS/SnSArsenal:0,112,16,16] [color=blue]Armadura de Estigio[/color][/itemtooltip]
+  = [itemtooltip=(O)DN.SnS_ElysiumArmor][icon=Textures/DN.SnS/SnSArsenal:16,112,16,16] [color=blue]Armadura de Elisio[/color][/itemtooltip]
+ 
+> Nivel 10 - Consulta la página [link=Skills/ArtificerProfessions]Profesiones del artífice[/link].",
+
+"guidebook.chapter.NEA.ArtificerProfessions": "[center][font=dialogue][offset=0,8]Profesiones[/font][/center]
+  
+Al igual que las habilidades básicas, la habilidad Artífice proporciona profesiones que cambian la experiencia de juego en los niveles 5 y 10.
+ 
+[font=dialogue]Nivel 5[/font]
+= [icon=SMAPI/kcc.sns/assets/rogue/artificerspecialist.png:0,0,16,16] [color=MediumBlue]Artífice Especialista[/color]
+    Agrega capacidad de regeneración de resistencia a
+    los puntos de armadura al cambiar de ubicación.
+= [icon=SMAPI/kcc.sns/assets/rogue/rogueisharchetype.png:0,0,16,16] [color=MediumBlue]Arquetipo pícaro[/color]
+    25% de posibilidad de disparar una segunda flecha
+    sin consumir munición adicional.
+ 
+[font=dialogue]Nivel 10[/font]
+[color=MediumBlue]Senda del especialista Artífice[/color]
+= [icon=SMAPI/kcc.sns/assets/rogue/flashofgenius.png:0,0,16,16] [color=blue]Destello de genio[/color]
+    La primera fabricación que hagas cada día
+    no tiene costo de ingredientes. 
+    (Nota: aún se deben poseer los ingredientes)
+= [icon=SMAPI/kcc.sns/assets/rogue/armorproficiency.png:0,0,16,16] [color=blue]Dominio de la armadura[/color]
+    Agrega 50% más puntos de armadura sobre
+    tu cantidad total.
+ 
+[color=MediumBlue]Senda del arquetipo Pícaro[/color]
+= [icon=SMAPI/kcc.sns/assets/rogue/Shadowstep.png:0,0,16,16] [color=blue]Paso de las sombras[/color]
+    Otorga la [texttooltip=Paso de las Sombras:Oculta, reduciendo la mayor agresión de los monstruos hasta que atacas.
+Tu primer ataque después de usar la habilidad es un golpe crítico automático.][icon=SMAPI/kcc.sns/assets/rogue/Shadowstep.png:0,0,16,16] Habilidad [color=purple]Paso de las Sombras[/color][/texttooltip]. 
+    (Se puede utilizar con la [link=Mechanics/AdventureBar]Barra de aventuras[/link])
+= [icon=SMAPI/kcc.sns/assets/rogue/huntersmark.png:0,0,16,16] [color=blue]Marca del cazador[/color]
+    Una vez que una criatura es atacada, los golpes consecutivos
+    a la misma criatura causan un poco
+    más de daño cada vez.",
+
+  "guidebook.chapter.COT.Intro": "[center][font=dialogue][offset=0,8]Capítulo 2[/font][/center]
+  [center][font=dialogue]Círculo de espinas[/font][/center]
+ 
+El segundo capítulo de S&S revela la identidad de 'B', quien introduce a {{HPN4}} como 'Hector'; un druida profundamente arraigado a la tierra misma. Descubre por qué este lobo muerde la mano que le da de comer {{HPN2}} - gánate la confianza de uno de los guardianes de la naturaleza del Valle y purifica un río corrompido por la contaminación, aprende la habilidad druida, recolecta esencias druidas y descubre Arboleda verdadera y los secretos que esconde.",
+  "guidebook.chapter.COT.Hector": "[nospacing]
+[nextposition=0,10][center=300][font=dialogue]{{TrueName}}[/font][/center]
+[offset=118,50][image=Characters/Hector:0,0,16,32:4]
+[offset=-118,144][center=300]Pronombres: {{CHPN1}}/{{CHPN2}} [/center]
+[offset=0,32][center=300]Cumpleaños: Invierno 21[/center]
+[nextposition=322,16][image=Portraits/Hector:0,0,64,64:4]
+[nextposition=0,288]
+[/nospacing]
+{{TrueName}} es un escurridizo druida que vive en una vieja torre en ruinas. Este metamorfo, que parece haber vivido tanto tiempo como la propia tierra, tiene mucho que aprender sobre modales sociales. Sin embargo, {{HPN1}} tiene mucho que ofrecer a quienes demuestran ser dignos de confianza.",
+"guidebook.chapter.COT.Book": "[nospacing]
+[nextposition=0,10][center=300][font=dialogue]Libro[/font][/center]
+[offset={{BookOffset}},50][image=Characters/{{BookForm}}:0,0,{{BookSize}},32:4]
+[offset=-118,144][center=300]Pronombres: Ella/De ella[/center]
+[offset=0,32][center=300]No Amigable[/center]
+[nextposition=322,16][image=Portraits/{{BookForm}}:0,0,64,64:4]
+[nextposition=0,288]
+[/nospacing]
+Un misterioso grimorio con un catálogo oculto de poder, que incluye el cambio de forma y la druidización. Se preocupa profundamente por {{TrueName}} y está decidida a velar por {{HPN2}} - y aparentemente lo ha sido durante muchos, muchos años sin intención de dejar el lado del Druida.",
+"guidebook.chapter.COT.Events": "[center][font=dialogue][offset=0,8]La historia hasta ahora:[/font][/center]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.14]
+[font=dialogue]Evento de {{TrueName}}: 0 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.1]¡Completado![/if]
+[else]Pista: Visita el [color=green]Ferrocarril[/color] entre las 8 y las 22 hrs.[/else]
+[/if]
+ 
+{{TrollEvent1}}
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.1]
+[font=dialogue]Evento de {{TrueName}}: 1 Corazón[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.2]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 250, !PLAYER_HAS_CONVERSATION_TOPIC Current HectorIntro]Pista: Visita la [color=green]Torre de Hector[/color] entre las 8 y las 22 horas.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Hector 250]Requisito: 1 Corazón con [color=red]{{TrueName}}[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current HectorIntro]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.2]
+[font=dialogue]Evento de {{TrueName}}: 2 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.3]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 500, !PLAYER_HAS_CONVERSATION_TOPIC Current HectorBookIntro]Pista: Visita la [color=green]Torre de Hector[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Hector 500]Requisito: 2 Corazones con [color=red]{{TrueName}}[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current HectorBookIntro]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.3]
+[font=dialogue]Evento de {{TrueName}}: 3 Corazones pt 1[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.4]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 750, !PLAYER_HAS_CONVERSATION_TOPIC Current HectorShapeshift]Pista: Visita la [color=green]Torre de Hector[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Hector 750]Requisito: 3 Corazones con [color=red]{{TrueName}}[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current HectorShapeshift]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.4]
+[font=dialogue]Evento de {{TrueName}}: 3 Corazones pt 2[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.5]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 750, !PLAYER_HAS_CONVERSATION_TOPIC Current HectorBookQuest]Pista: Visita la [color=green]Torre de Hector[/color]  between 8 y las 22 hrs con tiempo soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Hector 750]Requisito: 3 Corazones con [color=red]{{TrueName}}[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current HectorBookQuest]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.5]
+[font=dialogue]Evento de {{TrueName}}: 4 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.6]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 1000, !PLAYER_HAS_CONVERSATION_TOPIC Current HectorVet]Pista: Visita [color=green]East Scarp[/color] entre las 9 y las 17 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Hector 1000]Requisito: 4 Corazones con [color=red]{{TrueName}}[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current HectorVet]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.6]
+[font=dialogue]Evento de {{TrueName}}: 5 Corazones pt 1[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.7]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 1250, !PLAYER_HAS_CONVERSATION_TOPIC Current HectorVet2]Pista: Visita [color=green]East Scarp[/color] entre las 9 y las 17 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Hector 1250]Requisito: 5 Corazones con [color=red]{{TrueName}}[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current HectorVet2]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.7]
+[font=dialogue]Evento de {{TrueName}}: 5 Corazones pt 2[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.8]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 1250, !PLAYER_HAS_CONVERSATION_TOPIC Current HectorGender]Pista: Visita la [color=green]Casa del veterinario[/color] in [color=Green]East Scarp[/color] entre las 15 y 9pm.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Hector 1250]Requisito: 5 Corazones con [color=red]{{TrueName}}[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current HectorGender]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.8]
+[font=dialogue]Dandelion y Roslin: Pt 2[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Roslin]¡Completado![/if]
+[else]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.8]Pista: Visita [color=green]la posada del pueblo East Scarp[/color] entre las 9 y las 18 hrs.[/if]
+[else]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.8]
+[font=dialogue]Cirrus: Prólogo (Extra)[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Cirrus]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 2500]Pista: Visita la [color=green]Parada de autobús[/color] entre las 6 y las 0 hrs.[/if]
+[else]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.8]
+[font=dialogue]Evento de {{TrueName}}: 5 Corazones pt 3[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.9]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 1250, !PLAYER_HAS_CONVERSATION_TOPIC Current HectorVet3]Pista: Visita el [color=verde]Gremio de Aventureros de la Costa[/color] entre las 17 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Hector 1250]Requisito: 5 Corazones con [color=red]{{TrueName}}[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current HectorVet3]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.9]
+[font=dialogue]Evento de {{TrueName}}: 6 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.10]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 1500, !PLAYER_HAS_CONVERSATION_TOPIC Current HectorDND]Pista: Visita la [color=green]Torre de Hector[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Hector 1500]Requisito: 6 Corazones con [color=red]{{TrueName}}[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current HectorDND]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.10]
+[font=dialogue]Evento de {{TrueName}}: 7 Corazones pt 1[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.11]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 1750, !PLAYER_HAS_CONVERSATION_TOPIC Current HectorRiver1]Pista: Visita [color=green]East Scarp[/color] entre las 8 y las 18 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Hector 1750]Requisito: 7 Corazones con [color=red]{{TrueName}}[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current HectorRiver1]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.10]
+[font=dialogue]Pedido especial: Destruye la tubería con fugas[/font]
+[if=PLAYER_SPECIAL_ORDER_COMPLETE Current CAGQuest.UntimedSpecialOrder.River1]Ayudaste a [color=red]{{TrueName}}[/color] a destruir la tubería con fugas.[/if]
+[else]Entrega los siguientes artículos en el altar fuera de la [color=green]Torre de Hector[/color] in las [color=green]Montañas Profundas[/color]:
+> 1 [itemtooltip=(O)74][icon=Maps/springobjects:32,48,16,16] [color=blue]Esquirla prismática[/color][/itemtooltip]
+> 5 [itemtooltip=(O)454][icon=Maps/springobjects:352,288,16,16] [color=blue]Fruta milenaria[/color][/itemtooltip]
+> 3 [itemtooltip=(O)586][icon=Maps/springobjects:128,256,16,16] [color=blue]Concha de Nautilo[/color][/itemtooltip]
+> 10 [itemtooltip=(O)259][icon=Maps/springobjects:304,160,16,16] [color=blue]Helecho[/color][/itemtooltip]
+>  3 [itemtooltip=(O)814][icon=Maps/springobjects:352,528,16,16] [color=blue]Tinta de calamar[/color][/itemtooltip]
+[if=!PLAYER_SPECIAL_ORDER_ACTIVE Current CAGQuest.UntimedSpecialOrder.River1]Parece que te falta el pedido especial.
+[onceaction=AddSpecialOrder CAGQuest.UntimedSpecialOrder.River1]Haz clic aquí para volver a añadirlo a tu diario.[/onceaction][/if]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_MAIL Current Hector_SpecialOrders_River1, PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.11]
+[font=dialogue]Evento de {{TrueName}}: 7 Corazones pt 2[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.12]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 1750]Pista: Visita la [color=green]Torre de Hector[/color] entre las 8 y las 22 hrs.[/if]
+[else]Requisito: 7 Corazones con [color=red]{{TrueName}}[/color][/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.12]
+[font=dialogue]Pedido especial: Recoger Esencias Druídicas[/font]
+[if=PLAYER_SPECIAL_ORDER_COMPLETE Current CAGQuest.UntimedSpecialOrder.River2]Has recogido las esencias druídicas.[/if]
+[else]Entrega los siguientes artículos en el altar fuera de la [color=green]Torre de Hector[/color] in las [color=green]Montañas Profundas[/color]:
+> 100 [itemtooltip=(O)DN.SnS_druidicessence][icon=Textures/DN.SnS/SnSObjects:80,0,16,16] [color=blue]Esencia druídica[/color][/itemtooltip]
+[itemtooltip=(O)DN.SnS_druidicessence][icon=Textures/DN.SnS/SnSObjects:80,0,16,16] La [color=blue]Esencia druídica[/color][/itemtooltip] puede encontrarse al arar la tierra, regar los cultivos, recoger las cosechas y cortar la hierba.
+[if=!PLAYER_SPECIAL_ORDER_ACTIVE Current CAGQuest.UntimedSpecialOrder.River2]Parece que te falta el pedido especial.
+[onceaction=AddSpecialOrder CAGQuest.UntimedSpecialOrder.River2]Haz clic aquí para volver a añadirlo a tu diario.[/onceaction][/if]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_MAIL Current Hector_SpecialOrders_River2]
+[font=dialogue]Evento de {{TrueName}}: 8 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.13]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 2000]Pista: Visita la [color=green]Torre de Hector[/color] entre las 8 y las 22 hrs.[/if]
+[else]Requisito: 8 Corazones con [color=red]{{TrueName}}[/color][/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.13]
+[font=dialogue]{{TrueName}} y la lluvia verde (Extra)[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Hector.GreenRain]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 2500]Pista: Visita las [color=green]Montañas Profundas[/color] durante el fenómeno de la lluvia verde.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Hector 2500]Requisito: 10 Corazones con [color=red]Hector[/color][/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.13]
+[font=dialogue]Evento de {{TrueName}}: 9 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.14]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 2250, !PLAYER_HAS_CONVERSATION_TOPIC Current HectorRiver3]Pista: Visita el [color=verde]Gremio de Aventureros de la Costa[/color] entre las 8 y las 16 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Hector 2250]Requisito: 9 Corazones con [color=red]{{TrueName}}[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current HectorRiver3]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.14]
+[font=dialogue]Evento de {{TrueName}}: 10 Corazones pt 1[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.15]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 2500, !PLAYER_HAS_CONVERSATION_TOPIC Current HectorHeal]Pista: Visita la [color=green]Casa del veterinario[/color] en [color=green]East Scarp[/color] entre las 15 y las 22 hrs[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Hector 2500]Requisito: 10 Corazones con [color=red]{{TrueName}}[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current HectorHeal]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.15]
+[font=dialogue]Evento de {{TrueName}}: 10 Corazones pt 2[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.16]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 2500, !PLAYER_HAS_CONVERSATION_TOPIC Current HectorHeal2]Pista: Visita las [color=green]Montañas Profundas[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Hector 2500]Requisito: 10 Corazones con [color=red]{{TrueName}}[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current HectorHeal2]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_NPC_RELATIONSHIP Current Hector Married Engaged Roommate]
+[if=PLAYER_HAS_SEEN_EVENT Current SNS.Ch2.Hector.17]
+[font=dialogue]Hector Event: 12 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.18]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 3000]Pista: Visita el [color=green]veterinario[/color] entre las 12 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Hector 3000]Requisito: 12 Corazones con [color=red]Hector[/color][/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SNS.Ch2.Hector.18]
+[font=dialogue]Hector Event: 14 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.19]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 3500]Pista: Visita la [color=green]Torre del Druida[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Hector 3500]Requisito: 14 Corazones con [color=red]Hector[/color][/if]
+[/else]
+[/else]
+[/if]
+[/if]",
+  "guidebook.chapter.COT.DruidicEssence": "[center][font=dialogue][offset=0,8]Esencias druídicas[/font][/center]
+   
+Espada y Hechicería añade una serie de nuevas esencias, una de las cuales son las [itemtooltip=(O)DN.SnS_druidicessence][icon=Textures/DN.SnS/SnSObjects:80,0,16,16] [color=blue]Esencias druídicas[/color][/itemtooltip]. Se utilizan para un encargo especial durante la historia, así como para la artesanía a medida que avanzas en las [link=Skills/DruidicsSkill]Habilidades de los druidas[/link].
+ 
+Puedes reunir este artículo de las siguientes maneras:
+> Arar la tierra
+> Regar los cultivos
+> Cosechar los cultivos
+> Cortar la hierba
+ 
+Asegúrate de guardarlas una vez finalizado el pedido especial. ¡Te serán muy útiles!",
+  "guidebook.chapter.COT.DruidicsSkill": "[center][font=dialogue][offset=0,8]Druidas[/font][/center]
+[offset=200,0][image=SMAPI/kcc.sns/assets/druidics/druid.png:0,0,16,16:4]Una de las habilidades de Espada y Hechicería, desbloqueada durante el evento 10C de Hector. Los druidas pueden subir de nivel cultivando y buscando alimentos.
+ 
+Cada nivel, aumentará tu velocidad de movimiento transformado y tu velocidad de regeneración, así como la tasa de deposición de [link=Mechanics/DruidicEssence]Esencias druídicas[/link].
+ 
+[font=dialogue]Desbloquea[/font]
+> Nivel 1 - Desbloquea dos formas:
+  = [texttooltip=Cambio de forma (Ciervo):Te transformas en un ciervo, lo que aumenta tu velocidad y tu habilidad de búsqueda de comida.
+No puedes utilizar herramientas ni atacar mientras estés transformado.][icon=SMAPI/kcc.sns/assets/druidics/druid2.png:0,0,10,10] [color=purple]Cambio de forma (Ciervo)[/color][/texttooltip]
+  = [texttooltip=Cambio de forma (Cierva):Te transformas en una cierva, lo que aumenta tu velocidad y tu habilidad de búsqueda de comida.
+No puedes utilizar herramientas ni atacar mientras estés transformada.][icon=SMAPI/kcc.sns/assets/druidics/druid1.png:0,0,10,10] [color=purple]Cambio de forma (Cierva)[/color][/texttooltip]
+
+Desbloqueo de Recetas:
+  = [itemtooltip=(O)DN.SnS_ancientamaranth.seed][icon=Textures/DN.SnS/SnSObjects:144,0,16,16] [color=blue]Semillas de Amaranto Milenario[/color][/itemtooltip]
+  = [itemtooltip=(O)DN.SnS_ancientepiphyticfern.seed][icon=Textures/DN.SnS/SnSObjects:16,16,16,16] [color=blue]Semillas de Helecho Epífito Milenario[/color][/itemtooltip]
+> Nivel 2 - Desbloquea las recetas:
+  = [itemtooltip=(O)DN.SnS_glowingpolyporemushrooms.seed][icon=Textures/DN.SnS/SnSObjects:48,16,16,16] [color=blue]Semillas de Setas Poliformes Brillantes Milenarias[/color][/itemtooltip]
+> Nivel 3 - Desbloquea las recetas:
+  = [itemtooltip=(O)DN.SnS_ancientwildfairyrose.seed][icon=Textures/DN.SnS/SnSObjects:0,16,16,16] [color=blue]Semillas de Rosa Hada silvestre milenaria[/color][/itemtooltip]
+Desbloqueo de hechizos:
+  = [texttooltip=Revive la Planta:Revive un área de cultivo de 5x5 a tu alrededor.
+ 
+> Coste de éter: 15
+> Recarga: 10 segundos.
+][icon=SMAPI/kcc.sns/assets/spells.png:80,16,16,16] [color=purple]Revive Planta[/color][/texttooltip]
+> Nivel 4 - Desbloquea las recetas:
+  = [itemtooltip=(O)DN.SnS_ancientelderberry.seed][icon=Textures/DN.SnS/SnSObjects:128,48,16,16] [color=blue]Semillas de Saúco Milenario[/color][/itemtooltip]
+ 
+> Nivel 5 - Mira la página de las [link=Skills/DruidicsProfessions]Profesiones de los druidas[/link].
+ 
+> Nivel 6 - Desbloquea las recetas:
+  = [itemtooltip=(O)DN.SnS_ancientbottlegourd.seed][icon=Textures/DN.SnS/SnSObjects:0,64,16,16] [color=blue]Semillas de Calabaza Botella Milenaria[/color][/itemtooltip] 
+  = [itemtooltip=(O)DN.SnS_lavaeelandstirfriedancientbottlegourd][icon=Textures/DN.SnS/SnSObjects:0,48,16,16] [color=blue]Anguila de Lava y Calabaza Botella[/color][/itemtooltip]
+> Nivel 7 - Desbloquea las recetas:
+  = [itemtooltip=(O)DN.SnS_ancientgiantappleberry.seed][icon=Textures/DN.SnS/SnSObjects:32,64,16,16] [color=blue]Semillas de Baya de manzana gigante Milenaria[/color][/itemtooltip]
+  = [itemtooltip=(O)DN.SnS_mushroomsredsauce][icon=Textures/DN.SnS/SnSObjects:112,32,16,16] [color=blue]Setas Polporo Fritas con Salsa Roja[/color][/itemtooltip]
+> Nivel 8 - Desbloquea las recetas: 
+  = [itemtooltip=(O)DN.SnS_ancientazuredetura.seed][icon=Textures/DN.SnS/SnSObjects:64,64,16,16] [color=blue]Flor Detura Azul Milenaria[/color][/itemtooltip]
+  = [itemtooltip=(O)DN.SnS_ferngreensandpineapple][icon=Textures/DN.SnS/SnSObjects:128,32,16,16] [color=blue]Verduras con helecho y piña[/color][/itemtooltip]
+> Nivel 9 - Desbloquea las recetas:
+  = [itemtooltip=(O)DN.SnS_ancientglowinghuckleberry.seed][icon=Textures/DN.SnS/SnSObjects:32,16,16,16] [color=blue]Semillas de Arándano Rojo Milenario[/color][/itemtooltip]
+  = [itemtooltip=(O)DN.SnS_ancienthuckleberryicecream][icon=Textures/DN.SnS/SnSObjects:144,32,16,16] [color=blue]Helado de Arándano Rojo Milenario[/color][/itemtooltip]
+ 
+> Nivel 10 - Mira la página de las [link=Skills/DruidicsProfessions]Profesiones de los druidas[/link].",
+
+"guidebook.chapter.COT.DruidicsProfessions": "[center][font=dialogue][offset=0,8]Profesiones[/font][/center]
+  
+Al igual que las habilidades vainilla, la habilidad Druida proporciona profesiones que cambian la experiencia de juego en los niveles 5 y 10.
+ 
+[font=dialogue]Nivel 5[/font]
+= [icon=SMAPI/kcc.sns/assets/druidics/skilledshapeshifter.png:0,0,16,16] [color=MediumBlue]Cambiaformas experto[/color]
+    Añade la capacidad de regeneración de
+    cambio de forma. Ocurre después de no moverse
+    durante unos segundos.
+= [icon=SMAPI/kcc.sns/assets/druidics/ancientagronomist.png:0,0,16,16] [color=MediumBlue]Agrónomo Ancestral[/color]
+    Reduce el coste de crear semillas
+    druídicas milenarias en una esencia.
+ 
+[font=dialogue]Nivel 10[/font]
+[color=MediumBlue]Rastro de cambiaformas experto[/color]
+= [icon=SMAPI/kcc.sns/assets/druidics/stagpath.png:0,0,16,16] [color=blue]Senda del Ciervo[/color] 
+    Añade regeneración de salud
+    con el doble de velocidad.
+= [icon=SMAPI/kcc.sns/assets/druidics/wolfpath.png:0,0,16,16] [color=blue]Senda del lobo[/color] 
+    Añade la habilidad de luchar mientras cambia de forma,
+    así como una defensa y una mejora de ataque. 
+    Desbloquea el [texttooltip=Cambio de forma (Lobo): te transformas en lobo, lo que aumenta tu velocidad y tu habilidad de búsqueda de alimentos. 
+También adquieres habilidades de combate.][icon=SMAPI/kcc.sns/assets/druidics/wolfpath.png:0,0,16,16] Habilidad de [color=purple]Cambio de forma (Lobo)[/color][/texttooltip].
+    (Utilizable con la [link=Mechanics/AdventureBar]Barra de aventuras[/link])
+ 
+[color=MediumBlue]Vía del Agrónomo Ancestral[/color]
+= [icon=SMAPI/kcc.sns/assets/druidics/branchofmidgard.png:0,0,16,16] [color=blue]Rama de Midgard[/color]
+    Todos los cultivos milenarios crecen un 10% más rápido, y
+    todos los productos artesanales derivados de ellos
+    valen un 10% más. 
+    > Combina con Artesano y Agricultor.
+= [icon=SMAPI/kcc.sns/assets/druidics/branchofyggdrasil.png:0,0,16,16] [color=blue]Rama de Yggdrasil[/color]
+     Las esencias druídicas tienen un 10% adicional de
+     probabilidad de obtener. Los cultivos druídicos riegan los 
+     cultivos circundantes con el mismo alcance 
+     que un aspersor de calidad.",
+
+"guidebook.chapter.UP.Intro": "[center][font=dialogue][offset=0,8]Capítulo 3[/font][/center]
+[center][font=dialogue]Bajo presión[/font][/center]
+ 
+El tercer capítulo de S&S sigue a Cirrus, una estrella del pop-rock conocida en toda la República Ferngill. Ayúdala a establecer límites con su malintencionada madre, a entablar relaciones auténticas con los habitantes de East Scarp y Pueblo Pelícano, a mantener el equilibrio entre su vida laboral y personal, a construir La Melena de León y a descubrir su verdadera destreza mágica...",
+"guidebook.chapter.UP.Events": "[center][font=dialogue][offset=0,8]La historia hasta ahora:[/font][/center]
+ 
+[font=dialogue]Evento de Cirrus: 0 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.1]¡Completado![/if]
+[else]Pista: Visita el [color=green]Salón[/color] entre las 12 y las 22 hrs con tiempo soleado.[/else]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.1]
+[font=dialogue]Evento de Cirrus: 1 Corazón[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.2]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 250, !PLAYER_HAS_CONVERSATION_TOPIC Current CirrusArrives]Pista: Visita las [color=green]Montañas Profundas de East Scarp[/color] entre las 18 y las 22 hrs con tiempo soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 250]Requisito: 1 Corazón con [color=red]Cirrus[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current CirrusArrives]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+{{TrollEvent2}}
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.2]
+[font=dialogue]Evento de Cirrus: 2 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.3]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 500, !PLAYER_HAS_CONVERSATION_TOPIC Current CirrusWoods]Pista: Visita el [color=green]Gremio Costero de East Scarp[/color] entre las 12 y las 22 hrs con tiempo soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 500]Requisito: 2 Corazones con [color=red]Cirrus[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current CirrusWoods]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.3]
+[font=dialogue]Evento de Cirrus: 3 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.4]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 750, !PLAYER_HAS_CONVERSATION_TOPIC Current CirrusGuild]Pista: Visita [color=green]East Scarp[/color] entre las 12 y las 20 hrs con tiempo soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 750]Requisito: 3 Corazones con [color=red]Cirrus[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current CirrusGuild]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+{{JulietJessie}}
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.4]
+[font=dialogue]Evento de Cirrus: 4 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.6]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 1000, !PLAYER_HAS_CONVERSATION_TOPIC Current CirrusMom]Pista: Visita [color=green]East Scarp[/color] entre las 18 y las 22 hrs con tiempo soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 1000]Requisito: 4 Corazón con [color=red]Cirrus[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current CirrusMom]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.6]
+[font=dialogue]Evento de Cirrus: 5 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.7]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 1250, !PLAYER_HAS_CONVERSATION_TOPIC Current CirrusRain]Pista: Visita las [color=green]Montañas Profundas de East Scarp[/color] entre las 18 y las 22 hrs con tiempo soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 1250]Requisito: 5 Corazones con [color=red]Cirrus[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current CirrusRain]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.7]
+[font=dialogue]Evento de Cirrus: 6 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.8]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 1500, !PLAYER_HAS_CONVERSATION_TOPIC Current CirrusWoods2]Pista: Visita [color=green]Pelican Town[/color] entre las 10 y las 15 hrs con tiempo soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 1500]Requisito: 6 Corazones con [color=red]Cirrus[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current CirrusWoods2]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.8]
+[font=dialogue]Evento de Cirrus: 7 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.9]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 1750, !PLAYER_HAS_CONVERSATION_TOPIC Current CirrusJJ2]Pista: Visita el el [color=green]Gremio Costero de East Scarp[/color] entre las 17 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 1750]Requisito: 7 Corazones con [color=red]Cirrus[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current CirrusJJ2]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.8]
+[font=dialogue]Dandelion y Roslin: Pt 3[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Roslin]¡Completado![/if]
+[else]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.8]Pista: Visita [color=green]East Scarp[/color] entre las 9 y las 18 hrs.[/if]
+[else]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.9]
+[font=dialogue]Evento de Cirrus: 7 Corazones Pt 2[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.10]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 1750, !PLAYER_HAS_CONVERSATION_TOPIC Current CirrusDnD]Pista: Visita [color=green]East Scarp[/color] entre las 8 y las 17 hrs con tiempo soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 1750]Requisito: 7 Corazones con [color=red]Cirrus[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current CirrusDnD]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+{{CirrusExtras}}
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.10]
+[font=dialogue]Evento de Cirrus: 8 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.11]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 2000, !PLAYER_HAS_CONVERSATION_TOPIC Current CirrusLionsMane]Pista: Visita la [color=green]Parada de autobús[/color] entre las 6 y las 0 hrs con tiempo soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 2000]Requisito: 8 Corazones con [color=red]Cirrus[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current CirrusLionsMane]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.11]
+[font=dialogue]Evento de Cirrus: 8 Corazones Pt 2[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.12]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 2000, !PLAYER_HAS_CONVERSATION_TOPIC Current CirrusDnD]Pista: Visita [color=green]East Scarp[/color] entre las 8 y las 17 hrs con tiempo soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 2000]Requisito: 8 Corazones con [color=red]Cirrus[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current CirrusDnD]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.10]
+[font=dialogue]Pedido especial: Pedido de Cirrus[/font]
+[if=PLAYER_SPECIAL_ORDER_COMPLETE Current CAGQuest.UntimedSpecialOrder.LionsMane]Has reunido los materiales para [color=red]Cirrus[/color].[/if]
+[else]¡Ayuda a Cirrus reuniendo materiales para que pueda construir!
+> 900 [itemtooltip=(O)388][icon=Maps/springobjects:64,256,16,16] [color=blue]Madera[/color][/itemtooltip]
+> 500 [itemtooltip=(O)390][icon=Maps/springobjects:96,256,16,16] [color=blue]Piedra[/color][/itemtooltip]
+> 200 [itemtooltip=(O)709][icon=Maps/springobjects:208,464,16,16] [color=blue]Madera noble[/color][/itemtooltip]
+>  25 [itemtooltip=(O)335][icon=Maps/springobjects:368,208,16,16] [color=blue]Lingotes de hierro[/color][/itemtooltip]
+[if=!PLAYER_SPECIAL_ORDER_ACTIVE Current CAGQuest.UntimedSpecialOrder.LionsMane]Parece que te falta el pedido especial.
+[onceaction=AddSpecialOrder CAGQuest.UntimedSpecialOrder.LionsMane]Haz clic aquí para volver a añadirlo a tu diario.[/onceaction][/if]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.12]
+[font=dialogue]Evento de Cirrus: 9 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.13]¡Completado![/if]
+[else]
+[if=!PLAYER_SPECIAL_ORDER_COMPLETE Current CAGQuest.UntimedSpecialOrder.LionsMane]Completa la [color=blue]Petición de Cirrus[/color] del pedido especial.[/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 2250, !PLAYER_HAS_CONVERSATION_TOPIC Current CirrusConcert]Pista: Visita [color=green]East Scarp[/color] entre las 8 y las 17 hrs con tiempo soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 2250]Requisito: 9 Corazones con [color=red]Cirrus[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current CirrusConcert]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.13]
+[font=dialogue]Mateo y Wyatt (Extra)[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Mateo]¡Completado![/if]
+[else]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.13]Pista: Visita la [color=green]Playa[/color] entre las 8 y las 16 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Mateo 2000]Requisito: 10 Corazones con [color=red]Mateo[/color][/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.13]
+[font=dialogue]Evento de Cirrus: 10 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.14]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 2500, !PLAYER_HAS_CONVERSATION_TOPIC Current CirrusLionsMane2]Pista: Visita la [color=green]Melena de León[/color] entre las 12 y las 20 hrs con tiempo soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 2500]Requisito: 10 Corazones con [color=red]Cirrus[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current CirrusLionsMane2]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_NPC_RELATIONSHIP Current Cirrus Married Engaged Roommate]
+[if=PLAYER_HAS_SEEN_EVENT Current SNS.Ch3.Cirrus.15]
+[font=dialogue]Evento de Cirrus: 12 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.16]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 3000]Pista: Visita las [color=green]Montañas profundas de East Scarp[/color] entre las 8 y las 16 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 3000]Requisito: 12 Corazones con [color=red]Cirrus[/color][/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SNS.Ch3.Cirrus.16]
+[font=dialogue]Evento de Cirrus: 14 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.17]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 3500]Pista: Visita la [color=green]Parada de autobús[/color] entre las 6 y las 0 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 3500]Requisito: 14 Corazones con [color=red]Cirrus[/color][/if]
+[/else]
+[/else]
+[/if]
+[/if]
+",
+"guidebook.UP.Events.JJ.true": "[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.4]
+[font=dialogue]Evento de Cirrus: 3 Corazones Pt 2[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.5]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 750, !PLAYER_HAS_CONVERSATION_TOPIC Current CirrusGuild]Pista: Visita [color=green]East Scarp[/color] entre las 12 y las 20 hrs con tiempo soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 750]Requisito: 3 Corazón con [color=red]Cirrus[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current CirrusGuild]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]",
+"guidebook.UP.Events.JJ.false": "[font=dialogue]Evento de Cirrus: 3 Corazones Pt 2[/font]
+Juliet y Jessie no está instalado. Evento omitido.",
+"guidebook.chapter.Up.Cirrus": "[nospacing]
+[nextposition=0,10][center=300][font=dialogue]Cirrus[/font][/center]
+[offset=118,50][image=Characters/Cirrus:0,0,16,32:4]
+[offset=-118,144][center=300]Pronombres: Ella/de ella[/center]
+[offset=0,32][center=300]Cumpleaños: Verano 18[/center]
+[nextposition=322,16][image=Portraits/Cirrus:0,0,64,64:4]
+[nextposition=0,288]
+[/nospacing]
+Cirrus es conocida en toda la República Ferngill por sus letras adictivas y sus melodías memorables. Esta estrella del glamrock lo ha visto todo; la mayoría de las veces, el fondo de una botella... pero ahora está sobria y busca un nuevo comienzo lejos del caos de la vida de los famosos. ",
+"guidebook.chapter.UP.BardicsSkill": "[center][font=dialogue][offset=0,8]Bardos[/font][/center]
+[offset=200,0][image=SMAPI/kcc.sns/assets/bardics/icon.png:0,0,10,10:5]Una de las habilidades de Espada y Hechicería, desbloqueada durante el evento 10C de Cirrus. Los Bardos se pueden subir de nivel hablando con los PNJ e interpretando canciones de tu [link=Mechanics/AdventureBar]Barra de aventuras[/link]. 
+ 
+Con cada nivel ganas 10 de éter máximo y una nueva canción para la barra de aventuras. Estas canciones lanzan varios efectos, pasa el ratón por encima para más detalles.
+ 
+[font=dialogue]Desbloquea[/font]
+> Nivel 1 - Desbloquea:
+  = [texttooltip=Fantasia Alla Marcia:Concede una mejora pasiva aleatoria. 
+ 
+> Utilizable una vez al día
+> Coste de éter: 20
+][icon=SMAPI/kcc.sns/assets/abilities.png:32,0,16,16] [color=purple]Fantasia Alla Marcia[/color][/texttooltip].
+> Nivel 2 - Desbloquea:
+  = [texttooltip=Obertura del campo de batalla:Concede un aumento de ataque o defensa.
+ 
+> Utilizable una vez al día
+> Coste de éter: 20
+ ][icon=SMAPI/kcc.sns/assets/abilities.png:48,0,16,16] [color=purple]Obertura del campo de batalla[/color][/texttooltip].
+> Nivel 3 - Desbloquea:
+  = [texttooltip=Repetición Vigorizante:Restaura un 25% de salud y energía.
+ 
+> Utilizable una vez al día
+> Coste de éter: 10
+ ][icon=SMAPI/kcc.sns/assets/abilities.png:64,0,16,16] [color=purple]Repetición Vigorizante[/color][/texttooltip].
+> Nivel 4 - Desbloquea:
+  = [texttooltip=Melodía Duradera:Crea una barrera de sonido protectora que
+mantiene alejados a los enemigos durante 30 segundos.
+ 
+> Uso diario ilimitado
+> Coste de éter: 10
+ ][icon=SMAPI/kcc.sns/assets/abilities.png:80,0,16,16] [color=purple]Melodía Duradera[/color][/texttooltip].
+ 
+> Nivel 5 - Desbloquea una de las dos canciones basadas en tu [link=Skills/BardicsProfessions]profesión[/link] elegida: 
+  = Colegio de Elocuencia - [texttooltip=Humor Pícaro: Ofrece un potenciador en función de a quién se dirija.
+ 
+> Utilizable una vez al día
+> Coste de éter: 25
+ ][icon=SMAPI/kcc.sns/assets/abilities.png:96,0,16,16] [color=purple]Humor Pícaro[/color][/texttooltip]
+  = Colegio del Valor - [texttooltip=Scherzo D'Inganno:Emite un sonido discordante que
+daña a todos los enemigos a su alcance.
+ 
+> Uso diario ilimitado
+> Coste de éter: 20
+][icon=SMAPI/kcc.sns/assets/abilities.png:112,0,16,16] [color=purple]Scherzo D'Inganno[/color][/texttooltip]
+ 
+> Nivel 6 - Desbloquea:
+  = [texttooltip=Balada de cronomancia:Detiene el tiempo durante dos minutos.
+
+> Utilizable una vez al día
+> Coste de éter: 35
+ ][icon=SMAPI/kcc.sns/assets/abilities.png:0,16,16,16] [color=purple]Balada de cronomancia[/color][/texttooltip].
+> Nivel 7 - Desbloquea: 
+  = [texttooltip=Pista de {{HorseName}}:Te teletransporta a tu caballo. 
+ 
+> Uso diario ilimitado
+> Coste de éter: 10
+ ][icon=SMAPI/kcc.sns/assets/abilities.png:16,16,16,16] [color=purple]Pista de {{HorseName}}[/color][/texttooltip].
+> Nivel 8 - Desbloquea:
+  = [texttooltip=Canción de cuna del druida:Aplica una tasa de crecimiento del 25% a los cultivos en un área de 7x7
+a tu alrededor, una vez por cultivo. 
+ 
+> Utilizable una vez al día
+> Coste de éter: 30
+][icon=SMAPI/kcc.sns/assets/abilities.png:32,16,16,16] [color=purple]Canción de cuna del druida[/color][/texttooltip].
+> Nivel 9 - Desbloquea:
+  = [texttooltip=Un paseo por Adante:Permite utilizar a distancia cualquier
+obelisco que hayas adquirido. 
+ 
+> Uso diario ilimitado
+> Coste de éter: 15
+ ][icon=SMAPI/kcc.sns/assets/abilities.png:48,16,16,16] [color=purple]Un paseo por Adante[/color][/texttooltip].
+ 
+> Nivel 10 - Mejora tu elección de canción al nivel 5.",
+
+"guidebook.chapter.UP.BardicsProfessions": "[center][font=dialogue][offset=0,8]Profesiones[/font][/center]
+ 
+Al igual que las habilidades vainilla, las habilidades bárdicas proporcionan profesiones que cambian la experiencia de juego en los niveles 5 y 10.
+ 
+[font=dialogue]Nivel 5[/font]
+= [icon=SMAPI/kcc.sns/assets/bardics/CollegeOfEloquence.png:0,0,16,16] [color=MediumBlue]Colegio de Elocuencia[/color]
+    Aprende la canción [icon=SMAPI/kcc.sns/assets/abilities.png:96,0,16,16] [color=purple]Humor Pícaro[/color].
+= [icon=SMAPI/kcc.sns/assets/bardics/CollegeOfValor.png:0,0,16,16] [color=MediumBlue]Colegio del Valor[/color]
+    Aprende la canción [icon=SMAPI/kcc.sns/assets/abilities.png:112,0,16,16] [color=purple]Scherzo D'Inganno[/color].
+ 
+[font=dialogue]Nivel 10[/font]
+[color=MediumBlue]Pista del Colegio de Elocuencia[/color]
+= [icon=SMAPI/kcc.sns/assets/bardics/animatedperformance.png:0,0,16,16] [color=Blue]Espectáculo animado[/color]
+    La potencia de los potenciadores bárdicos se duplica.
+= [icon=SMAPI/kcc.sns/assets/bardics/creativecrescendo.png:0,0,16,16] [color=Blue]Crescendo creativo[/color]
+    Todos los potenciadores bárdicos duran todo el día.
+ 
+[color=MediumBlue]Pista del Colegio del Valor[/color]
+= [icon=SMAPI/kcc.sns/assets/bardics/wordsofterror.png:0,0,16,16] [color=Blue]Palabras de terror[/color]
+    Daños del [icon=SMAPI/kcc.sns/assets/abilities.png:112,0,16,16] [color=purple]Scherzo D'Inganno[/color] se duplica.
+= [icon=SMAPI/kcc.sns/assets/bardics/wordsofmajesty.png:0,0,16,16] [color=Blue]Palabras de majestad[/color]
+    Daños del [icon=SMAPI/kcc.sns/assets/abilities.png:112,0,16,16] [color=purple]Scherzo D'Inganno[/color] se extiende
+    a toda la localidad.",
+
+"guidebook.chapter.TOP.Intro": "[center][font=dialogue][offset=0,8]Capítulo 4[/font][/center]
+[center][font=dialogue]La otra promesa[/font][/center]
+   
+El cuarto capítulo de S&S gira en torno a una búsqueda para rescatar a Dandelion, la heroica compañera de la cuestionable Hechicera, Roslin, a ella y a su mecenas, Solomon. Descubre los secretos de lo Arcano, domina el uso de [link=Mechanics/ElementalEssences]Esencias Elementales[/link], conviértete tú mismo en Hechicero, conviértete en Alquimista, conviértete en [link=Skills/PaladinSkill]Paladín[/link] (si aún no lo eres) y acaba con la bestia embrujada que se esconde en la [link=DeepDark/TableOfContents]Oscuridad profunda[/link] por debajo de La Escarpa. ",
+
+"guidebook.chapter.TOP.Roslin": "[nospacing]
+[nextposition=0,10][center=300][font=dialogue]Roslin[/font][/center]
+[offset=118,50][image=Characters/Roslin:0,0,16,32:4]
+[offset=-118,144][center=300]Pronombres: Ella/de ella[/center]
+[offset=0,32][center=300]Cumpleaños: Primavera 26[/center]
+[nextposition=322,16][image=Portraits/Roslin:0,0,64,64:4]
+[nextposition=0,288]
+[/nospacing]
+Roslin es una habilidosa hechicera de Amon'Zod, una ciudad desierta a un continente de distancia. Su trato con la bestia de las sombras, Solomon, ha reforzado su maestría elemental más allá de lo que la mayoría de los mortales son capaces de alcanzar.",
+
+"guidebook.chapter.TOP.Dandelion": "[nospacing]
+[nextposition=0,10][center=300][font=dialogue]Dandelion[/font][/center]
+[offset=118,50][image=Characters/Dandelion:0,0,16,32:4]
+[offset=-118,144][center=300]Pronombres: Ella/de ella[/center]
+[offset=0,32][center=300]Cumpleaños: Verano 16[/center]
+[nextposition=322,16][image=Portraits/Dandelion:0,0,64,64:4]
+[nextposition=0,288]
+[/nospacing]
+Dandelion es una Paladín que tiene una relación tumultuosa con su Juramento y aparentes dificultades para mantener la noción de sus miembros. A pesar de sus tendencias heroicas, le apetece dejar la espada y el escudo junto a las flores.",
+
+"guidebook.chapter.TOP.Solomon": "[nospacing]
+[nextposition=0,10][center=300][font=dialogue]Solomon[/font][/center]
+[offset=118,50][image=Characters/Solomon:0,0,16,32:4]
+[offset=-118,144][center=300]Pronombres: Él/de él[/center]
+[offset=0,32][center=300]No Amigable[/center]
+[nextposition=322,16][image=Portraits/Solomon:0,0,64,64:4]
+[nextposition=0,288]
+[/nospacing]
+Solomon es molesto en un buen día. Problemático, grosero y malicioso, esta bestia de las sombras es un experto en ocultismo. Sin embargo, tiene un ego bastante grande, que puede no estar del todo justificado. Está intrínsecamente relacionado con Roslin.",
+
+"guidebook.chapter.TOP.Events": "[center][font=dialogue][offset=0,8]La historia hasta ahora:[/font][/center]
+ 
+[font=dialogue]Evento de Roslin: 0 Corazones[/font]
+[if=!PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Roslin]
+Por favor, mira \"Dandelion y Roslin: Pt 1-3\".[/if]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Roslin]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Roslin.1]¡Completado![/if]
+[else]
+[if=!PLAYER_HAS_CONVERSATION_TOPIC Current CirrusLionsMane3]Pista: Visita el [color=green]Gremio Costero de East Scarp[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current CirrusLionsMane3]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Roslin.1]
+[font=dialogue]Pedido especial: Essen-tial Collection![/font]
+[if=PLAYER_SPECIAL_ORDER_COMPLETE Current CAGQuest.UntimedSpecialOrder.RoslinEssence]Has reunido [link=Mechanics/ElementalEssences]Esencias elementales[/link] para [color=red]Roslin[/color].[/if]
+[else]Reúne [link=Mechanics/ElementalEssences]Esencias elementales[/link] para Roslin:
+> 50 [itemtooltip=(O)DN.SnS_EarthEssence][icon=Textures/DN.SnS/SnSObjects:96,128,16,16] [color=brown]Esencia de la Tierra[/color][/itemtooltip]
+> 50 [itemtooltip=(O)DN.SnS_AirEssence][icon=Textures/DN.SnS/SnSObjects:112,128,16,16] [color=cornflowerblue]Esencia del aire[/color][/itemtooltip]
+> 50 [itemtooltip=(O)DN.SnS_FireEssence][icon=Textures/DN.SnS/SnSObjects:144,128,16,16] [color=Red]Esencia del fuego[/color][/itemtooltip]
+> 50 [itemtooltip=(O)DN.SnS_WaterEssence][icon=Textures/DN.SnS/SnSObjects:128,128,16,16] [color=blue]Esencia del agua[/color][/itemtooltip]
+> 50 [itemtooltip=(O)DN.SnS_druidicessence][icon=Textures/DN.SnS/SnSObjects:80,0,16,16] [color=Green]Esencia druídica[/color][/itemtooltip]
+> 50 [itemtooltip=(O)768][icon=maps/springobjects:0,512,16,16] [color=chocolate]Esencia solar[/color][/itemtooltip]
+{{IsRSVInstalled}}
+ 
+[if=!PLAYER_SPECIAL_ORDER_ACTIVE Current CAGQuest.UntimedSpecialOrder.RoslinEssence]Parece que te falta el pedido especial.
+[onceaction=AddSpecialOrder CAGQuest.UntimedSpecialOrder.RoslinEssence]Haz clic aquí para volver a añadirlo a tu diario.[/onceaction][/if]
+[/else]
+[/if]
+ 
+{{TrollEvent3}}
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Roslin.1]
+[font=dialogue]Evento de Roslin: 1 Corazón[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Roslin.2]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Roslin 250, !PLAYER_HAS_CONVERSATION_TOPIC Current RoslinNeedsHelp]Pista: Visita [color=green]Mayor Lewis' house[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Roslin 250]Requisito: 1 Corazón con [color=red]Roslin[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current RoslinNeedsHelp]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Roslin.2]
+[font=dialogue]Evento de Roslin: 2 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Roslin.3]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Roslin 500, !PLAYER_HAS_CONVERSATION_TOPIC Current RoslinAndMateo]Pista: Visita las [color=green]Montañas Profundas de East Scarp[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Roslin 500]Requisito: 2 Corazones con [color=red]Roslin[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current RoslinAndMateo]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Roslin.3]
+[font=dialogue]Evento de Roslin: 3 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Roslin.4]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Roslin 750, !PLAYER_HAS_CONVERSATION_TOPIC Current RoslinAndHector]Pista: Visita la [color=green]Melena de León[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Roslin 750]Requisito: 3 Corazones con [color=red]Roslin[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current RoslinAndHector]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Roslin.4]
+[font=dialogue]Evento de Roslin: 4 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Roslin.5]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Roslin 1000, !PLAYER_HAS_CONVERSATION_TOPIC Current RoslinAndCirrus]Pista: Visita el [color=green]Gremio Costero de East Scarp[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Roslin 1000]Requisito: 4 Corazones con [color=red]Roslin[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current RoslinAndCirrus]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Roslin.4]
+[font=dialogue]Evento de Cirrus: Ginger Beer (Extra)[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Cirrus.1]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 2500]Pista: Visita la [color=green]Melena de León[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 2500]Requisito: 10 Corazones con [color=red]Cirrus[/color][/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Roslin.5]
+[font=dialogue]Evento de Roslin: 5 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Roslin.6]¡Completado![/if]
+[else]
+[if=!PLAYER_SPECIAL_ORDER_COMPLETE Current CAGQuest.UntimedSpecialOrder.RoslinEssence]¡Completa la [color=blue]Colección Essen-cial[/color] pedido especial![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Roslin 1250, !PLAYER_HAS_CONVERSATION_TOPIC Current RoslinAndLewis]Pista: Visita el [color=green]Gremio Costero de East Scarp[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Roslin 750]Requisito: 5 Corazones con [color=red]Roslin[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current RoslinAndLewis]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Roslin.6]
+[font=dialogue]Evento de Dandelion: 0 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Dandelion.1]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Roslin 1250, !PLAYER_HAS_CONVERSATION_TOPIC Current DandelionReturns]Pista: Visita la [color=green]Melena de León de East Scarp[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Roslin 1250]Requisito: 5 Corazones con [color=red]Roslin[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current DandelionReturns]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Dandelion.1]
+[font=dialogue]Evento de Dandelion: 2 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Dandelion.2]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Roslin 1250, PLAYER_FRIENDSHIP_POINTS Current Dandelion 500, !PLAYER_HAS_CONVERSATION_TOPIC Current DandelionReturns]Pista: Visita la [color=verde] Forja subterránea[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=ANY \"!PLAYER_FRIENDSHIP_POINTS Current Roslin 1250\" \"!PLAYER_FRIENDSHIP_POINTS Current Dandelion 500\"] Requisito: 2 Corazones con [color=red]Dandelion[/color], 5 Corazones con [color=red]Roslin[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current DandelionReturns]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Dandelion.2]
+[font=dialogue]Pedido especial: Refuerza el Escudo de Dandelion[/font]
+[if=PLAYER_SPECIAL_ORDER_COMPLETE Current CAGQuest.UntimedSpecialOrder.DandelionShield]Has reunido los materiales para [color=red]Dandelion[/color].[/if]
+[else]¡Ayuda a Dandelion a equiparse bien para la batalla final contra el Behemoth de Duskspire!
+>  1 [itemtooltip=(O)DN.SnS_ExquisiteAquamarine][icon=Textures/DN.SnS/SnSArsenal:96,0,16,16] [color=blue]Aguamarina exquisita[/color][/itemtooltip]
+{{IsChocoboValleyInstalled}} 
+> 25 [itemtooltip=(O)709][icon=Maps/springobjects:208,464,16,16] [color=blue]Madera Noble[/color][/itemtooltip]
+> 50 [itemtooltip=(O)768][icon=maps/springobjects:0,512,16,16] [color=blue]Esencia solar[/color][/itemtooltip]
+ 
+[if=!PLAYER_SPECIAL_ORDER_ACTIVE Current CAGQuest.UntimedSpecialOrder.DandelionShield]Parece que te falta el pedido especial.
+[onceaction=AddSpecialOrder CAGQuest.UntimedSpecialOrder.DandelionShield]Haz clic aquí para volver a añadirlo a tu diario.[/onceaction][/if]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Dandelion.2]
+[font=dialogue]Evento de Dandelion: 4 Corazones y Evento de Roslin: 6 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Dandelion.3]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Roslin 1500, PLAYER_FRIENDSHIP_POINTS Current Dandelion 1000, !PLAYER_HAS_CONVERSATION_TOPIC Current DandelionShieldRepair]Pista: Visita la [color=verde] Forja subterránea[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=ANY \"!PLAYER_FRIENDSHIP_POINTS Current Roslin 1500\" \"!PLAYER_FRIENDSHIP_POINTS Current Dandelion 1000\"] Requisito: 4 Corazones con [color=red]Dandelion[/color], 6 Corazones con [color=red]Roslin[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current DandelionShieldRepair]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Dandelion.3]
+[font=dialogue]Evento de Dandelion: 6 Corazones y Evento de Roslin: 7 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Dandelion.4]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Roslin 1750, PLAYER_FRIENDSHIP_POINTS Current Dandelion 1500]Pista: Visita la [color=green]Melena de León[/color] entre las 8 y las 22 hrs cuando llueve, nieva o hay tormenta.[/if]
+[else]
+[if=ANY \"!PLAYER_FRIENDSHIP_POINTS Current Roslin 1750\" \"!PLAYER_FRIENDSHIP_POINTS Current Dandelion 1500\"] Requisito: 6 Corazones con [color=red]Dandelion[/color], 7 Corazones con [color=red]Roslin[/color][/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Dandelion.4]
+[font=dialogue]Evento de Dandelion y Roslin: 8 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Dandelion.5]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Roslin 2000, PLAYER_FRIENDSHIP_POINTS Current Dandelion 2000, !PLAYER_HAS_CONVERSATION_TOPIC Current FullmetalDandelion]Pista: Visita [color=green]East Scarp[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=ANY \"!PLAYER_FRIENDSHIP_POINTS Current Roslin 2000\" \"!PLAYER_FRIENDSHIP_POINTS Current Dandelion 2000\"] Requisito: 8 Corazones cada uno con [color=red]Dandelion[/color] y [color=red]Roslin[/color].[/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current FullmetalDandelion]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Dandelion.5]
+[font=dialogue]Evento de Dandelion y Roslin: 9 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Dandelion.6]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Roslin 2250, PLAYER_FRIENDSHIP_POINTS Current Dandelion 2250, !PLAYER_HAS_CONVERSATION_TOPIC Current DandelionPendant]Pista: Visita la [color=green]Melena de León[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=ANY \"!PLAYER_FRIENDSHIP_POINTS Current Roslin 2250\" \"!PLAYER_FRIENDSHIP_POINTS Current Dandelion 2250\"] Requisito: 9 Corazones cada uno con [color=red]Dandelion[/color] y [color=red]Roslin[/color].[/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current DandelionPendant]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Dandelion.6]
+[font=dialogue]Evento de Dandelion y Roslin: 10 Corazones[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Dandelion.7]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Roslin 2500, PLAYER_FRIENDSHIP_POINTS Current Dandelion 2500, !PLAYER_HAS_CONVERSATION_TOPIC Current SolomonGift]Pista: Visita la [color=green]Melena de León[/color] entre las 18 y las 24 hrs.[/if]
+[else]
+[if=ANY \"!PLAYER_FRIENDSHIP_POINTS Current Roslin 2500\" \"!PLAYER_FRIENDSHIP_POINTS Current Dandelion 2500\"] Requisito: 10 Corazones cada uno con [color=red]Dandelion[/color] y [color=red]Roslin[/color].[/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current SolomonGift]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Dandelion.7]
+[font=dialogue]La oscuridad profunda: Encuentro final[/font]
+[if=PLAYER_HAS_MAIL Current DuskspireDefeated]¡Completado![/if]
+[else]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Dandelion.7]Pista: Llega al fondo de la [color=green]Oscuridad Profunda[/color].[/if]
+[else]
+[/else]
+[/else]
+[/if]",
+
+"guidebook.chapter.TOP.RoslinEssence.true": "> 50 [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] [color=purple]Esencia sombría[/color][/itemtooltip]
+> 50 [itemtooltip=(O)Rafseazz.RSVCP_Spiritual_Essence][icon=Mods\\Rafseazz.RSVCP\\Objects\\Objects:64,64,16,16] [color=purple]Esencia espiritual[/color][/itemtooltip]",
+"guidebook.chapter.TOP.RoslinEssence.false": "> 50 [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] [color=purple]Esencia sombría[/color][/itemtooltip]",
+
+"guidebook.chapter.TOP.DandelionShield.true": "
+> 25 [itemtooltip=(O)Kitsutsune.Chocobovalley_OrichalcumBar][icon=SMAPI/Kitsutsune.Chocobovalley/Assets/Items/Minerals/OrichalcumBar.png:0,0,16,16] [color=blue]Lingotes de oricalco[/color][/itemtooltip]
+> 10 [itemtooltip=(O)Kitsutsune.Chocobovalley_MythrilBar][icon=SMAPI/Kitsutsune.Chocobovalley/Assets/Items/Minerals/MythrilBar.png:0,0,16,16] [color=blue]Lingotes de Mitrilo[/color][/itemtooltip]
+> 10 [itemtooltip=(O)Kitsutsune.Chocobovalley_AdamantiteBar][icon=SMAPI/Kitsutsune.Chocobovalley/Assets/Items/Minerals/AdamantiteBar.png:0,0,16,16] [color=blue]Lingotes de Adamantita[/color][/itemtooltip]
+",
+
+"guidebook.chapter.TOP.DandelionShield.false": "
+> 15 [itemtooltip=(O)337][icon=Maps/springobjects:368,208,16,16] [color=blue]Lingotes de Iridio[/color][/itemtooltip]
+> 15 [itemtooltip=(O)336][icon=Maps/springobjects:0,224,16,16] [color=blue]Lingotes de Oro[/color][/itemtooltip]
+> 15 [itemtooltip=(O)335][icon=Maps/springobjects:16,224,16,16] [color=blue]Lingotes de Hierro[/color][/itemtooltip]
+",
+
+"guidebook.chapter.TOP.SorcererSkill": "[center][font=dialogue][offset=0,8]Hechicería[/font][/center]
+[offset=200,0][image=SMAPI/kcc.sns/assets/witchcraft/icon.png:0,0,10,10:5]Una de las habilidades de Espada y Hechicería, desbloqueada durante el evento 9C de Dandelion y Roslin. La Hechicería se puede subir de nivel lanzando hechizos de Hechicería desde la [link=Mechanics/AdventureBar]Barra de aventuras[/link].
+ 
+Cada nivel, ganarás 10 de Éter máximo. Aprendes nuevos hechizos subiendo de nivel la habilidad Hechicería. Desbloquear Hechicería también te da acceso a [link=Mechanics/AlchemyTransmutation]Alquimia y Transmutación[/link].
+ 
+[font=dialogue]Desbloquea[/font]
+> Nivel 1 - Desbloquea los hechizos:
+  = [texttooltip=[texttooltip=Prisa:Te acelera. 
+ 
+> Coste de éter: 3
+][icon=SMAPI/kcc.sns/assets/spells.png:0,0,16,16] [color=purple]Prisa[/color][/texttooltip]
+  = [texttooltip=Proyectil mágico:Dispara tres proyectiles que alcanzan al enemigo.
+ 
+> Coste de éter: 10
+> Recarga: 3 segundos.
+][icon=SMAPI/kcc.sns/assets/spells.png:32,16,16,16] [color=purple]Proyectil mágico[/color][/texttooltip]
+> Nivel 2 - Desbloquea los hechizos:
+  = [texttooltip=Cofre de bolsillo: Abre un cofre en un bolsillo dimensional, ligado a ti.
+Nadie más puede acceder a este cofre.
+ 
+> Coste de éter: 0
+][icon=SMAPI/kcc.sns/assets/spells.png:32,32,16,16] [color=purple]Cofre de bolsillo[/color][/texttooltip]
+  = [texttooltip=Armadura de mago: aumenta tus puntos de armadura máximos del día.
+ 
+> Coste de éter: 5
+][icon=SMAPI/kcc.sns/assets/spells.png:80,0,16,16] [color=purple]Armadura de mago[/color][/texttooltip]
+> Nivel 3 - Desbloquea los hechizos:
+  = [texttooltip=Encontrar familiar:Invoca a una pequeña mascota para que te siga durante el
+día, aumentando tu suerte.
+ 
+> Coste de éter: 10
+][icon=SMAPI/kcc.sns/assets/spells.png:112,16,16,16] [color=purple]Encontrar familiar[/color][/texttooltip]
+  = [texttooltip=Bola de fuego:Lanza una bola de fuego temporizada dirigida
+hacia tu cursor.
+ 
+> Coste de éter: 10
+> Recarga: 3 segundos.
+][icon=SMAPI/kcc.sns/assets/spells.png:16,16,16,16] [color=purple]Bola de fuego[/color][/texttooltip]
+> Nivel 4 - Desbloquea el hechizo:
+  = [texttooltip=Imagen reflejada:Invoca tres duplicados ilusorios, que
+pueden recibir un golpe por ti.
+ 
+> Coste de éter: 15
+> Recarga: 10 segundos.
+][icon=SMAPI/kcc.sns/assets/spells.png:96,16,16,16] [color=purple]Imagen reflejada[/color][/texttooltip]
+Desbloqueo de recetas:
+  = [itemtooltip=(O)DN.SnS_TeleportCircle][icon=Textures/DN.SnS/TeleportCircle:0,0,16,16] [color=blue]Círculo de teletransporte[/color][/itemtooltip]
+ 
+> Nivel 5 - Mira la página de [link=Skills/SorcererProfessions]Profesiones de hechicería[/link].
+ 
+> Nivel 6 - Desbloquea los hechizos:
+  = [texttooltip=Polymorph:Convierte a un enemigo en una baba durante 10 segundos.
+Matarlo hará que vuelva a su forma normal.
+ 
+> Coste de éter: 5
+> Recarga: 10 segundos.
+][icon=SMAPI/kcc.sns/assets/spells.png:48,0,16,16] [color=purple]Polimorfo[/color][/texttooltip]
+  = [texttooltip=Rayo de luz:Dispara un rayo al enemigo más cercano
+que puede encadenarse con otros enemigos.
+ 
+> Coste de éter: 10
+> Recarga: 3 segundos.
+][icon=SMAPI/kcc.sns/assets/spells.png:0,16,16,16] [color=purple]Rayo de luz[/color][/texttooltip]
+> Nivel 7 - Desbloquea los hechizos:
+  = [texttooltip=Inmovilización: te impide moverte, actuar o recibir
+daño durante tres segundos.
+ 
+> Coste de éter: 10
+> Recarga: 6 segundos.
+][icon=SMAPI/kcc.sns/assets/spells.png:64,0,16,16] [color=purple]Inmovilización[/color][/texttooltip]
+  = [texttooltip=Proyección fantasmal:Muévete sin colisionar durante 15 segundos.
+Al final, te teletransportas a donde estabas
+al inicio del hechizo.
+ 
+> Coste de éter: 7
+> Recarga: 20 segundos.
+][icon=SMAPI/kcc.sns/assets/spells.png:0,32,16,16] [color=purple]Proyección fantasmal[/color][/texttooltip]
+> Nivel 8 - Desbloquea los hechizos:
+  = [texttooltip=Destierro:Envía a un enemigo a otro reino durante 20 segundos.
+ 
+> Coste de éter: 8
+> Recarga: 10 segundos.
+][icon=SMAPI/kcc.sns/assets/spells.png:112,0,16,16] [color=purple]Destierro[/color][/texttooltip]
+  = [texttooltip=Rayo de hielo: Lanza un carámbano para congelar a los enemigos alrededor de tu cursor en el ADE.
+ 
+> Coste de éter: 10
+> Recarga: 1 segundos.
+][icon=SMAPI/kcc.sns/assets/spells.png:64,16,16,16] [color=purple]Rayo de hielo[/color][/texttooltip]
+> Nivel 9 - Desbloquea el hechizo:
+  = [texttooltip=Dimensión de bolsillo:Te teletransporta a una dimensión de bolsillo
+que puedes usar como quieras. 
+Actúa como un invernadero.
+ 
+> Coste de éter: 0
+][icon=SMAPI/kcc.sns/assets/spells.png:48,32,16,16] [color=purple]Dimensión de bolsillo[/color][/texttooltip]
+ 
+> Nivel 10 - Mira la página [link=Skills/SorcererProfessions]Profesiones de hechicería[/link].
+",
+
+"guidebook.chapter.TOP.SorcererProfessions": "[center][font=dialogue][offset=0,8]Profesiones[/font][/center]
+  
+Al igual que las habilidades vainilla, la habilidad Hechicero proporciona profesiones que cambian la experiencia de juego en los niveles 5 y 10.
+ 
+[font=dialogue]Nivel 5[/font]
+= [icon=SMAPI/kcc.sns/assets/witchcraft/stuff.png:16,0,16,16] [color=MediumBlue]Bruja del seto[/color]
+    Doble posibilidad de obtener esencia 
+    elemental. Transmutar esencias ahora 
+    cuesta 2 esencias.
+= [icon=SMAPI/kcc.sns/assets/witchcraft/stuff.png:32,0,16,16] [color=MediumBlue]Mago[/color]
+    Aumento del 25% del daño de hechizo. Reducción
+    ligera del coste de éter de los hechizos dañinos.
+ 
+[font=dialogue]Nivel 10[/font]
+[color=MediumBlue]Pista de la bruja del seto[/color]
+= [icon=SMAPI/kcc.sns/assets/witchcraft/stuff.png:48,0,16,16] [color=blue]Maestro Alquimista[/color]
+    Todas las recetas de alquimia tienen requisitos 
+    de esencia reducidos a la mitad. Transmutación 
+    ahora cuesta 1 esencia.
+= [icon=SMAPI/kcc.sns/assets/witchcraft/stuff.png:64,0,16,16] [color=blue]Maestro Alcaestrista[/color]
+    Coste de esencia del círculo de teletransporte
+    reducido a 0.
+ 
+[color=MediumBlue]Pista Mago[/color]
+= [icon=SMAPI/kcc.sns/assets/witchcraft/stuff.png:80,0,16,16] [color=blue]Campeón Abjurant[/color]
+    Inmune al daño brevemente después del lanzamiento. 
+    Aumenta el daño un 25%.
+= [icon=SMAPI/kcc.sns/assets/witchcraft/stuff.png:96,0,16,16] [color=blue]Viajero Umbral[/color]
+    75 puntos de aumento al máximo de Éter, y
+    restaura algo de éter al recibir daño.",
+
+"guidebook.chapter.TOP.ElementalEssences": "[center][font=dialogue][offset=0,8]Esencias elementales[/font][/center]
+ 
+Al reunirte con Roslin en el primer evento del [if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.14][link=Chapters/IntroTOP]Capítulo 4[/link][/if][else]Capítulo 4[/else], las Esencias Elementales de[itemtooltip=(O)DN.SnS_EarthEssence][icon=Textures/DN.SnS/SnSObjects:96,128,16,16] [color=brown]Tierra[/color][/itemtooltip],[itemtooltip=(O)DN.SnS_AirEssence][icon=Textures/DN.SnS/SnSObjects:112,128,16,16] [color=cornflowerblue]Aire[/color][/itemtooltip],[itemtooltip=(O)DN.SnS_FireEssence][icon=Textures/DN.SnS/SnSObjects:144,128,16,16] [color=Red]Fuego[/color][/itemtooltip] and[itemtooltip=(O)DN.SnS_WaterEssence][icon=Textures/DN.SnS/SnSObjects:128,128,16,16] [color=blue]Agua[/color][/itemtooltip] empezarán a caer a tu alrededor.
+ 
+Las esencias se utilizan en las misiones, el aprendizaje de hechizos, las recetas alquímicas y el uso del [texttooltip=Círculo de teletransporte: te permite establecer un viaje entre dos ubicaciones del juego.
+Uso documentado en el Grimorio Mágico tras el aprendizaje.] [color=purple]Círculo de teletransporte[/color][/texttooltip].
+ 
+Método de recogida:
+>[itemtooltip=(O)DN.SnS_EarthEssence][icon=Textures/DN.SnS/SnSObjects:96,128,16,16] [color=brown]Tierra[/color][/itemtooltip] - Minería
+>[itemtooltip=(O)DN.SnS_AirEssence][icon=Textures/DN.SnS/SnSObjects:112,128,16,16] [color=cornflowerblue]Aire[/color][/itemtooltip] - Derrotando enemigos voladores
+>[itemtooltip=(O)DN.SnS_FireEssence][icon=Textures/DN.SnS/SnSObjects:144,128,16,16] [color=Red]Fuego[/color][/itemtooltip] - Derrotando a los enemigos del volcán, pescando en lava
+>[itemtooltip=(O)DN.SnS_WaterEssence][icon=Textures/DN.SnS/SnSObjects:128,128,16,16] [color=blue]Agua[/color][/itemtooltip] - Pesca, Trampas para cangrejos oceánicos, bateas, peces de  S&S en estanques
+ 
+[itemtooltip=(O)DN.SnS_druidicessence][icon=Textures/DN.SnS/SnSObjects:80,0,16,16] [color=Green]Druídica[/color][/itemtooltip],[itemtooltip=(O)768][icon=maps/springobjects:0,512,16,16] [color=chocolate]Solar[/color][/itemtooltip] y [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] [color=purple]Sombría[/color][/itemtooltip] todos cuentan como esencias elementales.",
+
+"guidebook.chapter.TOP.AlchemyTransmutation": "[center][font=dialogue][offset=0,8]Alquimia y transmutación[/font][/center]
+ 
+[font=dialogue]Alquimia[/font]
+Al desbloquear Hechicería, también podrás aprender a hacer pociones alquímicas a través del menú de la Piedra Filosofal. Al igual que los hechizos, estas recetas se aprenden intercambiando [link=Mechanics/ElementalEssences]Esencias Elementales[/link] a través de la investigación de hechicería en el Grimorio Mágico.
+ 
+Todas las pociones de mejora aplican mejoras que duran 11 minutos y 40 segundos.
+ 
+>[itemtooltip=(O)DN.SnS_verdantpotion][icon=Textures/DN.SnS/SnSObjects:80,80,16,16] [color=purple]Verdant[/color][/itemtooltip] - +5 Búsqueda de alimentos
+>[itemtooltip=(O)DN.SnS_scarletpotion][icon=Textures/DN.SnS/SnSObjects:96,80,16,16] [color=purple]Scarlet[/color][/itemtooltip] - +5 Ataque
+>[itemtooltip=(O)DN.SnS_heatherpotion][icon=Textures/DN.SnS/SnSObjects:112,80,16,16] [color=purple]Heather[/color][/itemtooltip] - +5 Velocidad
+>[itemtooltip=(O)DN.SnS_zydratepotion][icon=Textures/DN.SnS/SnSObjects:128,80,16,16] [color=purple]Zydrate[/color][/itemtooltip] - +3 Velocidad, Defensa, Ataque
+>[itemtooltip=(O)DN.SnS_pistachiopotion][icon=Textures/DN.SnS/SnSObjects:144,80,16,16] [color=purple]Pistacho[/color][/itemtooltip] - +5 Agricultura
+>[itemtooltip=(O)DN.SnS_dahliapotion][icon=Textures/DN.SnS/SnSObjects:0,96,16,16] [color=purple]Dahlia[/color][/itemtooltip] - +1 Agricultura, Pesca, Minería
+>[itemtooltip=(O)DN.SnS_slushiepotion][icon=Textures/DN.SnS/SnSObjects:16,96,16,16] [color=purple]Granizada[/color][/itemtooltip] - +10 Resistencia máxima
+>[itemtooltip=(O)DN.SnS_matrixpotion][icon=Textures/DN.SnS/SnSObjects:32,96,16,16] [color=purple]Matrix[/color][/itemtooltip] - +5 Minería, +3 Magnetismo
+>[itemtooltip=(O)DN.SnS_mcdougalpotion][icon=Textures/DN.SnS/SnSObjects:48,96,16,16] [color=purple]McDougal[/color][/itemtooltip] - +5 Suerte
+>[itemtooltip=(O)DN.SnS_toirneachpotion][icon=Textures/DN.SnS/SnSObjects:64,96,16,16] [color=purple]Toirneach[/color][/itemtooltip] - +4 Minería, +4 Defensa
+>[itemtooltip=(O)DN.SnS_ReturnPotion][icon=Textures/DN.SnS/SnSObjects:16,144,16,16] [color=purple]Poción de retorno[/color][/itemtooltip] 
+  = Crea un portal en tu granja
+     que te devuelve al último
+     lugar donde bebiste la poción.
+ 
+También puedes crear [link=Mechanics/Underforge]Gemas exquisitas[/link] de repuesto utilizando 3 gemas normales y 5 [link=Mechanics/ElementalEssences]Esencias elementales[/link].
+ 
+[font=dialogue]Transmutación[/font]
+Si necesitas una [link=Mechanics/ElementalEssences]Esencia Elemental[/link] específica, puedes transmutar una esencia en otra desde el menú Transmutación de tu Grimorio Mágico.
+ 
+La relación de conversación para las esencias es 4:1 (Por defecto), 2:1 ([link=Skills/SorcererProfessions]Bruja del seto[/link]) o 1:1 ([link=Skills/SorcererProfessions]Maestro Alquimista[/link]) y tirará de la primera esencia disponible en tu inventario.",
+
+"guidebook.chapter.Epilogue.Intro": "[center][font=dialogue][offset=0,8]Capítulo 5[/font][/center]
+[center][font=dialogue]Epílogo[/font][/center]
+   
+Concluye la historia de S&S en este capítulo final, con una serie de epílogos para cada uno de los principales PNJ que ponen el broche final a esta larga historia. ",
+
+"guidebook.chapter.Epilogue.Events": "[center][font=dialogue][offset=0,8]La historia hasta ahora:[/font][/center]
+ 
+[font=dialogue]Epílogo Pt 1[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch5.Dandelion]¡Completado![/if]
+[else]Pista: Visita la [color=green]Melena de León[/color] entre las 8 y las 22 hrs después de derrotar al Behemoth de Duskspire.[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch5.Dandelion]
+[font=dialogue]Epílogo Pt 2[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch5.Mateo]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Mateo 2000, !PLAYER_HAS_CONVERSATION_TOPIC Current DandelionProposes]Pista: Visita el [color=green]Gremio Costero de East Scarp[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Mateo 2000]Requisito: 10 Corazones con [color=red]Mateo[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current DandelionProposes]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch5.Mateo]
+[font=dialogue]Epílogo Pt 3[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch5.Hector]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Hector 2000, !PLAYER_HAS_CONVERSATION_TOPIC Current WyattReturns]Pista: Visita la [color=verde]Casa Veterinaria de East Scarp[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Hector 2000]Requisito: 10 Corazones con [color=red]Hector[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current WyattReturns]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch5.Hector]
+[font=dialogue]Epílogo Pt 4[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch5.Cirrus]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 2000, !PLAYER_HAS_CONVERSATION_TOPIC Current HectorPromotion]Pista: Visita las [color=green]Montañas Profundas de East Scarp[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 2000]Requisito: 10 Corazones con [color=red]Cirrus[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current HectorPromotion]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch5.Cirrus]
+[font=dialogue]Epílogo Pt 5[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch5.Roslin]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Roslin 2000, !PLAYER_HAS_CONVERSATION_TOPIC Current CirrusAndMom]Pista: Visita el [color=green]Gremio Costero de East Scarp[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Roslin 2000]Requisito: 10 Corazones con [color=red]Roslin[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current CirrusAndMom]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
+ 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch5.Roslin]
+[font=dialogue]El fin[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch5.End]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Mateo 2000, !PLAYER_HAS_CONVERSATION_TOPIC Current RosalionWedding]Pista: Visita el [color=green]Gremio Costero de East Scarp[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Mateo 2000]Requisito: 10 Corazones con [color=red]Mateo[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current RosalionWedding]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]",
+
+"guidebook.chapter.Epilogue.PaladinSkill": "[center][font=dialogue][offset=0,8]Paladín[/font][/center]
+[offset=200,0][image=SMAPI/kcc.sns/assets/paladin/icon.png:0,0,10,10:5]Una de las habilidades de Espada y Hechicería, desbloqueada durante el evento intermedio del [link=DeepDark/Duskspire] Combate contra el jefe final[/link] o al principio del juego a través de una opción en la {{Config}}. El Paladín puede subir de nivel hablando con PNJs y completando misiones. 
+ 
+En cada nivel, ganarás 10 puntos de salud máxima y desbloquearás una nueva mejora para el [itemtooltip=(W)DN.SnS_PaladinShield][icon=Textures/DN.SnS/SnSObjects:96,16,16,16] [color=blue]Escudo de Paladín[/color] de Dandelion[/itemtooltip]. Aplicar mejoras en el yunque en la [link=Mechanics/Underforge]Forja subterránea[/link].
+ 
+[font=dialogue]Desbloquea[/font]
+> Nivel 2
+[itemtooltip=(W)DN.SnS_ArtificerShield][icon=Textures/DN.SnS/SnSObjects:48,160,16,16] [color=chocolate]Mejora de escudo de artífice[/color][/itemtooltip]
+     Aumenta el daño de los proyectiles.
+ 
+> Nivel 4
+[itemtooltip=(W)DN.SnS_DruidShield][icon=Textures/DN.SnS/SnSObjects:64,160,16,16] [color=green]Mejora de escudo de druida[/color][/itemtooltip]
+     Cambiar de forma ya no cuesta
+     Éter para mantenerse.
+ 
+> Nivel 5 - Mira la página de las [link=Skills/PaladinProfessions]Profesiones del Paladín[/link].
+ 
+> Nivel 6
+[itemtooltip=(W)DN.SnS_BardShield][icon=Textures/DN.SnS/SnSObjects:80,160,16,16] [color=purple]Mejora del escudo de bardo[/color][/itemtooltip]
+     Las canciones de un solo uso al día pueden 
+     utilizarse una segunda vez.
+ 
+> Nivel 8
+[itemtooltip=(W)DN.SnS_SorcererShield][icon=Textures/DN.SnS/SnSObjects:96,160,16,16] [color=red]Mejora del escudo de hechicero[/color][/itemtooltip]
+     Probabilidad aleatoria de causar una
+     onda de choque mágica cuando un 
+     escudo golpea a un enemigo.
+ 
+> Nivel 10 - Mira la página de las [link=Skills/PaladinProfessions]Profesiones del Paladín[/link].",
+
+"guidebook.chapter.Epilogue.PaladinProfessions": "[center][font=dialogue][offset=0,8]Profesiones[/font][/center]
+  
+Al igual que las habilidades vainilla, la habilidad Paladín proporciona profesiones que cambian la experiencia de juego en los niveles 5 y 10.
+ 
+[font=dialogue]Nivel 5[/font]
+= [icon=SMAPI/kcc.sns/assets/paladin/onyourleft.png:0,0,16,16] [color=MediumBlue]A tu izquierda[/color]
+    Lanzar tu escudo ahora golpea a un 
+    segundo objetivo con la mitad de daño.
+ 
+= [icon=SMAPI/kcc.sns/assets/paladin/fighttoendthefight.png:0,0,16,16] [color=MediumBlue]Luchar para acabar con la lucha[/color]
+    Los escudos dan además el doble
+    de puntos de armadura cuando están equipados.
+ 
+[font=dialogue]Nivel 10[/font]
+[color=MediumBlue]Pista A tu izquierda[/color]
+= [icon=SMAPI/kcc.sns/assets/paladin/thesunwillshineonusagain.png:0,0,16,16] [color=blue]El sol volverá a brillar sobre nosotros[/color] 
+    Al ser alcanzado por un escudo lanzado, enemigos 
+    cercanos serán alcanzados por un rayo.
+ 
+= [icon=SMAPI/kcc.sns/assets/paladin/TheyHaveAnArmyWeHaveAFarmerName.png:0,0,16,16] [color=blue]Los tienen un ejército, nosotros tenemos un @[/color] 
+    Lanzar escudo ahora golpeará a tres objetivos
+    con daño completo.
+ 
+[color=MediumBlue]Pista Lucha para acabar con la lucha[/color]
+= [icon=SMAPI/kcc.sns/assets/paladin/icandothisallday.png:0,0,16,16] [color=blue]Puedo hacer esto todo el día[/color]
+    Los escudos dan además el doble 
+    de puntos de armadura cuando están equipados, por  
+    un total de 4 veces el valor de
+    escudo base
+  
+= [icon=SMAPI/kcc.sns/assets/paladin/yougethurthurtemback.png:0,0,16,16] [color=blue]Si te hacen daño, devuélveselo[/color]
+    Si tienes Puntos de Armadura cuando recibes
+    daño y tienes un Escudo equipado, 
+    automáticamente devuelves el daño a tus
+    enemigos.",
+
+"guidebook.chapter.Epilogue.FinalMessage": "[center][font=dialogue][offset=0,8]Mensaje final[/font][/center]
+ 
+[image=Mods/Sword & Sorcery/InMemoryOfLoreSeeker]
+Este proyecto está dedicado a la memoria de TheLoreSeeker, un querido miembro de la comunidad que se empeñó en alentar las ideas más descabelladas de la gente. Puede que ya no esté entre nosotros, pero sigue vivo en el contenido de aquellos a los que inspiró. Gracias a él y a todos los que han contribuido a S&S. Y especialmente a ti, jugador, {{IsModComplete}}. 
+ 
+Firmado con amor, DestyNova.",
+
+"guidebook.chapter.DeepDark.Intro": "[center][font=dialogue][offset=0,8]Introducción[/font][/center]
+ 
+La Oscuridad Profunda es una mazmorra de 30 pisos con poderosos monstruos y el raro mineral Estigio. Aquí encontrarás hermosos mapas, alimento personalizado y nuevos monstruos con objetos únicos. Cuando llegues al final, te enfrentarás al jefe final del mod: El Behemoth de Duskspire.
+ 
+Es recomendable que te prepares con las nuevas mecánicas de Espada y Hechicería y las mecánicas de vainilla del final del juego antes de abordar esta ubicación. Se desbloquea al final del [if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.14][link=Chapters/IntroTOP]Capítulo 4[/link][/if][else]Capítulo 4[/else].
+ 
+[font=dialogue]Índice[/font]
+> Los pisos
+  = [link=DeepDark/Floors]Pisos de Oscuridad Profunda[/link]
+ 
+> Los materiales
+  = [link=DeepDark/Stygium]Estigio[/link]
+  = [link=DeepDark/Elysium]Elisio[/link]
+ 
+> Los monstruos
+  = [link=DeepDark/Monsters]Monstruos[/link]
+  = [link=DeepDark/Duskspire]El jefe final[/link]
+",
+"guidebook.chapter.DeepDark.Monsters": "[center][font=dialogue][offset=0,8]Monstruos y obtenciones[/font][/center]
+ 
+Todos los monstruos de la Oscuridad Profunda se basan en un monstruo existente. Además de la siguiente lista, los monstruos también soltarán baratijas y objetos especiales asociados con el monstruo de vainilla base.
+(Ej. El Estigio Rex suelta huevos de Pimienta Rex)
+ 
+[icon=Textures/DN.SnS/SnSMonsterIcons:16,0,16,16] [color=blue]Cangrejo de Estigio[/color]
+ > [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] Esencia Sombría[/itemtooltip] (100%)
+ > [itemtooltip=(O)DN.SnS_StygiumOre][icon=Textures/DN.SnS/SnSObjects:0,160,16,16] Mena de Estigio[/itemtooltip] (3%)
+ > [itemtooltip=(O)717][icon=maps/springobjects:336,464,16,16] Cangrejo[/itemtooltip] (30%)
+ > [itemtooltip=(O)732][icon=maps/springobjects:192,480,16,16] Tortas de cangrejo[/itemtooltip] (10%)
+ > [itemtooltip=(O)810][icon=maps/springobjects:288,528,16,16] Anillo caparazón de cangrejo[/itemtooltip] (1%)
+ 
+[icon=Textures/DN.SnS/SnSMonsterIcons:64,16,16,16] [color=blue]Estigio Rex[/color]
+ > [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] Esencia Sombría[/itemtooltip] (100%)
+ > [itemtooltip=(O)DN.SnS_StygiumOre][icon=Textures/DN.SnS/SnSObjects:0,160,16,16] Mena de Estigio[/itemtooltip] (3%)
+ > [itemtooltip=(O)DN.SnS_taintedgrasses][icon=Textures/DN.SnS/SnSObjects:96,176,16,16] Hierbas contaminadas[/itemtooltip] (20%)
+ 
+[icon=Textures/DN.SnS/SnSMonsterIcons:48,0,16,16] [color=blue]Gólem de Estigio (Morado)[/color]
+ > [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] Esencia Sombría[/itemtooltip] (100%)
+ > [itemtooltip=(O)DN.SnS_StygiumOre][icon=Textures/DN.SnS/SnSObjects:0,160,16,16] Mena de Estigio[/itemtooltip] (3%)
+ > [itemtooltip=(O)DN.SnS_taintedgrasses][icon=Textures/DN.SnS/SnSObjects:96,176,16,16] Hierbas contaminadas[/itemtooltip] (30%)
+ > [itemtooltip=(O)749][icon=maps/springobjects:80,496,16,16] Omnigeoda[/itemtooltip] (10%)
+ > [itemtooltip=(O)66][icon=maps/springobjects:288,32,16,16] Amatista[/itemtooltip] (5%)
+ 
+[icon=Textures/DN.SnS/SnSMonsterIcons:64,0,16,16] [color=blue]Gólem de Estigio (Azul)[/color]
+ > [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] Esencia Sombría[/itemtooltip] (100%)
+ > [itemtooltip=(O)DN.SnS_StygiumOre][icon=Textures/DN.SnS/SnSObjects:0,160,16,16] Mena de Estigio[/itemtooltip] (3%)
+ > [itemtooltip=(O)DN.SnS_taintedgrasses][icon=Textures/DN.SnS/SnSObjects:96,176,16,16] Hierbas contaminadas[/itemtooltip] (30%)
+ > [itemtooltip=(O)749][icon=maps/springobjects:80,496,16,16] Omnigeoda[/itemtooltip] (10%)
+ > [itemtooltip=(O)84][icon=maps/springobjects:192,48,16,16] Lágrima helada[/itemtooltip] (5%)
+ > [itemtooltip=(O)72][icon=maps/springobjects:0,48,16,16] Diamante[/itemtooltip] (1%)
+ 
+[icon=Textures/DN.SnS/SnSMonsterIcons:0,0,16,16] [color=blue]Murciélago de Estigio[/color]
+ > [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] Esencia Sombría[/itemtooltip] (100%)
+ > [itemtooltip=(O)DN.SnS_StygiumOre][icon=Textures/DN.SnS/SnSObjects:0,160,16,16] Mena de Estigio[/itemtooltip] (3%)
+ > [itemtooltip=(O)767][icon=maps/springobjects:368,496,16,16] Ala de murciélago[/itemtooltip] (100%)
+ > [itemtooltip=(O)522][icon=maps/springobjects:288,336,16,16] Anillo del vampiro[/itemtooltip] (1%)
+ 
+[icon=Textures/DN.SnS/SnSMonsterIcons:32,48,16,16] [color=blue]Cabeza de Estigio[/color]
+ > [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] Esencia Sombría[/itemtooltip] (100%)
+ > [itemtooltip=(O)DN.SnS_StygiumOre][icon=Textures/DN.SnS/SnSObjects:0,160,16,16] Mena de Estigio[/itemtooltip] (3%)
+ > [itemtooltip=(O)380][icon=maps/springobjects:320,240,16,16] Mena de Hierro[/itemtooltip] (10%)
+ > [itemtooltip=(O)335][icon=Maps/springobjects:368,208,16,16] Lingote de Hierro[/itemtooltip] (5%)
+ > [itemtooltip=(O)121][icon=maps/springobjects:16,80,16,16] Yelmo enano[/itemtooltip] (1%)
+ 
+[icon=Textures/DN.SnS/SnSMonsterIcons:64,32,16,16] [color=blue]Cráneo de Estigio[/color]
+ > [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] Esencia Sombría[/itemtooltip] (100%)
+ > [itemtooltip=(O)DN.SnS_StygiumOre][icon=Textures/DN.SnS/SnSObjects:0,160,16,16] Mena de Estigio[/itemtooltip] (3%)
+ > [itemtooltip=(O)881][icon=maps/springobjects:272,576,16,16] Fragmento de hueso[/itemtooltip] (100%)
+ > [itemtooltip=(O)581][icon=maps/springobjects:80,384,16,16] Cráneo perhistórico[/itemtooltip] (5%)
+ 
+[icon=Textures/DN.SnS/SnSMonsterIcons:32,16,16,16] [color=blue]Seta falsa de Estigio[/color]
+ > [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] Esencia Sombría[/itemtooltip] (100%)
+ > [itemtooltip=(O)DN.SnS_StygiumOre][icon=Textures/DN.SnS/SnSObjects:0,160,16,16] Mena de Estigio[/itemtooltip] (3%)
+ > [itemtooltip=(O)DN.SnS_mushroom1][icon=Textures/DN.SnS/SnSObjects:0,176,16,16] Seta contaminada (Tipo A)[/itemtooltip] (25%)
+ > [itemtooltip=(O)DN.SnS_mushroom2][icon=Textures/DN.SnS/SnSObjects:16,176,16,16] Seta contaminada (Tipo B)[/itemtooltip] (25%)
+ > [itemtooltip=(O)DN.SnS_mushroom3][icon=Textures/DN.SnS/SnSObjects:32,176,16,16] Seta contaminada (Tipo C)[/itemtooltip] (25%)
+ > [itemtooltip=(O)DN.SnS_mushroom4][icon=Textures/DN.SnS/SnSObjects:48,176,16,16] Seta contaminada (Tipo D)[/itemtooltip] (25%)
+ 
+[icon=Textures/DN.SnS/SnSMonsterIcons:0,48,16,16] [color=blue]Calamar de Estigio[/color]
+ > [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] Esencia Sombría[/itemtooltip] (100%)
+ > [itemtooltip=(O)DN.SnS_StygiumOre][icon=Textures/DN.SnS/SnSObjects:0,160,16,16] Mena de Estigio[/itemtooltip] (3%)
+ > [itemtooltip=(O)798][icon=maps/springobjects:96,528,16,16] Calamar de medianoche[/itemtooltip] (10%)
+ > [itemtooltip=(O)814][icon=maps/springobjects:352,528,16,16] Tinta de calamar[/itemtooltip] (20%)
+ > [itemtooltip=(O)921][icon=maps/springobjects:144,608,16,16] Ravioli de tinta de calamar[/itemtooltip] (5%)
+ > [itemtooltip=(O)681][icon=maps/springobjects:144,448,16,16] Tótem de lluvia[/itemtooltip] (1%)
+ 
+[icon=Textures/DN.SnS/SnSMonsterIcons:32,0,16,16] [color=blue]Gota de Estigio[/color]
+ > [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] Esencia Sombría[/itemtooltip] (100%)
+ > [itemtooltip=(O)DN.SnS_StygiumOre][icon=Textures/DN.SnS/SnSObjects:0,160,16,16] Mena de Estigio[/itemtooltip] (3%)
+ > [itemtooltip=(O)561][icon=maps/springobjects:144,368,16,16] Cristal fantasma[/itemtooltip] (20%)
+ > [itemtooltip=(O)265][icon=maps/springobjects:16,176,16,16] Budín de espuma de mar[/itemtooltip] (10%)
+ > [itemtooltip=(O)895][icon=maps/springobjects:112,592,16,16] Fuegos artificiales verdes[/itemtooltip] (5%)
+ > [itemtooltip=(O)681][icon=maps/springobjects:144,448,16,16] Tótem de lluvia[/itemtooltip] (1%)
+ 
+[icon=Textures/DN.SnS/SnSMonsterIcons:48,32,16,16] [color=blue]Serpiente de Estigio[/color] 
+ > [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] Esencia Sombría[/itemtooltip] (100%)
+ > [itemtooltip=(O)DN.SnS_StygiumOre][icon=Textures/DN.SnS/SnSObjects:0,160,16,16] Mena de Estigio[/itemtooltip] (3%)
+ > [itemtooltip=(O)148][icon=maps/springobjects:64,96,16,16] Anguila[/itemtooltip] (10%)
+ > [itemtooltip=(O)225][icon=maps/springobjects:144,144,16,16] Anguila frita[/itemtooltip] (5%)
+ 
+[icon=Textures/DN.SnS/SnSMonsterIcons:0,32,16,16] [color=blue]Minero de Estigio[/color]
+ > [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] Esencia Sombría[/itemtooltip] (100%)
+ > [itemtooltip=(O)DN.SnS_StygiumOre][icon=Textures/DN.SnS/SnSObjects:0,160,16,16] Mena de Estigio[/itemtooltip] (5%)
+ > [itemtooltip=(O)DN.SnS_taintedcorn][icon=Textures/DN.SnS/SnSObjects:112,176,16,16] Maíz contaminado[/itemtooltip] (5%)
+ > [itemtooltip=(O)105][icon=maps/springobjects:144,64,16,16] Palo de mascar[/itemtooltip] (1%)
+ > [itemtooltip=(O)881][icon=maps/springobjects:272,576,16,16] Fragmento de hueso[/itemtooltip] (100%)
+ > [itemtooltip=(O)243][icon=maps/springobjects:48,160,16,16] Capricho de minero[/itemtooltip] (1%)
+ > [itemtooltip=(O)286][icon=maps/springobjects:352,176,16,16] MiniBomba[/itemtooltip] (5%)
+ > [itemtooltip=(O)287][icon=maps/springobjects:368,176,16,16] Bomba[/itemtooltip] (3%)
+ > [itemtooltip=(O)288][icon=maps/springobjects:0,192,16,16] Megabomba[/itemtooltip] (1%)
+ 
+[icon=Textures/DN.SnS/SnSMonsterIcons:16,32,16,16] [color=blue]Minero de Estigio Mage[/color]
+ > [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] Esencia Sombría[/itemtooltip] (100%)
+ > [itemtooltip=(O)DN.SnS_StygiumOre][icon=Textures/DN.SnS/SnSObjects:0,160,16,16] Mena de Estigio[/itemtooltip] (5%)
+ > [itemtooltip=(O)DN.SnS_taintedcorn][icon=Textures/DN.SnS/SnSObjects:112,176,16,16] Maíz contaminado[/itemtooltip] (5%)
+ > [itemtooltip=(O)105][icon=maps/springobjects:144,64,16,16] Palo de mascar[/itemtooltip] (1%)
+ > [itemtooltip=(O)881][icon=maps/springobjects:272,576,16,16] Fragmento de hueso[/itemtooltip] (100%)
+ > [itemtooltip=(O)243][icon=maps/springobjects:48,160,16,16] Capricho de minero[/itemtooltip] (1%)
+ > [itemtooltip=(O)84][icon=maps/springobjects:192,48,16,16] Lágrima helada[/itemtooltip] (5%)
+ 
+[icon=Textures/DN.SnS/SnSMonsterIcons:0,16,16,16] [color=blue]Esqueleto de Estigio[/color]
+ > [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] Esencia Sombría[/itemtooltip] (100%)
+ > [itemtooltip=(O)DN.SnS_StygiumOre][icon=Textures/DN.SnS/SnSObjects:0,160,16,16] Mena de Estigio[/itemtooltip] (3%)
+ > [itemtooltip=(O)DN.SnS_taintedcorn][icon=Textures/DN.SnS/SnSObjects:112,176,16,16] Maíz contaminado[/itemtooltip] (5%)
+ > [itemtooltip=(O)105][icon=maps/springobjects:144,64,16,16] Palo de mascar[/itemtooltip] (1%)
+ > [itemtooltip=(O)881][icon=maps/springobjects:272,576,16,16] Fragmento de hueso[/itemtooltip] (100%)
+ > [itemtooltip=(O)243][icon=maps/springobjects:48,160,16,16] Capricho de minero[/itemtooltip] (1%)
+ 
+[icon=Textures/DN.SnS/SnSMonsterIcons:16,16,16,16] [color=purple]Esqueleto de Estigio (Raro)[/color]
+ > [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] Esencia Sombría[/itemtooltip] (100%)
+ > [itemtooltip=(O)DN.SnS_StygiumOre][icon=Textures/DN.SnS/SnSObjects:0,160,16,16] Mena de Estigio[/itemtooltip] (100%)
+ > [itemtooltip=(O)DN.SnS_taintedcorn][icon=Textures/DN.SnS/SnSObjects:112,176,16,16] Maíz contaminado[/itemtooltip] (5%)
+ > [itemtooltip=(O)105][icon=maps/springobjects:144,64,16,16] Palo de mascar[/itemtooltip] (1%)
+ > [itemtooltip=(O)881][icon=maps/springobjects:272,576,16,16] Fragmento de hueso[/itemtooltip] (100%)
+ > [itemtooltip=(O)243][icon=maps/springobjects:48,160,16,16] Capricho de minero[/itemtooltip] (1%)
+ > [itemtooltip=(O)279][icon=maps/springobjects:240,176,16,16] Caramelo mágico[/itemtooltip] (100%)
+ > [itemtooltip=(O)74][icon=maps/springobjects:32,48,16,16] Esquirla prismática[/itemtooltip] (1%)
+ 
+[icon=Textures/DN.SnS/SnSMonsterIcons:32,32,16,16] [color=purple]Leviatán de Estigio (Jefe Menor raro)[/color]
+ > [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] Esencia Sombría[/itemtooltip] (100%)
+ > [itemtooltip=(O)DN.SnS_StygiumOre][icon=Textures/DN.SnS/SnSObjects:0,160,16,16] Mena de Estigio x3[/itemtooltip] (100%)
+ > [itemtooltip=(O)166][icon=maps/springobjects:352,96,16,16] Cofre del Tesoro[/itemtooltip] (100%)
+ > [itemtooltip=(O)799][icon=maps/springobjects:112,528,16,16] Pez asustado[/itemtooltip] (10%)
+ > [itemtooltip=(O)242][icon=maps/springobjects:32,160,16,16] Plato de alta mar[/itemtooltip] (5%)
+ > [itemtooltip=(O)895][icon=maps/springobjects:144,448,16,16] Tótem de lluvia[/itemtooltip] (10%)
+ > [itemtooltip=(O)560][icon=maps/springobjects:128,368,16,16] Oceanita[/itemtooltip] (50%)
+ > [itemtooltip=(O)117][icon=maps/springobjects:336,64,16,16] Ancla[/itemtooltip] (20%)
+ > [itemtooltip=(O)74][icon=maps/springobjects:32,48,16,16] Esquirla prismática[/itemtooltip] (2%)
+ 
+[icon=Textures/DN.SnS/SnSMonsterIcons:0,64,16,16] [color=purple]Behemoth de Duskspire (Jefe final)[/color]
+ > [itemtooltip=(O)DN.SnS_DuskspireHeart][icon=Textures/DN.SnS/SnSObjects:0,192,16,16]Corazón de Duskspire[/itemtooltip] (100%)
+",
+"guidebook.chapter.DeepDark.Floors": "[center][font=dialogue][offset=0,8]Pisos[/font][/center]
+ 
+[font=dialogue] [color=black]Oscuridad (Pisos 1-9)[/color][/font]
+    MONSTRUOS
+        Comunes
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:16,0,16,16] Cangrejo de Estigio
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:0,32,16,16] Minero de Estigio
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:32,48,16,16] Cabeza de Estigio
+        Poco comunes
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:0,0,16,16] Murciélago de Estigio
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:48,0,16,16] Gólem de Estigio (Morado)
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:64,16,16,16] Estigio Rex
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:0,16,16,16] Esqueleto de Estigio
+        Raros
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:16,16,16,16] [color=purple]Esqueleto de Estigio (Raro)[/color]
+ 
+    ALIMENTO
+    > [itemtooltip=(O)DN.SnS_taintedcorn][icon=Textures/DN.SnS/SnSObjects:112,176,16,16] Maíz contaminado[/itemtooltip]
+    > [itemtooltip=(O)DN.SnS_taintedgrasses][icon=Textures/DN.SnS/SnSObjects:96,176,16,16] Hierbas contaminadas[/itemtooltip] 
+    > [itemtooltip=(O)DN.SnS_taintedcrocus][icon=Textures/DN.SnS/SnSObjects:80,176,16,16] Azafrán contaminado[/itemtooltip] 
+ 
+    NODOS DE RECURSOS
+    > [itemtooltip=(O)847][icon=maps/springobjects:112,560,16,16] Piedra[/itemtooltip]
+    > [itemtooltip=(O)DN.SnS_StygiumOreStone][icon=maps/DeepDark-rocks:96,32,16,16] Estigio[/itemtooltip]
+    > [itemtooltip=(O)DN.SnS_StygiumOreStone4][icon=maps/DeepDark-rocks:64,32,16,16] Estigio + Cuarzo[/itemtooltip]
+    [offset=0,10]> [itemtooltip=(BC)DN.SnS_DeepDarkChest][icon=Textures/DN.SnS/DeepDark_Treasure:0,7,16,22] Cofre de Espada de Estigio[/itemtooltip]
+  
+[color=DarkSlateGray][font=dialogue]Setas (Pisos 10-19)[/font][/color]
+    MONSTRUOS
+        Comunes
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:32,16,16,16] Seta falsa de Estigio
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:0,16,16,16] Esqueleto de Estigio
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:64,0,16,16] Gólem de Estigio (Azul)
+        Poco comunes
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:64,16,16,16] Estigio Rex
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:16,32,16,16] Mago Minero Esqueleto
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:48,32,16,16] Serpiente de Estigio
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:64,32,16,16] Cráneo de Estigio
+        Raros
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:16,16,16,16] [color=purple]Esqueleto de Estigio (Raro)[/color]
+ 
+    ALIMENTOS
+    > [itemtooltip=(O)DN.SnS_mushroom1][icon=Textures/DN.SnS/SnSObjects:0,176,16,16] Seta contaminada (Tipo A)[/itemtooltip]
+    > [itemtooltip=(O)DN.SnS_mushroom2][icon=Textures/DN.SnS/SnSObjects:16,176,16,16] Seta contaminada (Tipo B)[/itemtooltip]
+    > [itemtooltip=(O)DN.SnS_mushroom3][icon=Textures/DN.SnS/SnSObjects:32,176,16,16] Seta contaminada (Tipo C)[/itemtooltip]
+    > [itemtooltip=(O)DN.SnS_mushroom4][icon=Textures/DN.SnS/SnSObjects:48,176,16,16] Seta contaminada (Tipo D)[/itemtooltip]
+  
+    NODOS DE RECURSOS
+    > [itemtooltip=(O)847][icon=maps/springobjects:112,560,16,16] Piedra[/itemtooltip]
+    > [itemtooltip=(O)DN.SnS_StygiumOreStone][icon=maps/DeepDark-rocks:96,32,16,16] Estigio[/itemtooltip]
+    > [itemtooltip=(O)DN.SnS_StygiumOreStone4][icon=maps/DeepDark-rocks:64,32,16,16] Estigio + Cuarzo[/itemtooltip]    
+    > [itemtooltip=(O)DN.SnS_mushroomtreeseed][icon=Textures/DN.SnS/SnSObjects:64,176,16,16] Árbol de Seta contaminada[/itemtooltip]
+    [offset=0,10]> [itemtooltip=(BC)DN.SnS_DeepDarkChest][icon=Textures/DN.SnS/DeepDark_Treasure:0,7,16,22] Cofre de Espada de Estigio[/itemtooltip]
+ 
+[color=MidnightBlue][font=dialogue]Lagos (Pisos 20-30)[/font][/color]
+    MONSTRUOS
+        Comunes
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:0,48,16,16] Calamar de Estigio
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:0,16,16,16] Esqueleto de Estigio
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:64,0,16,16] Gólem de Estigio (Azul)
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:48,0,16,16] Gólem de Estigio (Morado)
+
+        Poco comunes
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:32,0,16,16] Gota de Estigio
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:64,16,16,16] Estigio Rex
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:16,0,16,16] Cangrejo de Estigio
+
+        Raros
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:16,16,16,16] [color=purple]Esqueleto de Estigio (Raro)[/color]
+         > [icon=Textures/DN.SnS/SnSMonsterIcons:32,32,16,16] [color=purple]Leviatán de Estigio (Jefe Menor)[/color]
+ 
+    ALIMENTOS
+    > [itemtooltip=(O)394][icon=Maps/springobjects:160,256,16,16] Concha arcoiris[/itemtooltip]
+    > [itemtooltip=(O)372][icon=Maps/springobjects:192,240,16,16] Almeja[/itemtooltip]
+    > [itemtooltip=(O)DN.SnS_taintedcrocus][icon=Textures/DN.SnS/SnSObjects:80,176,16,16] Azafrán contaminado[/itemtooltip] 
+    > [itemtooltip=(O)DN.SnS_mushroom3][icon=Textures/DN.SnS/SnSObjects:32,176,16,16] Seta contaminada (Tipo C)[/itemtooltip]
+    > [itemtooltip=(O)74][icon=Maps/springobjects:32,48,16,16] Esquirla prismática[/itemtooltip] (1/1000 chance)
+ 
+    NODOS DE RECURSOS
+    > [itemtooltip=(O)847][icon=maps/springobjects:112,560,16,16] Piedra[/itemtooltip]
+    > [itemtooltip=(O)DN.SnS_StygiumOreStone][icon=maps/DeepDark-rocks:96,32,16,16] Estigio[/itemtooltip],
+    > [itemtooltip=(O)DN.SnS_StygiumOreStone4][icon=maps/DeepDark-rocks:64,32,16,16] Estigio + Cuarzo[/itemtooltip]
+    [offset=0,10]> [itemtooltip=(BC)DN.SnS_DeepDarkChest][icon=Textures/DN.SnS/DeepDark_Treasure:0,7,16,22] Cofre de Espada de Estigio[/itemtooltip]    ",
+"guidebook.chapter.DeepDark.Stygium": "[center][font=dialogue][offset=0,8]Estigio[/font][/center]
+ 
+El Estigio es un mineral raro y poderoso que sólo aparece en la Oscuridad Profunda. Se utiliza para mejorar tus herramientas más allá del nivel [color=purple]Iridio[/color]. Ten cuidado, el aumento de fuerza tiene un coste.
+ 
+[font=dialogue]Recursos de Estigio[/font]
+> [itemtooltip=(O)DN.SnS_StygiumOreStone][icon=maps/DeepDark-rocks:96,32,16,16] [color=blue]Nodos de Estigio[/color][/itemtooltip] - Surgen en la Oscuridad Profunda
+> [itemtooltip=(O)DN.SnS_StygiumOre][icon=Textures/DN.SnS/SnSObjects:0,160,16,16] [color=blue]Mena de Estigio[/color][/itemtooltip] - Salen de los nodos de Estigio
+> [itemtooltip=(O)DN.SnS_StygiumBar][icon=Textures/DN.SnS/SnSObjects:144,144,16,16] [color=blue]Lingotes de Estigio[/color][/itemtooltip] - Fundido a partir de Menas de Estigio
+ 
+[font=dialogue]Engranaje de Estigio[/font]
+Las herramientas de Estigio se fabrican mejorando cualquier herramienta de  [color=purple]Iridio[/color] con [itemtooltip=(O)DN.SnS_StygiumBar][icon=Textures/DN.SnS/SnSObjects:144,144,16,16] [color=blue]Lingotes de Estigio[/color][/itemtooltip] donde Clint. Esto mejorará la herramienta como se esperaba para el siguiente nivel.
+ 
+Lista de equipamiento de Estigio
+> [itemtooltip=(T)DN.SnS_StygiumPickaxe][icon=Textures/DN.SnS/StygiumTools:80,64,16,16] [color=blue]Pico de Estigio[/color][/itemtooltip]
+> [itemtooltip=(T)DN.SnS_StygiumHoe][icon=Textures/DN.SnS/StygiumTools:80,32,16,16] [color=blue]Azada de Estigio[/color][/itemtooltip]
+> [itemtooltip=(T)DN.SnS_StygiumAxe][icon=Textures/DN.SnS/StygiumTools:80,96,16,16] [color=blue]Hacha de Estigio[/color][/itemtooltip]
+> [itemtooltip=(T)DN.SnS_StygiumWateringCan][icon=Textures/DN.SnS/StygiumTools:48,128,16,16] [color=blue]Regadera de Estigio[/color][/itemtooltip]
+> [itemtooltip=(W)DN.SnS_StygiumBlade][icon=Textures/DN.SnS/StygiumTools:0,0,16,16] [color=blue]Espada de Estigio[/color][/itemtooltip]
+> [itemtooltip=(W)DN.SnS_StygiumShield][icon=Textures/DN.SnS/SnSObjects:80,192,16,16] [color=blue]Escudo de Estigio[/color][/itemtooltip] (Receta: Por defecto)
+> [itemtooltip=(O)DN.SnS_StygiumArmor][icon=Textures/DN.SnS/SnSArsenal:0,112,16,16] [color=blue]Armadura de Estigio[/color][/itemtooltip] (Receta: Aumento de nivel de Artífice)
+ 
+Nota: El alcance mejorado para las herramientas cargables es de 5x5.
+ 
+[font=dialogue]Intoxicación por Estigio[/font]
+Cuando un objeto de Estigio se lleva puesto o se sujeta, se aplica un debilitamiento, [icon=Textures/DN.SnS/SnSObjects:112,192,16,16] [color=purple]Envenenamiento por Estigio[/color]. Este debilitamiento reduce la defensa y la suerte del jugador hasta que la herramienta alcance el nivel de [link=DeepDark/Elysium]Elisio[/link].",
+
+"guidebook.chapter.DeepDark.Elysium": "[center][font=dialogue][offset=0,8]Elisio[/font][/center]
+ 
+Las herramientas de Estigio pueden purificarse combinándolas con un [itemtooltip=(O)DN.SnS_DuskspireHeart][icon=Textures/DN.SnS/SnSObjects:0,192,16,16] [color=blue]Corazón de Duskspire[/color][/itemtooltip] donde Clint. Esto elimina la [icon=Textures/DN.SnS/SnSObjects:112,192,16,16] debilitamiento por la [color=purple]Intoxicación por Estigio[/color] y mejora la herramienta.
+ 
+Lista de equipamiento de Elisio
+> [itemtooltip=(T)DN.SnS_BlessedPickaxe][icon=Textures/DN.SnS/BlessedTools:80,64,16,16] [color=blue]Pico del Elisio[/color][/itemtooltip]
+> [itemtooltip=(T)DN.SnS_BlessedHoe][icon=Textures/DN.SnS/BlessedTools:80,32,16,16] [color=blue]Azada de Elisio[/color][/itemtooltip]
+> [itemtooltip=(T)DN.SnS_BlessedAxe][icon=Textures/DN.SnS/BlessedTools:80,96,16,16] [color=blue]Hacha de Elisio[/color][/itemtooltip]
+> [itemtooltip=(T)DN.SnS_BlessedWateringCan][icon=Textures/DN.SnS/BlessedTools:48,128,16,16] [color=blue]Regadera de Elisio[/color][/itemtooltip]
+> [itemtooltip=(W)DN.SnS_ElysiumBlade][icon=Textures/DN.SnS/BlessedTools:0,0,16,16] [color=blue]Espada de Elisio[/color][/itemtooltip] (Receta: Melena de León)
+> [itemtooltip=(O)DN.SnS_ElysiumArmor][icon=Textures/DN.SnS/SnSArsenal:16,112,16,16] [color=blue]Armadura de Elisio[/color][/itemtooltip] (Receta: Aumento de nivel de Artífice)
+ 
+Notas: 
+> El [itemtooltip=(W)DN.SnS_StygiumShield][icon=Textures/DN.SnS/SnSObjects:80,192,16,16] [color=blue]Escudo de Estigio[/color][/itemtooltip] no puede convertirse en un Escudo de Elisio, ya que el [itemtooltip=(W)DN.SnS_PaladinShield][icon=Textures/DN.SnS/SnSObjects:96,16,16,16] [color=blue]Escudo de Paladín[/color][/itemtooltip] sirve mecánicamente para ese propósito.
+ 
+> Se mejora la autonomía de las herramientas cargables en 7x7.",
+"guidebook.chapter.DeepDark.Duskspire": "[center][font=dialogue][offset=0,8]Behemoth de Duskspire[/font][/center]
+[offset=200,0][image=Textures/DN.SnS/SnSMonsterIcons:23,66,18,13:4]El Duskspire es el jefe final de la mina Oscuridad Profunda. Cuando luchas inicialmente contra el Duskspire, se trata de un combate en dos fases. El primer estado simula un JRPG por turnos, mientras que el segundo es una lucha en una arena que utiliza la mecánica de combate típica del juego.
+ 
+Cuando es derrotado, el Duskspire suelta [itemtooltip=(O)DN.SnS_DuskspireHeart][icon=Textures/DN.SnS/SnSObjects:0,192,16,16] [color=blue]Corazones de Duskspire[/color][/itemtooltip], que se utilizan para purificar las  [Link=DeepDark/Stygium]Herramientas de Estigio[/link]. El Duskspire se puede volver a combatir en una forma más débil para obtener más Corazones de Duskspire. Este combate se reinicia cada lunes.
+ 
+En la fase 2, si estás en una relación con [link=Characters/Mateo]Mateo[/link], [link=Characters/Hector]{{TrueName}}[/link], [link=Characters/Cirrus]Cirrus[/link], [link=https://www.nexusmods.com/stardewvalley/mods/16197]Gunnar[/link] or [link=https://www.nexusmods.com/stardewvalley/mods/10770?tab=description]Sen[/link], lucharán a tu lado. ",
+
+"guidebook.chapter.Mechanics.TableOfContents": "[center][font=dialogue][offset=0,8]Introducción[/font][/center]
+ 
+Conoce las diferentes mecánicas que encontrarás a lo largo de la historia de Espada y Hechicería 
+ 
+[font=dialogue]Índice[/font]
+> La Barra de aventuras
+  = [link=Mechanics/AdventureBar]La Barra de aventuras[/link]
+ 
+> Ranuras para equipos y sus usos
+  = [link=Mechanics/EquipmentSlots]Ranuras para equipos[/link]
+  = [link=Mechanics/ShieldsArmor]Puntos de blindaje, armaduras y escudos[/link]
+  = [link=Mechanics/DualWielding]Doble empuñadura[/link]
+ 
+> Armas y Mejoras
+  = [link=Mechanics/Underforge]La Forja subterránea[/link]
+  = [link=Mechanics/LLTK]Larga vida al Rey[/link]
+  = [link=Mechanics/Keychains]Llaveros LVAR[/link]
+  = [link=Mechanics/DualWielding]Doble empuñadura[/link]
+ 
+> Esencias y Alquimia
+  = [link=Mechanics/DruidicEssence]Esencias druídicas[/link]
+  = [link=Mechanics/ElementalEssences]Esencias elementales[/link]
+  = [link=Mechanics/AlchemyTransmutation]Alquimia y transmutación[/link]
+ 
+> Hechizos y Magia
+  = [link=Mechanics/RemoteSpells]Hechizos a distancia[/link]
+  = [link=Mechanics/TeleportCircle]Círculo de teletransporte[/link]
+ 
+> Varios
+  = [link=Mechanics/SpecialOrderBoard]Tablón de pedidos especiales de East Scarp[/link]
+  = [link=Mechanics/Powers]Poderes[/link]
+  = [link=Mechanics/GingerBeer]Fermentación de la cerveza de jengibre[/link]
+  = [link=Mechanics/Shops]Tiendas[/link]
+",
+
+"guidebook.chapter.Mechanics.Skills": "[center][font=dialogue][offset=0,8]Introducción[/font][/center]
+ 
+Todas las Habilidades de Espada y Hechicería, sus profesiones y lo que aportan, todo en un mismo lugar.
+ 
+[font=dialogue]Índice[/font]
+> [link=Skills/ArtificerSkill][icon=SMAPI/kcc.sns/assets/rogue/icon.png:0,0,10,10:3] Habilidad Artífice[/link]
+  = [link=Skills/ArtificerProfessions]Profesiones[/link]
+ 
+> [link=Skills/DruidicsSkill][icon=SMAPI/kcc.sns/assets/druidics/druid.png:0,0,16,16] Habilidad Druida[/link]
+  = [link=Skills/DruidicsProfessions]Profesiones[/link]
+ 
+> [link=Skills/BardicsSkill][icon=SMAPI/kcc.sns/assets/bardics/icon.png:0,0,10,10:3] Habilidad Bárdica[/link]
+  = [link=Skills/BardicsProfessions]Profesiones[/link]
+ 
+> [link=Skills/SorcererSkill][icon=SMAPI/kcc.sns/assets/witchcraft/icon.png:0,0,10,10:3] Habilidad Hechicería[/link]
+  = [link=Skills/SorcererProfessions]Profesiones[/link]
+ 
+> [link=Skills/PaladinSkill][icon=SMAPI/kcc.sns/assets/paladin/icon.png:0,0,10,10:3] Habilidad Paladín[/link]
+  = [link=Skills/PaladinProfessions]Profesiones[/link]
+",
+"guidebook.chapter.Mechanics.SMAPIConfigLink.On": "[color=purple][texttooltip=:Abre GMCM para el componente SMAPI de S&S.][action=spacechase0.GenericModConfigMenu_OpenModConfig KCC.SnS]Config de SMAPI[/action][/texttooltip][/color]",
+"guidebook.chapter.Mechanics.SMAPIConfigLink.Off": "Config de SMAPI",
+
+"guidebook.chapter.Mechanics.SpecialOrderBoard": "[center][font=dialogue][offset=0,8]Tabla de pedidos especiales ES[/font][/center]
+ 
+Después de construir el [color=green] Gremio Costero de East Scarp[/color] durante el [link=Chapters/IntroNEA]Capítulo 1[/link], obtendrás la habilidad de aceptar misiones de cazadores de monstruos. Las recompensas suelen incluir oro y libros de habilidades orientados a S&S que otorgan experiencia. Un nuevo libro se añade a la reserva cada vez que desbloqueas una nueva [link=Skills/TableOfContents]habilidad S&S[/link].
+ 
+Lista de libros potenciales
+{{BookTextures}}
+> [itemtooltip=(O)SkillBook_4][icon=TileSheets/Objects_2:96,176,16,16] [color=blue]Trimestral de Combate[/color][/itemtooltip] - Hasta [link=Skills/ArtificerSkill]Artífice[/link] desbloquea
+ 
+Nota:
+Estos libros también se pueden comprar al vendedor de libros de vainilla después de desbloquear la [link=Skills/TableOfContents]habilidad[/link] asociada.
+",
+
+"guidebook.chapter.Mechanics.Shops.BookTextures.Lumina": "> [itemtooltip=(O)DN.SnS_artificerbook][icon=Textures/DN.SnS/SnSBooks:0,0,16,16] [color=blue]Manual del Artífice de Tasha[/color][/itemtooltip] - [link=Skills/ArtificerSkill]Artífice[/link]
+> [itemtooltip=(O)DN.SnS_druidbook][icon=Textures/DN.SnS/SnSBooks:16,0,16,16] [color=blue]Guía de druidas de Halsin[/color][/itemtooltip] - [link=Skills/DruidicsSkill]Druidas[/link]
+> [itemtooltip=(O)DN.SnS_bardbook][icon=Textures/DN.SnS/SnSBooks:32,0,16,16] [color=blue]Cancionero de Volothamp[/color][/itemtooltip] - [link=Skills/BardicsSkill]Bárdicos[/link]
+> [itemtooltip=(O)DN.SnS_sorcerybook][icon=Textures/DN.SnS/SnSBooks:48,0,16,16] [color=blue]Guía de Xanathar para todo[/color][/itemtooltip] - [link=Skills/SorcererSkill]Hechicería[/link]
+> [itemtooltip=(O)DN.SnS_paladinbook][icon=Textures/DN.SnS/SnSBooks:64,0,16,16] [color=blue]Dossier Ravenloft de Valtari[/color][/itemtooltip] - [link=Skills/PaladinSkill]Paladín[/link]",
+"guidebook.chapter.Mechanics.Shops.BookTextures.Daine": "> [itemtooltip=(O)DN.SnS_artificerbook][icon=Textures/DN.SnS/SnSBooks:0,16,16,16] [color=blue]Manual del Artífice de Tasha[/color][/itemtooltip] - [link=Skills/ArtificerSkill]Artífice[/link]
+> [itemtooltip=(O)DN.SnS_druidbook][icon=Textures/DN.SnS/SnSBooks:16,16,16,16] [color=blue]Guía de druidas de Halsin[/color][/itemtooltip] - [link=Skills/DruidicsSkill]Druidas[/link]
+> [itemtooltip=(O)DN.SnS_bardbook][icon=Textures/DN.SnS/SnSBooks:32,16,16,16] [color=blue]Cancionero de Volothamp[/color][/itemtooltip] - [link=Skills/BardicsSkill]Bárdicos[/link]
+> [itemtooltip=(O)DN.SnS_sorcerybook][icon=Textures/DN.SnS/SnSBooks:48,16,16,16] [color=blue]Guía de Xanathar para todo[/color][/itemtooltip] - [link=Skills/SorcererSkill]Hechicería[/link]
+> [itemtooltip=(O)DN.SnS_paladinbook][icon=Textures/DN.SnS/SnSBooks:64,16,16,16] [color=blue]Dossier Ravenloft de Valtari[/color][/itemtooltip] - [link=Skills/PaladinSkill]Paladín[/link]",
+
+"guidebook.chapter.Mechanics.Shops": "[center][font=dialogue][offset=0,8]Tiendas[/font][/center]
+ 
+[font=dialogue]Libro de Pedidos de Mateo[/font]
+- Siempre abierto -
+ 
+Después de construir el [color=green]Gremio costero de East Scarp[/color] para [link=Characters/Mateo]Mateo[/link] en el [link=Chapters/IntroNEA]Capítulo 1[/link], obtienes acceso al Libro de Pedidos de Mateo. Aquí puedes cambiar [itemtooltip=(O)881][icon=maps/springobjects:272,576,16,16]Fragmentos de hueso[/itemtooltip] por varios minerales y artefactos que te puedan faltar para el [color=green] Museo de Pueblo Pelícano[/color].
+ 
+[font=dialogue]Café Melena de León[/font]
+- Abierto de 12 a 20 hrs - 
+ 
+Después de ayudar a [link=Characters/Cirrus]Cirrus[/link] reparar la [color=green]Melena de león[/color] en el [if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.16][link=Chapters/IntroUP]Capítulo 3[/link][/if][else]Capítulo 3[/else], obtienes acceso a la Cafetería Melena de León. En esta tienda puedes comprar varios alimentos exclusivos de Espada y Hechicería, así como varios platos del juego base.
+ 
+Lista de existencias exclusivas de S&S
+> [itemtooltip=(O)DN.SnS_autumnalstew][icon=Textures/DN.SnS/SnSObjects:128,16,16,16] [color=blue]Estofado otoñal[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_salishbourbon][icon=Textures/DN.SnS/SnSObjects:112,16,16,16] [color=blue]Burbón Mar salado[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_dandeliongreens][icon=Textures/DN.SnS/SnSObjects:144,16,16,16] [color=blue]Verduras con diente de león[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_portfiredrakesparkler][icon=Textures/DN.SnS/SnSObjects:0,32,16,16] [color=blue]Espumoso Puerto de fuego Drake[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_zuzustylepizza][icon=Textures/DN.SnS/SnSObjects:96,64,16,16] [color=blue]Pizza al estilo ZuZu[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_zuzustylebagelwithlox][icon=Textures/DN.SnS/SnSObjects:112,64,16,16] [color=blue]Bagel con salmón al estilo ZuZu[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_zuzustylecheesecake][icon=Textures/DN.SnS/SnSObjects:128,64,16,16] [color=blue]Tarta de queso al estilo ZuZu[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_zuzustyleclamchowder][icon=Textures/DN.SnS/SnSObjects:144,64,16,16] [color=blue]Sopa de almejas al estilo ZuZu[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_farafieldsnack][icon=Textures/DN.SnS/SnSObjects:128,176,16,16] [color=blue]Bocadillo Lejano[/color][/itemtooltip] (Recipe)
+ 
+[font=dialogue]Armería Melena de León[/font]
+- Abierto de 12 a 20 hrs -
+ 
+Después de que [link=Characters/Dandelion]Dandelion[/link] regresa en el [if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.14][link=Chapters/IntroTOP]Capítulo 4[/link][/if][else]Capítulo 4[/else], accederás a la Armería de la Melena de León. Aquí puedes comprar varias [link=Mechanics/AlchemyTransmutation]pociones[/link] y armas exclusivas de Espada y Hechicería.
+ 
+Lista única de existencias de S&S
+> [itemtooltip=(O)DN.SnS_verdantpotion][icon=Textures/DN.SnS/SnSObjects:80,80,16,16] [color=blue] Poción Verdant[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_scarletpotion][icon=Textures/DN.SnS/SnSObjects:96,80,16,16] [color=blue] Poción Scarlet[/color][/itemtooltip] 
+> [itemtooltip=(O)DN.SnS_heatherpotion][icon=Textures/DN.SnS/SnSObjects:112,80,16,16] [color=blue] Poción Heather[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_zydratepotion][icon=Textures/DN.SnS/SnSObjects:128,80,16,16] [color=blue] Poción Zydrate[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_pistachiopotion][icon=Textures/DN.SnS/SnSObjects:144,80,16,16] [color=blue] Poción de Pistacho[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_dahliapotion][icon=Textures/DN.SnS/SnSObjects:0,96,16,16] [color=blue] Poción Dahlia[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_slushiepotion][icon=Textures/DN.SnS/SnSObjects:16,96,16,16] [color=blue] Poción Granizada[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_matrixpotion][icon=Textures/DN.SnS/SnSObjects:32,96,16,16] [color=blue] Poción Matrix[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_mcdougalpotion][icon=Textures/DN.SnS/SnSObjects:48,96,16,16] [color=blue] Poción McDougal[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_toirneachpotion][icon=Textures/DN.SnS/SnSObjects:64,96,16,16] [color=blue] Poción Toirneach[/color][/itemtooltip]
+> [itemtooltip=(W)DN.SnS_keytoscarp][icon=Textures/DN.SnS/SnSObjects:16,32,16,16] [color=blue] Llave a la escarpa[/color][/itemtooltip] 
+> [itemtooltip=(W)DN.SnS_savethequeen][icon=Textures/DN.SnS/SnSObjects:48,32,16,16] [color=blue] Salven a la Reina[/color][/itemtooltip] 
+> [itemtooltip=(W)DN.SnS_savetheking][icon=Textures/DN.SnS/SnSObjects:80,32,16,16] [color=blue] Salven al Rey[/color][/itemtooltip] 
+> [itemtooltip=(W)DN.SnS_twobecomeone][icon=Textures/DN.SnS/SnSObjects:32,32,16,16] [color=blue] Dos se convierten en uno[/color][/itemtooltip]
+> [itemtooltip=(W)DN.SnS_oathkeeper][icon=Textures/DN.SnS/SnSObjects:64,32,16,16] [color=blue] Guardián del juramento[/color][/itemtooltip] 
+> [itemtooltip=(W)DN.SnS_waytothedawn][icon=Textures/DN.SnS/SnSObjects:96,32,16,16] [color=blue] Camino al Amanecer[/color][/itemtooltip]
+> [itemtooltip=(W)DN.SnS_spellbinder][icon=Textures/DN.SnS/SnSObjects:80,96,16,16] [color=blue] Vinculador de hechizos[/color][/itemtooltip] 
+> [itemtooltip=(W)DN.SnS_threewishes][icon=Textures/DN.SnS/SnSObjects:96,96,16,16] [color=blue] Tres deseos[/color][/itemtooltip] 
+> [itemtooltip=(W)DN.SnS_ladyluck][icon=Textures/DN.SnS/SnSObjects:112,96,16,16] [color=blue] Dama de la suerte[/color][/itemtooltip]
+> [itemtooltip=(W)DN.SnS_bondofflame][icon=Textures/DN.SnS/SnSObjects:144,96,16,16] [color=blue] Vínculo de Fuego[/color][/itemtooltip]
+> [itemtooltip=(W)DN.SnS_destinysembrace][icon=Textures/DN.SnS/SnSObjects:0,112,16,16] [color=blue] Abrazo del destino[/color][/itemtooltip]
+> [itemtooltip=(W)DN.SnS_sweetmemories][icon=Textures/DN.SnS/SnSObjects:16,112,16,16] [color=blue] Dulces recuerdos[/color][/itemtooltip]
+> [itemtooltip=(W)DN.SnS_guardianbell][icon=Textures/DN.SnS/SnSObjects:48,112,16,16] [color=blue] Campana Guardiana[/color][/itemtooltip]
+> [itemtooltip=(W)DN.SnS_axewaquestion][icon=Textures/DN.SnS/SnSObjects:32,112,16,16] [color=blue] Hacha una pregunta[/color][/itemtooltip]
+> [itemtooltip=(W)DN.SnS_mallymkun][icon=Textures/DN.SnS/SnSObjects:80,112,16,16] [color=blue] Mallymkun[/color][/itemtooltip]
+> [itemtooltip=(W)DN.SnS_absolem][icon=Textures/DN.SnS/SnSObjects:64,112,16,16] [color=blue] Absolem[/color][/itemtooltip]
+> [itemtooltip=(W)DN.SnS_mrhandy][icon=Textures/DN.SnS/SnSObjects:128,96,16,16] [color=blue] Sr. Hábil[/color][/itemtooltip]
+> [itemtooltip=(W)DN.SnS_eldadagordagger][icon=Textures/DN.SnS/SnSObjects:64,48,16,16] [color=blue] Daga Eldadagor[/color][/itemtooltip]
+> [itemtooltip=(W)DN.SnS_glaewndilsword][icon=Textures/DN.SnS/SnSObjects:80,48,16,16] [color=blue] Espada Glaewndil[/color][/itemtooltip]
+> [itemtooltip=(W)DN.SnS_thondrondhammer][icon=Textures/DN.SnS/SnSObjects:96,48,16,16] [color=blue] Martillo Thondrond[/color][/itemtooltip]
+> [itemtooltip=(W)DN.SnS_StygiumBlade][icon=Textures/DN.SnS/StygiumTools:0,0,16,16] [color=blue] Espada de Estigio[/color][/itemtooltip]
+> [itemtooltip=(W)DN.SnS_ElysiumBlade][icon=Textures/DN.SnS/BlessedTools:0,0,16,16] [color=blue] Espada de Elisio[/color][/itemtooltip] (Receta)
+> [itemtooltip=(O)DN.SnS_mushroomtreeseed][icon=Textures/DN.SnS/SnSObjects:64,176,16,16] [color=blue] Semilla de árbol de Seta contaminada[/color][/itemtooltip] (Receta)",
+
+"guidebook.chapter.Mechanics.AdventureBar": "[center][font=dialogue][offset=0,8]Barra de aventuras[/font][/center]
+ 
+Tras obtener el [link=Skills/ArtificerProfessions]Paso de las sombras[/link] o [link=Skills/DruidicsSkill]Cambio de forma[/link], desbloquearás la [color=Navy]Barra de aventuras[/color], que aloja tus habilidades y muestra tu [color=Navy]Éter[/color].
+ 
+Puedes cambiar las habilidades que tienes equipadas mediante el [color=Navy]Menú de la barra de aventuras[/color]. Desbloquearás diferentes habilidades a lo largo de la historia de Espada y Hechicería.
+ 
+[font=dialogue]Uso de la barra de aventura[/font]
+> Utiliza las habilidades de la Barra de Aventuras con la combinación de teclas [color=Navy]CTRL/SHIFT + Barra de Números[color].
+> Accede al menú de la barra de aventuras pulsando [color=Navy]U[/color]. 
+  = Cuando se utilizas un controlador el mod  [link=https://www.nexusmods.com/stardewvalley/mods/25257]Menú radial[/link] es muy recomendable. 
+> También puedes ocultar la Barra de Aventura pulsando [color=Navy]CTRL + U[/color]. 
+  = No puedes usar habilidades mientras la Barra de Aventura esté oculta.
+ 
+Todas las combinaciones de teclas pueden modificarse mediante la {{Config}}. Adicionalmente, también puedes configurar los colores de la barra Éter.",
+"guidebook.chapter.Mechanics.EquipmentSlots": "
+[center][font=dialogue][offset=0,8]Ranuras para equipos[/font]
+[offset=0,8][image=spacechase0.SpaceCore/ExtraEquipmentIcon][/center] 
+[offset=0,-20]Espada y Hechicería usa el [color=Navy]Menú de equipamiento[/color] de SpaceCore con el fin de añadir dos nuevas ranuras de equipo para tu uso:
+> La [icon=Textures/DN.SnS/SnSArsenal:0,112,16,16] [color=blue]Ranura de armadura[/color]
+> La [icon=Textures/DN.SnS/SnSObjects:80,64,16,16] [color=blue]Ranura auxiliar[/color]
+  = Pequeña nota: En el momento de escribir esto, no debes estar sujetando tu armadura o arma de mano cuando abras el menú. Esta es una limitación del menú de equipamiento de SpaceCore.
+ [offset=0,16]
+[font=dialogue]Ranura de armadura[/font] [offset=0,-36][image=DN.SnS/ArmorSlot]
+[offset=0,4]Puedes equipar una [link=Mechanics/ShieldsArmor]Armadura[/link] en la ranura de armadura para obtener un potenciador de protección mediante [link=Mechanics/ShieldsArmor]Puntos de armadura[/link].
+ [offset=0,16]
+[font=dialogue]Ranura auxiliar[/font] [offset=0,-36][image=DN.SnS/OffhandSlot]
+[offset=0,4]Puedes equipar [color=Navy]Armas[/color], incluyendo [link=Mechanics/ShieldsArmor]Escudos[/link], en la ranura auxiliar, lo que te permite [link=Mechanics/DualWielding]Doble empuñadura[/link] de armas.
+",
+"guidebook.chapter.Mechanics.ShieldsArmor": "[center][font=dialogue][offset=0,8]Armaduras y escudos[/font][/center]
+ 
+[font=dialogue]Puntos de armadura[/font]
+Los puntos de armadura actúan como un amortiguador extra que absorbe el daño antes de que pierdas salud de tu barra de salud. Los puntos de armadura proceden de la [color=Navy]Armadura[/color] y los [color=Navy]Escudos[/color]. Se repone automáticamente al principio de cada día.
+ 
+[font=dialogue]Armadura[/font]
+Tras alcanzar [link=Skills/ArtificerSkill]Artífice[/link] nivel 1, puedes fabricar armaduras para la [color=Navy]Ranura de armadura[/color] en tu [link=Mechanics/EquipmentSlots]Menú de equipamiento[/link]. La armadura es el principal método para ganar puntos de armadura.
+ 
+> Todas las armaduras
+  = [itemtooltip=(O)DN.SnS_ClothArmor][icon=Textures/DN.SnS/SnSArsenal:32,48,16,16] [color=blue]Armadura de tela[/color][/itemtooltip] +25 Puntos de armadura
+  = [itemtooltip=(O)DN.SnS_CopperArmor][icon=Textures/DN.SnS/SnSArsenal:48,48,16,16] [color=blue]Armadura de cobre[/color][/itemtooltip] +50 Puntos de armadura
+  = [itemtooltip=(O)DN.SnS_IronArmor][icon=Textures/DN.SnS/SnSArsenal:64,48,16,16] [color=blue]Armadura de hierro[/color][/itemtooltip] +75 Puntos de armadura
+  = [itemtooltip=(O)DN.SnS_GoldArmor][icon=Textures/DN.SnS/SnSArsenal:80,48,16,16] [color=blue]Armadura de oro[/color][/itemtooltip] +100 Puntos de armadura
+  = [itemtooltip=(O)DN.SnS_IridiumArmor][icon=Textures/DN.SnS/SnSArsenal:96,48,16,16] [color=blue]Armadura de iridio[/color][/itemtooltip] +125 Puntos de armadura
+  = [itemtooltip=(O)DN.SnS_RadioactiveArmor][icon=Textures/DN.SnS/SnSArsenal:0,64,16,16] [color=blue]Armadura radiactiva[/color][/itemtooltip] +150 Puntos de armadura
+  = [itemtooltip=(O)DN.SnS_StygiumArmor][icon=Textures/DN.SnS/SnSArsenal:0,112,16,16] [color=blue]Armadura de Estigio[/color][/itemtooltip] +175 Puntos de armadura
+  = [itemtooltip=(O)DN.SnS_ElysiumArmor][icon=Textures/DN.SnS/SnSArsenal:16,112,16,16] [color=blue]Armadura de Elisio[/color][/itemtooltip] +200 Puntos de armadura
+ 
+[font=dialogue]Escudos[/font]
+Los escudos son un nuevo tipo de arma a disposición del jugador. Pueden usarse como arma cuerpo a cuerpo para golpear directamente a los enemigos, o ser lanzados usando el botón derecho del ratón (o el equivalente en el mando) para golpear a un enemigo e infligirle daño al impactar. Además, proporcionan puntos de armadura para absorber el daño y pueden equiparse en la [color=Navy]Ranura del escudo[/color] en tu [link=Mechanics/EquipmentSlots]Menú de equipamiento[/link].
+ 
+> Escudos normales (siempre disponibles para fabricar.)
+  = [itemtooltip=(W)DN.SnS_WoodenShield][icon=Textures/DN.SnS/SnSObjects:128,192,16,16] [color=blue]Escudo de madera[/color][/itemtooltip] +2 Puntos de armadura
+  = [itemtooltip=(W)DN.SnS_CopperShield][icon=Textures/DN.SnS/SnSObjects:16,192,16,16] [color=blue]Escudo de cobre[/color][/itemtooltip] +5 Puntos de armadura
+  = [itemtooltip=(W)DN.SnS_IronShield][icon=Textures/DN.SnS/SnSObjects:112,160,16,16] [color=blue]Escudo de hierro[/color][/itemtooltip] +10 Puntos de armadura
+  = [itemtooltip=(W)DN.SnS_GoldShield][icon=Textures/DN.SnS/SnSObjects:32,192,16,16] [color=blue]Escudo de oro[/color][/itemtooltip] +15 Puntos de armadura
+  = [itemtooltip=(W)DN.SnS_IridiumShield][icon=Textures/DN.SnS/SnSObjects:48,192,16,16] [color=blue]Escudo de iridio[/color][/itemtooltip] +20 Puntos de armadura
+  = [itemtooltip=(W)DN.SnS_RadioactiveShield][icon=Textures/DN.SnS/SnSObjects:64,192,16,16] [color=blue]Escudo radiactivo[/color][/itemtooltip] +25 Puntos de armadura
+  = [itemtooltip=(W)DN.SnS_StygiumShield][icon=Textures/DN.SnS/SnSObjects:80,192,16,16] [color=blue]Escudo de Estigio[/color][/itemtooltip] +30 Puntos de armadura
+ 
+ > Escudos de habilidad (Disponibles tras la pelea con el [link=DeepDark/Duskspire]Jefe final[/link] y la [link=Skills/PaladinSkill]Habilidad de Paladín[/link].)
+  = [itemtooltip=(W)DN.SnS_PaladinShield][icon=Textures/DN.SnS/SnSObjects:96,16,16,16] [color=blue]Escudo de Paladín[/color][/itemtooltip] +35 Puntos de armadura.
+  = [itemtooltip=(W)DN.SnS_ArtificerShield][icon=Textures/DN.SnS/SnSObjects:48,160,16,16] [color=blue]Escudo de Artífice[/color][/itemtooltip] +35 Puntos de armadura.
+  = [itemtooltip=(W)DN.SnS_DruidShield][icon=Textures/DN.SnS/SnSObjects:64,160,16,16] [color=blue]Escudo de Druida[/color][/itemtooltip] +35 Puntos de armadura. 
+  = [itemtooltip=(W)DN.SnS_BardShield][icon=Textures/DN.SnS/SnSObjects:80,160,16,16] [color=blue]Escudo de Bardo[/color][/itemtooltip] +35 Puntos de armadura.
+  = [itemtooltip=(W)DN.SnS_SorcererShield][icon=Textures/DN.SnS/SnSObjects:96,160,16,16] [color=blue]Escudo de Hechicero[/color][/itemtooltip] +35 Puntos de armadura.
+ 
+Nota: Las recetas de fabricación para [itemtooltip=(W)DN.SnS_StygiumShield][icon=Textures/DN.SnS/SnSObjects:80,192,16,16] [color=blue]Escudo de Estigio[/color][/itemtooltip] y [itemtooltip=(O)DN.SnS_StygiumArmor][icon=Textures/DN.SnS/SnSArsenal:0,112,16,16] [color=blue]Armadura de Estigio[/color] cambiarán para requerir ingredientes de nivel radiactivo si has llegado al fondo de las [color=green]Minas peligrosas[/color].[/itemtooltip]",
+"guidebook.chapter.Mechanics.DualWielding": "[center][font=dialogue][offset=0,8]Doble empuñadura[/font][/center]
+ 
+Espada y Hechicería presenta la [color=Navy]Doble empuñadura[/color], que te permite usar dos armas a la vez. Puedes equipar una segunda arma de doble empuñadura mediante el [link=Mechanics/EquipmentSlots]Menú de equipamiento[/link].
+ 
+> Al blandir dos armas, ambas se blandirán al mismo tiempo e infligirán daño. 
+> La habilidad especial de las armas (p. ej., bloqueo de espada) se activará para ambas armas.
+> Estadísticas del arma como Velocidad, Defensa, Peso, Probabilidad de Crit. y Potencia Crit. serán ignoradas para el arma secundaria. 
+> Los encantamientos de arma también se ignorarán para el arma secundaria.
+",
+"guidebook.chapter.Mechanics.Powers": "[center][font=dialogue][offset=0,8]Poderes[/font][/center]
+ 
+Espada y Hechicería introduce 5 nuevos poderes en el juego. 2 pueden adquirirse en cada partida, mientras que los otros 3 requieren casarse con una de las candidatos románticos del mod.
+ 
+[texttooltip=D20 Hecho a mano:Un regalo de Mateo. Una vez al día, si te desmayas con el D20 en tu poder, revivirás con la mitad de tu salud máxima.][icon=Textures/DN.SnS/SnSObjects:0,80,16,16] [color=blue]D20 Hecho a mano[/color][/texttooltip]
+  = Regalado por Mateo
+ 
+[texttooltip=Grimorio mágico: Solomon lo encuadernó a mano para ti. Úsalo para investigar nuevos hechizos.][icon=Textures/DN.SnS/SnSObjects:128,144,16,16] [color=blue]Grimorio mágico[/color][/texttooltip]
+  = Regalado por Solomon
+ 
+[texttooltip=Colgante de sirena forjado con Estigio:Mateo hizo esto para ti con amor. Añade +2 Radio magnético, +10% Daño, +3 Defensa y +1 Suerte.][icon=Textures/DN.SnS/SnSObjects:112,0,16,16] [color=blue]Colgante de sirena forjado con Estigio[/color][/texttooltip]
+  = Regalado por Mateo después del matrimonio
+ 
+[texttooltip=Fragmento de collar de espinas: El cuerno roto del collar de {{TrueName}}. Irradia poder druídico y duplica la obtención de esencia druídica.][icon=Textures/DN.SnS/SnSObjects:128,0,16,16] [color=blue]Fragmento de collar de espinas[/color][/texttooltip]
+  = Regalado por {{TrueName}} después del matrimonio
+ 
+[texttooltip=Escama de éter: Una reliquia de Cirrus que es cálida al tacto. Otorga +25 de éter, +1 de radio magnético, +3 de defensa y +1 de suerte.][icon=Textures/DN.SnS/SnSObjects:32,80,16,16] [color=blue]Escama de éter[/color][/texttooltip]
+  = Regalada por Cirrus después del matrimonio
+",
+"guidebook.chapter.Mechanics.LLTK": "[center][font=dialogue][offset=0,24]Larga vida al Rey[/font][/center]
+ [offset=48,-32][icon=Textures/DN.SnS/SnSObjects:80,64,16,16:4][offset=348,0][icon=Textures/DN.SnS/SnSObjects:0,144,16,16:4]
+ 
+[offset=0,16]Larga Vida al Rey (LVAR) es una poderosa arma del final del juego añadida por Espada y Hechicería. Puede equipar [link=Mechanics/Keychains]llaveros[/link] y tiene dos formas: forma de [color=Navy]Espada[/color] [icon=Textures/DN.SnS/SnSObjects:80,64,16,16] y forma de [color=Navy]Pistola[/color] [icon=Textures/DN.SnS/SnSObjects:0,144,16,16]. En la forma de pistola se utilizan [color=Navy]Balas[/color] como munición. Puedes cambiar la forma de una de estas tres maneras:
+ 
+> Utilizando la habilidad de [color=blue]Intercambio LVAR[/color] en tu [link=Mechanics/AdventureBar]Barra de aventuras[/link].
+> [color=blue]Intercambiar al hacer clic con el botón derecho[/color], que está desactivado por defecto. Puedes activarlo en la {{config}}.
+  = Si activas Intercambiar al hacer clic con el botón derecho, no podrás activar la habilidad de bloqueo de la forma de espada.
+> [color=blue]Pulsando una combinación de teclas[/color]. Por defecto no hay combinación de teclas, hay que configurarlo manualmente en la {{config}}.
+ 
+[font=dialogue]Obtener el LVAR[/font]
+La obtención del LVAR desbloquea automáticamente también las recetas para municiones. Los requisitos para adquirir el LVAR dependen de tu {{Config}}. Existen 3 dificultades:
+ 
+> [color=ForestGreen]Fácil[/color]
+  = Requiere todas las [color=Navy]4 Velas[/color] durante la (Re)Evaluación del Abuelo en el año 3+.
+ 
+> [color=SaddleBrown]Medio[/color]
+  = Requiere todas las [color=Navy]4 Velas[/color] durante la (Re)Evaluación del Abuelo en el año 3+.
+  = Adquiriendo la [color=Navy]Espada infinita[/color].
+ 
+> [color=Maroon]Difícil[/color]
+  = Requiere todas las [color=Navy]4 Velas[/color] durante la (Re)Evaluación del Abuelo en el año 3+.
+  = Adquiriendo la [color=Navy]Espada infinita[/color].
+  = Por lo menos [color=Navy]50% de Perfección[/color].",
+
+"guidebook.chapter.Mechanics.Keychains": "[center][font=dialogue][offset=0,8]Llaveros LVAR[/font][/center]
+ 
+El LVAR tiene una ranura especial para [color=Navy]Llaveros[/color]. Los llaveros son un accesorio para el [itemtooltip=(W)DN.SnS_longlivetheking][icon=Textures/DN.SnS/SnSObjects:80,64,16,16]Larga vida al Rey[/itemtooltip] que proporcionan mejoras al jugador cuando está equipado.
+ 
+Espada y Hechicería añade 1 llavero, [itemtooltip=(O)DN.SnS_destykeychain][icon=Textures/DN.SnS/SnSObjects:16,160,16,16] [color=Blue]Llavero de Stiles[/color][/itemtooltip], por defecto.
+ 
+[font=dialogue]Compatibilidad con Trinket Tinker[/font]
+Si [link=https://www.nexusmods.com/stardewvalley/mods/29073]Trinket Tinker[/link] está instalado, se añaden 3 llaveros adicionales que generan compañeros. [itemtooltip=(TR)DN.SnS_OwlBoyKeychain][icon=Textures/DN.SnS/SnSObjects:16,160,16,16] [color=Blue]Llavero de Stiles[/color] también gana un compañero. 
+ 
+Cada nuevo llavero tiene un 10% de posibilidades de aparecer en el correo después de ver el evento de 10C del PNJ indicado y obtener el LVAR.
+ 
+> Llaveros TT adicionales:
+  = [itemtooltip=(TR)DN.SnS_EmeritusKeychain][icon=Textures/DN.SnS/SnSObjects:0,208,16,16] [color=Blue]Llavero de Emeritus[/color][/itemtooltip] - Mateo
+  = [itemtooltip=(TR)DN.SnS_HectorWolfKeychain][icon=Textures/DN.SnS/SnSObjects:32,208,16,16] [color=Blue]Llavero de {{TrueName}} Lobo[/color][/itemtooltip] - {{TrueName}}
+  = [itemtooltip=(TR)DN.SnS_BookKeychain][icon=Textures/DN.SnS/SnSObjects:16,208,16,16] [color=Blue]Llavero de Libro[/color][/itemtooltip] - Cirrus
+  
+ [font=dialogue]Compatibilidad con complementos[/font]
+Otros mods también pueden añadir fácilmente llaveros con efectos únicos a la navaja.
+  
+ > Llaveros complementarios adicionales:
+  = [texttooltip=Llavero conmemorativo de la familia Oso:Un llavero de recuerdo que los Osos recogieron para ti en sus últimas vacaciones familiares.
+Lleva tu nombre grabado en la parte trasera en tu color favorito. 
+ 
+Efecto: +2 Def, Regeneración +3 Salud/Resistencia cada segundo
+ 
+Adquisición: Recibir la carta final de la Fam Oso, tener el LVAR.][icon=Mods/Sword & Sorcery/BearFamKeychain:0,0,16,16] [color=blue]Llavero conmemorativo FO[/texttooltip][/color] - [link=https://www.nexusmods.com/stardewvalley/mods/16197]Fam Oso[/link]",
+
+"guidebook.chapter.Mechanics.GingerBeer": "[center][font=dialogue][offset=0,8]Fermentación de la cerveza de jengibre[/font][/center][image=Textures/DN.SnS/SnSMachines:0,0,16,32:3]Puedes elaborar [itemtooltip=(BC)DN.SnS_oldfashionedfermenter] [color=blue]Fermentadores a la antigua[/color][/itemtooltip] después de aprender de Cirrus en el [if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.14][link=Chapters/IntroTOP]Capítulo 4[/link][/if][else]Capítulo 4[/else]. Añade jengibre y fruta para hacer Cerveza de Jengibre aromatizada, que puede envejecerse.
+ 
+Lista de cervezas de jengibre:
+> [itemtooltip=(O)DN.SnS_orangegingerbeer][icon=Textures/DN.SnS/SnSObjects:96,112,16,16] [color=blue]Cerveza de jengibre con sabor a naranja[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_blueberrygingerbeer][icon=Textures/DN.SnS/SnSObjects:112,112,16,16] [color=blue]Cerveza de jengibre con sabor a arándano[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_pineapplegingerbeer][icon=Textures/DN.SnS/SnSObjects:128,112,16,16] [color=blue]Cerveza de jengibre con sabor a piña[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_rhubarbgingerbeer][icon=Textures/DN.SnS/SnSObjects:144,112,16,16] [color=blue]Cerveza de jengibre con sabor a ruibarbo[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_strawberrygingerbeer][icon=Textures/DN.SnS/SnSObjects:0,128,16,16] [color=blue]Cerveza de jengibre con sabor a fresa[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_peachgingerbeer][icon=Textures/DN.SnS/SnSObjects:16,128,16,16] [color=blue]Cerveza de jengibre con sabor a melocotón[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_ancientfruitgingerbeer][icon=Textures/DN.SnS/SnSObjects:32,128,16,16] [color=blue]Cerveza de jengibre con sabor a fruta milenaria[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_ancienthuckleberrygingerbeer][icon=Textures/DN.SnS/SnSObjects:32,128,16,16] [color=blue]Cerveza de jengibre con sabor a arándano rojo milenario[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_ancientappleberrygingerbeer][icon=Textures/DN.SnS/SnSObjects:32,128,16,16] [color=blue]Cerveza de jengibre con sabor a baya de manzana milenaria[/color][/itemtooltip]
+> [itemtooltip=(O)DN.SnS_ancientelderberrygingerbeer][icon=Textures/DN.SnS/SnSObjects:32,128,16,16] [color=blue]Antigua cerveza de jengibre con sabor a saúco[/color][/itemtooltip]
+",
+
+//Conditional Event Extras
+"guidebook.chapter.MateoTrollHeritage.1.true": " 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.1]
+[font=dialogue]Mateo y Eyvinder: Parte 1 (Extra)[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Eyvinder]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Eyvinder 1250]Pista: Visita las [color=green]Montañas Profundas[/color] entre las 8 y las 16 hrs con tiempo soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Eyvinder 1250]Requisito: 5 Corazones con [color=red]Eyvinder[/color][/if]
+[/else]
+[/else]
+[/if]
+ ",
+"guidebook.chapter.MateoTrollHeritage.1.false": " 
+[font=dialogue]Mateo y Eyvinder: Parte 1 (Extra)[/font]
+La herencia gnomo de Mateo no está habilitada. Evento omitido.
+ ",
+
+"guidebook.chapter.MateoTrollHeritage.2.true": " 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Cirrus.1]
+[font=dialogue]Mateo y Eyvinder: Parte 2 (Extra)[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Eyvinder]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Eyvinder 1750]Pista: Visita las [color=green]Montañas Profundas[/color] entre las 8 y las 16 hrs con tiempo soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Eyvinder 1750]Requisito: 7 Corazones con [color=red]Eyvinder[/color][/if]
+[/else]
+[/else]
+[/if]
+ ",
+ 
+"guidebook.chapter.MateoTrollHeritage.2.false": " 
+[font=dialogue]Mateo y Eyvinder: Parte 2 (Extra)[/font]
+La herencia gnomo de Mateo no está habilitada. Evento omitido.
+ ",
+ 
+"guidebook.chapter.MateoTrollHeritage.3.true": "
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Roslin.1]
+[font=dialogue]Mateo y Eyvinder: Parte 3(Extra) [/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Eyvinder]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Eyvinder 2000]Pista: Visita las [color=green]Montañas Profundas[/color] entre las 8 y las 16 hrs con tiempo soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Eyvinder 2000]Requisito: 10 Corazones con [color=red]Eyvinder[/color][/if]
+[/else]
+[/else]
+[/if]
+ ",
+ 
+"guidebook.chapter.MateoTrollHeritage.3.false": "
+[font=dialogue]Mateo y Eyvinder: Parte 3[/font]
+La herencia gnomo de Mateo no está habilitada. Evento omitido.
+ ",
+
+"guidebook.chapter.CirrusExtras.true": " 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.10]
+[font=dialogue]Cirrus: Para Mujeres y Ellos[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.18]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 1750]Pista: Visita [color=green]East Scarp[/color] entre las 6 y las 18 hrs con tiempo soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 1750]Requisito: 7 Corazones con [color=red]Eyvinder[/color][/if]
+[/else]
+[/else]
+[/if]
+ ",
+ 
+"guidebook.chapter.CirrusExtras.false": " 
+[font=dialogue]Cirrus: Para Mujeres y Ellos (Extra)[/font]
+Jugador no es mujer/Mod de Neutralidad de Género no está instalado. Evento omitido.
+ ",
+
+"guidebook.chapter.GalaxySwordExtras.true": " 
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.12]
+[font=dialogue]Mateo y la esquirla prismática (Extra)[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.13]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Mateo 2000]Pista: Visita el [color=green]Gremio Costero de East Scarp[/color] entre las 8 y las 22 hrs.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Mateo 2000]Requisito: 10 Corazones con [color=red]Mateo[/color][/if]
+[/else]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current CGuildComplete]Requisito: Espera un día después del evento anterior.[/if]
+[/else]
+[/if]
+ ",
+ 
+"guidebook.chapter.GalaxySwordExtras.false": " 
+[font=dialogue]Mateo y la esquirla prismática (Extra)[/font]
+Solo se ejecuta si no tienes una Espada Galaxia y has desbloqueado el Desierto. Evento omitido.
+",
+
+"guidebook.chapter.Characters.TableOfContents": "[center][font=dialogue][offset=0,8]Introducción[/font][/center]
+ 
+Conoce a todos los personajes del mod, desde los más importantes hasta los más pequeños. Mira su cara, conoce su nombre y familiarízate con ellos.
+ 
+[font=dialogue]Índice[/font]
+> [link=Characters/Mateo][icon=Characters/Mateo:0,0,16,16] Mateo, El Artífice[/link]
+> [link=Characters/Emeritus][icon=Characters/MateoEmeritus:96,192,16,16] Emeritus, El Pimienta Rex[/link]
+> [link=Characters/Hector][icon=Characters/Hector:0,0,16,16] {{TrueName}}, El Druida[/link]
+> [link=Characters/Book][icon=Characters/HectorBook:7,3,16,20] Libro, La dríada[/link]
+> [link=Characters/Cirrus][icon=Characters/Cirrus:0,3,16,16] Cirrus, La Barda[/link]
+> [link=Characters/Roslin][icon=Characters/Roslin:0,3,16,16] Roslin, La Hechicera[/link]
+> [link=Characters/Solomon][icon=Characters/Solomon:0,3,16,16] Solomon, El Mecenas[/link]
+> [link=Characters/Dandelion][icon=Characters/Dandelion:0,0,16,16] Dandelion, La Paladín[/link]
+",
+
+"guidebook.chapter.Mechanics.TeleportCircle": "[center][font=dialogue][offset=0,8]Círculo de teletransporte[/font][/center]
+ 
+El Círculo de Teletransporte se desbloquea al alcanzar la [link=Skills/SorcererSkill]Habilidad de Hechicería[/link] nivel 4, permitiéndote teletransportarte a un Círculo de Teletransporte coincidente.
+ 
+Para utilizar el Círculo de Teletransporte, coloca 4 o más mesas de cualquier tipo en un área de 5x5 a su alrededor y pon un objeto en cada mesa. Los Círculos de Teletransporte coincidentes se enlazarán, permitiéndote teletransportarte entre ellos.
+[offset=0,32][image=Textures/DN.SnS/TeleportationCircle:null:1]
+Usar el Círculo de Teletransporte consume [link=Mechanics/ElementalEssences]Esencias Elementales[/link], usando 4 esencias elementales en cada uso. Las esencias pueden estar en tu inventario o en un cofre situado en un área de 5x5 del Círculo de Teletransporte.
+La profesión [link=Skills/SorcererProfessions]Maestro Alcaestrista[/link] elimina el requisito de la Esencia.
+",
+
+"guidebook.chapter.Mechanics.RemoteSpells": "[center][font=dialogue][offset=0,8]Hechizos a distancia[/font][/center]
+ 
+Los Hechizos a Distancia te permiten acceder a ciertos Menús de S&S a través de un hechizo en lugar de ir físicamente al lugar donde normalmente accederías a ellos. Lanzar hechizos a distancia cuesta 0 de éter.
+ 
+> [icon=SMAPI/kcc.sns/assets/spells.png:16,0,16,16] [color=purple]Manual a distancia[/color]
+  = Abre el manual del jugador de S&S. 
+  = Desbloqueado por defecto.
+ 
+> [icon=SMAPI/kcc.sns/assets/witchcraft/stuff.png:0,0,16,16] [color=purple]Alquimia a distancia[/color]
+  = Abre el Menú de Alquimia y Transmutación.
+  = Desbloqueado con la [link=Skills/SorcererSkill]Habilidad Hechicería[/link].
+ 
+> [icon=Textures/DN.SnS/SnSObjects:16,32,16,16] [color=purple]Forja subterránea a distancia[/color]
+  = Abre el menú Forja subterránea.
+  = Desbloqueado con la [link=Mechanics/Underforge]Forja subterránea.[/link]
+ 
+> [icon=Textures/DN.SnS/SnSObjects:96,16,16,16] [color=purple]Sellos del Escudo a distancia[/color]
+  = Abre el menú del Sellos del Escudo.
+  = Desbloqueado con la [link=Skills/PaladinSkill]Habilidad Paladín[/link]
+"
+}

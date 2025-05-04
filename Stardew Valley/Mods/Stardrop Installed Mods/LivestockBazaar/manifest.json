@@ -1,0 +1,32 @@
+{
+  /*
+   | This file is automatically updated by ModManifestBuilder
+   | when the project is compiled.
+   | 
+   | Changes made to this file may be overwritten.
+   | 
+   */
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  "UniqueID": "mushymato.LivestockBazaar",
+  "Name": "Livestock Bazaar",
+  "Author": "mushymato",
+  "Version": "1.2.1",
+  "Description": "Allow custom animal sellers, revamp animal shop UI.",
+  "MinimumApiVersion": "4.2.1",
+  "MinimumGameVersion": "1.6.15",
+  "EntryDll": "LivestockBazaar.dll",
+  "Dependencies": [
+    {
+      "UniqueID": "focustense.StardewUI",
+      "MinimumVersion": "0.6.1"
+    },
+    {
+      "UniqueID": "spacechase0.GenericModConfigMenu",
+      "MinimumVersion": "1.14.1",
+      "IsRequired": false
+    }
+  ],
+  "UpdateKeys": [
+    "Nexus:29997"
+  ]
+}

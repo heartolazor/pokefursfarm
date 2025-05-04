@@ -1,0 +1,104 @@
+{
+    "Format":"2.0.0",
+
+    "Changes": [
+	
+	  {
+        "LogName":"NPC Joltik",
+        "Action":"Include",
+        "FromFile":"assets/NPCData.json"
+	  },
+	  {
+        "LogName":"Pet Joltik",
+        "Action":"Include",
+        "FromFile":"assets/PetData.json",
+        "When": {
+"HasSeenEvent |contains=CP.SubmasPetDemo.PetJoltikAdopt": true
+  }
+},
+      {
+        "Action": "Load",
+        "Target": "Pets/SubmasDemoAdoptablePetJoltik",
+        "FromFile": "assets/PetJoltik.png"
+      },
+      {
+        "Action": "Load",
+        "Target": "Pets/SubmasDemoAdoptablePetJoltikIcon",
+        "FromFile": "assets/JoltikIcon.png"
+      },
+
+// Adoptable Joltik Bonus Update 1
+{
+    "Action": "EditData",
+    "Target": "Data/Events/Backwoods",
+    "Entries": {
+		"Submas.SubwayToStardew.AdoptableJoltik1/e CP.SubmasPetDemo.PetJoltikAdopt/t 600 1000/w sunny/f SubmasDemoAdoptableJoltik 2000": "continue/16 31/farmer 14 37 0 AdoptableJoltikEmmet 19 31 3/addConversationTopic AdoptableJoltikEvent1/skippable/ignoreCollisions AdoptableJoltikEmmet/move farmer 0 -6 1/emote farmer 8/emote AdoptableJoltikEmmet 16 true/jump AdoptableJoltikEmmet/move AdoptableJoltikEmmet 1 0 3/pause 100/showFrame AdoptableJoltikEmmet 38/emote farmer 40/pause 500/emote AdoptableJoltikEmmet 28/move farmer 0 -8 0 true/pause 1000/globalFade/viewport 1000 1000/stopMusic/end"
+}
+}, 
+
+// Adoptable Joltik Bonus Update 2
+{
+    "Action": "EditData",
+    "Target": "Data/Events/Backwoods",
+    "Entries": {
+		"Submas.SubwayToStardew.AdoptableJoltik2/e Submas.SubwayToStardew.AdoptableJoltik1/A AdoptableJoltikEvent1/t 600 1000/w sunny/f SubmasDemoAdoptableJoltik 2000": "continue/17 23/farmer -100 -100 0 AdoptableJoltikEmmet 19 20 3/addConversationTopic AdoptableJoltikEvent2/skippable/ignoreCollisions AdoptableJoltikEmmet/move AdoptableJoltikEmmet -4 0 2/warp farmer 14 31/emote AdoptableJoltikEmmet 16/jump AdoptableJoltikEmmet/showFrame AdoptableJoltikEmmet 36/speed AdoptableJoltikEmmet 7/move AdoptableJoltikEmmet 5 0 2/speed AdoptableJoltikEmmet 7/jump AdoptableJoltikEmmet/move AdoptableJoltikEmmet 0 3 3/showFrame AdoptableJoltikEmmet 38/positionOffset AdoptableJoltikEmmet 20 0/move farmer 0 -8 1/shake AdoptableJoltikEmmet 3000/emote farmer 8/pause 500/emote farmer 40/move farmer 0 -8 1 true/pause 1000/globalFade/viewport 1000 1000/stopMusic/end"
+}
+}, 
+
+
+// Adoptable Joltik Bonus Update 3
+{
+    "Action": "EditData",
+    "Target": "Data/Events/Backwoods",
+    "Entries": {
+		"Submas.SubwayToStardew.AdoptableJoltik3/e Submas.SubwayToStardew.AdoptableJoltik2/t 600 1000/A AdoptableJoltikEvent2/w sunny/f SubmasDemoAdoptableJoltik 2000": "continue/26 19/farmer 20 15 1 AdoptableJoltikEmmet 26 19 0/addConversationTopic AdoptableJoltikEvent3/skippable/ignoreCollisions AdoptableJoltikEmmet/move farmer 6 0 2 true/emote AdoptableJoltikEmmet 16/showFrame AdoptableJoltikEmmet 38/positionOffset AdoptableJoltikEmmet 20 0/shake AdoptableJoltikEmmet 3000/pause 2500/emote farmer 40/pause 1500/move farmer 6 0 2 true/pause 1000/globalFade/viewport 1000 1000/stopMusic/end"
+}
+}, 
+
+// Adoptable Joltik Bonus Update 4
+{
+    "Action": "EditData",
+    "Target": "Data/Events/Backwoods",
+    "Entries": {
+		"Submas.SubwayToStardew.AdoptableJoltik4/e Submas.SubwayToStardew.AdoptableJoltik3/t 600 1000/A AdoptableJoltikEvent3/w sunny/f SubmasDemoAdoptableJoltik 2250": "continue/11 26/farmer 13 31 0 AdoptableJoltikEmmet 9 25 3/addConversationTopic AdoptableJoltikEvent4/skippable/ignoreCollisions AdoptableJoltikEmmet/addTemporaryActor AdoptableJoltikGalvantula 33 26 7 23 1 false Character/showFrame AdoptableJoltikEmmet 42/move farmer 0 -5 3/emote farmer 40/showFrame AdoptableJoltikEmmet 39/emote AdoptableJoltikEmmet 16/shake AdoptableJoltikEmmet 3000/pause 1500/speed AdoptableJoltikEmmet 7/speed AdoptableJoltikGalvantula 8/move AdoptableJoltikGalvantula -10 0 1 true/move AdoptableJoltikEmmet -10 0 1 true/pause 2000/move farmer 0 -6 2 true/pause 1000/globalFade/viewport 1000 1000/stopMusic/end"
+}
+}, 
+
+// Adoptable Joltik Bonus Update 5
+{
+    "Action": "EditData",
+    "Target": "Data/Events/Mountain",
+    "Entries": {
+		"Submas.SubwayToStardew.AdoptableJoltik5/e Submas.SubwayToStardew.AdoptableJoltik4/t 600 1000/w sunny/f SubmasDemoAdoptableJoltik 2250": "movieTheater/7 14/farmer 0 12 1 AdoptableJoltikIngo 10 7 2 AdoptableJoltikEmmet -100 -100 1 SubmasDemoAdoptableJoltik -200 -200 1/addConversationTopic AdoptableJoltikEvent5/skippable/addTemporaryActor AdoptableJoltikGalvantula 33 26 -100 -100 1 false Character/changeName AdoptableJoltikEmmet Emmet/changeName AdoptableJoltikIngo Ingo/changeName AdoptableJoltikGalvantula Galvantula/textAboveHead AdoptableJoltikIngo \"Emmet?! EMMET!!!!!\"/speed AdoptableJoltikIngo 5/move AdoptableJoltikIngo 0 5 2/textAboveHead AdoptableJoltikIngo \"Oh dear...\"/move farmer 6 0 1/faceDirection AdoptableJoltikIngo 3/jump AdoptableJoltikIngo/emote AdoptableJoltikIngo 16/pause 500/move AdoptableJoltikIngo -2 0 3/speak AdoptableJoltikIngo \"Ah! Pardon me, but you haven't happened to see my brother around, have you?$3#$b#He's been departing quite early these mornings, and I have reasonable suspicion to assume he was headed in the general direction you have arrived from.\"/question null \"Do you know where Emmet is?#We can go back and check if you want.#Right this way.\"/emote AdoptableJoltikIngo 60/speak AdoptableJoltikIngo \"Ah, bravo! Thank you for your assistance! Very well, lead the way!$12\"/fade/viewport -1000 -1000/changeLocation Backwoods/warp AdoptableJoltikEmmet 20 19/warp SubmasDemoAdoptableJoltik 19 19/warp AdoptableJoltikGalvantula 16 19/showFrame AdoptableJoltikEmmet 40/warp AdoptableJoltikIngo -32 15/warp farmer -33 15/fade/viewport 19 20/pause 1000/playSound SpringBirds/emote SubmasDemoAdoptableJoltik 20/playSound SpringBirds/speak SubmasDemoAdoptableJoltik \"*Squeak squeak* (Living with- mhmp- @- nomn- is the best! I get to eat so many devices and more! Yum!)$1\"/textAboveHead AdoptableJoltikEmmet \"Good for you... Good for you...\"/speak AdoptableJoltikGalvantula \"Don't talk with your mouth full, sweetie.$2\"/warp AdoptableJoltikIngo 29 15/warp farmer 28 15/move farmer -9 0 2 true/speed AdoptableJoltikIngo 6/advancedMove AdoptableJoltikIngo false -9 0 0 2 2 100/textAboveHead AdoptableJoltikIngo \"EMMET!!!!!!!!!\"/jump AdoptableJoltikEmmet 3/emote SubmasDemoAdoptableJoltik 16/showFrame AdoptableJoltikEmmet 8/faceDirection AdoptableJoltikEmmet 0/emote AdoptableJoltikEmmet 28/textAboveHead AdoptableJoltikEmmet \"Ingo...\"/faceDirection AdoptableJoltikGalvantula 0/speak AdoptableJoltikIngo \"Emmet! What are you doing stationed here at this hour?! You're late to our morning safety checks!$11#$b#While I do appreciate you waking early so as to not derail our daily schedule, we still have much work to accomplish at the station!$19\"/emote AdoptableJoltikEmmet 28/textAboveHead AdoptableJoltikEmmet \"I... just... wanted to... check.\"/emote SubmasDemoAdoptableJoltik 20 true/move SubmasDemoAdoptableJoltik 0 -3 0 true/playSound SpringBirds/speak SubmasDemoAdoptableJoltik \"*Squeak!* (@! You're back! Yay yay yay!)\"/textAboveHead AdoptableJoltikIngo \"A-ah...\"/speak AdoptableJoltikIngo \"Emmet... I fear that you are becoming sidetracked with your excursions... You know very well that you can trust @! Rest assured, your little passenger is in good hands.$18\"/showFrame AdoptableJoltikEmmet 17/shake AdoptableJoltikEmmet 3000/speak AdoptableJoltikEmmet \"Ingo. That's the problem. I know that. Too well. They are happy. They moved on. Without me.$7\"/textAboveHead AdoptableJoltikIngo \"Emmet...\"/faceDirection AdoptableJoltikGalvantula 1/move SubmasDemoAdoptableJoltik 0 4 0/move farmer 0 4 1 true/showFrame AdoptableJoltikEmmet 12/faceDirection AdoptableJoltikEmmet 3/speak AdoptableJoltikEmmet \"I am Emmet. I am sorry. You weren't supposed to see me. Like this. I have been meeting with Joltik in secret. For weeks.$8\"/question null \"I'm sorry...#Don't you trust me? Why were you sneaking around my farm?#You know you can just visit, right? You didn't have to hide in the bushes or anything.\"/shake AdoptableJoltikIngo 2500/textAboveHead AdoptableJoltikIngo \"WHAT?! EMMET! YOU SHOULDN'T DO SUCH THINGS!\"/speak AdoptableJoltikEmmet \"Oh. You noticed.$8\"/emote AdoptableJoltikIngo 36 true/emote farmer 40 true/speak AdoptableJoltikEmmet \"I know you can be trusted. I don't want you to think otherwise. You didn't do anything wrong. That's why. You shouldn't have to worry. They are happier with you.$3#$b#But... It's not the same. I can't help but feel that I... I...$7\"/textAboveHead AdoptableJoltikIngo \"Emmet, you're allowing a Joltik to overrun you with jealousy...\"/move SubmasDemoAdoptableJoltik -2 0 0/pause 900/textAboveHead AdoptableJoltikEmmet \"It should be me.\"/faceDirection AdoptableJoltikEmmet 0/pause 1400/textAboveHead AdoptableJoltikIngo \"You have plenty back at home station!\"/playSound SpringBirds/speak SubmasDemoAdoptableJoltik \"*Squeak* (Mama and Emmet missed us! They've been feeding me batteries when you're gone. They say I don't need more. But they say that while they feed me more.)#$b#*Squeak!* (It makes me really happy! @ loves me. Mama loves me. Emmet loves me. I am so full of battery. Yum.)\"/emote farmer 40/question null \"...#I think they're happiest with both of us taking care of them. You can visit all you want.#That doesn't mean you can't check up on us anymore. They're still happy to see you!\"/faceDirection AdoptableJoltikEmmet 3/textAboveHead AdoptableJoltikEmmet \"Is that true...?\"/pause 2500/faceDirection SubmasDemoAdoptableJoltik 1/emote farmer 32 true/emote SubmasDemoAdoptableJoltik 20/textAboveHead AdoptableJoltikIngo \"AHEM!\"/speak AdoptableJoltikIngo \"Pardon me for my intrusion, but we are quite far behind schedule!$18#$b#Seeing as how we have resolved this turbulence on our tracks, we must now make our way back to the station!#$b#Emmet, if you have anything you would like to add, please do so post-haste!$12\"/speak AdoptableJoltikEmmet \"I am Emmet. This is not the end. I will show up here again. Yup. I am going to keep visiting you and Joltik.#$b#I won't hide anymore. Yup. I am Emmet. I will let myself be clingy and overbearing. Nothing will split our tracks. I know that now. Thank you, @.$6\"/emote SubmasDemoAdoptableJoltik 32 true/pause 1000/globalFade/viewport 1000 1000/stopMusic/end"
+}
+},
+
+
+
+// Adoptable Joltik Bonus Update 6
+{
+    "Action": "EditData",
+    "Target": "Data/Events/Backwoods",
+    "Entries": {
+		"Submas.SubwayToStardew.AdoptableJoltik6/e Submas.SubwayToStardew.AdoptableJoltik5/t 600 1000/w sunny/f Joltik 2000": "movieTheater/17 21/farmer 14 24 0 AdoptableJoltikEmmet 17 19 3 SubmasDemoAdoptableJoltik -100 -100 1/addConversationTopic AdoptableJoltikEvent6/skippable/addTemporaryActor AdoptableJoltikGalvantula 33 26 19 19 3 false Character/changeName AdoptableJoltikEmmet Emmet/changeName AdoptableJoltikGalvantula Galvantula/move farmer 0 -5 1 true/pause 1000/speak AdoptableJoltikEmmet \"Hello, @. I want to see our Joltik. Again. I brought batteries for them.[787]\"/showFrame farmer 89/warp SubmasDemoAdoptableJoltik 15 19/emote SubmasDemoAdoptableJoltik 20 true/faceDirection farmer 1/move SubmasDemoAdoptableJoltik 1 0 1/showFrame AdoptableJoltikEmmet 37/speak AdoptableJoltikEmmet \"My cute little traitor. I missed you verrrrry much.$6\"/playSound debuffSpell/showFrame AdoptableJoltikGalvantula 17/shake AdoptableJoltikEmmet 3000/showFrame AdoptableJoltikEmmet 80/textAboveHead AdoptableJoltikEmmet \"Sorry.\"/emote farmer 16/speak AdoptableJoltikGalvantula \"Galvan... tula. (That's my baby. I told you not to call them that.)$4\"/faceDirection AdoptableJoltikGalvantula 3/showFrame AdoptableJoltikEmmet 12/faceDirection AdoptableJoltikEmmet 3/emote AdoptableJoltikGalvantula 36/playSound SpringBirds/speak SubmasDemoAdoptableJoltik \"*Squeak!* (Mama! Mama! Emmet! I missed you, too! I like seeing everyone. It makes me smile! Everyone smile!)$1\"/showFrame AdoptableJoltikEmmet 37/textAboveHead AdoptableJoltikEmmet \"Joltik...\"/pause 2500/emote SubmasDemoAdoptableJoltik 32/emote AdoptableJoltikEmmet 40/speak AdoptableJoltikEmmet \"Oh. I have to depart now.$8#$b#It was nice seeing you, @. I missed you, too. Sorry I didn't say that earlier. I got sidetracked. Now departing. I will see you later.$10\"/advancedMove AdoptableJoltikEmmet false 0 -3 10 0 1 100/advancedMove AdoptableJoltikGalvantula false 0 -3 10 0 1 100/pause 1000/globalFade/viewport 1000 1000/stopMusic/end"
+}
+}, 
+
+// Adoptable Joltik Bonus Update 7
+{
+    "Action": "EditData",
+    "Target": "Data/Events/Backwoods",
+    "Entries": {
+		"Submas.SubwayToStardew.AdoptableJoltik7/e Submas.SubwayToStardew.AdoptableJoltik6/t 600 1000/w sunny/f Joltik 2250": "movieTheater/17 21/farmer 14 24 0 AdoptableJoltikEmmet 19 19 0 SubmasDemoAdoptableJoltik 13 24 1/skippable/addTemporaryActor AdoptableJoltikGalvantula 33 26 19 20 3 false Character/changeName AdoptableJoltikEmmet Emmet/changeName AdoptableJoltikGalvantula Galvantula/move SubmasDemoAdoptableJoltik 0 -4 1 true/move farmer 0 -5 1 true/move AdoptableJoltikEmmet -1 0 3 true/pause 1000/speak AdoptableJoltikEmmet \"My favorite passengers. Right on schedule. It is verrrrrrry nice seeing you two again. Yup. Favorite part of my routine.$20\"/move farmer 2 0 1 true/question null \"I am Emmet. I missed you.#Good morning, Emmet.#Hi, Emmet! Hi, Galvantula!#I missed you, too.\"/emote SubmasDemoAdoptableJoltik 20 true/move SubmasDemoAdoptableJoltik 6 0 1 true/playSound SpringBirds/speak SubmasDemoAdoptableJoltik \"*Squeak* (Emmet! Mama! Did you bring more batteries?)$5\"/speak AdoptableJoltikGalvantula \"Galvan... (Of course we did. You know the routine.)$1\"/move AdoptableJoltikEmmet -1 0 3/speak AdoptableJoltikEmmet \"Mhm. Mm. I am Emmet. What I do. What I say. Always the same. I brought batteries. For our Joltik.[787]$13#$b#For you... I...$9\"/showFrame AdoptableJoltikEmmet 25/positionOffset AdoptableJoltikEmmet -55 7/emote farmer 16/emote AdoptableJoltikEmmet 20/speak AdoptableJoltikGalvantula \"Gal... (Okay...)\"/warp AdoptableJoltikEmmet 17 19/showFrame AdoptableJoltikEmmet 73/textAboveHead AdoptableJoltikEmmet \"Don't derail me.\"/warp AdoptableJoltikGalvantula -100 -100/temporarySprite 20 20 13 10 100 false 1/pause 1500/shake SubmasDemoAdoptableJoltik 3000/playSound SpringBirds/speak SubmasDemoAdoptableJoltik \"*SQUEAK!* (MAMA!)$3\"/showFrame AdoptableJoltikEmmet 27/emote AdoptableJoltikEmmet 40/showFrame AdoptableJoltikEmmet 73/textAboveHead AdoptableJoltikEmmet \"That wasn't nice.\"/temporarySprite 20 20 13 10 100 false 1/pause 1000/warp AdoptableJoltikGalvantula 19 20/pause 500/emote AdoptableJoltikEmmet 40/showFrame AdoptableJoltikEmmet 25/positionOffset AdoptableJoltikEmmet -40 7/showFrame 101/playSound SpringBirds/emote SubmasDemoAdoptableJoltik 32/emote AdoptableJoltikGalvantula 32/playSound SpringBirds/message \"Emmet gives you another hug. You can tell he missed you verrrrrry much.\"/emote AdoptableJoltikEmmet 28/pause 1000/textAboveHead AdoptableJoltikEmmet \"...Least favorite part of my routine.\"/pause 2500/faceDirection farmer 1/warp AdoptableJoltikEmmet 17 19/showFrame AdoptableJoltikEmmet 17/emote AdoptableJoltikEmmet 36/speak AdoptableJoltikEmmet \"Time to depart. I await the next scheduled arrival. @. Joltik. You will be missed. Yup.$18\"/speak SubmasDemoAdoptableJoltik \"*Squeak* (Bye!!!!!!!!!!!!! See you next time!!!!!!!!!!)$1\"/advancedMove AdoptableJoltikEmmet false 0 -3 10 0 1 250/advancedMove AdoptableJoltikGalvantula false 0 -4 10 0 1 100/faceDirection SubmasDemoAdoptableJoltik 0/faceDirection farmer 0/pause 1500/globalFade/viewport 1000 1000/stopMusic/end"
+}
+}, 
+   {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "CP.SubmasPetDemo.PetJoltikAdopt/w sunny/f SubmasDemoAdoptableJoltik 2000": "movieTheater/64 15/farmer 64 15 2 AdoptableJoltikEmmet 65 16 0 SubmasDemoAdoptableJoltik 65 16 0/skippable/changeName AdoptableJoltikEmmet Emmet/addTemporaryActor AdoptableJoltikGalvantula 33 26 63 18 0 false Character/move SubmasDemoAdoptableJoltik -1 0 0 true/pause 1000/viewport 64 15/playSound SpringBirds/jump SubmasDemoAdoptableJoltik/speak SubmasDemoAdoptableJoltik \"*Squeak squeak!* (@!!! Hiiiii hiiiiiiii!!! I have arrived! I'm yours now!)$5\"/emote SubmasDemoAdoptableJoltik 20/speak AdoptableJoltikEmmet \"Hello, @. Joltik likes you verrrrry much. They want to stay with you. You will adopt them. Yup.#$b#You got Galvantula's approval. I filled out the paperwork. The Joltiks are all legally documented now. Don't worry about it.$6\"/faceDirection AdoptableJoltikEmmet 3/faceDirection SubmasDemoAdoptableJoltik 1/speak AdoptableJoltikEmmet \"But you should still get a license at Marnie's station. I cannot file that part for you. Joltik knows to hide just in case. They're verrrry good at it.$8\"/emote SubmasDemoAdoptableJoltik 16/speak SubmasDemoAdoptableJoltik \"*Squeak* (But don't make me wait too long. Okay? I want to play with you! More than hide 'n seek!)$3\"/speak AdoptableJoltikEmmet \"Do not let our little Joltik be taken away by the Ferngill Republic's Department of Agriculture. Or make them sad.$11#$b#I am going to give you the necessary materials to get a Pokémon handling permit. You best conduct that procedure. I'm trusting you.$16\"/emote farmer 28 true/money 1000000/message \"You received $1000000 from Emmet.\"/speak AdoptableJoltikEmmet \"Now departing. Take verrrry good care of our little Joltik! You have to. I will make sure of that. I will see you later...$10\"/emote AdoptableJoltikEmmet 28 true/faceDirection SubmasDemoAdoptableJoltik 0/speak SubmasDemoAdoptableJoltik \"*Squeak squeak* (Bye, mama!!! Bye, Emmet!! I'll miss you, too! @! Let's visit him and mama a lot together! So they don't get too lonely!)$1\"/playSound SpringBirds/jump SubmasDemoAdoptableJoltik/emote SubmasDemoAdoptableJoltik 20/emote AdoptableJoltikEmmet 40/pause 1000/globalFade/viewport 1000 1000/stopMusic/end"
+}
+
+      }
+    ]
+  }

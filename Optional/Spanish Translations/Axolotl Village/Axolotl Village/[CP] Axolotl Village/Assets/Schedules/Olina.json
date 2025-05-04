@@ -1,0 +1,45 @@
+{
+"Changes": [
+
+	{
+		"LogName": "Olina Schedule",
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Olina",
+		"Entries": {
+
+			//Regular Schedule
+			"spring": "610 {{ModId}}_OlinaHouse 12 12 2/900 {{ModId}}_OlinaHouse 7 6 0/1200 {{ModId}}_AxolotlBakery 17 6 0/1600 {{ModId}}_AxolotlBakery 6 5 2/2000 {{ModId}}_OlinaHouse 11 9 2 olina_sleep",
+			"summer": "610 {{ModId}}_OlinaHouse 12 12 2/900 {{ModId}}_AxolotlTown 26 53 0/1200 {{ModId}}_AxolotlTown 105 22 2/1600 {{ModId}}_DrinkShop 14 6 2/2000 {{ModId}}_OlinaHouse 11 9 2 olina_sleep",
+			"fall": "610 {{ModId}}_AxolotlBakery 17 6 0/1000 {{ModId}}_AxolotlBakery 4 5 1/1500 {{ModId}}_AxolotlTown 45 40 3/2000 {{ModId}}_OlinaHouse 11 9 2 olina_sleep",
+			"winter": "610 {{ModId}}_OlinaHouse 12 12 2/900 {{ModId}}_OlinaHouse 7 6 0/1400 {{ModId}}_AxolotlTown 83 33 2/2000 {{ModId}}_OlinaHouse 11 9 2 olina_sleep",
+			"rain": "610 {{ModId}}_OlinaHouse 12 12 2/1200 {{ModId}}_OlinaHouse 7 6 0/1600 {{ModId}}_OlinaHouse 12 12 2/2000 {{ModId}}_OlinaHouse 11 9 2 olina_sleep",
+			"Fri": "610 {{ModId}}_OlinaHouse 12 12 2/900 {{ModId}}_AxolotlBakery 17 6 0/1300 {{ModId}}_AxolotlCommunityCenter 26 9 2/2100 {{ModId}}_OlinaHouse 11 9 2 olina_sleep",
+                        "Wed": "610 {{ModId}}_OlinaHouse 12 12 2/900 {{ModId}}_OlinaHouse 7 6 0/1000 {{ModId}}_AxolotlTown 43 39 3/2000 {{ModId}}_OlinaHouse 11 9 2 olina_sleep",
+                        "fall_28": "610 {{ModId}}_AxolotlBakery 17 6 0/1000 {{ModId}}_AxolotlBakery 4 5 1/1500 {{ModId}}_AxolotlTown 45 40 3/1850 {{ModId}}_AxolotlTown 29 51 1/2350 {{ModId}}_OlinaHouse 11 9 2 olina_sleep",
+                        "winter_25": "610 {{ModId}}_OlinaHouse 12 12 2/900 {{ModId}}_AxolotlTown 29 51 1/2000 {{ModId}}_OlinaHouse 11 9 2 olina_sleep",
+                        "summer_7": "610 {{ModId}}_OlinaHouse 12 12 2/900 {{ModId}}_AxolotlTown 28 66 2/1200 {{ModId}}_AxolotlTown 105 22 2/1600 {{ModId}}_DrinkShop 14 6 2/1800 {{ModId}}_AxolotlTown 27 78 3/2350 {{ModId}}_OlinaHouse 11 9 2 olina_sleep",
+                        "spring_21": "610 {{ModId}}_OlinaHouse 12 12 2/800 {{ModId}}_AxolotlTown 27 78 3/2000 {{ModId}}_OlinaHouse 11 9 2 olina_sleep",
+			}
+	},
+{
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Olina",
+		"Entries": {
+			"Sun": "610 {{ModId}}_OlinaHouse 12 12 2/900 {{ModId}}_AxolotlTownSouth 76 34 0/2000 {{ModId}}_OlinaHouse 11 9 2 olina_sleep",
+			},
+		"When": {
+			"HasSeenEvent: hostPlayer |contains=98890063": true
+                        },
+	},
+{
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Olina",
+		"Entries": {
+			"Tue": "610 {{ModId}}_OlinaHouse 12 12 2/900 {{ModId}}_OlinaHouse 7 6 0/1200 {{ModId}}_CandyShop 5 7 0/1500 {{ModId}}_PlushShop 10 7 0/2000 {{ModId}}_OlinaHouse 11 9 2 olina_sleep",
+			},
+		"When": {
+			"HasReadLetter: hostPlayer |contains=CaptainProject6": true
+                        },
+	},
+]
+}

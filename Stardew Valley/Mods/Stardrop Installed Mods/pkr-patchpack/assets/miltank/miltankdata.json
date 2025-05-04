@@ -1,0 +1,289 @@
+{
+   "Changes":[
+      {
+         "LogName":"manifesting miltank",
+         "Action":"EditData",
+         "Target":"Data/FarmAnimals",
+         "TargetField":[
+            "miltank"
+         ],
+         "Entries":{
+            "DaysToMature":"7",
+            "DaysToProduce":"3",
+            "GrassEatAmount":"3",
+            "ProfessionForHappinessBoost":3,
+            "ProfessionForQualityBoost":3,
+            "ProfessionForFasterProduce":3,
+            "PurchasePrice":2000,
+            "SellPrice":4500,
+            "ProduceItemIds":[
+               {
+                  "Id":"MooMoo Milk",
+                  "Condition":null,
+                  "MinimumFriendship":0,
+                  "ItemId":"bees.pkr_moomoomilk"
+               }
+            ],
+            "DeluxeProduceItemIds":[
+               {
+                  "Id":"Large MooMoo Milk",
+                  "Condition":null,
+                  "MinimumFriendship":200,
+                  "ItemId":"bees.pkr_largemoomoomilk"
+               }
+            ],
+            "CustomFields":{
+               "meatIndex":"639"
+            }
+         }
+      },
+      {
+         "LogName":"making miltanks milk count as milk",
+         "Action":"EditData",
+         "Target":"Data/Objects",
+         "TargetField":[
+            "bees.pkr_moomoomilk"
+         ],
+         "Entries":{
+            "Category":-6,
+            "Edibility":31,
+            "Price":1000
+         }
+      },
+      {
+         "LogName":"making miltanks milk count as milk",
+         "Action":"EditData",
+         "Target":"Data/Objects",
+         "TargetField":[
+            "bees.pkr_largemoomoomilk"
+         ],
+         "Entries":{
+            "Category":-6,
+            "Edibility":41,
+            "Price":1500
+         }
+      },
+      {
+         "LogName":"making moomoo cheese edible.",
+         "Action":"EditData",
+         "Target":"Data/Objects",
+         "TargetField":[
+            "bees.pkr_moomoocheese"
+         ],
+         "Entries":{
+            "Category":-18,
+            "Edibility":65,
+            "Price":1800
+         }
+      },
+      {
+         "LogName":"milking miltank",
+         "Action":"EditData",
+         "Target":"selph.ExtraAnimalConfig/AnimalExtensionData",
+         "Entries":{
+            "miltank":{
+               "ExtraProduceSpawnList":[
+                  {
+                     "Id":"dailymilk",
+                     "DaysToProduce":1,
+                     "SyncWithMainProduce":false,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Milk",
+                           "Condition":null,
+                           "MinimumFriendship":500,
+                           "ItemId":"184"
+                        }
+                     ]
+                  },
+                  {
+                     "Id":"milk",
+                     "DaysToProduce":2,
+                     "SyncWithMainProduce":false,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Large Milk",
+                           "Condition":"RANDOM 0.33",
+                           "MinimumFriendship":250,
+                           "ItemId":"186"
+                        },
+                        {
+                           "Id":"Milk",
+                           "Condition":null,
+                           "MinimumFriendship":0,
+                           "ItemId":"184"
+                        }
+                     ]
+                  },
+                  {
+                     "Id":"egg",
+                     "DaysToProduce":3,
+                     "SyncWithMainProduce":true,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"egg",
+                           "Condition":null,
+                           "MinimumFriendship":0,
+                           "ItemId":"bees.pkr_miltankegg"
+                        }
+                     ]
+                  },
+                  {
+                     "Id":"tm",
+                     "DaysToProduce":3,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Default",
+                           "Condition":"RANDOM 0.07 @adddailyluck",
+                           "MinimumFriendship":750,
+                           "ItemId":"bees.pkr_milkdrinktm"
+                        }
+                     ]
+                  },
+                  {
+                     "Id":"dig",
+                     "DaysToProduce":3,
+                     "SyncWithMainProduce":true,
+                     "ProduceItemIds":[
+                        {
+                           "Id":"Default",
+                           "Condition":"RANDOM 0.25, !SEASON winter !WEATHER Target Rain Storm",
+                           "MinimumFriendship":0,
+                           "ItemId":"bees.pkr_gummitreasurebox"
+                        }
+                     ]
+                  }
+               ],
+               "AnimalProduceExtensionData":{
+                  "(O)bees.pkr_miltankegg":{
+                     "HarvestTool":"DropOvernight"
+                  },
+                  "(O)bees.pkr_milkdrinktm":{
+                     "HarvestTool":"DropOvernight"
+                  },
+                  "(O)bees.pkr_moomoomilk":{
+                     "HarvestTool":"Milk Pail"
+                  },
+                  "(O)bees.pkr_largemoomoomilk":{
+                     "HarvestTool":"Milk Pail"
+                  },
+                  "(O)184":{
+                     "HarvestTool":"Milk Pail"
+                  },
+                  "(O)186":{
+                     "HarvestTool":"Milk Pail"
+                  },
+                  "(O)bees.pkr_gummitreasurebox":{
+                     "HarvestTool":"DigUp",
+                     "ItemQueries":[
+                        {
+                           "ItemId":"bees.pkr_deluxetreasurebox",
+                           "Condition":"selph.ExtraAnimalConfig_ANIMAL_FRIENDSHIP 700, RANDOM 0.25"
+                        },
+                        {
+                           "ItemId":"bees.pkr_candytreasurebox",
+                           "Condition":"selph.ExtraAnimalConfig_ANIMAL_FRIENDSHIP 500, RANDOM 0.25"
+                        },
+                        {
+                           "ItemId":"bees.pkr_bowtreasurebox",
+                           "Condition":"selph.ExtraAnimalConfig_ANIMAL_FRIENDSHIP 500, RANDOM 0.25"
+                        },
+                        {
+                           "ItemId":"bees.pkr_gummitreasurebox"
+                        }
+                     ]
+                  }
+               }
+            }
+         }
+      },
+      {
+         "LogName":"cooking miltank",
+         "Action":"EditData",
+         "Target":"Data/CookingRecipes",
+         "When":{
+            "HasMod|contains=DIGUS.ANIMALHUSBANDRYMOD":true,
+            "AHM Meat":true
+         },
+         "Entries":{
+            "cookedmiltankmeat":"639 1 247 1/9999 9999/bees.pkr_cookedmiltankmeat 1/default"
+         }
+      },
+      {
+         "LogName":"reprogramming cheese press",
+         "Action":"EditData",
+         "Target":"Data/Machines",
+         "TargetField":[
+            "(BC)16",
+            "OutputRules"
+         ],
+         "Entries":{
+            "bees.pkr_moomoocheese":{
+               "Id":"bees.pkr_moomoocheese",
+               "Triggers":[
+                  {
+                     "RequiredItemId":"bees.pkr_moomoomilk",
+                     "RequiredCount":1
+                  }
+               ],
+               "OutputItem":[
+                  {
+                     "ItemId":"bees.pkr_moomoocheese",
+                     "CopyQuality":false
+                  }
+               ],
+               "StackModifiers":[
+                  {
+                     "Id":"Shepard",
+                     "Condition":"PLAYER_HAS_PROFESSION current 3",
+                     "Modification":"Add",
+                     "Amount":1.0
+                  },
+                  {
+                     "Id":"DoubleQuality",
+                     "Condition":"ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15 @addDailyLuck\" \"ITEM_QUALITY Input 2 2, RANDOM 0.5 @addDailyLuck\" \"ITEM_QUALITY Input 4 4, RANDOM 1\"",
+                     "Modification":"Add",
+                     "Amount":1.0,
+                     "RandomAmount":null
+                  }
+               ],
+               "MinutesUntilReady":200
+            },
+            "bees.pkr_largemoomoocheese":{
+               "Id":"bees.pkr_largemoomoocheese",
+               "Triggers":[
+                  {
+                     "RequiredItemId":"bees.pkr_largemoomoomilk",
+                     "RequiredCount":1
+                  }
+               ],
+               "OutputItem":[
+                  {
+                     "ItemId":"bees.pkr_moomoocheese",
+                     "CopyQuality":false,
+                     "MinStack":2,
+                     "MaxStack":3
+                  }
+               ],
+               "StackModifiers":[
+                  {
+                     "Id":"Shepard",
+                     "Condition":"PLAYER_HAS_PROFESSION current 3",
+                     "Modification":"Add",
+                     "Amount":1.0,
+                     "RandomAmount":1.0
+                  },
+                  {
+                     "Id":"DoubleQuality",
+                     "Condition":"ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15 @addDailyLuck\" \"ITEM_QUALITY Input 2 2, RANDOM 0.5 @addDailyLuck\" \"ITEM_QUALITY Input 4 4, RANDOM 1\"",
+                     "Modification":"Add",
+                     "Amount":1.0,
+                     "RandomAmount":1.0
+                  }
+               ],
+               "MinutesUntilReady":240
+            }
+         }
+      }
+   ]
+}

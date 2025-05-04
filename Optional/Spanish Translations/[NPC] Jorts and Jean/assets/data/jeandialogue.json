@@ -1,0 +1,180 @@
+ {
+"Changes": 
+    [
+ 
+		{
+            "LogName": "Jean Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/JeanCat",
+			"Entries": {
+
+//Conversation Topics
+	//Vanilla
+	"cc_Begin": "¿Te interesa ese viejo edificio? Hmmmm, me pregunto por qué.$6",
+	"cc_Boulder": "Anoche oí ruidos extraños cerca de las minas, y ahora esa roca ya no está.#$b#Espero que ningún monstruo se aproveche.$4",
+	"cc_Bridge": "La Cantera está casi vacía debido a la actividad de Joja, pero aún puede serte útil, @.#$b#Sólo ten cuidado con esa cueva cerca de allí. Tiene un olor aterrador.$4",
+	"cc_Bus": "Reconozco que el autobús en marcha es una mejora, sobre todo para Pam, pero no me gusta mucho el ruido que hace.$s",
+	"cc_Greenhouse": "Qué bonita estructura nueva tienes en tu granja. Y ahora está libre de ratas, así que siéntete libre de plantar.$6",
+	"cc_Minecart": "Jorts, se llaman carritos MINEROS por una razón.$4",
+	"cc_Complete": "Muy impresionante, @. Tú y tus muchos 'amigos' tienen que estar orgullosos.$6",
+	"movieTheater": "Bueno, es hora de ir a ver si nuestros nuevos empleados del teatro están interesados en un sindicato.",
+	"willyCrabs": "Jorts y yo fuimos a ayudar a Willy con su problema de cangrejos. Peleones, pero son más sabrosos así.$h",
+	"pamHouseUpgrade": "@, ha sido muy amable de tu parte. Entiendes lo que significa estar en una comunidad. Cuando uno es mejor, todos somos mejores.$h",
+	"pamHouseUpgradeAnonymous": "La persona que costeó la casa de Pam, que seguramente debe ser un misterio, @, es una persona muy generosa.$6",
+	//Vanilla+ (CFD, Mobile Phone, More CTs)
+	"Characters_MovieInvite_Invited": "¿Una invitación al cine? Sí, gracias. No sé qué piensan de los gatos, así que me colaré después de que entres.$h",
+	"ExtraDialogue_Town_DumpsterDiveComment_Adult": "¿Reciclando, @? No voy a juzgarte.#$b#Bueno, no más de lo que suelo hacer.$6",
+	"NPC.cs.4275": "Los gatos no le dan mucha importancia a los cumpleaños, pero para mí es un honor que me incluyan.$h",
+	"NPC.cs.4277": "@, tu memoria para los cumpleaños sólo es superada por tu buen gusto para los regalos. Te lo agradezco mucho.$h",
+	"NPC.cs.4279": "No es... lo mío, pero gracias, supongo.$s/...Recordaré esto, @. Vigila tus pasos por si te devuelven 'regalos'.$a",
+	"NPC.cs.4281": "Supongo que Jorts te dijo cuándo es mi cumpleaños. Gracias./Supongo que Jorts te habrá dicho cuándo es mi cumpleaños. Gracias.",
+	"MobilePhoneGreeting": "{{Random: Habla Gil. Oh, eres tú., {0}. Supongo que sabes que no soy Gil, entonces. && Hola, {0}. Quería preguntarte, {0}, ¿Cómo conseguiste el número de Gil? && Hola, {0}. Siempre es un placer recibir tu llamada. && Que tengas un buen día, {0}. ...¿Por qué tenemos el celular de Gil? Bueno, no creerás que lo usa, ¿verdad? && Marlon? Oh, {0}. Lo siento, normalmente es él quien llama a este número. &&  Hola, {0}, ¿en qué puedo ayudarle? |inputSeparator=&&}}",
+	"MobilePhoneReminisce": "¿En qué piensas, @?",
+	"MobilePhoneInvite": "¿Quieres hacer algo juntos?",
+	"MobilePhoneGoodBye": "{{Random: Adiós, @. Que te vaya bien. && Muy bien, no dudes en llamar cuando quieras. && Adiós, @. Avísame si necesitas hablar con Gil alguna vez. && Adiós., @. |inputSeparator=&&}}",
+	"railroadEarthquake": "Joja provocó el derrumbe que bloqueaba la vía férrea, y ahora un terremoto lo ha arreglado. A veces la naturaleza corrige los errores del hombre.",
+	"islandResortUnlocked": "Esta isla parece muy interesante.#$b#Aunque no me atrevería a dejar a Jorts sin supervisión.$3",
+	"jojaMartStruckByLightning": "Esa tormenta estuvo demasiado cerca para estar tranquilo anoche. Espero que no signifique que alguien... o ALGO esté enojado...$4",
+	"babyBoy": "Felicidades por el nuevo miembro de tu familia, @. Asegúrate de criarlo para que sea una buena persona del que ambos puedan sentirse orgullosos.",
+	"babyGirl": "Felicidades por el nuevo miembro de tu familia, @. Asegúrate de criarla para que sea una buena persona de la que ambos puedan sentirse orgullosos.",
+	"wedding": "¿No crees que una celebración de amigos para dar la bienvenida a una ocasión feliz siempre es motivo para hacer una fiesta?$h",
+	"event_postweddingreception": "Los gatos no entendemos mucho el concepto de romance, pero sí el de pareja y familia. Espero que tú y tu %spouse estrechen aún más sus lazos.",
+	"luauBest": "Jorts y yo tomamos a escondidas un poco de sopa mientras Lewis adulaba al Gobernador. Incluso para los estándares de un gato, estaba bastante buena.$h",
+	"luauShorts": "Si quisiera experimentar el sabor único de la cocina Lewis, lo haría directamente.$5",
+	"luauPoisoned": "Esperaba que los humanos supieran al menos lo que no pueden comer, pero tal vez eso fuera esperar demasiado.$s",
+	//Alecto
+	"AlectoIntroduction": "Titania, la compañera de Alecto, y yo nos llevamos bastante bien. Tenemos algunas cosas en común, a pesar de que ella es un pájaro.#$b#No, no saltó sobre ella. No es profesional molestar a una compañera de trabajo.",
+	"AlectoWizardTower": "Necesito encontrar a Titania y hablar con ella pronto. Ella nunca va a creer lo que Jorts hizo ahora.$h",
+	//JulietJessie
+	"JulietGremlin": "JORTS ese es un PERRO NO es un amigo.$4",
+	//Juna
+	"JunaBeachBallet": "Juna baila muy bien el ballet, pero su baile tiene algo melancólico. Quizá por eso prefiere bailar bajo la lluvia.",
+	"JunaJunimos": "Encontré una estatua dorada de Lewis mientras exploraba el bosque con Jorts.#$b#El Alcalde y yo vamos a tener una... CHARLA sobre esto.$a",
+	"JunaGone": "Juna se fue en el autobús esta mañana. Tenía una mirada decidida.#$b#Espero que, sea lo que sea lo que intenta conseguir, tenga éxito.$h",
+	//Lavril
+	"LavrilUnlocked": "Hay algo raro en esos dos... No puedo explicarlo, pero no es una niña normal y un conejito de muñeca parlante. Me dan escalofríos.$4",
+	//Lucikiel
+	"LucikielArrives": "Ese demonio parece muy, muy peligroso. Ten cuidado, @.$4#$b#Por otra lado, convirtió a un directivo en un cerdo, así que quizá no sea tan malo. Me pregunto qué opina de los derechos de los trabajadores.",
+	"ReputationIncreased": "Clint lleva tiempo defendiendo a Lucikiel. Es bueno ver que las personas se dan cuenta.#$b#Creo que la relación ha mejorado para ambos.$h",
+	//RSV
+	"RSV_GH1": "Jorts y yo iremos pronto a ver el nuevo invernadero. Estoy seguro de que habrá algunos roedores testarudos que habrá que desalojar.$6",
+	"keahi_prank": "Ah... Veo que has conocido a Keahi., @.$s#$b#Tiene bastante reputación incluso en Pueblo Pelícano.$6",
+	"Lidens_Return": "Escuché de Lenny que los padres de Alissa han estado fuera mucho tiempo. Seguro que era importante alejarlos.",
+	"Naomi_Return": "Es bueno que Naomi haya podido volver a Ridgeside. Los niños no pueden criarse solos, necesitan un padre presente para las cosas de adultos.",
+	//Leilani
+	"LeilaniArrives": "Estoy segura de que para Leilani es difícil estar lejos de su familia, pero también estoy orgullosa de ella por no descuidarse ni descuidar sus propios intereses.",
+	//Prank the Jojamart
+	"PTJ03": "Un infortunio poéticamente apropiado para un avaro 'cascarrabias' como Morris.$h",
+	//Pumpkin Spice
+	"pumpkin_spice_madness": "La especia de calabaza huele muy bien, pero por favor no se la des a Jorts. No es bueno para nosotros los gatos.",
+	//Toshinori
+	"TalkingAboutToshinori": "Toshinori es una persona de buen corazón que ha vivido al servicio de los demás.#$b#El problema es que a esas personas a menudo les cuesta ser amables consigo mismas...$6",
+	"ToshisSon": "Ya veo por qué Izuki y Toshinori son tan unidos. Sus personalidades son similares.",
+	//Jorts and Jean (lol)
+	"MeetTheCats": "Algunos de los habitantes del pueblo se sienten bastante a gusto conversando. Otros no escuchan muy bien.#$b#Y otros que sin duda no se llaman Lewis simplemente lo niegan.$h",
+	"ButteredJorts": "Por favor, no desarrolles el hábito de beber, @. Como habrás oído, te lleva a tomar decisiones estúpidas.$s",
+	"DumpsterFishing": "No hay nada malo en usar cosas que otros han tirado. Sólo me gustaría que fueran un poco más asequibles para Jorts.",
+	"RubberCatting": "@, asegúrate de cuidar tu mente tanto como tu cuerpo. La salud mental también es importante.",
+	"JortsZoomies": "¿De dónde sacamos los folletos? Eso es un secreto.$6",
+	"OpenAllTheDoors": "Cerrar la tienda fue una clara represalia por sindicarse. Es ilegal, pero se pueden salir con la suya.#$b#Espero que todos los que están en el sindicato aún se den cuenta de lo que han ganado con esto.",
+	//Other
+	"Shane_Starts_Selling": "Espero que a Shane le vaya bien con su nuevo depósito de liquidación. Después de todas las tonterías que aguantó de Morris, se merece ganar un poco de dinero a su costa.",
+	"platonic_LetterCS2CT": "Los gatos podemos parecer caprichosos, pero somos muy leales a quienes se ganan nuestra confianza. Espero que sea lo mismo para ti y tu amigo.$h",
+	"JeanandJorts_funstring": "Gracias de nuevo por cumplir esta petición, @. Es un tejido maravilloso y debería durar mucho tiempo.$h",
+	"RestauranteerMod-Loved-1": "Esto es justo lo que necesito para tener energía para mis conciertos de medianoche. Bien hecho, @.$h",
+	"RestauranteerMod-Loved-2": "Perfectamente cocinado y sazonado a mi paladar. Tienes una mano hábil en la cocina, @.$h",
+	"RestauranteerMod-Loved-3": "Ni siquiera Gil es tan hábil cocinando comida para gatos. Tienes mi respeto.$h",
+	"RestauranteerMod-Liked-1": "Casi tan bueno como cazarlo yo mismo. Gracias, @.$h",
+	"RestauranteerMod-Liked-2": "Se ve delicioso. ¿Te importa si juego un poco con él primero?$h",
+	"RestauranteerMod-Liked-3": "%Jean mete delicadamente una de sus patas en la comida y luego se la lame.",
+	"EliIntro": "Las aventuras de Eli en las minas me preocupan.  Es peligroso ahí abajo.$s",
+	"EliSaloon": "No nos importa compartir espacio con Eli los viernes. Se llena bastante aquí, y Jorts piensa que sus pies son bastante cómodos.",
+	//ES
+	"SterlingTrash": "Bueno, es bueno que Sterling no hiciera un desastre por todo el lugar, pero...$3#$b#Jorts y yo usamos esos cubos de basura algunas veces, ya sabes.",
+	"SterlingTrain": "Jorts, no. No jugamos con trenes.",
+	"SterlingDrugs": "Sterling....#$b#Creo que puede estar cometiendo un error. Pero si se lo digo no creo que me escuche. A veces tenemos que cometer errores para aprender.$6",
+	"SterlingRelapse": "No estoy segura de si Sterling está para abrazos en este momento, así que me sentaré cerca de él y ronronearé y dejaré que él haga el primer movimiento. Así no hay presión.",
+	"SterlingApology": "Es bueno que Sterling y Pierre hayan hecho las paces. Pierre es una buena influencia para Sterling, pero Sterling también es bueno para Pierre.$h",
+	"WrenFliesIn": "Esa plomera se quedó parada afuera de la casa de los Carpinteros durante varios minutos antes de que finalmente entrara.  Me pregunto si sufre ansiedad social o si estaba nerviosa por algún otro motivo.",
+	"OnTheSheShore": "Los gatos realmente no entienden los pronombres, pero entendemos que referirnos a los demás como se sienten más cómodos. No tienes que entender para tener respeto.$h",
+	"WatchingIsForTheBirds": "¿Por qué querrías ver pájaros cuando podrías comértelos?",
+	//"ALongQueerRoad": "",
+	//"CertifiedPlumberAccountant": "",
+	//"NoticeAbbySenpai": "",
+	"ThyMet": "No, no me abalancé sobre Michelle. Ella y yo nos llevamos bastante bien, creo.$6#$b#...I may have accidentally pounced Trevor a time or two.$3",
+	"ThyLampsOut": "Apagar las luces por la noche una vez que la mayoría de los humanos se han ido a la cama es una buena idea. Es respetuoso con las criaturas nocturnas naturales que comparten este espacio.",
+	"ThysaniaExposed": "No culpo a Thy por estar nerviosa de que los humanos sepan de su existencia.$2#$b#Pero la gente de Sunberry parece que podría ser compasiva y considerada al respecto.$h",
+
+
+	
+
+	// GENERIC DIALOGUE
+    "Mon": "Buenos días, @. Háganos saber si tiene algún problema de plagas en la granja. Disfruto de los almuerzos de ratones.$6", 
+    "Tue": "Saludos, @. Espero que te estés integrando bien en esta comunidad.",
+    "Wed": "Hola, @. Solemos estar por el pueblo si nos necesitas. Intentamos visitar a todos los que podemos.",
+    "Thu": "No olvides pedir ayuda si la necesitas, @. Nunca se es tan fuerte como para no necesitar ayuda.",
+    "Fri": "Hola, @. Si necesitas nuestra ayuda, avísanos.#$b#Aunque hay que tener en cuenta que somos gatos y carecemos de cosas como los pulgares.$h",
+    "Sat": "*bostezo* Hola, @. ¿Podrías decirle a Jorts si es un problema?",
+    "Sun": "@, ¿sientes que ya le has pillado el truco a la agricultura? Si no es así, ¿por qué no hablas con algunos de tus compañeros agricultores? Seguro que puedes aprender algo.",
+
+    "Mon2": "Una cosa que hay que recordar, @: esto no es la gran ciudad de Zuzu. Todos dependemos de todos.#$b#Las tácticas de las grandes ciudades -como el enfoque de Joja- no funcionarán aquí.", 
+    "Tue2": "Morris es una escoria codiciosa, pero también es una escoria codiciosa muy típica, por desgracia. Hay miles como él en la ciudad.",
+    "Wed2": "Espero que no tengas problemas para encontrar aquí lo que necesitas. Intenta comprar en tu zona si puedes.",
+    "Thu2": "A veces es bueno salir y disfrutar de la naturaleza, ¿no?$h",
+    "Fri2": "Sí, puedes acariciarme, pero sólo si doy mi consentimiento.$6",
+    "Sat2": "Ya sea con hijos o sin ellos, creo que es deber de todo adulto hacer que el mundo sea mejor que cuando uno era niño, por el bien de los niños futuros.",
+    "Sun2": "Es mejor dejar que Jorts descanse hoy. Tuvo una larga noche corriendo por el Gremio.",
+
+    "Mon4": "¡Morris tuvo el descaro de intentar echarme agua encima! Hablar de sindicatos es una actividad protegida por el gobierno federal.$a", 
+    "Tue4": "Le pregunté a Gunther si podía tener un trato para un libro. Tiré libros de la estantería y él tuvo que ocuparse de ello.$6",
+    "Wed4": "¿Jorts no es inteligente?#$b#Bueno, supongo que si esperaras que un pez escalara un árbol, tampoco te parecería inteligente.",
+    "Thu4": "Antes éramos gatos de la ciudad, pero me parece que es más fácil hacerse escuchar en un lugar más pequeño como éste.",
+    "Fri4": "Es curioso cómo, incluso en un pueblo pequeño donde el horario de lunes a viernes no es la norma, todo el mundo espera con impaciencia las tardes de los viernes.$h",
+    "Sat4": "Le he dejado claro a Marlon mis preferencias a la hora de rascar. Si decide no complacerlas, la alfombra de oso está allí.$6",
+    "Sun4": "No me importa limpiar a Jorts, incluso cuando se mete en la basura. Me gusta cuidar de los demás.#$b#Aunque supongo que no es una gran sorpresa, dado que es mi trabajo.$h",
+
+    "Mon6": "Todos merecemos un salario digno y unas condiciones de trabajo seguras. Y si alguien no lo entiende, le arañaré las piernas.$a",
+    "Tue6": "Espero que no intentes ponerme un collar, o Yoba no lo quiera, un *sombrero*. Por favor, respeta mi autonomía.",
+    "Wed6": "Algunos actúan como si hubieran hecho un home run cuando nacieron en tercera base.$a",
+    "Thu6": "Las cosas pueden parecer irrazonablemente injustas, @. Pero una vez que puedes identificar una injusticia, puedes tomar medidas para resolverla.",
+    "Fri6": "%Jean habla consigo misma.#$b#Vale, Jean, es mucho ruido pero siempre puedes esconderte bajo la encimera y dejar que Jorts se encargue.",
+    "Sat6": "Normalmente no me importa limpiar Jorts, pero la baba es... digamos que no es buena para los gatos.",
+    "Sun6": "Jorts siempre sabe cuándo necesito tomarme un descanso. Puede con cualquier humano, por ruidoso que sea.#$b#También limpia bien.$h",
+
+
+    "Mon8": "Supongo que podría beber agua del río, pero es más sabrosa si meto la pata en tu vaso y la lamo.$6",
+    "Tue8": "Si a alguién no le gustan los gatos, ¿realmente puedes confiar en él? ¿De verdad?$6",
+    "Wed8": "@, si te cuesta, intenta imaginar que estoy sentada a tu lado y ronroneo. No tengo un ronroneo fuerte, pero puedes sentirlo.",
+    "Thu8": "La forma en que Jorts camina delante de mí con la cola en el aire, completamente confiado... es bastante adorable.$h",
+    "Fri8": "¿Te sientes parte de la comunidad ahora, @? Recuerda que aquí hay gente que te apoya como tú a ellos.",
+    "Sat8": "No importa si dan miedo, el próximo monstruo que encuentre investigando mi caja de arena se las va a ver conmigo.$a",
+    "Sun8": "@, parece que has tenido un día duro. Si quieres, siéntate y te limpio un poco.",
+
+    "Mon10": "A veces, decidir *no* hacer algo es más valiente que hacerlo.",
+    "Tue10": "Asegúrate de tomarte un tiempo para descansar, @. No tienes que ser productivo todo el tiempo.#$b#Si fue algo que disfrutaste, no es tiempo perdido.$h",
+    "Wed10": "@, cuando la gente te haga un cumplido, espero que te lo tomes a pecho y no le restes importancia.#$b#Puede ser embarazoso, pero seguro que te sientes mejor que ignorándolo e insultándote.$h",
+    "Thu10": "Nadie 'inventó' el auto solo. Fueron un montón de pequeños inventos de todo tipo de personas los que hicieron los coches que conoces ahora.#$b#Tus logros se basan en el trabajo y los conocimientos de otros. Pero también lo son los de los supuestos 'genios' de ahí fuera.",
+    "Fri10": "¿Estoy dando muchos consejos últimamente? Bueno, supongo que es verdad.#$b#Me importas, así que quiero asegurarme de que escuchas lo que necesitas oír.",
+    "Sat10": "Ten, @. Tuve un buen día de pesca y me gustaría compartirlo. [149 151 698 704 707 715]",
+    "Sun10": "A veces me da miedo hacer una pregunta porque no quiero parecer tonta, pero Jorts la hace por mí.#$b#Está bien hacer preguntas 'tontas' por si los demás también necesitan saber la respuesta.$h",   
+   
+   "rain":  "{{Random: No me gusta la lluvia. Es fría y húmeda y se cuela en todos lados.$s && Ugh, ODIO los truenos....$s && Hoy parece un buen día para quedarse dentro y asearse. Sin agua.$6 && Hoy nos tomaremos el día libre. No nos secamos tan fácilmente como los humanos. && Es posible que me meta en el agua mientras pesco, sí, pero eso es totalmente distinto de la LLUVIA.$s |inputSeparator=&&}}",	
+
+	// SPECIFIC DAY DIALOGUE
+	"spring_1": "Espero que hayas podido descansar durante el invierno, @. Ahora empieza de nuevo el ciclo.",
+	"summer_1": "Stardew no sólo es caluroso durante el verano, además el océano y los lagos lo hacen bastante húmedo. Es aún más importante mantenerse fresco e hidratado, @.",
+	"fall_1": "¿Crees que el verano o el otoño es más ajetreado para ti, @? Muchos cultivos necesitan un clima más cálido, pero para algunos hace *demasiado* calor.",
+	"winter_1": "¿Te mantienes caliente, @? Los humanos no tienen suficiente pelaje para este tipo de clima.",
+	"spring_12": "Aunque no te gusten los huevos de gallina, debería haber algo que te guste en el festival de mañana. Gus es muy considerado con las opciones vegetarianas.", // Day before the Egg Festival
+	"spring_23": "No hay mucho que hacer para los gatos en el Baile de las Flores, pero está bien. No todo tiene que ir dirigido a una persona concreta.", // Day before the Flower Dance
+	"summer_10": "La verdad es que no hay forma de que la sopa salga bien, sin embargo, siempre sale bien.#$b#Mientras lleves algo de alta calidad, seguro que todo irá bien.", // Day before the Luau
+	"summer_27": "Espero que mañana vayas a ver las medusas, @.#$b#Aunque estés rodeado de ellas, es bueno que recuerdes lo majestuosa que puede llegar a ser la naturaleza.$h", // Day before the Midnight Jellies
+	"fall_9": "¿Sabías que hoy es mi cumpleaños? No me hace falta ningún regalo, salvo tu apoyo a los trabajadores.#$b#Aunque un ovillo de lana también será aceptado con gratitud.$h",
+	"fall_15": "¿Por qué Jorts quiere tirar todo de las mesas de exhibición? Un simple impulso vital, diría yo.$6", // Day before the Stardew Fair
+	"fall_26": "La Víspera de los Espíritus es un festival destinado a apaciguar a los espíritus inquietos y enfadados.#$b#Y créeme, NECESITAN ser aplacados.$4", // Day before Spirit's Eve
+	"winter_7": "Tendré que descubrir el mejor momento para sacar algunos peces de la competencia. En mi opinión, es un desperdicio devolverlos todos.", // Day before the Ice Festival
+	"winter_24": "No te estreses demasiado con el intercambio de regalos, @. Los mejores regalos son los que están pensados.$h", // Day before Winter Star
+			}
+        }
+    ]
+}

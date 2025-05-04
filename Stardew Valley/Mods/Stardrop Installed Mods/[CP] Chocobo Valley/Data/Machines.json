@@ -1,0 +1,206 @@
+{
+	"Changes": [
+		//Mayonnaise
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules" ],
+			"Entries": {
+				"Kitsutsune.Chocobovalley_ChocoboMayonnaiseCommon": {
+					"Id": "Kitsutsune.Chocobovalley_ChocoboMayonnaiseCommon",
+					"Triggers": [
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_FerngillEggCommon",
+								"RequiredCount": 1
+							},
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_JyllandEggCommon",
+								"RequiredCount": 1
+							},
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_EorzeanEggCommon",
+								"RequiredCount": 1
+							},
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_LucianEggCommon",
+								"RequiredCount": 1
+							},
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_IvalicianEggCommon",
+								"RequiredCount": 1
+							},
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_VanadelianEggCommon",
+								"RequiredCount": 1
+							},
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_PulsianEggCommon",
+								"RequiredCount": 1
+							},
+						],
+					"OutputItem": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_ChocoboMayonnaiseCommon"
+						}
+					],
+					"MinutesUntilReady": 300
+				},
+				"Kitsutsune.Chocobovalley_ChocoboMayonnaiseUncommon": {
+					"Id": "Kitsutsune.Chocobovalley_ChocoboMayonnaiseUncommon",
+					"Triggers": [
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_FerngillEggUncommon",
+								"RequiredCount": 1
+							},
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_JyllandEggUncommon",
+								"RequiredCount": 1
+							},
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_EorzeanEggUncommon",
+								"RequiredCount": 1
+							},
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_LucianEggUncommon",
+								"RequiredCount": 1
+							},
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_IvalicianEggUncommon",
+								"RequiredCount": 1
+							},
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_VanadelianEggUncommon",
+								"RequiredCount": 1
+							},
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_PulsianEggUncommon",
+								"RequiredCount": 1
+							}
+						],
+					"OutputItem": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_ChocoboMayonnaiseUncommon"
+						}
+					],
+					"MinutesUntilReady": 300
+				},
+				"Kitsutsune.Chocobovalley_ChocoboMayonnaiseRare": {
+					"Id": "Kitsutsune.Chocobovalley_ChocoboMayonnaiseRare",
+					"Triggers": [
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_FerngillEggRare",
+								"RequiredCount": 1
+							},
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_JyllandEggRare",
+								"RequiredCount": 1
+							},
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_EorzeanEggRare",
+								"RequiredCount": 1
+							},
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_LucianEggRare",
+								"RequiredCount": 1
+							},
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_IvalicianEggRare",
+								"RequiredCount": 1
+							},
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_VanadelianEggRare",
+								"RequiredCount": 1
+							},
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_PulsianEggRare",
+								"RequiredCount": 1
+							}
+						],
+					"OutputItem": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_ChocoboMayonnaiseRare"
+						}
+					],
+					"MinutesUntilReady": 300
+				}
+				
+			}
+		},
+		//metal bars
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)13", "OutputRules" ],
+			"Entries": {
+				"Kitsutsune.Chocobovalley_MythrilBar": {
+					"Id": "Kitsutsune.Chocobovalley_MythrilBar",
+					"Triggers": [
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_MythrilOre",
+								"RequiredCount": 5
+							}
+						],
+					"OutputItem": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_MythrilBar"
+						}
+					],
+					"MinutesUntilReady": 300
+				},
+				"Kitsutsune.Chocobovalley_OrichalcumBar": {
+					"Id": "Kitsutsune.Chocobovalley_OrichalcumBar",
+					"Triggers": [
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_OrichalcumOre",
+								"RequiredCount": 5
+							}
+						],
+					"OutputItem": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_OrichalcumBar"
+						}
+					],
+					"MinutesUntilReady": 400
+				},
+				"Kitsutsune.Chocobovalley_AdamantiteBar": {
+					"Id": "Kitsutsune.Chocobovalley_AdamantiteBar",
+					"Triggers": [
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_AdamantiteOre",
+								"RequiredCount": 5
+							}
+						],
+					"OutputItem": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_AdamantiteBar"
+						}
+					],
+					"MinutesUntilReady": 500
+				}
+			}
+		},
+		//forage
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)Dehydrator", "OutputRules" ],
+			"Entries": {
+				"Kitsutsune.Chocobovalley_DriedGoldcap": {
+					"Id": "Kitsutsune.Chocobovalley_DriedGoldcap",
+					"Triggers": [
+							{
+								"RequiredItemId": "Kitsutsune.Chocobovalley_Goldcap",
+								"RequiredCount": 1
+							}
+						],
+					"OutputItem": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_DriedGoldcap"
+						}
+					],
+					"MinutesUntilReady": 1750
+				}
+			}
+		},
+	]
+}

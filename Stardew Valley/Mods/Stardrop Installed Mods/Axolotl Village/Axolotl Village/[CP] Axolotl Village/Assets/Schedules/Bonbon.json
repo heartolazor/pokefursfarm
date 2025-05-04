@@ -1,0 +1,38 @@
+{
+"Changes": [
+
+	{
+		"LogName": "Bonbon Schedule",
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Bonbon",
+                "When": {
+			"HasSeenEvent: hostPlayer |contains=98890058": true
+                        },
+		"Entries": {
+
+			//Regular Schedule
+			"spring": "610 {{ModId}}_BonbonHouse 16 14 0/900 {{ModId}}_AxolotlTownSouth 32 39 0/1100 {{ModId}}_AxolotlTownSouth 37 39 0/1300 {{ModId}}_AxolotlTown 81 68 2/1500 {{ModId}}_AxolotlBakery 16 6 0/2000 {{ModId}}_BonbonHouse 8 4 2 bonbon_sleep",
+			"summer": "610 {{ModId}}_BonbonHouse 16 14 0/900 {{ModId}}_AxolotlTownSouth 32 39 0/1100 {{ModId}}_AxolotlTownSouth 37 39 0/1300 {{ModId}}_AxolotlTown 106 68 2/1600 {{ModId}}_AxolotlBakery 16 6 0/2000 {{ModId}}_BonbonHouse 8 4 2 bonbon_sleep",
+			"fall": "610 {{ModId}}_BonbonHouse 16 14 0/900 {{ModId}}_AxolotlTownSouth 32 39 0/1100 {{ModId}}_AxolotlTownSouth 37 39 0/1300 {{ModId}}_AxolotlTown 66 48 2/2000 {{ModId}}_BonbonHouse 8 4 2 bonbon_sleep",
+			"winter": "610 {{ModId}}_BonbonHouse 16 14 0/900 {{ModId}}_AxolotlTownSouth 32 39 0/1100 {{ModId}}_AxolotlTownSouth 37 39 0/1300 {{ModId}}_BonbonHouse 4 14 0/1600 {{ModId}}_BonbonHouse 3 18 1/2000 {{ModId}}_BonbonHouse 8 4 2 bonbon_sleep",
+			"rain": "610 {{ModId}}_BonbonHouse 16 14 0/900 {{ModId}}_AxolotlTownSouth 32 39 0/1100 {{ModId}}_AxolotlTownSouth 37 39 0/1300 {{ModId}}_BonbonHouse 4 14 0/1600 {{ModId}}_BonbonHouse 3 18 1/2000 {{ModId}}_BonbonHouse 8 4 2 bonbon_sleep",
+			"Fri": "610 {{ModId}}_BonbonHouse 16 14 0/900 {{ModId}}_AxolotlTownSouth 32 39 0/1100 {{ModId}}_AxolotlTownSouth 37 39 0/1300 {{ModId}}_AxolotlCommunityCenter 25 19 0/2000 {{ModId}}_BonbonHouse 8 4 2 bonbon_sleep",
+                        "Wed": "610 {{ModId}}_BonbonHouse 16 14 0/900 {{ModId}}_AxolotlTownSouth 32 39 0/1100 {{ModId}}_AxolotlTownSouth 37 39 0/1300 {{ModId}}_AxolotlTown 28 43 0/2000 {{ModId}}_BonbonHouse 8 4 2 bonbon_sleep",
+                        "fall_28": "610 {{ModId}}_BonbonHouse 16 14 0/900 {{ModId}}_AxolotlTownSouth 32 39 0/1100 {{ModId}}_AxolotlTownSouth 37 39 0/1300 {{ModId}}_AxolotlTown 66 48 2/1850 {{ModId}}_AxolotlTown 37 57 0/2350 {{ModId}}_BonbonHouse 8 4 2 bonbon_sleep",
+                        "winter_25": "610 {{ModId}}_BonbonHouse 16 14 0/900 {{ModId}}_AxolotlTown 38 58 0/2000 {{ModId}}_BonbonHouse 8 4 2 bonbon_sleep",
+                        "summer_7": "610 {{ModId}}_BonbonHouse 16 14 0/900 {{ModId}}_AxolotlTownSouth 32 39 0/1100 {{ModId}}_AxolotlTownSouth 37 39 0/1800 {{ModId}}_AxolotlTown 39 79 3/2350 {{ModId}}_BonbonHouse 8 4 2 bonbon_sleep",
+			}
+	},
+{
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Bonbon",
+		"Entries": {
+			"fall": "610 {{ModId}}_BonbonHouse 16 14 0/900 {{ModId}}_AxolotlTownSouth 32 39 0/1100 {{ModId}}_AxolotlTownSouth 37 39 0/1300 {{ModId}}_SeedShop 9 10 0/1600 {{ModId}}_SeedShop 6 13 0/2000 {{ModId}}_BonbonHouse 8 4 2 bonbon_sleep",
+			},
+		"When": {
+			"HasReadLetter: hostPlayer |contains=CaptainProject6": true,
+                        "HasSeenEvent: hostPlayer |contains=98890058": true
+                        },
+	},
+]
+}

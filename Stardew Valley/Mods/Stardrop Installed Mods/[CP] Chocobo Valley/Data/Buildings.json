@@ -1,0 +1,57 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_MoogleBuckwheat": {
+					"Id": "Kitsutsune.Chocobovalley_MoogleBuckwheat",
+					"Name": "{{i18n: Chocobovalley_MoogleBuckwheat_Name}}",
+					"Description": "{{i18n: Chocobovalley_MoogleBuckwheat_Description}}",
+					"Builder": "Robin",
+					"BuildCost": 1000,
+					"BuildMaterials": [
+						{
+							"ItemId": "178",
+							"Amount": 50,
+						}
+					],
+					"BuildDays": 1,
+					"Size": {
+                        "X": 2,
+                        "Y": 1
+                    },
+					"CollisionMap": "XO",
+					"Texture": "{{InternalAssetKey: Assets/Moogles/BuckwheatShop.png}}",
+					"FadeWhenBehind": false,
+					"SourceRect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 30,
+						"Height": 37
+					},
+					"DrawShadow": false,
+					"DrawLayers": [
+						{
+							"Id": "BuckwheatAnimation",
+							"Texture": null,
+							"SourceRect": {
+							  "X": 30,
+							  "Y": 0,
+							  "Width": 30,
+							  "Height": 37
+							},
+							"DrawPosition": "0, 0",
+							"DrawInBackground": false,
+							"SortTileOffset": 0.0,
+							"FrameDuration": 150,
+							"FrameCount": 36,
+							"FramesPerRow": 6,
+						}
+					],
+					"DefaultAction": "OpenShop Kitsutsune.Chocobovalley_MoogleBuckwheatShop none 0600 2400 0 0 2 2"
+				}
+			}
+		}
+	]
+}

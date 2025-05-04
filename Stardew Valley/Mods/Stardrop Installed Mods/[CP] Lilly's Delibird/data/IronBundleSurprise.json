@@ -1,0 +1,151 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load data for Surprise Gift",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+            "{{ModId}}_SurpriseGift": {
+                "Name": "{{ModId}}_SurpriseGift",
+                "DisplayName": "{{i18n:SurpriseGift}}",
+                "Description": "{{i18n:SurpriseGiftDescription}}",
+                "Type": "Basic",
+                "Category": -17,
+                "Price": 420,
+                "Texture": "TileSheets/{{ModId}}_Delibird_items",
+                "SpriteIndex": 5,
+                "Edibility": -300,
+                "IsDrink": false,
+                "Buffs": null,
+                "GeodeDropsDefaultItems": false,
+                "GeodeDrops": null,
+                "ArtifactSpotChances": null,
+                "ExcludeFromFishingCollection": true,
+                "ExcludeFromShippingCollection": false,
+                "ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_purple"
+                ],
+                "CustomFields": null
+                }    
+            }
+        },
+         //Animals
+         { 
+            "LogName": "Load data for Iron Bundle",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "IronBundle": {
+                    "DisplayName": "{{i18n:IronBundle}}",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 6000,
+					"SellPrice": 12000,
+                    "ShopTexture": "Animals/{{ModId}}_shop_IronBundle_icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "ShopDisplayName": "{{i18n:IronBundle}}",
+                    "ShopDescription": "{{i18n:IronBundleDescription}}",
+                    "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5936]",
+                    "RequiredBuilding": "Big Barn",
+
+                   "DaysToMature": "4",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": "ANY \"!SEASON Winter, !DAY_OF_MONTH 25\" \"SEASON Winter, !DAY_OF_MONTH 25\" \"!SEASON Winter, DAY_OF_MONTH 25\"",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}_Present"
+                        },
+                        {
+                            "Id": "Default",
+                            "Condition": "ANY \"!SEASON Winter, !DAY_OF_MONTH 25\" \"SEASON Winter, !DAY_OF_MONTH 25\" \"!SEASON Winter, DAY_OF_MONTH 25\"",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}_PresentBomb"
+                        },
+                        {
+                            "Id": "Default",
+                            "Condition": "ANY \"SEASON Winter, DAY_OF_MONTH 25\"",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}_WinterStarGift"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": "ANY \"!SEASON Winter, !DAY_OF_MONTH 25\" \"SEASON Winter, !DAY_OF_MONTH 25\" \"!SEASON Winter, DAY_OF_MONTH 25\"",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}_PresentBomb"
+                        },
+                        {
+                            "Id": "Default",
+                            "Condition": "ANY \"!SEASON Winter, !DAY_OF_MONTH 25\" \"SEASON Winter, !DAY_OF_MONTH 25\" \"!SEASON Winter, DAY_OF_MONTH 25\"",                   
+                            "MinimumFriendship": 500,
+                            "ItemId": "{{ModId}}_MysteryGift"
+                            
+                        },
+                        {
+                            "Id": "Default",
+                            "Condition": "ANY \"!SEASON Winter, !DAY_OF_MONTH 25\" \"SEASON Winter, !DAY_OF_MONTH 25\" \"!SEASON Winter, DAY_OF_MONTH 25\"",    
+                            "MinimumFriendship": 500,
+                            "ItemId": "{{ModId}}_SurpriseGift"
+                        },
+                        {
+                            "Id": "Default",
+                            "Condition": "ANY \"SEASON Winter, DAY_OF_MONTH 25\"",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}_WinterStarGift"
+                        }
+                    ],
+                    "DaysToProduce": "1",
+                    "ProduceOnMature": true,
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": "null",
+                    "Sound": "{{ModId}}_IronBundleCry",
+                    "Texture": "Animals/{{ModId}}_IronBundle",
+                    "UseFlippedRightForLeft": false,
+                    "CanSwim": false,
+                    "SpriteWidth": "28",
+                    "SpriteHeight": "28",
+					"Skins": [
+						{
+							"id": "IronBundleShiny",
+							"Texture": "Animals/{{ModId}}_IronBundle_shiny",
+							"Weight": 0.1
+							}
+					],
+					"ShadowWhenAdult": {
+                        "Visible": false
+                      },
+					"ShadowWhenBaby": {
+						"Visible": false
+					  },
+                    "ShowInSummitCredits": true
+                }
+            }
+        },
+                //Sounds
+		{
+			"Action": "EditData",
+			"Target": "Data/AudioChanges",
+			"Entries": {
+				"{{ModId}}_IronBundleCry": {
+					"ID": "{{ModId}}_IronBundleCry",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/IronBundleSound.wav}}" ],
+					"StreamedVorbis": false
+				}
+			}
+		}
+
+
+
+
+
+    ]
+}

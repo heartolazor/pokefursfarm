@@ -1,0 +1,39 @@
+{
+"Changes": [
+
+	{
+		"LogName": "Lotus Schedule",
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Lotus",
+                "When": {
+			"HasSeenEvent: hostPlayer |contains=98890046": true
+                        },
+		"Entries": {
+
+			//Regular Schedule
+			"spring": "610 {{ModId}}_LotusHouse 15 6 0/900 {{ModId}}_AxolotlTown 89 84 1/1200 {{ModId}}_AxolotlTown 82 58 3/1600 {{ModId}}_AxolotlBakery 5 6 0/2000 {{ModId}}_LotusHouse 18 10 2 lotus_sleep",
+			"summer": "610 {{ModId}}_LotusHouse 4 9 3/900 {{ModId}}_AxolotlTown 27 53 0/1300 {{ModId}}_AxolotlTown 109 79 1/2000 {{ModId}}_LotusHouse 18 10 2 lotus_sleep",
+			"fall": "610 {{ModId}}_LotusHouse 15 6 0/900 {{ModId}}_AxolotlLake 46 57 0/1500 {{ModId}}_AxolotlTown 37 77 3/2000 {{ModId}}_LotusHouse 18 10 2 lotus_sleep",
+			"winter": "610 {{ModId}}_LotusHouse 4 9 3/900 {{ModId}}_AxolotlLake 46 57 0/1500 {{ModId}}_AxolotlTown 37 77 3/2000 {{ModId}}_LotusHouse 18 10 2 lotus_sleep",
+			"rain": "610 {{ModId}}_LotusHouse 15 6 0/1200 {{ModId}}_LotusHouse 4 9 3/1600 {{ModId}}_LotusHouse 10 10 3/2000 {{ModId}}_LotusHouse 18 10 2 lotus_sleep",
+			"Fri": "610 {{ModId}}_LotusHouse 4 9 3/900 {{ModId}}_AxolotlTown 89 84 1/1400 {{ModId}}_AxolotlCommunityCenter 33 10 3/2000 {{ModId}}_LotusHouse 18 10 2 lotus_sleep",
+                        "Wed": "610 {{ModId}}_LotusHouse 4 9 3/1000 {{ModId}}_AxolotlTown 28 42 0/2000 {{ModId}}_LotusHouse 18 10 2 lotus_sleep",
+                        "fall_28": "610 {{ModId}}_LotusHouse 15 6 0/900 {{ModId}}_AxolotlLake 46 57 0/1500 {{ModId}}_AxolotlTown 37 77 3/1850 {{ModId}}_AxolotlTown 34 51 2/2350 {{ModId}}_LotusHouse 18 10 2 lotus_sleep",
+                        "winter_25": "610 {{ModId}}_LotusHouse 4 9 3/900 {{ModId}}_AxolotlTown 34 51 3/2000 {{ModId}}_LotusHouse 18 10 2 lotus_sleep",
+                        "summer_7": "610 {{ModId}}_LotusHouse 4 9 3/900 {{ModId}}_AxolotlTown 27 53 0/1300 {{ModId}}_AxolotlTown 109 79 1/1800 {{ModId}}_AxolotlTown 37 78 3/2350 {{ModId}}_LotusHouse 18 10 2 lotus_sleep",
+                        "spring_21": "610 {{ModId}}_LotusHouse 15 6 0/800 {{ModId}}_AxolotlTown 37 78 3/2000 {{ModId}}_LotusHouse 18 10 2 lotus_sleep",
+			}
+	},
+{
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Lotus",
+		"Entries": {
+			"Sun": "610 {{ModId}}_LotusHouse 16 6 0/900 {{ModId}}_AxolotlTownSouth 82 38 0/2000 {{ModId}}_LotusHouse 18 10 2 lotus_sleep",
+			},
+		"When": {
+			"HasSeenEvent: hostPlayer |contains=98890046": true,
+                        "HasReadLetter: hostPlayer |contains=CaptainProject4": true
+                        },
+	},
+]
+}

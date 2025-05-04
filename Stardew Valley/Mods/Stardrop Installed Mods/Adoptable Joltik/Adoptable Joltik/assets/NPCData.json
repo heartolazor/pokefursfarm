@@ -1,0 +1,128 @@
+{
+  "Changes": [
+    {
+ "LogName": "Add Joltik to character data",
+ "Target": "Data/Characters",
+ "Action": "EditData",
+ "Entries": {
+   "SubmasDemoAdoptableJoltik": {
+      "DisplayName": "Joltik",
+      "Gender": "Undefined",
+      "Age": "Child",
+      "Manner": "Neutral",
+      "SocialAnxiety": "Outgoing",
+      "Optimism": "Positive",
+      "BirthSeason": "spring",
+      "BirthDay": "14",
+      "HomeRegion": "Other",
+     "DumpsterDiveFriendshipEffect": -5,
+     "HiddenProfileEmoteStartFrame": 16,
+     "HiddenProfileEmoteFrameCount": 8,
+     "HiddenProfileEmoteFrameDuration": 300,
+     "HiddenProfileEmoteDuration": 6000,
+     "CanVisitIsland": false,
+      "IntroductionsQuest": false,
+      "ItemDeliveryQuests": false,
+      "WinterStarParticipant": false,
+     "Breather": true,
+     "EmoteOffset": {
+  "X": 0, "Y": 10
+     },
+     "PerfectionScore": true,
+     "Calendar": "HiddenAlways",
+     "EndSlideShow": "TrailingGroup",
+     "FriendsAndFamily": {
+         "Jas": "friend",
+         "Vincent": "other friend"},
+     "Home": [
+  {
+    "Id": "Default",
+    "Location": "AnimalShop",
+    "Tile": { "X": 3, "Y": 16 },
+    "Direction": "right"
+  }
+     ]
+   }
+ }
+    },
+
+    {
+      "LogName": "NPC Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "SubmasDemoAdoptableJoltik": "Yay!!! Thank you! Thank you! Thank you!!!/787 -79 258/Yippee!/-81 -80 -75 -27 -7 -6 -5 395 558 636 638 253/Bah... Thankies./171 169/Bah.../172 170 168 167/Thanks! Emmet taught me to hop on the gratitude express no matter what!/-26 -20 -12 -4 -2 "
+      }
+	  },
+         {
+            "LogName":"NPC Sprite",
+            "Action":"Load",
+            "Target":"Characters/SubmasDemoAdoptableJoltik",
+            "FromFile":"assets/JoltikSprite.png"
+         },
+         {
+            "LogName":"NPC Portrait",
+            "Action":"Load",
+            "Target":"Portraits/SubmasDemoAdoptableJoltik",
+            "FromFile":"assets/JoltikPortraitVanillaSize.png"
+         },
+         {
+            "LogName":"Schedule",
+            "Action":"Load",
+            "Target":"Characters/Schedules/SubmasDemoAdoptableJoltik",
+            "FromFile":"assets/JoltikSchedule.json"
+         },
+		{
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+        "submasdemoadoptablejoltik_sleep": "24/24/24"
+	      }
+		      },
+         {
+            "LogName":"Dialogue",
+            "Action":"Load",
+            "Target":"Characters/Dialogue/SubmasDemoAdoptableJoltik",
+            "FromFile":"assets/JoltikDialogue.json"
+         },
+         {
+            "LogName":"Emmet Portrait",
+            "Action":"Load",
+            "Target":"Portraits/AdoptableJoltikEmmet",
+            "FromFile":"assets/EmmetPortraitVanillaSize.png"
+         },
+         {
+            "LogName":"Emmet Sprite",
+            "Action":"Load",
+            "Target":"Characters/AdoptableJoltikEmmet",
+            "FromFile":"assets/EmmetSprite.png"
+         },
+		 {
+            "LogName":"Ingo Portrait",
+            "Action":"Load",
+            "Target":"Portraits/AdoptableJoltikIngo",
+            "FromFile":"assets/IngoPortraitVanillaSize.png"
+         },
+         {
+            "LogName":"Ingo Sprite",
+            "Action":"Load",
+            "Target":"Characters/AdoptableJoltikIngo",
+            "FromFile":"assets/IngoSprite.png"
+         },
+         {
+            "LogName":"Galvantula Portrait",
+            "Action":"Load",
+            "Target":"Portraits/AdoptableJoltikGalvantula",
+            "FromFile":"assets/GalvantulaPortraitVanillaSize.png"
+         },
+         {
+            "LogName":"Galvantula Sprite",
+            "Action":"Load",
+            "Target":"Characters/AdoptableJoltikGalvantula",
+            "FromFile":"assets/GalvantulaSprite.png"
+         }
+  ]
+    }
+  
+
+

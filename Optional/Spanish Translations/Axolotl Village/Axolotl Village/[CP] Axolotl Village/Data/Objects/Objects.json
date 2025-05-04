@@ -1,0 +1,3163 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load Objects Tilesheet",
+      "Action": "Load",
+      "Target": "Mods\\{{ModId}}\\Objects\\Objects",
+      "FromFile": "Assets/Objects/Objects.png"
+    },
+    {
+      "LogName": "Load Furniture Tilesheet",
+      "Action": "Load",
+      "Target": "Mods/otohime.AV/Furniture",
+      "FromFile": "assets/Objects/Furniture.png"
+    },
+    {
+      "LogName": "Load Plushies Tilesheet",
+      "Action": "Load",
+      "Target": "Mods/otohime.AV/Plushies",
+      "FromFile": "assets/Objects/Plushies.png"
+    },
+    {
+      "LogName": "Load Individual Sprites",
+      "Action": "Load",
+      "Target": "Mods/otohime.AV/fcaptain, Mods/otohime.AV/fhiro, Mods/otohime.AV/fjinx, Mods/otohime.AV/flala, Mods/otohime.AV/flulu, Mods/otohime.AV/fnimue, Mods/otohime.AV/fnoa, Mods/otohime.AV/folina, Mods/otohime.AV/fpuka, Mods/otohime.AV/skandi, Mods/otohime.AV/sbonbon, Mods/otohime.AV/salbino, Mods/otohime.AV/sblack, Mods/otohime.AV/sblue, Mods/otohime.AV/slavender, Mods/otohime.AV/spink, Mods/otohime.AV/syellow, Mods/otohime.AV/fkandi, Mods/otohime.AV/falbino, Mods/otohime.AV/fblack, Mods/otohime.AV/fblue, Mods/otohime.AV/flavender, Mods/otohime.AV/fpink, Mods/otohime.AV/fyellow, Mods/otohime.AV/redlol, Mods/otohime.AV/orangelol, Mods/otohime.AV/yellowlol, Mods/otohime.AV/greenlol, Mods/otohime.AV/bluelol, Mods/otohime.AV/purplelol, Mods/otohime.AV/pinklol, Mods/otohime.AV/albinoscare, Mods/otohime.AV/yellowscare, Mods/otohime.AV/pinkscare, Mods/otohime.AV/bluescare, Mods/otohime.AV/lavenderscare, Mods/otohime.AV/blackscare",
+      "FromFile": "assets/Objects/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "Objects Data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_Albino_Axolotl_Cake": {
+          "Name": "Albino Axolotl Cake",
+          "DisplayName": "Albino Axolotl Cake",
+  "Description": "Un pastel que se parece a un axolote albino.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 500,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "0",
+          "Edibility": 100,
+          "ContextTags": [
+            "color_white",
+          ],
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 3,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_AV_Warp_Totem": {
+          "Name": "Warp Totem: Axolotl Village",
+          "DisplayName": "Warp Totem: Axolotl Village",
+  "Description": "Teletransportarse directamente al Pueblo Axolote. Se consume al usarlo.",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 50,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "1",
+          "Edibility": -300,
+          "ContextTags": [
+                        "color_white",
+                        "not_placeable",
+                        "totem_item"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Black_Axolotl_Cake": {
+          "Name": "Black Axolotl Cake",
+          "DisplayName": "Black Axolotl Cake",
+  "Description": "Un pastel que se asemeja a un axolote negro.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 500,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "2",
+          "Edibility": 100,
+          "ContextTags": [
+            "color_black",
+          ],
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 3,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Blue_Axolotl_Cake": {
+          "Name": "Blue Axolotl Cake",
+          "DisplayName": "Blue Axolotl Cake",
+  "Description": "Un pastel que se asemeja a un axolote azul.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 500,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "3",
+          "Edibility": 100,
+          "ContextTags": [
+            "color_blue",
+          ],
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 3,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Blueberry_Candy": {
+          "Name": "Blueberry Candy",
+          "DisplayName": "Blueberry Candy",
+  "Description": "Dulce duro con sabor a arándano, delicioso.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "4",
+          "Edibility": 50,
+          "ContextTags": [
+            "color_blue",
+          ],
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Blueberry_Ice_Cream": {
+          "Name": "Blueberry Ice Cream",
+          "DisplayName": "Blueberry Ice Cream",
+          "Description": "Bluey's specialty.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "5",
+          "Edibility": 50,
+          "ContextTags": [
+            "color_blue",
+          ],
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Bonefish": {
+          "Name": "Bonefish",
+          "DisplayName": "Bonefish",
+  "Description": "Estos peces son veloces y pueden nadar a 40 mph.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "6",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_grey",
+                        "fish_avbonefish",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Bonito": {
+          "Name": "Bonito",
+          "DisplayName": "Bonito",
+  "Description": "Se alimenta de otros peces e incluso calamares.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 100,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "7",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_blue",
+                        "fish_bonito",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Cinnamon_Layer_Cake": {
+          "Name": "Cinnamon Layer Cake",
+          "DisplayName": "Cinnamon Layer Cake",
+  "Description": "Sabe a rollo de canela, ¡se ve como un pastel!",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 300,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "8",
+          "Edibility": 50,
+          "ContextTags": [
+            "color_sand",
+          ],
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Cobia": {
+          "Name": "Cobia",
+          "DisplayName": "Cobia",
+          "Description": "Este pescado se considera perfecto para utilizar en platos como tacos y sushi.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "9",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_brown",
+                        "fish_cobia",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Cotton_Candy_Cocktail": {
+          "Name": "Cotton Candy Cocktail",
+          "DisplayName": "Cotton Candy Cocktail",
+          "Description": "Un cóctel con un agradable sabor a algodón de azúcar.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 250,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "10",
+          "Edibility": 100,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 420,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Cotton_Candy_Heart": {
+          "Name": "Cotton Candy Heart",
+          "DisplayName": "Cotton Candy Heart",
+          "Description": "Algodón de azúcar en forma de corazón. ¡Perfecto para regalar a un amigo o pareja!",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "11",
+          "Edibility": 70,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Fluffy_Marshmallow": {
+          "Name": "Fluffy Marshmallow",
+          "DisplayName": "Fluffy Marshmallow",
+          "Description": "¡Perfectamente suave y masticable!",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 50,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "12",
+          "Edibility": 30,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Futan_Captain": {
+          "Name": "Futan Captain",
+          "DisplayName": "Futan Captain",
+          "Description": "¡Es un axolotl futón que se parece al Capitán!",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 500,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "13",
+          "Edibility": -300,
+        },
+        "{{ModId}}_Futan_Hiro": {
+          "Name": "Futan Hiro",
+          "DisplayName": "Futan Hiro",
+          "Description": "¡Es un axolotl futón que se parece a Hiro!",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 500,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "14",
+          "Edibility": -300,
+        },
+        "{{ModId}}_Futan_Jinx": {
+          "Name": "Futan Jinx",
+          "DisplayName": "Futan Jinx",
+          "Description": "¡Es un ajolote futón que se parece a Jinx!",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 500,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "15",
+          "Edibility": -300,
+        },
+        "{{ModId}}_Futan_Lala": {
+          "Name": "Futan Lala",
+          "DisplayName": "Futan Lala",
+          "Description": "Es un axolotl futón que se parece a Lala.!",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 500,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "16",
+          "Edibility": -300,
+        },
+        "{{ModId}}_Futan_Lulu": {
+          "Name": "Futan Lulu",
+          "DisplayName": "Futan Lulu",
+          "Description": "Es un axolotl futón que se parece a Lulu.!",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 500,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "17",
+          "Edibility": -300,
+        },
+        "{{ModId}}_Futan_Nimue": {
+          "Name": "Futan Nimue",
+          "DisplayName": "Futan Nimue",
+          "Description": "Es un axolotl futón que se parece a Nimue.!",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 500,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "18",
+          "Edibility": -300,
+        },
+        "{{ModId}}_Futan_Noa": {
+          "Name": "Futan Noa",
+          "DisplayName": "Futan Noa",
+          "Description": "¡Es un axolotl futón que se parece a Noa!",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 500,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "19",
+          "Edibility": -300,
+        },
+        "{{ModId}}_Futan_Olina": {
+          "Name": "Futan Olina",
+          "DisplayName": "Futan Olina",
+          "Description": "¡Es un axolotl futón que se parece a Olina!",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 500,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "20",
+          "Edibility": -300,
+        },
+        "{{ModId}}_Futan_Puka": {
+          "Name": "Futan Puka",
+          "DisplayName": "Futan Puka",
+          "Description": "¡Es un axolotl futón que se parece a Puka!",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 500,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "21",
+          "Edibility": -300,
+        },
+        "{{ModId}}_Halloween_Candy": {
+          "Name": "Halloween Candy",
+          "DisplayName": "Halloween Candy",
+          "Description": "¡Truco o trato!",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "22",
+          "Edibility": 50,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 3,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Juggling_Balls": {
+          "Name": "Juggling Balls",
+          "DisplayName": "Juggling Balls",
+          "Description": "Un paquete de pelotas de malabarismo pertenecientes a Lulu.",
+          "Type": "Basic",
+          "Category": 0,
+          "Price": 0,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "23",
+          "Edibility": -300,
+          "ContextTags": [
+                        "not_placeable"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Lavender_Axolotl_Cake": {
+          "Name": "Lavender Axolotl Cake",
+          "DisplayName": "Lavender Axolotl Cake",
+          "Description": "Un pastel que se asemeja a un ajolote lavanda.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 500,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "24",
+          "Edibility": 100,
+          "ContextTags": [
+            "color_purple",
+          ],
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 3,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Melon_Candy": {
+          "Name": "Melon Candy",
+          "DisplayName": "Melon Candy",
+          "Description": "Deliciosos caramelos duros con sabor a melón.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "25",
+          "Edibility": 50,
+          "ContextTags": [
+            "color_pink",
+          ],
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Melon_Ice_Cream": {
+          "Name": "Melon Ice Cream",
+          "DisplayName": "Melon Ice Cream",
+          "Description": "La especialidad de Pinky.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "26",
+          "Edibility": 50,
+          "ContextTags": [
+            "color_pink",
+          ],
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Nimue's_Wand": {
+          "Name": "Nimue's Wand",
+          "DisplayName": "Nimue's Wand",
+          "Description": "Una de las muchas varitas de Nimue.",
+          "Type": "Basic",
+          "Category": 0,
+          "Price": 0,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "27",
+          "Edibility": -300,
+          "ContextTags": [
+                        "not_placeable"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Noa's_Pillow": {
+          "Name": "Noa's Pillow",
+          "DisplayName": "Noa's Pillow",
+          "Description": "Una de las muchas almohadas que posee Noa.",
+          "Type": "Basic",
+          "Category": 0,
+          "Price": 0,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "28",
+          "Edibility": -300,
+          "ContextTags": [
+                        "not_placeable"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Olina's_Plushie": {
+          "Name": "Olina's Plushie",
+          "DisplayName": "Olina's Plushie",
+          "Description": "Un peluche que se parece a un axolotl albino. Uno de los favoritos de Olina.",
+          "Type": "Basic",
+          "Category": 0,
+          "Price": 0,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "29",
+          "Edibility": -300,
+          "ContextTags": [
+                        "not_placeable"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Pink_Axolotl_Cake": {
+          "Name": "Pink Axolotl Cake",
+          "DisplayName": "Pink Axolotl Cake",
+          "Description": "Un pastel que se asemeja a un ajolote rosado.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 500,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "30",
+          "Edibility": 100,
+          "ContextTags": [
+            "color_pink",
+          ],
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 3,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Primary_Layer_Cake": {
+          "Name": "Primary Layer Cake",
+          "DisplayName": "Primary Layer Cake",
+          "Description": "Un pastel que tiene capas de colores primarios.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 300,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "31",
+          "Edibility": 100,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 2,
+                "Defense": 2,
+                "Attack": 2
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Rainbow_Colada": {
+          "Name": "Rainbow Colada",
+          "DisplayName": "Rainbow Colada",
+          "Description": "Si te gusta que te pille bajo la lluvia, esto te gustará.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 300,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "32",
+          "Edibility": 100,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 420,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Red_Drum": {
+          "Name": "Red Drum",
+          "DisplayName": "Red Drum",
+          "Description": "También conocida como gallineta nórdica o simplemente simplemente 'roja'.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 220,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "33",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_red",
+                        "fish_red_drum",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Roosterfish": {
+          "Name": "Roosterfish",
+          "DisplayName": "Roosterfish",
+          "Description": "Su nombre se debe a las espinas que poseen en la aleta dorsal, parecidas a una cresta de gallo.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 150,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "34",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_blue",
+                        "fish_roosterfish",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Sheepshead": {
+          "Name": "Sheepshead",
+          "DisplayName": "Sheepshead",
+          "Description": "Estos peces tienen dientes extrañamente parecidos a los humanos que usan para masticar su comida.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "35",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_black",
+                        "fish_sheepshead",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Tarpon": {
+          "Name": "Tarpon",
+          "DisplayName": "Tarpon",
+          "Description": "Estos peces son capaces de saltar fuera del agua a alturas impresionantes.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 210,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "36",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_blue",
+                        "fish_tarpon",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_The_Big_Cookie": {
+          "Name": "The Big Cookie",
+          "DisplayName": "The Big Cookie",
+          "Description": "The Big One.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 400,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "37",
+          "Edibility": 100,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 1,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Wahoo": {
+          "Name": "Wahoo",
+          "DisplayName": "Wahoo",
+          "Description": "También conocida como 'Ono' en Hawai, que significa 'bueno para comer'.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 250,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "38",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_white",
+                        "fish_wahoo",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Yellow_Axolotl_Cake": {
+          "Name": "Yellow Axolotl Cake",
+          "DisplayName": "Yellow Axolotl Cake",
+          "Description": "Un pastel que se parece a un ajolote amarillo.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 500,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "39",
+          "Edibility": 100,
+          "ContextTags": [
+            "color_yellow",
+          ],
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 3,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Yellowfin_Tuna": {
+          "Name": "Yellowfin Tuna",
+          "DisplayName": "Yellowfin Tuna",
+          "Description": "Estos pescados se utilizan popularmente en sashimi.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 150,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "40",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_yellow",
+                        "fish_yellowfin_tuna",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Futan_Rainbow_Axolotl": {
+          "Name": "Futan Rainbow Axolotl",
+          "DisplayName": "Futan Rainbow Axolotl",
+          "Description": "Es un axolotl futón con colores del arco iris.!",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 500,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "41",
+          "Edibility": -300,
+        },
+        "{{ModId}}_Albino_Axolotl_Jack_O_Lantern": {
+          "Name": "Albino Axolotl Jack-o'-Lantern",
+          "DisplayName": "Albino Axolotl Jack-o'-Lantern",
+          "Description": "Una linda Jack-O-Lantern que parece un ajolote albino.",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "42",
+          "Edibility": -300,
+        },
+        "{{ModId}}_Black_Axolotl_Jack_O_Lantern": {
+          "Name": "Black Axolotl Jack-o'-Lantern",
+          "DisplayName": "Black Axolotl Jack-o'-Lantern",
+          "Description": "Una linda Jack-O-Lantern que parece un ajolote negro.",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "43",
+          "Edibility": -300,
+        },
+        "{{ModId}}_Blue_Axolotl_Jack_O_Lantern": {
+          "Name": "Blue Axolotl Jack-o'-Lantern",
+          "DisplayName": "Blue Axolotl Jack-o'-Lantern",
+          "Description": "Una linda Jack-O-Lantern que parece un ajolote negro.",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "44",
+          "Edibility": -300,
+        },
+        "{{ModId}}_Blueberry_Candy_Cane": {
+          "Name": "Blueberry Candy Cane",
+          "DisplayName": "Blueberry Candy Cane",
+          "Description": "Un bastón de caramelo azul y blanco con sabor a arándano",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "45",
+          "Edibility": 50,
+          "ContextTags": [
+            "color_blue",
+          ],
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Blueberry_Fruitcake": {
+          "Name": "Blueberry Fruitcake",
+          "DisplayName": "Blueberry Fruitcake",
+          "Description": "Un pastel con trozos de arándanos incrustados en él.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 300,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "46",
+          "Edibility": 50,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Churro": {
+          "Name": "Churro",
+          "DisplayName": "Churro",
+          "Description": "Un palito crujiente de masa frita cubierto de canela",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 300,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "47",
+          "Edibility": 50,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 1,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Flan": {
+          "Name": "Flan",
+          "DisplayName": "Flan",
+          "Description": "Una deliciosa natilla con salsa de caramelo encima.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 300,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "48",
+          "Edibility": 50,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 1,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Futan_Santa_Captain": {
+          "Name": "Futan Santa Captain",
+          "DisplayName": "Futan Santa Captain",
+          "Description": "¡Es un axolotl futón que parece un Capitán vestido de Papá Noel!",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 500,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "49",
+          "Edibility": -300,
+        },
+        "{{ModId}}_Lavender_Axolotl_Jack_O_Lantern": {
+          "Name": "Lavender Axolotl Jack-o'-Lantern",
+          "DisplayName": "Lavender Axolotl Jack-o'-Lantern",
+          "Description": "Una linda Jack-O-Lantern que parece un ajolote lavanda.",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "50",
+          "Edibility": -300,
+        },
+       "{{ModId}}_Melon_Candy_Cane": {
+          "Name": "Melon Candy Cane",
+          "DisplayName": "Melon Candy Cane",
+          "Description": "Un bastón de caramelo de color rosa y blanco con sabor a melón.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "51",
+          "Edibility": 50,
+          "ContextTags": [
+            "color_pink",
+          ],
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Melon_Fruitcake": {
+          "Name": "Melon Fruitcake",
+          "DisplayName": "Melon Fruitcake",
+          "Description": "Un pastel con trozos de melón incrustados en él.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 300,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "52",
+          "Edibility": 50,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Pink_Axolotl_Jack_O_Lantern": {
+          "Name": "Pink Axolotl Jack-o'-Lantern",
+          "DisplayName": "Pink Axolotl Jack-o'-Lantern",
+          "Description": "Una linda Jack-O-Lantern que parece un ajolote rosado.",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "53",
+          "Edibility": -300,
+        },
+        "{{ModId}}_The_Big_Donut": {
+          "Name": "The Big Donut",
+          "DisplayName": "The Big Donut",
+          "Description": "The Big One.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 400,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "54",
+          "Edibility": 100,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 1,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Yellow_Axolotl_Jack_O_Lantern": {
+          "Name": "Yellow Axolotl Jack-o'-Lantern",
+          "DisplayName": "Yellow Axolotl Jack-o'-Lantern",
+          "Description": "Una linda Jack-O-Lantern que parece un ajolote amarillo.",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "55",
+          "Edibility": -300,
+        },
+        "{{ModId}}_Pink_Tanzaku": {
+          "Name": "Pink Tanzaku",
+          "DisplayName": "Pink Tanzaku",
+          "Description": "Escribe un deseo en este trozo de papel y tal vez se haga realidad",
+          "Type": "Basic",
+          "Category": 0,
+          "Price": 0,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "56",
+          "Edibility": -300,
+          "ContextTags": [
+                        "not_placeable"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Blue_Tanzaku": {
+          "Name": "Blue Tanzaku",
+          "DisplayName": "Blue Tanzaku",
+          "Description": "Escribe un deseo en este trozo de papel y ¡quizás se haga realidad!",
+          "Type": "Basic",
+          "Category": 0,
+          "Price": 0,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "57",
+          "Edibility": -300,
+          "ContextTags": [
+                        "not_placeable"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Takoyaki": {
+          "Name": "Takoyaki",
+          "DisplayName": "Takoyaki",
+          "Description": "Bolitas de masa con pulpo masticable en su interior.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 300,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "58",
+          "Edibility": 50,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 1,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Okonomiyaki": {
+          "Name": "Okonomiyaki",
+          "DisplayName": "Okonomiyaki",
+          "Description": "Como un panqueque, ¡pero sabroso!",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 300,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "59",
+          "Edibility": 50,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 1,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Melon_Kakigori": {
+          "Name": "Melon Kakigori",
+          "DisplayName": "Melon Kakigori",
+          "Description": "Hielo raspado con jarabe sabor a melón encima.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "60",
+          "Edibility": 50,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 1,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 2,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Blueberry_Kakigori": {
+          "Name": "Blueberry Kakigori",
+          "DisplayName": "Blueberry Kakigori",
+          "Description": "Hielo raspado con jarabe de sabor a arándanos encima.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "61",
+          "Edibility": 50,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 1,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 2,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Taiyaki": {
+          "Name": "Taiyaki",
+          "DisplayName": "Taiyaki",
+          "Description": "Un pastel con forma de pez con relleno de pasta de frijoles rojos.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "62",
+          "Edibility": 50,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 1,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 2,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Melon_Ramune": {
+          "Name": "Melon Ramune",
+          "DisplayName": "Melon Ramune",
+          "Description": "Un refresco con un toque de melón.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 150,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "63",
+          "Edibility": 50,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 420,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 1,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 3,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Blueberry_Ramune": {
+          "Name": "Blueberry Ramune",
+          "DisplayName": "Blueberry Ramune",
+          "Description": "Un refresco con un toque de arándanos.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 150,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "64",
+          "Edibility": 50,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 420,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 1,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 3,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Futan_Kandi": {
+          "Name": "Futan Kandi",
+          "DisplayName": "Futan Kandi",
+          "Description": "¡Es un axolotl futón que se parece a Kandi!",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 500,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "65",
+          "Edibility": -300,
+        },
+        "{{ModId}}_Kandi_Candy": {
+          "Name": "Kandi Candy",
+          "DisplayName": "Kandi Candy",
+          "Description": "Special Kandi-branded candy!",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "66",
+          "Edibility": 50,
+          "ContextTags": [
+          ],
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Crabapple": {
+          "Name": "Crabapple",
+          "DisplayName": "Crabapple",
+          "Description": "Se parecen a las manzanas, pero tienen un sabor muy amargo.",
+          "Type": "Basic",
+          "Category": -79,
+          "Price": 150,
+          "Texture": "Mods\\otohime.AV\\Objects\\Objects",
+          "SpriteIndex": "67",
+          "Edibility": 50,
+          "ContextTags": [
+            "color_red",
+          ],
+        },
+        "{{ModId}}_Cannonball_Fruit": {
+          "Name": "Cannonball Fruit",
+          "DisplayName": "Cannonball Fruit",
+          "Description": "Estas frutas producen un ruido sordo cuando caen del árbol.",
+          "Type": "Basic",
+          "Category": -79,
+          "Price": 110,
+          "Texture": "Mods\\otohime.AV\\Objects\\Objects",
+          "SpriteIndex": "68",
+          "Edibility": 50,
+          "ContextTags": [
+            "color_brown",
+          ],
+        },
+        "{{ModId}}_Flamingo_Flower": {
+          "Name": "Flamingo Flower",
+          "DisplayName": "Flamingo Flower",
+          "Description": "This flower symbolizes love and elegance.",
+          "Type": "Basic",
+          "Category": -80,
+          "Price": 200,
+          "Texture": "Mods\\otohime.AV\\Objects\\Objects",
+          "SpriteIndex": "69",
+          "Edibility": 5,
+          "IsDrink": false,
+          "Buff": null,
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "ContextTags": [
+             "color_red",
+             "flower_item",
+             "season_spring",
+             "season_summer"
+           ],
+          "CustomFields": {}
+         },
+         "{{ModId}}_Flamingo_Flower_Seeds": {
+                    "Name": "Flamingo Flower Seeds",
+                    "DisplayName": "Flamingo Flower Seeds",
+                    "Description": "Plántela en primavera o verano. Tarda 14 días en producir múltiples flores. Produce más semillas en la cosecha.",
+                    "Type": "Seeds",
+                    "Category": -74,
+                    "Price": 110,
+                    "Texture": "Mods\\otohime.AV\\Objects\\Objects",
+                    "SpriteIndex": "70",
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buff": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": null,
+                    "CustomFields": {}
+                },
+                "{{ModId}}_Urn_Plant": {
+                    "Name": "Urn Plant",
+                    "DisplayName": "Urn Plant",
+                    "Description": "Esta planta con flores es una atractiva planta de interior.",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 300,
+                    "Texture": "Mods\\otohime.AV\\Objects\\Objects",
+                    "SpriteIndex": "71",
+                    "Edibility": 5,
+                    "IsDrink": false,
+                    "Buff": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": [
+                        "color_pink",
+                        "flower_item",
+                        "season_spring",
+                        "season_summer"
+                    ],
+                    "CustomFields": {}
+         },
+         "{{ModId}}_Urn_Plant_Seeds": {
+                    "Name": "Urn Plant Seeds",
+                    "DisplayName": "Urn Plant Seeds",
+                    "Description": "Plántalo en primavera o verano. Tarda 20 días en dar una flor.",
+                    "Type": "Seeds",
+                    "Category": -74,
+                    "Price": 100,
+                    "Texture": "Mods\\otohime.AV\\Objects\\Objects",
+                    "SpriteIndex": "72",
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buff": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": null,
+                    "CustomFields": {}
+                },
+                "{{ModId}}_Rose_Grape": {
+                    "Name": "Rose Grape",
+                    "DisplayName": "Rose Grape",
+                    "Description": "No se recomienda comer las bayas producidas por esta planta.",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 90,
+                    "Texture": "Mods\\otohime.AV\\Objects\\Objects",
+                    "SpriteIndex": "73",
+                    "Edibility": 5,
+                    "IsDrink": false,
+                    "Buff": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": [
+                        "color_pink",
+                        "flower_item",
+                        "season_spring"
+                    ],
+                    "CustomFields": {}
+         },
+         "{{ModId}}_Rose_Grape_Starter": {
+                    "Name": "Rose Grape Starter",
+                    "DisplayName": "Rose Grape Starter",
+                    "Description": "Plántalo en primavera. Tarda 15 días en producir múltiples flores.",
+                    "Type": "Seeds",
+                    "Category": -74,
+                    "Price": 50,
+                    "Texture": "Mods\\otohime.AV\\Objects\\Objects",
+                    "SpriteIndex": "74",
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buff": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": null,
+                    "CustomFields": {}
+                },
+                "{{ModId}}_Futan_Albino_Axolotl": {
+                    "Name": "Futan Albino Axolotl",
+                    "DisplayName": "Futan Albino Axolotl",
+                    "Description": "Un pequeño peluche futan que parece un ajolote albino.",
+                    "Type": "Crafting",
+                    "Category": 0,
+                    "Price": 500,
+                    "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+                    "SpriteIndex": "75",
+                    "Edibility": -300,
+                 },
+                 "{{ModId}}_Futan_Black_Axolotl": {
+                    "Name": "Futan Black Axolotl",
+                    "DisplayName": "Futan Black Axolotl",
+                    "Description": "Un pequeño peluche futan que parece un ajolote negro..",
+                    "Type": "Crafting",
+                    "Category": 0,
+                    "Price": 500,
+                    "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+                    "SpriteIndex": "76",
+                    "Edibility": -300,
+                 },
+                 "{{ModId}}_Futan_Blue_Axolotl": {
+                    "Name": "Futan Blue Axolotl",
+                    "DisplayName": "Futan Blue Axolotl",
+                    "Description": "Un pequeño peluche futan que parece un ajolote azul.",
+                    "Type": "Crafting",
+                    "Category": 0,
+                    "Price": 500,
+                    "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+                    "SpriteIndex": "77",
+                    "Edibility": -300,
+                 },
+                 "{{ModId}}_Futan_Lavender_Axolotl": {
+                    "Name": "Futan Lavender Axolotl",
+                    "DisplayName": "Futan Lavender Axolotl",
+                    "Description": "Un pequeño peluche futan que parece un ajolote lavanda.",
+                    "Type": "Crafting",
+                    "Category": 0,
+                    "Price": 500,
+                    "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+                    "SpriteIndex": "78",
+                    "Edibility": -300,
+                 },
+                 "{{ModId}}_Futan_Pink_Axolotl": {
+                    "Name": "Futan Pink Axolotl",
+                    "DisplayName": "Futan Pink Axolotl",
+                    "Description": "Un pequeño peluche futan que parece un ajolote rosado.",
+                    "Type": "Crafting",
+                    "Category": 0,
+                    "Price": 500,
+                    "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+                    "SpriteIndex": "79",
+                    "Edibility": -300,
+                 },
+                 "{{ModId}}_Futan_Yellow_Axolotl": {
+                    "Name": "Futan Yellow Axolotl",
+                    "DisplayName": "Futan Yellow Axolotl",
+                    "Description": "Un pequeño peluche futan que parece un ajolote amarillo",
+                    "Type": "Crafting",
+                    "Category": 0,
+                    "Price": 500,
+                    "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+                    "SpriteIndex": "80",
+                    "Edibility": -300,
+                 },
+       "{{ModId}}_Rainbow_Candy": {
+          "Name": "Rainbow Candy",
+          "DisplayName": "Rainbow Candy",
+          "Description": "Taste the rainbow!",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 300,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "81",
+          "Edibility": 150,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 5,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Red_Lolli": {
+          "Name": "Red Lolli",
+          "DisplayName": "Red Lolli",
+          "Description": "A cherry-flavored lollipop.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 100,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "82",
+          "Edibility": 30,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Orange_Lolli": {
+          "Name": "Orange Lolli",
+          "DisplayName": "Orange Lolli",
+          "Description": "An orange-flavored lollipop.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 100,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "83",
+          "Edibility": 30,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Yellow_Lolli": {
+          "Name": "Yellow Lolli",
+          "DisplayName": "Yellow Lolli",
+          "Description": "A banana-flavored lollipop.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 100,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "84",
+          "Edibility": 30,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Green_Lolli": {
+          "Name": "Green Lolli",
+          "DisplayName": "Green Lolli",
+          "Description": "A cactus fruit-flavored lollipop. Interesting.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 100,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "85",
+          "Edibility": 30,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Blue_Lolli": {
+          "Name": "Blue Lolli",
+          "DisplayName": "Blue Lolli",
+          "Description": "A blueberry-flavored lollipop.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 100,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "86",
+          "Edibility": 30,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Purple_Lolli": {
+          "Name": "Purple Lolli",
+          "DisplayName": "Purple Lolli",
+          "Description": "A grape-flavored lollipop.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 100,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "87",
+          "Edibility": 30,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Chocolate_Malt_Balls": {
+          "Name": "Chocolate Malt Balls",
+          "DisplayName": "Chocolate Malt Balls",
+          "Description": "Malted milk balls covered in chocolate.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 120,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "88",
+          "Edibility": 40,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Red_Gummy_Bear": {
+          "Name": "Red Gummy Bear",
+          "DisplayName": "Red Gummy Bear",
+          "Description": "A cherry-flavored gummy shaped like a bear.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 100,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "89",
+          "Edibility": 30,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Orange_Gummy_Bear": {
+          "Name": "Orange Gummy Bear",
+          "DisplayName": "Orange Gummy Bear",
+          "Description": "An orange-flavored gummy shaped like a bear.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 100,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "90",
+          "Edibility": 30,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Yellow_Gummy_Bear": {
+          "Name": "Yellow Gummy Bear",
+          "DisplayName": "Yellow Gummy Bear",
+          "Description": "A banana-flavored gummy shaped like a bear.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 100,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "91",
+          "Edibility": 30,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Green_Gummy_Bear": {
+          "Name": "Green Gummy Bear",
+          "DisplayName": "Green Gummy Bear",
+          "Description": "A cactus fruit-flavored gummy shaped like a bear.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 100,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "92",
+          "Edibility": 30,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Blue_Gummy_Bear": {
+          "Name": "Blue Gummy Bear",
+          "DisplayName": "Blue Gummy Bear",
+          "Description": "A blueberry-flavored gummy shaped like a bear.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 100,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "93",
+          "Edibility": 30,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Purple_Gummy_Bear": {
+          "Name": "Purple Gummy Bear",
+          "DisplayName": "Purple Gummy Bear",
+          "Description": "A grape-flavored gummy shaped like a bear.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 100,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "94",
+          "Edibility": 30,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_S'mores": {
+          "Name": "S'mores",
+          "DisplayName": "S'mores",
+          "Description": "The best campfire treat.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 100,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "95",
+          "Edibility": 60,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 2,
+                "ForagingLevel": 3,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Chocolate_Bar": {
+          "Name": "Chocolate Bar",
+          "DisplayName": "Chocolate Bar",
+          "Description": "Perfect for using in any chocolate dessert!",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 80,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "96",
+          "Edibility": 40,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Chocolate_Milkshake": {
+          "Name": "Chocolate Milkshake",
+          "DisplayName": "Chocolate Milkshake",
+          "Description": "Nunca puedes equivocarte con un batido de leche, a menos que seas intolerante a la lactosa.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "97",
+          "Edibility": 100,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 420,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Strawberry_Milkshake": {
+          "Name": "Strawberry Milkshake",
+          "DisplayName": "Strawberry Milkshake",
+          "Description": "Nunca puedes equivocarte con un batido de leche, a menos que seas intolerante a la lactosa.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "98",
+          "Edibility": 100,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 420,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Vanilla_Milkshake": {
+          "Name": "Vanilla Milkshake",
+          "DisplayName": "Vanilla Milkshake",
+          "Description": "Nunca puedes equivocarte con un batido de leche, a menos que seas intolerante a la lactosa.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "99",
+          "Edibility": 100,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 420,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+      "{{ModId}}_Soy_Sauce": {
+          "Name": "Soy Sauce",
+          "DisplayName": "Soy Sauce",
+          "Description": "Combina muy bien con todo. Más o menos.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 100,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "100",
+          "Edibility": 10,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 420,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Birthday_Cake": {
+          "Name": "Birthday Cake",
+          "DisplayName": "Birthday Cake",
+          "Description": "¡Feliz cumpleaños!",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 400,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "101",
+          "Edibility": 100,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 5,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 2,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Creme_Filled_Eclair": {
+          "Name": "Creme-Filled Eclair",
+          "DisplayName": "Creme-Filled Eclair",
+          "Description": "Un pastel decadente originario de Francia.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 300,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "102",
+          "Edibility": 40,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+      "{{ModId}}_Cute_Lolli": {
+          "Name": "Cute Lolli",
+          "DisplayName": "Cute Lolli",
+          "Description": "Claro, es solo una piruleta ... ¡pero es linda!",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 100,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "103",
+          "Edibility": 40,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 1,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+      "{{ModId}}_Dessert_Pizza": {
+          "Name": "Dessert Pizza",
+          "DisplayName": "Dessert Pizza",
+          "Description": "Es como una pizza, pero cubierta de chocolate y caramelos.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 300,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "104",
+          "Edibility": 70,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 2,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 1,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+    "{{ModId}}_Dirt_and_Worms": {
+          "Name": "Dirt and Worms",
+          "DisplayName": "Dirt and Worms",
+          "Description": "Constituye un bonito hogar con sabor a chocolate para los gusanos de goma.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "105",
+          "Edibility": 30,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 2,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 2,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+       "{{ModId}}_Gummy_Worms": {
+          "Name": "Gummy Worms",
+          "DisplayName": "Gummy Worms",
+          "Description": "Corte uno por la mitad y ambas mitades seguirán moviéndose.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 100,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "106",
+          "Edibility": 15,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 1,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+       "{{ModId}}_Hanami_Dango": {
+          "Name": "Hanami Dango",
+          "DisplayName": "Hanami Dango",
+          "Description": "Un palito decorado con tres bolitas de masa dulces que tienen una textura masticable.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "107",
+          "Edibility": 30,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 1,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 1,
+                "Defense": 0,
+                "Attack": 1
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+       "{{ModId}}_Heart_Macaron": {
+          "Name": "Heart Macaron",
+          "DisplayName": "Heart Macaron",
+          "Description": "Un macaron relleno de mucho amor.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 300,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "108",
+          "Edibility": 50,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 1,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+      "{{ModId}}_Konpeito": {
+          "Name": "Konpeito",
+          "DisplayName": "Konpeito",
+          "Description": "Un puñado de caramelos de azúcar de colores.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 100,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "109",
+          "Edibility": 20,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 3,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 1,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+   "{{ModId}}_Pastel_Cheesecake": {
+          "Name": "Pastel Cheesecake",
+          "DisplayName": "Pastel Cheesecake",
+          "Description": "Una pequeña tarta de queso con capas de color pastel.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 300,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "110",
+          "Edibility": 60,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 3,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 1,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+    "{{ModId}}_Rainbow_Cupcake": {
+          "Name": "Rainbow Cupcake",
+          "DisplayName": "Rainbow Cupcake",
+          "Description": "El cupcake más colorido que jamás hayas visto.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 300,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "111",
+          "Edibility": 60,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 3,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 1,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+    "{{ModId}}_Melon_Mochi": {
+          "Name": "Melon Mochi",
+          "DisplayName": "Melon Mochi",
+          "Description": "Un pastel de arroz suave y elástico con sabor a melón.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "112",
+          "Edibility": 30,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 1,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+      "{{ModId}}_Blueberry_Mochi": {
+          "Name": "Blueberry Mochi",
+          "DisplayName": "Blueberry Mochi",
+          "Description": "Un pastel de arroz suave y elástico con sabor a arándanos.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "113",
+          "Edibility": 30,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 1,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+    "{{ModId}}_Sugary_Sweet_Cake": {
+          "Name": "Sugary Sweet Cake",
+          "DisplayName": "Sugary Sweet Cake",
+          "Description": "Un pastel para satisfacer cualquier gusto por lo dulce.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 400,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "114",
+          "Edibility": 100,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 5,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+       "{{ModId}}_Bunny_Macaron": {
+          "Name": "Bunny Macaron",
+          "DisplayName": "Bunny Macaron",
+          "Description": "Un macaron del calibre más lindo.",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 300,
+          "Texture": "Mods\\{{ModId}}\\Objects\\Objects",
+          "SpriteIndex": "118",
+          "Edibility": 50,
+          "Buffs": [
+            {
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 300,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 0,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 1,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+      }
+     },
+    {           //Plushies
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "Captain Squish": "Captain Squish/decor/2 2/2 1/1/1000/-1/Captain Squish/0/Mods\\otohime.AV\\Plushies",
+                "Hiro Squish": "Hiro Squish/decor/2 2/2 1/1/1000/-1/Hiro Squish/2/Mods\\otohime.AV\\Plushies",
+                "Jinx Squish": "Jinx Squish/decor/2 2/2 1/1/1000/-1/Jinx Squish/4/Mods\\otohime.AV\\Plushies",
+                "Lala Squish": "Lala Squish/decor/2 2/2 1/1/1000/-1/Lala Squish/6/Mods\\otohime.AV\\Plushies",
+                "Lulu Squish": "Lulu Squish/decor/2 2/2 1/1/1000/-1/Lulu Squish/8/Mods\\otohime.AV\\Plushies",
+                "Nimue Squish": "Nimue Squish/decor/2 2/2 1/1/1000/-1/Nimue Squish/10/Mods\\otohime.AV\\Plushies",
+                "Noa Squish": "Noa Squish/decor/2 2/2 1/1/1000/-1/Noa Squish/12/Mods\\otohime.AV\\Plushies",
+                "Olina Squish": "Olina Squish/decor/2 2/2 1/1/1000/-1/Olina Squish/14/Mods\\otohime.AV\\Plushies",
+                "Puka Squish": "Puka Squish/decor/2 2/2 1/1/1000/-1/Puka Squish/16/Mods\\otohime.AV\\Plushies",
+                "Lotus Squish": "Lotus Squish/decor/2 2/2 1/1/1000/-1/Lotus Squish/18/Mods\\otohime.AV\\Plushies",  
+                "Shiso Squish": "Shiso Squish/decor/2 2/2 1/1/1000/-1/Shiso Squish/20/Mods\\otohime.AV\\Plushies",
+                "Lg. Futan Captain": "Lg. Futan Captain/decor/2 2/2 1/1/1000/-1/Lg. Futan Captain/0/Mods\\otohime.AV\\fcaptain",
+                "Lg. Futan Hiro": "Lg. Futan Hiro/decor/2 2/2 1/1/1000/-1/Lg. Futan Hiro/0/Mods\\otohime.AV\\fhiro",
+                "Lg. Futan Jinx": "Lg. Futan Jinx/decor/2 2/2 1/1/1000/-1/Lg. Futan Jinx/0/Mods\\otohime.AV\\fjinx",
+                "Lg. Futan Lala": "Lg. Futan Lala/decor/2 2/2 1/1/1000/-1/Lg. Futan Lala/0/Mods\\otohime.AV\\flala",
+                "Lg. Futan Lulu": "Lg. Futan Lulu/decor/2 2/2 1/1/1000/-1/Lg. Futan Lulu/0/Mods\\otohime.AV\\flulu",
+                "Lg. Futan Nimue": "Lg. Futan Nimue/decor/2 2/2 1/1/1000/-1/Lg. Futan Nimue/0/Mods\\otohime.AV\\fnimue",
+                "Lg. Futan Noa": "Lg. Futan Noa/decor/2 2/2 1/1/1000/-1/Lg. Futan Noa/0/Mods\\otohime.AV\\fnoa",
+                "Lg. Futan Olina": "Lg. Futan Olina/decor/2 2/2 1/1/1000/-1/Lg. Futan Olina/0/Mods\\otohime.AV\\folina",
+                "Lg. Futan Puka": "Lg. Futan Puka/decor/2 2/2 1/1/1000/-1/Lg. Futan Puka/0/Mods\\otohime.AV\\fpuka",
+                "Kandi Squish": "Kandi Squish/decor/2 2/2 1/1/1000/-1/Kandi Squish/0/Mods\\otohime.AV\\skandi", 
+                "Bonbon Squish": "Bonbon Squish/decor/2 2/2 1/1/1000/-1/Bonbon Squish/0/Mods\\otohime.AV\\sbonbon", 
+                "Albino Axolotl Squish": "Albino Axolotl Squish/decor/2 2/2 1/1/1000/-1/Albino Axolotl Squish/0/Mods\\otohime.AV\\salbino",
+                "Black Axolotl Squish": "Black Axolotl Squish/decor/2 2/2 1/1/1000/-1/Black Axolotl Squish/0/Mods\\otohime.AV\\sblack",
+                "Blue Axolotl Squish": "Blue Axolotl Squish/decor/2 2/2 1/1/1000/-1/Blue Axolotl Squish/0/Mods\\otohime.AV\\sblue",
+                "Lavender Axolotl Squish": "Lavender Axolotl Squish/decor/2 2/2 1/1/1000/-1/Lavender Axolotl Squish/0/Mods\\otohime.AV\\slavender",
+                "Pink Axolotl Squish": "Pink Axolotl Squish/decor/2 2/2 1/1/1000/-1/Pink Axolotl Squish/0/Mods\\otohime.AV\\spink",
+                "Yellow Axolotl Squish": "Yellow Axolotl Squish/decor/2 2/2 1/1/1000/-1/Yellow Axolotl Squish/0/Mods\\otohime.AV\\syellow",
+                "Lg. Futan Kandi": "Lg. Futan Kandi/decor/2 2/2 1/1/1000/-1/Lg. Futan Kandi/0/Mods\\otohime.AV\\fkandi",
+                "Lg. Futan Albino Axolotl": "Lg. Futan Albino Axolotl/decor/2 2/2 1/1/1000/-1/Lg. Futan Albino Axolotl/0/Mods\\otohime.AV\\falbino",
+                "Lg. Futan Black Axolotl": "Lg. Futan Black Axolotl/decor/2 2/2 1/1/1000/-1/Lg. Futan Black Axolotl/0/Mods\\otohime.AV\\fblack",
+                "Lg. Futan Blue Axolotl": "Lg. Blue Albino Axolotl/decor/2 2/2 1/1/1000/-1/Lg. Futan Blue Axolotl/0/Mods\\otohime.AV\\fblue",
+                "Lg. Futan Lavender Axolotl": "Lg. Futan Lavender Axolotl/decor/2 2/2 1/1/1000/-1/Lg. Futan Lavender Axolotl/0/Mods\\otohime.AV\\flavender",
+                "Lg. Futan Pink Axolotl": "Lg. Futan Pink Axolotl/decor/2 2/2 1/1/1000/-1/Lg. Futan Pink Axolotl/0/Mods\\otohime.AV\\fpink",
+                "Lg. Futan Yellow Axolotl": "Lg. Futan Yellow Axolotl/decor/2 2/2 1/1/1000/-1/Lg. Futan Yellow Axolotl/0/Mods\\otohime.AV\\fyellow",
+
+            }
+        },
+{           //Furniture
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "Tanabata Bamboo": "Tanabata Bamboo/decor/2 4/2 1/1/1000/-1/Tanabata Bamboo/0/Mods\\otohime.AV\\Furniture",
+                "Nova Light": "Nova Light/decor/2 2/2 1/1/500/-1/Nova Light/2/Mods\\otohime.AV\\Furniture",
+                "Pink Nova Light": "Pink Nova Light/decor/2 2/2 1/1/500/-1/Pink Nova Light/4/Mods\\otohime.AV\\Furniture",
+                "Blue Nova Light": "Blue Nova Light/decor/2 2/2 1/1/500/-1/Blue Nova Light/6/Mods\\otohime.AV\\Furniture",
+                "Blue Candy": "Blue Candy/decor/2 2/2 1/1/500/-1/Blue Candy/8/Mods\\otohime.AV\\Furniture",
+                "Purple Candy": "Purple Candy/decor/2 2/2 1/1/500/-1/Purple Candy/10/Mods\\otohime.AV\\Furniture",
+                "Cute Heart": "Cute Heart/decor/2 2/2 1/1/500/-1/Cute Heart/12/Mods\\otohime.AV\\Furniture",
+                "Red Lollipop": "Red Lollipop/decor/2 2/2 1/1/500/-1/Red Lollipop/0/Mods\\otohime.AV\\redlol",
+                "Orange Lollipop": "Orange Lollipop/decor/2 2/2 1/1/500/-1/Orange Lollipop/0/Mods\\otohime.AV\\orangelol",
+                "Yellow Lollipop": "Yellow Lollipop/decor/2 2/2 1/1/500/-1/Yellow Lollipop/0/Mods\\otohime.AV\\yellowlol",
+                "Green Lollipop": "Green Lollipop/decor/2 2/2 1/1/500/-1/Green Lollipop/0/Mods\\otohime.AV\\greenlol",
+                "Blue Lollipop": "Blue Lollipop/decor/2 2/2 1/1/500/-1/Blue Lollipop/0/Mods\\otohime.AV\\bluelol",
+                "Purple Lollipop": "Purple Lollipop/decor/2 2/2 1/1/500/-1/Purple Lollipop/0/Mods\\otohime.AV\\purplelol",
+                "Pink Lollipop": "Pink Lollipop/decor/2 2/2 1/1/500/-1/Pink Lollipop/0/Mods\\otohime.AV\\pinklol",
+                "Pink Axolotl Scarecrow": "Pink Axolotl Scarecrow/decor/2 2/2 1/1/500/2/Pink Axolotl Scarecrow/0/Mods\\otohime.AV\\pinkscare",
+                "Yellow Axolotl Scarecrow": "Yellow Axolotl Scarecrow/decor/2 2/2 1/1/500/2/Yellow Axolotl Scarecrow/0/Mods\\otohime.AV\\yellowscare",
+                "Albino Axolotl Scarecrow": "Albino Axolotl Scarecrow/decor/2 2/2 1/1/500/2/Albino Axolotl Scarecrow/0/Mods\\otohime.AV\\albinoscare",
+                "Blue Axolotl Scarecrow": "Blue Axolotl Scarecrow/decor/2 2/2 1/1/500/2/Blue Axolotl Scarecrow/0/Mods\\otohime.AV\\bluescare",
+                "Lavender Axolotl Scarecrow": "Lavender Axolotl Scarecrow/decor/2 2/2 1/1/500/2/Lavender Axolotl Scarecrow/0/Mods\\otohime.AV\\lavenderscare",
+                "Black Axolotl Scarecrow": "Black Axolotl Scarecrow/decor/2 2/2 1/1/500/2/Black Axolotl Scarecrow/0/Mods\\otohime.AV\\blackscare",
+            }
+        },
+   {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "{{ModId}}_AV_Warp_Totem": "709 1 771 20 394 1/Field/{{ModId}}_AV_Warp_Totem/false/null/Warp Totem: Axolotl Village",
+                "{{ModId}}_Futan_Rainbow_Axolotl": "428 1 440 1 394 1/Field/{{ModId}}_Futan_Rainbow_Axolotl/false/null/Futan Rainbow Axolotl"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+            "Entries": {
+                "{{ModId}}_AV_Warp_Totem": {
+                    "TotemWarp": {
+                        "Location": "{{ModId}}_AxolotlTown",
+                        "Position": "14, 104",
+                        "Color": {
+                            "R": 239,
+                            "G": 207,
+                            "B": 227,
+                            "A": 0
+                                   }
+      }
+     }
+    }
+}
+]
+}

@@ -1,0 +1,797 @@
+{
+	"Format": 3,
+	"Furniture": {
+
+                "[[ModID]].hk_window_panes": {
+			"Display Name": "Hello Kitty Window Panes",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {"Width": 2, "Height": 3},
+
+			"Placement Restriction": 0,
+			"Placement Type": "Mural",
+
+			"Source Image": {
+                          "Red": "assets/hkwindowpanes.png",
+                          "Pink": "assets/hkwindowpanes2.png"
+                        },
+
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 32, "Height": 48
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].hk_wall_bow": {
+			"Display Name": "Hello Kitty Wall Bow",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {"Width": 1, "Height": 2},
+
+			"Placement Restriction": 0,
+			"Placement Type": "Mural",
+
+			"Source Image": {
+                          "Red": "assets/hkwallbow.png",
+                          "Pink": "assets/hkwallbow2.png"
+                        },
+
+			"Shows in Shops": ["Carpenter"],
+         "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 26,"Height": 19
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].small_hk_plush": {
+			"Display Name": "Small Hello Kitty Plush",
+                        "Context Tags": "placeable",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {"Width": 1, "Height": 1},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/smallhk.png",
+
+			"Shows in Shops": ["Carpenter"],
+         "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 10,"Height": 11
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].hk_squish": {
+			"Display Name": "Hello Kitty Squishmallow",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {"Width": 2, "Height": 1},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/hksquish.png",
+
+			"Shows in Shops": ["Carpenter"],
+         "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 29,"Height": 31
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].hk_balloon": {
+                        "Display Name": "Hello Kitty Balloon",
+
+                        "Rotations": 1,
+	                "Collisions": {"Width": 1, "Height": 1},
+
+                        "Placement Restriction": 2,
+
+                        "Source Image": "assets/hkballoon.png",
+
+                        "Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 18,"Height": 51
+               }
+            }
+         ],
+         "Animation": {
+				"Frame Count": 8,
+				"Frame Duration": 300,
+				"Offset": {
+					"X": 18,
+					"Y": 0
+				}
+			} 
+      },
+
+                "[[ModID]].hk_chair": {
+
+			"Display Name": "Hello Kitty Chair",
+
+			"Rotations": 4,
+			"Collisions": {
+				"Width": 1,
+				"Height": 1
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/hkchair.png",
+			"Source Rect": {
+				"Down":		{"X": 0,  "Y": 0, "Width": 19, "Height": 33},
+				"Right":	{"X": 19, "Y": 0, "Width": 16, "Height": 33},
+				"Up":		{"X": 35, "Y": 0, "Width": 19, "Height": 33},
+				"Left":		{"X": 54, "Y": 0, "Width": 16, "Height": 33}
+			},
+
+"Layers": {
+            "Down": {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 19, "Height": 33
+               }
+            },
+            "Right": [
+               {
+                  "Source Rect": {
+                     "X": 19, "Y": 0,
+                     "Width": 16, "Height": 33
+                  }
+               }
+             ],
+            "Up": [
+               {
+                  "Source Rect": {
+                     "X": 30, "Y": 0,
+                     "Width": 19, "Height": 33
+                  }
+               },
+               {
+                  "Source Rect": {
+                     "X": 35, "Y": 33,
+                     "Width": 19, "Height": 33
+                  },
+                  "Draw Pos": { "X": 0, "Y": 0 }
+               }
+            ],
+            "Left": [
+               {
+                  "Source Rect": {
+                     "X": 54, "Y": 0,
+                     "Width": 16, "Height": 33
+                  }
+                }
+              ]
+         },
+
+			"Seats": [
+				{
+					"Position": {"X": 0, "Y": 0},	
+					"Player Direction": {
+						"Up": 0,
+						"Right": 1,
+						"Down": 2,
+						"Left": 3
+					}
+
+				}
+			],
+
+			"Shows in Shops": ["Carpenter"]
+		},
+
+		"[[ModID]].hk_double_bed": {
+			"Display Name": "Hello Kitty Double Bed",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 3,
+				"Height": 3,
+				"Map": "XXX/.../XXX"
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/hkdoublebed.png",
+                        "Layers": [
+				{
+					"Source Rect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 48,
+						"Height": 59
+					}
+				},
+				{
+					"Source Rect": {
+						"X": 48,
+						"Y": 0,
+						"Width": 48,
+						"Height": 59
+					},
+					"Depth": 2,
+					"Draw Pos": {
+						"X": 0,
+						"Y": 0
+					}
+				}
+			],
+
+			"Shows in Shops": ["Carpenter"],
+
+			"Special Type": "Bed",
+                        "Bed Type": "Double",
+			"Bed Spot": {"X": 1, "Y": 1},
+		},
+
+                "[[ModID]].hk_dresser": {
+			"Display Name": "Hello Kitty Dresser",
+                        "Force Type": "dresser",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 2,
+				"Height": 1
+			},	
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/hkdresser.png",
+
+			"Shows in Shops": ["Carpenter"],
+ "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 32,"Height": 43
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].hk_medium_plush": {
+			"Display Name": "Medium Hello Kitty Plush",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {"Width": 1, "Height": 1},
+
+			"Placement Restriction": 0,
+
+			"Source Image": "assets/hkmedplush.png",
+
+			"Shows in Shops": ["Carpenter"],
+ "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 18,"Height": 20
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].hk_heart_light": {
+                        "Display Name": "Hello Kitty Heart Light",
+
+                        "Rotations": 1,
+	                "Collisions": {"Width": 3, "Height": 2},
+
+                        "Placement Restriction": 2,
+
+                        "Source Image": "assets/hkheartlight.png",
+
+			"Light Sources": [
+				{
+					"Position": {"X": 22, "Y": 37},
+					"Source Image": "Content/LooseSprites/Lighting/indoorWindowLight.png",
+					"Mode": "always_on"
+				}
+			],
+                        "Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 45,"Height": 69
+               }
+            }
+         ],
+         "Animation": {
+				"Frame Count": 6,
+				"Frame Duration": 300,
+				"Offset": {
+					"X": 45,
+					"Y": 0
+				}
+			}
+                 },
+
+                "[[ModID]].hk_painting": {
+			"Display Name": "Hello Kitty Painting",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {"Width": 1, "Height": 2},
+
+			"Placement Restriction": 0,
+			"Placement Type": "Mural",
+
+			"Source Image": "assets/hkpainting.png",
+
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 32,"Height": 25
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].hk_shelves": {
+			"Display Name": "Hello Kitty Shelves",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 2,
+				"Height": 1
+			},	
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/hkshelves.png",
+
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 38,"Height": 59
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].hk_single_bed": {
+			"Display Name": "Hello Kitty Single Bed",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 2,
+				"Height": 3,
+				"Map": "XX/../XX"
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/hksinglebed.png",
+"Layers": [
+				{
+					"Source Rect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 32,
+						"Height": 57
+					}
+				},
+				{
+					"Source Rect": {
+						"X": 32,
+						"Y": 0,
+						"Width": 32,
+						"Height": 57
+					},
+					"Depth": 2,
+					"Draw Pos": {
+						"X": 0,
+						"Y": 0
+					}
+				}
+			],
+
+
+			"Shows in Shops": ["Carpenter"],
+
+			"Special Type": "Bed",
+			"Bed Type": "Single",
+			"Bed Spot": {"X": 1, "Y": 1}
+		},
+
+		"[[ModID]].hk_sofa": {
+
+			"Display Name": "Hello Kitty Sofa",
+
+			"Rotations": 4,
+			"Collisions": {
+				"Down": 	{"Width": 3, "Height": 1},
+				"Right": 	{"Width": 2, "Height": 2},
+				"Up": 		{"Width": 3, "Height": 1},
+				"Left": 	{"Width": 2, "Height": 2}
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/hksofa.png",
+			"Source Rect": {
+				"Down":		{"X": 0,	"Y": 0, "Width": 47, "Height": 32},
+				"Right":	{"X": 48,	"Y": 0, "Width": 31, "Height": 48},
+				"Up":		{"X": 80,	"Y": 0, "Width": 47, "Height": 32},
+				"Left":		{"X": 128,	"Y": 0, "Width": 31, "Height": 48}
+			},
+
+"Layers": {
+            "Down": {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 47, "Height": 32
+               }
+            },
+            "Right": [
+               {
+                  "Source Rect": {
+                     "X": 48, "Y": 0,
+                     "Width": 31, "Height": 48
+                  }
+               },
+               {
+                  "Source Rect": {
+                     "X": 48, "Y": 49,
+                     "Width": 31, "Height": 48
+                  },
+                  "Depth": { "Tile": 2, "Sub": 1000 },
+                  "Draw Pos": { "X": 0, "Y": 0 }
+               }
+            ],
+            "Up": [
+               {
+                  "Source Rect": {
+                     "X": 80, "Y": 0,
+                     "Width": 47, "Height": 32
+                  }
+               },
+               {
+                  "Source Rect": {
+                     "X": 80, "Y": 49,
+                     "Width": 47, "Height": 32
+                  },
+                  "Depth": { "Tile": 0, "Sub": 1000 },
+                  "Draw Pos": { "X": 0, "Y": 0 }
+               }
+            ],
+            "Left": [
+               {
+                  "Source Rect": {
+                     "X": 128, "Y": 0,
+                     "Width": 31, "Height": 48
+                  }
+               },
+               {
+                  "Source Rect": {
+                     "X": 128, "Y": 49,
+                     "Width": 31, "Height": 48
+                  },
+                  "Depth": { "Tile": 2, "Sub": 1000 },
+                  "Draw Pos": { "X": 0, "Y": 0 }
+               }
+            ]
+         },
+
+			"Seats": {
+				"Up": [
+					{
+						"Position": {"X": 0.5, "Y": 0},
+						"Player Direction": 0
+					},
+					{
+						"Position": {"X": 1.5, "Y": 0},
+						"Player Direction": 0
+					}
+				],
+				"Right": [
+					{
+						"Position": {"X": 1, "Y": 0},
+						"Player Direction": 1
+					},
+					{
+						"Position": {"X": 1, "Y": 1},
+						"Player Direction": 1
+					}
+				],
+				"Down": [
+					{
+						"Position": {"X": 0.5, "Y": 0},
+						"Player Direction": 2
+					},
+					{
+						"Position": {"X": 1.5, "Y": 0},
+						"Player Direction": 2
+					}
+				],
+				"Left": [
+					{
+						"Position": {"X": 0, "Y": 0},
+						"Player Direction": 3
+					},
+					{
+						"Position": {"X": 0, "Y": 1},
+						"Player Direction": 3
+					}
+				]
+			},
+
+			"Shows in Shops": ["Carpenter"]
+		},
+
+		"[[ModID]].hk_statue": {
+			"Display Name": "Hello Kitty Statue",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 1,
+				"Height": 1
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/hkstatue.png",
+
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 22,"Height": 31
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].hk_bow_stool": {
+			"Display Name": "Hello Kitty Bow Stool",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 2,
+				"Height": 1
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/hkstool.png",
+
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 30,"Height": 15
+               }
+            }
+         ]
+		},
+
+		"[[ModID]].hk_table": {
+			"Display Name": "Hello Kitty Table",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 2,
+				"Height": 1
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/hktable.png",
+
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 34,"Height": 32
+               }
+            }
+         ]
+		},
+
+		"[[ModID]].hk_head_rug": {
+			"Display Name": "Hello Kitty Head Rug",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 1,
+				"Height": 1
+			},
+
+			"Placement Restriction": 2,
+                        "Placement Type": "Rug",
+
+			"Source Image": "assets/hkheadrug.png",
+
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 34,"Height": 28
+               }
+            }
+         ]
+		},
+
+		"[[ModID]].round_hk_rug": {
+			"Display Name": "Round Hello Kitty Rug",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 1,
+				"Height": 1
+			},
+
+			"Placement Restriction": 2,
+                        "Placement Type": "Rug",
+
+			"Source Image": {
+                          "White": "assets/roundhkrug.png",
+                          "Red": "assets/roundhkrug2.png"
+                        },
+
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 80,"Height": 79
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].hk_cake": {
+			"Display Name": "Hello Kitty Cake",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 4,
+				"Height": 3
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/hkcake.png",
+			"Source Rect": {"X": 0, "Y": 0, "Width": 75, "Height": 107},
+
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 75,"Height": 107
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].hk_shortcake": {
+			"Display Name": "Hello Kitty Strawberry Shortcake",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 3,
+				"Height": 2
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/hkshortcake.png",
+
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 56,"Height": 46
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].hk_plant": {
+			"Display Name": "Hello Kitty Plant",
+			"Description": "",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 1,
+				"Height": 1
+			},
+
+			"Placement Restriction": 2,
+
+			"Source Image": "assets/hkplant.png",
+
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 19,"Height": 30
+               }
+            }
+         ]
+		},
+
+                "[[ModID]].hk_TV": {
+                        "Display Name": "Hello Kitty TV",
+
+                        "Rotations": 1,
+	                "Collisions": {"Width": 2, "Height": 1},
+
+                        "Placement Restriction": 2,
+
+                        "Source Image": "assets/hkTV.png",
+
+			"Light Sources": [
+				{
+					"Position": {"X": 16, "Y": 20},
+					"Source Image": "Content/LooseSprites/Lighting/indoorWindowLight.png",
+					"Mode": "always_on"
+				}
+			],
+                        "Shows in Shops": ["Carpenter"],
+    "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 31,"Height": 46
+               }
+            }
+         ],
+         "Animation": {
+				"Frame Count": 4,
+				"Frame Duration": 300,
+				"Offset": {
+					"X": 31,
+					"Y": 0
+				}
+			}
+               }
+	}
+}

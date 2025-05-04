@@ -1,0 +1,128 @@
+[
+	{ 
+        "Id": "FourHeartLetter", 
+	"Title" : "FourHeartLetter.title",
+        "Text": "FourHeartLetter.text",
+        "Repeatable": false,
+         "EventsSeen": [98880053],
+         "Attachments": [
+      {
+        "Type": "Object",
+        "Name": "Gold Futan Axolotl",
+        "Stack": "3"
+      }
+     ]
+    },
+{ 
+        "Id": "SixHeartLetter", 
+	"Title" : "SixHeartLetter.title",
+        "Text": "SixHeartLetter.text",
+        "Repeatable": false,
+         "EventsSeen": [98880054],
+         "Attachments": [
+      {
+        "Type": "Furniture",
+        "Name": "Lg. Gold Futan Axolotl",
+      }
+     ]
+    },
+{ 
+        "Id": "SevenHeartLetter", 
+	"Title" : "SevenHeartLetter.title",
+        "Text": "SevenHeartLetter.text",
+        "Repeatable": false,
+        "FriendshipConditions":
+        [
+            {
+                "NpcName": "Kin",
+                "FriendshipLevel": 7
+             }
+        ],
+         "Attachments": [
+      {
+        "Type": "Weapon",
+        "Name": "Gold Sword"
+      }
+     ]
+    },
+{ 
+        "Id": "EightHeartLetter", 
+	"Title" : "EightHeartLetter.title",
+        "Text": "EightHeartLetter.text",
+        "Repeatable": false,
+        "MailReceived": ["SevenHeartLetter"],
+        "FriendshipConditions":
+        [
+            {
+                "NpcName": "Kin",
+                "FriendshipLevel": 8
+             }
+        ],
+         "Attachments": [
+      {
+        "Type": "Weapon",
+        "Name": "Gold Dagger"
+      }
+     ]
+    },
+{ 
+        "Id": "NineHeartLetter", 
+	"Title" : "NineHeartLetter.title",
+        "Text": "NineHeartLetter.text",
+        "Repeatable": false,
+        "MailReceived": ["EightHeartLetter"],
+        "FriendshipConditions":
+        [
+            {
+                "NpcName": "Kin",
+                "FriendshipLevel": 9
+             }
+        ],
+         "Attachments": [
+      {
+        "Type": "Weapon",
+        "Name": "Gold Hammer"
+      }
+     ]
+    },
+{ 
+        "Id": "WizardsNotice", 
+	"Title" : "WizardsNotice.title",
+        "Text": "WizardsNotice.text",
+        "Repeatable": false,
+        "WhichBG": 2,
+        "EventsSeen": [98880056],
+    },
+{ 
+        "Id": "TenHeartLetter", 
+	"Title" : "TenHeartLetter.title",
+        "Text": "TenHeartLetter.text",
+        "Repeatable": false,
+        "FriendshipConditions":
+        [
+            {
+                "NpcName": "Kin",
+                "FriendshipLevel": 10
+             }
+        ],
+         "Attachments": [
+      {
+        "Type": "Furniture",
+        "Name": "Gold Axolotl Statue",
+      }
+     ]
+    },
+{ 
+        "Id": "FriendshipNecklace", 
+	"Title" : "FriendshipNecklace.title",
+        "Text": "FriendshipNecklace.text",
+        "Repeatable": false,
+        "EventsSeen": [98880058],
+         "Attachments": [
+      {
+        "Type": "Object",
+        "Name": "Gold Friendship Necklace"
+      }
+     ]
+    }
+]

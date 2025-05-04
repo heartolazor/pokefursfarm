@@ -1,0 +1,173 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "{{ModId}}.ShinyDewott": {
+          "DisplayName": "={{i18n: Animal.Dewott.Name}}",
+          "House": "{{PokemonOttersHouse}}",
+          "Gender": "MaleOrFemale",
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 0,
+            "Height": 0
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": "{{PokemonOttersBuilding}}",
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "{{i18n: Animal.Dewott.BirthText}}",
+          "DaysToMature": 10,
+          "CanGetPregnant": true,
+          "DaysToProduce": 1,
+          "HarvestType": "DigUp",
+          "HarvestTool": null,
+          "ProduceItemIds": [
+            {
+              "Id": "{{ModId}}.Clam",
+              "Condition": null,
+              "MinimumFriendship": 0,
+              "ItemId": "372" 
+            },
+            {
+              "Id": "{{ModId}}.SeaCucumber",
+              "Condition": "RANDOM 0.8",
+              "MinimumFriendship": 200,
+              "ItemId": "154" 
+            },
+            {
+              "Id": "{{ModId}}.Flounder",
+              "Condition": "RANDOM 0.8",
+              "MinimumFriendship": 200,
+              "ItemId": "267" 
+            },
+            {
+              "Id": "{{ModId}}.SuperCucumber",
+              "Condition": "RANDOM 0.5",
+              "MinimumFriendship": 800,
+              "ItemId": "155" 
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{ModId}}.FairyDust",
+              "Condition": null,
+              "MinimumFriendship": 0,
+              "ItemId": "872" 
+            }
+          ],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": "{{DeluxeProduceCareDivisorChoice}}",
+          "DeluxeProduceLuckMultiplier": 0.0,
+          "ProfessionForHappinessBoost": 3,
+          "ProfessionForQualityBoost": 3,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "DewottCry",
+          "BabySound": "OshawottCry",
+
+          "Texture": "{{ModId}}/ShinyDewott",
+          "HarvestedTexture": null,
+          "BabyTexture": "{{ModId}}/ShinyOshawott",
+
+          "UseFlippedRightForLeft": true,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "Skins": null,
+          "SleepFrame": 55,
+          "UseDoubleUniqueAnimationFrames": true,
+          "ShadowWhenBabySwims": {
+            "Visible": false
+          },
+          "ShadowWhenBaby": {
+            "Visible": false
+          },
+          "ShadowWhenAdultSwims": {
+            "Visible": false
+          },
+          "ShadowWhenAdult": {
+            "Visible": false
+          },
+          "CanSwim": true,
+          "SwimOffset": {
+            "X": 0,
+            "Y": 224
+          },
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 4,
+          "HappinessDrain": 5,
+          "UpDownPetHitboxTileSize": "1, 1.5",
+          "LeftRightPetHitboxTileSize": "1, 1.5",
+          "BabyUpDownPetHitboxTileSize": "1, 1.25",
+          "BabyLeftRightPetHitboxTileSize": "1, 1.25",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": true,
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "TargetField": ["{{ModId}}.ShinyDewott", "DeluxeProduceItemIds"],
+      "Entries": {
+        "{{ModId}}.PrismaticShard": {
+          "Id": "{{ModId}}.PrismaticShard",
+          "Condition": null,
+          "MinimumFriendship": 900,
+          "ItemId": "74" 
+        }
+      },
+      "When": {
+				"DeluxeProduceDewott": true
+			}
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "TargetField": ["{{ModId}}.ShinyDewott", "ProduceItemIds"],
+      "Entries": {
+        "{{ModId}}.Shellder": {
+          "Id": "{{ModId}}.Shellder",
+          "Condition": "RANDOM 0.8",
+          "MinimumFriendship": 300,
+          "ItemId": "otohime.pokemonfish_Shellder" 
+        }
+      },
+      "When": {
+        "HasMod": "otohime.pokemonfish",
+        "UsePokemonFish": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "TargetField": ["{{ModId}}.ShinyDewott", "ProduceItemIds"],
+      "Entries": {
+        "{{ModId}}.Clamperl": {
+          "Id": "{{ModId}}.Clamperl",
+          "Condition": "RANDOM 0.6",
+          "MinimumFriendship": 600,
+          "ItemId": "otohime.pokemonfish_Clamperl" 
+        }
+      },
+      "When": {
+        "HasMod": "otohime.pokemonfish",
+        "UsePokemonFish": true
+      }
+    }
+  ]
+}

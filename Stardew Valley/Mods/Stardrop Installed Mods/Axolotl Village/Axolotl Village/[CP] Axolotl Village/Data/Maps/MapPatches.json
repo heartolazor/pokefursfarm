@@ -1,0 +1,839 @@
+{
+ "Changes": [
+       { 
+            "Action": "EditMap",
+            "Target": "Maps/Beach",
+            "FromFile": "Assets/Maps/Warp.tmx",
+            "PatchMode": "Replace",
+            "When": {
+                "HasSeenEvent": "98890000",
+              },
+            "ToArea": {
+                "X": 10,
+                "Y": 39,
+                "Width": 1,
+                "Height": 1
+            },
+        },
+     {
+            "Action": "EditMap",
+            "Target": "Maps/Beach",
+            "When": {
+                "HasSeenEvent": "98890000",
+              },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Warp"
+                    ],
+                    "Value": "10 39 otohime.AV_AxolotlTown 14 104",
+                    "Delimiter": " "
+                }
+            ],
+         },
+       {  
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_AxolotlTown",
+            "FromFile": "assets/Maps/AxolotlTown.tmx",
+            "When": {
+                "Season": "spring"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_AxolotlTown",
+            "FromFile": "assets/Maps/AxolotlTown.tmx",
+            "When": {
+                "Season": "summer"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_AxolotlTown",
+            "FromFile": "assets/Maps/Fall_AxolotlTown.tmx",
+            "When": {
+                "Season": "fall"
+            }
+         },
+         {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_AxolotlTown",
+            "FromFile": "assets/Maps/Winter_AxolotlTown.tmx",
+            "When": {
+                "Season": "winter"
+            }
+         },
+         {  
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_AxolotlLake",
+            "FromFile": "assets/Maps/AxolotlLake.tmx",
+            "When": {
+                "Season": "spring"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_AxolotlLake",
+            "FromFile": "assets/Maps/AxolotlLake.tmx",
+            "When": {
+                "Season": "summer"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_AxolotlLake",
+            "FromFile": "assets/Maps/Fall_AxolotlLake.tmx",
+            "When": {
+                "Season": "fall"
+            }
+         },
+         {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_AxolotlLake",
+            "FromFile": "assets/Maps/Winter_AxolotlLake.tmx",
+            "When": {
+                "Season": "winter"
+            }
+         },
+         {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_AxolotlTown",
+            "FromFile": "assets/Maps/Halloween_AxolotlTown.tmx",
+            "When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+         },
+         {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_AxolotlTown",
+            "FromFile": "assets/Maps/Christmas_AxolotlTown.tmx",
+            "When": {
+                "Day": "25",
+                "Season": "winter"
+            }
+         },
+       {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_AxolotlTown",
+            "FromFile": "assets/Maps/Tanabata_AxolotlTown.tmx",
+            "When": {
+                "Day": "7",
+                "Season": "summer"
+            }
+         },
+       {  
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_AxolotlTownSouth",
+            "FromFile": "assets/Maps/AxolotlTownSouth.tmx",
+            "When": {
+                "Season": "spring"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_AxolotlTownSouth",
+            "FromFile": "assets/Maps/AxolotlTownSouth.tmx",
+            "When": {
+                "Season": "summer"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_AxolotlTownSouth",
+            "FromFile": "assets/Maps/Fall_AxolotlTownSouth.tmx",
+            "When": {
+                "Season": "fall"
+            }
+         },
+         {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_AxolotlTownSouth",
+            "FromFile": "assets/Maps/Winter_AxolotlTownSouth.tmx",
+            "When": {
+                "Season": "winter"
+            }
+         },
+       {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_AxolotlTown",
+            "FromFile": "assets/Maps/BOF_AxolotlTown.tmx",
+            "When": {
+                "Day": "21",
+                "Season": "spring"
+            }
+         },
+{
+		"Action": "EditMap",
+		"Target": "Maps/{{ModId}}_AxolotlTownSouth",
+		"FromFile": "assets/Maps/BonbonFarm.tmx",
+		"ToArea": {
+                "X": 19,
+                "Y": 22,
+                "Width": 26,
+                "Height": 18
+            },
+                "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 26,
+                "Height": 18
+            },
+		"When": {
+			"HasReadLetter: hostPlayer |contains=CaptainProject2": true,
+                        "Season": "spring"
+                        },
+                "Update": "OnLocationChange"
+ }, 
+//////Bonbon Farm
+{
+		"Action": "EditMap",
+		"Target": "Maps/{{ModId}}_AxolotlTownSouth",
+		"FromFile": "assets/Maps/BonbonFarm.tmx",
+		"ToArea": {
+                "X": 19,
+                "Y": 22,
+                "Width": 26,
+                "Height": 18
+            },
+                "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 26,
+                "Height": 18
+            },
+		"When": {
+			"HasReadLetter: hostPlayer |contains=CaptainProject2": true,
+                        "Season": "summer"
+                        },
+                "Update": "OnLocationChange"
+ },
+{
+		"Action": "EditMap",
+		"Target": "Maps/{{ModId}}_AxolotlTownSouth",
+		"FromFile": "assets/Maps/Fall_BonbonFarm.tmx",
+		"ToArea": {
+                "X": 19,
+                "Y": 22,
+                "Width": 26,
+                "Height": 18
+            },
+                "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 26,
+                "Height": 18
+            },
+		"When": {
+			"HasReadLetter: hostPlayer |contains=CaptainProject2": true,
+                        "Season": "fall"
+                        },
+                "Update": "OnLocationChange"
+ },
+{
+		"Action": "EditMap",
+		"Target": "Maps/{{ModId}}_AxolotlTownSouth",
+		"FromFile": "assets/Maps/Winter_BonbonFarm.tmx",
+		"ToArea": {
+                "X": 19,
+                "Y": 22,
+                "Width": 26,
+                "Height": 18
+            },
+                "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 26,
+                "Height": 18
+            },
+		"When": {
+			"HasReadLetter: hostPlayer |contains=CaptainProject2": true,
+                        "Season": "winter"
+                        },
+                "Update": "OnLocationChange"
+ }, 
+//////Kandi Stage
+{
+		"Action": "EditMap",
+		"Target": "Maps/{{ModId}}_AxolotlTownSouth",
+		"FromFile": "assets/Maps/KandiStage.tmx",
+		"ToArea": {
+                "X": 73,
+                "Y": 23,
+                "Width": 30,
+                "Height": 14
+            },
+                "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 30,
+                "Height": 14
+            },
+		"When": {
+			"HasReadLetter: hostPlayer |contains=CaptainProject4": true,
+                        "Season": "spring"
+                        },
+                "Update": "OnLocationChange"
+ },
+{
+		"Action": "EditMap",
+		"Target": "Maps/{{ModId}}_AxolotlTownSouth",
+		"FromFile": "assets/Maps/KandiStage.tmx",
+		"ToArea": {
+                "X": 73,
+                "Y": 23,
+                "Width": 30,
+                "Height": 14
+            },
+                "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 30,
+                "Height": 14
+            },
+		"When": {
+			"HasReadLetter: hostPlayer |contains=CaptainProject4": true,
+                        "Season": "summer"
+                        },
+                "Update": "OnLocationChange"
+ },
+{
+		"Action": "EditMap",
+		"Target": "Maps/{{ModId}}_AxolotlTownSouth",
+		"FromFile": "assets/Maps/Fall_KandiStage.tmx",
+		"ToArea": {
+                "X": 73,
+                "Y": 23,
+                "Width": 30,
+                "Height": 14
+            },
+                "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 30,
+                "Height": 14
+            },
+		"When": {
+			"HasReadLetter: hostPlayer |contains=CaptainProject4": true,
+                        "Season": "fall"
+                        },
+                "Update": "OnLocationChange"
+ },
+{
+		"Action": "EditMap",
+		"Target": "Maps/{{ModId}}_AxolotlTownSouth",
+		"FromFile": "assets/Maps/Winter_KandiStage.tmx",
+		"ToArea": {
+                "X": 73,
+                "Y": 23,
+                "Width": 30,
+                "Height": 14
+            },
+                "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 30,
+                "Height": 14
+            },
+		"When": {
+			"HasReadLetter: hostPlayer |contains=CaptainProject4": true,
+                        "Season": "winter"
+                        },
+                "Update": "OnLocationChange"
+ },
+//////Kandi Manor
+{
+		"Action": "EditMap",
+		"Target": "Maps/{{ModId}}_AxolotlTownSouth",
+		"FromFile": "assets/Maps/KandiManor.tmx",
+		"ToArea": {
+                "X": 95,
+                "Y": 72,
+                "Width": 11,
+                "Height": 16
+            },
+                "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 11,
+                "Height": 16
+            },
+		"When": {
+			"HasReadLetter: hostPlayer |contains=CaptainProject4": true,
+                        "Season": "spring"
+                        },
+                "Update": "OnLocationChange"
+ },
+{
+		"Action": "EditMap",
+		"Target": "Maps/{{ModId}}_AxolotlTownSouth",
+		"FromFile": "assets/Maps/KandiManor.tmx",
+		"ToArea": {
+                "X": 95,
+                "Y": 72,
+                "Width": 11,
+                "Height": 16
+            },
+                "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 11,
+                "Height": 16
+            },
+		"When": {
+			"HasReadLetter: hostPlayer |contains=CaptainProject4": true,
+                        "Season": "summer"
+                        },
+                "Update": "OnLocationChange"
+ },
+{
+		"Action": "EditMap",
+		"Target": "Maps/{{ModId}}_AxolotlTownSouth",
+		"FromFile": "assets/Maps/Fall_KandiManor.tmx",
+		"ToArea": {
+                "X": 95,
+                "Y": 72,
+                "Width": 11,
+                "Height": 16
+            },
+                "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 11,
+                "Height": 16
+            },
+		"When": {
+			"HasReadLetter: hostPlayer |contains=CaptainProject4": true,
+                        "Season": "fall"
+                        },
+                "Update": "OnLocationChange"
+ },
+{
+		"Action": "EditMap",
+		"Target": "Maps/{{ModId}}_AxolotlTownSouth",
+		"FromFile": "assets/Maps/Winter_KandiManor.tmx",
+		"ToArea": {
+                "X": 95,
+                "Y": 72,
+                "Width": 11,
+                "Height": 16
+            },
+                "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 11,
+                "Height": 16
+            },
+		"When": {
+			"HasReadLetter: hostPlayer |contains=CaptainProject4": true,
+                        "Season": "winter"
+                        },
+                "Update": "OnLocationChange"
+ },
+//////Four Shops
+{
+		"Action": "EditMap",
+		"Target": "Maps/{{ModId}}_AxolotlTownSouth",
+		"FromFile": "assets/Maps/FourShops.tmx",
+		"ToArea": {
+                "X": 69,
+                "Y": 43,
+                "Width": 37,
+                "Height": 10
+            },
+                "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 37,
+                "Height": 10
+            },
+		"When": {
+			"HasReadLetter: hostPlayer |contains=CaptainProject6": true,
+                        "Season": "spring"
+                        },
+                "Update": "OnLocationChange"
+ },
+{
+		"Action": "EditMap",
+		"Target": "Maps/{{ModId}}_AxolotlTownSouth",
+		"FromFile": "assets/Maps/FourShops.tmx",
+		"ToArea": {
+                "X": 69,
+                "Y": 43,
+                "Width": 37,
+                "Height": 10
+            },
+                "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 37,
+                "Height": 10
+            },
+		"When": {
+			"HasReadLetter: hostPlayer |contains=CaptainProject6": true,
+                        "Season": "summer"
+                        },
+                "Update": "OnLocationChange"
+ },
+{
+		"Action": "EditMap",
+		"Target": "Maps/{{ModId}}_AxolotlTownSouth",
+		"FromFile": "assets/Maps/Fall_FourShops.tmx",
+		"ToArea": {
+                "X": 69,
+                "Y": 43,
+                "Width": 37,
+                "Height": 10
+            },
+                "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 37,
+                "Height": 10
+            },
+		"When": {
+			"HasReadLetter: hostPlayer |contains=CaptainProject6": true,
+                        "Season": "fall"
+                        },
+                "Update": "OnLocationChange"
+ },
+{
+		"Action": "EditMap",
+		"Target": "Maps/{{ModId}}_AxolotlTownSouth",
+		"FromFile": "assets/Maps/Winter_FourShops.tmx",
+		"ToArea": {
+                "X": 69,
+                "Y": 43,
+                "Width": 39,
+                "Height": 10
+            },
+                "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 39,
+                "Height": 10
+            },
+		"When": {
+			"HasReadLetter: hostPlayer |contains=CaptainProject6": true,
+                        "Season": "winter"
+                        },
+                "Update": "OnLocationChange"
+ },
+{
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_AxolotlTownSouth",
+            "When": {
+                "HasMod": "PeacefulEnd.CustomCompanions",
+                "HasReadLetter: hostPlayer |contains=CaptainProject2": true,
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 33,
+                        "Y": 29
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.BrownCow"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 35,
+                        "Y": 32
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.BrownCow"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 39,
+                        "Y": 31
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.BrownCow"
+                    }
+                }
+            ]
+        },
+{
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_AxolotlLake",
+            "When": {
+                "HasMod": "PeacefulEnd.CustomCompanions"
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 89,
+                        "Y": 55
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.PinkAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 15,
+                        "Y": 60
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.PinkAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 12,
+                        "Y": 13
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.PinkAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 61,
+                        "Y": 12
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.PinkAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 106,
+                        "Y": 6
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.PinkAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 101,
+                        "Y": 74
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.BlackAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 44,
+                        "Y": 59
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.BlackAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 14,
+                        "Y": 36
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.BlackAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 54,
+                        "Y": 3
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.BlackAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 33,
+                        "Y": 14
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.BlueAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 92,
+                        "Y": 46
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.BlueAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 60,
+                        "Y": 76
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.BlueAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 14,
+                        "Y": 78
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.BlueAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 41,
+                        "Y": 74
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.LavenderAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 31,
+                        "Y": 32
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.LavenderAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 91,
+                        "Y": 5
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.LavenderAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 105,
+                        "Y": 31
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.LavenderAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 93,
+                        "Y": 69
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.AlbinoAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 18,
+                        "Y": 46
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.AlbinoAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 36,
+                        "Y": 6
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.AlbinoAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 89,
+                        "Y": 29
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.AlbinoAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 105,
+                        "Y": 17
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.YellowAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 104,
+                        "Y": 63
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.YellowAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 74,
+                        "Y": 67
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.YellowAxolotl"
+                    }
+                  },
+                {
+                    "Position": {
+                        "X": 41,
+                        "Y": 18
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 otohime.AV.CC.YellowAxolotl"
+                    }
+                 }
+            ]
+        },
+{
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_AxolotlTown",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NPCWarp"
+                    ],
+                    "Value": "88 109 {{ModId}}_AxolotlTownSouth 86 1 32 109 {{ModId}}_AxolotlTownSouth 30 1",
+                    "Delimiter": " "
+                }
+            ]
+        },
+]
+}

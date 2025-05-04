@@ -1,0 +1,58 @@
+{
+    "Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": {
+				"(BC)nachonline.mps_PrismaticHeavyTapper": {
+					"OutputRules": [
+						{
+							"Id": "nachonline.mps_PrismaticHeavyTapperProduce",
+							"Triggers": [
+								{
+									"Trigger": "DayUpdate, MachinePutDown, OutputCollected"
+								}
+							],
+							"OutputItem": [
+								{
+									"Id": "Default",
+									"OutputMethod": "Selph.StardewMods.MachineTerrainFramework.Utils, CustomTapperFramework: OutputTapper",
+									"StackModifiers": [
+										{
+											"Id": "100ItemsForaged",
+											"Condition": "PLAYER_STAT Current itemsForaged 100",
+											"Modification": "Add",
+											"Amount": "{{P.H.T 100 Items Foraged Bonus}}"
+										},
+										{
+											"Id": "300ItemsForaged",
+											"Condition": "PLAYER_STAT Current itemsForaged 300",
+											"Modification": "Add",
+											"Amount": "{{P.H.T 300 Items Foraged Bonus}}"
+										},
+										{
+											"Id": "500ItemsForaged",
+											"Condition": "PLAYER_STAT Current itemsForaged 500",
+											"Modification": "Add",
+											"Amount": "{{P.H.T 500 Items Foraged Bonus}}"
+										}
+									],
+									"StackModifierMode": "Stack"
+								}
+							]
+						}
+					],
+					"ReadyTimeModifiers": [
+						{
+							"Modification": "Multiply",
+							"Amount": "{{P.H.T Production Time Reduction}}"
+						}
+					],
+					"ReadyTimeModifierMode": "Stack",
+					"HasOutput": true,
+					"AllowFairyDust": true
+				}
+			}
+		}
+	] 
+}

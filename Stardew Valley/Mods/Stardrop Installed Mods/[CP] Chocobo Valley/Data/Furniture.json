@@ -1,0 +1,47 @@
+{
+	"Changes": [
+		//chocobo nests
+		{
+			"Action": "EditData",
+			"Target": "Data/Furniture",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_EorzeanNest": "Eorzean Chocobo Nest/decor/2 2/2 1/1/300/2/{{i18n: Chocobovalley_EorzeanNest_Name}}/0/Mods\\Kitsutsune.Chocobovalley\\EorzeanNest/true",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Furniture",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_LucianNest": "Lucian Chocobo Nest/decor/2 2/2 1/1/300/2/{{i18n: Chocobovalley_LucianNest_Name}}/0/Mods\\Kitsutsune.Chocobovalley\\LucianNest/true",
+			}
+		},
+		//optional spacecore stuff
+		{
+			"Action": "EditData",
+			"Target": "spacechase0.SpaceCore/FurnitureExtensionData",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_EorzeanNest": {
+					"DescriptionOverride": "{{i18n: Chocobovalley_EorzeanNest_Description}}",
+				},
+				"Kitsutsune.Chocobovalley_LucianNest": {
+					"DescriptionOverride": "{{i18n: Chocobovalley_LucianNest_Description}}",
+				}
+			},
+			"When": {
+				"HasMod": "spacechase0.SpaceCore"
+			}
+		},
+		//textures
+		{
+			"Action": "Load",
+			"Target": "Mods/Kitsutsune.Chocobovalley/EorzeanNest",
+			"FromFile": "Assets/Items/Furniture/EorzeanNest.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "Mods/Kitsutsune.Chocobovalley/LucianNest",
+			"FromFile": "Assets/Items/Furniture/LucianNest.png"
+		}
+		
+	]
+}

@@ -1,0 +1,37 @@
+{
+    "Changes": [
+        {
+            "LogName": "Elian Final Schedule",
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Silverinnia.Elian",
+            "When": { "HasSeenEvent: anyPlayer |contains=1711937082": true },
+            "Entries": {
+                "Mon": "610 {{ModId}}_Cave 6 6 2/900 {{ModId}}_Cave 5 5 0/1200 {{ModId}}_Cave 4 8 2/1300 {{ModId}}_Cave 10 9 2 Silverinnia.Elian_water/1400 {{ModId}}_Cave 8 10 2/1700 {{ModId}}_Cave 4 8 2/1800 {{ModId}}_Cave 6 6 2/2100 {{ModId}}_Cave 8 5 0/2200 {{ModId}}_Cave 10 5 2 Silverinnia.Elian_sleep",
+
+                "Tue": "GOTO Mon",
+
+                "Wed": "GOTO Mon",
+
+                "Thu": "610 {{ModId}}_Cave 10 9 2 Silverinnia.Elian_water/700 {{ModId}}_Warp 3 2 2/800 Beach 12 39 2/1700 {{ModId}}_Warp 3 2 2/2100 {{ModId}}_Cave 6 6 2/2200 {{ModId}}_Cave 10 5 2 Silverinnia.Elian_sleep",
+
+                "Fri": "610 {{ModId}}_Cave 10 9 2 Silverinnia.Elian_water/700 {{ModId}}_Warp 3 2 2/800 Town 16 59 1/1300 Town 16 59 2 Silverinnia.Elian_water/1400 Town 18 59 2 Silverinnia.Elian_water/1500 Town 17 59 2 Silverinnia.Elian_water/1600 Town 16 59 1/1700 Saloon 39 18 2/2100 {{ModId}}_Warp 3 2 2/2330 {{ModId}}_Cave 6 6 2/2400 {{ModId}}_Cave 10 5 2 Silverinnia.Elian_sleep",
+
+                "Sat": "GOTO Thu",
+
+                "Sun": "610 {{ModId}}_Cave 6 6 2/800 {{ModId}}_Cave 5 5 0/1000 {{ModId}}_Cave 10 9 2 Silverinnia.Elian_water/1100 {{ModId}}_Warp 3 2 2/1200 Forest 13 40 2/1800 {{ModId}}_Warp 3 2 2/2230 {{ModId}}_Cave 6 6 2/2300 {{ModId}}_Cave 10 5 2 Silverinnia.Elian_sleep",
+
+                "rain": "GOTO Mon",
+
+                "winter_Fri": "610 {{ModId}}_Cave 10 9 2 Silverinnia.Elian_water/700 {{ModId}}_Warp 3 2 2/800 Town 16 59 1/1700 Saloon 43 18 3/2100 {{ModId}}_Warp 3 2 2/2330 {{ModId}}_Cave 6 6 2/2400 {{ModId}}_Cave 10 5 2 Silverinnia.Elian_sleep"
+            }
+        }
+    ]
+}
+
+
+
+
+
+
+
+    

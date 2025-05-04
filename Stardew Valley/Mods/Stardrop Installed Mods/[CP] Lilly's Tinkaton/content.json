@@ -1,0 +1,698 @@
+{
+    "Format": "2.0.0",
+    "Changes": [  
+        //Sprites
+                {
+                    "LogName": "Load shopIcon for Tinkaton",
+                    "Action": "Load",
+                    "Target": "Animals/{{ModId}}_shop_tinkaton_icon",
+                    "FromFile": "assets/TinkatonShop.png"
+                },
+                {
+                    "LogName": "Load Sprite for Tinkaton",
+                    "Action": "Load",
+                    "Target": "Animals/{{ModId}}_tinkaton",
+                    "FromFile": "assets/Tinkaton.png"
+                },
+                {
+                    "LogName": "Load Sprite for TinkatonShiny",
+                    "Action": "Load",
+                    "Target": "Animals/{{ModId}}_tinkaton_shiny",
+                    "FromFile": "assets/TinkatonShiny.png"
+                },
+                {
+                    "LogName": "Load Spritesheet for items",
+                    "Action": "Load",
+                    "Target": "TileSheets/{{ModId}}_tinkaton_items",
+                    "FromFile": "assets/TinkatonItems.png"
+                },
+
+
+        //Animals
+        { 
+            "LogName": "Load data for Tinkaton",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Tinkaton": {
+                    "DisplayName": "{{i18n:Tinkaton}}",
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "PurchasePrice": 4500,
+                    "SellPrice": 9000,
+                    "ShopTexture": "Animals/{{ModId}}_shop_tinkaton_icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "ShopDisplayName": "{{i18n:Tinkaton}}",
+                    "ShopDescription": "{{i18n:TinkatonDescription}}",
+                    "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5936]",
+                    "RequiredBuilding": "Big Barn",
+                    "DaysToMature": "4",
+                    "CanGetPregnant": false,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}_SteelFeather"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 100,
+                            "ItemId": "{{ModId}}_SteelFeather"
+                        },
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 200,
+                            "ItemId": "{{ModId}}_LeadersCrest"
+                        }
+                    ],
+                    "DaysToProduce": "2",
+                    "ProduceOnMature": true,
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": "null",
+                    "Sound": "{{ModId}}_TinkCry",
+                    "Texture": "Animals/{{ModId}}_tinkaton",
+                    "UseFlippedRightForLeft": false,
+                    "CanSwim": false,
+                    "SpriteWidth": "34",
+                    "SpriteHeight": "36",
+                    "Skins": [
+						{
+							"id": "TinkatonShiny",
+							"Texture": "Animals/{{ModId}}_tinkaton_shiny",
+							"Weight": 0.1
+							}
+					],
+					"ShadowWhenAdult": {
+                        "Visible": false
+                      },
+					"ShadowWhenBaby": {
+						"Visible": false
+					  },
+                    "UpDownPetHitboxTileSize": "2.5, 2.5",
+					"LeftRightPetHitboxTileSize": "2.5, 2.5",
+                    "ShowInSummitCredits": true
+                }
+            }
+        },
+	    //Items
+        {
+            "LogName": "Load data for Steel Feather",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_SteelFeather": {
+				"Name": "{{ModId}}_SteelFeather",
+				"DisplayName": "{{i18n:SteelFeather}}",
+				"Description": "{{i18n:SteelFeatherDescription}}",
+				"Type": "Basic",
+				"Category": -18,
+				"Price": 210,
+				"Texture": "TileSheets/{{ModId}}_tinkaton_items",
+				"SpriteIndex": 0,
+				"Edibility": -300,
+				"IsDrink": false,
+				"Buffs": null,
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_dark_blue"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+        {
+            "LogName": "Load data for Leader's Crest",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_LeadersCrest": {
+				"Name": "{{ModId}}_LeadersCrest",
+				"DisplayName": "{{i18n:LeadersCrest}}",
+				"Description": "{{i18n:LeadersCrestDescription}}",
+				"Type": "Basic",
+				"Category": -18,
+				"Price": 450,
+				"Texture": "TileSheets/{{ModId}}_tinkaton_items",
+				"SpriteIndex": 1,
+				"Edibility": -300,
+				"IsDrink": false,
+				"Buffs": null,
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_gold"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+        {
+            "LogName": "Load data for Leader Blade Replica",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+                "{{ModId}}_LeaderBladeReplica": {
+                    "Name": "{{ModId}}_LeaderBladeReplica",
+				"DisplayName": "{{i18n:LeaderBladeReplica}}",
+				"Description": "{{i18n:LeaderBladeReplicaDescription}}",
+				"Type": "Basic",
+				"Category": -20,
+				"Price": 0,
+				"Texture": "TileSheets/{{ModId}}_tinkaton_items",
+				"SpriteIndex": 2,
+				"Edibility": -300,
+				"IsDrink": false,
+				"Buffs": null,
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": true,
+				"ExcludeFromRandomSale": true,
+                "ContextTags": [
+                    "color_gold"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+        {
+            "LogName": "Load data for Gigaton Hammer Replica",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+                "{{ModId}}_GigatonHammerReplica": {
+                    "Name": "{{ModId}}_GigatonHammerReplica",
+				"DisplayName": "{{i18n:GigatonHammerReplica}}",
+				"Description": "{{i18n:GigatonHammerReplicaDescription}}",
+				"Type": "Basic",
+				"Category": -20,
+				"Price": 0,
+				"Texture": "TileSheets/{{ModId}}_tinkaton_items",
+				"SpriteIndex": 3,
+				"Edibility": -300,
+				"IsDrink": false,
+				"Buffs": null,
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": true,
+				"ExcludeFromRandomSale": true,
+                "ContextTags": [
+                    "color_blue"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+        {
+            "LogName": "Load data for Feather Dagger Replica",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+                "{{ModId}}_FeatherDaggerReplica": {
+                    "Name": "{{ModId}}_FeatherDaggerReplica",
+				"DisplayName": "{{i18n:FeatherDaggerReplica}}",
+				"Description": "{{i18n:FeatherDaggerReplicaDescription}}",
+				"Type": "Basic",
+				"Category": -20,
+				"Price": 0,
+				"Texture": "TileSheets/{{ModId}}_tinkaton_items",
+				"SpriteIndex": 4,
+				"Edibility": -300,
+				"IsDrink": false,
+				"Buffs": null,
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": true,
+				"ExcludeFromRandomSale": true,
+                "ContextTags": [
+                    "color_blue"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+        {
+            "LogName": "Load data for Gigaton Hammer S Replica",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+                "{{ModId}}_GigatonHammerSReplica": {
+                    "Name": "{{ModId}}_GigatonHammerSReplica",
+				"DisplayName": "{{i18n:GigatonHammerSReplica}}",
+				"Description": "{{i18n:GigatonHammerSReplicaDescription}}",
+				"Type": "Basic",
+				"Category": -20,
+				"Price": 0,
+				"Texture": "TileSheets/{{ModId}}_tinkaton_items",
+				"SpriteIndex": 5,
+				"Edibility": -300,
+				"IsDrink": false,
+				"Buffs": null,
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": true,
+				"ExcludeFromRandomSale": true,
+                "ContextTags": [
+                    "color_copper"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+        //Weapons
+        {
+            "LogName": "Weapons Data for Leaderblade",
+            "Action": "EditData",
+            "Target": "Data/Weapons",
+            "Entries": {
+                "{{ModId}}_LeaderBlade": {
+                    "Name": "{{ModId}}_LeaderBlade",
+                    "DisplayName": "{{i18n:LeaderBlade}}",
+                    "Description": "{{i18n:LeaderBladeDescription}}",
+                    "MinDamage": 60,
+                    "MaxDamage": 65,
+                    "Knockback": 1.05,
+                    "Speed": 0,
+                    "Precision": 0,
+                    "Defense": 1,
+                    "Type": 0,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": -1,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0.05,
+                    "CritMultiplier": 1.5,
+                    "CanBeLostOnDeath": true,
+                    "Texture": "TileSheets/{{ModId}}_tinkaton_items",
+                    "SpriteIndex": "2"
+                }
+            }
+        },
+        {
+            "LogName": "Weapons Data for Gigaton Hammer",
+            "Action": "EditData",
+            "Target": "Data/Weapons",
+            "Entries": {
+                "{{ModId}}_GigatonHammer": {
+                    "Name": "{{ModId}}_GigatonHammer",
+                    "DisplayName": "{{i18n:GigatonHammer}}",
+                    "Description": "{{i18n:GigatonHammerDescription}}",
+                    "MinDamage": 140,
+                    "MaxDamage": 160,
+                    "Knockback": 1.75,
+                    "Speed": -18,
+                    "Precision": 0,
+                    "Defense": 1,
+                    "Type": 2,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": -1,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0.05,
+                    "CritMultiplier": 1.5,
+                    "CanBeLostOnDeath": true,
+                    "Texture": "TileSheets/{{ModId}}_tinkaton_items",
+                    "SpriteIndex": "3"
+                }
+            }
+        },
+        {
+            "LogName": "Weapons Data for Feather Dagger",
+            "Action": "EditData",
+            "Target": "Data/Weapons",
+            "Entries": {
+                "{{ModId}}_FeatherDagger": {
+                    "Name": "{{ModId}}_FeatherDagger",
+                    "DisplayName": "{{i18n:FeatherDagger}}",
+                    "Description": "{{i18n:FeatherDaggerDescription}}",
+                    "MinDamage": 3,
+                    "MaxDamage": 6,
+                    "Knockback": 0,
+                    "Speed": 1.5,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 1,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": -1,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0.05,
+                    "CritMultiplier": 1.5,
+                    "CanBeLostOnDeath": true,
+                    "Texture": "TileSheets/{{ModId}}_tinkaton_items",
+                    "SpriteIndex": "4"
+                }
+            }
+        },
+        {
+            "LogName": "Weapons Data for Gigaton Hammer S",
+            "Action": "EditData",
+            "Target": "Data/Weapons",
+            "Entries": {
+                "{{ModId}}_GigatonHammerS": {
+                    "Name": "{{ModId}}_GigatonHammerS",
+                    "DisplayName": "{{i18n:GigatonHammerS}}",
+                    "Description": "{{i18n:GigatonHammerSDescription}}",
+                    "MinDamage": 140,
+                    "MaxDamage": 160,
+                    "Knockback": 1.75,
+                    "Speed": -18,
+                    "Precision": 0,
+                    "Defense": 1,
+                    "Type": 2,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": -1,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0.05,
+                    "CritMultiplier": 1.5,
+                    "CanBeLostOnDeath": true,
+                    "Texture": "TileSheets/{{ModId}}_tinkaton_items",
+                    "SpriteIndex": "5"
+                }
+            }
+        },
+
+        //Crafting
+        {
+        "LogName": "Add Crafting Recipes",
+        "Action": "EditData",
+        "Target": "Data/CraftingRecipes",
+        "Entries": {
+            "{{ModId}}_LeaderBladeReplica": "{{ModId}}_LeadersCrest 5 {{ModId}}_SteelFeather 10 578 1/Field/{{ModId}}_LeaderBladeReplica/false/Combat 3/",
+            "{{ModId}}_GigatonHammerReplica": "335 15 {{ModId}}_LeadersCrest 4 {{ModId}}_SteelFeather 10 577 1/Field/{{ModId}}_GigatonHammerReplica/false/Combat 6/",
+            "{{ModId}}_FeatherDagger": "334 2 {{ModId}}_SteelFeather 3 545 1/Field/{{ModId}}_FeatherDaggerReplica/false/Combat 1/",
+            "{{ModId}}_GigatonHammerSReplica": "334 45 {{ModId}}_LeadersCrest 4 {{ModId}}_SteelFeather 10 577 1/Field/{{ModId}}_GigatonHammerSReplica/false/Combat 9/" 
+        }
+        },
+        //Machine Recipes
+        
+        {
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)13", "OutputRules" ],
+			"Entries": {
+				"{{ModId}}_Iron_Bar": {
+					"Id": "335",
+					"Triggers": 
+						[
+							{
+                                "Trigger": "ItemPlacedInMachine",
+                                "RequiredItemId": "{{ModId}}_SteelFeather"
+							}
+						],
+					"OutputItem": [
+                        {
+                            "Id": "335",
+                            "ItemId": "335",
+                            "CopyQuality":false,
+                            "MinStack": 2,
+                            "MaxStack": -1
+
+                        }
+						],
+					"MinutesUntilReady": 150
+				},
+				"{{ModId}}_Gold_Bar": {
+					"Id": "336",
+					"Triggers": 
+						[
+							{
+                                "Trigger": "ItemPlacedInMachine",
+                                "RequiredItemId": "{{ModId}}_LeadersCrest"
+							}
+						],
+					"OutputItem": [
+                        {
+                            "Id": "336",
+                            "ItemId": "336",
+                            "CopyQuality":false,
+                            "MinStack": 2,
+                            "MaxStack": -1
+
+                        }
+						],
+					"MinutesUntilReady": 330
+				}
+			}
+		}, 
+        {
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)HeavyFurnace", "OutputRules" ],
+			"Entries": {
+				"{{ModId}}_Iron_Bar": {
+					"Id": "335",
+					"Triggers": 
+						[
+							{
+                                "Trigger": "ItemPlacedInMachine",
+                                "RequiredItemId": "{{ModId}}_SteelFeather",
+                                "RequiredCount": 5
+							}
+						],
+					"OutputItem": [
+                        {
+                            "Id": "335",
+                            "ItemId": "335",
+                            "CopyQuality":false,
+                            "MinStack": 10,
+                            "MaxStack": 12
+
+                        }
+						],
+					"MinutesUntilReady": 150
+				},
+				"{{ModId}}_Gold_Bar": {
+					"Id": "336",
+					"Triggers": 
+						[
+							{
+                                "Trigger": "ItemPlacedInMachine",
+                                "RequiredItemId": "{{ModId}}_LeadersCrest",
+                                "RequiredCount": 5
+							}
+						],
+					"OutputItem": [
+                        {
+                            "Id": "336",
+                            "ItemId": "336",
+                            "CopyQuality":false,
+                            "MinStack": 10,
+                            "MaxStack": 12
+
+                        }
+						],
+					"MinutesUntilReady": 330
+				}
+			}
+		}, 
+        //Sounds
+            {
+                "Action": "EditData",
+                "Target": "Data/AudioChanges",
+                "Entries": {
+                    "{{ModId}}_TinkCry": {
+                        "ID": "{{ModId}}_TinkCry",
+                        "Category": "Sound",
+                        "FilePaths": [ "{{AbsoluteFilePath: assets/TinkatonSound.wav}}" ],
+                        "StreamedVorbis": false
+                    }
+                }
+            },
+        //Gift Tastes
+        //1 = loves, 3 = likes, 5 = dislikes, 7 = hate, 9 = neutral
+            {
+                "LogName": "Tinkaton Gift Tastes",
+                "Action": "EditData",
+                "Target": "Data/NPCGiftTastes",
+                "TextOperations": [
+     
+                    {
+                        "Operation": "Append",
+                        "Target": ["Fields","Clint", 1],
+                        "Value": "{{ModId}}_LeadersCrest",
+                        "Delimiter": " "
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": ["Fields","Dwarf", 1],
+                        "Value": "{{ModId}}_LeadersCrest",
+                        "Delimiter": " "
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": ["Fields","Sebastian", 1],
+                        "Value": "{{ModId}}_LeaderBladeReplica",
+                        "Delimiter": " "
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": ["Fields","Sebastian", 1],
+                        "Value": "{{ModId}}_GigatonHammerReplica",
+                        "Delimiter": " "
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": ["Fields","Sebastian", 1],
+                        "Value": "{{ModId}}_GigatonHammerSReplica",
+                        "Delimiter": " "
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": ["Fields","Sebastian", 1],
+                        "Value": "{{ModId}}_FeatherDaggerReplica",
+                        "Delimiter": " "
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": ["Fields","Elliott", 1],
+                        "Value": "{{ModId}}_SteelFeather",
+                        "Delimiter": " "
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": ["Fields","Clint", 3],
+                        "Value": "{{ModId}}_SteelFeather",
+                        "Delimiter": " "
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": ["Fields","Dwarf", 3],
+                        "Value": "{{ModId}}_SteelFeather",
+                        "Delimiter": " "
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": ["Fields","Penny", 3],
+                        "Value": "{{ModId}}_LeadersCrest",
+                        "Delimiter": " "
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": ["Fields","Sam", 3],
+                        "Value": "{{ModId}}_LeaderBladeReplica",
+                        "Delimiter": " "
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": ["Fields","Abigail", 3],
+                        "Value": "{{ModId}}_LeaderBladeReplica",
+                        "Delimiter": " "
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": ["Fields","Sam", 3],
+                        "Value": "{{ModId}}_GigatonHammerReplica",
+                        "Delimiter": " "
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": ["Fields","Abigail", 3],
+                        "Value": "{{ModId}}_GigatonHammerReplica",
+                        "Delimiter": " "
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": ["Fields","Sam", 3],
+                        "Value": "{{ModId}}_GigatonHammerSReplica",
+                        "Delimiter": " "
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": ["Fields","Abigail", 3],
+                        "Value": "{{ModId}}_GigatonHammerSReplica",
+                        "Delimiter": " "
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": ["Fields","Sam", 3],
+                        "Value": "{{ModId}}_FeatherDaggerReplica",
+                        "Delimiter": " "
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": ["Fields","Abigail", 3],
+                        "Value": "{{ModId}}_FeatherDaggerReplica",
+                        "Delimiter": " "
+                    },
+                    {
+                        "Operation": "Append",
+                        "Target": [
+                            "Entries", 
+                            "Universal_Hate"
+                        ],
+                        "Value": "{{ModId}}_GigatonHammerReplica, {{ModId}}_LeaderBladeReplica, {{ModId}}_FeatherDaggerReplica, {{ModId}}_GigatonHammerSReplica", 
+                        "Delimiter": " "
+                    }
+                ]
+                },
+                //Trades AdventureShop
+                {
+                "Action": "EditData",
+                "Target": "Data/Shops",
+                "TargetField": [ "AdventureShop", "Items"],
+                "Entries": {
+                "{{ModId}}_LeaderBlade": {
+                    "Id": "{{ModId}}_LeaderBlade",
+                    "ItemId": "{{ModId}}_LeaderBlade",
+                    "TradeItemId":  "{{ModId}}_LeaderBladeReplica",
+                    "TradeItemAmount": 1,
+                    "Price": 6250
+                    },   
+                "{{ModId}}_GigatonHammer": {
+                    "Id": "{{ModId}}_GigatonHammer",
+                    "ItemId": "{{ModId}}_GigatonHammer",
+                    "TradeItemId":  "{{ModId}}_GigatonHammerReplica",
+                    "TradeItemAmount": 1,
+                    "Price": 9590
+                    },   
+                "{{ModId}}_FeatherDagger": {
+                    "Id": "{{ModId}}_FeatherDagger",
+                    "ItemId": "{{ModId}}_FeatherDagger",
+                    "TradeItemId":  "{{ModId}}_FeatherDaggerReplica",
+                    "TradeItemAmount": 1,
+                    "Price": 2250
+                    },
+                "{{ModId}}_GigatonHammerS": {
+                    "Id": "{{ModId}}_GigatonHammerS",
+                    "ItemId": "{{ModId}}_GigatonHammerS",
+                    "TradeItemId":  "{{ModId}}_GigatonHammerSReplica",
+                    "TradeItemAmount": 1,
+                    "Price": 95900
+                    }
+                }
+                }
+                
+            
+             
+    ]
+}

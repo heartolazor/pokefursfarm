@@ -1,0 +1,35 @@
+{
+"Changes": [
+
+	{
+		"LogName": "Lala Schedule",
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Lala",
+		"Entries": {
+
+			//Regular Schedule
+			"spring": "610 {{ModId}}_AxolotlTown 37 39 2/1100 {{ModId}}_AxolotlTown 17 32 3/1400 {{ModId}}_AxolotlTown 22 38 2/1700 {{ModId}}_AxolotlTown 22 38 1/2000 {{ModId}}_LalaHouse 12 9 2 lala_sleep",
+			"summer": "610 {{ModId}}_AxolotlTown 37 39 2/900 {{ModId}}_NoaHouse 6 9 1/1300 {{ModId}}_AxolotlTown 16 24 1/1600 {{ModId}}_AxolotlTown 106 72 2/2000 {{ModId}}_LalaHouse 12 9 2 lala_sleep",
+			"fall": "610 {{ModId}}_AxolotlTown 26 56 1/1000 {{ModId}}_DrinkShop 13 6 1/1500 {{ModId}}_AxolotlTown 43 41 1/2000 {{ModId}}_LalaHouse 12 9 2 lala_sleep",
+			"winter": "610 {{ModId}}_LalaHouse 7 10 0/1000 {{ModId}}_AxolotlTown 22 38 1/1400 {{ModId}}_NoaHouse 6 9 1/2000 {{ModId}}_LalaHouse 12 9 2 lala_sleep",
+			"rain": "610 {{ModId}}_LalaHouse 7 10 0/1200 {{ModId}}_LuluHouse 8 10 3/2000 {{ModId}}_LalaHouse 12 9 2 lala_sleep",
+			"Fri": "610 {{ModId}}_AxolotlTown 37 39 2/1000 {{ModId}}_AxolotlTown 22 38 2/1300 {{ModId}}_AxolotlCommunityCenter 39 9 2/2200 {{ModId}}_LalaHouse 12 9 2 lala_sleep",
+                        "Wed": "610 {{ModId}}_AxolotlTown 37 39 2/1000 {{ModId}}_AxolotlTown 33 40 2 \"Strings\\schedules\\Lala:Wed\"/2000 {{ModId}}_LalaHouse 12 9 2 lala_sleep",
+                        "fall_28": "610 {{ModId}}_AxolotlTown 26 56 1/1000 {{ModId}}_DrinkShop 13 6 1/1500 {{ModId}}_AxolotlTown 43 41 1/1850 {{ModId}}_AxolotlTown 28 55 1/2350 {{ModId}}_LalaHouse 12 9 2 lala_sleep",
+                        "winter_25": "610 {{ModId}}_LalaHouse 7 10 0/900 {{ModId}}_AxolotlTown 27 54 3/2000 {{ModId}}_LalaHouse 12 9 2 lala_sleep",
+                        "summer_7": "610 {{ModId}}_AxolotlTown 37 39 2/900 {{ModId}}_NoaHouse 6 9 1/1300 {{ModId}}_AxolotlTown 16 24 1/1600 {{ModId}}_AxolotlTown 106 72 2/1800 {{ModId}}_AxolotlTown 26 80 1/2350 {{ModId}}_LalaHouse 12 9 2 lala_sleep",
+                        "spring_21": "610 {{ModId}}_AxolotlTown 37 39 2/800 {{ModId}}_AxolotlTown 26 80 1/2000 {{ModId}}_LalaHouse 12 9 2 lala_sleep",
+			}
+	},
+{
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Lala",
+		"Entries": {
+			"Sun": "610 {{ModId}}_AxolotlTown 37 39 2/900 {{ModId}}_AxolotlTownSouth 92 38 0/2000 {{ModId}}_LalaHouse 12 9 2 lala_sleep",
+			},
+		"When": {
+			"HasSeenEvent: hostPlayer |contains=98890063": true
+                        },
+	},
+]
+}

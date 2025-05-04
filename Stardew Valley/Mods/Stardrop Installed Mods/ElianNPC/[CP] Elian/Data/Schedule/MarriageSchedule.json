@@ -1,0 +1,30 @@
+{
+    "Changes": [
+        {
+            "LogName": "Elian Marriage Schedule",
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Silverinnia.Elian",
+            "When": { "Season": "spring, summer, fall" },
+            "Entries": { 
+                "marriage_Thu": "900 Beach 12 39 2/1700 BusStop -1 23 3",
+
+                "marriage_Fri": "1200 Town 16 59 1/1300 Town 16 59 2 Silverinnia.Elian_water/1400 Town 18 59 2 Silverinnia.Elian_water/1500 Town 17 59 2 Silverinnia.Elian_water/1600 Town 16 59 1/1700 Saloon 39 18 2/2100 BusStop -1 23 3",
+
+                "marriage_Sun": "1230 Forest 13 40 2/1800 BusStop -1 23 3"
+            }
+        },
+        {
+            "LogName": "Elian Winter Marriage Schedule",
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Silverinnia.Elian",
+            "When": { "Season": "winter" },
+            "Entries": { 
+                "marriage_Thu": "900 Beach 12 39 2/1700 BusStop -1 23 3",
+
+                "marriage_Fri": "1200 Town 16 59 1/1700 Saloon 39 18 2/2100 BusStop -1 23 3",
+
+                "marriage_Sun": "1230 Forest 13 40 2/1800 BusStop -1 23 3"
+            }
+        }
+    ]
+}

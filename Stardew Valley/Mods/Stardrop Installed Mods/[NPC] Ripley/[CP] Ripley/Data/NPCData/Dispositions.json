@@ -1,0 +1,50 @@
+{
+  "Changes": [
+  {
+    "LogName": "NPC Dispositions",
+    "Action": "EditData",
+    "Target": "Data/Characters",
+    "Entries": {
+      "Clara.Ripley": {
+        "DisplayName": "Ripley",
+        "BirthSeason": "spring",
+        "BirthDay": 17,
+        "HomeRegion": "Town",
+        "Gender": "Female",
+        "Age": "Adult",
+        "Manner": "Polite",
+        "SocialAnxiety": "Outgoing",
+        "Optimism": "Positive",
+        "CanBeRomanced": true,
+        "LoveInterest": "Sterling",
+        "CanReceiveGifts": true,
+        "Calendar": "AlwaysShown",
+        "SocialTab": "UnknownUntilMet",
+        "ExcludeFromIntroductionsQuest": false,
+        "ItemDeliveryQuests": false,
+        "ExcludeFromPerfectionScore": false,
+        "EndSlideShow": "MainGroup",
+
+        "SpawnIfMissing": true,
+        "Home": [
+            {
+              "Id": "Default",
+              "Location": "Custom_SBV_RipleyHouse",
+              "Tile": {
+                "X": 28,
+                "Y": 5
+              },
+              "Direction": "down"
+            }
+          ],
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          
+        "Breather": true
+                }
+            }
+        }
+    ]
+  }

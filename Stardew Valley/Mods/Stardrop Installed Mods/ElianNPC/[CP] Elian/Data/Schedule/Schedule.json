@@ -1,0 +1,29 @@
+{
+    "Changes": [
+        {
+            "LogName": "Elian Default Schedule",
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Silverinnia.Elian",
+            "When": { "HasSeenEvent: anyPlayer |contains=171193700": true, "HasSeenEvent |contains=1711937042": false },
+            "Entries": {
+                "Mon": "610 {{ModId}}_Cave 6 6 2/900 {{ModId}}_Cave 5 5 0/1200 {{ModId}}_Cave 4 8 2/1300 {{ModId}}_Cave 8 10 2/1700 {{ModId}}_Cave 4 8 2/1800 {{ModId}}_Cave 6 6 2/2100 {{ModId}}_Cave 8 5 0/2200 {{ModId}}_Cave 10 5 2 Silverinnia.Elian_sleep",
+
+                "Tue": "GOTO Mon",
+            
+                "Wed": "GOTO Mon",
+            
+                "Thu": "GOTO Mon",
+            
+                "Fri": "GOTO Mon",
+            
+                "Sat": "GOTO Mon",
+            
+                "Sun": "GOTO Mon"
+            }
+        }
+    ]
+}
+
+
+
+

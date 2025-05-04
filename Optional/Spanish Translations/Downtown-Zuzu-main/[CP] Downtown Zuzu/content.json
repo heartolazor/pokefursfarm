@@ -1,0 +1,2799 @@
+{
+	"Format": "2.0.0",
+	"ConfigSchema": {
+		"GwenGoth": {
+			"AllowValues": "More, Less",
+			"Default": "More",
+			"Description": "How goth Gwen is."
+		}
+	},
+	"CustomLocations": [
+		// adding the custom locations
+		{
+			"Name": "Custom_DTZ_ZuzuCity1",
+			"FromMapFile": "assets/DowntownZuzuBusStop.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_PlaneSky",
+			"FromMapFile": "assets/PlaneSky.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_Pizzeria",
+			"FromMapFile": "assets/Pizzeria.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_PizzeriaBack",
+			"FromMapFile": "assets/PizzeriaBack.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_GioRoom",
+			"FromMapFile": "assets/GioHouse.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_Airport",
+			"FromMapFile": "assets/Airport.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_ResortAirport",
+			"FromMapFile": "assets/AirportIsland.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_ResortSouth",
+			"FromMapFile": "assets/ResortSouth.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_ResortSouthWest",
+			"FromMapFile": "assets/ResortSouthWest.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_ResortSecretCave",
+			"FromMapFile": "assets/ResortSecretCave.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_ResortCentral",
+			"FromMapFile": "assets/ResortCentral.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_ResortShop",
+			"FromMapFile": "assets/ResortShop.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_JojaMini",
+			"FromMapFile": "assets/JojaMini.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_ZuzuCityCrossroads1",
+			"FromMapFile": "assets/DowntownZuzuCrossroads.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_CrossNorth",
+			"FromMapFile": "assets/DowntownZuzuCrossNorth.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_CrossEast",
+			"FromMapFile": "assets/DowntownZuzuCrossEast.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_JojaHQ",
+			"FromMapFile": "assets/JojaHQ.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_JojaHQAppreciation",
+			"FromMapFile": "assets/JojaHQAppreciation.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_ZuzuCityFreeway1",
+			"FromMapFile": "assets/DowntownZuzuFreewayTrans.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_ZuzuCityOasis1",
+			"FromMapFile": "assets/DowntownZuzuBeach.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_ZuzuCitySewer",
+			"FromMapFile": "assets/ZuzuCitySewer.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_ZuzuCitySecretQi",
+			"FromMapFile": "assets/ZuzuQiSewer.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_SancInt",
+			"FromMapFile": "assets/DowntownZuzuSanctuaryInterior.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_DavidRoom",
+			"FromMapFile": "assets/DowntownZuzuDavidRoom.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_OasisCave",
+			"FromMapFile": "assets/DowntownZuzuOasisCave.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_Forest2",
+			"FromMapFile": "assets/DowntownZuzuForest.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_TrainStation",
+			"FromMapFile": "assets/DowntownZuzuTS.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_JojaOffices",
+			"FromMapFile": "assets/JojaHQOffices.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_Apartment1a",
+			"FromMapFile": "assets/ZuzuApartment1a.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_Apartment1b",
+			"FromMapFile": "assets/ZuzuApartment1b.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_Apartment1c",
+			"FromMapFile": "assets/ZuzuApartment1c.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_Apartment1d",
+			"FromMapFile": "assets/ZuzuApartment1d.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_JojaElevHall",
+			"FromMapFile": "assets/JojaHQElevHall.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_JojaCEO",
+			"FromMapFile": "assets/JojaCEO.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_JojaCEOScattered",
+			"FromMapFile": "assets/JojaCEOScattered.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_JojaCEOBetrayal",
+			"FromMapFile": "assets/JojaCEOBetrayal.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_ApartmentLobby",
+			"FromMapFile": "assets/ApartmentLobby.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_OasisCaveUnder",
+			"FromMapFile": "assets/DowntownZuzuOasisCaveB.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_OasisCaveJungle",
+			"FromMapFile": "assets/DowntownZuzuOasisCaveC.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_OasisCaveDark",
+			"FromMapFile": "assets/DowntownZuzuOasisCaveD.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_OasisCaveLava",
+			"FromMapFile": "assets/DowntownZuzuOasisCaveE.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_OasisCaveHouse",
+			"FromMapFile": "assets/DowntownZuzuCaveHouse.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_ZuzuCitySewerTunnel",
+			"FromMapFile": "assets/ZuzuCitySewerTunnel.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_ZuzuCitySewerSecret",
+			"FromMapFile": "assets/ZuzuCitySewerSecret.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_NightClubEntrance",
+			"FromMapFile": "assets/DowntownZuzuNightClubEntrance.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_NightClubBathrooms",
+			"FromMapFile": "assets/DowntownZuzuNightClubBathrooms.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_NightClubMain",
+			"FromMapFile": "assets/DowntownZuzuNightClub.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_JojaHQCafe",
+			"FromMapFile": "assets/JojaHQCafe.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_GasStation",
+			"FromMapFile": "assets/ZuzuCityGasStation.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_GasInt",
+			"FromMapFile": "assets/ZuzuCityGasInterior.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_BruisersHideout",
+			"FromMapFile": "assets/ZuzuCityBruisersHideout.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_ZuzuBlockParty",
+			"FromMapFile": "assets/DowntownZuzuBusStopParty.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_ZuzuPermits",
+			"FromMapFile": "assets/ZuzuPermits.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_SadieRoomAirport",
+			"FromMapFile": "assets/SadieRoom.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_Sawmill",
+			"FromMapFile": "assets/Sawmill.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_Pharmacy",
+			"FromMapFile": "assets/ZuzuPharmacy.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_Builders",
+			"FromMapFile": "assets/ZuzuBuilders.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_Bakery",
+			"FromMapFile": "assets/PinkCakeBakery.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_Barber",
+			"FromMapFile": "assets/ZuzuBarbers.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_Mall",
+			"FromMapFile": "assets/ZuzuMall.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_Furnisure",
+			"FromMapFile": "assets/ZuzuFurniture.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_BillRoom",
+			"FromMapFile": "assets/BillBackroom.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_Waterway",
+			"FromMapFile": "assets/Waterway.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_University",
+			"FromMapFile": "assets/University.tmx" // FAKE
+		},
+		{
+			"Name": "Custom_DTZ_MaxHouse",
+			"FromMapFile": "assets/MaxHouse.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_MaxHouseUpstairs",
+			"FromMapFile": "assets/MaxHouseUpstairs.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_HazelHouse",
+			"FromMapFile": "assets/HazelHouse.tmx"
+		},
+		{
+			"Name": "Custom_DTZ_UniversityExterior",
+			"FromMapFile": "assets/UniversityExterior.tmx"
+		}
+	],
+	// map properties (warps, etc)
+	"Changes": [
+		//
+		// Includes
+		//
+		{
+			"Action": "Include",
+			"FromFile": "items.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "audio.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "events.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "npc.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "quests.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "shops.json"
+		},
+		//
+		// Load (depending CleanerSewer), Map file, cars, zuzu cars, wallet textures
+		//
+
+		{
+			"Action": "Load",
+			"Target": "Maps/Sewer",
+			"FromFile": "assets/Sewer.tmx",
+			"When": {
+				"HasMod |contains=LemurKat.CleanerSewer.CP": false
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "LooseSprites/ZuzuMap",
+			"FromFile": "assets/Map.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "LooseSprites/KahunaMap",
+			"FromFile": "assets/MapKahuna.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "LooseSprites/Cars",
+			"FromFile": "assets/Cars.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "LooseSprites/ZuzuCar",
+			"FromFile": "assets/movingCar.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "LooseSprites/ZuzuWallet",
+			"FromFile": "assets/WalletItems.png"
+		},
+		{ // fish stuff!!
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"DTZ.ApartmentKey": {
+					"Name": "Zuzu Apartment Key",
+					"Description": "Esta llave te permite entrar a tu apartamento (Apartamento 1D) en la Ciudad de Zuzu.",
+					"TexturePath": "LooseSprites/ZuzuWallet",
+					"TexturePosition": { "X": 16, "Y": 0 },
+					"UnlockedCondition": "PLAYER_HAS_MAIL Current DTZ.BoughtApartment"
+				},
+				"DTZ.ConstructionPermit": {
+					"Name": "Zuzu Construction Permit",
+					"Description": "Este permiso, emitido por el Consejo de Permisos del Distrito de la Ciudad de Zuzu, te permite construir y renovar ciertas estructuras en la Ciudad de Zuzu y el distrito circundante de Zuzu.",
+					"TexturePath": "LooseSprites/ZuzuWallet",
+					"TexturePosition": { "X": 0, "Y": 0 },
+					"UnlockedCondition": "PLAYER_HAS_MAIL Current DTZ.ConstructionPermit"
+				}
+
+			}
+		},
+
+
+		{ // fish stuff!!
+			"Action": "EditImage",
+			"Target": "LooseSprites/AquariumFish",
+			"FromFile": "assets/Fish/ZuzuCarpAquarium.png",
+			"ToArea": {
+				"X": 0,
+				"Y": 2400,
+				"Width": 16,
+				"Height": 16
+			}
+		},
+		{ // spring ambient
+			"Action": "EditData",
+			"Target": "Data/LocationContexts",
+			"Entries": {
+				"ZuzuOuterCity": {
+					"Name": "ZuzuOuterCity",
+					"AllowRainTotem": true,
+					"MaxPassOutCost": 2500,
+					"RainTotemAffectsContext": true,
+					"PassOutMail": [
+						{
+							"Id": "{{ModId}}_PassOutC1",
+							"Mail": "{{ModId}}_PassOutInZuzu_Billed",
+							"MaxPassOutCost": 2500
+						},
+						{
+							"Id": "{{ModId}}_PassOutC2",
+							"Mail": "{{ModId}}_PassOutInZuzu_NotBilled",
+							"MaxPassOutCost": 2500
+						}
+					],
+					"ReviveLocations": [
+						{
+							"Id": "{{ModId}}_Revive",
+							"Location": "Custom_DTZ_Pharmacy",
+							"Position": {
+								"X": 7,
+								"Y": 11
+							}
+						}
+					],
+					"CopyWeatherFromLocation": "Default",
+					"DayAmbience": "spring_day_ambient",
+					"NightAmbience": "spring_night_ambient"
+				}
+			},
+			"When": {
+				"Season": "Spring"
+			}
+		},
+		{ // ssummer ambient
+			"Action": "EditData",
+			"Target": "Data/LocationContexts",
+			"Entries": {
+				"ZuzuOuterCity": {
+					"Name": "ZuzuOuterCity",
+					"AllowRainTotem": true,
+					"MaxPassOutCost": 2500,
+					"RainTotemAffectsContext": true,
+					"PassOutMail": [
+						{
+							"Id": "{{ModId}}_PassOutC1",
+							"Mail": "{{ModId}}_PassOutInZuzu_Billed",
+							"MaxPassOutCost": 2500
+						},
+						{
+							"Id": "{{ModId}}_PassOutC2",
+							"Mail": "{{ModId}}_PassOutInZuzu_NotBilled",
+							"MaxPassOutCost": 2500
+						}
+					],
+					"ReviveLocations": [
+						{
+							"Id": "{{ModId}}_Revive",
+							"Location": "Custom_DTZ_Pharmacy",
+							"Position": {
+								"X": 7,
+								"Y": 11
+							}
+						}
+					],
+					"CopyWeatherFromLocation": "Default",
+					"DayAmbience": "summer_day_ambient",
+					"NightAmbience": "spring_night_ambient"
+				}
+			},
+			"When": {
+				"Season": "Summer"
+			}
+		},
+		{ // fall ambient
+			"Action": "EditData",
+			"Target": "Data/LocationContexts",
+			"Entries": {
+				"ZuzuOuterCity": {
+					"Name": "ZuzuOuterCity",
+					"AllowRainTotem": true,
+					"MaxPassOutCost": 2500,
+					"RainTotemAffectsContext": true,
+					"PassOutMail": [
+						{
+							"Id": "{{ModId}}_PassOutC1",
+							"Mail": "{{ModId}}_PassOutInZuzu_Billed",
+							"MaxPassOutCost": 2500
+						},
+						{
+							"Id": "{{ModId}}_PassOutC2",
+							"Mail": "{{ModId}}_PassOutInZuzu_NotBilled",
+							"MaxPassOutCost": 2500
+						}
+					],
+					"ReviveLocations": [
+						{
+							"Id": "{{ModId}}_Revive",
+							"Location": "Custom_DTZ_Pharmacy",
+							"Position": {
+								"X": 7,
+								"Y": 11
+							}
+						}
+					],
+					"CopyWeatherFromLocation": "Default",
+					"DayAmbience": "fall_day_ambient",
+					"NightAmbience": "spring_night_ambient"
+				}
+			},
+			"When": {
+				"Season": "Fall"
+			}
+		},
+		{ // winter ambient
+			"Action": "EditData",
+			"Target": "Data/LocationContexts",
+			"Entries": {
+				"ZuzuOuterCity": {
+					"Name": "ZuzuOuterCity",
+					"AllowRainTotem": true,
+					"MaxPassOutCost": 2500,
+					"RainTotemAffectsContext": true,
+					"PassOutMail": [
+						{
+							"Id": "{{ModId}}_PassOutC1",
+							"Mail": "{{ModId}}_PassOutInZuzu_Billed",
+							"MaxPassOutCost": 2500
+						},
+						{
+							"Id": "{{ModId}}_PassOutC2",
+							"Mail": "{{ModId}}_PassOutInZuzu_NotBilled",
+							"MaxPassOutCost": 2500
+						}
+					],
+					"ReviveLocations": [
+						{
+							"Id": "{{ModId}}_Revive",
+							"Location": "Custom_DTZ_Pharmacy",
+							"Position": {
+								"X": 7,
+								"Y": 11
+							}
+						}
+					],
+					"CopyWeatherFromLocation": "Default",
+					"DayAmbience": "winter_day_ambient",
+					"NightAmbience": "spring_night_ambient"
+				}
+			},
+			"When": {
+				"Season": "Winter"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/AquariumFish",
+			"Entries": {
+				"DTZ.DowntownZuzuCP_ZuzuCarp": "150/fish"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/LocationContexts",
+			"Entries": {
+				"ZuzuResort": {
+					"Name": "ZuzuResort",
+					"AllowRainTotem": false,
+					"MaxPassOutCost": 500,
+					"PassOutMail": [
+						{
+							"Id": "{{ModId}}_PassOutK1",
+							"Mail": "{{ModId}}_PassOutInKahuna_Billed",
+							"MaxPassOutCost": 500
+						},
+						{
+							"Id": "{{ModId}}_PassOutK2",
+							"Mail": "{{ModId}}_PassOutInKahuna_NotBilled",
+							"MaxPassOutCost": 500
+						}
+					],
+					"SeasonOverride": "summer",
+					"DefaultMusic": "ZuzuResort",
+					"DayAmbience": "summer_day_ambient",
+					"NightAmbience": "spring_night_ambient",
+					"CopyWeatherFromLocation": "Island"
+				},
+				"ZuzuCity": {
+					"Name": "ZuzuCity",
+					"AllowRainTotem": true,
+					"MaxPassOutCost": 2500,
+					"RainTotemAffectsContext": true,
+					"PassOutMail": [
+						{
+							"Id": "{{ModId}}_PassOutC1",
+							"Mail": "{{ModId}}_PassOutInZuzu_Billed",
+							"MaxPassOutCost": 2500
+						},
+						{
+							"Id": "{{ModId}}_PassOutC2",
+							"Mail": "{{ModId}}_PassOutInZuzu_NotBilled",
+							"MaxPassOutCost": 2500
+						}
+					],
+					"ReviveLocations": [
+						{
+							"Id": "{{ModId}}_Revive",
+							"Location": "Custom_DTZ_Pharmacy",
+							"Position": {
+								"X": 7,
+								"Y": 11
+							}
+						}
+					],
+					"DefaultMusic": "ZuzuCity1",
+					"DefaultMusicCondition": "TIME 0600 1800",
+					"Music": [
+						{
+							"Track": "ZuzuCity1",
+							"Condition": "TIME 0600 1800"
+						},
+						{
+							"Track": "ZuzuCityNight",
+							"Condition": "TIME 1800 2600"
+						}
+					],
+					"CopyWeatherFromLocation": "Default",
+					"DayAmbience": "DTZ_Street",
+					"NightAmbience": "DTZ_StreetNight"
+				},
+				"ZuzuOuterCity": {
+					"Name": "ZuzuOuterCity",
+					"AllowRainTotem": true,
+					"MaxPassOutCost": 2500,
+					"RainTotemAffectsContext": true,
+					"PassOutMail": [
+						{
+							"Id": "{{ModId}}_PassOutC1",
+							"Mail": "{{ModId}}_PassOutInZuzu_Billed",
+							"MaxPassOutCost": 2500
+						},
+						{
+							"Id": "{{ModId}}_PassOutC2",
+							"Mail": "{{ModId}}_PassOutInZuzu_NotBilled",
+							"MaxPassOutCost": 2500
+						}
+					],
+					"ReviveLocations": [
+						{
+							"Id": "{{ModId}}_Revive",
+							"Location": "Custom_DTZ_Pharmacy",
+							"Position": {
+								"X": 7,
+								"Y": 11
+							}
+						}
+					],
+					"CopyWeatherFromLocation": "Default",
+					"DayAmbience": "spring_day_ambient",
+					"NightAmbience": "spring_night_ambient"
+				},
+				"ZuzuClub": {
+					"Name": "ZuzuClub",
+					"AllowRainTotem": true,
+					"MaxPassOutCost": 2500,
+					"RainTotemAffectsContext": true,
+					"PassOutMail": [
+						{
+							"Id": "{{ModId}}_PassOutC1",
+							"Mail": "{{ModId}}_PassOutInZuzu_Billed",
+							"MaxPassOutCost": 2500
+						},
+						{
+							"Id": "{{ModId}}_PassOutC2",
+							"Mail": "{{ModId}}_PassOutInZuzu_NotBilled",
+							"MaxPassOutCost": 0
+						}
+					],
+					"ReviveLocations": [
+						{
+							"Id": "{{ModId}}_Revive",
+							"Location": "Custom_DTZ_Pharmacy",
+							"Position": {
+								"X": 7,
+								"Y": 11
+							}
+						}
+					],
+					"DefaultMusic": "zuzuClubRock",
+					"Music": [
+						{
+							"Track": "zuzuClubGeneral"
+						},
+						{
+							"Track": "zuzuClubBuildup"
+						},
+						{
+							"Track": "zuzuClubTense"
+						},
+						{
+							"Track": "zuzuClubFunky"
+						},
+						{
+							"Track": "zuzuClubEnergy"
+						},
+						{
+							"Track": "zuzuClubShowtime"
+						},
+						{
+							"Track": "zuzuClubRock"
+						}
+					],
+					"CopyWeatherFromLocation": "Default",
+					"PlayRandomAmbientSounds": false
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Mail",
+			"Entries": {
+				"{{ModId}}_PassOutInZuzu_Billed": "El Sub-equipo Joja-55B del Distrito de Zuzu City estaba realizando su patrulla nocturna por la ciudad cuando te encontraron inconsciente en la carretera^Tuviste suerte de que te encontraran. Se te ha cobrado una tarifa por este servicio.^¡Ten cuidado!  ^   -Joja Corp.",
+				"{{ModId}}_PassOutInZuzu_NotBilled": "Te encontré al costado de la carretera en Ciudad Zuzu.^Deberías tener más cuidado. Un amable extraño con traje me ayudó a llevarte a casa.",
+				"{{ModId}}_PassOutInKahuna_Billed": "El Sub-equipo Joja-56C del Distrito de Kahuna estaba realizando su patrulla nocturna por la isla cuando te encontraron inconsciente junto al mar.^Tuviste suerte de que te encontraran. Se te ha cobrado una tarifa por este servicio.^¡Ten cuidado!  ^   -Joja Corp.",
+				"{{ModId}}_PassOutInKahuna_NotBilled": "Te vi anoche, estabas boca abajo en la arena del Kahuna Resort.^Vino una ambulancia aérea y te llevó a casa. Por suerte, un extraño pagó la cuenta."
+			}
+		},
+
+		{ // edit Joja Offices depending on Kristoff Heart Event
+			"Action": "EditMap",
+			"Target": "Maps/Custom_DTZ_JojaOffices",
+			"FromFile": "assets/JojaHQOfficesRestMode.tmx",
+			"FromArea": {
+				"X": 11,
+				"Y": 4,
+				"Width": 4,
+				"Height": 2
+			},
+			"ToArea": {
+				"X": 11,
+				"Y": 4,
+				"Width": 2,
+				"Height": 2
+			},
+			"When": {
+				"Hearts:DTZ.DowntownZuzuCP_Kristoff": "6, 7, 8, 9, 10, 11, 12, 13, 14" // hearts >= 6 ::= let employees rest
+			}
+		},
+
+		{
+			"LogName": "Loading Sawmill...",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_DTZ_Forest2",
+			"FromFile": "assets/ForestSawmillFixed.tmx",
+			"FromArea": {
+				"X": 3,
+				"Y": 45,
+				"Width": 33,
+				"Height": 21
+			},
+			"ToArea": {
+				"X": 3,
+				"Y": 45,
+				"Width": 33,
+				"Height": 21
+			},
+			"When": {
+				"HasFlag": "DTZ.SawmillFixed"
+			}
+		},
+
+		{ // obelisk
+			"LogName": "Obelisk Texture Load",
+			"Action": "Load",
+			"Target": "Buildings/Zuzu Obelisk",
+			"FromFile": "assets/Obelisk.png"
+		},
+		{
+			"LogName": "Patch Obelisk Blueprint",
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"Entries": {
+				"{{ModId}}_Obelisk": {
+					"Name": "Zuzu Obelisk",
+					"Description": "Warps you to Downtown Zuzu City.",
+					"Texture": "Buildings/Zuzu Obelisk",
+					"Builder": "Wizard",
+					"BuildCost": 100000,
+					"BuildMaterials": [
+						{
+							"ItemId": "390",
+							"Amount": 300
+						},
+						{
+							"ItemId": "709",
+							"Amount": 100
+						},
+						{
+							"ItemId": "74",
+							"Amount": 1
+						}
+					],
+					"MagicalConstruction": true,
+					"Size": {
+						"X": 3,
+						"Y": 2
+					},
+					"DefaultAction": "ObeliskWarp Custom_DTZ_ZuzuCity1 20 23 false"
+				} // "390 300 709 100 74 1/3/2/-1/-1/-2/-1/null/Zuzu Obelisk/Warps you to Downtown Zuzu City./Buildings/none/48/128/-1/null/Farm/10000/true"
+			}
+		},
+		{ // Runner mg
+			"LogName": "Load Runner Minigame Textures",
+			"Action": "Load",
+			"Target": "Minigames/DTZRunner",
+			"FromFile": "assets/RunnerMinigame.png"
+		},
+		///
+		/// Spouse rooms
+		///
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_CalRoom",
+			"FromFile": "assets/calRoom.tmx"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_DavidRoom",
+			"FromFile": "assets/davidRoom.tmx"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_SadieRoom",
+			"FromFile": "assets/sadieRoom(spouse).tmx"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_GwenRoom",
+			"FromFile": "assets/gwenRoom.tmx"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_KristoffRoom",
+			"FromFile": "assets/kristoffRoom.tmx"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_SelenaRoom",
+			"FromFile": "assets/selenaRoom.tmx"
+		},
+
+		//
+		// Time/Weather dependent plane's sky
+		//
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_PlaneSky",
+			"FromFile": "assets/PlaneSky.tmx",
+			"When": {
+				"Time": "{{Range: 0600, 1820}}",
+				"Weather |contains=Rain, Storm, Snow": false
+			},
+			"Update": "OnTimeChange"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_PlaneSky",
+			"FromFile": "assets/PlaneSkyRain.tmx",
+			"When": {
+				"Time": "{{Range: 0600, 1820}}",
+				"Weather |contains=Rain, Storm, Snow": true
+			},
+			"Update": "OnTimeChange"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_PlaneSky",
+			"FromFile": "assets/PlaneSkyNight.tmx",
+			"When": {
+				"Time": "{{Range: 1830, 2600}}",
+				"Weather |contains=Rain, Storm, Snow": false
+			},
+			"Update": "OnTimeChange"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_PlaneSky",
+			"FromFile": "assets/PlaneSkyRainNight.tmx",
+			"When": {
+				"Time": "{{Range: 1830, 2600}}",
+				"Weather |contains=Rain, Storm, Snow": true
+			},
+			"Update": "OnTimeChange"
+		},
+
+
+		{ //adds the purchasable apartment.
+			"Action": "EditMap",
+			"Target": "Maps/Custom_DTZ_ApartmentLobby",
+			"MapTiles": [
+				{
+					"Layer": "Buildings",
+					"Position": {
+						"X": 29,
+						"Y": 5
+					},
+					"SetProperties": {
+						"Action": "Warp 20 36 Custom_DTZ_Apartment1d"
+					}
+				}
+			],
+			"When": {
+				"HasFlag": "DTZ.BoughtApartment"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_DTZ_ApartmentLobby",
+			"MapTiles": [
+				{
+					"Layer": "Buildings",
+					"Position": {
+						"X": 22,
+						"Y": 26
+					},
+					"SetProperties": {
+						"Action": "Message \"DTZ.ApartmentLobby.6\""
+					}
+				}
+			],
+			"When": {
+				"HasFlag": "DTZ.BoughtApartment"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_DTZ_OasisCave",
+			"MapProperties": {
+				"Warp": "36 36 Custom_DTZ_ZuzuCityOasis1 40 9"
+			}
+		},
+		// add warp for NPCs to get into zuzu from valley         /// TEMPORARILY CUT OUT BECAUSE IT IS CAUSING CIRCULAR ISSUES?
+		//{
+		//	"Action": "EditMap",
+		//	"Target": "Maps/BusStop",
+		//	"MapProperties": {
+		//		"NPCWarp": "15 10 Custom_DTZ_ZuzuCity1 40 9"
+		//	}
+		//},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_DTZ_NightClubMain",
+			"MapProperties": {
+				"Warp": "10 44 Custom_DTZ_NightClubEntrance 11 4 11 44 Custom_DTZ_NightClubEntrance 11 4"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_DTZ_ZuzuCityFreeway",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 25,
+						"Y": 42
+					},
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "LoadMap Tarniyar.CP.WalkToDesert_Interchange 25 1"
+					}
+				}
+			],
+			"When": {
+				"HasMod": "Tarniyar.CP.WalkToDesert"
+			}
+		},
+
+
+		//
+		// map strings
+		//
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Entries": {
+				"DTZ.ApartmentLobby.1": "¡Guau, guau, guau! (¡Xena está feliz de verte!)",
+				"DTZ.ApartmentLobby.2": "Es un área acogedora y agradable para leer.",
+				"DTZ.ApartmentLobby.3": "Al intentar llamar al ascensor, no responde. Parece estar fuera de servicio.",
+				"DTZ.ApartmentLobby.4": "Está bloqueado",
+				"DTZ.ApartmentLobby.5": "La puerta está cerrada, pero una pequeña nota en la puerta dice: 'EN VENTA. CONSULTE RECEPCIÓN PARA COMPRAR.'",
+				"DTZ.ApartmentLobby.6": "¿Qué tal le va con el apartamento?",
+				"DTZ.Apartment1a.1": "Es una estantería repleta de libros raros.",
+				"DTZ.Apartment1a.2": "Un libro se encuentra sobre la mesa auxiliar. Parece ser una guía de viaje.",
+				"DTZ.Apartment1a.3": "El televisor pequeño está transmitiendo un programa antiguo",
+				"DTZ.Apartment1a.4": "¡Oye, este reloj realmente está haciendo tic-tac!",
+				"DTZ.Apartment1a.5": "Una fotografía de Cal, Esmeralda y Gwen.",
+				"DTZ.Apartment1a.6": "Apenas hay basura en el bote, solo unos pocos envoltorios.",
+				"DTZ.Apartment1a.7": "Parece que a Cal le gustan los videojuegos.",
+				"DTZ.Apartment1a.8": "La televisión no está prendida.",
+				"DTZ.Apartment1a.9": "¡Este es un altavoz bastante grande!",
+				"DTZ.Apartment1a.10": "Convenciones del Arte:Un compendio de técnicas artísticas",
+				"DTZ.Apartment1a.11": "Cómo Ser un Buen Empleado' por Kristoff Joja.",
+				"DTZ.Apartment1a.12": "Hay algunas cajas de comida de cartón en el cubo de la basura.",
+				"DTZ.Apartment1a.13": "El refrigerador está lleno de comida, pero no quieres nada.",
+				"DTZ.Apartment1a.14": "El armario guarda platos y tazones de porcelana fina y ornamentada.",
+				"DTZ.Apartment1a.15": "Es un premio a Empleado del Mes, firmado por K. Joja.",
+				"DTZ.Apartment1a.16": "Es una foto de esmeralda pelirroja. Está con su mamá",
+				"DTZ.Apartment1a.17": "Está protegido con contraseña:",
+				"DTZ.Apartment1a.18": "Es una lista de lugares en el área local: Desierto Calico, Pine Mesa City, Ciudad Zuzu, Ridgeside Village, East Scarp, Pueblo Pelicano. Algunos de los lugares han sido tachados.",
+				"DTZ.Apartment1a.19": "'Familia Perdida por Mucho Tiempo: Historias de Reencuentros Familiares'",
+				"DTZ.Apartment1a.20": "Hay un montón de papeles arrugados en la basura.",
+				"DTZ.Apartment1a.21": "Está bloqueado",
+				"DTZ.Apartment1a.22": "Hay una taza de café con restos de café adentro. Parece que lleva ahí un buen rato. ¡Qué asco!",
+				"DTZ.Apartment1a.23": "Libros sobre viajes, ejercicio, naturaleza...",
+				"DTZ.Apartment1a.24": "La habitación está llena de papeles esparcidos por todos lados - parece que alguien salió con prisa...",
+				"DTZ.FreewayTrans.1": "Un bote de basura vacío",
+				"DTZ.FreewayTrans.2": "¿Qué?",
+				"DTZ.FreewayTrans.3": "` Desierto Zuzu y Santuario^> Centro de la Ciudad Zuzu^@ Bosque Zuzu",
+				"DTZ.ZuzuCity.1": "Mi hijo y yo solo estamos esperando el autobús, ¿verdad?",
+				"DTZ.ZuzuCity.2": "Hola...",
+				"DTZ.ZuzuCity.3": "La valla parece estar cubierta de notas y carteles.",
+				"DTZ.ZuzuCity.4": "Dang, todavía estoy lleno de la comida del festival en Pueblo Pelícano...",
+				"DTZ.ZuzuCity.5": "Es un carrito de compras abandonado de Joja Mart.",
+				"DTZ.ZuzuCity.6": "` Joja Mini Mart y Zuzu Apartments^@ Desierto de Zuzu y santuario^> Encrucijada",
+				"DTZ.ZuzuCity.7": "Hay una moto estacionada en la acera.",
+				"DTZ.ZuzuCity.8": "Es una especie de garaje. Probablemente sea el almacén del Mini Mercado Joja.",
+				"DTZ.ZuzuCity.9": "'Apartamentos Zuzu'#El lugar parece lo suficientemente acogedor",
+				"DTZ.ZuzuCity.10": "It's a Joja Mart -- Mejor dicho, un Joja Mini#Te recuerda a Morris.",
+				"DTZ.ZuzuCity.11": "La pizzería se ve agradable y cálida por dentro",
+				"DTZ.ZuzuCity.12": "Es un generador, como el que está afuera de la herrería de Clint. Parece que está apagado por ahora.",
+				"DTZ.ZuzuCity.13": "\"Aquí yace S-1-m---m-y---y...\"#Ese nombre no tiene sentido. La tumba está toda irregular y rayada.",
+				"DTZ.ZuzuCitySewerTunnel.1": "Una espada apoyada contra un barril.#La espada es demasiado pesada para levantarla.",
+				"DTZ.ZuzuCitySewerTunnel.2": "Un barril lleno de un polvo de color extraño.#La cierras rápidamente.",
+				"DTZ.ZuzuCitySewerTunnel.3": "Un montón de escombros de Joja te bloquea el camino.",
+				"DTZ.Oasis.1": "Vehículos de algunos visitantes del Santuario están estacionados.",
+				"DTZ.Oasis.2": "Un bote de basura vacío.",
+				"DTZ.Oasis.3": "Es un buzón vacío.",
+				"DTZ.Oasis.4": "Es un pilar caído.",
+				"DTZ.Oasis.5": "Solo trabajo aquí medio tiempo.#¡Necesito más oro para la Máquina Garra!",
+				"DTZ.Oasis.6": "Mira qué cactus tan bonitos! Ayayay! ¡Me he pinchado un dedo, qué dolor!",
+				"DTZ.Oasis.7": "Muchos barriles llenos de agua, vino, Joja Cola y otros líquidos.",
+				"DTZ.Oasis.8": "¡PELIGRO! Esta cueva es extremadamente peligrosa y no deben ser ingresar personas sin preparación. Solo los guerreros más valientes y fuertes deben continuar. Esta es su advertencia.",
+				"DTZ.Oasis.9": "Un pajar...",
+				"DTZ.Oasis.10": "Mucha basura.",
+				"DTZ.OasisCave.1": "Parece una estatua de serpiente.",
+				"DTZ.OasisCave.2": "Este barril parece estar lleno de Joja Cola.",
+				"DTZ.OasisCave.3": "Los huesos de una criatura desconocida.",
+				"DTZ.OasisCave.4": "Son unos pocos huesos.",
+				"DTZ.OasisCave.5": "¡Este cristal es muy brillante!",
+				"DTZ.OasisCave.6": "Es una mochila rota.",
+				"DTZ.OasisCave.7": "Es un carrito para discapacitados.",
+				"DTZ.OasisCave.8": "Es un fósil de una criatura antigua.",
+				"DTZ.OasisCave.9": "Este florero está vacío, ¡pero luce muy bonito!...",
+				"DTZ.OasisCave.10": "Esta es su ÚLTIMA ADVERTENCIA. Nosotros (El Gremio de Aventureros) no podemos ser responsables de lo que suceda después...",
+				"DTZ.OasisCaveB.1": "Hay varios frascos multicolores brillantes y con diseños increíbles, además de un polvo extraño dentro de esos frascos, quizás sea tóxico, no lo tomaré...",
+				"DTZ.OasisCaveB.2": "Es un trozo de esqueleto fosilizado de alguna criatura. Quizás Gunther sepa de qué criatura se trata, ¿debería informarle de esto?",
+				"DTZ.OasisCaveB.3": "¡Es un cráneo de una criatura fosilizada, es catastróficamente grande!",
+				"DTZ.OasisCaveB.4": "¡Es un cráneo de una criatura fosilizada!",
+				"DTZ.OasisCaveB.5": "¿Es esto realmente agua? Parece, ¡pero es rosa!",
+				"DTZ.OasisCaveB.6": "¡Esta agua parece estar congelada, pero se mueve muy rápido, ¡qué extraño!",
+				"DTZ.OasisCaveB.7": "Esta lava está muy caliente, mejor ni siquiera acercarse.",
+				"DTZ.OasisCaveB.8": "¡PELIGRO! ¡NO SIGAS LAS VÍAS!",
+				"DTZ.OasisCaveB.9": "Está vacío.",
+				"DTZ.OasisCaveB.10": "Hay muchos trozos de carbón aquí.",
+				"DTZ.OasisCaveB.11": "Es una roca ...",
+				"DTZ.OasisCaveB.12": "Esta agua es muy cristalina, beberé un poco...",
+				"DTZ.OasisCaveB.13": "Es una mochila rota, me da escalofríos...",
+				"DTZ.OasisCaveB.14": "Dominio de Kulmar",
+				"DTZ.OasisCaveB.15": "¡Otro montón de cosas! Hay barriles, cristales, frascos, pilares, piedras, una mochila, tornillos y piezas de cosas al azar... ¡¿estos monstruos no saben cómo organizar las cosas?!",
+				"DTZ.OasisCaveB.16": "Aquí hay muchas cosas amontonadas, barriles llenos de líquido extraño, cristales brillantes, huesos en descomposición, un vagón de mina perdido e incluso una mochila rota...",
+				"DTZ.OasisCaveB.17": "Es un pilar grande, pero parece un banco...",
+				"DTZ.OasisCaveB.18": "El agua se evapora en cuanto entra en contacto con la lava, ¡creo que por eso hay tanta humedad!",
+				"DTZ.OasisCaveB.19": "Mejor no tocarlo.",
+				"DTZ.OasisCaveB.20": "Parece un altar. Aunque está roto.",
+				"DTZ.OasisCaveB.21": "Es una tuerca grande...",
+				"DTZ.OasisCaveB.22": "Es un tornillo grande...",
+				"DTZ.OasisCaveB.23": "Un ladrillo...",
+				"DTZ.OasisCaveB.24": "Hay varias piezas que han caído de una pared...",
+				"DTZ.OasisCaveB.25": "Parece un pilar caído.",
+				"DTZ.OasisCaveB.26": "Es un pilar roto.",
+				"DTZ.OasisCaveB.27": "A snake statue ...",
+				"DTZ.OasisCaveB.28": "Es una linterna.",
+				"DTZ.OasisCaveB.29": "La placa está demasiado desgastada para leerla.",
+				"DTZ.OasisCaveC.1": "Esta agua es muy cristalina, beberé un poco.",
+				"DTZ.OasisCaveC.2": "Es un árbol muy bonito, pero no es tan especial, porque aquí hay muchos.",
+				"DTZ.OasisCaveC.3": "Este arbusto está lleno de telarañas.",
+				"DTZ.OasisCaveC.4": "Es una roca llena de musgo.",
+				"DTZ.OasisCaveC.5": "Aquí hay muchos carbones.",
+				"DTZ.OasisCaveC.6": "Un fuego muerto, me pregunto quién lo habrá hecho...",
+				"DTZ.OasisCaveC.7": "Parece un pilar caído.",
+				"DTZ.OasisCaveC.8": "¡Este cristal es muy brillante!",
+				"DTZ.OasisCaveC.9": "Los huesos de una criatura desconocida.",
+				"DTZ.OasisCaveC.10": "Son varios frascos multicolores brillantes y con diseños increíbles, además de un extraño polvo dentro de esos frascos, tal vez sea tóxico, no lo tomaré...",
+				"DTZ.OasisCaveD.1": "¡PELIGRO! ¡NO CONTINÚES! ¡LUGAR PELIGROSO! ¡CRISTALES RADIACTIVOS! ¡BAJA ATMÓSFERA DE OXÍGENO!",
+				"DTZ.OasisCaveD.2": "Vagón de mina vacío. Parece que no lleva a ninguna parte.",
+				"DTZ.GasStation.1": "Es un letrero que muestra los precios de la gasolina en esta gasolinera.",
+				"DTZ.GasStation.2": "Es un camión cisterna de Joja. Transporta combustible.",
+				"DTZ.GasStation.3": "Una casa abandonada yace aquí para pudrirse. Escuchas crujir las tablas desde adentro.",
+				"DTZ.GasStation.4": "\"Aquí yace Joao\"... No tienes idea de quién es Joao.",
+				"DTZ.GasStation.5": "Frijoles de la marca Joja. Son solo frijoles normales.",
+				"DTZ.GasStation.6": "Una botella de Joja Cola.",
+				"DTZ.GasStation.7": "Varios productos de Joja.",
+				"DTZ.GasStation.8": "Está cerrado...",
+				"DTZ.GasStation.9": "\"Aquí yace Y-ri\"... Esta tumba parece muy gastada",
+				"DTZ.GasStation.10": "Mejor no te acerques, parece que hay un perro u otro animal salvaje ahí dentro.",
+				"DTZ.JojaMini.1": "¡Oh, aquí no venden nueces Kupo! ¡Kupo!",
+				"DTZ.JojaMini.2": "¡No puedo alcanzar esta col roja! ¡Es la única que no parece podrida!",
+				"DTZ.JojaMini.3": "¿Dónde están los frijoles?",
+				"DTZ.JojaCEO.1": "Es una mesa de billar. El paño se ha desgastado un poco por el uso.",
+				"DTZ.JojaCEO.2": "Kristoff hace alarde de su riqueza con esta estatua.",
+				"DTZ.JojaCEO.3": "Está cerrado, seguramente hay cosas importantes ahí.",
+				"DTZ.JojaCEO.4": "'Cómo ser el jefe 101' Por Kristoff Joja",
+				"DTZ.JojaCEO.5": "'Mi Éxito' de Kristoff Joja",
+				"DTZ.JojaCEO.6": "'Cómo Conquisté Todos los Mercados' por Kristoff Joja.a",
+				"DTZ.JojaCEO.7": "Los libros son extremadamente aburridos.",
+				"DTZ.JojaCEO.8": "Las puertas están cerradas...",
+				"DTZ.JojaCEO.9": "El televisor enorme no está encendido.",
+				"DTZ.JojaCEO.10": "Una nota cercana dice 'Deja de intentar entrar en mi bóveda. Sinceramente, Kristoff'.",
+				"DTZ.JojaCEO.11": "'Al Cartografo' se le Han Acabado Los Nombres Graciosos para Libros... A Kristoff seguro le gusta romper la cuarta pared.",
+				"DTZ.JojaCEO.12": "'Cómo usar Nexus Mods...' espera, ¿estoy rompiendo la cuarta pared aquí?",
+				"DTZ.JojaCEO.13": "'¿Cómo configurar un servidor de Discord?' ¿Por qué Kristoff Joja necesitaría un servidor de Discord?",
+				"DTZ.JojaCEO.14": "'¿Cómo modificar Stardew Valley?...' espera un momento.",
+				"DTZ.JojaHQ.1": "Emm, ¿Puedo ayudarte? No pareces muy importante, así que... no sé, siéntate o algo así.",
+				"DTZ.JojaHQ.2": "La pantalla del portátil está cubierta de pestañas que promocionan productos de Joja.",
+				"DTZ.JojaHQCafe.1": "Espera... ¿Estoy en el piso equivocado?",
+				"DTZ.JojaHQCafe.2": "¡Necesito la cafeína para mantener mi energía!",
+				"DTZ.JojaHQCafe.3": "Las palomitas están bien, ¿okay?",
+				"DTZ.JojaHQCafe.4": "Solo pedí este refresco, no tengo hambre.",
+				"DTZ.JojaHQCafe.5": "Hmmm, ¿qué debería pedir?",
+				"DTZ.JojaHQCafe.6": "La puerta está cerrada. Un cartel en la puerta dice 'SÓLO EMPLEADOS'.",
+				"DTZ.JojaHQCafe.7": "¿Necesitas algo?",
+				"DTZ.JojaHQCafe.8": "Esta pizza está gomosa.",
+				"DTZ.JojaHQCafe.9": "Este muffin no está mal.",
+				"DTZ.JojaHQCafe.10": "¡Esta hamburguesa está deliciosa! ..¿eh? No la pedí aquí...",
+				"DTZ.JojaHQOffices.1": "Es mi tiempo de descanso asignado. Tengo 5 minutos para comer mi almuerzo. ¡Lo estoy desperdiciando todo, hablando contigo!",
+				"DTZ.JojaHQOffices.2": "Es un cajero automático. No puedes hacer un retiro porque no tienes una cuenta bancaria.",
+				"DTZ.JojaHQOffices.3": "Intentas hablar con ellos pero miran fijamente la pantalla, enfocados en... nada.",
+				"DTZ.JojaHQOffices.4": "¿Qué? ¿Qué quieres? ¿Tengo que denunciarte ante Kristoff?",
+				"DTZ.JojaHQOffices.5": "¿Y quién eres tú?",
+				"DTZ.JojaHQOffices.6": "Ehm, ¿se supone que debes estar aquí atrás?",
+				"DTZ.JojaHQOffices.7": "Intentas hablar con ellos pero miran fijamente la pantalla, enfocados en... nada.",
+				"DTZ.JojaHQOffices.8": "Esta persona parece estar muerta.",
+				"DTZ.JojaHQOffices.9": "Kristoff Joja se sienta allí arriba en su gran oficina todo el día, sin hacer nada. ¿Y qué recibo yo? ¿Un cheque de salario miserable?",
+				"DTZ.JojaHQOffices.10": "Los ojos de esta persona tienen aspecto vidrioso. Parece como si ni siquiera estuvieran aquí.",
+				"DTZ.JojaHQOffices.11": "Oye, ¿no solías trabajar aquí?",
+				"DTZ.JojaHQOffices.12": "Esta persona está dormida",
+				"DTZ.JojaHQOffices.13": "Esta persona está trabajando duro",
+				"DTZ.JojaHQOffices.14": "Intentas hablar con ellos pero miran fijamente la pantalla, enfocados en... nada.",
+				"DTZ.JojaHQOffices.15": "TEsta persona está usando el WiFi de Joja para navegar por sus redes sociales... Espera, ¿acaso trabajan aquí?",
+				"DTZ.JojaHQOffices.16": "Intentas hablar con ellos pero miran fijamente la pantalla, enfocados en... nada.",
+				"DTZ.JojaHQOffices.17": "¿Has ido al Santuario alguna vez? Suelo ir allí a veces. Es agradable.",
+				"DTZ.JojaHQOffices.18": "El letrero dice: '2 - Oficina del CEO, 1 Café, PB - Planta Baja'.' This is floor directions for the elevator.",
+				"DTZ.JojaHQElevHall.1": "El cartel dice 'Zuzu de noche'.",
+				"DTZ.JojaHQElevHall.2": "El cartel dice 'Pueblo Pelícano'.",
+				"DTZ.JojaHQElevHall.3": "El cartel dice  'Sunny Day'.",
+				"DTZ.JojaHQElevHall.4": "TEl cartel dice  'Ridgeside Village'.",
+				"DTZ.JojaHQElevHall.5": "Está cerrado, deben haber cosas importantes ahí.",
+				"DTZ.JojaHQElevHall.6": "Esta planta es muy grande y hermosa.",
+				"DTZ.JojaHQElevHall.7": "El contenedor tiene envoltorios de la marca Joja para varias cosas dentro.",
+				"DTZ.JojaHQElevHall.8": "Parece ser falso.",
+				"DTZ.JojaHQElevHall.9": "Una máquina de Joja, parece ser bastante nueva.",
+				"DTZ.TrainStation.1": "La máquina de Joja Cola está rota.",
+				"DTZ.TrainStation.2": "Erm, puedes subirte al tren. Los billetes de ida y vuelta son gratis.",
+				"DTZ.TrainStation.3": "Esa maldita máquina de Joja Cola está rota. Supongo que tendré que esperar...",
+				"DTZ.TrainStation.4": "El Bosque Zuzu es tan pacífico. Es una lástima que no pueda visitarlo mucho por el trabajo.",
+				"DTZ.TrainStation.5": "La tapa del contenedor está atascada. ¿Puedo ayudarte?",
+				"DTZ.OasisCaveHouse.1": "Una cesta con telarañas en su interior, junto con algunos insectos...",
+				"DTZ.OasisCaveHouse.2": "Un contenedor de reciclaje con restos de comida en su interior.",
+				"DTZ.OasisCaveHouse.3": "Una escoba vieja.",
+				"DTZ.OasisCaveHouse.4": "Una estufa antigua de dos quemadores. Está rota..",
+				"DTZ.OasisCaveHouse.5": "Un lavabo, goteando pequeñas gotas de agua.",
+				"DTZ.OasisCaveHouse.6": "Un refrigerador vacío y desenchufado.",
+				"DTZ.OasisCaveHouse.7": "'Cómo forjar tu propia espada' por Krobus.",
+				"DTZ.OasisCaveHouse.8": "Un hacha de hierro grande con un mango de madera.",
+				"DTZ.OasisCaveHouse.9": "Una mesa con un papel. Escrito en él: Querido Diario,, Hoy está muy frí-.. aquí.. Var--s slim-s co----aron a apar--er. Estoy asu---do ¡Mi esp--a es-- de--si--o d--ada para l--har!  C--o que so-- me q---a hu-r... Adiós.",
+				"DTZ.OasisCaveHouse.10": "Una estantería llena de botellas rotas y libros rasgados.",
+				"DTZ.OasisCaveHouse.11": "Una cómoda, con ropa vieja dentro.",
+				"DTZ.OasisCaveHouse.12": "Algunos objetos mágicos raros. ¿Cómo consiguió el dueño de esta casa obtenerlos? ... ¿y por qué algunos de ellos brillan de color púrpura?",
+				"DTZ.OasisCaveHouse.13": "El libro está muy desgastado, pero esto es lo que puedes entender: El libro está muy desgastado, pero esto es lo que puedes entender: Para hacer una poción barrera, debes usar lo siguiente: Pé-alo de ro-a, C-is-al de hi-lo, B--as gal-aniz-da-, Col--r de esm-ra-a. Combí--lo en un r---al.",
+				"DTZ.OasisCaveHouse.14": "Un hacha de piedra con un mango de madera parchado.",
+				"DTZ.OasisCaveHouse.15": "Un reloj, parece ser lo único que está intacto en esta casa.",
+				"DTZ.OasisCaveHouse.16": "Una espada y otras herramientas con un yunque, probablemente para arreglarlas.",
+				"DTZ.Crossroads.1": "Es una camioneta postal.",
+				"DTZ.Crossroads.2": "Es una máquina expendedora de boletos.",
+				"DTZ.Crossroads.3": "He escuchado que el DJ está aceptando solicitudes. Simplemente acércate a él en el escenario y háblale. Estoy seguro de que tocará la canción que elijas...",
+				"DTZ.Crossroads.4": "¿Has estado aquí antes? Está animado adentro...",
+				"DTZ.Crossroads.5": "¡Nunca entraré a este ritmo!",
+				"DTZ.Crossroads.6": "¿Has conocido a Los Matones de la Ciudad Zuzu.?#...No se supone que hable de ellos.",
+				"DTZ.Crossroads.7": "¿Eh? ¿Eres amigo de Mr. Qi? Pasa directamente.",
+				"DTZ.SancInt.1": "Parece que está desenchufado.",
+				"DTZ.SancInt.2": "Incluso tipos fuertes como yo necesitan relajarse.",
+				"DTZ.SancInt.3": "¿Has estado cerca del baño que está fuera de servicio? Hay algo realmente extraño por allí...",
+				"DTZ.SancInt.4": "¿Una calabaza? ¿En serio? Dije que trajeras comida, no una gran bola naranja...",
+				"DTZ.SancInt.5": "Aquí tienen una comida estupenda...",
+				"DTZ.SancInt.6": "El Santuario es un nombre muy adecuado. Es un lugar cálido y agradable, protegido del desierto estéril.",
+				"DTZ.SancInt.7": "Vaya, mi suerte en el amor seguramente es baja.",
+				"DTZ.SancInt.8": "WOO!",
+				"DTZ.SancInt.9": "¡Estos chicos son geniales!",
+				"DTZ.SancInt.10": "Simplemente no puedo dejar de comer...",
+				"DTZ.SancInt.11": "¡La banda que está tocando es genial, ¿verdad?",
+				"DTZ.SancInt.12": "¡Me encanta el ambiente aquí dentro!",
+				"DTZ.SancInt.13": "¿Mi hijo? Oh, está en el jardín de infantes, no te preocupes por él.",
+				"DTZ.SancInt.14": "David es un buen chico, a veces me da bocadillos gratis.",
+				"DTZ.SancInt.15": "Ho- *hic* -la...",
+				"DTZ.SancInt.16": "¿Has conocido al dueño, David?",
+				"DTZ.SancInt.17": "Me encanta este lugar antiguo.#Es un buen descanso del bullicio de la ciudad.",
+				"DTZ.SancInt.18": "Es una cocina encantadora, bonita y limpia.",
+				"DTZ.SancInt.19": "Las mesas están preparadas con comida deliciosa para los clientes.",
+				"DTZ.SancInt.20": "Es una papelera... ¿Qué más quieres que diga?",
+				"DTZ.DavidRoom.1": "Es algún tipo de libro de cocina...",
+				"DTZ.DavidRoom.2": "Los libros tratan sobre aventuras y tácticas de combate.",
+				"DTZ.DavidRoom.3": "Es una mochila gris. Te asomarías dentro, pero hay un candado cubriendo el pestillo.",
+				"DTZ.DavidRoom.4": "'Cómo Arreglar un Reloj'... parece que algunas páginas fueron arrancadas debido a la pura rabia.",
+				"DTZ.DavidRoom.5": "'Cómo Empezar un Negocio'... parece que este ha sido un poco desgastado por el uso",
+				"DTZ.DavidRoom.6": "El reloj parece haber dejado de hacer tic tac. Es una lástima.",
+				"DTZ.DavidRoom.7": "'Cómo Descargar Stardew Valley Gratis'... ¡Eh! Este no debería estar aquí...",
+				"DTZ.DavidRoom.8": "'Cómo Leer'... este parece contradictorio.",
+				"DTZ.DavidRoom.9": "¡Deja de mirar en los contenedores de David, por el amor de Yoba!",
+				"DTZ.DavidRoom.10": "En las imágenes hay dos hombres. Uno de los hombres tiene la piel azulada.",
+				"DTZ.DavidRoom.11": "Intentas subir por la escalera, pero la trampilla en la parte superior está cerrada con llave.",
+				"DTZ.DavidRoom.12": "Está lleno de comida deliciosa, mucha de ella son solo sobras.",
+				"DTZ.Forest.1": "Un vagón de tren en ruinas, fuera de la vía. Está cubierto de grafitis, ¡terrible!",
+				"DTZ.Forest.2": "Un camión abandonado de Joja, probablemente estacionado aquí y luego cubierto de grafitis más tarde...",
+				"DTZ.Forest.3": "Un letrero que indica la estación de tren cercana.",
+				"DTZ.Forest.4": "Un letrero que anuncia Joja Cola a los pasajeros de los trenes que pasan por aquí.",
+				"DTZ.Forest.5": "Un pequeño motor, posiblemente utilizado para bombear agua o generar energía.",
+				"DTZ.Forest.6": "Una motocicleta estacionada, apoyada junto al vagón de tren abandonado.",
+				"DTZ.Forest.7": "Un bote de basura. Está vacío.",
+				"DTZ.Forest.8": "Una jarra de plantas encima de una mesa de madera cuadrada.",
+				"DTZ.Forest.9": "Es un neumático.",
+				"DTZ.Forest.10": "Un buzón vacío.",
+				"DTZ.Forest.11": "La carne se ve deliciosa. Es una lástima que haya sido abandonada aquí.",
+				"DTZ.Forest.12": "Se han instalado colmenas, hornos y barriles aquí. Parece que los dejaron aquí, ¿volverá el propietario?",
+				"DTZ.Forest.13": "Hay muchas plantas en esta jardinera. Parece que fueron cuidadas correctamente.",
+				"DTZ.Forest.14": "Un espantapájaros para proteger las plantas cercanas.",
+				"DTZ.Forest.15": "Un edificio abandonado. Parece que solía ser un aserradero. También está en venta.",
+				"DTZ.TrainStn.1": "La máquina de Joja Cola está rota.",
+				"DTZ.TrainStn.2": "Erm, simplemente puedes subir al tren. Los billetes de vuelta son gratis.",
+				"DTZ.TrainStn.3": "Esa maldita máquina de Joja Cola está rota. Supongo que tendré que esperar...",
+				"DTZ.TrainStn.4": "El Bosque Zuzu es tan pacífico. Es una lástima que no pueda visitarlo mucho por el trabajo.",
+				"DTZ.TrainStn.5": "La tapa del bote está atascada. ¿Puedes ayudarme?",
+				"DTZ.NightClub.1": "...",
+				"DTZ.NightClub.2": "SHOTS SHOTS SHOTS!",
+				"DTZ.NightClub.3": " ¿HAS ESTADO EN ESA ZONA VIP? EL PORTERO NO ME DEJÓ ENTRAR.",
+				"DTZ.NightClub.4": "Estoy tomando solo un pequeño descanso. ¡Tomaré un trago de sidra y luego VUELVO A BAILAR! ¡SÍ!",
+				"DTZ.NightClub.5": "¡ME ENCANTA EL CANTANTE! ¿QUIÉN ES?",
+				"DTZ.NightClub.6": "¡ME SIENTO MAL POR LOS VECINOS, PERO ¿A QUIÉN LE IMPORTA?!",
+				"DTZ.NightClub.7": "¡EL DJ ES INCREÍBLE! ¡HE OÍDO QUE ACEPTA PETICIONES! SI TIENES ALGUNA CANCIÓN, ¡VE Y PÍDESELA!",
+				"DTZ.NightClub.8": "*HIC* ¿QUÉ? ¡NO TE ESCUCHO! *HIC* NO, ESTOY BIEN.",
+				"DTZ.NightClub.9": "...¿Cómo se baila? ¿A-así...?",
+				"DTZ.NightClub.10": "¡WOOO! ¡ME ENCANTA ESTAR AQUÍ!",
+				"DTZ.NightClub.11": "¡MMM, es hora de ponerme a bailar!",
+				"DTZ.NightClub.12": "Me pregunto si podría hablar con... ¡una chica!",
+				"DTZ.NightClub.13": "¡Hola! ¿Quieres bailar conmigo?",
+				"DTZ.NightClub.14": "...¿Qué? ¿No se me permite bailar solo en un rincón? Lo siento...",
+				"DTZ.NightClub.15": "Demasiados... chupitos... Creo que estoy empezando a ver gallinas azules...",
+				"DTZ.NightClub.16": "Zuzu Underground es simplemente... increíble. Ve al bar y pide su 'El cóctel insignia de Zuzu'. Créeme, ¡no te arrepentirás!",
+				"DTZ.NightClub.17": "¿Yo? Oh... solo vengo aquí por el alcohol. No me interesa mucho bailar.",
+				"DTZ.NightClub.18": "...Estoy tan cansado... bailando... toda la noche...",
+				"DTZ.NightClub.19": "...nadie quiere bailar conmigo.",
+				"DTZ.NightClub.20": "Hola, ¿cómo va todo?",
+				"DTZ.NightClub.21": "¿No te encanta estar aquí abajo?",
+				"DTZ.NightClub.22": "¿Un amigo de Qi, dices? ...vale, pasa.",
+				"DTZ.NightClub.23": "*hic* *bufido* Hdfnfjfugsh? hHdffbe... *hic* *bufido*",
+				"DTZ.NightClub.24": "¡Buen día, señor! ¿Cómo está en este hermoso día?",
+				"DTZ.NightClub.25": "Hola, ¿qué tal? ¿Eres VIP? No lo hubiera pensado...",
+				"DTZ.NightClub.26": "Me gusta bailar con la música aquí, donde está un poco más tranquilo.",
+				"DTZ.NightClubEntrance.1": "¡Oh, hola! A veces me gusta venir al club Zuzu Underground cuando la tienda no está muy ocupada.",
+				"DTZ.Blockparty.1": "Están teniendo una conversación sobre el payaso.",
+				"DTZ.Blockparty.2": "El payaso no parece muy entusiasmado.",
+				"DTZ.Blockparty.3": "¡Todos están bailando y divirtiéndose!",
+				"DTZ.Blockparty.4": "Estas personas no parecen muy interesadas en la fiesta.",
+				"DTZ.Blockparty.5": "¡Ojalá tuviera el valor de ir a bailar... hay una chica allí que me gusta!",
+				"DTZ.Blockparty.6": "Están disfrutando de la deliciosa variedad de comida disponible.",
+				"DTZ.Blockparty.7": "No me interesa mucho la fiesta. ¡Solo estoy aquí para asegurarme de que mi hija se mantenga fuera de problemas!",
+				"DTZ.Blockparty.8": "¡Mira al payaso divertido!",
+				"DTZ.Blockparty.9": "Me gusta viajar. Este festival siempre está en mi lista cada año.",
+				"DTZ.Blockparty.10": "Las chicas están charlando. Realmente no quieres molestarlas.",
+				"DTZ.Blockparty.11": "Solo están disfrutando de la música.",
+				"DTZ.Blockparty.12": "No me importa mucho la fiesta. Estoy aquí solo por la música. La banda es increíble.",
+				"DTZ.Blockparty.13": "Ugh... las gallinas azules han vuelto...",
+				"DTZ.Blockparty.14": "Xena parece estar disfrutando la fiesta.",
+				"DTZ.Blockparty.15": "¡Me gustan las fiestas! ¡Kupo!",
+				"DTZ.Blockparty.16": "¿Por qué estoy mirando por un telescopio durante el día? No lo sé.",
+				"DTZ.Permit.1": "Y el siguiente paso es...",
+				"DTZ.Permit.2": "De ahora en adelante, deberíamos...",
+				"DTZ.Permit.3": "Un televisor. Está pasando por muchos programas interesantes.",
+				"DTZ.Permit.4": "Un dispensador de agua que ofrece agua gratis.",
+				"DTZ.Permit.5": "Una papelera con notas arrugadas y tazas de agua vacías.",
+				"DTZ.Permit.6": "Lo siento, estoy al teléfono. ¿Podrías disculparme?",
+				"DTZ.Permit.7": "Hola. ¿Alguna vez has estado en el Zuzu Underground?",
+				"DTZ.Permit.8": "Uf... qué retraso.",
+				"DTZ.Permit.9": "Deberían tener una máquina expendedora aquí... ¡me muero de hambre!",
+				"DTZ.Permit.10": "Un letrero indica que este escritorio es el escritorio 1A. Actualmente está ocupado.",
+				"DTZ.Permit.11": "Un letrero indica que este escritorio es el escritorio 1B. Actualmente está ocupado.",
+				"DTZ.Permit.12": "Un letrero indica que este escritorio es el escritorio 1C. Actualmente no está ocupado.",
+				"DTZ.Permit.13": "Varios folletos y otros avisos informativos están pegados en la pared.",
+				"DTZ.Permit.14": "La puerta está cerrada con llave. Un letrero indica 'Entrada trasera. Solo para empleados'",
+				"DTZ.Permit.15": "Una cafetera. Todavía está soltando vapor y la jarra de café está llena hasta el borde.",
+				"DTZ.North.1": "No tienes razón para entrar al aeropuerto todavía, pero sientes esperanza de que tal vez lo hagas en el futuro.",
+				"DTZ.North.2": "Es un letrero que indica el estacionamiento para el aeropuerto.",
+				"DTZ.North.3": "El edificio parece estar tapiado. Es mejor mantenerse alejado.",
+				"DTZ.East.1": "Un letrero está pegado en la puerta que dice: '¡CERRADO TEMPORALMENTE! ¡REGRESAREMOS PRONTO!'.",
+				"DTZ.East.2": "Una placa dice:^'Mantleby's^¡De nuestra familia a la tuya!'",
+				"DTZ.General.1": "Esto es un buzón para el 'Servicio Postal de Ferngill'..",
+				"DTZ.Pharmacy.1": "Jarabe para la tos Joja: ¡Combate esa gripe invernal!",
+				"DTZ.Pharmacy.2": "Jarabe para la tos con sabor a chirivía. Asqueroso.",
+				"DTZ.Pharmacy.3": "Una marca de medicamento para el dolor de cabeza. A juzgar por los efectos secundarios, dirías que ¡CAUSARÍA dolores de cabeza!",
+				"DTZ.Pharmacy.4": "Súper pastillas mágicas rojas asombrosas!#(Te sientes en control al mirarlas.)",
+				"DTZ.Pharmacy.9": "¡Súper Increíbles Píldoras Azules Mágicas! #(Sientes que pierdes el control al mirarlas.)",
+				"DTZ.Pharmacy.5": "Esta crema parece tratar algunos tipos de manchas raras.",
+				"DTZ.Pharmacy.6": "Cápsulas de serotonina.",
+				"DTZ.Pharmacy.7": "Vitaminas gomosas con forma de baba.",
+				"DTZ.Pharmacy.8": "'Vitaminas para todo uso.#NOTA: Contiene chirivías, mineral de hierro, plátanos y huevos.'#... ¿qué?",
+				"DTZ.Pharmacy.10": "Unas gomas para el pelo de colores muy bonitos.",
+				"DTZ.Pharmacy.11": "Máscaras médicas.",
+				"DTZ.Pharmacy.12": "Maquillaje variado.",
+				"DTZ.Pharmacy.13": "No creo que éste sea legal.",
+				"DTZ.Pharmacy.14": "'Pastillas 'Hola Mundo'. Cafeína glorificada.",
+				"DTZ.Pharmacy.15": "'Prismatic Gel-ly' Gel para el cabello: con extracto de gelatina prismática.",
+				"DTZ.Pharmacy.16": "Champú con extracto de vainilla.",
+				"DTZ.Pharmacy.17": "Champú con extracto de arándano.",
+				"DTZ.Pharmacy.18": "La puerta está cerrada. Este es el almacén de medicamentos de la farmacia.",
+				"DTZ.Pharmacy.19": "Estoy aquí para comprar jarabe para la tos para mi garganta.",
+				"DTZ.Builders.1": "La puerta está cerrada. Probablemente vaya arriba.",
+				"DTZ.Builders.2": "El cajón está etiquetado con «Envío de ladrillos no156532»..",
+				"DTZ.Builders.3": "El cajón está etiquetado con «Envío de madera no137319»..",
+				"DTZ.Builders.4": "El cajón está etiquetado con «Compuestos de concreto noAB3»..",
+				"DTZ.Builders.5": "La nevera está llena de cerveza y otras bebidas frías.",
+				"DTZ.Builders.6": "Este hombre parece estar trabajando duro, cortando leña.",
+				"DTZ.Bakery.1": "Fila tras fila de deliciosos pasteles están alineados.",
+				"DTZ.Bakery.2": "Es una estación de bebidas.",
+				"DTZ.Bakery.3": "Está cerrado con llave. Quizás conecta con una cocina más grande.",
+				"DTZ.1c.1": "''Historia de Ferngill' de K. Lantern.",
+				"DTZ.1c.2": "''Archivo de Noticias de Zuzu'. Es un libro repleto de todos los periódicos viejos de los últimos 10 años aproximadamente.",
+				"DTZ.1c.3": "'Las teorías de la superpoblación' por M. Adoc.",
+				"DTZ.1c.4": "'Gadgets del tiempo pasado' por -------. El nombre del autor ha sido redactado.",
+				"DTZ.1c.5": "'Enano: ¿Falacia, Folklore o Raza Real?' por S. Kell.",
+				"DTZ.1c.6": "'Una Breve Historia de los Medicamentos Modernos' por Dr. Jens Klopp.",
+				"DTZ.1c.7": "'Doc 101: Cómo Pasar tu MD' por H.L.",
+				"DTZ.1c.8": "Una colección de libros de misterio y asesinatos. Parecen estar sin usar.",
+				"DTZ.1c.9": "Una colección de libros de aventuras.",
+				"DTZ.1c.10": "Es Buddy y Selena de niños. Están riendo y sonriendo a la cámara.",
+				"DTZ.Airport.1": "El hombre está bloqueando la taquilla.",
+				"DTZ.Airport.2": "Hola, ¿en qué puedo ayudarte?#Las taquillas están a la izquierda.",
+				"DTZ.Airport.3": "El guardia mira fijamente con severidad.",
+				"DTZ.ResortSouth.1": "Es un parasol para mantenerse a la sombra.",
+				"DTZ.ResortSouth.2": "Un montón grande de escombros de madera bloquea el camino. Sientes la esperanza de que esto se limpiará pronto.",
+				"DTZ.ResortSouth.3": "'Aeropuerto Kahuna'",
+				"DTZ.Waterway.1": "Está cerrado con llave. Una nota pegada en la puerta dice 'Fuera por almuerzo'",
+				"DTZ.Waterway.2": "La puerta está cerrada con llave.",
+				"DTZ.Waterway.3": "No hay razón para entrar al hotel todavía.",
+				"DTZ.Waterway.4": "Este lugar no es tan... cuadrado como mi lugar habitual.#Al menos tengo mis fieles gafas de diamante.",
+				"DTZ.Pizzeria.1": "Es una especie de menú que muestra información sobre la pizza exclusiva de Gio.",
+				"DTZ.Pizzeria.2": "Es una especie de menú que muestra información sobre la pasta y el espagueti del restaurante.",
+				"DTZ.Pizzeria.3": "Es posible que esto conduzca afuera, o tal vez a un área de arriba.#Sin embargo, no podrías saberlo, ya que la puerta está cerrada con llave.",
+				"DTZ.Pizzeria.4": "La nevera está llena de varios ingredientes.#Hay una nota pegada a la salsa que dice 'SALSA SECRETA'.",
+				"DTZ.Pizzeria.5": "El horno de pizzas está ardiendo, con llamas visibles.",
+				"DTZ.Pizzeria.6": "El microondas parece intacto. Parece que todo en este restaurante se hace fresco.",
+				"DTZ.Pizzeria.7": "Es una estación de bebidas.",
+				"DTZ.Pizzeria.8": "Es un letrero de piso mojado. Mejor estar atento a derrames.",
+				"DTZ.Pizzeria.9": "Es una caja llena de carbón para el horno de pizzas.",
+				"DTZ.PizzeriaBack.1": "Montones y montones de cajas están en la sala trasera para almacenamiento.",
+				"DTZ.PizzeriaBack.2": "La puerta está cerrada con llave. Probablemente lleva a un área de entrega o basura en la parte trasera.",
+				"DTZ.PizzeriaBack.3": "Todo el mobiliario innecesario parece estar almacenado aquí atrás.",
+				"DTZ.PizzeriaBack.4": "Este pasillo es muy estrecho y pequeño.#¡Al menos hay una linda pintura pequeña!",
+				"DTZ.PizzeriaBack.5": "Es un refrigerador para almacenar bebidas, tanto Joja Cola como algunas bebidas normales y saludables también.",
+				"DTZ.Gio.1": "Es una cafetera.#Giovanni no puede sobrevivir sin su café de la mañana.",
+				"DTZ.Gio.2": "'Secretos de la pizza desde lejos'  por Mario Piponini.",
+				"DTZ.Gio.3": "Es un pequeño televisor de tubo CRT, mostrando débilmente una película antigua en blanco y negro.#Apenas funciona.",
+				"DTZ.Gio.4": "El estante está lleno de objetos de cocina antiguos:#El antiguo gorro de chef de Gio,#un delantal de chef,#algún tipo de premio de cocina,#y un trofeo en forma de pizza por 'Mejor Pizzería XXXX'.#Por alguna razón extraña, el año ha sido tallado fuera.",
+				"DTZ.MaxHouse.1": "La cocina parece casi intacta.",
+				"DTZ.MaxHouse.2": "Contiene principalmente agua embotellada.",
+				"DTZ.MaxHouse.3": "Algunas galletas frescas están sobre la mesa.",
+				"DTZ.MaxHouse.4": "Hay un televisor barato y una consola de juegos antigua.",
+				"DTZ.MaxHouse.5": "Es una foto antigua de Max y su papá.",
+				"DTZ.MaxHouse.6": "Quizás Max se dedica un poco al teclado.",
+				"DTZ.MaxHouse.7": "Hay una pila de papeleo que necesita ser llenada.",
+				"DTZ.MaxHouse.8": "La computadora de Max.#¡Imaginarías que es para hacer todo ese trabajo de pasante no remunerado!",
+				"DTZ.MaxHouse.9": "La ventana da a la concurrida calle junto al agua.",
+				"DTZ.HazelHouse.1": "La computadora de Hazel.#¡Es perfecta para el trabajo universitario!",
+				"DTZ.HazelHouse.2": "Un televisor antiguo y polvoriento. Parece estar intacto.",
+				"DTZ.HazelHouse.3": "La cocina parece estar bien utilizada, ¡una camarera y un chef!",
+				"DTZ.HazelHouse.4": "Una bonita pintura de un bosque morado.",
+				"DTZ.HazelHouse.5": "Varios libros sobre cocina.",
+				"DTZ.HazelHouse.6": "Es un retrato de Hazel y Giovanni.",
+				"DTZ.HazelHouse.7": "¡Es el Sr. Snuggles, por supuesto!",
+				"DTZ.University.1": "Hay muchas máquinas expendedoras de tickets de estacionamiento aquí.",
+				"DTZ.University.2": "Parece que aquí es donde los estudiantes y profesores pagan por su estacionamiento.",
+				"DTZ.University.3": "Parece que estos lugares están todos reservados.",
+				"DTZ.University.4": "Es un letrero para la Universidad Zuzu.#Aquí es donde personas de todo el República de Ferngill vienen para obtener una educación de primera.",
+				"DTZ.University.5": "Debe de haber una partida de ajedrez en curso.#Decides dejar el tablero como está.",
+				"DTZ.University.6": "Parece un buen lugar para hacer un picnic.#¡Apuesto a que es encantador en verano!",
+				"DTZ.University.7": "Es un tablón de anuncios para eventos importantes de la escuela.",
+				"DTZ.University.8": "Un contenedor de basura y algo de basura están justo al lado de la impecable Universidad...#Es casi una lástima, realmente...",
+				"DTZ.University.9": "'No se permiten juegos de pelota'#Parece severo...#Aunque, no querrías que nadie dañara la Universidad.",
+				"DTZ.ResortCentral.1": "Un tronco gigante bloquea tu camino.^Es enorme, no hay forma posible de moverlo de ninguna manera.",
+				"DTZ.ResortCentral.2": "La puerta está cerrada con llave.^Adjunto al mango, hay una pequeña nota que dice:^Si estás leyendo esto, estoy fuera de viaje!^Todavía puedes comprar cosas en la Tienda del Resort (confío en que todos pagarán...) pero no podrás reservar una cabaña hasta que regrese.^- Velma (y Viki)",
+				"DTZ.ResortCentral.3": "La puerta está cerrada con llave. No puedes reservar una cabaña hasta que Velma regrese de su viaje (en una actualización futura).",
+				"DTZ.ResortCentral.4": "Es para reservar una cabaña, pero no puedes reservar una cabaña hasta que Velma regrese de su viaje (en una actualización futura)."
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_Apartment1d",
+			"FromFile": "assets/ZuzuApartment1d.tmx"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_ZuzuCity1",
+			"FromFile": "assets/DowntownZuzuBusStop.tmx"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_Forest2",
+			"FromFile": "assets/DowntownZuzuForest.tmx"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_ZuzuCityOasis1",
+			"FromFile": "assets/DowntownZuzuBeach.tmx"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_Waterway",
+			"FromFile": "assets/Waterway.tmx"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_ResortSouth",
+			"FromFile": "assets/ResortSouth.tmx"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_ResortSouthWest",
+			"FromFile": "assets/ResortSouthWest.tmx"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_ResortSecretCave",
+			"FromFile": "assets/ResortSecretCave.tmx"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_ResortCentral",
+			"FromFile": "assets/ResortCentral.tmx"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_DTZ_OasisCaveDark",
+			"FromFile": "assets/DowntownZuzuOasisCaveD.tmx"
+		},
+
+		//
+		// location data
+		//
+		{
+			"LogName": "Fishing Locations",
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"Custom_DTZ_ZuzuCity1": {
+					"DisplayName": "Área de la parada de autobús de Zuzu",
+					"CreateOnLoad": {
+						"MapPath": "Maps/Custom_DTZ_ZuzuCity1",
+						"AlwaysActive": true
+					}
+				},
+				"Custom_DTZ_Apartment1d": {
+					"DisplayName": "Apartamento 1d de Zuzu",
+					"CreateOnLoad": {
+						"MapPath": "Maps/Custom_DTZ_Apartment1d",
+						"AlwaysActive": true,
+						"Type": "StardewValley.Locations.DecoratableLocation"
+					}
+				},
+				"Custom_DTZ_Forest2": {
+					"DisplayName": "Bosque de Zuzu",
+					"CreateOnLoad": {
+						"MapPath": "Maps/Custom_DTZ_Forest2"
+					},
+					"Fish": [
+						{
+							"ID": "{{ModId}}_ForestZuzuCarp",
+							"ItemId": "DTZ.DowntownZuzuCP_ZuzuCarp",
+							"MinDistanceFromShore": 1
+						},
+						{
+							"ID": "{{ModId}}_ForestFish1",
+							"ItemId": "153",
+							"Season": "spring"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish2",
+							"ItemId": "145",
+							"Season": "spring"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish3",
+							"ItemId": "143",
+							"Season": "spring"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish4",
+							"ItemId": "137",
+							"Season": "spring"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish5",
+							"ItemId": "132",
+							"Season": "spring"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish6",
+							"ItemId": "706",
+							"Season": "spring"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish7",
+							"ItemId": "702",
+							"Season": "spring"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish8",
+							"ItemId": "153",
+							"Season": "summer"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish9",
+							"ItemId": "145",
+							"Season": "summer"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish10",
+							"ItemId": "144",
+							"Season": "summer"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish11",
+							"ItemId": "138",
+							"Season": "summer"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish12",
+							"ItemId": "132",
+							"Season": "summer"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish13",
+							"ItemId": "706",
+							"Season": "summer"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish14",
+							"ItemId": "702",
+							"Season": "summer"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish15",
+							"ItemId": "704",
+							"Season": "summer"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish16",
+							"ItemId": "143",
+							"Season": "fall"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish17",
+							"ItemId": "153",
+							"Season": "fall"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish18",
+							"ItemId": "140",
+							"Season": "fall"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish19",
+							"ItemId": "139",
+							"Season": "fall"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish20",
+							"ItemId": "137",
+							"Season": "fall"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish21",
+							"ItemId": "706",
+							"Season": "fall"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish22",
+							"ItemId": "702",
+							"Season": "fall"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish23",
+							"ItemId": "699",
+							"Season": "fall"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish24",
+							"ItemId": "269",
+							"Season": "fall"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish25",
+							"ItemId": "143",
+							"Season": "winter"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish26",
+							"ItemId": "153",
+							"Season": "winter"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish27",
+							"ItemId": "140",
+							"Season": "winter"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish28",
+							"ItemId": "699",
+							"Season": "winter"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish29",
+							"ItemId": "141",
+							"Season": "winter"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish30",
+							"ItemId": "144",
+							"Season": "winter"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish31",
+							"ItemId": "702",
+							"Season": "winter"
+						},
+						{
+							"ID": "{{ModId}}_ForestFish32",
+							"ItemId": "269",
+							"Season": "winter"
+						}
+					]
+				},
+				"Custom_DTZ_ZuzuCityOasis1": {
+					"DisplayName": "Oasis de Zuzu",
+					"CreateOnLoad": {
+						"MapPath": "Maps/Custom_DTZ_ZuzuCityOasis1"
+					},
+					"Fish": [
+						{
+							"ID": "{{ModId}}_OasisZuzuCarp",
+							"ItemId": "DTZ.DowntownZuzuCP_ZuzuCarp",
+							"MinDistanceFromShore": 1
+						},
+						{
+							"ID": "{{ModId}}_OasisFish1",
+							"ItemId": "153"
+						},
+						{
+							"ID": "{{ModId}}_OasisFish1",
+							"ItemId": "164"
+						},
+						{
+							"ID": "{{ModId}}_OasisFish1",
+							"ItemId": "165"
+						}
+					]
+				},
+				"Custom_DTZ_Waterway": {
+					"DisplayName": "Vía fluvial de Zuzu",
+					"CreateOnLoad": {
+						"MapPath": "Maps/Custom_DTZ_Waterway"
+					},
+					"Fish": [
+						{
+							"ID": "{{ModId}}_WaterwayZuzuCarp",
+							"ItemId": "DTZ.DowntownZuzuCP_ZuzuCarp",
+							"MinDistanceFromShore": 1
+						}
+					]
+				},
+				"Custom_DTZ_ResortSouth": {
+					"DisplayName": "Playa Sur del Resort Kahuna",
+					"CreateOnLoad": {
+						"MapPath": "Maps/Custom_DTZ_ResortSouth"
+					},
+					"Fish": [
+						{
+							"ID": "{{ModId}}_ResortSouthFish1",
+							"ItemId": "155"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish2",
+							"ItemId": "130"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish3",
+							"ItemId": "128"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish4",
+							"ItemId": "267"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish5",
+							"ItemId": "837"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish6",
+							"ItemId": "(O){{ModId}}_Angelfish"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish7",
+							"ItemId": "(O){{ModId}}_Clownfish"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish8",
+							"ItemId": "(O){{ModId}}_FireJellyfish"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish9",
+							"ItemId": "(O){{ModId}}_MarineDragon"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish10",
+							"ItemId": "(O){{ModId}}_MarineGold"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish11",
+							"ItemId": "(O){{ModId}}_VampireSquid"
+						}
+					],
+					"Forage": [
+						{
+							"ID": "Fruit",
+							"RandomItemId": [ "(O){{ModId}}_SpanishLime", "(O){{ModId}}_Jackfruit", "(O){{ModId}}_Araza","(O){{ModId}}_Ackee", "(O){{ModId}}_Cherimoya" ],
+							"Chance": 0.5
+						}
+					]
+				},
+				"Custom_DTZ_ResortCentral": {
+					"DisplayName": "Centro del Resort Kahuna",
+					"CreateOnLoad": {
+						"MapPath": "Maps/Custom_DTZ_ResortCentral"
+					},
+					"Fish": [
+						{
+							"ID": "DTZ1",
+							"ItemId": "153",
+							"Season": "summer"
+						},
+						{
+							"ID": "DTZ2",
+							"ItemId": "145",
+							"Season": "summer"
+						},
+						{
+							"ID": "DTZ3",
+							"ItemId": "144",
+							"Season": "summer"
+						},
+						{
+							"ID": "DTZ4",
+							"ItemId": "138",
+							"Season": "summer"
+						},
+						{
+							"ID": "DTZ5",
+							"ItemId": "132",
+							"Season": "summer"
+						},
+						{
+							"ID": "DTZ6",
+							"ItemId": "706",
+							"Season": "summer"
+						},
+						{
+							"ID": "DTZ7",
+							"ItemId": "702",
+							"Season": "summer"
+						},
+						{
+							"ID": "DTZ8",
+							"ItemId": "704",
+							"Season": "summer"
+						}
+					],
+					"Forage": [
+						{
+							"ID": "Fruit",
+							"RandomItemId": [ "(O){{ModId}}_SpanishLime", "(O){{ModId}}_Jackfruit", "(O){{ModId}}_Araza","(O){{ModId}}_Ackee", "(O){{ModId}}_Cherimoya" ],
+							"Chance": 0.5
+						}
+					]
+				},
+				"Custom_DTZ_ResortSouthWest": {
+					"DisplayName": "Playa Suroeste del Resort Kahuna",
+					"CreateOnLoad": {
+						"MapPath": "Maps/Custom_DTZ_ResortSouthWest"
+					},
+					"Fish": [
+						{
+							"ID": "{{ModId}}_ResortSouthFish1",
+							"ItemId": "155"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish2",
+							"ItemId": "130"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish3",
+							"ItemId": "128"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish4",
+							"ItemId": "267"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish5",
+							"ItemId": "837"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish6",
+							"ItemId": "(O){{ModId}}_Angelfish"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish7",
+							"ItemId": "(O){{ModId}}_Clownfish"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish8",
+							"ItemId": "(O){{ModId}}_FireJellyfish"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish9",
+							"ItemId": "(O){{ModId}}_MarineDragon"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish10",
+							"ItemId": "(O){{ModId}}_MarineGold"
+						},
+						{
+							"ID": "{{ModId}}_ResortSouthFish11",
+							"ItemId": "(O){{ModId}}_VampireSquid"
+						}
+					],
+					"Forage": [
+						{
+							"ID": "Fruit",
+							"RandomItemId": [ "(O){{ModId}}_SpanishLime", "(O){{ModId}}_Jackfruit", "(O){{ModId}}_Araza","(O){{ModId}}_Ackee", "(O){{ModId}}_Cherimoya" ],
+							"Chance": 0.5
+						}
+					]
+				},
+				"Custom_DTZ_OasisCaveDark": {
+					"DisplayName": "Cuevas del Oasis de Zuzu - Caverna de Cristal",
+					"CreateOnLoad": {
+						"MapPath": "Maps/Custom_DTZ_OasisCaveDark"
+					},
+					"Fish": [
+						{
+							"ID": "{{ModId}}_DarkCaveFish1",
+							"ItemId": "DTZ.DowntownZuzuCP_SapphireStarfish"
+						},
+						{
+							"ID": "{{ModId}}_DarkCaveFish2",
+							"ItemId": "156"
+						}
+					]
+				},
+				"Custom_DTZ_ResortSecretCave": {
+					"DisplayName": "Cueva",
+					"CreateOnLoad": {
+						"MapPath": "Maps/Custom_DTZ_ResortSecretCave"
+					},
+					"Forage": [
+						{
+							"ID": "Minerals",
+							"RandomItemId": [ "(O){{ModId}}_Earth'sEssence", "(O){{ModId}}_LotusCrystal", "(O){{ModId}}_Moonstone","(O){{ModId}}_Stargazer'sOre", "(O){{ModId}}_SunsetFragment" ],
+							"Chance": 0.5
+						}
+					]
+				},
+
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Mail",
+			"Entries": {
+				"DTZ.GoSeeBuilderMail": "¡Hola!, @!^¡Oye, me enteré de que compraste el viejo aserradero del Bosque Zuzu!  Pasa por mi tienda en la ciudad y te puedo ayudar a arreglar ese lugar.^      - Bill%action AddQuest 85870001%%"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+			"Entries": {
+				"ZuzuCity": {
+					"BaseTexture": [
+						{
+							"Id": "{{ModId}}_ZuzuCityMap1",
+							"Texture": "LooseSprites/ZuzuMap"
+						}
+					],
+					"MapAreas": [
+						{
+							"Id": "{{ModId}}_ZuzuCityBusStop",
+							"PixelArea": { "X": 205, "Y": 85, "Height": 26, "Width": 37 },
+							"ScrollText": "Zuzu Bus Stop",
+							"Tooltips": [
+								{
+									"Id": "Apartments",
+									"Text": "Zuzu Apartments",
+									"PixelArea": { "X": 234, "Y": 79, "Height": 11, "Width": 10 }
+								},
+								{
+									"Id": "JojaMini",
+									"Text": "Joja Mini",
+									"PixelArea": { "X": 218, "Y": 76, "Height": 15, "Width": 11 }
+								},
+								{
+									"Id": "Pizzeria",
+									"Text": "Gio's Pizzeria",
+									"PixelArea": { "X": 205, "Y": 82, "Height": 8, "Width": 9 }
+								},
+								{
+									"Id": "SewerHatch",
+									"Text": "Sewer Hatch",
+									"PixelArea": { "X": 232, "Y": 96, "Height": 7, "Width": 7 }
+								}
+							],
+							"WorldPositions": [
+								{
+									"Id": "Exterior",
+									"LocationName": "Custom_DTZ_ZuzuCity1",
+									"ScrollText": "Zuzu Bus Stop",
+									"MapPixelArea": { "X": 205, "Y": 85, "Height": 26, "Width": 37 }
+								},
+								{
+									"Id": "Apartments",
+									"LocationNames": [ "Custom_DTZ_ApartmentLobby", "Custom_DTZ_Apartment1a", "Custom_DTZ_Apartment1b", "Custom_DTZ_Apartment1c", "Custom_DTZ_Apartment1d" ],
+									"ScrollText": "Zuzu Apartments",
+									"MapPixelArea": { "X": 234, "Y": 79, "Height": 11, "Width": 10 }
+								},
+								{
+									"Id": "JojaMini",
+									"LocationName": "Custom_DTZ_JojaMini",
+									"Text": "Joja Mini",
+									"MapPixelArea": { "X": 218, "Y": 76, "Height": 15, "Width": 11 }
+								},
+								{
+									"Id": "Pizzeria",
+									"LocationName": "Custom_DTZ_Pizzeria",
+									"Text": "Gio's Pizzeria",
+									"PixelArea": { "X": 205, "Y": 82, "Height": 8, "Width": 9 }
+								},
+								{
+									"Id": "Sewer",
+									"LocationNames": [ "Custom_DTZ_ZuzuCitySewer", "Custom_DTZ_ZuzuCitySewerTunnel", "Custom_DTZ_ZuzuCitySewerSecret" ],
+									"Text": "Alcantarillado de Zuzu",
+									"PixelArea": { "X": 232, "Y": 96, "Height": 7, "Width": 7 }
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_ZuzuCityGasStation",
+							"PixelArea": { "X": 137, "Y": 80, "Height": 34, "Width": 60 },
+							"ScrollText": "Zuzu Outskirts",
+							"Tooltips": [
+								{
+									"Id": "Station",
+									"Text": "Gasolinera Joja",
+									"PixelArea": { "X": 155, "Y": 85, "Height": 19, "Width": 22 }
+								}
+							],
+							"WorldPositions": [
+								{
+									"Id": "Exterior",
+									"LocationName": "Custom_DTZ_GasStation",
+									"ScrollText": "Zuzu Outskirts",
+									"MapPixelArea": { "X": 137, "Y": 80, "Height": 34, "Width": 60 }
+								},
+								{
+									"Id": "Interior",
+									"LocationName": "Custom_DTZ_GasInt",
+									"ScrollText": "Joja Gas Station",
+									"MapPixelArea": { "X": 155, "Y": 85, "Height": 11, "Width": 13 }
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_ZuzuCityCrossNorth",
+							"PixelArea": { "X": 137, "Y": 80, "Height": 34, "Width": 60 },
+							"ScrollText": "Zuzu North Crossroads",
+							"Tooltips": [
+								{
+									"Id": "Airport",
+									"Text": "Aeropuerto Internacional Zuzu",
+									"PixelArea": { "X": 215, "Y": 32, "Height": 26, "Width": 51 }
+								},
+								{
+									"Id": "Permits",
+									"Text": "Oficina de Permisos de Zuzu",
+									"PixelArea": { "X": 266, "Y": 49, "Height": 10, "Width": 8 }
+								}
+							],
+							"WorldPositions": [
+								{
+									"Id": "Exterior",
+									"LocationName": "Custom_DTZ_CrossNorth",
+									"ScrollText": "Zuzu North Crossroads",
+									"MapPixelArea": { "X": 213, "Y": 32, "Height": 54, "Width": 87 }
+								},
+								{
+									"Id": "Airport",
+									"LocationName": "Custom_DTZ_Airport",
+									"ScrollText": "Zuzu International Airport",
+									"MapPixelArea": { "X": 243, "Y": 41, "Height": 15, "Width": 22 }
+								},
+								{
+									"Id": "Permits",
+									"LocationName": "Custom_DTZ_ZuzuPermits",
+									"ScrollText": "Zuzu Permit Office",
+									"MapPixelArea": { "X": 266, "Y": 49, "Height": 15, "Width": 22 }
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_ZuzuCityCrossroads",
+							"PixelArea": { "X": 245, "Y": 80, "Height": 34, "Width": 55 },
+							"ScrollText": "Zuzu Crossroads",
+							"Tooltips": [
+								{
+									"Id": "JojaHQ",
+									"Text": "Joja HQ",
+									"PixelArea": { "X": 246, "Y": 80, "Height": 15, "Width": 17 }
+								},
+								{
+									"Id": "Underground",
+									"Text": "Club Nocturno Zuzu Underground",
+									"PixelArea": { "X": 271, "Y": 84, "Height": 12, "Width": 13 }
+								},
+								{
+									"Id": "Hideout",
+									"Text": "Almacén Abandonado de Joja",
+									"PixelArea": { "X": 271, "Y": 96, "Height": 8, "Width": 12 }
+								}
+							],
+							"WorldPositions": [
+								{
+									"Id": "Exterior",
+									"LocationName": "Custom_DTZ_ZuzuCityCrossroads1",
+									"ScrollText": "Zuzu Crossroads",
+									"MapPixelArea": { "X": 245, "Y": 80, "Height": 34, "Width": 55 }
+								},
+								{
+									"Id": "JojaHQ",
+									"LocationNames": ["Custom_DTZ_JojaHQ", "Custom_DTZ_JojaOffices", "Custom_DTZ_JojaHQCafe", "Custom_DTZ_JojaElevHall", "Custom_DTZ_JojaCEO"],
+									"ScrollText": "Joja HQ",
+									"MapPixelArea": { "X": 246, "Y": 83, "Height": 8, "Width": 17 }
+								},
+								{
+									"Id": "Underground",
+									"LocationNames": ["Custom_DTZ_NightClubEntrance", "Custom_DTZ_NightClubMain", "Custom_DTZ_NightClubBathrooms"],
+									"ScrollText": "Zuzu Underground Nightclub",
+									"MapPixelArea": { "X": 271, "Y": 87, "Height": 13, "Width": 8 }
+								},
+								{
+									"Id": "Hideout",
+									"LocationName": "Custom_DTZ_BruisersHideout",
+									"ScrollText": "Abandoned Joja Warehouse",
+									"MapPixelArea": { "X": 271, "Y": 96, "Height": 6, "Width": 12 }
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_ZuzuCityFreeway",
+							"PixelArea": { "X": 100, "Y": 72, "Height": 39, "Width": 48 },
+							"ScrollText": "Zuzu Freeway",
+							"WorldPositions": [
+								{
+									"Id": "Exterior",
+									"LocationName": "Custom_DTZ_ZuzuCityFreeway1",
+									"ScrollText": "Zuzu Crossroads",
+									"MapPixelArea": { "X": 100, "Y": 72, "Height": 39, "Width": 48 }
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_ZuzuCityCrossEast",
+							"PixelArea": { "X": 286, "Y": 86, "Height": 27, "Width": 14 },
+							"ScrollText": "Zuzu East Crossroads",
+							"Tooltips": [
+								{
+									"Id": "Mall",
+									"Text": "Centro Comercial Zuzu",
+									"PixelArea": { "X": 290, "Y": 86, "Height": 11, "Width": 9 }
+								},
+								{
+									"Id": "Pharmacy",
+									"Text": "Farmacia Zuzu",
+									"PixelArea": { "X": 286, "Y": 97, "Height": 7, "Width": 11 }
+								}
+							],
+							"WorldPositions": [
+								{
+									"Id": "Exterior",
+									"LocationNames": ["Custom_DTZ_CrossEast", "Custom_DTZ_Builders", "Custom_DTZ_PinkCakeBakery"],
+									"ScrollText": "Zuzu East Crossroads",
+									"MapPixelArea": { "X": 286, "Y": 96, "Height": 16, "Width": 14 }
+								},
+								{
+									"Id": "Pharmacy",
+									"LocationName": "Custom_DTZ_Pharmacy",
+									"ScrollText": "Zuzu Pharmacy",
+									"MapPixelArea": { "X": 286, "Y": 93, "Height": 11, "Width": 11 }
+								},
+								{
+									"Id": "Mall",
+									"LocationName": "Custom_DTZ_Mall",
+									"ScrollText": "Zuzu Mall",
+									"MapPixelArea": { "X": 290, "Y": 86, "Height": 11, "Width": 9 }
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_Forest",
+							"PixelArea": { "X": 0, "Y": 68, "Height": 100, "Width": 108 },
+							"ScrollText": "Zuzu Forest",
+							"Tooltips": [
+								{
+									"Id": "TrainStation",
+									"Text": "Estación de Tren de Zuzu",
+									"PixelArea": { "X": 33, "Y": 80, "Height": 10, "Width": 9 }
+								},
+								{
+									"Id": "Sawmill",
+									"Text": "Aserradero",
+									"PixelArea": { "X": 4, "Y": 120, "Height": 10, "Width": 14 }
+								}
+							],
+							"WorldPositions": [
+								{
+									"Id": "Exterior",
+									"LocationName": "Custom_DTZ_Forest2",
+									"ScrollText": "Zuzu Forest",
+									"MapPixelArea": { "X": 0, "Y": 68, "Height": 100, "Width": 108 }
+								},
+								{
+									"Id": "TrainStation",
+									"LocationName": "Custom_DTZ_TrainStation",
+									"ScrollText": "Train Station",
+									"MapPixelArea": { "X": 35, "Y": 81, "Height": 6, "Width": 5 }
+								},
+								{
+									"Id": "Sawmill",
+									"LocationName": "Custom_DTZ_Sawmill",
+									"ScrollText": "Sawmill",
+									"MapPixelArea": { "X": 9, "Y": 123, "Height": 6, "Width": 9 }
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_Oasis",
+							"PixelArea": { "X": 73, "Y": 0, "Height": 71, "Width": 63 },
+							"ScrollText": "Zuzu Oasis",
+							"Tooltips": [
+								{
+									"Id": "Sanctuary",
+									"Text": "Santuario",
+									"PixelArea": { "X": 83, "Y": 41, "Height": 15, "Width": 11 }
+								},
+								{
+									"Id": "Caves",
+									"Text": "Cavernas del Oasis de Zuzu",
+									"PixelArea": { "X": 108, "Y": 0, "Height": 10, "Width": 22 }
+								}
+							],
+							"WorldPositions": [
+								{
+									"Id": "Exterior",
+									"LocationName": "Custom_DTZ_ZuzuCityOasis1",
+									"ScrollText": "Zuzu Oasis",
+									"MapPixelArea": { "X": 73, "Y": 0, "Height": 71, "Width": 63 }
+								},
+								{
+									"Id": "Sanctuary",
+									"LocationNames": ["Custom_DTZ_SancInt", "Custom_DTZ_ZuzuCitySecretQi"],
+									"ScrollText": "Sanctuary",
+									"MapPixelArea": { "X": 83, "Y": 45, "Height": 11, "Width": 11 }
+								},
+								{
+									"Id": "Caves",
+									"LocationNames": ["Custom_DTZ_OasisCave", "Custom_DTZ_OasisCaveUnder", "Custom_DTZ_OasisCaveJungle", "Custom_DTZ_OasisCaveDark", "Custom_DTZ_OasisCaveLava", "Custom_DTZ_OasisCaveHouse"],
+									"ScrollText": "Zuzu Oasis Caverns",
+									"MapPixelArea": { "X": 83, "Y": 45, "Height": 11, "Width": 11 }
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_FurtherEast",
+							"PixelArea": { "X": 300, "Y": 76, "Height": 1, "Width": 1 },
+							"ScrollText": "Eastern Zuzu City",
+							"WorldPositions": [
+								{
+									"Id": "Any",
+									"LocationNames": ["Custom_DTZ_Waterway", "Custom_DTZ_UniversityExterior", "Custom_DTZ_University", "Custom_DTZ_MaxHouse", "Custom_DTZ_MaxHouseUpstairs", "Custom_DTZ_HazelHouse"],
+									"ScrollText": "Eastern Zuzu City",
+									"MapPixelArea": { "X": 300, "Y": 76, "Height": 1, "Width": 1 }
+								}
+							]
+						}
+					]
+				},
+				"KahunaResort": {
+					"BaseTexture": [
+						{
+							"Id": "{{ModId}}_KahunaMap1",
+							"Texture": "LooseSprites/KahunaMap",
+							"SourceRect": { "X": 0, "Y": 0, "Height": 180, "Width": 300 }
+						}
+					],
+					"MapAreas": [
+						{
+							"Id": "{{ModId}}_ResortSouth",
+							"PixelArea": { "X": 111, "Y": 111, "Height": 26, "Width": 37 },
+							"ScrollText": "South Kahuna Resort",
+							"Tooltips": [
+								{
+									"Id": "Airport",
+									"Text": "Aeropuerto Kahuna",
+									"PixelArea": { "X": 151, "Y": 122, "Height": 16, "Width": 79 }
+								},
+								{
+									"Id": "Stall",
+									"Text": "Puesto de venta",
+									"PixelArea": { "X": 120, "Y": 119, "Height": 6, "Width": 14 }
+								}
+							],
+							"WorldPositions": [
+								{
+									"Id": "Exterior",
+									"LocationName": "Custom_DTZ_ResortSouth",
+									"ScrollText": "South Kahuna Resort",
+									"MapPixelArea": { "X": 115, "Y": 117, "Height": 47, "Width": 61 }
+								},
+								{
+									"Id": "Airport",
+									"LocationName": "Custom_DTZ_ResortAirport",
+									"ScrollText": "South Kahuna Resort",
+									"MapPixelArea": { "X": 152, "Y": 132, "Height": 6, "Width": 14 }
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_ResortSouthWest",
+							"PixelArea": { "X": 64, "Y": 112, "Height": 47, "Width": 49 },
+							"ScrollText": "South West Kahuna Resort",
+							"Tooltips": [
+								{
+									"Id": "Cave",
+									"Text": "Cueva",
+									"PixelArea": { "X": 94, "Y": 116, "Height": 4, "Width": 3 }
+								}
+							],
+							"WorldPositions": [
+								{
+									"Id": "Exterior",
+									"LocationName": "Custom_DTZ_ResortSouthWest",
+									"ScrollText": "South West Kahuna Resort",
+									"MapPixelArea": { "X": 64, "Y": 112, "Height": 47, "Width": 49 }
+								},
+								{
+									"Id": "Cave",
+									"LocationName": "Custom_DTZ_ResortSecretCave",
+									"ScrollText": "Cave",
+									"MapPixelArea": { "X": 94, "Y": 116, "Height": 4, "Width": 3 }
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_ResortCentral",
+							"PixelArea": { "X": 115, "Y": 60, "Height": 47, "Width": 82 },
+							"ScrollText": "Central Kahuna Resort",
+							"Tooltips": [
+								{
+									"Id": "Shop",
+									"Text": "Tienda del Resort",
+									"PixelArea": { "X": 132, "Y": 68, "Height": 11, "Width": 8 }
+								},
+								{
+									"Id": "Velma",
+									"Text": "Casa de Velma",
+									"PixelArea": { "X": 141, "Y": 64, "Height": 15, "Width": 9 }
+								},
+								{
+									"Id": "Cabin1",
+									"Text": "RCabaña 1 del Resort",
+									"PixelArea": { "X": 180, "Y": 56, "Height": 11, "Width": 8 }
+								},
+								{
+									"Id": "Log",
+									"Text": "Tronco gigante caído",
+									"PixelArea": { "X": 195, "Y": 76, "Height": 18, "Width": 5 }
+								},
+								{
+									"Id": "Cabin2",
+									"Text": "Cabaña 2 del Resort (Playa inaccesible)",
+									"PixelArea": { "X": 248, "Y": 91, "Height": 11, "Width": 8 }
+								}
+							],
+							"WorldPositions": [
+								{
+									"Id": "Exterior",
+									"LocationName": "Custom_DTZ_ResortCentral",
+									"ScrollText": "Central Kahuna Resort",
+									"MapPixelArea": { "X": 115, "Y": 60, "Height": 47, "Width": 82 }
+								},
+								{
+									"Id": "Shop",
+									"LocationName": "Custom_DTZ_ResortShop",
+									"ScrollText": "Resort Shop",
+									"MapPixelArea": { "X": 132, "Y": 68, "Height": 11, "Width": 8 }
+								},
+								{
+									"Id": "Velma",
+									"LocationName": "Custom_DTZ_ResortVelma",
+									"ScrollText": "Velma's House",
+									"MapPixelArea": { "X": 141, "Y": 64, "Height": 15, "Width": 9 }
+								},
+								{
+									"Id": "Cabin",
+									"LocationName": "Custom_DTZ_ResortCabin1",
+									"ScrollText": "Resort Cabin 1",
+									"MapPixelArea": { "X": 180, "Y": 56, "Height": 11, "Width": 8 }
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		// custom bins
+		{
+            "Action": "EditData",
+            "Target": "Data/GarbageCans",
+            "TargetField": [ "GarbageCans" ],
+            "Entries": {
+                "{{ModId}}_Joja": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_JojaSoda",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O){{ModId}}_JojaSoda"
+                        },
+						{
+                            "ID": "{{ModId}}_Hotdog",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O){{ModId}}_DowntownDog"
+                        },
+						{
+                            "ID": "{{ModId}}_Fertiliser",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)368", "(O)369"]
+                        }
+						
+                    ]
+                },
+				"{{ModId}}_JojaStation": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_JojaSoda",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O){{ModId}}_JojaSoda"
+                        },
+						{
+                            "ID": "{{ModId}}_Hotdog",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O){{ModId}}_DowntownDog"
+                        },
+						{
+                            "ID": "{{ModId}}_Fertiliser",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)368", "(O)369"]
+                        }
+						
+                    ]
+                },
+				"{{ModId}}_Joja2": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_JojaSoda",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O){{ModId}}_JojaSoda"
+                        },
+						{
+                            "ID": "{{ModId}}_Hotdog",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O){{ModId}}_DowntownDog"
+                        },
+						{
+                            "ID": "{{ModId}}_Fertiliser",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)368", "(O)369"]
+                        }
+						
+                    ]
+                },
+				"{{ModId}}_MiscOasis": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MiscForest1": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MiscForest2": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MiscOasis2": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MiscBusStop": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MiscBusStop2": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MiscBusStop3": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MiscEast": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MiscEast2": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MiscEast3": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MiscNorth": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MiscNorth2": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MiscCrossroads": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MiscFreeway": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MiscTrain": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MiscUni": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MiscWaterway": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MiscWaterway1": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MiscWaterway2": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MallInside": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_MallInside2": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Ore",
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": ["(O)378", "(O)380", "(O)382"]
+                        }
+                    ]
+                },
+				"{{ModId}}_Club1": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_Booze",
+                            "Condition": "RANDOM 0.3",
+                            "RandomItemId": ["(O)346", "(O)348", "(O)350", "(O){{ModId}}_StrawberryDaiquiri", "(O){{ModId}}_ZuzuSignatureCocktail", "(O){{ModId}}_ZuzuChampagne", "(O){{ModId}}_Cider"]
+                        },
+						{
+                            "ID": "{{ModId}}_Food",
+                            "Condition": "RANDOM 0.2",
+                            "RandomItemId": ["(O){{ModId}}_BigBurger", "(O){{ModId}}_GranaryStack"]
+                        },
+						{
+                            "ID": "{{ModId}}_Exclusive",
+                            "Condition": "RANDOM 0.03",
+                            "ItemId": "(WP)DTZ.DowntownZuzuCP_ZuzuWallpapers:2",
+							"IsMegaSuccess": true
+                        }
+                    ]
+                },
+				"{{ModId}}_Club2": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_Booze",
+                            "Condition": "RANDOM 0.3",
+                            "RandomItemId": ["(O)346", "(O)348", "(O)350", "(O){{ModId}}_StrawberryDaiquiri", "(O){{ModId}}_ZuzuSignatureCocktail", "(O){{ModId}}_ZuzuChampagne", "(O){{ModId}}_Cider"]
+                        },
+						{
+                            "ID": "{{ModId}}_Food",
+                            "Condition": "RANDOM 0.2",
+                            "RandomItemId": ["(O){{ModId}}_BigBurger", "(O){{ModId}}_GranaryStack"]
+                        },
+						{
+                            "ID": "{{ModId}}_Exclusive",
+                            "Condition": "RANDOM 0.03",
+                            "ItemId": "(WP)DTZ.DowntownZuzuCP_ZuzuWallpapers:2",
+							"IsMegaSuccess": true
+                        }
+                    ]
+                },
+				"{{ModId}}_Bakery": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_Juice",
+                            "Condition": "RANDOM 0.2",
+                            "ItemId": "(O)350"
+                        },
+						{
+                            "ID": "{{ModId}}_Food",
+                            "Condition": "RANDOM 0.2",
+                            "RandomItemId": ["(O){{ModId}}_ChocolateSlice", "(O){{ModId}}_LemonDrizzleCheesecake", "(O){{ModId}}_ZuzuMilkshake", "(O)222"]
+                        },
+						{
+                            "ID": "{{ModId}}_Cake",
+                            "Condition": "RANDOM 0.2",
+                            "ItemId": "(O)221"
+                        }
+                    ]
+                },
+				"{{ModId}}_Pizzeria": {
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_JojaCola",
+                            "Condition": "RANDOM 0.3",
+                            "ItemId": "(O)167"
+                        },
+						{
+                            "ID": "{{ModId}}_Slice",
+                            "Condition": "RANDOM 0.2",
+                            "ItemId": "(O){{ModId}}_MozzarellaSlice"
+                        },
+						{
+                            "ID": "{{ModId}}_Drumstick",
+                            "Condition": "RANDOM 0.1",
+                            "ItemId": "(O){{ModId}}_ChickenDrumstick"
+                        },
+						{
+                            "ID": "{{ModId}}_Other",
+                            "Condition": "RANDOM 0.4",
+                            "RandomItemId": ["(O)206", "(O)224", "(O)256"]
+                        }
+                    ]
+                }
+            }
+        }
+	]
+}

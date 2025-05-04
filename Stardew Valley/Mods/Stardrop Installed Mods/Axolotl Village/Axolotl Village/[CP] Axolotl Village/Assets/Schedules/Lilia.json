@@ -1,0 +1,29 @@
+{
+"Changes": [
+
+	{
+		"LogName": "Lilia Schedule",
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Lilia",
+		"Entries": {
+
+			//Regular Schedule
+			"spring": "610 {{ModId}}_AxolotlTown 94 28 2/1000 {{ModId}}_AxolotlTown 53 33 1/1500 {{ModId}}_AxolotlTown 28 77 2/2000 {{ModId}}_PurpleHouse 8 8 2 lilia_sleep",
+			"summer": "610 {{ModId}}_AxolotlTown 94 28 2/1000 {{ModId}}_AxolotlTown 37 55 3/1500 {{ModId}}_AxolotlTown 28 77 2/2000 {{ModId}}_PurpleHouse 8 8 2 lilia_sleep",
+			"fall": "610 {{ModId}}_AxolotlTown 94 28 2/1000 {{ModId}}_AxolotlTown 53 33 1/1500 {{ModId}}_AxolotlTown 28 77 2/2000 {{ModId}}_PurpleHouse 8 8 2 lilia_sleep",
+			"winter": "610 {{ModId}}_AxolotlTown 94 28 2/1000 {{ModId}}_AxolotlTown 53 33 1/1500 {{ModId}}_AxolotlTown 28 77 2/2000 {{ModId}}_PurpleHouse 8 8 2 lilia_sleep",
+			"rain": "610 {{ModId}}_PurpleHouse 5 6 2/1000 {{ModId}}_PurpleHouse 5 6 2/2000 {{ModId}}_PurpleHouse 8 8 2 lilia_sleep"
+			}
+	},
+{
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Lilia",
+		"Entries": {
+			"Sun": "610 {{ModId}}_AxolotlTown 94 28 2/900 {{ModId}}_AxolotlTownSouth 96 38 0 \"Strings\\schedules\\Lilia:Sun\"/2000 {{ModId}}_PurpleHouse 8 8 2 lilia_sleep",
+			},
+		"When": {
+			"HasSeenEvent: hostPlayer |contains=98890063": true
+                        },
+	},
+]
+}

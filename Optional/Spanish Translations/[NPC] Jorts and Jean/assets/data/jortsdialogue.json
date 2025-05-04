@@ -1,0 +1,178 @@
+ {
+"Changes": 
+    [
+ 
+		{
+            "LogName": "Jorts Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/JortsCat",
+			"Entries": {
+
+//Conversation Topics
+	//Vanilla
+	"cc_Begin": "Hueles a polvo, @!#$b#Eh, ¿Lewis también pudo olerlo? ¡Debe tener buen olfato!",
+	"cc_Boulder": "¡Eh, esa roca junto a las minas ya no está! ¡Ahora el agua parece más interesante!$h",
+	"cc_Bridge": "¡Alguien arregló el puente! Ahora puedo cruzar por el camino fácil, ¡en vez de tener que dar toda una vuelta!$h",
+	"cc_Bus": "¡El autobús funciona! Siempre quise montar, pero Pam y Lewis no me dejaron subir.",
+	"cc_Greenhouse": "Esa nueva construcción parece tan cálida y acogedora. Deberías tomar algunas siestas allí.",
+	"cc_Minecart": "@, ¿Puedo ir contigo en el carro? ¡Parece divertido!",
+	"cc_Complete": "Wow, @! ¡Todos dicen que arreglaste esto! Debes haber necesitado muchos clavos.$h",
+	"movieTheater": "¡Hay tantos pajaritos en el nuevo edificio!",
+	"willyCrabs": "Uno de esos cangrejos me pellizcó la cola.$s#$b#Supongo que fue porque Jean intentaba comérselo.",
+	"pamHouseUpgrade": "¿@, Ayudaste a construir la casa de Pam? Espero que le dieras unos buenos rascadores. A veces necesita aliviar el estrés.",
+	"pamHouseUpgradeAnonymous": "Me pregunto quién ayudó con su nueva casa. No tengo ni idea. Deben ser super amables.$h",
+	//Vanilla+ (CFD, Mobile Phone, More CTs)
+	"Characters_MovieInvite_Invited": "Vaya, ¿una película? Deja que Jean me limpie, ¡nos vemos allí! ¡ZOOMIES!",
+	"ExtraDialogue_Town_DumpsterDiveComment_Adult": "¿Has encontrado algo bueno?$h",
+	"NPC.cs.4275": "¿Me trajiste un regalo de cumpleaños? Eres mi humano favorito.$h",
+	"NPC.cs.4277": "¡AHHHH ME HAS HECHO UN REGALO DE CUMPLEAÑOS! ¡ESTOY TAN EMOCIONADO QUE ME VOY A HACER PIPÍ!$h",
+	"NPC.cs.4279": "Yo, uh... Gracias, pero realmente no lo quiero, aunque sea mi cumpleaños.....$s/Yo, eh... Gracias, pero realmente no lo quiero, aunque sea mi cumpleaños.....$s",
+	"NPC.cs.4281": "¡Vaya, un regalo! ¿Quieres compartirlo? Mi cumpleaños es el día del trabajador, después de todo, y se trata de la unión.$h/¡Vaya, un regalo! ¿Quieres compartirlo? Mi cumpleaños es el día del trabajador, después de todo, y se trata de la unión.$h",
+	"MobilePhoneGreeting": "{{Random: ¡Hola {0}, es Gil! En realidad no es Gil, pero no le gusta su móvil. && Este es el teléfono de Gil, por favor deje un mensaje después del miau. ¡Miau! && ¡Caramba! {0} ¡me llaman! && Hola, {0}! Estoy cuidando el teléfono ahora mismo, ¿querías hablar conmigo o con Jean? && Hola, {0}! ¡Soy yo, tu Jorts favorito de todos los Jorts que existen! && Hola, {0}! Los teléfonos son geniales, ¿verdad? Son muy fáciles de usar con las patas. && Hola, {0}! ¿Necesitas que vaya a buscarte para que te frote las piernas? |inputSeparator=&&}}",
+	"MobilePhoneReminisce": "¿Quieres oír una historia, @?",
+	"MobilePhoneInvite": "¡Vaya, juguemos!",
+	"MobilePhoneGoodBye": "{{Random: Vale, ¡hablamos luego, @! ¡A menos que Jean responda en su lugar! && Está bien, te quiero, ¡chau! && ¡Adiós @! ¡Saludaré a Gil de tu parte también! && ¡Adiós, @! Espero poder verte pronto, no es lo mismo si no puedo olerte. |inputSeparator=&&}}",
+	"railroadEarthquake": "¡Wow, el terremoto de anoche fue tan divertido! ¡Vibré casi tanto como la vez que monté en la limpiadora de suelos de Morris!$h",
+	"islandResortUnlocked": "¿Hay un arenero gigante al otro lado del mar? ¿Podemos ir a jugar, Jean? ¿Porfis?$h",
+	"jojaMartStruckByLightning": "¡Marlon dijo que el Joja fue alcanzado por un gran rayo anoche! Menos mal que no se incendió, ¡porque si no Clint podría haber tenido problemas!",
+	"babyBoy": "Wow, @! No puedo creer que usted y %spouse hizo un bebé COMPLETO!",
+	"babyGirl": "Wow, @! No puedo creer que usted y %spouse hizo una bebé COMPLETA!",
+	"wedding": "¡Qué gran fiesta! Deberíamos organizar otra alguna vez.$h",
+	"event_postweddingreception": "¡Esto debió ser muy especial para ti y para %spouse, @, ya que podemos celebrarlo dos veces!$h",
+	"luauBest": "Jean y yo tomamos algo de la sopa cuando Lewis no miraba. ¡Estaba sabrosa como un esturión!$h",
+	"luauShorts": "No pude probar la sopa.$s#$b#Jean dijo que era 'una ofensa a la dignidad y al buen gusto'. ¿Cómo puede ofender a alguien si no puede hablar?$4",
+	"luauPoisoned": "Jean dijo que a los humanos no les gustó la sopa. A mí me supo muy bien.$5",
+	//Alecto
+	"AlectoIntroduction": "¿Conociste a la señora de los cuervos? Me gusta Kevin, es mi amigo. A veces investigamos juntos los malos olores.",
+	"AlectoWizardTower": "¡Kevin encontró una bolsa de basura y la compartió conmigo! ¡Es el mejor!$h",
+	//JulietJessie
+	"JulietGremlin": "¡Juliet tiene una nueva amiga!$h#$b#Intenté saludarla, pero huyó. ¿Quizás si le doy un pescado?$4",
+	//Juna
+	"JunaBeachBallet": "Juna es muy simpática. Me da todo tipo de cosas interesantes para jugar.",
+	"JunaJunimos": "¡Encontré un flamenco en el bosque!$h#$b#Jean dijo que no podíamos quedárnoslo, así que le maullé al mago hasta que lo teletransportó a objetos perdidos de Lewis. ¡Es tan servicial!",
+	"JunaGone": "Ya extraño a Juna.$s#$b#Pero a veces tienes que ir a otro sitio. Jean dijo que debe ser importante.",
+	//Lavril
+	"LavrilUnlocked": "Aww, ¡qué adorables son la niña y el conejito! ¡Ella dijo que quiere ser amigos! ¡Y le gusta que la acaricien!",
+	//Lucikiel
+	"LucikielArrives": "¿Crees que a ese hombre le da frio sin camiseta?$4",
+	"ReputationIncreased": "¡Me alegro de que Lucikiel esté haciendo amigos! A lo mejor le dan una camiseta.$h",
+	//RSV
+	"RSV_GH1": "¡Yaaay, Jean dijo que podemos ir a ver el nuevo invernadero en Ridgeside! ¡Voy a tumbarme bajo TODOS los rayos de sol!$h",
+	"keahi_prank": "¿Eh, @? Hueles a cloaca. Realmente a mierda.$s#$b#Mi cara está toda arrugada.$s",
+	"Lidens_Return": "¿Viste a la señora que se parece a Alissa? Huele a sal.",
+	"Naomi_Return": "¿Has visto lo feliz que estaba Yuuma de que su madre volviera? Sonrió muchísimo, ¡nunca hace eso!$h",
+	//Leilani
+	"LeilaniArrives": "¡Oye, Leilani volvió otra vez! ¡Espero que sus notas hayan sido buenas este año!",
+	//Prank the Jojamart
+	"PTJ03": "¡Cuántos cangrejos!  ¡Déjame ayudar, Morris, déjame ayudar!$h",
+	//Pumpkin Spice
+	"pumpkin_spice_madness": "¿Vas a tomar un café con especias de calabaza, @? ¿Puedo mojar mi patita en él? Juro que la lavé.",
+	//Toshinori
+	"TalkingAboutToshinori": "Toshinori siempre me da cosas ricas cuando visitamos el bar. ¡Es tan agradable!",
+	"ToshisSon": "¡Ese hombre de cabello verde me rescató del cubo de la basura! Dijo que rescataba muchos gatos, así que no le importó.",
+	//Jorts and Jean (lol)
+	"MeetTheCats": "Escuchas muy bien, @. Jean dice que es una habilidad muy importante.$h",
+	"ButteredJorts": "No estoy enfadado con Pam. Es bastante gracioso ahora que ha terminado.#$b#Y quizá esto la motive a dejar un poco las cervezas.$h",
+	"DumpsterFishing": "Linus me trajo algunos restos de pescado la otra noche que estaban SUPER sucios. ¡Supongo que encontró algo bueno!$h",
+	"RubberCatting": "Si te sientes triste, @, siempre puedes venir a acariciarme la panza.$h",
+	"JortsZoomies": "Fue muy divertido hacer zoomies por el Joja. ¡Es como un gran árbol de gatos!$h",
+	"OpenAllTheDoors": "Voy a echar de menos tener el Joja. ¡Supongo que tendremos que hacer un nuevo gremio para quien ocupe su lugar!$h",
+	//Other
+	"Shane_Starts_Selling": "Vi a Shane preparando una cesta en casa de Marnie.#$b#Se parece a la que había dentro de Joja.$4",
+	"platonic_LetterCS2CT": "¡Amo a los amigos! ¡Te amo a ti! ¡Y también amo a tu amigo!$h",
+	"JeanandJorts_funstring": "A Jean le encantó el tejido que hiciste, tanto que lo escondió en nuestro escondite. Ahora es nuestro tesoro.$h",
+	"RestauranteerMod-Loved-1": "¡Caramba! ¡Mi favorito!$h",
+	"RestauranteerMod-Loved-2": "Om ñom ñom ñom ñom!$h",
+	"RestauranteerMod-Loved-3": "%Jorts se está llenando la boca.",
+	"RestauranteerMod-Liked-1": "¡Gracias, @! Puedes hacer cualquier cosa, ¿cierto?$h",
+	"RestauranteerMod-Liked-2": "¡Gracias, @! Voy a darme una vuelta en él para poder llevarme alguno.$h",
+	"RestauranteerMod-Liked-3": "¡Vaya, qué olor! ¡De la buena!$h",
+    "EliIntro": "¡Eli es tan inteligente! Puede bajar de lugares altos por sí mismo.",
+	"EliSaloon": "¡Me gusta Eli! Me da muchas caricias cuando nos sentamos juntos los viernes.$h",
+	//SBV
+	"SterlingTrash": "Sterling hizo que el bote de basura quedara sucio de una manera mala.$s",
+	"SterlingTrain": "Jean y yo vimos a Sterling saltando alrededor de las vías del tren. ¿Es divertido?$4",
+	"SterlingDrugs": "Sterling huele mal. ¿Crees que le pasa algo?$s",
+	"SterlingRelapse": "Sterling no se encuentra bien, así que voy a tumbarme sobre su panza y a ronronearle mucho, eso le ayudará. No le tengo miedo a un perro.",
+	"SterlingApology": "¡Me alegro de que Sterling vuelva al pueblo! Su casa está muy lejos.",
+	"WrenFliesIn": "Me gusta esa plomera, ¡encuentra muchos olores!",
+	"OnTheSheShore": "He oído a Wren decir que empezó a usar los pronombres 'ella' y 'ellos'.  Realmente no lo entiendo, pero si los hace felices, puede hacerlo muy bien.$h",
+	"WatchingIsForTheBirds": "¡Yo también quiero ir a ver los pajaritos!",
+	//"ALongQueerRoad": "",
+	//"CertifiedPlumberAccountant": "",
+	//"NoticeAbbySenpai": "",
+	"ThyMet": "¡Thy tiene unas alas tan bonitas! Quiero que me lleve a volar alguna vez para conocer a sus amigos los pájaros.",
+	"ThyLampsOut": "Creo que no pasa nada si las lámparas están apagadas por la noche.  ¡Sólo me encontré con cosas dos o tres veces!",
+	"ThysaniaExposed": "Creo que Thy tiene miedo de ser diferente. Pero está bien, porque todos somos diferentes.",
+
+
+// GENERIC DIALOGUE
+    "Mon": "¡Hola @! ¡Hoy hueles mal! ¡Ese olor es tan grande que hace que mi nariz se arrugue!$h", 
+    "Tue": "¡Hola, @! ¿Ya has hecho amigos? Si no, ¡yo seré tu amigo!",
+    "Wed": "¡Hola, @! ¿Ya has echado un vistazo al pueblo? ¿Cuál es tu lugar favorito hasta ahora?",
+    "Thu": "@, no te pareces a un gato, pero no pasa nada, todos somos diferentes.",
+    "Fri": "¿Te está gustando estar aquí ahora, @? Espero que te guste oler todo.",
+    "Sat": "Yo tomo la iniciativa cuando Jean necesita algo de tranquilidad. Formamos un gran equipo.",
+    "Sun": "¿Has probado revolcarte en tus cultivos, @? Apuesto a que te gustará.",
+
+    "Mon2": "¡Vale! Hoy es un día para maullar a la gente muy alto y mirarlos fijamente. ¡Hora de empezar!", 
+    "Tue2": "¡Hola @! ¿Estás cultivando ñames? Me encantan los ñames.$h#$b#También me encanta el pescado, pero creo que no se puede cultivar.$4",
+    "Wed2": "Lo siento, no quería enseñarte el culo, ¡jaja, tengo que irme!",
+    "Thu2": "¿Ya tienes un gallinero, @? ¡Afuera hace frío, y no quieres que las aves pasen frío!",
+    "Fri2": "¿Vas al Salón los viernes, @? Es un buen lugar para escuchar a la gente.",
+    "Sat2": "Me gustan los niños. ¡Dan caricias muy potentes en la panza!",
+    "Sun2": "Estoy despierto, solo... mmf... reposo mis ojos....$7",
+
+    "Mon4": "Hoy estoy ayudando como inspector de cajas. Hasta ahora he saltado y dormido la siesta en todas ellas y todas parecen buenas.", 
+    "Tue4": "Estoy tratando de concentrarme en el trabajo, pero alguien hizo un sonido parecido al de una lata de comida abriéndose. Vamos, Jorts, concéntrate.",
+    "Wed4": "Intento no tener accidentes con los cubos de basura, ¡pero esos olores son tan agradables!",
+    "Thu4": "%Jorts está absolutamente paralizado por un bicho en la hierba.#$b#¡ZAS!$h",
+    "Fri4": "¿Alguna vez has sentido el deseo felino de derribar cosas?",
+    "Sat4": "Esta mañana corrí muy rápido y tiré todas las espadas de la pared.#$b#Gil pensó que fue divertidísimo. ¡Un gran trabajo haciéndolo feliz!$h",
+    "Sun4": "No hay nada como revolcarse y cubrirse de olor a matorral. No sé por qué los humanos no lo hacen.",
+
+    "Mon6": "Los humanos merecen un salario y un horario de trabajo justos.#$b#¡Y yo merezco pescado!",
+    "Tue6": "¿Qué tipo de sombrero crees que me haría parecer más elegante, @?#$b#Hoy quiero estar muy elegante para Jean.$h",
+    "Wed6": "Siempre estoy listo para salir, @, así que si necesitas echarte una siesta, yo te cuidaré.",
+    "Thu6": "No todos los ángeles me regalan lubinas, pero todos los que me regalan lubinas son ángeles. Son hechos.#$b#Sin faltar al respeto a todos los otros ángeles, sin embargo. ¡Si TODOS me dieran lubina podría explotar!",
+    "Fri6": "@, si alguna vez quieres mi ayuda en la granja, sólo pídela.#$b#Me sentaré a medio metro de ti y te miraré tan fijamente que sentirás físicamente mi apoyo firme e incondicional.",
+    "Sat6": "Jean me dijo que tenía una reunión 'urgente' con Marlon, pero ella se limitó a ir y a limpiarme la espalda.#$b#Sólo era baba, no veo cuál es el problema.",
+    "Sun6": "Jean es la mejor. Es tan lista y me limpia tan bien. ¡Mira mi cara bonita!",
+
+    "Mon8": "Marlon le ha comprado a Jean una cama nueva. Es casi tan bonita como la caja en la que duermo yo.#$b#Pero no sé por qué puso mi nombre en él.$4",
+    "Tue8": "Si alguna vez te encuentras en una situación incómoda, @, puedes darle la vuelta preguntando si alguien quiere ver la foto de un gato. Entonces enséñales mi foto.",
+    "Wed8": "Oye @, ¡no olvides que la gente te quiere!$h#$b#¡Y yo también soy gente!$h",
+    "Thu8": "No siempre entiendo las cosas, así que agradezco que la gente se tome su tiempo para enseñarme.#$b#Aunque todavía no lo entienda todo, me siento mucho más inteligente.",
+    "Fri8": "Jean le cantaba a su juguete para gatos el otro día. Sonaba tan bien, incluso mejor que esa estrella Alanna que sale en la radio.$h",
+    "Sat8": "Me gusta ver a la gente hacer cosas. Siempre es bueno, aunque ellos no lo crean.#$b#¿ Sabes por qué? Porque lo lograron y nadie más podría haberlo hecho.",
+    "Sun8": "Soñé que estaba en la playa.#$b#Era tan triste, todo olía a pescado, pero NO HABÍA pescado, sólo yo mojándome por todas partes.$s",
+
+    "Mon10": "¡Toma, @! ¡Te he traído un regalo! ¡Está muy sucio! [(O)168 (O)126 (O)115 (O)105 (O)172 (O)203 (O)430 (P)15]",
+    "Tue10": "A veces tenemos que cambiar el mundo y sólo conseguimos ese cambio rascando fuerte y maullando fuerte.#$b#A veces ese cambio consiste en que alguien tenga que abrir la puerta.",
+    "Wed10": "Una vez alguien me dijo que sólo estaba siendo amable y mintiendo para que se sintieran mejor, cuando decía cosas bonitas de ellos.#$b#Hirió un poco mis sentimientos. ¿De verdad creen que soy un mentiroso?$s",
+    "Thu10": "Si alguna vez cometes un error y quieres ser exigente contigo mismo, @, simplemente di '¡Clásicos Jorts!' en su lugar.#$b#No me despreciarías por equivocarme, ¿verdad?$h",
+    "Fri10": "Soy un gato así que no puedo arreglar cosas grandes, pero puedo hacer una forma como una cara sonriente sólo para ti, @.",
+    "Sat10": "Espero que hayas descansado bien. No tiene que ser una siesta, tal vez sólo un poco de tiempo pensando en algo lindo.#$b#Lo digo porque te quiero y no quiero que te canses.$h",
+    "Sun10": "Oye, @... No olvides decirte hoy a ti mismo '¡Te quiero!'#$b#Al fin y al cabo, es la persona de la que más quieres oírlo, ¿no?$h",   
+	
+	"rain":  "{{Random: ¡Hola, @! ¡Vaya, estás empapado! && Hola, @. Hoy nos quedamos dentro. Me pongo mal cuando me mojo. && ¡Hoy protejo a Jean! Los truenos aterradores no podrán conmigo.$h && Mucha gente se pone triste cuando llueve. Si tienes tiempo, ¿podrías visitar a algunas personas por nosotros?$h && Ahora está oscuro, pero seguro que saldrán muchos rayos de sol.$h |inputSeparator=&&}}",
+   
+
+	// SPECIFIC DAY DIALOGUE
+	"spring_1": "¡Me encanta la primavera! ¡Todo es verde y todo huele a fresco!$h",
+	"summer_1": "Me encanta el verano. ¡Es tan cálido y agradable tomar el sol!$h",
+	"fall_1": "¡Me encanta el otoño! ¡Mira qué colores tan bonitos!$h",
+	"winter_1": "¡Me encanta el invierno! Es tan divertido jugar con la nieve.$h",
+	"spring_12": "Oye, @, ¿quieres formar equipo para la Búsqueda de Huevos? ¡Yo puedo oler huevos y tú tienes pulgares! Haríamos un gran equipo.", // Day before the Egg Festival
+	"spring_23": "¿Sabes bailar, @? No sé bailar, pero sé perseguirme la cola, y eso es como bailar.", // Day before the Flower Dance
+	"summer_10": "¿Has elegido lo que vas a echarle a la sopa del Luau?#$b#Si no, seguro que un esturión de gran calidad sería estupendo. A todo el mundo le encantará.$h", // Day before the Luau
+	"summer_15": "Oye, @, ¿sabías que es mi cumpleaños? Lo elegí porque en algunos países es un día festivo para los trabajadores.$h",
+	"summer_27": "Mañana las medusas vienen de visita. ¡Me cuentan todo tipo de historias divertidas!$h#$b#Una vez me hablaron de una reina que fue 'cancelada'. Aunque realmente no lo entendí.$4", // Day before the Midnight Jellies
+	"fall_15": "Mañana es la Feria Stardew. ¿Cuántas cosas podré tumbar de las mesas?", // Day before the Stardew Fair
+	"fall_26": "Mañana estará muy oscuro en el festival. Me pregunto si a todo el mundo le gustará que suene algo espeluznante y que corra a toda velocidad.", // Day before Spirit's Eve
+	"winter_7": "No entiendo por qué sacan todos esos peces y luego no se los comen.$4", // Day before the Ice Festival
+	"winter_24": "¿Le compraste a tu amigo algo bonito para la Estrella de Invierno? Si soy yo, me gustaría un pescado al horno.$4", // Day before Winter Star
+			}
+        }
+    ]
+}

@@ -1,0 +1,111 @@
+{
+	"Changes": [
+{
+    			"LogName": "Paul's Schedule - Before Intro",
+      			"Action": "EditData",
+      			"Target": "Characters/Schedules/Paul",
+      "When": {
+        "HasSeenEvent |contains=50000": false
+      },
+      "Entries": {
+       				"spring": "610 Custom_ginnyclaire_PaulRoom 3 8 3/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+				"summer": "610 Custom_ginnyclaire_PaulRoom 3 8 3/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+				"fall": "610 Custom_ginnyclaire_PaulRoom 3 8 3/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+				"Winter": "610 Custom_ginnyclaire_PaulRoom 3 8 3/2300 Custom_ginnyclaire_PaulRoom 3 8 3"
+      }},
+{
+    			"LogName": "Paul's Schedule - Between Intro and Eight Heart Event",
+      			"Action": "EditData",
+      			"Target": "Characters/Schedules/Paul",
+      "When": {
+        "HasSeenEvent |contains=50000": true,
+	"HasSeenEvent |contains=500081": false
+      },
+      "Entries": {
+       				"spring_Mon": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 ScienceHouse 22 18 1 paul_write/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"spring_Tue": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 SeedShop 2 19 3/1230 Hospital 21 12 3 paul_write/1500 ScienceHouse 17 22 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"spring_Wed": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 ScienceHouse 22 18 1 paul_write/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"spring_Thu": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 SeedShop 2 19 3/1230 Hospital 21 12 3 paul_write/1500 ScienceHouse 17 22 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"spring_Fri": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 Saloon 17 20 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"spring_Sat": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Beach 12 39 2 paul_fish_forward/1230 ArchaeologyHouse 22 4 2 paul_read/1750 Town 95 102 3 paul_garden/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"spring_Sun": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Beach 38 31 2 paul_read/1230 ArchaeologyHouse 22 4 2 paul_read/1750 Town 95 102 3 paul_garden/2300 Custom_ginnyclaire_PaulRoom 3 8 3",       				
+
+				"summer_Mon": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 ScienceHouse 22 18 1 paul_write/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"summer_Tue": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 SeedShop 2 19 3/1230 Hospital 21 12 3 paul_write/1500 ScienceHouse 17 22 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"summer_Wed": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 ScienceHouse 22 18 1 paul_write/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"summer_Thu": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 SeedShop 2 19 3/1230 Hospital 21 12 3 paul_write/1500 ScienceHouse 17 22 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"summer_Fri": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 Saloon 17 20 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"summer_Sat": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Beach 12 39 2 paul_fish_forward/1230 Beach 38 31 2 paul_read/1750 Town 95 102 3 paul_garden/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"summer_Sun": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Beach 38 31 2 paul_read/1230 Beach 12 39 2 paul_read/1750 Town 95 102 3 paul_garden/2300 Custom_ginnyclaire_PaulRoom 3 8 3",      				
+		
+				"fall_Mon": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 ScienceHouse 22 18 1 paul_write/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"fall_Tue": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 SeedShop 2 19 3/1230 Hospital 21 12 3 paul_write/1500 ScienceHouse 17 22 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"fall_Wed": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 ScienceHouse 22 18 1 paul_write/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"fall_Thu": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 SeedShop 2 19 3/1230 Hospital 21 12 3 paul_write/1500 ScienceHouse 17 22 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"fall_Fri": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 Saloon 17 20 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"fall_Sat": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Forest 34 25 2 paul_fish_forward/1230 ArchaeologyHouse 22 4 2 paul_read/1750 Town 95 102 3 paul_garden/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"fall_Sun": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Forest 34 25 2 paul_fish_forward/1230 ArchaeologyHouse 22 4 2 paul_read/1750 Town 95 102 3 paul_garden/2300 Custom_ginnyclaire_PaulRoom 3 8 3",       				
+				
+				"winter_Mon": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 ScienceHouse 22 18 1 paul_write/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"winter_Tue": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 SeedShop 2 19 3/1230 Hospital 21 12 3 paul_write/1500 ScienceHouse 17 22 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"winter_Wed": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 ScienceHouse 22 18 1 paul_write/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"winter_Thu": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 SeedShop 2 19 3/1230 Hospital 21 12 3 paul_write/1500 ScienceHouse 17 22 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"winter_Fri": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 Saloon 17 20 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"winter_Sat": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 FishShop 8 6 3 paul_garden/1230 ArchaeologyHouse 22 4 2 paul_read/1750 Saloon 17 20 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"winter_Sun": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 FishShop 8 6 3 paul_garden/1230 ArchaeologyHouse 22 4 2 paul_read/1750 Saloon 17 20 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+
+				"rain": "610 Custom_ginnyclaire_PaulRoom 3 8 3 paul_garden/830 ArchaeologyHouse 22 4 2 paul_read/1100 ArchaeologyHouse 11 9 0/1230 ArchaeologyHouse 22 4 2 paul_read/1750 Saloon 17 20 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3"
+      }},
+{
+    			"LogName": "Paul's Schedule - After Eight Heart Event Part 2",
+      			"Action": "EditData",
+      			"Target": "Characters/Schedules/Paul",
+      "When": {
+        "HasSeenEvent |contains=500082": true
+      },
+      "Entries": {
+       				"spring_Mon": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 Town 95 102 3 paul_garden/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"spring_Tue": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 SeedShop 2 19 3/1230 Hospital 21 12 3 paul_write/1500 Town 95 102 3 paul_garden/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"spring_Wed": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 Saloon 17 20 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"spring_Thu": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 SeedShop 2 19 3/1230 Hospital 21 12 3 paul_write/1500 Town 95 102 3 paul_garden/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"spring_Fri": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 Saloon 17 20 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"spring_Sat": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Beach 12 39 2 paul_fish_forward/1230 ArchaeologyHouse 22 4 2 paul_read/1750 Town 95 102 3 paul_garden/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"spring_Sun": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Beach 38 31 2 paul_read/1230 ArchaeologyHouse 22 4 2 paul_read/1750 Town 95 102 3 paul_garden/2300 Custom_ginnyclaire_PaulRoom 3 8 3",       				
+
+				"summer_Mon": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 Beach 12 39 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"summer_Tue": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 SeedShop 2 19 3/1230 Hospital 21 12 3 paul_write/1500 Beach 38 31 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"summer_Wed": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 Saloon 17 20 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"summer_Thu": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 SeedShop 2 19 3/1230 Hospital 21 12 3 paul_write/1500 Beach 38 31 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"summer_Fri": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 Saloon 17 20 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"summer_Sat": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Beach 12 39 2 paul_fish_forward/1230 Beach 38 31 2 paul_read/1750 Town 95 102 3 paul_garden/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"summer_Sun": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Beach 38 31 2 paul_read/1230 Beach 12 39 2 paul_read/1750 Town 95 102 3 paul_garden/2300 Custom_ginnyclaire_PaulRoom 3 8 3",      				
+		
+				"fall_Mon": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 Forest 34 25 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"fall_Tue": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 SeedShop 2 19 3/1230 Hospital 21 12 3 paul_write/1500 Forest 34 25 2 paul_fish_forward/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"fall_Wed": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 Saloon 17 20 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"fall_Thu": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 SeedShop 2 19 3/1230 Hospital 21 12 3 paul_write/1500 Forest 34 25 2 paul_fish_forward/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"fall_Fri": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 Saloon 17 20 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"fall_Sat": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Forest 34 25 2 paul_fish_forward/1230 ArchaeologyHouse 22 4 2 paul_read/1750 Town 95 102 3 paul_garden/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"fall_Sun": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Forest 34 25 2 paul_fish_forward/1230 ArchaeologyHouse 22 4 2 paul_read/1750 Town 95 102 3 paul_garden/2300 Custom_ginnyclaire_PaulRoom 3 8 3",       				
+				
+				"winter_Mon": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 FishShop 8 6 3 paul_garden/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"winter_Tue": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 SeedShop 2 19 3/1230 Hospital 21 12 3 paul_write/1500 Forest 34 25 2 paul_fish_forward/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"winter_Wed": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 Saloon 17 20 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"winter_Thu": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 SeedShop 2 19 3/1230 Hospital 21 12 3 paul_write/1500 FishShop 8 6 3 paul_garden/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"winter_Fri": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 Saloon 17 20 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"winter_Sat": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 FishShop 8 6 3 paul_garden/1230 ArchaeologyHouse 22 4 2 paul_read/1750 Saloon 17 20 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+       				"winter_Sun": "610 Custom_ginnyclaire_PaulRoom 3 8 3/630 Town 63 16 2 paul_read/830 FishShop 8 6 3 paul_garden/1230 ArchaeologyHouse 22 4 2 paul_read/1750 Saloon 17 20 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+
+				"rain": "610 Custom_ginnyclaire_PaulRoom 3 8 3 paul_garden/830 ArchaeologyHouse 22 4 2 paul_read/1100 ArchaeologyHouse 11 9 0/1230 ArchaeologyHouse 17 14 2 paul_read/1750 Saloon 17 20 2 paul_read/2300 Custom_ginnyclaire_PaulRoom 3 8 3",
+
+				"marriage_Mon": "830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 BusStop -1 23 3",
+				"marriage_Tue": "830 Hospital 4 15 2/1100 SeedShop 2 19 3/1230 Hospital 21 12 3 paul_write/1500 BusStop -1 23 3",
+				"marriage_Wed": "830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 BusStop -1 23 3",
+				"marriage_Thu": "830 Hospital 4 15 2/1100 SeedShop 2 19 3/1230 Hospital 21 12 3 paul_write/1500 BusStop -1 23 3",
+				"marriage_Fri": "830 Hospital 4 15 2/1100 Town 33 57 2 paul_read/1230 Hospital 21 12 3 paul_write/1500 Saloon 17 20 2 paul_read/2200 BusStop -1 23 3",
+				"marriage_Sat": "830 Beach 12 39 2 paul_fish_forward/1230 FishShop 8 6 3 paul_garden/1300 ArchaeologyHouse 22 4 2 paul_read/1750 BusStop -1 23 3",
+				"marriage_Sun": "830 ArchaeologyHouse 22 4 2 paul_read/1700 BusStop -1 23 3"
+      }
+    }]
+		}
+	

@@ -1,0 +1,514 @@
+{
+  "Name": "Racoon tail",
+   "FrontAccessory": {
+   "DisableGrayscale": true,
+   "DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Player"
+   },
+   "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 4,
+      "Y": 3
+    },
+    "AccessorySize": {
+      "Width": 24,
+      "Length": 32
+    },
+   "IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 100
+     }
+],
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+       "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+       "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+     {
+        "Frame": 0,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+       "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+       }
+    ]
+  },
+  "BackAccessory": {
+  "DisableGrayscale": true,
+     "DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Hat"
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": 4,
+      "Y": 2
+    },
+    "AccessorySize": {
+      "Width": 24,
+      "Length": 32
+    },
+   "IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 100
+     }
+],
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+      "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+             "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+              "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+             "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+              "Duration": 100,
+        "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+              "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+     {
+        "Frame": 0,
+      "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+       "Duration": 100,
+        "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+       }
+    ]
+  },
+  "RightAccessory": {
+  "DisableGrayscale": true,
+     "DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Player"
+   },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 64
+    },
+    "HeadPosition": {
+      "X": 16,
+      "Y": 1
+    },
+    "AccessorySize": {
+      "Width": 32,
+      "Length": 32
+    },
+    "IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 100
+     }
+],
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 150,
+       "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "Duration": 100,
+        "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+     {
+        "Frame": 0,
+       "Duration": 150,
+       "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "Duration": 100,
+        "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      }
+        
+   ]
+},
+  "LeftAccessory": {
+    "DisableGrayscale": true,
+    "DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Player"
+    },
+    "Flipped": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 64
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 1
+    },
+    "AccessorySize": {
+      "Width": 32,
+      "Length": 32
+    },
+    "IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 100
+      }
+    ],
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 150,
+       "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "Duration": 100,
+        "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsWalking",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "Duration": 100,
+        "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "Duration": 150,
+        "Conditions": [
+          {
+            "Name": "IsRunning",
+            "Value": true
+          }
+        ]
+      }
+    ]
+  }
+    
+}

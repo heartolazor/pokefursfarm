@@ -1,0 +1,62 @@
+{
+    "Format": "2.1.0",
+    "ConfigSchema": {
+    "Constance":{
+            "AllowValues": "Normal, YoungerWillyCompatibility",
+            "Default": "Normal"
+        },
+    },
+
+    "Changes": [
+{
+    // Constance Normal Portrait 1
+        "Action": "EditImage",
+        "Target": "Portraits/TheFishmonger",
+		"When": { "Constance": "normal" },
+        "FromFile": "assets/Fishmonger_portrait.png",
+},
+
+{
+    // Constance Normal Portrait 2 (Festival)
+        "Action": "EditImage",
+        "Target": "Portraits/TheFishmonger2",
+		"When": { "Constance": "normal"},
+        "FromFile": "assets/Fishmonger_portrait2.png",
+},
+
+
+{
+   // Constance Normal Shop Image 
+	"Action": "EditImage",
+	"Target": "Portraits/TheFishmonger",
+		"When": { "Constance": "normal" },
+	"FromFile": "assets/TheFishmonger.png",
+},
+
+{
+    // Constance Young Willy Compat Portrait 1
+        "Action": "EditImage",
+        "Target": "Portraits/TheFishmonger",
+		"When": { "Constance": "YoungerWillyCompatibility" },
+        "FromFile": "assets/Fishmonger_portrait_YWC.png",
+},
+
+{
+    // Constance Young Willy Compat Portrait 2 (Festival)
+        "Action": "EditImage",
+        "Target": "Portraits/TheFishmonger2",
+		"When": { "Constance": "YoungerWillyCompatibility" },
+        "FromFile": "assets/Fishmonger_portrait2_YWC.png",
+},
+
+{
+   // Constance Young Willy Compat Shop Image
+	"Action": "EditImage",
+	"Target": "Portraits/TheFishmonger",
+		"When": { "Constance": "YoungerWillyCompatibility" },
+	"FromFile": "assets/TheFishmonger_YWC.png",
+},
+
+    ]
+}
+

@@ -1,0 +1,123 @@
+{
+    "Changes": [
+         //Animals
+		{ 
+            "LogName": "Load data for Delibird",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Delibird": {
+                    "DisplayName": "{{i18n:Delibird}}",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 4500,
+					"SellPrice": 9000,
+                    "ShopTexture": "Animals/{{ModId}}_shop_Delibird_icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "ShopDisplayName": "{{i18n:Delibird}}",
+                    "ShopDescription": "{{i18n:DelibirdDescription}}",
+                    "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5936]",
+                    "RequiredBuilding": "Big Barn",
+
+                   "DaysToMature": "4",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": "ANY \"!SEASON Winter, !DAY_OF_MONTH 25\" \"SEASON Winter, !DAY_OF_MONTH 25\" \"!SEASON Winter, DAY_OF_MONTH 25\"",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}_Present"
+                        },
+						{
+                            "Id": "Default",
+                            "Condition": "ANY \"!SEASON Winter, !DAY_OF_MONTH 25\" \"SEASON Winter, !DAY_OF_MONTH 25\" \"!SEASON Winter, DAY_OF_MONTH 25\"",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}_PresentBomb"
+                        },
+						{
+                            "Id": "Default",
+                            "Condition": "ANY \"SEASON Winter, DAY_OF_MONTH 25\"",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}_WinterStarGift"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": "ANY \"!SEASON Winter, !DAY_OF_MONTH 25\" \"SEASON Winter, !DAY_OF_MONTH 25\" \"!SEASON Winter, DAY_OF_MONTH 25\"",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}_Present"
+                        },
+						{
+                            "Id": "Default",
+                            "Condition": "ANY \"!SEASON Winter, !DAY_OF_MONTH 25\" \"SEASON Winter, !DAY_OF_MONTH 25\" \"!SEASON Winter, DAY_OF_MONTH 25\"",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}_PresentBomb"
+                        },
+						{
+                            "Id": "Default",
+                            "Condition": "ANY \"!SEASON Winter, !DAY_OF_MONTH 25\" \"SEASON Winter, !DAY_OF_MONTH 25\" \"!SEASON Winter, DAY_OF_MONTH 25\"",                      
+							"MinimumFriendship": 200,
+                            "ItemId": "{{ModId}}_GiftGo"
+							
+                        },
+						{
+                            "Id": "Default",
+                            "Condition": "ANY \"!SEASON Winter, !DAY_OF_MONTH 25\" \"SEASON Winter, !DAY_OF_MONTH 25\" \"!SEASON Winter, DAY_OF_MONTH 25\"",                       
+							"MinimumFriendship": 500,
+                            "ItemId": "{{ModId}}_MysteryGift"
+							
+                        },
+						{
+                            "Id": "Default",
+                            "Condition": "ANY \"SEASON Winter, DAY_OF_MONTH 25\"",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}_WinterStarGift"
+                        }
+                    ],
+                    "DaysToProduce": "1",
+                    "ProduceOnMature": true,
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": "null",
+                    "Sound": "{{ModId}}_DelibirdCry",
+                    "Texture": "Animals/{{ModId}}_Delibird",
+                    "UseFlippedRightForLeft": false,
+                    "CanSwim": false,
+                    "SpriteWidth": "28",
+                    "SpriteHeight": "28",
+					"Skins": [
+						{
+							"id": "DelibirdShiny",
+							"Texture": "Animals/{{ModId}}_Delibird_shiny",
+							"Weight": 0.1
+							}
+					],
+					"ShadowWhenAdult": {
+                        "Visible": false
+                      },
+					"ShadowWhenBaby": {
+						"Visible": false
+					  },
+                    "ShowInSummitCredits": true
+                }
+            }
+        },
+                //Sounds
+		{
+			"Action": "EditData",
+			"Target": "Data/AudioChanges",
+			"Entries": {
+				"{{ModId}}_DelibirdCry": {
+					"ID": "{{ModId}}_DelibirdCry",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/DelibirdSound.wav}}" ],
+					"StreamedVorbis": false
+				}
+			}
+		}
+    ]
+}

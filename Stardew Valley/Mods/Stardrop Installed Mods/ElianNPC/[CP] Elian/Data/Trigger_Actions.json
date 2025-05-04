@@ -1,0 +1,46 @@
+{
+    "Changes": [
+        {
+            "LogName": "Growing Poppy Hidden Events",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_Poppy.2": {
+                    "Id": "{{ModId}}_Poppy_Stage.2",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 1711937042, !PLAYER_HAS_CONVERSATION_TOPIC Current Poppy1",
+                    "Actions": [
+                        "AddConversationTopic Poppy2 1",
+                        "MarkEventSeen Current 171191602 true"
+                    ]
+                },
+                "{{ModId}}_Poppy.3": {
+                    "Id": "{{ModId}}_Poppy_Stage.3",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 171191602, !PLAYER_HAS_CONVERSATION_TOPIC Current Poppy2",
+                    "Actions": [
+                        "AddConversationTopic Poppy3 1",
+                        "MarkEventSeen Current 171191603 true"
+                    ]
+                },
+                "{{ModId}}_Poppy.4": {
+                    "Id": "{{ModId}}_Poppy_Stage.4",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 171191603, !PLAYER_HAS_CONVERSATION_TOPIC Current Poppy3",
+                    "Actions": [
+                        "AddConversationTopic Poppy4 1",
+                        "MarkEventSeen Current 171191604 true"
+                    ]
+                },
+                "{{ModId}}_Poppy.5": {
+                    "Id": "{{ModId}}_Poppy_Stage.Grown",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 171191604, !PLAYER_HAS_CONVERSATION_TOPIC Current Poppy4",
+                    "Actions": [
+                        "MarkEventSeen Current 171191605 true"
+                    ]
+                }
+            }
+        }
+    ]
+}

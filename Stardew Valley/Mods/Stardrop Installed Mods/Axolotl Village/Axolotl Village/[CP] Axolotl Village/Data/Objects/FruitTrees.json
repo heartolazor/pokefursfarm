@@ -1,0 +1,80 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load Fruit Trees Tilesheet",
+            "Action": "Load",
+            "Target": "Mods/otohime.AV/Objects/FruitTrees",
+            "FromFile": "Assets/Objects/Trees.png"
+        },
+        {
+            "LogName": "Load Fruit Trees Saplings Tilesheet",
+            "Action": "Load",
+            "Target": "Mods/otohime.AV/Objects/FruitTreeSaplings",
+            "FromFile": "Assets/Objects/TreeSaplings.png"
+        },
+        {
+            "LogName": "Load Fruit Trees Saplings Data",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "otohime.AV_Tea_Crabapple_Sapling": {
+                    "Name": "Tea Crabapple Sapling",
+                    "DisplayName": "Tea Crabapple",
+                    "Description": "Takes 28 days to produce a mature Tea Crabapple tree. Bears fruit in the spring, summer and fall. Only grows if the 8 surrounding tiles are empty.",
+                    "Type": "Basic",
+                    "Category": -74,
+                    "Price": 1400,
+                    "Texture": "Mods\\otohime.AV\\Objects\\FruitTreeSaplings",
+                    "SpriteIndex": 0
+                },
+                "otohime.AV_Cannonball_Sapling": {
+                    "Name": "Cannonball Sapling",
+                    "DisplayName": "Cannonball Sapling",
+                    "Description": "Takes 28 days to produce a mature Cannonball tree. Bears fruit in the summer. Only grows if the 8 surrounding tiles are empty.",
+                    "Type": "Basic",
+                    "Category": -74,
+                    "Price": 1000,
+                    "Texture": "Mods\\otohime.AV\\Objects\\FruitTreeSaplings",
+                    "SpriteIndex": 1
+                },
+            }
+        },
+        {
+            "LogName": "FruitTrees Data",
+            "Action": "EditData",
+            "Target": "Data/FruitTrees",
+            "Entries": {
+                "otohime.AV_Tea_Crabapple_Sapling": {
+                    "DisplayName": "Tea Crabapple Tree",
+                    "Seasons": [
+                        "Spring",
+                        "Summer",
+                        "Fall"
+                    ],
+                    "Fruit": [
+                        {
+                            "Id": "Default",
+                            "ItemId": "(O)otohime.AV_Crabapple"
+                        }
+                    ],
+                    "Texture": "Mods\\otohime.AV\\Objects\\FruitTrees",
+                    "TextureSpriteRow": 0
+                },
+                "otohime.AV_Cannonball_Sapling": {
+                    "DisplayName": "Cannonball Tree",
+                    "Seasons": [
+                        "Summer"
+                    ],
+                    "Fruit": [
+                        {
+                            "Id": "Default",
+                            "ItemId": "(O)otohime.AV_Cannonball_Fruit"
+                        }
+                    ],
+                    "Texture": "Mods\\otohime.AV\\Objects\\FruitTrees",
+                    "TextureSpriteRow": 1
+                }
+            }
+        }
+    ]
+}

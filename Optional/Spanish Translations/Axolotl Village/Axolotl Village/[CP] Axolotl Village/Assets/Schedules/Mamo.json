@@ -1,0 +1,29 @@
+{
+"Changes": [
+
+	{
+		"LogName": "Mamo Schedule",
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Mamo",
+		"Entries": {
+
+			//Regular Schedule
+			"spring": "610 {{ModId}}_AxolotlTown 70 91 2/1000 {{ModId}}_AxolotlCommunityCenter 22 18 1/1400 {{ModId}}_AxolotlTown 17 74 0/2000 {{ModId}}_YellowHouse 8 8 2 mamo_sleep",
+			"summer": "610 {{ModId}}_AxolotlTown 70 91 2/1000 {{ModId}}_AxolotlCommunityCenter 22 18 1/1400 {{ModId}}_AxolotlTown 78 58 2/2000 {{ModId}}_YellowHouse 8 8 2 mamo_sleep",
+			"fall": "610 {{ModId}}_AxolotlTown 70 91 2/1000 {{ModId}}_AxolotlCommunityCenter 22 18 1/1400 {{ModId}}_AxolotlTown 17 74 0/2000 {{ModId}}_YellowHouse 8 8 2 mamo_sleep",
+			"winter": "610 {{ModId}}_AxolotlTown 70 91 2/1000 {{ModId}}_AxolotlCommunityCenter 22 18 1/1400 {{ModId}}_AxolotlTown 78 58 2/2000 {{ModId}}_YellowHouse 8 8 2 mamo_sleep",
+			"rain": "610 {{ModId}}_YellowHouse 2 9 3/1000 {{ModId}}_YellowHouse 2 9 3/2000 {{ModId}}_YellowHouse 8 8 2 mamo_sleep"
+			}
+	},
+{
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Mamo",
+		"Entries": {
+			"Sun": "610 {{ModId}}_AxolotlTown 70 91 2/900 {{ModId}}_AxolotlTownSouth 99 34 0 \"Strings\\schedules\\Mamo:Sun\"/2000 {{ModId}}_YellowHouse 8 8 2 mamo_sleep",
+			},
+		"When": {
+			"HasSeenEvent: hostPlayer |contains=98890063": true
+                        },
+	},
+]
+}

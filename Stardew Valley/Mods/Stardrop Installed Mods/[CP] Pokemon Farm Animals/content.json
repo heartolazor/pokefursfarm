@@ -1,0 +1,4135 @@
+﻿{
+    "Format": "2.0",
+    "Changes": [
+        {
+            "LogName": "Load data for Pokemons (Bulbasaur)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Bulbasaur": {
+                    "DisplayName": "Bulbasaur",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 500,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Bulbasaur Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": "Barn",
+                    "ShopDisplayName": "Bulbasaur",
+                    "ShopDescription": "While Bulbasaur,Ivysaur, and Venosaur bask in the sun, they can convert the light into energy. As a result, they are more powerful in the summertime.",	
+		
+		"AlternatePurchaseTypes": [
+      {
+        "Condition": null,
+        "AnimalIds": [
+          "Bulbasaur",
+		  "Ivysaur",
+		  "Venosaur",
+        ]
+      }
+    ],
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_GrassEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Bulbasaur",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Bulbasaur",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Bulbasaur",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Ivysaur)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Ivysaur": {
+                    "DisplayName": "Ivysaur",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Bulbasaur Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_GrassEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Ivysaur",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Ivysaur",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Ivysaur",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Venosaur)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Venosaur": {
+                    "DisplayName": "Venosaur",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Bulbasaur Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_GrassEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Venosaur",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Venosaur",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Venosaur",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Turtwig)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Turtwig": {
+                    "DisplayName": "Turtwig",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 500,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Turtwig Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": "Barn",
+                    "ShopDisplayName": "Grass Starters",
+                    "ShopDescription": "These pokemon undertake photosynthesis with their bodies, making oxygen. The leaf on their head wilts if they are thirsty.",	
+		
+		"AlternatePurchaseTypes": [
+      {
+        "Condition": null,
+        "AnimalIds": [
+          "Turtwig",
+		  "Torterra",
+		  "Chikorita",
+		  "Meganium",
+        ]
+      }
+    ],
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_GrassEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Turtwig",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Turtwig",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Turtwig",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Torterra)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Torterra": {
+                    "DisplayName": "Torterra",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Turtwig Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_GrassEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Torterra",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Torterra",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Torterra",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Chikorita)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Chikorita": {
+                    "DisplayName": "Chikorita",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Turtwig Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_GrassEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Chikorita",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Chikorita",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Chikorita",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Meganium)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Meganium": {
+                    "DisplayName": "Meganium",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Turtwig Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_GrassEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Meganium",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Meganium",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Meganium",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		
+		{
+            "LogName": "Load data for Pokemons (Charmander)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Charmander": {
+                    "DisplayName": "Charmander",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 500,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Charmander Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": "Barn",
+                    "ShopDisplayName": "Charmander",
+                    "ShopDescription": "When Charmander, Charmeleon, or Charizard becomes truly angered, the flame at the tip of their tails burns in a light blue shade.",	
+		
+		"AlternatePurchaseTypes": [
+      {
+        "Condition": null,
+        "AnimalIds": [
+          "Charmander",
+		  "Charmeleon",
+		  "Charizard",
+        ]
+      }
+    ],
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_FireEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Charmander",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Charmander",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Charmander",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Charmeleon)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Charmeleon": {
+                    "DisplayName": "Charmeleon",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Charmander Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_FireEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Charmeleon",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Charmeleon",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Charmeleon",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Charizard)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Charizard": {
+                    "DisplayName": "Charizard",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Charmander Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_FireEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Charizard",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Charizard",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Charizard",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Cyndaquil)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Cyndaquil": {
+                    "DisplayName": "Cyndaquil",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 500,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Cyndaquil Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": "Barn",
+                    "ShopDisplayName": "Fire Starters",
+                    "ShopDescription": "When these pokemon release heat from their bodies, it causes the air around them to shimmer, this is a sign that they are ready for battle.",	
+		
+		"AlternatePurchaseTypes": [
+      {
+        "Condition": null,
+        "AnimalIds": [
+          "Cyndaquil",
+		  "Typhlosion",
+        ]
+      }
+    ],
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_FireEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Cyndaquil",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Cyndaquil",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Cyndaquil",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Typhlosion)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Typhlosion": {
+                    "DisplayName": "Typhlosion",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Cyndaquil Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_FireEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Typhlosion",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Typhlosion",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Typhlosion",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		
+		
+		{
+            "LogName": "Load data for Pokemons (Squirtle)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Squirtle": {
+                    "DisplayName": "Squirtle",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 500,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Squirtle Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": "Barn",
+                    "ShopDisplayName": "Squirtle",
+                    "ShopDescription": "Squirtle, Wartortle, and Blastoise deliberately increases its body weight so they can withstand the recoil of the water jets they fire.",	
+		
+		"AlternatePurchaseTypes": [
+      {
+        "Condition": null,
+        "AnimalIds": [
+          "Squirtle",
+		  "Wartortle",
+		  "Blastoise",
+        ]
+      }
+    ],
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_WaterEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Squirtle",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Squirtle",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Squirtle",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Wartortle)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Wartortle": {
+                    "DisplayName": "Wartortle",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Squirtle Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_WaterEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Wartortle",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Wartortle",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Wartortle",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Blastoise)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Blastoise": {
+                    "DisplayName": "Blastoise",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Squirtle Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_WaterEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Blastoise",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Blastoise",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Blastoise",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Totodile)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Totodile": {
+                    "DisplayName": "Totodile",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 500,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Totodile Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": "Barn",
+                    "ShopDisplayName": "Water Starters",
+                    "ShopDescription": "These pokemon can swim as fast as a jet boat. The edges of their claws are sharp and can slice apart drifting ice.",	
+		
+		"AlternatePurchaseTypes": [
+      {
+        "Condition": null,
+        "AnimalIds": [
+          "Totodile",
+		  "Feraligatr",
+		  "Piplup",
+		  "Empoleon",
+        ]
+      }
+    ],
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_WaterEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Totodile",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Totodile",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Totodile",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Feraligatr)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Feraligatr": {
+                    "DisplayName": "Feraligatr",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Totodile Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_WaterEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Feraligatr",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Feraligatr",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Feraligatr",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Piplup)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Piplup": {
+                    "DisplayName": "Piplup",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Totodile Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_WaterEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "cluck",
+                    "BabySound": "cluck",
+                    "Texture": "Animals/stormdrakon.Pokemons-Piplup",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Piplup",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Piplup",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Empoleon)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Empoleon": {
+                    "DisplayName": "Empoleon",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Totodile Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_WaterEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "cluck",
+                    "BabySound": "cluck",
+                    "Texture": "Animals/stormdrakon.Pokemons-Empoleon",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Empoleon",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Empoleon",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		
+		{
+            "LogName": "Load data for Pokemons (Dratini)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Dratini": {
+                    "DisplayName": "Dratini",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 700,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Dratini Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": "Barn",
+                    "ShopDisplayName": "Dratini",
+                    "ShopDescription": "It is said that Dratini, Dragonair, and Dragonite constantly patrol over the immense seas to rescue drowning people.",	
+		
+		"AlternatePurchaseTypes": [
+      {
+        "Condition": null,
+        "AnimalIds": [
+          "Dratini",
+		  "Dragonair",
+		  "Dragonite",
+		  "Salamence",
+        ]
+      }
+    ],
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_AirEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Dratini",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Dratini",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Dratini",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Dragonair)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Dragonair": {
+                    "DisplayName": "Dragonair",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Dratini Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_AirEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Dragonair",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Dragonair",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Dragonair",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Dragonite)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Dragonite": {
+                    "DisplayName": "Dragonite",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Dratini Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_AirEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Dragonite",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Dragonite",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Dragonite",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Salamence)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Salamence": {
+                    "DisplayName": "Salamence",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Dratini Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_AirEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Salamence",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Salamence",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Salamence",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Gible)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Gible": {
+                    "DisplayName": "Gible",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 800,
+                              "SellPrice": 400,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Gible Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": "Barn",
+                    "ShopDisplayName": "Gible",
+                    "ShopDescription": "Gible, Gabite, and Garchomp are covered in fine scales that reduce drag, enabling it to fly and swim at high speeds.",	
+		
+		"AlternatePurchaseTypes": [
+      {
+        "Condition": null,
+        "AnimalIds": [
+          "Gible",
+		  "Gabite",
+		  "Garchomp",
+        ]
+      }
+    ],
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_EarthEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Gible",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Gible",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Gible",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Gabite)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Gabite": {
+                    "DisplayName": "Gabite",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Gible Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_EarthEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Gabite",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Gabite",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Gabite",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Garchomp)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Garchomp": {
+                    "DisplayName": "Garchomp",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Gible Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_EarthEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "croak",
+                    "BabySound": "croak",
+                    "Texture": "Animals/stormdrakon.Pokemons-Garchomp",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Garchomp",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Garchomp",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Trapnich)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Trapnich": {
+                    "DisplayName": "Trapnich",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 800,
+                              "SellPrice": 400,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Trapnich Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": "Barn",
+                    "ShopDisplayName": "Trapnich",
+                    "ShopDescription": "The flapping of Trapnich, Vibrava, an Flygons wings sound like singing. To prevent detection by enemies, it hides itself by flapping up a cloud of desert sand.",	
+		
+		"AlternatePurchaseTypes": [
+      {
+        "Condition": null,
+        "AnimalIds": [
+          "Trapnich",
+		  "Vibrava",
+		  "Flygon",
+        ]
+      }
+    ],
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_EarthEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "dustMeep",
+                    "BabySound": "dustMeep",
+                    "Texture": "Animals/stormdrakon.Pokemons-Trapnich",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Trapnich",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Trapnich",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Vibrava)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Vibrava": {
+                    "DisplayName": "Vibrava",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Trapnich Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_EarthEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "dustMeep",
+                    "BabySound": "dustMeep",
+                    "Texture": "Animals/stormdrakon.Pokemons-Vibrava",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Vibrava",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Vibrava",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Flygon)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Flygon": {
+                    "DisplayName": "Flygon",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Trapnich Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_EarthEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "dustMeep",
+                    "BabySound": "dustMeep",
+                    "Texture": "Animals/stormdrakon.Pokemons-Flygon",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Flygon",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Flygon",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Growlithe)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Growlithe": {
+                    "DisplayName": "Growlithe",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 500,
+                              "SellPrice": 400,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Growlithe Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": "Barn",
+                    "ShopDisplayName": "Growlithe",
+                    "ShopDescription": "Growlithe and Arcanine are known for their high speed. It is said to be capable of running over 6200 miles in a single day and night. The fire that blazes wildly within their body is the source of power.",	
+		
+		"AlternatePurchaseTypes": [
+      {
+        "Condition": null,
+        "AnimalIds": [
+          "Growlithe",
+		  "Arcanine",
+        ]
+      }
+    ],
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_FireEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "dog_bark",
+                    "BabySound": "dog_bark",
+                    "Texture": "Animals/stormdrakon.Pokemons-Growlithe",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Growlithe",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Growlithe",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Arcanine)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Arcanine": {
+                    "DisplayName": "Arcanine",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Growlithe Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_FireEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "dog_bark",
+                    "BabySound": "dog_bark",
+                    "Texture": "Animals/stormdrakon.Pokemons-Arcanine",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Arcanine",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Arcanine",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Vulpix)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Vulpix": {
+                    "DisplayName": "Vulpix",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 500,
+                              "SellPrice": 400,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Vulpix Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": "Barn",
+                    "ShopDisplayName": "Vulpix",
+                    "ShopDescription": "Some legends claim that each of Ninetails and Vulpixs nine tails has its own unique type of special mystical power.",	
+		
+		"AlternatePurchaseTypes": [
+      {
+        "Condition": null,
+        "AnimalIds": [
+          "Vulpix",
+		  "Ninetails",
+        ]
+      }
+    ],
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_WaterEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "cat",
+                    "BabySound": "cat",
+                    "Texture": "Animals/stormdrakon.Pokemons-Vulpix",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Vulpix",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Vulpix",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Ninetails)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Ninetails": {
+                    "DisplayName": "Ninetails",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Vulpix Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_WaterEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "cat",
+                    "BabySound": "cat",
+                    "Texture": "Animals/stormdrakon.Pokemons-Ninetails",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Ninetails",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Ninetails",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Eevee)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Eevee": {
+                    "DisplayName": "Eevee",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 600,
+                              "SellPrice": 400,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Eevee Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": "Barn",
+                    "ShopDisplayName": "Eevee",
+                    "ShopDescription": "Eevee has the ability to alter the composition of its body to suit its surrounding environment, evolving into multiple different type forms.",	
+		
+		"AlternatePurchaseTypes": [
+      {
+        "Condition": null,
+        "AnimalIds": [
+          "Eevee",
+		  "Vaporeon",
+		  "Jolteon",
+		  "Flareon",
+		  "Umbreon",
+		  "Espeon",
+        ]
+      }
+    ],
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "440"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "4",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "cat",
+                    "BabySound": "cat",
+                    "Texture": "Animals/stormdrakon.Pokemons-Eevee",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Eevee",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Eevee",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Vaporeon)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Vaporeon": {
+                    "DisplayName": "Vaporeon",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Eevee Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_WaterEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "cat",
+                    "BabySound": "cat",
+                    "Texture": "Animals/stormdrakon.Pokemons-Vaporeon",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Vaporeon",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Vaporeon",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Jolteon)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Jolteon": {
+                    "DisplayName": "Jolteon",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Eevee Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_AirEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "cat",
+                    "BabySound": "cat",
+                    "Texture": "Animals/stormdrakon.Pokemons-Jolteon",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Jolteon",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Jolteon",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Flareon)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Flareon": {
+                    "DisplayName": "Flareon",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Eevee Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "stormdrakon.Pokemons_FireEssence"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "cat",
+                    "BabySound": "cat",
+                    "Texture": "Animals/stormdrakon.Pokemons-Flareon",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Flareon",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Flareon",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Umbreon)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Umbreon": {
+                    "DisplayName": "Umbreon",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Eevee Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "553"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "cat",
+                    "BabySound": "cat",
+                    "Texture": "Animals/stormdrakon.Pokemons-Umbreon",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Umbreon",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Umbreon",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Espeon)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Espeon": {
+                    "DisplayName": "Espeon",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Eevee Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "578"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "cat",
+                    "BabySound": "cat",
+                    "Texture": "Animals/stormdrakon.Pokemons-Espeon",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Espeon",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Espeon",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Gastly)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Gastly": {
+                    "DisplayName": "Gastly",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 600,
+                              "SellPrice": 400,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Gastly Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": "Barn",
+                    "ShopDisplayName": "Gastly",
+                    "ShopDescription": "Gastly, Haunter, and Gengar all steal heat from their surroundings. If you feel a sudden chill, it is certain that one has appeared.",	
+		
+		"AlternatePurchaseTypes": [
+      {
+        "Condition": null,
+        "AnimalIds": [
+          "Gastly",
+		  "Haunter",
+		  "Gengar",
+        ]
+      }
+    ],
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 769, 243, 612, 220, 279}}"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "5",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "dustMeep",
+                    "BabySound": "dustMeep",
+                    "Texture": "Animals/stormdrakon.Pokemons-Gastly",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Gastly",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Gastly",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Haunter)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Haunter": {
+                    "DisplayName": "Haunter",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Gastly Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 769, 243, 612, 220, 279}}"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "5",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "dustMeep",
+                    "BabySound": "dustMeep",
+                    "Texture": "Animals/stormdrakon.Pokemons-Haunter",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Haunter",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Haunter",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Gengar)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Gengar": {
+                    "DisplayName": "Gengar",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Gastly Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 769, 243, 612, 220, 279}}"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "5",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "dustMeep",
+                    "BabySound": "dustMeep",
+                    "Texture": "Animals/stormdrakon.Pokemons-Gengar",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Gengar",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Gengar",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Ditto)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Ditto": {
+                    "DisplayName": "Ditto",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 500,
+                              "SellPrice": 400,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Ditto Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": "Barn",
+                    "ShopDisplayName": "Other Types",
+                    "ShopDescription": "These are a variety of pokemon that have types other than the four elemental types.",	
+		
+		"AlternatePurchaseTypes": [
+      {
+        "Condition": null,
+        "AnimalIds": [
+          "Ditto",
+		  "Lucario",
+		  "Metagross",
+		  "Lapras",
+        ]
+      }
+    ],
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 766, 680, 557, 437, 439, 413, 857}}"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "4",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "slime",
+                    "BabySound": "slime",
+                    "Texture": "Animals/stormdrakon.Pokemons-Ditto",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Ditto",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Ditto",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Lucario)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Lucario": {
+                    "DisplayName": "Lucario",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Ditto Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 335, 336, 337}}"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "1",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "dog_bark",
+                    "BabySound": "dog_bark",
+                    "Texture": "Animals/stormdrakon.Pokemons-Lucario",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Lucario",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Lucario",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Metagross)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Metagross": {
+                    "DisplayName": "Metagross",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Ditto Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 335, 336, 337}}"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "1",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "clank",
+                    "BabySound": "clank",
+                    "Texture": "Animals/stormdrakon.Pokemons-Metagross",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Metagross",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Metagross",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Lapras)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Lapras": {
+                    "DisplayName": "Lapras",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Ditto Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 797, 84, stormdrakon.Pokemons_WaterEssence}}"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "rainsound",
+                    "BabySound": "rainsound",
+                    "Texture": "Animals/stormdrakon.Pokemons-Lapras",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Lapras",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Lapras",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		
+		{
+            "LogName": "Load data for Pokemons (Mew)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Mew": {
+                    "DisplayName": "Mew",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 2500,
+                              "SellPrice": 2000,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Legendary Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": "Barn",
+                    "ShopDisplayName": "Legendary",
+                    "ShopDescription": "These Pokemon are so rare that they are still said to be a mirage by many experts. Only a few people have seen them worldwide.",	
+		
+		"AlternatePurchaseTypes": [
+      {
+        "Condition": null,
+        "AnimalIds": [
+          "Mew",
+		  "Moltres",
+		  "Articuno",
+		  "Zapados",
+		  "Suicune",
+		  "Raikou",
+		  "Entei",
+        ]
+      }
+    ],
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "74"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "5",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "cat",
+                    "BabySound": "cat",
+                    "Texture": "Animals/stormdrakon.Pokemons-Mew",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Mew",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Mew",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Articuno)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Articuno": {
+                    "DisplayName": "Articuno",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Legendary Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 74, stormdrakon.Pokemons_WaterEssence}}"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "5",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "crow",
+                    "BabySound": "crow",
+                    "Texture": "Animals/stormdrakon.Pokemons-Articuno",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Articuno",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Articuno",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Zapados)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Zapados": {
+                    "DisplayName": "Zapados",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Legendary Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 74, stormdrakon.Pokemons_AirEssence}}"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "5",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "crow",
+                    "BabySound": "crow",
+                    "Texture": "Animals/stormdrakon.Pokemons-Zapados",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Zapados",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Zapados",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Moltres)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Moltres": {
+                    "DisplayName": "Moltres",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Legendary Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 74, stormdrakon.Pokemons_FireEssence}}"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "5",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "crow",
+                    "BabySound": "crow",
+                    "Texture": "Animals/stormdrakon.Pokemons-Moltres",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Moltres",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Moltres",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Suicune)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Suicune": {
+                    "DisplayName": "Suicune",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Legendary Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 74, stormdrakon.Pokemons_WaterEssence}}"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "5",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "cat",
+                    "BabySound": "cat",
+                    "Texture": "Animals/stormdrakon.Pokemons-Suicune",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Suicune",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Suicune",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Raikou)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Raikou": {
+                    "DisplayName": "Raikou",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Legendary Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 74, stormdrakon.Pokemons_AirEssence}}"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "5",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "cat",
+                    "BabySound": "cat",
+                    "Texture": "Animals/stormdrakon.Pokemons-Raikou",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Raikou",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Raikou",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		{
+            "LogName": "Load data for Pokemons (Entei)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Entei": {
+                    "DisplayName": "Entei",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": -1,
+                              "SellPrice": 300,
+                    "ShopTexture": "Animals/stormdrakon.Pokemons-Legendary Shop Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "RequiredBuilding": null,
+                    "ShopDisplayName": null,
+                    "ShopDescription": null, 
+					"ShopMissingBuildingDescription": null,	
+                    "DaysToMature": "4",
+					"CanGetPregnant": true,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 74, stormdrakon.Pokemons_FireEssence}}"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+                    "DaysToProduce": "5",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 600,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+                    "Sound": "cat",
+                    "BabySound": "cat",
+                    "Texture": "Animals/stormdrakon.Pokemons-Entei",
+                    "HarvestedTexture": "Animals/stormdrakon.Pokemons-Entei",
+                    "BabyTexture": "Animals/stormdrakon.Pokemons-Entei",
+                    "UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"ShadowWhenBabySwims": {"Visible":false},
+					"ShadowWhenBaby": {"Visible":true},
+					"ShadowWhenAdultSwims": {"Visible":false},
+					"ShadowWhenAdult": {"Visible":true},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+                    "ShowInSummitCredits": true,
+					
+				}	
+            }
+        },
+		
+		
+		
+        {
+            "LogName": "Load shopIcon for Bulbasaur",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Bulbasaur Shop Icon",
+            "FromFile": "assets\\BulbasaurShopIcon.png"
+        },
+		{
+            "LogName": "Load shopIcon for Turtwig",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Turtwig Shop Icon",
+            "FromFile": "assets\\TurtwigShopIcon.png"
+        },
+		
+		{
+            "LogName": "Load shopIcon for Charmander",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Charmander Shop Icon",
+            "FromFile": "assets\\CharmanderShopIcon.png"
+        },
+		{
+            "LogName": "Load shopIcon for Cyndaquil",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Cyndaquil Shop Icon",
+            "FromFile": "assets\\CyndaquilShopIcon.png"
+        },
+		{
+            "LogName": "Load shopIcon for Squirtle",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Squirtle Shop Icon",
+            "FromFile": "assets\\SquirtleShopIcon.png"
+        },
+		{
+            "LogName": "Load shopIcon for Totodile",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Totodile Shop Icon",
+            "FromFile": "assets\\TotodileShopIcon.png"
+        },
+		{
+            "LogName": "Load shopIcon for Dratini",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Dratini Shop Icon",
+            "FromFile": "assets\\DratiniShopIcon.png"
+        },
+		{
+            "LogName": "Load shopIcon for Gible",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Gible Shop Icon",
+            "FromFile": "assets\\GibleShopIcon.png"
+        },
+		{
+            "LogName": "Load shopIcon for Trapnich",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Trapnich Shop Icon",
+            "FromFile": "assets\\TrapnichShopIcon.png"
+        },
+		{
+            "LogName": "Load shopIcon for Growlithe",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Growlithe Shop Icon",
+            "FromFile": "assets\\GrowlitheShopIcon.png"
+        },
+		{
+            "LogName": "Load shopIcon for Vulpix",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Vulpix Shop Icon",
+            "FromFile": "assets\\VulpixShopIcon.png"
+        },
+		{
+            "LogName": "Load shopIcon for Eevee",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Eevee Shop Icon",
+            "FromFile": "assets\\EeveeShopIcon.png"
+        },
+		{
+            "LogName": "Load shopIcon for Gastly",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Gastly Shop Icon",
+            "FromFile": "assets\\GastlyShopIcon.png"
+        },
+		{
+            "LogName": "Load shopIcon for Ditto",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Ditto Shop Icon",
+            "FromFile": "assets\\DittoShopIcon.png"
+        },
+		{
+            "LogName": "Load shopIcon for Legendary",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Legendary Shop Icon",
+            "FromFile": "assets\\LegendaryShopIcon.png"
+        },
+		
+		
+        {
+            "LogName": "Load adultSprite for Bulbasaur",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Bulbasaur",
+            "FromFile": "assets/Bulbasaur.png"
+        },
+		{
+            "LogName": "Load adultSprite for Ivysaur",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Ivysaur",
+            "FromFile": "assets/Ivysaur.png"
+        },
+		{
+            "LogName": "Load adultSprite for Venosaur",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Venosaur",
+            "FromFile": "assets/Venosaur.png"
+        },
+		{
+            "LogName": "Load adultSprite for Turtwig",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Turtwig",
+            "FromFile": "assets/Turtwig.png"
+        },
+		{
+            "LogName": "Load adultSprite for Torterra",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Torterra",
+            "FromFile": "assets/Torterra.png"
+        },
+		{
+            "LogName": "Load adultSprite for Chikorita",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Chikorita",
+            "FromFile": "assets/Chikorita.png"
+        },
+		{
+            "LogName": "Load adultSprite for Meganium",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Meganium",
+            "FromFile": "assets/Meganium.png"
+        },
+		
+		{
+            "LogName": "Load adultSprite for Charmander",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Charmander",
+            "FromFile": "assets/Charmander.png"
+        },
+		{
+            "LogName": "Load adultSprite for Charmeleon",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Charmeleon",
+            "FromFile": "assets/Charmeleon.png"
+        },
+		{
+            "LogName": "Load adultSprite for Charizard",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Charizard",
+            "FromFile": "assets/Charizard.png"
+        },
+		{
+            "LogName": "Load adultSprite for Cyndaquil",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Cyndaquil",
+            "FromFile": "assets/Cyndaquil.png"
+        },
+		{
+            "LogName": "Load adultSprite for Typhlosion",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Typhlosion",
+            "FromFile": "assets/Typhlosion.png"
+        },
+		{
+            "LogName": "Load adultSprite for Squirtle",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Squirtle",
+            "FromFile": "assets/Squirtle.png"
+        },
+        {
+            "LogName": "Load adultSprite for Wartortle",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Wartortle",
+            "FromFile": "assets/Wartortle.png"
+        },
+		{
+            "LogName": "Load adultSprite for Blastoise",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Blastoise",
+            "FromFile": "assets/Blastoise.png"
+        },
+		{
+            "LogName": "Load adultSprite for Totodile",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Totodile",
+            "FromFile": "assets/Totodile.png"
+        },
+        {
+            "LogName": "Load adultSprite for Feraligatr",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Feraligatr",
+            "FromFile": "assets/Feraligatr.png"
+        },
+		{
+            "LogName": "Load adultSprite for Piplup",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Piplup",
+            "FromFile": "assets/Piplup.png"
+        },
+        {
+            "LogName": "Load adultSprite for Empoleon",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Empoleon",
+            "FromFile": "assets/Empoleon.png"
+        },
+		{
+            "LogName": "Load adultSprite for Dratini",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Dratini",
+            "FromFile": "assets/Dratini.png"
+        },
+        {
+            "LogName": "Load adultSprite for Dragonair",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Dragonair",
+            "FromFile": "assets/Dragonair.png"
+        },
+		{
+            "LogName": "Load adultSprite for Dragonite",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Dragonite",
+            "FromFile": "assets/Dragonite.png"
+        },
+		{
+            "LogName": "Load adultSprite for Salamence",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Salamence",
+            "FromFile": "assets/Salamence.png"
+        },
+		{
+            "LogName": "Load adultSprite for Gible",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Gible",
+            "FromFile": "assets/Gible.png"
+        },
+        {
+            "LogName": "Load adultSprite for Gabite",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Gabite",
+            "FromFile": "assets/Gabite.png"
+        },
+		{
+            "LogName": "Load adultSprite for Garchomp",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Garchomp",
+            "FromFile": "assets/Garchomp.png"
+        },
+		{
+            "LogName": "Load adultSprite for Trapnich",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Trapnich",
+            "FromFile": "assets/Trapnich.png"
+        },
+        {
+            "LogName": "Load adultSprite for Vibrava",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Vibrava",
+            "FromFile": "assets/Vibrava.png"
+        },
+		{
+            "LogName": "Load adultSprite for Flygon",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Flygon",
+            "FromFile": "assets/Flygon.png"
+        },
+		{
+            "LogName": "Load adultSprite for Growlithe",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Growlithe",
+            "FromFile": "assets/Growlithe.png"
+        },
+		{
+            "LogName": "Load adultSprite for Arcanine",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Arcanine",
+            "FromFile": "assets/Arcanine.png"
+        },
+		{
+            "LogName": "Load adultSprite for Vulpix",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Vulpix",
+            "FromFile": "assets/Vulpix.png"
+        },
+		{
+            "LogName": "Load adultSprite for Ninetails",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Ninetails",
+            "FromFile": "assets/Ninetails.png"
+        },
+		{
+            "LogName": "Load adultSprite for Eevee",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Eevee",
+            "FromFile": "assets/Eevee.png"
+        },
+		{
+            "LogName": "Load adultSprite for Vaporeon",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Vaporeon",
+            "FromFile": "assets/Vaporeon.png"
+        },
+		{
+            "LogName": "Load adultSprite for Jolteon",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Jolteon",
+            "FromFile": "assets/Jolteon.png"
+        },
+		{
+            "LogName": "Load adultSprite for Flareon",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Flareon",
+            "FromFile": "assets/Flareon.png"
+        },
+		{
+            "LogName": "Load adultSprite for Umbreon",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Umbreon",
+            "FromFile": "assets/Umbreon.png"
+        },
+		{
+            "LogName": "Load adultSprite for Espeon",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Espeon",
+            "FromFile": "assets/Espeon.png"
+        },
+		{
+            "LogName": "Load adultSprite for Gastly",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Gastly",
+            "FromFile": "assets/Gastly.png"
+        },
+		{
+            "LogName": "Load adultSprite for Haunter",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Haunter",
+            "FromFile": "assets/Haunter.png"
+        },
+		{
+            "LogName": "Load adultSprite for Gengar",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Gengar",
+            "FromFile": "assets/Gengar.png"
+        },
+		{
+            "LogName": "Load adultSprite for Ditto",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Ditto",
+            "FromFile": "assets/Ditto.png"
+        },
+		{
+            "LogName": "Load adultSprite for Lucario",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Lucario",
+            "FromFile": "assets/Lucario.png"
+        },
+		{
+            "LogName": "Load adultSprite for Metagross",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Metagross",
+            "FromFile": "assets/Metagross.png"
+        },
+		{
+            "LogName": "Load adultSprite for Lapras",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Lapras",
+            "FromFile": "assets/Lapras.png"
+        },
+		
+		{
+            "LogName": "Load adultSprite for Mew",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Mew",
+            "FromFile": "assets/Mew.png"
+        },
+		{
+            "LogName": "Load adultSprite for Articuno",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Articuno",
+            "FromFile": "assets/Articuno.png"
+        },
+		{
+            "LogName": "Load adultSprite for Zapados",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Zapados",
+            "FromFile": "assets/Zapados.png"
+        },
+		{
+            "LogName": "Load adultSprite for Moltres",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Moltres",
+            "FromFile": "assets/Moltres.png"
+        },
+		{
+            "LogName": "Load adultSprite for Suicune",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Suicune",
+            "FromFile": "assets/Suicune.png"
+        },
+		{
+            "LogName": "Load adultSprite for Raikou",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Raikou",
+            "FromFile": "assets/Raikou.png"
+        },
+		{
+            "LogName": "Load adultSprite for Entei",
+            "Action": "Load",
+            "Target": "Animals/stormdrakon.Pokemons-Entei",
+            "FromFile": "assets/Entei.png"
+        },
+		
+		
+		{
+			"LogName": "Load data for Grass Essence",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"stormdrakon.Pokemons_GrassEssence": {
+				"Name": "stormdrakon.Pokemons_GrassEssence",
+				"DisplayName": "Grass Essence",
+				"Description": "Some residue energy left by Grass-Type Pokemon.",
+				"Type": "MonsterLoot",
+				"Category": "-18",
+				"Price": 300,
+				"Texture": "{{InternalAssetKey: assets/GrassEssence}}",
+				"SpriteIndex": 0,
+				"Edibility": -300,
+				"IsDrink": false,
+				"Buffs": null,
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": true,
+				"ExcludeFromRandomSale": true,
+                  "ContextTags": [
+                "color_green"
+					]
+				}
+			}
+		},
+		{
+			"LogName": "Load data for Fire Essence",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"stormdrakon.Pokemons_FireEssence": {
+				"Name": "stormdrakon.Pokemons_FireEssence",
+				"DisplayName": "Fire Essence",
+				"Description": "Some residue energy left by Fire-Type Pokemon.",
+				"Type": "MonsterLoot",
+				"Category": "-18",
+				"Price": 300,
+				"Texture": "{{InternalAssetKey: assets/FireEssence}}",
+				"SpriteIndex": 0,
+				"Edibility": -300,
+				"IsDrink": false,
+				"Buffs": null,
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": true,
+				"ExcludeFromRandomSale": true,
+                  "ContextTags": [
+                "color_red"
+					]
+				}
+			}
+		},
+		{
+			"LogName": "Load data for Water Essence",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"stormdrakon.Pokemons_WaterEssence": {
+				"Name": "stormdrakon.Pokemons_WaterEssence",
+				"DisplayName": "Water Essence",
+				"Description": "Some residue energy left by Water-Type or Ice-Type Pokemon.",
+				"Type": "MonsterLoot",
+				"Category": "-18",
+				"Price": 300,
+				"Texture": "{{InternalAssetKey: assets/WaterEssence}}",
+				"SpriteIndex": 0,
+				"Edibility": -300,
+				"IsDrink": false,
+				"Buffs": null,
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": true,
+				"ExcludeFromRandomSale": true,
+                  "ContextTags": [
+                "color_blue"
+					]
+				}
+			}
+		},
+		{
+			"LogName": "Load data for Air Essence",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"stormdrakon.Pokemons_AirEssence": {
+				"Name": "stormdrakon.Pokemons_AirEssence",
+				"DisplayName": "Air Essence",
+				"Description": "Some residue energy left by Flying-Type or Electric-Type Pokemon.",
+				"Type": "MonsterLoot",
+				"Category": "-18",
+				"Price": 300,
+				"Texture": "{{InternalAssetKey: assets/AirEssence}}",
+				"SpriteIndex": 0,
+				"Edibility": -300,
+				"IsDrink": false,
+				"Buffs": null,
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": true,
+				"ExcludeFromRandomSale": true,
+                  "ContextTags": [
+                "color_white"
+					]
+				}
+			}
+		},
+		{
+			"LogName": "Load data for Earth Essence",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"stormdrakon.Pokemons_EarthEssence": {
+				"Name": "stormdrakon.Pokemons_EarthEssence",
+				"DisplayName": "Earth Essence",
+				"Description": "Some residue energy left by a Ground-Type or Rock-Type Pokemon.",
+				"Type": "MonsterLoot",
+				"Category": "-18",
+				"Price": 300,
+				"Texture": "{{InternalAssetKey: assets/EarthEssence}}",
+				"SpriteIndex": 0,
+				"Edibility": -300,
+				"IsDrink": false,
+				"Buffs": null,
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": true,
+				"ExcludeFromRandomSale": true,
+                  "ContextTags": [
+                "color_brown"
+					]
+				}
+			}
+		},
+		
+		
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)20", "OutputRules" ],
+			"Entries": {
+				"stormdrakon.Pokemons_GrassEssence": {
+					"Id": "stormdrakon.Pokemons_GrassEssence",
+					"Triggers": 
+						[
+							{
+								"RequiredItemId": "stormdrakon.Pokemons_GrassEssence"
+							}
+						],
+					"OutputItem":
+						[
+							{
+								"ItemId":"725", "MinStack":3,"MaxStack":4,
+							}
+						],
+					"MinutesUntilReady": 120
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)20", "OutputRules" ],
+			"Entries": {
+				"stormdrakon.Pokemons_FireEssence": {
+					"Id": "stormdrakon.Pokemons_FireEssence",
+					"Triggers": 
+						[
+							{
+								"RequiredItemId": "stormdrakon.Pokemons_FireEssence"
+							}
+						],
+					"OutputItem":
+						[
+							{
+								"ItemId":"537", "MinStack":3,"MaxStack":4,
+							}
+						],
+					"MinutesUntilReady": 120
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)20", "OutputRules" ],
+			"Entries": {
+				"stormdrakon.Pokemons_WaterEssence": {
+					"Id": "stormdrakon.Pokemons_WaterEssence",
+					"Triggers": 
+						[
+							{
+								"RequiredItemId": "stormdrakon.Pokemons_WaterEssence"
+							}
+						],
+					"OutputItem":
+						[
+							{
+								"ItemId":"621", "MinStack":1,"MaxStack":1,
+							}
+						],
+					"MinutesUntilReady": 120
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)20", "OutputRules" ],
+			"Entries": {
+				"stormdrakon.Pokemons_AirEssence": {
+					"Id": "stormdrakon.Pokemons_AirEssence",
+					"Triggers": 
+						[
+							{
+								"RequiredItemId": "stormdrakon.Pokemons_AirEssence"
+							}
+						],
+					"OutputItem":
+						[
+							{
+								"ItemId":"787", "MinStack":1,"MaxStack":2,
+							}
+						],
+					"MinutesUntilReady": 120
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)20", "OutputRules" ],
+			"Entries": {
+				"stormdrakon.Pokemons_EarthEssence": {
+					"Id": "stormdrakon.Pokemons_EarthEssence",
+					"Triggers": 
+						[
+							{
+								"RequiredItemId": "stormdrakon.Pokemons_EarthEssence"
+							}
+						],
+					"OutputItem":
+						[
+							{
+								"ItemId":"386", "MinStack":3,"MaxStack":4,
+							}
+						],
+					"MinutesUntilReady": 120
+				}
+			}
+		}
+    ]
+}

@@ -1,0 +1,1974 @@
+{
+	"Changes": [
+		//ferngill mini chocobos
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_FerngillCommon": {
+					"DisplayName": "{{i18n: Chocobovalley_FerngillCommon_Name}}",
+					"House": "Coop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 3000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_FerngillEggCommon"
+					],
+					"BirthText": "{{i18n: Chocobovalley_FerngillCommon_Birth}}",
+					"DaysToMature": 2,
+					"DaysToProduce": 1,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_FerngillEggCommon",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_Wyrmtwig",
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_FerngillEggUncommon",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_Wyrmtwig",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_PepioNuts",
+						}
+					],
+					"HarvestType": "DropOvernight",
+					"Sound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Ferngill/FerngillYellow.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyYellow_Baby.png}}",
+					"SpriteWidth": 16,
+					"SpriteHeight": 16,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": true,
+					"UseFlippedRightForLeft": false,
+					"SleepFrame": 17,
+					"Skins": [
+						{
+							"id": "Buttercup",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Ferngill/FerngillYellow.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyYellow_Baby.png}}"
+						},
+						{
+							"id": "Foxglove",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Ferngill/FerngillBrown.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyBrown_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": true
+						},
+					"ShadowWhenAdult": {
+							"Visible": true
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 2,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}		
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_FerngillUncommon": {
+					"DisplayName": "{{i18n: Chocobovalley_FerngillUncommon_Name}}",
+					"House": "Coop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 3000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_FerngillEggUncommon"
+					],
+					"BirthText": "{{i18n: Chocobovalley_FerngillUncommon_Birth}}",
+					"DaysToMature": 2,
+					"DaysToProduce": 1,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_FerngillEggUncommon",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_Flutegrass",
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_FerngillEggRare",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_Flutegrass",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_Whisperweed",
+						}
+					],
+					"HarvestType": "DropOvernight",
+					"Sound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Ferngill/FerngillGreen.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyGreen_Baby.png}}",
+					"SpriteWidth": 16,
+					"SpriteHeight": 16,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": true,
+					"UseFlippedRightForLeft": false,
+					"SleepFrame": 17,
+					"Skins": [
+						{
+							"id": "Aloe",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Ferngill/FerngillGreen.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyGreen_Baby.png}}"
+						},
+						{
+							"id": "Bluebell",
+							"Weight": 3,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Ferngill/FerngillBlue.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyBlue_Baby.png}}"
+						},
+						{
+							"id": "Lilac",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Ferngill/FerngillPurple.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyPurple_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": true
+						},
+					"ShadowWhenAdult": {
+							"Visible": true
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 2,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}		
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_FerngillRare": {
+					"DisplayName": "{{i18n: Chocobovalley_FerngillRare_Name}}",
+					"House": "Coop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 3000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_FerngillEggRare"
+					],
+					"BirthText": "{{i18n: Chocobovalley_FerngillRare_Birth}}",
+					"DaysToMature": 2,
+					"DaysToProduce": 1,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_FerngillEggRare",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_Sylleblossom",
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_FerngillEggRare",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_Sylleblossom",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_Goldcap",
+						}
+					],
+					"HarvestType": "DropOvernight",
+					"Sound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Ferngill/FerngillRed.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyRed_Baby.png}}",
+					"SpriteWidth": 16,
+					"SpriteHeight": 16,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": true,
+					"UseFlippedRightForLeft": false,
+					"SleepFrame": 17,
+					"Skins": [
+						{
+							"id": "Hibiscus",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Ferngill/FerngillRed.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyRed_Baby.png}}"
+						},
+						{
+							"id": "Petunia",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Ferngill/FerngillBlack.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyBlack_Baby.png}}"
+						},
+						{
+							"id": "Dandelion",
+							"Weight": 1,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Ferngill/FerngillWhite.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyWhite_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": true
+						},
+					"ShadowWhenAdult": {
+							"Visible": true
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 2,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}		
+			}
+		},
+		//jylland dwarf chocobo
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_JyllandCommon": {
+					"DisplayName": "{{i18n: Chocobovalley_JyllandCommon_Name}}",
+					"House": "Coop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 3000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_JyllandEggCommon"
+					],
+					"BirthText": "{{i18n: Chocobovalley_JyllandCommon_Birth}}",
+					"DaysToMature": 2,
+					"DaysToProduce": 1,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_JyllandEggCommon",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_GysahlSeeds",
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_JyllandEggUncommon",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_GysahlSeeds",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_KrakkaSeeds"
+						}
+					],
+					"HarvestType": "DropOvernight",
+					"Sound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Jylland/JyllandYellow.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyYellow_Baby.png}}",
+					"SpriteWidth": 16,
+					"SpriteHeight": 16,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": true,
+					"UseFlippedRightForLeft": false,
+					"SleepFrame": 17,
+					"Skins": [
+						{
+							"id": "Targ_Wood_Yellow",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Jylland/JyllandYellow.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyYellow_Baby.png}}"
+						},
+						{
+							"id": "Muskmallow_Field_Yellow",
+							"Weight": 3,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Jylland/JyllandYellow_1.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyYellow_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": true
+						},
+					"ShadowWhenAdult": {
+							"Visible": true
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 2,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}		
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_JyllandUncommon": {
+					"DisplayName": "{{i18n: Chocobovalley_JyllandUncommon_Name}}",
+					"House": "Coop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 3000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_JyllandEggUncommon"
+					],
+					"BirthText": "{{i18n: Chocobovalley_JyllandUncommon_Birth}}",
+					"DaysToMature": 2,
+					"DaysToProduce": 1,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_JyllandEggUncommon",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_CurielSeeds",
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_JyllandEggRare",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_CurielSeeds",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_TantalSeeds",
+						}
+					],
+					"HarvestType": "DropOvernight",
+					"Sound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Jylland/JyllandBrown.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyBrown_Baby.png}}",
+					"SpriteWidth": 16,
+					"SpriteHeight": 16,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": true,
+					"UseFlippedRightForLeft": false,
+					"SleepFrame": 17,
+					"Skins": [
+						{
+							"id": "Aldanna_Range_Brown",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Jylland/JyllandBrown.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyBrown_Baby.png}}"
+						},
+						{
+							"id": "Redclay_Pass_Brown",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Jylland/JyllandBrown_1.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyBrown_Baby.png}}"
+						},
+						{
+							"id": "Rupie_Mountains_Blue",
+							"Weight": 1,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Jylland/JyllandBlue.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyBlue_Baby.png}}"
+						},
+						{
+							"id": "Zedlei_Forest_Green",
+							"Weight": 1,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Jylland/JyllandGreen.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyGreen_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": true
+						},
+					"ShadowWhenAdult": {
+							"Visible": true
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 2,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}		
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_JyllandRare": {
+					"DisplayName": "{{i18n: Chocobovalley_JyllandRare_Name}}",
+					"House": "Coop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 3000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_JyllandEggRare"
+					],
+					"BirthText": "{{i18n: Chocobovalley_JyllandRare_Birth}}",
+					"DaysToMature": 2,
+					"DaysToProduce": 1,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_JyllandEggRare",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_SylkisSeeds",
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_JyllandEggRare",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_SylkisSeeds",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_MimettSeeds",
+						}
+					],
+					"HarvestType": "DropOvernight",
+					"Sound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Jylland/JyllandBlack.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyBlack_Baby.png}}",
+					"SpriteWidth": 16,
+					"SpriteHeight": 16,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": true,
+					"UseFlippedRightForLeft": false,
+					"SleepFrame": 17,
+					"Skins": [
+						{
+							"id": "Galleria_Deep_Black",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Jylland/JyllandBlack.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyBlack_Baby.png}}"
+						},
+						{
+							"id": "Sealed_Reach_Black",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Jylland/JyllandBlack_1.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyBlack_Baby.png}}"
+						},
+						{
+							"id": "Kthili_Sands_Red",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Jylland/JyllandRed.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyRed_Baby.png}}"
+						},
+						{
+							"id": "Whitehearth_White",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Jylland/JyllandWhite.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboTinyWhite_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": true
+						},
+					"ShadowWhenAdult": {
+							"Visible": true
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 2,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}		
+			}
+		},
+		//eorzean destrier chocobo
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_EorzeanCommon": {
+					"DisplayName": "{{i18n: Chocobovalley_EorzeanCommon_Name}}",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 5000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_EorzeanEggCommon"
+					],
+					"BirthText": "{{i18n: Chocobovalley_EorzeanCommon_Birth}}",
+					"DaysToMature": 3,
+					"DaysToProduce": 1,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_EorzeanEggCommon",
+						},
+						{
+							"ItemId": "156",//ghostfish
+						},
+						{
+							"ItemId": "164",//sandfish
+						},
+						{
+							"ItemId": "734",//woodskip
+						}
+						
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_EorzeanEggUncommon",
+						},
+						{
+							"ItemId": "796",//slimejack
+						},
+						{
+							"ItemId": "165",//scorpion carp
+						},
+						{
+							"ItemId": "158",//stonefish
+						}
+					],
+					"HarvestType": "DropOvernight",
+					"Sound": "Kitsutsune.Chocobovalley_BigChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Eorzean/EorzeanYellow.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboYellow_Baby.png}}",
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 2",
+					"LeftRightPetHitboxTileSize": "2, 2",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": true,
+					"SleepFrame": 12,
+					"Skins": [
+						{
+							"id": "Honey_Yellow",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Eorzean/EorzeanYellow.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboYellow_Baby.png}}"
+						},
+						{
+							"id": "Cream_Yellow",
+							"Weight": 1,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Eorzean/EorzeanYellow_1.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboYellow_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": false
+						},
+					"ShadowWhenAdult": {
+							"Visible": false
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 3,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}	
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_EorzeanUncommon": {
+					"DisplayName": "{{i18n: Chocobovalley_EorzeanUncommon_Name}}",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 6000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_EorzeanEggUncommon"
+					],
+					"BirthText": "{{i18n: Chocobovalley_EorzeanUncommon_Birth}}",
+					"DaysToMature": 3,
+					"DaysToProduce": 1,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_EorzeanEggUncommon",
+						},
+						{
+							"ItemId": "138", //rainbow trout
+						},
+						{
+							"ItemId": "139", //salmon
+						},
+						{
+							"ItemId": "144", //pike
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_EorzeanEggRare",
+						},
+						{
+							"ItemId": "699", //tiger trout
+						},
+						{
+							"ItemId": "143", //catfish
+						},
+						{
+							"ItemId": "161", //ice pip
+						}
+					],
+					"HarvestType": "DropOvernight",
+					"Sound": "Kitsutsune.Chocobovalley_BigChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Eorzean/EorzeanBlue.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboBlue_Baby.png}}",
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 2",
+					"LeftRightPetHitboxTileSize": "2, 2",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": true,
+					"SleepFrame": 12,
+					"Skins": [
+						{
+							"id": "Celeste_Green",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Eorzean/EorzeanBlue.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboBlue_Baby.png}}"
+						},
+						{
+							"id": "Deepwood_Green",
+							"Weight": 1,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Eorzean/EorzeanGreen.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboGreen_Baby.png}}"
+						},
+						{
+							"id": "Lavender_Purple",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Eorzean/EorzeanPurple.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboPurple_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": false
+						},
+					"ShadowWhenAdult": {
+							"Visible": false
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 3,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}	
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_EorzeanRare": {
+					"DisplayName": "{{i18n: Chocobovalley_EorzeanRare_Name}}",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 7000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_EorzeanEggRare"
+					],
+					"BirthText": "{{i18n: Chocobovalley_EorzeanRare_Birth}}",
+					"DaysToMature": 3,
+					"DaysToProduce": 1,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_EorzeanEggRare",
+						},
+						{
+							"ItemId": "146",//red mullet
+						},
+						{
+							"ItemId": "708",//halibut
+						},
+						{
+							"ItemId": "148",//eel
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_EorzeanEggRare",
+						},
+						{
+							"ItemId": "149",//octopus
+						},
+						{
+							"ItemId": "128",//pufferfish
+						},
+						{
+							"ItemId": "162",//lava eel
+						}
+					],
+					"HarvestType": "DropOvernight",
+					"Sound": "Kitsutsune.Chocobovalley_BigChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Eorzean/EorzeanBlack.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboBlack_Baby.png}}",
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 2",
+					"LeftRightPetHitboxTileSize": "2, 2",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": true,
+					"SleepFrame": 12,
+					"Skins": [
+						{
+							"id": "Ishgardian_Black",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Eorzean/EorzeanBlack.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboBlack_Baby.png}}"
+						},
+						{
+							"id": "Rose_Pink",
+							"Weight": 3,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Eorzean/EorzeanRed.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboRed_Baby.png}}"
+						},
+						{
+							"id": "Blood_Red",
+							"Weight": 3,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Eorzean/EorzeanRed_1.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboRed_Baby.png}}"
+						},
+						{
+							"id": "Sugar_White",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Eorzean/EorzeanWhite.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboWhite_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": false
+						},
+					"ShadowWhenAdult": {
+							"Visible": false
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 3,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}		
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_EorzeanLegacy": {
+					"DisplayName": "{{i18n: Chocobovalley_EorzeanLegacy_Name}}",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 7000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_EorzeanEggLegacy"
+					],
+					"BirthText": "{{i18n: Chocobovalley_EorzeanLegacy_Birth}}",
+					"DaysToMature": 3,
+					"DaysToProduce": 2,
+					"ProduceItemIds": [
+						{
+							"ItemId": "DeluxeBait",
+						},
+						{
+							"ItemId": "774",//wild bait
+						},
+						{
+							"ItemId": "694",//trap bobber
+						},
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "DeluxeBait",
+						},
+						{
+							"ItemId": "774",//wild bait
+						},
+						{
+							"ItemId": "906",//magic bait
+						},
+						{
+							"ItemId": "694",//trap bobber
+						},
+						{
+							"ItemId": "SonarBobber",
+						},
+						{
+							"ItemId": "693",//treasure hunter
+						},
+						{
+							"ItemId": "856",//curiosity lure,
+							"MinimumFriendship": 800,
+						},
+					],
+					"HarvestType": "DropOvernight",
+					"Sound": "Kitsutsune.Chocobovalley_BigChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Eorzean/EorzeanLegacy.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboLegacy_Baby.png}}",
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 2",
+					"LeftRightPetHitboxTileSize": "2, 2",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": true,
+					"SleepFrame": 12,
+					"ShadowWhenBaby": {
+							"Visible": false
+						},
+					"ShadowWhenAdult": {
+							"Visible": false
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 3,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}		
+			}
+		},
+		//lucian palfrey chocobo
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_LucianCommon": {
+					"DisplayName": "{{i18n: Chocobovalley_LucianCommon_Name}}",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 7000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_LucianEggCommon"
+					],
+					"BirthText": "{{i18n: Chocobovalley_LucianCommon_Birth}}",
+					"DaysToMature": 3,
+					"DaysToProduce": 3,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_LucianEggCommon",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_ChocoboFeatherCommon",
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_LucianEggUncommon",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_ChocoboFeatherCommon",
+						}
+					],
+					"HarvestType": "HarvestWithTool",
+					"HarvestTool": "Shears",
+					"Sound": "Kitsutsune.Chocobovalley_BigChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianYellow.png}}",
+					"HarvestedTexture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianYellow_Sheared.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboYellow_Baby.png}}",
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 2",
+					"LeftRightPetHitboxTileSize": "2, 2",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": true,
+					"SleepFrame": 12,
+					"Skins": [
+						{
+							"id": "Duscae_Yellow",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianYellow.png}}",
+							"HarvestedTexture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianYellow_Sheared.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboYellow_Baby.png}}"
+						},
+						{
+							"id": "Wiz_Post_Yellow",
+							"Weight": 1,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianYellow_1.png}}",
+							"HarvestedTexture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianYellow_1_Sheared.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboYellow_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": false
+						},
+					"ShadowWhenAdult": {
+							"Visible": false
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 3,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}		
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_LucianUncommon": {
+					"DisplayName": "{{i18n: Chocobovalley_LucianUncommon_Name}}",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 7000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_LucianEggUncommon"
+					],
+					"BirthText": "{{i18n: Chocobovalley_LucianUncommon_Birth}}",
+					"DaysToMature": 3,
+					"DaysToProduce": 3,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_LucianEggUncommon",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_ChocoboFeatherUncommon",
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_LucianEggRare",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_ChocoboFeatherUncommon",
+						}
+					],
+					"HarvestType": "HarvestWithTool",
+					"HarvestTool": "Shears",
+					"Sound": "Kitsutsune.Chocobovalley_BigChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianBlue.png}}",
+					"HarvestedTexture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianBlue_Sheared.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboBlue_Baby.png}}",
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 2",
+					"LeftRightPetHitboxTileSize": "2, 2",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": true,
+					"SleepFrame": 12,
+					"Skins": [
+						{
+							"id": "Galdin_Quay_Blue",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianBlue.png}}",
+							"HarvestedTexture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianBlue_Sheared.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboBlue_Baby.png}}"
+						},
+						{
+							"id": "Malmalam_Thicket_Green",
+							"Weight": 3,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianGreen.png}}",
+							"HarvestedTexture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianGreen_Sheared.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboGreen_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": false
+						},
+					"ShadowWhenAdult": {
+							"Visible": false
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 3,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}		
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_LucianRare": {
+					"DisplayName": "{{i18n: Chocobovalley_LucianRare_Name}}",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 7000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_LucianEggRare"
+					],
+					"BirthText": "{{i18n: Chocobovalley_LucianRare_Birth}}",
+					"DaysToMature": 3,
+					"DaysToProduce": 3,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_LucianEggRare",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_ChocoboFeatherRare",
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_LucianEggRare",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_ChocoboFeatherRare",
+						}
+					],
+					"HarvestType": "HarvestWithTool",
+					"HarvestTool": "Shears",
+					"Sound": "Kitsutsune.Chocobovalley_BigChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianWhite.png}}",
+					"HarvestedTexture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianWhite_Sheared.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboWhite_Baby.png}}",
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 2",
+					"LeftRightPetHitboxTileSize": "2, 2",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": true,
+					"SleepFrame": 12,
+					"Skins": [
+						{
+							"id": "Longwythe_Peak_White",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianWhite.png}}",
+							"HarvestedTexture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianWhite_Sheared.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboWhite_Baby.png}}"
+						},
+						{
+							"id": "Ravatogh_Red",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianRed.png}}",
+							"HarvestedTexture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianRed_Sheared.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboRed_Baby.png}}"
+						},
+						{
+							"id": "Vesperpool_Black",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianBlack.png}}",
+							"HarvestedTexture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianBlack_Sheared.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboBlack_Baby.png}}"
+						},
+						{
+							"id": "Myrlwood_Black",
+							"Weight": 1,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianBlack_1.png}}",
+							"HarvestedTexture": "{{InternalAssetKey: Assets/Chocobos/Lucian/LucianBlack_1_Sheared.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboBlack_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": false
+						},
+					"ShadowWhenAdult": {
+							"Visible": false
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 3,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}		
+			}
+		},
+		//ivalician draft chocobo
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_IvalicianCommon": {
+					"DisplayName": "{{i18n: Chocobovalley_IvalicianCommon_Name}}",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 5000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_IvalicianEggCommon"
+					],
+					"BirthText": "{{i18n: Chocobovalley_IvalicianCommon_Birth}}",
+					"DaysToMature": 3,
+					"DaysToProduce": 1,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_IvalicianEggCommon",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_TomestoneLore",
+						}
+						
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_IvalicianEggUncommon",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_MythrilOre",
+						}
+					],
+					"HarvestType": "DigUp",
+					"Sound": "Kitsutsune.Chocobovalley_BigChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Ivalician/IvalicianYellow.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboYellow_Baby.png}}",
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 2",
+					"LeftRightPetHitboxTileSize": "2, 2",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": true,
+					"SleepFrame": 12,
+					"Skins": [
+						{
+							"id": "Wild_Gold",
+							"Weight": 3,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Ivalician/IvalicianYellow.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboYellow_Baby.png}}"
+						},
+						{
+							"id": "Common_Pale",
+							"Weight": 1,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Ivalician/IvalicianYellow_1.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboYellow_Baby.png}}"
+						},
+						{
+							"id": "Domestic_Pale",
+							"Weight": 1,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Ivalician/IvalicianYellow_2.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboYellow_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": false
+						},
+					"ShadowWhenAdult": {
+							"Visible": false
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 3,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}	
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_IvalicianUncommon": {
+					"DisplayName": "{{i18n: Chocobovalley_IvalicianUncommon_Name}}",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 5000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_IvalicianEggUncommon"
+					],
+					"BirthText": "{{i18n: Chocobovalley_IvalicianUncommon_Birth}}",
+					"DaysToMature": 3,
+					"DaysToProduce": 1,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_IvalicianEggUncommon",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_TomestoneLore",
+						}
+						
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_IvalicianEggRare",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_OrichalcumOre",
+						}
+					],
+					"HarvestType": "DigUp",
+					"Sound": "Kitsutsune.Chocobovalley_BigChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Ivalician/IvalicianBrown.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboBrown_Baby.png}}",
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 2",
+					"LeftRightPetHitboxTileSize": "2, 2",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": true,
+					"SleepFrame": 12,
+					"Skins": [
+						{
+							"id": "Dalmasca_Estersand_Brown",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Ivalician/IvalicianBrown.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboBrown_Baby.png}}"
+						},
+						{
+							"id": "OgirYensa_Sandsea_Bull",
+							"Weight": 1,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Ivalician/IvalicianBrown_1.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboBrown_Baby.png}}"
+						},
+						{
+							"id": "Salikawood_Green",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Ivalician/IvalicianGreen.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboGreen_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": false
+						},
+					"ShadowWhenAdult": {
+							"Visible": false
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 3,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}	
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_IvalicianRare": {
+					"DisplayName": "{{i18n: Chocobovalley_IvalicianRare_Name}}",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 5000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_IvalicianEggRare"
+					],
+					"BirthText": "{{i18n: Chocobovalley_IvalicianRare_Birth}}",
+					"DaysToMature": 3,
+					"DaysToProduce": 1,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_IvalicianEggRare",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_TomestoneLore",
+						}
+						
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_IvalicianEggRare",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_AdamantiteOre",
+						}
+					],
+					"HarvestType": "DigUp",
+					"Sound": "Kitsutsune.Chocobovalley_BigChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Ivalician/IvalicianBlack.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboBlack_Baby.png}}",
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 2",
+					"LeftRightPetHitboxTileSize": "2, 2",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": true,
+					"SleepFrame": 12,
+					"Skins": [
+						{
+							"id": "Dagan_Flats_Black",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Ivalician/IvalicianBlack.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboBlack_Baby.png}}"
+						},
+						{
+							"id": "Ozmone_Plain_Red",
+							"Weight": 1,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Ivalician/IvalicianRed.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboRed_Baby.png}}"
+						},
+						{
+							"id": "Phon_Coast_White",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Ivalician/IvalicianWhite.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboWhite_Baby.png}}"
+						},
+						{
+							"id": "Hakawea_Shore_White",
+							"Weight": 1,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Ivalician/IvalicianWhite_1.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboWhite_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": false
+						},
+					"ShadowWhenAdult": {
+							"Visible": false
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 3,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}	
+			}
+		},
+		//vana'delian courser chocobo
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_VanadelianCommon": {
+					"DisplayName": "{{i18n: Chocobovalley_VanadelianCommon_Name}}",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 5000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_VanadelianEggCommon"
+					],
+					"BirthText": "{{i18n: Chocobovalley_VanadelianCommon_Birth}}",
+					"DaysToMature": 3,
+					"DaysToProduce": 1,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_VanadelianEggCommon",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_TomestonePoetics",
+						}
+						
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_VanadelianEggUncommon",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_TomestonePoetics",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_AetheryteShards",
+						}
+					],
+					"HarvestType": "DigUp",
+					"Sound": "Kitsutsune.Chocobovalley_BigChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Vanadelian/VanadelianYellow.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboYellow_Baby.png}}",
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 2",
+					"LeftRightPetHitboxTileSize": "2, 2",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": true,
+					"SleepFrame": 12,
+					"Skins": [
+						{
+							"id": "Jeuno_Yellow",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Vanadelian/VanadelianYellow.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboYellow_Baby.png}}"
+						},
+						{
+							"id": "RuLude_Gardens_Yellow",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Vanadelian/VanadelianYellow_1.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboYellow_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": false
+						},
+					"ShadowWhenAdult": {
+							"Visible": false
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 3,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}	
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_VanadelianUncommon": {
+					"DisplayName": "{{i18n: Chocobovalley_VanadelianUncommon_Name}}",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 5000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_VanadelianEggUncommon"
+					],
+					"BirthText": "{{i18n: Chocobovalley_VanadelianUncommon_Birth}}",
+					"DaysToMature": 3,
+					"DaysToProduce": 1,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_VanadelianEggUncommon",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_TomestonePoetics",
+						}
+						
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_VanadelianEggRare",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_TomestonePoetics",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_Nethicite",
+						}
+					],
+					"HarvestType": "DigUp",
+					"Sound": "Kitsutsune.Chocobovalley_BigChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Vanadelian/VanadelianGreen.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboGreen_Baby.png}}",
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 2",
+					"LeftRightPetHitboxTileSize": "2, 2",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": true,
+					"SleepFrame": 12,
+					"Skins": [
+						{
+							"id": "Southern_Mithra_Green",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Vanadelian/VanadelianGreen.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboGreen_Baby.png}}"
+						},
+						{
+							"id": "Zepwell_Island_Blue",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Vanadelian/VanadelianBlue.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboBlue_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": false
+						},
+					"ShadowWhenAdult": {
+							"Visible": false
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 3,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}	
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_VanadelianRare": {
+					"DisplayName": "{{i18n: Chocobovalley_VanadelianRare_Name}}",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 5000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_VanadelianEggRare"
+					],
+					"BirthText": "{{i18n: Chocobovalley_VanadelianRare_Birth}}",
+					"DaysToMature": 3,
+					"DaysToProduce": 1,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_VanadelianEggRare",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_TomestonePoetics",
+						}
+						
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_VanadelianEggRare",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_TomestonePoetics",
+						},
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_Auracite",
+						}
+					],
+					"HarvestType": "DigUp",
+					"Sound": "Kitsutsune.Chocobovalley_BigChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Vanadelian/VanadelianRed.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboRed_Baby.png}}",
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 2",
+					"LeftRightPetHitboxTileSize": "2, 2",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": true,
+					"SleepFrame": 12,
+					"Skins": [
+						{
+							"id": "Chateau_dOraguille_Red",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Vanadelian/VanadelianRed.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboRed_Baby.png}}"
+						},
+						{
+							"id": "San_dOria_Black",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Vanadelian/VanadelianBlack.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboBlack_Baby.png}}"
+						},
+						{
+							"id": "Aht_Urhgan_White",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Vanadelian/VanadelianWhite.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboWhite_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": false
+						},
+					"ShadowWhenAdult": {
+							"Visible": false
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 3,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}	
+			}
+		},
+		//pulsian steppe chocobo
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_PulsianCommon": {
+					"DisplayName": "{{i18n: Chocobovalley_PulsianCommon_Name}}",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 5000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_PulsianEggCommon"
+					],
+					"BirthText": "{{i18n: Chocobovalley_PulsianCommon_Birth}}",
+					"DaysToMature": 3,
+					"DaysToProduce": 1,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_PulsianEggCommon",
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_PulsianEggUncommon",
+						},
+						{
+							"ItemId": "688",//warp totem farm
+							"MinimumFriendship": 300,
+						},
+						{
+							"ItemId": "689",//warp totem mountains
+							"MinimumFriendship": 300,
+						}
+					],
+					"HarvestType": "DigUp",
+					"Sound": "Kitsutsune.Chocobovalley_BigChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Pulsian/PulsianYellow.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboYellow_Baby.png}}",
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 2",
+					"LeftRightPetHitboxTileSize": "2, 2",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": true,
+					"SleepFrame": 12,
+					"Skins": [
+						{
+							"id": "Archylte_Steppe_Yellow",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Pulsian/PulsianYellow.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboYellow_Baby.png}}"
+						},
+						{
+							"id": "Cocoon_Yellow",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Pulsian/PulsianYellow_1.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboYellow_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": false
+						},
+					"ShadowWhenAdult": {
+							"Visible": false
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 3,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}	
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_PulsianUncommon": {
+					"DisplayName": "{{i18n: Chocobovalley_PulsianUncommon_Name}}",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 5000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_PulsianEggUncommon"
+					],
+					"BirthText": "{{i18n: Chocobovalley_PulsianUncommon_Birth}}",
+					"DaysToMature": 3,
+					"DaysToProduce": 1,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_PulsianEggUncommon",
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_PulsianEggRare",
+						},
+						{
+							"ItemId": "690",//warp totem beach
+							"MinimumFriendship": 300,
+						},
+						{
+							"ItemId": "681",//rain totem
+							"MinimumFriendship": 300,
+						}
+					],
+					"HarvestType": "DigUp",
+					"Sound": "Kitsutsune.Chocobovalley_BigChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Pulsian/PulsianBlue.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboBlue_Baby.png}}",
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 2",
+					"LeftRightPetHitboxTileSize": "2, 2",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": true,
+					"SleepFrame": 12,
+					"Skins": [
+						{
+							"id": "Clearwater_Marsh_Blue",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Pulsian/PulsianBlue.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboBlue_Baby.png}}"
+						},
+						{
+							"id": "Yaschas_Massif_Green",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Pulsian/PulsianGreen.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboGreen_Baby.png}}"
+						},
+						{
+							"id": "Bresha_Ruins_Purple",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Pulsian/PulsianPurple.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboPurple_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": false
+						},
+					"ShadowWhenAdult": {
+							"Visible": false
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 3,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}	
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_PulsianRare": {
+					"DisplayName": "{{i18n: Chocobovalley_PulsianRare_Name}}",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 5000,
+					"EggItemIds": [
+						"Kitsutsune.Chocobovalley_PulsianEggRare"
+					],
+					"BirthText": "{{i18n: Chocobovalley_PulsianRare_Birth}}",
+					"DaysToMature": 3,
+					"DaysToProduce": 1,
+					"ProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_PulsianEggRare",
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "Kitsutsune.Chocobovalley_PulsianEggRare",
+						},
+						{
+							"ItemId": "261",//warp totem desert
+							"MinimumFriendship": 300,
+						},
+						{
+							"ItemId": "886",//warp totem island
+							"MinimumFriendship": 300,
+						}
+					],
+					"HarvestType": "DigUp",
+					"Sound": "Kitsutsune.Chocobovalley_BigChocoboSounds",
+					"BabySound": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Texture": "{{InternalAssetKey: Assets/Chocobos/Pulsian/PulsianWhite.png}}",
+					"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboWhite_Baby.png}}",
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 2",
+					"LeftRightPetHitboxTileSize": "2, 2",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": true,
+					"SleepFrame": 12,
+					"Skins": [
+						{
+							"id": "Oerba_white",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Pulsian/PulsianWhite.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboWhite_Baby.png}}"
+						},
+						{
+							"id": "Grave_Ridge_Red",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Pulsian/PulsianRed.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboRed_Baby.png}}"
+						},
+						{
+							"id": "Vile_Peaks_Black",
+							"Weight": 2,
+							"Texture": "{{InternalAssetKey: Assets/Chocobos/Pulsian/PulsianBlack.png}}",
+							"BabyTexture": "{{InternalAssetKey: Assets/Chocobos/Baby/ChocoboBlack_Baby.png}}"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": false
+						},
+					"ShadowWhenAdult": {
+							"Visible": false
+						},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 3,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						"meatIndex": "641"
+					}
+				}	
+			}
+		}
+	]
+}

@@ -1,0 +1,576 @@
+[
+	{ 
+        "Id": "WizardAxLetter", 
+	"Title" : "WizardAxLetter.title",
+        "Text": "WizardAxLetter.text",
+        "Repeatable": false,
+        "WhichBG": 2,
+        "TextColor": 1,
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Wizard",
+                 "FriendshipLevel": 2
+             }
+         ],
+    },
+{ 
+        "Id": "WizardAxLetter2", 
+	"Title" : "WizardAxLetter2.title",
+        "Text": "WizardAxLetter2.text",
+        "Repeatable": false,
+        "EventsSeen": [98890026],
+        "WhichBG": 2,
+        "TextColor": 1
+    },
+{ 
+        "Id": "CaptainMeet", 
+	"Title" : "CaptainMeet.title",
+        "Text": "CaptainMeet.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Captain",
+                 "FriendshipLevel": 2
+             }
+         ],
+    },
+{ 
+        "Id": "NimueApology", 
+	"Title" : "NimueApology.title",
+        "Text": "NimueApology.text",
+        "Repeatable": false,
+        "EventsSeen": [98890033],
+        "WhichBG": 0,
+    },
+{ 
+        "Id": "OlinaMelon", 
+	"Title" : "OlinaMelon.title",
+        "Text": "OlinaMelon.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "Seasons": ["summer"],
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Olina",
+                 "FriendshipLevel": 2
+             }
+         ],
+        "Attachments": [
+             {
+                 "Type": "Object",
+                 "Name": "Melon Seeds",
+                 "Index": 479,
+                 "Stack": 3
+             }
+          ]
+    },
+{ 
+        "Id": "NimuePumpkin", 
+	"Title" : "NimuePumpkin.title",
+        "Text": "NimuePumpkin.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "Seasons": ["fall"],
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Nimue",
+                 "FriendshipLevel": 2
+             }
+         ],
+        "Attachments": [
+             {
+                 "Type": "Object",
+                 "Name": "Pumpkin Seeds",
+                 "Index": 490,
+                 "Stack": 3
+             }
+          ]
+    },
+{ 
+        "Id": "LalaGrape", 
+	"Title" : "LalaGrape.title",
+        "Text": "LalaGrape.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "Seasons": ["fall"],
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Lala",
+                 "FriendshipLevel": 2
+             }
+         ],
+        "Attachments": [
+             {
+                 "Type": "Object",
+                 "Name": "Grape Starter",
+                 "Index": 301,
+                 "Stack": 2
+             }
+          ]
+    },
+{ 
+        "Id": "LuluBanana", 
+	"Title" : "LuluBanana.title",
+        "Text": "LuluBanana.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "Seasons": ["summer"],
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Lulu",
+                 "FriendshipLevel": 2
+             }
+         ],
+        "Attachments": [
+             {
+                 "Type": "Object",
+                 "Name": "Banana Sapling",
+                 "Index": 69,
+                 "Stack": 1
+             }
+          ]
+    },
+{ 
+        "Id": "HiroTreasure", 
+	"Title" : "HiroTreasure.title",
+        "Text": "HiroTreasure.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "EventsSeen": [98890003],
+        "Attachments": [
+             {
+                 "Type": "Object",
+                 "Name": "Treasure Chest",
+                 "Index": 166,
+                 "Stack": 1
+             }
+          ]
+    },
+{ 
+        "Id": "PukaPearl", 
+	"Title" : "PukaPearl.title",
+        "Text": "PukaPearl.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Puka",
+                 "FriendshipLevel": 6
+             }
+         ],
+        "Attachments": [
+             {
+                 "Type": "Object",
+                 "Name": "Pearl",
+                 "Index": 797,
+                 "Stack": 1
+             }
+          ]
+    },
+{ 
+        "Id": "LotusFlower1", 
+	"Title" : "LotusFlower1.title",
+        "Text": "LotusFlower1.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "Seasons": ["spring"],
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Lotus",
+                 "FriendshipLevel": 2
+             }
+         ],
+        "Attachments": [
+             {
+                 "Type": "Object",
+                 "Name": "Tulip Bulb",
+                 "Index": 427,
+                 "Stack": 3
+             }
+          ]
+    },
+{ 
+        "Id": "LotusFlower2", 
+	"Title" : "LotusFlower2.title",
+        "Text": "LotusFlower2.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "Seasons": ["summer"],
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Lotus",
+                 "FriendshipLevel": 2
+             }
+         ],
+        "Attachments": [
+             {
+                 "Type": "Object",
+                 "Name": "Poppy Seeds",
+                 "Index": 453,
+                 "Stack": 3
+             }
+          ]
+    },
+{ 
+        "Id": "LotusFlower3", 
+	"Title" : "LotusFlower3.title",
+        "Text": "LotusFlower3.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "Seasons": ["fall"],
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Lotus",
+                 "FriendshipLevel": 2
+             }
+         ],
+        "Attachments": [
+             {
+                 "Type": "Object",
+                 "Name": "Fairy Seeds",
+                 "Index": 425,
+                 "Stack": 3
+             }
+          ]
+    },
+{ 
+        "Id": "Halloween", 
+	"Title" : "Halloween.title",
+        "Text": "Halloween.text",
+        "Repeatable": true,
+        "Seasons": ["fall"],
+        "Days": [27],
+        "EventsSeen": [98890001],
+        "WhichBG": 0,
+    },
+{ 
+        "Id": "Christmas", 
+	"Title" : "Christmas.title",
+        "Text": "Christmas.text",
+        "Repeatable": true,
+        "Seasons": ["winter"],
+        "Days": [24],
+        "EventsSeen": [98890001],
+        "WhichBG": 0,
+    },
+{ 
+        "Id": "Tanabata", 
+	"Title" : "Tanabata.title",
+        "Text": "Tanabata.text",
+        "Repeatable": true,
+        "Seasons": ["summer"],
+        "Days": [6],
+        "EventsSeen": [98890001],
+        "WhichBG": 0,
+    },
+{ 
+        "Id": "BirthOfFlowers", 
+	"Title" : "BirthOfFlowers.title",
+        "Text": "BirthOfFlowers.text",
+        "Repeatable": true,
+        "Seasons": ["spring"],
+        "Days": [20],
+        "EventsSeen": [98890001],
+        "WhichBG": 0,
+    },
+{ 
+        "Id": "HiroEightHeart", 
+	"Title" : "HiroEightHeart.title",
+        "Text": "HiroEightHeart.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Hiro",
+                 "FriendshipLevel": 8
+             }
+         ],
+         "Attachments": [
+       {
+                 "Type": "Furniture",
+                 "Name": "Hiro Squish"
+            }
+     ]
+    },
+{ 
+        "Id": "JinxEightHeart", 
+	"Title" : "JinxEightHeart.title",
+        "Text": "JinxEightHeart.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Jinx",
+                 "FriendshipLevel": 8
+             }
+         ],
+         "Attachments": [
+           {
+                 "Type": "Furniture",
+                 "Name": "Jinx Squish"
+            }
+     ]
+    },
+{ 
+        "Id": "LalaEightHeart", 
+	"Title" : "LalaEightHeart.title",
+        "Text": "LalaEightHeart.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "FriendshipConditions": [
+            {
+                 "NpcName": "Lala",
+                 "FriendshipLevel": 8
+             }
+         ],
+         "Attachments": [
+            {
+                 "Type": "Furniture",
+                 "Name": "Lala Squish"
+            }
+     ]
+    },
+{ 
+        "Id": "LuluEightHeart", 
+	"Title" : "LuluEightHeart.title",
+        "Text": "LuluEightHeart.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Lulu",
+                 "FriendshipLevel": 8
+             }
+         ],
+         "Attachments": [
+            {
+                 "Type": "Furniture",
+                 "Name": "Lulu Squish"
+            }
+     ]
+    },
+{ 
+        "Id": "NimueEightHeart", 
+	"Title" : "NimueEightHeart.title",
+        "Text": "NimueEightHeart.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Nimue",
+                 "FriendshipLevel": 8
+             }
+         ],
+         "Attachments": [
+            {
+                 "Type": "Furniture",
+                 "Name": "Nimue Squish"
+            }
+     ]
+    },
+{ 
+        "Id": "NoaEightHeart", 
+	"Title" : "NoaEightHeart.title",
+        "Text": "NoaEightHeart.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Noa",
+                 "FriendshipLevel": 8
+             }
+         ],
+         "Attachments": [
+            {
+                 "Type": "Furniture",
+                 "Name": "Noa Squish"
+            }
+     ]
+    },
+{ 
+        "Id": "OlinaEightHeart", 
+	"Title" : "OlinaEightHeart.title",
+        "Text": "OlinaEightHeart.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Olina",
+                 "FriendshipLevel": 8
+             }
+         ],
+         "Attachments": [
+            {
+                 "Type": "Furniture",
+                 "Name": "Olina Squish"
+            }
+     ]
+    },
+{ 
+        "Id": "PukaEightHeart", 
+	"Title" : "PukaEightHeart.title",
+        "Text": "PukaEightHeart.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Puka",
+                 "FriendshipLevel": 8
+             }
+         ],
+         "Attachments": [
+       {
+                 "Type": "Furniture",
+                 "Name": "Puka Squish",
+            }
+     ]
+    },
+{ 
+        "Id": "LotusEightHeart", 
+	"Title" : "LotusEightHeart.title",
+        "Text": "LotusEightHeart.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Lotus",
+                 "FriendshipLevel": 8
+             }
+         ],
+         "Attachments": [
+       {
+                 "Type": "Furniture",
+                 "Name": "Lotus Squish",
+            }
+     ]
+    },
+{ 
+        "Id": "CaptainEightHeart", 
+	"Title" : "CaptainEightHeart.title",
+        "Text": "CaptainEightHeart.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Captain",
+                 "FriendshipLevel": 8
+             }
+         ],
+         "Attachments": [
+       {
+                 "Type": "Furniture",
+                 "Name": "Captain Squish",
+            }
+     ]
+    },
+{ 
+        "Id": "ShisoEightHeart", 
+	"Title" : "ShisoEightHeart.title",
+        "Text": "ShisoEightHeart.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Shiso",
+                 "FriendshipLevel": 8
+             }
+         ],
+         "Attachments": [
+       {
+                 "Type": "Furniture",
+                 "Name": "Shiso Squish",
+            }
+     ]
+    },
+{ 
+        "Id": "CaptainProject", 
+	"Title" : "CaptainProject.title",
+        "Text": "CaptainProject.text",
+        "Repeatable": false,
+        "EventsSeen": [98890044],
+        "WhichBG": 0,
+    },
+{ 
+        "Id": "CaptainProject2", 
+	"Title" : "CaptainProject2.title",
+        "Text": "CaptainProject2.text",
+        "Repeatable": false,
+        "EventsSeen": [98890057],
+        "WhichBG": 0,
+    },
+{ 
+        "Id": "CaptainProject3", 
+	"Title" : "CaptainProject3.title",
+        "Text": "CaptainProject3.text",
+        "Repeatable": false,
+        "EventsSeen": [98890060],
+        "WhichBG": 0,
+    },
+{ 
+        "Id": "CaptainProject4", 
+	"Title" : "CaptainProject4.title",
+        "Text": "CaptainProject4.text",
+        "Repeatable": false,
+        "EventsSeen": [98890062],
+        "WhichBG": 0,
+    },
+{ 
+        "Id": "CaptainProject5", 
+	"Title" : "CaptainProject5.title",
+        "Text": "CaptainProject5.text",
+        "Repeatable": false,
+        "EventsSeen": [98890065],
+        "WhichBG": 0,
+    },
+{ 
+        "Id": "CaptainProject6", 
+	"Title" : "CaptainProject6.title",
+        "Text": "CaptainProject6.text",
+        "Repeatable": false,
+        "EventsSeen": [98890066],
+        "WhichBG": 0,
+    },
+{ 
+        "Id": "KonpeitoRecipe", 
+	"Title" : "KonpeitoRecipe.title",
+        "Text": "KonpeitoRecipe.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+          "FriendshipConditions": [
+             {
+                 "NpcName": "Hiro",
+                 "FriendshipLevel": 6
+             }
+         ],
+        "Recipe": "Konpeito"
+    },
+{ 
+        "Id": "MacaronRecipe", 
+	"Title" : "MacaronRecipe.title",
+        "Text": "MacaronRecipe.text",
+        "Repeatable": false,
+        "WhichBG": 0,
+          "FriendshipConditions": [
+             {
+                 "NpcName": "Olina",
+                 "FriendshipLevel": 6
+             }
+         ],
+        "Recipe": "Bunny Macaron"
+    },
+{ 
+        "Id": "OlinaMemories", 
+	"Title" : "OlinaMemories.title",
+        "Text": "OlinaMemories.text",
+        "Repeatable": false,
+        "EventsSeen": [98890055],
+        "WhichBG": 0,
+        "FriendshipConditions": [
+             {
+                 "NpcName": "Olina",
+                 "FriendshipLevel": 10
+             }
+         ],
+    },
+]

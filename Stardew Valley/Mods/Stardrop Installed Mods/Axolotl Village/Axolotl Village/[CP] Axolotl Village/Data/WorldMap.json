@@ -1,0 +1,842 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/WorldMap",
+      "FromFile": "Assets/LooseSprites/WorldMap.png"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "LooseSprites/WorldMap",
+      "FromFile": "Assets/LooseSprites/WorldMap2.png",
+      "When":  {  "HasSeenEvent: hostPlayer": 98890058 },
+    },
+    {
+      "Action": "EditImage",
+      "Target": "LooseSprites/WorldMap",
+      "FromFile": "Assets/LooseSprites/WorldMap3.png",
+      "When":  {  "HasSeenEvent: hostPlayer": 98890063 },
+    },
+    {
+      "Action": "EditImage",
+      "Target": "LooseSprites/WorldMap",
+      "FromFile": "Assets/LooseSprites/WorldMap4.png",
+      "When":  { "HasReadLetter: hostPlayer |contains=CaptainProject6": true },
+    },
+        {
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "Entries": {
+                "otohime.AV_AxolotlTown": {
+                    "BaseTexture": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Texture": "LooseSprites/WorldMap"
+                        }
+                    ],
+                    "MapAreas": [
+                        {
+                            "Id": "Village",
+                            "Condition": null,
+                            "PixelArea": {
+                                "X": 14,
+                                "Y": 61,
+                                "Width": 128,
+                                "Height": 74
+                            },
+                            "ScrollText": null,
+                            "Textures": [],
+                            "Tooltips": [
+                                {
+                                    "Id": "HiroHouse",
+                                    "PixelArea": {
+                                        "X": 33,
+                                        "Y": 114,
+                                        "Width": 8,
+                                        "Height": 7 
+                                    },
+                                    "Text": "Hiro's House"
+                                },
+                                {
+                                    "Id": "PukaHouse",
+                                    "PixelArea": {
+                                        "X": 64,
+                                        "Y": 113,
+                                        "Width": 7,
+                                        "Height": 9
+                                    },
+                                    "Text": "Puka's House"
+                                },
+                                {
+                                    "Id": "CommunityCenter",
+                                    "PixelArea": {
+                                        "X": 43,
+                                        "Y": 104,
+                                        "Width": 21,
+                                        "Height": 9
+                                    },
+                                    "Text": "Community Center"
+                                },
+                                {
+                                    "Id": "VillageSquare",
+                                    "PixelArea": {
+                                        "X": 46,
+                                        "Y": 92,
+                                        "Width": 15,
+                                        "Height": 12
+                                    },
+                                    "Text": "Village Square. Ice cream stands open from 6AM to 8PM"
+                                },
+                                {
+                                    "Id": "TropicalShop",
+                                    "PixelArea": {
+                                        "X": 34,
+                                        "Y": 106,
+                                        "Width": 5,
+                                        "Height": 4
+                                    },
+                                    "Text": "Tropical Shop. Open from 6AM to 8PM"
+                                },
+                                {
+                                    "Id": "FishShop",
+                                    "PixelArea": {
+                                        "X": 68,
+                                        "Y": 106,
+                                        "Width": 5,
+                                        "Height": 4
+                                    },
+                                    "Text": "Fish Shop. Open from 6AM to 8PM"
+                                },
+                                {
+                                    "Id": "LuluHouse",
+                                    "PixelArea": {
+                                        "X": 47,
+                                        "Y": 84,
+                                        "Width": 6,
+                                        "Height": 4
+                                    },
+                                    "Text": "Lulu's Tent"
+                                },
+                                {
+                                    "Id": "LalaHouse",
+                                    "PixelArea": {
+                                        "X": 54,
+                                        "Y": 84,
+                                        "Width": 6,
+                                        "Height": 4
+                                    },
+                                    "Text": "Lala's Tent"
+                                },
+                                {
+                                    "Id": "NoaHouse",
+                                    "PixelArea": {
+                                        "X": 32,
+                                        "Y": 76,
+                                        "Width": 8,
+                                        "Height": 7
+                                    },
+                                    "Text": "Noa's House"
+                                },
+                                {
+                                    "Id": "OlinaHouse",
+                                    "PixelArea": {
+                                        "X": 65,
+                                        "Y": 75,
+                                        "Width": 8,
+                                        "Height": 8
+                                    },
+                                    "Text": "Olina's House"
+                                },
+                                {
+                                    "Id": "PlushBoatShop",
+                                    "PixelArea": {
+                                        "X": 78,
+                                        "Y": 77,
+                                        "Width": 5,
+                                        "Height": 4
+                                    },
+                                    "Text": "Plush Boat Shop. Open from 6AM to 8PM"
+                                },
+                                {
+                                    "Id": "VeggieBoatShop",
+                                    "PixelArea": {
+                                        "X": 78,
+                                        "Y": 99,
+                                        "Width": 5,
+                                        "Height": 4
+                                    },
+                                    "Text": "Veggie Boat Shop. Open from 6AM to 8PM"
+                                },
+                                {
+                                    "Id": "FruitBoatShop",
+                                    "PixelArea": {
+                                        "X": 78,
+                                        "Y": 104,
+                                        "Width": 5,
+                                        "Height": 4
+                                    },
+                                    "Text": "Fruit Boat Shop. Open from 6AM to 8PM"
+                                },
+                                {
+                                    "Id": "WarpBoatShop",
+                                    "PixelArea": {
+                                        "X": 78,
+                                        "Y": 114,
+                                        "Width": 5,
+                                        "Height": 4
+                                    },
+                                    "Text": "Warp Boat Shop. Open from 6AM to 8PM"
+                                },
+                                {
+                                    "Id": "DrinkShop",
+                                    "PixelArea": {
+                                        "X": 89,
+                                        "Y": 67,
+                                        "Width": 8,
+                                        "Height": 9
+                                    },
+                                    "Text": "Drink Shop. Open from 6AM to 12AM"
+                                },
+                                {
+                                    "Id": "JinxHouse",
+                                    "PixelArea": {
+                                        "X": 118,
+                                        "Y": 68,
+                                        "Width": 5,
+                                        "Height": 7
+                                    },
+                                    "Text": "Jinx's House"
+                                },
+                                {
+                                    "Id": "CrystalBeach",
+                                    "PixelArea": {
+                                        "X": 125,
+                                        "Y": 79,
+                                        "Width": 7,
+                                        "Height": 35
+                                    },
+                                    "Text": "Crystal Beach"
+                                },
+                                {
+                                    "Id": "CaptainHouse",
+                                    "PixelArea": {
+                                        "X": 134,
+                                        "Y": 97,
+                                        "Width": 11,
+                                        "Height": 7
+                                    },
+                                    "Text": "Captain's Boat"
+                                },
+                                {
+                                    "Id": "VillageNeighborhood",
+                                    "PixelArea": {
+                                        "X": 95,
+                                        "Y": 82,
+                                        "Width": 25,
+                                        "Height": 16
+                                    },
+                                    "Text": "Village Neighborhood"
+                                },
+                                {
+                                    "Id": "Bakery",
+                                    "PixelArea": {
+                                        "X": 99,
+                                        "Y": 99,
+                                        "Width": 17,
+                                        "Height": 9
+                                    },
+                                    "Text": "Bakery. Open from 6AM to 8PM"
+                                },
+                                {
+                                    "Id": "LotusHouse",
+                                    "PixelArea": {
+                                        "X": 103,
+                                        "Y": 111,
+                                        "Width": 9,
+                                        "Height": 7
+                                    },
+                                    "Text": "Lotus's House"
+                                },
+                            ],
+                            "WorldPositions": [
+                                {
+                                    "Id": "Village",
+                                    "LocationName": "otohime.AV_AxolotlTown",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 0, 
+                                        "Y": 0, 
+                                        "Width": 120, 
+                                        "Height": 110 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 14,
+                                        "Y": 61,
+                                        "Width": 128,
+                                        "Height": 74
+                                    },
+                                    "ScrollText": "Axolotl Village"
+                                },
+                                {
+                                    "Id": "HiroHouse",
+                                    "LocationName": "otohime.AV_HiroHouse",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 14, 
+                                        "Y": 77, 
+                                        "Width": 8, 
+                                        "Height": 9 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 33,
+                                        "Y": 114,
+                                        "Width": 8,
+                                        "Height": 7
+                                    },
+                                    "ScrollText": "Hiro's House"
+                                },
+                                {
+                                    "Id": "PukaHouse",
+                                    "LocationName": "otohime.AV_PukaHouse",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 40, 
+                                        "Y": 75, 
+                                        "Width": 11, 
+                                        "Height": 11 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 64,
+                                        "Y": 113,
+                                        "Width": 7,
+                                        "Height": 9
+                                    },
+                                    "ScrollText": "Puka's House"
+                                },
+                                {
+                                    "Id": "CommunityCenter",
+                                    "LocationName": "otohime.AV_AxolotlCommunityCenter",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 21, 
+                                        "Y": 67, 
+                                        "Width": 22, 
+                                        "Height": 10 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 43,
+                                        "Y": 104,
+                                        "Width": 21,
+                                        "Height": 9
+                                    },
+                                    "ScrollText": "Axolotl Village Community Center"
+                                },
+                                {
+                                    "Id": "LuluHouse",
+                                    "LocationName": "otohime.AV_LuluHouse",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 26, 
+                                        "Y": 33, 
+                                        "Width": 6, 
+                                        "Height": 6 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 47,
+                                        "Y": 84,
+                                        "Width": 6,
+                                        "Height": 4
+                                    },
+                                    "ScrollText": "Lulu's Tent"
+                                },
+                                {
+                                    "Id": "LalaHouse",
+                                    "LocationName": "otohime.AV_LalaHouse",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 32, 
+                                        "Y": 33, 
+                                        "Width": 6, 
+                                        "Height": 6 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 54,
+                                        "Y": 84,
+                                        "Width": 6,
+                                        "Height": 4
+                                    },
+                                    "ScrollText": "Lala's Tent"
+                                },
+                                {
+                                    "Id": "NoaHouse",
+                                    "LocationName": "otohime.AV_NoaHouse",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 12, 
+                                        "Y": 25, 
+                                        "Width": 8, 
+                                        "Height": 6 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 32,
+                                        "Y": 76,
+                                        "Width": 8,
+                                        "Height": 7
+                                    },
+                                    "ScrollText": "Noa's House"
+                                },
+                                {
+                                    "Id": "OlinaHouse",
+                                    "LocationName": "otohime.AV_OlinaHouse",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 43, 
+                                        "Y": 22, 
+                                        "Width": 8, 
+                                        "Height": 9 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 65,
+                                        "Y": 75,
+                                        "Width": 8,
+                                        "Height": 8
+                                    },
+                                    "ScrollText": "Olina's House"
+                                },
+                                {
+                                    "Id": "DrinkShop",
+                                    "LocationName": "otohime.AV_DrinkShop",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 69, 
+                                        "Y": 15, 
+                                        "Width": 7, 
+                                        "Height": 9 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 89,
+                                        "Y": 67,
+                                        "Width": 8,
+                                        "Height": 9
+                                    },
+                                    "ScrollText": "Axolotl Village Drink Shop"
+                                },
+                                {
+                                    "Id": "JinxHouse",
+                                    "LocationName": "otohime.AV_JinxHouse",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 98, 
+                                        "Y": 17, 
+                                        "Width": 4, 
+                                        "Height": 5 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 118,
+                                        "Y": 68,
+                                        "Width": 5,
+                                        "Height": 7
+                                    },
+                                    "ScrollText": "Jinx's House"
+                                },
+                                {
+                                    "Id": "CaptainHouse",
+                                    "LocationName": "otohime.AV_CaptainHouse",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 110, 
+                                        "Y": 50, 
+                                        "Width": 10, 
+                                        "Height": 8 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 134,
+                                        "Y": 97,
+                                        "Width": 11,
+                                        "Height": 7
+                                    },
+                                    "ScrollText": "Captain's Boat"
+                                },
+                                {
+                                    "Id": "Bakery",
+                                    "LocationName": "otohime.AV_AxolotlBakery",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 81, 
+                                        "Y": 58, 
+                                        "Width": 14, 
+                                        "Height": 8 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 99,
+                                        "Y": 99,
+                                        "Width": 17,
+                                        "Height": 9
+                                    },
+                                    "ScrollText": "Axolotl Village Bakery"
+                                },
+                                {
+                                    "Id": "LotusHouse",
+                                    "LocationName": "otohime.AV_LotusHouse",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 83, 
+                                        "Y": 75, 
+                                        "Width": 10, 
+                                        "Height": 7 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 103,
+                                        "Y": 111,
+                                        "Width": 9,
+                                        "Height": 7
+                                    },
+                                    "ScrollText": "Lotus's House"
+                                }
+                             ],
+                            "CustomFields": {}
+                        },
+                     {
+                            "Id": "Lake",
+                            "Condition": null,
+                            "PixelArea": {
+                                "X": 26,
+                                "Y": 0,
+                                "Width": 108,
+                                "Height": 60
+                            },
+                            "ScrollText": null,
+                            "Textures": [],
+                            "Tooltips": [
+                                {
+                                    "Id": "NimueHouse",
+                                    "PixelArea": {
+                                        "X": 119,
+                                        "Y": 5,
+                                        "Width": 6,
+                                        "Height": 16 
+                                    },
+                                    "Text": "Nimue's Tower"
+                                },
+                            ],
+                            "WorldPositions": [
+                                {
+                                    "Id": "Lake",
+                                    "LocationName": "otohime.AV_AxolotlLake",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 0, 
+                                        "Y": 0, 
+                                        "Width": 120, 
+                                        "Height": 91 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 26,
+                                        "Y": 0,
+                                        "Width": 108,
+                                        "Height": 60
+                                    },
+                                    "ScrollText": "Axolotl Lake"
+                                },
+                                {
+                                    "Id": "NimueHouse",
+                                    "LocationName": "otohime.AV_NimueHouse",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 100, 
+                                        "Y": 1, 
+                                        "Width": 8, 
+                                        "Height": 9 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 119,
+                                        "Y": 5,
+                                        "Width": 4,
+                                        "Height": 12
+                                    },
+                                    "ScrollText": "Nimue's Tower"
+                                }
+                             ],
+                            "CustomFields": {}
+                        },
+                     {
+                            "Id": "VillageSouth1",
+                            "Condition": null,
+                            "PixelArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 160,
+                                "Height": 200
+                            },
+                            "ScrollText": null,
+                            "Textures": [
+                             ],
+                            "Tooltips": [
+                                {
+                                    "Id": "BonbonHouse",
+                                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 98890058",
+                                    "PixelArea": {
+                                        "X": 40,
+                                        "Y": 144,
+                                        "Width": 27,
+                                        "Height": 12 
+                                    },
+                                    "Text": "Bonbon's Farm"
+                                },
+                            ],
+                            "WorldPositions": [
+                                   {
+                                    "Id": "VillageSouth1",
+                                    "LocationName": "otohime.AV_AxolotlTownSouth",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 0, 
+                                        "Y": 0, 
+                                        "Width": 120, 
+                                        "Height": 110 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 23,
+                                        "Y": 136,
+                                        "Width": 108,
+                                        "Height": 63
+                                    },
+                                    "ScrollText": "Axolotl Village - South"
+                                },
+                                {
+                                    "Id": "BonbonHouse",
+                                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 98890058",
+                                    "LocationName": "otohime.AV_BonbonHouse",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 19, 
+                                        "Y": 22, 
+                                        "Width": 26, 
+                                        "Height": 18 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 40,
+                                        "Y": 144,
+                                        "Width": 27,
+                                        "Height": 12
+                                    },
+                                    "ScrollText": "Bonbon's Farm"
+                                },
+                             ],
+                            "CustomFields": {}
+                        },
+                     {
+                            "Id": "VillageSouth2",
+                            "Condition": null,
+                            "PixelArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 160,
+                                "Height": 200
+                            },
+                            "ScrollText": null,
+                            "Textures": [
+                             ],
+                            "Tooltips": [
+                                {
+                                    "Id": "KandiHouse",
+                                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 98890063",
+                                    "PixelArea": {
+                                        "X": 116,
+                                        "Y": 178,
+                                        "Width": 8,
+                                        "Height": 12 
+                                    },
+                                    "Text": "Kandi's Manor"
+                                },
+                                {
+                                    "Id": "KandiStage",
+                                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 98890063",
+                                    "PixelArea": {
+                                        "X": 96,
+                                        "Y": 144,
+                                        "Width": 23,
+                                        "Height": 12 
+                                    },
+                                    "Text": "Kandi's Stage"
+                                },
+                            ],
+                            "WorldPositions": [
+                                {
+                                    "Id": "VillageSouth2",
+                                    "LocationName": "otohime.AV_AxolotlTownSouth",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 0, 
+                                        "Y": 0, 
+                                        "Width": 120, 
+                                        "Height": 110 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 23,
+                                        "Y": 136,
+                                        "Width": 108,
+                                        "Height": 63
+                                    },
+                                    "ScrollText": "Axolotl Village - South"
+                                },
+                                {
+                                    "Id": "KandiHouse",
+                                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 98890058",
+                                    "LocationName": "otohime.AV_KandiHouse",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 95, 
+                                        "Y": 72, 
+                                        "Width": 11, 
+                                        "Height": 16 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 116,
+                                        "Y": 178,
+                                        "Width": 8,
+                                        "Height": 12
+                                    },
+                                    "ScrollText": "Kandi's Manor"
+                                },
+                             ],
+                            "CustomFields": {}
+                        },
+                     {
+                            "Id": "VillageSouth3",
+                            "Condition": null,
+                            "PixelArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 160,
+                                "Height": 200
+                            },
+                            "ScrollText": null,
+                            "Textures": [
+                             ],
+                            "Tooltips": [
+                                {
+                                    "Id": "AccessoryShop",
+                                    "Condition": "PLAYER_HAS_MAIL Host CaptainProject6",
+                                    "PixelArea": {
+                                        "X": 87,
+                                        "Y": 158,
+                                        "Width": 7,
+                                        "Height": 6 
+                                    },
+                                    "Text": "Accessory Shop. Open from 6AM to 8PM"
+                                },
+                                {
+                                    "Id": "CandyShop",
+                                    "Condition": "PLAYER_HAS_MAIL Host CaptainProject6",
+                                    "PixelArea": {
+                                        "X": 96,
+                                        "Y": 158,
+                                        "Width": 7,
+                                        "Height": 6 
+                                    },
+                                    "Text": "Candy Shop. Open from 6AM to 8PM"
+                                },
+                                {
+                                    "Id": "SeedShop",
+                                    "Condition": "PLAYER_HAS_MAIL Host CaptainProject6",
+                                    "PixelArea": {
+                                        "X": 112,
+                                        "Y": 158,
+                                        "Width": 7,
+                                        "Height": 6 
+                                    },
+                                    "Text": "Seed Shop. Open from 6AM to 8PM"
+                                },
+                                {
+                                    "Id": "PlushShop",
+                                    "Condition": "PLAYER_HAS_MAIL Host CaptainProject6",
+                                    "PixelArea": {
+                                        "X": 121,
+                                        "Y": 158,
+                                        "Width": 7,
+                                        "Height": 6 
+                                    },
+                                    "Text": "Plush Shop. Open from 6AM to 8PM"
+                                },
+                            ],
+                            "WorldPositions": [
+                                {
+                                    "Id": "VillageSouth3",
+                                    "LocationName": "otohime.AV_AxolotlTownSouth",
+                                    "ExtendedTileArea": null,
+                                    "TileArea": { 
+                                        "X": 0, 
+                                        "Y": 0, 
+                                        "Width": 120, 
+                                        "Height": 110 
+                                    },
+                                    "MapPixelArea": {
+                                        "X": 23,
+                                        "Y": 136,
+                                        "Width": 108,
+                                        "Height": 63
+                                    },
+                                    "ScrollText": "Axolotl Village - South"
+                                },
+                                {
+                                    "Id": "AccessoryShop",
+                                    "Condition": "PLAYER_HAS_MAIL Host CaptainProject6",
+                                    "LocationName": "otohime.AV_AccessoryShop",
+                                    "ExtendedTileArea": null,
+                                    "MapPixelArea": {
+                                        "X": 87,
+                                        "Y": 158,
+                                        "Width": 7,
+                                        "Height": 6
+                                    },
+                                    "ScrollText": "Axolotl Village Accessory Shop"
+                                },
+                                {
+                                    "Id": "CandyShop",
+                                    "Condition": "PLAYER_HAS_MAIL Host CaptainProject6",
+                                    "LocationName": "otohime.AV_CandyShop",
+                                    "ExtendedTileArea": null,
+                                    "MapPixelArea": {
+                                        "X": 96,
+                                        "Y": 158,
+                                        "Width": 7,
+                                        "Height": 6
+                                    },
+                                    "ScrollText": "Axolotl Village Candy Shop"
+                                },
+                                {
+                                    "Id": "SeedShop",
+                                    "Condition": "PLAYER_HAS_MAIL Host CaptainProject6",
+                                    "LocationName": "otohime.AV_SeedShop",
+                                    "ExtendedTileArea": null,
+                                    "MapPixelArea": {
+                                        "X": 112,
+                                        "Y": 158,
+                                        "Width": 7,
+                                        "Height": 6
+                                    },
+                                    "ScrollText": "Axolotl Village Seed Shop"
+                                },
+                                {
+                                    "Id": "PlushShop",
+                                    "Condition": "PLAYER_HAS_MAIL Host CaptainProject6",
+                                    "LocationName": "otohime.AV_PlushShop",
+                                    "ExtendedTileArea": null,
+                                    "MapPixelArea": {
+                                        "X": 121,
+                                        "Y": 158,
+                                        "Width": 7,
+                                        "Height": 6
+                                    },
+                                    "ScrollText": "Axolotl Village Plush Shop"
+                                },
+            ]
+         }
+      ]
+   }
+}
+}
+]
+}

@@ -1,0 +1,400 @@
+{ 
+	"Changes": [
+		
+		{   "LogName": "Movie Theatre Jorts",
+			"Action": "EditData", 
+			"Target": "Data/MoviesReactions",	 
+			"Entries": {
+				
+				//Jorts
+				"JortsCat": {
+				"NPCName": "JortsCat",
+				"Reactions": [
+					{
+						"Tag": "spring_movie_0",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "¿No te parecen geniales las películas de animación? Son tan coloridas y las historias suelen ser felices.$h",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"Jorts está sentado hacia delante, emocionado por el éxito del retoño.\"",
+								"Text": ""
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Me encantan las películas animadas, ¡pero ésta me encantó aún más!$h"
+							}
+						},
+						"ID": "reaction_0"
+					},
+					{
+						"Tag": "summer_movie_0",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "¿No es este el juego del salón?  ¿También hay que pulsar botones?$4",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"Jorts está amasando en el asiento, como si estuviese apretando botones.\"/emote JortsCat 52",
+								"Text": "¡Vamos, @! ¡Debemos ayudarlo!"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "¡Sí! ¡Ganamos! ¡Estoy tan contento de que lo hayamos hecho juntos!$h"
+							}
+						},
+						"ID": "reaction_1"
+					},
+					{
+						"Tag": "fall_movie_0",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Me pregunto de qué tratará la película.$4#$b#¡Supongo que por eso es un misterio!$h",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "emote JortsCat 8",
+								"Text": "No entiendo.$4#$b#¡Pero es divertido!$h#$b#Pero no entiendo.$4"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Todavía no sé qué ha pasado, pero quizá Jean pueda explicármelo. ¡Gracias, @!"
+							}
+						},
+						"ID": "reaction_2"
+					},
+					{
+						"Tag": "winter_movie_0",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Parece que hace frío. Espero que los actores estuvieran calentitos.",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"Jorts se pega a tu costado y ronronea.",
+								"Text": "Estoy seguro de que estarán bien, @."
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "¿Estás bien, @? Puedes acariciarme un poco más si aún te sientes triste."
+							}
+						},
+						"ID": "reaction_3"
+					},
+					{
+						"Tag": "spring_movie_1",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "¡Mira qué colorido! Apuesto a que será divertido.",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"Jorts mira fijamente a los pajaritos de la pantalla, con ojos brillantes.",
+								"Text": "AMIGOS!!!$h"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "¡Qué bonitos pájaros! Me pregunto si podré conocerlos algún día."
+							}
+						},
+						"ID": "reaction_4"
+					},
+					{
+						"Tag": "summer_movie_1",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "¡Parece suavecito! Quiero amasarlo.$h",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "¡Jajaja! ¡Clásico de Wumbus!$h"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "¡Este fue tan divertido! Me encantan los cómicos."
+							}
+						},
+						"ID": "reaction_5"
+					},
+					{
+						"Tag": "fall_movie_1",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Cuando aúlle, aullémosle de vuelta, ¿vale?",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"Jorts pone su patita protectora en tu pierna.\"",
+								"Text": "No te preocupes, @, te protegeré."
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Estaba tan ocupado vigilando que me olvidé de aullar. Me gustó, @, pero creo que Jean no le gustará."
+							}
+						},
+						"ID": "reaction_6"
+					},
+					{
+						"Tag": "winter_movie_1",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "showFrame JortsCat 36/message \"Jorts se quedó dormido.\"",
+								"Text": ""
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Esa fue una película muy agradable para la siesta. Todo tranquilo y relajante.$h"
+							}
+						},
+						"ID": "reaction_7"
+					},
+				],
+				},
+			},
+		},
+		{   "LogName": "Movie Theatre Jorts",
+			"Action": "EditData", 
+			"Target": "Data/MoviesReactions",	 
+			"Entries": {
+				
+				//Jean
+				"JeanCat": {
+				"NPCName": "JeanCat",
+				"Reactions": [
+					{
+						"Tag": "spring_movie_0",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "He escuchado esta historia antes, pero no de forma animada. Esto será interesante.$h",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Oh, a Jorts le encantaría esto.$h"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Todo el mundo aprecia una buena historia de superación de la adversidad, ¿no crees?$h#$b#Gracias por invitarme."
+							}
+						},
+						"ID": "reaction_0"
+					},
+					{
+						"Tag": "summer_movie_0",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Oh, este es el juego que Abigail siempre juega. Esperemos que la película sea más fácil para nosotros que el juego.$h",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "emote JeanCat 32",
+								"Text": "Pfft, es bastante predecible, pero aprecio su devoción por el tema.$h"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "No hizo nada nuevo ni sorprendente, pero estoy segura de que los fans del juego apreciarán la familiaridad.$h#$b#Thank you for inviting me, @."
+							}
+						},
+						"ID": "reaction_1"
+					},
+					{
+						"Tag": "fall_movie_0",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Me gusta el misterio, pero no me gusta el ocultismo.#$b#Aun así, no tiene sentido juzgar una película por su cartel, ¿verdad?$h",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "emote JeanCat 40",
+								"Text": "Creo que entiendo lo que pretenden, pero está muy desorganizado. No hay sensación de progresión.$3"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Creo que podría pulirse un poco, pero ha sido un buen ejercicio de análisis narrativo. Gracias por la invitación.$h"
+							}
+						},
+						"ID": "reaction_2"
+					},
+					{
+						"Tag": "winter_movie_0",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Es la época de las películas reconfortantes de libro, ¿verdad?",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "emote JeanCat 28",
+								"Text": "Sé que no viene al caso, pero hay muchas formas de evitar esta situación.$3"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Bueno, fue bonito para lo que fue. Gracias por la invitación.#$b#Me gustaría ver un final en el que se comieran a los ricos.$6"
+							}
+						},
+						"ID": "reaction_3"
+					},
+					{
+						"Tag": "spring_movie_1",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Soy fan de los documentales. Siempre es un buen momento para aprender. Y se ve como un video de alta calidad.",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "shake JeanCat 3000/pause 500/message \"Jean sigue agachándose y moviendo la cola...\"",
+								"Text": "Lo siento, instintos felinos. Es muy realista, ¿verdad?$3"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Gracias por la invitación, @. Me ha encantado.#$b#Siento haberme lanzado a la pantalla.$3#$b#...cuatro veces....$s"
+							}
+						},
+						"ID": "reaction_4"
+					},
+					{
+						"Tag": "summer_movie_1",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Una comedia absurda, ¿eh? Eso puede ser un desafío.",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"Jean tiene una pata en la cara. No sabes si está alterada o contenta.",
+								"Text": ""
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Bueno, eso fue... sin duda una película.$3#$b#Deberías invitar a Jorts, seguro que le encantará."
+							}
+						},
+						"ID": "reaction_5"
+					},
+					{
+						"Tag": "fall_movie_1",
+						"Response": "dislike",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "¿Una película de terror? Bueno... no es que sea REAL, así que....$3",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "warp JeanCat -999 -999/emote farmer 16/message \"Jean??\"/pause 500/emote farmer 40/message \"Está escondida bajo los asientos....",
+								"Text": "¡Jorts! ¡Jorts, haz que lo malo se vaya!$4"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "...Lo siento, @. Supongo que esto no es lo mío.$s"
+							}
+						},
+						"ID": "reaction_6"
+					},
+					{
+						"Tag": "winter_movie_1",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "¿Qué crees que define a un clásico, @?",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"Jean la ve absorta y mueve la cola con satisfacción.",
+								"Text": ""
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "Eso fue bastante agradable, @. No sé mucho acerca de la cinematografía, pero es interesante ver lo que es diferente entre entonces y ahora."
+							}
+						},
+						"ID": "reaction_7"
+					},
+				]
+			},
+			},
+		}
+		
+	]
+}

@@ -1,0 +1,235 @@
+{
+    "Format": "2.0.0",
+	"ConfigSchema": {
+		"SurpriseGift": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "Choose whether you want to be able to get the Surprise Gift Item. WARNING!!! Opening this will give a random item and might break progression or give an error item."
+        }
+	},
+    "Changes": [  
+        //Sprites
+        {
+            "LogName": "Load shopIcon for Delibird",
+            "Action": "Load",
+            "Target": "Animals/{{ModId}}_shop_Delibird_icon",
+            "FromFile": "assets/DelibirdShop.png"
+        },
+        {
+            "LogName": "Load Sprite for Delibird",
+            "Action": "Load",
+            "Target": "Animals/{{ModId}}_Delibird",
+            "FromFile": "assets/Delibird.png"
+        },
+		{
+            "LogName": "Load Sprite for DelibirdShiny",
+            "Action": "Load",
+            "Target": "Animals/{{ModId}}_Delibird_shiny",
+            "FromFile": "assets/DelibirdShiny.png"
+        },
+        {
+            "LogName": "Load Spritesheet for items",
+            "Action": "Load",
+            "Target": "TileSheets/{{ModId}}_Delibird_items",
+            "FromFile": "assets/DelibirdItems.png"
+        },
+		{
+            "LogName": "Load Spritesheet for Big Craftables",
+            "Action": "Load",
+            "Target": "TileSheets/{{ModId}}_Delibird_bc",
+            "FromFile": "assets/DelibirdBC.png"
+        },
+		{
+            "LogName": "Load shopIcon for Iron Bundle",
+            "Action": "Load",
+            "Target": "Animals/{{ModId}}_shop_IronBundle_icon",
+            "FromFile": "assets/IronBundleShop.png"
+        },
+		{
+            "LogName": "Load Sprite for Iron Bundle",
+            "Action": "Load",
+            "Target": "Animals/{{ModId}}_IronBundle",
+            "FromFile": "assets/IronBundle.png"
+        },
+		{
+            "LogName": "Load Sprite for IronBundleShiny",
+            "Action": "Load",
+            "Target": "Animals/{{ModId}}_IronBundle_shiny",
+            "FromFile": "assets/IronBundleShiny.png"
+        },
+		//Data
+		{
+			"LogName": "Load Delibird",
+			"Action": "Include",
+			"FromFile": "data/Delibird.json"
+		},
+		{
+			"LogName": "Load Items",
+			"Action": "Include",
+			"FromFile": "data/DelibirdItems.json"
+		},
+		{
+			"LogName": "Load Machines",
+			"Action": "Include",
+			"FromFile": "data/DelibirdMachines.json"
+		},
+		{
+			"LogName": "Load Present Open Data",
+			"Action": "Include",
+			"FromFile": "data/PresentOpen.json"
+		},
+
+
+		{
+			"LogName": "Load Iron Bundle With Surprise",
+			"Action": "Include",
+			"FromFile": "data/IronBundleSurprise.json",
+			"When": { "SurpriseGift": "true" }
+		},
+		{
+			"LogName": "Load Iron Bundle Without Surprise",
+			"Action": "Include",
+			"FromFile": "data/IronBundleNoSurprise.json",
+			"When": { "SurpriseGift": "false" }
+		},
+
+
+        //Other Mod Support
+		{
+			"LogName": "Load Mod Support",
+			"Action": "Include",
+			"FromFile": "data/GiftGo/none.json",
+            "When": {
+				"HasMod|contains=Letsgolilly.LillysTinkaton": false,
+                "HasMod|contains=Letsgolilly.LillysRibombee": false,
+                "HasMod|contains=Letsgolilly.LillysSkitty": false,
+				"HasMod|contains=Letsgolilly.LillysSkittyMarnie": false
+			}
+		},
+        {
+			"LogName": "Load Mod Support",
+			"Action": "Include",
+			"FromFile": "data/GiftGo/tinkaton.json",
+            "When": {
+				"HasMod|contains=Letsgolilly.LillysTinkaton": true,
+                "HasMod|contains=Letsgolilly.LillysRibombee": false,
+                "HasMod|contains=Letsgolilly.LillysSkitty": false,
+				"HasMod|contains=Letsgolilly.LillysSkittyMarnie": false
+			}
+		},
+        {
+			"LogName": "Load Mod Support",
+			"Action": "Include",
+			"FromFile": "data/GiftGo/ribombee.json",
+            "When": {
+                "HasMod|contains=Letsgolilly.LillysTinkaton": false,
+				"HasMod|contains=Letsgolilly.LillysRibombee": true,
+                "HasMod|contains=Letsgolilly.LillysSkitty": false,
+				"HasMod|contains=Letsgolilly.LillysSkittyMarnie": false
+			}
+		},
+        {
+			"LogName": "Load Mod Support",
+			"Action": "Include",
+			"FromFile": "data/GiftGo/skitty.json",
+            "When": {
+                "HasMod|contains=Letsgolilly.LillysTinkaton": false,
+                "HasMod|contains=Letsgolilly.LillysRibombee": false,
+				"HasMod|contains=Letsgolilly.LillysSkitty": true,
+				"HasMod|contains=Letsgolilly.LillysSkittyMarnie": false
+			}
+		},
+        {
+			"LogName": "Load Mod Support",
+			"Action": "Include",
+			"FromFile": "data/GiftGo/tinkatonribombee.json",
+            "When": {
+				"HasMod|contains=Letsgolilly.LillysTinkaton": true,
+                "HasMod|contains=Letsgolilly.LillysRibombee": true,
+                "HasMod|contains=Letsgolilly.LillysSkitty": false,
+				"HasMod|contains=Letsgolilly.LillysSkittyMarnie": false
+			}
+		},
+        {
+			"LogName": "Load Mod Support",
+			"Action": "Include",
+			"FromFile": "data/GiftGo/tinkatonskitty.json",
+            "When": {
+				"HasMod|contains=Letsgolilly.LillysTinkaton": true,
+                "HasMod|contains=Letsgolilly.LillysRibombee": false,
+                "HasMod|contains=Letsgolilly.LillysSkitty": true,
+				"HasMod|contains=Letsgolilly.LillysSkittyMarnie": false
+			}
+		},
+        {
+			"LogName": "Load Mod Support",
+			"Action": "Include",
+			"FromFile": "data/GiftGo/ribombeeskitty.json",
+            "When": {
+                "HasMod|contains=Letsgolilly.LillysTinkaton": false,
+				"HasMod|contains=Letsgolilly.LillysRibombee": true,
+                "HasMod|contains=Letsgolilly.LillysSkitty": true,
+				"HasMod|contains=Letsgolilly.LillysSkittyMarnie": false
+			}
+		},
+        {
+			"LogName": "Load Mod Support",
+			"Action": "Include",
+			"FromFile": "data/GiftGo/tinkatonribombeeskitty.json",
+            "When": {
+				"HasMod|contains=Letsgolilly.LillysTinkaton": true,
+                "HasMod|contains=Letsgolilly.LillysRibombee": true,
+                "HasMod|contains=Letsgolilly.LillysSkitty": true,
+				"HasMod|contains=Letsgolilly.LillysSkittyMarnie": false
+			}
+		},
+
+		/////////////
+
+		{
+			"LogName": "Load Mod Support",
+			"Action": "Include",
+			"FromFile": "data/GiftGo/SkittyMarnie/skittyMarnie.json",
+            "When": {
+                "HasMod|contains=Letsgolilly.LillysTinkaton": false,
+                "HasMod|contains=Letsgolilly.LillysRibombee": false,
+				"HasMod|contains=Letsgolilly.LillysSkitty": false,
+				"HasMod|contains=Letsgolilly.LillysSkittyMarnie": true
+			}
+		},
+        {
+			"LogName": "Load Mod Support",
+			"Action": "Include",
+			"FromFile": "data/GiftGo/SkittyMarnie/tinkatonskittyMarnie.json",
+            "When": {
+				"HasMod|contains=Letsgolilly.LillysTinkaton": true,
+                "HasMod|contains=Letsgolilly.LillysRibombee": false,
+                "HasMod|contains=Letsgolilly.LillysSkitty": false,
+				"HasMod|contains=Letsgolilly.LillysSkittyMarnie": true
+			}
+		},
+        {
+			"LogName": "Load Mod Support",
+			"Action": "Include",
+			"FromFile": "data/GiftGo/SkittyMarnie/ribombeeskittyMarnie.json",
+            "When": {
+                "HasMod|contains=Letsgolilly.LillysTinkaton": false,
+				"HasMod|contains=Letsgolilly.LillysRibombee": true,
+                "HasMod|contains=Letsgolilly.LillysSkitty": false,
+				"HasMod|contains=Letsgolilly.LillysSkittyMarnie": true
+			}
+		},
+        {
+			"LogName": "Load Mod Support",
+			"Action": "Include",
+			"FromFile": "data/GiftGo/SkittyMarnie/tinkatonribombeeskittyMarnie.json",
+            "When": {
+				"HasMod|contains=Letsgolilly.LillysTinkaton": true,
+                "HasMod|contains=Letsgolilly.LillysRibombee": true,
+                "HasMod|contains=Letsgolilly.LillysSkitty": false,
+				"HasMod|contains=Letsgolilly.LillysSkittyMarnie": true
+			}
+		},
+	]
+} 
+	

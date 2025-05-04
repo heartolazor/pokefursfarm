@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="15" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="17">
+ <properties>
+  <property name="AmbientLight" value="95 95 95"/>
+  <property name="Warp" value="7 15 otohime.AV_AxolotlTown 28 39"/>
+ </properties>
+ <tileset firstgid="1" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths" width="64" height="144"/>
+  <tile id="0">
+   <properties>
+    <property name="PathType" value="NE"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="PathType" value="SE"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="PathType" value="WS"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="PathType" value="WN"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="PathType" value="Crossroad"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="PathType" value="End"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="37" name="z_walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
+  <image source="z_walls_and_floors.png" width="256" height="560"/>
+ </tileset>
+ <tileset firstgid="597" name="z_townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="z_townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2773" name="z_Cursors" tilewidth="16" tileheight="16" tilecount="6204" columns="44">
+  <image source="z_Cursors.png" width="704" height="2256"/>
+ </tileset>
+ <tileset firstgid="8977" name="z_furniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="z_furniture.png" width="512" height="1488"/>
+ </tileset>
+ <tileset firstgid="11953" name="z_Craftables" tilewidth="16" tileheight="16" tilecount="576" columns="8">
+  <image source="z_Craftables.png" width="128" height="1152"/>
+ </tileset>
+ <tileset firstgid="12529" name="z_Festivals" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="z_Festivals.png" width="512" height="512"/>
+ </tileset>
+ <layer id="1" name="Back" width="15" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,766,767,767,767,767,767,767,767,767,767,767,767,768,0,
+0,766,767,767,767,767,767,767,767,767,767,767,767,768,0,
+0,766,767,767,767,767,767,767,767,767,767,767,767,768,0,
+0,766,413,413,413,413,413,413,413,413,413,413,413,768,0,
+0,413,413,413,413,413,413,413,413,413,413,413,413,413,0,
+0,413,413,413,413,413,413,413,413,413,413,413,413,413,0,
+0,413,413,413,413,2261,2262,2263,2264,2265,413,413,413,413,0,
+0,413,413,413,413,2293,2294,2295,2296,2297,413,413,413,413,0,
+0,413,413,413,413,2325,2326,2327,2328,2329,413,413,413,413,0,
+0,413,413,413,413,2357,2358,2359,2360,2361,413,413,413,413,0,
+0,413,413,413,413,2389,2390,2391,2392,2393,413,413,413,413,0,
+0,413,413,413,413,413,413,413,413,413,413,413,413,413,0,
+0,413,413,413,413,413,413,413,413,413,413,413,413,413,0,
+0,413,413,413,413,413,413,413,413,413,413,413,413,413,0,
+0,0,0,0,0,0,425,413,394,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="15" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,630,0,0,0,0,0,0,0,0,0,0,0,0,0,
+661,0,0,0,0,0,0,0,0,0,0,0,0,0,665,
+661,766,0,0,0,0,0,0,0,0,0,0,0,768,665,
+661,1717,1718,1718,1718,1718,1718,1718,1718,1718,1718,1718,1718,1719,665,
+661,1749,1784,1784,1784,1784,1784,1784,1784,1784,1784,1784,1784,1751,665,
+661,1781,0,12586,12587,0,0,2570,2571,0,13371,13372,13373,1783,665,
+661,0,0,0,0,0,0,0,0,0,12815,12816,0,0,665,
+661,2559,2560,0,13463,13464,0,0,0,0,0,0,0,13120,665,
+661,0,0,0,0,0,2492,2493,2494,0,0,0,0,0,665,
+661,2623,2624,0,0,0,0,0,0,0,0,0,0,0,665,
+661,0,13120,0,0,0,0,0,0,0,12586,12587,0,0,665,
+661,0,0,0,0,13371,13372,0,0,0,0,0,13463,13464,665,
+661,0,0,0,0,0,0,0,0,0,0,0,0,0,665,
+757,758,762,13244,13245,762,759,0,760,762,13244,13245,762,763,764,
+0,0,0,0,0,0,693,762,727,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="15" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,9,0,0,0,0,0,9,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,8,6,6,3,0,9,0,0,0,0,0,0,0,
+0,0,0,0,0,5,5,8,8,0,0,0,0,0,0,
+0,0,0,0,0,1,5,5,5,0,0,0,0,0,0,
+0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,7,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="15" height="16">
+  <data encoding="csv">
+597,598,599,599,599,599,599,599,599,599,599,599,599,600,597,
+629,630,0,0,0,0,0,0,0,0,0,0,0,632,633,
+661,0,13117,0,0,13117,2441,2442,2443,13117,0,0,13117,0,665,
+661,0,0,0,0,0,2473,2474,2475,0,0,0,0,0,665,
+661,0,0,0,0,0,2505,2506,2507,0,0,0,0,0,665,
+661,0,0,12554,12555,0,2537,2538,2539,0,0,0,0,0,665,
+661,0,0,0,0,0,0,0,0,0,0,0,0,0,665,
+661,0,0,0,0,0,0,0,0,0,11484,0,0,0,11488,
+661,11063,11064,0,0,0,2460,2461,2462,0,0,0,0,0,665,
+661,11095,11096,0,0,0,0,0,0,0,0,0,0,0,665,
+661,0,0,0,0,0,0,0,0,0,12554,12555,0,0,665,
+661,0,0,0,0,0,0,0,0,0,0,0,0,0,665,
+661,0,0,13180,13181,0,0,0,0,0,13180,13181,0,0,665,
+661,0,0,13212,13213,0,0,0,0,0,13212,13213,0,0,665,
+757,758,762,762,762,762,759,0,760,762,762,762,762,763,764,
+597,597,597,597,597,597,693,762,727,597,597,597,597,597,597
+</data>
+ </layer>
+ <objectgroup id="5" name="Back"/>
+ <objectgroup id="6" name="Buildings">
+  <object id="12" name="TileData" x="16" y="128" width="32" height="48">
+   <properties>
+    <property name="Action" value="Dialogue A yellow sleeping bag that Lulu uses as a bed."/>
+   </properties>
+  </object>
+  <object id="13" name="TileData" x="96" y="144" width="48" height="16">
+   <properties>
+    <property name="Action" value="Dialogue A circus pedestal that Lulu often practices on."/>
+   </properties>
+  </object>
+  <object id="14" name="TileData" x="48" y="96" width="32" height="16">
+   <properties>
+    <property name="Action" value="Dialogue A large ball used for balancing on during performances."/>
+   </properties>
+  </object>
+  <object id="15" name="TileData" x="160" y="160" width="32" height="32">
+   <properties>
+    <property name="Action" value="Dialogue A large ball used for balancing on during performances."/>
+   </properties>
+  </object>
+  <object id="16" name="TileData" x="112" y="80" width="16" height="32">
+   <properties>
+    <property name="Action" value="Dialogue A ring that Lulu sometimes jumps through during her performances."/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="Paths"/>
+ <objectgroup id="8" name="Front"/>
+</map>

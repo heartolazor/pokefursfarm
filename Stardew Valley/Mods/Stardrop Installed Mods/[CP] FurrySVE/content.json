@@ -1,0 +1,1958 @@
+{
+	"Format": "2.0.0",
+	"ConfigSchema": {
+		"Classic Martin": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Section": "Classic Characters",
+			"Description": "Enable/Disable the original cat version of Martin by KaruAterrosa"
+		},
+		"Classic Olivia": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Section": "Classic Characters",
+			"Description": "Enable/Disable the original cat version of Olivia by Lycanglass"
+		},
+		"Classic Victor": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Section": "Classic Characters",
+			"Description": "(NYI - Enable/Disable the original cat version of Victor by Lycanglass"
+		},
+		"Classic Susan": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Section": "Classic Characters",
+			"Description": "Enable/Disable the original sheep version of Suscan by Lycanglass"
+		}
+	},
+	"DynamicTokens": [
+		{
+			"Name": "MartinVersion",
+			"Value": ""
+		},
+		{
+			"Name": "OliviaVersion",
+			"Value": ""
+		},
+		{
+			"Name": "VictorVersion",
+			"Value": ""
+		},
+		{
+			"Name": "SusanVersion",
+			"Value": ""
+		},
+		{
+			"Name": "MartinVersion",
+			"Value": "Classic_",
+			"When": {
+				"Classic Martin": true
+			}
+		},
+		{
+			"Name": "OliviaVersion",
+			"Value": "Classic_",
+			"When": {
+				"Classic Olivia": true
+			}
+		},
+		{
+			"Name": "VictorVersion",
+			"Value": "Classic_",
+			"When": {
+				"Classic Victor": true
+			}
+		},
+		{
+			"Name": "SusanVersion",
+			"Value": "Classic_",
+			"When": {
+				"Classic Susan": true
+			}
+		}
+	],
+	"Changes": [
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Aaron",
+			"FromFile": "assets/OverworldSprites/Adventurers/Aaron.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Brianna",
+			"FromFile": "assets/OverworldSprites/Adventurers/Brianna.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Brock",
+			"FromFile": "assets/OverworldSprites/Adventurers/Brock.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Cassandra",
+			"FromFile": "assets/OverworldSprites/Adventurers/Cassandra.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Cordelia",
+			"FromFile": "assets/OverworldSprites/Adventurers/Cordelia.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Drake",
+			"FromFile": "assets/OverworldSprites/Adventurers/Drake.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Edmund",
+			"FromFile": "assets/OverworldSprites/Adventurers/Edmund.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Emin",
+			"FromFile": "assets/OverworldSprites/Adventurers/Emin.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Freya",
+			"FromFile": "assets/OverworldSprites/Adventurers/Freya.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Gale",
+			"FromFile": "assets/OverworldSprites/Adventurers/Gale.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Gertrude",
+			"FromFile": "assets/OverworldSprites/Adventurers/Gertrude.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Ricken",
+			"FromFile": "assets/OverworldSprites/Adventurers/Ricken.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Sawyer",
+			"FromFile": "assets/OverworldSprites/Adventurers/Sawyer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Alesia",
+			"FromFile": "assets/OverworldSprites/Alesia/Alesia.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Andy",
+			"FromFile": "assets/OverworldSprites/Andy/Andy.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Andy_Beach",
+			"FromFile": "assets/OverworldSprites/Andy/Andy_Beach.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Andy_Winter",
+			"FromFile": "assets/OverworldSprites/Andy/Andy_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Axel",
+			"FromFile": "assets/OverworldSprites/Axel/Axel.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Brooklyn",
+			"FromFile": "assets/OverworldSprites/Brooklyn/Brooklyn.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Camilla",
+			"FromFile": "assets/OverworldSprites/Camilla/Camilla.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Claire",
+			"FromFile": "assets/OverworldSprites/Claire/Claire.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Claire_Beach",
+			"FromFile": "assets/OverworldSprites/Claire/Claire_Beach.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Claire_Joja",
+			"FromFile": "assets/OverworldSprites/Claire/Claire_Joja.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/ClaireJoja",
+			"FromFile": "assets/OverworldSprites/Claire/Claire_Joja.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Claire",
+			"FromFile": "assets/OverworldSprites/Claire/Claire_Joja.png",
+			"PatchMode": "Replace",
+			"When": {
+				"LocationName": "JojaMart"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Claire",
+			"FromFile": "assets/OverworldSprites/Claire/Claire_Theater.png",
+			"PatchMode": "Replace",
+			"When": {
+			  "Spouse |contains=Claire": false,
+			  "DayOfWeek": "Monday, Wednesday, Thursday, Friday, Sunday",
+			  "HasSeenEvent |contains=502261": false,
+			  "LocationName": "MovieTheater"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Claire",
+			"FromFile": "assets/OverworldSprites/Claire/Claire_Theater.png",
+			"PatchMode": "Replace",
+			"When": {
+			  "Spouse": "Claire",
+			  "DayOfWeek": "Monday, Wednesday, Thursday, Sunday",
+			  "HasSeenEvent |contains=502261": false,
+			  "LocationName": "MovieTheater"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			// Fake Theater Claire used in some events
+			"Action": "EditImage",
+			"Target": "Characters/ClaireTheater",
+			"FromFile": "assets/OverworldSprites/Claire/Claire_Theater.png",
+			"PatchMode": "Replace"
+		},
+		{
+			//Claire's 14 Heart event
+			"Action": "EditImage",
+			"Target": "Characters/Claire",
+			"FromFile": "assets/OverworldSprites/Claire/Claire.png",
+			"PatchMode": "Replace",
+			"When": {
+			  "Spouse |contains=Claire": true,
+			  "DayOfWeek": "Monday, Wednesday, Thursday, Sunday",
+			  "HasSeenEvent |contains=4269703": true,
+			  "HasSeenEvent |contains=4269704": false,
+			  "LocationName": "MovieTheater",
+			  "Time": "{{Range: 1600, 2000}}"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Claire_Winter",
+			"FromFile": "assets/OverworldSprites/Claire/Claire_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/FemaleFarmer",
+			"FromFile": "assets/OverworldSprites/FemaleFarmer/FemaleFarmer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/GuntherSilvian",
+			"FromFile": "assets/OverworldSprites/Gunther/Gunther.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Hank",
+			"FromFile": "assets/OverworldSprites/Hank/Hank.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/HighlandsDwarf",
+			"FromFile": "assets/OverworldSprites/HighlandsDwarf/HighlandsDwarf.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Isaac",
+			"FromFile": "assets/OverworldSprites/Isaac/Isaac.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Jace",
+			"FromFile": "assets/OverworldSprites/Jace/Jace.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Jadu",
+			"FromFile": "assets/OverworldSprites/Jadu/Jadu.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Jolyne",
+			"FromFile": "assets/OverworldSprites/Jolyne/Jolyne.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Lance",
+			"FromFile": "assets/OverworldSprites/Lance/Lance.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Lance_Beach",
+			"FromFile": "assets/OverworldSprites/Lance/Lance_Beach.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Lance_Winter",
+			"FromFile": "assets/OverworldSprites/Lance/Lance_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Wizard",
+			"FromFile": "assets/OverworldSprites/Magnus/Magnus.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/MaleFarmer",
+			"FromFile": "assets/OverworldSprites/MaleFarmer/MaleFarmer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/MarlonFay",
+			"FromFile": "assets/OverworldSprites/Marlon/Marlon.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Marlon",
+			"FromFile": "assets/OverworldSprites/Marlon/Marlon.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/MarlonFay_Winter",
+			"FromFile": "assets/OverworldSprites/Marlon/MarlonFay_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Martin",
+			"FromFile": "assets/OverworldSprites/Martin/{{MartinVersion}}Martin.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Martin",
+			"FromFile": "assets/OverworldSprites/Martin/{{MartinVersion}}Martin_Joja.png",
+			"PatchMode": "Replace",
+			"When": {
+				"LocationName": "JojaMart"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Martin_Joja",
+			"FromFile": "assets/OverworldSprites/Martin/{{MartinVersion}}Martin_Joja.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/MartinJoja",
+			"FromFile": "assets/OverworldSprites/Martin/{{MartinVersion}}Martin_Joja.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Martin_Theater",
+			"FromFile": "assets/OverworldSprites/Martin/{{MartinVersion}}Martin_Theater.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Martin",
+			"FromFile": "assets/OverworldSprites/Martin/{{MartinVersion}}Martin_Theater.png",
+			"PatchMode": "Replace",
+			"When": {
+				"Spouse |contains=Claire": false,
+				"DayOfWeek": "Tuesday, Saturday",
+				"HasSeenEvent |contains=502261": false,
+				"LocationName": "MovieTheater"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Martin",
+			"FromFile": "assets/OverworldSprites/Martin/{{MartinVersion}}Martin_Theater.png",
+			"PatchMode": "Replace",
+			"When": {
+				"Spouse": "Claire",
+				"DayOfWeek": "Tuesday, Friday, Saturday",
+				"HasSeenEvent |contains=502261": false,
+				"LocationName": "MovieTheater"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Martin",
+			"FromFile": "assets/OverworldSprites/Martin/{{MartinVersion}}Martin_Theater.png",
+			"PatchMode": "Replace",
+			"When": {
+				"Spouse": "Claire",
+				"DayOfWeek": "Tuesday, Wednesday, Friday, Saturday",
+				"HasSeenEvent |contains=502261": false,
+				"LocationName": "MovieTheater",
+				"HasSeenEvent |contains=4269703": true
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/MartinTheater",
+			"FromFile": "assets/OverworldSprites/Martin/{{MartinVersion}}Martin_Theater.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Martin_Winter",
+			"FromFile": "assets/OverworldSprites/Martin/{{MartinVersion}}Martin_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/AdventurerCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/AdventurerCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/ArtGuy",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/ArtGuy.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/ArtifactCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/ArtifactCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/BaldGuy",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/BaldGuy.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/BaldGuySittingDown",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/BaldGuySittingDown.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/BlackHairGuy",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/BlackHairGuy.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/BlueBirdCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/BlueBirdCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/BlueDressGirl",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/BlueDressGirl.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/BlueMushroomGirlCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/BlueMushroomGirlCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/BrideCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/BrideCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/CavegirlCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/CavegirlCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/ChefGuyCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/ChefGuyCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/ConcernedApeCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/ConcernedApeCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/DinoGuyCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/DinoGuyCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/EmperorCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/EmperorCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/FairyCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/FairyCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/FairyCosplayer2",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/FairyCosplayer2.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/FrogGuyCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/FrogGuyCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/GaldoranGirlCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/GaldoranGirlCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/GenericNPC1",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/GenericNPC1.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/GenericNPC2",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/GenericNPC2.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/GenericNPC3",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/GenericNPC3.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/GenericNPC4",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/GenericNPC4.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/GenericNPC5",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/GenericNPC5.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/GenericNPC6",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/GenericNPC6.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/GenericNPC7",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/GenericNPC7.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/GenericNPC8",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/GenericNPC8.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/GilSprite",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/GilSprite.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/GirlSittingDown",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/GirlSittingDown.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/GirlSittingDown2",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/GirlSittingDown2.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/GreenBirdCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/GreenBirdCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/GreenDressGirl",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/GreenDressGirl.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/GreenMushroomGirlCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/GreenMushroomGirlCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/GreenShirtGirl",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/GreenShirtGirl.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/GreenShirtGuy",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/GreenShirtGuy.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/HamishCameo",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/HamishCameo.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/HappyShirtCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/HappyShirtCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/IcePrincessCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/IcePrincessCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/JackThePumpkinCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/JackThePumpkinCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/JojaGirlCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/JojaGirlCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/JojaGuyCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/JojaGuyCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/JojaPetStoreEmployee",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/JojaPetStoreEmployee.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/JojaWorker1",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/JojaWorker1.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/JojaWorker2",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/JojaWorker2.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/JumperCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/JumperCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/LittleGirl",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/LittleGirl.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/LongNoseGuy",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/LongNoseGuy.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/LuauGirlCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/LuauGirlCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/LuauGuyCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/LuauGuyCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/MainStageCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/MainStageCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/MartinJoja",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/{{MartinVersion}}MartinJoja.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/NewspaperGuy",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/NewspaperGuy.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/NurseCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/NurseCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Pirate2Cosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/Pirate2Cosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/PirateCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/PirateCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/PrinceCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/PrinceCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/PurpleWitchCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/PurpleWitchCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/RedBeanieGuy",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/RedBeanieGuy.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/RedHatGuySittingDown",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/RedHatGuySittingDown.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/RedMushroomGirl",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/RedMushroomGirl.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/RedShirtGuy",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/RedShirtGuy.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/RedWitchCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/RedWitchCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/ShaneJoja",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/ShaneJoja.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/SunglassesGuy",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/SunglassesGuy.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/TopHatCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/TopHatCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/TotemGuyCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/TotemGuyCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/TrashGirlCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/TrashGirlCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/TurbanGuyCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/TurbanGuyCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/VikingCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/VikingCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/WizardCosplayer",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/WizardCosplayer.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/ZoomieDoggoOwner",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/ZoomieDoggoOwner.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/ZuzuCityBus",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/ZuzuCityBus.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/ZuzuCityBus2",
+			"FromFile": "assets/OverworldSprites/Miscellaneous/ZuzuCityBus2.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/FallenAdventurerFemale",
+			"FromFile": "assets/OverworldSprites/Monsters/FallenAdventurerFemale.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/FallenAdventurerMale",
+			"FromFile": "assets/OverworldSprites/Monsters/FallenAdventurerMale.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Morgan",
+			"FromFile": "assets/OverworldSprites/Morgan/Morgan.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/MorrisTod",
+			"FromFile": "assets/OverworldSprites/Morris/Morris.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/MorrisTod_Winter",
+			"FromFile": "assets/OverworldSprites/Morris/MorrisTod_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Olivia",
+			"FromFile": "assets/OverworldSprites/Olivia/{{OliviaVersion}}Olivia.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Olivia_Beach",
+			"FromFile": "assets/OverworldSprites/Olivia/{{OliviaVersion}}Olivia_Beach.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Olivia_Winter",
+			"FromFile": "assets/OverworldSprites/Olivia/{{OliviaVersion}}Olivia_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Scarlett",
+			"FromFile": "assets/OverworldSprites/Scarlett/Scarlett.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/ScarlettFake",
+			"FromFile": "assets/OverworldSprites/Scarlett/Scarlett.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Scarlett_Beach",
+			"FromFile": "assets/OverworldSprites/Scarlett/Scarlett_Beach.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/ScarlettCosplay",
+			"FromFile": "assets/OverworldSprites/Scarlett/Scarlett_Cosplay.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Scarlett_Winter",
+			"FromFile": "assets/OverworldSprites/Scarlett/Scarlett_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/ScarlettFake_Winter",
+			"FromFile": "assets/OverworldSprites/Scarlett/Scarlett_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/ShaneJoja",
+			"FromFile": "assets/OverworldSprites/Shane/Shane_JojaMart.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Sophia",
+			"FromFile": "assets/OverworldSprites/Sophia/Sophia.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Sophia_Beach",
+			"FromFile": "assets/OverworldSprites/Sophia/Sophia_Beach.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Sophia_Winter",
+			"FromFile": "assets/OverworldSprites/Sophia/Sophia_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/SophiaJPK",
+			"FromFile": "assets/OverworldSprites/Sophia/SophiaJPKsprite.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Susan",
+			"FromFile": "assets/OverworldSprites/Susan/{{SusanVersion}}Susan.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Susan_Beach",
+			"FromFile": "assets/OverworldSprites/Susan/{{SusanVersion}}Susan_Beach.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Susan_Winter",
+			"FromFile": "assets/OverworldSprites/Susan/{{SusanVersion}}Susan_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Treyvon",
+			"FromFile": "assets/OverworldSprites/Treyvon/Treyvon.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Victor",
+			"FromFile": "assets/OverworldSprites/Victor/{{VictorVersion}}Victor.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Victor_Beach",
+			"FromFile": "assets/OverworldSprites/Victor/{{VictorVersion}}Victor_Beach.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Victor_Winter",
+			"FromFile": "assets/OverworldSprites/Victor/{{VictorVersion}}Victor_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Zoey",
+			"FromFile": "assets/OverworldSprites/Zoey/Zoey.png",
+			"PatchMode": "Replace"
+		},
+
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Alesia",
+			"FromFile": "assets/Portraits/Alesia/Alesia.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Alesia_Vendor",
+			"FromFile": "assets/Portraits/Alesia/Alesia.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 0, "Width":64, "Height": 64 }
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Andy",
+			"FromFile": "assets/Portraits/Andy/Andy.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Andy_Beach",
+			"FromFile": "assets/Portraits/Andy/Andy_Beach.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Andy_Winter",
+			"FromFile": "assets/Portraits/Andy/Andy_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Axel",
+			"FromFile": "assets/Portraits/Axel/Axel.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Axel_Vendor",
+			"FromFile": "assets/Portraits/Axel/Axel.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Brooklyn",
+			"FromFile": "assets/Portraits/Brooklyn/Brooklyn.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Brooklyn_Vendor",
+			"FromFile": "assets/Portraits/Brooklyn/Brooklyn.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Camilla",
+			"FromFile": "assets/Portraits/Camilla/Camilla.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Camilla_Vendor",
+			"FromFile": "assets/Portraits/Camilla/Camilla.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 0, "Width":64, "Height": 64 }
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Chloe",
+			"FromFile": "assets/Portraits/Chloe/Chloe.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Chloe_Vendor",
+			"FromFile": "assets/Portraits/Chloe/Chloe.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Claire",
+			"FromFile": "assets/Portraits/Claire/Claire.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Claire_Beach",
+			"FromFile": "assets/Portraits/Claire/Claire_Beach.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Claire_Joja",
+			"FromFile": "assets/Portraits/Claire/Claire_Joja.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Claire",
+			"FromFile": "assets/Portraits/Claire/Claire_Joja.png",
+			"PatchMode": "Replace",
+			"When": {
+				"LocationName": "JojaMart"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Claire_Vendor",
+			"FromFile": "assets/Portraits/Claire/Claire_Joja.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 0, "Width":64, "Height": 64 }
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Claire_Theater",
+			"FromFile": "assets/Portraits/Claire/Claire_Theater.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Claire",
+			"FromFile": "assets/Portraits/Claire/Claire_Theater.png",
+			"PatchMode": "Replace",
+			"When": {
+				"Spouse |contains=Claire": false,
+				"DayOfWeek": "Monday, Wednesday, Thursday, Friday, Sunday",
+				"HasSeenEvent |contains=502261": false,
+				"LocationName": "MovieTheater"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Claire",
+			"FromFile": "assets/Portraits/Claire/Claire_Theater.png",
+			"PatchMode": "Replace",
+			"When": {
+				"Spouse": "Claire",
+				"DayOfWeek": "Monday, Wednesday, Thursday, Sunday",
+				"HasSeenEvent |contains=502261": false,
+				"LocationName": "MovieTheater"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			// 14 Heart event
+			"Action": "EditImage",
+			"Target": "Portraits/Claire",
+			"FromFile": "assets/Portraits/Claire/Claire.png",
+			"PatchMode": "Replace",
+			"When": {
+				"Spouse |contains=Claire": true,
+				"DayOfWeek": "Monday, Wednesday, Thursday, Sunday",
+				"HasSeenEvent |contains=4269703": true,
+				"HasSeenEvent |contains=4269704": false,
+				"LocationName": "MovieTheater",
+				"Time": "{{Range: 1600, 2000}}"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Claire_Winter",
+			"FromFile": "assets/Portraits/Claire/Claire_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Gil",
+			"FromFile": "assets/Portraits/Gil/Gil.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/GilShop",
+			"FromFile": "assets/Portraits/Gil/Gil.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Gil_Vendor",
+			"FromFile": "assets/Portraits/Gil/Gil.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/GuntherSilvian",
+			"FromFile": "assets/Portraits/Gunther/Gunther.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/HighlandsDwarf",
+			"FromFile": "assets/Portraits/HighlandsDwarf/HighlandsDwarf.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/HighlandsDwarf_Vendor",
+			"FromFile": "assets/Portraits/HighlandsDwarf/HighlandsDwarf.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 0, "Width":64, "Height": 64 }
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Isaac",
+			"FromFile": "assets/Portraits/Isaac/Isaac.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Isaac_Vendor",
+			"FromFile": "assets/Portraits/Isaac/Isaac.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 0, "Width":64, "Height": 64 }
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Jace",
+			"FromFile": "assets/Portraits/Jace/Jace.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Jace_Vendor",
+			"FromFile": "assets/Portraits/Jace/Jace.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Jadu",
+			"FromFile": "assets/Portraits/Jadu/Jadu.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Jolyne",
+			"FromFile": "assets/Portraits/Jolyne/Jolyne.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Lance",
+			"FromFile": "assets/Portraits/Lance/Lance.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Lance_Beach",
+			"FromFile": "assets/Portraits/Lance/Lance_Beach.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Lance_Winter",
+			"FromFile": "assets/Portraits/Lance/Lance_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Wizard",
+			"FromFile": "assets/Portraits/Magnus/Magnus.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/MarlonFay",
+			"FromFile": "assets/Portraits/Marlon/Marlon.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/MarlonFay_Winter",
+			"FromFile": "assets/Portraits/Marlon/MarlonFay_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Marlon_Vendor",
+			"FromFile": "assets/Portraits/Marlon/MarlonFay.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 0, "Width":64, "Height": 64 }
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Marlon_WinterVendor",
+			"FromFile": "assets/Portraits/Marlon/MarlonFay_Winter.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 0, "Width":64, "Height": 64 }
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Martin",
+			"FromFile": "assets/Portraits/Martin/{{MartinVersion}}Martin.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Martin_Joja",
+			"FromFile": "assets/Portraits/Martin/{{MartinVersion}}Martin_Joja.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Martin_Vendor",
+			"FromFile": "assets/Portraits/Martin/{{MartinVersion}}Martin_Joja.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 0, "Width":64, "Height": 64 }
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Martin_Theater",
+			"FromFile": "assets/Portraits/Martin/{{MartinVersion}}Martin_Theater.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Martin",
+			"FromFile": "assets/Portraits/Martin/{{MartinVersion}}Martin_Theater.png",
+			"PatchMode": "Replace",
+			"When": {
+				"Spouse |contains=Claire": false,
+				"DayOfWeek": "Tuesday, Saturday",
+				"HasSeenEvent |contains=502261": false,
+				"LocationName": "MovieTheater"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Martin",
+			"FromFile": "assets/Portraits/Martin/{{MartinVersion}}Martin_Theater.png",
+			"PatchMode": "Replace",
+			"When": {
+				"Spouse": "Claire",
+				"DayOfWeek": "Tuesday, Friday, Saturday",
+				"HasSeenEvent |contains=502261": false,
+				"LocationName": "MovieTheater"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Martin",
+			"FromFile": "assets/Portraits/Martin/{{MartinVersion}}Martin_Theater.png",
+			"PatchMode": "Replace",
+			"When": {
+				"Spouse": "Claire",
+				"DayOfWeek": "Tuesday, Wednesday, Friday, Saturday",
+				"HasSeenEvent |contains=502261": false,
+				"LocationName": "MovieTheater",
+				"HasSeenEvent |contains=4269703": true
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Martin_Winter",
+			"FromFile": "assets/Portraits/Martin/{{MartinVersion}}Martin_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Morgan",
+			"FromFile": "assets/Portraits/Morgan/Morgan.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/MorrisTod",
+			"FromFile": "assets/Portraits/Morris/Morris.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Morris",
+			"FromFile": "assets/Portraits/Morris/Morris.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/MorrisTod_Winter",
+			"FromFile": "assets/Portraits/Morris/MorrisTod_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Olivia",
+			"FromFile": "assets/Portraits/Olivia/{{OliviaVersion}}Olivia.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Olivia_Beach",
+			"FromFile": "assets/Portraits/Olivia/{{OliviaVersion}}Olivia_Beach.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Olivia_Winter",
+			"FromFile": "assets/Portraits/Olivia/{{OliviaVersion}}Olivia_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Sandy",
+			"FromFile": "assets/Portraits/Sandy/Sandy.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Scarlett",
+			"FromFile": "assets/Portraits/Scarlett/Scarlett.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Scarlett_Beach",
+			"FromFile": "assets/Portraits/Scarlett/Scarlett_Beach.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/ScarlettCosplay",
+			"FromFile": "assets/Portraits/Scarlett/Scarlett_Cosplay.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Scarlett_Winter",
+			"FromFile": "assets/Portraits/Scarlett/Scarlett_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Sophia",
+			"FromFile": "assets/Portraits/Sophia/Sophia.png",
+			"PatchMode": "Replace",
+			"When": {
+				"DayOfWeek": "Monday, Tuesday, Wednesday, Thursday"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Sophia",
+			"FromFile": "assets/Portraits/Sophia/Sophia_Makeup.png",
+			"PatchMode": "Replace",
+			"When": {
+				"DayOfWeek": "Friday, Saturday, Sunday"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Sophia_Winter",
+			"FromFile": "assets/Portraits/Sophia/Sophia_Winter.png",
+			"PatchMode": "Replace",
+			"When": {
+				"DayOfWeek": "Monday, Tuesday, Wednesday, Thursday"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Sophia_Winter",
+			"FromFile": "assets/Portraits/Sophia/Sophia_Winter_Makeup.png",
+			"PatchMode": "Replace",
+			"When": {
+				"DayOfWeek": "Friday, Saturday, Sunday"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Sophia_Beach",
+			"FromFile": "assets/Portraits/Sophia/Sophia_Beach.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Suki",
+			"FromFile": "assets/Portraits/Suki/Suki.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Suki_IceFestival",
+			"FromFile": "assets/Portraits/Suki/Suki_IceFestival.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Suki_DesertFestival",
+			"FromFile": "assets/Portraits/Suki/Suki_DesertFestival.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Susan",
+			"FromFile": "assets/Portraits/Susan/{{SusanVersion}}Susan.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Susan_Beach",
+			"FromFile": "assets/Portraits/Susan/{{SusanVersion}}Susan_Beach.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Susan_Winter",
+			"FromFile": "assets/Portraits/Susan/{{SusanVersion}}Susan_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Victor",
+			"FromFile": "assets/Portraits/Victor/{{VictorVersion}}Victor.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Victor_Beach",
+			"FromFile": "assets/Portraits/Victor/{{VictorVersion}}Victor_Beach.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Victor_Winter",
+			"FromFile": "assets/Portraits/Victor/{{VictorVersion}}Victor_Winter.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Zoey",
+			"FromFile": "assets/Portraits/Zoey/Zoey.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Zoey_Vendor",
+			"FromFile": "assets/Portraits/Zoey/Zoey.png",
+			"PatchMode": "Replace"
+		},
+        {
+            "Action": "EditImage",
+            "Target": "Maps/CamillaMagicCarpet, Maps/ClaireMovieScenes, Maps/SakuraVineyardDiningRoomTilesheet, Maps/ZCCC_FoodCourt_Tilesheet, Maps/ZCCC_Stage_Tilesheet, Maps/ZCCC_VendorFloor_Tilesheet, Maps/ZuzuCity",
+            "FromFile": "assets/{{Target}}.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1"
+        },
+		{
+			"Action": "EditImage",
+			"Target": "Maps/AuroraVineyardPicture",
+			"FromFile": "assets/Maps/AuroraVineyardPicture.png",
+			"PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 170, "Y": 178, "Width": 42, "Height": 33 }
+		},
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_GrampletonSuburbsTilesheet, Maps/spring_GrampletonSuburbsTilesheet, Maps/summer_GrampletonSuburbsTilesheet, Maps/winter_GrampletonSuburbsTilesheet",
+            "FromFile": "assets/Maps/Grampleton_NPCs.png",
+            "PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 192, "Y": 288, "Width": 79, "Height": 32 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+            "FromFile": "assets/Maps/z_extras_NPC1.png",
+            "PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"FromArea": { "X": 128, "Y": 0, "Width": 64, "Height": 256 },
+			"ToArea": { "X": 128, "Y": 608, "Width": 64, "Height": 256 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+            "FromFile": "assets/Maps/z_extras_NPC1.png",
+            "PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"FromArea": { "X": 192, "Y": 32, "Width": 16, "Height": 132 },
+			"ToArea": { "X": 192, "Y": 640, "Width": 16, "Height": 132 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+            "FromFile": "assets/Maps/z_extras_NPC1.png",
+            "PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"FromArea": { "X": 112, "Y": 100, "Width": 16, "Height": 124 },
+			"ToArea": { "X": 112, "Y": 708, "Width": 16, "Height": 124 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+            "FromFile": "assets/Maps/z_extras_NPC1.png",
+            "PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"FromArea": { "X": 96, "Y": 128, "Width": 16, "Height": 96 },
+			"ToArea": { "X": 96, "Y": 736, "Width": 16, "Height": 96 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+            "FromFile": "assets/Maps/z_extras_NPC1.png",
+            "PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"FromArea": { "X": 192, "Y": 192, "Width": 32, "Height": 36 },
+			"ToArea": { "X": 192, "Y": 800, "Width": 32, "Height": 36 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+            "FromFile": "assets/Maps/z_extras_NPC1.png",
+            "PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"FromArea": { "X": 0, "Y": 224, "Width": 128, "Height": 128 },
+			"ToArea": { "X": 0, "Y": 832, "Width": 128, "Height": 128 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+            "FromFile": "assets/Maps/z_extras_NPC1.png",
+            "PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"FromArea": { "X": 128, "Y": 304, "Width": 64, "Height": 48 },
+			"ToArea": { "X": 128, "Y": 912, "Width": 64, "Height": 48 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+            "FromFile": "assets/Maps/z_extras_NPC2.png",
+            "PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"FromArea": { "X": 16, "Y": 0, "Width": 48, "Height": 128 },
+			"ToArea": { "X": 352, "Y": 1376, "Width": 48, "Height": 128 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+            "FromFile": "assets/Maps/z_extras_NPC2.png",
+            "PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"FromArea": { "X": 0, "Y": 32, "Width": 16, "Height": 96 },
+			"ToArea": { "X": 336, "Y": 1408, "Width": 16, "Height": 96 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+            "FromFile": "assets/Maps/z_extras_NPC3.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 96, "Y": 2384, "Width": 192, "Height": 160 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+            "FromFile": "assets/Maps/z_extras_NPC4.png",
+            "PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"FromArea": { "X": 0, "Y": 0, "Width": 304, "Height": 176 },
+			"ToArea": { "X": 0, "Y": 3632, "Width": 304, "Height": 176 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+            "FromFile": "assets/Maps/z_extras_NPC4.png",
+            "PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"FromArea": { "X": 304, "Y": 48, "Width": 96, "Height": 128 },
+			"ToArea": { "X": 304, "Y": 3680, "Width": 96, "Height": 128 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+            "FromFile": "assets/Maps/z_extras_bus.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 18, "Y": 1740, "Width": 72, "Height": 19 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+            "FromFile": "assets/Maps/z_extras_painting.png",
+            "PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 320, "Y": 2448, "Width": 16, "Height": 32 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+            "FromFile": "assets/Maps/z_extras_suki.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 338, "Y": 2729, "Width": 15, "Height": 18 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+            "FromFile": "assets/Maps/z_extras_dwarf.png",
+            "PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 232, "Y": 3582, "Width": 15, "Height": 15 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/FirstSlashGuildBuilding",
+            "FromFile": "assets/Maps/FirstSlash.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 0, "Y": 312, "Width": 45, "Height": 38 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/GrampletonTrainStationTilesheet",
+            "FromFile": "assets/{{Target}}.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"FromArea": { "X": 0, "Y": 0, "Width": 800, "Height": 199 },
+			"ToArea": { "X": 0, "Y": 104, "Width": 800, "Height": 199 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/GrampletonTrainStationTilesheet",
+            "FromFile": "assets/{{Target}}.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"FromArea": { "X": 48, "Y": 240, "Width": 128, "Height": 32 },
+			"ToArea": { "X": 48, "Y": 624, "Width": 128, "Height": 32 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/emojis",
+            "FromFile": "assets/LooseSprites/SpecialOrderEmojis.png",
+            "PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 0, "Y": 126, "Width": 126, "Height": 9 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/emojis",
+            "FromFile": "assets/LooseSprites/SpecialOrderClassicSusan.png",
+            "PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 27, "Y": 126, "Width": 9, "Height": 9 },
+			"When": {
+				"Classic Susan": true
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/emojis",
+            "FromFile": "assets/LooseSprites/SpecialOrderClassicVictor.png",
+            "PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 9, "Y": 126, "Width": 9, "Height": 9 },
+			"When": {
+				"Classic Victor": true
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/StardustFarmPicture",
+            "FromFile": "assets/Maps/StardustFarm.png",
+            "PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 170, "Y": 136, "Width": 14, "Height": 27 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCraftables",
+            "FromFile": "assets/Maps/Craftables_ScarecrowM.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 0, "Y": 32, "Width": 16, "Height": 32 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCraftables",
+            "FromFile": "assets/Maps/Craftables_ScarecrowHat.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 0, "Y": 32, "Width": 16, "Height": 32 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+            "FromFile": "assets/Maps/Craftables_ScarecrowM.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 288, "Y": 288, "Width": 16, "Height": 32 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras",
+            "FromFile": "assets/Maps/Craftables_ScarecrowHat.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 288, "Y": 288, "Width": 16, "Height": 32 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCraftables",
+            "FromFile": "assets/Maps/Craftables_ScarecrowF.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 16, "Y": 544, "Width": 16, "Height": 32 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCraftables",
+            "FromFile": "assets/Maps/Craftables_ScarecrowHat.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 16, "Y": 544, "Width": 16, "Height": 32 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+            "FromFile": "assets/Maps/Craftables_ScarecrowF.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 304, "Y": 288, "Width": 16, "Height": 32 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras",
+            "FromFile": "assets/Maps/Craftables_ScarecrowHat.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 304, "Y": 288, "Width": 16, "Height": 32 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCraftables",
+            "FromFile": "assets/Maps/Craftables_ScarecrowD.png",
+            "PatchMode": "Replace",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 32, "Y": 544, "Width": 16, "Height": 32 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/ZCCC_Entrance_Tilesheet",
+            "FromFile": "assets/{{Target}}.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 224, "Y": 384, "Width": 432, "Height": 48 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/ZuzuCityStreet_Tilesheet",
+            "FromFile": "assets/{{Target}}.png",
+            "PatchMode": "Overlay",
+			"Priority": "Late + 1",
+			"ToArea": { "X": 125, "Y": 49, "Width": 1091, "Height": 156 }
+        },
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+			"FromFile": "assets/SVE_Portraits.png",
+			"PatchMode": "Replace"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+			"FromFile": "assets/LooseSprites/SVE_Portrait_Classic_Olivia.png",
+			"PatchMode": "Overlay",
+			"Priority": "Late",
+			"ToArea": { "X": 32, "Y": 0, "Width": 32, "Height": 32 },
+			"When": {
+				"Classic Olivia": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+			"FromFile": "assets/LooseSprites/SVE_Portrait_Classic_Victor.png",
+			"PatchMode": "Overlay",
+			"Priority": "Late",
+			"ToArea": { "X": 96, "Y": 0, "Width": 32, "Height": 32 },
+			"When": {
+				"Classic Victor": "true"
+			}
+		},
+        {
+            "Action": "Include",
+            "FromFile": "assets/RecolourConfig/recolour.json",
+        }		
+	]
+}

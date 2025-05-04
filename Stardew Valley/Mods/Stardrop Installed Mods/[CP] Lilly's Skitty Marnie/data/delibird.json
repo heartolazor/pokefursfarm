@@ -1,0 +1,404 @@
+{
+    "Changes": [
+          //Items
+          {
+            "LogName": "Load data for Delibird Doll",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_DelibirdDoll": {
+				"Name": "{{ModId}}_DelibirdDoll",
+				"DisplayName": "{{i18n:DelibirdDoll}}",
+				"Description": "{{i18n:DelibirdDollDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 110,
+				"Texture": "TileSheets/{{ModId}}_Skitty_items",
+				"SpriteIndex": 17,
+				"Edibility": 0,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 8,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"Speed": 10.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_red"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+		{
+            "LogName": "Load data for Shiny Delibird Doll",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_ShinyDelibirdDoll": {
+				"Name": "{{ModId}}_ShinyDelibirdDoll",
+				"DisplayName": "{{i18n:ShinyDelibirdDoll}}",
+				"Description": "{{i18n:ShinyDelibirdDollDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 930,
+				"Texture": "TileSheets/{{ModId}}_Skitty_items",
+				"SpriteIndex": 18,
+				"Edibility": 0,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 16,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"Speed": 10.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_purple"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+        {
+            "LogName": "Load data for Iron Bundle Doll",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_IronBundleDoll": {
+				"Name": "{{ModId}}_IronBundleDoll",
+				"DisplayName": "{{i18n:IronBundleDoll}}",
+				"Description": "{{i18n:IronBundleDollDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 650,
+				"Texture": "TileSheets/{{ModId}}_Skitty_items",
+				"SpriteIndex": 19,
+				"Edibility": 0,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 8,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"Speed": 10.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_dark_red"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+		{
+            "LogName": "Load data for Shiny Iron Bundle Doll",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_ShinyIronBundleDoll": {
+				"Name": "{{ModId}}_ShinyIronBundleDoll",
+				"DisplayName": "{{i18n:ShinyIronBundleDoll}}",
+				"Description": "{{i18n:ShinyIronBundleDollDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 1580,
+				"Texture": "TileSheets/{{ModId}}_Skitty_items",
+				"SpriteIndex": 20,
+				"Edibility": 0,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 16,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"Speed": 10.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_iron"
+                ],
+				"CustomFields": null
+                }
+			}
+		},
+
+		// MACHINE RULES //
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [ "(BC){{ModID}}_DollMaker", "OutputRules" ],
+            "Entries": {
+                "{{ModId}}_DelibirdDollMaker": {
+                    "Id": "{{ModId}}_DelibirdDoll",
+                    "Triggers":
+                    [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "Letsgolilly.LillysDelibird_Present",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem":[
+                        {
+                            "Id": "{{ModId}}_DelibirdDoll",
+                            "ItemId": "{{ModId}}_DelibirdDoll",
+                            "CopyQuality": false,
+                            "CopyPrice": true,
+                            "PriceModifiers": 
+                            [
+                                {
+                                "Modification": "Multiply",
+                                "Amount": 1.2
+                                },
+                                {
+                                "Modification": "Add",
+                                "Amount": 50
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 300
+                },
+                "{{ModId}}_IronBundleDollMaker": {
+                    "Id": "{{ModId}}_IronBundleDoll",
+                    "Triggers":
+                    [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "Letsgolilly.LillysDelibird_MysteryGift",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem":[
+                        {
+                            "Id": "{{ModId}}_IronBundleDoll",
+                            "ItemId": "{{ModId}}_IronBundleDoll",
+                            "CopyQuality": false,
+                            "CopyPrice": true,
+                            "PriceModifiers": 
+                            [
+                                {
+                                "Modification": "Multiply",
+                                "Amount": 1.2
+                                },
+                                {
+                                "Modification": "Add",
+                                "Amount": 50
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 300
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [ "(BC){{ModID}}_ShinyDollMaker", "OutputRules" ],
+            "Entries": {
+                "{{ModId}}_ShinyDelibirdDollMaker": {
+                    "Id": "{{ModId}}_ShinyDelibirdDoll",
+                    "Triggers":
+                    [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "{{ModId}}_DelibirdDoll",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem":[
+                        {
+                            "Id": "{{ModId}}_ShinyDelibirdDoll",
+                            "ItemId": "{{ModId}}_ShinyDelibirdDoll",
+                            "CopyQuality": false,
+                            "CopyPrice": true,
+                            "PriceModifiers": 
+                                    [
+                                        {
+                                        "Modification": "Multiply",
+                                        "Amount": 1.2
+                                        },
+                                        {
+                                        "Modification": "Add",
+                                        "Amount": 800
+                                        }
+                                    ]
+                        }
+                    ],
+                    "MinutesUntilReady": 600
+                },
+                "{{ModId}}_ShinyIronBundleDollMaker": {
+                    "Id": "{{ModId}}_ShinyIronBundleDoll",
+                    "Triggers":
+                    [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "{{ModId}}_IronBundleDoll",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem":[
+                        {
+                            "Id": "{{ModId}}_ShinyIronBundleDoll",
+                            "ItemId": "{{ModId}}_ShinyIronBundleDoll",
+                            "CopyQuality": false,
+                            "CopyPrice": true,
+                            "PriceModifiers": 
+                                    [
+                                        {
+                                        "Modification": "Multiply",
+                                        "Amount": 1.2
+                                        },
+                                        {
+                                        "Modification": "Add",
+                                        "Amount": 800
+                                        }
+                                    ]
+                        }
+                    ],
+                    "MinutesUntilReady": 600
+                }
+            }
+        },
+//Furniture
+{
+    "Action": "EditData",
+    "Target": "Data/Furniture",
+    "Entries": {
+        "{{ModId}}_DelibirdDollPlaceable": "{{ModId}}_DelibirdDollPlaceable/decor/1 2/1 1/1/1000/2/{{i18n:DelibirdDoll}}/32/TileSheets\\{{ModId}}_Skitty_big_stuff/true/",
+        "{{ModId}}_ShinyDelibirdDollPlaceable": "{{ModId}}_ShinyDelibirdDollPlaceable/decor/1 2/1 1/1/1000/2/{{i18n:ShinyDelibirdDoll}}/33/TileSheets\\{{ModId}}_Skitty_big_stuff/true/",
+        "{{ModId}}_IronBundleDollPlaceable": "{{ModId}}_IronBundleDollPlaceable/decor/1 2/1 1/1/1000/2/{{i18n:IronBundleDoll}}/34/TileSheets\\{{ModId}}_Skitty_big_stuff/true/",
+        "{{ModId}}_ShinyIronBundleDollPlaceable": "{{ModId}}_ShinyIronBundleDollPlaceable/decor/1 2/1 1/1/1000/2/{{i18n:ShinyIronBundleDoll}}/35/TileSheets\\{{ModId}}_Skitty_big_stuff/true/"
+    }
+},
+			//Trades AnimalShop
+			{
+                "Action": "EditData",
+                "Target": "Data/Shops",
+                "TargetField": [ "AnimalShop", "Items"],
+                "Entries": {
+                "{{ModId}}_DelibirdDollPlaceable": {
+                    "Id": "{{ModId}}_DelibirdDollPlaceable",
+                    "ItemId": "{{ModId}}_DelibirdDollPlaceable",
+                    "TradeItemId":  "{{ModId}}_DelibirdDoll",
+                    "TradeItemAmount": 1
+                },
+				"{{ModId}}_ShinyDelibirdDollPlaceable": {
+					"Id": "{{ModId}}_ShinyDelibirdDollPlaceable",
+					"ItemId": "{{ModId}}_ShinyDelibirdDollPlaceable",
+					"TradeItemId":  "{{ModId}}_ShinyDelibirdDoll",
+					"TradeItemAmount": 1
+				},
+				"{{ModId}}_IronBundleDollPlaceable": {
+					"Id": "{{ModId}}_IronBundleDollPlaceable",
+					"ItemId": "{{ModId}}_IronBundleDollPlaceable",
+					"TradeItemId":  "{{ModId}}_IronBundleDoll",
+					"TradeItemAmount": 1
+				},
+				"{{ModId}}_ShinyIronBundleDollPlaceable": {
+					"Id": "{{ModId}}_ShinyIronBundleDollPlaceable",
+					"ItemId": "{{ModId}}_ShinyIronBundleDollPlaceable",
+					"TradeItemId":  "{{ModId}}_ShinyIronBundleDoll",
+					"TradeItemAmount": 1
+				}
+			}
+        },
+        				//Gift Tastes
+				{
+					"Action": "EditData",
+					"Target": "Data/NPCGiftTastes",
+					"LogName": "Gift tastes: Jas",
+					"TextOperations": [
+					  //Love
+					  {
+						"Operation": "Append",
+						"Target": [
+						  "Fields",
+						  "Jas",
+						  1
+						],
+						"Value": "{{ModId}}_DelibirdDoll {{ModId}}_ShinyDelibirdDoll",
+						"Delimiter": " "
+					}
+					]
+				},
+				{
+					"Action": "EditData",
+					"Target": "Data/NPCGiftTastes",
+					"LogName": "Gift tastes: Vincent",
+					"TextOperations": [
+					  //Love
+					  {
+						"Operation": "Append",
+						"Target": [
+						  "Fields",
+						  "Vincent",
+						  1
+						],
+						"Value": "{{ModId}}_IronBundleDoll {{ModId}}_ShinyIronBundleDoll",
+						"Delimiter": " "
+					}
+					]
+				}
+    ]
+}

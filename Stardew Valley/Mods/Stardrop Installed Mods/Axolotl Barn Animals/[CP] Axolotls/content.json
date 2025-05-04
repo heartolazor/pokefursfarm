@@ -1,0 +1,396 @@
+{
+    "Format": "1.28.0",
+	"Changes": [
+	
+	{
+		"LogName": "Load images",
+			"Action": "Load",
+			"Target": "Mods/otohime.barnaxolotls/AlbinoAxolotl, Mods/otohime.barnaxolotls/BlackAxolotl, Mods/otohime.barnaxolotls/BlueAxolotl, Mods/otohime.barnaxolotls/LavenderAxolotl, Mods/otohime.barnaxolotls/PinkAxolotl, Mods/otohime.barnaxolotls/YellowAxolotl, Mods/otohime.barnaxolotls/albinotail, Mods/otohime.barnaxolotls/blacktail, Mods/otohime.barnaxolotls/bluetail, Mods/otohime.barnaxolotls/lavendertail, Mods/otohime.barnaxolotls/pinktail, Mods/otohime.barnaxolotls/yellowtail, Mods/otohime.barnaxolotls/albinohead, Mods/otohime.barnaxolotls/blackhead, Mods/otohime.barnaxolotls/bluehead, Mods/otohime.barnaxolotls/lavenderhead, Mods/otohime.barnaxolotls/pinkhead, Mods/otohime.barnaxolotls/yellowhead",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+                "LogName": "Animal Data",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"otohime.albinoaxolotl": {
+				"DisplayName": "Albino Axolotl",
+				"House": "Barn",
+				"Gender": "MaleOrFemale",
+				"PurchasePrice": 10000,
+				"SellPrice": 11000,
+				"ShopTexture": "Mods/otohime.barnaxolotls\\albinohead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Albino Axolotl",
+				"ShopDescription": "Somehow these particular axolotls are large and able to live on land. Praise be Marnie's powers.",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "394"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.albinoaxolotl_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "otohime.barnaxolotls_albinotail"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.barnaxolotls\\AlbinoAxolotl",
+				"UseFlippedRightForLeft": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": true,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+			
+			"otohime.blackaxolotl": {
+				"DisplayName": "Black Axolotl",
+				"House": "Barn",
+				"Gender": "MaleOrFemale",
+				"PurchasePrice": 10000,
+				"SellPrice": 11000,
+				"ShopTexture": "Mods/otohime.barnaxolotls\\blackhead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Black Axolotl",
+				"ShopDescription": "Somehow these particular axolotls are large and able to live on land. Praise be Marnie's powers.",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "394"
+					},
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.blackaxolotl_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "otohime.barnaxolotls_blacktail"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.barnaxolotls\\BlackAxolotl",
+				"UseFlippedRightForLeft": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": true,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+			"otohime.blueaxolotl": {
+				"DisplayName": "Blue Axolotl",
+				"House": "Barn",
+				"Gender": "MaleOrFemale",
+				"PurchasePrice": 10000,
+				"SellPrice": 11000,
+				"ShopTexture": "Mods/otohime.barnaxolotls\\bluehead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Blue Axolotl",
+				"ShopDescription": "Somehow these particular axolotls are large and able to live on land. Praise be Marnie's powers.",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "394"
+					},
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.blueaxolotl_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "otohime.barnaxolotls_bluetail"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.barnaxolotls\\BlueAxolotl",
+				"UseFlippedRightForLeft": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": true,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                         "otohime.lavenderaxolotl": {
+				"DisplayName": "Lavender Axolotl",
+				"House": "Barn",
+				"Gender": "MaleOrFemale",
+				"PurchasePrice": 10000,
+				"SellPrice": 11000,
+				"ShopTexture": "Mods/otohime.barnaxolotls\\lavenderhead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Lavender Axolotl",
+				"ShopDescription": "Somehow these particular axolotls are large and able to live on land. Praise be Marnie's powers.",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "394"
+					},
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.lavenderaxolotl_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "otohime.barnaxolotls_lavendertail"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.barnaxolotls\\LavenderAxolotl",
+				"UseFlippedRightForLeft": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": true,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.pinkaxolotl": {
+				"DisplayName": "Pink Axolotl",
+				"House": "Barn",
+				"Gender": "MaleOrFemale",
+				"PurchasePrice": 10000,
+				"SellPrice": 11000,
+				"ShopTexture": "Mods/otohime.barnaxolotls\\pinkhead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Pink Axolotl",
+				"ShopDescription": "Somehow these particular axolotls are large and able to live on land. Praise be Marnie's powers.",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "394"
+					},
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.pinkaxolotl_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "otohime.barnaxolotls_pinktail"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.barnaxolotls\\PinkAxolotl",
+				"UseFlippedRightForLeft": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": true,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.yellowaxolotl": {
+				"DisplayName": "Yellow Axolotl",
+				"House": "Barn",
+				"Gender": "MaleOrFemale",
+				"PurchasePrice": 10000,
+				"SellPrice": 11000,
+				"ShopTexture": "Mods/otohime.barnaxolotls\\yellowhead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Yellow Axolotl",
+				"ShopDescription": "Somehow these particular axolotls are large and able to live on land. Praise be Marnie's powers.",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "394"
+					},
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.yellowaxolotl_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "otohime.barnaxolotls_yellowtail"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.barnaxolotls\\YellowAxolotl",
+				"UseFlippedRightForLeft": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": true,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+		},
+	},
+	
+	{
+		"LogName": "Animal Products",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			        "otohime.barnaxolotls_albinotail": {
+				"Name": "Albino Axolotl Tail",
+				"DisplayName": "Albino Axolotl Tail",
+				"Description": "Don't worry, it grows back.",
+				"Edibility": "10",
+				"Type": "Basic",
+				"Category": -5,
+				"Price": 300,
+				"Texture": "Mods\\otohime.barnaxolotls\\albinotail",
+				"SpriteIndex": 0,
+				"ContextTags": [
+					"color_white",
+				],
+			},			
+			        "otohime.barnaxolotls_blacktail": {
+				"Name": "Black Axolotl Tail",
+				"DisplayName": "Black Axolotl Tail",
+				"Description": "Don't worry, it grows back.",
+				"Edibility": "10",
+				"Type": "Basic",
+				"Category": -5,
+				"Price": 300,
+				"Texture": "Mods\\otohime.barnaxolotls\\blacktail",
+				"SpriteIndex": 0,
+				"ContextTags": [
+					"color_black",
+				],
+			},
+				"otohime.barnaxolotls_bluetail": {
+				"Name": "Blue Axolotl Tail",
+				"DisplayName": "Blue Axolotl Tail",
+				"Description": "Don't worry, it grows back.",
+				"Edibility": "10",
+				"Type": "Basic",
+				"Category": -5,
+				"Price": 300,
+				"Texture": "Mods\\otohime.barnaxolotls\\bluetail",
+				"SpriteIndex": 0,
+				"ContextTags": [
+					"color_blue",
+				],
+			},
+                                "otohime.barnaxolotls_lavendertail": {
+				"Name": "Lavender Axolotl Tail",
+				"DisplayName": "Lavender Axolotl Tail",
+				"Description": "Don't worry, it grows back.",
+				"Edibility": "10",
+				"Type": "Basic",
+				"Category": -5,
+				"Price": 300,
+				"Texture": "Mods\\otohime.barnaxolotls\\lavendertail",
+				"SpriteIndex": 0,
+				"ContextTags": [
+					"color_purple",
+				],
+			},
+                                "otohime.barnaxolotls_pinktail": {
+				"Name": "Pink Axolotl Tail",
+				"DisplayName": "Pink Axolotl Tail",
+				"Description": "Don't worry, it grows back.",
+				"Edibility": "10",
+				"Type": "Basic",
+				"Category": -5,
+				"Price": 300,
+				"Texture": "Mods\\otohime.barnaxolotls\\pinktail",
+				"SpriteIndex": 0,
+				"ContextTags": [
+					"color_pink",
+				],
+			},
+                                "otohime.barnaxolotls_yellowtail": {
+				"Name": "Yellow Axolotl Tail",
+				"DisplayName": "Yellow Axolotl Tail",
+				"Description": "Don't worry, it grows back.",
+				"Edibility": "10",
+				"Type": "Basic",
+				"Category": -5,
+				"Price": 300,
+				"Texture": "Mods\\otohime.barnaxolotls\\yellowtail",
+				"SpriteIndex": 0,
+				"ContextTags": [
+					"color_yellow",
+				],
+			},
+			
+		},
+	},
+],
+}		

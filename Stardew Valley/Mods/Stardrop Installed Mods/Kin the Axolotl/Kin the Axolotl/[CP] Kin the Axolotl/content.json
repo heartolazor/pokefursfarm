@@ -1,0 +1,173 @@
+{
+  "Format": "2.0",
+  "Changes": [      
+{               
+     "Action": "Include",
+     "FromFile": "data/Objects/Objects.json",
+    },
+                       {
+			"LogName": "NPC Dispositions",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Entries": {
+				"Kin": {
+					"Manner": "Polite",
+					"SocialAnxiety": "Neutral",
+					"Optimism": "Neutral",
+					"Gender": "Male",
+					"CanBeRomanced": false,
+					"LoveInterest": "null",
+					"HomeRegion": "Other",
+					"BirthSeason": "fall",
+					"BirthDay": 14,
+					"FriendsAndFamily": {},
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "Woods",
+                            "Tile": {
+                                "X": 12,
+                                "Y": 16
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Breather": false,
+				},
+				"PrinceKin": {
+					"Manner": "Polite",
+					"SocialAnxiety": "Neutral",
+					"Optimism": "Positive",
+					"Gender": "Male",
+					"CanBeRomanced": false,
+					"LoveInterest": "null",
+					"HomeRegion": "Other",
+					"BirthSeason": "fall",
+					"BirthDay": 14,
+                                        "CanSocialize": "FALSE",
+                                        "CanVisitIsland": "FALSE",
+                                        "ExcludeFromIntroductionsQuest": true,
+                                        "ExcludeFromPerfectionScore": true,
+					"FriendsAndFamily": {},
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "BugLand",
+                            "Tile": {
+                                "X": -200,
+                                "Y": -200
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+		}
+             }
+          },         
+    {
+
+      "LogName": "NPC Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Kin": "WOW, for me? You are the best, @!/73 124 125 336 373 384 791 928/This is great, thank you!/324 335 380/Hmm, okay...I could maybe make use of this./334 378/Please get that away from me.../337 386 527 645 803/Oh, thank you kindly./60 62 64 66 68 70 72/"
+
+      }
+    },
+    {
+
+      "LogName": "Kin Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Kin",
+      "FromFile": "assets/Portraits/Kin.png"
+
+    },
+    {
+
+      "LogName": "Prince Kin Portrait",
+      "Action": "Load",
+      "Target": "Portraits/PrinceKin",
+      "FromFile": "assets/Portraits/PrinceKin.png"
+
+    },
+    {
+
+      "LogName": "Kin Sprites",
+      "Action": "Load",
+      "Target": "Characters/Kin",
+      "FromFile": "assets/Characters/Spritesheet.png"
+
+    },
+    {
+
+      "LogName": "Prince Kin Sprites",
+      "Action": "Load",
+      "Target": "Characters/PrinceKin",
+      "FromFile": "assets/Characters/PrinceSpritesheet.png"
+
+    },
+    {
+
+      "LogName": "Animations",
+      "Action": "EditData",
+      "Target": "Data/animationdescriptions",
+      "Entries": {
+        "kin_stand": "0/0/0",
+     }
+    },
+    {
+
+      "LogName": "Animations",
+      "Action": "EditData",
+      "Target": "Data/animationdescriptions",
+      "Entries": {
+        "kin_drink": "20/21/22/23",
+     }
+    },
+    {
+
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Kin",
+      "FromFile": "assets/Schedule/Schedule.json"
+
+    },
+    {
+
+      "LogName": "Schedule Dialogue",
+      "Action": "Load",
+      "Target": "Strings/schedules/Kin",
+      "FromFile": "assets/Schedule/ScheduleDialogue.json"
+
+    },
+    {
+
+      "LogName": "Kin Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Kin",
+      "FromFile": "assets/Dialogue/Dialogue.json"
+
+    },
+    {
+      "LogName": "Kin Woods Event Data",
+      "Action": "Include",
+      "FromFile": "assets/Events/Woods.json"
+    },
+    {
+      "LogName": "Kin Farm Event Data",
+      "Action": "Include",
+      "FromFile": "assets/Events/Farm.json"
+    },
+   {
+      "LogName": "Kin Forest Event Data",
+      "Action": "Include",
+      "FromFile": "assets/Events/Forest.json"
+    },
+   {
+      "LogName": "Kin WizardHouse Event Data",
+      "Action": "Include",
+      "FromFile": "assets/Events/WizardHouse.json"
+    }
+]
+}

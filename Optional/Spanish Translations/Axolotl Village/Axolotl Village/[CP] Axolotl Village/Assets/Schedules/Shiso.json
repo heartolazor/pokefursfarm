@@ -1,0 +1,39 @@
+{
+"Changes": [
+
+	{
+		"LogName": "Shiso Schedule",
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Shiso",
+		"When": {
+			"HasSeenEvent: hostPlayer |contains=98890046": true
+                        },
+		"Entries": {
+
+			//Regular Schedule
+			"spring": "610 {{ModId}}_AxolotlTown 89 83 1/1200 {{ModId}}_AxolotlTown 81 58 1/1600 {{ModId}}_AxolotlLake 10 42 3/2000 {{ModId}}_LotusHouse 16 10 2 shiso_sleep",
+			"summer": "610 {{ModId}}_AxolotlTown 89 83 1/900 {{ModId}}_AxolotlLake 10 42 3/1300 {{ModId}}_AxolotlTown 109 78 1/2000 {{ModId}}_LotusHouse 16 10 2 shiso_sleep",
+			"fall": "610 {{ModId}}_AxolotlTown 89 83 1/900 {{ModId}}_AxolotlLake 46 57 0/1500 {{ModId}}_AxolotlTown 36 77 1/2000 {{ModId}}_LotusHouse 16 10 2 shiso_sleep",
+			"winter": "610 {{ModId}}_AxolotlTown 89 83 1/900 {{ModId}}_AxolotlLake 46 57 0/1500 {{ModId}}_AxolotlTown 36 77 1/2000 {{ModId}}_LotusHouse 16 10 2 shiso_sleep",
+			"rain": "610 {{ModId}}_LotusHouse 4 6 0/1600 {{ModId}}_LotusHouse 9 10 1/2000 {{ModId}}_LotusHouse 16 10 2 shiso_sleep",
+			"Fri": "610 {{ModId}}_AxolotlTown 89 83 1/1400 {{ModId}}_AxolotlCommunityCenter 32 10 1/2000 {{ModId}}_LotusHouse 16 10 2 shiso_sleep",
+                        "Wed": "610 {{ModId}}_AxolotlTown 89 83 1/1000 {{ModId}}_AxolotlTown 27 41 1/2000 {{ModId}}_LotusHouse 16 10 2 shiso_sleep",
+                        "fall_28": "610 {{ModId}}_AxolotlTown 89 83 1/900 {{ModId}}_AxolotlLake 46 57 0/1500 {{ModId}}_AxolotlTown 36 77 1/1850 {{ModId}}_AxolotlTown 33 51 2/2350 {{ModId}}_LotusHouse 16 10 2 shiso_sleep",
+                        "winter_25": "610 {{ModId}}_AxolotlTown 89 83 1/900 {{ModId}}_AxolotlTown 33 51 2/2000 {{ModId}}_LotusHouse 16 10 2 shiso_sleep",
+                        "summer_7": "610 {{ModId}}_AxolotlTown 89 83 1/900 {{ModId}}_AxolotlLake 10 42 3/1300 {{ModId}}_AxolotlTown 109 78 1/1800 {{ModId}}_AxolotlTown 36 78 1/2350 {{ModId}}_LotusHouse 16 10 2 shiso_sleep",
+                        "spring_21": "610 {{ModId}}_AxolotlTown 89 83 1/800 {{ModId}}_AxolotlTown 36 78 1/2000 {{ModId}}_LotusHouse 16 10 2 shiso_sleep",
+			}
+	},
+{
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Shiso",
+		"Entries": {
+			"Sun": "610 {{ModId}}_AxolotlTown 89 83 1/900 {{ModId}}_AxolotlTownSouth 79 38 0/2000 {{ModId}}_LotusHouse 16 10 2 shiso_sleep",
+			},
+		"When": {
+			"HasSeenEvent: hostPlayer |contains=98890046": true,
+                        "HasReadLetter: hostPlayer |contains=CaptainProject4": true
+                        },
+	},
+]
+}

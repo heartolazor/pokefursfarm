@@ -1,0 +1,1269 @@
+{
+	"Changes": [
+	{
+		"LogName": "building special coops and barns",
+		"Action": "EditData",
+		"Target": "Data/Buildings",
+		"Entries": {
+			"PokeCoop": {
+				"Name": "{{i18n: pkcoop}}",
+				"Description": "{{i18n: pkcoop.d}}",
+				"Texture": "Buildings\\Coop",
+				"Skins": [],
+				"DrawShadow": true,
+				"UpgradeSignTile": "2, 2",
+				"UpgradeSignHeight": 18.0,
+				"Size": {
+				  "X": 6,
+				  "Y": 3
+				},
+				"FadeWhenBehind": true,
+				"SourceRect": {
+				  "X": 0,
+				  "Y": 0,
+				  "Width": 96,
+				  "Height": 112
+				},
+				"SeasonOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"DrawOffset": "0, 0",
+				"SortTileOffset": 0.0,
+				"CollisionMap": null,
+				"AdditionalPlacementTiles": null,
+				"BuildingType": null,
+				"Builder": "Robin",
+				"BuildCondition": null,
+				"BuildDays": 3,
+				"BuildCost": 4000,
+				"BuildMaterials": [
+				  {
+					"ItemId": "(O)388",
+					"Amount": 300
+				  },
+				  {
+					"ItemId": "(O)390",
+					"Amount": 100
+				  }
+				],
+				"BuildingToUpgrade": null,
+				"MagicalConstruction": false,
+				"BuildMenuDrawOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"HumanDoor": {
+				  "X": 1,
+				  "Y": 2
+				},
+				"AnimalDoor": {
+					"X": 2,
+					"Y": 2,
+					"Width": 1,
+					"Height": 1
+				},
+				"AnimalDoorOpenDuration": 0.3125,
+				"AnimalDoorOpenSound": "doorCreak",
+				"AnimalDoorCloseDuration": 0.3125,
+				"AnimalDoorCloseSound": "doorCreakReverse",
+				"NonInstancedIndoorLocation": null,
+				"IndoorMap": "Coop",
+				"IndoorMapType": "StardewValley.AnimalHouse",
+				"MaxOccupants": 4,
+				"ValidOccupantTypes": [
+				  "PokeCoop"
+				],
+				"AllowAnimalPregnancy": false,
+				"IndoorItemMoves": null,
+				"IndoorItems": [
+				  {
+					"Id": "Default_FeedHopper",
+					"ItemId": "(BC)99",
+					"Tile": {
+					  "X": 3,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  }
+				],
+				"AddMailOnBuild": null,
+				"Metadata": {},
+				"ModData": {},
+				"HayCapacity": 0,
+				"Chests": null,
+				"DefaultAction": null,
+				"AdditionalTilePropertyRadius": 0,
+				"AllowsFlooringUnderneath": true,
+				"ActionTiles": [],
+				"TileProperties": [],
+				"ItemConversions": null,
+				"DrawLayers": [
+				  {
+					"Id": "Default_AnimalDoor",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 112,
+					  "Width": 16,
+					  "Height": 16
+					},
+					"DrawPosition": "32, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 0.02,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": -13
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Open",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 16,
+					  "Y": 112,
+					  "Width": 16,
+					  "Height": 16
+					},
+					"DrawPosition": "32, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 1.0,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": 0
+					}
+				  }
+				],
+				"CustomFields": null
+			},
+			"BigPokeCoop": {
+				"Name": "{{i18n: bpkcoop}}",
+				"Description": "{{i18n: bpkcoop.d}}",
+				"Texture": "Buildings\\Big Coop",
+				"Skins": [],
+				"DrawShadow": true,
+				"UpgradeSignTile": "2, 2",
+				"UpgradeSignHeight": 18.0,
+				"Size": {
+				  "X": 6,
+				  "Y": 3
+				},
+				"FadeWhenBehind": true,
+				"SourceRect": {
+				  "X": 0,
+				  "Y": 0,
+				  "Width": 96,
+				  "Height": 112
+				},
+				"SeasonOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"DrawOffset": "0, 0",
+				"SortTileOffset": 0.0,
+				"CollisionMap": null,
+				"AdditionalPlacementTiles": null,
+				"BuildingType": null,
+				"Builder": "Robin",
+				"BuildCondition": null,
+				"BuildDays": 2,
+				"BuildCost": 10000,
+				"BuildMaterials": [
+				  {
+					"ItemId": "(O)388",
+					"Amount": 400
+				  },
+				  {
+					"ItemId": "(O)390",
+					"Amount": 150
+				  }
+				],
+				"BuildingToUpgrade": "PokeCoop",
+				"MagicalConstruction": false,
+				"BuildMenuDrawOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"HumanDoor": {
+				  "X": 1,
+				  "Y": 2
+				},
+				"AnimalDoor": {
+					"X": 2,
+					"Y": 2,
+					"Width": 1,
+					"Height": 1
+				},
+				"AnimalDoorOpenDuration": 0.3125,
+				"AnimalDoorOpenSound": "doorCreak",
+				"AnimalDoorCloseDuration": 0.3125,
+				"AnimalDoorCloseSound": "doorCreakReverse",
+				"NonInstancedIndoorLocation": null,
+				"IndoorMap": "Coop2",
+				"IndoorMapType": "StardewValley.AnimalHouse",
+				"MaxOccupants": 8,
+				"ValidOccupantTypes": [
+				  "PokeCoop"
+				],
+				"AllowAnimalPregnancy": false,
+				"IndoorItemMoves": [
+				  {
+					"Id": "Default_ClearSpot_pokeIncubator",
+					"Source": {
+					  "X": 2,
+					  "Y": 3
+					},
+					"Destination": {
+					  "X": 14,
+					  "Y": 8
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": "(BC)PokemonIncubator"
+				  },
+				  {
+					"Id": "Default_ClearSpot_Pillar",
+					"Source": {
+					  "X": 1,
+					  "Y": 3
+					},
+					"Destination": {
+					  "X": 14,
+					  "Y": 7
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_KeepAlongWall",
+					"Source": {
+					  "X": 10,
+					  "Y": 4
+					},
+					"Destination": {
+					  "X": 14,
+					  "Y": 4
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  }
+				],
+				"IndoorItems": [
+				  {
+					"Id": "Default_FeedHopper",
+					"ItemId": "(BC)99",
+					"Tile": {
+					  "X": 3,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  },
+				  {
+					"Id": "inc",
+					"ItemId": "(BC)PokemonIncubator",
+					"Tile": {
+					  "X": 2,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  }
+				],
+				"AddMailOnBuild": null,
+				"Metadata": {},
+				"ModData": {},
+				"HayCapacity": 0,
+				"Chests": null,
+				"DefaultAction": null,
+				"AdditionalTilePropertyRadius": 0,
+				"AllowsFlooringUnderneath": true,
+				"ActionTiles": [],
+				"TileProperties": [],
+				"ItemConversions": null,
+				"DrawLayers": [
+				  {
+					"Id": "Default_AnimalDoor",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 112,
+					  "Width": 16,
+					  "Height": 16
+					},
+					"DrawPosition": "32, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 0.02,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": -13
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Open",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 16,
+					  "Y": 112,
+					  "Width": 16,
+					  "Height": 16
+					},
+					"DrawPosition": "32, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 1.0,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": 0
+					}
+				  }
+				],
+				"CustomFields": null
+			},
+			"DeluxePokeCoop": {
+				"Name": "{{i18n: dpkcoop}}",
+				"Description": "{{i18n: dpkcoop.d}}",
+				"Texture": "Buildings\\Deluxe Coop",
+				"Skins": [],
+				"DrawShadow": true,
+				"UpgradeSignTile": "2, 2",
+				"UpgradeSignHeight": 18.0,
+				"Size": {
+				  "X": 6,
+				  "Y": 3
+				},
+				"FadeWhenBehind": true,
+				"SourceRect": {
+				  "X": 0,
+				  "Y": 0,
+				  "Width": 96,
+				  "Height": 112
+				},
+				"SeasonOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"DrawOffset": "0, 0",
+				"SortTileOffset": 0.0,
+				"CollisionMap": null,
+				"AdditionalPlacementTiles": null,
+				"BuildingType": null,
+				"Builder": "Robin",
+				"BuildCondition": null,
+				"BuildDays": 2,
+				"BuildCost": 20000,
+				"BuildMaterials": [
+				  {
+					"ItemId": "(O)388",
+					"Amount": 500
+				  },
+				  {
+					"ItemId": "(O)390",
+					"Amount": 200
+				  }
+				],
+				"BuildingToUpgrade": "BigPokeCoop",
+				"MagicalConstruction": false,
+				"BuildMenuDrawOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"HumanDoor": {
+				  "X": 1,
+				  "Y": 2
+				},
+				"AnimalDoor": {
+					"X": 2,
+					"Y": 2,
+					"Width": 1,
+					"Height": 1
+				},
+				"AnimalDoorOpenDuration": 0.3125,
+				"AnimalDoorOpenSound": "doorCreak",
+				"AnimalDoorCloseDuration": 0.3125,
+				"AnimalDoorCloseSound": "doorCreakReverse",
+				"NonInstancedIndoorLocation": null,
+				"IndoorMap": "Coop3",
+				"IndoorMapType": "StardewValley.AnimalHouse",
+				"MaxOccupants": 12,
+				"ValidOccupantTypes": [
+				  "PokeCoop"
+				],
+				"AllowAnimalPregnancy": false,
+				"IndoorItemMoves": [
+				  {
+					"Id": "Default_KeepAlongWall_Top",
+					"Source": {
+					  "X": 14,
+					  "Y": 4
+					},
+					"Destination": {
+					  "X": 20,
+					  "Y": 4
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_KeepAlongWall_Middle",
+					"Source": {
+					  "X": 14,
+					  "Y": 7
+					},
+					"Destination": {
+					  "X": 21,
+					  "Y": 7
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_KeepAlongWall_Bottom",
+					"Source": {
+					  "X": 14,
+					  "Y": 8
+					},
+					"Destination": {
+					  "X": 21,
+					  "Y": 8
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  }
+				],
+				"IndoorItems": [
+				  {
+					"Id": "Default_FeedHopper",
+					"ItemId": "(BC)99",
+					"Tile": {
+					  "X": 3,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  },
+				  {
+					"Id": "inc",
+					"ItemId": "(BC)PokemonIncubator",
+					"Tile": {
+					  "X": 2,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  },
+				  {
+					"Id": "inc",
+					"ItemId": "(BC)PokemonIncubator",
+					"Tile": {
+					  "X": 4,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  }
+				],
+				"AddMailOnBuild": null,
+				"Metadata": {},
+				"ModData": {},
+				"HayCapacity": 0,
+				"Chests": null,
+				"DefaultAction": null,
+				"AdditionalTilePropertyRadius": 0,
+				"AllowsFlooringUnderneath": true,
+				"ActionTiles": [],
+				"TileProperties": [],
+				"ItemConversions": null,
+				"DrawLayers": [
+				  {
+					"Id": "Default_AnimalDoor",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 112,
+					  "Width": 16,
+					  "Height": 16
+					},
+					"DrawPosition": "32, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 0.02,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": -13
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Open",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 16,
+					  "Y": 112,
+					  "Width": 16,
+					  "Height": 16
+					},
+					"DrawPosition": "32, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 1.0,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": 0
+					}
+				  }
+				],
+				"CustomFields": null
+			},
+			"PokeBarn": {
+				"Name": "{{i18n: pkbarn}}",
+				"Description": "{{i18n: pkbarn.d}}",
+				"Texture": "Buildings\\Barn",
+				"Skins": [],
+				"DrawShadow": true,
+				"UpgradeSignTile": "3, 3",
+				"UpgradeSignHeight": 31.0,
+				"Size": {
+				  "X": 7,
+				  "Y": 4
+				},
+				"FadeWhenBehind": true,
+				"SourceRect": {
+				  "X": 0,
+				  "Y": 0,
+				  "Width": 112,
+				  "Height": 112
+				},
+				"SeasonOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"DrawOffset": "0, 0",
+				"SortTileOffset": 0.0,
+				"CollisionMap": null,
+				"AdditionalPlacementTiles": null,
+				"BuildingType": null,
+				"Builder": "Robin",
+				"BuildCondition": null,
+				"BuildDays": 3,
+				"BuildCost": 6000,
+				"BuildMaterials": [
+				  {
+					"ItemId": "(O)388",
+					"Amount": 350
+				  },
+				  {
+					"ItemId": "(O)390",
+					"Amount": 150
+				  }
+				],
+				"BuildingToUpgrade": null,
+				"MagicalConstruction": false,
+				"BuildMenuDrawOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"HumanDoor": {
+				  "X": 1,
+				  "Y": 3
+				},
+				"AnimalDoor": {
+					"X": 3,
+					"Y": 3,
+					"Width": 2,
+					"Height": 1
+				},
+				"AnimalDoorOpenDuration": 0.4,
+				"AnimalDoorOpenSound": "doorCreak",
+				"AnimalDoorCloseDuration": 0.6,
+				"AnimalDoorCloseSound": "doorCreakReverse",
+				"NonInstancedIndoorLocation": null,
+				"IndoorMap": "Barn",
+				"IndoorMapType": "StardewValley.AnimalHouse",
+				"MaxOccupants": 4,
+				"ValidOccupantTypes": [
+				  "PokeBarn"
+				],
+				"AllowAnimalPregnancy": false,
+				"IndoorItemMoves": null,
+				"IndoorItems": [
+				  {
+					"Id": "Default_FeedHopper",
+					"ItemId": "(BC)99",
+					"Tile": {
+					  "X": 6,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  }
+				],
+				"AddMailOnBuild": null,
+				"Metadata": {},
+				"ModData": {},
+				"HayCapacity": 0,
+				"Chests": null,
+				"DefaultAction": null,
+				"AdditionalTilePropertyRadius": 0,
+				"AllowsFlooringUnderneath": true,
+				"ActionTiles": [],
+				"TileProperties": [],
+				"ItemConversions": null,
+				"DrawLayers": [
+				  {
+					"Id": "Default_AnimalDoor_Bottom",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"DrawPosition": "48, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 0.02,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": -19
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Top",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 12
+					},
+					"DrawPosition": "48, 84",
+					"DrawInBackground": false,
+					"SortTileOffset": 0.02,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": -19
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Open_Top",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 32,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"DrawPosition": "48, 80",
+					"DrawInBackground": false,
+					"SortTileOffset": 1.0,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": 0
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Open_Bottom",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 64,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"DrawPosition": "48, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 1.0,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": 0
+					}
+				  }
+				],
+				"CustomFields": null
+			},
+			"BigPokeBarn": {
+				"Name": "{{i18n: bpkbarn}}",
+				"Description": "{{i18n: bpkbarn.d}}",
+				"Texture": "Buildings\\Big Barn",
+				"Skins": [],
+				"DrawShadow": true,
+				"UpgradeSignTile": "3, 3",
+				"UpgradeSignHeight": 31.0,
+				"Size": {
+				  "X": 7,
+				  "Y": 4
+				},
+				"FadeWhenBehind": true,
+				"SourceRect": {
+				  "X": 0,
+				  "Y": 0,
+				  "Width": 112,
+				  "Height": 112
+				},
+				"SeasonOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"DrawOffset": "0, 0",
+				"SortTileOffset": 0.0,
+				"CollisionMap": null,
+				"AdditionalPlacementTiles": null,
+				"BuildingType": null,
+				"Builder": "Robin",
+				"BuildCondition": null,
+				"BuildDays": 2,
+				"BuildCost": 12000,
+				"BuildMaterials": [
+				  {
+					"ItemId": "(O)388",
+					"Amount": 450
+				  },
+				  {
+					"ItemId": "(O)390",
+					"Amount": 200
+				  }
+				],
+				"BuildingToUpgrade": "PokeBarn",
+				"MagicalConstruction": false,
+				"BuildMenuDrawOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"HumanDoor": {
+				  "X": 1,
+				  "Y": 3
+				},
+				"AnimalDoor": {
+					"X": 4,
+					"Y": 3,
+					"Width": 2,
+					"Height": 1
+				},
+				"AnimalDoorOpenDuration": 0.4,
+				"AnimalDoorOpenSound": "doorCreak",
+				"AnimalDoorCloseDuration": 0.6,
+				"AnimalDoorCloseSound": "doorCreakReverse",
+				"NonInstancedIndoorLocation": null,
+				"IndoorMap": "Barn2",
+				"IndoorMapType": "StardewValley.AnimalHouse",
+				"MaxOccupants": 8,
+				"ValidOccupantTypes": [
+				  "PokeBarn"
+				],
+				"AllowAnimalPregnancy": true,
+				"IndoorItemMoves": [
+				  {
+					"Id": "Default_ClearSpace_WaterTrough_Left",
+					"Source": {
+					  "X": 15,
+					  "Y": 3
+					},
+					"Destination": {
+					  "X": 18,
+					  "Y": 13
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_ClearSpace_WaterTrough_Left",
+					"Source": {
+					  "X": 16,
+					  "Y": 3
+					},
+					"Destination": {
+					  "X": 19,
+					  "Y": 13
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_ClearSpace_Barrel",
+					"Source": {
+					  "X": 1,
+					  "Y": 4
+					},
+					"Destination": {
+					  "X": 20,
+					  "Y": 3
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_KeepAlongWall",
+					"Source": {
+					  "X": 16,
+					  "Y": 4
+					},
+					"Destination": {
+					  "X": 20,
+					  "Y": 4
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 9
+					},
+					"UnlessItemId": null
+				  }
+				],
+				"IndoorItems": [
+				  {
+					"Id": "Default_FeedHopper",
+					"ItemId": "(BC)99",
+					"Tile": {
+					  "X": 6,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  },
+				  {
+					"Id": "inc",
+					"ItemId": "(BC)PokemonIncubator",
+					"Tile": {
+					  "X": 5,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  }
+				],
+				"AddMailOnBuild": null,
+				"Metadata": {},
+				"ModData": {},
+				"HayCapacity": 0,
+				"Chests": null,
+				"DefaultAction": null,
+				"AdditionalTilePropertyRadius": 0,
+				"AllowsFlooringUnderneath": true,
+				"ActionTiles": [],
+				"TileProperties": [],
+				"ItemConversions": null,
+				"DrawLayers": [
+				  {
+					"Id": "Default_AnimalDoor_Bottom",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"DrawPosition": "64, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 0.02,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": -19
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Top",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 12
+					},
+					"DrawPosition": "64, 84",
+					"DrawInBackground": false,
+					"SortTileOffset": 0.02,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": -19
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Open_Top",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 32,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"DrawPosition": "64, 80",
+					"DrawInBackground": false,
+					"SortTileOffset": 1.0,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": 0
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Open_Bottom",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 64,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"DrawPosition": "64, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 1.0,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": 0
+					}
+				  }
+				],
+				"CustomFields": null
+			},
+			"DeluxePokeBarn": {
+				"Name": "{{i18n: dpkbarn}}",
+				"Description": "{{i18n: dpkbarn.d}}",
+				"Texture": "Buildings\\Deluxe Barn",
+				"Skins": [],
+				"DrawShadow": true,
+				"UpgradeSignTile": "4.5, 2",
+				"UpgradeSignHeight": 31.0,
+				"Size": {
+				  "X": 7,
+				  "Y": 4
+				},
+				"FadeWhenBehind": true,
+				"SourceRect": {
+				  "X": 0,
+				  "Y": 0,
+				  "Width": 112,
+				  "Height": 112
+				},
+				"SeasonOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"DrawOffset": "0, 0",
+				"SortTileOffset": 0.0,
+				"CollisionMap": null,
+				"AdditionalPlacementTiles": null,
+				"BuildingType": null,
+				"Builder": "Robin",
+				"BuildCondition": null,
+				"BuildDays": 2,
+				"BuildCost": 25000,
+				"BuildMaterials": [
+				  {
+					"ItemId": "(O)388",
+					"Amount": 550
+				  },
+				  {
+					"ItemId": "(O)390",
+					"Amount": 300
+				  }
+				],
+				"BuildingToUpgrade": "BigPokeBarn",
+				"MagicalConstruction": false,
+				"BuildMenuDrawOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"HumanDoor": {
+				  "X": 1,
+				  "Y": 3
+				},
+				"AnimalDoor": {
+					"X": 4,
+					"Y": 3,
+					"Width": 2,
+					"Height": 1
+				},
+				"AnimalDoorOpenDuration": 0.4,
+				"AnimalDoorOpenSound": "doorCreak",
+				"AnimalDoorCloseDuration": 0.6,
+				"AnimalDoorCloseSound": "doorCreakReverse",
+				"NonInstancedIndoorLocation": null,
+				"IndoorMap": "Barn3",
+				"IndoorMapType": "StardewValley.AnimalHouse",
+				"MaxOccupants": 12,
+				"ValidOccupantTypes": [
+				  "PokeBarn"
+				],
+				"AllowAnimalPregnancy": true,
+				"IndoorItemMoves": [
+				  {
+					"Id": "Default_ClearSpace_Barrel",
+					"Source": {
+					  "X": 20,
+					  "Y": 3
+					},
+					"Destination": {
+					  "X": 1,
+					  "Y": 4
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_KeepAlongWall_Top",
+					"Source": {
+					  "X": 20,
+					  "Y": 5
+					},
+					"Destination": {
+					  "X": 21,
+					  "Y": 13
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_KeepAlongWall_Middle",
+					"Source": {
+					  "X": 20,
+					  "Y": 6
+					},
+					"Destination": {
+					  "X": 23,
+					  "Y": 6
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 6
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_ClearSpace_Bucket",
+					"Source": {
+					  "X": 20,
+					  "Y": 4
+					},
+					"Destination": {
+					  "X": 20,
+					  "Y": 13
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_ShiftSpace_NextToBarrel",
+					"Source": {
+					  "X": 20,
+					  "Y": 12
+					},
+					"Destination": {
+					  "X": 22,
+					  "Y": 13
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  }
+				],
+				"IndoorItems": [
+				  {
+					"Id": "Default_FeedHopper",
+					"ItemId": "(BC)99",
+					"Tile": {
+					  "X": 6,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  },
+				  {
+					"Id": "inc",
+					"ItemId": "(BC)PokemonIncubator",
+					"Tile": {
+					  "X": 5,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  },
+				  {
+					"Id": "inc",
+					"ItemId": "(BC)PokemonIncubator",
+					"Tile": {
+					  "X": 4,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  }
+				],
+				"AddMailOnBuild": null,
+				"Metadata": {},
+				"ModData": {},
+				"HayCapacity": 0,
+				"Chests": null,
+				"DefaultAction": null,
+				"AdditionalTilePropertyRadius": 0,
+				"AllowsFlooringUnderneath": true,
+				"ActionTiles": [],
+				"TileProperties": [],
+				"ItemConversions": null,
+				"DrawLayers": [
+				  {
+					"Id": "Default_AnimalDoor_Bottom",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"DrawPosition": "64, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 0.02,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": -19
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Top",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 12
+					},
+					"DrawPosition": "64, 84",
+					"DrawInBackground": false,
+					"SortTileOffset": 0.02,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": -19
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Open_Top",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 32,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"DrawPosition": "64, 80",
+					"DrawInBackground": false,
+					"SortTileOffset": 1.0,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": 0
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Open_Bottom",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 64,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"DrawPosition": "64, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 1.0,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": 0
+					}
+				  }
+				],
+				"CustomFields": null
+			}
+		}
+	}
+	]
+}

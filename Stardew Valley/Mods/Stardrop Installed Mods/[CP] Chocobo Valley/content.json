@@ -1,0 +1,50 @@
+{
+    "Format": "2.0.0",
+	"ConfigSchema": {
+		"DiggingChocobos": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Unselecting this will make all chocobos who dig up items drop them in their barn overnight instead."
+		}
+	},
+    "Changes": [ 
+		{
+            "Action": "Include",
+            "FromFile": "Data/Animals.json",
+			"When": {"DiggingChocobos": "true"},
+        },
+		{
+            "Action": "Include",
+            "FromFile": "Data/AnimalsALT.json",
+			"When": {"DiggingChocobos": "false"},
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/Objects.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/Sounds.json"
+        },
+		{
+            "Action": "Include",
+            "FromFile": "Data/Shop.json"
+        },
+		{
+			"Action": "Include",
+			"FromFile": "Data/Buildings.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Data/Clothing.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Data/Machines.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Data/Furniture.json"
+		}
+    ]
+}

@@ -1,0 +1,79 @@
+{
+   "Changes":[
+      {
+         "LogName":"manifesting ditto",
+         "Action":"EditData",
+         "Target":"Data/FarmAnimals",
+         "TargetField":[
+            "ditto"
+         ],
+         "Entries":{
+            "DaysToMature":"7",
+            "DaysToProduce":"3",
+            "GrassEatAmount":"2",
+            "ProfessionForHappinessBoost":2,
+            "ProfessionForQualityBoost":2,
+            "SellPrice":10000,
+            "ProduceItemIds":[
+               {
+                  "Id":"Default",
+                  "Condition":"selph.ExtraAnimalConfig_ANIMAL_HOUSE_COUNT Here minccino 0 1 12",
+                  "MinimumFriendship":0,
+                  "ItemId":"bees.pkr_dittoegg"
+               }
+            ],
+            "DeluxeProduceItemIds":[
+               {
+                  "Id":"Default",
+                  "Condition":null,
+                  "MinimumFriendship":250,
+                  "ItemId":"bees.pkr_metalpowder"
+               },
+               {
+                  "Id":"Default",
+                  "Condition":null,
+                  "MinimumFriendship":250,
+                  "ItemId":"bees.pkr_quickpowder"
+               },
+               {
+                  "Id":"Default",
+                  "Condition":null,
+                  "MinimumFriendship":750,
+                  "ItemId":"bees.pkr_transformtm"
+               }
+            ]
+         }
+      },
+      {
+         "LogName":"teaching ditto to find candy",
+         "Action":"EditData",
+         "Target":"selph.ExtraAnimalConfig/AnimalExtensionData",
+         "Entries":{
+            "ditto":{
+               "AnimalProduceExtensionData":{
+                  "(O)bees.pkr_gummitreasurebox":{
+                     "HarvestTool":"DigUp",
+                     "ItemQueries":[
+                        {
+                           "ItemId":"bees.pkr_deluxetreasurebox",
+                           "Condition":"selph.ExtraAnimalConfig_ANIMAL_FRIENDSHIP 700, RANDOM 0.25"
+                        },
+                        {
+                           "ItemId":"bees.pkr_candytreasurebox",
+                           "Condition":"selph.ExtraAnimalConfig_ANIMAL_FRIENDSHIP 500, RANDOM 0.25"
+                        },
+                        {
+                           "ItemId":"bees.pkr_bowtreasurebox",
+                           "Condition":"selph.ExtraAnimalConfig_ANIMAL_FRIENDSHIP 500, RANDOM 0.25"
+                        },
+                        {
+                           "ItemId":"bees.pkr_candytreasurebox"
+                        }
+                     ]
+                  }
+               }
+            }
+         }
+      }
+   ]
+}

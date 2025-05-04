@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="15" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="21">
+ <properties>
+  <property name="AmbientLight" value="95 95 95"/>
+  <property name="DayTiles" value="Front 4 2 469 Front 10 2 469"/>
+  <property name="NightTiles" value="Front 4 2 1219 Front 10 2 1219"/>
+  <property name="Warp" value="7 15 otohime.AV_AxolotlTown 47 31"/>
+ </properties>
+ <tileset firstgid="1" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths" width="64" height="144"/>
+  <tile id="0">
+   <properties>
+    <property name="PathType" value="NE"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="PathType" value="SE"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="PathType" value="WS"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="PathType" value="WN"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="PathType" value="Crossroad"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="PathType" value="End"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="37" name="z_walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
+  <image source="z_walls_and_floors.png" width="256" height="560"/>
+ </tileset>
+ <tileset firstgid="597" name="z_townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="z_townInterior.png" width="512" height="1088"/>
+  <tile id="1824">
+   <animation>
+    <frame tileid="1824" duration="1500"/>
+    <frame tileid="1825" duration="200"/>
+    <frame tileid="1826" duration="200"/>
+    <frame tileid="1827" duration="200"/>
+    <frame tileid="1831" duration="5000"/>
+    <frame tileid="1826" duration="200"/>
+    <frame tileid="1825" duration="200"/>
+    <frame tileid="1824" duration="5000"/>
+    <frame tileid="1830" duration="3000"/>
+    <frame tileid="1828" duration="200"/>
+    <frame tileid="1829" duration="200"/>
+    <frame tileid="1828" duration="200"/>
+    <frame tileid="1829" duration="200"/>
+    <frame tileid="1828" duration="200"/>
+    <frame tileid="1829" duration="200"/>
+    <frame tileid="1828" duration="5000"/>
+    <frame tileid="1830" duration="1000"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="2773" name="z_Cursors" tilewidth="16" tileheight="16" tilecount="6204" columns="44">
+  <image source="z_Cursors.png" width="704" height="2256"/>
+ </tileset>
+ <tileset firstgid="8977" name="z_furniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="z_furniture.png" width="512" height="1488"/>
+ </tileset>
+ <tileset firstgid="11953" name="z_Craftables" tilewidth="16" tileheight="16" tilecount="576" columns="8">
+  <image source="z_Craftables.png" width="128" height="1152"/>
+ </tileset>
+ <layer id="1" name="Back" width="15" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,63,47,47,47,47,47,47,47,47,47,47,47,47,0,
+0,63,47,47,47,47,47,47,47,47,47,47,47,47,0,
+0,47,47,47,47,47,47,47,47,47,47,47,47,47,0,
+0,47,511,511,512,511,512,511,512,511,512,47,0,47,0,
+0,511,512,511,512,511,512,511,512,511,512,511,511,512,0,
+0,511,512,511,511,2626,2627,2628,2629,2630,512,511,511,512,0,
+0,511,512,511,511,2658,2659,2660,2661,2662,512,511,511,512,0,
+0,511,512,511,511,2690,2691,2692,2693,2694,512,511,511,512,0,
+0,511,512,511,511,2722,2723,2724,2725,2726,511,512,511,512,0,
+0,511,512,511,511,511,2755,2756,2757,511,511,512,511,512,0,
+0,511,512,511,511,512,511,511,512,511,511,512,511,512,0,
+0,511,512,511,511,512,527,512,527,527,511,512,511,512,0,
+0,511,512,511,511,512,1042,1043,1044,511,511,511,511,512,0,
+0,527,528,527,527,528,1074,1075,1076,527,527,527,527,528,0,
+0,0,0,0,0,0,527,528,394,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="15" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,2688,0,0,0,0,0,0,
+661,0,0,0,0,0,0,0,2720,0,0,0,0,0,665,
+661,670,671,671,671,671,671,671,671,671,671,671,671,672,665,
+661,702,703,703,703,703,703,703,703,703,703,703,703,704,665,
+661,734,0,2746,0,2596,2597,2598,2599,2600,0,12345,0,736,665,
+661,0,9149,9150,0,0,0,0,0,0,0,0,0,0,665,
+661,0,9181,9182,0,0,0,0,0,0,0,0,0,0,665,
+661,9148,10255,10256,0,0,0,0,0,0,0,11517,11518,11519,665,
+661,0,10287,10288,0,0,0,0,0,0,0,0,0,0,665,
+661,9492,9493,11857,11858,0,0,0,0,0,0,11581,11582,11583,665,
+661,9524,9525,11889,11890,0,0,0,0,0,0,0,12172,0,665,
+661,9556,9557,11921,11922,0,0,0,0,0,0,0,0,0,665,
+661,0,0,0,0,0,0,0,0,0,0,2429,2421,2430,665,
+757,758,762,762,762,762,759,0,760,762,762,0,0,0,764,
+0,0,0,0,0,0,693,0,727,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="15" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,9,0,0,0,0,0,9,0,0,0,0,
+0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,5,6,6,6,8,0,0,0,
+0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,5,6,6,6,6,8,0,0,
+0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,7,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="15" height="16">
+  <data encoding="csv">
+597,598,599,599,599,599,599,599,599,599,599,599,599,600,597,
+629,630,11726,0,0,0,2686,2687,0,0,0,0,11726,632,633,
+661,0,11758,0,1066,0,2718,2719,2503,2504,1066,0,11758,0,665,
+661,0,0,0,1098,2532,2533,2534,2535,2536,1098,0,0,0,665,
+661,0,0,2714,0,2564,2565,2566,2567,2568,0,12337,0,0,665,
+661,0,9117,9118,0,0,0,0,0,0,0,0,0,0,665,
+661,0,0,0,0,0,0,0,0,0,0,0,0,0,665,
+661,9116,10223,10224,0,0,0,0,0,0,11484,11485,11486,11487,11488,
+661,0,0,0,0,0,0,0,0,0,0,11520,11521,11522,665,
+661,0,0,0,0,0,0,0,0,0,0,11552,11553,11554,665,
+661,0,0,0,0,0,0,0,0,0,0,0,12164,0,665,
+661,0,0,0,0,0,0,0,0,0,0,0,0,0,665,
+661,0,0,0,0,0,0,0,0,0,0,0,0,0,665,
+661,0,0,0,0,0,0,0,0,0,0,0,0,0,665,
+757,758,762,762,762,762,759,0,760,762,762,762,762,763,764,
+597,597,597,597,597,597,693,762,727,597,597,597,597,597,597
+</data>
+ </layer>
+ <objectgroup id="5" name="Back"/>
+ <objectgroup id="6" name="Buildings">
+  <object id="13" name="TileData" x="48" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Dialogue A trash can full of candy wrappers."/>
+   </properties>
+  </object>
+  <object id="14" name="TileData" x="48" y="160" width="32" height="48">
+   <properties>
+    <property name="Action" value="Dialogue Two cute macarons made by Olina herself!"/>
+   </properties>
+  </object>
+  <object id="15" name="TileData" x="192" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Dialogue *snort*"/>
+   </properties>
+  </object>
+  <object id="16" name="TileData" x="176" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Dialogue Love Bunny's water bowl."/>
+   </properties>
+  </object>
+  <object id="17" name="TileData" x="208" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Dialogue Love Bunny's food bowl. It has vegetable chunks in it."/>
+   </properties>
+  </object>
+  <object id="18" name="TileData" x="192" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="Dialogue Is this Love Bunny's plushie or Olina's plushie?"/>
+   </properties>
+  </object>
+  <object id="19" name="TileData" x="80" y="80" width="80" height="16">
+   <properties>
+    <property name="Action" value="Kitchen"/>
+   </properties>
+  </object>
+  <object id="20" name="TileData" x="32" y="112" width="32" height="32">
+   <properties>
+    <property name="Action" value="Dialogue A freshly made Pink Cake."/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="Paths"/>
+ <objectgroup id="8" name="Front"/>
+</map>

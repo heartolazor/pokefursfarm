@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="11" height="14" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="13">
+ <properties>
+  <property name="AmbientLight" value="95 95 95"/>
+  <property name="DayTiles" value="Front 3 1 225 Front 3 2 257 Front 7 1 225 Front 7 2 257"/>
+  <property name="NightTiles" value="Front 3 1 1222 Front 3 2 1254 Front 7 1 1222 Front 7 2 1254"/>
+  <property name="Warp" value="5 13 otohime.AV_AxolotlTown 95 51"/>
+ </properties>
+ <tileset firstgid="1" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths" width="64" height="144"/>
+  <tile id="0">
+   <properties>
+    <property name="PathType" value="NE"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="PathType" value="SE"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="PathType" value="WS"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="PathType" value="WN"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="PathType" value="Crossroad"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="PathType" value="End"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="37" name="z_walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
+  <image source="z_walls_and_floors.png" width="256" height="560"/>
+ </tileset>
+ <tileset firstgid="597" name="z_townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="z_townInterior.png" width="512" height="1088"/>
+  <tile id="1824">
+   <animation>
+    <frame tileid="1824" duration="1500"/>
+    <frame tileid="1825" duration="200"/>
+    <frame tileid="1826" duration="200"/>
+    <frame tileid="1827" duration="200"/>
+    <frame tileid="1831" duration="5000"/>
+    <frame tileid="1826" duration="200"/>
+    <frame tileid="1825" duration="200"/>
+    <frame tileid="1824" duration="5000"/>
+    <frame tileid="1830" duration="3000"/>
+    <frame tileid="1828" duration="200"/>
+    <frame tileid="1829" duration="200"/>
+    <frame tileid="1828" duration="200"/>
+    <frame tileid="1829" duration="200"/>
+    <frame tileid="1828" duration="200"/>
+    <frame tileid="1829" duration="200"/>
+    <frame tileid="1828" duration="5000"/>
+    <frame tileid="1830" duration="1000"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="2773" name="z_Cursors" tilewidth="16" tileheight="16" tilecount="6204" columns="44">
+  <image source="z_Cursors.png" width="704" height="2256"/>
+ </tileset>
+ <tileset firstgid="8977" name="z_furniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="z_furniture.png" width="512" height="1488"/>
+ </tileset>
+ <tileset firstgid="11953" name="z_Craftables" tilewidth="16" tileheight="16" tilecount="576" columns="8">
+  <image source="z_Craftables.png" width="128" height="1152"/>
+ </tileset>
+ <tileset firstgid="12529" name="z_rugs" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="z_rugs.png" width="512" height="512"/>
+ </tileset>
+ <layer id="1" name="Back" width="11" height="14">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,
+328,360,360,360,360,360,360,360,360,360,328,
+328,360,360,360,360,360,360,360,360,360,328,
+328,360,360,360,360,360,360,360,360,360,328,
+0,360,483,484,0,0,0,0,0,360,0,
+0,511,511,511,511,511,511,511,511,512,0,
+0,527,527,12529,12530,12531,12532,12533,511,512,0,
+0,527,527,12561,12562,12563,12564,12565,511,512,0,
+0,527,528,12593,12594,12595,12596,12597,511,512,0,
+0,527,528,12625,12626,12627,12628,12629,511,512,0,
+0,527,528,12657,12658,12659,12660,12661,511,512,0,
+0,527,528,528,527,528,512,512,512,512,0,
+0,527,528,528,527,528,512,528,528,528,0,
+0,0,0,0,527,528,528,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="11" height="14">
+  <data encoding="csv">
+597,598,599,599,599,599,599,599,599,600,597,
+629,630,0,0,0,0,0,0,0,632,633,
+661,0,0,0,0,0,0,0,0,0,665,
+661,670,671,671,671,671,671,671,671,672,665,
+661,702,703,703,703,703,703,703,703,704,665,
+661,734,0,2502,1185,1186,1187,2502,0,736,665,
+661,0,0,0,0,0,0,0,921,922,665,
+661,1603,0,0,0,0,0,0,953,954,665,
+661,1635,0,0,0,0,0,0,0,0,665,
+661,1667,0,0,0,0,0,0,917,918,665,
+661,1699,0,0,0,0,0,0,0,0,665,
+661,0,0,0,0,0,0,0,0,0,665,
+757,758,12345,762,759,0,760,762,12345,763,764,
+597,597,597,597,693,0,727,597,597,597,597
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="11" height="14">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,8,0,0,0,0,0,
+0,0,0,0,0,7,0,0,0,0,0,
+0,0,0,0,0,5,6,6,8,0,0,
+0,0,0,0,0,7,0,0,0,0,0,
+0,0,0,0,0,7,0,0,0,0,0,
+0,0,0,0,0,7,0,0,0,0,0,
+0,0,0,0,0,7,0,0,0,0,0,
+0,0,0,0,0,7,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="11" height="14">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,822,0,0,0,822,0,0,0,
+0,0,11716,854,0,11716,0,854,11716,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,1153,1154,1155,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,1571,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,1019,1020,0,
+0,0,0,0,0,0,0,0,1051,1052,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,12337,0,0,0,0,0,12337,0,0,
+0,0,762,0,0,0,0,0,762,0,0,
+0,0,0,0,0,762,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back"/>
+ <objectgroup id="6" name="Buildings"/>
+ <objectgroup id="7" name="Paths"/>
+ <objectgroup id="8" name="Front"/>
+</map>

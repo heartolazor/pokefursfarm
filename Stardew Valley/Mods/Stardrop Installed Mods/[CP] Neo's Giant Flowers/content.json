@@ -1,0 +1,107 @@
+{
+    "Format": "2.1.2",
+	"ConfigSchema":
+	{
+		"Poppy Color":
+		{
+			"AllowValues": "Original, Red, White",
+			"Default": "Original",
+			"Description": "You can choose the original color or a different color.",
+		},
+		"Tulip Color":
+		{
+			"AllowValues": "Original, HotPink, Orange, Purple, Yellow",
+			"Default": "Original",
+			"Description": "You can choose the original color or a different color.",
+		},
+		"Summer Spangle Color":
+		{
+			"AllowValues": "Original, Blue, Green, Pink, Purple, Red",
+			"Default": "Original",
+			"Description": "You can choose the original color or a different color.",
+		},
+		"Fairy Rose Color":
+		{
+			"AllowValues": "Original, Blue, Lilac, Magenta, Pink, Purple, Red",
+			"Default": "Original",
+			"Description": "You can choose the original color or a different color.",
+		},
+		"Blue Jazz Color":
+		{
+			"AllowValues": "Original, Blue, Lightblue, Navi, Purple, Skyblue, White",
+			"Default": "Original",
+			"Description": "You can choose the original color or a different color.",
+		},
+        "Giant Crop Chance":
+		{
+            "AllowValues": "Very High, High, Medium, Low, Off",
+            "Default":"High",
+            "Description": "Chance of creating Giant crops.\nVery High - 5%\nHigh - 1% (Default Vanilla)\nMedium - 0.5%\nLow - 0.1%\nOff - 0%.",
+		},
+	},
+
+    "DynamicTokens":
+	[
+		{
+			"Name":"GiantChance",
+			"Value":0.05,
+			"When":
+			{
+				"Giant Crop Chance":"Very High"
+			}
+		},
+		{
+			"Name":"GiantChance",
+			"Value":0.01,
+			"When":
+			{
+				"Giant Crop Chance":"High"
+			}
+		},
+		{
+			"Name":"GiantChance",
+			"Value":0.005,
+			"When":
+			{
+				"Giant Crop Chance":"Medium"
+			}
+		},
+		{
+			"Name":"GiantChance",
+			"Value":0.001,
+			"When":
+			{
+				"Giant Crop Chance":"Low"
+			}
+		},
+		{
+			"Name":"GiantChance",
+			"Value":0.0,
+			"When":
+			{
+				"Giant Crop Chance":"Off"
+			}
+		},
+	],
+
+    "Changes":
+	[
+		{
+			"Action": "Include",
+			"FromFile": "Data/Giant.json",
+			"When":
+			{
+				"Giant Crop Chance": "Very High, High, Medium, Low, Off"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Data/Object.json",
+		},
+		{
+            "Action":"Load",
+            "Target":"Mods/Neo.GiantCrops/GiantCrops",
+            "FromFile":"Assets/{{TargetWithoutPath}}.png"
+		},
+	]
+}

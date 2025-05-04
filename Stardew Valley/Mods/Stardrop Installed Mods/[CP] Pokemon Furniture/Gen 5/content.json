@@ -1,0 +1,4161 @@
+{
+    "Format": "2.0.0",
+    "DynamicTokens": [
+        {
+            "Name": "InCatalogue",
+            "Value": false,
+            "When": {
+                "Show In Catalogue": true
+            }
+        },
+        {
+            "Name": "InCatalogue",
+            "Value": true,
+            "When": {
+                "Show In Catalogue": false
+            }
+        }
+    ],
+    "ConfigSchema": {
+        "Enabled": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether any of these Pokemon are added.",
+            "Section": "Behavior"
+        },
+        "Show In Catalogue": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Pokemon are in the catalogue.",
+            "Section": "Behavior"
+        },
+        "In Shop": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Pokemon are in Robins Shop.",
+            "Section": "Behavior"
+        },
+        "Non-shiny": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether any non-shiny Pokemon are available. You do not have to uncheck any of the individual non-shiny options below if you uncheck this one.",
+            "Section": "Behavior"
+        },
+        "Shiny": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether any shiny Pokemon are available. You do not have to uncheck any of the individual shiny options below if you uncheck this one.",
+            "Section": "Behavior"
+        },
+        "ShinyAutumnDeerling": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyAutumnDeerling is available.",
+            "Section": "Pokemon"
+        },
+        "AutumnDeerling": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether AutumnDeerling is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyBlitzle": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyBlitzle is available.",
+            "Section": "Pokemon"
+        },
+        "Blitzle": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Blitzle is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyCobalion": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyCobalion is available.",
+            "Section": "Pokemon"
+        },
+        "Cobalion": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Cobalion is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyCottonee": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyCottonee is available.",
+            "Section": "Pokemon"
+        },
+        "Cottonee": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Cottonee is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyDeino": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyDeino is available.",
+            "Section": "Pokemon"
+        },
+        "Deino": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Deino is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyEmolga": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyEmolga is available.",
+            "Section": "Pokemon"
+        },
+        "Emolga": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Emolga is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyFoongus": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyFoongus is available.",
+            "Section": "Pokemon"
+        },
+        "Foongus": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Foongus is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyHydreigon": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyHydreigon is available.",
+            "Section": "Pokemon"
+        },
+        "Hydreigon": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Hydreigon is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyKarrablast": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyKarrablast is available.",
+            "Section": "Pokemon"
+        },
+        "Karrablast": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Karrablast is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyKeldeo": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyKeldeo is available.",
+            "Section": "Pokemon"
+        },
+        "Keldeo": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Keldeo is available.",
+            "Section": "Pokemon"
+        },
+        "KeldeoResolute": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether KeldeoResolute is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyLandorus": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyLandorus is available.",
+            "Section": "Pokemon"
+        },
+        "Landorus": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Landorus is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyLarvesta": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyLarvesta is available.",
+            "Section": "Pokemon"
+        },
+        "Larvesta": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Larvesta is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyLillipup": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyLillipup is available.",
+            "Section": "Pokemon"
+        },
+        "Lillipup": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Lillipup is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyLitwick": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyLitwick is available.",
+            "Section": "Pokemon"
+        },
+        "Litwick": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Litwick is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyMunna": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyMunna is available.",
+            "Section": "Pokemon"
+        },
+        "Munna": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Munna is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyOshawott": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyOshawott is available.",
+            "Section": "Pokemon"
+        },
+        "Oshawott": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Oshawott is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyPatrat": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyPatrat is available.",
+            "Section": "Pokemon"
+        },
+        "Patrat": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Patrat is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyPetilil": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyPetilil is available.",
+            "Section": "Pokemon"
+        },
+        "Petilil": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Petilil is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyPidove": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyPidove is available.",
+            "Section": "Pokemon"
+        },
+        "Pidove": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Pidove is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyPurrloin": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyPurrloin is available.",
+            "Section": "Pokemon"
+        },
+        "Purrloin": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Purrloin is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyRoggenrola": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyRoggenrola is available.",
+            "Section": "Pokemon"
+        },
+        "Roggenrola": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Roggenrola is available.",
+            "Section": "Pokemon"
+        },
+        "ShinySamurott": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinySamurott is available.",
+            "Section": "Pokemon"
+        },
+        "Samurott": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Samurott is available.",
+            "Section": "Pokemon"
+        },
+        "ShinySewaddle": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinySewaddle is available.",
+            "Section": "Pokemon"
+        },
+        "Sewaddle": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Sewaddle is available.",
+            "Section": "Pokemon"
+        },
+        "ShinySnivy": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinySnivy is available.",
+            "Section": "Pokemon"
+        },
+        "Snivy": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Snivy is available.",
+            "Section": "Pokemon"
+        },
+        "ShinySpringDeerling": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinySpringDeerling is available.",
+            "Section": "Pokemon"
+        },
+        "SpringDeerling": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether SpringDeerling is available.",
+            "Section": "Pokemon"
+        },
+        "ShinySummerDeerling": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinySummerDeerling is available.",
+            "Section": "Pokemon"
+        },
+        "SummerDeerling": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether SummerDeerling is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyTepig": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyTepig is available.",
+            "Section": "Pokemon"
+        },
+        "Tepig": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Tepig is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyTerrakion": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyTerrakion is available.",
+            "Section": "Pokemon"
+        },
+        "Terrakion": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Terrakion is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyThundurus": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyThundurus is available.",
+            "Section": "Pokemon"
+        },
+        "Thundurus": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Thundurus is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyTimburr": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyTimburr is available.",
+            "Section": "Pokemon"
+        },
+        "Timburr": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Timburr is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyTornadus": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyTornadus is available.",
+            "Section": "Pokemon"
+        },
+        "Tornadus": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Tornadus is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyTympole": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyTympole is available.",
+            "Section": "Pokemon"
+        },
+        "Tympole": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Tympole is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyVenipede": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyVenipede is available.",
+            "Section": "Pokemon"
+        },
+        "Venipede": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Venipede is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyVictini": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyVictini is available.",
+            "Section": "Pokemon"
+        },
+        "Victini": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Victini is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyVirizion": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyVirizion is available.",
+            "Section": "Pokemon"
+        },
+        "Virizion": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Virizion is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyVolcarona": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyVolcarona is available.",
+            "Section": "Pokemon"
+        },
+        "Volcarona": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Volcarona is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyWhimsicott": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyWhimsicott is available.",
+            "Section": "Pokemon"
+        },
+        "Whimsicott": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Whimsicott is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyWinterDeerling": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyWinterDeerling is available.",
+            "Section": "Pokemon"
+        },
+        "WinterDeerling": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether WinterDeerling is available.",
+            "Section": "Pokemon"
+        },
+        "ShinyWoobat": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether ShinyWoobat is available.",
+            "Section": "Pokemon"
+        },
+        "Woobat": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "Whether Woobat is available.",
+            "Section": "Pokemon"
+        }
+    },
+    "Changes": [
+        {
+            "LogName": "ShinyAutumnDeerling TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyAutumnDeerling",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyAutumnDeerling": true
+            },
+            "FromFile": "assets/AutumnDeerling(S).png"
+        },
+        {
+            "LogName": "ShinyAutumnDeerling furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyAutumnDeerling": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyAutumnDeerling": "ShinyAutumnDeerling/decor/1 2/1 2/1/100/2/ShinyAutumnDeerling/0/Mods\\{{ModId}}\\Gen 5\\ShinyAutumnDeerling/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyAutumnDeerling in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyAutumnDeerling": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyAutumnDeerling": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyAutumnDeerling",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "AutumnDeerling TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/AutumnDeerling",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "AutumnDeerling": true
+            },
+            "FromFile": "assets/AutumnDeerling.png"
+        },
+        {
+            "LogName": "AutumnDeerling furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "AutumnDeerling": true
+            },
+            "Entries": {
+                "{{ModId}}_AutumnDeerling": "AutumnDeerling/decor/1 2/1 2/1/100/2/AutumnDeerling/0/Mods\\{{ModId}}\\Gen 5\\AutumnDeerling/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "AutumnDeerling in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "AutumnDeerling": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_AutumnDeerling": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_AutumnDeerling",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyBlitzle TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyBlitzle",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyBlitzle": true
+            },
+            "FromFile": "assets/Blitzle(S).png"
+        },
+        {
+            "LogName": "ShinyBlitzle furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyBlitzle": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyBlitzle": "ShinyBlitzle/decor/1 2/1 2/1/100/2/ShinyBlitzle/0/Mods\\{{ModId}}\\Gen 5\\ShinyBlitzle/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyBlitzle in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyBlitzle": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyBlitzle": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyBlitzle",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Blitzle TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Blitzle",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Blitzle": true
+            },
+            "FromFile": "assets/Blitzle.png"
+        },
+        {
+            "LogName": "Blitzle furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Blitzle": true
+            },
+            "Entries": {
+                "{{ModId}}_Blitzle": "Blitzle/decor/1 2/1 2/1/100/2/Blitzle/0/Mods\\{{ModId}}\\Gen 5\\Blitzle/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Blitzle in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Blitzle": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Blitzle": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Blitzle",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyCobalion TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyCobalion",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyCobalion": true
+            },
+            "FromFile": "assets/Cobalion(S).png"
+        },
+        {
+            "LogName": "ShinyCobalion furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyCobalion": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyCobalion": "ShinyCobalion/decor/2 2/2 2/1/100/2/ShinyCobalion/0/Mods\\{{ModId}}\\Gen 5\\ShinyCobalion/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyCobalion in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyCobalion": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyCobalion": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyCobalion",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Cobalion TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Cobalion",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Cobalion": true
+            },
+            "FromFile": "assets/Cobalion.png"
+        },
+        {
+            "LogName": "Cobalion furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Cobalion": true
+            },
+            "Entries": {
+                "{{ModId}}_Cobalion": "Cobalion/decor/2 2/2 2/1/100/2/Cobalion/0/Mods\\{{ModId}}\\Gen 5\\Cobalion/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Cobalion in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Cobalion": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Cobalion": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Cobalion",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyCottonee TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyCottonee",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyCottonee": true
+            },
+            "FromFile": "assets/Cottonee(S).png"
+        },
+        {
+            "LogName": "ShinyCottonee furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyCottonee": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyCottonee": "ShinyCottonee/decor/2 1/2 1/1/100/2/ShinyCottonee/0/Mods\\{{ModId}}\\Gen 5\\ShinyCottonee/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyCottonee in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyCottonee": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyCottonee": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyCottonee",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Cottonee TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Cottonee",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Cottonee": true
+            },
+            "FromFile": "assets/Cottonee.png"
+        },
+        {
+            "LogName": "Cottonee furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Cottonee": true
+            },
+            "Entries": {
+                "{{ModId}}_Cottonee": "Cottonee/decor/2 1/2 1/1/100/2/Cottonee/0/Mods\\{{ModId}}\\Gen 5\\Cottonee/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Cottonee in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Cottonee": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Cottonee": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Cottonee",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyDeino TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyDeino",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyDeino": true
+            },
+            "FromFile": "assets/Deino(S).png"
+        },
+        {
+            "LogName": "ShinyDeino furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyDeino": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyDeino": "ShinyDeino/decor/1 2/1 2/1/100/2/ShinyDeino/0/Mods\\{{ModId}}\\Gen 5\\ShinyDeino/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyDeino in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyDeino": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyDeino": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyDeino",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Deino TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Deino",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Deino": true
+            },
+            "FromFile": "assets/Deino.png"
+        },
+        {
+            "LogName": "Deino furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Deino": true
+            },
+            "Entries": {
+                "{{ModId}}_Deino": "Deino/decor/1 2/1 2/1/100/2/Deino/0/Mods\\{{ModId}}\\Gen 5\\Deino/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Deino in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Deino": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Deino": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Deino",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyEmolga TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyEmolga",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyEmolga": true
+            },
+            "FromFile": "assets/Emolga(S).png"
+        },
+        {
+            "LogName": "ShinyEmolga furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyEmolga": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyEmolga": "ShinyEmolga/decor/1 1/1 1/1/100/2/ShinyEmolga/0/Mods\\{{ModId}}\\Gen 5\\ShinyEmolga/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyEmolga in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyEmolga": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyEmolga": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyEmolga",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Emolga TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Emolga",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Emolga": true
+            },
+            "FromFile": "assets/Emolga.png"
+        },
+        {
+            "LogName": "Emolga furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Emolga": true
+            },
+            "Entries": {
+                "{{ModId}}_Emolga": "Emolga/decor/1 1/1 1/1/100/2/Emolga/0/Mods\\{{ModId}}\\Gen 5\\Emolga/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Emolga in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Emolga": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Emolga": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Emolga",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyFoongus TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyFoongus",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyFoongus": true
+            },
+            "FromFile": "assets/Foongus(S).png"
+        },
+        {
+            "LogName": "ShinyFoongus furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyFoongus": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyFoongus": "ShinyFoongus/decor/1 1/1 1/1/100/2/ShinyFoongus/0/Mods\\{{ModId}}\\Gen 5\\ShinyFoongus/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyFoongus in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyFoongus": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyFoongus": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyFoongus",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Foongus TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Foongus",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Foongus": true
+            },
+            "FromFile": "assets/Foongus.png"
+        },
+        {
+            "LogName": "Foongus furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Foongus": true
+            },
+            "Entries": {
+                "{{ModId}}_Foongus": "Foongus/decor/1 1/1 1/1/100/2/Foongus/0/Mods\\{{ModId}}\\Gen 5\\Foongus/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Foongus in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Foongus": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Foongus": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Foongus",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyHydreigon TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyHydreigon",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyHydreigon": true
+            },
+            "FromFile": "assets/Hydreigon(S).png"
+        },
+        {
+            "LogName": "ShinyHydreigon furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyHydreigon": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyHydreigon": "ShinyHydreigon/decor/2 2/2 2/1/100/2/ShinyHydreigon/0/Mods\\{{ModId}}\\Gen 5\\ShinyHydreigon/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyHydreigon in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyHydreigon": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyHydreigon": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyHydreigon",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Hydreigon TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Hydreigon",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Hydreigon": true
+            },
+            "FromFile": "assets/Hydreigon.png"
+        },
+        {
+            "LogName": "Hydreigon furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Hydreigon": true
+            },
+            "Entries": {
+                "{{ModId}}_Hydreigon": "Hydreigon/decor/2 2/2 2/1/100/2/Hydreigon/0/Mods\\{{ModId}}\\Gen 5\\Hydreigon/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Hydreigon in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Hydreigon": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Hydreigon": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Hydreigon",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyKarrablast TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyKarrablast",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyKarrablast": true
+            },
+            "FromFile": "assets/Karrablast(S).png"
+        },
+        {
+            "LogName": "ShinyKarrablast furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyKarrablast": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyKarrablast": "ShinyKarrablast/decor/1 2/1 2/1/100/2/ShinyKarrablast/0/Mods\\{{ModId}}\\Gen 5\\ShinyKarrablast/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyKarrablast in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyKarrablast": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyKarrablast": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyKarrablast",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Karrablast TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Karrablast",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Karrablast": true
+            },
+            "FromFile": "assets/Karrablast.png"
+        },
+        {
+            "LogName": "Karrablast furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Karrablast": true
+            },
+            "Entries": {
+                "{{ModId}}_Karrablast": "Karrablast/decor/1 2/1 2/1/100/2/Karrablast/0/Mods\\{{ModId}}\\Gen 5\\Karrablast/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Karrablast in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Karrablast": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Karrablast": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Karrablast",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyKeldeo TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyKeldeo",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyKeldeo": true
+            },
+            "FromFile": "assets/Keldeo(S).png"
+        },
+        {
+            "LogName": "ShinyKeldeo furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyKeldeo": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyKeldeo": "ShinyKeldeo/decor/1 2/1 2/1/100/2/ShinyKeldeo/0/Mods\\{{ModId}}\\Gen 5\\ShinyKeldeo/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyKeldeo in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyKeldeo": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyKeldeo": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyKeldeo",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Keldeo TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Keldeo",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Keldeo": true
+            },
+            "FromFile": "assets/Keldeo.png"
+        },
+        {
+            "LogName": "Keldeo furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Keldeo": true
+            },
+            "Entries": {
+                "{{ModId}}_Keldeo": "Keldeo/decor/1 2/1 2/1/100/2/Keldeo/0/Mods\\{{ModId}}\\Gen 5\\Keldeo/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Keldeo in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Keldeo": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Keldeo": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Keldeo",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "KeldeoResolute TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/KeldeoResolute",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "KeldeoResolute": true
+            },
+            "FromFile": "assets/KeldeoResolute.png"
+        },
+        {
+            "LogName": "KeldeoResolute furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "KeldeoResolute": true
+            },
+            "Entries": {
+                "{{ModId}}_KeldeoResolute": "KeldeoResolute/decor/1 2/1 2/1/100/2/KeldeoResolute/0/Mods\\{{ModId}}\\Gen 5\\KeldeoResolute/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "KeldeoResolute in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "KeldeoResolute": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_KeldeoResolute": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_KeldeoResolute",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyLandorus TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyLandorus",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyLandorus": true
+            },
+            "FromFile": "assets/Landorus(S).png"
+        },
+        {
+            "LogName": "ShinyLandorus furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyLandorus": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyLandorus": "ShinyLandorus/decor/2 2/2 2/1/100/2/ShinyLandorus/0/Mods\\{{ModId}}\\Gen 5\\ShinyLandorus/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyLandorus in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyLandorus": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyLandorus": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyLandorus",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Landorus TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Landorus",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Landorus": true
+            },
+            "FromFile": "assets/Landorus.png"
+        },
+        {
+            "LogName": "Landorus furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Landorus": true
+            },
+            "Entries": {
+                "{{ModId}}_Landorus": "Landorus/decor/2 2/2 2/1/100/2/Landorus/0/Mods\\{{ModId}}\\Gen 5\\Landorus/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Landorus in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Landorus": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Landorus": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Landorus",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyLarvesta TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyLarvesta",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyLarvesta": true
+            },
+            "FromFile": "assets/Larvesta(S).png"
+        },
+        {
+            "LogName": "ShinyLarvesta furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyLarvesta": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyLarvesta": "ShinyLarvesta/decor/1 2/1 2/1/100/2/ShinyLarvesta/0/Mods\\{{ModId}}\\Gen 5\\ShinyLarvesta/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyLarvesta in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyLarvesta": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyLarvesta": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyLarvesta",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Larvesta TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Larvesta",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Larvesta": true
+            },
+            "FromFile": "assets/Larvesta.png"
+        },
+        {
+            "LogName": "Larvesta furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Larvesta": true
+            },
+            "Entries": {
+                "{{ModId}}_Larvesta": "Larvesta/decor/1 2/1 2/1/100/2/Larvesta/0/Mods\\{{ModId}}\\Gen 5\\Larvesta/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Larvesta in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Larvesta": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Larvesta": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Larvesta",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyLillipup TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyLillipup",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyLillipup": true
+            },
+            "FromFile": "assets/Lillipup(S).png"
+        },
+        {
+            "LogName": "ShinyLillipup furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyLillipup": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyLillipup": "ShinyLillipup/decor/1 2/1 2/1/100/2/ShinyLillipup/0/Mods\\{{ModId}}\\Gen 5\\ShinyLillipup/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyLillipup in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyLillipup": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyLillipup": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyLillipup",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Lillipup TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Lillipup",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Lillipup": true
+            },
+            "FromFile": "assets/Lillipup.png"
+        },
+        {
+            "LogName": "Lillipup furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Lillipup": true
+            },
+            "Entries": {
+                "{{ModId}}_Lillipup": "Lillipup/decor/1 2/1 2/1/100/2/Lillipup/0/Mods\\{{ModId}}\\Gen 5\\Lillipup/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Lillipup in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Lillipup": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Lillipup": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Lillipup",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyLitwick TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyLitwick",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyLitwick": true
+            },
+            "FromFile": "assets/Litwick(S).png"
+        },
+        {
+            "LogName": "ShinyLitwick furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyLitwick": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyLitwick": "ShinyLitwick/decor/1 1/1 1/1/100/2/ShinyLitwick/0/Mods\\{{ModId}}\\Gen 5\\ShinyLitwick/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyLitwick in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyLitwick": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyLitwick": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyLitwick",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Litwick TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Litwick",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Litwick": true
+            },
+            "FromFile": "assets/Litwick.png"
+        },
+        {
+            "LogName": "Litwick furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Litwick": true
+            },
+            "Entries": {
+                "{{ModId}}_Litwick": "Litwick/decor/1 1/1 1/1/100/2/Litwick/0/Mods\\{{ModId}}\\Gen 5\\Litwick/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Litwick in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Litwick": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Litwick": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Litwick",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyMunna TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyMunna",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyMunna": true
+            },
+            "FromFile": "assets/Munna(S).png"
+        },
+        {
+            "LogName": "ShinyMunna furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyMunna": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyMunna": "ShinyMunna/decor/1 1/1 1/1/100/2/ShinyMunna/0/Mods\\{{ModId}}\\Gen 5\\ShinyMunna/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyMunna in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyMunna": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyMunna": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyMunna",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Munna TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Munna",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Munna": true
+            },
+            "FromFile": "assets/Munna.png"
+        },
+        {
+            "LogName": "Munna furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Munna": true
+            },
+            "Entries": {
+                "{{ModId}}_Munna": "Munna/decor/1 1/1 1/1/100/2/Munna/0/Mods\\{{ModId}}\\Gen 5\\Munna/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Munna in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Munna": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Munna": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Munna",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyOshawott TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyOshawott",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyOshawott": true
+            },
+            "FromFile": "assets/Oshawott(S).png"
+        },
+        {
+            "LogName": "ShinyOshawott furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyOshawott": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyOshawott": "ShinyOshawott/decor/1 1/1 1/1/100/2/ShinyOshawott/0/Mods\\{{ModId}}\\Gen 5\\ShinyOshawott/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyOshawott in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyOshawott": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyOshawott": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyOshawott",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Oshawott TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Oshawott",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Oshawott": true
+            },
+            "FromFile": "assets/Oshawott.png"
+        },
+        {
+            "LogName": "Oshawott furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Oshawott": true
+            },
+            "Entries": {
+                "{{ModId}}_Oshawott": "Oshawott/decor/1 1/1 1/1/100/2/Oshawott/0/Mods\\{{ModId}}\\Gen 5\\Oshawott/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Oshawott in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Oshawott": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Oshawott": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Oshawott",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyPatrat TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyPatrat",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyPatrat": true
+            },
+            "FromFile": "assets/Patrat(S).png"
+        },
+        {
+            "LogName": "ShinyPatrat furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyPatrat": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyPatrat": "ShinyPatrat/decor/1 2/1 2/1/100/2/ShinyPatrat/0/Mods\\{{ModId}}\\Gen 5\\ShinyPatrat/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyPatrat in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyPatrat": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyPatrat": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyPatrat",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Patrat TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Patrat",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Patrat": true
+            },
+            "FromFile": "assets/Patrat.png"
+        },
+        {
+            "LogName": "Patrat furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Patrat": true
+            },
+            "Entries": {
+                "{{ModId}}_Patrat": "Patrat/decor/1 2/1 2/1/100/2/Patrat/0/Mods\\{{ModId}}\\Gen 5\\Patrat/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Patrat in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Patrat": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Patrat": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Patrat",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyPetilil TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyPetilil",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyPetilil": true
+            },
+            "FromFile": "assets/Petilil(S).png"
+        },
+        {
+            "LogName": "ShinyPetilil furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyPetilil": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyPetilil": "ShinyPetilil/decor/1 2/1 2/1/100/2/ShinyPetilil/0/Mods\\{{ModId}}\\Gen 5\\ShinyPetilil/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyPetilil in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyPetilil": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyPetilil": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyPetilil",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Petilil TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Petilil",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Petilil": true
+            },
+            "FromFile": "assets/Petilil.png"
+        },
+        {
+            "LogName": "Petilil furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Petilil": true
+            },
+            "Entries": {
+                "{{ModId}}_Petilil": "Petilil/decor/1 2/1 2/1/100/2/Petilil/0/Mods\\{{ModId}}\\Gen 5\\Petilil/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Petilil in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Petilil": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Petilil": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Petilil",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyPidove TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyPidove",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyPidove": true
+            },
+            "FromFile": "assets/Pidove(S).png"
+        },
+        {
+            "LogName": "ShinyPidove furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyPidove": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyPidove": "ShinyPidove/decor/1 1/1 1/1/100/2/ShinyPidove/0/Mods\\{{ModId}}\\Gen 5\\ShinyPidove/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyPidove in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyPidove": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyPidove": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyPidove",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Pidove TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Pidove",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Pidove": true
+            },
+            "FromFile": "assets/Pidove.png"
+        },
+        {
+            "LogName": "Pidove furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Pidove": true
+            },
+            "Entries": {
+                "{{ModId}}_Pidove": "Pidove/decor/1 1/1 1/1/100/2/Pidove/0/Mods\\{{ModId}}\\Gen 5\\Pidove/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Pidove in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Pidove": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Pidove": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Pidove",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyPurrloin TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyPurrloin",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyPurrloin": true
+            },
+            "FromFile": "assets/Purrloin(S).png"
+        },
+        {
+            "LogName": "ShinyPurrloin furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyPurrloin": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyPurrloin": "ShinyPurrloin/decor/1 2/1 2/1/100/2/ShinyPurrloin/0/Mods\\{{ModId}}\\Gen 5\\ShinyPurrloin/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyPurrloin in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyPurrloin": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyPurrloin": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyPurrloin",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Purrloin TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Purrloin",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Purrloin": true
+            },
+            "FromFile": "assets/Purrloin.png"
+        },
+        {
+            "LogName": "Purrloin furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Purrloin": true
+            },
+            "Entries": {
+                "{{ModId}}_Purrloin": "Purrloin/decor/1 2/1 2/1/100/2/Purrloin/0/Mods\\{{ModId}}\\Gen 5\\Purrloin/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Purrloin in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Purrloin": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Purrloin": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Purrloin",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyRoggenrola TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyRoggenrola",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyRoggenrola": true
+            },
+            "FromFile": "assets/Roggenrola(S).png"
+        },
+        {
+            "LogName": "ShinyRoggenrola furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyRoggenrola": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyRoggenrola": "ShinyRoggenrola/decor/1 1/1 1/1/100/2/ShinyRoggenrola/0/Mods\\{{ModId}}\\Gen 5\\ShinyRoggenrola/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyRoggenrola in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyRoggenrola": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyRoggenrola": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyRoggenrola",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Roggenrola TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Roggenrola",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Roggenrola": true
+            },
+            "FromFile": "assets/Roggenrola.png"
+        },
+        {
+            "LogName": "Roggenrola furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Roggenrola": true
+            },
+            "Entries": {
+                "{{ModId}}_Roggenrola": "Roggenrola/decor/1 1/1 1/1/100/2/Roggenrola/0/Mods\\{{ModId}}\\Gen 5\\Roggenrola/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Roggenrola in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Roggenrola": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Roggenrola": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Roggenrola",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinySamurott TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinySamurott",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinySamurott": true
+            },
+            "FromFile": "assets/Samurott(S).png"
+        },
+        {
+            "LogName": "ShinySamurott furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinySamurott": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinySamurott": "ShinySamurott/decor/2 2/2 2/1/100/2/ShinySamurott/0/Mods\\{{ModId}}\\Gen 5\\ShinySamurott/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinySamurott in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinySamurott": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinySamurott": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinySamurott",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Samurott TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Samurott",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Samurott": true
+            },
+            "FromFile": "assets/Samurott.png"
+        },
+        {
+            "LogName": "Samurott furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Samurott": true
+            },
+            "Entries": {
+                "{{ModId}}_Samurott": "Samurott/decor/2 2/2 2/1/100/2/Samurott/0/Mods\\{{ModId}}\\Gen 5\\Samurott/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Samurott in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Samurott": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Samurott": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Samurott",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinySewaddle TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinySewaddle",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinySewaddle": true
+            },
+            "FromFile": "assets/Sewaddle(S).png"
+        },
+        {
+            "LogName": "ShinySewaddle furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinySewaddle": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinySewaddle": "ShinySewaddle/decor/1 2/1 2/1/100/2/ShinySewaddle/0/Mods\\{{ModId}}\\Gen 5\\ShinySewaddle/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinySewaddle in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinySewaddle": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinySewaddle": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinySewaddle",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Sewaddle TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Sewaddle",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Sewaddle": true
+            },
+            "FromFile": "assets/Sewaddle.png"
+        },
+        {
+            "LogName": "Sewaddle furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Sewaddle": true
+            },
+            "Entries": {
+                "{{ModId}}_Sewaddle": "Sewaddle/decor/1 2/1 2/1/100/2/Sewaddle/0/Mods\\{{ModId}}\\Gen 5\\Sewaddle/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Sewaddle in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Sewaddle": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Sewaddle": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Sewaddle",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinySnivy TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinySnivy",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinySnivy": true
+            },
+            "FromFile": "assets/Snivy(S).png"
+        },
+        {
+            "LogName": "ShinySnivy furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinySnivy": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinySnivy": "ShinySnivy/decor/1 1/1 1/1/100/2/ShinySnivy/0/Mods\\{{ModId}}\\Gen 5\\ShinySnivy/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinySnivy in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinySnivy": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinySnivy": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinySnivy",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Snivy TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Snivy",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Snivy": true
+            },
+            "FromFile": "assets/Snivy.png"
+        },
+        {
+            "LogName": "Snivy furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Snivy": true
+            },
+            "Entries": {
+                "{{ModId}}_Snivy": "Snivy/decor/1 1/1 1/1/100/2/Snivy/0/Mods\\{{ModId}}\\Gen 5\\Snivy/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Snivy in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Snivy": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Snivy": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Snivy",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinySpringDeerling TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinySpringDeerling",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinySpringDeerling": true
+            },
+            "FromFile": "assets/SpringDeerling(S).png"
+        },
+        {
+            "LogName": "ShinySpringDeerling furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinySpringDeerling": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinySpringDeerling": "ShinySpringDeerling/decor/1 2/1 2/1/100/2/ShinySpringDeerling/0/Mods\\{{ModId}}\\Gen 5\\ShinySpringDeerling/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinySpringDeerling in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinySpringDeerling": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinySpringDeerling": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinySpringDeerling",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "SpringDeerling TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/SpringDeerling",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "SpringDeerling": true
+            },
+            "FromFile": "assets/SpringDeerling.png"
+        },
+        {
+            "LogName": "SpringDeerling furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "SpringDeerling": true
+            },
+            "Entries": {
+                "{{ModId}}_SpringDeerling": "SpringDeerling/decor/1 2/1 2/1/100/2/SpringDeerling/0/Mods\\{{ModId}}\\Gen 5\\SpringDeerling/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "SpringDeerling in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "SpringDeerling": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_SpringDeerling": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_SpringDeerling",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinySummerDeerling TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinySummerDeerling",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinySummerDeerling": true
+            },
+            "FromFile": "assets/SummerDeerling(S).png"
+        },
+        {
+            "LogName": "ShinySummerDeerling furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinySummerDeerling": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinySummerDeerling": "ShinySummerDeerling/decor/1 2/1 2/1/100/2/ShinySummerDeerling/0/Mods\\{{ModId}}\\Gen 5\\ShinySummerDeerling/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinySummerDeerling in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinySummerDeerling": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinySummerDeerling": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinySummerDeerling",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "SummerDeerling TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/SummerDeerling",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "SummerDeerling": true
+            },
+            "FromFile": "assets/SummerDeerling.png"
+        },
+        {
+            "LogName": "SummerDeerling furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "SummerDeerling": true
+            },
+            "Entries": {
+                "{{ModId}}_SummerDeerling": "SummerDeerling/decor/1 2/1 2/1/100/2/SummerDeerling/0/Mods\\{{ModId}}\\Gen 5\\SummerDeerling/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "SummerDeerling in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "SummerDeerling": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_SummerDeerling": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_SummerDeerling",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyTepig TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyTepig",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyTepig": true
+            },
+            "FromFile": "assets/Tepig(S).png"
+        },
+        {
+            "LogName": "ShinyTepig furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyTepig": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyTepig": "ShinyTepig/decor/1 2/1 2/1/100/2/ShinyTepig/0/Mods\\{{ModId}}\\Gen 5\\ShinyTepig/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyTepig in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyTepig": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyTepig": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyTepig",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Tepig TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Tepig",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Tepig": true
+            },
+            "FromFile": "assets/Tepig.png"
+        },
+        {
+            "LogName": "Tepig furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Tepig": true
+            },
+            "Entries": {
+                "{{ModId}}_Tepig": "Tepig/decor/1 2/1 2/1/100/2/Tepig/0/Mods\\{{ModId}}\\Gen 5\\Tepig/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Tepig in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Tepig": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Tepig": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Tepig",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyTerrakion TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyTerrakion",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyTerrakion": true
+            },
+            "FromFile": "assets/Terrakion(S).png"
+        },
+        {
+            "LogName": "ShinyTerrakion furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyTerrakion": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyTerrakion": "ShinyTerrakion/decor/2 2/2 2/1/100/2/ShinyTerrakion/0/Mods\\{{ModId}}\\Gen 5\\ShinyTerrakion/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyTerrakion in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyTerrakion": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyTerrakion": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyTerrakion",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Terrakion TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Terrakion",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Terrakion": true
+            },
+            "FromFile": "assets/Terrakion.png"
+        },
+        {
+            "LogName": "Terrakion furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Terrakion": true
+            },
+            "Entries": {
+                "{{ModId}}_Terrakion": "Terrakion/decor/2 2/2 2/1/100/2/Terrakion/0/Mods\\{{ModId}}\\Gen 5\\Terrakion/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Terrakion in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Terrakion": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Terrakion": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Terrakion",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyThundurus TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyThundurus",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyThundurus": true
+            },
+            "FromFile": "assets/Thundurus(S).png"
+        },
+        {
+            "LogName": "ShinyThundurus furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyThundurus": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyThundurus": "ShinyThundurus/decor/2 2/2 2/1/100/2/ShinyThundurus/0/Mods\\{{ModId}}\\Gen 5\\ShinyThundurus/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyThundurus in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyThundurus": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyThundurus": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyThundurus",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Thundurus TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Thundurus",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Thundurus": true
+            },
+            "FromFile": "assets/Thundurus.png"
+        },
+        {
+            "LogName": "Thundurus furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Thundurus": true
+            },
+            "Entries": {
+                "{{ModId}}_Thundurus": "Thundurus/decor/2 2/2 2/1/100/2/Thundurus/0/Mods\\{{ModId}}\\Gen 5\\Thundurus/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Thundurus in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Thundurus": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Thundurus": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Thundurus",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyTimburr TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyTimburr",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyTimburr": true
+            },
+            "FromFile": "assets/Timburr(S).png"
+        },
+        {
+            "LogName": "ShinyTimburr furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyTimburr": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyTimburr": "ShinyTimburr/decor/1 2/1 2/1/100/2/ShinyTimburr/0/Mods\\{{ModId}}\\Gen 5\\ShinyTimburr/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyTimburr in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyTimburr": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyTimburr": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyTimburr",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Timburr TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Timburr",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Timburr": true
+            },
+            "FromFile": "assets/Timburr.png"
+        },
+        {
+            "LogName": "Timburr furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Timburr": true
+            },
+            "Entries": {
+                "{{ModId}}_Timburr": "Timburr/decor/1 2/1 2/1/100/2/Timburr/0/Mods\\{{ModId}}\\Gen 5\\Timburr/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Timburr in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Timburr": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Timburr": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Timburr",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyTornadus TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyTornadus",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyTornadus": true
+            },
+            "FromFile": "assets/Tornadus(S).png"
+        },
+        {
+            "LogName": "ShinyTornadus furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyTornadus": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyTornadus": "ShinyTornadus/decor/2 2/2 2/1/100/2/ShinyTornadus/0/Mods\\{{ModId}}\\Gen 5\\ShinyTornadus/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyTornadus in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyTornadus": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyTornadus": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyTornadus",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Tornadus TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Tornadus",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Tornadus": true
+            },
+            "FromFile": "assets/Tornadus.png"
+        },
+        {
+            "LogName": "Tornadus furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Tornadus": true
+            },
+            "Entries": {
+                "{{ModId}}_Tornadus": "Tornadus/decor/2 2/2 2/1/100/2/Tornadus/0/Mods\\{{ModId}}\\Gen 5\\Tornadus/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Tornadus in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Tornadus": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Tornadus": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Tornadus",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyTympole TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyTympole",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyTympole": true
+            },
+            "FromFile": "assets/Tympole(S).png"
+        },
+        {
+            "LogName": "ShinyTympole furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyTympole": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyTympole": "ShinyTympole/decor/1 1/1 1/1/100/2/ShinyTympole/0/Mods\\{{ModId}}\\Gen 5\\ShinyTympole/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyTympole in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyTympole": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyTympole": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyTympole",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Tympole TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Tympole",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Tympole": true
+            },
+            "FromFile": "assets/Tympole.png"
+        },
+        {
+            "LogName": "Tympole furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Tympole": true
+            },
+            "Entries": {
+                "{{ModId}}_Tympole": "Tympole/decor/1 1/1 1/1/100/2/Tympole/0/Mods\\{{ModId}}\\Gen 5\\Tympole/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Tympole in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Tympole": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Tympole": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Tympole",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyVenipede TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyVenipede",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyVenipede": true
+            },
+            "FromFile": "assets/Venipede(S).png"
+        },
+        {
+            "LogName": "ShinyVenipede furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyVenipede": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyVenipede": "ShinyVenipede/decor/1 2/1 2/1/100/2/ShinyVenipede/0/Mods\\{{ModId}}\\Gen 5\\ShinyVenipede/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyVenipede in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyVenipede": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyVenipede": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyVenipede",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Venipede TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Venipede",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Venipede": true
+            },
+            "FromFile": "assets/Venipede.png"
+        },
+        {
+            "LogName": "Venipede furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Venipede": true
+            },
+            "Entries": {
+                "{{ModId}}_Venipede": "Venipede/decor/1 2/1 2/1/100/2/Venipede/0/Mods\\{{ModId}}\\Gen 5\\Venipede/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Venipede in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Venipede": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Venipede": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Venipede",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyVictini TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyVictini",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyVictini": true
+            },
+            "FromFile": "assets/Victini(S).png"
+        },
+        {
+            "LogName": "ShinyVictini furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyVictini": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyVictini": "ShinyVictini/decor/1 2/1 2/1/100/2/ShinyVictini/0/Mods\\{{ModId}}\\Gen 5\\ShinyVictini/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyVictini in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyVictini": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyVictini": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyVictini",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Victini TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Victini",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Victini": true
+            },
+            "FromFile": "assets/Victini.png"
+        },
+        {
+            "LogName": "Victini furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Victini": true
+            },
+            "Entries": {
+                "{{ModId}}_Victini": "Victini/decor/1 2/1 2/1/100/2/Victini/0/Mods\\{{ModId}}\\Gen 5\\Victini/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Victini in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Victini": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Victini": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Victini",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyVirizion TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyVirizion",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyVirizion": true
+            },
+            "FromFile": "assets/Virizion(S).png"
+        },
+        {
+            "LogName": "ShinyVirizion furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyVirizion": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyVirizion": "ShinyVirizion/decor/2 2/2 2/1/100/2/ShinyVirizion/0/Mods\\{{ModId}}\\Gen 5\\ShinyVirizion/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyVirizion in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyVirizion": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyVirizion": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyVirizion",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Virizion TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Virizion",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Virizion": true
+            },
+            "FromFile": "assets/Virizion.png"
+        },
+        {
+            "LogName": "Virizion furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Virizion": true
+            },
+            "Entries": {
+                "{{ModId}}_Virizion": "Virizion/decor/2 2/2 2/1/100/2/Virizion/0/Mods\\{{ModId}}\\Gen 5\\Virizion/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Virizion in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Virizion": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Virizion": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Virizion",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyVolcarona TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyVolcarona",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyVolcarona": true
+            },
+            "FromFile": "assets/Volcarona(S).png"
+        },
+        {
+            "LogName": "ShinyVolcarona furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyVolcarona": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyVolcarona": "ShinyVolcarona/decor/2 2/2 2/1/100/2/ShinyVolcarona/0/Mods\\{{ModId}}\\Gen 5\\ShinyVolcarona/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyVolcarona in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyVolcarona": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyVolcarona": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyVolcarona",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Volcarona TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Volcarona",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Volcarona": true
+            },
+            "FromFile": "assets/Volcarona.png"
+        },
+        {
+            "LogName": "Volcarona furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Volcarona": true
+            },
+            "Entries": {
+                "{{ModId}}_Volcarona": "Volcarona/decor/2 2/2 2/1/100/2/Volcarona/0/Mods\\{{ModId}}\\Gen 5\\Volcarona/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Volcarona in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Volcarona": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Volcarona": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Volcarona",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyWhimsicott TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyWhimsicott",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyWhimsicott": true
+            },
+            "FromFile": "assets/Whimsicott(S).png"
+        },
+        {
+            "LogName": "ShinyWhimsicott furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyWhimsicott": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyWhimsicott": "ShinyWhimsicott/decor/2 2/2 2/1/100/2/ShinyWhimsicott/0/Mods\\{{ModId}}\\Gen 5\\ShinyWhimsicott/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyWhimsicott in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyWhimsicott": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyWhimsicott": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyWhimsicott",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Whimsicott TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Whimsicott",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Whimsicott": true
+            },
+            "FromFile": "assets/Whimsicott.png"
+        },
+        {
+            "LogName": "Whimsicott furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Whimsicott": true
+            },
+            "Entries": {
+                "{{ModId}}_Whimsicott": "Whimsicott/decor/2 2/2 2/1/100/2/Whimsicott/0/Mods\\{{ModId}}\\Gen 5\\Whimsicott/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Whimsicott in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Whimsicott": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Whimsicott": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Whimsicott",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyWinterDeerling TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyWinterDeerling",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyWinterDeerling": true
+            },
+            "FromFile": "assets/WinterDeerling(S).png"
+        },
+        {
+            "LogName": "ShinyWinterDeerling furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyWinterDeerling": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyWinterDeerling": "ShinyWinterDeerling/decor/1 2/1 2/1/100/2/ShinyWinterDeerling/0/Mods\\{{ModId}}\\Gen 5\\ShinyWinterDeerling/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyWinterDeerling in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyWinterDeerling": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyWinterDeerling": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyWinterDeerling",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "WinterDeerling TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/WinterDeerling",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "WinterDeerling": true
+            },
+            "FromFile": "assets/WinterDeerling.png"
+        },
+        {
+            "LogName": "WinterDeerling furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "WinterDeerling": true
+            },
+            "Entries": {
+                "{{ModId}}_WinterDeerling": "WinterDeerling/decor/1 2/1 2/1/100/2/WinterDeerling/0/Mods\\{{ModId}}\\Gen 5\\WinterDeerling/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "WinterDeerling in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "WinterDeerling": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_WinterDeerling": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_WinterDeerling",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "ShinyWoobat TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/ShinyWoobat",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyWoobat": true
+            },
+            "FromFile": "assets/Woobat(S).png"
+        },
+        {
+            "LogName": "ShinyWoobat furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyWoobat": true
+            },
+            "Entries": {
+                "{{ModId}}_ShinyWoobat": "ShinyWoobat/decor/2 1/2 1/1/100/2/ShinyWoobat/0/Mods\\{{ModId}}\\Gen 5\\ShinyWoobat/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "ShinyWoobat in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Shiny": true,
+                "ShinyWoobat": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_ShinyWoobat": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_ShinyWoobat",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        },
+        {
+            "LogName": "Woobat TileSheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Gen 5/Woobat",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Woobat": true
+            },
+            "FromFile": "assets/Woobat.png"
+        },
+        {
+            "LogName": "Woobat furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Woobat": true
+            },
+            "Entries": {
+                "{{ModId}}_Woobat": "Woobat/decor/2 1/2 1/1/100/2/Woobat/0/Mods\\{{ModId}}\\Gen 5\\Woobat/{{InCatalogue}}/collection_pokemon_gen_5"
+            }
+        },
+        {
+            "LogName": "Woobat in Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "Enabled": true,
+                "Non-shiny": true,
+                "Woobat": true,
+                "In Shop": true
+            },
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Woobat": {
+                    "Price": 100,
+                    "ItemId": "{{ModId}}_Woobat",
+                    "IgnoreShopPriceModifiers": true
+                }
+            }
+        }
+    ]
+}

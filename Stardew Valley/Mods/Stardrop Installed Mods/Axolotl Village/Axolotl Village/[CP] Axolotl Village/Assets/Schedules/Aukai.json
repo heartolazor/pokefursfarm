@@ -1,0 +1,30 @@
+{
+"Changes": [
+
+	{
+		"LogName": "Aukai Schedule",
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Aukai",
+		"Entries": {
+
+			//Regular Schedule
+			"spring": "610 {{ModId}}_AxolotlTown 92 38 2/900 {{ModId}}_AxolotlCommunityCenter 39 9 2/2000 {{ModId}}_BlueHouse 2 8 2 aukai_sleep",
+			"summer": "610 {{ModId}}_AxolotlTown 92 38 2/900 {{ModId}}_AxolotlCommunityCenter 39 9 2/1300 {{ModId}}_AxolotlTown 37 56 3/2000 {{ModId}}_BlueHouse 2 8 2 aukai_sleep",
+			"fall": "610 {{ModId}}_AxolotlTown 92 38 2/900 {{ModId}}_AxolotlCommunityCenter 39 9 2/2000 {{ModId}}_BlueHouse 2 8 2 aukai_sleep",
+			"winter": "610 {{ModId}}_AxolotlTown 92 38 2/900 {{ModId}}_AxolotlCommunityCenter 39 9 2/2000 {{ModId}}_BlueHouse 2 8 2 aukai_sleep",
+                        "Fri": "610 {{ModId}}_AxolotlTown 92 38 2/1300 {{ModId}}_AxolotlTown 37 56 3/2000 {{ModId}}_BlueHouse 2 8 2 aukai_sleep",
+			"rain": "610 {{ModId}}_BlueHouse 8 9 1/2000 {{ModId}}_BlueHouse 2 8 2 aukai_sleep"
+			}
+	},
+{
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Aukai",
+		"Entries": {
+			"Sun": "610 {{ModId}}_AxolotlTown 92 38 2/900 {{ModId}}_AxolotlTownSouth 84 40 0 \"Strings\\schedules\\Aukai:Sun\"/2000 {{ModId}}_BlueHouse 2 8 2 aukai_sleep",
+			},
+		"When": {
+			"HasSeenEvent: hostPlayer |contains=98890063": true
+                        },
+	},
+]
+}

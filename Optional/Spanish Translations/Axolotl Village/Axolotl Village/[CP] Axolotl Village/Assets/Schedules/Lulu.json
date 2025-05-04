@@ -1,0 +1,36 @@
+{
+"Changes": [
+
+	{
+		"LogName": "Lulu Schedule",
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Lulu",
+		"Entries": {
+
+			//Regular Schedule
+			"spring": "610 {{ModId}}_LuluHouse 7 10 0/900 {{ModId}}_AxolotlTown 26 39 2/1400 {{ModId}}_AxolotlTown 23 38 3/2000 {{ModId}}_LuluHouse 2 9 2 lulu_sleep",
+			"summer": "610 {{ModId}}_LuluHouse 7 10 0/900 {{ModId}}_AxolotlTown 26 39 2/1300 {{ModId}}_AxolotlTown 17 24 3/1600 {{ModId}}_AxolotlTown 108 73 3/2000 {{ModId}}_LuluHouse 2 9 2 lulu_sleep",
+			"fall": "610 {{ModId}}_LuluHouse 7 10 0/900 {{ModId}}_AxolotlTown 26 39 2/1100 {{ModId}}_AxolotlTown 21 22 2/1500 {{ModId}}_AxolotlTown 43 39 1/2000 {{ModId}}_LuluHouse 2 9 2 lulu_sleep",
+			"winter": "610 {{ModId}}_LuluHouse 7 10 0/900 {{ModId}}_AxolotlTown 21 22 2/1400 {{ModId}}_AxolotlTown 26 39 2/2000 {{ModId}}_LuluHouse 2 9 2 lulu_sleep",
+			"rain": "610 {{ModId}}_LuluHouse 7 10 0/1200 {{ModId}}_LuluHouse 7 10 1/2000 {{ModId}}_LuluHouse 2 9 2 lulu_sleep",
+			"Fri": "610 {{ModId}}_LuluHouse 7 10 0/1000 {{ModId}}_AxolotlTown 23 38 3/1300 {{ModId}}_AxolotlCommunityCenter 40 9 3/2200 {{ModId}}_LuluHouse 2 9 2 lulu_sleep",
+                        "Wed": "610 {{ModId}}_AxolotlTown 26 39 2/1000 {{ModId}}_AxolotlTown 30 40 2 \"Strings\\schedules\\Lulu:Wed\"/2000 {{ModId}}_LuluHouse 2 9 2 lulu_sleep",
+                        "fall_28": "610 {{ModId}}_LuluHouse 7 10 0/900 {{ModId}}_AxolotlTown 26 39 2/1100 {{ModId}}_AxolotlTown 21 22 2/1500 {{ModId}}_AxolotlTown 43 39 1/1850 {{ModId}}_AxolotlTown 35 55 3/2350 {{ModId}}_LuluHouse 2 9 2 lulu_sleep",
+                        "winter_25": "610 {{ModId}}_LuluHouse 7 10 0/900 {{ModId}}_AxolotlTown 27 55 3/2000 {{ModId}}_LuluHouse 2 9 2 lulu_sleep",
+                        "summer_7": "610 {{ModId}}_LuluHouse 7 10 0/900 {{ModId}}_AxolotlTown 26 39 2/1300 {{ModId}}_AxolotlTown 17 24 3/1600 {{ModId}}_AxolotlTown 108 73 3/1800 {{ModId}}_AxolotlTown 27 81 0/2350 {{ModId}}_LuluHouse 2 9 2 lulu_sleep",
+                        "spring_21": "610 {{ModId}}_LuluHouse 7 10 0/800 {{ModId}}_AxolotlTown 27 81 0/2000 {{ModId}}_LuluHouse 2 9 2 lulu_sleep",
+			}
+	},
+{
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Lulu",
+		"Entries": {
+			"spring": "610 {{ModId}}_LuluHouse 7 10 0/900 {{ModId}}_AxolotlTown 26 39 2/1400 {{ModId}}_AxolotlTown 41 39 1/2000 {{ModId}}_LuluHouse 2 9 2 lulu_sleep",
+                        "Sun": "610 {{ModId}}_LuluHouse 7 10 0/900 {{ModId}}_AxolotlTownSouth 94 38 0/2000 {{ModId}}_LuluHouse 2 9 2 lulu_sleep"
+			},
+		"When": {
+			"HasSeenEvent: hostPlayer |contains=98890063": true
+                        },
+	},
+]
+}

@@ -1,0 +1,153 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)12", "OutputRules" ],
+			"Entries": {
+					"PBB_StarfWine": {
+						"ID": "PBB_StarfWine",
+						"Triggers":
+								[
+									{
+										"RequiredItemId": "(O)PBB_StarfBerry",
+									}
+								],
+								"OutputItem":
+								[
+									{
+										"ItemId": "(O)PBB_StarfWine",
+									}
+								],
+							"MinutesUntilReady": 10000,
+					}
+				},
+				"MoveEntries": [
+				{
+					"ID": "PBB_StarfWine",
+					"ToPosition": "Top"
+				}
+			]
+			},
+				{
+				"Action": "EditData",
+				"Target": "Data/Machines",
+				"TargetField": [ "(BC)15", "OutputRules" ],
+				"Entries": {
+					"PBB_StarfJelly": {
+						"ID": "PBB_StarfJelly",
+						"Triggers":
+								[
+									{
+										"RequiredItemId": "(O)PBB_StarfBerry",
+									}
+								],
+								"OutputItem":
+								[
+									{
+										"ItemId": "(O)PBB_StarfJelly",
+									}
+								],
+							"MinutesUntilReady": 4000,
+						}
+					},
+				"MoveEntries": [
+				{
+					"ID": "PBB_StarfJelly",
+					"ToPosition": "Top"
+				}
+			]
+				},
+				{
+				"Action": "EditData",
+				"Target": "Data/Machines",
+				"TargetField": [ "(BC)Dehydrator", "OutputRules" ],
+				"Entries": {
+					"PBB_DriedKasibBerry": {
+						"ID": "PBB_DriedKasibBerry",
+						"Triggers":
+								[
+									{
+										"RequiredItemId": "(O)PBB_KasibBerry",
+										"RequiredCount": 1
+									}
+								],
+								"OutputItem":
+								[
+									{
+										"ItemId": "(O)PBB_DriedKasibBerry",
+									}
+								],
+							"MinutesUntilReady": 960,
+						},
+					"PBB_KeeSpice": {
+						"ID": "PBB_KeeSpice",
+						"Triggers":
+								[
+									{
+										"RequiredItemId": "(O)PBB_KeeBerry",
+										"RequiredCount": 10
+									}
+								],
+								"OutputItem":
+								[
+									{
+										"ItemId": "(O)PBB_KeeSpice",
+									}
+								],
+							"MinutesUntilReady": 960,
+							"InvalidCountMessage": "Requires 10 pieces."
+						},
+					"PBB_ChilanWhistle": {
+						"ID": "PBB_ChilanWhistle",
+						"Triggers":
+								[
+									{
+										"RequiredItemId": "(O)PBB_ChilanBerry",
+										"RequiredCount": 1
+									}
+								],
+								"OutputItem":
+								[
+									{
+										"ItemId": "(O)PBB_ChilanWhistle",
+									}
+								],
+							"MinutesUntilReady": 960,
+						},
+					"PBB_DriedStarf": {
+						"ID": "PBB_DriedStarf",
+						"Triggers":
+								[
+									{
+										"RequiredItemId": "(O)PBB_StarfBerry",
+										"RequiredCount": 5
+									}
+								],
+								"OutputItem":
+								[
+									{
+										"ItemId": "(O)PBB_DriedStarf",
+									}
+								],
+							"MinutesUntilReady": 960,
+								}
+						},
+				"MoveEntries": [
+				{
+					"ID": "PBB_DriedKasibBerry",
+					"ToPosition": "Top"
+				},				{
+					"ID": "PBB_KeeSpice",
+					"ToPosition": "Top"
+				},				{
+					"ID": "PBB_ChilanWhistle",
+					"ToPosition": "Top"
+				},				{
+					"ID": "PBB_DriedStarf",
+					"ToPosition": "Top"
+				}
+			]
+		}
+	]
+}

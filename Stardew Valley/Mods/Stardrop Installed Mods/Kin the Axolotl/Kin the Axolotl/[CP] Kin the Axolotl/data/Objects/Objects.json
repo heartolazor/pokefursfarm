@@ -1,0 +1,125 @@
+{
+    "Changes": [
+        {
+      "LogName": "Load Sprites",
+      "Action": "Load",
+      "Target": "Mods/otohime.kinaxolotl/golddagger, Mods/otohime.kinaxolotl/goldhammer, Mods/otohime.kinaxolotl/goldsword, Mods/otohime.kinaxolotl/goldstatue, Mods/otohime.kinaxolotl/largegold, Mods/otohime.kinaxolotl/goldfutan, Mods/otohime.kinaxolotl/goldnecklace",
+      "FromFile": "assets/Objects/{{TargetWithoutPath}}.png"
+       },
+       {
+      "LogName": "Objects Data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_Gold_Futan_Axolotl": {
+          "Name": "Gold Futan Axolotl",
+          "DisplayName": "Gold Futan Axolotl",
+          "Description": "Small, but still powerful (and gold).",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 500,
+          "Texture": "Mods\\otohime.kinaxolotl\\goldfutan",
+          "SpriteIndex": "0",
+          "Edibility": -300,
+        },
+        "{{ModId}}_Gold_Friendship_Necklace": {
+          "Name": "Gold Friendship Necklace",
+          "DisplayName": "Gold Friendship Necklace",
+          "Description": "A special gift from Kin.",
+          "Type": "Basic",
+          "Category": 0,
+          "Price": 0,
+          "Texture": "Mods\\otohime.kinaxolotl\\goldnecklace",
+          "SpriteIndex": "0",
+          "Edibility": -300,
+          "ContextTags": [
+                        "not_placeable"
+                    ],
+                    "CustomFields": {}
+        },
+     }
+   },
+        {
+            "LogName": "Weapons Data",
+            "Action": "EditData",
+            "Target": "Data/Weapons",
+            "Entries": {
+                "otohime.kinaxolotl_Gold_Dagger": {
+                    "Name": "Gold Dagger",
+                    "DisplayName": "Gold Dagger",
+                    "Description": "It's brimming with the power of friendship.",
+                    "MinDamage": 25,
+                    "MaxDamage": 35,
+                    "Knockback": 0,
+                    "Speed": 4,
+                    "Precision": 2,
+                    "Defense": 0,
+                    "Type": 1,
+                    "MineBaseLevel": 0,
+                    "MineMinLevel": -1,
+                    "AreaOfEffect": 1,
+                    "CritChance": 0.5,
+                    "CritMultiplier": 1.0,
+                    "CanBeLostOnDeath": true,
+                    "Texture": "Mods\\otohime.kinaxolotl\\golddagger",
+                    "SpriteIndex": 0,
+                },
+                "otohime.kinaxolotl_Gold_Hammer": {
+                    "Name": "Gold Hammer",
+                    "DisplayName": "Gold Hammer",
+                    "Description": "It's brimming with the power of friendship.",
+                    "MinDamage": 65,
+                    "MaxDamage": 85,
+                    "Knockback": 3,
+                    "Speed": 2,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 2,
+                    "MineBaseLevel": 0,
+                    "MineMinLevel": -1,
+                    "AreaOfEffect": 2,
+                    "CritChance": 0.2,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": true,
+                    "Texture": "Mods\\otohime.kinaxolotl\\goldhammer",
+                    "SpriteIndex": 0,
+                },
+                "otohime.kinaxolotl_Gold_Sword": {
+                    "Name": "Gold Sword",
+                    "DisplayName": "Gold Sword",
+                    "Description": "It's brimming with the power of friendship.",
+                    "MinDamage": 55,
+                    "MaxDamage": 75,
+                    "Knockback": 0,
+                    "Speed": 3,
+                    "Precision": 3,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": 0,
+                    "MineMinLevel": -1,
+                    "AreaOfEffect": 2,
+                    "CritChance": 0.2,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": true,
+                    "Texture": "Mods\\otohime.kinaxolotl\\goldsword",
+                    "SpriteIndex": 0,
+                }
+            }
+        },
+      {         
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "Gold Axolotl Statue": "Gold Axolotl Statue/decor/2 2/2 1/1/1000/-1/Gold Axolotl Statue/0/Mods\\otohime.kinaxolotl\\goldstatue",
+                "Lg. Gold Futan Axolotl": "Lg. Gold Futan Axolotl/decor/2 2/2 1/1/1000/-1/Lg. Gold Futan Axolotl/0/Mods\\otohime.kinaxolotl\\largegold",
+            }
+        },
+      {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "{{ModId}}_Gold_Futan_Axolotl": "103 1 336 2/Field/{{ModId}}_Gold_Futan_Axolotl/false/null/Gold Futan Axolotl"
+            }
+        },
+    ]
+}

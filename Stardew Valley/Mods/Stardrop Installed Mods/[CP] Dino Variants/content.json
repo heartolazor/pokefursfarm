@@ -1,0 +1,1425 @@
+{
+    "Format": "2.0",
+
+    "Changes": [
+        {
+			"LogName": "Load textures",
+			"Action": "Load",
+			"Target": "necrocrab.dinovariants/Dinosaur,
+					   necrocrab.dinovariants/Raptor,
+					   necrocrab.dinovariants/Trex,
+					   necrocrab.dinovariants/Trike,
+					   necrocrab.dinovariants/Ptera,
+					   necrocrab.dinovariants/Small_Dino_Egg,
+					   necrocrab.dinovariants/Large_Dino_Egg,
+					   necrocrab.dinovariants/Hard_Dino_Egg,
+					   necrocrab.dinovariants/Fragile_Dino_Egg",
+			"FromFile": "assets/{{TargetWithoutPath}}.png",
+        },
+		{
+			"LogName": "Add new items",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"275": {
+					"Name": "Artifact Trove",
+					"DisplayName": "[LocalizedText Strings\\Objects:ArtifactTrove_Name]",
+					"Description": "[LocalizedText Strings\\Objects:ArtifactTrove_Description]",
+					"Type": "Basic",
+					"Category": 0,
+					"Price": 0,
+					"Texture": null,
+					"SpriteIndex": 275,
+					"Edibility": -300,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": [
+						{
+							"Chance": 1.0,
+							"SetFlagOnPickup": null,
+							"Precedence": 0,
+							"Condition": null,
+							"Id": "Default",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)100",
+								"(O)101",
+								"(O)103",
+								"(O)104",
+								"(O)105",
+								"(O)106",
+								"(O)108",
+								"(O)109",
+								"(O)110",
+								"(O)111",
+								"(O)112",
+								"(O)113",
+								"(O)114",
+								"(O)115",
+								"(O)116",
+								"(O)117",
+								"(O)118",
+								"(O)119",
+								"(O)120",
+								"(O)121",
+								"(O)122",
+								"(O)123",
+								"(O)124",
+								"(O)125",
+								"(O)166",
+								"(O)373",
+								"(O)797",
+								"(O)Book_Artifact",
+								"(O)107",
+								"(O)necrocrab.dinovariants_small_dino_egg",
+								"(O)necrocrab.dinovariants_large_dino_egg",
+								"(O)necrocrab.dinovariants_hard_dino_egg",
+								"(O)necrocrab.dinovariants_fragile_dino_egg"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						}
+					],
+					"ArtifactSpotChances": null,
+					"CanBeGivenAsGift": true,
+					"CanBeTrashed": true,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+						"geode_crusher_ignored"
+					],
+					"CustomFields": null
+				},
+				"necrocrab.dinovariants_small_dino_egg": {
+					"Name": "Small Dinosaur Egg",
+					"DisplayName": "Rough Dinosaur Egg",
+					"Description": "Looks like a big pebble. Be careful not to step on it.",
+					"Type": "Arch",
+					"Category": 0,
+					"Price": 300,
+					"Texture": "necrocrab.dinovariants/Small_Dino_Egg",
+					"SpriteIndex": 0,
+					"Edibility": -300,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": {
+						"Mine": 0.01,
+						"Beach": 0.008,
+						"Desert": 0.01,
+						"UndergroundMine": 0.01,
+						"Mountain": 0.008
+					},
+					"CanBeGivenAsGift": true,
+					"CanBeTrashed": true,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "color_dark_green",
+					  "dinosaur_item",
+					  "dye_strong",
+					  "egg_item"
+					],
+					"CustomFields": null
+				},
+				"necrocrab.dinovariants_large_dino_egg": {
+					"Name": "Large Dinosaur Egg",
+					"DisplayName": "Heavy Dinosaur Egg",
+					"Description": "Bigger than your head!",
+					"Type": "Arch",
+					"Category": 0,
+					"Price": 400,
+					"Texture": "necrocrab.dinovariants/Large_Dino_Egg",
+					"SpriteIndex": 0,
+					"Edibility": -300,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": {
+						"Mine": 0.01,
+						"Beach": 0.008,
+						"Desert": 0.01,
+						"UndergroundMine": 0.01,
+						"Mountain": 0.008
+					},
+					"CanBeGivenAsGift": true,
+					"CanBeTrashed": true,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "color_dark_red",
+					  "dinosaur_item",
+					  "dye_strong",
+					  "egg_item"
+					],
+					"CustomFields": null
+				},
+				"necrocrab.dinovariants_hard_dino_egg": {
+					"Name": "Hard Dinosaur Egg",
+					"DisplayName": "Hard Dinosaur Egg",
+					"Description": "This thing is hard as rock but, there's something else inside.",
+					"Type": "Arch",
+					"Category": 0,
+					"Price": 400,
+					"Texture": "necrocrab.dinovariants/Hard_Dino_Egg",
+					"SpriteIndex": 0,
+					"Edibility": -300,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": {
+						"Mine": 0.01,
+						"Beach": 0.008,
+						"Desert": 0.01,
+						"UndergroundMine": 0.01,
+						"Mountain": 0.008
+					},
+					"CanBeGivenAsGift": true,
+					"CanBeTrashed": true,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "color_orange",
+					  "dinosaur_item",
+					  "dye_strong",
+					  "egg_item"
+					],
+					"CustomFields": null
+				},
+				"necrocrab.dinovariants_fragile_dino_egg": {
+					"Name": "Fragile Dinosaur Egg",
+					"DisplayName": "Fragile Dinosaur Egg",
+					"Description": "Be very, VERY careful!",
+					"Type": "Arch",
+					"Category": 0,
+					"Price": 450,
+					"Texture": "necrocrab.dinovariants/Fragile_Dino_Egg",
+					"SpriteIndex": 0,
+					"Edibility": -300,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": {
+						"Mine": 0.005,
+						"Beach": 0.004,
+						"Desert": 0.005,
+						"UndergroundMine": 0.005,
+						"Mountain": 0.004
+					},
+					"CanBeGivenAsGift": true,
+					"CanBeTrashed": true,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "color_dark_blue",
+					  "dinosaur_item",
+					  "dye_strong",
+					  "egg_item"
+					],
+					"CustomFields": null
+				}
+			}
+		},
+		{
+			"LogName": "Load Pepper Rex Changes",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+				"Dinosaur": {
+					"DisplayName": "[LocalizedText Strings\\FarmAnimals:DisplayType_Dinosaur]",
+					"House": "Coop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 10000,
+					"ShopTexture": null,
+					"ShopSourceRect": {
+					  "X": 0,
+					  "Y": 0,
+					  "Width": 0,
+					  "Height": 0
+					},
+					"ShopDisplayName": null,
+					"ShopDescription": null,
+					"ShopMissingBuildingDescription": null,
+					"RequiredBuilding": null,
+					"UnlockCondition": null,
+					"AlternatePurchaseTypes": null,
+					"EggItemIds": [
+					  "107"
+					],
+					"IncubationTime": 18000,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": "[LocalizedText Strings\\Locations:AnimalHouse_Incubator_Hatch_DinosaurEgg]",
+					"DaysToMature": 0,
+					"CanGetPregnant": false,
+					"DaysToProduce": 3,
+					"HarvestType": "DropOvernight",
+					"HarvestTool": null,
+					"ProduceItemIds": [
+					  {
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "107"
+					  }
+					],
+					"DeluxeProduceItemIds": [],
+					"ProduceOnMature": false,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"CanEatGoldenCrackers": true,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+					"Sound": null,
+					"BabySound": null,
+					"Texture": "necrocrab.dinovariants/Dinosaur",
+					"HarvestedTexture": null,
+					"BabyTexture": null,
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 16,
+					"SpriteHeight": 16,
+					"UseDoubleUniqueAnimationFrames": true,
+					"SleepFrame": 16,
+					"EmoteOffset": {
+					  "X": 0,
+					  "Y": -16
+					},
+					"SwimOffset": {
+					  "X": 0,
+					  "Y": 112
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": null,
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": null,
+					"CanSwim": false,
+					"BabiesFollowAdults": false,
+					"GrassEatAmount": 2,
+					"HappinessDrain": 3,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"StatToIncrementOnProduce": null,
+					"ShowInSummitCredits": true,
+					"CustomFields": null
+				}
+			}
+		},
+		{
+			"LogName": "Load Raptor Animal",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+				"Raptor": {
+					"DisplayName": "[LocalizedText Strings\\FarmAnimals:DisplayType_Dinosaur]",
+					"House": "Coop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 7500,
+					"ShopTexture": null,
+					"ShopSourceRect": {
+					  "X": 0,
+					  "Y": 0,
+					  "Width": 0,
+					  "Height": 0
+					},
+					"ShopDisplayName": null,
+					"ShopDescription": null,
+					"ShopMissingBuildingDescription": null,
+					"RequiredBuilding": null,
+					"UnlockCondition": null,
+					"AlternatePurchaseTypes": null,
+					"EggItemIds": [
+					  "necrocrab.dinovariants_small_dino_egg"
+					],
+					"IncubationTime": 13500,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": "[LocalizedText Strings\\Locations:AnimalHouse_Incubator_Hatch_DinosaurEgg]",
+					"DaysToMature": 0,
+					"CanGetPregnant": false,
+					"DaysToProduce": 2,
+					"HarvestType": "DropOvernight",
+					"HarvestTool": null,
+					"ProduceItemIds": [
+					  {
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "necrocrab.dinovariants_small_dino_egg"
+					  }
+					],
+					"DeluxeProduceItemIds": [],
+					"ProduceOnMature": false,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"CanEatGoldenCrackers": true,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+					"Sound": null,
+					"BabySound": null,
+					"Texture": "necrocrab.dinovariants/Raptor",
+					"HarvestedTexture": null,
+					"BabyTexture": null,
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"UseDoubleUniqueAnimationFrames": true,
+					"SleepFrame": 32,
+					"EmoteOffset": {
+					  "X": 0,
+					  "Y": -32
+					},
+					"SwimOffset": {
+					  "X": 0,
+					  "Y": 112
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": null,
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": null,
+					"CanSwim": false,
+					"BabiesFollowAdults": false,
+					"GrassEatAmount": 1,
+					"HappinessDrain": 3,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"StatToIncrementOnProduce": null,
+					"ShowInSummitCredits": true,
+					"CustomFields": null
+				}
+			}
+		},
+		{
+			"LogName": "Load Trex Animal",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+				"Trex": {
+					"DisplayName": "[LocalizedText Strings\\FarmAnimals:DisplayType_Dinosaur]",
+					"House": "Coop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 12500,
+					"ShopTexture": null,
+					"ShopSourceRect": {
+					  "X": 0,
+					  "Y": 0,
+					  "Width": 0,
+					  "Height": 0
+					},
+					"ShopDisplayName": null,
+					"ShopDescription": null,
+					"ShopMissingBuildingDescription": null,
+					"RequiredBuilding": null,
+					"UnlockCondition": null,
+					"AlternatePurchaseTypes": null,
+					"EggItemIds": [
+					  "necrocrab.dinovariants_large_dino_egg"
+					],
+					"IncubationTime": 22500,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": "[LocalizedText Strings\\Locations:AnimalHouse_Incubator_Hatch_DinosaurEgg]",
+					"DaysToMature": 0,
+					"CanGetPregnant": false,
+					"DaysToProduce": 4,
+					"HarvestType": "DropOvernight",
+					"HarvestTool": null,
+					"ProduceItemIds": [
+					  {
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "necrocrab.dinovariants_large_dino_egg"
+					  }
+					],
+					"DeluxeProduceItemIds": [],
+					"ProduceOnMature": false,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"CanEatGoldenCrackers": true,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+					"Sound": null,
+					"BabySound": null,
+					"Texture": "necrocrab.dinovariants/Trex",
+					"HarvestedTexture": null,
+					"BabyTexture": null,
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"UseDoubleUniqueAnimationFrames": true,
+					"SleepFrame": 32,
+					"EmoteOffset": {
+					  "X": 0,
+					  "Y": -32
+					},
+					"SwimOffset": {
+					  "X": 0,
+					  "Y": 112
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": null,
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": null,
+					"CanSwim": false,
+					"BabiesFollowAdults": false,
+					"GrassEatAmount": 2,
+					"HappinessDrain": 3,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"StatToIncrementOnProduce": null,
+					"ShowInSummitCredits": true,
+					"CustomFields": null
+				}
+			}
+		},
+		{
+			"LogName": "Load Trike Animal",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+				"Trike": {
+					"DisplayName": "[LocalizedText Strings\\FarmAnimals:DisplayType_Dinosaur]",
+					"House": "Coop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 12500,
+					"ShopTexture": null,
+					"ShopSourceRect": {
+					  "X": 0,
+					  "Y": 0,
+					  "Width": 0,
+					  "Height": 0
+					},
+					"ShopDisplayName": null,
+					"ShopDescription": null,
+					"ShopMissingBuildingDescription": null,
+					"RequiredBuilding": null,
+					"UnlockCondition": null,
+					"AlternatePurchaseTypes": null,
+					"EggItemIds": [
+					  "necrocrab.dinovariants_hard_dino_egg"
+					],
+					"IncubationTime": 22500,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": "[LocalizedText Strings\\Locations:AnimalHouse_Incubator_Hatch_DinosaurEgg]",
+					"DaysToMature": 0,
+					"CanGetPregnant": false,
+					"DaysToProduce": 4,
+					"HarvestType": "DropOvernight",
+					"HarvestTool": null,
+					"ProduceItemIds": [
+					  {
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "necrocrab.dinovariants_hard_dino_egg"
+					  }
+					],
+					"DeluxeProduceItemIds": [],
+					"ProduceOnMature": false,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"CanEatGoldenCrackers": true,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+					"Sound": null,
+					"BabySound": null,
+					"Texture": "necrocrab.dinovariants/Trike",
+					"HarvestedTexture": null,
+					"BabyTexture": null,
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"UseDoubleUniqueAnimationFrames": true,
+					"SleepFrame": 32,
+					"EmoteOffset": {
+					  "X": 0,
+					  "Y": -32
+					},
+					"SwimOffset": {
+					  "X": 0,
+					  "Y": 112
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": null,
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": null,
+					"CanSwim": false,
+					"BabiesFollowAdults": false,
+					"GrassEatAmount": 2,
+					"HappinessDrain": 3,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"StatToIncrementOnProduce": null,
+					"ShowInSummitCredits": true,
+					"CustomFields": null
+				}
+			}
+		},
+		{
+			"LogName": "Load Ptera Animal",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+				"Ptera": {
+					"DisplayName": "[LocalizedText Strings\\FarmAnimals:DisplayType_Dinosaur]",
+					"House": "Coop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 15000,
+					"ShopTexture": null,
+					"ShopSourceRect": {
+					  "X": 0,
+					  "Y": 0,
+					  "Width": 0,
+					  "Height": 0
+					},
+					"ShopDisplayName": null,
+					"ShopDescription": null,
+					"ShopMissingBuildingDescription": null,
+					"RequiredBuilding": null,
+					"UnlockCondition": null,
+					"AlternatePurchaseTypes": null,
+					"EggItemIds": [
+					  "necrocrab.dinovariants_fragile_dino_egg"
+					],
+					"IncubationTime": 25000,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": "[LocalizedText Strings\\Locations:AnimalHouse_Incubator_Hatch_DinosaurEgg]",
+					"DaysToMature": 0,
+					"CanGetPregnant": false,
+					"DaysToProduce": 5,
+					"HarvestType": "DropOvernight",
+					"HarvestTool": null,
+					"ProduceItemIds": [
+					  {
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "necrocrab.dinovariants_fragile_dino_egg"
+					  }
+					],
+					"DeluxeProduceItemIds": [],
+					"ProduceOnMature": false,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"CanEatGoldenCrackers": true,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+					"Sound": null,
+					"BabySound": null,
+					"Texture": "necrocrab.dinovariants/Ptera",
+					"HarvestedTexture": null,
+					"BabyTexture": null,
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"UseDoubleUniqueAnimationFrames": true,
+					"SleepFrame": 32,
+					"EmoteOffset": {
+					  "X": 0,
+					  "Y": -32
+					},
+					"SwimOffset": {
+					  "X": 0,
+					  "Y": 112
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": null,
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": null,
+					"CanSwim": false,
+					"BabiesFollowAdults": false,
+					"GrassEatAmount": 2,
+					"HappinessDrain": 3,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"StatToIncrementOnProduce": null,
+					"ShowInSummitCredits": true,
+					"CustomFields": null
+				}
+			}
+		},
+		{
+			"LogName": "Coop edit",
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"Entries": {
+				"Coop": {
+					"Name": "[LocalizedText Strings\\Buildings:Coop_Name]",
+					"Description": "[LocalizedText Strings\\Buildings:Coop_Description]",
+					"Texture": "Buildings\\Coop",
+					"Skins": [],
+					"DrawShadow": true,
+					"UpgradeSignTile": "2, 2",
+					"UpgradeSignHeight": 18.0,
+					"Size": {
+					  "X": 6,
+					  "Y": 3
+					},
+					"FadeWhenBehind": true,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 0,
+					  "Width": 96,
+					  "Height": 112
+					},
+					"SeasonOffset": {
+					  "X": 0,
+					  "Y": 0
+					},
+					"DrawOffset": "0, 0",
+					"SortTileOffset": 0.0,
+					"CollisionMap": null,
+					"AdditionalPlacementTiles": null,
+					"BuildingType": null,
+					"Builder": "Robin",
+					"BuildCondition": null,
+					"BuildDays": 3,
+					"BuildCost": 4000,
+					"BuildMaterials": [
+					  {
+						"ItemId": "(O)388",
+						"Amount": 300
+					  },
+					  {
+						"ItemId": "(O)390",
+						"Amount": 100
+					  }
+					],
+					"BuildingToUpgrade": null,
+					"MagicalConstruction": false,
+					"BuildMenuDrawOffset": {
+					  "X": 0,
+					  "Y": 0
+					},
+					"HumanDoor": {
+					  "X": 1,
+					  "Y": 2
+					},
+					"AnimalDoor": {
+					  "X": 2,
+					  "Y": 2,
+					  "Width": 2,
+					  "Height": 2
+					},
+					"AnimalDoorOpenDuration": 0.3125,
+					"AnimalDoorOpenSound": "doorCreak",
+					"AnimalDoorCloseDuration": 0.3125,
+					"AnimalDoorCloseSound": "doorCreakReverse",
+					"NonInstancedIndoorLocation": null,
+					"IndoorMap": "Coop",
+					"IndoorMapType": "StardewValley.AnimalHouse",
+					"MaxOccupants": 4,
+					"ValidOccupantTypes": [
+					  "Coop"
+					],
+					"AllowAnimalPregnancy": false,
+					"IndoorItemMoves": null,
+					"IndoorItems": [
+					  {
+						"Id": "Default_FeedHopper",
+						"ItemId": "(BC)99",
+						"Tile": {
+						  "X": 3,
+						  "Y": 3
+						},
+						"Indestructible": true
+					  }
+					],
+					"AddMailOnBuild": null,
+					"Metadata": {},
+					"ModData": {},
+					"HayCapacity": 0,
+					"Chests": null,
+					"DefaultAction": null,
+					"AdditionalTilePropertyRadius": 0,
+					"AllowsFlooringUnderneath": true,
+					"ActionTiles": [],
+					"TileProperties": [],
+					"ItemConversions": null,
+					"DrawLayers": [
+					  {
+						"Id": "Default_AnimalDoor",
+						"Texture": null,
+						"SourceRect": {
+						  "X": 0,
+						  "Y": 112,
+						  "Width": 16,
+						  "Height": 16
+						},
+						"DrawPosition": "32, 96",
+						"DrawInBackground": false,
+						"SortTileOffset": 0.02,
+						"OnlyDrawIfChestHasContents": null,
+						"FrameDuration": 90,
+						"FrameCount": 1,
+						"FramesPerRow": -1,
+						"AnimalDoorOffset": {
+						  "X": 0,
+						  "Y": -13
+						}
+					  },
+					  {
+						"Id": "Default_AnimalDoor_Open",
+						"Texture": null,
+						"SourceRect": {
+						  "X": 16,
+						  "Y": 112,
+						  "Width": 16,
+						  "Height": 16
+						},
+						"DrawPosition": "32, 96",
+						"DrawInBackground": false,
+						"SortTileOffset": 1.0,
+						"OnlyDrawIfChestHasContents": null,
+						"FrameDuration": 90,
+						"FrameCount": 1,
+						"FramesPerRow": -1,
+						"AnimalDoorOffset": {
+						  "X": 0,
+						  "Y": 0
+						}
+					  }
+					],
+					"CustomFields": null
+				},
+				"Big Coop": {
+					"Name": "[LocalizedText Strings\\Buildings:BigCoop_Name]",
+					"Description": "[LocalizedText Strings\\Buildings:BigCoop_Description]",
+					"Texture": "Buildings\\Big Coop",
+					"Skins": [],
+					"DrawShadow": true,
+					"UpgradeSignTile": "2, 2",
+					"UpgradeSignHeight": 18.0,
+					"Size": {
+					  "X": 6,
+					  "Y": 3
+					},
+					"FadeWhenBehind": true,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 0,
+					  "Width": 96,
+					  "Height": 112
+					},
+					"SeasonOffset": {
+					  "X": 0,
+					  "Y": 0
+					},
+					"DrawOffset": "0, 0",
+					"SortTileOffset": 0.0,
+					"CollisionMap": null,
+					"AdditionalPlacementTiles": null,
+					"BuildingType": null,
+					"Builder": "Robin",
+					"BuildCondition": null,
+					"BuildDays": 2,
+					"BuildCost": 10000,
+					"BuildMaterials": [
+					  {
+						"ItemId": "(O)388",
+						"Amount": 400
+					  },
+					  {
+						"ItemId": "(O)390",
+						"Amount": 150
+					  }
+					],
+					"BuildingToUpgrade": "Coop",
+					"MagicalConstruction": false,
+					"BuildMenuDrawOffset": {
+					  "X": 0,
+					  "Y": 0
+					},
+					"HumanDoor": {
+					  "X": 1,
+					  "Y": 2
+					},
+					"AnimalDoor": {
+					  "X": 2,
+					  "Y": 2,
+					  "Width": 2,
+					  "Height": 2
+					},
+					"AnimalDoorOpenDuration": 0.3125,
+					"AnimalDoorOpenSound": "doorCreak",
+					"AnimalDoorCloseDuration": 0.3125,
+					"AnimalDoorCloseSound": "doorCreakReverse",
+					"NonInstancedIndoorLocation": null,
+					"IndoorMap": "Coop2",
+					"IndoorMapType": "StardewValley.AnimalHouse",
+					"MaxOccupants": 8,
+					"ValidOccupantTypes": [
+					  "Coop"
+					],
+					"AllowAnimalPregnancy": false,
+					"IndoorItemMoves": [
+					  {
+						"Id": "Default_ClearSpot_EggIncubator",
+						"Source": {
+						  "X": 2,
+						  "Y": 3
+						},
+						"Destination": {
+						  "X": 14,
+						  "Y": 8
+						},
+						"Size": {
+						  "X": 1,
+						  "Y": 1
+						},
+						"UnlessItemId": "(BC)101"
+					  },
+					  {
+						"Id": "Default_ClearSpot_Pillar",
+						"Source": {
+						  "X": 1,
+						  "Y": 3
+						},
+						"Destination": {
+						  "X": 14,
+						  "Y": 7
+						},
+						"Size": {
+						  "X": 1,
+						  "Y": 1
+						},
+						"UnlessItemId": null
+					  },
+					  {
+						"Id": "Default_KeepAlongWall",
+						"Source": {
+						  "X": 10,
+						  "Y": 4
+						},
+						"Destination": {
+						  "X": 14,
+						  "Y": 4
+						},
+						"Size": {
+						  "X": 1,
+						  "Y": 1
+						},
+						"UnlessItemId": null
+					  }
+					],
+					"IndoorItems": [
+					  {
+						"Id": "Default_FeedHopper",
+						"ItemId": "(BC)99",
+						"Tile": {
+						  "X": 3,
+						  "Y": 3
+						},
+						"Indestructible": true
+					  },
+					  {
+						"Id": "Default_Incubator",
+						"ItemId": "(BC)101",
+						"Tile": {
+						  "X": 2,
+						  "Y": 3
+						},
+						"Indestructible": true
+					  }
+					],
+					"AddMailOnBuild": [
+					  "incubator"
+					],
+					"Metadata": {},
+					"ModData": {},
+					"HayCapacity": 0,
+					"Chests": null,
+					"DefaultAction": null,
+					"AdditionalTilePropertyRadius": 0,
+					"AllowsFlooringUnderneath": true,
+					"ActionTiles": [],
+					"TileProperties": [],
+					"ItemConversions": null,
+					"DrawLayers": [
+					  {
+						"Id": "Default_AnimalDoor",
+						"Texture": null,
+						"SourceRect": {
+						  "X": 0,
+						  "Y": 112,
+						  "Width": 16,
+						  "Height": 16
+						},
+						"DrawPosition": "32, 96",
+						"DrawInBackground": false,
+						"SortTileOffset": 0.02,
+						"OnlyDrawIfChestHasContents": null,
+						"FrameDuration": 90,
+						"FrameCount": 1,
+						"FramesPerRow": -1,
+						"AnimalDoorOffset": {
+						  "X": 0,
+						  "Y": -13
+						}
+					  },
+					  {
+						"Id": "Default_AnimalDoor_Open",
+						"Texture": null,
+						"SourceRect": {
+						  "X": 16,
+						  "Y": 112,
+						  "Width": 16,
+						  "Height": 16
+						},
+						"DrawPosition": "32, 96",
+						"DrawInBackground": false,
+						"SortTileOffset": 1.0,
+						"OnlyDrawIfChestHasContents": null,
+						"FrameDuration": 90,
+						"FrameCount": 1,
+						"FramesPerRow": -1,
+						"AnimalDoorOffset": {
+						  "X": 0,
+						  "Y": 0
+						}
+					  }
+					],
+					"CustomFields": null
+				},
+				"Deluxe Coop": {
+					"Name": "[LocalizedText Strings\\Buildings:DeluxeCoop_Name]",
+					"Description": "[LocalizedText Strings\\Buildings:DeluxeCoop_Description]",
+					"Texture": "Buildings\\Deluxe Coop",
+					"Skins": [],
+					"DrawShadow": true,
+					"UpgradeSignTile": "2, 2",
+					"UpgradeSignHeight": 18.0,
+					"Size": {
+						"X": 6,
+						"Y": 3
+					},
+					"FadeWhenBehind": true,
+					"SourceRect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 96,
+						"Height": 112
+					},
+					"SeasonOffset": {
+						"X": 0,
+						"Y": 0
+					},
+					"DrawOffset": "0, 0",
+					"SortTileOffset": 0.0,
+					"CollisionMap": null,
+					"AdditionalPlacementTiles": null,
+					"BuildingType": null,
+					"Builder": "Robin",
+					"BuildCondition": null,
+					"BuildDays": 2,
+					"BuildCost": 20000,
+					"BuildMaterials": [
+						{
+							"ItemId": "(O)388",
+							"Amount": 500
+						},
+						{
+							"ItemId": "(O)390",
+							"Amount": 200
+						}
+					],
+					"BuildingToUpgrade": "Big Coop",
+					"MagicalConstruction": false,
+					"BuildMenuDrawOffset": {
+						"X": 0,
+						"Y": 0
+					},
+					"HumanDoor": {
+						"X": 1,
+						"Y": 2
+					},
+					"AnimalDoor": {
+						"X": 2,
+						"Y": 2,
+						"Width": 2,
+						"Height": 2
+					},
+					"AnimalDoorOpenDuration": 0.3125,
+					"AnimalDoorOpenSound": "doorCreak",
+					"AnimalDoorCloseDuration": 0.3125,
+					"AnimalDoorCloseSound": "doorCreakReverse",
+					"NonInstancedIndoorLocation": null,
+					"IndoorMap": "Coop3",
+					"IndoorMapType": "StardewValley.AnimalHouse",
+					"MaxOccupants": 12,
+					"ValidOccupantTypes": [
+						"Coop"
+					],
+					"AllowAnimalPregnancy": false,
+					"IndoorItemMoves": [
+						{
+							"Id": "Default_KeepAlongWall_Top",
+							"Source": {
+							"X": 14,
+							"Y": 4
+						},
+						"Destination": {
+							"X": 20,
+							"Y": 4
+						},
+						"Size": {
+							"X": 1,
+							"Y": 1
+						},
+						"UnlessItemId": null
+						},
+						{
+							"Id": "Default_KeepAlongWall_Middle",
+							"Source": {
+							"X": 14,
+							"Y": 7
+						},
+						"Destination": {
+							"X": 21,
+							"Y": 7
+						},
+						"Size": {
+							"X": 1,
+							"Y": 1
+						},
+						"UnlessItemId": null
+						},
+						{
+							"Id": "Default_KeepAlongWall_Bottom",
+							"Source": {
+								"X": 14,
+								"Y": 8
+							},
+							"Destination": {
+								"X": 21,
+								"Y": 8
+							},
+							"Size": {
+								"X": 1,
+								"Y": 1
+							},
+							"UnlessItemId": null
+						}
+					],
+					"IndoorItems": [
+						{
+							"Id": "Default_FeedHopper",
+							"ItemId": "(BC)99",
+							"Tile": {
+								"X": 3,
+								"Y": 3
+							},
+							"Indestructible": true
+						},
+						{
+							"Id": "Default_Incubator",
+							"ItemId": "(BC)101",
+							"Tile": {
+								"X": 2,
+								"Y": 3
+							},
+							"Indestructible": true
+						}
+					],
+					"AddMailOnBuild": [
+						"incubator"
+					],
+					"Metadata": {},
+					"ModData": {},
+					"HayCapacity": 0,
+					"Chests": null,
+					"DefaultAction": null,
+					"AdditionalTilePropertyRadius": 0,
+					"AllowsFlooringUnderneath": true,
+					"ActionTiles": [],
+					"TileProperties": [],
+					"ItemConversions": null,
+					"DrawLayers": [
+						{
+							"Id": "Default_AnimalDoor",
+							"Texture": null,
+							"SourceRect": {
+							  "X": 0,
+							  "Y": 112,
+							  "Width": 16,
+							  "Height": 16
+							},
+							"DrawPosition": "32, 96",
+							"DrawInBackground": false,
+							"SortTileOffset": 0.02,
+							"OnlyDrawIfChestHasContents": null,
+							"FrameDuration": 90,
+							"FrameCount": 1,
+							"FramesPerRow": -1,
+							"AnimalDoorOffset": {
+							  "X": 0,
+							  "Y": -13
+							}
+						},
+						{
+							"Id": "Default_AnimalDoor_Open",
+							"Texture": null,
+							"SourceRect": {
+							  "X": 16,
+							  "Y": 112,
+							  "Width": 16,
+							  "Height": 16
+							},
+							"DrawPosition": "32, 96",
+							"DrawInBackground": false,
+							"SortTileOffset": 1.0,
+							"OnlyDrawIfChestHasContents": null,
+							"FrameDuration": 90,
+							"FrameCount": 1,
+							"FramesPerRow": -1,
+							"AnimalDoorOffset": {
+							  "X": 0,
+							  "Y": 0
+							}
+						}
+					],
+					"CustomFields": null
+				},
+			}
+		},
+		{
+			"LogName": "Mayo machine Dinosaur Egg",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)24",
+				"OutputRules"
+			],
+			"Entries": {
+				"107": {
+					"Id": "New_DinosaurEgg",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)107",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)807",
+							"ItemId": "(O)807",
+							"CopyQuality": true,
+							"MinStack": 1,
+							"MaxStack": 1
+						}
+					],
+					"MinutesUntilReady": 180
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "New_DinosaurEgg",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Mayo machine Small Egg",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)24",
+				"OutputRules"
+			],
+			"Entries": {
+				"necrocrab.dinovariants_small_dino_egg": {
+					"Id": "necrocrab.dinovariants_small_dino_egg",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)necrocrab.dinovariants_small_dino_egg",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)807",
+							"ItemId": "(O)807",
+							"CopyQuality": true,
+							"MinStack": 1,
+							"MaxStack": 1
+						}
+					],
+					"MinutesUntilReady": 120
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "necrocrab.dinovariants_small_dino_egg",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Mayo machine Large Egg",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)24",
+				"OutputRules"
+			],
+			"Entries": {
+				"necrocrab.dinovariants_large_dino_egg": {
+					"Id": "necrocrab.dinovariants_large_dino_egg",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)necrocrab.dinovariants_large_dino_egg",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)807",
+							"ItemId": "(O)807",
+							"CopyQuality": true,
+							"MinStack": 1,
+							"MaxStack": 2
+						}
+					],
+					"MinutesUntilReady": 240
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "necrocrab.dinovariants_large_dino_egg",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Mayo machine Hard Egg",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)24",
+				"OutputRules"
+			],
+			"Entries": {
+				"necrocrab.dinovariants_hard_dino_egg": {
+					"Id": "necrocrab.dinovariants_hard_dino_egg",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)necrocrab.dinovariants_hard_dino_egg",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)807",
+							"ItemId": "(O)807",
+							"CopyQuality": true,
+							"MinStack": 1,
+							"MaxStack": 2
+						}
+					],
+					"MinutesUntilReady": 240
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "necrocrab.dinovariants_hard_dino_egg",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Mayo machine Fragile Egg",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)24",
+				"OutputRules"
+			],
+			"Entries": {
+				"necrocrab.dinovariants_fragile_dino_egg": {
+					"Id": "necrocrab.dinovariants_fragile_dino_egg",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)necrocrab.dinovariants_fragile_dino_egg",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)807",
+							"ItemId": "(O)807",
+							"CopyQuality": true,
+							"MinStack": 2,
+							"MaxStack": 3
+						}
+					],
+					"MinutesUntilReady": 300
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "necrocrab.dinovariants_fragile_dino_egg",
+					"ToPosition": "Top"
+				}
+			]
+		}
+    ]
+}

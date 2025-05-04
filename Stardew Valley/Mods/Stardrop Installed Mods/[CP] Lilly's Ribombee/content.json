@@ -1,0 +1,710 @@
+{
+    "Format": "2.0.0",
+    "Changes": [  
+        //Sprites
+        {
+            "LogName": "Load shopIcon for Ribombee",
+            "Action": "Load",
+            "Target": "Animals/{{ModId}}_shop_ribombee_icon",
+            "FromFile": "assets/RibombeeShop.png"
+        },
+        {
+            "LogName": "Load Sprite for Ribombee",
+            "Action": "Load",
+            "Target": "Animals/{{ModId}}_ribombee",
+            "FromFile": "assets/Ribombee.png"
+        },
+		{
+            "LogName": "Load Sprite for RibombeeShiny",
+            "Action": "Load",
+            "Target": "Animals/{{ModId}}_ribombee_shiny",
+            "FromFile": "assets/RibombeeShiny.png"
+        },
+        {
+            "LogName": "Load Spritesheet for items",
+            "Action": "Load",
+            "Target": "TileSheets/{{ModId}}_ribombee_items",
+            "FromFile": "assets/RibombeeItems.png"
+        },
+
+        //Animals
+        { 
+            "LogName": "Load data for Ribombee",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Ribombee": {
+                    "DisplayName": "{{i18n:Ribombee}}",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 4500,
+					"SellPrice": 9000,
+                    "ShopTexture": "Animals/{{ModId}}_shop_ribombee_icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "ShopDisplayName": "{{i18n:Ribombee}}",
+                    "ShopDescription": "{{i18n:RibombeeDescription}}",
+                    "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5936]",
+                    "RequiredBuilding": "Big Barn",
+
+                   "DaysToMature": "4",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "340"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 100,
+                            "ItemId": "{{ModId}}_PollenPuff"
+                        },
+						{
+                            "Id": "Default",
+                            "Condition": "ANY \"SEASON Spring\"",                            
+							"MinimumFriendship": 200,
+                            "ItemId": "{{ModId}}_PollenPuffTulip"
+                        },
+						{
+                            "Id": "Default",
+                            "Condition": "ANY \"SEASON Spring\"",  
+                            "MinimumFriendship": 200,
+                            "ItemId": "{{ModId}}_PollenPuffBlueJazz"
+                        },
+						{
+                            "Id": "Default",
+                            "Condition": "ANY \"SEASON Summer\"",  
+                            "MinimumFriendship": 200,
+                            "ItemId": "{{ModId}}_PollenPuffSweetPea"
+                        },
+						{
+                            "Id": "Default",
+                            "Condition": "ANY \"SEASON Summer\" \"SEASON Fall\"",
+                            "MinimumFriendship": 200,
+                            "ItemId": "{{ModId}}_PollenPuffSunflower"
+                        },
+						{
+                            "Id": "Default",
+                            "Condition": "ANY \"SEASON Summer\"",                          
+							"MinimumFriendship": 200,
+                            "ItemId": "{{ModId}}_PollenPuffSummerSpangle"
+                        },
+						{
+                            "Id": "Default",
+                            "Condition": "ANY \"SEASON Fall\"",  
+                            "MinimumFriendship": 200,
+                            "ItemId": "{{ModId}}_PollenPuffPoppy"
+                        },
+						{
+                            "Id": "Default",
+                            "Condition": "ANY \"SEASON Fall\"",  
+                            "MinimumFriendship": 200,
+                            "ItemId": "{{ModId}}_PollenPuffFairyRose"
+                        },
+						{
+                            "Id": "Default",
+                            "Condition": "ANY \"SEASON Winter\"",  
+                            "MinimumFriendship": 200,
+                            "ItemId": "{{ModId}}_PollenPuffCrocus"
+                        }
+                    ],
+                    "DaysToProduce": "1",
+                    "ProduceOnMature": true,
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": "null",
+                    "Sound": "{{ModId}}_RibombeeCry",
+                    "Texture": "Animals/{{ModId}}_ribombee",
+                    "UseFlippedRightForLeft": false,
+                    "CanSwim": false,
+                    "SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"Skins": [
+						{
+							"id": "RibombeeShiny",
+							"Texture": "Animals/{{ModId}}_ribombee_shiny",
+							"Weight": 0.1
+							}
+					],
+					"ShadowWhenAdult": {
+                        "Visible": false
+                      },
+					"ShadowWhenBaby": {
+						"Visible": false
+					  },
+                    "ShowInSummitCredits": true
+                }
+            }
+        },
+	    //Items
+        {
+            "LogName": "Load data for Pollen Puff",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_PollenPuff": {
+				"Name": "{{ModId}}_PollenPuff",
+				"DisplayName": "{{i18n:PollenPuff}}",
+				"Description": "{{i18n:PollenPuffDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 145,
+				"Texture": "TileSheets/{{ModId}}_ribombee_items",
+				"SpriteIndex": 0,
+				"Edibility": 30,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 100,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"FarmingLevel": 0.0,
+						"FishingLevel": 0.0,
+						"MiningLevel": 0.0,
+						"LuckLevel": 0.0,
+						"ForagingLevel": 0.0,
+						"MaxStamina": 25.0,
+						"MagneticRadius": 0.0,
+						"Speed": 0.0,
+						"Defense": 0.0,
+						"Attack": 0.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_yellow"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+        {
+            "LogName": "Load data for Pollen Puff Tulip",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_PollenPuffTulip": {
+				"Name": "{{ModId}}_PollenPuffTulip",
+				"DisplayName": "{{i18n:PollenPuffTulip}}",
+				"Description": "{{i18n:PollenPuffTulipDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 80,
+				"Texture": "TileSheets/{{ModId}}_ribombee_items",
+				"SpriteIndex": 1,
+				"Edibility": 9,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 100,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"FarmingLevel": 1.0,
+						"FishingLevel": 0.0,
+						"MiningLevel": 0.0,
+						"LuckLevel": 0.0,
+						"ForagingLevel": 0.0,
+						"MaxStamina": 0.0,
+						"MagneticRadius": 0.0,
+						"Speed": 0.0,
+						"Defense": 0.0,
+						"Attack": 0.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_red"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+        {
+            "LogName": "Load data for Pollen Puff Blue Jazz",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_PollenPuffBlueJazz": {
+				"Name": "{{ModId}}_PollenPuffBlueJazz",
+				"DisplayName": "{{i18n:PollenPuffBlueJazz}}",
+				"Description": "{{i18n:PollenPuffBlueJazzDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 100,
+				"Texture": "TileSheets/{{ModId}}_ribombee_items",
+				"SpriteIndex": 2,
+				"Edibility": 9,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 100,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"FarmingLevel": 0.0,
+						"FishingLevel": 1.0,
+						"MiningLevel": 0.0,
+						"LuckLevel": 0.0,
+						"ForagingLevel": 0.0,
+						"MaxStamina": 0.0,
+						"MagneticRadius": 0.0,
+						"Speed": 0.0,
+						"Defense": 0.0,
+						"Attack": 0.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_blue"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+        {
+            "LogName": "Load data for Pollen Puff Sweet Pea",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_PollenPuffSweetPea": {
+				"Name": "{{ModId}}_PollenPuffSweetPea",
+				"DisplayName": "{{i18n:PollenPuffSweetPea}}",
+				"Description": "{{i18n:PollenPuffSweetPeaDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 80,
+				"Texture": "TileSheets/{{ModId}}_ribombee_items",
+				"SpriteIndex": 3,
+				"Edibility": 0,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 100,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"FarmingLevel": 0.0,
+						"FishingLevel": 0.0,
+						"MiningLevel": 0.0,
+						"LuckLevel": 0.0,
+						"ForagingLevel": 1.0,
+						"MaxStamina": 0.0,
+						"MagneticRadius": 0.0,
+						"Speed": 0.0,
+						"Defense": 0.0,
+						"Attack": 0.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_purple"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+        {
+            "LogName": "Load data for Pollen Puff Sunflower",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_PollenPuffSunflower": {
+				"Name": "{{ModId}}_PollenPuffSunflower",
+				"DisplayName": "{{i18n:PollenPuffSunflower}}",
+				"Description": "{{i18n:PollenPuffSunflowerDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 130,
+				"Texture": "TileSheets/{{ModId}}_ribombee_items",
+				"SpriteIndex": 4,
+				"Edibility": 9,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 100,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"FarmingLevel": 0.0,
+						"FishingLevel": 0.0,
+						"MiningLevel": 0.0,
+						"LuckLevel": 1.0,
+						"ForagingLevel": 0.0,
+						"MaxStamina": 0.0,
+						"MagneticRadius": 0.0,
+						"Speed": 0.0,
+						"Defense": 0.0,
+						"Attack": 0.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_yellow"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+        {
+            "LogName": "Load data for Pollen Puff Summer Spangle",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_PollenPuffSummerSpangle": {
+				"Name": "{{ModId}}_PollenPuffSummerSpangle",
+				"DisplayName": "{{i18n:PollenPuffSummerSpangle}}",
+				"Description": "{{i18n:PollenPuffSummerSpangleDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 140,
+				"Texture": "TileSheets/{{ModId}}_ribombee_items",
+				"SpriteIndex": 5,
+				"Edibility": 9,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 100,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"FarmingLevel": 0.0,
+						"FishingLevel": 0.0,
+						"MiningLevel": 0.0,
+						"LuckLevel": 0.0,
+						"ForagingLevel": 0.0,
+						"MaxStamina": 0.0,
+						"MagneticRadius": 0.0,
+						"Speed": 0.0,
+						"Defense": 1.0,
+						"Attack": 0.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_yellow"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+        {
+            "LogName": "Load data for Pollen Puff Poppy",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_PollenPuffPoppy": {
+				"Name": "{{ModId}}_PollenPuffPoppy",
+				"DisplayName": "{{i18n:PollenPuffPoppy}}",
+				"Description": "{{i18n:PollenPuffPoppyDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 190,
+				"Texture": "TileSheets/{{ModId}}_ribombee_items",
+				"SpriteIndex": 6,
+				"Edibility": 9,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 100,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"FarmingLevel": 0.0,
+						"FishingLevel": 0.0,
+						"MiningLevel": 1.0,
+						"LuckLevel": 0.0,
+						"ForagingLevel": 0.0,
+						"MaxStamina": 0.0,
+						"MagneticRadius": 0.0,
+						"Speed": 0.0,
+						"Defense": 0.0,
+						"Attack": 0.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_orange"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+        {
+            "LogName": "Load data for Pollen Puff Fairy Rose",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_PollenPuffFairyRose": {
+				"Name": "{{ModId}}_PollenPuffFairyRose",
+				"DisplayName": "{{i18n:PollenPuffFairyRose}}",
+				"Description": "{{i18n:PollenPuffFairyRoseDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 340,
+				"Texture": "TileSheets/{{ModId}}_ribombee_items",
+				"SpriteIndex": 7,
+				"Edibility": 9,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 100,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"FarmingLevel": 0.0,
+						"FishingLevel": 0.0,
+						"MiningLevel": 0.0,
+						"LuckLevel": 0.0,
+						"ForagingLevel": 0.0,
+						"MaxStamina": 0.0,
+						"MagneticRadius": 0.0,
+						"Speed": 0.0,
+						"Defense": 0.0,
+						"Attack": 1.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_pink"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+        {
+            "LogName": "Load data for Pollen Puff Crocus",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_PollenPuffCrocus": {
+				"Name": "{{ModId}}_PollenPuffCrocus",
+				"DisplayName": "{{i18n:PollenPuffCrocus}}",
+				"Description": "{{i18n:PollenPuffCrocusDescription}}",
+				"Type": "Basic",
+				"Category": -26,
+				"Price": 105,
+				"Texture": "TileSheets/{{ModId}}_ribombee_items",
+				"SpriteIndex": 8,
+				"Edibility": 0,
+				"IsDrink": false,
+				"Buffs": [
+					{
+					  "Id": "Food",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 100,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"FarmingLevel": 0.0,
+						"FishingLevel": 0.0,
+						"MiningLevel": 0.0,
+						"LuckLevel": 0.0,
+						"ForagingLevel": 0.0,
+						"MaxStamina": 0.0,
+						"MagneticRadius": 0.0,
+						"Speed": 1.0,
+						"Defense": 0.0,
+						"Attack": 0.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_purple"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+		{
+            "LogName": "Load data for Pollen Tea",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_PollenTea": {
+				"Name": "{{ModId}}_PollenTea",
+				"DisplayName": "{{i18n:PollenTea}}",
+				"Description": "{{i18n:PollenTeaDescription}}",
+				"Type": "Cooking",
+				"Category": -7,
+				"Price": 450,
+				"Texture": "TileSheets/{{ModId}}_ribombee_items",
+				"SpriteIndex": 9,
+				"Edibility": 50,
+				"IsDrink": true,
+				"Buffs": [
+					{
+					  "Id": "Drink",
+					  "BuffId": null,
+					  "IconTexture": null,
+					  "IconSpriteIndex": 0,
+					  "Duration": 360,
+					  "IsDebuff": false,
+					  "GlowColor": null,
+					  "CustomAttributes": {
+						"FarmingLevel": 0.0,
+						"FishingLevel": 0.0,
+						"MiningLevel": 0.0,
+						"LuckLevel": 0.0,
+						"ForagingLevel": 0.0,
+						"MaxStamina": 40.0,
+						"MagneticRadius": 0.0,
+						"Speed": 0.5,
+						"Defense": 0.0,
+						"Attack": 0.0
+					  },
+					  "CustomFields": null
+					}
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": null,
+				"ArtifactSpotChances": null,
+				"ExcludeFromFishingCollection": true,
+				"ExcludeFromShippingCollection": false,
+				"ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_yellow"
+                ],
+				"CustomFields": null
+			  }
+              
+			}
+		},
+		//Cooking
+		{
+			"LogName": "Add Tea Recipe",
+			"Action": "EditData",
+			"Target": "Data/CookingRecipes",
+			"Entries": {
+				"{{ModId}}_PollenTea": "815 2 {{ModId}}_PollenPuff 2 340 1/1 8/{{ModId}}_PollenTea/default/{{i18n:PollenTea}}"
+			}
+		},
+            //Sounds
+            {
+                "Action": "EditData",
+                "Target": "Data/AudioChanges",
+                "Entries": {
+                    "{{ModId}}_RibombeeCry": {
+                        "ID": "{{ModId}}_RibombeeCry",
+                        "Category": "Sound",
+                        "FilePaths": [ "{{AbsoluteFilePath: assets/RibombeeSound.wav}}" ],
+                        "StreamedVorbis": false
+                    }
+                }
+            }
+        ]
+    }

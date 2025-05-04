@@ -1,0 +1,440 @@
+{
+  "Format": "2.3.0",
+   "Changes": [
+                {               
+			"Action": "Include",
+			"FromFile": "data/Maps/LocationData.json",
+		},
+                {               
+			"Action": "Include",
+			"FromFile": "data/Maps/MapPatches.json",
+		},
+                {               
+			"Action": "Include",
+			"FromFile": "data/Shops.json",
+		},
+                {               
+			"Action": "Include",
+			"FromFile": "data/WorldMap.json",
+		},
+                {               
+			"Action": "Include",
+			"FromFile": "data/FishData.json",
+		},
+                {               
+			"Action": "Include",
+			"FromFile": "data/Objects/ObjectContent.json",
+		},
+                {               
+			"Action": "Include",
+			"FromFile": "data/Quests/Quests.json",
+		},
+                {               
+			"Action": "Include",
+			"FromFile": "data/Music.json",
+		},
+                {
+			"Action": "Include",
+			"FromFile": "data/NPCData/Dispositions.json, data/NPCData/GiftTastes.json, data/NPCData/Portraits.json, data/NPCData/Sprites.json, data/NPCData/Animations.json",
+		},
+		{
+			"LogName": "Register location with warp network",
+			"Action": "EditData",
+			"Target": "Data/WarpNetwork/Destinations",
+			"Entries": {
+				"Axolotl Village": {
+					"location": "{{ModId}}_AxolotlTown",
+					"x": 14,
+					"y": 104,
+					"enabled": true,
+					"label": "Axolotl Village",
+					"icon": "WNIcon",
+                                        "When":{
+				                "HasMod":"tlitookilakin.warpnetwork"
+                                     },
+				}
+			}
+		},
+                {
+			"LogName": "Add destination icon",
+			"Action": "Load",
+			"Target": "Data/WarpNetwork/Icons/WNIcon",
+			"FromFile": "Assets/LooseSprites/WNIcon.png",
+                        "When":{
+				"HasMod":"tlitookilakin.warpnetwork"
+                  },
+		},
+   {
+      "LogName": "Event Data",
+      "Action": "Include",
+      "FromFile": "assets/Events/Wizard.json"
+    },
+{       
+	 "Action": "Load",
+	 "Target": "data/events/{{ModId}}_AxolotlTown",
+	 "FromFile": "assets/Events/Town.json",
+		},
+{       
+	 "Action": "Load",
+	 "Target": "data/events/{{ModId}}_AxolotlTownSouth",
+	 "FromFile": "assets/Events/TownSouth.json",
+		},
+{       
+	 "Action": "Load",
+	 "Target": "data/events/{{ModId}}_HiroHouse",
+	 "FromFile": "assets/Events/HiroHouse.json",
+		},
+{       
+	 "Action": "Load",
+	 "Target": "data/events/{{ModId}}_AxolotlCommunityCenter",
+	 "FromFile": "assets/Events/CommunityCenter.json",
+		},
+{       
+	 "Action": "Load",
+	 "Target": "data/events/{{ModId}}_OlinaHouse",
+	 "FromFile": "assets/Events/OlinaHouse.json",
+		},
+{       
+	 "Action": "Load",
+	 "Target": "data/events/{{ModId}}_AxolotlBakery",
+	 "FromFile": "assets/Events/Bakery.json",
+		},
+{       
+	 "Action": "Load",
+	 "Target": "data/events/{{ModId}}_LalaHouse",
+	 "FromFile": "assets/Events/LalaHouse.json",
+		},
+{       
+	 "Action": "Load",
+	 "Target": "data/events/{{ModId}}_DrinkShop",
+	 "FromFile": "assets/Events/DrinkShop.json",
+		},
+{       
+	 "Action": "Load",
+	 "Target": "data/events/{{ModId}}_JinxHouse",
+	 "FromFile": "assets/Events/JinxHouse.json",
+		},
+{       
+	 "Action": "Load",
+	 "Target": "data/events/{{ModId}}_PukaHouse",
+	 "FromFile": "assets/Events/PukaHouse.json",
+		},
+{       
+	 "Action": "Load",
+	 "Target": "data/events/{{ModId}}_AxolotlLake",
+	 "FromFile": "assets/Events/AxolotlLake.json",
+		},
+{      
+	 "Action": "Load",
+	 "Target": "data/events/{{ModId}}_NoaHouse",
+	 "FromFile": "assets/Events/NoaHouse.json",
+		},
+{      
+	 "Action": "Load",
+	 "Target": "data/events/{{ModId}}_NimueHouse",
+	 "FromFile": "assets/Events/NimueHouse.json",
+		},
+{      
+	 "Action": "Load",
+	 "Target": "data/events/{{ModId}}_LuluHouse",
+	 "FromFile": "assets/Events/LuluHouse.json",
+		},
+{      
+	 "Action": "Load",
+	 "Target": "data/events/{{ModId}}_CaptainHouse",
+	 "FromFile": "assets/Events/CaptainHouse.json",
+		},
+{      
+	 "Action": "Load",
+	 "Target": "data/events/{{ModId}}_LotusHouse",
+	 "FromFile": "assets/Events/LotusHouse.json",
+		},
+{      
+	 "Action": "Load",
+	 "Target": "data/events/{{ModId}}_BonbonHouse",
+	 "FromFile": "assets/Events/BonbonHouse.json",
+		},
+{      
+	 "Action": "Load",
+	 "Target": "data/events/{{ModId}}_KandiHouse",
+	 "FromFile": "assets/Events/KandiHouse.json",
+		},
+{      
+	 "Action": "Load",
+	 "Target": "data/events/{{ModId}}_CandyShop",
+	 "FromFile": "assets/Events/CandyShop.json",
+		},
+   {
+      "LogName": "Blank Schedules",
+      "Action": "Load",
+      "Target": "Characters/Schedules/Aukai, Characters/Schedules/Captain, Characters/Schedules/Hau, Characters/Schedules/Hiro, Characters/Schedules/Jinx, Characters/Schedules/Kekoa, Characters/Schedules/Lala, Characters/Schedules/Lilia, Characters/Schedules/Lulu, Characters/Schedules/Mamo, Characters/Schedules/Nico, Characters/Schedules/Nimue, Characters/Schedules/Noa, Characters/Schedules/Olina, Characters/Schedules/Puka, Characters/Schedules/Lotus, Characters/Schedules/Shiso, Characters/Schedules/Bonbon, Characters/Schedules/Kandi",
+      "FromFile": "Data/blank.json"
+    },
+    {
+      "LogName": "Regular Schedules",
+      "Action": "Include",
+      "FromFile": "assets/Schedules/Aukai.json, assets/Schedules/Captain.json, assets/Schedules/Hau.json, assets/Schedules/Hiro.json, assets/Schedules/Jinx.json, assets/Schedules/Kekoa.json, assets/Schedules/Lala.json, assets/Schedules/Lilia.json, assets/Schedules/Lulu.json, assets/Schedules/Mamo.json, assets/Schedules/Nico.json, assets/Schedules/Nimue.json, assets/Schedules/Noa.json, assets/Schedules/Olina.json, assets/Schedules/Puka.json, assets/Schedules/Lotus.json, assets/Schedules/Shiso.json, assets/Schedules/Bonbon.json, assets/Schedules/Kandi.json"
+    },
+    {
+      "LogName": "Blank Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Aukai, Characters/Dialogue/Captain, Characters/Dialogue/Hau, Characters/Dialogue/Hiro, Characters/Dialogue/Jinx, Characters/Dialogue/Kekoa, Characters/Dialogue/Lala, Characters/Dialogue/Lilia, Characters/Dialogue/Lulu, Characters/Dialogue/Mamo, Characters/Dialogue/Nico, Characters/Dialogue/Nimue, Characters/Dialogue/Noa, Characters/Dialogue/Olina, Characters/Dialogue/Puka, Characters/Dialogue/Lotus, Characters/Dialogue/Shiso, Characters/Dialogue/Bonbon, Characters/Dialogue/Kandi",
+      "FromFile": "Data/blank.json"
+    },
+    {
+      "LogName": "Main Dialogue",
+      "Action": "Include",
+      "FromFile": "assets/Dialogue/Aukai.json, assets/Dialogue/Captain.json, assets/Dialogue/Hau.json, assets/Dialogue/Hiro.json, assets/Dialogue/Jinx.json, assets/Dialogue/Kekoa.json, assets/Dialogue/Lala.json, assets/Dialogue/Lilia.json, assets/Dialogue/Lulu.json, assets/Dialogue/Mamo.json, assets/Dialogue/Nico.json, assets/Dialogue/Nimue.json, assets/Dialogue/Noa.json, assets/Dialogue/Olina.json, assets/Dialogue/Puka.json, assets/Dialogue/Lotus.json, assets/Dialogue/Shiso.json, assets/Dialogue/Bonbon.json, assets/Dialogue/Kandi.json"
+    },
+    {
+		"LogName": "Hiro Schedule Strings",
+		"Action": "Load",
+		"Target": "Strings/schedules/Hiro",
+                "FromFile": "Data/ScheduleStrings/Hiro.json"
+	
+     },
+    {
+		"LogName": "Lala Schedule Strings",
+		"Action": "Load",
+		"Target": "Strings/schedules/Lala",
+		"FromFile": "Data/ScheduleStrings/Lala.json"
+    },
+    {
+		"LogName": "Lulu Schedule Strings",
+		"Action": "Load",
+		"Target": "Strings/schedules/Lulu",
+		"FromFile": "Data/ScheduleStrings/Lulu.json"
+    },
+    {
+		"LogName": "Puka Schedule Strings",
+		"Action": "Load",
+		"Target": "Strings/schedules/Puka",
+		"FromFile": "Data/ScheduleStrings/Puka.json"
+    },
+    {
+		"LogName": "Kandi Schedule Strings",
+		"Action": "Load",
+		"Target": "Strings/schedules/Kandi",
+		"FromFile": "Data/ScheduleStrings/Kandi.json"
+    },
+    {
+		"LogName": "Aukai Schedule Strings",
+		"Action": "Load",
+		"Target": "Strings/schedules/Aukai",
+		"FromFile": "Data/ScheduleStrings/Aukai.json"
+    },
+    {
+		"LogName": "Hau Schedule Strings",
+		"Action": "Load",
+		"Target": "Strings/schedules/Hau",
+		"FromFile": "Data/ScheduleStrings/Hau.json"
+    },
+    {
+		"LogName": "Kekoa Schedule Strings",
+		"Action": "Load",
+		"Target": "Strings/schedules/Kekoa",
+		"FromFile": "Data/ScheduleStrings/Kekoa.json"
+    },
+    {
+		"LogName": "Lilia Schedule Strings",
+		"Action": "Load",
+		"Target": "Strings/schedules/Lilia",
+		"FromFile": "Data/ScheduleStrings/Lilia.json"
+    },
+    {
+		"LogName": "Mamo Schedule Strings",
+		"Action": "Load",
+		"Target": "Strings/schedules/Mamo",
+		"FromFile": "Data/ScheduleStrings/Mamo.json"
+    },
+    {
+		"LogName": "Nico Schedule Strings",
+		"Action": "Load",
+		"Target": "Strings/schedules/Nico",
+		"FromFile": "Data/ScheduleStrings/Nico.json"
+    },
+
+                {
+			"Action": "Load",
+			"Target": "LooseSprites/AxolotlQuestBoard",
+			"FromFile": "Assets/LooseSprites/{{TargetWithoutPath}}.png",
+		},
+
+//Loading Tilesheets
+{
+   "Action": "Load",
+   "Target": "Maps/z_beachtiles",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_boatTunnelTiles",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_city",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_Cloudy_Ocean_BG_Night",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_Craftables",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_Cursors",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_fall_Cursors",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_fall_island_tilesheet_1",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_fall_outdoorsTileSheet",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_fall_town",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_Festivals",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_furniture",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_furniture_2",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_island_tilesheet_1",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_MovieTheater_TileSheet",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_night_market_tilesheet_objects",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_noicecreamowners",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_Plushies",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_retro_furniture",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_spring_beach",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_spring_outdoorsTileSheet",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_summer_town",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_summer_southtown",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_spring_town",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_townInterior",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_vanilla_spring_beach",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_wallpapers_2",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_walls_and_floors",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_winter_Cursors",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_winter_island_tilesheet_1",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_winter_outdoorsTileSheet",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_winter_town",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_rugs",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_WitchHutTiles",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+},
+{
+   "Action": "Load",
+   "Target": "Maps/z_WizardHouseTiles",
+   "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+}
+]
+}

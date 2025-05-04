@@ -1,0 +1,35 @@
+{
+"Changes": [
+
+	{
+		"LogName": "Noa Schedule",
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Noa",
+		"Entries": {
+
+			//Regular Schedule
+			"spring": "610 {{ModId}}_NoaHouse 8 6 2/1400 {{ModId}}_AxolotlTown 21 38 1/1700 {{ModId}}_NoaHouse 3 10 2/1900 {{ModId}}_NoaHouse 8 6 2 noa_sleep",
+			"summer": "610 {{ModId}}_NoaHouse 8 6 2/900 {{ModId}}_NoaHouse 8 9 3/1300 {{ModId}}_AxolotlTown 17 32 2/1900 {{ModId}}_NoaHouse 8 6 2 noa_sleep",
+			"fall": "610 {{ModId}}_NoaHouse 8 6 2/1000 {{ModId}}_DrinkShop 14 6 3/1500 {{ModId}}_AxolotlTown 45 40 3/1900 {{ModId}}_NoaHouse 8 6 2 noa_sleep",
+			"winter": "610 {{ModId}}_NoaHouse 8 6 2/1100 {{ModId}}_NoaHouse 3 10 2/1400 {{ModId}}_NoaHouse 8 9 3/1900 {{ModId}}_NoaHouse 8 6 2 noa_sleep",
+			"rain": "610 {{ModId}}_NoaHouse 8 6 2/1100 {{ModId}}_NoaHouse 3 10 2/1900 {{ModId}}_NoaHouse 8 6 2 noa_sleep",
+			"Fri": "610 {{ModId}}_NoaHouse 8 6 2/1000 {{ModId}}_AxolotlTown 21 38 1/1300 {{ModId}}_AxolotlCommunityCenter 38 9 1/2100 {{ModId}}_NoaHouse 8 6 2 noa_sleep",
+                        "Wed": "610 {{ModId}}_NoaHouse 8 6 2/1000 {{ModId}}_AxolotlTown 24 40 1/1900 {{ModId}}_NoaHouse 8 6 2 noa_sleep",
+                        "fall_28": "610 {{ModId}}_NoaHouse 8 6 2/1000 {{ModId}}_DrinkShop 14 6 3/1500 {{ModId}}_AxolotlTown 45 40 3/1850 {{ModId}}_AxolotlTown 28 54 1/2350 {{ModId}}_NoaHouse 8 6 2 noa_sleep",
+                        "winter_25": "610 {{ModId}}_NoaHouse 8 6 2/1000 {{ModId}}_AxolotlTown 25 52 2/1900 {{ModId}}_NoaHouse 8 6 2 noa_sleep",
+                        "summer_7": "610 {{ModId}}_NoaHouse 8 6 2/900 {{ModId}}_NoaHouse 8 9 3/1300 {{ModId}}_AxolotlTown 17 32 2/1800 {{ModId}}_AxolotlTown 27 80 3/2350 {{ModId}}_NoaHouse 8 6 2 noa_sleep",
+                        "spring_21": "610 {{ModId}}_NoaHouse 8 6 2/800 {{ModId}}_AxolotlTown 28 80 3/1900 {{ModId}}_NoaHouse 8 6 2 noa_sleep",
+			}
+	},
+{
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Noa",
+		"Entries": {
+			"Sun": "610 {{ModId}}_NoaHouse 8 6 2/1100 {{ModId}}_AxolotlTownSouth 93 38 0/1900 {{ModId}}_NoaHouse 8 6 2 noa_sleep",
+			},
+		"When": {
+			"HasSeenEvent: hostPlayer |contains=98890063": true
+                        },
+	},
+]
+}

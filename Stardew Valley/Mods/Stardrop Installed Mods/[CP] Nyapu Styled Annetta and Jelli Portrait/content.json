@@ -1,0 +1,44 @@
+{
+   "Format": "2.3.0",
+    "ConfigSchema": {
+    "Annetta":{
+            "AllowValues": "Off, Normal, Alternative",
+            "Default": "Normal"
+        },
+	"Jelli":{
+            "AllowValues": "true, false",
+            "Default": "true",
+			"Description": "Untick the box to turn off the Jelli Portrait Edit"
+        }
+    },
+    "Changes": [
+	//Annetta Normal Portrait
+{
+    "Action": "EditImage",
+    "Target": "Portraits/Annetta",
+    "FromFile": "assets/Annetta.png",
+	"When": { "Annetta": "normal" }
+},
+	//Annetta Alternative Portrait
+{
+    "Action": "EditImage",
+    "Target": "Portraits/Annetta",
+    "FromFile": "assets/AnnettaAlternative.png",
+	"When": { "Annetta": "Alternative" }
+},
+	
+	//Editing Jelli Portraits
+{
+    "Action": "EditImage",
+    "Target": "Portraits/Jelli",
+    "FromFile": "assets/Jelli.png",
+	"When": {"Jelli": true}
+},
+{
+    "Action": "EditImage",
+    "Target": "Portraits/JelliVendor",
+    "FromFile": "assets/JelliVendor.png",
+	"When": {"Jelli": true}
+}
+    ]
+}

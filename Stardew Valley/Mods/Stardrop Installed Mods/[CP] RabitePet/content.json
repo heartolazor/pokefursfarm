@@ -1,0 +1,990 @@
+{
+    "Format": "2.0.0",
+    "Changes": [
+        {
+            "Action": "Include",
+            "FromFile": "assets/hats.json"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Rabite",
+            "FromFile": "assets/rabite.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Silktail",
+            "FromFile": "assets/silktail.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/BlackRabite",
+            "FromFile": "assets/blackrabite.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/SnowyRabite",
+            "FromFile": "assets/snowyrabite.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/KingRabite",
+            "FromFile": "assets/kingrabite.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/GreatRabite",
+            "FromFile": "assets/greatrabite.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/GrimRabite",
+            "FromFile": "assets/grimrabite.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "LooseSprites/RabiteIcons",
+            "FromFile": "assets/icons.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "Primm.Rabite": {
+                    "ID": "Primm.Rabite",
+                    "Category": "Sound",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/pet.wav}}"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Pets",
+            "Entries": {
+                "Rabite": {
+                    // Display
+                    "DisplayName": "{{i18n:Rabite.Name}}",
+                    "BarkSound": "Primm.Rabite",
+                    "ContentSound": "Primm.Rabite",
+                    "AdoptionEventLocation": "Farm",
+                    "AdoptionEventId": "Primm.RabiteGet",
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "EventOffset": {
+                        "X": -32,
+                        "Y": 0
+                    },
+                    "SummitPerfectionEvent": {
+                        "SourceRect": {
+                          "X": 0,
+                          "Y": 96,
+                          "Width": 32,
+                          "Height": 32
+                        },
+                        "AnimationLength": 4,
+                        "Flipped": false,
+                        "Motion": "-4, 0",
+                        "PingPong": false
+                      },
+                    // Appearance
+                    "Breeds": [
+                        {
+                            "Id": "0",
+                            "Texture": "Animals\\Rabite",
+                            "IconTexture": "LooseSprites\\RabiteIcons",
+                            "IconSourceRect": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "CanBeChosenAtStart": true,
+                            "CanBeAdoptedFromMarnie": true,
+                            "AdoptionPrice": 40000,
+                            "BarkOverride": null,
+                            "VoicePitch": 1.0
+                        },
+                        {
+                            "Id": "1",
+                            "Texture": "Animals\\Silktail",
+                            "IconTexture": "LooseSprites\\RabiteIcons",
+                            "IconSourceRect": {
+                                "X": 16,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "CanBeChosenAtStart": true,
+                            "CanBeAdoptedFromMarnie": true,
+                            "AdoptionPrice": 40000,
+                            "BarkOverride": null,
+                            "VoicePitch": 1.0
+                        },
+                        {
+                            "Id": "3",
+                            "Texture": "Animals\\SnowyRabite",
+                            "IconTexture": "LooseSprites\\RabiteIcons",
+                            "IconSourceRect": {
+                                "X": 48,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "CanBeChosenAtStart": true,
+                            "CanBeAdoptedFromMarnie": true,
+                            "AdoptionPrice": 40000,
+                            "BarkOverride": null,
+                            "VoicePitch": 1.0
+                        },
+                        {
+                            "Id": "4",
+                            "Texture": "Animals\\KingRabite",
+                            "IconTexture": "LooseSprites\\RabiteIcons",
+                            "IconSourceRect": {
+                                "X": 64,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "CanBeChosenAtStart": true,
+                            "CanBeAdoptedFromMarnie": true,
+                            "AdoptionPrice": 50000,
+                            "BarkOverride": null,
+                            "VoicePitch": 1.0
+                        },
+                        {
+                            "Id": "5",
+                            "Texture": "Animals\\GreatRabite",
+                            "IconTexture": "LooseSprites\\RabiteIcons",
+                            "IconSourceRect": {
+                                "X": 80,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "CanBeChosenAtStart": true,
+                            "CanBeAdoptedFromMarnie": true,
+                            "AdoptionPrice": 60000,
+                            "BarkOverride": null,
+                            "VoicePitch": 1.0
+                        },
+                        {
+                            "Id": "2",
+                            "Texture": "Animals\\BlackRabite",
+                            "IconTexture": "LooseSprites\\RabiteIcons",
+                            "IconSourceRect": {
+                                "X": 32,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "CanBeChosenAtStart": false,
+                            "CanBeAdoptedFromMarnie": true,
+                            "AdoptionPrice": 80000,
+                            "BarkOverride": null,
+                            "VoicePitch": 1.0
+                        },
+                        {
+                            "Id": "6",
+                            "Texture": "Animals\\GrimRabite",
+                            "IconTexture": "LooseSprites\\RabiteIcons",
+                            "IconSourceRect": {
+                                "X": 96,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "CanBeChosenAtStart": false,
+                            "CanBeAdoptedFromMarnie": true,
+                            "AdoptionPrice": 80000,
+                            "BarkOverride": null,
+                            "VoicePitch": 0.8
+                        }
+                    ],
+                    // Behaviour
+                    "MoveSpeed": 2,
+                    "SleepOnBedChance": 0.6,
+                    "SleepNearBedChance": 0.2,
+                    "SleepOnRugChance": 0.5,
+                    "Behaviors": [
+                        { // MARK: Walk
+                            "Id": "Walk",
+                            "IsSideBehavior": false,
+                            "RandomizeDirection": true,
+                            "Direction": null,
+                            "WalkInDirection": true,
+                            "MoveSpeed": -1,
+                            "SoundOnStart": null,
+                            "SoundRangeFromBorder": -1,
+                            "SoundRange": -1,
+                            "SoundIsVoice": false,
+                            "Shake": 0,
+                            "Animation": null,
+                            "LoopMode": "None",
+                            "AnimationMinimumLoops": -1,
+                            "AnimationMaximumLoops": -1,
+                            "AnimationEndBehaviorChanges": null,
+                            "Duration": -1,
+                            "MinimumDuration": -1,
+                            "MaximumDuration": -1,
+                            "TimeoutBehaviorChanges": null,
+                            "PlayerNearbyBehaviorChanges": null,
+                            "RandomBehaviorChangeChance": 0.01,
+                            "RandomBehaviorChanges": [
+                                {
+                                    "Weight": 3.0,
+                                    "OutsideOnly": false,
+                                    "UpBehavior": null,
+                                    "DownBehavior": null,
+                                    "LeftBehavior": null,
+                                    "RightBehavior": null,
+                                    "Behavior": null
+                                },
+                                {
+                                    "Weight": 0.4,
+                                    "OutsideOnly": false,
+                                    "UpBehavior": "IdleR",
+                                    "DownBehavior": "IdleL",
+                                    "LeftBehavior": "IdleL",
+                                    "RightBehavior": "IdleR",
+                                    "Behavior": null
+                                },
+                                {
+                                    "Weight": 0.4,
+                                    "OutsideOnly": false,
+                                    "UpBehavior": "RestR",
+                                    "DownBehavior": "RestL",
+                                    "LeftBehavior": "RestL",
+                                    "RightBehavior": "RestR",
+                                    "Behavior": null
+                                },
+                                {
+                                    "Weight": 0.15,
+                                    "OutsideOnly": false,
+                                    "UpBehavior": null,
+                                    "DownBehavior": null,
+                                    "LeftBehavior": null,
+                                    "RightBehavior": null,
+                                    "Behavior": "Spin"
+                                },
+                                {
+                                    "Weight": 0.05,
+                                    "OutsideOnly": true,
+                                    "UpBehavior": "BiteRPrepare",
+                                    "DownBehavior": "BiteLPrepare",
+                                    "LeftBehavior": "BiteLPrepare",
+                                    "RightBehavior": "BiteRPrepare",
+                                    "Behavior": null
+                                }
+                            ],
+                            "JumpLandBehaviorChanges": null
+                        },
+                        { // MARK: IdleL
+                            "Id": "IdleL",
+                            "IsSideBehavior": true,
+                            "RandomizeDirection": false,
+                            "Direction": "left",
+                            "WalkInDirection": false,
+                            "MoveSpeed": -1,
+                            "SoundOnStart": null,
+                            "SoundRangeFromBorder": -1,
+                            "SoundRange": -1,
+                            "SoundIsVoice": false,
+                            "Shake": 0,
+                            "Animation": [
+                                {
+                                    "Frame": 18,
+                                    "Duration": 150,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 19,
+                                    "Duration": 300,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 25,
+                                    "Duration": 300,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 19,
+                                    "Duration": 300,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 18,
+                                    "Duration": 150,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                }
+                            ],
+                            "LoopMode": "Loop",
+                            "AnimationMinimumLoops": 4,
+                            "AnimationMaximumLoops": 16,
+                            "AnimationEndBehaviorChanges": [
+                                {
+                                    "Weight": 1.0,
+                                    "OutsideOnly": false,
+                                    "UpBehavior": null,
+                                    "DownBehavior": null,
+                                    "LeftBehavior": null,
+                                    "RightBehavior": null,
+                                    "Behavior": "Walk"
+                                }
+                            ],
+                            "Duration": -1,
+                            "MinimumDuration": -1,
+                            "MaximumDuration": -1,
+                            "TimeoutBehaviorChanges": null,
+                            "PlayerNearbyBehaviorChanges": null,
+                            "RandomBehaviorChangeChance": 0.00,
+                            "RandomBehaviorChanges": null,
+                            "JumpLandBehaviorChanges": null
+                        },
+                        { // MARK: IdleR
+                            "Id": "IdleR",
+                            "IsSideBehavior": true,
+                            "RandomizeDirection": false,
+                            "Direction": "right",
+                            "WalkInDirection": false,
+                            "MoveSpeed": -1,
+                            "SoundOnStart": null,
+                            "SoundRangeFromBorder": -1,
+                            "SoundRange": -1,
+                            "SoundIsVoice": false,
+                            "Shake": 0,
+                            "Animation": [
+                                {
+                                    "Frame": 18,
+                                    "Duration": 150,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 19,
+                                    "Duration": 300,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 25,
+                                    "Duration": 300,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 19,
+                                    "Duration": 300,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 18,
+                                    "Duration": 150,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                }
+                            ],
+                            "LoopMode": "Loop",
+                            "AnimationMinimumLoops": 4,
+                            "AnimationMaximumLoops": 16,
+                            "AnimationEndBehaviorChanges": [
+                                {
+                                    "Weight": 1.0,
+                                    "OutsideOnly": false,
+                                    "UpBehavior": null,
+                                    "DownBehavior": null,
+                                    "LeftBehavior": null,
+                                    "RightBehavior": null,
+                                    "Behavior": "Walk"
+                                }
+                            ],
+                            "Duration": -1,
+                            "MinimumDuration": -1,
+                            "MaximumDuration": -1,
+                            "TimeoutBehaviorChanges": null,
+                            "PlayerNearbyBehaviorChanges": null,
+                            "RandomBehaviorChangeChance": 0.00,
+                            "RandomBehaviorChanges": null,
+                            "JumpLandBehaviorChanges": null
+                        },
+                        { // MARK: Spin
+                            "Id": "Spin",
+                            "IsSideBehavior": false,
+                            "RandomizeDirection": false,
+                            "Direction": "down",
+                            "WalkInDirection": false,
+                            "MoveSpeed": -1,
+                            "SoundOnStart": null,
+                            "SoundRangeFromBorder": -1,
+                            "SoundRange": -1,
+                            "SoundIsVoice": false,
+                            "Shake": 0,
+                            "Animation": [
+                                {
+                                    "Frame": 20,
+                                    "Duration": 100,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 4,
+                                    "Duration": 100,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 23,
+                                    "Duration": 100,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 31,
+                                    "Duration": 100,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 22,
+                                    "Duration": 100,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 30,
+                                    "Duration": 100,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 21,
+                                    "Duration": 100,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 0,
+                                    "Duration": 100,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                }
+                            ],
+                            "LoopMode": "Loop",
+                            "AnimationMinimumLoops": 1,
+                            "AnimationMaximumLoops": 4,
+                            "AnimationEndBehaviorChanges": [
+                                {
+                                    "Weight": 1.0,
+                                    "OutsideOnly": false,
+                                    "UpBehavior": null,
+                                    "DownBehavior": null,
+                                    "LeftBehavior": null,
+                                    "RightBehavior": null,
+                                    "Behavior": "Walk"
+                                }
+                            ],
+                            "Duration": -1,
+                            "MinimumDuration": -1,
+                            "MaximumDuration": -1,
+                            "TimeoutBehaviorChanges": null,
+                            "PlayerNearbyBehaviorChanges": null,
+                            "RandomBehaviorChangeChance": 0.00,
+                            "RandomBehaviorChanges": null,
+                            "JumpLandBehaviorChanges": null
+                        },
+                        { // MARK: BiteLPrepare
+                            "Id": "BiteLPrepare",
+                            "IsSideBehavior": false,
+                            "RandomizeDirection": false,
+                            "Direction": "left",
+                            "WalkInDirection": false,
+                            "MoveSpeed": -1,
+                            "SoundOnStart": null,
+                            "SoundRangeFromBorder": -1,
+                            "SoundRange": -1,
+                            "SoundIsVoice": false,
+                            "Shake": 0,
+                            "Animation": [
+                                {
+                                    "Frame": 27,
+                                    "Duration": 400,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                }
+                            ],
+                            "LoopMode": "Hold",
+                            "AnimationMinimumLoops": -1,
+                            "AnimationMaximumLoops": -1,
+                            "AnimationEndBehaviorChanges": null,
+                            "Duration": 400,
+                            "MinimumDuration": -1,
+                            "MaximumDuration": -1,
+                            "TimeoutBehaviorChanges": [
+                                {
+                                    "Weight": 1.0,
+                                    "OutsideOnly": false,
+                                    "UpBehavior": null,
+                                    "DownBehavior": null,
+                                    "LeftBehavior": null,
+                                    "RightBehavior": null,
+                                    "Behavior": "BiteL"
+                                }
+                            ],
+                            "PlayerNearbyBehaviorChanges": null,
+                            "RandomBehaviorChangeChance": 0.00,
+                            "RandomBehaviorChanges": null,
+                            "JumpLandBehaviorChanges": null
+                        },
+                        { // MARK: BiteL
+                            "Id": "BiteL",
+                            "IsSideBehavior": true,
+                            "RandomizeDirection": false,
+                            "Direction": null,
+                            "WalkInDirection": false,
+                            "MoveSpeed": -1,
+                            "SoundOnStart": null,
+                            "SoundRangeFromBorder": -1,
+                            "SoundRange": -1,
+                            "SoundIsVoice": false,
+                            "Shake": 0,
+                            "Animation": [
+                                {
+                                    "Frame": 27,
+                                    "Duration": 200,
+                                    "HitGround": false,
+                                    "Jump": true,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 26,
+                                    "Duration": 400,
+                                    "HitGround": true,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                }
+                            ],
+                            "LoopMode": "Hold",
+                            "AnimationMinimumLoops": -1,
+                            "AnimationMaximumLoops": -1,
+                            "AnimationEndBehaviorChanges": null,
+                            "Duration": "-1",
+                            "MinimumDuration": 600,
+                            "MaximumDuration": 1200,
+                            "TimeoutBehaviorChanges": [
+                                {
+                                    "Weight": 1.0,
+                                    "OutsideOnly": false,
+                                    "UpBehavior": null,
+                                    "DownBehavior": null,
+                                    "LeftBehavior": null,
+                                    "RightBehavior": null,
+                                    "Behavior": "IdleL"
+                                }
+                            ],
+                            "PlayerNearbyBehaviorChanges": null,
+                            "RandomBehaviorChangeChance": 0.00,
+                            "RandomBehaviorChanges": null,
+                            "JumpLandBehaviorChanges": null
+                        },
+                        { // MARK: BiteRPrepare
+                            "Id": "BiteRPrepare",
+                            "IsSideBehavior": false,
+                            "RandomizeDirection": false,
+                            "Direction": "right",
+                            "WalkInDirection": false,
+                            "MoveSpeed": -1,
+                            "SoundOnStart": null,
+                            "SoundRangeFromBorder": -1,
+                            "SoundRange": -1,
+                            "SoundIsVoice": false,
+                            "Shake": 0,
+                            "Animation": [
+                                {
+                                    "Frame": 27,
+                                    "Duration": 400,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                }
+                            ],
+                            "LoopMode": "Hold",
+                            "AnimationMinimumLoops": -1,
+                            "AnimationMaximumLoops": -1,
+                            "AnimationEndBehaviorChanges": null,
+                            "Duration": 400,
+                            "MinimumDuration": -1,
+                            "MaximumDuration": -1,
+                            "TimeoutBehaviorChanges": [
+                                {
+                                    "Weight": 1.0,
+                                    "OutsideOnly": false,
+                                    "UpBehavior": null,
+                                    "DownBehavior": null,
+                                    "LeftBehavior": null,
+                                    "RightBehavior": null,
+                                    "Behavior": "BiteR"
+                                }
+                            ],
+                            "PlayerNearbyBehaviorChanges": null,
+                            "RandomBehaviorChangeChance": 0.00,
+                            "RandomBehaviorChanges": null,
+                            "JumpLandBehaviorChanges": null
+                        },
+                        { // MARK: BiteR
+                            "Id": "BiteR",
+                            "IsSideBehavior": true,
+                            "RandomizeDirection": false,
+                            "Direction": null,
+                            "WalkInDirection": false,
+                            "MoveSpeed": -1,
+                            "SoundOnStart": null,
+                            "SoundRangeFromBorder": -1,
+                            "SoundRange": -1,
+                            "SoundIsVoice": false,
+                            "Shake": 0,
+                            "Animation": [
+                                {
+                                    "Frame": 27,
+                                    "Duration": 200,
+                                    "HitGround": false,
+                                    "Jump": true,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 26,
+                                    "Duration": 400,
+                                    "HitGround": true,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                }
+                            ],
+                            "LoopMode": "Hold",
+                            "AnimationMinimumLoops": -1,
+                            "AnimationMaximumLoops": -1,
+                            "AnimationEndBehaviorChanges": null,
+                            "Duration": "-1",
+                            "MinimumDuration": 600,
+                            "MaximumDuration": 1200,
+                            "TimeoutBehaviorChanges": [
+                                {
+                                    "Weight": 1.0,
+                                    "OutsideOnly": false,
+                                    "UpBehavior": null,
+                                    "DownBehavior": null,
+                                    "LeftBehavior": null,
+                                    "RightBehavior": null,
+                                    "Behavior": "IdleR"
+                                }
+                            ],
+                            "PlayerNearbyBehaviorChanges": null,
+                            "RandomBehaviorChangeChance": 0.00,
+                            "RandomBehaviorChanges": null,
+                            "JumpLandBehaviorChanges": null
+                        },
+                        { // MARK: RestL
+                            "Id": "RestL",
+                            "IsSideBehavior": true,
+                            "RandomizeDirection": false,
+                            "Direction": "left",
+                            "WalkInDirection": false,
+                            "MoveSpeed": -1,
+                            "SoundOnStart": null,
+                            "SoundRangeFromBorder": -1,
+                            "SoundRange": -1,
+                            "SoundIsVoice": false,
+                            "Shake": 0,
+                            "Animation": [
+                                {
+                                    "Frame": 18,
+                                    "Duration": 1000,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 19,
+                                    "Duration": 1000,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                }
+                            ],
+                            "LoopMode": "Loop",
+                            "AnimationMinimumLoops": -1,
+                            "AnimationMaximumLoops": -1,
+                            "AnimationEndBehaviorChanges": null,
+                            "Duration": -1,
+                            "MinimumDuration": 6000,
+                            "MaximumDuration": 40000,
+                            "TimeoutBehaviorChanges": [
+                                {
+                                    "Weight": 1.0,
+                                    "OutsideOnly": false,
+                                    "UpBehavior": null,
+                                    "DownBehavior": null,
+                                    "LeftBehavior": null,
+                                    "RightBehavior": null,
+                                    "Behavior": "Walk"
+                                }
+                            ],
+                            "PlayerNearbyBehaviorChanges": null,
+                            "RandomBehaviorChangeChance": 0.00,
+                            "RandomBehaviorChanges": null,
+                            "JumpLandBehaviorChanges": null
+                        },
+                        { // MARK: RestR
+                            "Id": "RestR",
+                            "IsSideBehavior": true,
+                            "RandomizeDirection": false,
+                            "Direction": "right",
+                            "WalkInDirection": false,
+                            "MoveSpeed": -1,
+                            "SoundOnStart": null,
+                            "SoundRangeFromBorder": -1,
+                            "SoundRange": -1,
+                            "SoundIsVoice": false,
+                            "Shake": 0,
+                            "Animation": [
+                                {
+                                    "Frame": 18,
+                                    "Duration": 1000,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 19,
+                                    "Duration": 1000,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                }
+                            ],
+                            "LoopMode": "Loop",
+                            "AnimationMinimumLoops": -1,
+                            "AnimationMaximumLoops": -1,
+                            "AnimationEndBehaviorChanges": null,
+                            "Duration": -1,
+                            "MinimumDuration": 6000,
+                            "MaximumDuration": 40000,
+                            "TimeoutBehaviorChanges": [
+                                {
+                                    "Weight": 1.0,
+                                    "OutsideOnly": false,
+                                    "UpBehavior": null,
+                                    "DownBehavior": null,
+                                    "LeftBehavior": null,
+                                    "RightBehavior": null,
+                                    "Behavior": "Walk"
+                                }
+                            ],
+                            "PlayerNearbyBehaviorChanges": null,
+                            "RandomBehaviorChangeChance": 0.00,
+                            "RandomBehaviorChanges": null,
+                            "JumpLandBehaviorChanges": null
+                        }
+                    ],
+                    // Gifts
+                    "GiftChance": 1,
+                    "Gifts": [
+                        { // Radish
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 1,
+                            "QualifiedItemID": "(O)264",
+                            "Stack": 1
+                        },
+                        { // Hazelnut
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 1,
+                            "QualifiedItemID": "(O)408",
+                            "Stack": 1
+                        },
+                        { // Fiddlehead Fern
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 1,
+                            "QualifiedItemID": "(O)259",
+                            "Stack": 1
+                        },
+                        { // Common Mushroom
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 1,
+                            "QualifiedItemID": "(O)404",
+                            "Stack": 1
+                        },
+                        { // Red Mushroom
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 0.6,
+                            "QualifiedItemID": "(O)420",
+                            "Stack": 1
+                        },
+                        { // Purple Mushroom
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 0.5,
+                            "QualifiedItemID": "(O)422",
+                            "Stack": 1
+                        },
+                        { // Wool
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 0.4,
+                            "QualifiedItemID": "(O)440",
+                            "Stack": 1
+                        },
+                        { // Gold Ore
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 0.15,
+                            "QualifiedItemID": "(O)384",
+                            "Stack": 5
+                        },
+                        {
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 0.15,
+                            "QualifiedItemID": "(O)384",
+                            "Stack": 10
+                        },
+                        { // Rabbit's Foot
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 0.2,
+                            "QualifiedItemID": "(O)446",
+                            "Stack": 1
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "Primm.RabiteGet/m 1000/t 600 930/d Mon Tue Thu Sat Sun/w sunny/h rabite/H": "continue/64 15/farmer 64 15 2 Marnie 65 16 0 pet 63 16 1/skippable/
+                faceDirection PetActor 1/pause 600/
+                animate PetActor false false 300 19 18 19 25 19 18 19 25/pause 2400/
+                animate PetActor false true 150 25/pause 600/
+                speak Marnie \"{{i18n:AdoptEvent.Marnie.0}}$h#$b#{{i18n:AdoptEvent.Marnie.1}}\"/faceDirection Marnie 3/pause 400/
+                animate PetActor false false 150 5 6 7 18 19 25/pause 1500/
+                animate PetActor false false 150 19 25/pause 100/
+                playPetSound Primm.Rabite/pause 800/
+                faceDirection Marnie 0/speak Marnie \"{{i18n:AdoptEvent.Marnie.2}}$h\"/pause 500/
+                showFrame PetActor 19/pause 500/
+                showFrame PetActor 18/playPetSound Primm.Rabite/shake PetActor 150/pause 1500/
+                speak Marnie \"{{i18n:AdoptEvent.Marnie.3}}$h#$b#{{i18n:AdoptEvent.Marnie.4}}$h\"/catQuestion/pause 1000/
+                faceDirection Marnie 3/speak Marnie \"{{i18n:AdoptEvent.Marnie.5}}\"/pause 500/
+                showFrame PetActor 19/pause 500/
+                showFrame PetActor 25/shake PetActor 100/playPetSound Primm.Rabite/pause 800/
+                animate PetActor false false 100 4 23 31 22 30 21 0 20 4 23 31 22 30 21 0 20 4 23 31 22 30 21 0/pause 200/
+                globalFade/viewport -1000 -1000/end"
+            }
+        }
+    ]
+}

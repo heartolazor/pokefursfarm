@@ -1,0 +1,35 @@
+{
+"Changes": [
+
+	{
+		"LogName": "Hiro Schedule",
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Hiro",
+		"Entries": {
+
+			//Regular Schedule
+			"spring": "610 {{ModId}}_HiroHouse 7 13 0/900 {{ModId}}_HiroHouse 12 5 3/1200 {{ModId}}_HiroHouse 7 13 2/1600 {{ModId}}_AxolotlTown 10 56 3/2000 {{ModId}}_HiroHouse 2 12 2 hiro_sleep",
+			"summer": "610 {{ModId}}_AxolotlTown 10 56 3/900 {{ModId}}_AxolotlTown 105 45 1/1300 {{ModId}}_AxolotlTown 79 28 2/1600 {{ModId}}_DrinkShop 2 6 2/2000 {{ModId}}_HiroHouse 2 12 2 hiro_sleep",
+			"fall": "610 {{ModId}}_AxolotlTown 15 74 0/1000 {{ModId}}_AxolotlTown 10 56 3/1500 {{ModId}}_AxolotlTown 87 82 1/2000 {{ModId}}_HiroHouse 2 12 2 hiro_sleep",
+			"winter": "610 {{ModId}}_HiroHouse 7 13 0/900 {{ModId}}_AxolotlTown 40 105 1/1100 {{ModId}}_AxolotlTown 15 74 0/2000 {{ModId}}_HiroHouse 2 12 2 hiro_sleep",
+			"rain": "610 {{ModId}}_HiroHouse 7 13 0 \"Strings\\schedules\\Hiro:rain\"/1200 {{ModId}}_HiroHouse 12 5 0 \"Strings\\schedules\\Hiro:rain\"/1600 {{ModId}}_HiroHouse 7 13 0/2000 {{ModId}}_HiroHouse 2 12 2 hiro_sleep",
+			"Fri": "610 {{ModId}}_AxolotlTown 15 74 0/900 {{ModId}}_HiroHouse 12 5 3/1200 {{ModId}}_HiroHouse 7 13 2/1600 {{ModId}}_AxolotlCommunityCenter 10 14 1/2200 {{ModId}}_HiroHouse 2 12 2 hiro_sleep",
+                        "Wed": "610 {{ModId}}_AxolotlTown 10 56 3/1000 {{ModId}}_AxolotlTown 31 43 0/2000 {{ModId}}_HiroHouse 2 12 2 hiro_sleep",
+                        "fall_28": "610 {{ModId}}_AxolotlTown 15 74 0/1000 {{ModId}}_AxolotlTown 10 56 3/1500 {{ModId}}_AxolotlTown 87 82 1/1850 {{ModId}}_AxolotlTown 25 57 1/2350 {{ModId}}_HiroHouse 2 12 2 hiro_sleep",
+                        "winter_25": "610 {{ModId}}_HiroHouse 7 13 0/900 {{ModId}}_AxolotlTown 36 54 1/2000 {{ModId}}_HiroHouse 2 12 2 hiro_sleep",
+                        "summer_7": "610 {{ModId}}_AxolotlTown 10 56 3/900 {{ModId}}_AxolotlTown 105 45 1/1300 {{ModId}}_AxolotlTown 79 28 2/1600 {{ModId}}_DrinkShop 2 6 2/1800 {{ModId}}_AxolotlTown 31 79 1/2350 {{ModId}}_HiroHouse 2 12 2 hiro_sleep",
+                        "spring_21": "610 {{ModId}}_HiroHouse 7 13 0/800 {{ModId}}_AxolotlTown 36 80 2/2000 {{ModId}}_HiroHouse 2 12 2 hiro_sleep",
+			}
+	},
+{
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Hiro",
+		"Entries": {
+			"Sun": "610 {{ModId}}_HiroHouse 7 13 0/900 {{ModId}}_AxolotlTownSouth 80 38 0/2000 {{ModId}}_HiroHouse 2 12 2 hiro_sleep",
+			},
+		"When": {
+			"HasSeenEvent: hostPlayer |contains=98890063": true
+                        },
+	},
+]
+}

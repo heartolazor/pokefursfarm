@@ -1,0 +1,1025 @@
+{
+    "Format": "2.0",
+	"Changes": [
+	
+	{
+		"LogName": "Load images",
+			"Action": "Load",
+			"Target": "Mods/otohime.tamafarm/CandyPakupaku, Mods/otohime.tamafarm/candyhead, Mods/otohime.tamafarm/Chapitchi, Mods/otohime.tamafarm/chaphead, Mods/otohime.tamafarm/Dorotchi, Mods/otohime.tamafarm/dorohead, Mods/otohime.tamafarm/Ginjirotchi, Mods/otohime.tamafarm/ginjihead, Mods/otohime.tamafarm/Himespetchi, Mods/otohime.tamafarm/himespehead, Mods/otohime.tamafarm/Himetchi, Mods/otohime.tamafarm/himehead, Mods/otohime.tamafarm/Ichigotchi, Mods/otohime.tamafarm/ichihead, Mods/otohime.tamafarm/Kuchipatchi, Mods/otohime.tamafarm/kuchihead, Mods/otohime.tamafarm/KuroMametchi, Mods/otohime.tamafarm/kurohead, Mods/otohime.tamafarm/Kyawatchi, Mods/otohime.tamafarm/kyahead, Mods/otohime.tamafarm/Lovelitchi, Mods/otohime.tamafarm/lovehead, Mods/otohime.tamafarm/Mametchi, Mods/otohime.tamafarm/mamehead, Mods/otohime.tamafarm/Memetchi, Mods/otohime.tamafarm/memehead, Mods/otohime.tamafarm/Milktchi, Mods/otohime.tamafarm/milkhead, Mods/otohime.tamafarm/Mimitchi, Mods/otohime.tamafarm/mimihead, Mods/otohime.tamafarm/Violetchi, Mods/otohime.tamafarm/violethead, Mods/otohime.tamafarm/Weeptchi, Mods/otohime.tamafarm/weephead, Mods/otohime.tamafarm/Woopatchi, Mods/otohime.tamafarm/woophead, Mods/otohime.tamafarm/Yumecantchi, Mods/otohime.tamafarm/yumecanhead, Mods/otohime.tamafarm/Yumemitchi, Mods/otohime.tamafarm/yumehead, Mods/otohime.tamafarm/Curltchi, Mods/otohime.tamafarm/curlhead",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+                "LogName": "Animal Data",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"otohime.candypakupaku": {
+				"DisplayName": "Candy Pakupaku",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\candyhead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Candy Pakupaku",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.candypakupaku_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "243"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.candypakupaku_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "279"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\CandyPakupaku",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},			
+			"otohime.chapitchi": {
+				"DisplayName": "Chapitchi",
+				"House": "Coop",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\chaphead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Chapitchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Coop",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.chapitchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "408"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.chapitchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "607"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\Chapitchi",
+				"UseFlippedRightForLeft": false,
+				"SpriteWidth": 16,
+				"SpriteHeight": 16,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},	
+			"otohime.curltchi": {
+				"DisplayName": "Curltchi",
+				"House": "Coop",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\curlhead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Curltchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Coop",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.curltchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "408"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.curltchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "607"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\Curltchi",
+				"UseFlippedRightForLeft": false,
+				"SpriteWidth": 16,
+				"SpriteHeight": 16,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+			"otohime.yumecantchi": {
+				"DisplayName": "Yumecantchi",
+				"House": "Coop",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\yumecanhead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Yumecantchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Coop",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.yumecantchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "243"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.yumecantchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "221"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\Yumecantchi",
+				"UseFlippedRightForLeft": false,
+				"SpriteWidth": 16,
+				"SpriteHeight": 16,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.dorotchi": {
+				"DisplayName": "Dorotchi",
+				"House": "Barn",
+				"Gender": "MaleOrFemale",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\dorohead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Dorotchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.dorotchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "156"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.dorotchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "561"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\Dorotchi",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.ginjirotchi": {
+				"DisplayName": "Ginjirotchi",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\ginjihead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Ginjirotchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.ginjirotchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "350"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.ginjirotchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "228"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\Ginjirotchi",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+			"otohime.himespetchi": {
+				"DisplayName": "Himespetchi",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\himespehead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Himespetchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.himespetchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "486"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.himespetchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "268"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\Himespetchi",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+			"otohime.himetchi": {
+				"DisplayName": "Himetchi",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\himehead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Himetchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.himetchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "Mixed Flower Seeds"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.himetchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "221"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\Himetchi",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+			"otohime.ichigotchi": {
+				"DisplayName": "Ichigotchi",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\ichihead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Ichigotchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.ichigotchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "745"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.ichigotchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "400"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\Ichigotchi",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.kuchipatchi": {
+				"DisplayName": "Kuchipatchi",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\kuchihead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Kuchipatchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.kuchipatchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "206"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.kuchipatchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "241"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\Kuchipatchi",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+			"otohime.kuromametchi": {
+				"DisplayName": "KuroMametchi",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\kurohead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "KuroMametchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.kuromametchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "767"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.kuromametchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "769"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\KuroMametchi",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.kyawatchi": {
+				"DisplayName": "Kyawatchi",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\kyahead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Kyawatchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.kyawatchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "636"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.kyawatchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "221"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\Kyawatchi",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+			"otohime.lovelitchi": {
+				"DisplayName": "Lovelitchi",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\lovehead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Lovelitchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.lovelitchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "233"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.lovelitchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "221"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\Lovelitchi",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.mametchi": {
+				"DisplayName": "Mametchi",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\mamehead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Mametchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.mametchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "112"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.mametchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "122"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\Mametchi",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.memetchi": {
+				"DisplayName": "Memetchi",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\memehead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Memetchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.memetchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "224"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.memetchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "228"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\Memetchi",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.milktchi": {
+				"DisplayName": "Milktchi",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\milkhead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Milktchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.milktchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "184"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.milktchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "186"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\Milktchi",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.mimitchi": {
+				"DisplayName": "Mimitchi",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\mimihead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Mimitchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.mimitchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "112"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.mimitchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "122"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\Mimitchi",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+			"otohime.violetchi": {
+				"DisplayName": "Violetchi",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\violethead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Violetchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.violetchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "425"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.violetchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "595"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\Violetchi",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+			"otohime.weeptchi": {
+				"DisplayName": "Weeptchi",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\weephead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Weeptchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.weeptchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "84"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.weeptchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "561"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\Weeptchi",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+			"otohime.woopatchi": {
+				"DisplayName": "Woopatchi",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\woophead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Woopatchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.woopatchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "394"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.woopatchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "138"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\Woopatchi",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.yumemitchi": {
+				"DisplayName": "Yumemitchi",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.tamafarm\\yumehead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Yumemitchi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "otohime.yumemitchi_Default",
+						"MinimumFriendship": 0,
+						"ItemId": "254"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.yumemitchi_deluxeDefault",
+						"MinimumFriendship": 2,
+						"ItemId": "221"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.tamafarm\\Yumemitchi",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+		},
+	},
+],
+}		

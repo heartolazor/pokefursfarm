@@ -1,0 +1,152 @@
+{
+  "Format": "2.2.0",
+
+
+    "ConfigSchema": {
+
+      "EnableThisMod": {
+        "AllowValues": "true, false",
+        "Default": "true"
+      },
+      "SubmarineAction": {
+        "AllowValues": "Cutscene(OnceADay), Cutscene(PlaybackEachTime), WarpInstantlyOtherSide, WarpInsideSubmarine",
+        "Default": "Cutscene(OnceADay)"
+      }
+
+    },//▼"ConfigSchema"の終了▼
+
+
+    "DynamicTokens": [
+
+      {
+        "Name":"NightTime",
+        "Value": "(('{{Season}}' = 'spring' OR '{{Season}}' = 'summer') AND {{Time}} >= 2000 AND {{Time}} <= 2600) OR ('{{Season}}' = 'fall' AND {{Time}} >= 1900 AND {{Time}} <= 2600) OR ('{{Season}}' = 'winter' AND {{Time}} >= 1800 AND {{Time}} <= 2600)",
+      },
+
+      //●以下、イベントのフラグ削除のタイミング用のトークン
+      {
+        "Name":"Trigger_EvRemoveTiming",
+        "Value": "DayStarted",
+        "When": {
+          "SubmarineAction": "Cutscene(OnceADay), WarpInstantlyOtherSide, WarpInsideSubmarine"
+        }
+      },
+      {
+        "Name":"Trigger_EvRemoveTiming",
+        "Value": "LocationChanged",
+        "When": {
+          "SubmarineAction": "Cutscene(PlaybackEachTime)"
+        }
+      },
+
+      //●以下、イベントの明るさ用のトークン
+      {//◆バレー晴れ(日中)
+        "Name":"DT_EventAmbientLight_Beach",
+        "Value": "80 80 70",
+        "When": {
+          "Weather": "Sun, Snow, Wind",
+          "Time": "{{range:600,1850}}"
+        }
+      },
+      {//◆バレー悪天候(日中)
+        "Name":"DT_EventAmbientLight_Beach",
+        "Value": "120 120 120",
+        "When": {
+          "Weather": "Rain, Storm, GreenRain",
+          "Time": "{{range:600,1850}}"
+        }
+      },
+      {//◆バレー夜(天気共通)
+        "Name":"DT_EventAmbientLight_Beach",
+        "Value": "140 140 140",
+        "When": {
+          "Time": "{{range:1900,2600}}"
+        }
+      },
+      {//◆アイランド晴れ(日中)
+        "Name":"DT_EventAmbientLight_Island",
+        "Value": "80 80 70",
+        "When": {
+          "Weather: island": "Sun",
+          "Time": "{{range:600,1850}}"
+        }
+      },
+      {//◆アイランド悪天候(日中)
+        "Name":"DT_EventAmbientLight_Island",
+        "Value": "120 120 120",
+        "When": {
+          "Weather: island": "Rain",
+          "Time": "{{range:600,1850}}"
+        }
+      },
+      {//◆アイランド夜(天気共通)
+        "Name":"DT_EventAmbientLight_Island",
+        "Value": "140 140 140",
+        "When": {
+          "Time": "{{range:1900,2600}}"
+        }
+      }
+
+    ],//▼"DynamicTokens"の終了▼
+
+
+    "CustomLocations": [
+
+      {
+        "Name": "Custom_MySubmarine_GoIsland",
+        "FromMapFile": "assets/tmx/MySubmarine_GoIsland.tmx"
+      },
+      {
+        "Name": "Custom_MySubmarine_GoBeach",
+        "FromMapFile": "assets/tmx/MySubmarine_GoBeach.tmx"
+      },
+      {
+        "Name": "Custom_MySubmarine_EventSeen_Beach",
+        "FromMapFile": "assets/tmx/MySubmarine_EventSeen_Beach.tmx"
+      },
+      {
+        "Name": "Custom_MySubmarine_EventSeen_Island",
+        "FromMapFile": "assets/tmx/MySubmarine_EventSeen_Island.tmx"
+      },
+
+    ],//▼"CustomLocations"の終了▼
+
+
+    "Changes": [
+
+
+  //■■■タイルシートの読み込み■■■
+      {
+        "Action": "Load",
+        "Target": "Maps/spring_MySubmarine,
+                   Maps/summer_MySubmarine,
+                   Maps/fall_MySubmarine,
+                   Maps/winter_MySubmarine,
+                   Maps/Island_MySubmarine,
+                   Maps/z_MySubmarine,
+                   Maps/z_MySubmarine_IslandBeach,
+                   Characters/MySubmarine_Event_A,
+                   Characters/MySubmarine_Event_B,
+                   Characters/MySubmarine_Event_C,
+                  ",
+        "FromFile": "assets/png/{{TargetWithoutPath}}.png",
+        "When": {
+          "EnableThisMod": "true"
+        }
+      },
+
+  //■■■各種json読み込み■■■
+      {
+        "Action": "Include",
+        "FromFile": "assets/json/Edit_Common_Vanilla.json,
+                     assets/json/Edit_Mod.json,
+                     assets/json/Edit_EventSeen.json
+                    ",
+        "When": {
+          "EnableThisMod": "true"
+        }
+      }
+
+
+    ]//▼"Changes"の終了▼
+}

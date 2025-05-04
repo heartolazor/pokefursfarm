@@ -1,0 +1,109 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Paul": {
+                    "DisplayName": "Paul",
+                    "Gender": "Male",
+                    "Age": "Adult",
+		"Manner": "Polite",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Positive",
+			"Manner": "Polite",
+                    "BirthSeason": "Fall",
+                    "BirthDay": "13",
+                    "HomeRegion": "Town",
+                    "CanSocialize": "True",
+		    "CanVisitIslandCondition": "WEATHER TOWN Rain, DAY_OF_WEEK Wed",
+
+        	"SpouseRoom": {
+            "MapAsset": "PaulSpouseRoom",
+            "MapSourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 6,
+              "Height": 9
+            }
+          },
+                    "CanBeRomanced": "True",
+                    "CanReceiveGifts": "True",
+                    "SocialTab": "UnknownUntilMet",
+                    "IntroductionsQuest": "False",
+                    "ItemDeliveryQuests": "True",
+                    "DumpsterDiveEmote": "8",
+		    "DumpsterDiveFriendshipEffect": "0",
+                    "WinterStarParticipant": "True",
+			"Appearance": [
+                        
+                        {
+                            "ID": "Spring Outfit",
+                            "Season": "Spring",
+                            "Precedence": 0,
+                            "Weight": 1,
+                            "Portrait": "{{InternalAssetKey: assets/Portraits/Paul_Spring.png}}",
+                            "Sprite": "{{InternalAssetKey: assets/Characters/Paul_Spring.png}}"
+                        },
+                        
+                        {
+                            "ID": "Summer Outfit",
+                            "Season": "Summer",
+                            "Precedence": 0,
+                            "Weight": 1,
+                            "Portrait": "{{InternalAssetKey: assets/Portraits/Paul_Summer.png}}",
+                            "Sprite": "{{InternalAssetKey: assets/Characters/Paul_Summer.png}}"
+                        },
+                        
+                        {
+                            "ID": "Fall Outfit",
+                            "Season": "Fall",
+                            "Precedence": 0,
+                            "Weight": 1,
+                            "Portrait": "{{InternalAssetKey: assets/Portraits/Paul_Fall.png}}",
+                            "Sprite": "{{InternalAssetKey: assets/Characters/Paul_Fall.png}}"
+                        },
+                        
+                        {
+                            "ID": "Winter Outfit",
+                            "Season": "Winter",
+                            "Precedence": 0,
+                            "Weight": 1,
+                            "Portrait": "{{InternalAssetKey: assets/Portraits/Paul_Winter.png}}",
+                            "Sprite": "{{InternalAssetKey: assets/Characters/Paul_Winter}}"
+                        },
+{
+                           	"Id": "Work Outfit",
+        			"Condition": "LOCATION_NAME Target Hospital",
+        			"Indoors": true,
+       				 "Outdoors": true,
+				"Precedence": -1000,
+        			"Portrait": "{{InternalAssetKey: assets/Portraits/Paul_Work.png}}",
+        			"Sprite": "{{InternalAssetKey: assets/Characters/Paul_Work.png}}"
+                        },
+{
+                           	"Id": "Beach Outfit",
+        			"Condition": "LOCATION_NAME Target Beach, SEASON Summer, TIME 0600 1700, PLAYER_HAS_SEEN_EVENT Any 50000",
+        			"Indoors": true,
+       				 "Outdoors": true,
+        			"Precedence": -1000,
+				"Portrait": "{{InternalAssetKey: assets/Portraits/Paul_Beach.png}}",
+        			"Sprite": "{{InternalAssetKey: assets/Characters/Paul_Beach.png}}"
+                        }
+                    ],
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "Custom_ginnyclaire_PaulRoom",
+                            "Tile": {
+                                "X": 3,
+                                "Y": 8
+                            },
+                            "Direction": "left"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

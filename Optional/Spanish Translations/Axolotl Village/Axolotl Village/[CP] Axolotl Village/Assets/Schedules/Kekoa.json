@@ -1,0 +1,30 @@
+{
+"Changes": [
+
+	{
+		"LogName": "Kekoa Schedule",
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Kekoa",
+		"Entries": {
+
+			//Regular Schedule
+			"spring": "610 {{ModId}}_AxolotlTown 78 79 3/1000 {{ModId}}_AxolotlCommunityCenter 11 14 1/1300 {{ModId}}_AxolotlTown 81 38 2/2000 {{ModId}}_PinkHouse 2 8 2 kekoa_sleep",
+			"summer": "610 {{ModId}}_AxolotlTown 78 79 3/1000 {{ModId}}_AxolotlTown 106 36 2/1300 {{ModId}}_AxolotlTown 81 38 2/2000 {{ModId}}_PinkHouse 2 8 2 kekoa_sleep",
+			"fall": "610 {{ModId}}_AxolotlTown 78 79 3/1000 {{ModId}}_AxolotlCommunityCenter 11 14 1/1300 {{ModId}}_AxolotlTown 81 38 2/2000 {{ModId}}_PinkHouse 2 8 2 kekoa_sleep",
+			"winter": "610 {{ModId}}_AxolotlTown 78 79 3/1000 {{ModId}}_AxolotlCommunityCenter 11 14 1/1300 {{ModId}}_AxolotlTown 81 38 2/2000 {{ModId}}_PinkHouse 2 8 2 kekoa_sleep",
+                        "Fri": "610 {{ModId}}_AxolotlTown 78 79 3/1000 {{ModId}}_AxolotlTown 106 36 2/1300 {{ModId}}_AxolotlTown 81 38 2/2000 {{ModId}}_PinkHouse 2 8 2 kekoa_sleep",
+			"rain": "610 {{ModId}}_PinkHouse 8 9 1/1000 {{ModId}}_PinkHouse 8 9 1/2000 {{ModId}}_PinkHouse 2 8 2 kekoa_sleep"
+			}
+	},
+{
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Kekoa",
+		"Entries": {
+			"Sun": "610 {{ModId}}_AxolotlTown 78 79 3/900 {{ModId}}_AxolotlTownSouth 77 40 0 \"Strings\\schedules\\Kekoa:Sun\"/2000 {{ModId}}_PinkHouse 2 8 2 kekoa_sleep",
+			},
+		"When": {
+			"HasSeenEvent: hostPlayer |contains=98890063": true
+                        },
+	},
+]
+}

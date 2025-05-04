@@ -1,0 +1,108 @@
+{
+
+	"Changes": [
+		
+		{
+			"LogName": "Eloise's Dropbox",
+			"Action": "EditMap",
+			"Target": "Maps/EastScarp_Village", 
+			"MapTiles": [
+				{
+					"Position": { "X": 23, "Y": 35}, 
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "DropBox EloiseMailbox"
+					}
+				}
+			]
+		},
+		{
+			"LogName": "Special Order: East Scarp Eloise and Jorts",
+			"Action": "EditData",
+			"Target": "Strings/SpecialOrderStrings",
+			"Entries": {
+				"Eloise.Jortsseeds.Name": "Semillas para los Pájaros",
+				"Eloise.Jortsseeds.Ordertext": "Quiero alimentar a los pájaros para poder observarlos. Por favor, tráeme un montón de semillas para que pueda clasificarlas. Puedes entregarlas en mi buzón. Gracias.^^(Hay una huella de barro al final de este pedido)",
+				"Eloise.Jortsseeds.Objective": "Entrega 100 semillas mixtas para Eloise (y un gato) en su buzón.",
+			},
+		},
+		{
+			"LogName": "Special Order: East Scarp Eloise and Jorts",
+			"Action": "EditData",
+			"Target": "Data/SpecialOrders",
+			"Entries": {
+				"Eloise.Jortsseeds": { 
+					"Name": "[Eloise.Jortsseeds.Name]", 
+					"Requester": "Eloise", 
+					"Duration": "TwoWeeks", 
+					"Repeatable": "False", 
+					"RequiredTags": "", 
+					"OrderType": "{{EJSBoardType}}", 
+					"SpecialRule": "",
+					"Text": "[Eloise.Jortsseeds.Ordertext]", 
+					"ItemToRemoveOnEnd": null, 
+					"MailToRemoveOnEnd": null, 
+					"RandomizedElements": null, 
+					"Objectives": [
+						{
+							"Type": "Donate", 
+							"Text": "[Eloise.Jortsseeds.Objective]",
+							"RequiredCount": "100",
+							"Data": {
+								"DropBox": "EloiseMailbox", 
+								"DropBoxGameLocation": "EastScarp_Village",
+								"DropBoxIndicatorLocation": "23 34",
+								"AcceptedContextTags": "item_mixed_seeds", 
+							}
+						},
+					],
+					"Rewards": [ 
+						{
+							"Type": "Money",
+							"Data": {
+								"Amount": "2000",
+							}
+						},
+						{
+							"Type": "Friendship",
+							"Data": {
+								"Amount": "100", 
+								"TargetName": "Eloise", 
+							},
+						},
+						{
+							"Type": "Friendship",
+							"Data": {
+								"Amount": "50", 
+								"TargetName": "JortsCat", 
+							},
+						},
+						{
+							"Type": "Friendship",
+							"Data": {
+								"Amount": "25", 
+								"TargetName": "Jacob", 
+							},
+						},
+						{
+							"Type": "Mail",
+							"Data": {
+								"MailReceived": "EloiseJortsBirds", 
+								"NoLetter": "true" 
+							}
+						},
+						
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",  
+			"Target": "Data/Events/EastScarp_Village",
+			"Entries": {
+				// Reward event    
+				"10950110/n EloiseJortsBirds": "jaunty/20 20/farmer -999 -999 1 JortsCat -998 -999 1 Eloise 4 4 0/skippable/changeToTemporaryMap EastScarp_BirdHide/viewport 4 4/pause 2000/playSound SpringBirds/pause 1000/speak Eloise \"¡Ése es un cardenal! ¡Sabía que les encantarían esas semillas de girasol!$h\"/pause 1000/playsound SpringBirds/pause 500/speak Eloise \"¡Y un azulillo!$3#$b#¡Oh, va directo a por las bellotas!\"/pause 1500/warp JortsCat 3 7/faceDirection JortsCat 0/playSound doorClose/faceDirection Eloise 2/jump Eloise/speak JortsCat \"¡Hola, Eloise! ¿Qué haces?$h\"/speak Eloise \"¡Shh! ¡Vas a asustar a los pájaros!$3\"/speak JortsCat \"¿Pájaros? ¿Has encontrado algunos amigos? ¡Quiero verlos!\"/move JortsCat 0 -3 0/move JortsCat -1 0 0 true/positionOffset JortsCat 0 -14 true/faceDirection Eloise 3 false/speak Eloise \"¡No! ¡No puedes lastimar a los pájaros!\"/faceDirection JortsCat 1/pause 500/speak JortsCat \"¿Por qué iba a hacerles daño a mis amigos?$4\"/pause 1000/emote Eloise 40/speak Eloise \"Tienes que estar muy, muy callado, ¿vale?$3\"/speak JortsCat \"¡Soy un ninja!$h\"/pause 1000/faceDirection Eloise 0/pause 500/faceDirection JortsCat 0/playSound SpringBirds/pause 500/speak JortsCat \"¿Cómo se llama ese amigo?\"/speak Eloise \"Es un cardenal.\"/speak JortsCat \"¡Hola, cardenal! ¡Nunca había visto a uno tan de cerca!\"/pause 1000/speak JortsCat \"¿Cuál es ese? El rojo.\"/speak Eloise \"Oh, también es un cardenal. Un macho.\"/speak JortsCat \"¿Sabes que es un macho?$4\"/speak Eloise \"Sí, los cardenales hembra son marrones y los cardenales macho son rojos.#$b#Los cardenales machos tienen colores llamativos para atraer a las hembras. Papá dice que se llama 'dimorfismo sexual'.\"/emote JortsCat 20/speak JortsCat \"¡Vaya, qué genial! Así que los chicos presumen para las chicas, ¿eh?$h\"/speak Eloise \"¡Seguro que sí!$h\"/speak JortsCat \"Vaya, Eloise, eres muy lista. Apuesto a que lo sabes todo sobre los pajaritos amigos.\"/speak Eloise \"...$3#$b#¡Je je! ¡Gracias, Jorts!$h\"/speak JortsCat \"Enséñame muchas cosas, ¿vale?\"/speak Eloise \"¡Claro que sí!$h\"/pause 1000/playSound SpringBirds/speak JortsCat \"¿Y cuál es ese de ahí?\"/speak Eloise \"Oh, eso es un gorrión común, se puede decir por la raya....\"/pause 1000/end",
+			}
+		}
+	]
+}	

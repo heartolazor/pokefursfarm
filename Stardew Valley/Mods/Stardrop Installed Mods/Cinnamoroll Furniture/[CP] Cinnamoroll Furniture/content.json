@@ -1,0 +1,39 @@
+{
+	"Format": "2.1.0",
+	"Changes": [
+		{
+            "Action": "EditData",
+            "Target": "Data/AdditionalWallpaperFlooring",
+            "Entries": {
+                "{{ModId}}_Flooring": {
+                    "ID": "{{ModId}}_Flooring",
+                    "Texture": "Mods/CinnaFloors",
+                    "IsFlooring": true,
+                    "Count": 14
+                }
+            }
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/AdditionalWallpaperFlooring",
+            "Entries": {
+                "{{ModId}}_Wallpaper": {
+                    "ID": "{{ModId}}_Wallpaper",
+                    "Texture": "Mods/CinnaWalls",
+                    "IsFlooring": false,
+                    "Count": 32
+                }
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/CinnaFloors",
+            "FromFile": "assets/flooring.png",	
+        },
+		 {
+            "Action": "Load",
+            "Target": "Mods/CinnaWalls",
+            "FromFile": "assets/wallpaper.png"
+        }
+    ]
+}

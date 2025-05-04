@@ -1,0 +1,913 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load fish sprites",
+      "Action": "Load",
+      "Target": "Mods/otohime.pokemonfish/alomomola, Mods/otohime.pokemonfish/barboach, Mods/otohime.pokemonfish/blueorb, Mods/otohime.pokemonfish/chiyu, Mods/otohime.pokemonfish/clamperl, Mods/otohime.pokemonfish/corsola, Mods/otohime.pokemonfish/ctatsugiri, Mods/otohime.pokemonfish/dratini, Mods/otohime.pokemonfish/dtatsugiri, Mods/otohime.pokemonfish/feebas, Mods/otohime.pokemonfish/ffrillish, Mods/otohime.pokemonfish/finneon, Mods/otohime.pokemonfish/gcorsola, Mods/otohime.pokemonfish/goldeen, Mods/otohime.pokemonfish/grimer, Mods/otohime.pokemonfish/heartscale, Mods/otohime.pokemonfish/horsea, Mods/otohime.pokemonfish/inkay, Mods/otohime.pokemonfish/kyogre, Mods/otohime.pokemonfish/lotad, Mods/otohime.pokemonfish/luvdisc, Mods/otohime.pokemonfish/magikarp, Mods/otohime.pokemonfish/mareanie, Mods/otohime.pokemonfish/mfrillish, Mods/otohime.pokemonfish/poliwag, Mods/otohime.pokemonfish/pyukumuku, Mods/otohime.pokemonfish/sandygast, Mods/otohime.pokemonfish/sclamperl, Mods/otohime.pokemonfish/scorsola, Mods/otohime.pokemonfish/shellder, Mods/otohime.pokemonfish/slotad, Mods/otohime.pokemonfish/sluvdisc, Mods/otohime.pokemonfish/smagikarp, Mods/otohime.pokemonfish/smareanie, Mods/otohime.pokemonfish/spyukumuku, Mods/otohime.pokemonfish/ssandygast, Mods/otohime.pokemonfish/sshellder, Mods/otohime.pokemonfish/sstaryu, Mods/otohime.pokemonfish/staryu, Mods/otohime.pokemonfish/statsugiri, Mods/otohime.pokemonfish/stunfisk, Mods/otohime.pokemonfish/surskit, Mods/otohime.pokemonfish/swiglett, Mods/otohime.pokemonfish/swooper, Mods/otohime.pokemonfish/tadbulb, Mods/otohime.pokemonfish/tentacool, Mods/otohime.pokemonfish/trubbish, Mods/otohime.pokemonfish/tympole, Mods/otohime.pokemonfish/tynamo, Mods/otohime.pokemonfish/wiglett, Mods/otohime.pokemonfish/wishiwashi, Mods/otohime.pokemonfish/wooper",
+      "FromFile": "assets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "Aquarium Sprites",
+      "Action": "Load",
+      "Target": "Mods/otohime.pokemonfish/AquariumFish",
+      "FromFile": "assets/AquariumSprites.png",
+    }, 
+    {
+      "LogName": "Objects Data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+         "{{ModId}}_Alomomola": {
+          "Name": "Alomomola",
+          "DisplayName": "Alomomola",
+          "Description": "They float upon the open sea. Many water Pokémon gather in the area around Alomomola.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 90,
+          "Texture": "Mods\\otohime.pokemonfish\\alomomola",
+          "SpriteIndex": "0",
+          "Edibility": 40,
+          "ContextTags": [
+                        "color_pink",
+                        "fish_alomomola",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+         "{{ModId}}_Barboach": {
+          "Name": "Barboach",
+          "DisplayName": "Barboach",
+          "Description": "It coats its entire body with a slimy fluid so it can squirm and slip away if grabbed.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 90,
+          "Texture": "Mods\\otohime.pokemonfish\\barboach",
+          "SpriteIndex": "0",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_blue",
+                        "fish_barboach",
+                        "fish_river"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Blue_Orb": {
+          "Name": "Blue Orb",
+          "DisplayName": "Blue Orb",
+          "Description": "A blue, glowing orb said to contain an ancient power.",
+          "Type": "Crafting",
+          "Category": -21,
+          "Price": 10000,
+          "Texture": "Mods\\otohime.pokemonfish\\blueorb",
+          "SpriteIndex": "0",
+          "Edibility": -300,
+          "ContextTags": [
+                        "color_blue",
+                        "not_placeable"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Chi_Yu": {
+          "Name": "Chi-Yu",
+          "DisplayName": "Chi-Yu",
+          "Description": "The envy accumulated within curved beads that sparked multiple conflicts has clad itself in fire and become a Pokémon.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 1000,
+          "Texture": "Mods\\otohime.pokemonfish\\chiyu",
+          "SpriteIndex": "0",
+          "Edibility": 50,
+          "ContextTags": [
+                        "color_red",
+                        "fish_chiyu",
+                        "fish_ocean",
+                        "fish_legendary"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Clamperl": {
+          "Name": "Clamperl",
+          "DisplayName": "Clamperl",
+          "Description": "It is protected by a sturdy shell. Once in a lifetime, it makes a magnificent pearl.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 150,
+          "Texture": "Mods\\otohime.pokemonfish\\clamperl",
+          "SpriteIndex": "0",
+          "Edibility": 40,
+          "ContextTags": [
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Corsola": {
+          "Name": "Corsola",
+          "DisplayName": "Corsola",
+          "Description": "Coral branches grow from its head. They break off quite easily, but they grow back in about three days.",
+          "Type": "Basic",
+          "Category": -23,
+          "Price": 100,
+          "Texture": "Mods\\otohime.pokemonfish\\corsola",
+          "SpriteIndex": "0",
+          "Edibility": 10,
+          "ContextTags": [
+                        "color_pink",
+                        "fish_corsola",
+                        "beach_item",
+                        "forage_item",
+                        "forage_item_beach"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Curly_Tatsugiri": {
+          "Name": "Curly Tatsugiri",
+          "DisplayName": "Tatsugiri",
+          "Description": "Tatsugiri is an extremely cunning Pokémon. It feigns weakness to lure in prey, then orders its partner to attack.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 100,
+          "Texture": "Mods\\otohime.pokemonfish\\ctatsugiri",
+          "SpriteIndex": "0",
+          "Edibility": 50,
+          "ContextTags": [
+                        "color_orange",
+                        "fish_tatsugiri",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Dratini": {
+          "Name": "Dratini",
+          "DisplayName": "Dratini",
+          "Description": "It is called the 'Mirage Pokemon' because so few have seen it. Its shed skin has been found.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 500,
+          "Texture": "Mods\\otohime.pokemonfish\\dratini",
+          "SpriteIndex": "0",
+          "Edibility": 40,
+          "ContextTags": [
+                        "color_blue",
+                        "fish_dratini"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Droopy_Tatsugiri": {
+          "Name": "Droopy Tatsugiri",
+          "DisplayName": "Tatsugiri",
+          "Description": "This species’ differing colors and patterns are apparently the result of Tatsugiri changing itself to suit the preferences of the prey it lures in.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 100,
+          "Texture": "Mods\\otohime.pokemonfish\\dtatsugiri",
+          "SpriteIndex": "0",
+          "Edibility": 50,
+          "ContextTags": [
+                        "color_pink",
+                        "fish_tatsugiri",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Feebas": {
+          "Name": "Feebas",
+          "DisplayName": "Feebas",
+          "Description": "Although unattractive and unpopular, this Pokémon’s marvelous vitality has made it a subject of research.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 30,
+          "Texture": "Mods\\otohime.pokemonfish\\feebas",
+          "SpriteIndex": "0",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_brown",
+                        "fish_feebas",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Female_Frillish": {
+          "Name": "Female Frillish",
+          "DisplayName": "Frillish",
+          "Description": "With its thin, veil-like arms wrapped around the body of its opponent, it sinks to the ocean floor.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 100,
+          "Texture": "Mods\\otohime.pokemonfish\\ffrillish",
+          "SpriteIndex": "0",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_pink",
+                        "fish_frillish",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Finneon": {
+          "Name": "Finneon",
+          "DisplayName": "Finneon",
+          "Description": "It absorbs sunlight with the pink areas of its skin, which then shine. This appears to be a form of camouflage.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 50,
+          "Texture": "Mods\\otohime.pokemonfish\\finneon",
+          "SpriteIndex": "0",
+          "Edibility": 40,
+          "ContextTags": [
+                        "color_dark_blue",
+                        "fish_finneon",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Galarian_Corsola": {
+          "Name": "Galarian Corsola",
+          "DisplayName": "Corsola",
+          "Description": "Sudden climate change wiped out this ancient kind of Corsola. This Pokémon absorbs others' life-force through its branches.",
+          "Type": "Basic",
+          "Category": -23,
+          "Price": 100,
+          "Texture": "Mods\\otohime.pokemonfish\\gcorsola",
+          "SpriteIndex": "0",
+          "Edibility": 0,
+          "ContextTags": [
+                        "color_white",
+                        "fish_corsola",
+                        "beach_item",
+                        "forage_item",
+                        "forage_item_beach"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Goldeen": {
+          "Name": "Goldeen",
+          "DisplayName": "Goldeen",
+          "Description": "The way it swims along fluttering its dress-like fins has earned it the name 'princess of the water.'",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 20,
+          "Texture": "Mods\\otohime.pokemonfish\\goldeen",
+          "SpriteIndex": "0",
+          "Edibility": 40,
+          "ContextTags": [
+                        "color_orange",
+                        "fish_goldeen"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Grimer": {
+          "Name": "Grimer",
+          "DisplayName": "Grimer",
+          "Description": "Made of congealed sludge. It smells too putrid to touch. Even weeds won’t grow in its path.",
+          "Type": "Fish",
+          "Category": -20,
+          "Price": 30,
+          "Texture": "Mods\\otohime.pokemonfish\\grimer",
+          "SpriteIndex": "0",
+          "Edibility": -300,
+          "ContextTags": [
+                        "color_purple",
+                        "fish_grimer"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Heart_Scale": {
+          "Name": "Heart Scale",
+          "DisplayName": "Heart Scale",
+          "Description": "A pretty, heart-shaped scale that is extremely rare. Some people are happy to receive one.",
+          "Type": "Object",
+          "Category": 0,
+          "Price": 500,
+          "Texture": "Mods\\otohime.pokemonfish\\heartscale",
+          "SpriteIndex": "0",
+          "Edibility": -300,
+          "ContextTags": [
+                        "color_prismatic",
+                        "not_placeable"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Horsea": {
+          "Name": "Horsea",
+          "DisplayName": "Horsea",
+          "Description": "If it senses any danger, it will vigorously spray water or a special type of ink from its mouth.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 90,
+          "Texture": "Mods\\otohime.pokemonfish\\horsea",
+          "SpriteIndex": "0",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_blue",
+                        "fish_horsea",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Inkay": {
+          "Name": "Inkay",
+          "DisplayName": "Inkay",
+          "Description": "It draws prey near with its blinking lights and then wraps them up in its long tentacles and holds them in place.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 100,
+          "Texture": "Mods\\otohime.pokemonfish\\inkay",
+          "SpriteIndex": "0",
+          "Edibility": 50,
+          "ContextTags": [
+                        "color_blue",
+                        "fish_inkay",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Kyogre": {
+          "Name": "Kyogre",
+          "DisplayName": "Kyogre",
+          "Description": "It is said to have widened the seas by causing downpours. It had been asleep in a marine trench.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 3800,
+          "Texture": "Mods\\otohime.pokemonfish\\kyogre",
+          "SpriteIndex": "0",
+          "Edibility": 100,
+          "ContextTags": [
+                        "color_blue",
+                        "fish_kyogre",
+                        "fish_ocean",
+                        "fish_legendary"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Lotad": {
+          "Name": "Lotad",
+          "DisplayName": "Lotad",
+          "Description": "It looks like an aquatic plant and serves as a ferry to Pokémon that can't swim.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 50,
+          "Texture": "Mods\\otohime.pokemonfish\\lotad",
+          "SpriteIndex": "0",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_blue",
+                        "fish_lotad"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Luvdisc": {
+          "Name": "Luvdisc",
+          "DisplayName": "Luvdisc",
+          "Description": "Luvdisc makes its home in coral reefs in warm seas. It especially likes sleeping in the space between Corsola’s branches.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 30,
+          "Texture": "Mods\\otohime.pokemonfish\\luvdisc",
+          "SpriteIndex": "0",
+          "Edibility": 40,
+          "ContextTags": [
+                        "color_pink",
+                        "fish_luvdisc",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Magikarp": {
+          "Name": "Magikarp",
+          "DisplayName": "Magikarp",
+          "Description": "It is virtually worthless in terms of both power and speed. It is the most weak and pathetic Pokémon in the world.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 1,
+          "Texture": "Mods\\otohime.pokemonfish\\magikarp",
+          "SpriteIndex": "0",
+          "Edibility": 1,
+          "ContextTags": [
+                        "color_orange",
+                        "fish_magikarp"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Male_Frillish": {
+          "Name": "Male Frillish",
+          "DisplayName": "Frillish",
+          "Description": "They paralyze prey with poison, then drag them down to their lairs, five miles below the surface.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 100,
+          "Texture": "Mods\\otohime.pokemonfish\\mfrillish",
+          "SpriteIndex": "0",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_blue",
+                        "fish_frillish",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Mareanie": {
+          "Name": "Mareanie",
+          "DisplayName": "Mareanie",
+          "Description": "It’s found crawling on beaches and seafloors. The coral that grows on Corsola’s head is as good as a five-star banquet to this Pokémon.",
+          "Type": "Basic",
+          "Category": -23,
+          "Price": 100,
+          "Texture": "Mods\\otohime.pokemonfish\\mareanie",
+          "SpriteIndex": "0",
+          "Edibility": 10,
+          "ContextTags": [
+                        "color_purple",
+                        "fish_mareanie",
+                        "beach_item",
+                        "forage_item",
+                        "forage_item_beach"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Poliwag": {
+          "Name": "Poliwag",
+          "DisplayName": "Poliwag",
+          "Description": "Poliwag has a very thin skin. It is possible to see the Pokémon's spiral innards right through the skin.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 50,
+          "Texture": "Mods\\otohime.pokemonfish\\poliwag",
+          "SpriteIndex": "0",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_blue",
+                        "fish_poliwag"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Pyukumuku": {
+          "Name": "Pyukumuku",
+          "DisplayName": "Pyukumuku",
+          "Description": "These Pokémon line the beaches. The sticky mucous that covers their bodies can be used to soothe sunburned skin. How convenient!",
+          "Type": "Basic",
+          "Category": -23,
+          "Price": 90,
+          "Texture": "Mods\\otohime.pokemonfish\\pyukumuku",
+          "SpriteIndex": "0",
+          "Edibility": 10,
+          "ContextTags": [
+                        "color_black",
+                        "fish_pyukumuku",
+                        "beach_item",
+                        "forage_item",
+                        "forage_item_beach"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Sandygast": {
+          "Name": "Sandygast",
+          "DisplayName": "Sandygast",
+          "Description": "Born from a sand mound playfully built by a child, this Pokémon embodies the grudges of the departed.",
+          "Type": "Basic",
+          "Category": -23,
+          "Price": 80,
+          "Texture": "Mods\\otohime.pokemonfish\\sandygast",
+          "SpriteIndex": "0",
+          "Edibility": 0,
+          "ContextTags": [
+                        "color_sand",
+                        "fish_sandygast",
+                        "beach_item",
+                        "forage_item",
+                        "forage_item_beach"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Shellder": {
+          "Name": "Shellder",
+          "DisplayName": "Shellder",
+          "Description": "The hardness of its shell surpasses the hardness of a diamond. In days gone by, people used the shells to make shields.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 90,
+          "Texture": "Mods\\otohime.pokemonfish\\shellder",
+          "SpriteIndex": "0",
+          "Edibility": 10,
+          "ContextTags": [
+                        "color_purple",
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Shiny_Clamperl": {
+          "Name": "Shiny Clamperl",
+          "DisplayName": "Clamperl",
+          "Description": "It is protected by a sturdy shell. Once in a lifetime, it makes a magnificent pearl.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 500,
+          "Texture": "Mods\\otohime.pokemonfish\\sclamperl",
+          "SpriteIndex": "0",
+          "Edibility": 40,
+          "ContextTags": [
+                        "color_purple"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Shiny_Corsola": {
+          "Name": "Shiny Corsola",
+          "DisplayName": "Corsola",
+          "Description": "Coral branches grow from its head. They break off quite easily, but they grow back in about three days.",
+          "Type": "Basic",
+          "Category": -23,
+          "Price": 500,
+          "Texture": "Mods\\otohime.pokemonfish\\scorsola",
+          "SpriteIndex": "0",
+          "Edibility": 10,
+          "ContextTags": [
+                        "color_blue",
+                        "fish_corsola",
+                        "beach_item",
+                        "forage_item",
+                        "forage_item_beach"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Shiny_Lotad": {
+          "Name": "Shiny Lotad",
+          "DisplayName": "Lotad",
+          "Description": "It looks like an aquatic plant and serves as a ferry to Pokémon that can't swim.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 500,
+          "Texture": "Mods\\otohime.pokemonfish\\slotad",
+          "SpriteIndex": "0",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_red",
+                        "fish_lotad"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Shiny_Luvdisc": {
+          "Name": "Shiny Luvdisc",
+          "DisplayName": "Luvdisc",
+          "Description": "Luvdisc makes its home in coral reefs in warm seas. It especially likes sleeping in the space between Corsola’s branches.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 500,
+          "Texture": "Mods\\otohime.pokemonfish\\sluvdisc",
+          "SpriteIndex": "0",
+          "Edibility": 40,
+          "ContextTags": [
+                        "color_yellow",
+                        "fish_luvdisc",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Shiny_Magikarp": {
+          "Name": "Shiny Magikarp",
+          "DisplayName": "Magikarp",
+          "Description": "It is virtually worthless in terms of both power and speed. It is the most weak and pathetic Pokémon in the world.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 500,
+          "Texture": "Mods\\otohime.pokemonfish\\smagikarp",
+          "SpriteIndex": "0",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_gold",
+                        "fish_magikarp"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Shiny_Mareanie": {
+          "Name": "Shiny Mareanie",
+          "DisplayName": "Mareanie",
+          "Description": "It’s found crawling on beaches and seafloors. The coral that grows on Corsola’s head is as good as a five-star banquet to this Pokémon.",
+          "Type": "Basic",
+          "Category": -23,
+          "Price": 500,
+          "Texture": "Mods\\otohime.pokemonfish\\smareanie",
+          "SpriteIndex": "0",
+          "Edibility": 10,
+          "ContextTags": [
+                        "color_pink",
+                        "fish_mareanie",
+                        "beach_item",
+                        "forage_item",
+                        "forage_item_beach"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Shiny_Pyukumuku": {
+          "Name": "Shiny Pyukumuku",
+          "DisplayName": "Pyukumuku",
+          "Description": "These Pokémon line the beaches. The sticky mucous that covers their bodies can be used to soothe sunburned skin. How convenient!",
+          "Type": "Basic",
+          "Category": -23,
+          "Price": 300,
+          "Texture": "Mods\\otohime.pokemonfish\\spyukumuku",
+          "SpriteIndex": "0",
+          "Edibility": 10,
+          "ContextTags": [
+                        "color_green",
+                        "fish_pyukumuku",
+                        "beach_item",
+                        "forage_item",
+                        "forage_item_beach"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Shiny_Sandygast": {
+          "Name": "Shiny Sandygast",
+          "DisplayName": "Sandygast",
+          "Description": "Born from a sand mound playfully built by a child, this Pokémon embodies the grudges of the departed.",
+          "Type": "Basic",
+          "Category": -23,
+          "Price": 500,
+          "Texture": "Mods\\otohime.pokemonfish\\ssandygast",
+          "SpriteIndex": "0",
+          "Edibility": 0,
+          "ContextTags": [
+                        "color_black",
+                        "fish_sandygast",
+                        "beach_item",
+                        "forage_item",
+                        "forage_item_beach"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Shiny_Shellder": {
+          "Name": "Shiny Shellder",
+          "DisplayName": "Shellder",
+          "Description": "The hardness of its shell surpasses the hardness of a diamond. In days gone by, people used the shells to make shields.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 500,
+          "Texture": "Mods\\otohime.pokemonfish\\sshellder",
+          "SpriteIndex": "0",
+          "Edibility": 10,
+          "ContextTags": [
+                        "color_yellow",
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Shiny_Staryu": {
+          "Name": "Shiny Staryu",
+          "DisplayName": "Staryu",
+          "Description": "As long as its red core remains, it can regenerate its body instantly, even if torn apart.",
+          "Type": "Basic",
+          "Category": -23,
+          "Price": 500,
+          "Texture": "Mods\\otohime.pokemonfish\\sstaryu",
+          "SpriteIndex": "0",
+          "Edibility": 10,
+          "ContextTags": [
+                        "fish_staryu",
+                        "beach_item",
+                        "forage_item",
+                        "forage_item_beach"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Shiny_Wiglett": {
+          "Name": "Shiny Wiglett",
+          "DisplayName": "Wiglett",
+          "Description": "Though it looks like Diglett, Wiglett is an entirely different species. The resemblance seems to be a coincidental result of environmental adaptation.",
+          "Type": "Basic",
+          "Category": -23,
+          "Price": 500,
+          "Texture": "Mods\\otohime.pokemonfish\\swiglett",
+          "SpriteIndex": "0",
+          "Edibility": 10,
+          "ContextTags": [
+                        "fish_wiglett",
+                        "beach_item",
+                        "forage_item",
+                        "forage_item_beach"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Shiny_Wooper": {
+          "Name": "Shiny Wooper",
+          "DisplayName": "Wooper",
+          "Description": "Wooper is without flaw.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 1000,
+          "Texture": "Mods\\otohime.pokemonfish\\swooper",
+          "SpriteIndex": "0",
+          "Edibility": 50,
+          "ContextTags": [
+                        "color_pink",
+                        "fish_wooper"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Staryu": {
+          "Name": "Staryu",
+          "DisplayName": "Staryu",
+          "Description": "As long as its red core remains, it can regenerate its body instantly, even if torn apart.",
+          "Type": "Basic",
+          "Category": -23,
+          "Price": 30,
+          "Texture": "Mods\\otohime.pokemonfish\\staryu",
+          "SpriteIndex": "0",
+          "Edibility": 10,
+          "ContextTags": [
+                        "fish_staryu",
+                        "beach_item",
+                        "forage_item",
+                        "forage_item_beach"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Stretchy_Tatsugiri": {
+          "Name": "Stretchy Tatsugiri",
+          "DisplayName": "Tatsugiri",
+          "Description": "It's one of the most intelligent dragon Pokémon. It camouflages itself by inflating its throat sac.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 100,
+          "Texture": "Mods\\otohime.pokemonfish\\statsugiri",
+          "SpriteIndex": "0",
+          "Edibility": 50,
+          "ContextTags": [
+                        "color_yellow",
+                        "fish_tatsugiri",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Stunfisk": {
+          "Name": "Stunfisk",
+          "DisplayName": "Stunfisk",
+          "Description": "It conceals itself in the mud of the seashore. Then it waits. When prey touch it, it delivers a jolt of electricity.",
+          "Type": "Basic",
+          "Category": -23,
+          "Price": 50,
+          "Texture": "Mods\\otohime.pokemonfish\\stunfisk",
+          "SpriteIndex": "0",
+          "Edibility": 20,
+          "ContextTags": [
+                        "fish_stunfisk",
+                        "beach_item",
+                        "forage_item",
+                        "forage_item_beach"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Surskit": {
+          "Name": "Surskit",
+          "DisplayName": "Surskit",
+          "Description": "It appears as if it is skating on water. It draws prey with a sweet scent from the tip of its head.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 30,
+          "Texture": "Mods\\otohime.pokemonfish\\surskit",
+          "SpriteIndex": "0",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_blue",
+                        "fish_surskit"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Tadbulb": {
+          "Name": "Tadbulb",
+          "DisplayName": "Tadbulb",
+          "Description": "It floats using the electricity stored in its body. When thunderclouds are around, Tadbulb will float higher off the ground.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 50,
+          "Texture": "Mods\\otohime.pokemonfish\\tadbulb",
+          "SpriteIndex": "0",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_yellow",
+                        "fish_tadbulb"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Tentacool": {
+          "Name": "Tentacool",
+          "DisplayName": "Tentacool",
+          "Description": "Its body is 99% water. The remaining 1% contains the organ that makes its poison.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 100,
+          "Texture": "Mods\\otohime.pokemonfish\\tentacool",
+          "SpriteIndex": "0",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_blue",
+                        "fish_tentacool",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Trubbish": {
+          "Name": "Trubbish",
+          "DisplayName": "Trubbish",
+          "Description": "The combination of garbage bags and industrial waste caused the chemical reaction that created this Pokémon.",
+          "Type": "Fish",
+          "Category": -20,
+          "Price": 5,
+          "Texture": "Mods\\otohime.pokemonfish\\trubbish",
+          "SpriteIndex": "0",
+          "Edibility": -300,
+          "ContextTags": [
+                        "fish_trubbish"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Tympole": {
+          "Name": "Tympole",
+          "DisplayName": "Tympole",
+          "Description": "It uses sound waves to communicate with others of its kind. People and other Pokémon species can't hear its cries of warning.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 50,
+          "Texture": "Mods\\otohime.pokemonfish\\tympole",
+          "SpriteIndex": "0",
+          "Edibility": 30,
+          "ContextTags": [
+                        "fish_tympole"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Tynamo": {
+          "Name": "Tynamo",
+          "DisplayName": "Tynamo",
+          "Description": "While one alone doesn't have much power, a chain of many Tynamo can be as powerful as lightning.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 30,
+          "Texture": "Mods\\otohime.pokemonfish\\tynamo",
+          "SpriteIndex": "0",
+          "Edibility": 30,
+          "ContextTags": [
+                        "color_white",
+                        "fish_tynamo",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Wiglett": {
+          "Name": "Wiglett",
+          "DisplayName": "Wiglett",
+          "Description": "Though it looks like Diglett, Wiglett is an entirely different species. The resemblance seems to be a coincidental result of environmental adaptation.",
+          "Type": "Basic",
+          "Category": -23,
+          "Price": 80,
+          "Texture": "Mods\\otohime.pokemonfish\\wiglett",
+          "SpriteIndex": "0",
+          "Edibility": 10,
+          "ContextTags": [
+                        "color_white",
+                        "fish_wiglett",
+                        "beach_item",
+                        "forage_item",
+                        "forage_item_beach"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Wishiwashi": {
+          "Name": "Wishiwashi",
+          "DisplayName": "Wishiwashi",
+          "Description": "They’re weak, so they move in schools. However, they can also often be seen all alone, having strayed from the school.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 50,
+          "Texture": "Mods\\otohime.pokemonfish\\wishiwashi",
+          "SpriteIndex": "0",
+          "Edibility": 40,
+          "ContextTags": [
+                        "color_white",
+                        "fish_wishiwashi",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+        },
+        "{{ModId}}_Wooper": {
+          "Name": "Wooper",
+          "DisplayName": "Wooper",
+          "Description": "Wooper is without flaw.",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 500,
+          "Texture": "Mods\\otohime.pokemonfish\\wooper",
+          "SpriteIndex": "0",
+          "Edibility": 50,
+          "ContextTags": [
+                        "color_blue",
+                        "fish_wooper"
+                    ],
+                    "CustomFields": {}
+        }
+      }
+   },
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "Blue Orb": "62 3 550 1 72 1/Field/{{ModId}}_Blue_Orb/false/null/Blue Orb"
+            }
+        }
+]
+}

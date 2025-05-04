@@ -1,0 +1,29 @@
+{
+"Changes": [
+
+	{
+		"LogName": "Hau Schedule",
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Hau",
+		"Entries": {
+
+			//Regular Schedule
+			"spring": "610 {{ModId}}_AxolotlTown 95 58 2/900 {{ModId}}_AxolotlBakery 20 6 0/1300 {{ModId}}_AxolotlTown 97 66 2/2000 {{ModId}}_LightPinkHouse 8 8 2 hau_sleep",
+			"summer": "610 {{ModId}}_AxolotlTown 95 58 2/900 {{ModId}}_AxolotlTown 30 51 3/2000 {{ModId}}_LightPinkHouse 8 8 2 hau_sleep",
+			"fall": "610 {{ModId}}_AxolotlTown 95 58 2/900 {{ModId}}_AxolotlBakery 20 6 0/1300 {{ModId}}_AxolotlTown 97 66 2/2000 {{ModId}}_LightPinkHouse 8 8 2 hau_sleep",
+			"winter": "610 {{ModId}}_AxolotlTown 95 58 2/900 {{ModId}}_AxolotlBakery 20 6 0/1300 {{ModId}}_AxolotlTown 97 66 2/2000 {{ModId}}_LightPinkHouse 8 8 2 hau_sleep",
+			"rain": "610 {{ModId}}_LightPinkHouse 5 6 2/1000 {{ModId}}_LightPinkHouse 5 6 2/2000 {{ModId}}_LightPinkHouse 8 8 2 hau_sleep"
+			}
+	},
+{
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Hau",
+		"Entries": {
+			"Sun": "610 {{ModId}}_AxolotlTown 95 58 2/900 {{ModId}}_AxolotlTownSouth 91 40 0 \"Strings\\schedules\\Hau:Sun\"/2000 {{ModId}}_LightPinkHouse 8 8 2 hau_sleep",
+			},
+		"When": {
+			"HasSeenEvent: hostPlayer |contains=98890063": true
+                        },
+	},
+]
+}

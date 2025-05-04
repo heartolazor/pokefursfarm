@@ -1,0 +1,35 @@
+{
+"Changes": [
+
+	{
+		"LogName": "Puka Schedule",
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Puka",
+		"Entries": {
+
+			//Regular Schedule
+			"spring": "610 {{ModId}}_AxolotlTown 48 74 0/900 {{ModId}}_HiroHouse 11 5 1/1200 {{ModId}}_HiroHouse 7 15 0/1600 {{ModId}}_AxolotlTown 10 57 3/2000 {{ModId}}_PukaHouse 7 5 2 puka_sleep",
+			"summer": "610 {{ModId}}_AxolotlTown 35 53 0/900 {{ModId}}_AxolotlTown 105 48 1/1300 {{ModId}}_AxolotlLake 61 59 0/2000 {{ModId}}_PukaHouse 7 5 2 puka_sleep",
+			"fall": "610 {{ModId}}_AxolotlBakery 19 6 0/1000 {{ModId}}_AxolotlBakery 6 5 3/1500 {{ModId}}_AxolotlTown 88 82 3/2000 {{ModId}}_PukaHouse 7 5 2 puka_sleep",
+			"winter": "610 {{ModId}}_PukaHouse 11 9 1/900 {{ModId}}_AxolotlLake 61 59 0/1100 {{ModId}}_AxolotlLake 88 37 3/1400 {{ModId}}_DrinkShop 14 6 3/2000 {{ModId}}_PukaHouse 7 5 2 puka_sleep",
+			"rain": "610 {{ModId}}_AxolotlTown 32 26 2 \"Strings\\schedules\\Puka:rain\"/1200 {{ModId}}_AxolotlTown 10 57 3 \"Strings\\schedules\\Puka:rain\"/1600 {{ModId}}_AxolotlTown 105 48 1/2000 {{ModId}}_PukaHouse 7 5 2 puka_sleep",
+			"Fri": "610 {{ModId}}_AxolotlTown 48 74 0/900 {{ModId}}_HiroHouse 11 5 1/1200 {{ModId}}_HiroHouse 7 15 0/1600 {{ModId}}_AxolotlCommunityCenter 11 14 3/2000 {{ModId}}_PukaHouse 7 5 2 puka_sleep",
+                        "Wed": "610 {{ModId}}_AxolotlTown 10 57 3/1000 {{ModId}}_AxolotlTown 32 43 0/2000 {{ModId}}_PukaHouse 7 5 2 puka_sleep",
+                        "fall_28": "610 {{ModId}}_AxolotlBakery 19 6 0/1000 {{ModId}}_AxolotlBakery 6 5 3/1500 {{ModId}}_AxolotlTown 88 82 3/1850 {{ModId}}_AxolotlTown 26 57 3/2350 {{ModId}}_PukaHouse 7 5 2 puka_sleep",
+                        "winter_25": "610 {{ModId}}_PukaHouse 11 9 1/900 {{ModId}}_AxolotlTown 36 55 1/2000 {{ModId}}_PukaHouse 7 5 2 puka_sleep",
+                        "summer_7": "610 {{ModId}}_AxolotlTown 35 66 2/900 {{ModId}}_AxolotlTown 105 48 1/1300 {{ModId}}_AxolotlLake 61 59 0/1800 {{ModId}}_AxolotlTown 32 79 3/2350 {{ModId}}_PukaHouse 7 5 2 puka_sleep",
+                        "spring_21": "610 {{ModId}}_AxolotlTown 48 74 0/800 {{ModId}}_AxolotlTown 36 81 0/2000 {{ModId}}_PukaHouse 7 5 2 puka_sleep",
+			}
+	},
+{
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Puka",
+		"Entries": {
+			"Sun": "610 {{ModId}}_AxolotlTown 48 74 0/900 {{ModId}}_AxolotlTownSouth 81 38 0/2000 {{ModId}}_PukaHouse 7 5 2 puka_sleep",
+			},
+		"When": {
+			"HasSeenEvent: hostPlayer |contains=98890063": true
+                        },
+	},
+]
+}

@@ -1,0 +1,106 @@
+{
+    "Changes": [
+        //Machines
+		{
+            "LogName": "Load data for Present Opener",
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries":	{
+			  "{{ModId}}_PresentOpener": {
+				"Name": "{{ModId}}_PresentOpener",
+				"DisplayName": "{{i18n:PresentOpener}}",
+				"Description": "{{i18n:PresentOpenerDescription}}",
+				"Price": 50,
+				"Fragility": 0,
+				"CanBePlacedOutdoors": true,
+				"CanBePlacedIndoors": true,
+				"IsLamp": false,
+				"Texture": "TileSheets/{{ModId}}_Delibird_bc",
+				"SpriteIndex": 0,
+				"CustomFields": null
+			  }
+              
+			}
+		},
+
+				//MachinesRules	
+				{
+					"LogName": "Add Lilly's Delibird Present Opener",
+					"Action": "EditData",
+					"Target": "Data/Machines",
+					"Entries": {
+						"(BC){{ModId}}_PresentOpener": {
+							"OutputRules": [
+								{
+									"Id": "286",
+									"Triggers": [
+										{
+											"Trigger": "ItemPlacedInMachine",
+											"RequiredItemId": "{{ModId}}_PresentBomb",
+											"RequiredCount": 1
+										}
+									],
+									"OutputItem": [
+										{
+											"Id": "286", //Cherry Bomb
+											"ItemId": "286",
+											"CopyQuality": false,
+											"MinStack": 1,
+											"MaxStack": -1
+						
+										},
+										{
+											"Id": "286", //Cherry Bomb
+											"ItemId": "286",
+											"CopyQuality": false,
+											"MinStack": 2,
+											"MaxStack": -1
+						
+										},
+										{
+											"Id": "286", //Cherry Bomb
+											"ItemId": "286",
+											"CopyQuality": false,
+											"MinStack": 3,
+											"MaxStack": -1
+						
+										},
+										{
+											"Id": "441", //Explosive Ammo
+											"ItemId": "441",
+											"CopyQuality": false,
+											"MinStack": 1,
+											"MaxStack": 5
+						
+										},
+										{
+											"Id": "287", //Bomb
+											"ItemId": "287",
+											"CopyQuality": false,
+											"MinStack": 1,
+											"MaxStack": -1
+										}
+									],
+									"MinutesUntilReady": 30
+								}
+											 
+							],
+							"InvalidItemMessage":"{{i18n:InvalidItemPresentOpener}}",
+							"ShowNextIndexWhileWorking":false,
+							"ShowNextIndexWhenReady":false,
+							"WobbleWhileWorking":true
+						}
+					}
+				},
+
+		//Craftables
+		{
+			"LogName": "Add Crafting Recipes",
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Entries": {
+				"{{ModId}}_PresentOpener": "335 5 388 50/Home/{{ModId}}_PresentOpener/true/farming 3"
+			}
+		}
+	]
+}

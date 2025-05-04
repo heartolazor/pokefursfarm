@@ -1,0 +1,228 @@
+{
+    "Changes": [
+        {
+            "LogName": "Egg Festival",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "When": { "HasSeenEvent |contains=171193706": true },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Silverinnia.Elian 49 59 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "MainEvent_additionalCharacters"],
+                    "Value": "Silverinnia.Elian 49 59 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "Entries": {
+                "Silverinnia.Elian": "{{i18n:egg}}",
+                "Silverinnia.Elian_spouse": "{{i18n:egg.spouse}}"
+            }
+        },
+        {
+            "LogName": "Flower Dance",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "When": { "HasSeenEvent |contains=171193706": true },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Silverinnia.Elian 3 22 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "MainEvent_additionalCharacters"],
+                    "Value": "Silverinnia.Elian 3 30 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "Entries": {
+                "Silverinnia.Elian": "{{i18n:flower.dance}}",
+                "Silverinnia.Elian_spouse": "{{i18n:flower.dance.spouse}}"
+            }
+        },
+        {
+            "LogName": "Luau",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "When": { "HasSeenEvent |contains=171193706": true },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Silverinnia.Elian 9 16 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "MainEvent_additionalCharacters"],
+                    "Value": "Silverinnia.Elian 24 20 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "Entries": {
+                "Silverinnia.Elian": "{{i18n:luau}}",
+                "Silverinnia.Elian_spouse": "{{i18n:luau.spouse}}"
+            }
+        },
+        {
+            "LogName": "Dance of the MoonlightJellies",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "When": { "HasSeenEvent |contains=171193706": true },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Silverinnia.Elian 53 11 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "MainEvent_additionalCharacters"],
+                    "Value": "Silverinnia.Elian 53 11 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "Entries": {
+                "Silverinnia.Elian": "{{i18n:jellies}}",
+                "Silverinnia.Elian_spouse": "{{i18n:jellies.spouse}}"
+            }
+        },
+        {
+            "LogName": "Stardew Valley Fair",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "When": { "HasSeenEvent |contains=171193706": true },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Silverinnia.Elian 38 84 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "Entries": {
+                "Silverinnia.Elian": "{{i18n:fair}}",
+                "Silverinnia.Elian_spouse": "{{i18n:fair.spouse}}"
+            }
+        },
+        {
+            "LogName": "Spirits Eve",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": { "HasSeenEvent |contains=171193706": true },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Silverinnia.Elian 47 67 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "Entries": {
+                "Silverinnia.Elian": "{{i18n:spirits.eve}}",
+                "Silverinnia.Elian_spouse": "{{i18n:spirits.eve.spouse}}"
+            }
+        },
+        {
+            "LogName": "Festival of Ice",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "When": { "HasSeenEvent |contains=171193706": true },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Silverinnia.Elian 81 17 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "Entries": {
+                "Silverinnia.Elian": "{{i18n:ice}}",
+                "Silverinnia.Elian_spouse": "{{i18n:ice.spouse}}"
+            }
+        },
+        {
+            "LogName": "Feast of the Winter Star",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": { "HasSeenEvent |contains=171193706": true },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Silverinnia.Elian 47 57 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "Entries": {
+                "Silverinnia.Elian": "{{i18n:winter.star}}",
+                "Silverinnia.Elian_spouse": "{{i18n:winter.star.spouse}}"
+            }
+        },
+
+        //Ridgeside Festivals//
+        {
+            "LogName": "Ridgeside Gathering",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall20",
+            "When": {
+                "HasSeenEvent |contains=171193706": true,
+                "HasMod: |contains=Rafseazz.RSVCP": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Silverinnia.Elian 88 58 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "MainEvent_additionalCharacters"],
+                    "Value": "Silverinnia.Elian 90 48 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "Entries": {
+                "Silverinnia.Elian": "{{i18n:rsv.gathering}}",
+                "Silverinnia.Elian_spouse": "{{i18n:rsv.gathering.spouse}}"
+            }
+        },
+        {
+            "LogName": "Ember of Resolutions",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter28",
+            "When": {
+                "HasSeenEvent |contains=171193706": true,
+                "HasMod: |contains=Rafseazz.RSVCP": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Silverinnia.Elian 25 28 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "MainEvent_additionalCharacters"],
+                    "Value": "Silverinnia.Elian 27 40 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "Entries": {
+                "Silverinnia.Elian": "{{i18n:rsv.ember}}",
+                "Silverinnia.Elian_spouse": "{{i18n:rsv.ember.spouse}}"
+            }
+        }
+    ]
+}

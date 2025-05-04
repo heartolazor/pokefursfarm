@@ -1,0 +1,65 @@
+{
+    "Format": "2.0.0",
+    "Changes": [  
+        //Sprites
+        {
+            "LogName": "Load shopIcon for Skitty",
+            "Action": "Load",
+            "Target": "Animals/{{ModId}}_shop_Skitty_icon",
+            "FromFile": "assets/SkittyShop.png"
+        },
+        {
+            "LogName": "Load Sprite for Skitty",
+            "Action": "Load",
+            "Target": "Animals/{{ModId}}_Skitty",
+            "FromFile": "assets/Skitty.png"
+        },
+		{
+            "LogName": "Load Sprite for SkittyShiny",
+            "Action": "Load",
+            "Target": "Animals/{{ModId}}_Skitty_shiny",
+            "FromFile": "assets/SkittyShiny.png"
+        },
+        {
+            "LogName": "Load Spritesheet for items",
+            "Action": "Load",
+            "Target": "TileSheets/{{ModId}}_Skitty_items",
+            "FromFile": "assets/SkittyItems.png"
+        },
+		{
+            "LogName": "Load Spritesheet for big stuff",
+            "Action": "Load",
+            "Target": "TileSheets/{{ModId}}_Skitty_big_stuff",
+            "FromFile": "assets/SkittyBigStuff.png"
+        },
+		{
+			"LogName": "Load Base Mod",
+			"Action": "Include",
+			"FromFile": "data/skitty.json"
+		},
+		{
+			"LogName": "Load Tinkaton Stuff if installed",
+			"Action": "Include",
+			"FromFile": "data/tinkaton.json",
+			"When": {
+				"HasMod|contains=Letsgolilly.LillysTinkaton": true
+			}
+		},
+		{
+			"LogName": "Load Ribombee Stuff if installed",
+			"Action": "Include",
+			"FromFile": "data/ribombee.json",
+			"When": {
+				"HasMod|contains=Letsgolilly.LillysRibombee": true
+			}
+		},
+		{
+			"LogName": "Load Delibird Stuff if installed",
+			"Action": "Include",
+			"FromFile": "data/delibird.json",
+			"When": {
+				"HasMod|contains=Letsgolilly.LillysDelibird": true
+			}
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+    "Changes":  [
+	{
+         "Action": "Load",
+         "Target": "Pipes/H_Pipes",
+         "FromFile": "Pipes/H_{{season}}_Pipes.png",
+		 "Update": "OnLocationChange",
+		 "When": {"IsOutdoors": true}
+	},
+	{
+         "Action": "Load",
+         "Target": "Pipes/H_Pipes",
+         "FromFile": "Pipes/H_Summer_Pipes.png",
+		 "Update": "OnLocationChange",
+		 "When": {"IsOutdoors": false}
+	},
+	{
+         "Action": "Load",
+         "Target": "TileSheets/H_Pipes",
+         "FromFile": "Pipes/H_Pipes_Icons.png"
+	},
+				]
+}

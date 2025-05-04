@@ -1,0 +1,40 @@
+{
+"Changes": [
+
+	{
+		"LogName": "Kandi Schedule",
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Kandi",
+                "When": {
+			"HasSeenEvent: hostPlayer |contains=98890063": true
+                        },
+		"Entries": {
+
+			//Regular Schedule
+			"spring": "610 {{ModId}}_KandiHouse 11 9 3/900 {{ModId}}_KandiHouse 33 25 0/1400 {{ModId}}_AxolotlTown 42 39 3/2000 {{ModId}}_KandiHouse 20 6 2 kandi_sleep",
+			"summer": "610 {{ModId}}_KandiHouse 11 9 3/900 {{ModId}}_KandiHouse 33 25 0/1200 {{ModId}}_AxolotlTown 28 53 0/1600 {{ModId}}_AxolotlTown 108 71 3/2000 {{ModId}}_KandiHouse 20 6 2 kandi_sleep",
+			"fall": "610 {{ModId}}_KandiHouse 11 9 3/900 {{ModId}}_KandiHouse 33 25 0/1400 {{ModId}}_DrinkShop 3 6 0/2000 {{ModId}}_KandiHouse 20 6 2 kandi_sleep",
+			"winter": "610 {{ModId}}_KandiHouse 11 9 3/900 {{ModId}}_KandiHouse 33 25 0/1400 {{ModId}}_KandiHouse 4 22 0/2000 {{ModId}}_KandiHouse 20 6 2 kandi_sleep",
+			"rain": "610 {{ModId}}_KandiHouse 11 9 3/900 {{ModId}}_KandiHouse 33 25 0/1400 {{ModId}}_KandiHouse 4 22 0/2000 {{ModId}}_KandiHouse 20 6 2 kandi_sleep",
+			"Fri": "610 {{ModId}}_KandiHouse 11 9 3/900 {{ModId}}_KandiHouse 33 25 0/1300 {{ModId}}_AxolotlCommunityCenter 13 13 0/2000 {{ModId}}_KandiHouse 20 6 2 kandi_sleep",
+                        "Wed": "610 {{ModId}}_KandiHouse 11 9 3/900 {{ModId}}_KandiHouse 33 25 0/1200 {{ModId}}_AxolotlTown 35 43 0/2000 {{ModId}}_KandiHouse 20 6 2 kandi_sleep",
+                        "fall_28": "610 {{ModId}}_KandiHouse 11 9 3/900 {{ModId}}_KandiHouse 33 25 0/1400 {{ModId}}_DrinkShop 3 6 0/1850 {{ModId}}_AxolotlTown 35 54 3/2350 {{ModId}}_KandiHouse 20 6 2 kandi_sleep",
+                        "winter_25": "610 {{ModId}}_KandiHouse 11 9 3/900 {{ModId}}_AxolotlTown 25 58 0/2000 {{ModId}}_KandiHouse 20 6 2 kandi_sleep",
+                        "summer_7": "610 {{ModId}}_KandiHouse 11 9 3/900 {{ModId}}_KandiHouse 33 25 0/1200 {{ModId}}_AxolotlTown 28 53 0/1600 {{ModId}}_AxolotlTown 108 71 3/1800 {{ModId}}_AxolotlTown 24 79 1 \"Strings\\schedules\\Kandi:Tanabata\"/2350 {{ModId}}_KandiHouse 20 6 2 kandi_sleep",
+                        "Sat": "610 {{ModId}}_KandiHouse 11 9 3/900 {{ModId}}_AxolotlTown 32 79 2 \"Strings\\schedules\\Kandi:Sat\"/1400 {{ModId}}_AxolotlTown 87 27 2 \"Strings\\schedules\\Kandi:Sat\"/2000 {{ModId}}_KandiHouse 20 6 2 kandi_sleep",
+                        "Sun": "610 {{ModId}}_KandiHouse 11 9 3/900 {{ModId}}_AxolotlTownSouth 88 31 2 \"Strings\\schedules\\Kandi:Sun\"/2000 {{ModId}}_KandiHouse 20 6 2 kandi_sleep"
+			}
+	},
+{
+		"Action": "EditData",
+		"Target": "Characters/Schedules/Kandi",
+		"Entries": {
+			"fall": "610 {{ModId}}_KandiHouse 11 9 3/900 {{ModId}}_KandiHouse 33 25 0/1200 {{ModId}}_CandyShop 10 7 0/1500 {{ModId}}_DrinkShop 3 6 0/2000 {{ModId}}_KandiHouse 20 6 2 kandi_sleep",
+			},
+		"When": {
+			"HasReadLetter: hostPlayer |contains=CaptainProject6": true,
+                        "HasSeenEvent: hostPlayer |contains=98890063": true
+                        },
+	},
+]
+}

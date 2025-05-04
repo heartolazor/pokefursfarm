@@ -1,0 +1,1881 @@
+{
+    "Changes": [
+
+		{
+			"Action": "Load",
+			"Target": "LooseSprites/AlbinoVendor, LooseSprites/BlackVendor, LooseSprites/BlueVendor, LooseSprites/BlueVendor2, LooseSprites/BlueVendor3, LooseSprites/PinkVendor, LooseSprites/PinkVendor2, LooseSprites/PinkVendor3, LooseSprites/PinkVendor4, LooseSprites/PurpleVendor, LooseSprites/PurpleVendor2, LooseSprites/YellowVendor, LooseSprites/YellowVendor2",
+			"FromFile": "Assets/LooseSprites/{{TargetWithoutPath}}.png"
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "{{ModId}}_AxolotlFishShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/BlueVendor",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_AxolotlFishShop_Default",
+                                    "Dialogue": "Fresh fish! Get'cha fish here!"
+                                }
+                            ],
+                            //"ClosedMessage": "Sorry, I'm all outta fish."
+                        }
+                    ],
+                    "Items": [
+                                                {
+							"Id": "{{ModId}}.FishStock1",
+							"ItemId": "(O)155",
+                                                        "Price": 250,
+							"AvailableStock": 1,
+						},
+					        {
+							"Id": "{{ModId}}.FishStock2",
+							"ItemId": "(O)128",
+                                                        "Price": 200,
+							"AvailableStock": 1,
+						},
+                                                {
+							"Id": "{{ModId}}.FishStock3",
+							"ItemId": "(O)836",
+                                                        "Price": 180,
+							"AvailableStock": 1,
+						},
+                                                {
+							"Id": "{{ModId}}.FishStock4",
+							"ItemId": "(O)149",
+                                                        "Price": 150,
+							"AvailableStock": 1,
+						},
+                                                {
+							"Id": "{{ModId}}.FishStock5",
+							"ItemId": "(O)838",
+                                                        "Price": 120,
+							"AvailableStock": 1,
+						},
+                                                {
+							"Id": "{{ModId}}.FishStock6",
+							"ItemId": "(O)130",
+                                                        "Price": 120,
+							"AvailableStock": 1,
+						},
+                                                {
+							"Id": "{{ModId}}.FishStock7",
+							"ItemId": "(O)267",
+                                                        "Price": 120,
+							"AvailableStock": 1,
+						},
+                                                {
+							"Id": "{{ModId}}.FishStock8",
+							"ItemId": "(O)837",
+                                                        "Price": 120,
+							"AvailableStock": 1,
+						},
+					]
+				},
+                "{{ModId}}_AxolotlTropicalShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/PinkVendor",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_AxolotlTropicalShop_Default",
+                                    "Dialogue": "Welcome, we sell tropical goods here!"
+                                }
+                            ],
+                            //"ClosedMessage": "Sorry, currently closed!"
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.TropicStock1",
+							"ItemId": "(O)873",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+                                                {
+							"Id": "{{ModId}}.TropicStock2",
+							"ItemId": "(O)907",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+                                                {
+							"Id": "{{ModId}}.TropicStock3",
+							"ItemId": "(O)265",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+					        {
+							"Id": "{{ModId}}.TropicStock4",
+							"ItemId": "(O)905",
+                                                        "Price": 200,
+							"AvailableStock": 1,
+						},
+					        {
+							"Id": "{{ModId}}.TropicStock5",
+							"ItemId": "(O)904",
+                                                        "Price": 200,
+							"AvailableStock": 1,
+						},
+                                                {
+							"Id": "{{ModId}}.TropicStock6",
+							"ItemId": "(O)91",
+                                                        "Price": 100,
+							"AvailableStock": 1,
+						},
+                                                {
+							"Id": "{{ModId}}.TropicStock7",
+							"ItemId": "(O)88",
+                                                        "Price": 100,
+							"AvailableStock": 1,
+						},
+                                                {
+							"Id": "{{ModId}}.TropicStock8",
+							"ItemId": "(O)832",
+                                                        "Price": 100,
+							"AvailableStock": 1,
+						},
+                                                {
+							"Id": "{{ModId}}.TropicStock9",
+							"ItemId": "(O)834",
+                                                        "Price": 100,
+							"AvailableStock": 1,
+						},
+					]
+				},
+                "{{ModId}}_AxolotlVeggieShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/YellowVendor",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_AxolotlVeggieShop_Default",
+                                    "Dialogue": "Vegetables and vegetable seeds here!"
+                                }
+                            ],
+                            //"ClosedMessage": "Sorry, come back later!"
+                        }
+                    ],
+                    "Items": [               ///summer stocks
+					        {
+							"Id": "{{ModId}}.SummerVegStock1",
+                                                        "RandomItemId": [
+								"(O)266",
+								"(O)251"
+							],
+                                                        "Price": 150,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON summer"
+						},
+					        {
+							"Id": "{{ModId}}.SummerVegStock2",
+                                                        "RandomItemId": [
+								"(O)270",
+								"(O)487",
+								"(O)264"
+							],
+                                                        "Price": 100,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON summer"
+						},
+                                                {
+							"Id": "{{ModId}}.SummerVegStock3",
+                                                        "RandomItemId": [
+								"(O)485",
+								"(O)830",
+								"(O)256"
+							],
+                                                        "Price": 80,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON summer"
+						},
+                                                {
+							"Id": "{{ModId}}.SummerVegStock4",
+                                                        "RandomItemId": [
+								"(O)259",
+								"(O)304",
+								"(O)484",
+								"(O)815",
+                                                                "(O)831",
+                                                                "(O)480"
+							],
+							"AvailableStock": 3,
+                                                        "Price": 30,
+                                                        "Condition": "SEASON summer"
+						},
+                                                {
+							"Id": "{{ModId}}.SummerVegStock5",
+                                                        "RandomItemId": [
+								"(O)262",
+								"(O)483"
+							],
+                                                        "Price": 10,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON summer"
+						},
+                                           ///spring stocks
+					        {
+							"Id": "{{ModId}}.SpringVegStock1",
+                                                        "RandomItemId": [
+								"(O)190",
+								"(O)251"
+							],
+                                                        "Price": 150,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON spring"
+						},
+					        {
+							"Id": "{{ModId}}.SpringVegStock2",
+							"ItemId": "(O)250",
+                                                        "Price": 100,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON spring"
+						},
+                                                {
+							"Id": "{{ModId}}.SpringVegStock3",
+							"ItemId": "(O)192",
+                                                        "Price": 80,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON spring"
+						},
+{
+							"Id": "{{ModId}}.SpringVegStock4",
+                                                        "RandomItemId": [
+								"(O)474",
+								"(O)248",
+								"(O)473",
+                                                                "(O)477"
+							],
+                                                        "Price": 50,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON spring"
+						},
+{
+							"Id": "{{ModId}}.SpringVegStock5",
+                                                        "RandomItemId": [
+								"(O)476",
+								"(O)188",
+								"(O)24",
+								"(O)475",
+                                                                "(O)815",
+                                                                "(O)273"
+							],
+                                                        "Price": 30,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON spring"
+						},
+{
+							"Id": "{{ModId}}.SpringVegStock6",
+                                                        "RandomItemId": [
+								"(O)472",
+								"(O)271"
+							],
+                                                        "Price": 10,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON spring"
+						},
+                                        ///fall stocks
+					        {
+							"Id": "{{ModId}}.FallVegStock1",
+							"ItemId": "(O)276",
+                                                        "Price": 250,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON fall"
+						},
+					        {
+							"Id": "{{ModId}}.FallVegStock2",
+                                                        "RandomItemId": [
+								"(O)300",
+								"(O)274",
+								"(O)251",
+								"(O)280"
+							],
+                                                        "Price": 150,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON fall"
+						},
+                                                {
+							"Id": "{{ModId}}.FallVegStock3",
+                                                        "RandomItemId": [
+								"(O)284",
+								"(O)270",
+								"(O)487",
+								"(O)490"
+							],
+                                                        "Price": 100,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON fall"
+						},
+{
+							"Id": "{{ModId}}.FallVegStock4",
+							"ItemId": "(O)278",
+                                                        "Price": 80,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON fall"
+						},
+{
+							"Id": "{{ModId}}.FallVegStock5",
+                                                        "RandomItemId": [
+								"(O)299",
+								"(O)272",
+								"(O)492"
+							],
+                                                        "Price": 50,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON fall"
+						},
+{
+							"Id": "{{ModId}}.FallVegStock6",
+                                                         "RandomItemId": [
+								"(O)491",
+								"(O)815"
+							],
+                                                        "Price": 30,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON fall"
+						},
+{
+							"Id": "{{ModId}}.FallVegStock7",
+                                                        "RandomItemId": [
+								"(O)489",
+								"(O)494",
+								"(O)488"
+							],
+                                                        "Price": 20,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON fall"
+						},
+{
+							"Id": "{{ModId}}.FallVegStock8",
+                                                        "RandomItemId": [
+								"(O)262",
+								"(O)483"
+							],
+                                                        "Price": 10,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON fall"
+						},
+					]
+				},
+             "{{ModId}}_AxolotlFruitShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/BlueVendor",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_AxolotlFruitShop_Default",
+                                    "Dialogue": "Fruits and fruit seeds here!"
+                                }
+                            ],
+                            //"ClosedMessage": "Sorry, come back later!"
+                        }
+                    ],
+                    "Items": [               ///summer stocks
+					        {
+							"Id": "{{ModId}}.SummerFruitStock1",
+                                                        "RandomItemId": [
+								"(O)268",
+								"(O)486"
+							],
+                                                        "Price": 700,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON summer"
+						},
+					        {
+							"Id": "{{ModId}}.SummerFruitStock2",
+                                                        "RandomItemId": [
+								"(O)254",
+								"(O)832",
+								"(O)833"
+							],
+                                                        "Price": 250,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON summer"
+						},
+                                                {
+							"Id": "{{ModId}}.SummerFruitStock3",
+                                                        "RandomItemId": [
+								"(O)91",
+								"(O)834",
+								"(O)636"
+							],
+                                                        "Price": 150,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON summer"
+						},
+{
+							"Id": "{{ModId}}.SummerFruitStock4",
+                                                        "RandomItemId": [
+								"(O)88",
+								"(O)635"
+							],
+                                                        "Price": 100,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON summer"
+						},
+{
+							"Id": "{{ModId}}.SummerFruitStock5",
+                                                        "RandomItemId": [
+								"(O)90",
+								"(O)398",
+								"(O)481",
+								"(O)479",
+                                                                "(O)396"
+							],
+                                                        "Price": 80,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON summer"
+						},
+{
+							"Id": "{{ModId}}.SummerFruitStock6",
+                                                         "RandomItemId": [
+								"(O)258",
+								"(O)260"
+							],
+                                                        "Price": 30,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON summer"
+						},
+                                           ///spring stocks
+					        {
+							"Id": "{{ModId}}.SpringFruitStock1",
+                                                        "RandomItemId": [
+								"(O)252",
+								"(O)832",
+								"(O)833"
+							],
+                                                        "Price": 250,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON spring"
+						},
+					        {
+							"Id": "{{ModId}}.SpringFruitStock2",
+                                                        "RandomItemId": [
+								"(O)91",
+								"(O)834",
+								"(O)400"
+							],
+                                                        "Price": 150,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON spring"
+						},
+                                                {
+							"Id": "{{ModId}}.SpringFruitStock3",
+                                                        "RandomItemId": [
+								"(O)88",
+								"(O)478",
+								"(O)745"
+							],
+                                                        "Price": 100,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON spring"
+						},
+{
+							"Id": "{{ModId}}.SpringFruitStock4",
+                                                        "RandomItemId": [
+								"(O)90",
+								"(O)639"
+							],
+                                                        "Price": 80,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON spring"
+						},
+{
+							"Id": "{{ModId}}.SpringFruitStock5",
+							"ItemId": "(O)634",
+                                                        "Price": 50,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON spring"
+						},
+{
+							"Id": "{{ModId}}.SpringFruitStock6",
+							"ItemId": "(O)296",
+                                                        "Price": 10,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON spring"
+						},
+                                        ///fall stocks
+					        {
+							"Id": "{{ModId}}.FallFruitStock1",
+                                                        "RandomItemId": [
+								"(O)493",
+								"(O)832",
+								"(O)833"
+							],
+                                                        "Price": 250,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON fall"
+						},
+					        {
+							"Id": "{{ModId}}.FallFruitStock2",
+                                                        "RandomItemId": [
+								"(O)91",
+								"(O)834",
+								"(O)637"
+							],
+                                                        "Price": 150,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON fall"
+						},
+                                                {
+							"Id": "{{ModId}}.FallFruitStock3",
+                                                        "RandomItemId": [
+								"(O)613",
+								"(O)88"
+							],
+                                                        "Price": 100,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON fall"
+						},
+{
+							"Id": "{{ModId}}.FallFruitStock4",
+                                                        "RandomItemId": [
+								"(O)90",
+								"(O)282",
+								"(O)398",
+								"(O)406"
+							],
+                                                        "Price": 80,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON fall"
+						},
+{
+							"Id": "{{ModId}}.FallVegStock5",
+							"ItemId": "(O)410",
+                                                        "Price": 20,
+							"AvailableStock": 3,
+                                                        "Condition": "SEASON fall"
+						},
+					]
+				},
+                "{{ModId}}_PinkIceCreamShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/PinkVendor",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_PinkIceCreamShop_Default",
+                                    "Dialogue": "My ice cream is better than Bluey's!"
+                                }
+                            ],
+                            //"ClosedMessage": "Sorry, I ran out of ice cream."
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.PinkIceStock1",
+							"ItemId": "(O)233",
+                                                        "Price": 250
+						},
+                                                {
+							"Id": "{{ModId}}.PinkIceStock2",
+							"ItemId": "(O){{ModId}}_Melon_Ice_Cream",
+                                                        "Price": 250
+						}
+					]
+				},
+                 "{{ModId}}_BlueIceCreamShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/BlueVendor",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_BlueIceCreamShop_Default",
+                                    "Dialogue": "Don't listen to Pinky! My ice cream is way better!"
+                                }
+                            ],
+                            //"ClosedMessage": "Sorry, I ran out of ice cream."
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.BlueIceStock1",
+							"ItemId": "(O)233",
+                                                        "Price": 250
+						},
+					        {
+							"Id": "{{ModId}}.BlueIceStock2",
+							"ItemId": "(O){{ModId}}_Blueberry_Ice_Cream",
+                                                        "Price": 250
+						}
+					]
+				},
+                "{{ModId}}_PinkHalloweenShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/PinkVendor",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_PinkHalloweenShop_Default",
+                                    "Dialogue": "My candy is better than Bluey's!"
+                                }
+                            ],
+                            //"ClosedMessage": "Sorry, I ran out of candy."
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.PinkHalloweenStock1",
+							"ItemId": "(O)243",
+                                                        "Price": 200
+						},
+                                                {
+							"Id": "{{ModId}}.PinkHalloweenStock2",
+							"ItemId": "(O){{ModId}}_Melon_Candy",
+                                                        "Price": 200
+						},
+                                                {
+							"Id": "{{ModId}}.PinkHalloweenStock3",
+							"ItemId": "(O){{ModId}}_Halloween_Candy",
+                                                        "Price": 200
+						},
+                                                {
+							"Id": "{{ModId}}.PinkHalloweenStock4",
+							"ItemId": "(O){{ModId}}_Albino_Axolotl_Jack_O_Lantern",
+                                                        "Price": 300
+						},
+{
+							"Id": "{{ModId}}.PinkHalloweenStock5",
+							"ItemId": "(O){{ModId}}_Black_Axolotl_Jack_O_Lantern",
+                                                        "Price": 300
+						},
+{
+							"Id": "{{ModId}}.PinkHalloweenStock6",
+							"ItemId": "(O){{ModId}}_Blue_Axolotl_Jack_O_Lantern",
+                                                        "Price": 300
+						},
+{
+							"Id": "{{ModId}}.PinkHalloweenStock7",
+							"ItemId": "(O){{ModId}}_Lavender_Axolotl_Jack_O_Lantern",
+                                                        "Price": 300
+						},
+{
+							"Id": "{{ModId}}.PinkHalloweenStock8",
+							"ItemId": "(O){{ModId}}_Pink_Axolotl_Jack_O_Lantern",
+                                                        "Price": 300
+						},
+{
+							"Id": "{{ModId}}.PinkHalloweenStock9",
+							"ItemId": "(O){{ModId}}_Yellow_Axolotl_Jack_O_Lantern",
+                                                        "Price": 300
+						},
+					]
+				},
+               "{{ModId}}_BlueHalloweenShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/BlueVendor",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_BlueHalloweenShop_Default",
+                                    "Dialogue": "Don't listen to Pinky! My candy is way better!"
+                                }
+                            ],
+                            //"ClosedMessage": "Sorry, I ran out of candy."
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.BlueHalloweenStock1",
+							"ItemId": "(O)243",
+                                                        "Price": 200
+						},
+                                                {
+							"Id": "{{ModId}}.BlueHalloweenStock2",
+							"ItemId": "(O){{ModId}}_Blueberry_Candy",
+                                                        "Price": 200
+						},
+                                                {
+							"Id": "{{ModId}}.BlueHalloweenStock3",
+							"ItemId": "(O){{ModId}}_Halloween_Candy",
+                                                        "Price": 200
+						},
+                                             {
+							"Id": "{{ModId}}.BlueHalloweenStock4",
+							"ItemId": "(O){{ModId}}_Albino_Axolotl_Jack_O_Lantern",
+                                                        "Price": 300
+						},
+{
+							"Id": "{{ModId}}.BlueHalloweenStock5",
+							"ItemId": "(O){{ModId}}_Black_Axolotl_Jack_O_Lantern",
+                                                        "Price": 300
+						},
+{
+							"Id": "{{ModId}}.BlueHalloweenStock6",
+							"ItemId": "(O){{ModId}}_Blue_Axolotl_Jack_O_Lantern",
+                                                        "Price": 300
+						},
+{
+							"Id": "{{ModId}}.BlueHalloweenStock7",
+							"ItemId": "(O){{ModId}}_Lavender_Axolotl_Jack_O_Lantern",
+                                                        "Price": 300
+						},
+{
+							"Id": "{{ModId}}.BlueHalloweenStock8",
+							"ItemId": "(O){{ModId}}_Pink_Axolotl_Jack_O_Lantern",
+                                                        "Price": 300
+						},
+{
+							"Id": "{{ModId}}.BlueHalloweenStock9",
+							"ItemId": "(O){{ModId}}_Yellow_Axolotl_Jack_O_Lantern",
+                                                        "Price": 300
+						},
+					]
+				},
+             "{{ModId}}_AxolotlWarpShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/BlackVendor",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_AxolotlWarpShop_Default",
+                                    "Dialogue": "All warps, all authentic. No refunds."
+                                }
+                            ],
+                            //"ClosedMessage": "Sorry, currently closed!"
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.WarpStock1",
+							"ItemId": "(O)261",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.WarpStock2",
+							"ItemId": "(O)688",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.WarpStock3",
+							"ItemId": "(O)689",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.WarpStock4",
+							"ItemId": "(O)690",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.WarpStock5",
+							"ItemId": "(O)886",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.WarpStock6",
+							"ItemId": "(O)892",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.WarpStock7",
+							"ItemId": "(O){{ModId}}_AV_Warp_Totem",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+					]
+				},
+              "{{ModId}}_AxolotlPlushShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/AlbinoVendor",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_AxolotlPlushShop_Default",
+                                    "Dialogue": "We have cute plushies for sale here~."
+                                }
+                            ],
+                            //"ClosedMessage": "So sorry, we're closed~."
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.PlushStock1",
+							"ItemId": "(O){{ModId}}_Futan_Captain",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.PlushStock2",
+							"ItemId": "(O){{ModId}}_Futan_Hiro",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.PlushStock3",
+							"ItemId": "(O){{ModId}}_Futan_Jinx",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.PlushStock4",
+							"ItemId": "(O){{ModId}}_Futan_Lala",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.PlushStock5",
+							"ItemId": "(O){{ModId}}_Futan_Lulu",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.PlushStock6",
+							"ItemId": "(O){{ModId}}_Futan_Nimue",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.PlushStock7",
+							"ItemId": " (O){{ModId}}_Futan_Noa",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.PlushStock8",
+							"ItemId": "(O){{ModId}}_Futan_Olina",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.PlushStock9",
+							"ItemId": "(O){{ModId}}_Futan_Puka",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.PlushStock10",
+							"ItemId": "(F)Lg. Futan Captain",
+                                                        "Price": 1000,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.PlushStock11",
+							"ItemId": "(F)Lg. Futan Hiro",
+                                                        "Price": 1000,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.PlushStock12",
+							"ItemId": "(F)Lg. Futan Jinx",
+                                                        "Price": 1000,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.PlushStock13",
+							"ItemId": "(F)Lg. Futan Lala",
+                                                        "Price": 1000,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.PlushStock14",
+							"ItemId": "(F)Lg. Futan Lulu",
+                                                        "Price": 1000,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.PlushStock15",
+							"ItemId": "(F)Lg. Futan Nimue",
+                                                        "Price": 1000,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.PlushStock16",
+							"ItemId": "(F)Lg. Futan Noa",
+                                                        "Price": 1000,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.PlushStock17",
+							"ItemId": "(F)Lg. Futan Olina",
+                                                        "Price": 1000,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.PlushStock18",
+							"ItemId": "(F)Lg. Futan Puka",
+                                                        "Price": 1000,
+							"AvailableStock": 1,
+						},
+					]
+				},
+               "{{ModId}}_AxolotlDrinkShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/PurpleVendor",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_AxolotlDrinkShop_Default",
+                                    "Dialogue": "Welcome! What can I get for you?"
+                                }
+                            ],
+                            //"ClosedMessage": "Closed, sorry!"
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.AxolotlDrinkStock1",
+							"ItemId": "(O){{ModId}}_Rainbow_Colada",
+                                                        "Price": 400,
+							"AvailableStock": 5,
+						},
+{
+							"Id": "{{ModId}}.AxolotlDrinkStock2",
+							"ItemId": "(O)346",
+                                                        "Price": 300,
+							"AvailableStock": 5,
+						},
+{
+							"Id": "{{ModId}}.AxolotlDrinkStock3",
+							"ItemId": "(O)303",
+                                                        "Price": 300,
+							"AvailableStock": 5,
+						},
+{
+							"Id": "{{ModId}}.AxolotlDrinkStock4",
+							"ItemId": "(O){{ModId}}_Cotton_Candy_Cocktail",
+                                                        "Price": 300,
+							"AvailableStock": 5,
+						},
+{
+							"Id": "{{ModId}}.AxolotlDrinkStock5",
+							"ItemId": "(O){{ModId}}_Chocolate_Milkshake",
+                                                        "Price": 300,
+							"AvailableStock": 5,
+						},
+{
+							"Id": "{{ModId}}.AxolotlDrinkStock6",
+							"ItemId": "(O){{ModId}}_Strawberry_Milkshake",
+                                                        "Price": 300,
+							"AvailableStock": 5,
+						},
+{
+							"Id": "{{ModId}}.AxolotlDrinkStock7",
+							"ItemId": "(O){{ModId}}_Vanilla_Milkshake",
+                                                        "Price": 300,
+							"AvailableStock": 5,
+						},
+{
+							"Id": "{{ModId}}.AxolotlDrinkStock8",
+							"ItemId": "(O)612",
+                                                        "Price": 200,
+							"AvailableStock": 5,
+						},
+{
+							"Id": "{{ModId}}.AxolotlDrinkStock9",
+							"ItemId": "(O)733",
+                                                        "Price": 200,
+							"AvailableStock": 5,
+						},
+{
+							"Id": "{{ModId}}.AxolotlDrinkStock10",
+							"ItemId": "(O)903",
+                                                        "Price": 200,
+							"AvailableStock": 5,
+						},
+					]
+				},
+              "{{ModId}}_AxolotlBakeShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/PinkVendor2",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_AxolotlBakeShop_Default",
+                                    "Dialogue": "Welcome! What would you like?"
+                                }
+                            ],
+                            //"ClosedMessage": "Closed, sorry!"
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.AxolotlBakeStock1",
+							"ItemId": "(O)221",
+                                                        "Price": 500,
+							"AvailableStock": 5,
+						},
+			        {
+							"Id": "{{ModId}}.AxolotlBakeStock2",
+							"ItemId": "(O){{ModId}}_Pink_Axolotl_Cake",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+			        {
+							"Id": "{{ModId}}.AxolotlBakeStock3",
+							"ItemId": "(O){{ModId}}_Blue_Axolotl_Cake",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+			        {
+							"Id": "{{ModId}}.AxolotlBakeStock4",
+							"ItemId": "(O){{ModId}}_Yellow_Axolotl_Cake",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+			        {
+							"Id": "{{ModId}}.AxolotlBakeStock5",
+							"ItemId": "(O){{ModId}}_Black_Axolotl_Cake",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+			        {
+							"Id": "{{ModId}}.AxolotlBakeStock6",
+							"ItemId": "(O){{ModId}}_Albino_Axolotl_Cake",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+			        {
+							"Id": "{{ModId}}.AxolotlBakeStock7",
+							"ItemId": "(O){{ModId}}_Lavender_Axolotl_Cake",
+                                                        "Price": 500,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.AxolotlBakeStock8",
+                                                        "RandomItemId": [
+								"(O)203",
+								"(O)220",
+								"(O)731"
+							],
+                                                        "Price": 300,
+							"AvailableStock": 5,
+						},
+{
+							"Id": "{{ModId}}.AxolotlBakeStock9",
+                                                        "RandomItemId": [
+								"(O){{ModId}}_The_Big_Cookie",
+                                                                "(O){{ModId}}_The_Big_Donut",
+								"(O){{ModId}}_Cinnamon_Layer_Cake",
+								"(O){{ModId}}_Primary_Layer_Cake",
+                                                                "(O){{ModId}}_Churro",
+                                                                "(O){{ModId}}_Flan",
+                                                                "(O){{ModId}}_Creme_Filled_Eclair",
+                                                                "(O){{ModId}}_Dessert_Pizza",
+                                                                "(O){{ModId}}_Heart_Macaron",
+                                                                "(O){{ModId}}_Pastel_Cheesecake",
+                                                                "(O){{ModId}}_Rainbow_Cupcake",
+							],
+                                                        "Price": 300,
+							"AvailableStock": 5,
+						},
+{
+							"Id": "{{ModId}}.AxolotlBakeStock10",
+							"ItemId": "(O)223",
+                                                        "Price": 200,
+							"AvailableStock": 5,
+						},
+{
+							"Id": "{{ModId}}.AxolotlBakeStock11",
+							"ItemId": "(O){{ModId}}_Chocolate_Bar",
+                                                        "Price": 100,
+							"AvailableStock": 5,
+						},
+{
+							"Id": "{{ModId}}.AxolotlBakeStock12",
+                                                        "RandomItemId": [
+								"(O){{ModId}}_Fluffy_Marshmallow",
+                                                                "(O){{ModId}}_Cotton_Candy_Heart",
+								"(O){{ModId}}_S'mores",
+                                                                "(O){{ModId}}_Dirt_and_Worms",
+							],
+                                                        "Price": 200,
+							"AvailableStock": 5,
+						},
+{
+							"Id": "{{ModId}}.AxolotlBakeStock13",
+							"ItemId": "(O){{ModId}}_Birthday_Cake",
+                                                        "Price": 400,
+							"AvailableStock": 1,
+						},
+{
+							"Id": "{{ModId}}.AxolotlBakeStock14",
+							"ItemId": "(O){{ModId}}_Sugary_Sweet_Cake",
+                                                        "Price": 400,
+							"AvailableStock": 1,
+						},
+					]
+				},
+                "{{ModId}}_PinkChristmasShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/PinkVendor",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_PinkChristmasShop_Default",
+                                    "Dialogue": "My fruitcake is better than Bluey's!"
+                                }
+                            ],
+                            //"ClosedMessage": "Sorry, I ran out of fruitcake."
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.PinkChristmasStock1",
+							"ItemId": "(O){{ModId}}_Futan_Santa_Captain",
+                                                        "Price": 200
+						},
+                                                {
+							"Id": "{{ModId}}.PinkChristmasStock2",
+							"ItemId": "(O){{ModId}}_Melon_Candy_Cane",
+                                                        "Price": 200
+						},
+{
+							"Id": "{{ModId}}.PinkChristmasStock3",
+							"ItemId": "(O){{ModId}}_Melon_Fruitcake",
+                                                        "Price": 300
+						}
+					]
+				},
+                 "{{ModId}}_BlueChristmasShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/BlueVendor",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_BlueChristmasShop_Default",
+                                    "Dialogue": "Don't listen to Pinky! My fruitcake is way better!"
+                                }
+                            ],
+                            //"ClosedMessage": "Sorry, I ran out of fruitcake."
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.BlueChristmasStock1",
+							"ItemId": "(O){{ModId}}_Futan_Santa_Captain",
+                                                        "Price": 200
+						},
+                                                {
+							"Id": "{{ModId}}.BlueChristmasStock2",
+							"ItemId": "(O){{ModId}}_Blueberry_Candy_Cane",
+                                                        "Price": 200
+						},
+{
+							"Id": "{{ModId}}.BlueChristmasStock3",
+							"ItemId": "(O){{ModId}}_Blueberry_Fruitcake",
+                                                        "Price": 300
+						}
+					]
+				},
+                 "{{ModId}}_PinkTanabataShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/PinkVendor",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_PinkTanabataShop_Default",
+                                    "Dialogue": "My lights are better than Bluey's!"
+                                }
+                            ],
+                            //"ClosedMessage": "Sorry, I ran out of stuff."
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.PinkTanabataStock1",
+							"ItemId": "(O){{ModId}}_Pink_Tanzaku",
+                                                        "Price": 50
+						},
+                                                {
+							"Id": "{{ModId}}.PinkTanabataStock2",
+							"ItemId": "(O){{ModId}}_Melon_Ramune",
+                                                        "Price": 150
+						},
+                                                {
+							"Id": "{{ModId}}.PinkTanabataStock3",
+							"ItemId": "(O){{ModId}}_Soy_Sauce",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.PinkTanabataStock4",
+							"ItemId": "(O){{ModId}}_Melon_Kakigori",
+                                                        "Price": 200
+						},
+{
+							"Id": "{{ModId}}.PinkTanabataStock5",
+							"ItemId": "(O){{ModId}}_Melon_Mochi",
+                                                        "Price": 200
+						},
+{
+							"Id": "{{ModId}}.PinkTanabataStock6",
+							"ItemId": "(O){{ModId}}_Taiyaki",
+                                                        "Price": 200
+						},
+{
+							"Id": "{{ModId}}.PinkTanabataStock7",
+							"ItemId": "(O){{ModId}}_Hanami_Dango",
+                                                        "Price": 200
+						},
+{
+							"Id": "{{ModId}}.PinkTanabataStock8",
+							"ItemId": "(O){{ModId}}_Takoyaki",
+                                                        "Price": 300
+						},
+{
+							"Id": "{{ModId}}.PinkTanabataStock9",
+							"ItemId": "(O){{ModId}}_Okonomiyaki",
+                                                        "Price": 300
+						},
+{
+							"Id": "{{ModId}}.PinkTanabataStock10",
+							"ItemId": "(F)Pink Nova Light",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.PinkTanabataStock11",
+							"ItemId": "(F)Nova Light",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.PinkTanabataStock12",
+							"ItemId": "(F)Tanabata Bamboo",
+                                                        "Price": 1000
+						},
+					]
+				},
+                 "{{ModId}}_BlueTanabataShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/BlueVendor",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_BlueTanabataShop_Default",
+                                    "Dialogue": "Don't listen to Pinky! My lights are way better!"
+                                }
+                            ],
+                            //"ClosedMessage": "Sorry, I ran out of stuff."
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.BlueTanabataStock1",
+							"ItemId": "(O){{ModId}}_Blue_Tanzaku",
+                                                        "Price": 50
+						},
+                                                {
+							"Id": "{{ModId}}.BlueTanabataStock2",
+							"ItemId": "(O){{ModId}}_Blueberry_Ramune",
+                                                        "Price": 150
+						},
+                                                {
+							"Id": "{{ModId}}.BlueTanabataStock3",
+							"ItemId": "(O){{ModId}}_Soy_Sauce",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.BlueTanabataStock4",
+							"ItemId": "(O){{ModId}}_Blueberry_Kakigori",
+                                                        "Price": 200
+						},
+{
+							"Id": "{{ModId}}.BlueTanabataStock5",
+							"ItemId": "(O){{ModId}}_Blueberry_Mochi",
+                                                        "Price": 200
+						},
+{
+							"Id": "{{ModId}}.BlueTanabataStock6",
+							"ItemId": "(O){{ModId}}_Taiyaki",
+                                                        "Price": 200
+						},
+{
+							"Id": "{{ModId}}.BlueTanabataStock7",
+							"ItemId": "(O){{ModId}}_Hanami_Dango",
+                                                        "Price": 200
+						},
+{
+							"Id": "{{ModId}}.BlueTanabataStock8",
+							"ItemId": "(O){{ModId}}_Takoyaki",
+                                                        "Price": 300
+						},
+{
+							"Id": "{{ModId}}.BlueTanabataStock9",
+							"ItemId": "(O){{ModId}}_Okonomiyaki",
+                                                        "Price": 300
+						},
+{
+							"Id": "{{ModId}}.BlueTanabataStock10",
+							"ItemId": "(F)Blue Nova Light",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.BlueTanabataStock11",
+							"ItemId": "(F)Nova Light",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.BlueTanabataStock12",
+							"ItemId": "(F)Tanabata Bamboo",
+                                                        "Price": 1000
+						},
+					]
+				},
+                "{{ModId}}_PurpleKandiShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/PurpleVendor",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_PurpleKandiShop_Default",
+                                    "Dialogue": "Kandi merch here!"
+                                }
+                            ],
+                            //"ClosedMessage": "Sorry, out of merch!"
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.PurpleKandiStock1",
+							"ItemId": "(O){{ModId}}_Kandi_Candy",
+                                                        "Price": 200
+						},
+                                                {
+							"Id": "{{ModId}}.PurpleKandiStock2",
+							"ItemId": "(H){{ModId}}_Kandi_Bow",
+                                                        "Price": 200
+						},
+{
+							"Id": "{{ModId}}.PurpleKandiStock3",
+							"ItemId": "(O){{ModId}}_Futan_Kandi",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.PurpleKandiStock4",
+							"ItemId": "(F)Lg. Futan Kandi",
+                                                        "Price": 1000
+						}
+					]
+				},
+                 "{{ModId}}_BlueKandiShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/BlueVendor",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_BlueKandiShop_Default",
+                                    "Dialogue": "Kandi merch here!"
+                                }
+                            ],
+                            //"ClosedMessage": "Sorry, out of merch!"
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.BlueKandiStock1",
+							"ItemId": "(F)Blue Candy",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.BlueKandiStock2",
+							"ItemId": "(F)Purple Candy",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.BlueKandiStock3",
+							"ItemId": "(F)Cute Heart",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.BlueKandiStock4",
+							"ItemId": "(F)Red Lollipop",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.BlueKandiStock5",
+							"ItemId": "(F)Orange Lollipop",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.BlueKandiStock6",
+							"ItemId": "(F)Yellow Lollipop",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.BlueKandiStock7",
+							"ItemId": "(F)Green Lollipop",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.BlueKandiStock8",
+							"ItemId": "(F)Blue Lollipop",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.BlueKandiStock9",
+							"ItemId": "(F)Purple Lollipop",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.BlueKandiStock10",
+							"ItemId": "(F)Pink Lollipop",
+                                                        "Price": 500
+						},
+					]
+				},
+               "{{ModId}}_AccessoryShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/PinkVendor3",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_AccessoryShop_Default",
+                                    "Dialogue": "Hiya! Anything catch your eye?"
+                                }
+                            ],
+                            //"ClosedMessage": "Come back later!"
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.AccessoryStock1",
+							"ItemId": "(H){{ModId}}_Starfish_Hair_Clip",
+                                                        "Price": 200
+						},
+                                                {
+							"Id": "{{ModId}}.AccessoryStock2",
+							"ItemId": "(H){{ModId}}_Baby_Albino_Axolotl",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.AccessoryStock3",
+							"ItemId": "(H){{ModId}}_Baby_Black_Axolotl",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.AccessoryStock4",
+							"ItemId": "(H){{ModId}}_Baby_Blue_Axolotl",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.AccessoryStock5",
+							"ItemId": "(H){{ModId}}_Baby_Lavender_Axolotl",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.AccessoryStock6",
+							"ItemId": "(H){{ModId}}_Baby_Pink_Axolotl",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.AccessoryStock7",
+							"ItemId": "(H){{ModId}}_Baby_Yellow_Axolotl",
+                                                        "Price": 500
+						},
+					]
+				},
+               "{{ModId}}_CandyShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/BlueVendor2",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_CandyShop_Default",
+                                    "Dialogue": "Hi! What would you like?"
+                                }
+                            ],
+                            //"ClosedMessage": "Come back later!"
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.CandyStock1",
+							"ItemId": "(O){{ModId}}_Red_Lolli",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.CandyStock2",
+							"ItemId": "(O){{ModId}}_Orange_Lolli",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.CandyStock3",
+							"ItemId": "(O){{ModId}}_Yellow_Lolli",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.CandyStock4",
+							"ItemId": "(O){{ModId}}_Green_Lolli",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.CandyStock5",
+							"ItemId": "(O){{ModId}}_Blue_Lolli",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.CandyStock6",
+							"ItemId": "(O){{ModId}}_Purple_Lolli",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.CandyStock7",
+							"ItemId": "(O){{ModId}}_Red_Gummy_Bear",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.CandyStock8",
+							"ItemId": "(O){{ModId}}_Orange_Gummy_Bear",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.CandyStock9",
+							"ItemId": "(O){{ModId}}_Yellow_Gummy_Bear",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.CandyStock10",
+							"ItemId": "(O){{ModId}}_Green_Gummy_Bear",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.CandyStock11",
+							"ItemId": "(O){{ModId}}_Blue_Gummy_Bear",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.CandyStock12",
+							"ItemId": "(O){{ModId}}_Purple_Gummy_Bear",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.CandyStock13",
+							"ItemId": "(O){{ModId}}_Chocolate_Bar",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.CandyStock14",
+							"ItemId": "(O){{ModId}}_Gummy_Worms",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.CandyStock15",
+							"ItemId": "(O){{ModId}}_Cute_Lolli",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.CandyStock16",
+							"ItemId": "(O){{ModId}}_Chocolate_Malt_Balls",
+                                                        "Price": 120
+						},
+{
+							"Id": "{{ModId}}.CandyStock17",
+							"ItemId": "(O){{ModId}}_Rainbow_Candy",
+                                                        "Price": 300
+						},
+					]
+				},
+              "{{ModId}}_SeedShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/YellowVendor2",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_SeedShop_Default",
+                                    "Dialogue": "We've got great seeds and saplings here!"
+                                }
+                            ],
+                            //"ClosedMessage": "Come back later!"
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.SeedStock1",
+							"ItemId": "(O){{ModId}}_Flamingo_Flower_Seeds",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.SeedStock2",
+							"ItemId": "(O){{ModId}}_Urn_Plant_Seeds",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.SeedStock3",
+							"ItemId": "(O){{ModId}}_Rose_Grape_Starter",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.SeedStock4",
+							"ItemId": "(F)Albino Axolotl Scarecrow",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.SeedStock5",
+							"ItemId": "(F)Black Axolotl Scarecrow",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.SeedStock6",
+							"ItemId": "(F)Blue Axolotl Scarecrow",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.SeedStock7",
+							"ItemId": "(F)Lavender Axolotl Scarecrow",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.SeedStock8",
+							"ItemId": "(F)Pink Axolotl Scarecrow",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.SeedStock9",
+							"ItemId": "(F)Yellow Axolotl Scarecrow",
+                                                        "Price": 500
+						},
+ {
+							"Id": "{{ModId}}.SeedStock10",
+							"ItemId": "(O){{ModId}}_Cannonball_Sapling",
+                                                        "Price": 1000
+						},
+{
+							"Id": "{{ModId}}.SeedStock11",
+							"ItemId": "(O){{ModId}}_Tea_Crabapple_Sapling",
+                                                        "Price": 1400
+						},
+{
+							"Id": "{{ModId}}.SeedStock12",
+                                                        "RandomItemId": [
+								"(O)69",
+								"(O)628",
+								"(O)629",
+								"(O)630",
+                                                                "(O)631",
+                                                                "(O)632",
+                                                                "(O)633",
+                                                                "(O)635"
+							],
+                                                        "Price": 2000,
+							"AvailableStock": 2,
+						},
+  
+					]
+				},
+              "{{ModId}}_PurplePlushShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/PurpleVendor2",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_PurplePlushShop_Default",
+                                    "Dialogue": "Take home a cute plushie today!"
+                                }
+                            ],
+                            //"ClosedMessage": "Come back later!"
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.PurplePlushStock1",
+							"ItemId": "(O){{ModId}}_Futan_Albino_Axolotl",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.PurplePlushStock2",
+							"ItemId": "(O){{ModId}}_Futan_Black_Axolotl",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.PurplePlushStock3",
+							"ItemId": "(O){{ModId}}_Futan_Blue_Axolotl",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.PurplePlushStock4",
+							"ItemId": "(O){{ModId}}_Futan_Lavender_Axolotl",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.PurplePlushStock5",
+							"ItemId": "(O){{ModId}}_Futan_Pink_Axolotl",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.PurplePlushStock6",
+							"ItemId": "(O){{ModId}}_Futan_Yellow_Axolotl",
+                                                        "Price": 500
+						},
+{
+							"Id": "{{ModId}}.PurplePlushStock7",
+							"ItemId": "(F)Lg. Futan Albino Axolotl",
+                                                        "Price": 1000
+						},
+{
+							"Id": "{{ModId}}.PurplePlushStock8",
+							"ItemId": "(F)Lg. Futan Black Axolotl",
+                                                        "Price": 1000
+						},
+{
+							"Id": "{{ModId}}.PurplePlushStock9",
+							"ItemId": "(F)Lg. Futan Blue Axolotl",
+                                                        "Price": 1000
+						},
+{
+							"Id": "{{ModId}}.PurplePlushStock10",
+							"ItemId": "(F)Lg. Futan Lavender Axolotl",
+                                                        "Price": 1000
+						},
+{
+							"Id": "{{ModId}}.PurplePlushStock11",
+							"ItemId": "(F)Lg. Futan Pink Axolotl",
+                                                        "Price": 1000
+						},
+{
+							"Id": "{{ModId}}.PurplePlushStock12",
+							"ItemId": "(F)Lg. Futan Yellow Axolotl",
+                                                        "Price": 1000
+						},
+
+					]
+				},
+                 "{{ModId}}_PinkBOFShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/PinkVendor4",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_PinkBOFShop_Default",
+                                    "Dialogue": "Tons of cute flower seeds here!"
+                                }
+                            ],
+                            //"ClosedMessage": "Sorry, I ran out of stuff!"
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.PinkBOFStock1",
+							"ItemId": "(O)427",
+                                                        "Price": 20
+						},
+{
+							"Id": "{{ModId}}.PinkBOFStock2",
+							"ItemId": "(O)429",
+                                                        "Price": 30
+						},
+{
+							"Id": "{{ModId}}.PinkBOFStock3",
+							"ItemId": "(O)455",
+                                                        "Price": 50
+						},
+ {
+							"Id": "{{ModId}}.PinkBOFStock4",
+							"ItemId": "(O){{ModId}}_Flamingo_Flower_Seeds",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.PinkBOFStock5",
+							"ItemId": "(O){{ModId}}_Urn_Plant_Seeds",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.PinkBOFStock6",
+							"ItemId": "(O){{ModId}}_Rose_Grape_Starter",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.PinkBOFStock7",
+							"ItemId": "(O)453",
+                                                        "Price": 100
+						},
+{
+							"Id": "{{ModId}}.PinkBOFStock8",
+							"ItemId": "(O)431",
+                                                        "Price": 200
+						},
+{
+							"Id": "{{ModId}}.PinkBOFStock9",
+							"ItemId": "(O)425",
+                                                        "Price": 200
+						},
+					]
+				},
+         "{{ModId}}_BlueBOFShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "LooseSprites/BlueVendor3",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_BlueBOFShop_Default",
+                                    "Dialogue": "Tons of cute flower accessories here!"
+                                }
+                            ],
+                            //"ClosedMessage": "Sorry, I ran out of stuff."
+                        }
+                    ],
+                    "Items": [
+					        {
+							"Id": "{{ModId}}.BlueBOFStock1",
+							"ItemId": "(H){{ModId}}_Pink_Flower_Hair_Clip",
+                                                        "Price": 200
+						},
+{
+							"Id": "{{ModId}}.BlueBOFStock2",
+							"ItemId": "(H){{ModId}}_Yellow_Flower_Hair_Clip",
+                                                        "Price": 200
+						},
+{
+							"Id": "{{ModId}}.BlueBOFStock3",
+							"ItemId": "(H){{ModId}}_Blue_Flower_Hair_Clip",
+                                                        "Price": 200
+						},
+{
+							"Id": "{{ModId}}.BlueBOFStock4",
+							"ItemId": "(H){{ModId}}_Purple_Flower_Hair_Clip",
+                                                        "Price": 200
+						},
+{
+							"Id": "{{ModId}}.BlueBOFStock5",
+							"ItemId": "(H){{ModId}}_Pink_Flower_Crown",
+                                                        "Price": 300
+						},
+{
+							"Id": "{{ModId}}.BlueBOFStock6",
+							"ItemId": "(H){{ModId}}_Yellow_Flower_Crown",
+                                                        "Price": 300
+						},
+{
+							"Id": "{{ModId}}.BlueBOFStock7",
+							"ItemId": "(H){{ModId}}_Blue_Flower_Crown",
+                                                        "Price": 300
+						},
+{
+							"Id": "{{ModId}}.BlueBOFStock8",
+							"ItemId": "(H){{ModId}}_Purple_Flower_Crown",
+                                                        "Price": 300
+						},
+					]
+				},
+            }
+        }
+    ]
+}

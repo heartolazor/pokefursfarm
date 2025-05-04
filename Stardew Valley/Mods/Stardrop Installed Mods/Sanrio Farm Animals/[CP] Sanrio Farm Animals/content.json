@@ -1,0 +1,1862 @@
+{
+    "Format": "2.0",
+	"Changes": [
+	
+	{
+		"LogName": "Load images",
+			"Action": "Load",
+			"Target": "Mods/otohime.sanriofarm/HelloKitty, Mods/otohime.sanriofarm/hkhead, Mods/otohime.sanriofarm/Gudetama, Mods/otohime.sanriofarm/gudehead, Mods/otohime.sanriofarm/Gyudechama, Mods/otohime.sanriofarm/gyudehead, Mods/otohime.sanriofarm/Cinnamoroll, Mods/otohime.sanriofarm/cinnahead, Mods/otohime.sanriofarm/Azuki, Mods/otohime.sanriofarm/azukihead, Mods/otohime.sanriofarm/Berry, Mods/otohime.sanriofarm/berryhead, Mods/otohime.sanriofarm/Bonbonribbon, Mods/otohime.sanriofarm/bonbonhead, Mods/otohime.sanriofarm/BadtzMaru, Mods/otohime.sanriofarm/badtzhead, Mods/otohime.sanriofarm/Cappuccino, Mods/otohime.sanriofarm/capphead, Mods/otohime.sanriofarm/Cherry, Mods/otohime.sanriofarm/cherryhead, Mods/otohime.sanriofarm/Chiffon, Mods/otohime.sanriofarm/chiffonhead, Mods/otohime.sanriofarm/Chococat, Mods/otohime.sanriofarm/chococathead, Mods/otohime.sanriofarm/Espresso, Mods/otohime.sanriofarm/espressohead, Mods/otohime.sanriofarm/Keroppi, Mods/otohime.sanriofarm/kerohead, Mods/otohime.sanriofarm/Kuromi, Mods/otohime.sanriofarm/kuromihead, Mods/otohime.sanriofarm/Macaroon, Mods/otohime.sanriofarm/macaroonhead, Mods/otohime.sanriofarm/Mocha, Mods/otohime.sanriofarm/mochahead, Mods/otohime.sanriofarm/MyMelody, Mods/otohime.sanriofarm/mymelohead, Mods/otohime.sanriofarm/Pochacco, Mods/otohime.sanriofarm/pochaccohead, Mods/otohime.sanriofarm/Pompompurin, Mods/otohime.sanriofarm/purinhead, Mods/otohime.sanriofarm/Poron, Mods/otohime.sanriofarm/poronhead, Mods/otohime.sanriofarm/TuxedoSam, Mods/otohime.sanriofarm/samhead, Mods/otohime.sanriofarm/Usahana, Mods/otohime.sanriofarm/usahanahead, Mods/otohime.sanriofarm/Blueberryusa, Mods/otohime.sanriofarm/blueberryusahead, Mods/otohime.sanriofarm/Cogimyun, Mods/otohime.sanriofarm/cogihead, Mods/otohime.sanriofarm/Strawberryusa, Mods/otohime.sanriofarm/strawberryusahead, Mods/otohime.sanriofarm/Aomimiusa, Mods/otohime.sanriofarm/aomimiusahead, Mods/otohime.sanriofarm/Aousa, Mods/otohime.sanriofarm/aousahead, Mods/otohime.sanriofarm/Buchiusa, Mods/otohime.sanriofarm/buchiusahead, Mods/otohime.sanriofarm/Cappuccinousa, Mods/otohime.sanriofarm/cappuccinousahead, Mods/otohime.sanriofarm/Hanausa, Mods/otohime.sanriofarm/hanausahead, Mods/otohime.sanriofarm/Komugiusa, Mods/otohime.sanriofarm/komugiusahead, Mods/otohime.sanriofarm/Kurousa, Mods/otohime.sanriofarm/kurousahead, Mods/otohime.sanriofarm/Latteusa, Mods/otohime.sanriofarm/latteusahead, Mods/otohime.sanriofarm/Mintusa, Mods/otohime.sanriofarm/mintusahead, Mods/otohime.sanriofarm/Momousa, Mods/otohime.sanriofarm/momousahead, Mods/otohime.sanriofarm/Pandausa, Mods/otohime.sanriofarm/pandausahead, Mods/otohime.sanriofarm/Shirousa, Mods/otohime.sanriofarm/shirousahead",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+                "LogName": "Animal Data",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"otohime.hk": {
+				"DisplayName": "Hello Kitty",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\hkhead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Hello Kitty",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "otohime.SD_Hello_Kitty_Bow_Macaron"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.hk_Default1",
+						"MinimumFriendship": 2,
+						"ItemId": "otohime.SD_Chocolate_Hello_Kitty_Donut"
+					},
+                                        {
+						"Id": "otohime.hk_Default2",
+						"MinimumFriendship": 2,
+						"ItemId": "otohime.SD_Mint_Hello_Kitty_Donut"
+					},
+                                        {
+						"Id": "otohime.hk_Default3",
+						"MinimumFriendship": 2,
+						"ItemId": "otohime.SD_Strawberry_Hello_Kitty_Donut"
+					},
+                                        {
+						"Id": "otohime.hk_Default4",
+						"MinimumFriendship": 2,
+						"ItemId": "otohime.SD_Ice_Cream_Hello_Kitty_Donut"
+					},
+                                        {
+						"Id": "otohime.hk_Default5",
+						"MinimumFriendship": 2,
+						"ItemId": "otohime.SD_Rainbow_Hello_Kitty_Donut"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\HelloKitty",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},			
+			"otohime.gudetama": {
+				"DisplayName": "Gudetama",
+				"House": "Coop",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\gudehead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Gudetama",
+				"ShopDescription": "",
+				"RequiredBuilding": "Coop",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "176"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.gude_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "174"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Gudetama",
+				"UseFlippedRightForLeft": false,
+				"SpriteWidth": 16,
+				"SpriteHeight": 16,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},	
+			"otohime.gyudechama": {
+				"DisplayName": "Gyudechama",
+				"House": "Coop",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\gyudehead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Gyudechama",
+				"ShopDescription": "",
+				"RequiredBuilding": "Coop",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "176"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.gyude_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "174"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Gyudechama",
+				"UseFlippedRightForLeft": false,
+				"SpriteWidth": 16,
+				"SpriteHeight": 16,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.cinna": {
+				"DisplayName": "Cinnamoroll",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\cinnahead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Cinnamoroll",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "otohime.SD_Cinnamoroll_Cupcake"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.cinna_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "otohime.SD_Cinnamoroll_Parfait"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Cinnamoroll",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.azuki": {
+				"DisplayName": "Azuki",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\azukihead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Azuki",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "815"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.azuki_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "614"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Azuki",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.berry": {
+				"DisplayName": "Berry",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\berryhead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Berry",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "767"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.berry_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "769"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Berry",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.cappuccino": {
+				"DisplayName": "Cappuccino",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\capphead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Cappuccino",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "395"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.capp_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "904"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Cappuccino",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.cherry": {
+				"DisplayName": "Cherry",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\cherryhead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Cherry",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "767"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.cherry_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "769"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Cherry",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.chiffon": {
+				"DisplayName": "Chiffon",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\chiffonhead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Chiffon",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "221"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.chiffon_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "220"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Chiffon",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.espresso": {
+				"DisplayName": "Espresso",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\espressohead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Espresso",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "395"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.espresso_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "253"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Espresso",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.mocha": {
+				"DisplayName": "Mocha",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\mochahead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Mocha",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "234"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.mocha_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "220"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Mocha",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.poron": {
+				"DisplayName": "Poron",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\poronhead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Poron",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "486"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.poron_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "268"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Poron",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.bonbonribbon": {
+				"DisplayName": "Bonbonribbon",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\bonbonhead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Bonbonribbon",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "636"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.bonbonribbon_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "221"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Bonbonribbon",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+			"otohime.badtz": {
+				"DisplayName": "Badtz-Maru",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\badtzhead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Badtz-Maru",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "131"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.badtz_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "228"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\BadtzMaru",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.chococat": {
+				"DisplayName": "Chococat",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\chococathead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Chococat",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "184"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.choco_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "201"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Chococat",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.keroppi": {
+				"DisplayName": "Keroppi",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\kerohead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Keroppi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "otohime.SD_Kerokerokeroppi_Eclair"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.kero_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "otohime.SD_Kerokerokeroppi_Parfait"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Keroppi",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.kuromi": {
+				"DisplayName": "Kuromi",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\kuromihead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Kuromi",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "otohime.SD_Kuromi_Cake"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.kuromi_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "otohime.SD_Kuromi_Parfait"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Kuromi",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.macaroon": {
+				"DisplayName": "Macaroon",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\macaroonhead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Macaroon",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "254"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.macaroon_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "221"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Macaroon",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.mymelody": {
+				"DisplayName": "My Melody",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\mymelohead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "My Melody",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "400"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.mymelody_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "otohime.SD_My_Melody_Parfait"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\MyMelody",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.pochacco": {
+				"DisplayName": "Pochacco",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\pochaccohead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Pochacco",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "Carrot"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.pochacco_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "904"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Pochacco",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.pompompurin": {
+				"DisplayName": "Pompompurin",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\purinhead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Pompompurin",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "otohime.SD_Pompompurin_Flan"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.pompompurin_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "otohime.SD_Pompompurin_Parfait"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Pompompurin",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.tuxedosam": {
+				"DisplayName": "Tuxedo Sam",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\samhead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Tuxedo Sam",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "otohime.SD_Tuxedo_Sam_Popsicle"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.tuxedosam_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "otohime.SD_Tuxedo_Sam_Parfait"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\TuxedoSam",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.usahana": {
+				"DisplayName": "Usahana",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\usahanahead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Usahana",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "421"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.usahana_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "otohime.SD_Usahana_Ice_Cream"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Usahana",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.cogimyun": {
+				"DisplayName": "Cogimyun",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\cogihead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Cogimyun",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "262"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.cogi_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "246"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Cogimyun",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.blueberryusa": {
+				"DisplayName": "Blueberryusa",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\blueberryusahead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Blueberryusa",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "481"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.blueberryusa_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "258"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Blueberryusa",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.strawberryusa": {
+				"DisplayName": "Strawberryusa",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\strawberryusahead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Strawberryusa",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "745"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.strawberryusa_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "400"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Strawberryusa",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.aomimiusa": {
+				"DisplayName": "Aomimiusa",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\aomimiusahead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Aomimiusa",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "62"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.aomimiusa_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "279"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Aomimiusa",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.aousa": {
+				"DisplayName": "Aousa",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\aousahead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Aousa",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "62"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.aousa_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "279"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Aousa",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.buchiusa": {
+				"DisplayName": "Buchiusa",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\buchiusahead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Buchiusa",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "233"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.buchiusa_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "186"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Buchiusa",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.mintusa": {
+				"DisplayName": "Mintusa",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\mintusahead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Mintusa",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "233"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.mintusa_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "186"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Mintusa",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.cappuccinousa": {
+				"DisplayName": "Cappuccinousa",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\cappuccinousahead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Cappuccinousa",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "433"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.cappuccinousa_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "395"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Cappuccinousa",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.latteusa": {
+				"DisplayName": "Latteusa",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\latteusahead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Latteusa",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "433"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.latteusa_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "395"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Latteusa",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.hanausa": {
+				"DisplayName": "Hanausa",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\hanausahead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Hanausa",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "455"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.hanausa_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "593"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Hanausa",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.komugiusa": {
+				"DisplayName": "Komugiusa",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\komugiusahead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Komugiusa",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "483"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.komugiusa_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "262"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Komugiusa",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.kurousa": {
+				"DisplayName": "Kurousa",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\kurousahead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Kurousa",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "430"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.kurousa_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "220"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Kurousa",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.momousa": {
+				"DisplayName": "Momousa",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\momousahead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Momousa",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "427"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.momousa_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "591"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Momousa",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.pandausa": {
+				"DisplayName": "Pandausa",
+				"House": "Barn",
+				"Gender": "Male",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\pandausahead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Pandausa",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "246"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.pandausa_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "216"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Pandausa",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+                        "otohime.shirousa": {
+				"DisplayName": "Shirousa",
+				"House": "Barn",
+				"Gender": "Female",
+				"PurchasePrice": 1000,
+				"SellPrice": 1200,
+				"ShopTexture": "Mods/otohime.sanriofarm\\shirousahead",
+				"ShopSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 32,
+					"Height": 16
+				},
+				"ShopDisplayName": "Shirousa",
+				"ShopDescription": "",
+				"RequiredBuilding": "Barn",
+				"DaysToMature": 1,
+				"CanGetPregnant": false,
+				"DaysToProduce": 1,
+				"HarvestType": "DropOvernight",
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"MinimumFriendship": 0,
+						"ItemId": "254"
+	                    		}
+                                ],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "otohime.shirousa_Default",
+						"MinimumFriendship": 2,
+						"ItemId": "221"
+					}
+				],
+				"ProduceOnMature": true,
+				"Sound": "dustMeep",
+				"Texture": "Mods\\otohime.sanriofarm\\Shirousa",
+				"UseFlippedRightForLeft": false,
+                                "UseDoubleUniqueAnimationFrames": false,
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"CanSwim": false,
+				"BabiesFollowAdults": false,
+				"GrassEatAmount": 0,
+				"HappinessDrain": 5,
+				"ShowInSummitCredits": true,
+				"CustomFields": {}
+			},
+		},
+	},
+],
+}		

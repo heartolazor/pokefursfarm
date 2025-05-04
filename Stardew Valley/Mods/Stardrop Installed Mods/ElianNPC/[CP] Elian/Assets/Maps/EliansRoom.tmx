@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="left-down" width="6" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="9">
+ <tileset firstgid="1" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="37" name="elian_furniture" tilewidth="16" tileheight="16" tilecount="90" columns="10">
+  <image source="z_elian_furniture.png" width="160" height="144"/>
+ </tileset>
+ <tileset firstgid="127" name="CarolineGreenhouseTiles" tilewidth="16" tileheight="16" tilecount="128" columns="8">
+  <image source="CarolineGreenhouseTiles.png" width="128" height="256"/>
+ </tileset>
+ <tileset firstgid="255" name="Craftables" tilewidth="16" tileheight="16" tilecount="576" columns="8">
+  <image source="z_Craftables.png" width="128" height="1152"/>
+ </tileset>
+ <tileset firstgid="831" name="furniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="z_furniture.png" width="512" height="1488"/>
+ </tileset>
+ <layer id="1" name="Back" width="6" height="9">
+  <data encoding="csv">
+164,164,164,164,164,165,
+172,172,172,172,172,173,
+180,180,180,179,180,181,
+129,189,189,189,189,189,
+196,135,196,136,135,131,
+188,187,188,188,187,188,
+188,187,188,188,187,188,
+188,187,188,188,187,188,
+188,187,188,188,187,188
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="6" height="9">
+  <data encoding="csv">
+164,161,162,163,164,165,
+172,169,170,171,172,173,
+180,177,178,108,180,181,
+53,632,117,118,216,246,
+0,0,0,0,0,2193,
+0,0,0,0,0,0,
+0,0,97,98,99,0,
+0,0,0,0,0,0,
+475,361,0,0,205,206
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="7" name="TileData" x="48" y="32" width="16" height="32">
+   <properties>
+    <property name="Action" value="Message &quot;ElianSpouseRoom.1&quot;"/>
+   </properties>
+  </object>
+  <object id="8" name="TileData" x="0" y="32" width="16" height="32">
+   <properties>
+    <property name="Action" value="Message &quot;ElianSpouseRoom.2&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Paths" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,8,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="12" name="Paths"/>
+ <layer id="7" name="Front" width="6" height="9">
+  <data encoding="csv">
+2791,0,0,191,192,193,
+2823,0,0,199,200,201,
+43,624,107,0,208,238,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,87,88,89,0,
+0,0,0,0,0,0,
+467,353,0,0,197,198,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Front"/>
+</map>

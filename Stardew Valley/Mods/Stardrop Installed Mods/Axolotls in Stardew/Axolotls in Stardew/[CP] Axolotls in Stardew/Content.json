@@ -1,0 +1,450 @@
+{
+  "Format": "2.0",
+  "Changes": [
+                {               
+			"Action": "Include",
+			"FromFile": "data/Objects/ObjectContent.json",
+		},
+    {
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Entries": {
+        "{{ModId}}_Axolotl": "Axolotl/60/floater/1/3/600 2000/spring summer/both/689 .4 680 .1/3/.2/.1/0",
+        "{{ModId}}_Yellow_Axolotl": "Axolotl/60/floater/1/3/600 2000/spring summer/both/689 .4 680 .1/3/.2/.1/0",
+        "{{ModId}}_Black_Axolotl": "Axolotl/60/floater/1/3/600 2000/spring summer/both/689 .4 680 .1/3/.2/.1/0",
+        "{{ModId}}_Albino_Axolotl": "Axolotl/60/floater/1/3/600 2000/spring summer/both/689 .4 680 .1/3/.2/.1/0",
+        "{{ModId}}_Blue_Axolotl": "Axolotl/60/floater/1/3/600 2000/spring summer/both/689 .4 680 .1/3/.2/.1/0",
+        "{{ModId}}_Lavender_Axolotl": "Axolotl/60/floater/1/3/600 2000/spring summer/both/689 .4 680 .1/3/.2/.1/0",
+        "{{ModId}}_Brown_Axolotl": "Axolotl/60/floater/1/3/600 2000/spring summer/both/689 .4 680 .1/3/.2/.1/0"
+      }
+    },
+    {
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"TargetField": [
+				"Mountain",
+				"Fish"
+			],
+			"Entries": {
+				"{{ModId}}.mountain": {
+					"Chance": 1.0,
+					"Id": "{{ModId}}.mountain",
+					"ItemId": null,
+					"RandomItemId": [
+						"{{ModId}}_Axolotl",
+						"{{ModId}}_Yellow_Axolotl",
+                                                "{{ModId}}_Black_Axolotl",
+                                                "{{ModId}}_Albino_Axolotl",
+                                                "{{ModId}}_Blue_Axolotl",
+                                                "{{ModId}}_Lavender_Axolotl",
+                                                "{{ModId}}_Brown_Axolotl"
+					],
+				}
+			}
+		},
+{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"TargetField": [
+				"otohime.AV_AxolotlLake",
+				"Fish"
+			],
+                        "When": {
+				"HasMod: |contains=otohime.AV": true
+			},
+			"Entries": {
+				"otohime.AV_AxolotlLake": {
+					"Chance": 1.0,
+					"Id": "otohime.AV_AxolotlLake",
+					"ItemId": null,
+					"RandomItemId": [
+						"{{ModId}}_Axolotl",
+						"{{ModId}}_Yellow_Axolotl",
+                                                "{{ModId}}_Black_Axolotl",
+                                                "{{ModId}}_Albino_Axolotl",
+                                                "{{ModId}}_Blue_Axolotl",
+                                                "{{ModId}}_Lavender_Axolotl",
+                                                "{{ModId}}_Brown_Axolotl"
+					],
+				}
+			}
+		},
+    {
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "fish_axolotl": {
+          "RequiredTags": [
+            "fish_axolotl"
+          ],
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.02,
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.01,
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+           {
+              "RequiredPopulation": 5,
+              "Chance": 0.2,
+              "ItemID": "(O){{ModId}}_Baby_Axolotl",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)636 3"
+            ],
+            "7": [
+              "(O)721 3"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "fish_yellow_axolotl": {
+          "RequiredTags": [
+            "fish_yellow_axolotl"
+          ],
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.02,
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.01,
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.2,
+              "ItemID": "(O){{ModId}}_Yellow_Baby_Axolotl",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)91 3"
+            ],
+            "7": [
+              "(O)721 3"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "fish_black_axolotl": {
+          "RequiredTags": [
+            "fish_black_axolotl"
+          ],
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.02,
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.01,
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.2,
+              "ItemID": "(O){{ModId}}_Black_Baby_Axolotl",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)410 3"
+            ],
+            "7": [
+              "(O)721 3"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "fish_albino_axolotl": {
+          "RequiredTags": [
+            "fish_albino_axolotl"
+          ],
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.02,
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.01,
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.2,
+              "ItemID": "(O){{ModId}}_Albino_Baby_Axolotl",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)634 3"
+            ],
+            "7": [
+              "(O)721 3"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "fish_blue_axolotl": {
+          "RequiredTags": [
+            "fish_blue_axolotl"
+          ],
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.02,
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.01,
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.2,
+              "ItemID": "(O){{ModId}}_Blue_Baby_Axolotl",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)258 3"
+            ],
+            "7": [
+              "(O)721 3"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "fish_lavender_axolotl": {
+          "RequiredTags": [
+            "fish_lavender_axolotl"
+          ],
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.02,
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.01,
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.2,
+              "ItemID": "(O){{ModId}}_Lavender_Baby_Axolotl",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)398 3"
+            ],
+            "7": [
+              "(O)721 3"
+            ]
+          }
+        }
+      }
+    },
+{
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "fish_brown_axolotl": {
+          "RequiredTags": [
+            "fish_brown_axolotl"
+          ],
+          "SpawnTime": -1,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.02,
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.01,
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.2,
+              "ItemID": "(O){{ModId}}_Brown_Baby_Axolotl",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)430 3"
+            ],
+            "7": [
+              "(O)721 3"
+            ]
+          }
+        }
+      }
+    },
+  {
+      "LogName": "Aquarium Data",
+      "Action": "EditData",
+      "Target": "Data/AquariumFish",
+      "Entries": {
+        "{{ModId}}_Albino_Axolotl": "0/fish/////Mods\\otohime.axolotls\\AquariumFish",
+        "{{ModId}}_Axolotl": "1/fish/////Mods\\otohime.axolotls\\AquariumFish",
+        "{{ModId}}_Black_Axolotl": "2/fish/////Mods\\otohime.axolotls\\AquariumFish",
+        "{{ModId}}_Blue_Axolotl": "3/fish/////Mods\\otohime.axolotls\\AquariumFish",
+        "{{ModId}}_Lavender_Axolotl": "4/fish/////Mods\\otohime.axolotls\\AquariumFish",
+        "{{ModId}}_Yellow_Axolotl": "5/fish/////Mods\\otohime.axolotls\\AquariumFish",
+        "{{ModId}}_Albino_Baby_Axolotl": "6/float/////Mods\\otohime.axolotls\\AquariumFish",
+        "{{ModId}}_Baby_Axolotl": "7/float/////Mods\\otohime.axolotls\\AquariumFish",
+        "{{ModId}}_Black_Baby_Axolotl": "8/float/////Mods\\otohime.axolotls\\AquariumFish",
+        "{{ModId}}_Blue_Baby_Axolotl": "9/float/////Mods\\otohime.axolotls\\AquariumFish",
+        "{{ModId}}_Lavender_Baby_Axolotl": "10/float/////Mods\\otohime.axolotls\\AquariumFish",
+        "{{ModId}}_Yellow_Baby_Axolotl": "11/float/////Mods\\otohime.axolotls\\AquariumFish",
+        "{{ModId}}_Brown_Axolotl": "12/fish/////Mods\\otohime.axolotls\\AquariumFish",
+        "{{ModId}}_Brown_Baby_Axolotl": "13/float/////Mods\\otohime.axolotls\\AquariumFish",
+      }
+   },
+        {
+            "LogName": "Aquarium Sprites",
+            "Action": "Load",
+            "Target": "Mods/otohime.axolotls/AquariumFish",
+            "FromFile": "assets/LooseSprites/AquariumSprites.png",
+        }, 
+  ]
+}

@@ -1,0 +1,55 @@
+{
+	"Changes": [
+		//chocobo sounds
+		{
+			"Action": "EditData",
+			"Target": "Data/AudioChanges",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_BigChocoboSounds": {
+					"Category": "Sound",
+					"FilePaths": [
+						"{{AbsoluteFilePath: Sounds/chocobo0.wav}}",
+						"{{AbsoluteFilePath: Sounds/chocobo1.wav}}",
+						"{{AbsoluteFilePath: Sounds/chocobo3.wav}}",
+					],
+					"ID": "Kitsutsune.Chocobovalley_BigChocoboSounds",
+					"Looped": false,
+					"StreamedVorbis": false
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/AudioChanges",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_LittleChocoboSounds": {
+					"Category": "Sound",
+					"FilePaths": [
+						"{{AbsoluteFilePath: Sounds/chocobo2.wav}}",
+						"{{AbsoluteFilePath: Sounds/chocobo4.wav}}",
+						"{{AbsoluteFilePath: Sounds/chocobo5.wav}}"
+					],
+					"ID": "Kitsutsune.Chocobovalley_LittleChocoboSounds",
+					"Looped": false,
+					"StreamedVorbis": false
+				}
+			}
+		},
+		//other sounds
+		{
+			"Action": "EditData",
+			"Target": "Data/AudioChanges",
+			"Entries": {
+				"Kitsutsune.Chocobovalley_MoogleSounds": {
+					"Category": "Sound",
+					"FilePaths": [
+						"{{AbsoluteFilePath: Sounds/moogle.wav}}"
+					],
+					"ID": "Kitsutsune.Chocobovalley_MoogleSounds",
+					"Looped": false,
+					"StreamedVorbis": false
+				}
+			}
+		}
+	]
+}

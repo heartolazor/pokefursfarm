@@ -1,0 +1,239 @@
+{
+    "Changes": [
+  {
+	"LogName": "Paul Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Paul",
+            "Entries": {
+	
+        "Introduction": "Nice to see you again.#$b#@, right?$1#$e#...Would you like to schedule your yearly eye exam?",
+        "danceRejection": "Oh, no thanks. I'd just embarrass myself.$4",
+        "divorced": "Oh... it's you... $2",
+        "dumped_Guys": "Do you need something, @?$3",
+        "secondChance_Guys": "Do you want to try this again?$2", 
+	"give_flowers": "@! I feel the same way...will you be my boyfriend?$4^@! I feel the same way...will you be my girlfriend?$4", 
+	"give_pendent":"Oh, @...$4#$b#I've felt the same way for a long time.$4#$b#Give me a little time to prepare...I've got something special planned.$4",
+	"stardrop_gift":"My @...oh how I love you so.$4#$b#Thank you for being everything I could ever dream of.$4",	
+	"Saloon_17_20": "On second thought...maybe not the best place to read a book.$1",
+	"Town_33_57": "Let me just finish this chapter...",
+	"Hospital_21_12": "Charts, charts, and more charts.$2",
+	"ScienceHouse_18_22": "Will you pass me that pencil sharpener?",
+	"SeedShop_2_19": "I really need to start bringing lunch to the clinic.",
+	"FishShop_8_6": "Willy lets me work in the shop sometimes in exchange for bait.#$b#I still haven't figured out how to get the smell out of my clothes.$2",
+	"ArcheologyHouse_11_9": "Just looking for a specific...",
+	"DumpsterDiveComment": "... looking for something?$2",
+	"AcceptBirthdayGift_Positive": "You remembered? You're the best, @!$4",
+	"AcceptBirthdayGift_Negative": "Oh...thanks.$1",
+	"cc_Complete": "The Community Center's finished!#$b#Think they need help stocking the fish tank?$4",
+	"cc_Greenhouse": "I'd love my own personal garden one day.#$b#Or maybe a greenhouse like yours for colder months.",
+	"cc_Bus": "Have you been to Calico Desert yet?#$b#A little hot for my taste but still really cool.",
+	"pamHouseUpgrade": "It's so great seeing Pam so happy.$4",
+	"willyCrabs": "Do you...smell that?$2",
+	"cc_Begin": "Oh you got inside the Community Center?#$b#I tried to get in but it was locked.$1",
+	"joja_Begin": "Wait...you did what with Joja?$2",
+	"gotPet": "I grew up with a ton of pets.#$b#And a ton of siblings...$1",
+	"Resort": "I totally didn't factor in having a resort close by when I moved here.$1#$e#I'd call this a major perk!$1",
+	"Resort_Entering": "Ahh.#$b#I can already feel the vitamin D working its magic.$1",
+	"Resort_Leaving": "Well, back to the old grind!$1",
+	"Resort_Shore": "You think these crabs are a different species from what we have at home?#$b#I'll have to ask Willy.$1",
+	"Resort_Chair": "My therapist says I need to relax more.#$b#Do you think she's right?$2",
+	"Resort_Bar": "Seltzers are just made for the beach. Don't you think?",
+	"GreenRain": "It's definitely unusual but my guess is that it's harmless.#$b#I mean, look how happy the plants are!$1#$e#I wonder if Demetrius has run any tests on it yet.",
+	"GreenRainFinished": "That was something, wasn't it?#$b#I'm running by the lab after work to see if Demetrius' samples turned up anything."
+           }}, 
+
+
+
+        {
+	"LogName": "Paul Dialogue Before 2 Heart Event",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Paul",
+      "When": {
+        "HasSeenEvent |contains=50000": true,
+        "HasSeenEvent |contains=500021": false
+      },
+            "Entries": {
+	
+	"spring_Mon": "A lot of people hate Mondays, but I'm always happy to get back into the swing of things.#$b#The weekend is fine and all, but I just hate being idle.$1",
+        "spring_Tue": "What are you growing this season, @?#$b# Back at home we'd grow green beans this time of year.$1",
+        "spring_Wed": "Have you ever seen Harvey without his glasses?#$b#It's like he never takes them off...$2",
+        "spring_Thu": "I've always loved fishing. My brothers and I did it all the time growing up.#$b#...But honestly the older I get, the more I can't stand the thought of not releasing them.$2",
+        "spring_Fri": "I'm reading like six different books right now and I have three more coming in the mail.#$b#I think I might give Penny a run for her money.$4",
+        "spring_Sat": "Another Saturday!#$b#What are you up to this weekend, @?", 
+        "spring_Sun": "Yeah, I know I get the weekends off...I’d just rather be doing something productive, you know?$1",
+        "summer_Mon": "Apparently a lot of people didn't know Harvey had an attic up there.$4#$b#It's got this strange smell...#$b#What do you think he was keeping up there?$2",
+        "summer_Tue": "As much as I hate going in there, Joja definitely has the best AC in town.$1#$b#Only on especially hot days, though.",
+        "summer_Wed": "It’s almost as hot here as it was back in my hometown.#$b#Good thing the clinic has AC.$1",
+        "summer_Thu": "My room upstairs is nice enough, but I totally envy your farmhouse.#$b#I mean, think of all the awesome things you can do with all that land.$1",
+        "summer_Fri": "It's about time for a new book!$1#$b#I wonder if Gunther has anything new...",
+        "summer_Sat": "I really got into gardening after Optometry school.#$b#It's super therapeutic.",
+        "summer_Sun": "The room Harvey gave me used to be an old storage space.#$b#...There's not even a window.$2",
+        "fall_Mon": "What?$2#$b#Glaucoma runs in your family? We’re making you an appointment right this second.",
+        "fall_Tue": "Did I run the auto-refractor on you last time you were at the clinic?",
+        "fall_Wed": "Whew do you feel that breeze? Perfection.",
+        "fall_Thu": "I’m the oldest of eight kids so it was hard being the guinea pig of the family.#$b#Do you think I turned out okay?$2",
+        "fall_Fri": "Some days 3:00 just can't come soon enough.#$b#Working with Harvey is great and all, but work is still work.",
+        "fall_Sat": "Have you spent much time in the Secret Woods?#$b#What makes them secret, anyway?$2",
+        "fall_Sun": "Fall is by far my favorite season.#$b#Especially here in the valley. It's perfect.",
+        "winter_Mon": "Do you think Harvey and Maru are a thing?$2#$b#He sends her letters a lot and sometimes I catch her staring at his empty office.",
+        "winter_Tue": "I'm growing a few herbs in my room upstairs.#$b#Don't tell Harvey.#2",
+        "winter_Wed": "Are you going home for the holidays, @?#$b#I usually do, but the valley feels more and more like home every day.$4",
+        "winter_Thu": "Have you ever tried ice fishing, @?$1",
+        "winter_Fri": "I love seeing those red cardinals in the snow.#$b#They’re the perfect winter birds.$4",
+        "winter_Sat": "I used to wear a button-down to work every day before I discovered scrubs.$4#$b#And let me tell you, I will *never* go back.$1",
+        "winter_Sun": "Be careful in the mines, @.$2#$b#I'd hate to see you wheeled in on a stretcher.$1"
+           }}, 
+
+
+
+{
+      "LogName": "Two Heart Dialogue Event Locked",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Paul",
+      "When": {
+        "HasSeenEvent |contains=500021": true,
+        "HasSeenEvent |contains=50004": false
+      },
+      "Entries": {
+        "Mon2": "Caroline's really kind to let me use her kitchen whenever I need it.$1#$b$It sure beats Harvey's attic, that's for sure.$4",
+        "Tue2": "What are you growing this season, @?#$b# Back at home we'd grow green beans this time of year.$1",
+        "Wed2": "That Fiddlehead Risotto was amazing the other day.#$b#Honestly, I haven't been able to stop thinking about it.$2#$b#I should make more.$1",
+        "Thu2": "Have you ever seen Harvey without his glasses?#$b#It's like he never takes them off...$2",
+        "Fri2": "...#2#$b#Oh sorry. Lost in thought.#$b#What in the world would make the valley totally unaffected...?$2",
+        "Sat2": "I've always loved fishing. My brothers and I did it all the time growing up.#$b#...But honestly the older I get, the more I can't stand the thought of not releasing them.$2",
+        "Sun2": "That rain we had the other day was so peaceful, wasn't it?",
+        "Mon3": "A lot of people hate Mondays, but I'm always happy to get back into the swing of things.#$b#The weekend is fine and all, but I just hate being idle.$1",
+        "Tue3": "Pelican Town has some great herbs planted around#$b#I guess I have Evelyn to thank for that.$1",
+        "Wed3": "I'm reading like six different books right now and I have three more coming in the mail.#$b#I think I might give Penny a run for her money.$4",
+        "Thu3": "My best friend - the one I was telling you about,#$b#She got the diagnosis only a few months ago.$2#$b#I should call her and see how she's doing.$2",
+        "Fri3": "Man I could really use some coffee...#$b#A triple shot espresso would be even better.$1",
+        "Sat3": "Another Saturday!#$b#What are you up to this weekend, @?",
+        "Sun3": "Yeah, I know I get the weekends off...I’d just rather be doing something productive, you know?$1"
+      }
+    },
+
+
+
+{
+      "LogName": "Four Heart Dialogue Event Locked",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Paul",
+      "When": {
+        "HasSeenEvent |contains=50004": true,
+        "HasSeenEvent |contains=50006": false
+      },
+      "Entries": {
+        "Mon4": "Why do you think Willy rushed off the other day?#$b#Something about seasonal fish...?",
+        "Tue4": "Apparently a lot of people didn't know Harvey had an attic up there.$4#$b#It's got this strange smell...#$b#What do you think he was keeping up there?$2",
+        "Wed4": "Demetrius' lab is small, for sure.#$b#He's got it decked out in all the latest gear, though.","\n        \"Thu4": "My room upstairs is nice enough, but I totally envy your farmhouse.#$b#I mean, think of all the awesome things you can do with all that land.$1",
+	"Fri4": "Whatever the recurring phenomenon is, it must be releasing something.$2#$b#A toxin, maybe? Bacteria?",
+        "Sat4": "It's about time for a new book!$1#$b#I wonder if Gunther has anything new...",
+        "Sun4": "What kind of natural events happen over and over in the valley?#$b#You know, like migrations, seasonal animals...things like that?",
+        "Mon5": "I really got into gardening after Optometry school.#$b#It's super therapeutic.",
+        "Tue5": "Apparently you're the town expert on all things soil and agriculture.#$b#Can you think of any recurring natural phenomenon on the farm?",
+        "Wed5": "The room Harvey gave me used to be an old storage space.#$b#...There's not even a window.$2",
+        "Thu5": "You really have great ideas,@.#$b#We're so glad to have you helping with the research.$1",
+        "Fri5": "I am *really* craving some pepper poppers right now.#$b#You think Gus has any this weekend?",
+        "Sat5": "Maybe I should order a laptop.#$b#Demetrius' computer in the lab is fine. It's just...slow.",
+        "Sun5": "...I wonder where I could find a ripe pomegranate."
+      }
+    },
+
+
+
+{
+      "LogName": "Six Heart Dialogue Event Locked",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Paul",
+      "When": {
+        "HasSeenEvent |contains=50006": true,
+        "HasSeenEvent |contains=500081": false
+      },
+      "Entries": {
+        "Mon6": "I don't know what kind of bush we were in the other day, but man...#$b#Are you itchy?$4",
+        "Tue6": "What?$2#$b#Glaucoma runs in your family? We’re making you an appointment right this second.",
+        "Wed6": "I've loved bird watching for as long as I can remember.$4#$b#I used to stand in the backyard for hours holding birdseed. They'd actually land on me, you know.$4",
+        "Thu6": "Did I run the auto-refractor on you last time you were at the clinic?",
+        "Fri6": "The results from those droppings samples should be ready soon.#$b#I can't wait!$1",
+        "Sat6": "I’m the oldest of eight kids so it was hard being the guinea pig of the family.#$b#Do you think I turned out okay?$2",
+        "Sun6": "A lot of people don't love the place they grew up in.#$b#But I still get a pit in my stomach when I think about going 'home.'$2#$b#Is that normal?$1",
+        "Mon7": "Some days 3:00 just can't come soon enough.#$b#Working with Harvey is great and all, but work is still work.",
+        "Tue7": "I know I’m a doctor and everything, but I’ve always loved getting out in nature.$4#$b#I can name every songbird in the valley. I should show you sometime.$1",
+        "Wed7": "Have you spent much time in the Secret Woods?#$b#What makes them secret, anyway?$2",
+        "Thu7": "You know, I think we make a pretty great team.$4#$b#Maybe when this is all over, we can go birdwatching again. That was fun.$4",
+        "Fri7": "Did you know that not everyone is allergic to poison ivy?#$b#I'm definitely one of the unlucky few...$4",
+        "Sat7": "@! Got any plans this weekend?",
+        "Sun7": "Gus should really start offering a blue plate special on Sundays.#$b#Fried chicken and mashed potatoes...$4"
+      }
+    },
+
+
+
+{
+      "LogName": "Eight Heart Dialogue Event Locked",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Paul",
+      "When": {
+        "HasSeenEvent |contains=500083": true,
+        "HasSeenEvent |contains=500010": false
+      },
+      "Entries": {
+        "Mon8": "Can you believe it? Moonlight Jellies all along!$1",
+        "Tue8": "Do you think Harvey and Maru are a thing?$2#$b#He sends her letters a lot and sometimes I catch her staring at his empty office.",
+        "Wed8": "Our little friend the Moonlight Jelly is still at the lab.#$b#We'll release him as soon as we have all the answers we need!#$b#...That sounds like we're interrogating him or something. I promise we're not.$4",
+        "Thu8": "I'm growing a few herbs in my room upstairs.#$b#Don't tell Harvey.#2",
+        "Fri8": "I get terrible stage fright, you know.$2#$b#Was I even coherent at the presentation?$4",
+        "Sat8": "I used to wear a button-down to work every day before I discovered scrubs.$4#$b#And let me tell you, I will *never* go back.$1",
+        "Sun8": "I'm still amazed we were able to get the Moonlight Jellies to appear out of season.#$b#That bait Willy loaned us was really something, I guess!$1",
+        "Mon9": "Be careful in the mines, @.$2#$b#I'd hate to see you wheeled in on a stretcher.$1",
+        "Tue9": "Tell me why I decided to catch that jelly with my bare hands...$2#$b#My hands are *still* burning.$1",
+        "Wed9": "There's still a lot of research to be done, but we're well on our way to a real cure.#$b#Isn't that incredible?$1",
+        "Thu9": "Ginny loved meeting you.$4#$b#She said you were exactly how she imagined you'd be.#$b#Whatever that means...$4",
+        "Fri9": "You know, jellyfish are quickly becoming my favorite animal.$4",
+        "Sat9": "What's for dinner tonight, @?#$b#I'm thinking about trying something new.",
+        "Sun9": "Did you know Gus has a culinary degree? Who knew!$1"
+      }
+    },
+
+
+
+{
+      "LogName": "Ten Heart Dialogue Event Locked",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Paul",
+      "When": {
+        "HasSeenEvent |contains=500010": true,
+        "HasSeenEvent |contains=500011": false
+      },
+      "Entries": {
+	"spring_Mon10": "A lot of people hate Mondays, but I'm always happy to get back into the swing of things.#$b#The weekend is fine and all, but I just hate being idle.$1",
+        "spring_Tue10": "What are you growing this season, @?#$b# Back at home we'd grow green beans this time of year.$1",
+        "spring_Wed10": "Have you ever seen Harvey without his glasses?#$b#It's like he never takes them off...$2",
+        "spring_Thu10": "I've always loved fishing. My brothers and I did it all the time growing up.#$b#...But honestly the older I get, the more I can't stand the thought of not releasing them.$2",
+        "spring_Fri10": "I'm reading like six different books right now and I have three more coming in the mail.#$b#I think I might give Penny a run for her money.$4",
+        "spring_Sat10": "Another Saturday!#$b#What are you up to this weekend, @?", 
+        "spring_Sun10": "Yeah, I know I get the weekends off...I’d just rather be doing something productive, you know?$1",
+        "summer_Mon10": "Apparently a lot of people didn't know Harvey had an attic up there.$4#$b#It's got this strange smell...#$b#What do you think he was keeping up there?$2",
+        "summer_Tue10": "As much as I hate going in there, Joja definitely has the best AC in town.$1#$b#Only on especially hot days, though.",
+        "summer_Wed10": "It’s almost as hot here as it was back in my hometown.#$b#Good thing the clinic has AC.$1",
+        "summer_Thu10": "My room upstairs is nice enough, but I totally envy your farmhouse.#$b#I mean, think of all the awesome things you can do with all that land.$1",
+        "summer_Fri10": "It's about time for a new book!$1#$b#I wonder if Gunther has anything new...",
+        "summer_Sat10": "I really got into gardening after Optometry school.#$b#It's super therapeutic.",
+        "summer_Sun10": "The room Harvey gave me used to be an old storage space.#$b#...There's not even a window.$2",
+        "fall_Mon10": "What?$2#$b#Glaucoma runs in your family? We’re making you an appointment right this second.",
+        "fall_Tue10": "Did I run the auto-refractor on you last time you were at the clinic?",
+        "fall_Wed10": "Whew do you feel that breeze? Perfection.",
+        "fall_Thu10": "I’m the oldest of eight kids so it was hard being the guinea pig of the family.#$b#Do you think I turned out okay?$2",
+        "fall_Fri10": "Some days 3:00 just can't come soon enough.#$b#Working with Harvey is great and all, but work is still work.",
+        "fall_Sat10": "Have you spent much time in the Secret Woods?#$b#What makes them secret, anyway?$2",
+        "fall_Sun10": "Fall is by far my favorite season.#$b#Especially here in the valley. It's perfect.",
+        "winter_Mon10": "Do you think Harvey and Maru are a thing?$2#$b#He sends her letters a lot and sometimes I catch her staring at his empty office.",
+        "winter_Tue10": "I'm growing a few herbs in my room upstairs.#$b#Don't tell Harvey.#2",
+        "winter_Wed10": "Are you going home for the holidays, @?#$b#I usually do, but the valley feels more and more like home every day.$4",
+        "winter_Thu10": "Have you ever tried ice fishing, @?$1",
+        "winter_Fri10": "I love seeing those red cardinals in the snow.#$b#They’re the perfect winter birds.$4",
+        "winter_Sat10": "I used to wear a button-down to work every day before I discovered scrubs.$4#$b#And let me tell you, I will *never* go back.$1",
+        "winter_Sun10": "Be careful in the mines, @.$2#$b#I'd hate to see you wheeled in on a stretcher.$1"
+           }}
+]
+        }

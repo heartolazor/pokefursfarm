@@ -1,0 +1,25 @@
+{
+	"Changes": [
+	{
+		"Action": "EditData",
+		"Target": "Data/Shops",
+		"TargetField": [ "IslandTrade", "Items" ],
+		"Entries": {
+				"PBB_LiechiBerrySeeds": {
+					"Id": "PBB_LiechiBerrySeeds",
+					"ItemId": "PBB_LiechiBerrySeeds",
+					"TradeItemId": "PBB_OranBerry",
+					"TradeItemAmount": 100,
+					"IgnoreShopPriceModifiers": "true",
+				},
+				"PBB_StarfBerrySeeds": {
+					"Id": "PBB_StarfBerrySeeds",
+					"ItemId": "PBB_StarfBerrySeeds",
+					"TradeItemId": "PBB_LiechiBerry",
+					"TradeItemAmount": 100,
+					"IgnoreShopPriceModifiers": "true",
+				}
+			}
+		}
+	]
+}

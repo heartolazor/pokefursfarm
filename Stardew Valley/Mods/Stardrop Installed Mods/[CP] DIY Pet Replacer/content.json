@@ -1,0 +1,281 @@
+{
+    "Format": "2.0.0",
+    "ConfigSchema": {
+        "Cat": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "Cat1": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "Cat2": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "Cat3": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "Cat4": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "Cat5": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "Dog": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "Dog1": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "Dog2": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "Dog3": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "Dog4": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "Dog5": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "Horse": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        }
+    },
+    "Changes": [{
+            "LogName": "Cat cursor",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/catcursor.png",
+            "ToArea": { "X": 160, "Y": 208, "Width": 15, "Height": 15 },
+            "When": { "Cat": "true" }
+        },
+        {
+            "LogName": "Cat",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "Animals/cat",
+            "FromFile": "assets/cat.png",
+            "When": { "Cat": "true" }
+        },
+        {
+            "LogName": "Cat1 cursor",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/cat1cursor.png",
+            "ToArea": { "X": 176, "Y": 208, "Width": 15, "Height": 15 },
+            "When": { "Cat1": "true" }
+        },
+        {
+            "LogName": "Cat1",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "Animals/cat1",
+            "FromFile": "assets/cat1.png",
+            "When": { "Cat1": "true" }
+        },
+        {
+            "LogName": "Cat2 cursor",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/cat2cursor.png",
+            "ToArea": { "X": 192, "Y": 208, "Width": 15, "Height": 15 },
+            "When": { "Cat2": "true" }
+        },
+        {
+            "LogName": "Cat2",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "Animals/cat2",
+            "FromFile": "assets/cat2.png",
+            "When": { "Cat2": "true" }
+        },
+        {
+            "LogName": "Cat3 cursor",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "LooseSprites/Cursors_1_6",
+            "FromFile": "assets/cat3cursor.png",
+            "ToArea": { "X": 256, "Y": 380, "Width": 15, "Height": 15 },
+            "When": { "Cat3": "true" }
+        },
+        {
+            "LogName": "Cat3",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "Animals/cat3",
+            "FromFile": "assets/cat3.png",
+            "When": { "Cat3": "true" }
+        },
+        {
+            "LogName": "Cat4 cursor",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "LooseSprites/Cursors_1_6",
+            "FromFile": "assets/cat3cursor.png",
+            "ToArea": { "X": 256, "Y": 365, "Width": 15, "Height": 15 },
+            "When": { "Cat4": "true" }
+        },
+        {
+            "LogName": "Cat4",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "Animals/cat3",
+            "FromFile": "assets/cat3.png",
+            "When": { "Cat4": "true" }
+        },
+        /* will be updated when I figure out where/if there even is a pet head for cat 5, gomen homie!
+        {
+            "LogName": "Cat5 cursor",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "LooseSprites/Cursors_1_6",
+            "FromFile": "assets/cat3cursor.png",
+            "ToArea": { "X": 256, "Y": 365, "Width": 15, "Height": 15 },
+            "When": { "Cat3": "true" }
+        },*/
+        {
+            "LogName": "Cat5",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "Animals/cat3",
+            "FromFile": "assets/cat3.png",
+            "When": { "Cat5": "true" }
+        },
+        {
+            "LogName": "Dog cursor",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/dogcursor.png",
+            "ToArea": { "X": 208, "Y": 208, "Width": 15, "Height": 15 },
+            "When": { "Dog": "true" }
+        },
+        {
+            "LogName": "Dog",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "Animals/dog",
+            "FromFile": "assets/dog.png",
+            "When": { "Dog": "true" }
+        },
+        {
+            "LogName": "Dog1 cursor",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/dog1cursor.png",
+            "ToArea": { "X": 224, "Y": 208, "Width": 15, "Height": 15 },
+            "When": { "Dog1": "true" }
+        },
+        {
+            "LogName": "Dog1",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "Animals/dog1",
+            "FromFile": "assets/dog1.png",
+            "When": { "Dog1": "true" }
+        },
+        {
+            "LogName": "Dog2 cursor",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/dog2cursor.png",
+            "ToArea": { "X": 240, "Y": 208, "Width": 15, "Height": 15 },
+            "When": { "Dog2": "true" }
+        },
+        {
+            "LogName": "Dog2",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "Animals/dog2",
+            "FromFile": "assets/dog2.png",
+            "When": { "Dog2": "true" }
+        },
+        {
+            "LogName": "Dog3 cursor",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "LooseSprites/Cursors_1_6",
+            "FromFile": "assets/dog3cursor.png",
+            "ToArea": { "X": 272, "Y": 382, "Width": 15, "Height": 15 },
+            "When": { "Dog3": "true" }
+        },
+        {
+            "LogName": "Dog3",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "Animals/dog3",
+            "FromFile": "assets/dog3.png",
+            "When": { "Dog3": "true" }
+        },
+        {
+            "LogName": "Dog4 cursor",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "LooseSprites/Cursors_1_6",
+            "FromFile": "assets/dog4cursor.png",
+            "ToArea": { "X": 272, "Y": 365, "Width": 15, "Height": 15 },
+            "When": { "Dog4": "true" }
+        },
+        {
+            "LogName": "Dog4",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "Animals/dog4",
+            "FromFile": "assets/dog4.png",
+            "When": { "Dog4": "true" }
+        },
+        /* ripperoni lil dog head homie :'c
+        {
+            "LogName": "Dog5 cursor",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "LooseSprites/Cursors_1_6",
+            "FromFile": "assets/dog5cursor.png",
+            "ToArea": { "X": 256, "Y": 380, "Width": 15, "Height": 15 },
+            "When": { "Dog5": "true" }
+        },*/
+        {
+            "LogName": "Dog5",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "Animals/dog5",
+            "FromFile": "assets/dog5.png",
+            "When": { "Dog5": "true" }
+        },
+        {
+            "LogName": "Horse cursor",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/horsecursor.png",
+            "ToArea": { "X": 192, "Y": 193, "Width": 15, "Height": 15 },
+            "When": { "Horse": "true" }
+        },
+        {
+            "LogName": "Horse",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "Animals/horse",
+            "FromFile": "assets/horse.png",
+            "When": { "Horse": "true" }
+        }
+    ]
+}

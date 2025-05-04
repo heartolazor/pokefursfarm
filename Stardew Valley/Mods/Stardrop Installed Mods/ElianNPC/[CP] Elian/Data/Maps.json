@@ -1,0 +1,151 @@
+{
+    "Changes": [
+       
+        //Maps//
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_Cave",
+            "FromFile": "Assets/Maps/ElianCave.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_Warp",
+            "FromFile": "Assets/Maps/ElianWarp.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_Greenhouse_Date",
+            "FromFile": "Assets/Maps/GreenhouseDate.tmx"
+        },
+
+        //Locations//
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "{{ModId}}_Cave": {
+                    "DefaultArrivalTile": { "X": 8, "Y": 12 },
+                    "CreateOnLoad": { "MapPath": "Maps/{{ModId}}_Cave" },
+                    "FormerLocationNames": [ "Custom_ElianCave" ]
+                },
+                "{{ModId}}_Warp": {
+                    "DefaultArrivalTile": { "X": 3, "Y": 3 },
+                    "CreateOnLoad": { "MapPath": "Maps/{{ModId}}_Warp" },
+                    "FormerLocationNames": [ "Custom_ElianWarp" ]
+                }
+            }
+        },
+        
+        //Map Patches//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_CrimsonBadlands",
+            "FromFile": "Assets/Maps/ElianCaveEntrance.tmx",
+            "ToArea": {
+                "X": 226, "Y": 110, "Width": 2, "Height": 4
+            },
+            "AddWarps": [
+                "227 112 {{ModId}}_Cave 8 13"
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Mountain",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "MapProperties", "NPCWarp" ],
+                    "Value": "0 14 {{ModId}}_Warp 4 2",
+                    "Delimiter": " "
+                }
+            ]
+        },
+
+        //Poppy//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Cave",
+            "FromFile": "Assets/Maps/EmptyPot.tmx",
+            "When": { 
+                "HasSeenEvent |contains=1711937041": true, 
+                "HasSeenEvent |contains=1711937042": false 
+            },
+            "Update": "OnLocationChange", 
+            "ToArea": {
+                "X": 10, "Y": 9, "Width": 1, "Height": 2
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Cave",
+            "FromFile": "Assets/Maps/PoppyStage1.tmx",
+            "Update": "OnLocationChange",
+            "When": { 
+                "HasSeenEvent |contains=1711937042": true, 
+                "HasSeenEvent |contains=171191602": false 
+            },
+            "ToArea": {
+                "X": 10, "Y": 9, "Width": 1, "Height": 2
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Cave",
+            "FromFile": "Assets/Maps/PoppyStage2.tmx",
+            "Update": "OnLocationChange",
+            "When": { 
+                "HasSeenEvent |contains=171191602": true, 
+                "HasSeenEvent |contains=171191603": false 
+            },
+            "ToArea": {
+                "X": 10, "Y": 9, "Width": 1, "Height": 2
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Cave",
+            "FromFile": "Assets/Maps/PoppyStage3.tmx",
+            "Update": "OnLocationChange",
+            "When": { 
+                "HasSeenEvent |contains=171191603": true, 
+                "HasSeenEvent |contains=171191604": false 
+            },
+            "ToArea": {
+                "X": 10, "Y": 9, "Width": 1, "Height": 2
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Cave",
+            "FromFile": "Assets/Maps/PoppyStage4.tmx",
+            "Update": "OnLocationChange",
+            "When": { 
+                "HasSeenEvent |contains=171191604": true, 
+                "HasSeenEvent |contains=171191605": false 
+            },
+            "ToArea": {
+                "X": 10, "Y": 9, "Width": 1, "Height": 2
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Cave",
+            "FromFile": "Assets/Maps/Poppy.tmx",
+            "Update": "OnLocationChange",
+            "When": { 
+                "HasSeenEvent |contains=171191605": true, 
+                "Relationship:Elian |contains=Married": false 
+            },
+            "ToArea": {
+                "X": 10, "Y": 9, "Width": 1, "Height": 2
+            }
+        }, 
+
+        //Testing Warp//
+        /*{
+            "Action": "EditMap",
+            "Target": "Maps/Farm",
+            "AddWarps": [ "76 14 {{ModId}}_Cave 8 13" ]
+        }*/
+    ]
+}

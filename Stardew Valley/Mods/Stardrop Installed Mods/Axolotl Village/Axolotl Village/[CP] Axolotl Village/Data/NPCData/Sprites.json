@@ -1,0 +1,379 @@
+{
+	"Changes": [
+		{
+
+      "LogName": "Sprites",
+      "Action": "Load",
+      "Target": "Characters/Hiro, Characters/Puka, Characters/Olina, Characters/Jinx, Characters/Lala, Characters/Lulu, Characters/Nimue, Characters/Noa, Characters/Captain, Characters/Aukai, Characters/Hau, Characters/Kekoa, Characters/Mamo, Characters/Nico, Characters/Lilia, Characters/Ipo, Characters/Lotus, Characters/Shiso, Characters/MissLily, Characters/Bonbon, Characters/Kandi",
+      "FromFile": "Assets/{{Target}}.png"
+
+    },
+    {
+
+      "LogName": "Alternate Outfit Sprites",
+      "Action": "Load",
+      "Target": "Characters/Lala_Clown, Characters/Lulu_Clown, Characters/Kandi_Bunni, Characters/Lulu_Halloween, Characters/Lala_Halloween, Characters/Hiro_Halloween, Characters/Jinx_Halloween, Characters/Jinx_Halloween2, Characters/Noa_Halloween, Characters/Olina_Halloween, Characters/Olina_Halloween2, Characters/Puka_Halloween, Characters/Bonbon_Halloween, Characters/Kandi_Halloween, Characters/Captain_Human, Characters/Hiro_Human, Characters/Jinx_Human, Characters/Lala_Human, Characters/Lulu_Human, Characters/Nimue_Human, Characters/Noa_Human, Characters/Olina_Human, Characters/Puka_Human, Characters/Hiro_Winter, Characters/Jinx_Winter, Characters/Lala_Winter, Characters/Lulu_Winter, Characters/Noa_Winter, Characters/Olina_Winter, Characters/Puka_Winter, Characters/Lotus_Winter, Characters/Shiso_Winter, Characters/Bonbon_Winter, Characters/Lotus_Halloween, Characters/Shiso_Halloween, Characters/Captain_Santa, Characters/Hiro_Tanabata, Characters/Puka_Tanabata, Characters/Hiro_BOF, Characters/Jinx_BOF, Characters/Lala_BOF, Characters/Lulu_BOF, Characters/Noa_BOF, Characters/Olina_BOF, Characters/Puka_BOF, Characters/Shiso_BOF, Characters/Jinx_HumanPast, Characters/Olina_HumanPast, Characters/Lulu_Shalise, Characters/Captain_Chad, Characters/Captain_JinxDad, Characters/Lulu_JinxMom",
+      "FromFile": "Assets/{{Target}}.png"
+
+    },
+    {
+		"LogName": "Lala Clown Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Lala",
+		"FromFile": "Assets/{{Target}}_Clown.png",
+		"When": {
+			"DayOfWeek": "Wednesday",
+		},
+	},
+		{
+		"LogName": "Lulu Clown Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Lulu",
+		"FromFile": "Assets/{{Target}}_Clown.png",
+		"When": {
+			"DayOfWeek": "Wednesday",
+		}
+	},
+{
+		"LogName": "Kandi Bunni Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Kandi",
+		"FromFile": "Assets/{{Target}}_Bunni.png",
+		"When": {
+			"DayOfWeek": "Saturday",
+		}
+	},
+{
+		"LogName": "Halloween Hiro Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Hiro",
+		"FromFile": "Assets/{{Target}}_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+     {
+		"LogName": "Halloween Jinx Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Jinx",
+		"FromFile": "Assets/{{Target}}_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+     {
+		"LogName": "Halloween Jinx Sprite 2",
+		"Action": "EditImage",
+		"Target": "Characters/Jinx",
+		"FromFile": "Assets/{{Target}}_Halloween2.png",
+		"When": {
+                        "Day": "28",
+                        "Season": "fall",
+                        "HasSeenEvent": "98890073"
+		}
+	},
+      {
+		"LogName": "Halloween Noa Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Noa",
+		"FromFile": "Assets/{{Target}}_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+      {
+		"LogName": "Halloween Olina Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Olina",
+		"FromFile": "Assets/{{Target}}_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+{
+		"LogName": "Halloween Olina Sprite 2",
+		"Action": "EditImage",
+		"Target": "Characters/Olina",
+		"FromFile": "Assets/{{Target}}_Halloween2.png",
+		"When": {
+                        "Day": "28",
+                        "Season": "fall",
+                        "HasSeenEvent": "98890073"
+		}
+	},
+      {
+		"LogName": "Halloween Puka Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Puka",
+		"FromFile": "Assets/{{Target}}_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+{
+		"LogName": "Halloween Lala Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Lala",
+		"FromFile": "Assets/{{Target}}_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+{
+		"LogName": "Halloween Lulu Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Lulu",
+		"FromFile": "Assets/{{Target}}_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+{
+		"LogName": "Halloween Lotus Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Lotus",
+		"FromFile": "Assets/{{Target}}_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+{
+		"LogName": "Halloween Shiso Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Shiso",
+		"FromFile": "Assets/{{Target}}_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+{
+		"LogName": "Halloween Bonbon Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Bonbon",
+		"FromFile": "Assets/{{Target}}_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+{
+		"LogName": "Halloween Kandi Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Kandi",
+		"FromFile": "Assets/{{Target}}_Halloween.png",
+		"When": {
+                "Day": "28",
+                "Season": "fall"
+		}
+	},
+{
+		"LogName": "Winter Hiro Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Hiro",
+		"FromFile": "Assets/{{Target}}_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}
+	},
+     {
+		"LogName": "Winter Jinx Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Jinx",
+		"FromFile": "Assets/{{Target}}_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}
+	},
+      {
+		"LogName": "Winter Noa Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Noa",
+		"FromFile": "Assets/{{Target}}_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}
+	},
+      {
+		"LogName": "Winter Olina Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Olina",
+		"FromFile": "Assets/{{Target}}_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}
+	},
+      {
+		"LogName": "Winter Puka Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Puka",
+		"FromFile": "Assets/{{Target}}_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}
+	},
+{
+		"LogName": "Winter Lala Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Lala",
+		"FromFile": "Assets/{{Target}}_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}
+	},
+{
+		"LogName": "Winter Lulu Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Lulu",
+		"FromFile": "Assets/{{Target}}_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}		
+             },
+{
+		"LogName": "Winter Lotus Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Lotus",
+		"FromFile": "Assets/{{Target}}_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}		
+             },
+{
+		"LogName": "Winter Shiso Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Shiso",
+		"FromFile": "Assets/{{Target}}_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}		
+             },
+{
+		"LogName": "Winter Bonbon Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Bonbon",
+		"FromFile": "Assets/{{Target}}_Winter.png",
+		"When": {
+                        "Season": "winter"
+		}		
+             },
+{
+		"LogName": "Santa Captain Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Captain",
+		"FromFile": "Assets/{{Target}}_Santa.png",
+		"When": {
+                "Day": "25",
+                "Season": "winter"
+		}
+	},
+{
+		"LogName": "Tanabata Hiro Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Hiro",
+		"FromFile": "Assets/{{Target}}_Tanabata.png",
+		"When": {
+                        "Day": "7",
+                        "Season": "summer"
+		}
+	},	
+{
+		"LogName": "Tanabata Puka Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Puka",
+		"FromFile": "Assets/{{Target}}_Tanabata.png",
+		"When": {
+                        "Day": "7",
+                        "Season": "summer"
+		}
+	},	
+{
+		"LogName": "Birth of Flowers Hiro Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Hiro",
+		"FromFile": "Assets/{{Target}}_BOF.png",
+		"When": {
+                        "Day": "21",
+                        "Season": "spring"
+		}
+	},	
+{
+		"LogName": "Birth of Flowers Jinx Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Jinx",
+		"FromFile": "Assets/{{Target}}_BOF.png",
+		"When": {
+                        "Day": "21",
+                        "Season": "spring"
+		}
+	},	
+{
+		"LogName": "Birth of Flowers Lala Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Lala",
+		"FromFile": "Assets/{{Target}}_BOF.png",
+		"When": {
+                        "Day": "21",
+                        "Season": "spring"
+		}
+	},		
+{
+		"LogName": "Birth of Flowers Lulu Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Lulu",
+		"FromFile": "Assets/{{Target}}_BOF.png",
+		"When": {
+                        "Day": "21",
+                        "Season": "spring"
+		}
+	},	
+{
+		"LogName": "Birth of Flowers Noa Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Noa",
+		"FromFile": "Assets/{{Target}}_BOF.png",
+		"When": {
+                        "Day": "21",
+                        "Season": "spring"
+		}
+	},	
+{
+		"LogName": "Birth of Flowers Olina Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Olina",
+		"FromFile": "Assets/{{Target}}_BOF.png",
+		"When": {
+                        "Day": "21",
+                        "Season": "spring"
+		}
+	},	
+{
+		"LogName": "Birth of Flowers Puka Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Puka",
+		"FromFile": "Assets/{{Target}}_BOF.png",
+		"When": {
+                        "Day": "21",
+                        "Season": "spring"
+		}
+	},	
+{
+		"LogName": "Birth of Flowers Shiso Sprite",
+		"Action": "EditImage",
+		"Target": "Characters/Shiso",
+		"FromFile": "Assets/{{Target}}_BOF.png",
+		"When": {
+                        "Day": "21",
+                        "Season": "spring"
+		}
+	},	
+      ]
+   }

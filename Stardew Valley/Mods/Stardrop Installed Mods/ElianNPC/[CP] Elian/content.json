@@ -1,0 +1,215 @@
+{
+    "Format": "2.0.0",
+    "DynamicTokens": [
+        {
+            "Name": "Dateable",
+            "Value": "false",
+            "When": { 
+                "HasSeenEvent |contains=1711937082": false 
+            }
+        },
+        {
+            "Name": "Dateable",
+            "Value": "true",
+            "When": { 
+                "HasSeenEvent: anyPlayer |contains=1711937082": true 
+            }
+        },
+        {
+            "Name": "Manner",
+            "Value": "Rude",
+            "When": { 
+                "HasSeenEvent |contains=1711937082": false
+            }
+        },
+        {
+            "Name": "Manner",
+            "Value": "Neutral",
+            "When": { 
+                "HasSeenEvent: anyPlayer |contains=1711937082": true 
+            }
+        },
+        {
+            "Name": "Optimism",
+            "Value": "Negative",
+            "When": { 
+                "HasSeenEvent |contains=1711937082": false 
+            }
+        },
+        {
+            "Name": "Optimism",
+            "Value": "Neutral",
+            "When": { 
+                "HasSeenEvent: anyPlayer |contains=1711937082": true
+            }
+        }
+    ],
+    "Changes": [
+
+        //Basic Stuff//
+        {
+            "LogName": "Elian Sprites",
+            "Action": "Load",
+            "Target": "Characters/Silverinnia.Elian",
+            "FromFile": "Assets/Images/elian_sprites.png"
+        },
+        {
+            "LogName": "Elian Portraits",
+            "Action": "Load",
+            "Target": "Portraits/Silverinnia.Elian",
+            "FromFile": "Assets/Images/elian_portraits.png"
+        },
+        {
+            "LogName": "Gift Tastes No Hearts",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Update": "OnLocationChange, OnTimeChange",
+            "When": { "Hearts:Silverinnia.Elian": "{{Range: 0, 1}}" },
+            "Entries": {
+                "Silverinnia.Elian": "{{i18n:gift.love.none}}/402 418 421 591 593 595 597 376 18 22/{{i18n:gift.like.none}}/392 393 394 372 397 FlashShifter.StardewValleyExpandedCP_Dried_Sand_Dollar FlashShifter.StardewValleyExpandedCP_Big_Conch/{{i18n:gift.dislike.none}}/614 205 207 456 233 279/{{i18n:gift.hate.none}}/78 241 243 244 606/{{i18n:gift.neutral.none}}//"
+            }
+        },
+        {
+            "LogName": "Gift Tastes Low Hearts",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Update": "OnLocationChange, OnTimeChange",
+            "When": { "Hearts:Silverinnia.Elian": "{{Range: 2, 5}}" },
+            "Entries": {
+                "Silverinnia.Elian": "{{i18n:gift.love.low}}/402 418 421 591 593 595 597 376 18 22/{{i18n:gift.like.low}}/392 393 394 372 397 FlashShifter.StardewValleyExpandedCP_Dried_Sand_Dollar FlashShifter.StardewValleyExpandedCP_Big_Conch/{{i18n:gift.dislike.low}}/614 205 207 456 233 279/{{i18n:gift.hate.low}}/78 241 243 244 606/{{i18n:gift.neutral.low}}//"
+            }
+        },
+        {
+            "LogName": "Gift Tastes High Hearts",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Update": "OnLocationChange, OnTimeChange",
+            "When": { "Hearts:Silverinnia.Elian": "{{Range: 6, 14}}" },
+            "Entries": {
+                "Silverinnia.Elian": "{{i18n:gift.love.high}}/402 418 421 591 593 595 597 376 18 22/{{i18n:gift.like.high}}/392 393 394 372 397 FlashShifter.StardewValleyExpandedCP_Dried_Sand_Dollar FlashShifter.StardewValleyExpandedCP_Big_Conch/{{i18n:gift.dislike.high}}/614 205 207 456 233 279/{{i18n:gift.hate.high}}/78 241 243 244 606/{{i18n:gift.neutral.high}}//"
+            }
+        },
+        {
+            "LogName": "Load Elian Events",
+            "Action": "Load",
+            "Target": "Data/Events/{{ModId}}_Cave",
+            "FromFile": "Data/EmptyJson.json"
+        },
+        {
+            "LogName": "Elian Events",
+            "Action": "Include",
+            "FromFile": "Data/Events/Introduction.json, Data/Events/Two_Heart.json, Data/Events/Four_Heart.json, Data/Events/Six_Heart.json, Data/Events/Eight_Heart.json, Data/Events/Ten_Heart.json"
+        },
+
+            //Unfinished Events//
+            //Data/Events/Fourteen_Heart.json
+
+        {
+            "LogName": "Elian Includes",
+            "Action": "Include",
+            "FromFile": "Data/Animations.json, Data/Festival.json, Data/Movie.json, Data/Objects.json, Data/Disposition.json, Data/Trigger_Actions.json, Data/Maps.json"
+        },
+        {
+            "LogName": "Elian Mail",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "{{ModId}}_Tulip": "{{i18n:ten_heart_mail.1}}^^{{i18n:ten_heart_mail.2}}%item bigobject {{ModId}}_Tulip_Vase %%[#]{{i18n:ten_heart_mail.3}}"
+            }
+        },
+
+        //Schedule//
+        {
+            "LogName": "Create Elian Schedule",
+            "Action": "Load",
+            "Target": "Characters/schedules/Silverinnia.Elian",
+            "FromFile": "Data/EmptyJson.json"
+        },
+        {
+            "LogName": "Elian Schedule",
+            "Action": "Include",
+            "FromFile": "Data/Schedule/Schedule.json, Data/Schedule/PoppySchedule.json, Data/Schedule/SixHeartsSchedule.json, Data/Schedule/FinalSchedule.json, Data/Schedule/MarriageSchedule.json"
+        },
+
+        //Rejection Dialogue for SVE items//
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Silverinnia.Elian",
+            "Entries": {
+                "reject_FlashShifter.StardewValleyExpandedCP_Mermaid's_Bracelet": "{{i18n:rejectSVE.1}}",
+                "reject_FlashShifter.StardewValleyExpandedCP_Galdoran_Gem": "{{i18n:rejectSVE.2}}",
+                "reject_FlashShifter.StardewValleyExpandedCP_Aurora_Vineyard_Property_Deed": "{{i18n:rejectSVE.3}}",
+                "reject_FlashShifter.StardewValleyExpandedCP_Super_Starfruit": "{{i18n:rejectSVE.4}}"
+            }
+        },
+
+        //Dialogue//
+        {
+            "LogName": "Create Elian Dialogue",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Silverinnia.Elian",
+            "FromFile": "Data/EmptyJson.json"
+        },
+        {
+            "LogName": "Create Elian Marriage Dialogue",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/MarriageDialogueSilverinnia.Elian",
+            "FromFile": "Data/EmptyJson.json"
+        },
+        {
+            "LogName": "Elian Dialogue",
+            "Action": "Include",
+            "FromFile": "Data/Dialogue/Dialogue.json, Data/Dialogue/Dialogue6HeartChange.json, Data/Dialogue/Dialogue8HeartChange.json, Data/Dialogue/DialogueDatingChange.json, Data/Dialogue/MarriageDialogue.json"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "ElianCave.1": "{{i18n:ElianCave.1}}",
+                "ElianCave.2": "{{i18n:ElianCave.2}}",
+                "ElianSpouseRoom.1": "{{i18n:ElianSpouseRoom.1}}",
+                "ElianSpouseRoom.2": "{{i18n:ElianSpouseRoom.2}}"
+            }
+        },
+
+        //Spouse//
+        {
+            "LogName": "Elian Engagement Dialogue",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries": {
+                "Silverinnia.Elian0": "{{i18n:engaged0}}",
+                "Silverinnia.Elian1": "{{i18n:engaged1}}"
+            }
+        },
+        {
+            "LogName": "Load Elian Spouse Room",
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_Spouse_Room",
+            "FromFile": "Assets/Maps/EliansRoom.tmx"
+        },
+        {
+            "LogName": "Elian Spouse Patio",
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_Spouse_Patio",
+            "When": { "Season": "spring, summer, fall" },
+            "FromFile": "Assets/Maps/EliansPatio.tmx"
+        },
+        {
+            "LogName": "Elian Spouse Patio Winter",
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_Spouse_Patio",
+            "When": { "Season": "winter" },
+            "FromFile": "Assets/Maps/EliansPatioWinter.tmx"
+        },
+
+        //Poppy//
+        {
+            "Action": "EditData",
+            "Target": "Data/Quests",
+            "Entries": {
+                "171191600": "Basic/{{i18n:quest.name}}/{{i18n:quest.description}}/{{i18n:quest.hint}}/-1/-1/0/-1/false"
+            }
+        }
+    ]
+}

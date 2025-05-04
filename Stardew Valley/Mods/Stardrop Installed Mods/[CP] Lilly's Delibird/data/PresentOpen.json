@@ -1,0 +1,503 @@
+{
+    "Changes": [
+                {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [ "(BC){{ModId}}_PresentOpener", "OutputRules" ],
+            "Entries": {
+                "{{ModId}}_PresentOpen":{
+                    "Id": "{{ModId}}_Present",
+                    "Triggers": 
+                        [
+                            {
+                                "Trigger": "ItemPlacedInMachine",
+                                "RequiredItemId": "{{ModId}}_Present",
+                                "RequiredCount": 1
+                            }
+                        ],
+                    "OutputItem": [
+                            {
+                                "Id": "382", //Coal
+                                "ItemId": "382",
+                                "CopyQuality": false,
+                                "MinStack": 1,
+                                "MaxStack": 2
+                            },
+                            {
+                                "Id": "239", //Stuffing
+                                "ItemId": "239",
+                                "CopyQuality": false,
+                                "MinStack": 1,
+                                "MaxStack": 1
+                            },
+                            {
+                                "Id": "390", //Stone
+                                "ItemId": "390",
+                                "CopyQuality": false,
+                                "MinStack": 2,
+                                "MaxStack": 5
+                            },
+                            {
+                                "Id": "388", //Wood
+                                "ItemId": "388",
+                                "CopyQuality": false,
+                                "MinStack": 2,
+                                "MaxStack": 5
+                            },
+                            {
+                                "Id": "378", //Copper Ore
+                                "ItemId": "378",
+                                "CopyQuality": false,
+                                "MinStack": 1,
+                                "MaxStack": 3
+                            },
+                            {
+                                "Id": "RandomSpringCrop", //Parsnip, Tulip, Rice or Green Bean
+                                "ItemId": null,
+                                "RandomItemId": [ "(O)24", "(O)591", "(O)271", "(O)188" ],
+                                "CopyQuality": false,
+                                "MinStack": 1,
+                                "MaxStack": 1
+                            },
+                            {
+                                "Id": "RandomSummerCrop", //Wheat, Hops, Hot Pepper or Blueberry
+                                "ItemId": null,
+                                "RandomItemId": [ "(O)262", "(O)304", "(O)260", "(O)258" ],
+                                "CopyQuality": false,
+                                "MinStack": 1,
+                                "MaxStack": 1
+                            },
+                            {
+                                "Id": "RandomFallCrop", //Wheat, Corn or Eggplant
+                                "ItemId": null,
+                                "RandomItemId": [ "(O)262", "(O)270", "(O)272" ],
+                                "CopyQuality": false,
+                                "MinStack": 1,
+                                "MaxStack": 1
+                            },
+                            {
+                                "Id": "RandomBerry", //Salmonberry or Blackberry
+                                "ItemId": null,
+                                "RandomItemId": [ "(O)296", "(O)410" ],
+                                "CopyQuality": false,
+                                "MinStack": 2,
+                                "MaxStack": 3
+                            },
+                            {
+                                "Id": "RandomCheapForage", //Spring Onion, Daffodil, Sweet Pea or Common Mushroom
+                                "ItemId": null,
+                                "RandomItemId": [ "(O)399", "(O)18", "(O)402", "(O)404" ],
+                                "CopyQuality": false,
+                                "MinStack": 1,
+                                "MaxStack": 1
+                            },
+                            {
+                                "Id": "Moss", //Moss
+                                "ItemId": "Moss",
+                                "CopyQuality": false,
+                                "MinStack": 1,
+                                "MaxStack": 3
+                            },
+                            {
+                                "Id": "RandomCookingIngredient", //Flour, Oil, Sugar or Vinegar
+                                "ItemId": null,
+                                "RandomItemId": [ "(O)246", "(O)247", "(O)245", "(O)419" ],
+                                "CopyQuality": false,
+                                "MinStack": 1,
+                                "MaxStack": 1
+                            },
+                            {
+                                "Id": "RandomMixedSeeds", //Mixed Seeds or Mixed Flower Seeds
+                                "ItemId": null,
+                                "RandomItemId": [ "(O)770", "(O)MixedFlowerSeeds" ],
+                                "CopyQuality": false,
+                                "MinStack": 1,
+                                "MaxStack": 3
+                            }
+                            ],
+                        "MinutesUntilReady": 30
+                    },
+                "{{ModId}}_MysteryGiftOpen": {
+                    "Id": "{{ModId}}_MysteryGift",
+                    "Triggers": 
+                        [
+                            {
+                                "Trigger": "ItemPlacedInMachine",
+                                "RequiredItemId": "{{ModId}}_MysteryGift",
+                                "RequiredCount": 1
+                            }
+                        ],
+                    "OutputItem": [
+                        {
+                            "Id": "336", //Gold Bar
+                            "ItemId": "336",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        },
+                        {
+                            "Id": "335", //Iron Bar
+                            "ItemId": "335",
+                            "CopyQuality": false,
+                            "MinStack": 2,
+                            "MaxStack": 2
+                        },
+                        {
+                            "Id": "334", //Copper Bar
+                            "ItemId": "334",
+                            "CopyQuality": false,
+                            "MinStack": 4,
+                            "MaxStack": 4
+                        },
+                        {
+                            "Id": "709", //Hardwood
+                            "ItemId": "709",
+                            "CopyQuality": false,
+                            "MinStack": 10,
+                            "MaxStack": 10
+                        },
+                        {
+                            "Id": "338", //Refined Quartz
+                            "ItemId": "338",
+                            "CopyQuality": false,
+                            "MinStack": 4,
+                            "MaxStack": 4
+                        },
+                        {
+                            "Id": "349", //Energy Tonic
+                            "ItemId": "349",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        },
+                        {
+                            "Id": "342", //Pickles
+                            "ItemId": "342",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        },
+                        {
+                            "Id": "344", //Jelly
+                            "ItemId": "344",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        },
+                        {
+                            "Id": "348", //Wine
+                            "ItemId": "348",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        },
+                        {
+                            "Id": "350", //Juice
+                            "ItemId": "350",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        },
+                        {
+                            "Id": "447", //Aged Roe
+                            "ItemId": "447",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        },
+                        {
+                            "Id": "DriedFruit", //Dried Fruit
+                            "ItemId": "DriedFruit",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        },
+                        {
+                            "Id": "DriedMushrooms", //Dried Mushrooms
+                            "ItemId": "DriedMushrooms",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        },
+                        {
+                            "Id": "SmokedFish", //Smoked Fish
+                            "ItemId": "SmokedFish",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        },
+                        {
+                            "Id": "PrizeTicket", //Prize Ticket
+                            "ItemId": "PrizeTicket",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        },
+                        {
+                            "Id": "872", //Fairy Dust
+                            "ItemId": "872",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        },
+                        {
+                            "Id": "RandomFireworks", //Fireworks Red, Purple or Green
+                            "ItemId": "872",
+                            "RandomItemId": [ "(O)893", "(O)894", "(O)895" ],
+                            "CopyQuality": false,
+                            "MinStack": 3,
+                            "MaxStack": 3
+                        }
+                        ],
+                    "MinutesUntilReady": 180
+                },  
+                "{{ModId}}_WinterStarPresentOpen":{
+                    "Id": "{{ModId}}_WinterStarGift",
+                    "Triggers": 
+                        [
+                            {
+                                "Trigger": "ItemPlacedInMachine",
+                                "RequiredItemId": "{{ModId}}_WinterStarGift",
+                                "RequiredCount": 1
+                            }
+                        ],
+                    "OutputItem": [
+                        {
+                            "Id": "337", //Iridium Bar
+                            "ItemId": "337",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "336", //Gold Bar
+                            "ItemId": "336",
+                            "CopyQuality": false,
+                            "MinStack": 5,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "535", //Geode
+                            "ItemId": "535",
+                            "CopyQuality": false,
+                            "MinStack": 5,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "536", //Frozen Geode
+                            "ItemId": "536",
+                            "CopyQuality": false,
+                            "MinStack": 5,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "537", //Magma Geode
+                            "ItemId": "537",
+                            "CopyQuality": false,
+                            "MinStack": 5,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "176", //Egg
+                            "ItemId": "176",
+                            "CopyQuality": false,
+                            "MinStack": 12,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "388", //Wood
+                            "ItemId": "388",
+                            "CopyQuality": false,
+                            "MinStack": 99,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "390", //Stone
+                            "ItemId": "390",
+                            "CopyQuality": false,
+                            "MinStack": 50,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "709", //Hardwood
+                            "ItemId": "709",
+                            "CopyQuality": false,
+                            "MinStack": 25,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "690", //Warp Totem: Beach
+                            "ItemId": "690",
+                            "CopyQuality": false,
+                            "MinStack": 25,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "687", //Dressed Spinner
+                            "ItemId": "687",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "703", //Magnet
+                            "ItemId": "703",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "223", //Cookies
+                            "ItemId": "223",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "330", //Clay
+                            "ItemId": "330",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "103", //Ancient Doll
+                            "ItemId": "103",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "394", //Rainbow Shell
+                            "ItemId": "394",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "608", //Pumpkin Pie
+                            "ItemId": "608",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "651", //Poppyseed Muffin
+                            "ItemId": "651",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "611", //Blackberry Cobbler
+                            "ItemId": "611",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "517", //Glow Ring
+                            "ItemId": "517",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "466", //Deluxe Speed-Gro
+                            "ItemId": "466",
+                            "CopyQuality": false,
+                            "MinStack": 10,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "422", //Purple Mushroom
+                            "ItemId": "422",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "392", //Nautilus Shell
+                            "ItemId": "392",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "348", //Wine
+                            "ItemId": "348",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "346", //Beer
+                            "ItemId": "346",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "341", //Tea Set
+                            "ItemId": "341",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "221", //Pink Cake
+                            "ItemId": "221",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "64", //Ruby
+                            "ItemId": "64",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "60", //Emerald
+                            "ItemId": "60",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        },
+                        {
+                            "Id": "70", //Jade
+                            "ItemId": "70",
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": -1
+                        }
+                        ],
+                    "MinutesUntilReady": 180
+                },
+                "{{ModId}}_SurpriseGiftOpen": {
+                    "Id": "{{ModId}}_SurpriseGift",
+                    "Triggers": 
+                        [
+                            {
+                                "Trigger": "ItemPlacedInMachine",
+                                "RequiredItemId": "{{ModId}}_SurpriseGift",
+                                "RequiredCount": 1
+                            }
+                        ],
+                    "OutputItem": [
+                        {
+                            "Id": "CompletelyRandom",
+                            "ItemId": null,
+                            "RandomItemId": [ "RANDOM_ITEMS (O)", "RANDOM_ITEMS (WP)", "RANDOM_ITEMS (F)", "RANDOM_ITEMS (BC)", "RANDOM_ITEMS (FL)" ],
+                            "CopyQuality": false,
+                            "MinStack": 1,
+                            "MaxStack": 1
+                        }
+                        ],
+                    "MinutesUntilReady": 180
+                }
+            }
+        }
+    ]
+}

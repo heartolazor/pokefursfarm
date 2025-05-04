@@ -1,0 +1,577 @@
+{
+	//Translations for Isla go here.
+
+	//CONFIG TRANSLATIONS
+	
+"config.DiverseArt.name": "Isla Art",
+"config.DiverseArt.description": "Elige si deseas utilizar los retratos y sprites originales de Isla o los retratos y sprites diversos de Isla. Los personajes adicionales coincidirán con la opción elegida.",
+"config.DiverseArt.values.default": "arte predeterminado",
+"config.DiverseArt.values.diverse": "arte diverso",
+
+"config.ChildrenSprites.name": "Niños de Isla",
+"config.ChildrenSprites.description": "Elige si deseas utilizar el sprite de niño predeterminado o sprites para que los niños se parezcan a Isla.",
+"config.ChildrenSprites.values.default": "sprites predeterminados",
+"config.ChildrenSprites.values.isla": "sprites de niños coinciden con Isla",
+	
+"config.MapRecolor.name": "Recoloración de Mapas",
+"config.MapRecolor.description": "Elige la recoloración para los mapas de Isla. Automático elegirá el predeterminado a menos que esté instalado Starblue Valley, en cuyo caso elegirá los mapas de Starblue.",
+"config.MapRecolor.values.automatic": "automático",
+"config.MapRecolor.values.default": "juego base",
+"config.MapRecolor.values.starblue": "starblue",
+	
+	//NPC DATA TRANSLATIONS
+	
+"Isla.Name": "Isla",
+
+"Isla.GiftTaste.Love": "¡Esto es maravilloso! Muchas gracias, amable @.$8",
+"Isla.GiftTaste.Like": "Gracias @, ¡es muy considerado de tu parte!$1",
+"Isla.GiftTaste.Dislike": "Oh @, aprecio el gesto.",
+"Isla.GiftTaste.Hate": "Oh querido @, esto realmente no me gusta para nada.$2",
+"Isla.GiftTaste.Neutral": "Gracias, @.",
+	
+	//MOVIE DATA TRANSLATIONS
+	
+"Isla.MovieInvite.Spouse": "¡Oh, me encantaría ver una película contigo!$4",
+
+"Isla.SeenLovedMovie.Text": "De hecho, ¡he visto esta película con {2}! ¡Me gustó mucho!$1",
+"Isla.SeenLikedMovie.Text": "¡Oh, '{0}'?! ¡Vi esta película con {2}!$7",
+"Isla.SeenDislikedMovie.Text": "Oh, vi esta película con {2}...$2",
+
+"Isla.Sapling.Lobby": "¡Oh! Esto parece ser una película encantadora.#$b#¿Vamos?$1",
+"Isla.Sapling.Message": "Isla parece conmovida por la película...",
+"Isla.Sapling.Reaction": "Wow, qué conmovedor...$2",
+"Isla.Sapling.End": "¡Guau, qué película maravillosa y conmovedora! ¡Me pone en el espíritu de la primavera!$8",
+	
+"Isla.Romance.Lobby": "Realmente me encanta una película romántica. Y no puedo pensar en nadie con quien preferiría verla.$8",
+"Isla.Romance.Message": "(Isla está mirando la película con ojos de estrella.)",
+"Isla.Romance.Reaction": "Oh, qué hermoso...$4",
+"Isla.Romance.End": "Esa fue una romance tan hermoso. Me conmovió muchísimo. Gracias por invitarme a verla, @.$8",
+	
+"Isla.Comedy.Lobby": "¡Oh, realmente disfruto de una comedia!$8",
+"Isla.Comedy.Reaction": "¡Dios mío!$8",
+"Isla.Comedy.End": "¡Jaja, esa película fue absolutamente hilarante! ¡Me encantó!$8",
+
+"Isla.Horror.Lobby": "Oh querido, esta película parece bastante aterradora.$2",
+"Isla.Horror.Reaction": "Esta película me está asustando.$2",
+"Isla.Horror.End": "Yo... Yo no disfruté esa película. Pero al menos estabas ahí para sostener mi mano.$1",
+	
+		//The following is the original movie dialogue for every movie due to a bug - instead it will now fire if nothing else above fits.
+	
+"Isla.Original.Lobby": "¡Hace bastante tiempo que no voy al teatro! ¡Estoy deseando hacerlo! Especialmente porque voy contigo.$8",
+"Isla.Original.Reaction": "Isla está mirando con fascinación.",
+"Isla.Original.End": "Disfruté mucho de eso. Tal vez podríamos hacerlo de nuevo pronto.",
+	
+		//The remaining three of these reactions should never fire together, but are kept in translations to preserve the dialogues/reactions (and the after keys are used at the end of the seen_ keys for simplicity).
+	
+"Isla.LikedMovie.Before": "¡Esta película parece bastante buena!$8",
+"Isla.LikedMovie.After": "¡Eso fue maravilloso! ¡Gracias por acompañarme!$4",
+
+"Isla.LovedMovie.Before": "Oh, he estado deseando ver esta película desde hace mucho tiempo!$7",
+"Isla.LovedMovie.After": "¡Esta película es increíble! Tal como anticipaba.$8",
+
+"Isla.DislikedMovie.Before": "Oh, no estoy seguro/a acerca de esta. Podemos verla si quieres, sin embargo.$2",
+"Isla.DislikedMovie.During": "Oh...",
+"Isla.DislikedMovie.After": "Oh, no disfruté esa película para nada.$2#$b#Aunque sí disfruté pasar tiempo contigo.$1",
+	
+	//MAIL TRANSLATIONS
+	
+"Isla.Letter.Body": "Querido/a @,^Espero que te encuentres bien. Por favor, ven a encontrarme en la playa mañana por la noche a las 10 PM. Si el clima lo permite, por supuesto.^ -Con cariño, Isla",
+"Isla.Letter.Title": "Una carta de Isla",
+
+"Isla.Invitation.Body": "Querido/a @^Quiero que conozcas a algunas personas que son muy queridas para mí. Hemos planeado algo realmente especial. Ven a la playa esta noche a las 8 PM.^ -Con cariño, Isla",
+"Isla.Invitation.Title": "Una invitación de Isla",
+	
+	//MAP DATA
+	
+"Isla.UnderwaterCove.Name": "Hogar de Isla",
+"Isla.UnderwaterCoveExterior.Name.Unmet": "Isla",
+"Isla.UnderwaterCoveExterior.Name": "Isla de Isla",
+	
+	//FESTIVAL DIALOGUE
+	
+"Isla.EggFestival": "¡Vi a Elliott en la playa esta mañana, y me invitó al festival!$8#$b#Ha sido agradable conocer a los otros residentes, y la comida es simplemente deliciosa.$8",
+"Isla.EggFestival.Spouse": "¡Es el primer festival del año, querido @! Es tan encantador ver a todos aquí.$8",
+	
+"Isla.FlowerDance": "Oh, he bailado tantas veces con Galene. Me encanta la emoción de moverme con la música.$1",
+"Isla.FlowerDance.Spouse": "No puedo esperar para bailar contigo hoy, querido @.$4",
+	
+"Isla.Luau": "Hola @. Decidí unirme a la festividad hoy. Todos han sido tan amables y acogedores conmigo.$1#$b#¡Decidí agregar algunas algas recién cosechadas, directamente del Mar de las Gemas!$8",
+"Isla.Luau.Spouse": "Hoy voy a poner mis algas especiales en la sopa del luau. ¡Añadirá una salinidad única al sabor! ¿Qué vas a llevar este año, querido @?$8",
+
+"Isla.Jellies": "He visto a las medusas actuar muchas veces, pero la actuación de esta noche será especial.$1#$b#Será una hermosa despedida del verano.$1",
+"Isla.Jellies.Spouse": "Oh, no puedo esperar para ver bailar a las medusas esta noche. Sabes, se sentirá mucho como en los viejos tiempos...$1",
+	
+"Isla.Fair": "Hola, @. Veo que me has encontrado aquí junto al río. Eché un vistazo a algunas de las festividades antes, ¡y fueron maravillosas!$8",
+"Isla.Fair.Spouse": "¡Realmente te has superado con tu exhibición este año, querido @! No podría estar más orgullosa. Me sentía un poco abrumada por la multitud, así que vine a pararme aquí por un rato.$1",
+	
+"Isla.Spirits": "¿Qué opinas de mi disfraz, @? Decidí disfrazarme como una de mis poetas favoritas de Ferngill, Emily Dickinson.$8",
+"Isla.Spirits.Spouse": "¿Cuál es tu poema favorito de Emily Dickinson, @?$8",
+
+"Isla.IceFestival": "Esta escultura es un tributo a la fundadora de Galene, una sirena llamada Melusine. Es una semejanza impactante.$1",
+"Isla.IceFestival.Spouse": "Esta escultura de Melusine me recuerda a mi vida pasada...$1",
+
+"Isla.WinterStar": "Feliz Estrella de Invierno, @. Espero que tu año haya sido muy fructífero, y te deseo lo mejor para el próximo.$1",
+"Isla.WinterStar.Spouse": "Feliz Estrella de Invierno, amor. Estoy encantada de poder pasarla contigo.$4",
+	
+	//SCHEDULE STRING TRANSLATIONS
+	
+"Isla.CoveExterior.001": "¡Buenos días, @! Qué amable de tu parte venir a visitarme.$8{{",
+"Isla.CoveExterior.001-2": "Solía vivir en lo profundo del océano, con mi familia de sirenas, pero ahora vivo aquí arriba porque es más fácil para mí. Aunque los visito a menudo.$1",
+"Isla.CoveExterior.002": "Buenas tardes, @. Qué amable de tu parte venir a visitarme.$1",
+"Isla.CoveExterior.002-2": "Gracias por venir a visitarme, @. ¿Cómo fue tu día?$1",
+"Isla.CoveExterior.003": "El espectáculo de hoy fue encantador. Tuvimos la oportunidad de presentar un nuevo acto musical que hemos estado perfeccionando durante meses.$8",
+"Isla.CoveExterior.004": "Hoy nos presentamos en la Ópera de la Ciudad de Zuzu. Fue bastante mágico.$1",
+"Isla.Dock.001": "%Isla está mirando hacia el horizonte. Parece estar absorta en alguna especie de ensueño.",
+"Isla.Dock.002": "Me encanta mirar hacia el Mar de las Gemas. Mi hermoso hogar marino...$1",
+"Isla.Beach.001": "Acabo de regresar a la playa para la tarde. Estoy muy feliz contigo, querido @, pero a veces extraño mi hogar marino...$2",
+"Isla.Beach.002": "Simplemente contempla el hermoso mar conmigo, querido @.$4",
+"Isla.Beach.003": "Solo estoy leyendo un rato, querido @. ¡Únete a mí! Estoy leyendo poemas de famosos poetas de Ferngill. Mis favoritos son los que hablan de las hermosas Islas Fern.$8",
+"Isla.Beach.004": "Hola, querido @. Estoy leyendo un nuevo libro que me dio Gunther. No es un libro de poesía, pero aún así me encanta. Es una novela de misterio ambientada en la Ciudad de Zuzu. ¡Es muy intrigante!$1",
+"Isla.Reading.001": "Hola @. Estoy leyendo mi libro de poesía. Está lleno de obras tan interesantes de poetas de la República de Ferngill, ¡y algunos de fuera también! ¿Te gustaría escuchar uno de mis poemas favoritos?$8",
+	"Isla.Reading.002": "Ahora mismo estoy leyendo algunos sonetos. La forma en que hablan del amor es tan hermosa.$11",
+"Isla.Reading.003": "Estoy leyendo algunos poemas sobre el Reino del Zalvaje. Me pregunto cómo será allí...$9",
+"Isla.Reading.004": "Me pregunto cómo sería ser un actor, recitando los soliloquios más hermosos en el escenario todos los días.$9",
+"Isla.Reading.005": "¿Alguna vez has leído un poema en el idioma de los tritones? Es un idioma melódico y susurrante. Suena como las olas del océano.$3",
+"Isla.Reading.006": "Me encanta leer aquí en mi pequeña isla. Por favor, ven y únete a mí.$8",
+"Isla.Reading.007": "Es asombroso cómo un poema puede transportarte a otro lugar y tiempo.$9",
+"Isla.Elliott.001": "¡Hola @! Estoy visitando a mi amigo Elliott. Justo estábamos discutiendo sobre nuestros poetas favoritos. ¡Únete a nosotros!$8",
+"Isla.DockRead.001": "Ven a estar conmigo, querido.$8",
+"Isla.DockRead.002": "Hola, querido @. Gunther me dio un nuevo libro lleno de poesía de jóvenes poetas emergentes de la Ciudad de Zuzu. ¡Ven a echar un vistazo!$8",
+	"Isla.Mountain.001": "Gracias por venir conmigo, querido @. Me encanta el aire de la montaña, tan fresco y nítido. Su belleza natural me recuerda a parte de la poesía de William Wordsworth, uno de los poetas más evocativos del Reino del Zalvaje.$1",
+"Isla.Misc.001": "Ven a la playa conmigo hoy, @. Podemos llevar un almuerzo de picnic.$7",
+"Isla.Misc.002": "Hola, querido @. Es encantador verte. He estado disfrutando de mi día hasta ahora. Espero que tú también lo hayas estado.$4",
+"Isla.Misc.003": "Buenos días, querido @. ¿Te gustaría dar un paseo por las montañas conmigo esta mañana? Sería agradable tener un cambio de escenario, para inspiración poética.$1",
+"Isla.Misc.004": "Buenas noches, querido @. Estoy bebiendo un cóctel especial que Gus creó solo para mí. ¡Está hecho con tinta de calamar! Ven a acompañarnos.$8",
+"Isla.Museum.001": "Oh, hola querido @. Gracias por visitarme. Estoy tomando un pequeño descanso antes de ponerme a trabajar.$1",
+"Isla.Museum.002": "En este momento estoy ordenando algunos libros. Deberías echar un vistazo, hay muchos libros maravillosos aquí.$1",
+"Isla.Museum.003": "Los libros que estoy ordenando ahora mismo son enciclopedias sobre la historia de la República de Ferngill.$1",
+"Isla.Museum.004": "Estos libros son sobre la historia del Imperio Gotoro. La gente allí es amable, pero el gobierno es cruel. Desearía que pudieras verlo, querido. Es una tierra vibrante, con tantos colores hermosos...",
+"Isla.Museum.005": "¿Cómo ha sido tu día, querido? Estoy deseando estar en casa contigo.$7",
+	"Isla.Museum.006": "Estos libros tratan sobre la fauna de la República de Ferngill. Es increíble lo diversa que es.$1",
+"Isla.Museum.007": "Acabo de despedirme de Gunther. Se ha convertido en un buen amigo mío.$1",
+"Isla.Museum.008": "Hola querido. Estoy admirando algunas de las curiosidades que tiene Gunther aquí. Estos platos son exquisitos. Puedo decir por el diseño que son de artesanía Gotorana.",
+"Isla.Museum.009": "En este momento estoy ordenando algunos libros de poesía. Están llenos de haikus evocadores de famosos poetas Gotoranos. Los poemas de la joven poeta Gotorana Kumiko Sashihara documentan el comienzo de la guerra.$2",
+"Isla.Museum.010": "Gunther y yo estábamos hablando de nuestros poetas favoritos. ¡No me di cuenta de que le encanta un buen soliloquio tanto como a mí!$8",
+"Isla.Museum.011": "Es un poco más tranquilo en la biblioteca los miércoles, así que estoy aprovechando la oportunidad para leer un poco. ¡Únete, @!$9",
+"Isla.Museum.012": "Ahora me estoy despidiendo de Gunther. Nos vemos pronto, @.$8",
+	
+	//DIALOGUE TRANSLATIONS
+	
+		//Unique Dialogue
+		
+"Isla.Introduction": "Hola de nuevo, @. Quiero disculparme otra vez por nuestro encuentro inicial que dejó mucho que desear.$2#$b#Aunque es encantador verte de nuevo. Espero que este sea el primero de muchos encuentros.$1",
+"Isla.DanceReject": "Oh, lo siento @, pero ahora mismo no tengo ganas de bailar.$2",
+"Isla.Divorced": "Oh, hola de nuevo, @. Estoy decepcionada de que las cosas no hayan funcionado entre nosotros, pero espero lo mejor para ti.#$b#Las relaciones entre las sirenas y los humanos siempre son difíciles, así que espero que nuestro matrimonio pueda ser una experiencia de aprendizaje para ambos.#$e#Te extrañaré, @.$2",
+"Isla.BreakUp": "¿Oh, ya no quieres estar juntos? Espero que no haya sido algo que dije o hice.$2#$b#Disfruté conociéndote y te deseo lo mejor.",
+"Isla.dumpedGirls": "¿Fue algo que hice? Me siento completamente sorprendida.$2#$e#Lo siento si te lastimé de alguna manera...$2",
+"Isla.secondChance": "¿Oh, quieres darle otra oportunidad a nuestra relación?$2#$e#Tendré que pensarlo. Realmente me lastimó el final de nuestra relación.$6#$e#Tomemoslo con calma, ¿de acuerdo?$2",
+"Isla.Stardrop": "@, te compré este stardrop para simbolizar nuestro amor.$4#$e#Nunca he sido más feliz que contigo.$7#$e#Espero con ansias nuestro futuro juntos.",
+"Isla.Bouquet": "Oh @, estoy honrada. No puedo esperar para conocerte aún mejor.$4#$e#Significas mucho para mí, @. Estoy tan feliz.$4",
+"Isla.StardropTea": "Esto me recuerda a casa... gracias, @.$8",
+	
+		//Engagement Dialogue
+"Isla.PendantGiven": "¡Oh @, ¿me estás dando un colgante de sirena? Siempre he soñado con recibir uno de la persona que más amo.$1#$b# Por supuesto que mi respuesta es sí.$4#$e#Es tan hermoso. Sabes, estas conchas iridiscentes especiales solo se encuentran en la Isla Saxifrage, mi lugar de nacimiento.$8#$b#Brillan con una cierta energía mágica...$1",
+"Isla.EngagementDialogue": "Estaba tan encantada de que me presentaras un Colgante de Sirena. ¿Cómo supiste que eso es costumbre entre nosotros, los merpeople?$7",
+"Isla.EngagementDialogue.2": "Mañana nos casamos. Espero con ansias la hermosa ceremonia. Pero sobre todo, espero estar contigo, querido @.$4",
+	
+		//Wedding stuff for Lewis
+"Isla.Wedding.Male": "Cuando @ llegó por primera vez a Pelican Town, nadie sabía si encajaría en nuestra comunidad...",
+"Isla.Wedding.Female": "Cuando @ llegó por primera vez a Pelican Town, nadie sabía si encajaría en nuestra comunidad...",
+"Isla.Wedding.Lewis": "¡Pero de este día en adelante, @ será parte de este pueblo tanto como cualquiera de nosotros!$h#$b#Es un gran honor para mí en este día [DayOfMonth] de [Season], unir a @ e Isla en los lazos del matrimonio. Celebremos que en este día, [DayOfMonth] de [Season], dos seres diferentes de dos lugares muy diferentes se unen en los lazos del matrimonio.",
+"Isla.Wedding.PlayerName": "@... Isla...",
+"Isla.Wedding.Husband": "Como alcalde de Pelican Town y portador regional del sello matrimonial, ¡los declaro marido y mujer!$h",
+"Isla.Wedding.Wife": "Como alcalde de Pelican Town y portador regional del sello matrimonial, ¡los declaro mujer y..., bueno, mujer!$h",
+	
+		//Reject Bouquet/Pendant Dialogues
+	
+	"Isla.RejectBouquet.1": "¿Perdón?$6",
+"Isla.RejectBouquet.2": "¿Por qué me estás dando esto, @?$6",
+
+"Isla.RejectBouquetVeryLow.1": "Lo siento @, pero simplemente no siento lo mismo por ti.$6",
+"Isla.RejectBouquetVeryLow.2": "Por favor, para @, me estás haciendo sentir muy incómoda.$6",
+
+"Isla.RejectBouquetLow.1": "Oh @, ¿quieres llevar las cosas a un nivel más serio? Yo también te aprecio, pero solo como amigo.$2#$e#Lo siento mucho decepcionarte, @.$2",
+"Isla.RejectBouquetLow.2": "Creo que esto se está moviendo un poco rápido para mí. Nosotros, los merfolk, necesitamos tiempo para conocerte.$2#$e#¡Conozcámonos un poco más, está bien?$1",
+
+"Isla.RejectPendant.1": "Oh, no gracias @. Simplemente no estoy lista para eso, @.$2",
+"Isla.RejectPendant.1": "Quizás algún día...$6",
+
+"Isla.BotherPendant.1": "Oh, lo siento, pero no, gracias.$6",
+"Isla.BotherPendant.2": "No, gracias.$6",
+
+"Isla.PlayerMarried.1": "¿No estás ya casado, @?$2#$b#@, por favor, para.$2#$e#Tendré que contarle a tu cónyuge si sigues preguntándome.$2#$b#No seré tu amante.$5",
+"Isla.PlayerMarried.2": "No, gracias, @.$2#$e#Tendré que contarle a tu cónyuge si sigues preguntándome. No estarán contentos de saber esto.$2",
+
+"Isla.PlayerEngaged.1": "Oh, un colgante de sirena. Brillan hermosamente bajo la luz del sol, ¿verdad?$1",
+"Isla.PlayerEngaged.2": "¡Oh, ciertamente sé lo que es eso!$8#$b#¿Casarme contigo? No, gracias @.$2#$b#Simplemente no siento lo mismo por ti.$2",
+	
+		//General Dialogue
+
+	"Isla.Mon": "Hola @. ¿Cómo has estado hoy?$1#$e#Me alegra escuchar que has estado bien.$8",
+"Isla.Mon2": "Galene actuó en la Ciudad de Zuzu ayer. Siempre me resulta abrumador estar allí, con todas las luces y el bullicio. Estoy agradecida de estar de vuelta aquí ahora, en la paz y la tranquilidad.$1",
+"Isla.Mon4": "Me gusta llevar mis libros de poesía conmigo siempre que estoy aquí. Son compañeros maravillosos. Me encantaría que vinieras a leerlos conmigo alguna vez.$8",
+"Isla.Mon6": "Nuestros amigos hadas vuelan desde El Bosque Encantado, cerca de las Islas Fern, para ayudarnos con nuestras actuaciones. Realmente no sería lo mismo sin ellos.$8",
+"Isla.Mon8": "Uno de mis lugares favoritos es el Archipiélago de Fireweed. En verano, hermosas flores moradas florecen allí.$1#$e#¡Oh, si tan solo pudiéramos ir allí algún día, @.$8",
+"Isla.Mon10": "Te extraño cuando estoy de vuelta en casa, @. No es lo mismo sin ti.$4",
+"Isla.Tue": "¿Qué has estado cultivando este año, @? Debe ser increíble, empezar con nada más que una semilla pequeña y nutrirla hasta que cobre vida.$1",
+"Isla.Tue2": "Recientemente actuamos en Grampleton. ¿Has estado allí antes? Colocan luces de hadas a lo largo de la playa, y brillan bellamente por la noche, como hebras de estrellas bordeando la costa.$1",
+"Isla.Tue4": "Sabes, nunca he tenido un amigo humano antes. Algunos de los otros merfolk te tienen miedo, pero siempre he tenido curiosidad.$1#$e#Es maravilloso que hayamos podido conocernos. Siento que he aprendido mucho.$1",
+"Isla.Tue6": "Cuando estés junto al mar, tómate un tiempo para sentarte en la arena y escuchar el murmullo de las olas. Es restaurador para el alma.$1",
+	"Isla.Tue8": "Mirar tus ojos es como mirar dos pozos de agua insondables. Es como si me dijeras mucho, sin pronunciar una sola palabra...$4",
+"Isla.Tue10": "Hoy tu voz tiene un tono musical hermoso, @.$8",
+"Isla.Wed": "A menudo encuentro botellas de Joja Cola lavadas en la orilla, e incluso sumergidas en el mar. Me entristece mucho. Nosotros, los merfolk, hemos estado suplicando a la corporación Joja que haga algo al respecto durante años, pero nunca han atendido nuestras peticiones.$2",
+"Isla.Wed2": "¿Cómo ha sido la vida en tu granja? Espero que también hayas estado tomándote un tiempo para ti. Para ser más fructíferos, también debemos cuidarnos.$1",
+"Isla.Wed4": "Si alguna vez necesitas compañía, siempre puedes venir a pasar tiempo conmigo. De hecho, me encantaría.$8",
+"Isla.Wed6": "Recientemente he estado viajando a las Islas Fern en busca de inspiración poética. Me encanta allí, es tan pacífico.$1#$e#A veces, el viento susurrando entre los árboles suena como poemas hablados en lenguas antiguas.",
+"Isla.Wed8": "Oh, ojalá pudieras venir bajo el agua conmigo. Tengo tantos lugares maravillosos que me encantaría mostrarte.$1",
+"Isla.Wed10": "La República Ferngill es tan hermosa e inmensa. He podido ver tantos lugares increíbles durante mis viajes. Espero poder mostrártelos todos algún día.$4",
+"Isla.Thu": "¿Qué vas a hacer este fin de semana? Espero que te tomes un tiempo para ti mismo.",
+"Isla.Thu2": "¿Alguna vez has sostenido una concha junto a tu oído? Dicen que puedes escuchar el sonido del océano resonando en sus recovecos...",
+	"Isla.Thu4": "A veces, cuando estoy nadando en el océano, me gusta relajar mi cuerpo y simplemente dejar que las corrientes me lleven donde quieran. He descubierto algunas cosas increíbles de esa manera.#$b#Me recuerda a la vida, cómo a menudo debemos aceptar su curso impredecible y dejarnos llevar hacia lo desconocido.",
+"Isla.Thu6": "¿Alguna vez has visto la puesta de sol sobre el Mar de las Gemas? Es algo único, como una flor de fuego estallando sobre el horizonte. Te recuerda la alegría de estar vivo.$1",
+"Isla.Thu8": "Disfruto de la soledad y de pasar mis días en busca de conocimiento. Pero a veces pienso que podría ser agradable compartir mi vida con alguien.$4",
+"Isla.Thu10": "Ven a sentarte conmigo, y podemos hablar sobre los misterios de la vida. O podemos simplemente sentarnos en silencio y disfrutar de la compañía del otro. Lo que prefieras.",
+"Isla.Fri": "Hola, @. Gracias por venir a visitarme.$1",
+"Isla.Sat": "Hola, @. Gracias por venir a visitarme.$1",
+"Isla.Sun": "Hola, @. Gracias por venir a visitarme.$1",
+
+		//Spring Dialogue
+
+	"Isla.spring1": "Hay una frescura nueva en el aire, y el Valle está emergiendo de su manta invernal. Es primavera, el comienzo de un nuevo año hermoso.$1#$e#Aprovechemos al máximo.$1",
+"Isla.springMon": "Estuve ocupada todo el fin de semana preparando una nueva armonía vocal para nuestra actuación de la próxima semana.$1#$e#¿También te gusta la música, @?$8",
+"Isla.springMon4": "Estoy tan inspirada de que hayas seguido tu corazón para estar aquí. Sé que es hora de que yo también siga mi corazón.$1",
+"Isla.springMon6": "Simplemente me encanta el olor de los libros viejos. Huelen a humedad y misterio.$1",
+"Isla.springMon8": "'Cuando los botones de margarita y las violetas azules$1#$e#Y las azucenas de plata blanca$1#$e#Y los capullos de cuclillo de color amarillo$1#$e#Pintan los prados con delicia...$1#$e#El poema de Shakespeare me hace pensar en la belleza y vitalidad de la primavera.$8",
+"Isla.springTue": "Simplemente amo la primavera, ¿no es así @? Un momento de crecimiento y nuevos comienzos.$1",
+"Isla.springTue2": "¿Cómo has estado en este hermoso día de primavera? ¿Qué nuevas semillas has sembrado este año?$1",
+"Isla.springTue4": "¿Cómo encuentra uno propósito en la vida? Siento que todavía estoy luchando por entenderlo.$2",
+"Isla.springTue8": "¿No sientes que la poesía te ayuda a ver el mundo de diferentes maneras?$1",
+"Isla.springWed": "Veo a Elliott por aquí con bastante frecuencia, y nos hemos hecho amigos. Es un aspirante a autor, y a menudo me cuenta sobre la novela en la que ha estado trabajando.#$e#¿También lo conoces tú?$1",
+"Isla.springWed6": "A veces después de las actuaciones mi amiga Soraya se sienta conmigo, y leemos algunos poemas juntas.$8",
+"Isla.springWed8": "¿Alguna vez has sentido ganas de escribir, @? Puede ser una experiencia bastante catártica.$1",
+"Isla.springThu": "Creo que a veces los humanos pueden ser cautelosos con los seres del mar. Quizás porque nunca han conocido a ninguno de nosotros personalmente.$2",
+"Isla.springThu2": "¿Cómo fue para ti durante tus primeras semanas aquí en Pueblo Pelicano?$1#$e#Las estrellas simplemente brillan mucho más aquí afuera, ¿verdad?$8",
+"Isla.springThu10": "Siempre pienso que es maravilloso reunir a las personas para experimentar el arte.$8",
+
+		//Summer Dialogue
+"Isla.summer1": "El sol brilla alto en el cielo, y los cálidos vientos soplan desde las Islas de Helechos. Eso debe significar que el verano está aquí.$8",
+"Isla.summerMon": "Tuvimos muchas actuaciones el fin de semana pasado. Siempre me siento tan cansada los lunes.$2",
+"Isla.summerMon2": "Me pregunto qué piensan los otros aldeanos de mí. Una extraña chica del mar, caminando interminablemente por la playa...",
+"Isla.summerTue": "El calor del sol se siente tan encantador en mi piel. Qué hermoso día de verano.$8",
+"Isla.summerTue2": "¿Has conocido a otro ser del mar? Es una lástima que los humanos y los seres del mar no interactúen más a menudo.$1#$b#Siento que podríamos aprender mucho el uno del otro.$1",
+"Isla.summerTue6": "¡El sargazo en el Mar de las Gemas ha crecido tanto! Es como un vibrante bosque submarino, meciéndose suavemente con las mareas.#$e#¡Cómo desearía que pudieras verlo!$2",
+"Isla.summerTue8": "Me encanta estar de pie en la orilla y ver las olas rodar sobre la arena.#$e#¿Te gustaría venir a estar conmigo?$1",
+"Isla.summerTue10": "Ven a sentarte conmigo, y podemos hablar sobre los misterios de la vida. O podemos simplemente sentarnos en silencio y disfrutar de la compañía mutua. Lo que prefieras.",
+"Isla.summerWed2": "Hoy es un día tan encantador. En días como este, me gusta sentarme en la orilla aquí y mirar hacia el resplandeciente Mar de las Gemas.$1#$e#La luz del sol parece hermosas gemas destellando en la superficie del agua. De ahí viene su nombre.$8",
+"Isla.summerWed4": "Cuando estoy explorando naufragios, me gusta imaginar cómo debieron de ser los pasajeros...$1#$e#Es tan fascinante, pensar en aquellos que estaban vivos mucho antes que nosotros.",
+"Isla.summerWed6": "¿Alguna vez te sientes solo en tu granja? Siempre puedes venir a la playa a hablar conmigo, si alguna vez necesitas a alguien con quien hablar.$1",
+"Isla.summerWed8": "La parte más maravillosa de la poesía es que está destinada a ser leída en voz alta. Y cada vez que un poema es leído por alguien nuevo, se revela otra faceta.$8",
+"Isla.summerThu": "Escucha la canción del mar, @. ¿Qué crees que nos está diciendo?$1",
+"Isla.summerThu4": "¡El sargazo en el Mar de las Gemas ha crecido tanto! Es como un vibrante bosque submarino, meciéndose suavemente con las mareas. ¡Cómo desearía que pudieras verlo!$8",
+"Isla.summerThu8": "¡Gracias por apoyarme en mis esfuerzos poéticos, @! Realmente significa mucho para mí.$1",
+"Isla.summerThu10": "'¿Debo compararte con un día de verano?#$b#Tú eres más encantador y más templado.'$1#$b#Las palabras de Shakespeare simplemente te describen perfectamente, ¿no crees, @?$7",
+
+		//Fall Dialogue
+	"Isla.fall1": "Bueno, los días se están acortando, y los vientos fríos están comenzando a soplar desde la Isla Saxífraga. Eso debe significar que el otoño está aquí, y el invierno se acerca rápidamente.",
+"Isla.fallMon": "Se puede ver por millas y millas a través del mar desde esta costa. Parece que el agua llega hasta el borde de la tierra.",
+"Isla.fallMon4": "¿Qué crees que es la solución para la insatisfacción, @?",
+"Isla.fallMon6": "'Estación de nieblas y frutas suaves,#$b#Cercano amigo del sol madurador;#$b#Conspirando con él cómo cargar y bendecir#$b#Con frutas las vides que corren por los techos...'#$b#El poema otoñal de Keats me recuerda a lo que me has contado sobre tu granja.$1#$e#¿Cultivas frutas? Si es así, te deseo una cosecha abundante.$1",
+"Isla.fallTue2": "Me encantan los colores brillantes del otoño. Todos los naranjas, amarillos y rojos. Parece que el mundo está en llamas.",
+"Isla.fallTue6": "Elliott dijo que los colores vibrantes del otoño lo inspiran. Hace unos días dimos un paseo por la costa y encontramos algunas hojas especialmente hermosas.$8",
+"Isla.fallTue10": "Emily Dickinson escribió una vez que 'el corazón quiere lo que quiere'. ¿Crees que eso es verdad, @?$4",
+"Isla.fallWed2": "¿Alguna vez has comido una fruta de anillo, @? Maduran durante el otoño, pero solo se encuentran en las Islas de Helechos.$1#$e#Son de color rojo escarlata, y tienen un sabor simplemente indescriptiblemente delicioso.$8",
+"Isla.fallWed4": "Ayer estuve hablando con mi amiga Elysa sobre algunos de los sentimientos que he estado teniendo. Ella fue muy amable y solidaria, al igual que tú, @.$1",
+"Isla.fallWed6": "Rompe, rompe, rompe,#$b#¡Sobre tus frías piedras grises, Oh Mar!$1#$e#Y quisiera que mi lengua pudiera expresar#$b#Los pensamientos que surgen en mí...'$1#$e#Simplemente me encanta la pasión en el poema de Alfred, Lord Tennyson. Verdaderamente evoca el formidable poder del mar.$1",
+"Isla.fallThu6": "Los mejores poemas realmente trascienden el tiempo y la historia, ¿verdad?$1",
+"Isla.fallThu8": "'Las mañanas son más dóciles que antes#$b#Las nueces se están poniendo marrones;#$b#La mejilla de la baya está más regordeta,#$b#La rosa está fuera de la ciudad...'#$b#El poema de Emily Dickinson simplemente me recuerda a una hermosa y fresca mañana de otoño.$8",
+"Isla.fallThu10": "Sabes, a menudo las personas más maravillosas llegan a tu vida de las formas más improbables...$4",
+
+		//Winter Dialogue
+	"Isla.winter1": "Hay una quietud en el aire, y los vientos gélidos soplan por todo Stardew Valley. El invierno está sobre nosotros.",
+"Isla.winterMon": "Tuvimos un espectáculo al aire libre ayer en Grampleton. Había tanta nieve que era un poco difícil ver.$6",
+"Isla.winterMon2": "Cuando el mundo está tan tranquilo como ahora, encuentro que es más fácil pensar.$1",
+"Isla.winterMon4": "'En el desolado invierno#$b#El viento helado gemía;#$b#La tierra estaba dura como el hierro,#$b#El agua como una piedra...'#$b#El poema de Christina Rossetti me recuerda a un ventoso día de invierno en Foxglove.$1",
+"Isla.winterMon6": "'Una blanca niebla se desplaza sobre las cofas,#$b#Una luna salvaje en este cielo invernal$1#$b#Brilla como el ojo furioso de un león#$b#Desde una melena de nubes pardas...'$1#$b#El poema de Oscar Wilde me recuerda a los inviernos temibles, pero asombrosamente hermosos, de Stardew Valley.$1",
+"Isla.winterTue2": "Recientemente hemos estado cantando himnos, en preparación para la Estrella de Invierno. Me encanta escuchar nuestras voces elevarse juntas en armonías tan hermosas y complejas.$1",
+"Isla.winterTue6": "'La forma en que un cuervo#$b#Sacudió sobre mí#$b#El polvo de la nieve#$b#De un árbol de cicuta#$b#Ha dado a mi corazón#$b#Un cambio de humor#$b#Y salvó una parte#$b#De un día que había lamentado...'#$b#¿No es encantador ese poema, de Robert Frost? Es asombroso cómo algo tan pequeño puede hacer que uno se sienta mucho mejor.$1",
+"Isla.winterWed6": "¿Has oído hablar alguna vez de la seda marina? Nosotros, los merfolk, a menudo tejemos suéteres con ella para protegernos de los elementos.",
+"Isla.winterWed8": "Me encanta hablar contigo. Siempre tienes perspectivas tan fascinantes para compartir conmigo.$1",
+"Isla.winterThu4": "Tienen icebergs flotando en el Mar Glacial del norte. ¡Siempre que estábamos allí cuando era niña, me encantaba deslizarme por ellos!$8",
+"Isla.winterThu6": "Elliott dijo que el frío hace que le sea difícil concentrarse. Así que hemos estado pensando ideas juntos. ¡Deberías unirte a nosotros en algún momento!$8",
+"Isla.winterThu8": "'...Los bosques son encantadores, oscuros y profundos,#$b#Pero tengo promesas que cumplir,#$b#Y millas por recorrer antes de dormir,#$b#Y millas por recorrer antes de dormir.'#$b#El poema de Robert Frost realmente me hace reflexionar sobre la vida, y cómo tantos de nuestros sueños quedan sin cumplirse debido a las demandas que tenemos en nuestro tiempo.",
+"Isla.winter11": "¿Te veré en el Mercado Nocturno? Estaré actuando con Galene.$1#$b#No le digas a nadie que mi cola es realmente de seda marina.$8",
+"Isla.winter28": "Es el último día del año. Un momento para reflexionar sobre el año pasado y mirar hacia el próximo.",
+	
+	//MARRIAGE DIALOGUE TRANSLATIONS
+	
+		//Unique Dialogue
+	
+"Isla.Marriage.Patio": "Estoy tan feliz viviendo aquí contigo, @.$1#$e#Nuestro propio hogar, donde siempre podemos estar juntos.$4",
+"Isla.Marriage.SpouseRoom": "Oh, hola querido. Necesitaba un poco de tranquilidad, así que estoy pasando un rato aquí junto al agua. Tiene un efecto calmante, ¿verdad?$1",
+"Isla.Marriage.FunReturn": "Tuve un día maravilloso hoy, @. Estaba pensando en ti aquí en la granja. ¿Cómo te fue en el trabajo?",
+"Isla.Marriage.FunLeave.1": "¡Buenos días, querido @! Espero que tu trabajo en la granja vaya bien hoy.$8",
+"Isla.Marriage.FunLeave.2": "¡Buenos días @!$8#$b#Hoy saldré, pero estaré pensando en ti. Espero que todo vaya bien en tu granja, querido.$8",
+"Isla.Marriage.OneKid.0": "Oh, no puedo creer que finalmente tengamos un hijo propio. Siempre he querido ser madre. ¡No puedo esperar para llevar a %kid1 a nadar conmigo!$8",
+"Isla.Marriage.OneKid.1": "%kid1 y yo fuimos y nos sentamos junto al estanque por un rato. ¡Parece que ya les encanta el agua! Estoy tan contenta.$8",
+"Isla.Marriage.OneKid.2": "%kid1 ¡Ya empezó a balbucear! ¡Les cuento historias sobre el Mar de las Gemas todo el tiempo, y simplemente las aman!$1#$b#A veces creo que están tratando de contarme sus propias historias.$8",
+"Isla.Marriage.OneKid.3": "¡Le di a %kid1 una sopa de algas hoy! ¡Les encantó! Supongo que sí se parecen a mí.$8",
+"Isla.Marriage.OneKid.4": "Hoy le estaba leyendo a %kid1 algunos de mis poemas favoritos. Estaban sonriendo todo el tiempo. Tal vez tengamos un futuro poeta entre nosotros.$1",
+"Isla.Marriage.OneKid.5": "%kid1 estaba bailando alrededor de la cocina hoy. Oh, se veían tan exuberantes. Ojalá pudieras haberlos visto.$1",
+"Isla.Marriage.OneKid.6": "Desearía que mi familia de sirenas pudiera conocer a %kid1.$1#$e#Tendremos que llevar a %kid1 a conocerlos en el mercado de invierno aquí en Pelican Town.$1",
+"Isla.Marriage.OneKid.7": "%kid1 me estaba ayudando a cocinar hoy. Bueno, en realidad, creo que comieron un poco más de lo que cocinaron.$8",
+"Isla.Marriage.TwoKids.0": "¡Quiero llevar a %kid1 y %kid2 a la playa para que construyan castillos de arena!$8",
+	"Isla.Marriage.TwoKids.1": "%kid1 y %kid2 son tan amables el uno con el otro. Me llena el corazón de alegría.$8",
+"Isla.Marriage.TwoKids.2": "@, deberíamos llevar a nuestros hijos a la playa en algún momento. Dejar que chapoteen en el agua fresca.$1",
+"Isla.Marriage.TwoKids.3": "%kid1 y %kid2 simplemente adoran jugar juntos. Les gusta pretender que son sirenas, nadando en el profundo mar azul...$8",
+"Isla.Marriage.TwoKids.4": "%kid1 ha estado enseñándole algunas cosas a %kid2. Es maravilloso verlos aprender el uno del otro.$1",
+"Isla.Marriage.TwoKids.5": "%kid1 le estaba contando una historia a %kid2 hoy. %kid1 se veía tan animado, y a %kid2 simplemente le encantó.$8",
+"Isla.Marriage.TwoKids.6": "Hoy les leí a %kid1 y %kid2 algunos de mis poemas favoritos. Oh, les encantó.$8",
+"Isla.Marriage.TwoKids.7": "%kid1 y %kid2 estaban dibujando juntos hoy. Dibujaron muchos animales marinos, como ballenas, caballitos de mar y todo tipo de peces de diferentes colores. Supongo que sí se parecen a mí.$8",
+
+		//Spring Dialogue
+
+	"Isla.Marriage.spring1": "Hay una frescura nueva en el aire y el Valle está emergiendo de su manta invernal. Es primavera, el comienzo de un nuevo año hermoso.$1#$e#Aprovechemos al máximo, juntos.$4",
+"Isla.Marriage.spring5": "[196] Hoy te hice esta ensalada con plantas silvestres que recolecté. Oh, y un toque de algas marinas, por supuesto.$8",
+"Isla.Marriage.spring20": "[597 591] Te conseguí esta hermosa flor hoy. Me recuerda a la frescura de la primavera.$8",
+"Isla.Marriage.spring13": "Hoy es el Festival del Huevo. ¡Estoy deseando comer montones de delicioso chocolate!$8",
+"Isla.Marriage.spring16": "Realmente he estado disfrutando trabajar en la biblioteca. He podido descubrir a tantos autores nuevos fascinantes.$1",
+"Isla.Marriage.spring24": "No puedo esperar para bailar contigo hoy, @.$4",
+"Isla.Marriage.spring27": "Me gustaría ir a visitar a Elliott pronto. Me pregunto cómo le habrá ido con su escritura.$1",
+
+		//Summer Dialogue
+
+	
+"Isla.Marriage.summer1": "El sol brilla alto en el cielo y los cálidos céfiros soplan desde las Islas de Helecho. Eso significa que el verano está aquí.$1#$e#Oye, deberíamos ir a las Islas de Helecho algún día, @. Te dará un descanso de todo tu arduo trabajo.$8",
+"Isla.Marriage.summer4": "¡Está empezando a hacer tanto calor! Deberíamos ir juntos a la playa a nadar.$8",
+"Isla.Marriage.summer5": "[189] Los brotes de helecho son abundantes en el bosque en este momento, así que te hice este plato especial. ¡Deberíamos ir a buscar juntos alguna vez!$8",
+"Isla.Marriage.summer11": "¿Qué vas a llevar al Luau hoy? Coseché algunas algas especiales solo para la ocasión.$1",
+"Isla.Marriage.summer20": "[376 593] Gunther tenía algunas flores sobrantes de un evento en el museo, así que traje una para ti. Huele simplemente encantadora.$8",
+"Isla.Marriage.summer28": "La Danza de las Medusas de la Luz de la Luna es esta noche. Las medusas suelen actuar para nosotros, los merfolk, pero esta noche ofrecerán una actuación especial solo para ustedes, los humanos.$1#$e#Será maravilloso estar allí contigo, querido @.$8",
+
+		//Fall Dialogue
+
+
+"Isla.Marriage.fall1": "Bueno, los días se están acortando y los vientos fríos comienzan a soplar desde la Isla de Saxifragia. Eso significa que el otoño está aquí y el invierno se acerca rápidamente. Será mejor que empieces a prepararte para el invierno, querido @.",
+"Isla.Marriage.fall5": "[611] Te hice este postre especial, con moras que coseché en el bosque.$8",
+"Isla.Marriage.fall8": "'Las mañanas son más suaves que antes,#$b#Las nueces se están poniendo marrones;#$b#La mejilla de la baya está más rellena,#$b#La rosa está fuera de la ciudad...'#$b#El poema de Emily Dickinson simplemente me recuerda una hermosa y fresca mañana de otoño.$8#$b#Y, por supuesto, ninguna mañana de otoño es más hermosa que una contigo, querido @.$4",
+"Isla.Marriage.fall10": "Hoy le mostré a Emily parte de mi seda marina. Quedó fascinada por ella. Quiere incorporarla en las hermosas prendas que hace.$8",
+"Isla.Marriage.fall15": "¿Quieres dar un paseo hoy, querido @? Podríamos recoger hojas brillantes para decorar nuestra casa.$1",
+"Isla.Marriage.fall17": "¿Cómo ha sido la agricultura ahora que ha comenzado el clima frío?",
+"Isla.Marriage.fall20": "[595 421] Te compré esta flor en la tienda de Pierre's. Con el frente frío que se acerca, será una de las últimas de este año.$1",
+"Isla.Marriage.fall28": "¿Has traído todas tus cosechas, querido @? La helada pronto llegará.",
+
+		//Winter Dialogue
+
+	
+"Isla.Marriage.winter1": "Hay una quietud en el aire, y gélidos vientos soplan por todo el Valle Stardew. El invierno está sobre nosotros. Espero que te mantengas abrigado, querido @.",
+"Isla.Marriage.winter5": "Mi suéter está tejido en un estilo tradicional de Saxifragia. Una de las sirenas me lo tejió en honor a mi herencia.$8#$e#Está hecho de seda marina teñida.$1",
+"Isla.Marriage.winter8": "Me pregunto qué esculturas increíbles veremos este año en el Festival del Hielo.$8",
+"Isla.Marriage.winter10": "Oh, hoy ha hecho tanto frío.$2#$b#Vamos a acurrucarnos juntos esta noche para entrar en calor.$7",
+"Isla.Marriage.winter11": "Nos vemos en el Mercado Nocturno, querido @. Estoy deseando actuar de nuevo con Galene.$8",
+"Isla.Marriage.winter15": "Echo de menos cantar los himnos que Galene solía cantar. ¿Qué te parece, @, cantamos juntos en honor a la Estrella de Invierno?$8",
+"Isla.Marriage.winter17": "Cuando el mundo está tan tranquilo como ahora, encuentro más fácil pensar.$1",
+"Isla.Marriage.winter20": "'...Los bosques son encantadores, oscuros y profundos...'. El poema de Frost tiene un nuevo significado para mí, ahora que vivo aquí. Los bosques son tan oscuros y misteriosos. ¿Quién sabe qué secretos pueden guardar...$1",
+"Isla.Marriage.winter25": "[560] Feliz Estrella de Invierno, querido @. Quiero darte esta piedra especial. La encontré en la playa hace un tiempo, y brilla como las aguas del Mar de las Gemas.$l",
+"Isla.Marriage.winter28": "Es el último día del año, @. Un momento para reflexionar sobre el año pasado y esperar nuestro próximo año juntos.$7",
+
+
+		//Day Dialogue
+	
+"Isla.Marriage.IndoorDay.0": "[456 457] Buenos días, querido @. Te he preparado algo saludable que nosotros, los seres del mar, a menudo comemos por las mañanas para darnos energía. Es una maravillosa manera de comenzar tu día.$8",
+"Isla.Marriage.IndoorDay.1": "[615] Buenos días, @, ¿dormiste bien anoche? Aquí tienes algo para empezar tu día.$1",
+"Isla.Marriage.IndoorDay.2": "El mar es hermoso... y sin fin. Nuestro amor es así, ¿verdad, @?$4",
+"Isla.Marriage.IndoorDay.3": "Me pregunto dónde estará actuando Galene hoy. Deberíamos ir a ver una de sus actuaciones algún día, querido @.$1",
+"Isla.Marriage.IndoorDay.4": "[201] Buenos días, querido @. ¡Gus me enseñó a preparar un desayuno al estilo humano, así que aquí está! ¡Espero que lo disfrutes!$1",
+"Isla.Marriage.IndoorDay.5": "¿Dónde crees que es el mejor lugar para inspirarse poéticamente?$1",
+"Isla.Marriage.IndoorDay.6": "Sabes, nunca me canso de mirarte a los ojos. Todavía me fascinas cada día, @.$1",
+"Isla.Marriage.IndoorDay.7": "'He visto muchas mañanas gloriosas#$b#halagar las cimas de las montañas con un ojo soberano,#$b#besando con rostro dorado los prados verdes...'1#$b#¿No te encanta ver aparecer el sol sobre el horizonte? Es el portador dorado de un nuevo día.$8",
+"Isla.Marriage.IndoorDay.8": "'Ahora, la ciudad, como una prenda, lleva#$b#la belleza de la mañana...1#$b#Aprovechemos esta hermosa mañana, querido @.$8",
+"Isla.Marriage.IndoorDay.9": "'Lejos, muy lejos en el mar,#$b#después de que los fieros remolinos de la noche hayan sembrado la orilla con naufragios,$1#$b#con el día que vuelve a aparecer ahora tan feliz y sereno,#$b#el alba rosada y elástica, el sol brillante...'$1#$b#Buenos días, querido @.$8",
+"Isla.Marriage.Outdoor.0": "Me encanta el aire fresco aquí. Pero a veces echo de menos el aire salado que sopla desde el océano.$1",
+"Isla.Marriage.Outdoor.1": "¡Qué día tan encantador para leer un libro afuera! ¿Qué harás hoy, querido @?$1",
+"Isla.Marriage.Outdoor.2": "Me encanta pasear por el Pueblo Pelícano. Siempre es tan tranquilo. Me gusta especialmente escuchar a los pájaros cantar en los árboles.",
+"Isla.Marriage.Outdoor.3": "Me gustaría plantar mi propio jardín en algún momento. Lo llenaría de hermosas rosas de hadas de todos los colores.$8",
+"Isla.Marriage.Outdoor.4": "Caminando por fuera, es fácil ver de dónde sacaron su inspiración mis poetas favoritos. Es increíble cómo pudieron describir lugares y cosas ordinarias de maneras tan extraordinarias.$1",
+"Isla.Marriage.RainyDay.0": "Está lloviendo hoy. Me encanta sentir el agua en mi piel. Me recuerda a mi antiguo hogar...$8",
+"Isla.Marriage.RainyDay.1": "Vamos a acurrucarnos junto al fuego y leer algunos poemas juntos.$8",
+"Isla.Marriage.RainyDay.2": "'La lluvia está cayendo por todas partes,#$b#cae sobre el campo y los árboles,$1#$b#cae sobre los paraguas aquí,#$b#y sobre los barcos en el mar.'$1#$b#Siempre pienso en ese poema cada vez que llueve. Es tan corto, pero aún así tan evocador.$1",
+"Isla.Marriage.RainyDay.3": "Incluso cuando vivía en el Mar de las Gemas, me gustaba flotar en la superficie del agua y sentir la lluvia en mi rostro.",
+
+		//Night Dialogue
+	
+"Isla.Marriage.IndoorNight.0": "[212 219 218 242 456] Buenas noches, querido @. Te ves tan cansado, debes haber estado trabajando muy duro hoy. Aquí, te preparé algo para comer.$7",
+"Isla.Marriage.IndoorNight.1": "Debes estar cansado después de un día tan largo. Ven aquí, querido @.#$e#%Isla te abraza. Su piel está fresca, pero te reconforta desde adentro.",
+"Isla.Marriage.IndoorNight.2": "Estoy bastante cansada esta noche. ¿Vendrás a la cama temprano conmigo esta noche? Podemos acostarnos juntos y tal vez leernos el uno al otro.",
+"Isla.Marriage.IndoorNight.3": "¿Cómo fue tu día, querido @? Por favor, ven y cuéntamelo.$1",
+"Isla.Marriage.IndoorNight.4": "Hace un poco de frío esta noche. Vamos a acurrucarnos juntos en la cama.$7",
+"Isla.Marriage.IndoorNight.5": "[221 222 619] Sé que has tenido un largo día, querido @, así que te preparé algo dulce.$7",
+"Isla.Marriage.IndoorNight.6": "Después de un largo día, no hay nada mejor que acurrucarse para leer un buen libro.$8#$e#¿Te gustaría unirte, @?$4",
+"Isla.Marriage.RainyNight.0": "Vamos a acostarnos y escuchar la lluvia caer sobre el techo de nuestra casa. Nos arrullará suavemente hasta dormir...$1",
+"Isla.Marriage.RainyNight.1": "[728] Te preparé una sopa reconfortante esta noche, para quitarnos el frío.$8",
+"Isla.Marriage.RainyNight.2": "[265] ¡Te preparé algo especial esta noche, querido @!$7",
+"Isla.Marriage.RainyNight.3": "Hoy se podían escuchar los rugidos de las olas mientras se estrellaban contra la orilla. Te recuerda al formidable poder del Mar de las Gemas.",
+"Isla.Marriage.RainyNight.4": "'Es un antiguo marino,#$b#Y detiene a uno de cada tres.#$b#Por tu larga barba gris y tu ojo brillante,#$b#Ahora, ¿por qué me detienes?',#$b#A menudo me pregunto si ese poema podría ser sobre el misterioso hombre que se para en la playa siempre que llueve...$6",
+
+		//Affection Dialogue
+	
+"Isla.Marriage.Good.0": "Oh, estabas preguntándote en qué estaba pensando. Estaba pensando en lo feliz que estoy aquí contigo.$4",
+"Isla.Marriage.Good.1": "Había oído hablar de que las personas del mar se enamoraban de humanos antes, pero nunca imaginé que me pasaría a mí. Sin embargo, estoy muy contenta de que haya sucedido.$4",
+"Isla.Marriage.Good.2": "¿Recuerdas el día que nos conocimos? Estaba tan asustada cuando me encontré inesperadamente con un humano, pero rápidamente me di cuenta de que podía confiar en ti.$8",
+"Isla.Marriage.Good.3": "Cuando estaba trabajando el otro día, encontré un libro que me recordó a ti. Tendré que recogerlo la próxima vez que esté allí.$1",
+"Isla.Marriage.Good.4": "Estoy tan agradecida de poder estar contigo, @. Estoy muy feliz de que hayamos podido formar una familia juntos.$4",
+"Isla.Marriage.Good.5": "Me encanta poder hablar contigo, @. Me ayuda mucho poder discutir las cosas con alguien que me entiende tan bien.$7",
+"Isla.Marriage.Good.6": "Nuestro futuro juntos se ve brillante, @. No puedo esperar para ver qué nos depara.$4",
+"Isla.Marriage.Good.7": "Al verte, siento una oleada repentina de inspiración poética.$8#$b#¡Tendré que ponerme a escribir de inmediato!$8",
+"Isla.Marriage.Good.8": "Gracias por tu amor y cuidado, @. ¡Somos grandes compañeros, ¿verdad?$7",
+"Isla.Marriage.Good.9": "Aunque estén tristes de que me haya ido, sé que mi familia de sirenas está feliz de que haya forjado mi propio camino.$8",
+"Isla.Marriage.Good.10": "Nunca imaginé que pudiera ser tan feliz, @.$4",
+"Isla.Marriage.Neutral.0": "Estoy orgullosa de ti, @, por todo lo que haces.$8",
+"Isla.Marriage.Neutral.1": "¡Gunther ha estado en tantos lugares increíbles! Cuando estoy trabajando, me cuenta todo sobre ellos.$8",
+"Isla.Marriage.Neutral.2": "Siempre que estoy ordenando libros antiguos, me gusta imaginar quién más pudo haberlo tenido en sus manos.$1",
+"Isla.Marriage.Neutral.3": "Cuéntame cómo te fue el día, querido @.$1",
+"Isla.Marriage.Neutral.4": "%Sin decir nada, Isla te abraza. No estás seguro si está feliz o triste, así que simplemente le devuelves una sonrisa gentil.",
+"Isla.Marriage.Neutral.5": "Tengo un nuevo poema que me gustaría leerte, @.$8",
+"Isla.Marriage.Neutral.6": "%Isla está mirando melancólicamente hacia la distancia. Parece estar absorta en una ensoñación.",
+	"Isla.Marriage.Neutral.7": "Hola, querido @. Espero que estés bien hoy.$1",
+"Isla.Marriage.Neutral.8": "He aprendido tantas cosas nuevas hojeando los libros en la biblioteca. Vamos allí juntos, y puedo mostrarte mis favoritos.$8",
+"Isla.Marriage.Neutral.9": "Siempre estaremos ahí el uno para el otro, ¿verdad, @?$1",
+"Isla.Marriage.Bad.0": "Hoy realmente extrañaba a mi amiga Soraya. Echo de menos nuestras largas charlas...$2",
+"Isla.Marriage.Bad.1": "Sabes, tenía una relación complicada con mi familia de sirenas. Los quiero, pero nunca sentí que realmente fuera parte de ellos.$2",
+"Isla.Marriage.Bad.2": "'De la multitud, del océano inmenso, llegó una gota suavemente hacia mí,#$b#Susurrándome te amo, antes de morir,#$b#He viajado un largo camino, solo para verte y tocarte,#$b#Porque no podría morir hasta que te viera una vez,#$b#Porque temía que después te perdiera...#$b#El poema de Walt Whitman me hace pensar en la mortalidad. Nosotros, los seres del mar, vivimos mucho tiempo. Mucho más que ustedes.$2#$b#A menudo temo el día en que te perderé, @. Pero sé que siempre conservaré el amor que compartimos.$2",
+"Isla.Marriage.Bad.3": "@, realmente te extrañé hoy. Más de lo que suelo hacerlo.$2",
+"Isla.Marriage.Bad.4": "Sabes, a veces también me siento alienada de ustedes, los humanos. Aunque lo intento, siento que no puedo entender completamente sus formas.$2",
+"Isla.Marriage.Bad.5": "Siento que mi creatividad ha disminuido. Aunque supongo que incluso los mejores poetas tienen días malos.$2",
+"Isla.Marriage.Bad.6": "Hoy me siento un poco molesta. No estoy... no estoy segura de por qué.$2#$e#%La abrazas a Isla sin decir una palabra, y ella te dice que se siente un poco mejor.",
+"Isla.Marriage.Bad.7": "A veces me siento realmente triste por mis padres biológicos. Más que nada, me gustaría hacerles saber que estoy bien.$2",
+"Isla.Marriage.Bad.8": "%Hoy Isla parece triste, así que la abrazas sin decir una palabra. Ves que sonríe débilmente.",
+"Isla.Marriage.Bad.9": "Estaba un poco triste pensando en mi familia hoy. Viven tan lejos. Realmente los extraño mucho.$2",
+"Isla.Marriage.Bad.10": "Siento que no hemos estado hablando tanto como solíamos. ¿Tal vez podemos pasar un tiempo esta noche solo estando juntos?$2",
+	
+	//EVENT TRANSLATIONS
+	
+		//Intro Events
+	
+	"Isla.FirstSight": "Me pregunto hacia dónde corrió el misterioso caballo. Parece que se dirigía hacia la playa...",
+
+"Isla.Intro.1": "¿Quién podrías ser? ¿Y por qué has estado siguiéndome?$6",
+"Isla.Intro.2": "Le dices a Isla quién eres y la tranquilizas de que no le harás daño.",
+"Isla.Intro.3": "No dices nada.",
+"Isla.Intro.4": "Bueno, @, es un placer conocerte.$h#$b#Mi nombre es Isla, y soy una de las sirenas que viven en el Mar de las Gemas.$1",
+"Isla.Intro.5": "Quizás ahora te parezco familiar.#$b#Soy miembro de Galene, el famoso grupo musical de sirenas.#$b#Actuamos por todo el República de Ferngill, y es posible que nos hayas visto en el Mercado de Invierno aquí en Pueblo Pelícano.#$b#De hecho, me enamoré de tu pueblo cuando estuve aquí el año pasado para un espectáculo.$1#$b#Ahora, me gusta venir aquí en mis días libres.#$b#Pido disculpas por haber salido corriendo antes. Verás, me sorprendió mucho verte. Puedo ser bastante nerviosa cerca de tu especie.$2",
+"Isla.Intro.6": "Aunque pareces tener un alma bondadosa.#$b#Espero verte por aquí.$h",
+
+"Isla.QuietIntro.7": "Los humanos me desconciertan tanto.$2#$b#Bueno, si no deseas contármelo, te pido amablemente que me dejes en paz ahora.$2",
+	
+		//2 Heart Event
+	
+	
+"Isla.2H.1": "Oh, hola @.#$b#Lo siento, no te vi ahí.#$b#Simplemente estoy sentada aquí reflexionando. Únete a mí, por favor.$1",
+"Isla.2H.2": "¿Te preguntas si hay algo mal?$b#Gracias por preguntar. Realmente has demostrado ser el alma bondadosa que pensé que eras.$8",
+"Isla.2H.3": "Bueno, recientemente me he sentido bastante perdida.$2#$b#Rara vez hablo de esto, pero fui abandonada de bebé.$2#$b#De hecho, no soy una sirena en absoluto.$6#$b#Soy una náyade, una especie de espíritu del agua.#$b#Tengo la capacidad de cambiar de forma, y me viste como un caballo de agua la primera vez que nos encontramos.#$b#Nunca conocí a mis padres, y no tengo idea de qué fue de ellos.$2#$b#Mi troupe me encontró en la orilla de la Isla Saxifragia mientras estaban de gira por el Norte, y me adoptaron.#$b#He estado con ellos desde entonces.",
+"Isla.2H.4": "He estado en muchas tierras lejanas y he visto muchas cosas hermosas con ellos.#$b#Los quiero con todo mi corazón y los considero mi familia.",
+"Isla.2H.5": "Pero recientemente, me he sentido insatisfecha, como si mi corazón estuviera clamando por algo más significativo.$2#$b#Lo que podría ser eso, no lo sé.$2",
+"Isla.2H.6": "Todo lo que sé es que me he sentido incapaz de expresarme a través de la actuación como solía hacerlo.$2#$b#He perdido la pasión que una vez tuve por ello. Se siente como si hubiera perdido mi voz.$2",
+"Isla.2H.7": "@, ¿alguna vez has sentido que estás en un callejón sin salida?",
+"Isla.2H.8": "Le cuentas a Isla sobre estar infeliz trabajando para la Corporación Joja, y dejarlo para vivir y trabajar en la granja de tu abuelo.",
+"Isla.2H.9": "Nunca, siempre he estado completamente seguro de mí mismo y de mis decisiones.",
+"Isla.2H.10": "Ya veo. Eso debe haber requerido mucho coraje.$1#$b#El cambio puede ser aterrador, pero a menudo debe hacerse para que nuestros corazones realmente estén en paz.$1#$b#Parece que ya has entendido eso. Quizás todos podríamos aprender de ti.$1",
+"Isla.2H.11": "Gracias por compartir tu historia conmigo, @.$1",
+"Isla.2Sure.12": "Ya veo. Debe ser agradable siempre estar tan seguro de uno mismo.$2",
+		
+		//4 Heart Event
+		
+	
+"Isla.4H.1": "@, acabo de descubrir algo maravilloso. Por favor, debo contarte sobre ello.$9",
+"Isla.4H.2": "Bueno, es un poco de historia.$3#$b#Hace mucho, antes de la guerra, había un próspero imperio comercial entre la República de Ferngill y el Imperio de Gotoro.$3#$b#Pero trágicamente, debido a las frecuentes tormentas en el Mar de Gemas, muchos barcos se hundieron en el viaje entre las dos naciones.$10#$b#Ahora yacen en el lecho marino, y los otros merpeople y yo a menudo los exploramos.$3#$b#Ayer estaba explorando un antiguo transatlántico con mi amiga Soraya, y mientras nadaba por sus cámaras me encontré con un cofre de madera.$3#$b#Cuando lo llevé a la superficie, descubrí que estaba lleno de cosas hermosas de hace mucho tiempo. Había ropa de seda, joyas y varios volúmenes de poesía.$9",
+"Isla.4H.3": "Estaba intrigada, y comencé a leerlos de inmediato. Me senté allí, absorta, y pronto perdí la noción del tiempo.$3#$b#Las palabras de los poetas me conmovieron increíblemente, y sentí como si estuviera hablando con un amigo de hace mucho tiempo.$3#$b#Era como si hubieran extendido su mano a través del tiempo solo para tomar la mía y mostrarme el mundo a través de sus ojos.$9",
+"Isla.4H.4": "@, ¿puedo leerte algo?$3",
+"Isla.4H.5": "¡Sería encantador!",
+"Isla.4H.6": "No ahora, tengo que regresar a mi granja.",
+"Isla.4H.7": "¡Maravilloso!$9",
+"Isla.4H.8": "'El Océano', por Nathaniel Hawthorne.$9#$b#El océano tiene sus cuevas silenciosas,$3#$b#Profundas, tranquilas y solitarias;$3#$b#Aunque haya furia en las olas,$3#$b#Debajo de ellas no hay nada...'$3",
+"Isla.4H.9": "'...La tierra tiene culpa, la tierra tiene cuidado$3#$b#Inquietas son sus tumbas;$3#$b#Pero el sueño tranquilo siempre está allí,$3#$b#Bajo las oscuras olas azules.'$3",
+"Isla.4H.10": "Muchas gracias por escuchar, @. ¿No son hermosas las palabras de Hawthorne? Describe mi amado hogar marino de una manera tan expresiva.$3#$b#Si no supiera lo contrario, casi pensaría que él era uno de nosotros, los merpeople, ¡él mismo!$9",
+"Isla.4H.11": "¡Oh, y @, también encontré algo más que me hizo pensar en ti!$9",
+"Isla.4H.12": "[106] Aquí está.$8",
+"Isla.4H.13": "Es simplemente exquisito, ¿verdad? Está hecho de seda, y pintado a mano con un intrincado diseño de cerezos por un artesano de Gotoro.$1#$b#Pensé que podrías usarlo para mantenerte fresco en tu granja, especialmente durante los calurosos meses de verano.$8#$b#Y cada vez que lo uses, espero que también pienses en mí.$4",
+"Isla.4H.14": "¿Has podido usar el abanico ya? ¡Espero que te haya mantenido fresco!$8",
+"Isla.4H.NotNow": "Oh... está bien. Entiendo.$10",
+		
+		//6 Heart Event
+		
+	
+"Isla.6H.1": "Oh @, por favor ven a escuchar esto.$8",
+"Isla.6H.2": "'Vagaba solitario como una nube$9#$b#Que flota en lo alto sobre valles y colinas,$9#$b#Cuando de repente vi una multitud,$9#$b#Un grupo de narcisos dorados;$9#$b#Junto al lago, bajo los árboles,$9#$b#Revoloteando y bailando en la brisa...'$9",
+"Isla.6H.3": "Eso es de William Wordsworth. ¿No es tan hermoso y resonante?$9#$b#La soledad es algo que todos hemos experimentado, y ciertamente es algo que conozco demasiado bien.$3#$b#Pero he estado pensando en cómo, al igual que los narcisos para William Wordsworth, me has mostrado que hay alegría y comprensión en el mundo.$9",
+"Isla.6H.4": "Realmente he encontrado un espíritu afín en ti, @.$11",
+"Isla.6H.5": "Me he quedado tan cautivada por mis libros de poesía, y los he estado leyendo siempre que puedo encontrar un momento libre. Se han convertido en mis compañeros más cercanos.$3#$b#Bueno, aparte de ti.$11",
+"Isla.6H.6": "Sabes, me he sentido tan inspirada que he empezado a escribir algunos poemas propios.$3#$b#Solo algunos cortos hasta ahora, pero cuanto más escribo, más tengo que decir.$9#$b#Las palabras simplemente han estado fluyendo de mí como la tinta de una pluma.$9",
+"Isla.6H.7": "Ahora que lo pienso, escribir es muy parecido a la agricultura.$9",
+"Isla.6H.8": "Es tomar una semilla, la semilla metafórica de una idea, y nutrirla hasta que cobre vida.$3",
+		
+		//8 Heart Event Part 1
+		
+
+"Isla.8H.Intro.1": "¡Hola, @! ¡Ven por aquí! ¡Parece que me has pillado leyendo de nuevo!$9",
+"Isla.8H.Intro.2": "Acabo de estar leyendo algo de historia poética, y acabo de encontrar un hecho particularmente interesante.$9#$b#Hace mucho tiempo, en la República de Romero, solían celebrar eventos llamados salones literarios.$9#$b#Poetas, autores y artistas se reunían para compartir su trabajo e ideas entre ellos.$3#$b#¿No suena maravilloso?$9",
+"Isla.8H.Intro.3": "¡Suena increíble! ¿Quizás podríamos organizar nuestro propio salón juntos?",
+"Isla.8H.Intro.4": "No digas nada.",
+"Isla.8H.Intro.5": "¡Oh @, esa es una idea maravillosa! ¡Me conoces tan bien, verdad? ¡Será un Salón Pelican Towniano!$9#$b#Invitaremos a algunos otros del pueblo, y todos podremos compartir nuestros poemas y lecturas favoritas.$9#$b#¡Vamos a planificarlo y lo celebraremos el próximo lunes!$9",
+"Isla.8H.SilentIntro.6": "Digo... ¿qué te parecería si organizáramos nuestro propio salón?$3#$b#¡Será un Salón Pelican Towniano! Invitaremos a algunos otros del pueblo, y todos podremos compartir nuestros poemas y lecturas favoritas.$9#$b#Vamos a planificarlo y lo celebraremos el próximo lunes.$9",
+		
+		//8 Heart Event Part 2
+		
+	
+"Isla.8H.1": "¡Buenas noches a todos! ¿Podrían prestarme su atención, por favor?$8",
+"Isla.8H.2": "¡Hola!", //Abigail textAboveHead
+"Isla.8H.3": "¡Yay!", //Emily textAboveHead
+"Isla.8H.4": "Para aquellos que quizás no me conozcan, mi nombre es Isla, y soy una de las sirenas del Mar de las Gemas.$1#$b#Quizás me hayan encontrado cerca de la playa, o tal vez me hayan visto en el espectáculo anual de Galene aquí en Pelican Town.$1#$b#¡@ y yo planeamos esta velada de poesía, y esperamos que todos la encuentren estimulante e inspiradora.$1#$b#Gracias a todos por venir, significa mucho para nosotros.$8",
+"Isla.8H.5": "El poeta romano Horacio alguna vez dijo que la poesía es un arte destinado 'a deleitar o a educar'.$1#$b#Espero que los poemas recitados esta noche hagan ambas cosas para todos ustedes.$1#$b#Ahora, cierren los ojos y dejen que las palabras los envuelvan. Sientan su belleza y poder resonar en sus almas.",
+"Isla.8H.6": "Me gustaría comenzar con uno de mis poemas favoritos, 'El Nautilus de Papel', de la propia Marianne Moore de la República de Ferngill.$1",
+"Isla.8H.7": "'Para autoridades cuyas esperanzas$1#$b#están moldeadas por mercenarios?$1#$b#Escritores atrapados por la fama del té de la tarde y por$1#$b#las comodidades de los viajeros?$1#$b#No para estos$1#$b#el nautilus de papel$1#$b#construye su fina cáscara de vidrio...'$1",
+"Isla.8H.8": "¡Hola a todos, traje 'El Cuervo', de Edgar Allan Poe!$1#$b#Es sombrío y atmosférico, y me recuerda cómo pueden suceder las cosas más extraordinarias cuando menos las esperas.$9", //Abigail
+"Isla.8H.9": "'Érase una vez, en la medianoche, mientras reflexionaba, débil y fatigado,#$b#Sobre muchos volúmenes caprichosos y curiosos de lore olvidado—#$b#Mientras asentía, casi durmiendo, de repente se escuchó un golpeteo,#9#$b#Como de alguien suavemente golpeando, golpeando en mi puerta de cámara...'", //Abigail
+"Isla.8H.10": "¡Hola, mis queridos humanos! ¡Traje el encantador poema 'Ella Mason y Sus Once Gatos', de Sylvia Plath!#$b#¡Espero que lo amen tanto como yo!", //Emily
+"Isla.8H.11": "'La vieja Ella Mason tiene gatos, once según el último recuento,$1#$b#En su casa ruinosa en Somerset Terrace;$1#$b#La gente hace preguntas$1#$b#Al ver el refugio de gatos de nuestra vecina,$1#$b#Diciendo: 'Algo anda mal en una mujer que acomoda$1#$b#A tantos gatos...'$1", //Emily
+"Isla.8H.12": "Buenas noches a todos. He traído conmigo el lírico y evocador 'Soneto 106'.#$b#Está escrito por el más sublime autor que haya emergido jamás del Reino de la Digitalia: el único e inigualable William Shakespeare.$1#$b#Ahora, sin más preámbulos.", //Elliott
+"Isla.8H.13": "'Cuando en la crónica del tiempo desperdiciado$1#$b#Veo descripciones de las criaturas más hermosas,$1#$b#Y la belleza creando hermosos viejos versos#$b#En alabanza a damas muertas y nobles caballeros,#$b#Entonces, en el blasón de lo mejor de la dulce belleza,#$b#De mano, de pie, de labio, de ojo, de frente,#$b#Veo que su pluma antigua habría expresado#$b#Incluso tal belleza como la que ahora dominas...'$4", //Elliott
+"Isla.8H.14": "Me gustaría cerrar la velada con el poema marítimo 'Junto al Mar', de Emily Dickinson. Pensé que sería un homenaje adecuado a nuestra amiga marina Isla.$1", //Penny
+"Isla.8H.15": "'Salí temprano, llevé a mi perro#$b#Y visité el mar#$b#Las sirenas en el sótano#$b#Salieron a mirarme...'$1", //Penny
+"Isla.8H.16": "Bueno, eso fue una velada maravillosa, ¿verdad? Gracias a todos de nuevo, desde lo más profundo de mi corazón.$1#$b#Debemos hacerlo de nuevo pronto. Les deseo a todos buenas noches.$1",
+"Isla.8H.17": "Quería dar un agradecimiento especial a ti, @. Este salón no podría haber sucedido sin ti.$8#$b#Gracias por ser un amigo tan maravilloso para mí.$4",
+"Isla.8H.End": "El salón fue simplemente maravilloso, ¿verdad? Definitivamente una noche para recordar.$4",
+		
+		//10 Heart Event
+		
+	
+"Isla.10H.1": "Oh, hola @. Has llegado.$8",
+"Isla.10H.2": "Puede que te estés preguntando por qué quería encontrarme contigo esta noche.#$b#Bueno, quería llevarte de vuelta al lugar donde nos conocimos por primera vez, porque tengo algo importante que decirte. Algo que he querido decirte desde hace algún tiempo.",
+"Isla.10H.3": "Permíteme comenzar con una historia.",
+"Isla.10H.4": "Hace algunas semanas, estaba sentada en un saliente rocoso en medio del mar, como suelo hacer. Era el crepúsculo, y el cielo aún sostenía los últimos destellos tenues del atardecer.#$b#Era tan pacífico, pero extrañamente melancólico también.#$b#De repente, deseé que en ese momento, tuviera a alguien a quien apreciara para hablar. O incluso solo para compartir el hermoso silencio.#$b#Pero no había nadie, y eso fue una sensación triste.",
+"Isla.10H.5": "Disfruto de la soledad. Amo la paz del silencio y la tranquilidad de nadar a través del silencioso mar.#$b#Pero desde hace algún tiempo, todo en lo que he estado pensando es en cuánto deseo estar contigo.$4#$b#Nunca pensé que sentiría así por alguien más, y mucho menos por un humano.#$b#Pero estaba equivocada.$4",
+"Isla.10H.6": "@, esperaba que sintieras lo mismo por mí.$4",
+"Isla.10H.7": "Por supuesto que siento lo mismo por ti.",
+"Isla.10H.8": "Lo siento, no lo hago.",
+"Isla.10H.9": "Oh, estoy tan feliz.$4",
+"Isla.10H.10": "¿Recuerdas cómo te dije que había estado escribiendo algunos de mis propios poemas? Bueno... he estado trabajando en esta pequeña pieza para ti.$4#$b#Y me gustaría que la escucharas.$7",
+"Isla.10H.11": "'Oda para @'#$b#Profundo en el valle rocío de estrellas#$b#Sobre las vastas colinas verdes...'$1",
+"Isla.10H.12": "Gracias por escucharme. Gracias por ayudarme a encontrar mi voz. Significa mucho para mí. Y tú también significas mucho para mí.",
+"Isla.10H.WhyDidYouGiveHerABouquet": "Veo... ciertamente estoy decepcionada, pero respeto cómo te sientes.$2#$b#Lamento haber malinterpretado tus sentimientos hacia mí.$2",
+	
+		//14 Heart Event
+	
+	
+"Isla.14H.1": "¡Buenas noches!", //Soraya textoSobreCabeza
+"Isla.14H.2": "¡Hola!", //Marika textoSobreCabeza
+"Isla.14H.3": "¡Saludos!", //Elysa textoSobreCabeza
+"Isla.14H.4": "¡Oh Isla, te hemos extrañado!$1#$b#¡Pero es tan maravilloso verlas juntas!$3#$b#¡Hemos estado esperando tanto tiempo para conocerte, @!$3", //Soraya
+"Isla.14H.5": "Por favor, siéntense, hemos preparado un festín delicioso.$3#$b#¡E hicimos el postre favorito de Isla, pudín de espuma de mar, especialmente para la ocasión!$3", //Soraya
+"Isla.14H.6": "Muchas gracias por contarnos tus experiencias en tu granja, @.$3", //Elysa
+"Isla.14H.7": "En cuanto a nosotras, Galene recientemente tuvo el placer de actuar en las Islas de Fern de nuevo. Mientras cantábamos, las cálidas brisas llevaban nuestras canciones por toda la isla y más allá.$1#$b#¡Oh, qué maravilloso fue!$3", //Elysa
+"Isla.14H.8": "Por favor, cuéntanos cómo has estado, querida Isla.$1", //Elysa
+"Isla.14H.9": "Bueno, he comenzado a trabajar en la biblioteca aquí en Pueblo Pelícano. ¡He descubierto más libros de los que podría haber imaginado nunca!$8", //Isla
+"Isla.14H.10": "Oh, Isla. Estamos eufóricas de que ustedes dos hayan creado una vida tan maravillosa juntas.$3", //Elysa
+"Isla.14H.11": "Fue una noche maravillosa, llena de risas y comida deliciosa. Hablamos de nuestras vidas, y Soraya, Marika y Elysa fueron tan amables conmigo. Realmente siento que me he convertido en parte del mundo de Isla.", //Mensaje final
+	
+	
+}

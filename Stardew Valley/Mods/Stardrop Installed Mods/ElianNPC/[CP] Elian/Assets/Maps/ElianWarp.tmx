@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="left-down" width="7" height="5" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="1">
+ <properties>
+  <property name="Warp" value="1 2 Silverinnia.Elian_Cave 8 12 5 2 Mountain 1 13"/>
+ </properties>
+ <tileset firstgid="1" name="mine_desert_dangerous" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine_desert_dangerous.png" width="256" height="288"/>
+ </tileset>
+ <layer id="1" name="Back" width="7" height="5">
+  <data encoding="csv">
+0,139,139,139,139,139,0,
+0,139,241,242,243,139,0,
+0,154,257,258,259,154,0,
+0,139,273,274,275,139,0,
+0,139,139,139,139,139,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="7" height="5">
+  <data encoding="csv">
+219,219,219,219,219,219,219,
+219,0,0,0,0,0,219,
+219,0,0,0,0,0,219,
+219,0,0,0,0,0,219,
+219,219,219,219,219,219,219
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings"/>
+ <layer id="5" name="Paths" width="7" height="5">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Paths"/>
+ <layer id="7" name="Front" width="7" height="5">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Front"/>
+ <layer id="9" name="AlwaysFront" width="7" height="5">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

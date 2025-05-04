@@ -1,0 +1,110 @@
+{
+	"Changes": 
+    [
+		{
+            "LogName": "Jorts and Jean Gift Taste Data",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries":
+            {
+                "JortsCat": "¡Oh, gracias, gracias, gracias, @! ¡Es mi favorito!/280 416 -4 -6 424 426 168 227/¡Qué bien huele, @! ¡Me gusta mucho!/372 874 242 214 198 209 212 730 728 729 732 142 -80/Esto está un poco cutre... y no en el buen sentido./876 194 -12 -2 -8 -5/@...¿por qué eres malo?/167 171 399 248 215 260 226 907/No estoy muy seguro de qué es esto, ¡pero gracias!$h/-25 -26 -75 -79/",
+				
+				"JeanCat": "¡Oh, esto es precioso! Gracias por compartirlo conmigo, purrr./426 832 829 -4 -6 424 227/Gracias. Es una ofrenda muy buena./874 812 242 214 198 209 212 730 728 729 732 -5/@... Sabes que soy una gata, ¿verdad? ¿Cómo voy a usar esto?/876 -12 -8 -2/HSSSS!/167 171 399 248 215 260 226 907/Gracias por pensar en mí, @./-25 -26 -75 -79 -80/"
+			}
+		},
+		
+		//with Wildflour mods
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"When": { "HasMod: |contains=wildflour.atelierteas": true},
+			"TextOperations": [
+				
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "JortsCat", 1], 
+					"Value": "tea_sachet_item",
+					"Delimiter": " "
+				},
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "JeanCat", 1], 
+					"Value": "tea_sachet_item",
+					"Delimiter": " "
+				},
+			],
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"When": { "HasMod: |contains=wildflour.ateliercandy": true},
+			"TextOperations": [
+				
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "JortsCat", 1], 
+					"Value": "marshmallow_item",
+					"Delimiter": " "
+				},
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "JeanCat", 3], 
+					"Value": "tea_sachet_item",
+					"Delimiter": " "
+				},
+			],
+		},
+		
+		//Concessions
+		{   
+			"Action": "EditData",
+			"Target": "Data/ConcessionTastes",
+			"Entries": { 
+				"JortsCat": {
+					"Name": "JortsCat",
+					"LovedTags": [
+						"Nachos",
+						"Hamburguesa de Salmón",
+					],
+					"LikedTags": [
+						"Palomitas de Trufas",
+						"Maní Salado",
+					],
+					"DislikedTags": [
+						"Dulces",
+						"Bebidas",
+						"Grasa",
+						"Joja",
+						"Ensalada de Panzanella",
+					]
+				} 
+			}
+		},
+		
+		{   
+			"Action": "EditData",
+			"Target": "Data/ConcessionTastes",
+			"Entries": { 
+				"JeanCat": {
+					"Name": "JeanCat",
+					"LovedTags": [
+						"Licor Negro",
+						"Hamburguesa de Salmón",
+					],
+					"LikedTags": [
+						"Palomitas de Trufas",
+						"Maní Salado",
+					],
+					"DislikedTags": [
+						"Dulces",
+						"Bebidas",
+						"Grasa",
+						"Joja",
+						"Ensalada de Panzanella",
+					]
+				} 
+			}
+		}
+		
+	],
+}
