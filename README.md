@@ -1,6 +1,7 @@
 # PokeFursFarm
 Ready to drop ModPack for Stardew Valley's PokeFurs Farm.
-Preview:
+
+Click the image for a video preview:
 [![Preview](https://img.youtube.com/vi/C_yXpM4nEAE/maxresdefault.jpg)](https://youtu.be/C_yXpM4nEAE)
 
 ## Description
