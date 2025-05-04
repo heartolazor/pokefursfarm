@@ -15,11 +15,10 @@ The idea is to install this and don't configure anything, so all of the players 
 This Modpack was tested with SMAPI 4.2.1 with Stardew Valley 1.6.15.
 
 1. Install latest version of SMAPI, this enables modding: https://smapi.io/
-2. Inside your Stardew Valley installation folder check if you have a mods folder already created. If it is the case, rename the folder to _Mods. Example of the default installation folder with steam version: "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\"
-3. Copy "_Stardew Valley_" folder content to the Stardew Valley folder. You should end with something like "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Stardrop Installed Mods\"
-4. If steam is installed add this command "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\StardewModdingAPI.exe" %command% to start stardew valley with mods when you open it in steam and have achievements. The path is the direction to StardewModdingAPI.exe available in your stardew valley folder after installing SMAPI.
-5. Optional: If you want to add support spanish translation to the mods, Copy the content inside the folder "Optional/Spanish Translations" to the "Your steam directory\Stardew Valley\Mods\Stardrop Installed Mods\", this translates many npcs and expansions dialogs to spanish.
-6. Optional: Install Stardrop Mod Manager, this is useful to check what mods are installed and install more mods: https://www.nexusmods.com/stardewvalley/mods/10455
+2. Copy "_Stardew Valley_" folder content to the Stardew Valley folder. You should end with something like "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Stardrop Installed Mods\"
+3. If steam is installed add this command "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\StardewModdingAPI.exe" %command% to start stardew valley with mods when you open it in steam and have achievements. The path is the direction to StardewModdingAPI.exe available in your stardew valley folder after installing SMAPI.
+4. Optional: If you want to add support spanish translation to the mods, Copy the content inside the folder "Optional/Spanish Translations" to the "Your steam directory\Stardew Valley\Mods\Stardrop Installed Mods\", this translates many npcs and expansions dialogs to spanish.
+5. Optional: Install Stardrop Mod Manager, this is useful to check what mods are installed and install more mods: https://www.nexusmods.com/stardewvalley/mods/10455
 
 ## Summary of mods included in this modpack.
  - Pokemon related mods: Pokemon farm animals, pokemon furniture, pokemon pets, pokemon fishes and most of pokemon mods found in nexus. Not included the mod that changes the terrain or existing npcs, because of compatibility.
