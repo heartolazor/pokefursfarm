@@ -1,26 +1,34 @@
 # PokeFursFarm
 Ready to drop ModPack for Stardew Valley's PokeFurs Farm.
-##Description
+## Description
 This is a ModPack created for the PokeFurs server. 
 The main theme is Pokemon mods mixed with Furry mods, expansion packs and QoL mods.
 The idea is to install this and don't configure anything, so all of the players have the same mods and can play in multiplayer.
 
 **Mods that will not be found in this modpack: Cheat like mods, Meme mods, Adult themed mods.**
 
-##How to install
+## How to install
 This Modpack was tested with SMAPI 4.2.1 with Stardew Valley 1.6.15.
 
 1. Install latest version of SMAPI, this enables modding: https://smapi.io/
 2. Inside your Stardew Valley installation folder check if you have a mods folder already created. If it is the case, rename the folder to _Mods. Example of the default installation folder with steam version: "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\"
 3. Copy "_Stardew Valley_" folder content to the Stardew Valley folder. You should end with something like "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Stardrop Installed Mods\"
 4. If steam is installed add this command "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\StardewModdingAPI.exe" %command% to start stardew valley with mods when you open it in steam and have achievements. The path is the direction to StardewModdingAPI.exe available in your stardew valley folder after installing SMAPI.
-5. Optional: Install Stardrop Mod Manager, this is useful to check what mods are installed and install more mods: https://www.nexusmods.com/stardewvalley/mods/10455
+5. Optional: If you want to add support spanish translation to the mods, Copy the content inside the folder "Optional/Spanish Translations" to the "Your steam directory\Stardew Valley\Mods\Stardrop Installed Mods\", this translates many npcs and expansions dialogs to spanish.
+6. Optional: Install Stardrop Mod Manager, this is useful to check what mods are installed and install more mods: https://www.nexusmods.com/stardewvalley/mods/10455
+
+## Summary of mods included in this modpack.
+ - Pokemon related mods: Pokemon farm animals, pokemon furniture, pokemon pets, pokemon fishes and most of pokemon mods found in nexus. Not included the mod that changes the terrain or existing npcs, because of compatibility.
+ - Portrait npcs furry/nyapu versions, Mod fallback order: Dergvalley > Anthro Characters > Nyapu > Default portraits
+ - Personalization of the main character using Fashion Sense mod, including a hundred of accesories as tails or wings to make any fantasy creature.
+ - Important modpacks with additional npcs and content: Stardew Valley Expanded, Raffadax, Ridgeside Valley, East Carp, Sunberry Village, Lumisteria Visit Mount Vapius, Downtown Zuzu, Axolot Valley, Deep Woods, Adventure Guild Expanded, Boss Battles, Alchemistry, Dwarven Expansion, Animal Husbandry, Love of Cooking, Restauranteer, MarketTown, Ornithologist Guild, Nature in the Valley, Stardew Aquarium, Chocobo Valley, Everia's Dragons, Fishing Trawler, Prestige, Level Forever, new Skills and many more.
+ - Misc mods that enhances the Quality of life, balance or add more accesories from known franchises: Ragnarok Online hats, MIA Nanachi Relic Hat, Rabite pet from Secret of mana, Sanrio furniture and farm animals, tamagotchi farm animals, Animal Crossing themed furniture, Automate, Better Junimos, Better Chests, Hundreds of additional fishes, Better Balance, Enhanced reflections, Animated icons, Event Lookup, Faster Path Speed, Ferngill item packs, Cornucopia item packs, Fresh Item Produce, Longevity, Horse Overhaul, Lookup Anything, Machine Progression System, Fish Helper UI, Mini Bars, The return of backpack upgrades, Swim Mod, Visible Fish, Giant Crops/Flowers mods and many more.
 
 ## Caveats
 This modpack uses Raffadax (https://www.nexusmods.com/stardewvalley/mods/8256) which is on beta in discord, they have a disclaimer to **not stream** using this mod until it's ready. If you want to stream using this modpack, make a copy of the Mods folders and rename it to _ModsPokefursComplete as backup and remove the "Raffadax.5.0.0-beta.03" folder from "\Stardew Valley\Mods\Stardrop Installed Mods\" that you have copied to your stardew installation. If you have Stardrop Modmanager installed, you can do it with profiles.
 Remember taht in multiplayer all player should have the same mods.
 
-##Folder Structure
+## Folder Structure
 Description of what it is each folder:
 ```
 PokeFursFarm
@@ -38,7 +46,7 @@ PokeFursFarm
 
 <details>
 <summary>Full list of Mods included in the ModPack.</summary>
-#Detailed Mod List (454):
+# Detailed Mod List (454):
     
 Content Patcher v2.6.1 by Pathoschild:
 - https://www.nexusmods.com/stardewvalley/mods/1915
