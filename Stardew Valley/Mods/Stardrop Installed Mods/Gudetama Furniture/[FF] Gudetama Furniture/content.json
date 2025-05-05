@@ -1,5 +1,5 @@
 {
-	"Format": 2,
+	"Format": 3,
 	"Furniture": {
 
                 "{{ModID}}.gude_window_panes": {
@@ -13,9 +13,16 @@
 			"Placement Type": "Mural",
 
 			"Source Image": "assets/gudewindowpanes.png",
-			"Source Rect": {"X": 0, "Y": 0, "Width": 32, "Height": 48},
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": ["Carpenter"],
+          "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 32, "Height": 48
+               }
+            }
+         ]
 		},
 
                 "{{ModID}}.gude_wall_bow": {
@@ -32,9 +39,16 @@
                           "Bacon": "assets/gudewallbow.png",
                           "Orange": "assets/gudewallbow2.png"
                                         },
-			"Source Rect": {"X": 0, "Y": 0, "Width": 26, "Height": 18},
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": ["Carpenter"],
+          "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 26, "Height": 18
+               }
+            }
+         ]
 		},
 
                 "{{ModID}}.small_gude_plush": {
@@ -48,9 +62,16 @@
 			"Placement Restriction": 2,
 
 			"Source Image": "assets/smallgude.png",
-			"Source Rect": {"X": 0, "Y": 0, "Width": 11, "Height": 12},
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": ["Carpenter"],
+          "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 11, "Height": 12
+               }
+            }
+         ]
 		},
 
                 "{{ModID}}.gude_squish": {
@@ -63,9 +84,16 @@
 			"Placement Restriction": 2,
 
 			"Source Image": "assets/gudesquish.png",
-			"Source Rect": {"X": 0, "Y": 0, "Width": 29, "Height": 29},
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": ["Carpenter"],
+          "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 29, "Height": 29
+               }
+            }
+         ]
 		},
 
                 "{{ModID}}.gude_balloon": {
@@ -80,12 +108,25 @@
                           "Egg": "assets/gudeballoon.png",
                           "Normal": "assets/gudeballoon2.png"
                                         },
-                        "Source Rect": {"X": 0, "Y": 0, "Width": 16, "Height": 53},
 
                         "Shows in Shops": ["Carpenter"],
-			"Frame Count": 8,
-			"Frame Duration": 300,
-			"Animation Offset": {"X": 16, "Y": 0}
+
+         "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 16,"Height": 53
+               }
+            }
+         ],
+         "Animation": {
+				"Frame Count": 8,
+				"Frame Duration": 300,
+				"Offset": {
+					"X": 16,
+					"Y": 0
+				}
+			}
       },
 
                 "{{ModID}}.gude_chair": {
@@ -107,13 +148,46 @@
 				"Up":		{"X": 32, "Y": 0, "Width": 16, "Height": 32},
 				"Left":		{"X": 48, "Y": 0, "Width": 16, "Height": 32}
 			},
-                            "Layers": {
-				"Up": [
-					{
-						"Source Rect": {"X": 32, "Y": 32, "Width": 16, "Height": 32}
-					}
-				]
-			},
+
+"Layers": {
+            "Down": {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 16, "Height": 32
+               }
+            },
+            "Right": [
+               {
+                  "Source Rect": {
+                     "X": 16, "Y": 0,
+                     "Width": 16, "Height": 32
+                  }
+               }
+             ],
+            "Up": [
+               {
+                  "Source Rect": {
+                     "X": 32, "Y": 0,
+                     "Width": 16, "Height": 32
+                  }
+               },
+               {
+                  "Source Rect": {
+                     "X": 32, "Y": 32,
+                     "Width": 16, "Height": 32
+                  },
+                  "Draw Pos": { "X": 0, "Y": 0 }
+               }
+            ],
+            "Left": [
+               {
+                  "Source Rect": {
+                     "X": 48, "Y": 0,
+                     "Width": 16, "Height": 32
+                  }
+                }
+              ]
+         },
 
 			"Seats": [
 				{
@@ -145,12 +219,28 @@
 			"Placement Restriction": 2,
 
 			"Source Image": "assets/gudedoublebed.png",
-			"Source Rect": {"X": 0, "Y": 0, "Width": 52, "Height": 50},
 
-			"Layers": [
+                        "Layers": [
 				{
-					"Source Rect": {"X": 52, "Y": 0, "Width": 52, "Height": 50},
-					"Depth": 2
+					"Source Rect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 52,
+						"Height": 50
+					}
+				},
+				{
+					"Source Rect": {
+						"X": 52,
+						"Y": 0,
+						"Width": 52,
+						"Height": 50
+					},
+					"Depth": 2,
+					"Draw Pos": {
+						"X": 0,
+						"Y": 0
+					}
 				}
 			],
 
@@ -175,9 +265,16 @@
 			"Placement Restriction": 2,
 
 			"Source Image": "assets/gudedresser.png",
-			"Source Rect": {"X": 0, "Y": 0, "Width": 32, "Height": 39},
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 32,"Height": 39
+               }
+            }
+         ]
 		},
 
                 "{{ModID}}.gude_medium_plush": {
@@ -190,9 +287,16 @@
 			"Placement Restriction": 0,
 
 			"Source Image": "assets/gudemedplush.png",
-			"Source Rect": {"X": 0, "Y": 0, "Width": 15, "Height": 17},
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 15,"Height": 17
+               }
+            }
+         ]
 		},
 
                 "{{ModID}}.gude_lantern": {
@@ -204,7 +308,6 @@
                         "Placement Restriction": 2,
 
                         "Source Image": "assets/gudelantern.png",
-                        "Source Rect": {"X": 0, "Y": 0, "Width": 14, "Height": 17},
 
 			"Light Sources": [
 				{
@@ -214,6 +317,14 @@
 				}
 			],
                         "Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 14,"Height": 17
+               }
+            }
+         ]
                  },
 
                 "{{ModID}}.gude_painting": {
@@ -227,9 +338,16 @@
 			"Placement Type": "Mural",
 
 			"Source Image": "assets/gudepainting.png",
-			"Source Rect": {"X": 0, "Y": 0, "Width": 32, "Height": 25},
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 32,"Height": 25
+               }
+            }
+         ]
 		},
 
                 "{{ModID}}.gude_plant": {
@@ -242,9 +360,16 @@
 			"Placement Restriction": 0,
 
 			"Source Image": "assets/gudeplant.png",
-			"Source Rect": {"X": 0, "Y": 0, "Width": 20, "Height": 40},
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 20,"Height": 40
+               }
+            }
+         ]
 		},
 
                 "{{ModID}}.gude_cup_ramen": {
@@ -257,9 +382,16 @@
 			"Placement Restriction": 0,
 
 			"Source Image": "assets/gudecupramen.png",
-			"Source Rect": {"X": 0, "Y": 0, "Width": 30, "Height": 56},
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 30,"Height": 56
+               }
+            }
+         ]
 		},
 
                 "{{ModID}}.gude_ramen_bowl": {
@@ -272,9 +404,16 @@
 			"Placement Restriction": 0,
 
 			"Source Image": "assets/guderamenbowl.png",
-			"Source Rect": {"X": 0, "Y": 0, "Width": 60, "Height": 75},
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 60,"Height": 75
+               }
+            }
+         ]
 		},
 
                 "{{ModID}}.gude_shelves": {
@@ -290,9 +429,16 @@
 			"Placement Restriction": 2,
 
 			"Source Image": "assets/gudeshelves.png",
-			"Source Rect": {"X": 0, "Y": 0, "Width": 38, "Height": 58},
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 38,"Height": 58
+               }
+            }
+         ]
 		},
 
                 "{{ModID}}.gude_single_bed": {
@@ -309,12 +455,28 @@
 			"Placement Restriction": 2,
 
 			"Source Image": "assets/gudesinglebed.png",
-			"Source Rect": {"X": 0, "Y": 0, "Width": 32, "Height": 55},
 
-			"Layers": [
+"Layers": [
 				{
-					"Source Rect": {"X": 32, "Y": 0, "Width": 32, "Height": 55},
-					"Depth": 2
+					"Source Rect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 32,
+						"Height": 55
+					}
+				},
+				{
+					"Source Rect": {
+						"X": 32,
+						"Y": 0,
+						"Width": 32,
+						"Height": 55
+					},
+					"Depth": 2,
+					"Draw Pos": {
+						"X": 0,
+						"Y": 0
+					}
 				}
 			],
 
@@ -347,26 +509,62 @@
 				"Left":		{"X": 128,	"Y": 0, "Width": 31, "Height": 48}
 			},
 
-			"Layers": {
-				"Right": [
-					{
-						"Source Rect": {"X": 48, "Y": 49, "Width": 31, "Height": 48},
-						"Depth": {"Tile": 1, "Sub": 1000}
-					}
-				],
-				"Up": [
-					{
-						"Source Rect": {"X": 80, "Y": 49, "Width": 47, "Height": 32},
-						"Depth": {"Tile": 0, "Sub": 1000}
-					}
-				],
-				"Left": [
-					{
-						"Source Rect": {"X": 128, "Y": 49, "Width": 31, "Height": 48},
-						"Depth": {"Tile": 1, "Sub": 1000}
-					}
-				]
-			},
+"Layers": {
+            "Down": {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 47, "Height": 32
+               }
+            },
+            "Right": [
+               {
+                  "Source Rect": {
+                     "X": 48, "Y": 0,
+                     "Width": 31, "Height": 48
+                  }
+               },
+               {
+                  "Source Rect": {
+                     "X": 48, "Y": 49,
+                     "Width": 31, "Height": 48
+                  },
+                  "Depth": { "Tile": 2, "Sub": 1000 },
+                  "Draw Pos": { "X": 0, "Y": 0 }
+               }
+            ],
+            "Up": [
+               {
+                  "Source Rect": {
+                     "X": 80, "Y": 0,
+                     "Width": 47, "Height": 32
+                  }
+               },
+               {
+                  "Source Rect": {
+                     "X": 80, "Y": 49,
+                     "Width": 47, "Height": 32
+                  },
+                  "Depth": { "Tile": 0, "Sub": 1000 },
+                  "Draw Pos": { "X": 0, "Y": 0 }
+               }
+            ],
+            "Left": [
+               {
+                  "Source Rect": {
+                     "X": 128, "Y": 0,
+                     "Width": 31, "Height": 48
+                  }
+               },
+               {
+                  "Source Rect": {
+                     "X": 128, "Y": 49,
+                     "Width": 31, "Height": 48
+                  },
+                  "Depth": { "Tile": 2, "Sub": 1000 },
+                  "Draw Pos": { "X": 0, "Y": 0 }
+               }
+            ]
+         },
 
 			"Seats": {
 				"Up": [
@@ -430,9 +628,16 @@
                           "Front": "assets/gudestatue.png",
                           "Back": "assets/gudestatue2.png"
                                         },
-			"Source Rect": {"X": 0, "Y": 0, "Width": 40, "Height": 34},
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 40,"Height": 34
+               }
+            }
+         ]
 		},
 
                 "{{ModID}}.gude_egg_stool": {
@@ -448,9 +653,16 @@
 			"Placement Restriction": 2,
 
 			"Source Image": "assets/eggstool.png",
-			"Source Rect": {"X": 0, "Y": 0, "Width": 18, "Height": 17},
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 18,"Height": 17
+               }
+            }
+         ]
 		},
 
 		"{{ModID}}.gude_table": {
@@ -466,9 +678,16 @@
 			"Placement Restriction": 2,
 
 			"Source Image": "assets/gudetable.png",
-			"Source Rect": {"X": 0, "Y": 0, "Width": 35, "Height": 30},
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 35,"Height": 30
+               }
+            }
+         ]
 		},
 
 		"{{ModID}}.bacon_rug": {
@@ -485,9 +704,16 @@
                         "Placement Type": "Rug",
 
 			"Source Image": "assets/baconrug.png",
-			"Source Rect": {"X": 0, "Y": 0, "Width": 62, "Height": 18},
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 62,"Height": 18
+               }
+            }
+         ]
 		},
 
 		"{{ModID}}.gude_egg_rug": {
@@ -504,9 +730,16 @@
                         "Placement Type": "Rug",
 
 			"Source Image": "assets/gudeeggrug.png",
-			"Source Rect": {"X": 0, "Y": 0, "Width": 51, "Height": 48},
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 51,"Height": 48
+               }
+            }
+         ]
 		},
 
 		"{{ModID}}.round_gude_rug": {
@@ -523,9 +756,16 @@
                         "Placement Type": "Rug",
 
 			"Source Image": "assets/roundguderug.png",
-			"Source Rect": {"X": 0, "Y": 0, "Width": 80, "Height": 79},
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": ["Carpenter"],
+"Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 80,"Height": 79
+               }
+            }
+         ]
 		},
 
                 "{{ModID}}.gude_TV": {
@@ -537,7 +777,6 @@
                         "Placement Restriction": 2,
 
                         "Source Image": "assets/gudeTV.png",
-                        "Source Rect": {"X": 0, "Y": 0, "Width": 31, "Height": 46},
 
 			"Light Sources": [
 				{
@@ -547,10 +786,23 @@
 				}
 			],
                         "Shows in Shops": ["Carpenter"],
-                        "Frame Count": 4,
-			"Frame Duration": 300,
-			"Animation Offset": {"X": 31, "Y": 0}
-                 },
 
+  "Layers": [
+            {
+               "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 31,"Height": 46
+               }
+            }
+         ],
+         "Animation": {
+				"Frame Count": 4,
+				"Frame Duration": 300,
+				"Offset": {
+					"X": 31,
+					"Y": 0
+				}
+			}
+               }
 	}
 }
