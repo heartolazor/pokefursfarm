@@ -1,0 +1,21 @@
+{
+	"Name": "[Si] Leaves for Nature In The Valley",
+	"Author": "SiTheGreat",
+	"Version": "3.0.0",
+	"Description": "Collect leaves floating around the valley.",
+	"UniqueID": "Si.NVLeaves",
+	"UpdateKeys": [ "Nexus:18928" ],
+	"ContentPackFor":{ 
+		"UniqueID": "Pathoschild.ContentPatcher",
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "Nature.NatureInTheValley",
+			"IsRequired": true,
+		},
+		{
+			"UniqueID": "Si.BC",
+			"IsRequired": false,
+		},
+	]
+}

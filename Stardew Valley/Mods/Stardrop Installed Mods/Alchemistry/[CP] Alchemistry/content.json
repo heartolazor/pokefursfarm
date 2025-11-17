@@ -22,6 +22,11 @@
 			"Default": "Mana Bombs",
 			"Section": "Gameplay"
 		},
+        "EasierManaBombs": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Section": "Gameplay"
+		},
         "Transmute": {
 			"AllowValues": "Transmuter Coil Exclusive, Vanilla",
 			"Default": "Transmuter Coil Exclusive",
@@ -104,7 +109,7 @@ Includes & load conditions
         {
             "LogName": "Alchemistry - Load Machines",
             "Action": "Include",
-            "FromFile": "data/Items/Machines/Dehydrator.json, data/Items/Machines/OilMaker.json, data/Items/Machines/PreservesJar.json, data/Items/Machines/MortarPestle.json, data/Items/Machines/TinctureBin.json, data/Items/Machines/ManaExtractor.json, data/Items/Machines/ApothecaryCauldron.json, data/Items/Machines/EssenceRestabilizer.json, data/Items/Machines/TransmuterCoil.json, data/Items/Machines/RuneCarver.json, data/Items/Machines/Furnace.json"
+            "FromFile": "data/Items/Machines/Dehydrator.json, data/Items/Machines/OilMaker.json, data/Items/Machines/PreservesJar.json, data/Items/Machines/MortarPestle.json, data/Items/Machines/TinctureBin.json, data/Items/Machines/ManaExtractor.json, data/Items/Machines/ApothecaryCauldron.json, data/Items/Machines/EssenceRestabilizer.json, data/Items/Machines/TransmuterCoil.json, data/Items/Machines/RuneCarver.json, data/Items/Machines/Furnace.json, data/Items/Machines/HeavyFurnace.json"
         },
         {
             "LogName": "Alchemistry - Load Crops",

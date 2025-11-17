@@ -67,6 +67,18 @@
             "Target": "Maps/hime_farmersmarket",
             "FromFile": "Assets/{{Coloring}}/hime_farmersmarket.png"
         },
+         // Florist Furniture
+         {
+            "Action": "Load",
+            "Target": "Maps/hime_florist",
+            "FromFile": "Assets/{{Coloring}}/hime_florist.png"
+        },
+          // Forest Cafe
+        {
+            "Action": "Load",
+            "Target": "Maps/hime_forestcafe",
+            "FromFile": "Assets/{{Coloring}}/hime_forestcafe.png"
+        },
          // Kitchen Clutter
          {
             "Action": "Load",
@@ -137,11 +149,48 @@
             "FromFile": "Assets/{{Coloring}}/Z_Plants/hime_flowers.png"
 
         },
+         // Plant Outdoor Flowers
+        {
+            "Action": "Load",
+            "Target": "Maps/hime_outdoorplants",
+            "FromFile": "Assets/{{Coloring}}/{{SeasonWithDefault}}/hime_outdoorplants.png"
+
+        },
            // Restaurant
            {
             "Action": "Load",
             "Target": "Maps/oak_restaurant",
             "FromFile": "Assets/{{Coloring}}/Z_Small_Businesses/oak_restaurant.png"
+        },
+        // Winery
+        {
+            "Action": "Load",
+            "Target": "Maps/hime_winery",
+            "FromFile": "Assets/{{Coloring}}/hime_winery.png"
+        },
+
+        //Simple Foliage
+        //Fairy Garden SF
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/hime_fairygarden",
+            "FromFile": "Assets/{{Coloring}}/sf_hime_fairygarden.png",
+            "When": { "HasMod": "Az.Foliage",}
+        },
+        // Outdoor Furniture SF
+        {
+            "Action": "EditImage",
+            "Target": "Maps/hime_outdoorfurniture",
+            "FromFile": "Assets/{{Coloring}}/{{SeasonWithDefault}}/sf_hime_outdoorfurniture.png",
+            "When": { "HasMod": "Az.Foliage",}
+        },
+         // Pink Outdoors SF
+         {
+            "Action": "EditImage",
+            "Target": "Maps/pink_hime_outdoors",
+            "FromFile": "Assets/{{Coloring}}/{{SeasonWithDefault}}/sf_pink_hime_outdoors.png",
+            "When": { "HasMod": "Az.Foliage",}
         },
 
         // Sitting

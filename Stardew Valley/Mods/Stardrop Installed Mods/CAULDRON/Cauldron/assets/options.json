@@ -48,6 +48,13 @@
         "EnableWithMod": "Wildflour.NooksCrannies",
         "PageID": "7"
     },
+    {
+        "Name": "BFCFLink",
+        "Type": "pageLink",
+        "EnableWithMod": "atelier99.BFCF.WAGRaTA",
+        "PageID": "8"
+    },
+
 
 
 
@@ -628,6 +635,25 @@
         "Default": "False",
         "Type": "bool",
         "ToolTipKey": "GMCM.Options.PresentLocationsConfig.ToolTip"
+    },
+
+    //PAGE 8 Lani BFCF Config
+
+    {
+        "Name": "8",
+        "Type": "page",
+        "PageID": "8" 
+    },
+    {
+        "Name": "BFCF",
+        "Type": "subtitle"
+    },
+    {
+        "Name": "BFCFConfig",
+        "AllowedValues": "Seasonal, OffSeason, AllYear",
+        "Default": "Seasonal",
+        "Type": "string",
+        "ToolTipKey": "GMCM.Options.BFCFConfig.ToolTip"
     }
     
 ]  

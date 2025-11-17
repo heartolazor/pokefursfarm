@@ -2,6 +2,32 @@
 	"Format": 3,
 	"Furniture": {
 
+		"[[ModID]].cinna_catalogue": {
+			"Display Name": "Cinnamoroll Catalogue",
+			"Description": "Contains all pieces of Cinnamoroll furniture.",
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 1,
+				"Height": 1
+			},
+			"Placement Restriction": 2,
+			"Source Image": "assets/catalogue.png",
+			"Shop Id": "[[ModID]].cinna_catalogue",
+			"Shows in Shops": [
+				"Carpenter"
+			],
+			"Layers": [
+				{
+					"Source Rect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 16,
+						"Height": 32
+					}
+				}
+			]
+		},
+
                 "[[ModID]].cinna_window_panes": {
 			"Display Name": "Cinnamoroll Window Panes",
 			"Description": "",
@@ -17,7 +43,9 @@
                           "With Drapes": "assets/cinnawindowpanes2.png"
                         },
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
           "Layers": [
             {
                "Source Rect": {
@@ -40,7 +68,9 @@
 
 			"Source Image": "assets/cinnawallbow.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
          "Layers": [
             {
                "Source Rect": {
@@ -53,7 +83,6 @@
 
                 "[[ModID]].small_plush": {
 			"Display Name": "Small Plush",
-                        "Context Tags": "placeable",
 			"Description": "",
 
 			"Rotations": 1,
@@ -69,7 +98,9 @@
                           "Mocha": "assets/mocha.png"
                                         },
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
          "Layers": [
             {
                "Source Rect": {
@@ -82,7 +113,6 @@
 
                 "[[ModID]].small_milk_plush": {
 			"Display Name": "Small Plush",
-                        "Context Tags": "placeable",
 			"Description": "",
 
 			"Rotations": 1,
@@ -92,7 +122,9 @@
 
 			"Source Image": "assets/milk.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
          "Layers": [
             {
                "Source Rect": {
@@ -114,7 +146,9 @@
 
 			"Source Image": "assets/cinnasquish.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
          "Layers": [
             {
                "Source Rect": {
@@ -135,7 +169,9 @@
 
                         "Source Image": "assets/cinnaballoon.png",
 
-                        "Shows in Shops": ["Carpenter"],
+                        "Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
          "Layers": [
             {
                "Source Rect": {
@@ -226,7 +262,9 @@
 				}
 			],
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
 		},
 
 		"[[ModID]].cinna_double_bed": {
@@ -267,7 +305,9 @@
 				}
 			],
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
 
 			"Special Type": "Bed",
                         "Bed Type": "Double",
@@ -289,7 +329,9 @@
 
 			"Source Image": "assets/cinnadresser.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
  "Layers": [
             {
                "Source Rect": {
@@ -311,7 +353,9 @@
 
 			"Source Image": "assets/cinnamedplush.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
  "Layers": [
             {
                "Source Rect": {
@@ -339,7 +383,9 @@
 					"Mode": "always_on"
 				}
 			],
-                        "Shows in Shops": ["Carpenter"],
+                        "Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
  "Layers": [
             {
                "Source Rect": {
@@ -362,7 +408,9 @@
 
 			"Source Image": "assets/cinnapainting.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
  "Layers": [
             {
                "Source Rect": {
@@ -387,7 +435,9 @@
 
 			"Source Image": "assets/cinnashelves.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
  "Layers": [
             {
                "Source Rect": {
@@ -436,7 +486,9 @@
 				}
 			],
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
 
 			"Special Type": "Bed",
 			"Bed Type": "Single",
@@ -565,7 +617,9 @@
 				]
 			},
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
 		},
 
 		"[[ModID]].cinna_statue": {
@@ -582,7 +636,9 @@
 
 			"Source Image": "assets/cinnastatue.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
  "Layers": [
             {
                "Source Rect": {
@@ -607,7 +663,9 @@
 
 			"Source Image": "assets/cinnastatue2.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
  "Layers": [
             {
                "Source Rect": {
@@ -635,7 +693,9 @@
                           "Nakey": "assets/cinnamikustatue2.png"
                                         },
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
  "Layers": [
             {
                "Source Rect": {
@@ -660,7 +720,9 @@
 
 			"Source Image": "assets/cinnastatuelarge.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
  "Layers": [
             {
                "Source Rect": {
@@ -685,7 +747,9 @@
 
 			"Source Image": "assets/jumbocinnabab.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
  "Layers": [
             {
                "Source Rect": {
@@ -710,7 +774,9 @@
 
 			"Source Image": "assets/cinnastool.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
  "Layers": [
             {
                "Source Rect": {
@@ -735,7 +801,9 @@
 
 			"Source Image": "assets/cinnastool2.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
  "Layers": [
             {
                "Source Rect": {
@@ -760,7 +828,9 @@
 
 			"Source Image": "assets/cinnatable.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
  "Layers": [
             {
                "Source Rect": {
@@ -785,7 +855,9 @@
 
 			"Source Image": "assets/cinnatable2.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
  "Layers": [
             {
                "Source Rect": {
@@ -811,7 +883,9 @@
 
 			"Source Image": "assets/headcinnarug.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
  "Layers": [
             {
                "Source Rect": {
@@ -837,7 +911,9 @@
 
 			"Source Image": "assets/roundcinnarug.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
  "Layers": [
             {
                "Source Rect": {
@@ -862,7 +938,9 @@
 
 			"Source Image": "assets/plushstack.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
  "Layers": [
             {
                "Source Rect": {
@@ -892,7 +970,9 @@
 					"Mode": "always_on"
 				}
 			],
-                        "Shows in Shops": ["Carpenter"],
+                        "Shows in Shops": [
+				"[[ModID]].cinna_catalogue"
+			],
          "Layers": [
             {
                "Source Rect": {

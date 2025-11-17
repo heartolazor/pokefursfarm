@@ -10,10 +10,17 @@
   "UniqueID": "DecidedlyHuman.MappingExtensionsAndExtraProperties",
   "Name": "Mapping Extensions and Extra Properties (MEEP)",
   "Author": "DecidedlyHuman",
-  "Version": "2.4.6",
+  "Version": "2.5.1",
   "Description": "Extra map features and tile/map properties to spice up your custom maps.",
   "MinimumApiVersion": "4.0.0",
   "EntryDll": "MappingExtensionsAndExtraProperties.dll",
+  "Dependencies": [
+    {
+      "UniqueID": "spacechase0.SpaceCore",
+      "MinimumVersion": "1.28.0",
+      "IsRequired": false
+    }
+  ],
   "UpdateKeys": [
     "Nexus:14493"
   ]

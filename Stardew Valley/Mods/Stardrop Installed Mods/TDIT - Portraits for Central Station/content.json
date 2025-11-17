@@ -1,0 +1,109 @@
+ {
+    "Format": "2.7.0",
+	"DynamicTokens":[		
+		{	
+			"Name": "DisplayName",
+			"Value": "Original",
+		},
+		{	
+			"Name": "DisplayName",
+			"Value": "{{Spiderbuttons.CMCT/Config: DolphINaF.ExtraPortraits,DisplayName}}",
+			"When": {
+				"HasMod |contains=DolphINaF.ExtraPortraits": true,
+				"HasMod |contains=Spiderbuttons.CMCT": true,
+			}			
+		},	
+		{
+			"Name": "Amber",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.VioletLady",
+		},			
+		{
+			"Name": "Amber",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.Amber",
+			"When": {"DisplayName": "Named",}
+		},
+		{
+			"Name": "Terrence",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.RedCap",
+		},			
+		{
+			"Name": "Terrence",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.Terrence",
+			"When": {"DisplayName": "Named",}
+		},	
+		{
+			"Name": "Duke",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.Shades",
+		},			
+		{
+			"Name": "Duke",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.Duke",
+			"When": {"DisplayName": "Named",}
+		},	
+		{
+			"Name": "Claire",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.PartTimerFemale",
+		},			
+		{
+			"Name": "Claire",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.Claire",
+			"When": {"DisplayName": "Named",}
+		},	
+		{
+			"Name": "Luca",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.CornerGuy",
+		},		
+		{
+			"Name": "Luca",
+			"Value": "Strings/DolphINaF.ExtraPortraits:Name.Luca",
+			"When": {"DisplayName": "Named",}
+		},			
+	],
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Portraits/CSPurseDog_Default, Portraits/CSFlamingo_Default, Portraits/CSGiftShop_Default, Portraits/CSFoodCourt_Default",
+            "FromFile": "assets/{{Target}}.png",
+			"Priority": "Low"
+        },	
+		{
+			"LogName": "Strings Load",
+			"Action": "Load",
+			"Target": "Strings/DolphINaF.CSPortraits",
+			"FromFile": "patches/blank.json",
+		},
+		{
+			"LogName": "Strings",
+			"Action": "EditData",
+			"Target": "Strings/DolphINaF.CSPortraits",
+			"Entries": {
+				"Name.PurseDog": "{{i18n:Name.PurseDog}}",
+				"Name.Flamingo": "{{i18n:Name.Flamingo}}",
+				"Name.Scholar": "{{i18n:Name.Scholar}}",
+				"Name.ShroudedFigure": "{{i18n:Name.ShroudedFigure}}",
+			}
+		},	
+		{
+			"LogName": "Gift Shop",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Pathoschild.CentralStation_GiftShop", "Owners", "Default" ],
+			"Entries": {"Portrait": "Portraits/CSGiftShop_Default"},
+		},
+		{
+			"LogName": "Gift Shop",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Pathoschild.CentralStation_FoodCourt", "Owners", "Default" ],
+			"Entries": {"Portrait": "Portraits/CSFoodCourt_Default"},
+		},
+		{	
+			"Action": "Include",
+			"FromFile": "patches/tourists.json",
+			"When": {
+				"HasMod |contains=mushymato.PortraitsForAll": true,
+				"HasMod |contains=DolphINaF.ExtraPortraits": true,
+			}
+		},
+	]
+}

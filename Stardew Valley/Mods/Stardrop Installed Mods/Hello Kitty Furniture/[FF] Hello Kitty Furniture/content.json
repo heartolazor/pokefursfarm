@@ -2,6 +2,32 @@
 	"Format": 3,
 	"Furniture": {
 
+		"[[ModID]].hk_catalogue": {
+			"Display Name": "Hello Kitty Catalogue",
+			"Description": "Contains all pieces of Hello Kitty furniture.",
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 1,
+				"Height": 1
+			},
+			"Placement Restriction": 2,
+			"Source Image": "assets/catalogue.png",
+			"Shop Id": "[[ModID]].hk_catalogue",
+			"Shows in Shops": [
+				"Carpenter"
+			],
+			"Layers": [
+				{
+					"Source Rect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 16,
+						"Height": 32
+					}
+				}
+			]
+		},
+
                 "[[ModID]].hk_window_panes": {
 			"Display Name": "Hello Kitty Window Panes",
 			"Description": "",
@@ -17,7 +43,9 @@
                           "Pink": "assets/hkwindowpanes2.png"
                         },
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
 "Layers": [
             {
                "Source Rect": {
@@ -43,7 +71,9 @@
                           "Pink": "assets/hkwallbow2.png"
                         },
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
          "Layers": [
             {
                "Source Rect": {
@@ -56,7 +86,6 @@
 
                 "[[ModID]].small_hk_plush": {
 			"Display Name": "Small Hello Kitty Plush",
-                        "Context Tags": "placeable",
 			"Description": "",
 
 			"Rotations": 1,
@@ -66,7 +95,9 @@
 
 			"Source Image": "assets/smallhk.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
          "Layers": [
             {
                "Source Rect": {
@@ -88,7 +119,9 @@
 
 			"Source Image": "assets/hksquish.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
          "Layers": [
             {
                "Source Rect": {
@@ -109,7 +142,9 @@
 
                         "Source Image": "assets/hkballoon.png",
 
-                        "Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
 "Layers": [
             {
                "Source Rect": {
@@ -201,7 +236,9 @@
 				}
 			],
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
 		},
 
 		"[[ModID]].hk_double_bed": {
@@ -242,7 +279,9 @@
 				}
 			],
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
 
 			"Special Type": "Bed",
                         "Bed Type": "Double",
@@ -264,7 +303,9 @@
 
 			"Source Image": "assets/hkdresser.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
  "Layers": [
             {
                "Source Rect": {
@@ -286,7 +327,9 @@
 
 			"Source Image": "assets/hkmedplush.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
  "Layers": [
             {
                "Source Rect": {
@@ -314,7 +357,9 @@
 					"Mode": "always_on"
 				}
 			],
-                        "Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
 "Layers": [
             {
                "Source Rect": {
@@ -345,7 +390,9 @@
 
 			"Source Image": "assets/hkpainting.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
 "Layers": [
             {
                "Source Rect": {
@@ -370,7 +417,9 @@
 
 			"Source Image": "assets/hkshelves.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
 "Layers": [
             {
                "Source Rect": {
@@ -420,7 +469,9 @@
 			],
 
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
 
 			"Special Type": "Bed",
 			"Bed Type": "Single",
@@ -549,7 +600,9 @@
 				]
 			},
 
-			"Shows in Shops": ["Carpenter"]
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
 		},
 
 		"[[ModID]].hk_statue": {
@@ -566,7 +619,9 @@
 
 			"Source Image": "assets/hkstatue.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
 "Layers": [
             {
                "Source Rect": {
@@ -591,7 +646,9 @@
 
 			"Source Image": "assets/hkstool.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
 "Layers": [
             {
                "Source Rect": {
@@ -616,7 +673,9 @@
 
 			"Source Image": "assets/hktable.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
 "Layers": [
             {
                "Source Rect": {
@@ -642,7 +701,9 @@
 
 			"Source Image": "assets/hkheadrug.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
 "Layers": [
             {
                "Source Rect": {
@@ -671,7 +732,9 @@
                           "Red": "assets/roundhkrug2.png"
                         },
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
 "Layers": [
             {
                "Source Rect": {
@@ -697,7 +760,9 @@
 			"Source Image": "assets/hkcake.png",
 			"Source Rect": {"X": 0, "Y": 0, "Width": 75, "Height": 107},
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
 "Layers": [
             {
                "Source Rect": {
@@ -722,7 +787,9 @@
 
 			"Source Image": "assets/hkshortcake.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
 "Layers": [
             {
                "Source Rect": {
@@ -747,7 +814,9 @@
 
 			"Source Image": "assets/hkplant.png",
 
-			"Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
 "Layers": [
             {
                "Source Rect": {
@@ -775,7 +844,9 @@
 					"Mode": "always_on"
 				}
 			],
-                        "Shows in Shops": ["Carpenter"],
+			"Shows in Shops": [
+				"[[ModID]].hk_catalogue"
+			],
     "Layers": [
             {
                "Source Rect": {

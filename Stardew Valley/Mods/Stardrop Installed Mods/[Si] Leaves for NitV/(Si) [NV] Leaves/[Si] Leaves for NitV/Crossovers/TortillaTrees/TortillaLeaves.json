@@ -1,0 +1,66 @@
+{   
+	"Changes": [
+
+        // Load images
+		{
+            "Action": "Load",
+            "Target": "Mods/SiLeaves/Tortilla",
+            "FromFile": "Crossovers/TortillaTrees/Tortilla.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/SiLeaves/TortillaLeaf",
+            "FromFile": "Crossovers/TortillaTrees/TortillaLeaf.png"
+        },
+
+        // Load catchables
+        {
+            "Action": "EditData",
+            "Target": "Nature.NITV/Creatures",
+            "Entries": {
+                "Tortilla": {
+                    "spritePath": "Mods\\SiLeaves\\Tortilla",
+                    "itemTexture": "Mods\\SiLeaves\\TortillaLeaf",
+                    "displayName": "{{i18n:Si.LC.name.Tortilla}}",
+                    "displayDescription": "{{i18n:Si.LC.desc.Tortilla}}",
+                    "rarity": 4,
+                    "seasons": [
+                        "spring",
+                        "summer",
+                        "fall",
+                        "winter",
+                    ],
+                    "locations": [
+                        "0",
+                    ],
+                    "localSpawnCode": 0,
+                    "xDef": 36,
+                    "yDef": 20,
+                    "speed": 0.001,
+                    "scale": 1.5,
+                    "weatherCode": "1",
+                    "range": 1,
+                    "Price": 1,
+                    "grounded": false,
+                },
+            }
+        },
+
+        // Load rewards
+        {
+		"Action": "EditData",
+		"Target": "Nature.NITV/Rewards",
+		"Entries": {
+			"{{ModId}}_TortillaReward": {
+				"ItemId": "(O)229",
+				"ItemCount": 5,
+				"TotalDonated": 0,
+				"creatureRequirements": [
+				"Tortilla",
+				]
+			},
+		}
+	},
+
+	]
+}

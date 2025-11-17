@@ -21,7 +21,7 @@
                     "Fri": "{{Random:{{EliFriday_A}}++{{EliFriday_B}}|InputSeparator=++}}",
                     "Sat": "{{Random:{{EliSaturday_A}}++{{EliSaturday_B}}|InputSeparator=++}}",
                     "Sun": "{{Random:{{EliSunday_A}}++{{EliSunday_B}}|InputSeparator=++}}",
-                    "DesertFestival_1": "610 BusStop 31 22 1/1130 Desert 30 56 2 EliSitA/2000 {{ModID}}_ESEDHouse 2 5 3 nova.eli_sleep",
+                    "DesertFestival_1": "610 BusStop 31 22 1/1130 Desert 31 56 2 EliSitA/2000 {{ModID}}_ESEDHouse 2 5 3 nova.eli_sleep",
                     "DesertFestival_2": "GOTO DesertFestival_1",
                     "DesertFestival_3": "GOTO DesertFestival_1",
                     "summer_7": "610 Hospital 12 14 2/1250 10 15 0/1330 4 6 1/1600 Town 50 69 1/1730 Saloon 41 19 2/2200 {{ModID}}_ESEDHouse 2 5 3 nova.eli_sleep",
@@ -62,7 +62,39 @@
                 "Entries": {
                     "summer_7": "GOTO Tue"
                 }
-            }
+            },
+
+            //Pride Festival!
+
+            {
+                "LogName": "Pride Festival",
+                "Action": "EditData",
+                "Target": "Characters/Schedules/Nova.Eli",
+                "Entries": {
+                    "summer_16": "610 CommunityCenter 50 7 2 EliSitA/2130 {{ModID}}_ESEDHouse 2 5 3 nova.eli_sleep"
+                },
+                "When": {
+                    "HasMod |contains=sapphicsaph_pitv": true,
+                    "IsCommunityCenterComplete": true
+                }
+            },
+
+            //Therapy Appointment - WIP!
+/*
+            {
+                "LogName": "Therapy",
+                "Action": "EditData",
+                "Target": "Characters/Schedules/Nova.Eli",
+                "Entries": {
+                    "spring_9": "610 Daine.TPOChoice_Aliyah_House 18 32 2 EliSitA/2130 {{ModID}}_ESEDHouse 2 5 3 nova.eli_sleep",
+                    "summer_9": "610 CommunityCenter 50 7 2 EliSitA/2130 {{ModID}}_ESEDHouse 2 5 3 nova.eli_sleep",
+                    "fall_9": "610 CommunityCenter 50 7 2 EliSitA/2130 {{ModID}}_ESEDHouse 2 5 3 nova.eli_sleep",
+                    "winter_9": "610 CommunityCenter 50 7 2 EliSitA/2130 {{ModID}}_ESEDHouse 2 5 3 nova.eli_sleep"
+                },
+                "When": {
+                    "HasMod |contains=Daine.TPOChoice": true
+                }
+            }*/
     ]
 }
 

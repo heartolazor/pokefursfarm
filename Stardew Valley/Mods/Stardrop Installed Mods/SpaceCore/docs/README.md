@@ -94,11 +94,14 @@ Provided functionality for content pack authors:
         * `BuffIdToApply` - The ID of the buff to apply, pulled from the vanilla file `Data/Buffs`.
     * Crops - These are in `spacechase0.SpaceCore/CropExtensionData`
         * `YieldOverrides` - A little complex, but you can override each crop phase's harvestability with experience gained, the new phase it goes to, and the drops it has (including conditional drops). Example [here](https://gist.github.com/spacechase0/79f95bcd46160da9e52f5bc0c71329f4).
+    * Fruit trees - These are in `spacechase0.SpaceCore/FruitTreeExtensionData`
+        * `FruitLocations` - A list of tile coordinates to use for the offset of each fruit grown, instead of what vanilla does by default.
     * Weapons - Stored in the `CustomFields` on the weapon data asset object:
         * `CanBeTrashed` - true/false, also prevents dropping, default true
     * Furniture - Stored in the asset `"spacechase0.SpaceCore/FurnitureExtensionData"`, which is a dictionary with the key being the furniture ID, and the value being an object containing the following fields:
         * `TileProperties` - A dictionary of tile coordinates to a dictionary of layers to a dictionary of tile properties. Just look at [this example](https://gist.github.com/spacechase0/ea6db01284157d408d9f359f141a0d65).
         * `DescriptionOverride` - Description override for the furniture.
+        * `SeatLocations` - A dictionary for overriding where seats are on the location. The key is an integer corresponding to the rotation the seats are for, and the value is a list of coordinates (in pixels relative to the furniture).
     * Shops - Stored in the asset `"spacechase0.SpaceCore/ShopExtensionData"`, which is a dictionary with the key being the shop ID, and the value being an object containing the following fields:
         * `Tabs` - The options are `"None"`, `"Catalogue"`, `"FurnitureCatalogue"`, and `"Custom"`. For custom, see the next field.
         * `CustomTabs` - A list consisting of the following object (see [this example](https://gist.github.com/spacechase0/8a80b22655f624d9854486bfbe5abc7e)):
@@ -252,6 +255,7 @@ Provided functionality for content pack authors:
         * Example (for Content Patcher): `"{{InternalAssetKey: assets/prismatic.png}}:0@5,1@5,2@5,3@5,4@5,5@5`
         * Another way of doing the above is using `..` to specify a sequence of frames that all get the same duration: `{{InternalAssetKey: assets/prismatic.png}}:0..5@5`
     * `SourceSizeOverride` - A Vector2 size. If specified, the sprite size to use for frames in `SourceTexture` (normally the size is the same as the size in `TargetRect`). This allows you to fit a larger image in place of a smaller vanilla image. (For example, fitting a 256x256 portrait into the default 64x64 spaces.)
+    * `ChancePerTick` - The percent chance for an animation, in a range of 0 to 1 (ex. `0.10` = 10% chance per tick). This is the chance for the animation to *start when no animation is active*. If an animation has already been triggered, this value is ignored until the animation is finished.
 * NPC Questions - Previously part of [Backstory Questions Framework](https://www.nexusmods.com/stardewvalley/mods/14451):
     * To edit the questions you can ask someone, edit the `spacechase0.SpaceCore/Questions` asset, which is a dictionary with the NPC name for the key, and the value being a list of objects with the following values:
         * `ID` - Required, must be unique, doesn't show to end users

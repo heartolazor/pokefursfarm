@@ -9,7 +9,7 @@
                 "Emily": "{{i18n:Festival.FashionShow.Emily}}",
                 "Lewis": "{{i18n:Festival.FashionShow.Lewis}}",
                 "Marnie": "{{i18n:Festival.FashionShow.Marnie}}",
-                "Jodi": "{{i18n:Festival.FashionShow.Jodi}}",
+                "Jodi": "{{i18n:Festival.FashionShow.Jodi{{PostFestival}}}}",
                 "Caroline": "{{i18n:Festival.FashionShow.Caroline}}",
                 "Sam": "{{i18n:Festival.FashionShow.Sam}}",
                 "Abigail": "{{i18n:Festival.FashionShow.Abigail}}",
@@ -46,7 +46,7 @@
             "Action": "EditData",
             "Target": "Data/Festivals/spring19",
             "Entries": {
-                "Haley": "{{i18n:Festival.FashionShow.Haley.inshow}}",
+                "Haley": "{{i18n:Festival.FashionShow.Haley.inshow}}"
             },
             "When": {
                 "FashionModel |contains= Haley": true
@@ -146,10 +146,10 @@
             "Target": "Data/Festivals/spring19",
             "Entries": {
                 "Yri": "{{i18n:Festival.FashionShow.Yri}}",
-                "Charles": "{{i18n:Festival.FashionShow.Charles}}",
+                "Charles": "{{i18n:Festival.FashionShow.Charles}}"
             },
             "When": {
-                "HasMod: |contains=yri.yri": true,
+                "HasMod: |contains=yri.yri": true
             }
         },
         {
@@ -157,11 +157,9 @@
             "Action": "EditData",
             "Target": "Data/Festivals/spring19",
             "Entries": {            
-              "Sterling": "{{i18n:Festival.FashionShow.Sterling}}",
-              "Sterling_y2": "{{i18n:Festival.FashionShow.Sterling_y2}}",
+              "Sterling": "{{i18n:Festival.FashionShow.Sterling{{PostFestival}}}}",
               "Mia": "{{i18n:Festival.FashionShow.Mia}}",
-              "Henry": "{{Random: {{i18n:Festival.FashionShow.Henry.R1}}++{{i18n:Festival.FashionShow.Henry.R2}}$11|inputSeparator=++}}",
-              "Henry_y2": ""
+              "Henry": "{{i18n:Festival.FashionShow.Henry{{PostFestival}}$11}}"
             },
             "When": {
                 "HasMod: |contains=HimeTarts.ARV.CP": true
@@ -173,7 +171,7 @@
             "Target": "Data/Festivals/spring19",
             "Entries": {            
                 "Sterling": "{{i18n:Festival.FashionShow.Sterling.SterlingMarried}}",
-                "Henry": "{{i18n:Festival.FashionShow.Henry.SterlingMarried}}",    
+                "Henry": "{{i18n:Festival.FashionShow.Henry.SterlingMarried}}"
             },
             "When": { 
                 "Relationship:Sterling": "Married",
@@ -185,7 +183,7 @@
             "Action": "EditData",
             "Target": "Data/Festivals/spring19",
             "Entries": {
-                "Mia": "{{i18n:Festival.FashionShow.Mia.FashionShowComplete}}",    
+                "Mia": "{{i18n:Festival.FashionShow.Mia.FashionShowComplete}}"
             },
             "When": { 
                 "HasFlag |contains= FashionShowComplete": true,
@@ -199,7 +197,7 @@
             "Entries": {
             
                 "Sterling": "{{i18n:Festival.FashionShow.Sterling.FashionShowComplete.SterlingMarried}}",
-                "Henry":"{{Random: {{i18n:Festival.Henry.R1.FashionShowComplete}}++{{i18n:Festival.Henry.R2.FashionShowComplete}}|InputSeparator=++}}",
+                "Henry":"{{i18n:Festival.Henry.{{Random: R1, R2}}.FashionShowComplete}}"
     
             },
             "When": { 

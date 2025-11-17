@@ -1,0 +1,279 @@
+{
+  "Changes": [
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //MEEP stuff for maps
+    {
+      "LogName": "stuff it under Sig's bed",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 22,
+            "Y": 8
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteraction_Image MadDogBearFam/BearfamOldArmyPhoto",
+            "MEEP_CloseupInteraction_Text": "{{i18n:MEEPSigArmyPhoto}}",
+            "MEEP_AddConversationTopic": "MadDogBearFamMEEPArmyPhotoCT 4"
+          }
+        }
+      ]
+    },
+
+    {
+      "LogName": "Sondra shopping list left out in the open like a madwoman",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "When": {
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": false,
+        "HasFlag: anyPlayer|contains=TerenMysteryMail": false
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 7,
+            "Y": 30
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "MadDogBearFam/SigGiftList 0 0 208 160",
+            "MEEP_CloseupInteraction_Text_1": "{{i18n:MEEPSondraListSig}}"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Sondra shopping list left out in the open like a madwoman",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "When": {
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": true,
+        "HasFlag: anyPlayer|contains=TerenMysteryMail": false
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 7,
+            "Y": 30
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "MadDogBearFam/SigGiftList 0 0 208 160",
+            "MEEP_CloseupInteraction_Text_1": "{{i18n:MEEPSondraListSig}}",
+            "MEEP_CloseupInteraction_Image_2": "MadDogBearFam/GunnarGiftList 0 0 208 160",
+            "MEEP_CloseupInteraction_Text_2": "{{i18n:MEEPSondraListGunnar}}!",
+            "MEEP_CloseupInteraction_Image_3": "MadDogBearFam/GudrunGiftList 0 0 208 160",
+            "MEEP_CloseupInteraction_Text_3": "{{i18n:MEEPSondraListGudrun}}"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Sondra shopping list left out in the open like a madwoman",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "When": {
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": true,
+        "HasFlag: anyPlayer|contains=TerenMysteryMail": true
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 7,
+            "Y": 30
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "MadDogBearFam/SigGiftList 0 0 208 160",
+            "MEEP_CloseupInteraction_Text_1": "{{i18n:MEEPSondraListSig}}",
+            "MEEP_CloseupInteraction_Image_2": "MadDogBearFam/GunnarGiftList 0 0 208 160",
+            "MEEP_CloseupInteraction_Text_2": "{{i18n:MEEPSondraListGunnar}}!",
+            "MEEP_CloseupInteraction_Image_3": "MadDogBearFam/GudrunGiftList 0 0 208 160",
+            "MEEP_CloseupInteraction_Text_3": "{{i18n:MEEPSondraListGudrun}}",
+            "MEEP_CloseupInteraction_Image_4": "MadDogBearFam/TerenGiftList 0 0 208 160",
+            "MEEP_CloseupInteraction_Text_4": "{{i18n:MEEPSondraListTeren}}"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Tack it up in the Lodge",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 30,
+            "Y": 25
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteraction_Image MadDogBearFam/BearfamXiaoPostcard",
+            "MEEP_CloseupInteraction_Text": "{{i18n:MEEPFridgePhoto}}"
+          }
+        }
+      ]
+    },
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //DOG STUFF REBORN THRU MEEP <3
+
+    {
+      "LogName": "Sassy Test",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+
+        "MadDog.HashtagBearFam_Sassy": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFamSassy}}",
+          "House": "Barn",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "dog_bark",
+          "BabySound": null,
+          "Texture": "Animals\\MadDogSassy",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": {
+            "Visible": false
+          },
+          "ShadowWhenBaby": {
+            "Visible": false
+          },
+          "ShadowWhenAdultSwims": {
+            "Visible": false
+          },
+          "ShadowWhenAdult": {
+            "Visible": false
+          },
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UseDoubleUniqueAnimationFrames": true,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": true,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "MadDog.BearFam.16199002"
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam_SassyMeepTestOutside": {
+          //"Id": "MadDog.HashtagBearFam_SassyMeepTestOutside",
+          "AnimalId": "MadDog.HashtagBearFam_Sassy",
+          "LocationId": "EastScarp_Village",
+          "DisplayName": "Sassy",
+          "PortraitTexture": "Portraits/MadDog.HashtagBearFam_Sassy",
+          "PetMessage": [
+            "{{i18n:MadDog.HashtagBearFam.SassydiaMEEP{{Random:1++2++3++4++4++5++6++7++8++9++10++11++12++13++14++15++16++17++18++19++20++21++22++23++24++25++26++27++28|inputSeparator=++}}}}"
+          ],
+          "HomeTileX": 40,
+          "HomeTileY": 12,
+          "Condition": "!PLAYER_NPC_RELATIONSHIP Host MadDog.HashtagBearFam.Teren Married, SEASON spring summer fall winter, WEATHER Here Sun Wind" //TIME 610 1800
+        },
+        "MadDog.HashtagBearFam_SassyMeepTestInside": {
+          //"Id": "MadDog.HashtagBearFam_SassyMeepTestInside",
+          "AnimalId": "MadDog.HashtagBearFam_Sassy",
+          "LocationId": "MadDog.BearFam.Custom_BearLodge",
+          "DisplayName": "Sassy",
+          "PortraitTexture": "Portraits/MadDog.HashtagBearFam_Sassy",
+          "PetMessage": [
+            "{{i18n:MadDog.HashtagBearFam.SassydiaMEEP{{Random:1++2++3++4++4++5++6++7++8++9++10++11++12++13++14++15++16++17++18++19++20++21++22++23++24++25++26++27++28|inputSeparator=++}}}}"
+          ],
+          "HomeTileX": "{{Random:33, 41 |key=SassyIndoors}}",
+          "HomeTileY": "{{Random:33, 29 |key=SassyIndoors}}",
+          "Condition": "!PLAYER_NPC_RELATIONSHIP Host MadDog.HashtagBearFam.Teren Married, WEATHER Here Snow Storm Rain GreenRain" //"ANY \"SEASON winter\" \"WEATHER Here Snow Storm Rain GreenRain\" "
+        },
+        //mawwiage
+        "MadDog.HashtagBearFam_SassyMeepTestInside_Marriage": {
+          //"Id": "MadDog.HashtagBearFam_SassyMeepTestInside",
+          "AnimalId": "MadDog.HashtagBearFam_Sassy",
+          "LocationId": "FarmHouse",
+          "DisplayName": "Sassy",
+          "PortraitTexture": "Portraits/MadDog.HashtagBearFam_Sassy",
+          "PetMessage": [
+            "{{i18n:MadDog.HashtagBearFam.SassydiaMEEP{{Random:1++2++3++4++4++5++6++7++8++9++10++11++12++13++14++15++16++17++18++19++20++21++22++23++24|inputSeparator=++}}}}"
+          ],
+          "HomeTileX": "{{SassySpawnMarriedTerenIndoorX}}",
+          "HomeTileY": "{{SassySpawnMarriedTerenIndoorY}}",
+          "Condition": "PLAYER_NPC_RELATIONSHIP Host MadDog.HashtagBearFam.Teren Married, WEATHER Here Snow Storm Rain GreenRain"
+        },
+        "MadDog.HashtagBearFam_SassyMeepTestOutside_Marriage": {
+          //"Id": "MadDog.HashtagBearFam_SassyMeepTestInside",
+          "AnimalId": "MadDog.HashtagBearFam_Sassy",
+          "LocationId": "Farm",
+          "DisplayName": "Sassy",
+          "PortraitTexture": "Portraits/MadDog.HashtagBearFam_Sassy",
+          "PetMessage": [
+            "{{i18n:MadDog.HashtagBearFam.SassydiaMEEP{{Random:1++2++3++4++4++5++6++7++8++9++10++11++12++13++14++15++16++17++18++19++20++21++22++23++24|inputSeparator=++}}}}"
+          ],
+          "HomeTileX": "{{SassySpawnMarriedTerenOutdoorX}}",
+          "HomeTileY": "{{SassySpawnMarriedTerenOutdoorY}}",
+          "Condition": "PLAYER_NPC_RELATIONSHIP Host MadDog.HashtagBearFam.Teren Married, WEATHER Here Sun Wind"
+        }
+      }
+    }
+  ]
+}

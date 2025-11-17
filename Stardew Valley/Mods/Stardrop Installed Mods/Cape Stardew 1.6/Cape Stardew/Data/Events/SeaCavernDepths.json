@@ -197,11 +197,81 @@
   }
   },
 
+{
+  "Action": "EditData",
+  "Target": "Data/Events/Custom_SeaCavernDepths2",
+"Update": "OnLocationChange",
+  "When": {
+"HasVisitedLocation": "Custom_SeaCavernDepths6",
+  },
+  "Entries": {
+    "Cape.14635852/i Cape.LunarCrystalShard/k JQuest3 14635852/gameStateQuery {{HasActiveQuest |contains=JQuestB}}/a 7 22": "XOR/-1000 -1000/farmer 18 29 0 Jelli 18 24 2/swimming Jelli/skippable/globalFade/viewport 18 26 true unfreeze/playSound slosh/pause 100/playSound slosh/pause 2000/speed Jelli 5/move Jelli 0 1 2/playSound slosh/pause 50/stopSwimming Jelli/speed farmer 3/question fork0 \"{{i18n:Dialogue.QuestionEvent2_Jelli}}#{{i18n:Dialogue.QuestionFork2_Response1}}#{{i18n:Dialogue.QuestionFork2_Response2}}\"/pause 200/pause 1000/fork JQuest2/pause 300/speak Jelli \"{{i18n:Dialogue.Jelli2_quest1}}\"/removeQuest JQuestB/pause 100/pause 3000/globalFade/viewport -1000 -1000/end",
+    "JQuest2": "speak Jelli \"{{i18n:Dialogue.Jelli2_quest2}}\"/pause 1000/question fork1 \"{{i18n:Dialogue.QuestionEvent2_Jelli2}}#{{i18n:Dialogue.QuestionFork3_Response1}}#{{i18n:Dialogue.QuestionFork3_Response2}}\"/pause 1000/fork JQuest3/pause 300/speak Jelli \"{{i18n:Dialogue.Jelli_endquest}}\"/globalFade/viewport -1000 -1000/end",
+    "JQuest3": "stopMusic/playMusic poppy/speak Jelli \"{{i18n:Dialogue.Jelli_Lunar}}\"/removeItem (O)Cape.LunarCrystalShard/pause 100/mail prettyStone1/pause 10/removeQuest JQuestB/pause 10/pause 10/removeQuest JQuestD/pause 1000/globalFade/viewport -1000 -1000/end",
+    
+  }
+  },
 
+{
+  "Action": "EditData",
+  "Target": "Data/Events/Custom_SeaCavernDepths2",
+"Update": "OnLocationChange",
+  "When": {
+"HasVisitedLocation": "Custom_SeaCavernDepths6",
+  },
+  "Entries": {
+    "Cape.14635852/i Cape.LunarCrystalShard/k JQuest3 14635852/gameStateQuery {{HasActiveQuest |contains=JQuestB}}/a 12 20": "XOR/-1000 -1000/farmer 18 29 0 Jelli 18 24 2/swimming Jelli/skippable/globalFade/viewport 18 26 true unfreeze/playSound slosh/pause 100/playSound slosh/pause 2000/speed Jelli 5/move Jelli 0 1 2/playSound slosh/pause 50/stopSwimming Jelli/speed farmer 3/question fork0 \"{{i18n:Dialogue.QuestionEvent2_Jelli}}#{{i18n:Dialogue.QuestionFork2_Response1}}#{{i18n:Dialogue.QuestionFork2_Response2}}\"/pause 200/pause 1000/fork JQuest2/pause 300/speak Jelli \"{{i18n:Dialogue.Jelli2_quest1}}\"/removeQuest JQuestB/pause 100/pause 3000/globalFade/viewport -1000 -1000/end",
+    "JQuest2": "speak Jelli \"{{i18n:Dialogue.Jelli2_quest2}}\"/pause 1000/question fork1 \"{{i18n:Dialogue.QuestionEvent2_Jelli2}}#{{i18n:Dialogue.QuestionFork3_Response1}}#{{i18n:Dialogue.QuestionFork3_Response2}}\"/pause 1000/fork JQuest3/pause 300/speak Jelli \"{{i18n:Dialogue.Jelli_endquest}}\"/globalFade/viewport -1000 -1000/end",
+    "JQuest3": "stopMusic/playMusic poppy/speak Jelli \"{{i18n:Dialogue.Jelli_Lunar}}\"/removeItem (O)Cape.LunarCrystalShard/pause 100/mail prettyStone1/pause 10/removeQuest JQuestB/pause 10/pause 10/removeQuest JQuestD/pause 1000/globalFade/viewport -1000 -1000/end",
+    
+  }
+  },
   
+{
+  "Action": "EditData",
+  "Target": "Data/Events/Custom_SeaCavernDepths2",
+"Update": "OnLocationChange",
+  "When": {
+"HasVisitedLocation": "Custom_SeaCavernDepths6",
+  },
+  "Entries": {
+    "Cape.14635852/i Cape.LunarCrystalShard/k JQuest3 14635852/gameStateQuery {{HasActiveQuest |contains=JQuestB}}/a 16 22": "XOR/-1000 -1000/farmer 18 29 0 Jelli 18 24 2/swimming Jelli/skippable/globalFade/viewport 18 26 true unfreeze/playSound slosh/pause 100/playSound slosh/pause 2000/speed Jelli 5/move Jelli 0 1 2/playSound slosh/pause 50/stopSwimming Jelli/speed farmer 3/question fork0 \"{{i18n:Dialogue.QuestionEvent2_Jelli}}#{{i18n:Dialogue.QuestionFork2_Response1}}#{{i18n:Dialogue.QuestionFork2_Response2}}\"/pause 200/pause 1000/fork JQuest2/pause 300/speak Jelli \"{{i18n:Dialogue.Jelli2_quest1}}\"/removeQuest JQuestB/pause 100/pause 3000/globalFade/viewport -1000 -1000/end",
+    "JQuest2": "speak Jelli \"{{i18n:Dialogue.Jelli2_quest2}}\"/pause 1000/question fork1 \"{{i18n:Dialogue.QuestionEvent2_Jelli2}}#{{i18n:Dialogue.QuestionFork3_Response1}}#{{i18n:Dialogue.QuestionFork3_Response2}}\"/pause 1000/fork JQuest3/pause 300/speak Jelli \"{{i18n:Dialogue.Jelli_endquest}}\"/globalFade/viewport -1000 -1000/end",
+    "JQuest3": "stopMusic/playMusic poppy/speak Jelli \"{{i18n:Dialogue.Jelli_Lunar}}\"/removeItem (O)Cape.LunarCrystalShard/pause 100/mail prettyStone1/pause 10/removeQuest JQuestB/pause 10/pause 10/removeQuest JQuestD/pause 1000/globalFade/viewport -1000 -1000/end",
+    
+  }
+  },
   
+{
+  "Action": "EditData",
+  "Target": "Data/Events/Custom_SeaCavernDepths2",
+"Update": "OnLocationChange",
+  "When": {
+"HasVisitedLocation": "Custom_SeaCavernDepths6",
+  },
+  "Entries": {
+    "Cape.14635852/i Cape.LunarCrystalShard/k JQuest3 14635852/gameStateQuery {{HasActiveQuest |contains=JQuestB}}/a 21 21": "XOR/-1000 -1000/farmer 18 29 0 Jelli 18 24 2/swimming Jelli/skippable/globalFade/viewport 18 26 true unfreeze/playSound slosh/pause 100/playSound slosh/pause 2000/speed Jelli 5/move Jelli 0 1 2/playSound slosh/pause 50/stopSwimming Jelli/speed farmer 3/question fork0 \"{{i18n:Dialogue.QuestionEvent2_Jelli}}#{{i18n:Dialogue.QuestionFork2_Response1}}#{{i18n:Dialogue.QuestionFork2_Response2}}\"/pause 200/pause 1000/fork JQuest2/pause 300/speak Jelli \"{{i18n:Dialogue.Jelli2_quest1}}\"/removeQuest JQuestB/pause 100/pause 3000/globalFade/viewport -1000 -1000/end",
+    "JQuest2": "speak Jelli \"{{i18n:Dialogue.Jelli2_quest2}}\"/pause 1000/question fork1 \"{{i18n:Dialogue.QuestionEvent2_Jelli2}}#{{i18n:Dialogue.QuestionFork3_Response1}}#{{i18n:Dialogue.QuestionFork3_Response2}}\"/pause 1000/fork JQuest3/pause 300/speak Jelli \"{{i18n:Dialogue.Jelli_endquest}}\"/globalFade/viewport -1000 -1000/end",
+    "JQuest3": "stopMusic/playMusic poppy/speak Jelli \"{{i18n:Dialogue.Jelli_Lunar}}\"/removeItem (O)Cape.LunarCrystalShard/pause 100/mail prettyStone1/pause 10/removeQuest JQuestB/pause 10/pause 10/removeQuest JQuestD/pause 1000/globalFade/viewport -1000 -1000/end",
+    
+  }
+  },
 
 
+{
+  "Action": "EditData",
+  "Target": "Data/Events/Custom_SeaCavernDepths2",
+"Update": "OnLocationChange",
+  "When": {
+"HasVisitedLocation": "Custom_SeaCavernDepths6",
+  },
+  "Entries": {
+    "Cape.14635852/i Cape.LunarCrystalShard/k JQuest3 14635852/gameStateQuery {{HasActiveQuest |contains=JQuestB}}/a 25 22": "XOR/-1000 -1000/farmer 18 29 0 Jelli 18 24 2/swimming Jelli/skippable/globalFade/viewport 18 26 true unfreeze/playSound slosh/pause 100/playSound slosh/pause 2000/speed Jelli 5/move Jelli 0 1 2/playSound slosh/pause 50/stopSwimming Jelli/speed farmer 3/question fork0 \"{{i18n:Dialogue.QuestionEvent2_Jelli}}#{{i18n:Dialogue.QuestionFork2_Response1}}#{{i18n:Dialogue.QuestionFork2_Response2}}\"/pause 200/pause 1000/fork JQuest2/pause 300/speak Jelli \"{{i18n:Dialogue.Jelli2_quest1}}\"/removeQuest JQuestB/pause 100/pause 3000/globalFade/viewport -1000 -1000/end",
+    "JQuest2": "speak Jelli \"{{i18n:Dialogue.Jelli2_quest2}}\"/pause 1000/question fork1 \"{{i18n:Dialogue.QuestionEvent2_Jelli2}}#{{i18n:Dialogue.QuestionFork3_Response1}}#{{i18n:Dialogue.QuestionFork3_Response2}}\"/pause 1000/fork JQuest3/pause 300/speak Jelli \"{{i18n:Dialogue.Jelli_endquest}}\"/globalFade/viewport -1000 -1000/end",
+    "JQuest3": "stopMusic/playMusic poppy/speak Jelli \"{{i18n:Dialogue.Jelli_Lunar}}\"/removeItem (O)Cape.LunarCrystalShard/pause 100/mail prettyStone1/pause 10/removeQuest JQuestB/pause 10/pause 10/removeQuest JQuestD/pause 1000/globalFade/viewport -1000 -1000/end",
+    
+  }
+  },
    
   ]
 }

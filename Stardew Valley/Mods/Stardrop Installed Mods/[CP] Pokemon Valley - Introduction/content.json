@@ -1,0 +1,49 @@
+{
+   "Format": "2.0.0",
+
+"ConfigSchema" : {
+    
+    "Introduction Pokemon":
+  { "AllowValues" : "Butterfree, Drifloon ",
+    "Default" : "Butterfree",
+  "Description": "Chooses which of the pokemon will be used for the introduction."
+    }
+
+},
+
+   "Changes": [
+    
+    {
+          "Logname": "Title Bird",
+          "Action": "EditImage",
+          "Target": "Minigames/TitleButtons",
+          "FromFile": "assets/{{Introduction Pokemon}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 104, "Height": 18 },
+          "ToArea": { "X": 296, "Y": 230, "Width": 104, "Height": 18 },
+          "When": { "Introduction Pokemon": "Butterfree, Drifloon"}
+      },
+
+{
+         "Action": "EditImage",
+         "Target": "LooseSprites/Cursors",
+         "FromFile": "assets/Cursors.png",
+         "FromArea": {"X": 0, "Y": 737, "Width": 639, "Height": 446},
+         "ToArea": {"X": 0, "Y": 737, "Width": 639, "Height": 446}
+  	   },
+
+		{
+         "Action": "EditImage",
+         "Target": "Minigames/Clouds",
+         "FromFile": "assets/Clouds.png",
+         "FromArea": {"X": 0, "Y": 552, "Width": 512, "Height": 450},
+         "ToArea": {"X": 0, "Y": 552, "Width": 512, "Height": 450}
+  	   },	
+		{
+         "Action": "EditImage",
+         "Target": "Maps/HarveyBalloonTiles",
+         "FromFile": "assets/HarveyBalloonTiles.png",
+         "FromArea": {"X": 112, "Y": 0, "Width": 639, "Height": 256},
+         "ToArea": {"X": 112, "Y": 0, "Width": 639, "Height": 256}
+  	   }
+      ]
+}

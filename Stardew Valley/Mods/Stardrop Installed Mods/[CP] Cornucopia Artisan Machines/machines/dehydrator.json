@@ -59,7 +59,7 @@
 							]
 						}
 					],
-					"MinutesUntilReady": 1750,
+					"DaysUntilReady": 1,
 					"InvalidCountMessage": "[LocalizedText Strings\\Objects:Machine_NeedsInputCount 5]"
 				},
 				"Cornucopia_DriedFlower": {
@@ -72,6 +72,7 @@
 							"RequiredCount": 5
 						},
 						{
+							"Id": "flower_item",
 							"RequiredTags": [
 								"flower_item"
 							],
@@ -101,7 +102,7 @@
 							]
 						}
 					],
-					"MinutesUntilReady": 1750,
+					"DaysUntilReady": 1,
 					"InvalidCountMessage": "[LocalizedText Strings\\Objects:Machine_NeedsInputCount 5]"
 				},
 				"Cornucopia_DriedVegetable": {
@@ -109,15 +110,17 @@
 					"Triggers": [
 						{
 							"RequiredTags": [
-								"category_vegetable",
-								"!herb_item",
-								"!spice_item",
-								"!nut_item",
-								"!edible_mushroom_item",
-								"!grain_item",
-								"!id_o_815"
+								"category_vegetable"
 							],
-							"RequiredCount": 5
+							"RequiredCount": 5,
+							"Condition": "!ITEM_CONTEXT_TAG Input grain_item, !ITEM_CONTEXT_TAG Input nut_item, ITEM_EDIBILITY Input 1"
+						},
+						{
+							"RequiredTags": [
+								"category_greens"
+							],
+							"RequiredCount": 5,
+							"Condition": "!ITEM_CONTEXT_TAG Input nut_item, ITEM_EDIBILITY Input 1"
 						}
 					],
 					"OutputItem": [
@@ -143,7 +146,7 @@
 							]
 						}
 					],
-					"MinutesUntilReady": 1750,
+					"DaysUntilReady": 1,
 					"InvalidCountMessage": "[LocalizedText Strings\\Objects:Machine_NeedsInputCount 5]"
 				}
 			}

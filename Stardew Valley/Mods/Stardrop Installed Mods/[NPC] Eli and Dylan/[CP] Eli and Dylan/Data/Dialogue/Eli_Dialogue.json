@@ -14,7 +14,7 @@
 			//Entry Dialogue
 
 	         "Saloon_Entry": "{{i18n:Core.NovaEli.SaloonEntry}}",
-			 "SeedShop_Entry": "{{i18n:Core.NovaEli.SeedShopEntry|FName={{FarmName}}}}",
+			 "SeedShop_Entry": "{{i18n:Core.NovaEli.SeedShopEntry{{EnDDialogueTokens}}}}",
 			 "Hospital_Entry": "{{i18n:Core.NovaEli.HospitalEntry}}",
 
 			//Important Dates
@@ -57,6 +57,7 @@
 			"WinterStar_GiveGift_After": "{{i18n:Core.NovaEli.WinterStar_GiveGift_After}}"
 		}
 	},
+
 	{
 		"LogName": "Eli 0-4 Heart Dialogue",
 		"Action": "EditData",
@@ -104,7 +105,7 @@
 		"Target": "Characters/Dialogue/Nova.Eli",
 		"Priority": "Late",
 		"Entries": 	{ 
-			"{{WeekDay}}": "{{i18n:Core.NovaEli.5-10.{{season}}.{{Random:{{Range: 1, 20}}|key={{Time}}}}{{Random_Dialogue_Tokens}}}}#$action AddMail Current EnD_Eli_OverrideSeenToday received"
+			"{{WeekDay}}": "{{i18n:Core.NovaEli.5-10.{{season}}.{{Random:{{Range: 1, 20}}|key={{Time}}}}}}#$action AddMail Current EnD_Eli_OverrideSeenToday received"
 		},
 		"When": { 
 			"Query: {{Random: {{Range: 1, 15}}|key=ESO}} = 1": true,
@@ -169,7 +170,7 @@
 		"Target": "Characters/Dialogue/Nova.Eli",
 		"Priority": "Late",
 		"Entries": {
-			"{{WeekDay}}": "{{i18n:Core.NovaEli.TerenRomantic.{{Random:{{Range: 1, 2}}|key={{Time}}}}}}#$action AddMail Current EnD_Eli_OverrideSeenToday received"
+			"{{WeekDay}}": "{{i18n:Core.NovaEli.TerenRomantic.{{Random:{{Range: 1, 10}}|key={{Time}}}}}}#$action AddMail Current EnD_Eli_OverrideSeenToday received"
 		},
 		"When": {
 			"HasMod": "MadDog.HashtagBearFam",
@@ -198,7 +199,7 @@
 		}
 	},
 
-	//Diamond in the Rough Commentary
+	//Lurking in the Dark Commentary
 
 	{
 		"LogName": "Eli Sen Commentary",
@@ -328,15 +329,15 @@
 			"divorced_once": "{{i18n:Core.NovaEli.divorced_once}}",
   			"divorced_twice": "{{i18n:Core.NovaEli.divorced_twice}}",
 			"cropMatured_260": "{{i18n:Core.NovaEli.cropMatured_260}}",
-			"cropMatured_{{ModID}}_TenebrousNova.EnD.MandrakeRoot": "{{i18n:Core.NovaEli.cropMatured_TenebrousNova.EnD.MandrakeRoot}}",
-			"cropMatured_{{ModID}}_TenebrousNova.EnD.SanguineHeart": "{{i18n:Core.NovaEli.cropMatured_TenebrousNova.EnD.SanguineHeart}}",
-			"cropMatured_{{ModID}}_TenebrousNova.EnD.BeholderFruit": "{{i18n:Core.NovaEli.cropMatured_TenebrousNova.EnD.BeholderFruit}}",
-			"cropMatured_{{ModID}}_TenebrousNova.EnD.DragonEye": "{{i18n:Core.NovaEli.cropMatured_TenebrousNova.EnD.DragonEye}}",
-			"cropMatured_{{ModID}}_TenebrousNova.EnD.CrystallineLily": "{{i18n:Core.NovaEli.cropMatured_TenebrousNova.EnD.CrystallineLily}}",
-			"cropMatured_{{ModID}}_TenebrousNova.EnD.PixieBloom": "{{i18n:Core.NovaEli.cropMatured_TenebrousNova.EnD.PixieBloom}}",
-			"cropMatured_{{ModID}}_TenebrousNova.EnD.Bluffshroom": "{{i18n:Core.NovaEli.cropMatured_TenebrousNova.EnD.Bluffshroom}}",
-			"fishCaught_{{ModID}}_TenebrousNova.EnD.LambentHyphafin": "{{i18n:Core.NovaEli.fishCaught_TenebrousNova.EnD.LambentHyphafin}}",
-			"fishCaught_{{ModID}}_TenebrousNova.EnD.Junimeel": "{{i18n:Core.NovaEli.fishCaught_TenebrousNova.EnD.Junimeel}}",
+			"cropMatured_{{ModID}}_MandrakeRoot": "{{i18n:Core.NovaEli.cropMatured_MandrakeRoot}}",
+			"cropMatured_{{ModID}}_SanguineHeart": "{{i18n:Core.NovaEli.cropMatured_SanguineHeart}}",
+			"cropMatured_{{ModID}}_BeholderFruit": "{{i18n:Core.NovaEli.cropMatured_BeholderFruit}}",
+			"cropMatured_{{ModID}}_DragonEye": "{{i18n:Core.NovaEli.cropMatured_DragonEye}}",
+			"cropMatured_{{ModID}}_CrystallineLily": "{{i18n:Core.NovaEli.cropMatured_CrystallineLily}}",
+			"cropMatured_{{ModID}}_PixieBloom": "{{i18n:Core.NovaEli.cropMatured_PixieBloom}}",
+			"cropMatured_{{ModID}}_Bluffshroom": "{{i18n:Core.NovaEli.cropMatured_Bluffshroom}}",
+			"fishCaught_{{ModID}}_LambentHyphafin": "{{i18n:Core.NovaEli.fishCaught_LambentHyphafin}}",
+			"fishCaught_{{ModID}}_Junimeel": "{{i18n:Core.NovaEli.fishCaught_Junimeel}}",
 			"gotPet": "{{i18n:Core.NovaEli.gotPet}}",
 			"firstVisit_TenebrousNova.EliDylan.CP_ESEDHouse": "{{i18n:Core.NovaEli.firstVisit_TenebrousNova.EliDylan.CP_ESEDHouse}}",
 			"houseUpgrade_1": "{{i18n:Core.NovaEli.houseUpgrade_1}}",
@@ -363,7 +364,7 @@
 		"Target": "Characters/Dialogue/Nova.Eli",
 		"Entries": {
 			"Mine_20_4": "{{i18n:Locations.NovaEli.Mines.{{Random:{{Range: 1, 3}}}}}}",
-			"ArchaeologyHouse_5_10": "{{i18n:Locations.NovaEli.GuntherDesk.{{Random:{{Range:1, 3}}}}{{Random_Dialogue_Tokens}}}}",
+			"ArchaeologyHouse_5_10": "{{i18n:Locations.NovaEli.GuntherDesk.{{Random:{{Range:1, 3}}}}}}",
 			"ArchaeologyHouse_11_9": "{{i18n:Locations.NovaEli.Library.{{Random:{{Range: 1, 3}}}}}}",
 			"ArchaeologyHouse_18_9": "{{i18n:Locations.NovaEli.Library.{{Random:{{Range: 1, 3}}}}}}",
 			"ArchaeologyHouse_19_5": "{{i18n:Locations.NovaEli.Library.{{Random:{{Range: 1, 3}}}}}}",
@@ -381,8 +382,10 @@
 			"Forest_35_26": "{{i18n:Locations.NovaEli.LateNightRain}}",
 			"Forest_92_20": "{{i18n:Locations.NovaEli.RanchFence.{{Random:{{Range: 1, 3}}}}}}",
 			"Forest_97_38": "{{i18n:Locations.NovaEli.TroutDerby.1}}",
-			"DesertFestival_30_56": "{{i18n:Locations.NovaEli.DesertFestival.1}}",
-			"Beach_50_21": "{{i18n:Locations.NovaEli.SquidFest.1}}"
+			"DesertFestival_31_56": "{{i18n:Locations.NovaEli.DesertFestival.1}}",
+			"Beach_50_21": "{{i18n:Locations.NovaEli.SquidFest.1}}",
+			"sapphicsaph_pitv.CommunityCenterPride_50_7": "{{i18n:Locations.NovaEli.PrideFestival.1}}",
+			//"Daine.TPOChoice_Aliyah_House_18_32": "Thanks for having me, Ali!$1#$action Spiderbuttons.BETAS_TextAboveHead Nova.Eli \"Sometimes I dream about cheese.\"",
 		}
 	},
 

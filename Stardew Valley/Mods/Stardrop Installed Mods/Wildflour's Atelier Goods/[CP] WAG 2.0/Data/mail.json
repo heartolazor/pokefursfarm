@@ -343,7 +343,7 @@
     "LogName":"Wax Cauldron Machine Mail Trigger",
     "Action": "EditData",
     "Target": "Data/TriggerActions",
-    "When": {"Atelier.Cauldron/ConfigValue:EasyRecipes": false, "Query: ({{Atelier.Cauldron/ConfigValue:Candles}} = 'true') OR ({{Atelier.Cauldron/ConfigValue:Soap}} = 'true')": true},
+    "When": {"Atelier.Cauldron/ConfigValue:EasyRecipes": false, "Query: ('{{Atelier.Cauldron/ConfigValue:Candles}}' = 'true') OR ('{{Atelier.Cauldron/ConfigValue:Soap}}' = 'true')": true},
     "Entries": {
         "Wildflour.AtelierGoods_CandleStation_Recipe_Trigger": {
             "Id": "Wildflour.AtelierGoods_CandleStation_Recipe_Trigger",
@@ -358,7 +358,7 @@
     "LogName":"Fragrance Station Machine Mail Trigger",
     "Action": "EditData",
     "Target": "Data/TriggerActions",
-    "When": {"Atelier.Cauldron/ConfigValue:EasyRecipes": false, "Query: ({{Atelier.Cauldron/ConfigValue:Perfume}} = 'true') OR ({{Atelier.Cauldron/ConfigValue:Incense}} = 'true')": true},
+    "When": {"Atelier.Cauldron/ConfigValue:EasyRecipes": false, "Query: ('{{Atelier.Cauldron/ConfigValue:Perfume}}' = 'true') OR ('{{Atelier.Cauldron/ConfigValue:Incense}}' = 'true')": true},
     "Entries": {
        "Wildflour.AtelierGoods_FragranceStation_Recipe_Trigger": {
             "Id": "Wildflour.AtelierGoods_FragranceStation_Recipe_Trigger",
@@ -390,7 +390,7 @@
     "LogName":"Candy Jar Machine Mail Trigger",
     "Action": "EditData",
     "Target": "Data/TriggerActions",
-    "When":  {"Atelier.Cauldron/ConfigValue:EasyRecipes": false, "Query: ({{Atelier.Cauldron/ConfigValue:Gumballs}} = 'true') OR ({{Atelier.Cauldron/ConfigValue:JellyBeans}} = 'true')": true},
+    "When":  {"Atelier.Cauldron/ConfigValue:EasyRecipes": false, "Query: ('{{Atelier.Cauldron/ConfigValue:Gumballs}}' = 'true') OR ('{{Atelier.Cauldron/ConfigValue:JellyBeans}}' = 'true')": true},
     "Entries": {
         "Wildflour.AtelierGoods_CandyJar_Recipe_Trigger": {
             "Id": "Wildflour.AtelierGoods_CandyJar_Recipe_Trigger",
@@ -405,7 +405,7 @@
     "LogName":"Sugar Boiler Machine Mail Trigger",
     "Action": "EditData",
     "Target": "Data/TriggerActions",
-    "When":  {"Atelier.Cauldron/ConfigValue:EasyRecipes": false, "Query: ({{Atelier.Cauldron/ConfigValue:Lollipops}} = 'true') OR ({{Atelier.Cauldron/ConfigValue:HardCandies}} = 'true')": true},
+    "When":  {"Atelier.Cauldron/ConfigValue:EasyRecipes": false, "Query: ('{{Atelier.Cauldron/ConfigValue:Lollipops}}' = 'true') OR ('{{Atelier.Cauldron/ConfigValue:HardCandies}}' = 'true')": true},
     "Entries": {
         "Wildflour.AtelierGoods_SugarBoiler_Recipe_Trigger": {
             "Id": "Wildflour.AtelierGoods_SugarBoiler_Recipe_Trigger",
@@ -420,7 +420,7 @@
     "LogName":"Blast Chiller Machine Mail Trigger",
     "Action": "EditData",
     "Target": "Data/TriggerActions",
-    "When": {"Atelier.Cauldron/ConfigValue:EasyRecipes": false, "Query: ({{Atelier.Cauldron/ConfigValue:Popsicles}} = 'true') OR ({{Atelier.Cauldron/ConfigValue:Coffee}} = 'true')": true},
+    "When": {"Atelier.Cauldron/ConfigValue:EasyRecipes": false, "Query: ('{{Atelier.Cauldron/ConfigValue:Popsicles}}' = 'true') OR ('{{Atelier.Cauldron/ConfigValue:Coffee}}' = 'true')": true},
     "Entries": {
         "Wildflour.AtelierGoods_ChillerRecipe_Trigger": {
             "Id": "Wildflour.AtelierGoods_ChillerRecipe_Trigger",
@@ -435,7 +435,7 @@
     "LogName":"Kitchen Blender Machine Mail Trigger",
     "Action": "EditData",
     "Target": "Data/TriggerActions",
-    "When":{"Atelier.Cauldron/ConfigValue:EasyRecipes": false, "Query: ({{Atelier.Cauldron/ConfigValue:Smoothies}} = 'true') OR ({{Atelier.Cauldron/ConfigValue:Milkshakes}} = 'true')": true},
+    "When":{"Atelier.Cauldron/ConfigValue:EasyRecipes": false, "Query: ('{{Atelier.Cauldron/ConfigValue:Smoothies}}' = 'true') OR ('{{Atelier.Cauldron/ConfigValue:Milkshakes}}' = 'true')": true},
     "Entries": {
         "Wildflour.AtelierGoods_BlenderRecipeTrigger": {
             "Id": "Wildflour.AtelierGoods_BlenderRecipeTrigger",

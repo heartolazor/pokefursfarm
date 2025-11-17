@@ -395,40 +395,12 @@
     },
 
 
-{
-      "Action": "EditData",
-      "Target": "UnlockableBundles/Bundles",
-      "Entries": {
-        "Cape.IslandDebris": {
-          "Location": "Custom_CapeStardew",
-          "BundleName": "{{i18n:UB.IslandDebris}}",
-          "BundleSlots": 3,
-          "DrawQuestionMark": true,
-          "ShopPosition": "11,106",
-          "ShopType": "ParrotPerch",
-	"ShopTexture": "None",
-	"ParrotTarget": { "X": 11, "Y": 104, "Width": 2, "Height": 2 },
-	"ParrotIndex": "1",
-          "EditMap": "Maps/Custom_CapeRockPatch",
-          "EditMapPosition": "9,103",
-          "EditMapMode": "Replace",
-          "Price": {
-            "90": 1, //CactusFruit//
-          },
-	"ShopEvent": "continue/11 105/farmer 11 106 0/pause 1000/message \"...\"/RemoveTile 11 105 Buildings/pause 500/message \"The path is clear now!\"/pause 100/ub_applyPatch/end",
-           
-        }
-      }
-    },
+
 ///GreenRainOffering//
 {
   "Action": "EditData",
   "Target": "UnlockableBundles/Bundles",
   "Update": "OnLocationChange",
-  "When": {
-    "HasSeenEvent": "orb_hint_intro",
-    "HasFlag": "orbLightUnlocked"
-  },
   "Entries": {
     "Cape.SecretOrb": {
       "Location": "Custom_CapeCavingSecretroom",
@@ -439,7 +411,7 @@
       "SpeechBubbleOffset": "0, -16",
       "InteractionSound": "junimoMeep1",
       "InteractionShake": true,
-
+	
       "BundleName": "{{i18n:UB.SecretOrb}}",
       "BundleDescription": "{{i18n:UB.SecretOrb.Description}}",
       "OverviewDescription": "{{i18n:UB.SecretOrb.Overview}}", 
@@ -460,11 +432,81 @@
 
       "BundleCompletedActions": [
         "AddMail Current greenrainMossyDewBegin received"
-      ]
+      ],
+"SpecialPlacementRequirements": [
+    {
+      "Type": "TriggerAction",
+	"TriggerActionKey": "Cape.SecretOrb",
+      
+    }
+  ],
+
+"ShopEvent": "none/-1000 -1000/farmer 7 3 2/skippable/viewport 7 6/addMailReceived greenRainMossyDew/pause 800/message \"{{i18n:MossyBundle.Text3}}\"/pause 20/addObject 7 4 OrbOfTheTides 1/pause 10/glow 0 255 0 true/pause 800/emote farmer 20/startJittering/pause 2500/stopGlowing/pause 200/globalFade/ub_applypatch/viewport -1000 -1000/end position 7 3",
     }
   }
+},
+
+///GreenRainOfferingRepeat//
+{
+  "Action": "EditData",
+  "Target": "UnlockableBundles/Bundles",
+  "Update": "OnLocationChange",
+  "When": {
+"HasFlag": "greenrainMossyDewBegin"
+  },
+  "Entries": {
+    "Cape.SecretOrb.Repeat": {
+      "Location": "Custom_CapeCavingSecretroom",
+      "ShopPosition": "7, 2",
+      "ShopType": "SpeechBubble",
+      "ShopTexture": "UnlockableBundles/ShopTextures/Junimo",
+      "ShopColor": "Goldenrod",
+      "SpeechBubbleOffset": "0, -16",
+      "InteractionSound": "junimoMeep1",
+      "InteractionShake": true,
+      "AlternativeShopPositions": [ "10, 4", "6, 4" ],
+      "BundleName": "{{i18n:UB.SecretOrb2}}",
+      "BundleDescription": "{{i18n:UB.SecretOrb.Description2}}",
+      "OverviewDescription": "{{i18n:UB.SecretOrb.Overview2}}",
+      "OverviewColor": "rgba(80,150,80,200)",
+      "OverviewTextureWidth": 32,
+      "OverviewAnimation": "0-3@400, 4-5@600",
+
+      "BundleSlots": 1,
+      "DrawQuestionMark": true,
+
+      "Price": {
+        "MossSoup": 1
+      },
+
+      "BundleReward": {
+        "MysteryBox": 1
+      },
+
+      "BundleCompletedActions": [
+        "AddMail Current greenrainMossyDewBegin received",
+"MarkActionApplied Current {{ModId}}_greenRainTriggerRepeat false"
+      ],
+
+      "SpecialPlacementRequirements": [
+        {
+          "Type": "TriggerAction",
+          "TriggerActionKey": "{{ModId}}_greenRainTriggerRepeat"
+        },
+        {
+          "Type": "BundleCompletion",
+          "BundleKey": "Cape.SecretOrb"
+        }
+      ],
+
+"ShopEvent": "none/-1000 -1000/farmer 7 3 2/skippable/viewport 7 6/addMailReceived greenRainMossyDew/pause 800/message \"{{i18n:MossyBundle.Text4}}\"/pause 20/addObject 7 4 OrbOfTheTides 1/pause 10/glow 0 255 0 true/pause 800/emote farmer 20/startJittering/pause 2500/stopGlowing/pause 200/globalFade/viewport -1000 -1000/ub_applypatch/end position 7 3",
+
+"EditMap": "Maps/Custom_CapeCavingSecretroomWarpsLadderUnlock",
+          "EditMapPosition": "7,2",
+          "EditMapMode": "Replace",
+    }
 }
-    
+    }
 
   ]
 }

@@ -1,0 +1,161 @@
+{
+  
+  "Name": "ProtoVisor",
+	
+  // FRONT
+  "FrontAccessory": {
+    "DrawAfterPlayer": true,
+    "DisableGrayscale": false,
+    "DrawOrderOverride": {
+      "Preposition": "After",
+      "AppearanceType": "Hat"
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 1
+    },
+    "ColorMaskLayers": [
+      {
+        "Name": "Eye Color",
+        "DefaultColor": [ 104, 43, 15 ],
+        "Values": [
+          [ 200, 200, 200 ],
+          [ 127, 127, 127 ]
+        ]
+      }
+    ],
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 32
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "CurrentFarmerFrame",
+            "Value": 0
+          }
+        ]
+      }
+    ]
+  },
+
+	// RIGHT
+  "RightAccessory": {
+    "DrawAfterPlayer": true,
+    "DisableGrayscale": false,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+      "ColorMaskLayers": [
+      {
+        "Name": "Eye Color",
+        "DefaultColor": [ 104, 43, 15 ],
+        "Values": [
+          [ 200, 200, 200 ],
+          [ 127, 127, 127 ]
+        ]
+      }
+    ],
+    "DrawOrderOverride": {
+      "Preposition": "After",
+      "AppearanceType": "Hat"
+    },
+    "HeadPosition": {
+      "X": -0,
+      "Y": 1
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 32
+    },
+ "UniformAnimation": [
+      {
+        "Frame": 7,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "CurrentFarmerFrame",
+            "Value": 0
+          }
+        ]
+      }
+    ]
+  },
+
+	// LEFT
+  "LeftAccessory": {
+    "DrawAfterPlayer": true,
+    "DisableGrayscale": false,
+    "Flipped": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ColorMaskLayers": [
+      {
+        "Name": "Eye Color",
+        "DefaultColor": [ 104, 43, 15 ],
+        "Values": [
+          [ 200, 200, 200 ],
+          [ 127, 127, 127 ]
+        ]
+      }
+    ],
+    "DrawOrderOverride": {
+      "Preposition": "After",
+      "AppearanceType": "Hat"
+    },
+    "HeadPosition": {
+      "X": -0,
+      "Y": 1
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 32
+    },
+ "UniformAnimation": [
+      {
+        "Frame": 7,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "CurrentFarmerFrame",
+            "Value": 0
+          }
+        ]
+      }
+    ]
+  },
+
+	// BACK
+  "BackAccessory": {
+    "DrawAfterPlayer": false,
+    "DisableGrayscale": false,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": -0,
+      "Y": -2
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 13,
+        "Duration": 5000
+      },
+    ]
+  }
+}

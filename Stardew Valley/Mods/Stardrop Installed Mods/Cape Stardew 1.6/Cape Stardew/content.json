@@ -93,6 +93,14 @@
     "ShadowStrikeProjectile": {
       "AllowValues": "on, off",
       "Default": "on"
+    },
+"MossyDewProjectile": {
+      "AllowValues": "on, off",
+      "Default": "on"
+    },
+"WitherHollowProjectile": {
+      "AllowValues": "on, off",
+      "Default": "on"
     }
   },
   "DynamicTokens": [
@@ -216,6 +224,10 @@
       "Name": "Custom_SeaCavernDepths5",
       "FromMapFile": "assets/SeaCavernDepths5.tmx"
     },
+ {
+      "Name": "Custom_SeaCavernDepthSecret",
+      "FromMapFile": "assets/SeaCavernDepthSecret.tmx"
+    },
     {
       "Name": "Custom_SeaCavernDepths6",
       "FromMapFile": "assets/SeaCavernDepths6.tmx"
@@ -305,6 +317,14 @@
       "FromMapFile": "assets/CapeKeyMaze3.tmx"
     },
 {
+      "Name": "Custom_CapeKeyMaze4",
+      "FromMapFile": "assets/CapeKeyMaze4.tmx"
+    },
+{
+      "Name": "Custom_CapeKeyMaze5",
+      "FromMapFile": "assets/CapeKeyMaze5.tmx"
+    },
+{
       "Name": "Custom_RealSecretBase2Unlocked",
       "FromMapFile": "assets/RealSecretBase2Unlocked.tmx"
     },
@@ -375,6 +395,14 @@
  {
       "Name": "Custom_CapeCavingSecretroom",
       "FromMapFile": "assets/CapeCavingSecretroom.tmx"
+    },
+ {
+      "Name": "Custom_CapeCavingSecretroomWarpsLadderUnlock",
+      "FromMapFile": "assets/CapeCavingSecretroomWarpsLadderUnlock.tmx"
+    },
+ {
+      "Name": "Custom_CapeMossy",
+      "FromMapFile": "assets/CapeMossy.tmx"
     },
  {
       "Name": "Custom_CapeCavingSecretroomWarps",
@@ -710,6 +738,7 @@
         "Cape.current": "{{i18n:Strings.Cape.current}}",
         "Cape.4": "{{i18n:Strings.Cape.4}}",
         "Cave.1": "{{i18n:Strings.Cave.1}}",
+	"Cape.SecretHint": "{{i18n:Strings.Cape.SecretHint}}",
         "Abandoned.1": "{{i18n:Strings.Abandoned.1}}",
         "Abandoned.2": "{{i18n:Strings.Abandoned.2}}",
         "cape.forest.1": "^= {{i18n:Strings.cape.forest.1}} = ^",
@@ -956,6 +985,11 @@
       "Target": "Custom_SeaCavernDepths5",
       "FromFile": "assets/SeaCavernDepths5.tmx"
     },
+ {
+"Action": "Load",
+      "Target": "Custom_SeaCavernDepthSecret",
+      "FromFile": "assets/SeaCavernDepthSecret.tmx"
+    },
     {
 "Action": "Load",
       "Target": "Custom_SeaCavernDepths6",
@@ -1066,6 +1100,17 @@
       "Target": "Custom_CapeKeyMaze3",
       "FromFile": "assets/CapeKeyMaze3.tmx"
     },
+
+{
+"Action": "Load",
+      "Target": "Custom_CapeKeyMaze4",
+      "FromFile": "assets/CapeKeyMaze4.tmx"
+    },
+{
+"Action": "Load",
+      "Target": "Custom_CapeKeyMaze5",
+      "FromFile": "assets/CapeKeyMaze5.tmx"
+    },
 {
 "Action": "Load",
       "Target": "Custom_RealSecretBase2Unlocked",
@@ -1131,6 +1176,17 @@
 "Action": "Load",
       "Target": "Custom_CapeCavingSecretroomWarps",
       "FromFile": "assets/CapeCavingSecretroomWarps.tmx"
+    },
+
+{
+"Action": "Load",
+      "Target": "Custom_CapeCavingSecretroomWarpsLadderUnlock",
+      "FromFile": "assets/CapeCavingSecretroomWarpsLadderUnlock.tmx"
+    },
+{
+"Action": "Load",
+      "Target": "Custom_CapeMossy",
+      "FromFile": "assets/CapeMossy.tmx"
     },
 
 {
@@ -1697,6 +1753,11 @@
  {
       "Action": "Include",
       "FromFile": "Weapons/MossyDew/weapon.json"
+    },
+
+{
+      "Action": "Include",
+      "FromFile": "Weapons/WitherHollow/weapon.json"
     },
     {
       "Action": "Include",

@@ -6079,7 +6079,7 @@ ________      ________ _   _ _______ _____
   "Events.SnS.Ch4.Dandelion.6.Roslin.04": "Yes, he has. Well. Whatever makes his little shadowy heart flutter.$6",
   "Events.SnS.Ch4.Dandelion.6.Solomon.05": "You've arrived! Finally.",
   "Events.SnS.Ch4.Dandelion.6.Solomon.06": "Alright, listen up, chump! Roslin's told me of your magical prowess, so I figured I'd do my part. You know, because I'm benevolent and kind and whatever.$7#$b#Good sorcerers don't gatekeep knowledge, and I'm a VERY good sorcerer. The best, even. Perhaps. Anyway.$4#$b#I've prepared you this book! I worked really hard to make it pretty and nice so you'd better like it!$5",
-  "Events.SnS.Ch4.Dandelion.6.Message.07": "Solomon has given you your very own Grimoire! Use it do magical research, learn new spells, and unlock your full potential as a {{CasterType}}, and beyond! It's stored in your Powers menu.",
+  "Events.SnS.Ch4.Dandelion.6.Message.07": "Solomon has given you your very own Grimoire! Unlock your full potential as a spellcaster. Allows for passive Aether regeneration as you advance your spellcasting skills.",
   "Events.SnS.Ch4.Dandelion.6.Solomon.08": "Of course, you'll have to figure out the rest on your own. What, do I look like some kinda mentor to you?$2#$b#Use essences! Make potions! Cast spells! Take the fabric of reality and tie it in a bow, who cares? Have fun, live deliciously!$1",
 
   // DANDELION 10 ROSLIN 10 
@@ -6813,8 +6813,11 @@ ________      ________ _   _ _______ _____
   "power.mythicorichalcumshield.description": "Passed to you by Dandelion. Made by Mateo out of Orichalcum and other rare materials.",
 
   "power.magicalgrimoire.name": "Magical Grimoire",
-  "power.magicalgrimoire.description": "Bound by hand for you by Solomon. Use it to research new spells.",
+  "power.magicalgrimoire.description": "Bound by hand for you by Solomon. Allows for passive Aether regeneration as you advance your spellcasting skills.",
 
+  "magicitem.standaloneguidebook.name": "Player's Pocket Handbook",
+  "magicitem.standaloneguidebook.description": "A standalone edition of the S&S guidebook. Table not included.",
+  
   "magicitem.artificerbook.name": "Tasha's Artificer Handbook",
   "magicitem.artificerbook.description": "A dusty tome with old blueprints.",
 
@@ -7213,12 +7216,13 @@ ________      ________ _   _ _______ _____
   "weapon.elysium-blade.name": "Elysium Blade",
   "weapon.elysium-blade.description": "A stygium blade, purified.",
 
-  "catgeory.raremineral": "Rare Mineral",
-  "catgeory.potion": "Potion",
-  "catgeory.druidic": "Druidic",
-  "catgeory.sheild": "Shield",
-  "catgeory.snack": "Snack",
-  "catgeory.corruptedobject": "Corrupted Object",
+  "category.raremineral": "Rare Mineral",
+  "category.book": "Book",
+  "category.potion": "Potion",
+  "category.druidic": "Druidic",
+  "category.sheild": "Shield",
+  "category.snack": "Snack",
+  "category.corruptedobject": "Corrupted Object",
 
   "witchcraft.earth-essence.name": "Earth Essence",
   "witchcraft.earth-essence.description": "Essence of the earth.",
@@ -7522,15 +7526,15 @@ ________      ________ _   _ _______ _____
   "config.Nyapu Shadowfolk.values.false": "false",
 
   "config.Player Pronouns 1.name": "Player Pronouns 1",
-  "config.Player Pronouns 1.description": "Sets the player's desired pronouns.",
+  "config.Player Pronouns 1.description": "Sets the player's desired pronouns. You can enter multiple sets for randomized selection each day separated by ','. (Example: They, She, He)",
   "config.Player Pronouns 2.name": "Player Pronouns 2",
-  "config.Player Pronouns 2.description": "Sets the player's desired pronouns.",
+  "config.Player Pronouns 2.description": "Sets the player's desired pronouns. You can enter multiple sets for randomized selection each day separated by ','. (Example: Them, Her, Him)",
   "config.Player Pronouns 3.name": "Player Pronouns 3",
-  "config.Player Pronouns 3.description": "Sets the player's desired pronouns.",
+  "config.Player Pronouns 3.description": "Sets the player's desired pronouns. You can enter multiple sets for randomized selection each day separated by ','. (Example: Theirs, Hers, His)",
   "config.Player Pronouns 4.name": "Player Pronouns 4",
-  "config.Player Pronouns 4.description": "Sets the player's desired pronouns.",
+  "config.Player Pronouns 4.description": "Sets the player's desired pronouns. You can enter multiple sets for randomized selection each day separated by ','. (Example: Themselves, Herself, Himself)",
   "config.Player Pronoun Identifier.name": "Player Pronoun Identifier",
-  "config.Player Pronoun Identifier.description": "Would usually be \"is\" or \"are\", depending on context. Example: She IS so cool! VS. They ARE so cool!",
+  "config.Player Pronoun Identifier.description": "Would usually be \"is\" or \"are\", depending on context. (She IS so cool! VS. They ARE so cool!) You can enter multiple sets for randomized selection each day separated by ','. (Example: are, is)",
 
   "config.CustomMateoSoren.name": "CustomMateoSoren",
   "config.CustomMateoSoren.description": "Turns on male toddler sprites that look like Mateo.",
@@ -7740,7 +7744,7 @@ ________      ________ _   _ _______ _____
   "config.HandbookColorScheme.values.Mahogany": "Mahogany",
 
   "config.EquipmentMenuConfig.name": "EquipmentMenuConfig",
-  "config.EquipmentMenuConfig.description": "Recolors the Equipment Menu added by Spacecore to match Bog's Forest UI, DaisyNiko's Earthy UI, Enteis' Natural Dark Wood UI, Nom0ri's Vintage UI V2 for 1.6, Shinchan's Purple UI, SQBR's StarryBlue UI, TheFrenchDodo's Sakura Interface Redux, VinillaBean's Lavender Dreams UI, Silvermoonchan's Purple Galaxy UI, notbelovely's Cozy Accent Interface or justaslime1's Cherry Blossom UI.",
+  "config.EquipmentMenuConfig.description": "Recolors the Equipment Menu added by Spacecore to match Bog's Forest UI, DaisyNiko's Earthy UI, Enteis' Natural Dark Wood UI, Nom0ri's Vintage UI V2 for 1.6, Shinchan's Purple UI, SQBR's StarryBlue UI, TheFrenchDodo's Sakura Interface Redux, VinillaBean's Lavender Dreams UI, Silvermoonchan's Purple Galaxy UI, notbelovely's Cozy Accent Interface, Lita's Unofficial Starblue Valley, SugarSugarRuin's Overgrown Flowery Interface or justaslime1's Cherry Blossom UI.",
   "config.EquipmentMenuConfig.values.true": "true",
   "config.EquipmentMenuConfig.values.false": "false",
 

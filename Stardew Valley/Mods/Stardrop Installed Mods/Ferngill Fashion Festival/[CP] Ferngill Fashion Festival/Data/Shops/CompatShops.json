@@ -1,6 +1,43 @@
 {
     "Changes": [
         {
+            "LogName": "Add Shops",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "ShopFashionRose": {
+                    "ID": "ShopFashionRose",
+                    "Owners": [
+                        {
+                            "Condition": null,
+                            "Portrait": "Portraits/FFFShopRose{{MouseDisguise}}",
+                            "Dialogues": [
+                                {
+                                    "Dialogue": "{{i18n:ShopDialogue.RoseShop}}"
+                                }
+                            ],
+                            "Name": "AnyOrNone",
+                            "Id": "AnyOrNone"
+                        }
+                    ],
+                    "PriceModifiers": null,
+                    "Items": [
+                        {
+                            "Id": "FFFShopRose.BakedGoods",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target food_bakery",
+                            "MaxItems": 8,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Player"
+                        }
+                    ]
+                }
+            },
+            "When": {
+                "HasMod |contains= Wildflour.SASS": true
+            }
+        },
+        {
             "LogName": "Add Moira VMV-less",
             "Action": "EditData",
             "Target": "Data/Shops",
@@ -36,12 +73,12 @@
                                 "(O)Spring Leaves Crown",
                                 "(O)Starry Wizard Hat",
                                 "(O)Sweet Roses Crown",
-                                "(O)Traveling Witch Hat",
+                                "(O)Traveling Witch Hat"
                             ],
                             "MaxItems": 4,
                             "Price": 1000,
                             "AvailableStock": 1,
-                            "AvailableStockLimit": "Player",
+                            "AvailableStockLimit": "Player"
                         },
                         {
                             "Id": "FFFShopMoira.Shirts",
@@ -64,12 +101,12 @@
                                 "(O)LumisteriaClothes-Shirt16",
                                 "(O)LumisteriaClothes-Shirt17",
                                 "(O)LumisteriaClothes-Shirt18",
-                                "(O)LumisteriaClothes-Shirt19",
+                                "(O)LumisteriaClothes-Shirt19"
                             ],
                             "MaxItems": 6,
                             "Price": 1000,
                             "AvailableStock": 1,
-                            "AvailableStockLimit": "Player",
+                            "AvailableStockLimit": "Player"
                         },
                         {
                             "Id": "FFFShopMoira.Pants",
@@ -78,19 +115,19 @@
                                 "(O)LumisteriaClothes-Pants02",
                                 "(O)LumisteriaClothes-Pants03",
                                 "(O)LumisteriaClothes-Pants04",
-                                "(O)LumisteriaClothes-Pants05",
+                                "(O)LumisteriaClothes-Pants05"
                             ],
                             "MaxItems": 2,
                             "Price": 1000,
                             "AvailableStock": 1,
-                            "AvailableStockLimit": "Player",
+                            "AvailableStockLimit": "Player"
                         }
                     ]
-                },
+                }
             },
             "When": {
                 "HasMod |contains= Lumisteria.LumisteriaClothes": true,
-                "HasMod |contains= Lumisteria.MtVapius": false,
+                "HasMod |contains= Lumisteria.MtVapius": false
             }
         },
         {
@@ -122,7 +159,7 @@
                             "MaxItems": 4,
                             "Price": 1000,
                             "AvailableStock": 1,
-                            "AvailableStockLimit": "Player",
+                            "AvailableStockLimit": "Player"
                         },
                         {
                             "Id": "FFFShopMoiraVMV.PrideShirts",
@@ -131,7 +168,7 @@
                             "MaxItems": 3,
                             "Price": 1000,
                             "AvailableStock": 1,
-                            "AvailableStockLimit": "Player",
+                            "AvailableStockLimit": "Player"
                         },
                         {
                             "Id": "FFFShopMoiraVMV.RandomShirt",
@@ -140,14 +177,14 @@
                             "MaxItems": 3,
                             "Price": 1000,
                             "AvailableStock": 1,
-                            "AvailableStockLimit": "Player",
+                            "AvailableStockLimit": "Player"
                         }
                     ]
                 },
             },
             "When": {
                 "HasMod |contains= Lumisteria.LumisteriaClothes": false,
-                "HasMod |contains= Lumisteria.MtVapius": true,
+                "HasMod |contains= Lumisteria.MtVapius": true
             }
         },
         {
@@ -178,7 +215,7 @@
                             "MaxItems": 3,
                             "Price": 1000,
                             "AvailableStock": 1,
-                            "AvailableStockLimit": "Player",
+                            "AvailableStockLimit": "Player"
                         },
                         {
                             "Id": "FFFShopFaye.Shirt2",
@@ -186,7 +223,7 @@
                             "MaxItems": 1,
                             "Price": 1000,
                             "AvailableStock": 1,
-                            "AvailableStockLimit": "Player",
+                            "AvailableStockLimit": "Player"
                         },
                         {
                             "Id": "FFFShopFaye.Shirt3",
@@ -194,7 +231,7 @@
                             "MaxItems": 1,
                             "Price": 1000,
                             "AvailableStock": 1,
-                            "AvailableStockLimit": "Player",
+                            "AvailableStockLimit": "Player"
                         },
                         {
                             "Id": "FFFShopFaye.Shirt4",
@@ -202,7 +239,7 @@
                             "MaxItems": 1,
                             "Price": 1000,
                             "AvailableStock": 1,
-                            "AvailableStockLimit": "Player",
+                            "AvailableStockLimit": "Player"
                         },
                         {
                             "Id": "FFFShopFaye.Shirt5",
@@ -210,7 +247,7 @@
                             "MaxItems": 1,
                             "Price": 1000,
                             "AvailableStock": 1,
-                            "AvailableStockLimit": "Player",
+                            "AvailableStockLimit": "Player"
                         },
                         {
                             "Id": "FFFShopFaye.Shirt6",
@@ -218,7 +255,7 @@
                             "MaxItems": 1,
                             "Price": 1000,
                             "AvailableStock": 1,
-                            "AvailableStockLimit": "Player",
+                            "AvailableStockLimit": "Player"
                         },
                         {
                             "Id": "FFFShopFaye.Shirt7",
@@ -226,31 +263,31 @@
                             "MaxItems": 1,
                             "Price": 1000,
                             "AvailableStock": 1,
-                            "AvailableStockLimit": "Player",
+                            "AvailableStockLimit": "Player"
                         },
                         {
                             "Id": "FFFShopFaye.ConditionalShirts1",
                             "RandomItemId": [
                                 "(S)Rafseazz.RSVCP_Cof-Faye_Jacket_M",
-                                "(S)Rafseazz.RSVCP_Cof-Faye_Jacket_F",
+                                "(S)Rafseazz.RSVCP_Cof-Faye_Jacket_F"
                             ],
                             "Condition": "PLAYER_HAS_MAIL Any RSV.FayeJacket",
                             "MaxItems": 1,
                             "Price": 1000,
                             "AvailableStock": 1,
-                            "AvailableStockLimit": "Player",
+                            "AvailableStockLimit": "Player"
                         },
                         {
                             "Id": "FFFShopFaye.ConditionalShirts2",
                             "RandomItemId": [
                                 "(S)Rafseazz.RSVCP_Cray-Faye_Abstract_Shirt_M",
-                                "(S)Rafseazz.RSVCP_Cray-Faye_Abstract_Shirt_F",
+                                "(S)Rafseazz.RSVCP_Cray-Faye_Abstract_Shirt_F"
                             ],
                             "Condition": "PLAYER_HAS_MAIL Any RSV.FayeMisc",
                             "MaxItems": 1,
                             "Price": 1000,
                             "AvailableStock": 1,
-                            "AvailableStockLimit": "Player",
+                            "AvailableStockLimit": "Player"
                         },
                         {
                             "Id": "FFFShopFaye.ConditionalShirts3",
@@ -262,14 +299,61 @@
                             "MaxItems": 1,
                             "Price": 1000,
                             "AvailableStock": 1,
-                            "AvailableStockLimit": "Player",
+                            "AvailableStockLimit": "Player"
                         }
                     ]
-                },
+                }
             },
             "When": {
-                "HasMod |contains= Rafseazz.RSVCP": true,
+                "HasMod |contains= Rafseazz.RSVCP": true
             }
         },
+        {
+            "LogName": "Add Wear the Rainbow Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "ShopFashionPride": {
+                    "ID": "ShopFashionPride",
+                    "Owners": [
+                        {
+                            "Condition": null,
+                            "Portrait": "none",
+                            "Dialogues": [
+                                {
+                                    "Dialogue": "{{i18n:ShopDialogue.PrideShop}}"
+                                }
+                            ],
+                            "Name": "AnyOrNone",
+                            "Id": "AnyOrNone"
+                        }
+                    ],
+                    "PriceModifiers": null,
+                    "Items": [
+                        {
+                            "Id": "FFFShopPride.PrismaticPants",
+                            "ItemId": "RANDOM_ITEMS (P)",
+                            "PerItemCondition": "ITEM_ID_PREFIX Target Riverdragon323.WeartheRainbow",
+                            "MaxItems": 4,
+                            "Price": 500,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "FFFShopPride.PrismaticShirts",
+                            "ItemId": "RANDOM_ITEMS (S)",
+                            "PerItemCondition": "ITEM_ID_PREFIX Target Riverdragon323.WeartheRainbow",
+                            "MaxItems": 6,
+                            "Price": 500,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player"
+                        }
+                    ]
+                }
+            },
+            "When": {
+                "HasMod |contains= Riverdragon323.WeartheRainbow": true
+            }
+        }
     ]
 }

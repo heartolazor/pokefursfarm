@@ -1,0 +1,532 @@
+/*
+███████╗██╗███████╗██╗   ██╗███████╗██╗          ██████╗  ██████╗ ███████╗███████╗    ███████╗ █████╗ ███████╗████████╗    ███╗███████╗ ██████╗ █████╗ ██████╗ ██████╗ ███╗
+██╔════╝██║██╔════╝██║   ██║██╔════╝██║         ██╔════╝ ██╔═══██╗██╔════╝██╔════╝    ██╔════╝██╔══██╗██╔════╝╚══██╔══╝    ██╔╝██╔════╝██╔════╝██╔══██╗██╔══██╗██╔══██╗╚██║
+█████╗  ██║█████╗  ██║   ██║█████╗  ██║         ██║  ███╗██║   ██║█████╗  ███████╗    █████╗  ███████║███████╗   ██║       ██║ ███████╗██║     ███████║██████╔╝██████╔╝ ██║
+██╔══╝  ██║██╔══╝  ╚██╗ ██╔╝██╔══╝  ██║         ██║   ██║██║   ██║██╔══╝  ╚════██║    ██╔══╝  ██╔══██║╚════██║   ██║       ██║ ╚════██║██║     ██╔══██║██╔══██╗██╔═══╝  ██║
+██║     ██║███████╗ ╚████╔╝ ███████╗███████╗    ╚██████╔╝╚██████╔╝███████╗███████║    ███████╗██║  ██║███████║   ██║       ███╗███████║╚██████╗██║  ██║██║  ██║██║     ███║
+╚═╝     ╚═╝╚══════╝  ╚═══╝  ╚══════╝╚══════╝     ╚═════╝  ╚═════╝ ╚══════╝╚══════╝    ╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝       ╚══╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚══╝
+
+
+CREDITS
+DestyNova: Project Lead, Events, STF Shop 
+Tenebrous Nova: Maps, Movie/Concession Tastes, Festival Positions, Template
+TheFrenchDodo: Sprites, JA/FS Code, Schedules
+FellowClown: Dialogue, Portraits, Sprites
+Lemurkat: Dialogue, Portraits, Sprites
+JayJayDub: Dialogue
+Orthorn: Dialogue 
+KittyCatCasey: Last Minute Rescue! 
+Gnadi: Bug Hunting!
+Atravita: Emotional Support! 
+*/
+{
+  "Format": "2.0.0",
+  "DynamicTokens": [
+    {
+      "Name": "FievelOutside_Setup",
+      "Value": "farmer 60 78 1 Fievel 71 78 2 LadySheba 72 78 3"
+    },
+    {
+      "Name": "FievelOutside_Setup",
+      "Value": "{{FievelOutside_Setup}} MisterGinger 71 79 0",
+      "When": {
+        "HasMod": "LemurKat.Mr.Ginger.NPC",
+        "HasSeenEvent |contains=5295000": false,
+      }
+    },
+    {
+      "Name": "FievelOutside_Setup",
+      "Value": "{{FievelOutside_Setup}} JortsCat 70 79 0 JeanCat 72 79 0",
+      "When": {
+        "HasMod": "tiakall.jortsandjean",
+      }
+    },
+    {
+      "Name": "FievelInside_Setup",
+      "Value": "farmer 10 21 3 Fievel 8 16 2 LadySheba 9 17 3"
+    },
+    {
+      "Name": "FievelInside_Setup",
+      "Value": "{{FievelInside_Setup}} MisterGinger 7 16 1",
+      "When": {
+        "HasMod": "LemurKat.Mr.Ginger.NPC",
+        "HasSeenEvent |contains=5295000": false,
+      }
+    },
+    {
+      "Name": "FievelInside_Setup",
+      "Value": "{{FievelInside_Setup}} JortsCat 4 19 1 JeanCat 5 19 3",
+      "When": {
+        "HasMod": "tiakall.jortsandjean",
+      }
+    },
+  ],
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Maps/Custom_MouseHole",
+      "FromFile": "Assets/Maps/MouseHole.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/Custom_MouseHoleRenovated",
+      "FromFile": "Assets/Maps/MouseHoleRenovated.tmx"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "Custom_MouseHole": {
+          "DisplayName": "{{i18n:lookup.mousehole}}",
+          "DefaultArrivalTile": {
+            "X": 2,
+            "Y": 9
+          },
+          "CreateOnLoad": {
+            "MapPath": "Maps\\Custom_MouseHole"
+          },
+          "CustomFields": {}
+        },
+        "Custom_MouseHoleRenovated": {
+          "DisplayName": "{{i18n:lookup.mousehole}}",
+          "DefaultArrivalTile": {
+            "X": 2,
+            "Y": 9
+          },
+          "CreateOnLoad": {
+            "MapPath": "Maps\\Custom_MouseHoleRenovated"
+          },
+          "CustomFields": {}
+        },
+      }
+    },
+    //Map Stuff
+    //Exterior patch.
+    {
+      "LogName": "Fievel Map Patch",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "FromFile": "assets/Maps/FievelExteriorPatch.tmx",
+      "ToArea": {
+        "X": 96,
+        "Y": 15,
+        "Width": 3,
+        "Height": 4
+      },
+      /* "TextOperations": [
+    {
+      "Operation": "Append",
+      "Target": [
+        "MapProperties",
+        "Warp"
+      ],
+      "Value": "97 18 Custom_MouseHole 16 9",
+     "Delimiter": " "
+   }
+  ],*/
+      "PatchMode": "Replace"
+    },
+    {
+      "LogName": "Add NPC warp for MouseHole",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_MouseHole",
+      "MapProperties": {
+        "NPCWarp": "16 9 EastScarp_Village 97 19",
+      }
+    },
+    {
+      "LogName": "Add NPC warp for MouseHole Renovated",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_MouseHoleRenovated",
+      "MapProperties": {
+        "NPCWarp": "16 9 EastScarp_Village 97 19",
+      }
+    },
+    {
+      "LogName": "MouseHole Warp",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "MapProperties",
+            "Warp"
+          ],
+          "Value": "97 18 Custom_MouseHole 16 9",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "HasSeenEvent |contains=17315004": false
+      },
+      "Update": "OnLocationChange",
+    },
+    {
+      "LogName": "MouseHoleRenovated Warp",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "MapProperties",
+            "Warp"
+          ],
+          "Value": "97 18 Custom_MouseHoleRenovated 16 9",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "HasSeenEvent |contains=17315004": true
+      },
+      "Update": "OnLocationChange",
+    },
+    //Loads Portraits/Sprites/TempActors
+    {
+      "LogName": "Fievel (Hat)",
+      "Action": "Load",
+      "Target": "Characters/Fievel, Portraits/Fievel",
+      "FromFile": "Assets/{{Target}}/Fievel.png",
+      "When": {
+        "HasSeenEvent |contains=17315005": false
+      },
+    },
+    {
+      "LogName": "Fievel (No Hat)",
+      "Action": "Load",
+      "Target": "Characters/Fievel, Portraits/Fievel",
+      "FromFile": "Assets/{{Target}}/Fievel_NoHat.png",
+      "When": {
+        "HasSeenEvent |contains=17315005": true
+      },
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/MunchboiHat",
+      "FromFile": "assets/TemporaryActors/Portraits/Munchboi_hat.png"
+    },
+  
+    {
+      "Action": "Load",
+      "Target": "Characters/MunchboiHat",
+      "FromFile": "assets/TemporaryActors/Characters/Munchboi_hat.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/FievelFinale",
+      "FromFile": "assets/TemporaryActors/Characters/Fievel_NoHat.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/FievelFinale",
+      "FromFile": "assets/TemporaryActors/Portraits/Fievel_NoHat.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/FievelHat",
+      "FromFile": "assets/TemporaryActors/Characters/FievelHat.png"
+    },
+    //Includes
+    {
+      "LogName": "Dialogue Load",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Fievel, Characters/Schedules/Fievel, Strings/schedules/Fievel",
+      "FromFile": "Data/Blank.json"
+    },
+    {
+      "LogName": "MouseHole Events Load",
+      "Action": "Load",
+      "Target": "Data/Events/Custom_MouseHole, Data/Events/Custom_MouseHoleRenovated",
+      "FromFile": "Data/Blank.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Movies.json, Data/Mail.json, Data/Dialogue/CustomGiftDialogue.json, Data/Dialogue/Fievel_Dialogue.json, Data/Dialogue/FestivalDialogue.json, Data/Festivals.json, Data/Strings.json, Data/Fievel_Schedule.json, Data/Dialogue/ConversationTopics.json, Data/EventsData.json, Data/Dialogue/FievelStrings.json, Data/Animations.json"
+    },
+    //Dispositions 
+    {
+      "LogName": "NPC Manifestation",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Fievel": {
+          "DisplayName": "{{i18n:Fievel.Name}}",
+          "BirthSeason": "Fall",
+          "BirthDay": 6,
+          "HomeRegion": "Town",
+          "Gender": "Male",
+          "Age": "Child",
+          "Manner": "Polite",
+          "SocialAnxiety": "Shy",
+          "Optimism": "Positive",
+          "CanBeRomanced": false,
+          "LoveInterest": null,
+          "Home": [
+            {
+              "Id": "FievelMouseHoleRenovated",
+              "Condition": "PLAYER_HAS_SEEN_EVENT Host 17315004",
+              "Location": "Custom_MouseHole",
+              "Tile": {
+                "X": 10,
+                "Y": 8
+              },
+              "Direction": "Down"
+            },
+            {
+              "Id": "FievelMouseHole",
+              "Condition": "PLAYER_HAS_SEEN_EVENT Host 17315001",
+              "Location": "Custom_MouseHole",
+              "Tile": {
+                "X": 10,
+                "Y": 8
+              },
+              "Direction": "Down"
+            },
+            {
+              "Id": "Default",
+              "Location": "EastScarp_Village",
+              "Tile": {
+                "X": 42,
+                "Y": 57
+              },
+              "Direction": "Down"
+            }
+          ]
+        }
+      }
+    },
+    //Gifts
+    {
+      "LogName": "Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Fievel": "{{i18n:Fievel.GiftTastes.Love}}/424 426/{{i18n:Fievel.GiftTastes.Like}}/197 215 206 220 221 233/{{i18n:Fievel.GiftTastes.Dislike}}/225 226 227 228/{{i18n:Fievel.GiftTastes.Hate}}/-2/{{i18n:Fievel.GiftTastes.Neutral}}/-81 -75/"
+      }
+    },
+    //The hat
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModID}}/FievelHat",
+      "FromFile": "Assets/Hats/FievelHat.png"
+    },
+    {
+      "Logname": "Fievel Hat",
+      "Action": "EditData",
+      "Target": "Data/Hats",
+      "Entries": {
+        "{{ModID}}.Hats.FievelHat": "{{ModID}}.Hats.FievelHat/{{i18n:item.fievel's-hat.description}}/false/true//{{i18n:item.fievel's-hat.name}}/0/Mods\\{{ModID}}\\FievelHat"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "Lemurkat.EastScarp_FievelShop": {
+          "Owners": [
+            {
+              "Name": "Fievel",
+              "Condition": "PLAYER_HAS_SEEN_EVENT Current 17315005",
+              "Dialogues": [
+                {
+                  "Id": "Lemurkat.EastScarp.Fievel_Default",
+                  "Dialogue": "{{i18n:FievelShop.dialogue}}"
+                }
+              ],
+              //"ClosedMessage": "{{i18n:LexiShop.closed}}"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "Lemurkat.EastScarp_CheeseTrade1",
+              "Price": 0,
+              "TradeItemId": "(O)424",
+              "TradeItemAmount": 1,
+              //"AvoidRepeat": true,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemId": "(O)424",
+              "RandomItemId": [
+                "(O)16",
+                "(O)18",
+                "(O)20",
+                "(O)24",
+                "(O)78",
+                "(O)88",
+                "(O)90",
+                "(O)92"
+              ]
+            },
+            {
+              "Id": "Lemurkat.EastScarp_CheeseTrade2",
+              "Price": 0,
+              "TradeItemId": "(O)424",
+              "TradeItemAmount": 1,
+              //"AvoidRepeat": true,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemId": "(O)424",
+              "RandomItemId": [
+                "(O)129",
+                "(O)130",
+                "(O)131",
+                "(O)132",
+                "(O)136",
+                "(O)137",
+                "(O)138",
+                "(O)139"
+              ]
+            },
+            {
+              "Id": "Lemurkat.EastScarp_CheeseTrade2",
+              "Price": 0,
+              "TradeItemId": "(O)424",
+              "TradeItemAmount": 1,
+              //"AvoidRepeat": true,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemId": "(O)424",
+              "RandomItemId": [
+                "(O)140",
+                "(O)141",
+                "(O)142",
+                "(O)143",
+                "(O)144",
+                "(O)145",
+                "(O)146",
+                "(O)147"
+              ]
+            },
+            {
+              "Id": "Lemurkat.EastScarp_CheeseTrade3",
+              "Price": 0,
+              "TradeItemId": "(O)424",
+              "TradeItemAmount": 1,
+              //"AvoidRepeat": true,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemId": "(O)424",
+              "RandomItemId": [
+                "(O)148",
+                "(O)149",
+                "(O)150",
+                "(O)151",
+                "(O)152",
+                "(O)153",
+                "(O)154",
+                "(O)155"
+              ]
+            },
+            {
+              "Id": "Lemurkat.EastScarp_CheeseTrade4",
+              "Price": 0,
+              "TradeItemId": "(O)424",
+              "TradeItemAmount": 1,
+              //"AvoidRepeat": true,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemId": "(O)424",
+              "RandomItemId": [
+                "(O)148",
+                "(O)149",
+                "(O)150",
+                "(O)151",
+                "(O)152",
+                "(O)153",
+                "(O)154",
+                "(O)155"
+              ]
+            },
+            {
+              "Id": "Lemurkat.EastScarp_CheeseTrade5",
+              "Price": 0,
+              "TradeItemId": "(O)424",
+              "TradeItemAmount": 1,
+              //"AvoidRepeat": true,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemId": "(O)424",
+              "RandomItemId": [
+                "(O)176",
+                "(O)180",
+                "(O)186",
+                "(O)188",
+                "(O)190",
+                "(O)192",
+                "(O)169",
+                "(O)170"
+              ]
+            },
+            {
+              "Id": "Lemurkat.EastScarp_CheeseTrade6",
+              "Price": 0,
+              "TradeItemId": "(O)424",
+              "TradeItemAmount": 1,
+              //"AvoidRepeat": true,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemId": "(O)424",
+              "RandomItemId": [
+                "(O)296",
+                "(O)304",
+                "(O)309",
+                "(O)310",
+                "(O)311",
+                "(O)330",
+                "(O)335",
+                "(O)336",
+                "(O)337",
+                "(O)338"
+              ]
+            },
+            {
+              "Id": "Lemurkat.EastScarp_CheeseTrade7",
+              "Price": 0,
+              "TradeItemId": "(O)424",
+              "TradeItemAmount": 1,
+              //"AvoidRepeat": true,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemId": "(O)424",
+              "RandomItemId": [
+                "(O)382",
+                "(O)384",
+                "(O)386",
+                "(O)393",
+                "(O)396",
+                "(O)397",
+                "(O)398",
+                "(O)399",
+                "(O)400",
+                "(O)406"
+              ]
+            },
+            {
+              "Id": "Lemurkat.EastScarp_CheeseTrade8",
+              "Price": 0,
+              "TradeItemId": "(O)424",
+              "TradeItemAmount": 1,
+              //"AvoidRepeat": true,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemId": "(O)424",
+              "RandomItemId": [
+                "(O)408",
+                "(O)412",
+                "(O)414",
+                "(O)416",
+                "(O)418",
+                "(O)420",
+                "(O)421",
+                "(O)422",
+                "(O)423",
+                "(O)433"
+              ]
+            },
+          ]
+        }
+      }
+    }
+  ]
+}

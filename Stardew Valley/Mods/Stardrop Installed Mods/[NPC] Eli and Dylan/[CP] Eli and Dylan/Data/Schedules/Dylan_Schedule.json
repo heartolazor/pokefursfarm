@@ -22,7 +22,7 @@
                     "Fri": "{{Random:{{DylanFriday_A}}++{{DylanFriday_B}}|InputSeparator=++}}",
                     "Sat": "{{Random:{{DylanSaturday_A}}++{{DylanSaturday_B}}|InputSeparator=++}}",
                     "Sun": "{{Random:{{DylanSunday_A}}++{{DylanSunday_B}}|InputSeparator=++}}",
-                    "DesertFestival_1": "610 BusStop 32 22 3/1130 Desert 31 55 2/2000 {{ModID}}_ESEDHouse 17 5 1 nova.dylan_sleep",
+                    "DesertFestival_1": "610 BusStop 32 22 3/1130 Desert 32 55 2/2000 {{ModID}}_ESEDHouse 17 5 1 nova.dylan_sleep",
                     "DesertFestival_2": "GOTO DesertFestival_1",
                     "DesertFestival_3": "GOTO DesertFestival_1",
                     "TroutDerby_1": "610 {{ModID}}_ESEDHouse 16 22 3/0800 Forest 96 38 1/2000 {{ModID}}_ESEDHouse 17 5 1 nova.dylan_sleep",
@@ -54,6 +54,21 @@
                 "Target": "Characters/Schedules/Maru",
                 "Entries": {
                     "winter_7": "GOTO Tue"
+                }
+            },
+
+            //Pride Festival!
+
+            {
+                "LogName": "Pride Festival",
+                "Action": "EditData",
+                "Target": "Characters/Schedules/Nova.Dylan",
+                "Entries": {
+                    "summer_16": "610 CommunityCenter 49 7 2/2130 {{ModID}}_ESEDHouse 17 5 1 nova.dylan_sleep"
+                },
+                "When": {
+                    "HasMod |contains=sapphicsaph_pitv": true,
+                    "IsCommunityCenterComplete": true
                 }
             }
     ]

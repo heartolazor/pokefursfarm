@@ -64,6 +64,10 @@
     "added-by-mod": "Aggiunto dalla mod",
     "added-by-mod.summary": "{{modName}}",
 
+    // internal ID
+    "internal-id": "ID Interno",
+
+
     /*********
     ** Data translations
     *********/
@@ -181,6 +185,7 @@
     "animal.produce-ready": "Pronto alla produzione",
     "animal.growth": "Crescita",
     "animal.sells-for": "Valore",
+    "animal.golden-cracker": "Cracker per animali dorato", // also used for fish ponds
 
     // values
     "animal.complaints.hungry": "non è stato nutrito ieri",
@@ -189,6 +194,8 @@
     "animal.complaints.no-heater": "non ha il riscaldamento in inverno",
     "animal.complaints.not-petted": "non è ancora stato accarezzato oggi",
     "animal.complaints.wild-animal-attack": "attaccato da animali selvaggi questa notte",
+    "animal.golden-cracker.none": "Nessuno. Aggiungi un cracker per animali dorato per raddoppiare gli oggetti prodotti.",
+    "animal.golden-cracker.applied": "Applicato; gli oggetti prodotti ora verranno raddoppiati.",
 
 
     /*********
@@ -327,6 +334,7 @@
     "item.dislikes-this": "Non piace a",
     "item.hates-this": "Lo odia",
     "item.needed-for": "Ne ha bisogno",
+    "item.flavor": "Sapore", // links to the flavor item (e.g. 'Blueberry' for Blueberry Wine)
     "item.number-owned": "Posseduto",
     "item.number-cooked": "Cucinato",
     "item.number-crafted": "Fabbricato",
@@ -351,6 +359,7 @@
     "item.needed-for.gourmet-chef": "l'achievement 'chef stellato' (cucina {{recipes}})",
     "item.needed-for.craft-master": "l'achievement 'maestro della fabbricazione' (crea {{recipes}})",
     "item.needed-for.quests": "missioni attuali ({{quests}})",
+    "item.needed-for.trash-bear": "orso della spazzatura (consegnane uno)",
     "item.unknown-recipes": "{{count}} ricette sconosciute",
     "item.sells-to.shipping-box": "Cassetta delle spedizioni",
     "item.recipes-for-ingredient.entry": "{{name}} ({{count}} necessari)",
@@ -358,8 +367,9 @@
     "item.recipes-for-machine.same-as-input": "[stesso oggetto]", // e.g. crystalarium produces same item that was put in
     "item.recipes-for-machine.too-complex": "Alcune regole della macchina sono troppo dinamiche per essere visualizzate.",
     "item.number-owned.summary": "Quantità posseduta: {{count}}",
-    "item.number-owned-flavored.summary": "you own {{count}} ({{name}}) or {{baseCount}} ({{baseName}}) of these", // TODO // e.g. "you own 5 (Sturgeon Roe) or 20 (Roe) of these"
+    "item.number-owned-flavored.summary": "ne possiedi {{count}} ({{name}}) o {{baseCount}} ({{baseName}}) di questi", // e.g. "you own 5 (Sturgeon Roe) or 20 (Roe) of these"
     "item.number-crafted.summary": "Quantità fabbricata: {{count}}",
+    "item.internal-id.summary": "{{itemId}} ('ID qualificato' globalmente unico: {{qualifiedItemId}})",
 
 
     /*********
@@ -639,7 +649,6 @@
     // labels
     "tile.title": "Tassello della mappa ({{x}}, {{y}})",
     "tile.description": "La posizione di un tassello della mappa. Ti viene mostrato perchè hai abilitato la visione dei tasselli dalle opzioni.",
-    "tile.game-location": "Posizione",
     "tile.map-name": "Nome mappa",
     "tile.map-properties": "Proprietà della mappa",
     "tile.layer-tile": "Tassello {{layer}}",
@@ -700,10 +709,33 @@
 
 
     /*********
+    ** Data mining fields
+    *********/
+    // TODO
+    "data-mining.name": "Raw data",
+    "data-mining.name.map-tile": "Raw data (map tile)",
+    "data-mining.name.map-location": "Raw data (location)",
+
+    "data-mining.section-pinned": "Pinned", // 'pinned' section has notable values (i.e. it's pinned at the top of the list)
+
+
+    /*********
     ** Generic Mod Config Menu UI
     *********/
-    // main options
-    "config.title.main-options": "Opzioni principali",
+    // appearance
+    // TODO
+    "config.title.appearance": "Appearance",
+
+    "config.theme.name": "Visual theme",
+    "config.theme.desc": "The appearance to apply for the lookup and search menu.",
+
+    "config.theme.values.Parchment": "Parchment",
+    "config.theme.values.Joja": "Joja",
+    "config.theme.values.MenuBox_Border": "Menu box (border)",
+    "config.theme.values.MenuBox_Inset": "Menu box (inset)",
+    "config.theme.values.MenuBox_Raised": "Menu box (raised)",
+    "config.theme.values.Plain": "Plain",
+
     "config.force-full-screen.name": "Forza schermo intero",
     "config.force-full-screen.desc": "Scegli se il menu deve essere sempre a tutto schermo, invece che centrato nella finestra. Questa opzione è utile soprattutto quando si visualizzano i campi di data mining.",
 

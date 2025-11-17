@@ -1,0 +1,328 @@
+{
+  "Format": "2.7.0",
+
+  "ConfigSchema": {
+      "PokemonXanEarlyTrinketSlot": {
+          "AllowValues": "true, false",
+          "Default": "true",
+          "Section": "Recommended for Pokemon Trinkets"
+      }
+    },
+
+  "Changes": [                    
+
+    {
+      "Action": "EditData",
+      "LogName": "Created Mail Data",
+      "Target": "Data/Mail",
+      "Entries": {
+        "PokeGroup1_Include": "{{i18n:Group1.mail}}",
+        "SafariGroup1_Unlock": "{{i18n:Group1Safari.mail}}",
+        "PokeGroup2_Include":  "{{i18n:Group2.mail}}",
+        "SafariGroup2_Unlock": "{{i18n:Group2Safari.mail}}"
+      }
+    },
+  
+    {
+      "Action": "Include",
+      "LogName": "Added various map data",
+      "FromFile": "Data/MapData.json"
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Added Location Data for the Safari Zone",
+      "FromFile": "Data/SafariZone1LocData.json"
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Added all the audio files",
+      "FromFile": "Data/AudioData.json"
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Added data for shops",
+      "FromFile": "Data/ShopData.json"
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included PokeGroup1",
+      "FromFile": "Data/PokeGroup1.json",
+      "When": {
+        "HasFlag": "PokeGroup1_Include"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included Safari PokeGroup1",
+      "FromFile": "Data/PokeGroup1Safari.json",
+      "When": {
+        "HasFlag": "SafariGroup1_Unlock"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included PokeGroup2",
+      "FromFile": "Data/PokeGroup2.json",
+      "When": {
+        "HasFlag": "PokeGroup2_Include"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included Safari PokeGroup2",
+      "FromFile": "Data/PokeGroup2Safari.json",
+      "When": {
+        "HasFlag": "SafariGroup2_Unlock"
+      }
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included Shinies from PokeGroup 1 and 2",
+      "FromFile": "Data/PokeGroup1and2Shiny.json"
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "data/TrinketTinkerData.json",
+      "When": { "HasMod": "mushymato.TrinketTinker" }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "data/GastlyTrinket.json",
+      "When": { "HasMod": "mushymato.TrinketTinker" }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "data/CharmanderTrinketLOL.json",
+      "When": { "HasMod": "mushymato.TrinketTinker" }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/ShadyTrader.json",
+      "When": { "HasMod": "mushymato.TrinketTinker" }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/TrinketTrader.json",
+      "When": { "HasMod": "mushymato.TrinketTinker" }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/BuffTrinkets.json",
+      "When": { "HasMod": "mushymato.TrinketTinker" }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/EarlyTrinketSlot.json",
+      "When": { "HasMod": "mushymato.TrinketTinker" }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/CustomBuffs.json"
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/CategoryTags.json"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/PokemonCrops, Mods/Xan.PokemonCreaturePack/SafariGrassItem, Mods/Xan.PokemonCreaturePack/SafariGrassSeeds",
+      "FromFile": "Assets/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Spiritomb",
+      "FromFile": "Assets/dialogue.json"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Portraits/Spiritomb",
+      "FromFile": "Assets/SpiritombPortrait.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Characters/Spiritomb",
+      "FromFile": "Assets/SpiritombT.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "TileSheets/PokeGroupUnlock1",
+      "FromFile": "Assets/PokeGroupUnlock1.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "TileSheets/PokeGroupUnlock2",
+      "FromFile": "Assets/PokeGroupUnlock2.png"
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Spiritomb": {
+          "DisplayName": "{{i18n:Spiritomb.Name}}",
+          "Gender": "Undefined",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Neutral",
+          "CanVisitIsland": false,
+          "CanSocialize": false,
+          "CanReceiveGifts": true,
+          "CanGreetNearbyCharacters": false,
+          "SocialTab": "HiddenAlways",
+          "PerfectionScore": false,
+          "SpawnIfMissing": true,
+          "Shadow": {
+            "Offset": { "X": -28, "Y": 0 }
+          },
+          "Home": [
+            {
+              "ID": "Default",
+              "Location": "NIVOuterInsec",
+              "Tile": { "X": 17, "Y": 14 },
+              "Direction": "down"
+            }
+          ],
+          "Appearance": [
+            {
+              "Id": "Default",
+              "Portrait": "Portraits/Spiritomb",
+              "Sprite": "Characters/Spiritomb"
+            }
+          ]
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Spiritomb",
+      "Entries":
+        {
+          "Q1_reaction_yes": "{{i18n:Q1_reaction_yes}}",
+          "Q1_reaction_no": "{{i18n:Q1_reaction_no}}",
+          "Q2_reaction_why": "{{i18n:Q2_reaction_why}}",
+          "Q2_reaction_ok": "{{i18n:Q2_reaction_ok}}",
+
+          "Mon": "{{i18n:Spiritomb.Mon}}",
+          "Tue": "{{i18n:Spiritomb.Tue}}",
+          "Wed": "{{i18n:Spiritomb.Wed}}",
+          "Thu": "{{i18n:Spiritomb.Thu}}",
+          "Fri": "{{i18n:Spiritomb.Fri}}",
+          "Sat": "{{i18n:Spiritomb.Sat}}",
+          "Sun": "{{i18n:Spiritomb.Sun}}",
+          "GreenRain": "{{i18n:Spiritomb.GreenRain}}",
+          "GreenRain_2": "{{i18n:Spiritomb.GreenRain_2}}",
+          "Spiritomb_fallback": "{{i18n:Spiritomb_fallback}}",
+
+          "Menu_prompt": "{{i18n:Menu_prompt}}",
+          "Menu_checkprogress": "{{i18n:Menu_checkprogress}}",
+          "Menu_nevermind": "{{i18n:Menu_nevermind}}",
+          "Menu_safari": "{{i18n:Menu_safari}}",
+          "Q3_all": "{{i18n:Q3_all}}",
+          "Q3_some": "{{i18n:Q3_some}}",
+          "Q3_none": "{{i18n:Q3_none}}",
+          "Q4_all": "{{i18n:Q4_all}}",
+          "Q4_some": "{{i18n:Q4_some}}",
+          "Q4_none": "{{i18n:Q4_none}}"
+        }
+    },
+
+    {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"SafariGrassItem": {
+					"Name": "Safari Grass",
+					"DisplayName": "{{i18n:SafariGrassItem.DisplayName}}",
+					"Description": "{{i18n:SafariGrassItem.Description}}",
+          "type": "Basic",
+					"Category": -75,
+					"Price": 5,
+					"Texture": "Mods/Xan.PokemonCreaturePack/SafariGrassItem",
+					"SpriteIndex": 0,
+					"Edibility": -300
+        },
+        "SafariGrass": {
+          "Name": "Safari Grass Seeds",
+          "DisplayName": "{{i18n:SafariGrass.DisplayName}}",
+          "Description": "{{i18n:SafariGrass.Description}}",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 5,
+          "Edibility": -300,
+          "Texture": "Mods/Xan.PokemonCreaturePack/SafariGrassSeeds",
+          "SpriteIndex": 0
+        }
+			}
+		},
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Crops",
+      "Entries": {
+        "SafariGrass": {
+          "Seasons": ["spring","summer","fall","winter"],
+          "NeedsWatering": false,
+          "DaysInPhase": [ 1, 1 ],
+          "HarvestMethod": "Scythe",
+          "HarvestItemId": "SafariGrassItem",
+          "Texture": "Mods/Xan.PokemonCreaturePack/PokemonCrops",
+          "SpriteIndex": 0,
+          "CountForMonoculture": false,
+          "CountForPolyculture": false
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        
+        "PokeGroup1Contract": {
+          "Name": "PokeGroup1Contract",
+          "DisplayName": "{{i18n:PokeGroup1Contract.DisplayName}}",
+          "Description": "{{i18n:PokeGroup1Contract.Description}}",
+          "Edibility": -300,
+          "Type": "Basic",
+          "Category": "-102",
+          "Texture": "TileSheets/PokeGroupUnlock1",
+          "SpriteIndex": "0"
+        },
+
+        "PokeGroup2Contract": {
+        "Name": "PokeGroup2Contract",
+        "DisplayName": "{{i18n:PokeGroup2Contract.DisplayName}}",
+        "Description": "{{i18n:PokeGroup2Contract.Description}}",
+        "Edibility": -300,
+        "Type": "Basic",
+        "Category": "-102",
+        "Texture": "TileSheets/PokeGroupUnlock2",
+        "SpriteIndex": "0"
+        }
+      }
+    }
+
+  ]
+}

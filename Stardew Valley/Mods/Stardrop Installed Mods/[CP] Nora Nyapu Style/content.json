@@ -1,0 +1,67 @@
+{
+    "Format": "2.0.0",
+    "Changes": [
+        {
+            "LogName": "Load Nora's Portraits in Nyapu Style",
+            "Action": "Load",
+            "Priority": "High",
+            "Target": "Portraits/Nora_Spring_Portrait, Portraits/Nora_Summer_Portrait,Portraits/Nora_Fall_Portrait,Portraits/Nora_Winter_Outdoor_Portrait,Portraits/Nora_Spirit_Portrait,Portraits/Nora_Winter_Indoor",
+            "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Load Nora's Winter Indoor Outfit",
+            "Action": "Load",
+            "Priority": "High",
+            "Target": "Characters/Nora_Winter_Indoor",
+            "FromFile": "assets/Characters/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Gunther Nyapu Portrait Edit",
+            "Action": "EditImage",
+            "Priority": "Late",
+            "Target": "Portraits/NoraGunther",
+            "FromFile": "assets/TemporaryActors/Portraits/NoraGunther.png"
+        },
+        {
+            "LogName": "Nora Portrait Replacements",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField": ["Nora", "Appearance"],
+            "When": {"Season": "{{season}}"},
+            "Fields":{
+                "Spring Outfit":{
+                    "Portrait": "Portraits/Nora_Spring_Portrait"
+                },
+                "Summer Outfit":{
+                    "Portrait": "Portraits/Nora_Summer_Portrait"
+                },
+                "Fall Outfit":{
+                    "Portrait": "Portraits/Nora_Fall_Portrait"
+                },
+                "Winter Outfit - Outdoors":{
+                    "Portrait": "Portraits/Nora_Winter_Outdoor_Portrait"
+                },
+                "Spirit's Eve":{
+                    "Portrait": "Portraits/Nora_Spirit_Portrait"
+                }
+            }
+        },
+        {
+            "LogName": "Nora Indoor Winter",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField":["Nora","Appearance"],
+            "When": {"Season": "{{season}}"},
+            "Entries":{
+                "{{ModId}}.NoraWinterIndoor":{
+                    "ID": "{{ModId}}.NoraWinterIndoor",
+                    "Condition": "SEASON Winter",
+                    "Sprite": "Characters/Nora_Winter_Indoor",
+                    "Portrait": "Portraits/Nora_Winter_Indoor",
+                    "Outdoors": false,
+                    "Precedence": -100
+                }
+            }
+        }
+    ]
+}

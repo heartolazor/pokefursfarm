@@ -1,0 +1,820 @@
+{
+  "Changes": [
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    ///awesome spacecore stuff
+    {
+      "LogName": "Make Added Items More Cool",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+      "Entries": {
+        "MadDog.HashtagBearFam_TerenRecipes": {
+          "ConsumeForTriggerAction": true,
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Cookbook}}",
+          "CategoryColorOverride": {
+            "R": 38,
+            "G": 112,
+            "B": 193,
+            "A": 255
+          },
+          "UseForTriggerAction": true
+        },
+        "MadDog.HashtagBearFam_BearRecipes": {
+          "ConsumeForTriggerAction": true,
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Cookbook}}",
+          "CategoryColorOverride": {
+            "R": 38,
+            "G": 112,
+            "B": 193,
+            "A": 255
+          },
+          "UseForTriggerAction": true
+        },
+        "MadDog.HashtagBearFam_SondraRecipes": {
+          "ConsumeForTriggerAction": true,
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Cookbook}}",
+          "CategoryColorOverride": {
+            "R": 38,
+            "G": 112,
+            "B": 193,
+            "A": 255
+          },
+          "UseForTriggerAction": true
+        },
+        "MadDog.HashtagBearFam_GunnarRecipes": {
+          "ConsumeForTriggerAction": true,
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Cookbook}}",
+          "CategoryColorOverride": {
+            "R": 38,
+            "G": 112,
+            "B": 193,
+            "A": 255
+          },
+          "UseForTriggerAction": true
+        },
+        "MadDog.HashtagBearFam_GunnarFirstPotion": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Potion}}",
+          "CategoryColorOverride": {
+            "R": 0,
+            "G": 153,
+            "B": 107,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_GunnarSecondPotion": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Potion}}",
+          "CategoryColorOverride": {
+            "R": 0,
+            "G": 153,
+            "B": 107,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_GunnarThirdPotion": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Potion}}",
+          "CategoryColorOverride": {
+            "R": 0,
+            "G": 153,
+            "B": 107,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_GunnarRemedyAll": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Potion}}",
+          "CategoryColorOverride": {
+            "R": 0,
+            "G": 153,
+            "B": 107,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_GunnarWeirdPotion": {
+          "EatenHealthRestoredOverride": -25,
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Potion}}",
+          "CategoryColorOverride": {
+            "R": 0,
+            "G": 153,
+            "B": 107,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_GunnarBadPotion": {
+          "EatenHealthRestoredOverride": -30,
+          "EatenStaminaRestoredOverride": -30,
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Potion}}",
+          "CategoryColorOverride": {
+            "R": 0,
+            "G": 153,
+            "B": 107,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_GunnarMysteryPotion": {
+          "EatenStaminaRestoredOverride": -16,
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Potion}}",
+          "CategoryColorOverride": {
+            "R": 0,
+            "G": 153,
+            "B": 107,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_GunnarPhoenixDown": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Potion}}",
+          "CategoryColorOverride": {
+            "R": 0,
+            "G": 153,
+            "B": 107,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_NineHerbsCharm": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Potion}}",
+          "CategoryColorOverride": {
+            "R": 0,
+            "G": 153,
+            "B": 107,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_GunnarPerfectPotion": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Potion}}",
+          "CategoryColorOverride": {
+            "R": 0,
+            "G": 153,
+            "B": 107,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_RegenPotions_GreatGospelPotion": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Potion}}",
+          "CategoryColorOverride": {
+            "R": 0,
+            "G": 153,
+            "B": 107,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_RegenPotions_AngelWingPotion": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Potion}}",
+          "CategoryColorOverride": {
+            "R": 0,
+            "G": 153,
+            "B": 107,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_RegenPotions_TidesofFatePotion": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Potion}}",
+          "CategoryColorOverride": {
+            "R": 0,
+            "G": 153,
+            "B": 107,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_RegenPotions_FreeEnergyPotion": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Potion}}",
+          "CategoryColorOverride": {
+            "R": 0,
+            "G": 153,
+            "B": 107,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_RegenPotions_FantasiaPotion": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Potion}}",
+          "CategoryColorOverride": {
+            "R": 0,
+            "G": 153,
+            "B": 107,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_RegenPotions_DigitalMindWavePotion": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Potion}}",
+          "CategoryColorOverride": {
+            "R": 0,
+            "G": 153,
+            "B": 107,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_RegenPotions_GlaiveArtsPotion": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Potion}}",
+          "CategoryColorOverride": {
+            "R": 0,
+            "G": 153,
+            "B": 107,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_RegenPotions_NordswainsGlowPotion": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Potion}}",
+          "CategoryColorOverride": {
+            "R": 0,
+            "G": 153,
+            "B": 107,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_Teren_Book": {
+          "CanBeShipped": false
+        },
+        "MadDog.HashtagBearFam_KingoftheForest_Whiskey": {
+          "CanBeShipped": false
+        },
+        "MadDog.HashtagBearFam_FerskenPeach_Mead_Tankard": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Alcohol}}",
+          "CategoryColorOverride": {
+            "R": 204,
+            "G": 103,
+            "B": 0,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_FerskenPeach_Mead": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Alcohol}}",
+          "CategoryColorOverride": {
+            "R": 204,
+            "G": 103,
+            "B": 0,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_FerskenPeach_PotentMead": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Alcohol}}",
+          "CategoryColorOverride": {
+            "R": 204,
+            "G": 103,
+            "B": 0,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_Zuzu_Mule": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Alcohol}}",
+          "CategoryColorOverride": {
+            "R": 204,
+            "G": 103,
+            "B": 0,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_Honey_OldFashioned": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Alcohol}}",
+          "CategoryColorOverride": {
+            "R": 204,
+            "G": 103,
+            "B": 0,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_Citrus_City_Gin_Sour": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Alcohol}}",
+          "CategoryColorOverride": {
+            "R": 204,
+            "G": 103,
+            "B": 0,
+            "A": 255
+          }
+        },
+        "MadDog.HashtagBearFam_Kraken_WarpTotem": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Totem}}",
+          "CategoryColorOverride": {
+            "R": 135,
+            "G": 3,
+            "B": 140,
+            "A": 255
+          },
+          "TotemWarp": {
+            "Location": "MadDog.BearFam.Custom_BearFamNoKrakenMap",
+            "Position": "44, 14",
+            "Color": {
+              "R": 135,
+              "G": 3,
+              "B": 140,
+              "A": 255
+            }
+          }
+        },
+        "MadDog.HashtagBearFam_Adventurer_Cache": {
+          "ConsumeForTriggerAction": true,
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Cache}}",
+          "CategoryColorOverride": {
+            "R": 214,
+            "G": 101,
+            "B": 169,
+            "A": 255
+          },
+          "UseForTriggerAction": true
+        }
+      }
+    },
+    {
+      "LogName": "Make Added FURNTIURE More Cool",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/FurnitureExtensionData",
+      "Entries": {
+        "MadDog.HashtagBearFam_GunnarsPendant": {
+          "DescriptionOverride": "{{i18n:MadDog.HashtagBearFam.GunnarsPendant.Description}}"
+        },
+        "MadDog.HashtagBearFam_GotoroPhotos.HetterglossCaverns": {
+          "DescriptionOverride": "{{i18n:MadDog.HashtagBearFam.GotoroPhotos.HetterglossCaverns.Description}}"
+        },
+        "MadDog.HashtagBearFam_GotoroPhotos.CarnegieaDesert": {
+          "DescriptionOverride": "{{i18n:MadDog.HashtagBearFam.GotoroPhotos.CarnegieaDesert.Description}}"
+        },
+        "MadDog.HashtagBearFam_GotoroPhotos.GiantForest": {
+          "DescriptionOverride": "{{i18n:MadDog.HashtagBearFam.GotoroPhotos.GiantForest.Description}}"
+        },
+        "MadDog.HashtagBearFam_GotoroPhotos.SequoiadendronAutumn": {
+          "DescriptionOverride": "{{i18n:MadDog.HashtagBearFam.GotoroPhotos.SequoiadendronAutumn.Description}}"
+        },
+        "MadDog.HashtagBearFam_GotoroPhotos.MoltenGoldWheatFields": {
+          "DescriptionOverride": "{{i18n:MadDog.HashtagBearFam.GotoroPhotos.MoltenGoldWheatFields.Description}}"
+        },
+        "MadDog.HashtagBearFam_GotoroPhotos.ElysiumCastleRuins": {
+          "DescriptionOverride": "{{i18n:MadDog.HashtagBearFam.GotoroPhotos.ElysiumCastleRuins.Description}}"
+        },
+        "MadDog.HashtagBearFam_GotoroPhotos.MariposaNaturePreserve": {
+          "DescriptionOverride": "{{i18n:MadDog.HashtagBearFam.GotoroPhotos.MariposaNaturePreserve.Description}}"
+        },
+        "MadDog.HashtagBearFam_GotoroPhotos.FortunetellerFalls": {
+          "DescriptionOverride": "{{i18n:MadDog.HashtagBearFam.GotoroPhotos.FortunetellerFalls.Description}}"
+        },
+        "MadDog.HashtagBearFam_GotoroPhotos.EruptingMtGotoro": {
+          "DescriptionOverride": "{{i18n:MadDog.HashtagBearFam.GotoroPhotos.EruptingMtGotoro.Description}}"
+        },
+        "MadDog.HashtagBearFam_GotoroPhotos.GotoroMerchantShips": {
+          "DescriptionOverride": "{{i18n:MadDog.HashtagBearFam.GotoroPhotos.GotoroMerchantShips.Description}}"
+        },
+        "MadDog.HashtagBearFam_GotoroPhotos.HetterglossMountains": {
+          "DescriptionOverride": "{{i18n:MadDog.HashtagBearFam.GotoroPhotos.HetterglossMountains.Description}}"
+        },
+        "MadDog.HashtagBearFam_GotoroPhotos.GiantsDiadem": {
+          "DescriptionOverride": "{{i18n:MadDog.HashtagBearFam.GotoroPhotos.GiantsDiadem.Description}}"
+        },
+        "MadDog.HashtagBearFam_GotoroPhotos.FireSwampWinter": {
+          "DescriptionOverride": "{{i18n:MadDog.HashtagBearFam.GotoroPhotos.FireSwampWinter.Description}}"
+        },
+        "MadDog.HashtagBearFam_GotoroPhotos.FireSwamp": {
+          "DescriptionOverride": "{{i18n:MadDog.HashtagBearFam.GotoroPhotos.FireSwamp.Description}}"
+        },
+        "MadDog.HashtagBearFam_GotoroPhotos.PalladiumFortressRuins": {
+          "DescriptionOverride": "{{i18n:MadDog.HashtagBearFam.GotoroPhotos.PalladiumFortressRuins.Description}}"
+        },
+        "MadDog.HashtagBearFam_GotoroPhotos.CoeruleusLake": {
+          "DescriptionOverride": "{{i18n:MadDog.HashtagBearFam.GotoroPhotos.CoeruleusLake.Description}}"
+        }
+      }
+    },
+    {
+      "LogName": "Free Alcohol",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 27,
+            "Y": 33
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "spacechase0.SpaceCore_TriggerAction MadDog.Bearfam_FreeAlcohol"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Free Cookie",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 38,
+            "Y": 27
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "spacechase0.SpaceCore_TriggerAction MadDog.Bearfam_FreeCookieTeren"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Free Tea",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_Cellar",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 4,
+            "Y": 9
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "spacechase0.SpaceCore_TriggerAction MadDog.Bearfam_FreeTeaSig"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Warp Trauma",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Sigurd |contains=Dating, Engaged, Married": true
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 31,
+            "Y": 10
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "spacechase0.SpaceCore_TriggerAction MadDog.Bearfam_EscapetheRoom_Sig"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Warp Trauma",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar |contains=Dating, Engaged, Married": true
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 50,
+            "Y": 7
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "spacechase0.SpaceCore_TriggerAction MadDog.Bearfam_EscapetheRoom_Gunnar"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Warp Trauma",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Teren |contains=Dating, Engaged, Married": true
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 45,
+            "Y": 28
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "spacechase0.SpaceCore_TriggerAction MadDog.Bearfam_EscapetheRoom_Teren"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Silly Wood Crime",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 17,
+            "Y": 26
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "spacechase0.SpaceCore_TriggerAction MadDog.Bearfam_WoodPileWhy"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Silly Potion Crime",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 47,
+            "Y": 7
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "spacechase0.SpaceCore_TriggerAction MadDog.Bearfam_GunnarPotionTheft"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Kraken Chatting",
+      "Action": "EditMap",
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16193011": true //kraken spawns after player and Gun see it
+      },
+      "Target": "Maps/MadDog.HashtagBearFam_KrakenCave",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 21,
+            "Y": 12
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "spacechase0.SpaceCore_TriggerAction MadDog.Bearfam_KrakenTalk"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Berry Crimes",
+      "Action": "EditMap",
+      "When": {
+        "Season |contains=Spring, Summer": true
+      },
+      "Target": "Maps/MadDog.HashtagBearFam_Cellar",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 23,
+            "Y": 14
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "spacechase0.SpaceCore_TriggerAction MadDog.Bearfam_BrambleAttackGetBerries"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Berry Crimes 2",
+      "Action": "EditMap",
+      "When": {
+        "Season |contains=Fall, Winter": true
+      },
+      "Target": "Maps/MadDog.HashtagBearFam_Cellar",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 23,
+            "Y": 14
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "spacechase0.SpaceCore_TriggerAction MadDog.Bearfam_BrambleAttackNoBerries"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Berry Crimes - RH Place 1",
+      "Action": "EditMap",
+      "When": {
+        "Season |contains=Spring, Summer": true
+      },
+      "Target": "Maps/MadDog.HashtagBearFam_RHTerenSigHouse",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 4,
+            "Y": 11
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "spacechase0.SpaceCore_TriggerAction MadDog.Bearfam_BrambleAttackGetBerries1"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Berry Crimes 2 - RH Place 1",
+      "Action": "EditMap",
+      "When": {
+        "Season |contains=Fall, Winter": true
+      },
+      "Target": "Maps/MadDog.HashtagBearFam_RHTerenSigHouse",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 4,
+            "Y": 11
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "spacechase0.SpaceCore_TriggerAction MadDog.Bearfam_BrambleAttackNoBerries1"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Berry Crimes - RH Place 2",
+      "Action": "EditMap",
+      "When": {
+        "Season |contains=Spring, Summer": true
+      },
+      "Target": "Maps/MadDog.HashtagBearFam_RHTerenSigHouse",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 10,
+            "Y": 12
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "spacechase0.SpaceCore_TriggerAction MadDog.Bearfam_BrambleAttackGetBerries2"
+          }
+        }
+      ]
+    },
+
+    {
+      "LogName": "Berry Crimes 2 - RH Place 2",
+      "Action": "EditMap",
+      "When": {
+        "Season |contains=Fall, Winter": true
+      },
+      "Target": "Maps/MadDog.HashtagBearFam_RHTerenSigHouse",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 10,
+            "Y": 12
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "spacechase0.SpaceCore_TriggerAction MadDog.Bearfam_BrambleAttackNoBerries2"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Make Added Keychain Item More Cool",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+      "When": {
+        "HasMod": "DN.SnS"
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam_BearFamilyKeyChain": {
+          "CategoryTextOverride": "{{i18n:MadDog.HashtagBearFam.SpaceCoreCategory.Keychain}}",
+          "CategoryColorOverride": {
+            "R": 0,
+            "G": 50,
+            "B": 200,
+            "A": 255
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Load Tab asset",
+      "Action": "Load",
+      "Target": "Mods/MadDogBearFam/ShopTabs",
+      "FromFile": "Assets/ShopTabs/{{TabRecolorCompat}}.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ShopExtensionData",
+      "Entries": {
+        "MadDog.HashtagBearFam_GunShop": {
+          "Tabs": "Custom",
+          "CustomTabs": [
+            {
+              "Id": "Everything",
+              "IconTexture": "Mods\\MadDogBearFam\\ShopTabs",
+              "IconRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+              },
+              "FilterCondition": "TRUE"
+            },
+            {
+              "Id": "Potions",
+              "IconTexture": "Mods\\MadDogBearFam\\ShopTabs",
+              "IconRect": {
+                "X": 16,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+              },
+              "FilterCondition": "ITEM_ID Input MadDog.HashtagBearFam_GunnarFirstPotion MadDog.HashtagBearFam_GunnarSecondPotion MadDog.HashtagBearFam_GunnarThirdPotion MadDog.HashtagBearFam_GunnarRemedyAll MadDog.HashtagBearFam_GunnarWeirdPotion MadDog.HashtagBearFam_GunnarBadPotion MadDog.HashtagBearFam_GunnarMysteryPotion MadDog.HashtagBearFam_GunnarPhoenixDown MadDog.HashtagBearFam_NineHerbsCharm MadDog.HashtagBearFam_GunnarPerfectPotion MadDog.HashtagBearFam_RegenPotions_GreatGospelPotion MadDog.HashtagBearFam_RegenPotions_AngelWingPotion MadDog.HashtagBearFam_RegenPotions_TidesofFatePotion MadDog.HashtagBearFam_RegenPotions_FreeEnergyPotion MadDog.HashtagBearFam_RegenPotions_FantasiaPotion MadDog.HashtagBearFam_RegenPotions_DigitalMindWavePotion MadDog.HashtagBearFam_RegenPotions_GlaiveArtsPotion MadDog.HashtagBearFam_RegenPotions_NordswainsGlowPotion FlashShifter.StardewValleyExpandedCP_Aegis_Elixir FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir FlashShifter.StardewValleyExpandedCP_Gravity_Elixir FlashShifter.StardewValleyExpandedCP_Lightning_Elixir FlashShifter.StardewValleyExpandedCP_Armor_Elixir FlashShifter.StardewValleyExpandedCP_Haste_Elixir FlashShifter.StardewValleyExpandedCP_Hero_Elixir"
+            },
+            {
+              "Id": "Equipment",
+              "IconTexture": "Mods\\MadDogBearFam\\ShopTabs",
+              "IconRect": {
+                "X": 0,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+              },
+              "FilterCondition": "ITEM_CATEGORY Input -24 -95 -96 -98 -100"
+            },
+            {
+              "Id": "Bombs",
+              "IconTexture": "Mods\\MadDogBearFam\\ShopTabs",
+              "IconRect": {
+                "X": 16,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+              },
+              "FilterCondition": "ITEM_CONTEXT_TAG Input bomb_item"
+            },
+            {
+              "Id": "Food",
+              "IconTexture": "Mods\\MadDogBearFam\\ShopTabs",
+              "IconRect": {
+                "X": 0,
+                "Y": 32,
+                "Width": 16,
+                "Height": 16
+              },
+              "FilterCondition": "ITEM_CATEGORY Input -7 -75 -79 -80 -81, !ITEM_ID Input MadDog.HashtagBearFam_GunnarFirstPotion MadDog.HashtagBearFam_GunnarSecondPotion MadDog.HashtagBearFam_GunnarThirdPotion MadDog.HashtagBearFam_GunnarRemedyAll MadDog.HashtagBearFam_GunnarWeirdPotion MadDog.HashtagBearFam_GunnarBadPotion MadDog.HashtagBearFam_GunnarMysteryPotion MadDog.HashtagBearFam_GunnarPhoenixDown MadDog.HashtagBearFam_NineHerbsCharm MadDog.HashtagBearFam_GunnarPerfectPotion MadDog.HashtagBearFam_RegenPotions_GreatGospelPotion MadDog.HashtagBearFam_RegenPotions_AngelWingPotion MadDog.HashtagBearFam_RegenPotions_TidesofFatePotion MadDog.HashtagBearFam_RegenPotions_FreeEnergyPotion MadDog.HashtagBearFam_RegenPotions_FantasiaPotion MadDog.HashtagBearFam_RegenPotions_DigitalMindWavePotion MadDog.HashtagBearFam_RegenPotions_GlaiveArtsPotion MadDog.HashtagBearFam_RegenPotions_NordswainsGlowPotion FlashShifter.StardewValleyExpandedCP_Aegis_Elixir FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir FlashShifter.StardewValleyExpandedCP_Gravity_Elixir FlashShifter.StardewValleyExpandedCP_Lightning_Elixir FlashShifter.StardewValleyExpandedCP_Armor_Elixir FlashShifter.StardewValleyExpandedCP_Haste_Elixir FlashShifter.StardewValleyExpandedCP_Hero_Elixir"
+            },
+            {
+              "Id": "Seeds & Saplings",
+              "IconTexture": "Mods\\MadDogBearFam\\ShopTabs",
+              "IconRect": {
+                "X": 16,
+                "Y": 32,
+                "Width": 16,
+                "Height": 16
+              },
+              "FilterCondition": "ITEM_CATEGORY Input -74"
+            },
+            {
+              "Id": "Misc",
+              "IconTexture": "Mods\\MadDogBearFam\\ShopTabs",
+              "IconRect": {
+                "X": 16,
+                "Y": 48,
+                "Width": 16,
+                "Height": 16
+              },
+              "FilterCondition": "ITEM_CATEGORY Input -26 -9 -20 -28"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "SpaceCore Item Data",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+      "Entries": {
+        "MadDog.HashtagBearFam_Teren_Book": {
+          "GiftableToNpcAllowList": {
+            "MadDog.HashtagBearFam.Teren": true
+          },
+          "GiftedToNotOnAllowListMessage": "{{i18n:MadDog.Teren_BookReject}}"
+        }
+      },
+      "When": {
+        "HasMod": "spacechase0.SpaceCore"
+      }
+    },
+    {
+      "LogName": "SpaceCore Item Data",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+      "Entries": {
+        "MadDog.HashtagBearFam_KingoftheForest_Whiskey": {
+          "GiftableToNpcAllowList": {
+            "MadDog.HashtagBearFam.Sigurd": true
+          },
+          "GiftedToNotOnAllowListMessage": "{{i18n:MadDog.KingoftheForest_WhiskeyReject}}"
+        }
+      },
+      "When": {
+        "HasMod": "spacechase0.SpaceCore"
+      }
+    },
+    {
+      "LogName": "Yet another cool feature from SpaceCore",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/NpcExtensionData",
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": {
+          "SeparateDatability": true
+        },
+        "MadDog.HashtagBearFam.Gunnar": {
+          "SeparateDatability": true
+        },
+        "MadDog.HashtagBearFam.Teren": {
+          "SeparateDatability": true
+        }
+      }
+    }
+  ]
+}

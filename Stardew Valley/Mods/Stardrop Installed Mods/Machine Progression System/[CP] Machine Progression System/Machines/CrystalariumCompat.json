@@ -110,6 +110,876 @@
 				{ "ID": "appleseed.BCP.Petuntse", "BeforeId": "Default" }
 			]
 		},
+		
+		// Better Crystalarium (https://www.nexusmods.com/stardewvalley/mods/24737)
+		{
+			"LogName": "Add compatibility patch to the Radioactive Crystalarium",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)nachonline.mps_RadioactiveCrystalarium",
+				"OutputRules"
+			],
+			"Entries": {
+				"UncleArya.BetterCrystalarium.ArtifactTrove": {
+					"Id": "UncleArya.BetterCrystalarium.ArtifactTrove",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)275"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{R.C Quantity}}",
+							"CopyQuality": "{{R.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{R.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{R.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{R.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{R.C Bracket 1 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.MysteryBox": {
+					"Id": "UncleArya.BetterCrystalarium.MysteryBox",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)MysteryBox"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{R.C Quantity}}",
+							"CopyQuality": "{{R.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{R.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{R.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{R.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{R.C Bracket 1 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.GoldenMysteryBox": {
+					"Id": "UncleArya.BetterCrystalarium.GoldenMysteryBox",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)GoldenMysteryBox"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{R.C Quantity}}",
+							"CopyQuality": "{{R.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{R.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{R.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{R.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{R.C Bracket 1 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.Totems": {
+					"Id": "UncleArya.BetterCrystalarium.Totems",
+					"Triggers": [
+						{
+							"RequiredTags": ["totem_item"]
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{R.C Quantity}}",
+							"CopyQuality": "{{R.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{R.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{R.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{R.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{R.C Bracket 1 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.Pearl": {
+					"Id": "UncleArya.BetterCrystalarium.Pearl",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)797"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{R.C Quantity}}",
+							"CopyQuality": "{{R.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{R.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{R.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{R.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{R.C Bracket 10 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.GoldenCoconut": {
+					"Id": "UncleArya.BetterCrystalarium.GoldenCoconut",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)791"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{R.C Quantity}}",
+							"CopyQuality": "{{R.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{R.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{R.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{R.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{R.C Bracket 1 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.Wood": {
+					"Id": "UncleArya.BetterCrystalarium.Wood",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)388"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{R.C Quantity}}",
+							"CopyQuality": "{{R.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{R.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{R.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{R.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{R.C Bracket 1 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.Hardwood": {
+					"Id": "UncleArya.BetterCrystalarium.Hardwood",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)709"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{R.C Quantity}}",
+							"CopyQuality": "{{R.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{R.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{R.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{R.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{R.C Bracket 1 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.Stone": {
+					"Id": "UncleArya.BetterCrystalarium.Stone",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)390"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{R.C Quantity}}",
+							"CopyQuality": "{{R.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{R.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{R.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{R.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{R.C Bracket 1 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.Clay": {
+					"Id": "UncleArya.BetterCrystalarium.Clay",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)330"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{R.C Quantity}}",
+							"CopyQuality": "{{R.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{R.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{R.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{R.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{R.C Bracket 1 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.DragonTooth": {
+					"Id": "UncleArya.BetterCrystalarium.DragonTooth",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)852"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{R.C Quantity}}",
+							"CopyQuality": "{{R.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{R.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{R.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{R.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{R.C Bracket 5 Production Time}}"
+				}
+			},
+			"When": {
+				"HasMod": "UncleArya.BetterCrystalarium"
+			},
+			"MoveEntries": [
+				{ "ID": "UncleArya.BetterCrystalarium.ArtifactTrove", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.MysteryBox", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.GoldenMysteryBox", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.Totems", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.Pearl", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.GoldenCoconut", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.Wood", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.Hardwood", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.Stone", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.Clay", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.DragonTooth", "BeforeId": "Default" }
+			]
+		},
+		{
+			"LogName": "Add compatibility patch to the Prismatic Crystalarium",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)nachonline.mps_PrismaticCrystalarium",
+				"OutputRules"
+			],
+			"Entries": {
+				"UncleArya.BetterCrystalarium.ArtifactTrove": {
+					"Id": "UncleArya.BetterCrystalarium.ArtifactTrove",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)275"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{P.C Quantity}}",
+							"CopyQuality": "{{P.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{P.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{P.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{P.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{P.C Bracket 1 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.MysteryBox": {
+					"Id": "UncleArya.BetterCrystalarium.MysteryBox",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)MysteryBox"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{P.C Quantity}}",
+							"CopyQuality": "{{P.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{P.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{P.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{P.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{P.C Bracket 1 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.GoldenMysteryBox": {
+					"Id": "UncleArya.BetterCrystalarium.GoldenMysteryBox",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)GoldenMysteryBox"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{P.C Quantity}}",
+							"CopyQuality": "{{P.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{P.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{P.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{P.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{P.C Bracket 1 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.Totems": {
+					"Id": "UncleArya.BetterCrystalarium.Totems",
+					"Triggers": [
+						{
+							"RequiredTags": ["totem_item"]
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{P.C Quantity}}",
+							"CopyQuality": "{{P.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{P.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{P.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{P.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{P.C Bracket 1 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.Pearl": {
+					"Id": "UncleArya.BetterCrystalarium.Pearl",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)797"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{P.C Quantity}}",
+							"CopyQuality": "{{P.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{P.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{P.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{P.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{P.C Bracket 10 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.GoldenCoconut": {
+					"Id": "UncleArya.BetterCrystalarium.GoldenCoconut",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)791"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{P.C Quantity}}",
+							"CopyQuality": "{{P.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{P.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{P.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{P.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{P.C Bracket 1 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.Wood": {
+					"Id": "UncleArya.BetterCrystalarium.Wood",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)388"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{P.C Quantity}}",
+							"CopyQuality": "{{P.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{P.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{P.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{P.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{P.C Bracket 1 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.Hardwood": {
+					"Id": "UncleArya.BetterCrystalarium.Hardwood",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)709"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{P.C Quantity}}",
+							"CopyQuality": "{{P.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{P.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{P.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{P.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{P.C Bracket 1 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.Stone": {
+					"Id": "UncleArya.BetterCrystalarium.Stone",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)390"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{P.C Quantity}}",
+							"CopyQuality": "{{P.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{P.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{P.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{P.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{P.C Bracket 1 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.Clay": {
+					"Id": "UncleArya.BetterCrystalarium.Clay",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)330"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{P.C Quantity}}",
+							"CopyQuality": "{{P.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{P.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{P.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{P.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{P.C Bracket 1 Production Time}}"
+				},
+				"UncleArya.BetterCrystalarium.DragonTooth": {
+					"Id": "UncleArya.BetterCrystalarium.DragonTooth",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)852"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN",
+							"MinStack": "{{P.C Quantity}}",
+							"CopyQuality": "{{P.C Copy Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 100",
+									"Modification": "Add",
+									"Amount": "{{P.C 100 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "300DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 300",
+									"Modification": "Add",
+									"Amount": "{{P.C 300 Diamonds Found Bonus}}"
+								},
+								{
+									"Id": "500DiamondsFound",
+									"Condition": "PLAYER_STAT Current diamondsFound 500",
+									"Modification": "Add",
+									"Amount": "{{P.C 500 Diamonds Found Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{P.C Bracket 5 Production Time}}"
+				}
+			},
+			"When": {
+				"HasMod": "UncleArya.BetterCrystalarium"
+			},
+			"MoveEntries": [
+				{ "ID": "UncleArya.BetterCrystalarium.ArtifactTrove", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.MysteryBox", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.GoldenMysteryBox", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.Totems", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.Pearl", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.GoldenCoconut", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.Wood", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.Hardwood", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.Stone", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.Clay", "BeforeId": "Default" },
+				{ "ID": "UncleArya.BetterCrystalarium.DragonTooth", "BeforeId": "Default" }
+			]
+		},
 	
 		// Stardew Valley Expanded (https://www.nexusmods.com/stardewvalley/mods/3753)	
 		{

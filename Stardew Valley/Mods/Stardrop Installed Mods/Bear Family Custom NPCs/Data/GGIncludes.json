@@ -1,0 +1,1445 @@
+{
+  "Changes": [
+    {
+      "LogName": "Gunnar Wedding Mateo present",
+      "Action": "EditData",
+      "Target": "Data/Weddings",
+      "TargetField": [
+        "EventScript"
+      ],
+      "When": {
+        "HasMod  |contains=DN.SnS": true,
+        "HasSeenEvent  |contains=MadDog.BearFam.16193001A": true
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "sweet/-1000 -1000/farmer 34 25 2 MadDog.HashtagBearFam.Gunnar 35 25 2 MadDog.HashtagBearFam.Sondra 34 24 2 Mateo 35 24 2 otherFarmers 30 28 0[SetupContextualWeddingAttendees]/changeLocation MadDog.HashtagBearFam_WeddingMap/showFrame MadDog.HashtagBearFam.Sondra 52/showFrame MadDog.HashtagBearFam.Gunnar 48/specificTemporarySprite wedding/viewport 34 26 true/pause 4000/speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.GunnarWedding.PlusMateo.Speak.Sondra.1}}\"/faceDirection farmer 1/faceDirection MadDog.HashtagBearFam.Gunnar 3 true/showFrame MadDog.HashtagBearFam.Gunnar 49/pause 500/pause 2000/speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.GunnarWedding.PlusMateo.Speak.Sondra.2}}\"/playMusic none/pause 1000/speak Mateo \"{{i18n:BearFam.GunnarWedding.PlusMateo.Speak.Mateo.3}}\"/pause 500/speak MadDog.HashtagBearFam.Gunnar \"{{i18n:BearFam.GunnarWedding.PlusMateo.Speak.Gunnar.1}}\"/quickQuestion #{{i18n:BearFam.GunnarWedding.PlusMateo.Speak.QuickQuestionResponse.1}}(break)speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.GunnarWedding.PlusMateo.Speak.Sondra.4}}\"/pause 1000/showFrame farmer 101/positionOffset farmer 10 0/showFrame MadDog.HashtagBearFam.Gunnar 50/positionOffset MadDog.HashtagBearFam.Gunnar -10 0/specificTemporarySprite heart 28 62/playSound dwop/pause 2000/specificTemporarySprite wed/faceDirection farmer 2/faceDirection MadDog.HashtagBearFam.Gunnar 2 true/showFrame MadDog.HashtagBearFam.Gunnar 48/[ContextualWeddingCelebrations]/pause 4000/faceDirection farmer 1/faceDirection MadDog.HashtagBearFam.Gunnar 3 true/showFrame MadDog.HashtagBearFam.Gunnar 49/globalFade/viewport -1000 -1000/pause 1000/message \"{{i18n:BearFam.GunnarWedding.Speak.Message.1}}\"/pause 500/message \"{{i18n:BearFam.GunnarWedding.PlusMateo.Speak.2}}\"/pause 4000/waitForOtherPlayers weddingEnd[FarmerUniqueId]/end wedding"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Weddings",
+      "TargetField": [
+        "Attendees"
+      ],
+      "When": {
+
+        "HasMod  |contains=DN.SnS": true,
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Engaged",
+        "HasSeenEvent  |contains=MadDog.BearFam.16193001A": true
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": {
+          "Id": "Gunnar",
+          "Condition": null,
+          "Setup": "MadDog.HashtagBearFam.Sigurd 33 28 0",
+          "Celebration": "emote MadDog.HashtagBearFam.Sigurd 20 true",
+          "IgnoreUnlockConditions": false
+        },
+        "MadDog.HashtagBearFam.Gudrun": {
+          "Id": "Gudrun",
+          "Condition": null,
+          "Setup": "MadDog.HashtagBearFam.Gudrun 31 28 0",
+          "Celebration": "emote MadDog.HashtagBearFam.Gudrun 20 true",
+          "IgnoreUnlockConditions": false
+        },
+        "MadDog.HashtagBearFam.Teren": {
+          "Id": "Teren",
+          "Condition": null,
+          "Setup": "MadDog.HashtagBearFam.Teren 32 28 0",
+          "Celebration": "emote MadDog.HashtagBearFam.Teren 20 true",
+          "IgnoreUnlockConditions": false
+        },
+
+        "Sandy": {
+          "Id": "Sandy",
+          "Condition": "PLAYER_HAS_MET Target Sandy",
+          "Setup": "Sandy 37 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Alex": {
+          "Id": "Alex",
+          "Condition": null,
+          "Setup": "Alex 36 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Clint": {
+          "Id": "Clint",
+          "Condition": null,
+          "Setup": "Clint 37 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Gus": {
+          "Id": "Gus",
+          "Condition": null,
+          "Setup": "Gus 31 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Cirrus": {
+          "Id": "Cirrus",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch3.Cirrus.1}}",
+          "Setup": "Cirrus 30 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Hector": {
+          "Id": "Hector",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch2.Hector.1}}",
+          "Setup": "Hector 31 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Dandelion": {
+          "Id": "Dandelion",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch4.Dandelion.1}}",
+          "Setup": "Dandelion 32 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Roslin": {
+          "Id": "Roslin",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch4.Dandelion.1}}",
+          "Setup": "Roslin 33 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "TraceV": {
+          "Id": "Trace",
+          "Condition": "{{HasMod |contains=7thAxis.DitR.CP, 7thAxis.LitD}}",
+          "Setup": "TraceV 31 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Krobus": {
+          "Id": "Krobus",
+          "Condition": "PLAYER_HAS_MET Target Krobus",
+          "Setup": "Krobus 30 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Dwarf": {
+          "Id": "Dwarf",
+          "Condition": "PLAYER_HAS_MET Target Dwarf",
+          "Setup": "Dwarf 32 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Wizard": {
+          "Id": "Wizard",
+          "Condition": "PLAYER_HAS_MET Target Wizard",
+          "Setup": "Wizard 33 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Eloise": {
+          "Id": "Eloise",
+          "Condition": null,
+          "Setup": "Eloise 38 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Jacob": {
+          "Id": "Jacob",
+          "Condition": null,
+          "Setup": "Jacob 39 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Evelyn": {
+          "Id": "Evelyn",
+          "Condition": null,
+          "Setup": "Evelyn 36 33 0",
+          "Celebration": "faceDirection Evelyn 1 true",
+          "IgnoreUnlockConditions": false
+        },
+        "George": {
+          "Id": "George",
+          "Condition": null,
+          "Setup": "George 37 33 0",
+          "Celebration": "faceDirection George 3 true",
+          "IgnoreUnlockConditions": false
+        },
+        "WaffleW": {
+          "Id": "Waffle",
+          "Condition": "{{HasMod |contains=7thAxis.DitR.CP}}",
+          "Setup": "WaffleW 30 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "EveT": {
+          "Id": "Eve",
+          "Condition": "{{HasMod |contains=7thAxis.DitR.CP}}",
+          "Setup": "EveT 31 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Jessie": {
+          "Id": "Jessie",
+          "Condition": null,
+          "Setup": "Jessie? 32 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Linus": {
+          "Id": "Linus",
+          "Condition": null,
+          "Setup": "Linus 33 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Sebastian": {
+          "Id": "Sebastian",
+          "Condition": null,
+          "Setup": "Sebastian 37 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Maru": {
+          "Id": "Maru",
+          "Condition": null,
+          "Setup": "Maru 36 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Abigail": {
+          "Id": "Abigail",
+          "Condition": null,
+          "Setup": "Abigail 37 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Pam": {
+          "Id": "Pam",
+          "Condition": null,
+          "Setup": "Pam 32 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Penny": {
+          "Id": "Penny",
+          "Condition": null,
+          "Setup": "Penny 38 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Harvey": {
+          "Id": "Harvey",
+          "Condition": null,
+          "Setup": "Harvey 38 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Rosa": {
+          "Id": "Rosa",
+          "Condition": null,
+          "Setup": "Rosa 38 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Juliet": {
+          "Id": "Juliet",
+          "Condition": null,
+          "Setup": "Juliet? 39 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "RodneyOBrien": {
+          "Id": "Rodney",
+          "Condition": "{{HasMod |contains=TheFrenchDodo.RodneyOBrien}}",
+          "Setup": "RodneyOBrien 37 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Nora": {
+          "Id": "Nora",
+          "Condition": "{{HasMod |contains=Bagi.Nora.CP}}",
+          "Setup": "Nora 39 1 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "ToriLK": {
+          "Id": "Tori",
+          "Condition": null,
+          "Setup": "ToriLK 30 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Fievel": {
+          "Id": "Fievel",
+          "Condition": "{{HasMod |contains=EastScarp.FGES}}",
+          "Setup": "Fievel 33 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Jasper": {
+          "Id": "Jasper",
+          "Condition": null,
+          "Setup": "Jasper? 38 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Aideen": {
+          "Id": "Aideen",
+          "Condition": null,
+          "Setup": "Aideen 39 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Nova.Eli": {
+          "Id": "Eli",
+          "Condition": "{{HasMod |contains=TenebrousNova.EliDylan.CPD}}",
+          "Setup": "Nova.Eli 30 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Nova.Dylan": {
+          "Id": "Dylan",
+          "Condition": "{{HasMod |contains=TenebrousNova.EliDylan.CPD}}",
+          "Setup": "Nova.Dylan 31 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Lance": {
+          "Id": "Lance",
+          "Condition": "{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}",
+          "Setup": "Lance 32 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "{{Marlon}}": {
+          "Id": "Marlon",
+          "Condition": null,
+          "Setup": "{{Marlon}} 39 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Demetrius": {
+          "Id": "Demetrius",
+          "Condition": null,
+          "Setup": "Demetrius 36 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Robin": {
+          "Id": "Robin",
+          "Condition": null,
+          "Setup": "Robin 38 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Emily": {
+          "Id": "Emily",
+          "Condition": null,
+          "Setup": "Emily 38 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "{{Gunther}}": {
+          "Id": "Gunther",
+          "Condition": null,
+          "Setup": "{{Gunther}} 36 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        }
+      }
+    },
+    {
+      "LogName": "Gunnar Wedding",
+      "Action": "EditData",
+      "Target": "Data/Weddings",
+      "TargetField": [
+        "EventScript"
+      ],
+      "When": {
+        "HasSeenEvent  |contains=MadDog.BearFam.16193001A": false
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "sweet/-1000 -1000/farmer 34 25 2 MadDog.HashtagBearFam.Gunnar 35 25 2 MadDog.HashtagBearFam.Sondra 34 24 2 otherFarmers 30 28 0[SetupContextualWeddingAttendees]/positionOffset MadDog.HashtagBearFam.Sondra 30 0/showFrame MadDog.HashtagBearFam.Sondra 52/changeLocation MadDog.HashtagBearFam_WeddingMap/showFrame MadDog.HashtagBearFam.Gunnar 48/specificTemporarySprite wedding/viewport 34 26 true/pause 4000/speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.GunnarWedding.Speak.Sondra.1}}\"/faceDirection farmer 1/faceDirection MadDog.HashtagBearFam.Gunnar 3 true/showFrame MadDog.HashtagBearFam.Gunnar 49/pause 500/pause 2000/speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.GunnarWedding.Speak.Sondra.2}}\"/playMusic none/pause 1000/speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.GunnarWedding.Speak.Sondra.3}}\"/pause 500/speak MadDog.HashtagBearFam.Gunnar \"{{i18n:BearFam.GunnarWedding.Speak.Gunnar.1}}\"/quickQuestion #{{i18n:BearFam.GunnarWedding.Speak.QuickQuestionResponse.1}}(break)speak MadDog.HashtagBearFam.Sondra \"{{i18n:BearFam.GunnarWedding.Speak.Sondra.4}}\"/pause 1000/showFrame farmer 101/positionOffset farmer 10 0/showFrame MadDog.HashtagBearFam.Gunnar 50/positionOffset MadDog.HashtagBearFam.Gunnar -10 0/specificTemporarySprite heart 28 62/playSound dwop/pause 2000/specificTemporarySprite wed/faceDirection farmer 2/faceDirection MadDog.HashtagBearFam.Gunnar 2 true/showFrame MadDog.HashtagBearFam.Gunnar 48/[ContextualWeddingCelebrations]/pause 4000/faceDirection farmer 1/faceDirection MadDog.HashtagBearFam.Gunnar 3 true/showFrame MadDog.HashtagBearFam.Gunnar 49/globalFade/viewport -1000 -1000/pause 1000/message \"{{i18n:BearFam.GunnarWedding.Speak.Message.1}}\"/pause 500/message \"{{i18n:BearFam.GunnarWedding.Speak.Message.2}}\"/pause 4000/waitForOtherPlayers weddingEnd[FarmerUniqueId]/end wedding"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Weddings",
+      "When": {
+
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Engaged",
+        "HasSeenEvent |contains=MadDog.BearFam.16193001A": false
+      },
+      "TargetField": [
+        "Attendees"
+      ],
+      "Entries": {
+        "MadDog.HashtagBearFam.Sigurd": {
+          "Id": "Gunnar",
+          "Condition": null,
+          "Setup": "MadDog.HashtagBearFam.Sigurd 33 28 0",
+          "Celebration": "emote MadDog.HashtagBearFam.Sigurd 20 true",
+          "IgnoreUnlockConditions": false
+        },
+        "MadDog.HashtagBearFam.Gudrun": {
+          "Id": "Gudrun",
+          "Condition": null,
+          "Setup": "MadDog.HashtagBearFam.Gudrun 31 28 0",
+          "Celebration": "emote MadDog.HashtagBearFam.Gudrun 20 true",
+          "IgnoreUnlockConditions": false
+        },
+        "MadDog.HashtagBearFam.Teren": {
+          "Id": "Teren",
+          "Condition": null,
+          "Setup": "MadDog.HashtagBearFam.Teren 32 28 0",
+          "Celebration": "emote MadDog.HashtagBearFam.Teren 20 true",
+          "IgnoreUnlockConditions": false
+        },
+
+        "Sandy": {
+          "Id": "Sandy",
+          "Condition": "PLAYER_HAS_MET Target Sandy",
+          "Setup": "Sandy 37 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Alex": {
+          "Id": "Alex",
+          "Condition": null,
+          "Setup": "Alex 36 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Clint": {
+          "Id": "Clint",
+          "Condition": null,
+          "Setup": "Clint 37 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Gus": {
+          "Id": "Gus",
+          "Condition": null,
+          "Setup": "Gus 31 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Cirrus": {
+          "Id": "Cirrus",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch3.Cirrus.1}}",
+          "Setup": "Cirrus 30 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Hector": {
+          "Id": "Hector",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch2.Hector.1}}",
+          "Setup": "Hector 31 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Dandelion": {
+          "Id": "Dandelion",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch4.Dandelion.1}}",
+          "Setup": "Dandelion 32 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Roslin": {
+          "Id": "Roslin",
+          "Condition": "{{HasMod |contains=DN.SnS}}, {{HasSeenEvent |contains=SnS.Ch4.Dandelion.1}}",
+          "Setup": "Roslin 33 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "TraceV": {
+          "Id": "Trace",
+          "Condition": "{{HasMod |contains=7thAxis.DitR.CP, 7thAxis.LitD}}",
+          "Setup": "TraceV 31 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Krobus": {
+          "Id": "Krobus",
+          "Condition": "PLAYER_HAS_MET Target Krobus",
+          "Setup": "Krobus 30 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Dwarf": {
+          "Id": "Dwarf",
+          "Condition": "PLAYER_HAS_MET Target Dwarf",
+          "Setup": "Dwarf 32 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Wizard": {
+          "Id": "Wizard",
+          "Condition": "PLAYER_HAS_MET Target Wizard",
+          "Setup": "Wizard 33 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Eloise": {
+          "Id": "Eloise",
+          "Condition": null,
+          "Setup": "Eloise 38 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Jacob": {
+          "Id": "Jacob",
+          "Condition": null,
+          "Setup": "Jacob 39 29 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "George": {
+          "Id": "George",
+          "Condition": null,
+          "Setup": "George 37 33 0",
+          "Celebration": "faceDirection George 3 true",
+          "IgnoreUnlockConditions": false
+        },
+        "WaffleW": {
+          "Id": "Waffle",
+          "Condition": "{{HasMod |contains=7thAxis.DitR.CP}}",
+          "Setup": "WaffleW 30 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "EveT": {
+          "Id": "Eve",
+          "Condition": "{{HasMod |contains=7thAxis.DitR.CP}}",
+          "Setup": "EveT 31 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Jessie": {
+          "Id": "Jessie",
+          "Condition": null,
+          "Setup": "Jessie? 32 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Linus": {
+          "Id": "Linus",
+          "Condition": null,
+          "Setup": "Linus 33 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Sebastian": {
+          "Id": "Sebastian",
+          "Condition": null,
+          "Setup": "Sebastian 37 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Maru": {
+          "Id": "Maru",
+          "Condition": null,
+          "Setup": "Maru 36 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Abigail": {
+          "Id": "Abigail",
+          "Condition": null,
+          "Setup": "Abigail 37 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Pam": {
+          "Id": "Pam",
+          "Condition": null,
+          "Setup": "Pam 32 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Penny": {
+          "Id": "Penny",
+          "Condition": null,
+          "Setup": "Penny 38 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Harvey": {
+          "Id": "Harvey",
+          "Condition": null,
+          "Setup": "Harvey 38 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Rosa": {
+          "Id": "Rosa",
+          "Condition": null,
+          "Setup": "Rosa 38 33 0",
+          "Celebration": "faceDirection Rosa 1 true",
+          "IgnoreUnlockConditions": false
+        },
+        "Juliet": {
+          "Id": "Juliet",
+          "Condition": null,
+          "Setup": "Juliet? 39 33 0",
+          "Celebration": "faceDirection Juliet? 3 true",
+          "IgnoreUnlockConditions": false
+        },
+        "RodneyOBrien": {
+          "Id": "Rodney",
+          "Condition": "{{HasMod |contains=TheFrenchDodo.RodneyOBrien}}",
+          "Setup": "RodneyOBrien 37 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Nora": {
+          "Id": "Nora",
+          "Condition": "{{HasMod |contains=Bagi.Nora.CP}}",
+          "Setup": "Nora 39 1 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "ToriLK": {
+          "Id": "Tori",
+          "Condition": null,
+          "Setup": "ToriLK 30 32 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Fievel": {
+          "Id": "Fievel",
+          "Condition": "{{HasMod |contains=EastScarp.FGES}}",
+          "Setup": "Fievel 33 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Jasper": {
+          "Id": "Jasper",
+          "Condition": null,
+          "Setup": "Jasper? 38 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Aideen": {
+          "Id": "Aideen",
+          "Condition": null,
+          "Setup": "Aideen 39 30 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Nova.Eli": {
+          "Id": "Eli",
+          "Condition": "{{HasMod |contains=TenebrousNova.EliDylan.CPD}}",
+          "Setup": "Nova.Eli 30 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Nova.Dylan": {
+          "Id": "Dylan",
+          "Condition": "{{HasMod |contains=TenebrousNova.EliDylan.CPD}}",
+          "Setup": "Nova.Dylan 31 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Lance": {
+          "Id": "Lance",
+          "Condition": "{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}",
+          "Setup": "Lance 32 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "{{Marlon}}": {
+          "Id": "Marlon",
+          "Condition": null,
+          "Setup": "{{Marlon}} 39 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Demetrius": {
+          "Id": "Demetrius",
+          "Condition": null,
+          "Setup": "Demetrius 36 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Robin": {
+          "Id": "Robin",
+          "Condition": null,
+          "Setup": "Robin 38 33 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "Emily": {
+          "Id": "Emily",
+          "Condition": null,
+          "Setup": "Emily 38 28 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        },
+        "{{Gunther}}": {
+          "Id": "Gunther",
+          "Condition": null,
+          "Setup": "{{Gunther}} 36 31 0",
+          "Celebration": null,
+          "IgnoreUnlockConditions": false
+        }
+      }
+    },
+    {
+      "LogName": "Leif - static",
+      "Action": "EditImage",
+      "Target": "Characters/Toddler, Characters/Toddler_dark",
+      "FromFile": "assets/Characters/Gunnar/Children/static_{{GunnarLeifHair}}_Leif.png",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Married",
+        "GunnarCustomToddlerSprite": "customstatic"
+      }
+    },
+    {
+      "LogName": "Signe - static",
+      "Action": "EditImage",
+      "Target": "Characters/Toddler_girl, Characters/Toddler_girl_dark",
+      "FromFile": "assets/Characters/Gunnar/Children/static_{{GunnarSigneHair}}_Signe.png",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Married",
+        "GunnarCustomToddlerSprite": "customstatic"
+
+      }
+    },
+    {
+      "LogName": "Leif - seasonal",
+      "Action": "EditImage",
+      "Target": "Characters/Toddler, Characters/Toddler_dark",
+      "FromFile": "assets/Characters/Gunnar/Children/{{season}}_{{GunnarLeifHair}}_Leif.png",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Married",
+        "GunnarCustomToddlerSprite": "customseasonal"
+
+      }
+    },
+    {
+      "LogName": "Signe - seasonal",
+      "Action": "EditImage",
+      "Target": "Characters/Toddler_girl, Characters/Toddler_girl_dark",
+      "FromFile": "assets/Characters/Gunnar/Children/{{season}}_{{GunnarSigneHair}}_Signe.png",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Married",
+        "GunnarCustomToddlerSprite": "customseasonal"
+
+      }
+    },
+    /////////////////////////////////////////////////////
+    {
+      "LogName": "Sleepable Bed - Gunnar Edition",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 54,
+            "Y": 7
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Sleep",
+            "Bed": "T"
+          }
+        }
+      ],
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar |contains=Dating, Engaged, Married": true
+      }
+    },
+    /////////////////////////////////////////////////////
+    {
+      "LogName": "Player Death - Mines - Gunnar",
+      "Action": "EditData",
+      "Target": "Data/Events/Mine",
+      "Entries": {
+        "PlayerKilled": "none/-100 -100/farmer 19 10 2 MadDog.HashtagBearFam.Gunnar 18 10 1/pause 1500/showFrame 5/message \"{{i18n:Message.Gunnar.PlayerKilled.Mines.01{{GunnarSpousePetName}}}}\"/pause 1000/message \"{{i18n:Message.Gunnar.PlayerKilled.Mines.02{{GunnarSpousePetName}}}}\"/viewport 19 10 true/pause 1000/speak MadDog.HashtagBearFam.Gunnar \"{{i18n:Gunnar.PlayerKilled.Mines.03{{GunnarSpousePetName}}}}\"/pause 1000/emote farmer 28/minedeath/end"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar |contains=Dating, Engaged, Married": true
+      }
+    },
+    /////////////////////////////////////////////////////
+    {
+      "LogName": "Player Death - Skull Cave - Gunnar",
+      "Action": "EditData",
+      "Target": "Data/Events/Hospital",
+      "Entries": {
+        "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 MadDog.HashtagBearFam.Gunnar 22 8 2/pause 1500/showFrame 5/message \"{{i18n:Message.Gunnar.PlayerKilled.Skull.01}}\"/pause 1000/message \"{{i18n:Message.Gunnar.PlayerKilled.Skull.02}}\"/viewport 20 12 true/pause 1000/speak Harvey \"{{i18n:Harvey.Gunnar.PlayerKilled.Skull.03}}\"/speed MadDog.HashtagBearFam.Gunnar 5/move MadDog.HashtagBearFam.Gunnar 0 3 2/textAboveHead MadDog.HashtagBearFam.Gunnar \"...?!\"/move MadDog.HashtagBearFam.Gunnar -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move MadDog.HashtagBearFam.Gunnar 0 1 3/speak MadDog.HashtagBearFam.Gunnar \"{{i18n:Gunnar.PlayerKilled.Skull.04{{GunnarSpousePetName}}}}\"/emote farmer 60/pause 500/speak MadDog.HashtagBearFam.Gunnar \"{{i18n:Gunnar.PlayerKilled.Skull.05{{BearFamGlobalToken}}}}\"/emote MadDog.HashtagBearFam.Gunnar 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"{{i18n:Harvey.Gunnar.PlayerKilled.Skull.06{{BearFamGlobalToken}}}}\"/pause 500/speak Harvey \"{{i18n:Harvey.Gunnar.PlayerKilled.Skull.07}}\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/pause 500/faceDirection MadDog.HashtagBearFam.Gunnar 3/speak MadDog.HashtagBearFam.Gunnar \"{{i18n:Gunnar.PlayerKilled.Skull.08{{GunnarSpousePetName}}{{BearFamGlobalToken}}}}\"/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar |contains=Dating, Engaged, Married": true
+      }
+    },
+
+    {
+      "LogName": "Egg Festival - Gunnar - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:EggFest.Gunnar.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "Egg Festival - Gunnar - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:EggFest.Gunnar.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "4, 8"
+      }
+    },
+    {
+      "LogName": "Egg Festival - Gunnar - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:EggFest.Gunnar.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "9, 10"
+      }
+    },
+    {
+      "LogName": "Egg Festival - Gunnar - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:EggFest.Gunnar.Relationship.Together.{{Random:1++2|inputSeparator=++}}{{GunnarSpousePetName}}}}"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Dating, Engaged, Married"
+      }
+    },
+    {
+      "LogName": "Egg Festival - Gudrun - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:EggFest.Gudrun.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "Egg Festival - Gudrun - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:EggFest.Gudrun.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}{{BearFamGlobalToken}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "4, 8"
+      }
+    },
+    {
+      "LogName": "Egg Festival - Gudrun - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:EggFest.Gudrun.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "9, 10"
+      }
+    },
+    {
+      "LogName": "Flower Dance - Gunnar - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:FlowerDance.Gunnar.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "Flower Dance - Gunnar - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:FlowerDance.Gunnar.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "4, 8"
+      }
+    },
+    {
+      "LogName": "Flower Dance - Gunnar - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:FlowerDance.Gunnar.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "9, 10"
+      }
+    },
+    {
+      "LogName": "Flower Dance - Gunnar - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:FlowerDance.Gunnar.Relationship.Together.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Dating, Engaged, Married"
+      }
+    },
+    {
+      "LogName": "Flower Dance - Gudrun - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:FlowerDance.Gudrun.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "Flower Dance - Gudrun - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:FlowerDance.Gudrun.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "4, 8"
+      }
+    },
+    {
+      "LogName": "Flower Dance - Gudrun - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:FlowerDance.Gudrun.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "9, 10"
+      }
+    },
+    {
+      "LogName": "Luau - Gunnar - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:Luau.Gunnar.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "Luau - Gunnar - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:Luau.Gunnar.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "4, 8"
+      }
+    },
+    {
+      "LogName": "Luau - Gunnar - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:Luau.Gunnar.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "9, 10"
+      }
+    },
+    {
+      "LogName": "Luau - Gunnar - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:Luau.Gunnar.Relationship.Together.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Dating, Engaged, Married"
+      }
+    },
+    {
+      "LogName": "Luau - Gudrun - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:Luau.Gudrun.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "Luau - Gudrun - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:Luau.Gudrun.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "4, 8"
+      }
+    },
+    {
+      "LogName": "Luau - Gudrun - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:Luau.Gudrun.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "9, 10"
+      }
+    },
+    {
+      "LogName": "Jellies - Gunnar - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:Jellies.Gunnar.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "Jellies - Gunnar - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:Jellies.Gunnar.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "4, 8"
+      }
+    },
+    {
+      "LogName": "Jellies - Gunnar - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:Jellies.Gunnar.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "9, 10"
+      }
+    },
+    {
+      "LogName": "Jellies - Gunnar - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:Jellies.Gunnar.Relationship.Together.{{Random:1++2|inputSeparator=++}}{{BearFamGlobalToken}}}}"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Dating, Engaged, Married"
+      }
+    },
+    {
+      "LogName": "Jellies - Gudrun - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:Jellies.Gudrun.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "Jellies - Gudrun - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:Jellies.Gudrun.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "4, 8"
+      }
+    },
+    {
+      "LogName": "Jellies - Gudrun - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:Jellies.Gudrun.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "9, 10"
+      }
+    },
+    {
+      "LogName": "PelicanFair - Gunnar - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:PelicanFair.Gunnar.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "PelicanFair - Gunnar - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:PelicanFair.Gunnar.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}{{BearFamGlobalToken}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "4, 8"
+      }
+    },
+    {
+      "LogName": "PelicanFair - Gunnar - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:PelicanFair.Gunnar.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}{{BearFamGlobalToken}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "9, 10"
+      }
+    },
+    {
+      "LogName": "PelicanFair - Gunnar - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:PelicanFair.Gunnar.Relationship.Together.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Dating, Engaged, Married"
+      }
+    },
+    {
+      "LogName": "PelicanFair - Gudrun - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:PelicanFair.Gudrun.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "PelicanFair - Gudrun - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:PelicanFair.Gudrun.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "4, 8"
+      }
+    },
+    {
+      "LogName": "PelicanFair - Gudrun - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:PelicanFair.Gudrun.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}{{BearFamGlobalToken}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "9, 10"
+      }
+    },
+    {
+      "LogName": "SpiritsEve - Gunnar",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:SpiritsEve.Gunnar.Relationship.Any.{{Random:1++2++3++4|inputSeparator=++}}}}",
+        "MadDog.HashtagBearFam.Gunnar_y2": "{{i18n:SpiritsEve.Gunnar.Relationship.Any.Year2.{{Random:1++2++3++4|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "SpiritsEve - Gudrun",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:SpiritsEve.Gudrun.Relationship.Any.{{Random:1++2++3++4|inputSeparator=++}}}}",
+        "MadDog.HashtagBearFam.Gudrun_y2": "{{i18n:SpiritsEve.Gudrun.Relationship.Any.Year2.{{Random:1++2++3++4|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "Ice Festival - Gunnar - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:IceFish.Gunnar.Relationship.LowHearts.{{Random:1++2|inputSeparator=++}}{{BearFamGlobalToken}}}}"
+      }
+    },
+    {
+      "LogName": "Ice Festival - Gunnar - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:IceFish.Gunnar.Relationship.MidHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "4, 8"
+      }
+    },
+    {
+      "LogName": "Ice Festival - Gunnar - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:IceFish.Gunnar.Relationship.HighHearts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "9, 10"
+      }
+    },
+    {
+      "LogName": "Ice Festival - Gunnar - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:IceFish.Gunnar.Relationship.Together.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Dating, Engaged, Married"
+      }
+    },
+
+    {
+      "LogName": "Winter Star - Gunnar - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:WinterFest.Gunnar.Relationship.LowHearts.NoGifts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=Airyn.CPSolsticeWinterStar}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": false
+      }
+    },
+    {
+      "LogName": "Winter Star - Gunnar - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:WinterFest.Gunnar.Relationship.MidHearts.NoGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": false,
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "4, 8"
+      }
+    },
+    {
+      "LogName": "Winter Star - Gunnar - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:WinterFest.Gunnar.Relationship.HighHearts.NoGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": false,
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "9, 10"
+      }
+    },
+    {
+      "LogName": "Winter Star - Gunnar - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:WinterFest.Gunnar.Relationship.Together.NoGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": false,
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Dating, Engaged, Married"
+      }
+    },
+
+    {
+      "LogName": "Winter Star - Gunnar - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:WinterFest.Gunnar.Relationship.LowHearts.YesGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": true
+      }
+    },
+    {
+      "LogName": "Winter Star - Gunnar - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:WinterFest.Gunnar.Relationship.MidHearts.YesGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": true,
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "4, 8"
+      }
+    },
+    {
+      "LogName": "Winter Star - Gunnar - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:WinterFest.Gunnar.Relationship.HighHearts.YesGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": true,
+        "Hearts:MadDog.HashtagBearFam.Gunnar": "9, 10"
+      }
+    },
+    {
+      "LogName": "Winter Star - Gunnar - Together",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:WinterFest.Gunnar.Relationship.Together.YesGifts.{{Random:1++2|inputSeparator=++}}{{GunnarSpousePetName}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": true,
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Dating, Engaged, Married"
+      }
+    },
+    {
+      "LogName": "Winter Star - Gudrun - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:WinterFest.Gudrun.Relationship.LowHearts.NoGifts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=Airyn.CPSolsticeWinterStar}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": false
+      }
+    },
+    {
+      "LogName": "Winter Star - Gudrun - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:WinterFest.Gudrun.Relationship.MidHearts.NoGifts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=Airyn.CPSolsticeWinterStar}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": false,
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "4, 8"
+      }
+    },
+    {
+      "LogName": "Winter Star - Gudrun - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:WinterFest.Gudrun.Relationship.HighHearts.NoGifts.{{Random:1++2|inputSeparator=++}}.{{HasMod |contains=Airyn.CPSolsticeWinterStar}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": false,
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "9, 10"
+      }
+    },
+    {
+      "LogName": "Winter Star - Gudrun - 0 - 4",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:WinterFest.Gudrun.Relationship.LowHearts.YesGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": true
+      }
+    },
+    {
+      "LogName": "Winter Star - Gudrun - 4 - 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:WinterFest.Gudrun.Relationship.MidHearts.YesGifts.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": true,
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "4, 8"
+      }
+    },
+    {
+      "LogName": "Winter Star - Gudrun - 9, 10 Friendly",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:WinterFest.Gudrun.Relationship.HighHearts.YesGifts.{{Random:1++2|inputSeparator=++}}{{BearFamGlobalToken}}}}"
+      },
+      "When": {
+        "BearsGiveGifts": true,
+        "Hearts:MadDog.HashtagBearFam.Gudrun": "9, 10"
+      }
+    },
+    {
+      "LogName": "Love Festival - Gun Romance",
+      "Action": "EditData",
+      "Target": "Data/Festivals/Winter6",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:LoveFestival.Gunnar.{{GunnarRomanceDialogueType}}.{{Random:1++2|inputSeparator=++}}{{GunnarSpousePetName}}}}"
+      },
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Dating, Engaged, Married"
+      }
+    },
+    {
+      "LogName": "Fashion Festival - Sig brings Gudrun",
+      "Action": "EditData",
+      "Target": "Data/Festivals/Spring19",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:FashionFestival.Gudrun.{{Random:1++2|inputSeparator=++}}}}",
+        "MadDog.HashtagBearFam.Sigurd": "{{i18n:FashionFestival.Sigurd.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasMod": "UNA.FF.CP"
+      }
+    },
+    {
+      "LogName": "Love Festival",
+      "Action": "EditData",
+      "Target": "Data/Festivals/Winter6",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:LoveFestival.Gudrun.{{Random:1++2|inputSeparator=++}}}}",
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:LoveFestival.Gunnar.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasMod": "AvalonMFX.LoveFestival"
+      }
+    },
+    {
+      "LogName": "Fireworks Festival - Gunnar brings Gudrun",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer20",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": "{{i18n:FireworksFestival.Gudrun.{{Random:1++2|inputSeparator=++}}}}",
+        "MadDog.HashtagBearFam.Gunnar": "{{i18n:FireworksFestival.Gunnar.{{Random:1++2|inputSeparator=++}}}}"
+      },
+      "When": {
+        "HasMod": "violetlizabet.FireworksFestival"
+      }
+    },
+    {
+      "LogName": "Gunnar's Salary",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Married"
+      },
+      "Entries": {
+        // set 'payday' flag and reset removal
+        "MadDog.HashtagBearFam_MailSalaryGunnar": {
+          "Id": "MadDog.HashtagBearFam_MailSalaryGunnar",
+          "Trigger": "DayStarted",
+          "Condition": "DAY_OF_WEEK Thursday",
+          "MarkActionApplied": false,
+          "Actions": [
+            "AddMail Current MadDog.HashtagBearFam_Gunnar_WeeklyWage"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Warp Trauma - Gunnar",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar |contains=Dating, Engaged, Married": true
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 50,
+            "Y": 7
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "spacechase0.SpaceCore_TriggerAction MadDog.Bearfam_EscapetheRoom_Gunnar"
+          }
+        }
+      ]
+    }
+
+  ]
+}

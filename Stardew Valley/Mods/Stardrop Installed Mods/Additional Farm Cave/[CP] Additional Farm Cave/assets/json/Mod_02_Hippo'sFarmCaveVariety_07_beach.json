@@ -47,7 +47,7 @@
           {
             "Operation": "Append",
             "Target": ["MapProperties", "Warp"],
-            "Value": "12 0 Custom_AdditionalFarmCave 9 14",
+            "Value": "12 1 Custom_AdditionalFarmCave 9 14",
             "Delimiter": " "
           }
         ],
@@ -62,7 +62,7 @@
           {
             "Operation": "Append",
             "Target": ["MapProperties", "Warp"],
-            "Value": "12 0 Custom_AdditionalFarmCave2 9 14",
+            "Value": "12 1 Custom_AdditionalFarmCave2 9 14",
             "Delimiter": " "
           }
         ],
@@ -90,7 +90,7 @@
       {
         "Action": "EditMap",
         "Target": "Maps/Custom_AdditionalFarmCave",
-        "MapProperties": { "Warp": "9 15 FarmCave 12 1" },
+        "MapProperties": { "Warp": "9 15 FarmCave 12 2" },
         "When": { "Ts_AFC_AvoidCertainBugs": "false" }
       },
 
@@ -98,7 +98,7 @@
       {
         "Action": "EditMap",
         "Target": "Maps/Custom_AdditionalFarmCave2",
-        "MapProperties": { "Warp": "9 15 FarmCave 12 1" },
+        "MapProperties": { "Warp": "9 15 FarmCave 12 2" },
         "When": { "Ts_AFC_AvoidCertainBugs": "true" }
       }
 

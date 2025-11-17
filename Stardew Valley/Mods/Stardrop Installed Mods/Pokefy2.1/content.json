@@ -1,0 +1,630 @@
+{
+  "Format": "2.0.0",
+
+  "ConfigSchema": {
+  	"Enemies": {
+  	  "AllowValues": "true, false",
+  	  "Default": "true",
+  	},
+    "Critters": {
+      "AllowValues": "true, false",
+      "Default": "true",
+    },
+    "WateringCans": {
+      "AllowValues": "Upgrade, Horsea, Squirtle, Sobble, Polteageist, Wailmer, none",
+      "Default": "Upgrade",
+    },
+  	"Festivals": {
+  	  "AllowValues": "true, false",
+  	  "Default": "true",
+  	},
+  	"Movies": {
+  	  "AllowValues": "true, false",
+  	  "Default": "true",
+  	},
+  	"Fish": {
+  	  "AllowValues": "true, false",
+  	  "Default": "true",
+  	},
+  	"Furniture": {
+  	  "AllowValues": "true, false",
+  	  "Default": "true",
+  	},
+     "Trinkets": {
+      "AllowValues": "true, false",
+      "Default": "true",
+    },
+    "Krobus": {
+      "AllowValues": "Trubbish, none",
+      "Default": "Trubbish",
+    },
+    "Cat": {
+      "AllowValues" : "Glameow, Shinx, Slowpoke, Espurr, none",
+      "Default" : "Glameow"
+    },
+    "Dog" : {
+      "AllowValues" : "Growlithe, HisuiGrowlithe, Lillipup, Riolu, Totodile, none",
+      "Default" : "Growlithe"
+    },
+  	"Horse": {
+  	  "AllowValues": "Rapidash, GalarianRapidash, Zebstrika, none",
+  	  "Default": "Rapidash",
+  	},
+	  "Goat": {
+      "AllowValues": "Dewgong, Gogoat, none",
+  	  "Default": "Dewgong",
+  	},
+  	"Pig": {
+  	  "AllowValues": "Grumpig, Pignite, none",
+  	  "Default": "Grumpig",
+  	},
+    "Sheep": {
+      "AllowValues": "Whimsicott, Flaaffy, none",
+      "Default": "Flaaffy",
+    },
+    "Cow": {
+      "AllowValues": "Miltank, none",
+      "Default": "Miltank",
+    },
+    "Ostrich": {
+      "AllowValues": "Dodrio, none",
+      "Default": "Dodrio",
+    },
+    "Dinosaur": {
+      "AllowValues": "Archen, Cranidos, none",
+      "Default": "Archen",
+    },
+    "Chickens": {
+      "AllowValues": "true, false",
+      "Default": "true",
+    },
+    "Rabbit": {
+      "AllowValues": "Buneary, none",
+      "Default": "Buneary",
+    },
+    "Duck": {
+      "AllowValues": "Delibird, none",
+      "Default": "Delibird",
+    },
+    "Intro": {
+      "AllowValues": "true, false",
+      "Default": "true",
+    },
+    "CharacterChanges": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Replaces Junimo with Minior, Bear with Ursaring, and Dwarf with Elgyem"
+    },
+    "Miscellaneous": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Edits title screen, TV channels, train graffiti, witch and fairy"
+    }
+  },
+  
+  "Changes": [
+        //Farm Animals
+       {
+       	  "Action": "Load",
+       	  "Target": "Animals/Horse",
+       	  "FromFile": "assets/animals/Rapidash.png",
+          "When": {"Horse": "Rapidash"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/Horse",
+          "FromFile": "assets/animals/GalarianRapidash.png",
+          "When": {"Horse": "GalarianRapidash"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/Horse",
+          "FromFile": "assets/animals/Zebstrika.png",
+          "When": {"Horse": "Zebstrika"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/BabyBlue Chicken, Animals/BabyBrown Chicken, Animals/BabyVoid Chicken, Animals/BabyWhite Chicken, Animals/BabyGolden Chicken",
+          "FromFile": "assets/animals/Egg.png",
+          "When": {"Chickens": "true"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/Blue Chicken, Animals/Brown Chicken, Animals/Void Chicken, Animals/White Chicken, Animals/Golden Chicken",
+          "FromFile": "assets/{{Target}}.png",
+          "When": {"Chickens": "true"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/BabyBrown Cow, Animals/Brown Cow",
+          "FromFile": "assets/animals/Brown Cow.png",
+          "When": {"Cow": "Miltank"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/BabyWhite Cow, Animals/White Cow",
+          "FromFile": "assets/animals/White Cow.png",
+          "When": {"Cow": "Miltank"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/BabyGoat",
+          "FromFile": "assets/animals/Skiddo.png",
+          "When": {"Goat": "Gogoat"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/Goat",
+          "FromFile": "assets/animals/Gogoat.png",
+          "When": {"Goat": "Gogoat"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/BabyGoat",
+          "FromFile": "assets/animals/Seel.png",
+          "When": {"Goat": "Dewgong"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/Goat",
+          "FromFile": "assets/animals/Dewgong.png",
+          "When": {"Goat": "Dewgong"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/BabyPig",
+          "FromFile": "assets/animals/Spoink.png",
+          "When": {"Pig": "Grumpig"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/Pig",
+          "FromFile": "assets/animals/Grumpig.png",
+          "When": {"Pig": "Grumpig"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/BabyPig",
+          "FromFile": "assets/animals/Tepig.png",
+          "When": {"Pig": "Pignite"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/Pig",
+          "FromFile": "assets/animals/Pignite.png",
+          "When": {"Pig": "Pignite"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/BabySheep",
+          "FromFile": "assets/animals/Cottonee.png",
+          "When": {"Sheep": "Whimsicott"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/Sheep",
+          "FromFile": "assets/animals/Whimsicott.png",
+          "When": {"Sheep": "Whimsicott"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/ShearedSheep",
+          "FromFile": "assets/animals/WhimsicottSheared.png",
+          "When": {"Sheep": "Whimsicott"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/BabySheep",
+          "FromFile": "assets/animals/BabySheep.png",
+          "When": {"Sheep": "Flaaffy"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/Sheep",
+          "FromFile": "assets/animals/Sheep.png",
+          "When": {"Sheep": "Flaaffy"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/ShearedSheep",
+          "FromFile": "assets/animals/ShearedSheep.png",
+          "When": {"Sheep": "Flaaffy"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/BabyRabbit, Animals/Rabbit",
+          "FromFile": "assets/animals/Buneary.png",
+          "When": {"Rabbit": "Buneary"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/BabyOstrich",
+          "FromFile": "assets/animals/Doduo.png",
+          "When": {"Ostrich": "Dodrio"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/Ostrich",
+          "FromFile": "assets/animals/Dodrio.png",
+          "When": {"Ostrich": "Dodrio"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/Duck",
+          "FromFile": "assets/animals/Delibird.png",
+          "When": {"Duck": "Delibird"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Animals/Dinosaur",
+          "FromFile": "assets/animals/Archen.png",
+          "When": {"Dinosaur": "Archen"}
+       },
+       {
+         "Action": "Load",
+         "Target": "Animals/Dinosaur",
+         "FromFile": "assets/animals/Cranidos.png",
+         "When": {"Dinosaur": "Cranidos"}
+      },
+        
+        //Pets
+       {
+          "Action": "EditImage",
+          "Target": "Animals/cat, Animals/cat1, Animals/cat2",
+          "FromFile": "assets/animals/{{cat}}.png"
+        },
+        {
+          "Action": "EditImage",
+          "Target": "Animals/dog, Animals/dog1, Animals/dog2",
+          "FromFile": "assets/animals/{{dog}}.png"
+        },
+       
+       //Miscellaneous
+       {
+          "Action": "EditImage",
+          "Target": "Minigames/TitleButtons.de-DE, Minigames/TitleButtons.es-ES, Minigames/TitleButtons.fr-FR, Minigames/TitleButtons.hu-HU, Minigames/TitleButtons.it-IT, Minigames/TitleButtons.ja-JP, Minigames/TitleButtons.ko-KR, Minigames/TitleButtons, Minigames/TitleButtons.pt-BR, Minigames/TitleButtons.ru-RU, Minigames/TitleButtons.tr-TR, Minigames/TitleButtons.zh-CN",
+          "FromFile": "assets/misc/titleAltaria.png",
+          "ToArea": { "X": 296, "Y": 230, "Width": 104, "Height": 20 },
+	      "When": {"Miscellaneous": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "Minigames/TitleButtons.de-DE, Minigames/TitleButtons.es-ES, Minigames/TitleButtons.fr-FR, Minigames/TitleButtons.hu-HU, Minigames/TitleButtons.it-IT, Minigames/TitleButtons.ja-JP, Minigames/TitleButtons.ko-KR, Minigames/TitleButtons, Minigames/TitleButtons.pt-BR, Minigames/TitleButtons.ru-RU, Minigames/TitleButtons.tr-TR, Minigames/TitleButtons.zh-CN",
+          "FromFile": "assets/misc/titleLegendaries.png",
+          "ToArea": { "X": 138, "Y": 464, "Width": 254, "Height": 16 },
+	      "When": {"Miscellaneous": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "Minigames/TitleButtons.de-DE, Minigames/TitleButtons.es-ES, Minigames/TitleButtons.fr-FR, Minigames/TitleButtons.hu-HU, Minigames/TitleButtons.it-IT, Minigames/TitleButtons.ja-JP, Minigames/TitleButtons.ko-KR, Minigames/TitleButtons, Minigames/TitleButtons.pt-BR, Minigames/TitleButtons.ru-RU, Minigames/TitleButtons.tr-TR, Minigames/TitleButtons.zh-CN",
+          "FromFile": "assets/misc/titleBibarel.png",
+          "ToArea": { "X": 0, "Y": 491, "Width": 378, "Height": 68 },
+	      "When": {"Miscellaneous": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors.de-DE, LooseSprites/Cursors.es-ES, LooseSprites/Cursors.fr-FR, LooseSprites/Cursors.hu-HU, LooseSprites/Cursors.it-IT, LooseSprites/Cursors.ja-JP, LooseSprites/Cursors.ko-KR, LooseSprites/Cursors, LooseSprites/Cursors.pt-BR, LooseSprites/Cursors.ru-RU, LooseSprites/Cursors.tr-TR, LooseSprites/Cursors.zh-CN",
+          "FromFile": "assets/misc/CursorsTV1.png",
+          "ToArea": { "X": 413, "Y": 305, "Width": 253, "Height": 28 },
+	      "When": {"Miscellaneous": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors.de-DE, LooseSprites/Cursors.es-ES, LooseSprites/Cursors.fr-FR, LooseSprites/Cursors.hu-HU, LooseSprites/Cursors.it-IT, LooseSprites/Cursors.ja-JP, LooseSprites/Cursors.ko-KR, LooseSprites/Cursors, LooseSprites/Cursors.pt-BR, LooseSprites/Cursors.ru-RU, LooseSprites/Cursors.tr-TR, LooseSprites/Cursors.zh-CN",
+          "FromFile": "assets/misc/CursorsTV2.png",
+          "ToArea": { "X": 517, "Y": 361, "Width": 169, "Height": 28 },
+	      "When": {"Miscellaneous": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors.de-DE, LooseSprites/Cursors.es-ES, LooseSprites/Cursors.fr-FR, LooseSprites/Cursors.hu-HU, LooseSprites/Cursors.it-IT, LooseSprites/Cursors.ja-JP, LooseSprites/Cursors.ko-KR, LooseSprites/Cursors, LooseSprites/Cursors.pt-BR, LooseSprites/Cursors.ru-RU, LooseSprites/Cursors.tr-TR, LooseSprites/Cursors.zh-CN",
+          "FromFile": "assets/misc/CursorsTrain.png",
+          "ToArea": { "X": 224, "Y": 576, "Width": 474, "Height": 160 },
+	      "When": {"Miscellaneous": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors.de-DE, LooseSprites/Cursors.es-ES, LooseSprites/Cursors.fr-FR, LooseSprites/Cursors.hu-HU, LooseSprites/Cursors.it-IT, LooseSprites/Cursors.ja-JP, LooseSprites/Cursors.ko-KR, LooseSprites/Cursors, LooseSprites/Cursors.pt-BR, LooseSprites/Cursors.ru-RU, LooseSprites/Cursors.tr-TR, LooseSprites/Cursors.zh-CN",
+          "FromFile": "assets/misc/CursorsWitch.png",
+          "ToArea": { "X": 276, "Y": 1885, "Width": 35, "Height": 58 },
+	      "When": {"Miscellaneous": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors.de-DE, LooseSprites/Cursors.es-ES, LooseSprites/Cursors.fr-FR, LooseSprites/Cursors.hu-HU, LooseSprites/Cursors.it-IT, LooseSprites/Cursors.ja-JP, LooseSprites/Cursors.ko-KR, LooseSprites/Cursors, LooseSprites/Cursors.pt-BR, LooseSprites/Cursors.ru-RU, LooseSprites/Cursors.tr-TR, LooseSprites/Cursors.zh-CN",
+          "FromFile": "assets/misc/CursorsFairy.png",
+          "ToArea": { "X": 16, "Y": 592, "Width": 64, "Height": 16 },
+	      "When": {"Miscellaneous": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors.de-DE, LooseSprites/Cursors.es-ES, LooseSprites/Cursors.fr-FR, LooseSprites/Cursors.hu-HU, LooseSprites/Cursors.it-IT, LooseSprites/Cursors.ja-JP, LooseSprites/Cursors.ko-KR, LooseSprites/Cursors, LooseSprites/Cursors.pt-BR, LooseSprites/Cursors.ru-RU, LooseSprites/LooseSprites/Cursors.tr-TR, LooseSprites/Cursors.zh-CN",
+          "FromFile": "assets/misc/CursorsVenusaur.png",
+          "ToArea": { "X": 99, "Y": 1420, "Width": 41, "Height": 29 },
+	      "When": {"Miscellaneous": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors.de-DE, LooseSprites/Cursors.es-ES, LooseSprites/Cursors.fr-FR, LooseSprites/Cursors.hu-HU, LooseSprites/Cursors.it-IT, LooseSprites/Cursors.ja-JP, LooseSprites/Cursors.ko-KR, LooseSprites/Cursors, LooseSprites/Cursors.pt-BR, LooseSprites/Cursors.ru-RU, LooseSprites/Cursors.tr-TR, LooseSprites/Cursors.zh-CN",
+          "FromFile": "assets/misc/CursorsFishIcon.png",
+          "ToArea": { "X": 614, "Y": 1840, "Width": 40, "Height": 20 },
+	      "When": {"Miscellaneous": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors.de-DE, LooseSprites/Cursors.es-ES, LooseSprites/Cursors.fr-FR, LooseSprites/Cursors.hu-HU, LooseSprites/Cursors.it-IT, LooseSprites/Cursors.ja-JP, LooseSprites/Cursors.ko-KR, LooseSprites/Cursors, LooseSprites/Cursors.pt-BR, LooseSprites/Cursors.ru-RU, LooseSprites/Cursors.tr-TR, LooseSprites/Cursors.zh-CN",
+          "FromFile": "assets/misc/CursorsDusty.png",
+          "ToArea": { "X": 324, "Y": 1916, "Width": 72, "Height": 40 },
+        "When": {"Miscellaneous": "true"}
+       },
+       {
+         "Action": "EditImage",
+         "Target": "LooseSprites/Cursors.de-DE, LooseSprites/Cursors.es-ES, LooseSprites/Cursors.fr-FR, LooseSprites/Cursors.hu-HU, LooseSprites/Cursors.it-IT, LooseSprites/Cursors.ja-JP, LooseSprites/Cursors.ko-KR, LooseSprites/Cursors, LooseSprites/Cursors.pt-BR, LooseSprites/Cursors.ru-RU, LooseSprites/Cursors.tr-TR, LooseSprites/Cursors.zh-CN",
+         "FromFile": "assets/misc/CursorsHats.png",
+         "ToArea": { "X": 627, "Y": 1957, "Width": 36, "Height": 32 },
+       "When": {"Miscellaneous": "true"}
+      },
+       {
+          "Action": "Load",
+          "Target": "LooseSprites/Cursors2",
+          "FromFile": "assets/Cursors2.png",
+	      "When": {"Miscellaneous": "true"}
+       },
+       {
+          "Action": "Load",
+          "Target": "LooseSprites/temporary_sprites_1",
+          "FromFile": "assets/temporary_sprites_1.png",
+	      "When": {"Miscellaneous": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "Minigames/jojacorps.es-ES, Minigames/jojacorps.fr-FR, Minigames/jojacorps.hu-HU, Minigames/jojacorps.ja-JP, Minigames/jojacorps.ko-KR, Minigames/jojacorps, Minigames/jojacorps.pt-BR, Minigames/jojacorps.zh-CN",
+	      "FromFile": "assets/misc/joja01.png",
+	      "ToArea":   { "X": 395, "Y": 84, "Width": 17, "Height": 22 },
+	      "When": {"Intro": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "Minigames/jojacorps.es-ES, Minigames/jojacorps.fr-FR, Minigames/jojacorps.hu-HU, Minigames/jojacorps.ja-JP, Minigames/jojacorps.ko-KR, Minigames/jojacorps, Minigames/jojacorps.pt-BR, Minigames/jojacorps.zh-CN",
+	      "FromFile": "assets/misc/joja02.png",
+	      "ToArea":   { "X": 527, "Y": 629, "Width": 23, "Height": 29 },
+	      "When": {"Intro": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "Minigames/jojacorps.es-ES, Minigames/jojacorps.fr-FR, Minigames/jojacorps.hu-HU, Minigames/jojacorps.ja-JP, Minigames/jojacorps.ko-KR, Minigames/jojacorps, Minigames/jojacorps.pt-BR, Minigames/jojacorps.zh-CN",
+	      "FromFile": "assets/misc/joja03.png",
+	      "ToArea":   { "X": 1080, "Y": 686, "Width": 17, "Height": 15 },
+          "When": {"Intro": "true"}
+       },
+       {
+         "Action": "Load",
+         "Target": "TileSheets/Companions",
+         "FromFile": "assets/Companions.png",
+         "ToArea": { "X": 0, "Y": 0, "Width": 256, "Height": 16 },
+         "When": {"Trinkets": "true"}
+      },
+       {
+          "Action": "Load",
+          "Target": "TileSheets/Craftables",
+          "FromFile": "assets/Craftables.png",
+          "When": {"Furniture": "true"}
+       },
+       {
+          "Action": "Load",
+          "Target": "TileSheets/furniture",
+          "FromFile": "assets/furniture.png",
+          "When": {"Furniture": "true"}
+       },
+       {
+          "Action": "Load",
+          "Target": "TileSheets/critters",
+          "FromFile": "assets/critters.png",
+          "When": {"Critters": "true"}
+       }, 
+       {
+          "Action": "Load",
+          "Target": "LooseSprites/parrots",
+          "FromFile": "assets/animals/Chatot.png",
+          "When": {"Critters": "true"}
+       },
+       {
+          "Action": "Load",
+          "Target": "LooseSprites/Movies",
+          "FromFile": "assets/Movies.png",
+          "When": {"Movies": "true"}
+       },
+       {
+          "Action": "Load",
+          "Target": "LooseSprites/AquariumFish",
+          "FromFile": "assets/AquariumFish.png",
+          "When": {"Fish": "true"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/springobjects.png",
+          "When": {"Fish": "true"}
+       },
+       
+
+       //Character Changes      
+       {
+          "Action": "Load",
+          "Target": "Characters/Junimo",
+          "FromFile": "assets/Minior.png",
+          "When": {"CharacterChanges": "true"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Characters/Bear",
+          "FromFile": "assets/Ursaring.png",
+          "When": {"CharacterChanges": "true"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Portraits/Bear",
+          "FromFile": "assets/UrsaringPortrait.png",
+          "When": {"CharacterChanges": "true"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Characters/Dwarf",
+          "FromFile": "assets/Elgyem.png",
+          "When": {"CharacterChanges": "true"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Portraits/Dwarf",
+          "FromFile": "assets/ElgyemPortrait.png",
+          "When": {"CharacterChanges": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "Characters/Abigail",
+          "FromFile": "assets/Abigail.png",
+          "ToArea": { "X": 0, "Y": 132, "Width": 64, "Height": 28 },
+          "When": {"CharacterChanges": "true"}
+       },
+
+       //Festivals
+       {
+          "Action": "EditImage",
+          "Target": "Maps/Festivals.es-ES, Maps/Festivals.fr-FR, Maps/Festivals.hu-HU, Maps/Festivals.it-IT, Maps/Festivals.ja-JP, Maps/Festivals.ko-KR, Maps/Festivals, Maps/Festivals.pt-BR, Maps/Festivals.tr-TR, Maps/Festivals.zh-CN",
+	      "FromFile": "assets/misc/festival01.png",
+	      "ToArea": { "X": 32, "Y": 32, "Width": 16, "Height": 48 },
+          "When": {"Festivals": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "Maps/Festivals.es-ES, Maps/Festivals.fr-FR, Maps/Festivals.hu-HU, Maps/Festivals.it-IT, Maps/Festivals.ja-JP, Maps/Festivals.ko-KR, Maps/Festivals, Maps/Festivals.pt-BR, Maps/Festivals.tr-TR, Maps/Festivals.zh-CN",
+	      "FromFile": "assets/misc/festival02.png",
+	      "ToArea": { "X": 256, "Y": 16, "Width": 94, "Height": 32 },
+          "When": {"Festivals": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "Maps/Festivals.es-ES, Maps/Festivals.fr-FR, Maps/Festivals.hu-HU, Maps/Festivals.it-IT, Maps/Festivals.ja-JP, Maps/Festivals.ko-KR, Maps/Festivals, Maps/Festivals.pt-BR, Maps/Festivals.tr-TR, Maps/Festivals.zh-CN",
+	      "FromFile": "assets/misc/festival03.png",
+	      "ToArea": { "X": 192, "Y": 208, "Width": 96, "Height": 96 },
+          "When": {"Festivals": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "Maps/Festivals.es-ES, Maps/Festivals.fr-FR, Maps/Festivals.hu-HU, Maps/Festivals.it-IT, Maps/Festivals.ja-JP, Maps/Festivals.ko-KR, Maps/Festivals, Maps/Festivals.pt-BR, Maps/Festivals.tr-TR, Maps/Festivals.zh-CN",
+	      "FromFile": "assets/misc/festival04.png",
+	      "ToArea": { "X": 400, "Y": 215, "Width": 32, "Height": 40 },
+          "When": {"Festivals": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "Maps/Festivals.es-ES, Maps/Festivals.fr-FR, Maps/Festivals.hu-HU, Maps/Festivals.it-IT, Maps/Festivals.ja-JP, Maps/Festivals.ko-KR, Maps/Festivals, Maps/Festivals.pt-BR, Maps/Festivals.tr-TR, Maps/Festivals.zh-CN",
+	      "FromFile": "assets/misc/festival05.png",
+	      "ToArea": { "X": 321, "Y": 336, "Width": 60, "Height": 16 },
+          "When": {"Festivals": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "Maps/Festivals.es-ES, Maps/Festivals.fr-FR, Maps/Festivals.hu-HU, Maps/Festivals.it-IT, Maps/Festivals.ja-JP, Maps/Festivals.ko-KR, Maps/Festivals, Maps/Festivals.pt-BR, Maps/Festivals.tr-TR, Maps/Festivals.zh-CN",
+	      "FromFile": "assets/misc/festival06.png",
+	      "ToArea": { "X": 96, "Y": 352, "Width": 32, "Height": 48 },
+          "When": {"Festivals": "true"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "Maps/Festivals.es-ES, Maps/Festivals.fr-FR, Maps/Festivals.hu-HU, Maps/Festivals.it-IT, Maps/Festivals.ja-JP, Maps/Festivals.ko-KR, Maps/Festivals, Maps/Festivals.pt-BR, Maps/Festivals.tr-TR, Maps/Festivals.zh-CN",
+	      "FromFile": "assets/misc/festival07.png",
+	      "ToArea": { "X": 256, "Y": 482, "Width": 96, "Height": 30 },
+          "When": {"Festivals": "true"}
+       },      
+       {
+          "Action": "Load",
+          "Target": "Maps/night_market_tilesheet_objects",
+          "FromFile": "assets/night_market_tilesheet_objects.png",
+          "When": {"Festivals": "true"}
+       },
+       {
+         "Action": "Load",
+         "Target": "Maps/desert_festival_tilesheet",
+         "FromFile": "assets/desert_festival_tilesheet.png",
+         "ToArea":   { "X": 274, "Y": 368, "Width": 142, "Height": 32 },
+         "When": {"Festivals": "true"}
+      },
+
+       //WateringCans
+       {
+          "Action": "EditImage",
+          "Target": "TileSheets/tools",
+          "FromFile": "assets/tools/WateringCans.png",
+          "ToArea": { "X": 0, "Y": 218, "Width": 302, "Height": 54 },
+          "When": {"WateringCans": "Upgrade"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "TileSheets/tools",
+          "FromFile": "assets/tools/HorseaCan.png",
+          "ToArea": { "X": 0, "Y": 219, "Width": 302, "Height": 52 },
+          "When": {"WateringCans": "Horsea"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "TileSheets/tools",
+          "FromFile": "assets/tools/SquirtleCan.png",
+          "ToArea": { "X": 0, "Y": 219, "Width": 302, "Height": 53 },
+          "When": {"WateringCans": "Squirtle"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "TileSheets/tools",
+          "FromFile": "assets/tools/SobbleCan.png",
+          "ToArea": { "X": 0, "Y": 219, "Width": 302, "Height": 54 },
+          "When": {"WateringCans": "Sobble"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "TileSheets/tools",
+          "FromFile": "assets/tools/PolteageistCan.png",
+          "ToArea": { "X": 0, "Y": 219, "Width": 301, "Height": 52 },
+          "When": {"WateringCans": "Polteageist"}
+       },
+       {
+          "Action": "EditImage",
+          "Target": "TileSheets/tools",
+          "FromFile": "assets/tools/WailmerCan.png",
+          "ToArea": { "X": 0, "Y": 218, "Width": 304, "Height": 52 },
+          "When": {"WateringCans": "Wailmer"}
+       },
+       
+       //Krobus
+       {
+          "Action": "Load",
+          "Target": "Characters/Krobus, Characters/Krobus_Trenchcoat, Characters/KrobusRaven, Characters/SeaMonsterKrobus ",
+          "FromFile": "assets/trubbish/{{TargetWithoutPath}}.png",
+          "When": {"Krobus": "Trubbish"}
+       },
+       {
+          "Action": "Load",
+          "Target": "Portraits/Krobus",
+          "FromFile": "assets/trubbish/TrubbishPortrait.png",
+          "When": {"Krobus": "Trubbish"}
+       },
+       
+       //Monsters
+       {
+          "Action": "Load",
+          "Target": "Characters/Monsters/Armored Bug, Characters/Monsters/Armored Bug_dangerous, Characters/Monsters/Bat, Characters/Monsters/Big Slime, Characters/Monsters/Blue Squid,
+          Characters/Monsters/Carbon Ghost, Characters/Monsters/Duggy, Characters/Monsters/Duggy_dangerous, Characters/Monsters/Dust Spirit, Characters/Monsters/Dust Spirit_dangerous,
+          Characters/Monsters/Dwarvish Sentry, Characters/Monsters/False Magma Cap, Characters/Monsters/Fly, Characters/Monsters/Fly_dangerous, Characters/Monsters/Frost Bat,
+          Characters/Monsters/Ghost, Characters/Monsters/Green Slime, Characters/Monsters/Green Slime_dangerous, Characters/Monsters/Grub, Characters/Monsters/Grub_dangerous,
+          Characters/Monsters/Haunted Skull, Characters/Monsters/Hot Head, Characters/Monsters/Iridium Bat, Characters/Monsters/Lava Bat, Characters/Monsters/Lava Crab,
+          Characters/Monsters/Lava Lurk, Characters/Monsters/Magma Duggy, Characters/Monsters/Magma Sparker, Characters/Monsters/Magma Sprite, Characters/Monsters/Metal Head,
+          Characters/Monsters/Metal Head_dangerous, Characters/Monsters/Mummy, Characters/Monsters/Mummy_dangerous, Characters/Monsters/Pepper Rex, Characters/Monsters/Putrid Ghost,
+          Characters/Monsters/Rock Crab, Characters/Monsters/Rock Crab_dangerous, Characters/Monsters/Royal Serpent, Characters/Monsters/Serpent, Characters/Monsters/Shadow Brute,
+          Characters/Monsters/Shadow Shaman, Characters/Monsters/Shadow Sniper, Characters/Monsters/Skeleton Mage, Characters/Monsters/Skeleton Mage_dangerous, Characters/Monsters/Skeleton,
+          Characters/Monsters/Skeleton_dangerous, Characters/Monsters/Spider, Characters/Monsters/Squid Kid, Characters/Monsters/Squid Kid_dangerous, Characters/Monsters/Stick Bug, Characters/Monsters/Tiger Slime,
+          Characters/Monsters/Wilderness Golem",
+          "FromFile": "assets/monsters/{{TargetWithoutPath}}.png",
+          "When": {"Enemies": "true"}
+       },                                 
+    ]
+}

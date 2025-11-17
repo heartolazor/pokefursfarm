@@ -3,7 +3,7 @@
         {
             "LogName": "Load Portraits",
             "Action": "Load",
-            "Target": "Portraits/FFFShopEmily, Portraits/FFFShopFaye, Portraits/FFFShopRose, Portraits/FFFShopRoseDisguise, Portraits/FFFShopHatmouse, Portraits/FFFShopHatmouseDisguise, Portraits/FFFShopWisteria, Portraits/FFFShopMoira, Portraits/FFFShopPaisley",
+            "Target": "Portraits/FFFShopEmily, Portraits/FFFShopFaye, Portraits/FFFShopRose, Portraits/FFFShopRose_Disguise, Portraits/FFFShopHatmouse, Portraits/FFFShopHatmouse_Disguise, Portraits/FFFShopWisteria, Portraits/FFFShopMoira, Portraits/FFFShopPaisley",
             "FromFile": "Assets/ShopAssets/{{TargetWithoutPath}}.png"
         },
         {
@@ -58,7 +58,7 @@
                             "MaxItems": 3,
                             "Price": 1000,
                             "AvailableStock": 1,
-                            "AvailableStockLimit": "Player",
+                            "AvailableStockLimit": "Player"
                         },
                         {
                             "Id": "FFFShopEmily.Shirts",
@@ -66,7 +66,7 @@
                             "MaxItems": 9,
                             "Price": 1000,
                             "AvailableStock": 1,
-                            "AvailableStockLimit": "Player",
+                            "AvailableStockLimit": "Player"
                         }
                     ]
                 },
@@ -101,7 +101,7 @@
                     "Owners": [
                         {
                             "Condition": null,
-                            "Portrait": "Portraits/FFFShopHatmouse",
+                            "Portrait": "Portraits/FFFShopHatmouse{{MouseDisguise}}",
                             "Dialogues": [
                                 {
                                     "Dialogue": "{{i18n:ShopDialogue.HatmouseShop}}"
@@ -119,109 +119,6 @@
                             "MaxItems": 6,
                             "Price": 1000,
                             "AvailableStock": 1,
-                            "AvailableStockLimit": "Player"
-                        }
-                    ]
-                },
-                "ShopFashionHatmouseDisguise": {
-                    "ID": "ShopFashionHatmouseDisguise",
-                    "Owners": [
-                        {
-                            "Condition": null,
-                            "Portrait": "Portraits/FFFShopHatmouseDisguise",
-                            "Dialogues": [
-                                {
-                                    "Dialogue": "{{i18n:ShopDialogue.HatmouseShop}}"
-                                }
-                            ],
-                            "Name": "AnyOrNone",
-                            "Id": "AnyOrNone"
-                        }
-                    ],
-                    "PriceModifiers": null,
-                    "Items": [
-                        {
-                            "Id": "FFFShopHatMouseDisguise.Hats",
-                            "ItemId": "RANDOM_ITEMS (H)",
-                            "MaxItems": 6,
-                            "Price": 1000,
-                            "AvailableStock": 1,
-                            "AvailableStockLimit": "Player"
-                        }
-                    ]
-                },
-                "ShopFashionRose": {
-                    "ID": "ShopFashionRose",
-                    "Owners": [
-                        {
-                            "Condition": null,
-                            "Portrait": "Portraits/FFFShopRose",
-                            "Dialogues": [
-                                {
-                                    "Dialogue": "{{i18n:ShopDialogue.RoseShop}}"
-                                }
-                            ],
-                            "Name": "AnyOrNone",
-                            "Id": "AnyOrNone"
-                        }
-                    ],
-                    "PriceModifiers": null,
-                    "Items": [
-                        {
-                            "Id": "FFFShopRose.BakedGoods",
-                            "RandomItemId": [
-                                "(O)220",
-                                "(O)221",
-                                "(O)222",
-                                "(O)223",
-                                "(O)234",
-                                "(O)604",
-                                "(O)243",
-                                "(O)611",
-                                "(O)651",
-                                "(O)731",
-                                "(O)216",
-                            ],
-                            "MaxItems": 8,
-                            "AvailableStock": 3,
-                            "AvailableStockLimit": "Player"
-                        }
-                    ]
-                },
-                "ShopFashionRoseDisguise": {
-                    "ID": "ShopFashionRoseDisguise",
-                    "Owners": [
-                        {
-                            "Condition": null,
-                            "Portrait": "Portraits/FFFShopRoseDisguise",
-                            "Dialogues": [
-                                {
-                                    "Dialogue": "{{i18n:ShopDialogue.RoseShop}}"
-                                }
-                            ],
-                            "Name": "AnyOrNone",
-                            "Id": "AnyOrNone"
-                        }
-                    ],
-                    "PriceModifiers": null,
-                    "Items": [
-                        {
-                            "Id": "FFFShopRoseDisguise.BakedGoods",
-                            "RandomItemId": [
-                                "(O)220",
-                                "(O)221",
-                                "(O)222",
-                                "(O)223",
-                                "(O)234",
-                                "(O)604",
-                                "(O)243",
-                                "(O)611",
-                                "(O)651",
-                                "(O)731",
-                                "(O)216",
-                            ],
-                            "MaxItems": 8,
-                            "AvailableStock": 3,
                             "AvailableStockLimit": "Player"
                         }
                     ]

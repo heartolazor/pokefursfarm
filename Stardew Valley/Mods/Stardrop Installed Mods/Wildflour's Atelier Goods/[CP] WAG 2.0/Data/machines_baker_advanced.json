@@ -1662,8 +1662,9 @@
         "LogName": "Add Simple Cupcake Rules to Advanced Logic",
         "Action": "EditData",
         "Target": "Data/Machines",
-        "TargetField": ["(BC)Wildflour.AtelierGoods_DessertStand", "OutputRules"],
+        "TargetField": ["(BC)Wildflour.AtelierGoods_Dessert_Stand", "OutputRules"],
         "When":{"Atelier.Cauldron/ConfigValue:TinyCakes": true, "Atelier.Cauldron/ConfigValue:SimpleAddOn": true},
+        "Priority":"Late",
         "Entries":{
             "Wildflour.AtelierGoods_Flavored_Cupcakes":{
                 "Id": "Wildflour.AtelierGoods_Flavored_Cupcakes",

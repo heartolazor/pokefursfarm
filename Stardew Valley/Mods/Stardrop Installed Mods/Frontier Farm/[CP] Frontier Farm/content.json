@@ -373,7 +373,7 @@
       },
       "Update": "OnLocationChange"
     },
-    //Changes player icon position on frontier Farm
+    //Changes player icon position on Frontier Farm
     {
       "Action": "EditData",
       "Target": "Data/WorldMap",
@@ -386,11 +386,14 @@
       ],
       "Entries": {
         "MapPixelArea": {
-          "X": 79,
-          "Y": 70,
-          "Width": 0,
-          "Height": 0
+          "X": 0,
+          "Y": 55,
+          "Width": 102,
+          "Height": 44
         },
+      },
+      "When": {
+        "FarmType": "FrontierFarm",
       },
     },
     {
@@ -410,6 +413,9 @@
           "Width": 0,
           "Height": 0
         },
+      },
+      "When": {
+        "FarmType": "FrontierFarm",
       },
     },
     /*
@@ -1235,17 +1241,16 @@
       }
     },
     //Event #1 - Functional Minecarts   <<ID tagged by quest
-    //To start quest: Player must have fixed minecarts in the valley, visited the woods at least once, and is a guild member.
+    //To start quest: Player must have fixed minecarts in the valley.
     {
       "Action": "EditData",
       "Target": "data/events/farm",
       "When": {
-        "HasSeenEvent |contains=1000034": true,
         "FarmType": "FrontierFarm",
         "HasFlag": "ccBoilerRoom"
       },
       "Entries": {
-        "1337429/A cc_Minecart/t 600 1150/H": "continue/-500 -500/farmer 118 26 2 MarlonFay 118 27 0/pause 1200/speak MarlonFay \"{{i18n:MarlonMinecarts.01}}\"/pause 500/end"
+        "1337429/t 600 2600/H": "continue/-500 -500/farmer 118 26 2 MarlonFay 118 27 0/pause 1000/speak MarlonFay \"{{i18n:MarlonMinecarts.01}}\"/pause 500/end"
       },
     },
     //Event #2 - Functional Minecarts   <<ID tagged by framework

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="6" height="7" tilewidth="16" tileheight="16" infinite="0" nextlayerid="26" nextobjectid="27">
+ <properties>
+  <property name="LocationContext" value="Island"/>
+ </properties>
+ <tileset firstgid="1" source="safariextras1.tsx"/>
+ <tileset firstgid="253" name="Building_interiors" tilewidth="16" tileheight="16" tilecount="3570" columns="85">
+  <image source="Building_interiors.png" width="1360" height="672"/>
+  <tile id="903">
+   <animation>
+    <frame tileid="895" duration="150"/>
+    <frame tileid="896" duration="150"/>
+    <frame tileid="897" duration="150"/>
+    <frame tileid="898" duration="150"/>
+    <frame tileid="899" duration="150"/>
+    <frame tileid="900" duration="150"/>
+    <frame tileid="901" duration="150"/>
+    <frame tileid="902" duration="150"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="21" name="Back" width="6" height="7">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,1367,1367,1367,1368,0,
+0,1452,1452,1452,1453,0,
+0,1367,1367,1367,1368,0,
+0,1452,1452,1452,1453,0,
+0,0,0,1282,0,0
+</data>
+ </layer>
+ <objectgroup id="12" name="Back"/>
+ <layer id="8" name="Buildings" width="6" height="7">
+  <data encoding="csv">
+1054,1111,1111,1111,1111,1054,
+1054,1196,1196,1196,1196,1054,
+1054,964,965,1220,1221,1054,
+1054,1049,1050,83,0,1054,
+1054,0,0,0,0,1054,
+1054,1537,0,0,1223,1054,
+1054,1054,1054,0,1054,1054
+</data>
+ </layer>
+ <objectgroup id="14" name="Buidings"/>
+ <layer id="10" name="Front" width="6" height="7">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,1135,1136,0,
+0,0,0,69,0,0,
+0,0,0,0,0,0,
+0,0,0,0,1138,0,
+0,1156,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="16" name="Front"/>
+</map>

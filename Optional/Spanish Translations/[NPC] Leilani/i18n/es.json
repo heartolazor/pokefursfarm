@@ -1,4 +1,14 @@
 {
+"config.Version.name": "Versión",
+"config.Version.description": "Cambia si Leilani es antisocial (lo que significa que no aparecerá en el menú social, no puede recibir regalos, etc.) o se comporta como un PNJ normal.",
+"config.Version.values.antisocial": "antisocial",
+"config.Version.values.hardmode": "modo difícil",
+
+"config.Portrait Style.name": "Estilo de retrato",
+"config.Portrait Style.description": "Cambia los retratos de Leilani al estilo artístico de ZoeDoll, Airyn o Nyapu.",
+"config.Portrait Style.values.ZoeDoll": "ZoeDoll",
+"config.Portrait Style.values.Nyapu": "Nyapu",
+"config.Portrait Style.values.Airyn": "Airyn",
 
 "Leilanidispo.Pika": "marido",
 "Leilanidispo.Keahi": "hijo",
@@ -11,6 +21,7 @@
 "gifttastes.3": "Dicen que lo que cuenta es el pensamiento...$s",
 "gifttastes.4": "Uf, este es un regalo terrible. ¿Por qué me darías esto?$a",
 "gifttastes.5": "Oh gracias.",
+"gifttastes.PikaCooking": "Esta es una de las recetas de Pika, ¿no? Nunca me cansaría de la cocina de mi marido.$h",
 
 "antisocial.summer_1": "Pika ya le preparó a Willy algunos pasteles de cangrejo para agradecerle por llevarme a remo de regreso a la playa, pero también quiero regalarle algo. ¿Haces hidromiel en tu granja?",
 "antisocial.summer_1_2": "Pika ya le preparó a Willy algunos pasteles de cangrejo para agradecerle por llevarme a remo de regreso a la playa, pero también quiero regalarle algo. ¿Haces hidromiel en tu granja?",
@@ -112,7 +123,7 @@
 "LeilaniKeahiEvent.10": "¡No fuerces tu suerte!$1",
 "LeilaniKeahiEvent.11": "Hipótesis alternativa - está tan ocupado haciéndole bromas que no tiene tiempo para causar problemas en ningún otro lugar.",
 
-"LeilaniDigsiteEvent.0": "¡Acabo de recibir una llamada del jefe de mi departamento!#$b#Ella quiere que vaya a una excavación en Valleriath - ¡Han encontrado cerámica antigua de Samaowai allá, a cientos de kilómetros de las Islas Helecho!#$b#¡Podría revolucionar nuestra comprensión de las antiguas rutas comerciales!$1",
+"LeilaniDigsiteEvent.0": "¡Acabo de recibir una llamada del jefe de mi departamento!#$b#Ella quiere que vaya a una excavación en Valleriath - ¡Han encontrado cerámica antigua de los isleños allá, a cientos de kilómetros de las Islas Helecho!#$b#¡Podría revolucionar nuestra comprensión de las antiguas rutas comerciales!$1",
 "LeilaniDigsiteEvent.1": "Eso es genial... pero Valleriath está tan cerca de la frontera con Gotoro...$s",
 "LeilaniDigsiteEvent.2": "No está tan cerca. Estará bien.$2",
 "LeilaniDigsiteEvent.3": "Pero la guerra...$s",
@@ -128,16 +139,16 @@
 "LeilaniCameronEvent.4": "¡Para principiantes!$h",
 "LeilaniCameronEvent.5": "Debería enseñarle a Keahi a surfear...#$b#Debería estar presente para enseñarle muchas cosas.$s",
 "LeilaniCameronEvent.6": "¡Otra vez esto no! ¡Sin autocompasión! Si quieres dejar de fumar, entonces deja de hacerlo.$a#$b#Toma ese trabajo de profesora en Grampleton. Enseñar a adolescentes de provincias en lugar de trabajar con niños de ciudad que pensaban que ir a la universidad en las islas serían unas vacaciones permanentes.$a",
-"LeilaniCameronEvent.7": "¡Puaj! ¡No me tientes!$1",
-"LeilaniCameronEvent.8": "suspiro",
+"LeilaniCameronEvent.7": "¡Ugh! ¡No me tientes!$1",
+"LeilaniCameronEvent.8": "Suspiro",
 "LeilaniCameronEvent.9": "Tal vez algún día. Pero no ahora.",
 "LeilaniCameronEvent.10": "Debo admitir que establecerse en un lugar como este parece cada vez más atractivo...$s",
 "LeilaniCameronEvent.11": "Doctor Peasbody, creo que eso suena peligrosamente cercano al arrepentimiento. Sin autocompasión.",
-"LeilaniCameronEvent.12": "Bien. Lo único que digo es que tienes suerte de tener a Pika.",
+"LeilaniCameronEvent.12": "Bueno. Lo único que digo es que tienes suerte de tener a Pika.",
 "LeilaniCameronEvent.13": "Lo sé.$4",
 
 "LeilaniPikaEvent.0": "¡Vamos, Keahi, es hora de llamar a tu makuahine! ¡Ella estará esperando!$1",
-"LeilaniPikaEvent.1": "Puaj. ¿Tengo que? Quiero ir a jugar con Trinnie.$a",
+"LeilaniPikaEvent.1": "Ugh. ¿Tengo que? Quiero ir a jugar con Trinnie.$a",
 "LeilaniPikaEvent.2": "¡Oh, llegaste temprano, @! Estábamos a punto de llamar a Leilani. No debería tardar mucho.",
 "LeilaniPikaEvent.3": "¡Pero no quiero! Lo único que pasa cuando la llamamos es que después te pones triste.$s",
 "LeilaniPikaEvent.4": "¿Qué pasa, hijo?",
@@ -176,8 +187,8 @@
 "KeahiDialogue.spring_28_1": "¡Mamá vuelve a casa mañana! ¡Espero que me traiga algo realmente genial!$1#$b#Si quieres venir a verla, ¡nos encontraremos con ella en la playa!",
 "KeahiDialogue.spring_28_2": "¡Mamá vuelve a casa mañana! ¡Espero que me traiga algo realmente genial!$1#$b#Si quieres venir a verla, ¡nos encontraremos con ella en la playa!",
 "KeahiDialogue.LeilaniArrives": "¡Mira! ¡Mamá me trajo una piedra con un insecto atrapado! Se llama ámbar.",
-"KeahiDialogue.summer_Tue8": "Mi papá está tratando de enseñarme Samaowaii.#$b#Es lo que hablan en las Islas Helecho.#$e#¡Nací en el pueblo, pero mi mamá y mi papá son de las islas!",
-"KeahiDialogue.Tue8": "Mi papá está tratando de enseñarme Samaowaii.#$b#Es lo que hablan en las Islas Helecho.#$e#Nací en el pueblo pero mi papá es de las islas.#$e#Mi mamá también lo es...$s",
+"KeahiDialogue.summer_Tue8": "Mi papá está tratando de enseñarme 'Olelo Mokupini.#$b#Es lo que hablan en las Islas Helecho.#$e#¡Nací en el pueblo, pero mi mamá y mi papá son de las islas!",
+"KeahiDialogue.Tue8": "Mi papá está tratando de enseñarme 'Olelo Mokupini.#$b#Es lo que hablan en las Islas Helecho.#$e#Nací en el pueblo pero mi papá es de las islas.#$e#Mi mamá también lo es...$s",
 "KeahiDialogue.Town_97_92": "¡No te preocupes, mamá! ¡Estaré bien hoy! ¡Seré el mejor!$4",
 
 "CorineDialogue.LeilaniArrives": "¡Es un gran alivio tener a Leilani cerca! El verano es la temporada de mayor actividad del restaurante.",

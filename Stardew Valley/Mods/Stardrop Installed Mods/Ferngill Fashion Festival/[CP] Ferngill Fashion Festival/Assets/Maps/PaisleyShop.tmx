@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="4" height="5" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="72">
+<map version="1.8" tiledversion="1.8.0" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="4" height="5" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="82">
  <properties>
   <property name="Arch" value="102 .02 100 .008 110 .02 115 .002"/>
   <property name="DayTiles" value="AlwaysFront 52 98 907 AlwaysFront 56 98 907 AlwaysFront 24 50 907 AlwaysFront 33 53 907 AlwaysFront 24 58 907 AlwaysFront 27 72 907 AlwaysFront 30 72 907 AlwaysFront 38 65 907 AlwaysFront 27 86 907 AlwaysFront 17 86 907 AlwaysFront 21 64 907 Buildings 92 79 186 Buildings 41 69 560 Buildings 71 67 720"/>
@@ -1338,8 +1338,8 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="1976" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
-  <image source="paths.png" width="64" height="144"/>
+ <tileset firstgid="1976" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
   <tile id="0">
    <properties>
     <property name="PathType" value="NE"/>
@@ -1371,7 +1371,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="2012" name="Town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+ <tileset firstgid="2040" name="Town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
   <image source="spring_town.png" width="512" height="1152"/>
   <tile id="45">
    <animation>
@@ -1662,7 +1662,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="4316" name="zfashionshow" tilewidth="16" tileheight="16" tilecount="750" columns="15">
+ <tileset firstgid="4344" name="zfashionshow" tilewidth="16" tileheight="16" tilecount="750" columns="15">
   <image source="fashionshow.png" width="240" height="800"/>
   <tile id="600">
    <animation>
@@ -2029,14 +2029,14 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="5066" name="Festivals" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+ <tileset firstgid="5094" name="Festivals" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
   <image source="Festivals.png" width="512" height="512"/>
  </tileset>
- <tileset firstgid="6090" name="characterSheet" tilewidth="16" tileheight="16" tilecount="144" columns="8">
+ <tileset firstgid="6118" name="characterSheet" tilewidth="16" tileheight="16" tilecount="144" columns="8">
   <image source="characterSheet.png" width="128" height="288"/>
  </tileset>
- <tileset firstgid="6234" name="zz_ModCompatStalls" tilewidth="16" tileheight="16" tilecount="160" columns="16">
-  <image source="ModCompatStalls.png" width="257" height="160"/>
+ <tileset firstgid="6262" name="zz_ModCompatStalls" tilewidth="16" tileheight="16" tilecount="320" columns="16">
+  <image source="ModCompatStalls.png" width="257" height="320"/>
  </tileset>
  <layer id="1" name="Back" width="4" height="5">
   <data encoding="csv">
@@ -2050,22 +2050,32 @@
  <objectgroup id="6" name="Back"/>
  <layer id="2" name="Buildings" width="4" height="5">
   <data encoding="csv">
-1521,1522,1523,0,
-1523,1521,1522,1523,
 0,0,0,0,
-6282,6283,6284,6285,
-6298,6299,6300,6301
+0,0,0,0,
+0,0,0,0,
+6310,6311,6312,6313,
+6326,6327,6328,6329
 </data>
  </layer>
  <objectgroup id="7" name="Buildings">
-  <object id="69" name="TileData" x="32" y="64" width="16" height="16">
+  <object id="72" name="TileData" x="0" y="64" width="16" height="16">
    <properties>
-    <property name="Shop" value="ShopFashionPaisley"/>
+    <property name="Action" value="OpenShop Elaho.PaisleysBridalBoutiqueCP_PaisleyShop"/>
    </properties>
   </object>
-  <object id="71" name="TileData" x="16" y="64" width="16" height="16">
+  <object id="76" name="TileData" x="16" y="64" width="16" height="16">
    <properties>
-    <property name="Shop" value="ShopFashionPaisley"/>
+    <property name="Action" value="OpenShop Elaho.PaisleysBridalBoutiqueCP_PaisleyShop"/>
+   </properties>
+  </object>
+  <object id="77" name="TileData" x="32" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="OpenShop Elaho.PaisleysBridalBoutiqueCP_PaisleyShop"/>
+   </properties>
+  </object>
+  <object id="78" name="TileData" x="48" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="OpenShop Elaho.PaisleysBridalBoutiqueCP_PaisleyShop"/>
    </properties>
   </object>
  </objectgroup>
@@ -2081,7 +2091,7 @@
  <objectgroup id="8" name="Paths"/>
  <layer id="4" name="Front" width="4" height="5">
   <data encoding="csv">
-1498,1496,1497,1498,
+0,0,0,0,
 0,0,0,0,
 0,0,0,0,
 0,0,0,0,
@@ -2109,9 +2119,9 @@
  </layer>
  <layer id="5" name="AlwaysFront" width="4" height="5">
   <data encoding="csv">
-6234,6235,6236,6237,
-6250,6251,6252,6253,
-6266,6267,6268,6269,
+6262,6263,6264,6265,
+6278,6279,6280,6281,
+6294,6295,6296,6297,
 0,0,0,0,
 0,0,0,0
 </data>

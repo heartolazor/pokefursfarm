@@ -1,6 +1,6 @@
-//tester 6 hearts when temp actors fixed
+ï»¿//tester 6 hearts when temp actors fixed
 // tester 10 hearts +
-//pants event : problème porte et départ du fermier
+//pants event : problÃ¨me porte et dÃ©part du fermier
 {
     "Changes": [
         {
@@ -8,7 +8,7 @@
             "Action": "EditData",
             "Target": "Data/Events/ArchaeologyHouse",
             "Entries": {
-                "134371008/t 900 1800/p RodneyOBrien/!e 134371001": "libraryTheme/4 10/farmer -1000 -1000 0 RodneyOBrien 4 10 0 Gunther 3 8 2/skippable/viewport 4 10 clamp true/playSound doorClose/warp farmer 3 14/textAboveHead Gunther \"{{i18n:event-134371008.01}}\"/move farmer 0 -3 0/pause 500/addConversationTopic TalkWithGunther 3/faceDirection RodneyOBrien 3/pause 500/speak RodneyOBrien \"{{i18n:event-134371008.02}}\"/emote farmer 8/pause 500/faceDirection farmer 1/emote farmer 8/pause 500/faceDirection farmer 0/speak Gunther \"{{i18n:event-134371008.03}}\"/faceDirection RodneyOBrien 0/emote RodneyOBrien 20/speak RodneyOBrien \"{{i18n:event-134371008.04}}\"/advancedMove RodneyOBrien false 4 0 0 0 0 -5 0 0 7 0 4 500/pause 500/speak Gunther \"{{i18n:event-134371008.05}}'\"/showFrame RodneyOBrien 25/pause 500/speak Gunther \"{{i18n:event-134371008.06}}\"/pause 1000/end/"
+                "134371008/t 900 1800/p RodneyOBrien/!e 134371001": "libraryTheme/4 10/farmer -1000 -1000 0 RodneyOBrien 4 10 0 Gunther 3 8 2/skippable/viewport 4 10 clamp true/playSound doorClose/warp farmer 3 14/textAboveHead Gunther \"{{i18n:event-134371008.01 |g={{g}}}}\"/move farmer 0 -3 0/pause 500/addConversationTopic TalkWithGunther 3/faceDirection RodneyOBrien 3/pause 500/speak RodneyOBrien \"{{i18n:event-134371008.02}}\"/emote farmer 8/pause 500/faceDirection farmer 1/emote farmer 8/pause 500/faceDirection farmer 0/speak Gunther \"{{i18n:event-134371008.03}}\"/faceDirection RodneyOBrien 0/emote RodneyOBrien 20/speak RodneyOBrien \"{{i18n:event-134371008.04}}\"/advancedMove RodneyOBrien false 4 0 0 0 0 -5 0 0 7 0 4 500/pause 500/speak Gunther \"{{i18n:event-134371008.05}}'\"/showFrame RodneyOBrien 25/pause 500/speak Gunther \"{{i18n:event-134371008.06}}\"/pause 1000/end/"
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
@@ -19,7 +19,7 @@
             "Action": "EditData",
             "Target": "Data/Events/ArchaeologyHouse",
             "Entries": {
-                "134371008/t 900 1800/p RodneyOBrien/!e 134371001": "libraryTheme/4 10/farmer -1000 -1000 0 RodneyOBrien 4 10 0 GuntherSilvian 4 8 2/skippable/viewport 4 10 clamp true/playSound doorClose/warp farmer 3 14/textAboveHead GuntherSilvian \"{{i18n:event-134371008.01}}\"/move farmer 0 -3 0/pause 500/addConversationTopic TalkWithGunther 3/faceDirection RodneyOBrien 3/pause 500/speak RodneyOBrien \"{{i18n:event-134371008.02}}\"/emote farmer 8/pause 500/faceDirection farmer 1/emote farmer 8/pause 500/faceDirection farmer 0/speak GuntherSilvian \"{{i18n:event-134371008.03}}\"/faceDirection RodneyOBrien 0/emote RodneyOBrien 20/speak RodneyOBrien \"{{i18n:event-134371008.04}}\"/advancedMove RodneyOBrien false 4 0 0 0 0 -5 0 0 7 0 4 500/pause 500/speak GuntherSilvian \"{{i18n:event-134371008.05}}'\"/showFrame RodneyOBrien 25/pause 500/speak GuntherSilvian \"{{i18n:event-134371008.06}}\"/pause 1000/end/"
+                "134371008/t 900 1800/p RodneyOBrien/!e 134371001": "libraryTheme/4 10/farmer -1000 -1000 0 RodneyOBrien 4 10 0 GuntherSilvian 4 8 2/skippable/viewport 4 10 clamp true/playSound doorClose/warp farmer 3 14/textAboveHead GuntherSilvian \"{{i18n:event-134371008.01 |g={{g}}}}\"/move farmer 0 -3 0/pause 500/addConversationTopic TalkWithGunther 3/faceDirection RodneyOBrien 3/pause 500/speak RodneyOBrien \"{{i18n:event-134371008.02}}\"/emote farmer 8/pause 500/faceDirection farmer 1/emote farmer 8/pause 500/faceDirection farmer 0/speak GuntherSilvian \"{{i18n:event-134371008.03}}\"/faceDirection RodneyOBrien 0/emote RodneyOBrien 20/speak RodneyOBrien \"{{i18n:event-134371008.04}}\"/advancedMove RodneyOBrien false 4 0 0 0 0 -5 0 0 7 0 4 500/pause 500/speak GuntherSilvian \"{{i18n:event-134371008.05}}'\"/showFrame RodneyOBrien 25/pause 500/speak GuntherSilvian \"{{i18n:event-134371008.06}}\"/pause 1000/end/"
             },
             "When": {
                 "HasMod": "FlashShifter.StardewValleyExpandedCP"
@@ -196,7 +196,7 @@
                 "DateRodney": "emote RodneyOBrien 20/addMailReceived DatingRodney/pause 500/speak RodneyOBrien \"{{i18n:event-134371020.07}}\"/emote farmer 32/pause 300/emote RodneyOBrien 20/pause 1000/end"
             },
             "When": {
-                "RodneyPolyamory": false,
+                "Rodney Polyamory": false,
             }
         },
         {
@@ -208,7 +208,7 @@
                 "DateRodney": "emote RodneyOBrien 20/addMailReceived DatingRodney/pause 500/speak RodneyOBrien \"{{i18n:event-134371020.07}}\"/emote farmer 32/pause 300/emote RodneyOBrien 20/pause 1000/end"
             },
             "When": {
-                "RodneyPolyamory": true,
+                "Rodney Polyamory": true,
             }
         },
         {

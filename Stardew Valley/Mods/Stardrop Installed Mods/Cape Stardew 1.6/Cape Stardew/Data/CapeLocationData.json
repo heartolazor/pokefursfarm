@@ -850,7 +850,29 @@
       }
     },
 
-
+{
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      
+      "Entries": {
+        "Custom_SeaCavernDepthSecret": {
+          "DisplayName": "SeaCavernDepthSecret",
+          "DefaultArrivalTile": null,
+          "ExcludeFromNpcPathfinding": false,
+          "CreateOnLoad": {
+            "MapPath": "Maps\\Custom_SeaCavernDepthSecret"
+          },
+          "FormerLocationNames": [
+            "SeaCavernDepthSecret"
+          ],
+          "ArtifactSpots": [
+        
+          
+          ],
+          
+        }
+      }
+    },
     {
       "Action": "EditData",
       "Target": "Data/Locations",
@@ -5220,7 +5242,7 @@
 			"Target": "Data/Locations",
 			"Entries": {
 				"Custom_CapeKeyMaze": {
-					"DisplayName": "{{i18n: Locations.CapeKeyMaze1}}",
+					"DisplayName": "{{i18n:Locations.CapeKeyMaze1}}",
 					"DefaultArrivalTile": null,
 					"FormerLocationNames": [
             					"CapeKeyMaze"
@@ -5240,7 +5262,7 @@
 			"Target": "Data/Locations",
 			"Entries": {
 				"Custom_CapeKeyMaze3": {
-					"DisplayName": "{{i18n: Locations.CapeKeyMaze3}}",
+					"DisplayName": "{{i18n:Locations.CapeKeyMaze3}}",
 					"DefaultArrivalTile": null,
 					"FormerLocationNames": [
             					"CapeKeyMaze3"
@@ -5256,12 +5278,33 @@
 		},
 
 {
+			"LogName": "CapeKeyMazEnd",
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"Custom_CapeKeyMaze4": {
+					"DisplayName": "{{i18n:Locations.CapeKeyMaze4}}",
+					"DefaultArrivalTile": null,
+					"FormerLocationNames": [
+            					"CapeKeyMaze4"
+          					],
+					"CreateOnLoad": {
+						"MapPath": "Maps\\Custom_CapeKeyMaze4",
+						"Type": "CapeStardewCode.CustomLavaLogic, CapeStardewCode"
+
+},
+					},
+				}
+			
+		},
+
+{
 			"LogName": "Minecart1",
 			"Action": "EditData",
 			"Target": "Data/Locations",
 			"Entries": {
 				"dreamy.kickitspot_CapeMineCart": {
-					"DisplayName": "{{i18n: Locations.Minecart1}}",
+					"DisplayName": "{{i18n:Locations.Minecart1}}",
 					"DefaultArrivalTile": null,
 					"FormerLocationNames": [
             "CapeMineCart"
@@ -5280,7 +5323,7 @@
 			"Target": "Data/Locations",
 			"Entries": {
 				"dreamy.kickitspot_CapeMineForest": {
-					"DisplayName": "{{i18n: Locations.MineCaveForest}}",
+					"DisplayName": "{{i18n:Locations.MineCaveForest}}",
 					"DefaultArrivalTile": null,
 					"FormerLocationNames": [
             "CapeMineForest"
@@ -5299,7 +5342,7 @@
 			"Target": "Data/Locations",
 			"Entries": {
 				"dreamy.kickitspot_SeaCaveSecrets": {
-					"DisplayName": "{{i18n: Locations.Minecart2}}",
+					"DisplayName": "{{i18n:Locations.Minecart2}}",
 					"DefaultArrivalTile": null,
 					"FormerLocationNames": [
             "SeaCaveSecrets"

@@ -1,0 +1,46 @@
+{
+	"Format": "2.6.0",
+	"Changes": [
+	 
+{
+	"LogName": "Nyapu WF",
+	"Action": "EditImage",
+	"Target": "Portraits/WildflourSASS, Portraits/RoseSASS,",
+	"FromFile": "Assets/{{Target}}/{{TargetWithoutPath}}.png",
+	},
+		
+{
+    "LogName": "Nyapu WF Sprout",
+	 "Action": "EditImage",
+	 "Target": "Portraits/WildflourSASS",
+	 "FromFile": "Assets/{{Target}}/WildflourSASS_Sprout.png",
+	 "When":{"HasSeenEvent":"Wildflour.SASS_SproutMoonDrops"}
+    },
+		
+
+{	"LogName": "Nyapu Cori",
+      "Action": "EditImage",
+      "Target": "Portraits/CoriSASS",
+      "FromFile": "Assets/tempActors/CoriSASS/Cori_Portrait.png"
+    },
+	
+{	"LogName": "Nyapu Raccoon",
+      "Action": "EditImage",
+      "Target": "Portraits/RaccoonSASS",
+      "FromFile": "Assets/tempActors/RaccoonSASS/RaccoonSASS_Portrait.png"
+    },
+	
+	{	"LogName": "Nyapu WF Shop",
+      "Action": "EditImage",
+      "Target": "Portraits/AlchemistShop",
+      "FromFile": "Assets/ShopPortraits/AlchemistShop.png"
+    },
+	{	"LogName": "Nyapu Rose Shop",
+      "Action": "EditImage",
+      "Target": "Portraits/RoseShop",
+      "FromFile": "Assets/ShopPortraits/RoseShop.png"
+    },
+
+	]
+
+}

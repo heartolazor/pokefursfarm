@@ -8,7 +8,7 @@
 	"config.ModJamMode.values.False": "False",
 	
 	"config.ModShopsPostFestival.name": "Mod Shops Post Festival",
-	"config.ModShopsPostFestival.description": "切换为与其他模组（如 Lumisteria Clothing）兼容而添加的摊位是每年出现，还是仅在您至少访问过一次节日后出现.",
+	"config.ModShopsPostFestival.description": "切换为与其他模组（如 Visit Mount Vapius）兼容而添加的摊位是每年出现，还是仅在您至少访问过一次节日后出现.",
 	"config.ModShopsPostFestival.values.True": "True",
 	"config.ModShopsPostFestival.values.False": "False",
 
@@ -56,6 +56,8 @@
     "event-1740403.01": "早上好, @! 你的农场看起来很漂亮.#$b#真希望我有更多借口来常常拜访!$1",
     "event-1740403.02": "其实我想向你求助，需要一些为了时装秀所需的材料.#$b#我本来可以在公告板上发布请求的，但是你在佩星露谷是最可靠的人，对这类事情很擅长.#$b#我会为你提供报酬的！有了你的帮助，我相信我们可以将这个时装秀变成现实!$1",
 
+    "HatMouse.Name": "帽子老鼠",
+
     "event-1740404.01": "\"嘘, poke!\"",
     "event-1740404.02": "\"在这边, poke! 这边!\"",
     "event-1740404.03": "这是一个盒子...?",
@@ -66,7 +68,7 @@
     "event-1740404.08": "你可以戴个伪装.",
     "event-1740404.09": "我觉得你没问题.",
     "event-1740404.10": "谢谢, poke. 我会考虑的.$3#$b#农夫也做衣服吗?",
-    "event-1740404.11": "农夫会帮忙？我也会帮忙, poke.[428][428]",
+    "event-1740404.11": "农夫会帮忙？我也会帮忙, poke.",
     "event-1740404.12": "我会去看秀的。希望很有趣, poke.",
     
     "event-1740404.13": "谢谢, poke. 我回考虑的--",
@@ -75,8 +77,8 @@
     "event-1740404.16": "玫瑰... poke.$2",
     "event-1740404.17": "我觉得你应该去！你的帽子是我见过最棒的，而且那些人类穿上任何一顶都会非常可爱.$1#$b#如果有帮助的话，我也会去!$1",
     "event-1740404.18": "好的, poke.$3#$b#农夫也做衣服吗?",
-    "event-1740404.19": "农夫会帮忙？我也会帮忙, poke.[428]",
-    "event-1740404.20": "请再收下这些吧! [428]#$b#谢谢你对我大哥哥那么好.[428]$h",
+    "event-1740404.19": "农夫会帮忙？我也会帮忙, poke.",
+    "event-1740404.20": "请再收下这些吧!#$b#谢谢你对我大哥哥那么好.$h",
     "event-1740404.21": "我们会去看秀的。希望很有趣, poke.",
 
     // FESTIVAL NAMES
@@ -207,7 +209,7 @@
     "Festival.FashionShow.Emily": " @! 哇，事情真的很忙，但是很有趣!$1#$b#你觉得大家准备好开始了吗？?",
     "Festival.FashionShow.Lewis": "能在鹈鹕镇举办这样一场大秀我感到非常高兴，这对当地士气有好处。.$1",
     "Festival.FashionShow.Marnie": "%玛尼对着一些大号的连衣裙痴痴地看着.#$b#或许我只会给贾斯挑选一些可爱的东西.$2",
-    "Festival.FashionShow.Jodi": "或许我只会给贾斯挑选一些可爱的东西.#$b#或许我也会考虑给自己买点东西作为奖励.$1",
+    "Festival.FashionShow.Jodi": "或许我只会给贾斯挑选一些可爱的东西!#$b#或许我也会考虑给自己买点东西作为奖励.$1",
     "Festival.FashionShow.Caroline": "米莉选择的颜色都很舒缓，看着她的衣服真的很放松.$1",
     "Festival.FashionShow.Sam": "艾米莉的设计挺酷的.#$b#你觉得她能给我们做些乐队的制服吗?$10",
     "Festival.FashionShow.Abigail": "你觉得艾米莉能为我设计一些冒险装备吗?#$b#我会委托她的，当然！之前我也委托过几个艺术品，和艺术家一起合作总是很棒的体验.$h",
@@ -238,8 +240,8 @@
     "Festival.FashionShow.Wizard": "镇上居民的日常事务对我来说不感兴趣.#$b#但有人需要确保天气晴朗.",
     "Festival.FashionShow.Shane": "艾米丽真棒，对她感到高兴.",
 
-    /* Year 2+    
-    "Festival.FashionShow.Jodi.Y2": "Now that I think about it, Emily always was creative as a child.#$b#I wonder if her parents know how talented she is? They must be proud.$1",*/
+    //Year 2+    
+    "Festival.FashionShow.Jodi.Y2": "Now that I think about it, Emily always was creative as a child.#$b#I wonder if her parents know how talented she is? They must be proud.$1",
 
 
     // Participants
@@ -317,7 +319,7 @@
 
     "SpecialOrder.Emily_FashionShow_Name": "时尚助力",
     "SpecialOrder.Emily_FashionShow_Body": "我有一些惊人的新设计构想，计划在时装秀上展示，但我需要大量的材料来制作足够的服装进行销售，你能帮忙带来一些布料和天然染料原料吗?",
-    "SpecialOrder.Emily_FashionShow_Objective0": "将10个布料交付给艾米丽的缝纫台.",
+    "SpecialOrder.Emily_FashionShow_Objective0": "将{{SOModJam}}个布料交付给艾米丽的缝纫台.",
     "SpecialOrder.Emily_FashionShow_Objective1": "将3个红色染料原料交付给艾米丽的缝纫台.",
     "SpecialOrder.Emily_FashionShow_Objective2": "将3个橙色染料原料交付给艾米丽的缝纫台.",
     "SpecialOrder.Emily_FashionShow_Objective3": "将3个黄色染料原料交付给艾米丽的缝纫台.",
@@ -356,5 +358,75 @@
     
     "SpecialOrder.FashionShowComplete.Title": "时尚秀成功",
     "SpecialOrder.FashionShowComplete.Body": "亲爱的@，^^我很高兴时尚秀取得了成功！没有你的帮助，我无法做到这一切，再次感谢你！^^希望明年我们也能在同一时间举行时尚秀！^^ - 艾米丽",
+
+    // NEW FOR 1.6 (SHOP DIALOGUE)
+
+    "ShopDialogue.EmilyShop": "Let me know if you want to try something on.",
+    "ShopDialogue.WisteriaShop": "You look like you have good taste, nyes?",
+    "ShopDialogue.HatmouseShop": "Buy hats, poke?",
+    "ShopDialogue.RoseShop": "Freshly baked this morning!",
+    "ShopDialogue.MoiraShop": "My main shop is in Mount Vapius. What designs are you looking for?",
+
+    "ShopDialogue.PaisleyShop": "Welcome to Paisley's Bridal Boutique! <",
+    "ShopDialogue.RagnarokShop": "Welcome! Looking for something a little different?",
+    "ShopDialogue.PrideShop": "Hey there, this is Queer Gear! What can I get you?",
+    "ShopDialogue.KisekaeShop": "Be welcome to my shop... I trade in gothic skirts of all varieties.",
+    "ShopDialogue.PlaidShop": "If you're looking for plaid, then this is the place to be! Syd's Plaids!",
+
+    // NEW FOR 1.6 (FURNITURE)
+
+    "WD.BoutiqueSewingTable": "Boutique Sewing Table",
+    "WD.BoutiqueUmbrellaHolder": "Boutique Umbrella Holders",
+    "WD.DecoHatBoxes": "Deco Hat Boxes",
+    "WD.DecoMannequin": "Deco Mannequin",
+    "WD.DecoParasol1": "Deco Parasol 1",
+    "WD.DecoParasol2": "Deco Parasol 2",
+    "WD.DecoParasol3": "Deco Parasol 3",
+    "WD.DecoParasol4": "Deco Parasol 4",
+    "WD.DecoParasol5": "Deco Parasol 5",
+    "WD.DecoWisteria": "Deco Wisteria",
+    "WD.BoutiqueSimpleMirror": "Boutique Simple Mirror",
+    "WD.Mannequin": "Boutique Mannequin",
+    "WD.AquaticEleganceMannequin": "Aquatic Elegance Mannequin",
+    "WD.CapriciousSkylinesMannequin": "Capricious Skylines Mannequin",
+    "WD.ContrastParallelMannequin": "Contrast Parallel Mannequin",
+    "WD.GracefulZephyrMannequin": "Graceful Zephyr Mannequin",
+    "WD.LissomeBlazeMannequin": "Lissome Blaze Mannequin",
+    "WD.MeadowReverieMannequin": "Meadow Reverie Mannequin",
+    "WD.MedianTinctureMannequin": "Median Tincture Mannequin",
+    "WD.NaturalBustleMannequin": "Natural Bustle Mannequin",
+    "WD.PlumFantasyMannequin": "Plum Fantasy Mannequin",
+    "WD.ProfessionalBywaysMannequin": "Professional Byways Mannequin",
+    "WD.SaturatedRatioMannequin": "Saturated Ratio Mannequin",
+    "WD.SunflowerVisionMannequin": "Sunflower Vision Mannequin",
+    "WD.BoutiqueFlowerpot": "Boutique Flower Pot",
+    "WD.BoutiqueVase": "Boutique Vase",
+    "WD.NecklaceDisplay1": "Neck Display 1",
+    "WD.NecklaceDisplay2": "Neck Display 2",
+    "WD.NecklaceDisplay3": "Neck Display 3",
+    "WD.NecklaceDisplay4": "Neck Display 4",
+    "WD.NecklaceDisplay5": "Neck Display 5",
+    "WD.PedestalCourtains": "Pedestal Courtains",
+    "WD.PedestalPedestal": "Pedestal Pedestal",
+    "WD.SewingTable": "Sewing Table",
+    "WD.LargeHatBox": "Large Hat Box",
+    "WD.DecoHat1": "Deco Hat 1",
+    "WD.DecoHat2": "Deco Hat 2",
+    "WD.DecoHat3": "Deco Hat 3",
+    "WD.DecoHat4": "Deco Hat 4",
+    "WD.DecoHat5": "Deco Hat 5",
+    "WD.DecoHat6": "Deco Hat 6",
+    "WD.DecoHat7": "Deco Hat 7",
+    "WD.DecoHat8": "Deco Hat 8",
+    "WD.LargeDisplayTable": "Large Display Table",
+    "WD.MediumDisplayTable": "Medium Display Table",
+    "WD.SmallDisplayTable": "Small Display Table",
+    "WD.OrnateDisplayTable": "Ornate Display Table",
+    "WD.ShoeDisplay": "Shoe Display",
+    "WD.HatDisplay": "Hat Display",
+    "WD.NecklaceDisplay": "Necklace Display",
+    "WD.MannequinDisplayCase": "Mannequin Display Case",
+    "WD.HatDisplayCase": "Hat Display Case",
+    "WD.CenterDisplayCase": "Center Display Case"
 
 }

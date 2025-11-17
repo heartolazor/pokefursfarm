@@ -1,5 +1,11 @@
 {
    "Format": "2.0.6",
+   "DynamicTokens": [
+    {
+        "Name": "IsOddDay",
+        "Value": "{{Query: {{Day}} % 2 = 1}}"
+    }
+    ],
    "Changes": [
         {
             "Action": "Load",
@@ -8,13 +14,13 @@
         },
         {
             "Action": "Load",
-            "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
-            "FromFile": "MapStuff/{{TargetWithoutPath}}.tbin"
+            "Target": "Mods/NatureInTheValley/Furniture/DarkStumpChair, Mods/NatureInTheValley/Furniture/DarkStumpArmChair,Mods/NatureInTheValley/Furniture/DarkStumpBench,Mods/NatureInTheValley/Furniture/DarkStumpChairFront, Mods/NatureInTheValley/Furniture/DarkStumpArmChairFront,Mods/NatureInTheValley/Furniture/DarkStumpBenchFront",
+            "FromFile": "Furniture/{{TargetWithoutPath}}.png"
         },
         {
             "Action": "Load",
-            "Target": "Mods/NatureInTheValley/Furniture/DarkStumpChair, Mods/NatureInTheValley/Furniture/DarkStumpArmChair,Mods/NatureInTheValley/Furniture/DarkStumpBench,Mods/NatureInTheValley/Furniture/DarkStumpChairFront, Mods/NatureInTheValley/Furniture/DarkStumpArmChairFront,Mods/NatureInTheValley/Furniture/DarkStumpBenchFront",
-            "FromFile": "Furniture/{{TargetWithoutPath}}.png"
+            "Target": "Mods/NatureInTheValley/Maps/NatValleyOutsideInsec, Mods/NatureInTheValley/Maps/InsectariumInterior",
+            "FromFile": "MapStuff/{{TargetWithoutPath}}.tmx"
         },
         {
             "Action": "EditData",
@@ -25,6 +31,7 @@
           "NIVDarkStumpBench": "NIVDarkStumpBench/bench/-1/-1/4/2500/2/{{i18n:BenchName}}/0/Mods\\NatureInTheValley\\Furniture\\DarkStumpBench/true//"
           }
         },
+    
         {
             "Action": "EditData",
             "Target": "Data/Shops",
@@ -100,11 +107,6 @@
           "NIVjadeQuest4": "ItemDelivery/{{i18n: QuestTitle}}/{{i18n: QuestDesc}}/{{i18n: Quest4Clear}}/Jade NatInValley.Creature.SandFlea 2/-1/500/-1/false/{{i18n: QuestResponse}}"
           }
               },
-	{
-            "Action": "Load",
-            "Target": "Mods/NatureInTheValley/Maps/NatValleyOutsideInsec",
-            "FromFile": "MapStuff/{{TargetWithoutPath}}.tmx"
-        },
         {
             "Action": "EditData",
             "Target": "Data/Hats",
@@ -292,6 +294,280 @@
              }
             }
         },
+
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/InsectariumUpgrade6.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "HasFlag": "Nature.NIV.Insectarium.Upgrade.6" }
+                },
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/InsectariumUpgrade5.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "HasFlag": "Nature.NIV.Insectarium.Upgrade.5" }
+                },
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/InsectariumUpgrade4.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "HasFlag": "Nature.NIV.Insectarium.Upgrade.4" }
+                },
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/InsectariumUpgrade3.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "HasFlag": "Nature.NIV.Insectarium.Upgrade.3" }
+                },
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/InsectariumUpgrade2.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "HasFlag": "Nature.NIV.Insectarium.Upgrade.2" }
+                },
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/InsectariumUpgrade1.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "HasFlag": "Nature.NIV.Insectarium.Upgrade.1" }
+                },
+
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/MotherChild1.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": true, "HasFlag": "Nature.NIV.Insectarium.Vis.1"}
+                },
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/MotherChild2.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": false, "HasFlag": "Nature.NIV.Insectarium.Vis.1"}
+                },
+
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/Red1.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": true, "HasFlag": "Nature.NIV.Insectarium.Vis.2"}
+                },
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/Red2.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": false, "HasFlag": "Nature.NIV.Insectarium.Vis.2"}
+                },
+
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/BlueShirt1.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": true, "HasFlag": "Nature.NIV.Insectarium.Vis.3"}
+                },
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/BlueShirt2.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": false, "HasFlag": "Nature.NIV.Insectarium.Vis.3"}
+                },
+
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/Beige1.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": true, "HasFlag": "Nature.NIV.Insectarium.Vis.4"}
+                },
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/Beige2.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": false, "HasFlag": "Nature.NIV.Insectarium.Vis.4"}
+                },
+
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/Gothic1.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": true, "HasFlag": "Nature.NIV.Insectarium.Vis.5"}
+                },
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/Gothic2.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": false, "HasFlag": "Nature.NIV.Insectarium.Vis.5"}
+                },
+
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/SideOrange1.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "HasFlag": "Nature.NIV.Insectarium.Vis.6"}
+                },
+
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/BlackShirt1.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": true, "HasFlag": "Nature.NIV.Insectarium.Vis.7"}
+                },
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/BlackShirt2.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": false, "HasFlag": "Nature.NIV.Insectarium.Vis.7"}
+                },
+
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/BlueYellow1.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": true, "HasFlag": "Nature.NIV.Insectarium.Vis.8"}
+                },
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/BlueYellow2.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": false, "HasFlag": "Nature.NIV.Insectarium.Vis.8"}
+                },
+
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/RedCyan1.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": true, "HasFlag": "Nature.NIV.Insectarium.Vis.9"}
+                },
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/RedCyan2.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": false, "HasFlag": "Nature.NIV.Insectarium.Vis.9"}
+                },
+
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/Old1.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": true, "HasFlag": "Nature.NIV.Insectarium.Vis.10"}
+                },
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/Old2.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": false, "HasFlag": "Nature.NIV.Insectarium.Vis.10"}
+                },
+
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/WhiteShirt1.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": true, "HasFlag": "Nature.NIV.Insectarium.Vis.11"}
+                },
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/WhiteShirt2.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": false, "HasFlag": "Nature.NIV.Insectarium.Vis.11"}
+                },
+
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/Gov1.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": true, "HasFlag": "Nature.NIV.Insectarium.Vis.12"}
+                },
+                {
+                    "Action": "EditMap",
+                    "Target": "Mods/NatureInTheValley/Maps/InsectariumInterior",
+                    "FromFile": "MapStuff/Gov2.tmx",
+                    "FromArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "ToArea": { "X": 0, "Y": 0, "Width": 79, "Height": 54 },
+                    "PatchMode": "Overlay",
+                    "When": { "IsOddDay": false, "HasFlag": "Nature.NIV.Insectarium.Vis.12"}
+                },
 {
     	"Action": "EditData",
     	"Target": "Mods/Cherry.TrainStation/Destinations",

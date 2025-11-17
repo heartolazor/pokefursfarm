@@ -1924,6 +1924,96 @@
             "Name": "Cape.AnalogousDiamond"
           }
         ],
+        "UniqueAreaID": "AreaSecretBoss Diamond stone",
+        "MapName": "Custom_AreaSecretBossLvl3",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 4,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 610,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": "miniharp_note"
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": 0
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [
+          {
+            "Category": "Big Craftable",
+            "Name": "Cape.PrismaticDiamond"
+          },
+          {
+            "Category": "Big Craftable",
+            "Name": "Cape.HyperDiamond"
+          },
+          {
+            "Category": "Big Craftable",
+            "Name": "Cape.AnalogousDiamond"
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "Category": "Big Craftable",
+            "Name": "Cape.PrismaticDiamond"
+          },
+          {
+            "Category": "Big Craftable",
+            "Name": "Cape.HyperDiamond"
+          },
+          {
+            "Category": "Big Craftable",
+            "Name": "Cape.AnalogousDiamond"
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "Category": "Big Craftable",
+            "Name": "Cape.PrismaticDiamond"
+          },
+          {
+            "Category": "Big Craftable",
+            "Name": "Cape.HyperDiamond"
+          },
+          {
+            "Category": "Big Craftable",
+            "Name": "Cape.AnalogousDiamond"
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "Category": "Big Craftable",
+            "Name": "Cape.PrismaticDiamond"
+          },
+          {
+            "Category": "Big Craftable",
+            "Name": "Cape.HyperDiamond"
+          },
+          {
+            "Category": "Big Craftable",
+            "Name": "Cape.AnalogousDiamond"
+          }
+        ],
         "UniqueAreaID": "AreaSecretBoss Diamond Big Craftable",
         "MapName": "Custom_AreaSecretCalibur",
         "MinimumSpawnsPerDay": 0,
@@ -3430,7 +3520,9 @@
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
-          "18;6,18,6"
+          "18,6;18,6",
+          "19,6;19,6",
+          "17,7;18,9"
         ],
         "ExcludeCoordinates": [],
         "StrictTileChecking": "High",
@@ -4706,13 +4798,13 @@
           }
         ],
         "UniqueAreaID": "MossyDewBladeSecretRoom",
-        "MapName": "Custom_CapeCavingSecretroom",
+        "MapName": "Custom_CapeMossy",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
-          "9,5;9,5"
+          "9,5;16,13"
         ],
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
@@ -4731,14 +4823,92 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "GameStateQueries": [
-            "WEATHER Custom_CapeCavingSecretroom GreenRain"
-          ],
+          "GameStateQueries": [],
           "CPConditions": {
-            "HasSeenEvent": "orb_hint_mossy"
+            "HasSeenEvent": "orb_hint_intro",
+            "HasMod": "DLX.Bundles",
+            "DLX.Bundles/Purchased": "Cape.SecretOrb"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
+        },
+        "DaysUntilSpawnsExpire": 0
+      },
+      {
+        "SpringItemIndex": [
+          {
+            "Category": "Chest",
+            "Contents": [
+              {
+                "Category": "Weapon",
+                "Name": "Cape.WitherHollow"
+              }
+            ]
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "Category": "Chest",
+            "Contents": [
+              {
+                "Category": "Weapon",
+                "Name": "Cape.WitherHollow"
+              }
+            ]
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "Category": "Chest",
+            "Contents": [
+              {
+                "Category": "Weapon",
+                "Name": "Cape.WitherHollow"
+              }
+            ]
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "Category": "Chest",
+            "Contents": [
+              {
+                "Category": "Weapon",
+                "Name": "Cape.WitherHollow"
+              }
+            ]
+          }
+        ],
+        "UniqueAreaID": "WitherHollowSecretRoom",
+        "MapName": "Custom_SeaCavernDepthSecret",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "20,13;26,18"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 610,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 1,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": "miniharp_note"
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": 3
         },
         "DaysUntilSpawnsExpire": 0
       },
@@ -4787,14 +4957,14 @@
             ]
           }
         ],
-        "UniqueAreaID": "MossyDewBladeSecretRoom2",
-        "MapName": "Custom_CapeCavingSecretroom",
+        "UniqueAreaID": "Custom_CapeCavingSecretroom forage area 1",
+        "MapName": "Custom_CapeMossy",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
-          "7,2;7,2"
+          "9,5;16,13"
         ],
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
@@ -4815,11 +4985,12 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
+            "HasSeenEvent": "orb_hint_intro",
             "HasMod": "DLX.Bundles",
-            "DLX.Bundles/Purchased": "Cape.SecretOrb"
+            "DLX.Bundles/Purchased": "Cape.SecretOrb.Repeat"
           },
           "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": 1
+          "LimitedNumberOfSpawns": 4
         },
         "DaysUntilSpawnsExpire": 0
       },
@@ -8371,7 +8542,7 @@
         "UniqueAreaID": "CapeMiniIslandForageWinter",
         "MapName": "Custom_CapeStardew",
         "MinimumSpawnsPerDay": 0,
-        "MaximumSpawnsPerDay": 3,
+        "MaximumSpawnsPerDay": 9,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
@@ -8399,9 +8570,7 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "GameStateQueries": [
-            "PLAYER_HAS_MAIL Any secretcavekey Received"
-          ],
+          "GameStateQueries": [],
           "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -11194,6 +11363,84 @@
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 3
+      },
+      {
+        "MiningLevelRequired": null,
+        "StartingSpawnChance": null,
+        "LevelTenSpawnChance": null,
+        "UniqueAreaID": "Custom_CapeMossy",
+        "MapName": "Custom_CapeMossy",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 610,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag": "greenrainMossyDewBegin"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MiningLevelRequired": null,
+        "StartingSpawnChance": null,
+        "LevelTenSpawnChance": null,
+        "UniqueAreaID": "CapeKeyMaze4ore",
+        "MapName": "Custom_CapeKeyMaze4",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasVisitedLocation": "Custom_CapeKeyMaze"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
       }
     ],
     "PercentExtraSpawnsPerMiningLevel": 0,
@@ -18063,6 +18310,190 @@
           "MaximumSimultaneousSpawns": 11,
           "OnlySpawnIfAPlayerIsPresent": true,
           "SpawnSound": "miniharp_note"
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Iridium Golem",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Big Green Slime",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Bug",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Putrid Ghost",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Cave Grub",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Mutant Grub",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Green Slime",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Stone Golem",
+            "Settings": {}
+          }
+        ],
+        "UniqueAreaID": "CapeMossyMonsters",
+        "MapName": "Custom_CapeMossy",
+        "MinimumSpawnsPerDay": 28,
+        "MaximumSpawnsPerDay": 44,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": "miniharp_note"
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag": "greenrainMossyDewBegin"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Duggy",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Bat",
+            "Settings": {}
+          }
+        ],
+        "UniqueAreaID": "Custom_CapeMossyMonsterdirt",
+        "MapName": "Custom_CapeMossy",
+        "MinimumSpawnsPerDay": 22,
+        "MaximumSpawnsPerDay": 42,
+        "IncludeTerrainTypes": [
+          "Dirt"
+        ],
+        "ExcludeTerrainTypes": [
+          "Stone"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": "miniharp_note"
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag": "greenrainMossyDewBegin"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Skeleton",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "False Magma Cap",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Metal Head",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Lava Bat",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Magma Sparker",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Big Red Slime",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {}
+          }
+        ],
+        "UniqueAreaID": "CapeKeyMaze4Monsters",
+        "MapName": "Custom_CapeKeyMaze4",
+        "MinimumSpawnsPerDay": 34,
+        "MaximumSpawnsPerDay": 56,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
         },
         "ExtraConditions": {
           "Years": [],

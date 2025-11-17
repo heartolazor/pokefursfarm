@@ -1,0 +1,39 @@
+{   
+	"Format": "2.0.6",
+	"Changes": [
+
+        // Base Content //////////////////////////////////////////////////////////
+
+        {
+			"Action": "Include",
+			"FromFile": "leaves.json",
+		},
+
+		{
+			"Action": "Include",
+			"FromFile": "rewards.json",
+		},
+
+        // Crossover Content //////////////////////////////////////////////////////////
+
+        // Book Collecting
+        {
+			"Action": "Include",
+			"FromFile": "Crossovers/BC/books.json",
+            "When": {
+			    "HasMod: |contains=Si.BC": true,
+				"HasWalletItem |contains=MagnifyingGlass": true,
+		    },
+		},
+
+		// Tortilla Trees
+		{
+			"Action": "Include",
+			"FromFile": "Crossovers/TortillaTrees/TortillaLeaves.json",
+            "When": {
+			    "HasMod: |contains=Si.TortillaTree": true,
+		    },
+		},
+
+	]
+}

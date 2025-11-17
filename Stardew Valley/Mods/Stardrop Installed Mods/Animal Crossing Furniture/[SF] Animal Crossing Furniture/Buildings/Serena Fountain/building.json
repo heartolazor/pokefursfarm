@@ -1,0 +1,65 @@
+{
+  "Id": "otohime.SF.ACF_serenafountain",
+  "Name": "Serena Fountain",
+  "Description": "",
+  "DrawShadow": false,
+  "FadeWhenBehind": true,
+
+  "SourceRect": { "X": 0, "Y": 0, "Width": 76, "Height": 116 },
+  "Size": {
+    "X": 4,
+    "Y": 4
+  },
+
+  "DrawLayers": [
+    {
+      "Texture": "animations",
+      "SourceRect": { "X": 0, "Y": 0, "Width": 76, "Height": 116 },
+      "DrawPosition": {
+        "X": 0,
+        "Y": 0
+      },
+      "DrawBehindBase": false,
+      "SortTileOffset": 0,
+      "Sequences": [
+        {
+          "Frame": 0,
+          "Duration": 100,
+        },
+        {
+          "Frame": 1,
+          "Duration": 100,
+        },
+        {
+          "Frame": 2,
+          "Duration": 100,
+        },
+        {
+          "Frame": 3,
+          "Duration": 100,
+        },
+        {
+          "Frame": 4,
+          "Duration": 100,
+        },
+        {
+          "Frame": 5,
+          "Duration": 100,
+        }
+        ]
+        }
+      ],
+  "Builder": "Wizard",
+  "MagicalConstruction": true,
+  "BuildCost": 5000,
+  "BuildMaterials": [
+    {
+      "ItemID": 768,
+      "Amount": 10
+    },
+    {
+      "ItemID": 390,
+      "Amount": 200
+    }
+  ]
+}

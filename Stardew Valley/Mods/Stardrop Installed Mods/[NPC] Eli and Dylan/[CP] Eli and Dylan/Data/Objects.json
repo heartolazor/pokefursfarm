@@ -57,8 +57,8 @@
       "Action": "EditData",
       "Target": "Data/Objects",
       "Entries": {
-        "{{ModID}}_TenebrousNova.EnD.ChaosTotem": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.ChaosTotem",
+        "{{ModID}}_ChaosTotem": {
+          "Name": "{{ModID}}_ChaosTotem",
           "DisplayName": "{{i18n:Core.Items.ChaosTotem}}",
           "Description": "{{i18n:Core.Items.ChaosTotem.Description}}",
           "Type": "Crafting",
@@ -75,8 +75,8 @@
             "totem_item"
           ]
         },
-        "{{ModID}}_TenebrousNova.EnD.JunimoTotem": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.JunimoTotem",
+        "{{ModID}}_JunimoTotem": {
+          "Name": "{{ModID}}_JunimoTotem",
           "DisplayName": "{{i18n:Core.Items.JunimoTotem}}",
           "Description": "{{i18n:Core.Items.JunimoTotem.Description}}",
           "Type": "Crafting",
@@ -100,7 +100,7 @@
       "Action": "EditData",
       "Target": "Data/CraftingRecipes",
       "Entries": {
-        "{{ModID}}_TenebrousNova.EnD.JunimoTotem": "{{ModID}}_TenebrousNova.EnD.MandrakeRoot 1 709 5 768 1//{{ModID}}_TenebrousNova.EnD.JunimoTotem 1/false/{{i18n:Core.Items.JunimoTotem}}"
+        "{{ModID}}_JunimoTotem": "{{ModID}}_MandrakeRoot 1 709 5 768 1//{{ModID}}_JunimoTotem 1/false/{{i18n:Core.Items.JunimoTotem}}"
       }
     },
 
@@ -109,19 +109,7 @@
       "Target": "spacechase0.SpaceCore/ObjectExtensionData",
       "Update": "OnLocationChange, OnTimeChange",
       "Entries": {
-        "{{ModID}}_TenebrousNova.EnD.ChaosTotem": {
-          "TotemWarp": {
-            "Location": "{{Random: Mountain, Beach, LewisBasement, EastScarp_Village, SeedShop, Summit, WizardHouse, Tunnel|key=warp-totem-{{Time}}-{{LocationName}}}}",
-            "Position": "{{Random: 31, 20++20, 4++4, 4++24, 97++37, 18++11, 12++10, 17++10, 7|key=warp-totem-{{Time}}-{{LocationName}}|inputSeparator=++}}",
-            "Color": {
-              "R": "{{Random: 255, 0, 191, 255, 140, 92, 203, 100|key=warp-totem-{{Time}}-{{LocationName}}}}",
-              "G": "{{Random: 0, 0, 0, 255, 242, 239, 63, 92|key=warp-totem-{{Time}}-{{LocationName}}}}",
-              "B": "{{Random: 0, 255, 255, 255, 0, 255, 224, 112|key=warp-totem-{{Time}}-{{LocationName}}}}",
-              "A": "255"
-            }
-          }
-        },
-        "{{ModID}}_TenebrousNova.EnD.JunimoTotem": {
+        "{{ModID}}_JunimoTotem": {
           "TotemWarp": {
             "Location": "{{ModID}}_OldWoods",
             "Position": "29, 45",
@@ -142,11 +130,11 @@
       "Action": "EditData",
       "Target": "Data/Objects",
       "Entries": {
-        "{{ModID}}_TenebrousNova.EnD.MandrakeRoot": {
-          "Name": "TenebrousNova.EliDylan.MandrakeRoot",
+        "{{ModID}}_MandrakeRoot": {
+          "Name": "{{ModID}}_MandrakeRoot",
           "DisplayName": "{{i18n:Core.Items.MandrakeRoot}}",
           "Description": "{{i18n:Core.Items.MandrakeRoot.Description}}",
-          "Type": "Vegetable",
+          "Type": "Basic",
           "Category": -75,
           "ExcludeFromRandomSale": true,
           "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
@@ -156,12 +144,13 @@
           "Texture": "Mods/EnD/Objects",
           "SpriteIndex": 0,
           "ContextTags": [
-            "color_green",
-            "crop_mandrakeroot"
+            "color_sand",
+            "crop_mandrakeroot",
+            "root_vegetable_item"
           ]
         },
-        "{{ModID}}_TenebrousNova.EnD.MandrakeRootSeeds": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.MandrakeRootSeeds",
+        "{{ModID}}_MandrakeRootSeeds": {
+          "Name": "{{ModID}}_MandrakeRootSeeds",
           "DisplayName": "{{i18n:Core.Items.MandrakeRootSeeds}}",
           "Description": "{{i18n:Core.Items.MandrakeRootSeeds.Description}}",
           "Type": "Seeds",
@@ -171,11 +160,11 @@
           "Texture": "Mods/EnD/Objects",
           "SpriteIndex": 1
         },
-        "{{ModID}}_TenebrousNova.EnD.SanguineHeart": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.SanguineHeart",
+        "{{ModID}}_SanguineHeart": {
+          "Name": "{{ModID}}_SanguineHeart",
           "DisplayName": "{{i18n:Core.Items.SanguineHeart}}",
           "Description": "{{i18n:Core.Items.SanguineHeart.Description}}",
-          "Type": "Fruit",
+          "Type": "Basic",
           "Category": -79,
           "ExcludeFromRandomSale": true,
           "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
@@ -189,8 +178,8 @@
             "crop_sanguineheart"
           ]
         },
-        "{{ModID}}_TenebrousNova.EnD.SanguineHeartSeeds": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.SanguineHeartSeeds",
+        "{{ModID}}_SanguineHeartSeeds": {
+          "Name": "{{ModID}}_SanguineHeartSeeds",
           "DisplayName": "{{i18n:Core.Items.SanguineHeartSeeds}}",
           "Description": "{{i18n:Core.Items.SanguineHeartSeeds.Description}}",
           "Type": "Seeds",
@@ -200,11 +189,11 @@
           "Texture": "Mods/EnD/Objects",
           "SpriteIndex": 3
         },
-        "{{ModID}}_TenebrousNova.EnD.BeholderFruit": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.BeholderFruit",
+        "{{ModID}}_BeholderFruit": {
+          "Name": "{{ModID}}_BeholderFruit",
           "DisplayName": "{{i18n:Core.Items.BeholderFruit}}",
           "Description": "{{i18n:Core.Items.BeholderFruit.Description}}",
-          "Type": "Fruit",
+          "Type": "Basic",
           "Category": -79,
           "ExcludeFromRandomSale": true,
           "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
@@ -218,8 +207,8 @@
             "crop_beholderfruit"
           ]
         },
-        "{{ModID}}_TenebrousNova.EnD.BeholderFruitSeeds": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.BeholderFruitSeeds",
+        "{{ModID}}_BeholderFruitSeeds": {
+          "Name": "{{ModID}}_BeholderFruitSeeds",
           "DisplayName": "{{i18n:Core.Items.BeholderFruitSeeds}}",
           "Description": "{{i18n:Core.Items.BeholderFruitSeeds.Description}}",
           "Type": "Seeds",
@@ -229,11 +218,11 @@
           "Texture": "Mods/EnD/Objects",
           "SpriteIndex": 5
         },
-        "{{ModID}}_TenebrousNova.EnD.DragonEye": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.DragonEye",
+        "{{ModID}}_DragonEye": {
+          "Name": "{{ModID}}_DragonEye",
           "DisplayName": "{{i18n:Core.Items.DragonEye}}",
           "Description": "{{i18n:Core.Items.DragonEye.Description}}",
-          "Type": "Fruit",
+          "Type": "Basic",
           "Category": -79,
           "ExcludeFromRandomSale": true,
           "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
@@ -243,8 +232,8 @@
           "Texture": "Mods/EnD/Objects",
           "SpriteIndex": 6
         },
-        "{{ModID}}_TenebrousNova.EnD.DragonEyeSeeds": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.DragonEyeSeeds",
+        "{{ModID}}_DragonEyeSeeds": {
+          "Name": "{{ModID}}_DragonEyeSeeds",
           "DisplayName": "{{i18n:Core.Items.DragonEyeSeeds}}",
           "Description": "{{i18n:Core.Items.DragonEyeSeeds.Description}}",
           "Type": "Seeds",
@@ -254,11 +243,11 @@
           "Texture": "Mods/EnD/Objects",
           "SpriteIndex": 7
         },
-        "{{ModID}}_TenebrousNova.EnD.CrystallineLily": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.CrystallineLily",
+        "{{ModID}}_CrystallineLily": {
+          "Name": "{{ModID}}_CrystallineLily",
           "DisplayName": "{{i18n:Core.Items.CrystallineLily}}",
           "Description": "{{i18n:Core.Items.CrystallineLily.Description}}",
-          "Type": "Flower",
+          "Type": "Basic",
           "Category": -80,
           "ExcludeFromRandomSale": true,
           "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
@@ -266,8 +255,8 @@
           "Texture": "Mods/EnD/Objects",
           "SpriteIndex": 8
         },
-        "{{ModID}}_TenebrousNova.EnD.CrystallineLilySeeds": {
-          "Name": "TenerbousNova.EnD.CrystallineLilySeeds",
+        "{{ModID}}_CrystallineLilySeeds": {
+          "Name": "{{ModID}}_CrystallineLilySeeds",
           "DisplayName": "{{i18n:Core.Items.CrystallineLilySeeds}}",
           "Description": "{{i18n:Core.Items.CrystallineLilySeeds.Description}}",
           "Type": "Seeds",
@@ -277,11 +266,11 @@
           "Texture": "Mods/EnD/Objects",
           "SpriteIndex": 9
         },
-        "{{ModID}}_TenebrousNova.EnD.PixieBloom": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.PixieBloom",
+        "{{ModID}}_PixieBloom": {
+          "Name": "{{ModID}}_PixieBloom",
           "DisplayName": "{{i18n:Core.Items.PixieBloom}}",
           "Description": "{{i18n:Core.Items.PixieBloom.Description}}",
-          "Type": "Flower",
+          "Type": "Basic",
           "Category": -80,
           "ExcludeFromRandomSale": true,
           "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
@@ -289,8 +278,8 @@
           "Texture": "Mods/EnD/Objects",
           "SpriteIndex": 10
         },
-        "{{ModID}}_TenebrousNova.EnD.PixieBloomSeeds": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.PixieBloomSeeds",
+        "{{ModID}}_PixieBloomSeeds": {
+          "Name": "{{ModID}}_PixieBloomSeeds",
           "DisplayName": "{{i18n:Core.Items.PixieBloomSeeds}}",
           "Description": "{{i18n:Core.Items.PixieBloomSeeds.Description}}",
           "Type": "Seeds",
@@ -300,11 +289,11 @@
           "Texture": "Mods/EnD/Objects",
           "SpriteIndex": 11
         },
-        "{{ModID}}_TenebrousNova.EnD.Bluffshroom": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.Bluffshroom",
+        "{{ModID}}_Bluffshroom": {
+          "Name": "{{ModID}}_Bluffshroom",
           "DisplayName": "{{i18n:Core.Items.Bluffshroom}}",
           "Description": "{{i18n:Core.Items.Bluffshroom.Description}}",
-          "Type": "Vegetable",
+          "Type": "Forage",
           "Category": -75,
           "ExcludeFromRandomSale": true,
           "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
@@ -312,10 +301,13 @@
           "Edibility": 15,
           "IsDrink": false,
           "Texture": "Mods/EnD/Objects",
-          "SpriteIndex": 12
+          "SpriteIndex": 12,
+          "ContextTags": [
+            "edible_mushroom"
+          ]
         },
-        "{{ModID}}_TenebrousNova.EnD.BluffshroomStarter": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.BluffshroomStarter",
+        "{{ModID}}_BluffshroomStarter": {
+          "Name": "{{ModID}}_BluffshroomStarter",
           "DisplayName": "{{i18n:Core.Items.BluffshroomStarter}}",
           "Description": "{{i18n:Core.Items.BluffshroomStarter.Description}}",
           "Type": "Seeds",
@@ -332,60 +324,60 @@
       "Action": "EditData",
       "Target": "Data/Crops",
       "Entries": {
-        "{{ModID}}_TenebrousNova.EnD.MandrakeRootSeeds": {
+        "{{ModID}}_MandrakeRootSeeds": {
           "Seasons": [ "fall" ],
           "DaysInPhase": [ 1, 1, 2, 2, 3, 3 ],
           "RegrowDays": -1,
-          "HarvestItemID": "{{ModID}}_TenebrousNova.EnD.MandrakeRoot",
+          "HarvestItemID": "{{ModID}}_MandrakeRoot",
           "Texture": "Mods/EnD/Crops",
           "SpriteIndex": 0
         },
-        "{{ModID}}_TenebrousNova.EnD.SanguineHeartSeeds": {
+        "{{ModID}}_SanguineHeartSeeds": {
           "Seasons": [ "fall" ],
           "DaysInPhase": [ 1, 1, 2, 2, 2, 2 ],
           "RegrowDays": -1,
-          "HarvestItemID": "{{ModID}}_TenebrousNova.EnD.SanguineHeart",
+          "HarvestItemID": "{{ModID}}_SanguineHeart",
           "Texture": "Mods/EnD/Crops",
           "SpriteIndex": 2
         },
-        "{{ModID}}_TenebrousNova.EnD.BeholderFruitSeeds": {
+        "{{ModID}}_BeholderFruitSeeds": {
           "Seasons": [ "fall" ],
           "DaysInPhase": [ 1, 3, 3, 3, 3 ],
           "RegrowDays": 4,
-          "HarvestItemID": "{{ModID}}_TenebrousNova.EnD.BeholderFruit",
+          "HarvestItemID": "{{ModID}}_BeholderFruit",
           "Texture": "Mods/EnD/Crops",
           "SpriteIndex": 4
         },
-        "{{ModID}}_TenebrousNova.EnD.DragonEyeSeeds": {
+        "{{ModID}}_DragonEyeSeeds": {
           "Seasons": [ "summer" ],
           "DaysInPhase": [ 1, 3, 3, 3, 3 ],
           "RegrowDays": 4,
           "HarvestMinStack": 1,
           "HarvestMaxStack": 2,
-          "HarvestItemID": "{{ModID}}_TenebrousNova.EnD.DragonEye",
+          "HarvestItemID": "{{ModID}}_DragonEye",
           "Texture": "Mods/EnD/Crops",
           "SpriteIndex": 6
         },
-        "{{ModID}}_TenebrousNova.EnD.CrystallineLilySeeds": {
+        "{{ModID}}_CrystallineLilySeeds": {
           "Seasons": [ "winter" ],
           "DaysInPhase": [ 1, 3, 3, 3, 4 ],
           "RegrowDays": -1,
-          "HarvestItemID": "{{ModID}}_TenebrousNova.EnD.CrystallineLily",
+          "HarvestItemID": "{{ModID}}_CrystallineLily",
           "Texture": "Mods/EnD/Crops",
           "SpriteIndex": 8
         },
-        "{{ModID}}_TenebrousNova.EnD.PixieBloomSeeds": {
+        "{{ModID}}_PixieBloomSeeds": {
           "Seasons": [ "spring", "summer" ],
           "DaysInPhase": [ 1, 2, 2, 3, 3, 3 ],
           "RegrowDays": -1,
           "HarvestMinStack": 1,
           "HarvestMaxStack": 3,
           "HarvestMaxIncreasePerFarmingLevel": 0.2,
-          "HarvestItemID": "{{ModID}}_TenebrousNova.EnD.PixieBloom",
+          "HarvestItemID": "{{ModID}}_PixieBloom",
           "Texture": "Mods/EnD/Crops",
           "SpriteIndex": 10
         },
-        "{{ModID}}_TenebrousNova.EnD.BluffshroomStarter": {
+        "{{ModID}}_BluffshroomStarter": {
           "Seasons": [ "spring", "winter" ],
           "DaysInPhase": [ 2, 2, 2, 1, 1 ],
           "RegrowDays": 4,
@@ -393,7 +385,7 @@
           "HarvestMinStack": 1,
           "HarvestMaxStack": 3,
           "HarvestMaxIncreasePerFarmingLevel": 0.2,
-          "HarvestItemID": "{{ModID}}_TenebrousNova.EnD.Bluffshroom",
+          "HarvestItemID": "{{ModID}}_Bluffshroom",
           "Texture": "Mods/EnD/Crops",
           "SpriteIndex": 12
         }
@@ -407,33 +399,33 @@
       "Action": "EditData",
       "Target": "Data/GiantCrops",
       "Entries": {
-        "{{ModID}}_TenebrousNova.EnD.GiantMandrakeRoot": {
-          "FromItemID": "{{ModID}}_TenebrousNova.EnD.MandrakeRoot",
+        "{{ModID}}_GiantMandrakeRoot": {
+          "FromItemID": "{{ModID}}_MandrakeRoot",
           "HarvestItems": [
             {
 							"Chance": 1.0,
-							"ItemID": "{{ModID}}_TenebrousNova.EnD.MandrakeRoot",
+							"ItemID": "{{ModID}}_MandrakeRoot",
 							"Quality": 0,
 							"MinStack": 5,
 							"MaxStack": 7
 						},
 						{
 							"Chance": 1.0,
-							"ItemID": "{{ModID}}_TenebrousNova.EnD.MandrakeRoot",
+							"ItemID": "{{ModID}}_MandrakeRoot",
 							"Quality": 1,
 							"MinStack": 5,
 							"MaxStack": 7
 						},
 						{
 							"Chance": 1.0,
-							"ItemID": "{{ModID}}_TenebrousNova.EnD.MandrakeRoot",
+							"ItemID": "{{ModID}}_MandrakeRoot",
 							"Quality": 2,
 							"MinStack": 5,
 							"MaxStack": 7
 						},
 						{
 							"Chance": 0.5,
-							"ItemID": "{{ModID}}_TenebrousNova.EnD.MandrakeRoot",
+							"ItemID": "{{ModID}}_MandrakeRoot",
 							"Quality": 4,
 							"MinStack": 1,
 							"MaxStack": 2
@@ -450,33 +442,33 @@
           },
           "Chance": 0.01
         },
-        "{{ModID}}_TenebrousNova.EnD.GiantCrystallineLily": {
-          "FromItemID": "{{ModID}}_TenebrousNova.EnD.CrystallineLily",
+        "{{ModID}}_GiantCrystallineLily": {
+          "FromItemID": "{{ModID}}_CrystallineLily",
           "HarvestItems": [
             {
 							"Chance": 1.0,
-							"ItemID": "{{ModID}}_TenebrousNova.EnD.CrystallineLily",
+							"ItemID": "{{ModID}}_CrystallineLily",
 							"Quality": 0,
 							"MinStack": 5,
 							"MaxStack": 7
 						},
 						{
 							"Chance": 1.0,
-							"ItemID": "{{ModID}}_TenebrousNova.EnD.CrystallineLily",
+							"ItemID": "{{ModID}}_CrystallineLily",
 							"Quality": 1,
 							"MinStack": 5,
 							"MaxStack": 7
 						},
 						{
 							"Chance": 1.0,
-							"ItemID": "{{ModID}}_TenebrousNova.EnD.CrystallineLily",
+							"ItemID": "{{ModID}}_CrystallineLily",
 							"Quality": 2,
 							"MinStack": 5,
 							"MaxStack": 7
 						},
 						{
 							"Chance": 0.5,
-							"ItemID": "{{ModID}}_TenebrousNova.EnD.CrystallineLily",
+							"ItemID": "{{ModID}}_CrystallineLily",
 							"Quality": 4,
 							"MinStack": 1,
 							"MaxStack": 2
@@ -507,8 +499,8 @@
       "Action": "EditData",
       "Target": "Data/Objects",
       "Entries": {
-        "{{ModID}}_TenebrousNova.EnD.LambentHyphafin": { //identity of the fish
-          "Name": "{{ModID}}_TenebrousNova.EnD.LambentHyphafin", //ditto
+        "{{ModID}}_LambentHyphafin": { //identity of the fish
+          "Name": "{{ModID}}_LambentHyphafin", //ditto
           "DisplayName": "{{i18n:Core.Items.LambentHyphafin}}", //i18n
           "Description": "{{i18n:Core.Items.LambentHyphafin.Description}}",
           "Type": "Fish", //what it is
@@ -529,8 +521,8 @@
             "fish_difficulty_hard"
           ]
         },
-        "{{ModID}}_TenebrousNova.EnD.Junimeel": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.Junimeel",
+        "{{ModID}}_Junimeel": {
+          "Name": "{{ModID}}_Junimeel",
           "DisplayName": "{{i18n:Core.Items.Junimeel}}",
           "Description": "{{i18n:Core.Items.Junimeel.Description}}",
           "Type": "Fish",
@@ -552,8 +544,8 @@
             "fish_favor_weather_sunny"
           ]
         },
-        "{{ModID}}_TenebrousNova.EnD.CombJelly": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.CombJelly",
+        "{{ModID}}_CombJelly": {
+          "Name": "{{ModID}}_CombJelly",
           "DisplayName": "{{i18n:Core.Items.CombJelly}}",
           "Description": "{{i18n:Core.Items.CombJelly.Description}}",
           "Type": "Fish",
@@ -571,8 +563,8 @@
             "fish_combjelly"
           ]
         },
-        "{{ModID}}_TenebrousNova.EnD.BloodybellyCombJelly": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.BloodybellyCombJelly",
+        "{{ModID}}_BloodybellyCombJelly": {
+          "Name": "{{ModID}}_BloodybellyCombJelly",
           "DisplayName": "{{i18n:Core.Items.BloodybellyCombJelly}}",
           "Description": "{{i18n:Core.Items.BloodybellyCombJelly.Description}}",
           "Type": "Fish",
@@ -590,8 +582,8 @@
             "fish_bloodybellycombjelly"
           ]
         },
-        "{{ModID}}_TenebrousNova.EnD.Marimo": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.Marimo",
+        "{{ModID}}_Marimo": {
+          "Name": "{{ModID}}_Marimo",
           "DisplayName": "{{i18n:Core.Items.Marimo}}",
           "Description": "{{i18n:Core.Items.Marimo.Description}}",
           "Type": "Forage",
@@ -608,8 +600,46 @@
             "forage_marimo"
           ]
         },
-        "{{ModID}}_TenebrousNova.EnD.FrogspawnCoral": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.FrogspawnCoral",
+        "{{ModID}}_StarlightWeaver": {
+          "Name": "{{ModID}}_StarlightWeaver",
+          "DisplayName": "{{i18n:Core.Items.StarlightWeaver}}",
+          "Description": "{{i18n:Core.Items.StarlightWeaver.Description}}",
+          "Type": "Fish",
+          "Category": -4,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
+          "ExcludeFromFishingCollection": "{{Exclude From Perfection}}",
+          "Price": 160,
+          "Edibility": 60,
+          "IsDrink": false,
+          "Texture": "Mods/EnD/Objects",
+          "SpriteIndex": 32,
+          "ContextTags": [
+            "color_purple",
+            "fish_starlightweaver"
+          ]
+        },
+        "{{ModID}}_SeaAngel": {
+          "Name": "{{ModID}}_SeaAngel",
+          "DisplayName": "{{i18n:Core.Items.SeaAngel}}",
+          "Description": "{{i18n:Core.Items.SeaAngel.Description}}",
+          "Type": "Fish",
+          "Category": -4,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
+          "ExcludeFromFishingCollection": "{{Exclude From Perfection}}",
+          "Price": 90,
+          "Edibility": 15,
+          "IsDrink": false,
+          "Texture": "Mods/EnD/Objects",
+          "SpriteIndex": 33,
+          "ContextTags": [
+            "color_light_cyan",
+            "fish_seaangel"
+          ]
+        },
+        "{{ModID}}_FrogspawnCoral": {
+          "Name": "{{ModID}}_FrogspawnCoral",
           "DisplayName": "{{i18n:Core.Items.FrogspawnCoral}}",
           "Description": "{{i18n:Core.Items.FrogspawnCoral.Description}}",
           "Type": "Forage",
@@ -627,8 +657,8 @@
             "forage_item_beach"
           ]
         },
-        "{{ModID}}_TenebrousNova.EnD.TorchCoral": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.TorchCoral",
+        "{{ModID}}_TorchCoral": {
+          "Name": "{{ModID}}_TorchCoral",
           "DisplayName": "{{i18n:Core.Items.TorchCoral}}",
           "Description": "{{i18n:Core.Items.TorchCoral.Description}}",
           "Type": "Forage",
@@ -646,8 +676,8 @@
             "forage_item_beach"
           ]
         },
-        "{{ModID}}_TenebrousNova.EnD.DuncanCoral": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.DuncanCoral",
+        "{{ModID}}_DuncanCoral": {
+          "Name": "{{ModID}}_DuncanCoral",
           "DisplayName": "{{i18n:Core.Items.DuncanCoral}}",
           "Description": "{{i18n:Core.Items.DuncanCoral.Description}}",
           "Type": "Forage",
@@ -665,8 +695,8 @@
             "forage_item_beach"
           ]
         },
-        "{{ModID}}_TenebrousNova.EnD.Trachyphyllia": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.Trachyphyllia",
+        "{{ModID}}_Trachyphyllia": {
+          "Name": "{{ModID}}_Trachyphyllia",
           "DisplayName": "{{i18n:Core.Items.Trachyphyllia}}",
           "Description": "{{i18n:Core.Items.Trachyphyllia.Description}}",
           "Type": "Forage",
@@ -684,8 +714,8 @@
             "forage_item_beach"
           ]
         },
-        "{{ModID}}_TenebrousNova.EnD.Scolymia": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.Scolymia",
+        "{{ModID}}_Scolymia": {
+          "Name": "{{ModID}}_Scolymia",
           "DisplayName": "{{i18n:Core.Items.Scolymia}}",
           "Description": "{{i18n:Core.Items.Scolymia.Description}}",
           "Type": "Forage",
@@ -703,8 +733,8 @@
             "forage_item_beach"
           ]
         },
-        "{{ModID}}_TenebrousNova.EnD.AcanCoral": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.AcanCoral",
+        "{{ModID}}_AcanCoral": {
+          "Name": "{{ModID}}_AcanCoral",
           "DisplayName": "{{i18n:Core.Items.AcanCoral}}",
           "Description": "{{i18n:Core.Items.AcanCoral.Description}}",
           "Type": "Forage",
@@ -722,8 +752,8 @@
             "forage_item_beach"
           ]
         },
-        "{{ModID}}_TenebrousNova.EnD.ToadstoolCoral": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.ToadstoolCoral",
+        "{{ModID}}_ToadstoolCoral": {
+          "Name": "{{ModID}}_ToadstoolCoral",
           "DisplayName": "{{i18n:Core.Items.ToadstoolCoral}}",
           "Description": "{{i18n:Core.Items.ToadstoolCoral.Description}}",
           "Type": "Forage",
@@ -741,10 +771,10 @@
             "forage_item_beach"
           ]
         },
-        "{{ModID}}_TenebrousNova.EnD.CandyCaneCoral": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.CandyCaneCoral",
-          "DisplayName": "{{i18n:Core.Items.CandyCaneCoral}}",
-          "Description": "{{i18n:Core.Items.CandyCaneCoral.Description}}",
+        "{{ModID}}_CandycaneCoral": {
+          "Name": "{{ModID}}_CandycaneCoral",
+          "DisplayName": "{{i18n:Core.Items.CandycaneCoral}}",
+          "Description": "{{i18n:Core.Items.CandycaneCoral.Description}}",
           "Type": "Forage",
           "Category": -81,
           "ExcludeFromRandomSale": true,
@@ -756,12 +786,12 @@
           "SpriteIndex": 26,
           "ContextTags": [
             "color_brown",
-            "forage_candycanecoral",
+            "forage_Candycanecoral",
             "forage_item_beach"
           ]
         },
-        "{{ModID}}_TenebrousNova.EnD.AcroporaCoral": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.AcroporaCoral",
+        "{{ModID}}_AcroporaCoral": {
+          "Name": "{{ModID}}_AcroporaCoral",
           "DisplayName": "{{i18n:Core.Items.AcroporaCoral}}",
           "Description": "{{i18n:Core.Items.AcroporaCoral.Description}}",
           "Type": "Forage",
@@ -779,8 +809,8 @@
             "forage_item_beach"
           ]
         },
-        "{{ModID}}_TenebrousNova.EnD.EleganceCoral": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.EleganceCoral",
+        "{{ModID}}_EleganceCoral": {
+          "Name": "{{ModID}}_EleganceCoral",
           "DisplayName": "{{i18n:Core.Items.EleganceCoral}}",
           "Description": "{{i18n:Core.Items.EleganceCoral.Description}}",
           "Type": "Forage",
@@ -798,8 +828,8 @@
             "forage_item_beach"
           ]
         },
-        "{{ModID}}_TenebrousNova.EnD.Gorgonian": {
-          "Name": "{{ModID}}_TenebrousNova.EnD.Gorgonian",
+        "{{ModID}}_Gorgonian": {
+          "Name": "{{ModID}}_Gorgonian",
           "DisplayName": "{{i18n:Core.Items.Gorgonian}}",
           "Description": "{{i18n:Core.Items.Gorgonian.Description}}",
           "Type": "Forage",

@@ -1,0 +1,1451 @@
+{
+	"Changes": [
+
+		{
+			"LogName": "Sigurd Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Priority": "Late",
+			"Entries": {
+
+				"Introduction": "{{i18n:SigIntroduction}}",
+				//"BearsIntroductionNoMatterWhat": "{{i18n:SigIntroduction}}",
+				"FlowerDance_Decline": "{{i18n:SigdanceRejection}}",
+				"FlowerDance_Accept_Spouse": "{{i18n:SigDanceSpouseAccept{{SigurdSpousePetName}}}}",
+				"FlowerDance_Accept": "{{i18n:SigDanceAccept}}",
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:SigWinterStarBeforeSpouse}}",
+				"WinterStar_GiveGift_Before": "{{i18n:SigWinterStarBefore}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:SigWinterStarAfterSpouse{{SigurdSpousePetName}}}}",
+				"WinterStar_GiveGift_After": "{{i18n:SigWinterStarAfter}}",
+				"WinterStar_ReceiveGift": "{{i18n:SigWinterStarReceiveGift}}",
+				"WinterStar_ReceiveGift_(O)787": "{{i18n:SigWinterStarReceiveGiftBatteryPack}}",
+				"WinterStar_ReceiveGift_(O)167": "{{i18n:SigWinterStarReceiveGiftJojaCola}}",
+				"WinterStar_ReceiveGift_(O)340": "{{i18n:SigWinterStarReceiveGiftHoney}}",
+				"WinterStar_ReceiveGift_(O)106": "{{i18n:SigWinterStarReceiveGiftOrnamentalFan}}",
+				"WinterStar_ReceiveGift_(O)346": "{{i18n:SigWinterStarReceiveGiftBeer}}",
+				"WinterStar_ReceiveGift_(O)636": "{{i18n:SigWinterStarReceiveGiftPeach{{BearFamGlobalToken}}}}",
+				"WinterStar_ReceiveGift_(O)223": "{{i18n:SigWinterStarReceiveGiftCookie}}",
+				"WinterStar_ReceiveGift_(O)MadDog.HashtagBearFam_Honey_OldFashioned": "{{i18n:Sigurd.WinterStarGiftReaction.BearFam.Honey_OldFashioned}}",
+				"divorced": "{{i18n:Sigdivorced}}",
+				"dumped_Boys": "{{i18n:Sigdumped_Boys}}",
+				"secondChance_Boys": "{{i18n:SigsecondChance_Boys}}",
+				"Fair_Judging": "{{i18n:SigFairJudging{{BearFamGlobalToken}}}}",
+				"Fair_Judged_PlayerLost_PurpleShorts": "{{i18n:SigFairPurpleShorts{{BearFamGlobalToken}}}}",
+				"Fair_Judged_PlayerLost_Skipped": "{{i18n:SigFairSkipped}}",
+				"Fair_Judged_PlayerLost": "{{i18n:SigFairLost{{BearFamGlobalToken}}}}",
+				"Fair_Judged_PlayerWon": "{{i18n:SigFairWon}}",
+				"DumpsterDiveComment": "{{i18n:SigDumpsterDiveComment{{BearFamGlobalToken}}}}#$action AddMoney {{Random: 120 220 240 600}}#",
+				"HitBySlingshot": "{{i18n:SigHitBySlingshot}}",
+				"RejectBouquet_NotDatable": "{{i18n:SigRejectBouquet}}",
+				"RejectBouquet_NpcAlreadyMarried": "{{i18n:SigRejectBouquetAlreadyMarried}}",
+				"RejectBouquet_Divorced": "{{i18n:SigRejectBouquetDivorced}}",
+				//"RejectBouquet_VeryLowHearts": "{{i18n:SigRejectBouquetVeryLowHearts{{Random:{{Range: 1, 2}}}}}}",
+				//"RejectBouquet_LowHearts": "{{i18n:SigRejectBouquetLowHearts{{Random:{{Range: 1, 2}}}}}}",
+				"AcceptBouquet": "{{i18n:SigAcceptBouquet}}",
+				"GreenRain": "{{i18n:SigurdGreenRain{{BearFamGlobalToken}}}}",
+				"GreenRainFinished": "{{i18n:SigurdGreenRainFinished{{BearFamGlobalToken}}}}",
+				"GreenRain_2": "{{i18n:SigurdGreenRain2}}",
+				"HitBySlingshot_bomb_item": "{{i18n:SigHitbySlingShotBombItem{{BearFamGlobalToken}}}}",
+				"HitBySlingshot_(O)441": "{{i18n:SigHitbySlingShotExplosiveAmmo}}",
+				"HitBySlingshot_category_egg": "{{i18n:SigurdHitbySlingShotEggCategory}}",
+				"HitBySlingshot_arrow_item": "{{i18n:SigurdHitbySlingShotArrow}}",
+				"HitBySlingshot_(O)Cornucopia_Durian": "{{i18n:SigurdHitbySlingShotCornucopiaDurian}}",
+				"HitBySlingshot_(O)TenebrousNova.EliDylan.CP_TenebrousNova.EnD.SanguineHeart": "{{i18n:SigurdHitbySlingShotEnDSanguineHeart}}",
+
+				"Mountain_Entry": "{{i18n:SigurdMountainEntry1}}/{{i18n:SigurdMountainEntry2}}/{{i18n:SigurdMountainEntry3}}/{{i18n:SigurdMountainEntry4}}",
+				"Saloon_Entry": "{{i18n:SigurdSaloonEntry1}}/{{i18n:SigurdSaloonEntry2}}/{{i18n:SigurdSaloonEntry3}}/{{i18n:SigurdSaloonEntry4}}",
+				"ArchaeologyHouse_Entry": "{{i18n:SigurdMuseumEntry1}}/{{i18n:SigurdMuseumEntry2}}/{{i18n:SigurdMuseumEntry3}}/{{i18n:SigurdMuseumEntry4}}",
+				"Town_Entry": "{{i18n:SigurdTownEntry1}}/{{i18n:SigurdTownEntry2}}/{{i18n:SigurdTownEntry3}}/{{i18n:SigurdTownEntry4}}",
+				"ScienceHouse_Entry": "{{i18n:SigurdScienceHouseEntry1}}/{{i18n:SigurdScienceHouseEntry2}}/{{i18n:SigurdScienceHouseEntry3}}/{{i18n:SigurdScienceHouseEntry4}}",
+				"EastScarp_Village_Entry": "{{i18n:SigurdESVillageEntry1}}/{{i18n:SigurdESVillageEntry2}}/{{i18n:SigurdESVillageEntry3{{BearFamGlobalToken}}}}/{{i18n:SigurdESVillageEntry4}}",
+
+				"SpouseStardrop": "{{i18n:SigurdSpouseStardrop{{SigurdSpousePetName}}}}",
+				"WipedMemory": "{{i18n:SigurdWipedMemory}}",
+				"SpouseFarmhouseClutter": "{{i18n:SigurdSpouseFarmhouseClutter}}",
+				"SpouseGiftJealous": "{{i18n:SigurdSpouseGiftJealous}}",
+				"Spouse_MonstersInHouse": "{{i18n:SigurdSpouseSpouseMonstersInHouse{{SigurdSpousePetName}}}}",
+
+				"RejectMermaidPendant_Divorced": "{{i18n:SigurdRejectMermaidPendantDivorced}}",
+				"RejectMermaidPendant_NeedHouseUpgrade": "{{i18n:SigurdRejectMermaidPendantHouseUpgrade}}",
+				"RejectMermaidPendant_NotDatable": "{{i18n:SigurdRejectMermaidPendantNotDatable}}",
+				"RejectMermaidPendant_NpcWithSomeoneElse": "{{i18n:SigurdRejectMermaidPendantNPCinRelationship}}",
+				"RejectMermaidPendant_PlayerWithSomeoneElse": "{{i18n:SigurdRejectMermaidPendantPlayerinRelationship{{BearFamGlobalToken}}}}",
+				"RejectMermaidPendant_Under8Hearts": "{{i18n:SigurdRejectMermaidPendantUnder8Hearts}}",
+				"RejectMermaidPendant_Under10Hearts": "{{i18n:SigurdRejectMermaidPendantUnder10Hearts}}",
+				"RejectMermaidPendant_Under10Hearts_AskedAgain": "{{i18n:SigurdRejectMermaidPendantUnder10HeartsAnnoy}}",
+				//"RejectMermaidPendant": "{{i18n:SigurdRejectMermaidPendantDefault}}",
+				"RejectBouquet_AlreadyAccepted_Engaged": "{{i18n:Sigurd.RejectBouquet.AlreadyAccepted.Engaged}}",
+				"RejectBouquet_AlreadyAccepted_Married": "{{i18n:Sigurd.RejectBouquet.AlreadyAccepted.Married}}",
+				"RejectBouquet_AlreadyAccepted": "{{i18n:Sigurd.RejectBouquet.AlreadyAccepted.Default}}",
+
+				"RejectMermaidPendant_AlreadyAccepted_Engaged": "{{i18n:Sigurd.RejectMermaidPendant.AlreadyAccepted.Engaged}}",
+				"RejectMermaidPendant_AlreadyAccepted_Married": "{{i18n:Sigurd.RejectMermaidPendant.AlreadyAccepted.Married}}",
+				"RejectMermaidPendant_AlreadyAccepted": "{{i18n:Sigurd.RejectMermaidPendant.AlreadyAccepted.Default}}",
+
+				"GudrunGrades": "{{i18n:SigCTGudrunGrades}}",
+				"SootPocketAdventure": "{{i18n:SigCTSootPocketAdventure}}",
+				"TerensRecipes": "{{i18n:SigurdCTTerenRecipes}}",
+				"BearRecipes": "{{i18n:SigurdCTBearRecipes}}",
+				"GunnarRecipes": "{{i18n:SigurdCTGunnarRecipes}}",
+				"SondraRecipes": "{{i18n:SigurdCTSondraRecipes}}",
+				"MadDogBearFamMEEPArmyPhotoCT": "{{i18n:SigCTMadDogBearFamMEEPArmyPhotoCT}}",
+				"YouShotSondra": "{{i18n:SigurdCTYouShotSondra{{BearFamGlobalToken}}}}",
+				"YouShotGudrun": "{{i18n:SigurdCTYouShotGudrun}}",
+				"DitR_CT_PipoShorts": "{{i18n:SigCTDiTRPipoShorts}}",
+				"DitR_CT_UsedExpiredMegaBomb": "{{i18n:SigurdCTDiTRUsedExpiredMegaBomb}}",
+				"GunnarHasaBomb": "{{i18n:SigurdCTGunnarHasaBomb}}",
+				"GrandpaHaunts": "{{i18n:SigurdCTGrandpaHaunts}}",
+
+				"RejectMovieTicket_AlreadyInvitedBySomeoneElse": "{{i18n:SigurdRejectMovieTicketAlreadyInvited}}",
+				"RejectMovieTicket_AlreadyWatchedThisWeek": "{{i18n:SigurdRejectMovieTicketAlreadyWatched}}",
+				"RejectMovieTicket_DontWantToSeeThatMovie": "{{i18n:SigurdRejectMovieTicketNotInterested}}",
+				"RejectMovieTicket_Divorced": "{{i18n:SigurdRejectMovieTicketDivorced}}",
+				"RejectMovieTicket": "{{i18n:SigurdRejectMovieTicketDefault}}",
+
+				"dating_MadDog.HashtagBearFam.Gunnar": "{{i18n:SigurddatingGunnar}}",
+				"married_MadDog.HashtagBearFam.Gunnar": "{{i18n:SigurdmarriedGunnar}}",
+				"divorced_MadDog.HashtagBearFam.Gunnar": "{{i18n:SigurddivorcedGunnar}}",
+
+				"dating_MadDog.HashtagBearFam.Teren": "{{i18n:SigurddatingTeren{{BearFamGlobalToken}}}}",
+				"married_MadDog.HashtagBearFam.Teren": "{{i18n:SigurdmarriedTeren}}",
+				"divorced_MadDog.HashtagBearFam.Teren": "{{i18n:SigurddivorcedTeren}}",
+
+				"married_memory_oneweek": "{{i18n:Sigurdfarmermarriedoneweek.{{Relationship:MadDog.HashtagBearFam.Sigurd |contains=Married}}}}",
+				"firstVisit_Railroad": "{{i18n:Sigurdfirstrailroad}}",
+				"firstVisit_Sewer": "{{i18n:Sigurdfirstsewer}}",
+				"gotPet": "{{i18n:SigurdgotPet}}",
+				"SquidFest": "{{i18n:SigurdSquidfest}}",
+				"married": "{{i18n:Sigurdfarmermarried.{{Relationship:MadDog.HashtagBearFam.Sigurd |contains=Married}}}}",
+				"houseUpgrade_{{ThisYear}}": "{{i18n:Sigurdhouseupgradefirst}}",
+
+				"achievement_30": "{{i18n:Sigurdachievementhelpwanted}}", //helpwanted Sig
+				"achievement_38": "{{i18n:Sigurdachievementsoup}}", //impress go soup Sig
+				"achievement_35": "{{i18n:Sigurdachievementreadbook}}", //read every book  Sig
+				"achievement_20": "{{i18n:Sigurdachievementcrafting}}", //crafty Sig
+				"achievement_28": "{{i18n:Sigurdachievementdonatemuseum}}", //donate much treasure Sig
+				"achievement_21": "{{i18n:Sigurdachievementmorecrafting}}", //very crafty Sig
+				"structureBuilt_Stable": "{{i18n:SigurdbuiltStable}}",
+				"mineArea_121": "{{i18n:SigurdmineSkull}}", //skull cav          Sig
+				"mineArea_40": "{{i18n:Sigurdminefloor40}}", //level 40 mine  
+				"cropMatured_276": "{{i18n:SigurdgrewPumpkin{{BearFamGlobalToken}}}}",
+				"cropMatured_304": "{{i18n:SigurdgrewHops}}",
+				//mnf fishies
+				"fishCaught_MNF.MoreNewFish_conger": "{{i18n:Sigurd.caught.MNF.conger}}",
+				"fishCaught_MNF.MoreNewFish_coelacanth": "{{i18n:Sigurd.caught.MNF.coelacanth}}",
+				"fishCaught_MNF.MoreNewFish_piranha": "{{i18n:Sigurd.caught.MNF.piranha}}",
+				//void fishies
+				"fishCaught_VoidWitchCult.CP.TheFishmongerNPC_moray": "{{i18n:Sigurd.caught.Void.moray}}",
+
+				//romance dialogue
+				"give_flowersA": "{{i18n:SigFlowersA{{SigurdSpousePetName}}}}",
+				"give_flowersB": "{{i18n:SigFlowersB}}",
+				"give_pendant": "{{i18n:SigPendant{{SigurdSpousePetName}}}}",
+				"stardrop_gift": "{{i18n:SigStardrop{{SigurdSpousePetName}}}}", //Valentine by Carol Ann Duffy
+				"giftquestion_yes": "{{i18n:SigGiftYes}}",
+				"giftquestion_lie": "{{i18n:SigGiftNo}}",
+
+				"breakUp": "{{i18n:Sigbreakup}}",
+				"reject_two_heartA": "{{i18n:Sig2HeartsA}}",
+				"reject_two_heartB": "{{i18n:Sig2HeartsB}}",
+				"reject_four_heartA": "{{i18n:Sig4HeartsA}}",
+				"reject_four_heartB": "{{i18n:Sig4HeartsB}}",
+				"engageA": "{{i18n:SigEngageA{{BearFamGlobalToken}}}}",
+				"engageB": "{{i18n:SigEngageB{{BearFamGlobalToken}}}}",
+				"marriedA": "{{i18n:SigMarriedA}}",
+				"marriedB": "{{i18n:SigMarriedB}}",
+				"refusal_no_heartsA": "{{i18n:SigRefusal0A}}",
+				"refusal_no_heartsB": "{{i18n:SigRefusal0B}}",
+				"refusal_knownA": "{{i18n:SigKnownA}}",
+				"refusal_knownB": "{{i18n:SigKnownB}}",
+				"refusal_botherA": "{{i18n:SigBotherA}}",
+				"refusal_botherB": "{{i18n:SigBotherB}}",
+				"baby_anxiety": "{{i18n:Sigurd_baby_anxiety{{SigurdSpousePetName}}}}",
+				"adopt_excitedA": "{{i18n:Sigurd_adopt_excitedA{{SigurdSpousePetName}}}}",
+				"adopt_excitedB": "{{i18n:Sigurd_adopt_excitedB{{SigurdSpousePetName}}}}",
+				"yourePregnantA": "{{i18n:Sigurd_yourePregnantA{{SigurdSpousePetName}}}}",
+				"yourePregnantB": "{{i18n:Sigurd_yourePregnantB{{SigurdSpousePetName}}}}",
+				"annoyedParent": "{{i18n:Sigurd_annoyedParent{{SigurdSpousePetName}}}}",
+				"aloneTime": "{{i18n:Sigurd_aloneTime{{SigurdSpousePetName}}}}",
+
+				// Resort Lines //done
+				"Resort_Entering": "{{i18n:SigResEnter}}",
+				"Resort_Leaving": "{{i18n:SigResLeave}}",
+				"Resort_Shore": "{{i18n:SigResShore}}",
+				"Resort_Umbrella": "{{i18n:SigResUmbrella}}",
+				"Resort_Wander": "{{i18n:SigResWander}}",
+				"Resort_Wander_2": "{{i18n:SigResWander2}}",
+				"Resort_Chair": "{{i18n:SigResChair}}",
+				"Resort_Bar": "{{i18n:SigResBar{{BearFamGlobalToken}}}}",
+				"Resort_Towel": "{{i18n:SigResTowel}}",
+				"Resort_Towel_2": "{{i18n:SigResTowel2}}",
+				"Resort_Towel_3": "{{i18n:SigResTowel3}}",
+				"Resort": "{{i18n:SigResort}}",
+
+				//poly dialogue?
+				//"RejectBouquet_IsPolyamorous_PlayerWithSomeoneMonogamous": "{{i18n:Sigurd.PolyMod.CantDate}}",
+				"RejectMermaidPendant_IsPolyamorous_PlayerWithSomeoneMonogamous": "{{i18n:Sigurd.PolyMod.CantMarry}}",
+
+				//Specific Dialogue
+
+				"EastScarp_Village_39_104": "{{Random:{{i18n:StringsSigurdCampfire1.{{EnableRivalHeartsSigDylan}}}}++{{i18n:StringsSigurdCampfire2.{{EnableRivalHeartsSigDylan}}}}++{{i18n:StringsSigurdCampfire3.{{EnableRivalHeartsSigDylan}}{{BearFamGlobalToken}}}}|inputSeparator=++}}",
+
+				"spring_18_{{ThisYear}}": "{{i18n:SigSpring18}}",
+				"spring_28_{{ThisYear}}": "{{i18n:SigSpring27.{{EnableRivalHeartsTerenSig}}{{BearFamGlobalToken}}}}",
+				"fall_1_{{ThisYear}}": "{{i18n:SigFall1}}",
+				"fall_18_{{ThisYear}}": "{{i18n:SigFall18}}",
+				"winter_23_{{ThisYear}}": "{{i18n:SigWinter23}}",
+				"winter_28_{{ThisYear}}": "{{i18n:SigWinter28}}",
+
+				//One Off Day Before Festival Dialogue
+				"spring_12_{{ThisYear}}": "{{i18n:SigSpring12}}",
+				"spring_23_{{ThisYear}}": "{{i18n:SigSpring23}}",
+				"summer_10_{{ThisYear}}": "{{i18n:SigSummer10}}",
+				"summer_27_{{ThisYear}}": "{{i18n:SigSummer27}}",
+				"fall_15_{{ThisYear}}": "{{i18n:SigFall15}}",
+				"fall_26_{{ThisYear}}": "{{i18n:SigFall26}}",
+				"winter_7_{{ThisYear}}": "{{i18n:SigWinter7}}",
+				"winter_16_{{ThisYear}}": "{{i18n:SigWinter.{{Random:{{Range: 1, 3}}}}{{BearFamGlobalToken}}}}",
+				"winter_24_{{ThisYear}}": "{{i18n:SigWinter24}}",
+
+				//conversationtopics
+				"MadDog.BearFam_KentGotoro": "{{i18n:CT.Sigurd.MadDog.BearFam_KentGotoro.{{HasMod |contains=Airyn.KentGetsTherapy}}}}",
+				"BearFamFullHouse": "{{i18n:CT.Sigurd.BearFamFullHouse}}",
+				"GudrunWeird": "{{i18n:CT.Sigurd.GudrunWeird}}",
+				"GudrunRunAway": "{{i18n:CT.Sigurd.GudrunRunAway}}",
+				"GudrunComesHome": "{{i18n:CT.Sigurd.GudrunComesHome}}",
+				"GunnarMissing": "{{i18n:CT.Sigurd.GunnarMissing}}",
+				"GunnartheLost": "{{i18n:CT.Sigurd.GunnartheLost{{BearFamGlobalToken}}}}",
+				"GunnarCellarBomb": "{{i18n:CT.Sigurd.GunnarCellarBomb}}",
+				"GunnarMysteryCave": "{{i18n:CT.Sigurd.GunnarMysteryCave}}",
+				"GunnarFailure": "{{i18n:CT.Sigurd.GunnarFailure{{BearFamGlobalToken}}}}",
+				"GunnarGrowingUp": "{{i18n:CT.Sigurd.GunnarGrowingUp}}",
+				"GunnarAriseKraken": "{{i18n:CT.Sigurd.GunnarAriseKraken}}",
+				"BookLaunchParty": "{{i18n:ConversationTopic_Sigurd_BookLaunchParty}}",
+				"RodneyPoetryReading": "{{i18n:ConversationTopic_Sigurd_RodneyPoetryReading}}",
+				//positive 
+				"AcceptGift_(O)167": "{{i18n:GiftsSigurdGiftReactionJojaCola1}}", //167 106 346 636 223 340 787
+				"AcceptGift_(O)106": "{{i18n:GiftsSigurdGiftReactionOrnamentalFan1}}",
+				"AcceptGift_(O)346": "{{i18n:GiftsSigurdGiftReactionBeer{{Random:1++2|inputSeparator=++}}{{BearFamGlobalToken}}}}",
+				"AcceptGift_(O)636": "{{i18n:GiftsSigurdGiftReactionPeach1}}",
+				"AcceptGift_(O)223": "{{i18n:GiftsSigurdGiftReactionCookie{{Random:1++2|inputSeparator=++}}{{BearFamGlobalToken}}}}",
+				"AcceptGift_(O)340": "{{i18n:GiftsSigurdGiftReactionHoney{{Random:1++2|inputSeparator=++}}}}",
+				"AcceptGift_(O)233": "{{i18n:GiftsSigurdGiftReactionIceCream1}}",
+				"AcceptGift_(O)StardropTea": "{{i18n:GiftsSigurdGiftReactionStardropTea}}",
+				"AcceptGift_(O)787": "{{i18n:GiftsSigurdGiftReactionBatteryPack{{Random:1++2++3|inputSeparator=++}}}}",
+				"AcceptGift_(O)226": "{{i18n:GiftsSigurdGiftReactionSpicyEel{{Random:1++2|inputSeparator=++}}}}",
+				"AcceptGift_(O)260": "{{i18n:GiftsSigurdGiftReactionHotPepper{{Random:1++2|inputSeparator=++}}}}",
+				"AcceptGift_(O)215": "{{i18n:GiftsSigurdGiftReactionPepperPoppers{{Random:1++2|inputSeparator=++}}{{BearFamGlobalToken}}}}",
+				"RejectItem_(O)Book_Friendship": "{{i18n:GiftsSigurdGiftReactionBookFriendship}}",
+				"AcceptGift_(O)SkillBook_4": "{{i18n:GiftsSigurdGiftReactionSkillBook4}}",
+				"AcceptGift_(O)Book_Void": "{{i18n:GiftsSigurdGiftReactionBookVoid}}",
+				"AcceptGift_(O)Book_Marlon": "{{i18n:GiftsSigurdGiftReactionBookMarlon}}",
+				"AcceptGift_(O)Book_Defense": "{{i18n:GiftsSigurdGiftReactionBookDefense}}",
+				"AcceptGift_(O)Book_Grass": "{{i18n:GiftsSigurdGiftReactionBookGrass}}",
+				"AcceptGift_(O)459": "{{i18n:GiftsSigurdGiftReactionMead}}",
+				"AcceptGift_(O)276": "{{i18n:GiftsSigurdGiftReactionPumpkin{{Random:1++2++3|inputSeparator=++}}}}",
+				"AcceptGift_(O)304": "{{i18n:GiftsSigurdGiftReactionHops}}",
+				"AcceptGift_(O)213": "{{i18n:Sigurd.GiftReaction.FishTaco}}",
+				"AcceptGift_(O)351": "{{i18n:Sigurd.GiftReaction.MuscleRemedy}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_BrazierSecretAlfredo": "{{i18n:GiftsSigurdGiftReactionMadDogBSA}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_SondraAutumnCookie": "{{i18n:GiftsSigurdGiftReactionMadDogAutumnCookie}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_SondraSpringtimeShortbread": "{{i18n:GiftsSigurdGiftReactionMadDogSpringtimeSB}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_SondraWinterBar": "{{i18n:GiftsSigurdGiftReactionMadDogWinterBar}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_SondraSummerCake": "{{i18n:GiftsSigurdGiftReactionMadDogSummerCake}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_TriangleGrilledCheese": "{{i18n:GiftsSigurdGiftReactionMadDogTGC}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_GudrunPerfectRamen": "{{i18n:GiftsSigurdGiftReactionMadDogGudrunRamen{{BearFamGlobalToken}}}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_GunnarPerfectRamen": "{{i18n:GiftsSigurdGiftReactionMadDogGunnarRamen}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_SondraPerfectRamen": "{{i18n:GiftsSigurdGiftReactionMadDogSondraRamen}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_SigurdPerfectRamen": "{{i18n:GiftsSigurdGiftReactionMadDogSigRamen}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_PeachJoja": "{{i18n:GiftsSigurdGiftReactionMadDogPeachJoja}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_PumpkinJoja": "{{i18n:GiftsSigurdGiftReactionMadDogPumpkinJoja}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_FerskenPeach": "{{i18n:GiftsSigurdGiftReactionMadDogFerskenPeach}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_FerskenPeachCobbler": "{{i18n:GiftsSigurdGiftReactionMadDogFPC}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_SlicedPeaches": "{{i18n:GiftsSigurdGiftReactionMadDogSlicedPeaches}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_HoneyWheatBread": "{{i18n:GiftsSigurdGiftReactionMadDogHWB}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_SesameBrownBread": "{{i18n:GiftsSigurdGiftReactionMadDogSBB}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_CornbreadMuffins": "{{i18n:GiftsSigurdGiftReactionMadDogCBM}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_BananaBread": "{{i18n:GiftsSigurdGiftReactionMadDogBB}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_RoseCupcakes": "{{i18n:GiftsSigurdGiftReactionMadDogRC}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_TTBrownies": "{{i18n:GiftsSigurdGiftReactionMadDogTTB{{BearFamGlobalToken}}}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_HoneyCakes": "{{i18n:GiftsSigurdGiftReactionHoneyCakes}}",
+				"AcceptGift_food_caritas_bakery_item": "{{i18n:Sigurd.GiftReaction.BearFam.food_caritas_bakery_item}}",
+				"AcceptGift_food_caritas_savory_item": "{{i18n:Sigurd.GiftReaction.BearFam.food_caritas_savory_item}}",
+				"AcceptGift_maddog_bearfam_coffee_item": "{{i18n:Sigurd.GiftReaction.BearFam.maddog_bearfam_coffee_item}}",
+
+				"AcceptGift_(O)MadDog.HashtagBearFam_FerskenPeach_Mead": "{{i18n:GiftsSigurdGiftReactionFerskenMead}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_FerskenPeach_Mead_Tankard": "{{i18n:GiftsSigurdGiftReactionMeadTankard}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_FerskenPeach_Honey": "{{i18n:GiftsSigurdGiftReactionFerskenHoney}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_FerskenPeach_PotentMead": "{{i18n:Sigurd.GiftReaction.FerskenPeachPotentMead}}",
+
+				"AcceptGift_(O)MadDog.HashtagBearFam_GunnarThirdPotion": "{{i18n:GiftsSigurdGiftReactionMadDogThirdPotion}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_GunnarPerfectPotion": "{{i18n:GiftsSigurdGiftReactionMadDogPerfectPotion{{BearFamGlobalToken}}}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_GunnarPhoenixDown": "{{i18n:GiftsSigurdGiftReactionMadDogPhoenixDown}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_GunnarRemedyAll": "{{i18n:GiftsSigurdGiftReactionMadDogRemedyAll}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_NineHerbsCharm": "{{i18n:GiftsSigurdGiftReactionMadDogNineHerbsCharm}}",
+
+
+				"RejectItem_(O)MadDog.HashtagBearFam_GunnarBadPotion": "{{i18n:GiftsSigurdGiftReactionMadDogBadPotion}}",
+				"RejectItem_(O)MadDog.HashtagBearFam_GunnarFirstPotion": "{{i18n:GiftsSigurdGiftReactionMadDogFirstPotion}}",
+				"RejectItem_(O)MadDog.HashtagBearFam_GunnarMysteryPotion": "{{i18n:GiftsSigurdGiftReactionMadDogMysteryPotion}}",
+				"RejectItem_(O)MadDog.HashtagBearFam_GunnarSecondPotion": "{{i18n:GiftsSigurdGiftReactionMadDogSecondPotion}}",
+				"RejectItem_(O)MadDog.HashtagBearFam_GunnarWeirdPotion": "{{i18n:GiftsSigurdGiftReactionMadDogWeirdPotion}}",
+				"RejectItem_gunnar_potion_item": "{{i18n:Sigurd.GiftReaction.BearFam.gunnar_potion_item}}",
+
+
+				"AcceptGift_(O)MadDog.HashtagBearFam_KingoftheForest_Whiskey": "{{i18n:GiftsSigurdGiftReactionMadDogKotFWhiskey}}",
+
+				"AcceptGift_(O)MadDog.HashtagBearFam_FerskenPeach_GingerBeer": "{{i18n:Sigurd.GiftReaction.BearFam.FerskenPeach_GingerBeer}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_StoneBrambleBerry_GingerBeer": "{{i18n:Sigurd.GiftReaction.BearFam.StoneBrambleBerry_GingerBeer}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_StoneBrambleJam": "{{i18n:Sigurd.GiftReaction.BearFam.StoneBrambleJam}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_BrambleBerryPie": "{{i18n:Sigurd.GiftReaction.BearFam.BrambleBerryPie}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_DronningMaud": "{{i18n:Sigurd.GiftReaction.BearFam.DronningMaud}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_StoneBrambleBerry": "{{i18n:Sigurd.GiftReaction.BearFam.StoneBrambleBerry}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_StoneBrambleSeed": "{{i18n:Sigurd.GiftReaction.BearFam.StoneBrambleSeed}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_JojaFloat": "{{i18n:Sigurd.GiftReaction.BearFam.JojaFloat}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_Honey_OldFashioned": "{{i18n:Sigurd.GiftReaction.BearFam.Honey_OldFashioned}}",
+
+				//negative
+				"AcceptGift_(O)109": "{{i18n:GiftsSigurdGiftReactionAncientSword}}",
+				"AcceptGift_(O)120": "{{i18n:GiftsSigurdGiftReactionPrehistoricHandaxe}}",
+				"AcceptGift_(O)WWWA.AutographedPhoto": "{{i18n:GiftsSigurdGiftReactionAnAutographedPhoto}}",
+				"AcceptGift_(O)WWWA.GenuineAutograph": "{{i18n:GiftsSigurdGiftReactionAGenuineAutographedPhoto}}",
+				"reject_EastScarp_Vintage_Ruby_Ring": "{{i18n:GiftsSigurdGiftReactionESRubyRing{{BearFamGlobalToken}}}}",
+				"RejectItem_(O)EastScarp_Vintage_Ruby_Ring": "{{i18n:GiftsSigurdGiftReactionESRubyRing{{BearFamGlobalToken}}}}",
+
+				//birthday
+				"AcceptBirthdayGift_(O)787": "{{i18n:BirthdayGiftReactionSigurdBatteryPack}}",
+				"AcceptBirthdayGift_(O)167": "{{i18n:BirthdayGiftReactionSigurdJojaCola{{BearFamGlobalToken}}}}",
+				"AcceptBirthdayGift_(O)106": "{{i18n:BirthdayGiftReactionSigurdOrnamentalFan}}",
+				"AcceptBirthdayGift_(O)346": "{{i18n:BirthdayGiftReactionSigurdBeer}}",
+				"AcceptBirthdayGift_(O)636": "{{i18n:BirthdayGiftReactionSigurdPeach}}",
+				"AcceptBirthdayGift_(O)223": "{{i18n:BirthdayGiftReactionSigurdCookie}}",
+				"AcceptBirthdayGift_(O)340": "{{i18n:BirthdayGiftReactionSigurdHoney}}",
+				"AcceptBirthdayGift_(O)MadDog.HashtagBearFam_Honey_OldFashioned": "{{i18n:Sigurd.BirthdayGiftReaction.BearFam.Honey_OldFashioned}}",
+
+				//rodney
+				"AcceptGift_(O)WWWA.Book.ArcanaCatcherPrunus": "{{i18n:GiftsSigurdGiftReactionPrunusBook}}",
+				"AcceptGift_(O)WWWA.Book.ArtifactOrCutlery": "{{i18n:GiftsSigurdGiftReactionCutleryBook}}",
+				"AcceptGift_(O)WWWA.Book.CrabsAndWhyIHateThem": "{{i18n:GiftsSigurdGiftReactionHateCrabsBook}}",
+				"AcceptGift_(O)WWWA.Book.DeferenceArlington": "{{i18n:GiftsSigurdGiftReactionArlingtonBook}}",
+				"AcceptGift_(O)WWWA.Book.FishingForDumbDumbs": "{{i18n:GiftsSigurdGiftReactionFishingDumbBook}}",
+				"AcceptGift_(O)WWWA.Book.GettingChicksToLoveYou": "{{i18n:GiftsSigurdGiftReactionShaneChicksBook}}",
+				"AcceptGift_(O)WWWA.Book.Goblins": "{{i18n:GiftsSigurdGiftReactionGoblinsBook}}",
+				"AcceptGift_(O)WWWA.Book.GuideToSculptingWithGold": "{{i18n:GiftsSigurdGiftReactionGoldSculptBook{{BearFamGlobalToken}}}}",
+				"AcceptGift_(O)WWWA.Book.HerpetologyOfFerngill": "{{i18n:GiftsSigurdGiftReactionHerpetologyBook}}",
+				"AcceptGift_(O)WWWA.Book.LunarkinTrollTales": "{{i18n:GiftsSigurdGiftReactionLunarkinBook}}",
+				"AcceptGift_(O)WWWA.Book.MysteriesOfTheDwarves": "{{i18n:GiftsSigurdGiftReactionMysteryDwarfBook}}",
+				"AcceptGift_(O)WWWA.Book.PepperRexes": "{{i18n:GiftsSigurdGiftReactionPepperRexBook}}",
+				"AcceptGift_(O)WWWA.Book.TheBookOfYoba": "{{i18n:GiftsSigurdGiftReactionBoYBook}}",
+				"AcceptGift_(O)WWWA.Book.TheGreatBookOfSlimes": "{{i18n:GiftsSigurdGiftReactionGreatSlimesBook}}",
+				"AcceptGift_(O)WWWA.Book.TheGreatTomeOfMayo": "{{i18n:GiftsSigurdGiftReactionMayoTomeBook{{BearFamGlobalToken}}}}",
+				"AcceptGift_(O)WWWA.Book.TheJojaConspiracy": "{{i18n:GiftsSigurdGiftReactionJojaConspiracyBook}}",
+				"AcceptGift_(O)WWWA.Book.TheTarotRevealed": "{{i18n:GiftsSigurdGiftReactionTarotRevealBook}}",
+				"AcceptGift_(O)WWWA.Book.WhyPepperRexesAreTheBest": "{{i18n:GiftsSigurdGiftReactionBestPepperRexBook}}",
+				//PITV
+				"AcceptGift_(O)sapphicsaph_pitv.PridePop": "{{i18n:GiftsSigurdGiftReactionpitvPridePop}}",
+				"AcceptGift_(O)sapphicsaph_pitv.GaylacticCookie": "{{i18n:GiftsSigurdGiftReactionpitvGaylacticCookie}}",
+				//Cornucopia
+				"AcceptGift_(O)Cornucopia_BellPepper": "{{i18n:GiftsSigurdGiftReactionCornucopiaBellpepper}}",
+				"AcceptGift_chili_item": "{{i18n:GiftsSigurdGiftReactionChiliItem}}",
+				"AcceptGift_(O)Cornucopia_Habanero": "{{i18n:GiftsSigurdGiftReactionCornucopiaHabanero}}",
+				"AcceptGift_(O)Cornucopia_Jalapeno": "{{i18n:GiftsSigurdGiftReactionCornucopiaJalapeno}}",
+				"AcceptGift_(O)Cornucopia_JuniperBerries": "{{i18n:GiftsSigurdGiftReactionCornucopiaJuniperBerries}}",
+				"RejectItem_(O)Cornucopia_Durian": "{{i18n:GiftsSigurdGiftReactionCornucopiaDurian}}",
+				"AcceptGift_alcohol_item": "{{i18n:GiftsSigurdGiftReactionAlcoholItem}}",
+				"AcceptGift_(O)Cornucopia_BeeBalm": "{{i18n:GiftsSigurdGiftReactionCornucopiaBeeBalm}}",
+				"RejectItem_(O)Cornucopia_Chamomile": "{{i18n:GiftsSigurdGiftReactionCornucopiaChamomile}}",
+				"AcceptGift_(O)Cornucopia_Freesia": "{{i18n:GiftsSigurdGiftReactionCornucopiaFreesia}}",
+				"AcceptGift_(O)QL_Freesia": "{{i18n:GiftsSigurdGiftReactionCornucopiaFreesia}}",
+				"AcceptGift_(O)Cornucopia_Honeysuckle": "{{i18n:GiftsSigurdGiftReactionCornucopiaHoneysuckle}}",
+				"AcceptGift_(O)Cornucopia_Hydrangea": "{{i18n:GiftsSigurdGiftReactionCornucopiaHydrangea{{BearFamGlobalToken}}}}",
+				"RejectItem_(O)Cornucopia_HotWhiskeyCoffee": "{{i18n:GiftsSigurdGiftReactionCornucopiaHotWhiskeyCoffee}}",
+				"AcceptGift_(O)Cornucopia_Beeswax": "{{i18n:GiftsSigurdGiftReactionCornucopiaBeeswax}}",
+				"AcceptGift_(O)Cornucopia_ChiliPowder": "{{i18n:GiftsSigurdGiftReactionCornucopiaChiliPowder}}",
+				"AcceptGift_(O)Cornucopia_Salt": "{{i18n:GiftsSigurdGiftReactionCornucopiaSalt}}",
+				"AcceptGift_(O)Cornucopia_HoneyLavenderIceCream": "{{i18n:GiftsSigurdGiftReactionCornucopiaHoneyLavenderIceCream}}",
+				"AcceptGift_(O)Cornucopia_Gin": "{{i18n:GiftsSigurdGiftReactionCornucopiaGin}}",
+				//ES, FC, SnS
+				"AcceptGift_(O)DN.SnS_salishbourbon": "{{i18n:GiftsSigurdGiftReactionSnSsalishburbon}}",
+				"AcceptGift_(O)DN.SnS_zuzustylepizza": "{{i18n:GiftsSigurdGiftReactionSnSzuzustylepizza}}",
+				"AcceptGift_(O)DN.SnS_zuzustylebagelwithlox": "{{i18n:GiftsSigurdGiftReactionSnSzuzustylebagelwithlox}}",
+				"AcceptGift_(O)DN.SnS_zuzustylecheesecake": "{{i18n:GiftsSigurdGiftReactionSnSzuzustylecheesecake}}",
+				"AcceptGift_(O)DN.SnS_verdantpotion": "{{i18n:Sigurd.GiftReaction.SnS.potion}}",
+				"AcceptGift_(O)DN.SnS_matrixpotion": "{{i18n:Sigurd.GiftReaction.SnS.potion}}",
+				"AcceptGift_(O)DN.SnS_pistachiopotion": "{{i18n:Sigurd.GiftReaction.SnS.potion}}",
+				"AcceptGift_(O)DN.SnS_dahliapotion": "{{i18n:Sigurd.GiftReaction.SnS.potion}}",
+				"AcceptGift_(O)DN.SnS_toirneachpotion": "{{i18n:Sigurd.GiftReaction.SnS.potion}}",
+				"AcceptGift_(O)DN.SnS_scarletpotion": "{{i18n:Sigurd.GiftReaction.SnS.scarletpotion}}",
+				"AcceptGift_(O)DN.SnS_heatherpotion": "{{i18n:Sigurd.GiftReaction.SnS.potion}}",
+				"AcceptGift_(O)DN.SnS_zydratepotion": "{{i18n:Sigurd.GiftReaction.SnS.zydratepotion}}",
+				"AcceptGift_(O)DN.SnS_slushiepotion": "{{i18n:Sigurd.GiftReaction.SnS.potion}}",
+				"AcceptGift_(O)DN.SnS_mcdougalpotion": "{{i18n:Sigurd.GiftReaction.SnS.potion}}",
+
+
+				"AcceptGift_(O)DN.SnS_orangegingerbeer": "{{i18n:Sigurd.GiftReaction.SnS.gingerbeer}}",
+				"AcceptGift_(O)DN.SnS_blueberrygingerbeer": "{{i18n:Sigurd.GiftReaction.SnS.gingerbeer}}",
+				"AcceptGift_(O)DN.SnS_pineapplegingerbeer": "{{i18n:Sigurd.GiftReaction.SnS.gingerbeer}}",
+				"AcceptGift_(O)DN.SnS_rhubarbgingerbeer": "{{i18n:Sigurd.GiftReaction.SnS.gingerbeer}}",
+				"AcceptGift_(O)DN.SnS_strawberrygingerbeer": "{{i18n:Sigurd.GiftReaction.SnS.gingerbeer}}",
+				"AcceptGift_(O)DN.SnS_peachgingerbeer": "{{i18n:Sigurd.GiftReaction.SnS.peachgingerbeer}}",
+				"AcceptGift_(O)DN.SnS_ancientelderberrygingerbeer": "{{i18n:Sigurd.GiftReaction.SnS.gingerbeer}}",
+				"AcceptGift_(O)DN.SnS_ancientappleberrygingerbeer": "{{i18n:Sigurd.GiftReaction.SnS.gingerbeer}}",
+				"AcceptGift_(O)DN.SnS_ancienthuckleberrygingerbeer": "{{i18n:Sigurd.GiftReaction.SnS.gingerbeer}}",
+				"AcceptGift_(O)DN.SnS_ancientfruitgingerbeer": "{{i18n:Sigurd.GiftReaction.SnS.gingerbeer}}",
+
+				"AcceptGift_(O)EastScarp_Rosas_Baklava": "{{i18n:GiftsSigurdGiftReactionRosaBaklava}}",
+				"AcceptGift_(O)Fellowclown.AND_HotCereal": "{{i18n:GiftsSigurdGiftReactionFCANDHotCereal}}",
+				"AcceptGift_(O)Fellowclown.AND_GemBirdPatties": "{{i18n:GiftsSigurdGiftReactionFCANDGemBirdPatties}}",
+				"AcceptGift_(O)Fellowclown.AND_FrostedCake": "{{i18n:GiftsSigurdGiftReactionFCANDFrostedCake}}",
+				"RejectItem_(O)TenebrousNova.EliDylan.CP_TenebrousNova.EnD.MandrakeRoot": "{{i18n:GiftsSigurdGiftReactionENDMandrakeRoot}}",
+				"AcceptGift_(O)TenebrousNova.EliDylan.CP_TenebrousNova.EnD.DuncanCoral": "{{i18n:GiftsSigGiftReactionDuncanCoral}}",
+				"AcceptGift_(O)TenebrousNova.EliDylan.CP_TenebrousNova.EnD.Scolymia": "{{i18n:GiftsSigGiftReactionScolymia}}",
+				"AcceptGift_(O)TenebrousNova.EliDylan.CP_TenebrousNova.EnD.Gorgonian": "{{i18n:GiftsSigGiftReactionGorgonian}}",
+				"AcceptGift_(O)7thAxis.DitR_Items.ExpiredMegaBomb": "{{i18n:GiftsSigurdGiftReactionDitRExpiredMegaBomb{{BearFamGlobalToken}}}}",
+				"AcceptGift_(O)CITV_GrizzlyTuberFries": "{{i18n:Sigurd.GiftReaction.CITV.GrizzlyTuberFries}}",
+				"AcceptGift_(O)CITV_GrizzlyTuber": "{{i18n:Sigurd.GiftReaction.CITV.GrizzlyTuber}}",
+				"AcceptGift_(O)CITV_LemonadeBerry-Ade": "{{i18n:Sigurd.GiftReaction.CITV.LemonadeBerryAde}}",
+				"RejectItem_potion_item_consumable": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_FireSnapperEssence": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_DefensiveBrew": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_DragaTailTonic": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_FairyFingerTonic": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_DragaEyeTonic": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_GreenThumbTonic": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_ProtectiveTonic": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_EssenceOfLuck": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_RestingTonic": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_EnchantedTonic": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_EnchantedDrink": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_ArkaCoin": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_PeircingShot": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_ToughenTonic": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_SootheingCure": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_CucaSerum": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_RainbowHoneyPichi": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_JellyBellyBumbleBees": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_CherryBlossomHoney": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_LavaHoney": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_SeafoamHoney": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_SnowHoney": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_SunshineHoney": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_VoidHoney": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_HoneyGopper": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_GreenAppleHoneyPop": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_HoneyDrops": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_HoneyCrumble": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_AdáuulaCakes": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_TropaWine": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_DragaTail": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_FirePepper": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_StuffedMidnightCarp": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_DragaTailPudding": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_FirePepperMeatPie": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_MidnightSurpise": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_MovoraptorEgg": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_MovoraptorMayo": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_DragaWhiskey": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_DragaClaw": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_DragaTongue": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_FairyCap": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_ZinfazuIcecream": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_PaneekiStirFry": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_PopachiniStew": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_BudJelly": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_ChocoBar": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_ChocoFrog": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_SnowPop": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_BayDrop": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_HotChoco": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_MidnightBubbly": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_MegaWrap": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_KingsRangoonDish": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_SweetenBreadPudding": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_ButtonFruitCake": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_YohoHash": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_ChocoBun": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_DragaDoughnut": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_CapWedges": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_LoMaCakes": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_IceBerryWine": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_FarmhandsSupper": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_WarpRootTea": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_LavaPop": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_MilkCoffee": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_FireSnapper": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_DragaEye": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_BellPods": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_LureBerries": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_DarkTuff": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_CaveFlower": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_FairyFingerTea": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_DarkTuffWedges": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_AdáuulaStalks": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_ZinfazuFruit": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_TropaFruit": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_IceBerries": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_Paneeki": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_ChocoFruit": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_ButtonFruit": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_YohoFruit": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_LemonberryJuice": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_AcornCake": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_FrenchDodoEgg": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_DodoMayo": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_Popachini": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_Páneeki": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_ButterTuff": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_StoneShroom": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_HeavyRoot": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_FairyFingers": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_LureBerryJuice": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_Cucumaba": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_TwistedBread": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_DeepCaveFruit": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_DeepCaveFruitJuice": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_WarpRoot": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_RootJuice": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_StoneShroomExtract": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_FireSnapperExtract": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_DragaTailExtract": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_FairyFingersExtract": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_DragaEyeExtract": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_BellPodsExtract": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_LureBerriesExtract": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_DarkTuffExtract": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_HeavyRootExtract": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_ArcaCoin": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_GaggleShrooms": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Fellowclown.PC_VultureSkull": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				//VMV
+				"AcceptGift_(O)Lumisteria.MtVapius_Tourmaline": "{{i18n:GiftsSigurdGiftReactionLumisteriaVMVTourmaline}}",
+				"AcceptGift_(O)Lumisteria.MtVapius_StarShapedFlower": "{{i18n:GiftsSigurdGiftReactionLumisteriaVMVStarShapedFlower}}",
+				"AcceptGift_(O)Lumisteria.MtVapius_ArtisanGoods_MyriadinTea": "{{i18n:GiftsSigurdGiftReactionLumisteriaVMVMyriadinTea}}",
+				"AcceptGift_(O)Lumisteria.MtVapius_Cooking_FishCurry": "{{i18n:GiftsSigurdGiftReactionLumisteriaVMVFishCurry}}",
+				"AcceptGift_(O)Lumisteria.MtVapius_Candy_HoneyDrop": "{{i18n:GiftsSigurdGiftReactionLumisteriaVMVHoneyDrop}}",
+				"AcceptGift_jewel_fan": "{{i18n:GiftsSigurdGiftReactionLumisteriaVMVjewelfan}}",
+				"RejectItem_(O)Lumisteria.MtVapius_WeirdCoins": "{{i18n:GiftsSigurdGiftReactionLumisteriaVMVWeirdCoins}}",
+				//DTZ
+				"AcceptGift_(O)DTZ.DowntownZuzuCP_BigBurger": "{{i18n:GiftsSigurdGiftReactionBigBurger}}",
+				"AcceptGift_(O)DTZ.DowntownZuzuCP_ZuzuMilkshake": "{{i18n:GiftsSigurdGiftReactionZuzuMilkshake}}",
+				"AcceptGift_(O)DTZ.DowntownZuzuCP_StrawberryDaiquiri": "{{i18n:GiftsSigurdGiftReactionStrawberryDaiquiri{{BearFamGlobalToken}}}}",
+				"AcceptGift_(O)DTZ.DowntownZuzuCP_JojaFries": "{{i18n:GiftsSigurdGiftReactionJojaFries}}",
+				//Wildflour
+				"RejectItem_wildflour_boba_item": "{{i18n:GiftsSigurdGiftReactionWFBobaItem}}",
+				"RejectItem_wildflour_smoothie_item": "{{i18n:GiftsSigurdGiftReactionWFSmoothieItem}}",
+				"RejectItem_incense_item": "{{i18n:GiftsSigurdGiftReactionWFIncenseItem}}",
+				"RejectItem_sachet_item": "{{i18n:GiftsSigurdGiftReactionWFSatchetItem}}",
+				"RejectItem_wildflour_botanical_item": "{{i18n:GiftsSigurdGiftReactionWFBotanicalItem}}",
+				"AcceptGift_(O)wildflour.ateliermakeup_maelstrom": "{{i18n:Sigurd.GiftReaction.wildflour.maelstrom}}",
+				"AcceptGift_(O)Wildflour.AtelierGoods_Maelstrom": "{{i18n:Sigurd.GiftReaction.wildflour.maelstrom}}",
+				"RejectItem_(O)wildflour.atelierjuicebar_amber_juice": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.atelierjuicebar_jade_juice": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.atelierjuicebar_lapis_juice": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.atelierjuicebar_pearl_juice": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.atelierjuicebar_apple_elixir": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.atelierjuicebar_apricot_elixir": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.atelierjuicebar_cherry_elixir": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.atelierjuicebar_mango_elixir": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.atelierjuicebar_orange_elixir": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.atelierjuicebar_peach_elixir": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.atelierjuicebar_pomegranate_elixir": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.alesxmeads_ambrosia_apple_ale": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.alesxmeads_moongold_apricot_ale": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.alesxmeads_ladyfinger_banana_ale": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.alesxmeads_sour_cherry_ale": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.alesxmeads_sunset_mango_ale": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.alesxmeads_blood_orange_ale": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.alesxmeads_snow_peach_ale": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.alesxmeads_eversweet_pomegranate_ale": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.alesxmeads_ambrosia_apple_mead": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.alesxmeads_moongold_apricot_mead": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.alesxmeads_ladyfinger_banana_mead": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.alesxmeads_sunset_mango_mead": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.alesxmeads_sour_cherry_mead": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.alesxmeads_blood_orange_mead": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.alesxmeads_snow_peach_mead": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.alesxmeads_eversweet_pomegranate_mead": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.atelierfrozen_cheesecake_froyo": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.atelierfrozen_cake_froyo": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_(O)wildflour.gourmetpantry_caramel_syrup": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_magical_fruit_item": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_magical_flower_item": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_magical_mushroom_item": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_magical_forage_item": "{{i18n:Sigurd.GiftReaction.Wildflour.Faerie}}",
+				"RejectItem_ground_coffee_item": "{{i18n:Sigurd.GiftReaction.Wildflour.Generic}}",
+				"RejectItem_wildflour_coffee_item": "{{i18n:Sigurd.GiftReaction.Wildflour.Generic}}",
+				"RejectItem_wildflour_iced_tea_item": "{{i18n:Sigurd.GiftReaction.Wildflour.Generic}}",
+				"RejectItem_kombucha_item": "{{i18n:Sigurd.GiftReaction.Wildflour.Generic}}",
+				"RejectItem_yogurt_item": "{{i18n:Sigurd.GiftReaction.Wildflour.Generic}}",
+				"RejectItem_(O)wildflour.atelierjuicebar_FruitBoba": "{{i18n:Sigurd.GiftReaction.Wildflour.Generic}}",
+				"RejectItem_tea_item": "{{i18n:Sigurd.GiftReaction.Wildflour.Generic}}",
+				"RejectItem_wildflour_bouquet_item": "{{i18n:Sigurd.GiftReaction.Wildflour.Generic}}",
+				"RejectItem_wildflour_perfume_item": "{{i18n:Sigurd.GiftReaction.Wildflour.Generic}}",
+				"RejectItem_dried_flower_item": "{{i18n:Sigurd.GiftReaction.Wildflour.Generic}}",
+				"RejectItem_sundae_item": "{{i18n:Sigurd.GiftReaction.Wildflour.Generic}}",
+				"RejectItem_wildflour_candle_item": "{{i18n:Sigurd.GiftReaction.Wildflour.Generic}}",
+				"RejectItem_soap_item": "{{i18n:Sigurd.GiftReaction.Wildflour.Generic}}",
+				"AcceptGift_lotion_item": "{{i18n:Sigurd.GiftReaction.Wildflour.Lotion}}",
+				"AcceptGift_nail_polish_item": "{{i18n:Sigurd.GiftReaction.Wildflour.makeup{{Random:1++2++3|inputSeparator=++}}}}",
+				"AcceptGift_blush_item": "{{i18n:Sigurd.GiftReaction.Wildflour.makeup{{Random:1++2++3|inputSeparator=++}}}}",
+				"AcceptGift_cleanser_item": "{{i18n:Sigurd.GiftReaction.Wildflour.makeup{{Random:1++2++3|inputSeparator=++}}}}",
+				"AcceptGift_powder_item": "{{i18n:Sigurd.GiftReaction.Wildflour.makeup{{Random:1++2++3|inputSeparator=++}}}}",
+				"AcceptGift_lipstick_item": "{{i18n:Sigurd.GiftReaction.Wildflour.makeup{{Random:1++2++3|inputSeparator=++}}}}",
+				"AcceptGift_lipgloss_item": "{{i18n:Sigurd.GiftReaction.Wildflour.makeup{{Random:1++2++3|inputSeparator=++}}}}",
+				"AcceptGift_mascara_item": "{{i18n:Sigurd.GiftReaction.Wildflour.makeup{{Random:1++2++3|inputSeparator=++}}}}",
+				"AcceptGift_palette_item": "{{i18n:Sigurd.GiftReaction.Wildflour.makeup{{Random:1++2++3|inputSeparator=++}}}}",
+				"AcceptGift_(O)HXW.Mixology_berry_whiskey_sour": "{{i18n:Sigurd.GiftReaction.HxWMixology.berry_whiskey_sour}}",
+				"AcceptGift_(O)HXW.Mixology_raspberry_lemon_drop": "{{i18n:Sigurd.GiftReaction.HxWMixology.raspberry_lemon_drop}}",
+				"AcceptGift_(O)HXW.Mixology_harvest_hayride": "{{i18n:Sigurd.GiftReaction.HxWMixology.harvest_hayride}}",
+				"AcceptGift_(O)HXW.Mixology_mango_tango": "{{i18n:Sigurd.GiftReaction.HxWMixology.mango_tango}}",
+				"AcceptGift_(O)wildflour.ateliermakeup_virgo_lotion": "{{i18n:Sigurd.GiftReaction.Wildflour.VirgoLotion{{BearFamGlobalToken}}}}", //
+				"AcceptGift_(O)Wildflour.AtelierGoods_Virgo_Lotion": "{{i18n:Sigurd.GiftReaction.Wildflour.VirgoLotion{{BearFamGlobalToken}}}}",
+				"AcceptGift_(O)HXW.FreshlyBaked_spiced_cake": "{{i18n:Sigurd.GiftReaction.HxWBakery.spiced_cake}}",
+				"AcceptGift_(O)HXW.FreshlyBaked_peach_pie": "{{i18n:Sigurd.GiftReaction.HxWBakery.peach_pie}}",
+				"AcceptGift_(O)HXW.FreshlyBaked_herb_focaccia": "{{i18n:Sigurd.GiftReaction.HxWBakery.herb_focaccia}}",
+				"RejectItem_(O)HXW.FreshlyBaked_celebration_cake": "{{i18n:Sigurd.GiftReaction.HxWBakery.Faerie}}",
+				"AcceptGift_(O)MadDog.HashtagBearFam_Dylan_Tea": "{{i18n:Sigurd.GiftReaction.Dylan_Tea.{{HasMod |contains=TenebrousNova.EliDylan.CP}}}}",
+
+				"AcceptGift_(O)Wildflour.AtelierGoods_Spiced_Cake": "{{i18n:Sigurd.GiftReaction.HxWBakery.spiced_cake}}",
+				"AcceptGift_(O)Wildflour.AtelierGoods_Peach_Pie": "{{i18n:Sigurd.GiftReaction.HxWBakery.peach_pie}}",
+				"AcceptGift_(O)Wildflour.AtelierGoods_Herb_Focaccia": "{{i18n:Sigurd.GiftReaction.HxWBakery.herb_focaccia}}",
+
+				//misc mods
+				"AcceptGift_(O)Suushiico.PeachyKeenRecipes_Peach_Pie": "{{i18n:GiftsSigurdGiftReactionSuushiicoPKR_PeachPie}}",
+				"AcceptGift_(O)yourdorkbrains_ConiferInfusedVodka": "{{i18n:GiftsSigurdGiftyourdorkbrains_ConiferInfusedVodka}}",
+				"AcceptGift_(O)candycreation_hotpepper": "{{i18n:GiftsSigurdGiftReactioncandycreation_hotpepper{{BearFamGlobalToken}}}}",
+				"AcceptGift_(O)VoidWitchCult.CP.TheFishmongerNPC_mouthwateringfishburger": "{{i18n:Sigurd.GiftReaction.Void.mouthwateringfishburger}}",
+				"RejectItem_(O)ApryllForever.CPPolyamorySweet_AineFlower": "{{i18n:GenericRejectDialogue1.Sigurd}}",
+				"RejectItem_(O)ApryllForever.CPPolyamorySweet_AtagartisPendant": "{{i18n:GenericRejectDialogue1.Sigurd}}",
+				"RejectItem_(O)ApryllForever.CPPolyamorySweet_MermaidBouquet": "{{i18n:GenericRejectDialogue1.Sigurd}}",
+				"RejectItem_(O)ApryllForever.CPPolyamorySweet_RoomieBGone": "{{i18n:GenericRejectDialogue1.Sigurd}}",
+				"AcceptGift_(O)miru.forestamber_AmberDecoratedBook": "{{i18n:Sigurd.GiftReaction.miruforestamber.AmberDecoratedBook}}",
+				"AcceptGift_(O)miru.forestamber_AmberFan": "{{i18n:Sigurd.GiftReaction.miruforestamber.AmberFan}}",
+				"AcceptGift_(O)miru.forestamber_AmberHandaxe": "{{i18n:Sigurd.GiftReaction.miruforestamber.AmberHandaxe}}",
+				"AcceptGift_(O)miru.forestamber_AmberSword": "{{i18n:Sigurd.GiftReaction.miruforestamber.AmberSword}}",
+				"AcceptGift_(O)miru.forestamber_AmethystKohakutou": "{{i18n:Sigurd.GiftReaction.miruforestamber.AmethystKohakutou}}",
+				"AcceptGift_(O)DuchessIvy.ShadowRecipes_Black_Cherry_Flan": "{{i18n:Sigurd.GiftReaction.DuchessIvySR.Black_Cherry_Flan}}",
+				"AcceptGift_(O)DuchessIvy.ShadowRecipes_Pumpkin_Bread": "{{i18n:Sigurd.GiftReaction.DuchessIvySR.Pumpkin_Bread}}",
+				"AcceptGift_(O)CyberZ.NewRecipes_Sangria": "{{i18n:Sigurd.GiftReaction.CyberZNR.Sangria{{BearFamGlobalToken}}}}",
+				"AcceptGift_(O)CyberZ.NewRecipes_Baked_Alaska": "{{i18n:Sigurd.GiftReaction.CyberZNR.Baked_Alaska}}",
+				"AcceptGift_(O)cosmicRetribution.HiddenCropRecipes_HoneyGlazedCarrots": "{{i18n:Sigurd.GiftReaction.HiddenCrop.HoneyGlazedCarrots}}",
+				"AcceptGift_(O)stinkyvicki_MonsterMedleyStew": "{{i18n:Sigurd.GiftReaction.DeliciousinStardew.MonsterMedleyStew}}",
+				"AcceptGift_(O)yourdorkbrains.CP.WildHoneycomb": "{{i18n:GiftsSigurdGiftyourdorkbrains_WildHoneycomb}}",
+				"AcceptGift_(O)Tulaash.IridiumChef_Peanut_Butter_And_Jelly_Sandwich": "{{i18n:Sigurd.GiftReaction.IridiumChef.PBJSandy}}",
+				"AcceptGift_(O)Tulaash.IridiumChef_Steak_Dinner": "{{i18n:Sigurd.GiftReaction.IridiumChef.SteakDinner{{BearFamGlobalToken}}}}",
+				"AcceptGift_(O)AvalonMFX.CPLoveFestival_BoxOfChocolates": "{{i18n:Sigurd.ReceiveGift.LoveFest.BoxOfChocolates.{{SigIsRomanced}}{{BearFamGlobalToken}}}}",
+				"AcceptGift_(O)queermoth.bcgcm_pepperHotChocolate": "{{i18n:Sigurd.GiftReaction.BCGCM.pepperHotChocolate}}",
+				"AcceptGift_(O)appleseed.BCP.PlushCrow": "{{i18n:Sigurd.GiftReaction.appleseed.BCP.PlushCrow}}",
+				"AcceptGift_(O)appleseed.BCP.PlushBee": "{{i18n:Sigurd.GiftReaction.appleseed.BCP.PlushBee}}",
+				"AcceptGift_(O)appleseed.BCP.PlushTrashBear": "{{i18n:Sigurd.GiftReaction.appleseed.BCP.PlushTrashBear}}",
+				"AcceptGift_(O)HeyKatu.CulinaryDelight_charcuterie": "{{i18n:Sigurd.GiftReaction.HeyKatuCulinaryDelight.fingerfoods}}",
+				"AcceptGift_(O)HeyKatu.CulinaryDelight_dipping_fries": "{{i18n:Sigurd.GiftReaction.HeyKatuCulinaryDelight.fingerfoods}}",
+				"AcceptGift_(O)HeyKatu.CulinaryDelight_fish_and_chips": "{{i18n:Sigurd.GiftReaction.HeyKatuCulinaryDelight.fingerfoods}}",
+				"AcceptGift_(O)HeyKatu.CulinaryDelight_gooseberry_pie": "{{i18n:Sigurd.GiftReaction.HeyKatuCulinaryDelight.gooseberry_pie}}",
+				"AcceptGift_(O)HeyKatu.CulinaryDelight_veggies_dip": "{{i18n:Sigurd.GiftReaction.HeyKatuCulinaryDelight.veggies_dip}}",
+
+				//sve
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Big_Conch": "{{i18n:Sigurd.ReceiveGift.SVE.Big_Conch}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Super_Joja_Cola": "{{i18n:Sigurd.ReceiveGift.SVE.Super_Joja_Cola}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Bearberrys": "{{i18n:Sigurd.ReceiveGift.SVE.Bearberrys}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Flower_Cookie": "{{i18n:Sigurd.ReceiveGift.SVE.Flower_Cookie}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Hero_Elixir": "{{i18n:Sigurd.ReceiveGift.SVE.Hero_Elixir}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir": "{{i18n:Sigurd.ReceiveGift.SVE.Barbarian_Elixir}}",
+				"RejectItem_(O)FlashShifter.StardewValleyExpandedCP_Aurora_Vineyard_Property_Deed": "{{i18n:GenericRejectDialogue1.Sigurd}}",
+				"RejectItem_(O)FlashShifter.StardewValleyExpandedCP_Golden_Key": "{{i18n:GenericRejectDialogue1.Sigurd}}",
+				"RejectItem_(O)FlashShifter.StardewValleyExpandedCP_Lance's_Schedule": "{{i18n:GenericRejectDialogue1.Sigurd}}",
+				"RejectItem_(O)FlashShifter.StardewValleyExpandedCP_Property_Deed": "{{i18n:GenericRejectDialogue1.Sigurd}}",
+				//rsv
+				"RejectItem_(O)Rafseazz.RSVCP_Kedi_Delight": "{{i18n:GenericRejectDialogue1.Sigurd}}",
+				"RejectItem_(O)Rafseazz.RSVCP_Freddie_s_Sword": "{{i18n:GenericRejectDialogue.QuestItem.Sigurd}}",
+				"RejectItem_(O)Rafseazz.RSVCP_Old_Lucky_Foxtail_Charm": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Rafseazz.RSVCP_Richard_s_Glasses": "{{i18n:GenericRejectDialogue.QuestItem.Sigurd}}",
+				"RejectItem_(O)Rafseazz.RSVCP_Yuuma_s_Ring": "{{i18n:GenericRejectDialogue.QuestItem.Sigurd}}",
+				"RejectItem_(O)Rafseazz.RSVCP_Entombed_Ring": "{{i18n:GenericRejectDialogue1.Sigurd}}",
+				"RejectItem_(O)Rafseazz.RSVCP_Spiritual_Essence": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Rafseazz.RSVCP_Mistbloom_Syrup": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Rafseazz.RSVCP_Kek_s_Small_Dream": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"RejectItem_(O)Rafseazz.RSVCP_Kek_s_Style_Shortcake": "{{i18n:GenericRejectDialogue.Sigurd}}",
+				"AcceptGift_(O)Rafseazz.RSVCP_Highland_Blueberry_Pie": "{{i18n:Sigurd.GiftReaction.RSV.Highland_Blueberry_Pie}}",
+				"AcceptGift_(O)Rafseazz.RSVCP_Hollowed_Bear": "{{i18n:Sigurd.GiftReaction.RSV.Hollowed_Bear}}",
+				"AcceptGift_(O)Rafseazz.RSVCP_Moose_Statue": "{{i18n:Sigurd.GiftReaction.RSV.Moose_Statue}}",
+				//mnf
+				"AcceptGift_(O)MNF.MoreNewFish_i_voted_sticker": "{{i18n:Sigurd.GiftReaction.MNF.i_voted_sticker}}"
+
+
+			}
+		},
+		//daily
+		{
+			"LogName": "Dialogue - 0-4",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Update": "OnLocationChange",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogue04.{{Random:{{Range: 1, 30}}}}{{BearFamGlobalToken}}}}"
+			},
+			"When": {
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		{
+			"LogName": "Dialogue - 0-4 - Seasonal",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogue04.{{season}}.{{Random:{{Range: 1, 5}}|key={{Time}}}}{{BearFamGlobalToken}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"Query: {{Random: {{Range: 1, 15}}|key=SigSeasonA}} = 1": true,
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		{
+			"LogName": "Dialogue - 6-10 Platonic",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Update": "OnLocationChange",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogue610.{{Random:{{Range: 1, 25}}}}{{BearFamGlobalToken}}}}"
+			},
+			"When": {
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false,
+				"Hearts:MadDog.HashtagBearFam.Sigurd": "{{Range: 5, 10}}",
+				"HasSeenEvent |contains=MadDog.BearFam.16191007": false //need right event id
+			}
+		},
+		{
+			"LogName": "Dialogue - 6 - 10 Platonic - Seasonal",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogue610.{{season}}.{{Random:{{Range: 1, 5}}|key={{Time}}}}{{BearFamGlobalToken}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"Query: {{Random: {{Range: 1, 15}}|key=SigSeasonB}} = 1": true,
+				"Hearts:MadDog.HashtagBearFam.Sigurd": "{{Range: 5, 10}}",
+				"HasSeenEvent |contains=MadDog.BearFam.16191007": false,
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		{
+			"LogName": "Dialogue - 6-10 Platonic - Has Seen Therapy Event",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Update": "OnLocationChange",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogue610T.{{Random:{{Range: 1, 60}}}}{{BearFamGlobalToken}}}}"
+			},
+			"When": {
+				"Hearts:MadDog.HashtagBearFam.Sigurd": "{{Range: 5, 10}}",
+				"HasSeenEvent |contains=MadDog.BearFam.16191007": true, //need right event id - should be bus stop therapy
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		{
+			"LogName": "Dialogue - 6-10  Platonic - Has Seen Therapy Event - Seasonal",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogue610T.{{season}}.{{Random:{{Range: 1, 5}}|key={{Time}}}}{{BearFamGlobalToken}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"Query: {{Random: {{Range: 1, 15}}|key=SigSeasonC}} = 1": true,
+				"Hearts:MadDog.HashtagBearFam.Sigurd": "{{Range: 5, 10}}",
+				"HasSeenEvent |contains=MadDog.BearFam.16191007": true, //need right event id - should be bus stop therapy
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		{
+			"LogName": "Dialogue - Bonus Override",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Update": "OnLocationChange",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:Sigurd.AboutTeren.{{Random:{{Range: 1, 15}}|key={{Time}}}}{{BearFamGlobalToken}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasFlag": "TerenIsHere",
+				"Query: {{Random:{{Range: 1, 50}}|key=SigAboutTeren}} = 1": true,
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		//////////////////////////////////////////////////////////////////////////////////////
+		{
+			"LogName": "Dialogue - 8-10 Romantic", //SigRomance decided in my config.json and established in my content.json
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Update": "OnLocationChange",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogue810R.{{SigRomanceDialogueType}}.{{Random:{{Range: 1, 25}}|key={{Time}}}}{{SigurdSpousePetName}}{{BearFamGlobalToken}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			//"Condition": "PLAYER_NPC_RELATIONSHIP current MadDog.HashtagBearFam.Sigurd Dating Engaged Married",
+			"When": {
+				//"Hearts:MadDog.HashtagBearFam.Sigurd": "{{Range: 8, 14}}",
+				"Relationship:MadDog.HashtagBearFam.Sigurd": "Dating, Engaged, Married",
+				"Query: {{Random: {{Range: 1, 6}}|key=RomanceSig}} = 1": true,
+				"EnableRivalHeartsTerenSig": false,
+				"EnableRivalHeartsSigDylan": false,
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+
+		{
+			"LogName": "Dialogue - Bonus Override",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Update": "OnLocationChange",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:Sigurd.RomanticHints.{{Random:{{Range: 1, 15}}|key={{Time}}}}{{BearFamGlobalToken}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"Query: {{Random: {{Range: 1, 7}}|key=SigPotentialRomance}} = 1": true,
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false,
+				"HasFlag |contains=SigFlirtsBack": true,
+				"EnableRivalHeartsSigDylan": false,
+				"EnableRivalHeartsTerenSig": false,
+				"HasFlag |contains=SigurdDating": false
+			}
+		},
+
+
+
+		{
+			"LogName": "Bouquet - Sig - No",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"RejectItem_(O)458": "{{i18n:Sigurd.GiftReaction.Bouquet.NotYet}}"
+			},
+			"When": {
+				"HasFlag |contains=SigDateable": false
+			}
+		},
+		{
+			"LogName": "Bouquet - Sig - Yes",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"AcceptBouquet": "{{i18n:Sigurd.GiftReaction.Bouquet.Ready}}#$action AddMail Current SigurdDating"
+			},
+			"When": {
+				"HasFlag |contains=SigDateable": true
+			}
+		},
+		{
+			"LogName": "Pendant - Sig - No",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"RejectItem_(O)460": "{{i18n:Sigurd.GiftReaction.Pendant.NotYet}}"
+			},
+			"When": {
+				"HasFlag |contains=SigMarriable": false,
+				"HasConversationTopic |contains=SigRockSkippingDate": false
+
+			}
+		},
+		{
+			"LogName": "Pendant - Sig - No",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"RejectItem_(O)460": "{{i18n:Sigurd.GiftReaction.Pendant.NotYet}}"
+			},
+			"When": {
+				"HasFlag |contains=SigMarriable": true,
+				"HasConversationTopic |contains=SigRockSkippingDate": true
+			}
+		},
+		{
+			"LogName": "Pendant - Sig - Yes",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"RejectItem_(O)460": "{{i18n:Sigurd.GiftReaction.Pendant.Ready}}#$action spacechase0.SpaceCore_PlayEvent MadDog.BearFam.SigurdProposalEvent false"
+			},
+			"When": {
+				"HasFlag |contains=SigMarriable": true,
+				"HasConversationTopic |contains=SigRockSkippingDate": false
+			}
+		},
+		{
+			"LogName": "Engagement Dialogue - Sigurd",
+			"Action": "EditData",
+			"Target": "Data/EngagementDialogue",
+			"Entries": {
+
+				"MadDog.HashtagBearFam.Sigurd0": "{{i18n:Sigurd.Dialogue.Engagement.First}}",
+				"MadDog.HashtagBearFam.Sigurd1": "{{i18n:Sigurd.Dialogue.Engagement.Second{{SigurdSpousePetName}}}}",
+				"MadDog.HashtagBearFam.Sigurd2": "{{i18n:Sigurd.Dialogue.Engagement.Third}}"
+			},
+			"When": {
+				"Relationship:MadDog.HashtagBearFam.Sigurd": "Engaged, Married"
+			}
+		},
+		{
+			"LogName": "Wedding Strings - Sigurd",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": {
+				"MadDog.HashtagBearFam.Sigurd_Engaged": "{{i18n:SigurdEngaged}}",
+				"MadDog.HashtagBearFam.Sigurd_AfterWedding": "{{i18n:SigurdAfterWedding{{SigurdSpousePetName}}}}"
+			},
+			"When": {
+				"Relationship:MadDog.HashtagBearFam.Sigurd": "Engaged, Married"
+			}
+		},
+		{
+			"LogName": "Wedding Ceremony Strings - Sigurd",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": {
+				"Utility.cs.5367": "{{i18n:Sigurd.Dialogue.Marriage.1}}",
+				"Utility.cs.5369": "{{i18n:Sigurd.Dialogue.Marriage.1}}",
+				"Utility.cs.5371": "{{i18n:Sigurd.Dialogue.Marriage.2}}",
+				"Utility.cs.5373": "{{i18n:Sigurd.Dialogue.Marriage.2}}",
+				"Utility.cs.5375": "{{i18n:Sigurd.Dialogue.Marriage.2}}",
+				"Utility.cs.5377": "{{i18n:Sigurd.Dialogue.Marriage.2}}"
+			},
+			"When": {
+				"Relationship:MadDog.HashtagBearFam.Sigurd": "Engaged, Married"
+			}
+		},
+		/*
+		{
+			"LogName": "Dialogue - 8-10 Romantic - Both, Both is Good", //SigRomance decided in my config.json and established in my content.json
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Update": "OnLocationChange",
+			"Priority": "Late",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogue810R.{{Random:Chaste, Spicy}}.{{Random:{{Range: 1, 25}}|key={{Time}}}}{{SigurdSpousePetName}}{{BearFamGlobalToken}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			//"Condition": "PLAYER_NPC_RELATIONSHIP current MadDog.HashtagBearFam.Sigurd Dating Engaged Married",
+			"When": {
+				"SigRomanceAll": true,
+				"Hearts:MadDog.HashtagBearFam.Sigurd": "{{Range: 8, 10}}",
+				"Relationship:MadDog.HashtagBearFam.Sigurd": "Dating, Engaged, Married",
+				"Query: {{Random: {{Range: 1, 12}}|key=RomanceSig}} = 1": true,
+				"EnableRivalHeartsTerenSig": false,
+				"EnableRivalHeartsSigDylan": false,
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		*/
+		//////////////////////////////////////////////////////////////////////////////////////
+		{
+			"LogName": "Sig ED Commentary Dylan RH Activated",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueDylanRH.{{Random:{{Range: 1, 10}}|key={{Time}}}}{{BearFamGlobalToken}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=TenebrousNova.EliDylan.CP": true,
+				"EnableRivalHeartsSigDylan": true, //this is determined in my config.json
+				"EnableRivalHeartsTerenSig": false, //this is determined in my config.json
+				"Query: {{Random: {{Range: 1, 50}}|key=DylanRH}} = 1": true, //key needs differentiating per mod
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false,
+				"HasFlag |contains=SigAndDylanAreTogether": true
+			}
+		},
+		{
+			"LogName": "Sig Commentary Sig RH Activated",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueTerenRH.{{Random:{{Range: 1, 5}}|key={{Time}}}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"EnableRivalHeartsTerenSig": true, //this is determined in my config.json
+				"EnableRivalHeartsTerenEli": false, //this is determined in my config.json
+				"EnableRivalHeartsSigDylan": false, //this is determined in my config.json
+				"Query: {{Random: {{Range: 1, 50}}|key=TerenRH}} = 1": true, //key needs differentiating per mod
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false,
+				"HasFlag |contains=SigAndTerenAreTogether": true
+			}
+		},
+		//crossover dialogue
+
+		//////////////////////////////////////////////////////////////////////////////////////
+		//Birthday Zone
+		{
+			"LogName": "Sig Birthday Commentary - ED",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"winter_5_{{ThisYear}}": "{{i18n:Sigurd.Birthday.ED.Eli}}",
+				"fall_17_{{ThisYear}}": "{{i18n:Sigurd.Birthday.ED.Dylan.{{EnableRivalHeartsSigDylan}}}}"
+			},
+			"When": {
+				"HasMod |contains=TenebrousNova.EliDylan.CP": true
+			}
+		},
+		{
+			"LogName": "Sig Birthday Commentary - Rodney",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"summer_2_{{ThisYear}}": "{{i18n:Sigurd.Birthday.ROB.Rodney}}"
+			},
+			"When": {
+				"HasMod |contains=TheFrenchDodo.RodneyOBrien": true
+			}
+		},
+		{
+			"LogName": "Sig Birthday Commentary - Nora",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"fall_3_{{ThisYear}}": "{{i18n:Sigurd.Birthday.NtH.Nora}}"
+			},
+			"When": {
+				"HasMod |contains=Bagi.Nora.CP": true
+			}
+		},
+		{
+			"LogName": "Sig Birthday Commentary - DiTR",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"spring_11_{{ThisYear}}": "{{i18n:Sigurd.Birthday.DiTR.Eve}}",
+				"fall_7_{{ThisYear}}": "{{i18n:Sigurd.Birthday.DiTR.Trace}}"
+			},
+			"When": {
+				"HasMod |contains=7thAxis.DitR.CP": true
+			}
+		},
+		{
+			"LogName": "Sig Birthday Commentary - SnS",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"fall_24_{{ThisYear}}": "{{i18n:Sigurd.Birthday.SnS.Mateo.{{HasSeenEvent |contains=SnS.Ch1.Mateo.0}}}}",
+				"summer_17_{{ThisYear}}": "{{i18n:Sigurd.Birthday.SnS.Cirrus.{{HasSeenEvent |contains=SnS.Ch3.Cirrus.1}}}}"
+			},
+			"When": {
+				"HasMod |contains=DN.SnS": true
+			}
+		},
+		{
+			"LogName": "Sigurd Birthday Commentary - MGC",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"winter_10_{{ThisYear}}": "{{i18n:Sigurd.Birthday.MGC.Cambria{{BearFamGlobalToken}}}}"
+			},
+			"When": {
+				"HasMod |contains=Squeaks.MGC.CP": true
+			}
+		},
+		{
+			"LogName": "Sig Birthday Commentary - SVE",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"spring_22_{{ThisYear}}": "{{i18n:Sigurd.Birthday.SVE.Andy}}"
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+		{
+			"LogName": "Sig Birthday Commentary - RSV",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"winter_27_{{ThisYear}}": "{{i18n:Sigurd.Birthday.RSV.Shiro}}"
+			},
+			"When": {
+				"HasMod |contains=Rafseazz.RSVCP": true
+			}
+		},
+		//////////////////////////////////////////////////////////////////////////////////////
+		//Eli and Dylan
+		{
+			"LogName": "Sig ED Commentary",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueED.{{Random:{{Range: 1, 10}}|key={{Time}}}}{{BearFamGlobalToken}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=TenebrousNova.EliDylan.CP": true,
+				"Query: {{Random: {{Range: 1, 50}}|key=EDsig}} = 1": true, //key needs differentiating per mod
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		//Rodney O'Brien (later include Edwina, Meredith)
+		{
+			"LogName": "Sigurd Rodney O'Brien Commentary",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueROB.{{Random:{{Range: 1, 5}}|key={{Time}}}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=TheFrenchDodo.RodneyOBrien": true,
+				"Query: {{Random: {{Range: 1, 50}}|key=ROBsig}} = 1": true, //key needs differentiating per mod
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		//Nora the Herpetologist
+		{
+			"LogName": "Sigurd Nora Commentary",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueNtH.{{Random:{{Range: 1, 3}}|key={{Time}}}}{{BearFamGlobalToken}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=Bagi.Nora.CP": true,
+				"Query: {{Random: {{Range: 1, 50}}|key=NtHsig}} = 1": true, //key needs differentiating per mod
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		//Diamond in the Rough
+		{
+			"LogName": "Sigurd DitR Commentary",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueDitR.{{Random:{{Range: 1, 3}}|key={{Time}}}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=7thAxis.DitR.CP": true,
+				"Query: {{Random: {{Range: 1, 50}}|key=DitRsig}} = 1": true, //key needs differentiating per mod
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		//Sword and Sorcery
+		{
+			"LogName": "Sigurd SnS Commentary",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueSnS.{{Random:{{Range: 1, 3}}|key={{Time}}}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=DN.SnS": true,
+				"Query: {{Random: {{Range: 1, 50}}|key=SnSsig}} = 1": true, //key needs differentiating per mod
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		//Plum Forrest + Family
+		{
+			"LogName": "Sigurd Plum Commentary",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialoguePFAF.{{Random:{{Range: 1, 3}}|key={{Time}}}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=AgentPhoenixCupcake.cp.PlumForrest": true,
+				"Query: {{Random: {{Range: 1, 50}}|key=PFAFsig}} = 1": true, //key needs differentiating per mod
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		//Metalcore Goes Cottagecore
+		{
+			"LogName": "Sigurd MGC Commentary",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueMGC.{{Random:{{Range: 1, 5}}|key={{Time}}}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=Squeaks.MGC.CP": true,
+				"Query: {{Random: {{Range: 1, 50}}|key=MGCsig}} = 1": true, //key needs differentiating per mod
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		//Clown Cinematic Universe Zone
+		//A New Dream now contains Traveling Dreamer, A New Dream
+		/*{
+			"LogName": "Sigurd Barron & John Commentary",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueFCAND.{{Random:{{Range: 1, 3}}|key={{Time}}}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=Fellowclown.AND": true,
+				"Query: {{Random: {{Range: 1, 50}}|key=FCANDsig}} = 1": true, //key needs differentiating per mod
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		//Passerby Cemetary now contains Settling Waters, Magical Family, The Wanderer.
+		{
+			"LogName": "Sigurd Passerby Cemetary Commentary",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueFCPC.{{Random:{{Range: 1, 6}}|key={{Time}}}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=Fellowclown.PC": true,
+				"Query: {{Random: {{Range: 1, 50}}|key=FCPCsig}} = 1": true, //key needs differentiating per mod
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},*/
+		//Andrew 'Verse
+		{
+			"LogName": "Sigurd A Pelican Town Commentary",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueAPT.{{Random:{{Range: 1, 3}}|key={{Time}}}}{{BearFamGlobalToken}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=AndrewJC.APelicanTown": true,
+				"Query: {{Random: {{Range: 1, 50}}|key=APTsig}} = 1": true, //key needs differentiating per mod    //Abbreviation for key here
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		{
+			"LogName": "Sigurd Coalpoint Commentary",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueCPF.{{Random:{{Range: 1, 3}}|key={{Time}}}}{{BearFamGlobalToken}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=AndrewJC.CoalPointFarm": true,
+				"Query: {{Random: {{Range: 1, 50}}|key=CPFsig}} = 1": true, //key needs differentiating per mod    //Abbreviation for key here
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+
+		//Standalone NPCs
+		//Yri The Architect
+		/*{
+			"LogName": "Sig YtA Commentary",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueYtA.{{Random:{{Range: 1, 3}}|key={{Time}}}}{{BearFamGlobalToken}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=yri.yri": true,
+				"Query: {{Random: {{Range: 1, 50}}|key=YtAsig}} = 1": true, //key needs differentiating per mod
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},*/
+		//Always Raining in the Valley
+		{
+			"LogName": "Sig ARV Commentary",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueARV.{{Random:{{Range: 1, 3}}|key={{Time}}}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=Himetarts.ARV.CP": true,
+				"Query: {{Random: {{Range: 1, 50}}|key=ARVSig}} = 1": true, //key needs differentiating per mod
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		//King's Raid Lucikiel
+		{
+			"LogName": "Sig Lucikiel Commentary",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueLuc.{{Random:{{Range: 1, 3}}|key={{Time}}}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=Arknir.Lucikiel": true,
+				"Query: {{Random: {{Range: 1, 50}}|key=Lucsig}} = 1": true, //key needs differentiating per mod
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		//King's Raid Lavril
+		{
+			"LogName": "Sig Lavril Commentary",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueLav.{{Random:{{Range: 1, 3}}|key={{Time}}}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=Arknir27.Lavril": true,
+				"Query: {{Random: {{Range: 1, 50}}|key=Lavsig}} = 1": true, //key needs differentiating per mod
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false,
+				"HasFlag |contains=BearFamExtraMembers": true
+			}
+		},
+
+		//expansions
+		//DTZ
+		{
+			"LogName": "Sigurd DTZ Commentary", //mod name here
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueDTZ.{{Random:{{Range: 1, 5}}|key={{Time}}}}{{BearFamGlobalToken}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=DTZ.DowntownZuzuCP": true, //MOD ID HERE
+				"Query: {{Random: {{Range: 1, 50}}|key=DTZsig}} = 1": true, //key needs differentiating per mod    //Abbreviation for key here
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		//Stardew Valley Expanded
+		{
+			"LogName": "Sigurd SVE Commentary",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueSVE.{{Random:{{Range: 1, 4}}|key={{Time}}}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"Query: {{Random: {{Range: 1, 50}}|key=SVEsig}} = 1": true, //key needs differentiating per mod
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		},
+		//Ridgeside Village
+		{
+			"LogName": "Sigurd RSV Commentary",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueRSV.{{Random:{{Range: 1, 4}}|key={{Time}}}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=Rafseazz.RSVCP": true,
+				"Query: {{Random: {{Range: 1, 50}}|key=RSVsig}} = 1": true, //key needs differentiating per mod
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		}
+
+		//Visit Mount Vapius VMV
+		/*{
+			"LogName": "Sigurd VMV Commentary",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:SigDialogueVMV.{{Random:{{Range: 1, 3}}|key={{Time}}}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+			},
+			"When": {
+				"HasMod |contains=Lumisteria.MtVapius": true,
+				"Query: {{Random: {{Range: 1, 50}}|key=VMVsig}} = 1": true, //key needs differentiating per mod   
+				"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+			}
+		}*/
+
+		/*
+		//Sunberry Village SBV
+		 {
+      "LogName": "Sigurd SBV Commentary", 
+      "Action": "EditData",
+      "Priority": "Late",
+		"Update": "OnLocationChange",
+      "Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+      "Entries": {
+        "{{WeekDay}}": "{{i18n:SigDialogueSBV.{{Random:{{Range: 1, 3}}|key={{Time}}}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+      },
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true, //MOD ID HERE - TBD (no public alpha or release yet!!!!!!!!!!!!)
+        "Query: {{Random: {{Range: 1, 50}}|key=SBVsig}} = 1": true //key needs differentiating per mod    
+		"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+      }
+    }
+    */
+
+
+		//standalone NPCs - TBD as 1.6 mods are made available
+		/* place holder template
+     {
+      "LogName": "Sigurd XXXXX Commentary", //mod name here
+      "Action": "EditData",
+      "Priority": "Late",
+		"Update": "OnLocationChange",
+      "Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+      "Entries": {
+        "{{WeekDay}}": "{{i18n:SigDialogueXXXXX.{{Random:{{Range: 1, 3}}|key={{Time}}}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+      },
+      "When": {
+        "HasMod |contains=X": true, //MOD ID HERE
+        "Query: {{Random: {{Range: 1, 50}}|key=XXXXXsig}} = 1": true //key needs differentiating per mod    //Abbreviation for key here
+		"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+      }
+    }
+     */
+
+		//TBD Expansions depending on 1.6 - Cape Stardew, Adventurer Guild Expanded, Defense Division, Boarding House
+		/* place holder template
+     {
+      "LogName": "Sigurd XXXXX Commentary", //mod name here
+      "Action": "EditData",
+      "Priority": "Late",
+		"Update": "OnLocationChange",
+      "Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd",
+      "Entries": {
+        "{{WeekDay}}": "{{i18n:SigDialogueXXXXX.{{Random:{{Range: 1, 3}}|key={{Time}}}}}}#$action AddMail Current MadDogSigurd_OverrideSeenToday received"
+      },
+      "When": {
+        "HasMod |contains=X": true, //MOD ID HERE
+        "Query: {{Random: {{Range: 1, 50}}|key=XXXXXsig}} = 1": true //key needs differentiating per mod    //Abbreviation for key here
+		"HasFlag |contains=MadDogSigurd_OverrideSeenToday": false
+      }
+    }
+     */
+	]
+}

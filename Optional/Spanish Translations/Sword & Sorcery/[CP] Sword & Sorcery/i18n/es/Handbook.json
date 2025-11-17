@@ -1684,8 +1684,7 @@ Al igual que las habilidades vainilla, la habilidad Hechicero proporciona profes
  
 Al reunirte con Roslin en el primer evento del [if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.14][link=Chapters/IntroTOP]Capítulo 4[/link][/if][else]Capítulo 4[/else], las Esencias Elementales de[itemtooltip=(O)DN.SnS_EarthEssence][icon=Textures/DN.SnS/SnSObjects:96,128,16,16] [color=brown]Tierra[/color][/itemtooltip],[itemtooltip=(O)DN.SnS_AirEssence][icon=Textures/DN.SnS/SnSObjects:112,128,16,16] [color=cornflowerblue]Aire[/color][/itemtooltip],[itemtooltip=(O)DN.SnS_FireEssence][icon=Textures/DN.SnS/SnSObjects:144,128,16,16] [color=Red]Fuego[/color][/itemtooltip] and[itemtooltip=(O)DN.SnS_WaterEssence][icon=Textures/DN.SnS/SnSObjects:128,128,16,16] [color=blue]Agua[/color][/itemtooltip] empezarán a caer a tu alrededor.
  
-Las esencias se utilizan en las misiones, el aprendizaje de hechizos, las recetas alquímicas y el uso del [texttooltip=Círculo de teletransporte: te permite establecer un viaje entre dos ubicaciones del juego.
-Uso documentado en el Grimorio Mágico tras el aprendizaje.] [color=purple]Círculo de teletransporte[/color][/texttooltip].
+Las esencias se utilizan en las misiones, el aprendizaje de hechizos, las recetas alquímicas y el uso del [texttooltip=Círculo de teletransporte: te permite establecer un viaje entre dos ubicaciones del juego.] [color=purple]Círculo de teletransporte[/color][/texttooltip].
  
 Método de recogida:
 >[itemtooltip=(O)DN.SnS_EarthEssence][icon=Textures/DN.SnS/SnSObjects:96,128,16,16] [color=brown]Tierra[/color][/itemtooltip] - Minería
@@ -1698,7 +1697,7 @@ Método de recogida:
 "guidebook.chapter.TOP.AlchemyTransmutation": "[center][font=dialogue][offset=0,8]Alquimia y transmutación[/font][/center]
  
 [font=dialogue]Alquimia[/font]
-Al desbloquear Hechicería, también podrás aprender a hacer pociones alquímicas a través del menú de la Piedra Filosofal. Al igual que los hechizos, estas recetas se aprenden intercambiando [link=Mechanics/ElementalEssences]Esencias Elementales[/link] a través de la investigación de hechicería en el Grimorio Mágico.
+Al desbloquear la hechicería, también obtendrás la habilidad de crear pociones y piedras alquímicas mediante el hechizo Piedra filosofal.
  
 Todas las pociones de mejora aplican mejoras que duran 11 minutos y 40 segundos.
  
@@ -1720,7 +1719,7 @@ Todas las pociones de mejora aplican mejoras que duran 11 minutos y 40 segundos.
 También puedes crear [link=Mechanics/Underforge]Gemas exquisitas[/link] de repuesto utilizando 3 gemas normales y 5 [link=Mechanics/ElementalEssences]Esencias elementales[/link].
  
 [font=dialogue]Transmutación[/font]
-Si necesitas una [link=Mechanics/ElementalEssences]Esencia Elemental[/link] específica, puedes transmutar una esencia en otra desde el menú Transmutación de tu Grimorio Mágico.
+Si necesitas una [link=Mechanics/ElementalEssences]Esencia Elemental[/link] específica, puedes transmutar una esencia en otra mediante el hechizo Transmutación.
  
 La relación de conversación para las esencias es 4:1 (Por defecto), 2:1 ([link=Skills/SorcererProfessions]Bruja del seto[/link]) o 1:1 ([link=Skills/SorcererProfessions]Maestro Alquimista[/link]) y tirará de la primera esencia disponible en tu inventario.",
 
@@ -1978,7 +1977,7 @@ Todos los monstruos de la Oscuridad Profunda se basan en un monstruo existente. 
  > [itemtooltip=(O)287][icon=maps/springobjects:368,176,16,16] Bomba[/itemtooltip] (3%)
  > [itemtooltip=(O)288][icon=maps/springobjects:0,192,16,16] Megabomba[/itemtooltip] (1%)
  
-[icon=Textures/DN.SnS/SnSMonsterIcons:16,32,16,16] [color=blue]Minero de Estigio Mage[/color]
+[icon=Textures/DN.SnS/SnSMonsterIcons:16,32,16,16] [color=blue]Mago Minero de Estigio[/color]
  > [itemtooltip=(O)769][icon=maps/springobjects:16,512,16,16] Esencia Sombría[/itemtooltip] (100%)
  > [itemtooltip=(O)DN.SnS_StygiumOre][icon=Textures/DN.SnS/SnSObjects:0,160,16,16] Mena de Estigio[/itemtooltip] (5%)
  > [itemtooltip=(O)DN.SnS_taintedcorn][icon=Textures/DN.SnS/SnSObjects:112,176,16,16] Maíz contaminado[/itemtooltip] (5%)
@@ -2225,12 +2224,12 @@ Estos libros también se pueden comprar al vendedor de libros de vainilla despu�
 > [itemtooltip=(O)DN.SnS_druidbook][icon=Textures/DN.SnS/SnSBooks:16,0,16,16] [color=blue]Guía de druidas de Halsin[/color][/itemtooltip] - [link=Skills/DruidicsSkill]Druidas[/link]
 > [itemtooltip=(O)DN.SnS_bardbook][icon=Textures/DN.SnS/SnSBooks:32,0,16,16] [color=blue]Cancionero de Volothamp[/color][/itemtooltip] - [link=Skills/BardicsSkill]Bárdicos[/link]
 > [itemtooltip=(O)DN.SnS_sorcerybook][icon=Textures/DN.SnS/SnSBooks:48,0,16,16] [color=blue]Guía de Xanathar para todo[/color][/itemtooltip] - [link=Skills/SorcererSkill]Hechicería[/link]
-> [itemtooltip=(O)DN.SnS_paladinbook][icon=Textures/DN.SnS/SnSBooks:64,0,16,16] [color=blue]Dossier Ravenloft de Valtari[/color][/itemtooltip] - [link=Skills/PaladinSkill]Paladín[/link]",
+> [itemtooltip=(O)DN.SnS_paladinbook][icon=Textures/DN.SnS/SnSBooks:64,0,16,16] [color=blue]Expediente Ravenloft de Valtari[/color][/itemtooltip] - [link=Skills/PaladinSkill]Paladín[/link]",
 "guidebook.chapter.Mechanics.Shops.BookTextures.Daine": "> [itemtooltip=(O)DN.SnS_artificerbook][icon=Textures/DN.SnS/SnSBooks:0,16,16,16] [color=blue]Manual del Artífice de Tasha[/color][/itemtooltip] - [link=Skills/ArtificerSkill]Artífice[/link]
 > [itemtooltip=(O)DN.SnS_druidbook][icon=Textures/DN.SnS/SnSBooks:16,16,16,16] [color=blue]Guía de druidas de Halsin[/color][/itemtooltip] - [link=Skills/DruidicsSkill]Druidas[/link]
 > [itemtooltip=(O)DN.SnS_bardbook][icon=Textures/DN.SnS/SnSBooks:32,16,16,16] [color=blue]Cancionero de Volothamp[/color][/itemtooltip] - [link=Skills/BardicsSkill]Bárdicos[/link]
 > [itemtooltip=(O)DN.SnS_sorcerybook][icon=Textures/DN.SnS/SnSBooks:48,16,16,16] [color=blue]Guía de Xanathar para todo[/color][/itemtooltip] - [link=Skills/SorcererSkill]Hechicería[/link]
-> [itemtooltip=(O)DN.SnS_paladinbook][icon=Textures/DN.SnS/SnSBooks:64,16,16,16] [color=blue]Dossier Ravenloft de Valtari[/color][/itemtooltip] - [link=Skills/PaladinSkill]Paladín[/link]",
+> [itemtooltip=(O)DN.SnS_paladinbook][icon=Textures/DN.SnS/SnSBooks:64,16,16,16] [color=blue]Expediente Ravenloft de Valtari[/color][/itemtooltip] - [link=Skills/PaladinSkill]Paladín[/link]",
 
 "guidebook.chapter.Mechanics.Shops": "[center][font=dialogue][offset=0,8]Tiendas[/font][/center]
  
@@ -2377,7 +2376,7 @@ Espada y Hechicería introduce 5 nuevos poderes en el juego. 2 pueden adquirirse
 [texttooltip=D20 Hecho a mano:Un regalo de Mateo. Una vez al día, si te desmayas con el D20 en tu poder, revivirás con la mitad de tu salud máxima.][icon=Textures/DN.SnS/SnSObjects:0,80,16,16] [color=blue]D20 Hecho a mano[/color][/texttooltip]
   = Regalado por Mateo
  
-[texttooltip=Grimorio mágico: Solomon lo encuadernó a mano para ti. Úsalo para investigar nuevos hechizos.][icon=Textures/DN.SnS/SnSObjects:128,144,16,16] [color=blue]Grimorio mágico[/color][/texttooltip]
+[texttooltip=Grimorio mágico: Solomon lo encuadernó a mano para ti. Permite la regeneración pasiva de éter a medida que avanzas en tus habilidades de lanzamiento de hechizos.][icon=Textures/DN.SnS/SnSObjects:128,144,16,16] [color=blue]Grimorio mágico[/color][/texttooltip]
   = Regalado por Solomon
  
 [texttooltip=Colgante de sirena forjado con Estigio:Mateo hizo esto para ti con amor. Añade +2 Radio magnético, +10% Daño, +3 Defensa y +1 Suerte.][icon=Textures/DN.SnS/SnSObjects:112,0,16,16] [color=blue]Colgante de sirena forjado con Estigio[/color][/texttooltip]
@@ -2555,7 +2554,7 @@ Conoce a todos los personajes del mod, desde los más importantes hasta los más
 > [link=Characters/Mateo][icon=Characters/Mateo:0,0,16,16] Mateo, El Artífice[/link]
 > [link=Characters/Emeritus][icon=Characters/MateoEmeritus:96,192,16,16] Emeritus, El Pimienta Rex[/link]
 > [link=Characters/Hector][icon=Characters/Hector:0,0,16,16] {{TrueName}}, El Druida[/link]
-> [link=Characters/Book][icon=Characters/HectorBook:7,3,16,20] Libro, La dríada[/link]
+> [link=Characters/Book][icon=Characters/HectorBook:7,3,16,20] Libro, La Dríada[/link]
 > [link=Characters/Cirrus][icon=Characters/Cirrus:0,3,16,16] Cirrus, La Barda[/link]
 > [link=Characters/Roslin][icon=Characters/Roslin:0,3,16,16] Roslin, La Hechicera[/link]
 > [link=Characters/Solomon][icon=Characters/Solomon:0,3,16,16] Solomon, El Mecenas[/link]

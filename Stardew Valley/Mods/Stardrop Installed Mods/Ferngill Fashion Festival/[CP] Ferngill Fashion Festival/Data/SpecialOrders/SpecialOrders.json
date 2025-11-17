@@ -38,7 +38,7 @@
 						{
 							"Type": "Donate",
 							"Text": "[Emily_FashionShow_Objective0]",
-							"RequiredCount": "10",
+							"RequiredCount": "{{SOModJamConditions}}",
 							"Data": 
 							{
 								"DropBox": "EmilyFashionDropbox",
@@ -437,7 +437,7 @@
 				// FASHION SHOW
 				"Emily_FashionShow_Name": "{{i18n:SpecialOrder.Emily_FashionShow_Name}}",
 				"Emily_FashionShow_Body": "{{i18n:SpecialOrder.Emily_FashionShow_Body}}",
-				"Emily_FashionShow_Objective0": "{{i18n:SpecialOrder.Emily_FashionShow_Objective0}}",
+				"Emily_FashionShow_Objective0": "{{i18n:SpecialOrder.Emily_FashionShow_Objective0|SOModJam={{SOModJamConditions}}}}",
 				"Emily_FashionShow_Objective1": "{{i18n:SpecialOrder.Emily_FashionShow_Objective1}}",
 				"Emily_FashionShow_Objective2": "{{i18n:SpecialOrder.Emily_FashionShow_Objective2}}",
 				"Emily_FashionShow_Objective3": "{{i18n:SpecialOrder.Emily_FashionShow_Objective3}}",

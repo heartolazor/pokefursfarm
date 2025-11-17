@@ -641,6 +641,470 @@
 			]
 		},
 		
+		// BVG Overhaul (https://www.nexusmods.com/stardewvalley/mods/24316)
+		{
+			"LogName": "Add compatibility patch to the Steel Preserves Jar",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)nachonline.mps_SteelPreservesJar",
+				"OutputRules"
+			],
+			"Entries": {
+				"i24KittyKat.BVGCP_CenturyEgg": {	
+					"Id": "i24KittyKat.BVGCP_CenturyEgg",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_LargeVoidEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidOstrichEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidDuckEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidDinoEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidQuailEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_LargeVoidQuailEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidTurkeyEgg"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)i24KittyKat.BVGCP_CenturyEgg",
+							"MinStack": "{{S.P.J Quantity}}",
+							"CopyQuality": "{{S.P.J Copy Quality}}",
+							"Quality": "{{S.P.J Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100PreservesMade",
+									"Condition": "PLAYER_STAT Current preservesMade 100",
+									"Modification": "Add",
+									"Amount": "{{S.P.J 100 Preserves Made Bonus}}"
+								},
+								{
+									"Id": "300PreservesMade",
+									"Condition": "PLAYER_STAT Current preservesMade 300",
+									"Modification": "Add",
+									"Amount": "{{S.P.J 300 Preserves Made Bonus}}"
+								},
+								{
+									"Id": "500PreservesMade",
+									"Condition": "PLAYER_STAT Current preservesMade 500",
+									"Modification": "Add",
+									"Amount": "{{S.P.J 500 Preserves Made Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{S.P.J Production Time}}"
+				}
+			},
+			"MoveEntries": [
+				{ "Id": "i24KittyKat.BVGCP_CenturyEgg", "ToPosition": "Top" }
+			],
+			"When": {
+				"HasMod": "i24KittyKat.BVGCP",
+				"HasMod|contains=Cornucopia.ArtisanMachines": true
+			}
+		},
+		{
+			"LogName": "Add compatibility patch to the Gold Preserves Jar",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)nachonline.mps_GoldPreservesJar",
+				"OutputRules"
+			],
+			"Entries": {
+				"i24KittyKat.BVGCP_CenturyEgg": {	
+					"Id": "i24KittyKat.BVGCP_CenturyEgg",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_LargeVoidEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidOstrichEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidDuckEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidDinoEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidQuailEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_LargeVoidQuailEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidTurkeyEgg"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)i24KittyKat.BVGCP_CenturyEgg",
+							"MinStack": "{{G.P.J Quantity}}",
+							"CopyQuality": "{{G.P.J Copy Quality}}",
+							"Quality": "{{G.P.J Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100PreservesMade",
+									"Condition": "PLAYER_STAT Current preservesMade 100",
+									"Modification": "Add",
+									"Amount": "{{G.P.J 100 Preserves Made Bonus}}"
+								},
+								{
+									"Id": "300PreservesMade",
+									"Condition": "PLAYER_STAT Current preservesMade 300",
+									"Modification": "Add",
+									"Amount": "{{G.P.J 300 Preserves Made Bonus}}"
+								},
+								{
+									"Id": "500PreservesMade",
+									"Condition": "PLAYER_STAT Current preservesMade 500",
+									"Modification": "Add",
+									"Amount": "{{G.P.J 500 Preserves Made Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{G.P.J Production Time}}"
+				}
+			},
+			"MoveEntries": [
+				{ "Id": "i24KittyKat.BVGCP_CenturyEgg", "ToPosition": "Top" }
+			],
+			"When": {
+				"HasMod": "i24KittyKat.BVGCP",
+				"HasMod|contains=Cornucopia.ArtisanMachines": true
+			}
+		},
+		{
+			"LogName": "Add compatibility patch to the Diamond Preserves Jar",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)nachonline.mps_DiamondPreservesJar",
+				"OutputRules"
+			],
+			"Entries": {
+				"i24KittyKat.BVGCP_CenturyEgg": {	
+					"Id": "i24KittyKat.BVGCP_CenturyEgg",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_LargeVoidEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidOstrichEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidDuckEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidDinoEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidQuailEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_LargeVoidQuailEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidTurkeyEgg"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)i24KittyKat.BVGCP_CenturyEgg",
+							"MinStack": "{{D.P.J Quantity}}",
+							"CopyQuality": "{{D.P.J Copy Quality}}",
+							"Quality": "{{D.P.J Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100PreservesMade",
+									"Condition": "PLAYER_STAT Current preservesMade 100",
+									"Modification": "Add",
+									"Amount": "{{D.P.J 100 Preserves Made Bonus}}"
+								},
+								{
+									"Id": "300PreservesMade",
+									"Condition": "PLAYER_STAT Current preservesMade 300",
+									"Modification": "Add",
+									"Amount": "{{D.P.J 300 Preserves Made Bonus}}"
+								},
+								{
+									"Id": "500PreservesMade",
+									"Condition": "PLAYER_STAT Current preservesMade 500",
+									"Modification": "Add",
+									"Amount": "{{D.P.J 500 Preserves Made Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{D.P.J Production Time}}"
+				}
+			},
+			"MoveEntries": [
+				{ "Id": "i24KittyKat.BVGCP_CenturyEgg", "ToPosition": "Top" }
+			],
+			"When": {
+				"HasMod": "i24KittyKat.BVGCP",
+				"HasMod|contains=Cornucopia.ArtisanMachines": true
+			}
+		},
+		{
+			"LogName": "Add compatibility patch to the Iridium Preserves Jar",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)nachonline.mps_IridiumPreservesJar",
+				"OutputRules"
+			],
+			"Entries": {
+				"i24KittyKat.BVGCP_CenturyEgg": {	
+					"Id": "i24KittyKat.BVGCP_CenturyEgg",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_LargeVoidEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidOstrichEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidDuckEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidDinoEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidQuailEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_LargeVoidQuailEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidTurkeyEgg"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)i24KittyKat.BVGCP_CenturyEgg",
+							"MinStack": "{{I.P.J Quantity}}",
+							"CopyQuality": "{{I.P.J Copy Quality}}",
+							"Quality": "{{I.P.J Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100PreservesMade",
+									"Condition": "PLAYER_STAT Current preservesMade 100",
+									"Modification": "Add",
+									"Amount": "{{I.P.J 100 Preserves Made Bonus}}"
+								},
+								{
+									"Id": "300PreservesMade",
+									"Condition": "PLAYER_STAT Current preservesMade 300",
+									"Modification": "Add",
+									"Amount": "{{I.P.J 300 Preserves Made Bonus}}"
+								},
+								{
+									"Id": "500PreservesMade",
+									"Condition": "PLAYER_STAT Current preservesMade 500",
+									"Modification": "Add",
+									"Amount": "{{I.P.J 500 Preserves Made Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{I.P.J Production Time}}"
+				}
+			},
+			"MoveEntries": [
+				{ "Id": "i24KittyKat.BVGCP_CenturyEgg", "ToPosition": "Top" }
+			],
+			"When": {
+				"HasMod": "i24KittyKat.BVGCP",
+				"HasMod|contains=Cornucopia.ArtisanMachines": true
+			}
+		},
+		{
+			"LogName": "Add compatibility patch to the Radioactive Preserves Jar",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)nachonline.mps_RadioactivePreservesJar",
+				"OutputRules"
+			],
+			"Entries": {
+				"i24KittyKat.BVGCP_CenturyEgg": {	
+					"Id": "i24KittyKat.BVGCP_CenturyEgg",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_LargeVoidEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidOstrichEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidDuckEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidDinoEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidQuailEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_LargeVoidQuailEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidTurkeyEgg"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)i24KittyKat.BVGCP_CenturyEgg",
+							"MinStack": "{{R.P.J Quantity}}",
+							"CopyQuality": "{{R.P.J Copy Quality}}",
+							"Quality": "{{R.P.J Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100PreservesMade",
+									"Condition": "PLAYER_STAT Current preservesMade 100",
+									"Modification": "Add",
+									"Amount": "{{R.P.J 100 Preserves Made Bonus}}"
+								},
+								{
+									"Id": "300PreservesMade",
+									"Condition": "PLAYER_STAT Current preservesMade 300",
+									"Modification": "Add",
+									"Amount": "{{R.P.J 300 Preserves Made Bonus}}"
+								},
+								{
+									"Id": "500PreservesMade",
+									"Condition": "PLAYER_STAT Current preservesMade 500",
+									"Modification": "Add",
+									"Amount": "{{R.P.J 500 Preserves Made Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{R.P.J Production Time}}"
+				}
+			},
+			"MoveEntries": [
+				{ "Id": "i24KittyKat.BVGCP_CenturyEgg", "ToPosition": "Top" }
+			],
+			"When": {
+				"HasMod": "i24KittyKat.BVGCP",
+				"HasMod|contains=Cornucopia.ArtisanMachines": true
+			}
+		},
+		{
+			"LogName": "Add compatibility patch to the Prismatic Preserves Jar",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)nachonline.mps_PrismaticPreservesJar",
+				"OutputRules"
+			],
+			"Entries": {
+				"i24KittyKat.BVGCP_CenturyEgg": {	
+					"Id": "i24KittyKat.BVGCP_CenturyEgg",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_LargeVoidEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidOstrichEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidDuckEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidDinoEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidQuailEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_LargeVoidQuailEgg"
+						},
+						{
+							"RequiredItemId": "(O)i24KittyKat.BVGCP_VoidTurkeyEgg"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)i24KittyKat.BVGCP_CenturyEgg",
+							"MinStack": "{{P.P.J Quantity}}",
+							"CopyQuality": "{{P.P.J Copy Quality}}",
+							"Quality": "{{P.P.J Quality}}",
+							"StackModifiers": [
+								{
+									"Id": "100PreservesMade",
+									"Condition": "PLAYER_STAT Current preservesMade 100",
+									"Modification": "Add",
+									"Amount": "{{P.P.J 100 Preserves Made Bonus}}"
+								},
+								{
+									"Id": "300PreservesMade",
+									"Condition": "PLAYER_STAT Current preservesMade 300",
+									"Modification": "Add",
+									"Amount": "{{P.P.J 300 Preserves Made Bonus}}"
+								},
+								{
+									"Id": "500PreservesMade",
+									"Condition": "PLAYER_STAT Current preservesMade 500",
+									"Modification": "Add",
+									"Amount": "{{P.P.J 500 Preserves Made Bonus}}"
+								}
+							],
+							"StackModifierMode": "Stack"
+						}
+					],
+					"MinutesUntilReady": "{{P.P.J Production Time}}"
+				}
+			},
+			"MoveEntries": [
+				{ "Id": "i24KittyKat.BVGCP_CenturyEgg", "ToPosition": "Top" }
+			],
+			"When": {
+				"HasMod": "i24KittyKat.BVGCP",
+				"HasMod|contains=Cornucopia.ArtisanMachines": true
+			}
+		},
+		
 		// Central American Goods CAG - Salvadoran Delights (https://www.nexusmods.com/stardewvalley/mods/29844)
 		{
 			"LogName": "Add compatibility patch to the Steel Preserves Jar",

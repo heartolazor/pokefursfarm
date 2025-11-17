@@ -1,69 +1,63 @@
 {
-  "Format": "2.0",
+  "Format": "2.6.0",
 
 
     "ConfigSchema": {
 
-        "Ts_AFC_EnableThisMod": { 
-            "AllowValues": "true,false" ,
-            "Default": "true" 
-        },
-        "Ts_AFC_OpenImmediately": { 
-            "AllowValues": "true,false" ,
-            "Default": "false" 
-        },
-        "Ts_AFC_AvoidCertainBugs": { 
-            "AllowValues": "true,false" ,
-            "Default": "false" 
-        },
+      "Ts_AFC_EnableThisMod": { 
+        "AllowValues": "true, false" ,
+        "Default": "true" 
+      },
+      "Ts_AFC_OpenImmediately": { 
+        "AllowValues": "true, false" ,
+        "Default": "false" 
+      },
+      "Ts_AFC_AvoidCertainBugs": { 
+        "AllowValues": "true, false" ,
+        "Default": "false" 
+      },
 
-        //◆◆◆Hippo'sFarmCaveVarietyの設定◆◆◆
-        "Ts_AFC_HFCV_CaveType": {
-            "AllowValues": "farming, foraging, fishing, mining, combat, island, beach, hotspring",
-            "AllowBlank": true,
-            "Default": "farming",
-            "Description": "Pick cave type, or have it match your farm automatically. Blank will disable it all together. ",
-            "Section": "Ts_AFC_Cautions"
-        },
-        "Ts_AFC_HFCV_MatchFarm": {
-            "AllowValues": "true, false",
-            "Default": true,
-            "Description": "Set to automatically choose the farmcave based on farm.",
-            "Section": "Ts_AFC_Cautions"
-        },
-        "Ts_AFC_HFCV_AlternateCombat": {
-            "AllowValues": "combat, hotspring",
-            "Default": "combat",
-            "Description": "Pick whether to use Vanilla mine theme (false) or DustBeauty's Hot Spring Cave theme (true). For use with MatchFarm.",
-            "Section": "Ts_AFC_Cautions"
-        },
-        "Ts_AFC_HFCV_AlternateIsland": {
-            "AllowValues": "island, beach",
-            "Default": "island",
-            "Description": "Pick whether to use Beach theme (false) or Ginger Island theme (true). For use with MatchFarm.",
-            "Section": "Ts_AFC_Cautions"
-        },
+      "Ts_AFC_CRFCP_CaveType": { //Kisaa's Farm Cave Packの設定
+        "AllowValues": "Off, Green, Quarry, Springs, Cove, Fantasy",
+        "Default": "Off",
+        "Section": "Ts_AFC_S_FarmCavePack"
+      },
 
-        // 改行用
-        "This is a meaningless item": { 
-            "AllowValues": "true,false" ,
-            "Default": "false" ,
-            "Section": "Section for line breaks"
-        }
+      "Ts_AFC_HFCV_CaveType": { //Hippo'sFarmCaveVarietyの設定
+        "AllowValues": "farming, foraging, fishing, mining, combat, island, beach, hotspring",
+        "AllowBlank": true,
+        "Default": "farming",
+        "Section": "Ts_AFC_Cautions"
+      },
+      "Ts_AFC_HFCV_MatchFarm": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Section": "Ts_AFC_Cautions"
+      },
+      "Ts_AFC_HFCV_AlternateCombat": {
+        "AllowValues": "combat, hotspring",
+        "Default": "combat",
+        "Section": "Ts_AFC_Cautions"
+      },
+      "Ts_AFC_HFCV_AlternateIsland": {
+        "AllowValues": "island, beach",
+        "Default": "island",
+        "Section": "Ts_AFC_Cautions"
+      }
 
     },//▼"ConfigSchema"の終了▼
 
 
     "CustomLocations": [
 
-        {
-          "Name": "Custom_AdditionalFarmCave",
-          "FromMapFile": "assets/tmx/AdditionalFarmCave.tmx"
-        },
-        {
-          "Name": "Custom_AdditionalFarmCave2",
-          "FromMapFile": "assets/tmx/AdditionalFarmCave.tmx"
-        }
+      {
+        "Name": "Custom_AdditionalFarmCave",
+        "FromMapFile": "assets/tmx/AdditionalFarmCave.tmx"
+      },
+      {
+        "Name": "Custom_AdditionalFarmCave2",
+        "FromMapFile": "assets/tmx/AdditionalFarmCave.tmx"
+      }
 
     ],//▼"CustomLocations"の終了▼
 
@@ -96,8 +90,8 @@
         "FromFile": "assets/tmx/AdditionalFarmCave_sunlight.tmx",
         "ToArea": { "X": 6, "Y": 0, "Width": 13, "Height": 12 },
         "When": { "Ts_AFC_EnableThisMod": "true" ,
-            "Time": "{{range:0600,1800}}",
-            "Weather |contains=rain,storm": false
+          "Time": "{{range:0600,1800}}",
+          "Weather |contains=rain,storm": false
         },
         "Update": "OnTimeChange"
       },
@@ -109,8 +103,8 @@
         "FromFile": "assets/tmx/AdditionalFarmCave_nightjunimo.tmx",
         "ToArea": { "X": 4, "Y": 7, "Width": 3, "Height": 1 },
         "When": {
-            "Ts_AFC_EnableThisMod": "true",
-            "Time": "{{range:1800,2600}}"
+          "Ts_AFC_EnableThisMod": "true",
+          "Time": "{{range:1800,2600}}"
         },
         "Update": "OnTimeChange"
       },
@@ -122,9 +116,9 @@
         "FromFile": "assets/tmx/AdditionalFarmCave_sunlight.tmx",
         "ToArea": { "X": 6, "Y": 0, "Width": 13, "Height": 12 },
         "When": {
-            "Ts_AFC_EnableThisMod": "true",
-            "Time": "{{range:0600,1800}}",
-            "Weather |contains=rain,storm": false
+          "Ts_AFC_EnableThisMod": "true",
+          "Time": "{{range:0600,1800}}",
+          "Weather |contains=rain,storm": false
         },
         "Update": "OnTimeChange",
       },
@@ -136,8 +130,8 @@
         "FromFile": "assets/tmx/AdditionalFarmCave_nightjunimo.tmx",
         "ToArea": { "X": 4, "Y": 7, "Width": 3, "Height": 1 },
         "When": {
-            "Ts_AFC_EnableThisMod": "true" ,
-            "Time": "{{range:1800,2600}}"
+          "Ts_AFC_EnableThisMod": "true" ,
+          "Time": "{{range:1800,2600}}"
         },
         "Update": "OnTimeChange"
       },
@@ -172,11 +166,11 @@
         "Action":"EditData",
         "Target":"Strings/StringsFromMaps",
         "Entries":{
-            "AdFCms01":"{{i18n:AdFCms01}}",
-            "AdFCms02":"{{i18n:AdFCms02}}",
-            "AdFCms03":"{{i18n:AdFCms03}}",
-            "AdFCms04":"{{i18n:AdFCms04}}",
-            "AdFCms05":"{{i18n:AdFCms05}}"
+          "AdFCms01":"{{i18n:AdFCms01}}",
+          "AdFCms02":"{{i18n:AdFCms02}}",
+          "AdFCms03":"{{i18n:AdFCms03}}",
+          "AdFCms04":"{{i18n:AdFCms04}}",
+          "AdFCms05":"{{i18n:AdFCms05}}"
         }
       },
 
@@ -186,13 +180,14 @@
         "Action": "Include",
         "FromFile": "assets/json/Edit_Vanilla.json",
         "When": {
-            "Ts_AFC_EnableThisMod": "true",
-            "HasMod |contains=Hesper.HotSpringFarmcave": "false",
-            "HasMod |contains=acearohippo.PCFCVariety": "false",
-            "HasMod |contains=Aimon.MoreLivelyFarmCave": "false",
-            "HasMod |contains=neuralwiles.HiddenSpringFarmCave": "false",
-            "HasMod |contains=Wildflour.Hippo_Cliffside_FarmCave": "false",
-            "HasMod |contains=Kurimiu.PlantableFarmcave": "false"
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod |contains=Hesper.HotSpringFarmcave": "false",
+          "HasMod |contains=acearohippo.PCFCVariety": "false",
+          "HasMod |contains=Aimon.MoreLivelyFarmCave": "false",
+          "HasMod |contains=neuralwiles.HiddenSpringFarmCave": "false",
+          "HasMod |contains=Wildflour.Hippo_Cliffside_FarmCave": "false",
+          "HasMod |contains=Kurimiu.PlantableFarmcave": "false",
+          "HasMod |contains=crystalinerose.FarmCaves": "false"
         }
       },
 
@@ -202,114 +197,168 @@
         "Action": "Include",
         "FromFile": "assets/json/Mod_01_HotSpringFarmCave.json",
         "When": {
-            "Ts_AFC_EnableThisMod": "true",
-            "HasMod": "Hesper.HotSpringFarmcave",
-            "HasMod |contains=acearohippo.PCFCVariety": "false"
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "Hesper.HotSpringFarmcave",
+          "HasMod |contains=acearohippo.PCFCVariety": "false"
         }
       },
       {
         "Action": "Include",
         "FromFile": "assets/json/Mod_02_Hippo'sFarmCaveVariety_01_farming.json",
         "When": {
-            "Ts_AFC_EnableThisMod": "true",
-            "HasMod": "acearohippo.PCFCVariety",
-            "Query: ('{{Ts_AFC_HFCV_MatchFarm}}' = 'false' AND '{{Ts_AFC_HFCV_CaveType}}' = 'farming') OR ('{{Ts_AFC_HFCV_MatchFarm}}' = 'true' AND '{{FarmType}}' = 'Standard')": true
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "acearohippo.PCFCVariety",
+          "Query: ('{{Ts_AFC_HFCV_MatchFarm}}' = 'false' AND '{{Ts_AFC_HFCV_CaveType}}' = 'farming') OR ('{{Ts_AFC_HFCV_MatchFarm}}' = 'true' AND '{{FarmType}}' = 'Standard')": true
         }
       },
       {
         "Action": "Include",
         "FromFile": "assets/json/Mod_02_Hippo'sFarmCaveVariety_02_foraging.json",
         "When": {
-            "Ts_AFC_EnableThisMod": "true",
-            "HasMod": "acearohippo.PCFCVariety",
-            "Query: ('{{Ts_AFC_HFCV_MatchFarm}}' = 'false' AND '{{Ts_AFC_HFCV_CaveType}}' = 'foraging') OR ('{{Ts_AFC_HFCV_MatchFarm}}' = 'true' AND '{{FarmType}}' = 'Forest')": true
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "acearohippo.PCFCVariety",
+          "Query: ('{{Ts_AFC_HFCV_MatchFarm}}' = 'false' AND '{{Ts_AFC_HFCV_CaveType}}' = 'foraging') OR ('{{Ts_AFC_HFCV_MatchFarm}}' = 'true' AND '{{FarmType}}' = 'Forest')": true
         }
       },
       {
         "Action": "Include",
         "FromFile": "assets/json/Mod_02_Hippo'sFarmCaveVariety_03_fishing.json",
         "When": {
-            "Ts_AFC_EnableThisMod": "true",
-            "HasMod": "acearohippo.PCFCVariety",
-            "Query: ('{{Ts_AFC_HFCV_MatchFarm}}' = 'false' AND '{{Ts_AFC_HFCV_CaveType}}' = 'fishing') OR ('{{Ts_AFC_HFCV_MatchFarm}}' = 'true' AND '{{FarmType}}' = 'Riverland')": true
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "acearohippo.PCFCVariety",
+          "Query: ('{{Ts_AFC_HFCV_MatchFarm}}' = 'false' AND '{{Ts_AFC_HFCV_CaveType}}' = 'fishing') OR ('{{Ts_AFC_HFCV_MatchFarm}}' = 'true' AND '{{FarmType}}' = 'Riverland')": true
         }
       },
       {
         "Action": "Include",
         "FromFile": "assets/json/Mod_02_Hippo'sFarmCaveVariety_04_mining.json",
         "When": {
-            "Ts_AFC_EnableThisMod": "true",
-            "HasMod": "acearohippo.PCFCVariety",
-            "Query: ('{{Ts_AFC_HFCV_MatchFarm}}' = 'false' AND '{{Ts_AFC_HFCV_CaveType}}' = 'mining') OR ('{{Ts_AFC_HFCV_MatchFarm}}' = 'true' AND '{{FarmType}}' = 'Hilltop')": true
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "acearohippo.PCFCVariety",
+          "Query: ('{{Ts_AFC_HFCV_MatchFarm}}' = 'false' AND '{{Ts_AFC_HFCV_CaveType}}' = 'mining') OR ('{{Ts_AFC_HFCV_MatchFarm}}' = 'true' AND '{{FarmType}}' = 'Hilltop')": true
         }
       },
       {
         "Action": "Include",
         "FromFile": "assets/json/Mod_02_Hippo'sFarmCaveVariety_05_combat.json",
         "When": {
-            "Ts_AFC_EnableThisMod": "true",
-            "HasMod": "acearohippo.PCFCVariety",
-            "Query: ('{{Ts_AFC_HFCV_MatchFarm}}' = 'false' AND '{{Ts_AFC_HFCV_CaveType}}' = 'combat') OR ('{{Ts_AFC_HFCV_MatchFarm}}' = 'true' AND '{{FarmType}}' = 'Wilderness' AND '{{Ts_AFC_HFCV_AlternateCombat}}' = 'combat')": true
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "acearohippo.PCFCVariety",
+          "Query: ('{{Ts_AFC_HFCV_MatchFarm}}' = 'false' AND '{{Ts_AFC_HFCV_CaveType}}' = 'combat') OR ('{{Ts_AFC_HFCV_MatchFarm}}' = 'true' AND '{{FarmType}}' = 'Wilderness' AND '{{Ts_AFC_HFCV_AlternateCombat}}' = 'combat')": true
         }
       },
       {
         "Action": "Include",
         "FromFile": "assets/json/Mod_02_Hippo'sFarmCaveVariety_06_island.json",
         "When": {
-            "Ts_AFC_EnableThisMod": "true",
-            "HasMod": "acearohippo.PCFCVariety",
-            "Query: ('{{Ts_AFC_HFCV_MatchFarm}}' = 'false' AND '{{Ts_AFC_HFCV_CaveType}}' = 'island') OR ('{{Ts_AFC_HFCV_MatchFarm}}' = 'true' AND '{{FarmType}}' = 'Beach' AND '{{Ts_AFC_HFCV_AlternateIsland}}' = 'island')": true
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "acearohippo.PCFCVariety",
+          "Query: ('{{Ts_AFC_HFCV_MatchFarm}}' = 'false' AND '{{Ts_AFC_HFCV_CaveType}}' = 'island') OR ('{{Ts_AFC_HFCV_MatchFarm}}' = 'true' AND '{{FarmType}}' = 'Beach' AND '{{Ts_AFC_HFCV_AlternateIsland}}' = 'island')": true
         }
       },
       {
         "Action": "Include",
         "FromFile": "assets/json/Mod_02_Hippo'sFarmCaveVariety_07_beach.json",
         "When": {
-            "Ts_AFC_EnableThisMod": "true",
-            "HasMod": "acearohippo.PCFCVariety",
-            "Query: ('{{Ts_AFC_HFCV_MatchFarm}}' = 'false' AND '{{Ts_AFC_HFCV_CaveType}}' = 'beach') OR ('{{Ts_AFC_HFCV_MatchFarm}}' = 'true' AND '{{FarmType}}' = 'Beach' AND '{{Ts_AFC_HFCV_AlternateIsland}}' = 'beach')": true
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "acearohippo.PCFCVariety",
+          "Query: ('{{Ts_AFC_HFCV_MatchFarm}}' = 'false' AND '{{Ts_AFC_HFCV_CaveType}}' = 'beach') OR ('{{Ts_AFC_HFCV_MatchFarm}}' = 'true' AND '{{FarmType}}' = 'Beach' AND '{{Ts_AFC_HFCV_AlternateIsland}}' = 'beach')": true
         }
       },
       {
         "Action": "Include",
         "FromFile": "assets/json/Mod_02_Hippo'sFarmCaveVariety_08_hotspring.json",
         "When": {
-            "Ts_AFC_EnableThisMod": "true",
-            "HasMod": "acearohippo.PCFCVariety",
-            "HasMod": "Hesper.HotSpringFarmcave",
-            "Query: ('{{Ts_AFC_HFCV_MatchFarm}}' = 'false' AND '{{Ts_AFC_HFCV_CaveType}}' = 'hotspring') OR ('{{Ts_AFC_HFCV_MatchFarm}}' = 'true' AND '{{FarmType}}' = 'Wilderness' AND '{{Ts_AFC_HFCV_AlternateCombat}}' = 'hotspring')": true
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "acearohippo.PCFCVariety",
+          "HasMod": "Hesper.HotSpringFarmcave",
+          "Query: ('{{Ts_AFC_HFCV_MatchFarm}}' = 'false' AND '{{Ts_AFC_HFCV_CaveType}}' = 'hotspring') OR ('{{Ts_AFC_HFCV_MatchFarm}}' = 'true' AND '{{FarmType}}' = 'Wilderness' AND '{{Ts_AFC_HFCV_AlternateCombat}}' = 'hotspring')": true
         }
       },
       {
         "Action": "Include",
         "FromFile": "assets/json/Mod_03_Aimon'sMoreLivelyFarmCave.json",
         "When": {
-            "Ts_AFC_EnableThisMod": "true",
-            "HasMod": "Aimon.MoreLivelyFarmCave"
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "Aimon.MoreLivelyFarmCave"
         }
       },
       {
         "Action": "Include",
         "FromFile": "assets/json/Mod_04_HiddenSpringFarmCave.json",
         "When": {
-            "Ts_AFC_EnableThisMod": "true",
-            "HasMod": "neuralwiles.HiddenSpringFarmCave"
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "neuralwiles.HiddenSpringFarmCave"
         }
       },
       {
         "Action": "Include",
         "FromFile": "assets/json/Mod_05_HipposCliffsideFallsFarmCave.json",
         "When": {
-            "Ts_AFC_EnableThisMod": "true",
-            "HasMod": "Wildflour.Hippo_Cliffside_FarmCave"
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "Wildflour.Hippo_Cliffside_FarmCave"
         }
       },
       {
         "Action": "Include",
         "FromFile": "assets/json/Mod_06_KurisPlantableFarmcave.json",
         "When": {
-            "Ts_AFC_EnableThisMod": "true",
-            "HasMod": "Kurimiu.PlantableFarmcave"
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "Kurimiu.PlantableFarmcave"
+        }
+      },
+      {
+        "Action": "Include",
+        "FromFile": "assets/json/Mod_07_CRFarmCavePack_00_Off.json",
+        "When": {
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "crystalinerose.FarmCaves",
+          "Ts_AFC_CRFCP_CaveType": "Off"
+        }
+      },
+      {
+        "Action": "Include",
+        "FromFile": "assets/json/Mod_07_CRFarmCavePack_01_Green.json",
+        "When": {
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "crystalinerose.FarmCaves",
+          "Ts_AFC_CRFCP_CaveType": "Green"
+        }
+      },
+      {
+        "Action": "Include",
+        "FromFile": "assets/json/Mod_07_CRFarmCavePack_02_Quarry.json",
+        "When": {
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "crystalinerose.FarmCaves",
+          "Ts_AFC_CRFCP_CaveType": "Quarry"
+        }
+      },
+      {
+        "Action": "Include",
+        "FromFile": "assets/json/Mod_07_CRFarmCavePack_03_Springs.json",
+        "When": {
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "crystalinerose.FarmCaves",
+          "Ts_AFC_CRFCP_CaveType": "Springs"
+        }
+      },
+      {
+        "Action": "Include",
+        "FromFile": "assets/json/Mod_07_CRFarmCavePack_04_Cove.json",
+        "When": {
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "crystalinerose.FarmCaves",
+          "Ts_AFC_CRFCP_CaveType": "Cove"
+        }
+      },
+      {
+        "Action": "Include",
+        "FromFile": "assets/json/Mod_07_CRFarmCavePack_05_Fantasy.json",
+        "When": {
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "crystalinerose.FarmCaves",
+          "Ts_AFC_CRFCP_CaveType": "Fantasy"
         }
       }
 

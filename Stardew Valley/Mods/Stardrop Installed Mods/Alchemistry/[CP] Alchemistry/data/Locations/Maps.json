@@ -117,7 +117,7 @@ Forest - Entrance to Mage's Rest (Lunna Astray, Lost in the Woods, and Ranger Ta
 
     {
       "Action": "EditMap",
-      "Priority": "Late",
+      "Priority": "Late - 10",
       "Target": "Maps/Forest",
       "FromFile": "assets/Maps/MapPatches/MagesRest_Entrance_Covered_COMPAT.tmx",
       "ToArea": { "X": 15, "Y": 3, "Width": 6, "Height": 8 },
@@ -126,7 +126,7 @@ Forest - Entrance to Mage's Rest (Lunna Astray, Lost in the Woods, and Ranger Ta
     },
     {
       "Action": "EditMap",
-      "Priority": "Late",
+      "Priority": "Late - 10",
       "Target": "Maps/Forest",
       "FromFile": "assets/Maps/MapPatches/MagesRest_Entrance_Uncovered_COMPAT.tmx",
       "ToArea": { "X": 15, "Y": 3, "Width": 6, "Height": 8 },
@@ -136,7 +136,7 @@ Forest - Entrance to Mage's Rest (Lunna Astray, Lost in the Woods, and Ranger Ta
     //Add compatibility for those who started their saves using MFM
     {
       "Action": "EditMap",
-      "Priority": "Late",
+      "Priority": "Late - 10",
       "Target": "Maps/Forest",
       "FromFile": "assets/Maps/MapPatches/MagesRest_Entrance_Uncovered_COMPAT.tmx",
       "When": { "HasSeenEvent": "22743102", "ForestWarp": "Alternate" },

@@ -1,0 +1,196 @@
+{
+
+	"Changes": [
+	
+	// Leaf Book //////////////////////////////////////////////////////////
+
+	// Book Objects
+
+	{
+		"Action": "Load",
+		"Target": "Mods/Si.BC/LCLeafBook",
+		"FromFile": "Crossovers/BC/LCLeafBook.png"
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"Si.BC_LCLeafBookNote": {
+				"Name": "Si.BC_LCLeafBookNote",
+				"DisplayName": "{{i18n:Si.LC.BC.name.LeafBook}}",
+				"Description": "{{i18n:Si.LC.BC.desc.LeafBook}}",
+				"Type": "asdf",
+				"Category": 0,
+				"Price": 404,
+				"Texture": "Mods/Si.BC/LCLeafBook",
+				"ExcludeFromShippingCollection": true,
+				"CanBeGivenAsGift": false,
+				"CanBeTrashed": false,
+				"SpriteIndex": 0,
+				"ContextTags": [
+					"bc_book",
+				],
+			}
+		}
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"TargetField": [ "Si.BC_LCLeafBookNote", "ContextTags" ],
+		"Entries": {
+			"unread_book": "unread_book",
+		},
+		"When": {
+			"HasFlag: |contains=Si.BC_ReceivedLCLeafBook": true,
+		},
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"TargetField": [ "Si.BC_LCLeafBookNote", "ContextTags" ],
+		"Entries": {
+			"unread_book": null,
+		},
+		"When": {
+			"HasFlag: |contains=Si.BC_ReceivedLCLeafBook": true,
+		},
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"Si.BC_LCLeafBook": {
+				"Name": "Si.BC_LCLeafBook",
+				"DisplayName": "{{i18n:Si.LC.BC.name.LeafBook}}",
+				"Description": "{{i18n:Si.LC.BC.desc.LeafBook}}",
+				"Type": "asdf",
+				"Category": 0,
+				"Price": 303,
+				"Texture": "Mods/Si.BC/LCLeafBook",
+				"ExcludeFromShippingCollection": true,
+				"SpriteIndex": 0,
+				"ContextTags": [
+					"nature_book",
+					"science_book",
+					"nonfiction_book",
+					"bc_book",
+				],
+			}
+		}
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"TargetField": [ "Si.BC_LCLeafBook", "ContextTags" ],
+		"Entries": {
+			"read_book": "read_book",
+		},
+		"When": {
+			"HasFlag: |contains=Si.BC_ReceivedLCLeafBook": true,
+		},
+	},	
+
+	// Secret Note
+
+	{
+		"Target": "Mods/ichortower.SecretNoteFramework/Notes",
+		"Action": "EditData",
+		"Entries": {
+
+			"Si.BC_LCLeafBookSNF": {
+				"Title": "{{i18n:Si.LC.BC.name.LeafBook}}",
+				"Contents": "{{i18n:Si.LC.BC.excerpt.LeafBook}}",
+				"ObjectId": "(O)Si.BC_LCLeafBookNote",
+				"Location": "null",
+				"NoteTexture": "Mods/Si.BC/blankbook",
+				"NoteTextureIndex": 0,
+				"NoteTextColor": "rgb(12, 12, 80)",
+				"ActionsOnFirstRead": [
+					"AddMail Current Si.BC_ReceivedLCLeafBook",
+					"IncrementStat Si_bc_hasbooks 1"
+				]
+			},
+
+		},
+	},
+
+	// NITV Rewards //////////////////////////////////////////////////////////
+
+	{
+		"Action": "EditData",
+		"Target": "Nature.NITV/Rewards",
+		"Entries": {
+			"{{ModId}}_BCReward": {
+				"ItemId": "(O)Si.BC_LCLeafBookNote",
+				"ItemCount": 1,
+				"TotalDonated": 0,
+				"creatureRequirements": [
+				"MapleSpring",
+				"MapleSummer",
+				"MapleFall",
+				"OakSpring",
+				"OakSummer",
+				"OakFall",
+				"PineSpringSummer",
+				"PineFall",
+				"PineWinter",
+				"IslandPalm",
+				"DesertPalm",
+				"Mystic",
+				"MahoganySpring",
+				"MahoganySummer",
+				"MahoganyFall",
+				"Salmonberry",
+				"Spiceberry",
+				"Blackberry",
+				"Holly",
+				"ApricotSpringSummer",
+				"ApricotFall",
+				"CherrySpring",
+				"CherrySummer",
+				"CherryFall",
+				"OrangeSpring",
+				"OrangeSummer",
+				"OrangeFall",
+				"PeachSpring",
+				"PeachSummer",
+				"PeachFall",
+				"AppleSpringSummer",
+				"AppleFall",
+				"PomegranateSpring",
+				"PomegranateSummer",
+				"PomegranateFall",
+				"Banana",
+				"Mango",
+				"Cauliflower",
+				"Melon",
+				"Pumpkin",
+				"Powdermelon",
+				"Strawberry",
+				"Blueberry",
+				"Cranberry",
+				"Starfruit",
+				"LilyPadSpring",
+				"LilyPadSummer",
+				"LilyPadFall",
+				"SweetGem",
+				"Burnt",
+				"Mossy",
+				"Tumbleweed",
+				"Stardrop",
+				]
+			},
+		}
+	},
+
+	// End //////////////////////////////////////////////////////////
+
+	]
+
+
+}

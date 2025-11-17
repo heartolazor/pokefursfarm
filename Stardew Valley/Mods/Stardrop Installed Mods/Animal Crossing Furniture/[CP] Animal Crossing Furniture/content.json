@@ -1,0 +1,39 @@
+{
+	"Format": "2.1.0",
+	"Changes": [
+		{
+            "Action": "EditData",
+            "Target": "Data/AdditionalWallpaperFlooring",
+            "Entries": {
+                "{{ModId}}_Flooring": {
+                    "ID": "{{ModId}}_Flooring",
+                    "Texture": "Mods/Flooring",
+                    "IsFlooring": true,
+                    "Count": 13
+                }
+            }
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/AdditionalWallpaperFlooring",
+            "Entries": {
+                "{{ModId}}_Wallpaper": {
+                    "ID": "{{ModId}}_Wallpaper",
+                    "Texture": "Mods/Wallpaper",
+                    "IsFlooring": false,
+                    "Count": 13
+                }
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/Flooring",
+            "FromFile": "assets/flooring.png",	
+        },
+		 {
+            "Action": "Load",
+            "Target": "Mods/Wallpaper",
+            "FromFile": "assets/wallpaper.png"
+        }
+    ]
+}

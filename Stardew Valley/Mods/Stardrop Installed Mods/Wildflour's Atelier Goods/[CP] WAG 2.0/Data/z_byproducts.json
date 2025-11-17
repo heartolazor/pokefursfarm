@@ -2,6 +2,85 @@
   "Changes": [
 
 {
+    "LogName": "Dessert Stand Machine By Products",
+    "Action": "EditData",
+    "Target": "Data/Machines",
+    "TargetField": ["(BC)Wildflour.AtelierGoods_Dessert_Stand", "CustomFields"],
+    "When": {"Atelier.Cauldron/ConfigValue:Baker": true},
+    "Entries": {
+        "selph.ExtraMachineConfig.ExtraOutputIds": "JunimoGemBP"
+    }
+},
+
+{
+    "LogName": "Deluxe Dessert Stand Machine By Products",
+    "Action": "EditData",
+    "Target": "Data/Machines",
+    "TargetField": ["(BC)Wildflour.AtelierGoods_Deluxe_Dessert_Stand", "CustomFields"],
+    "When": {"Atelier.Cauldron/ConfigValue:Baker": true},
+    "Entries": {
+        "selph.ExtraMachineConfig.ExtraOutputIds": "JunimoGemBP"
+    }
+},
+
+{
+    "LogName": "Oven By Products",
+    "Action": "EditData",
+    "Target": "Data/Machines",
+    "TargetField": ["(BC)Wildflour.AtelierGoods_Oven", "CustomFields"],
+    "When": {"Atelier.Cauldron/ConfigValue:Baker": true},
+    "Entries": {
+        "selph.ExtraMachineConfig.ExtraOutputIds": "JunimoGemBP"
+    }
+},
+
+{
+    "LogName": "Cake Station By Products",
+    "Action": "EditData",
+    "Target": "Data/Machines",
+    "TargetField": ["(BC)Wildflour.AtelierGoods_Cake_Station", "CustomFields"],
+    "When": {"Atelier.Cauldron/ConfigValue:Baker": true},
+    "Entries": {
+        "selph.ExtraMachineConfig.ExtraOutputIds": "JunimoGemBP"
+    }
+},
+
+{
+    "LogName": "Pie Counter Machine By Products",
+    "Action": "EditData",
+    "Target": "Data/Machines",
+    "TargetField": ["(BC)Wildflour.AtelierGoods_Pie_Station", "CustomFields"],
+    "When": {"Atelier.Cauldron/ConfigValue:Baker": true},
+    "Entries": {
+        "selph.ExtraMachineConfig.ExtraOutputIds": "JunimoGemBP"
+    }
+},
+
+{
+    "LogName": "Rolling Pin By Products",
+    "Action": "EditData",
+    "Target": "Data/Machines",
+    "TargetField": ["(BC)Wildflour.AtelierGoods_Rolling_Pin", "CustomFields"],
+    "When": {"Atelier.Cauldron/ConfigValue:Baker": true},
+    "Entries": {
+        "selph.ExtraMachineConfig.ExtraOutputIds": "JunimoGemBP"
+    }
+},
+
+{
+    "LogName": "Mixer By Products",
+    "Action": "EditData",
+    "Target": "Data/Machines",
+    "TargetField": ["(BC)Wildflour.AtelierGoods_Mixer", "CustomFields"],
+    "When": {"Atelier.Cauldron/ConfigValue:Baker": true},
+    "Entries": {
+        "selph.ExtraMachineConfig.ExtraOutputIds": "JunimoGemBP"
+    }
+},
+
+
+
+{
     "LogName": "Coffee Grinder Machine By Products",
     "Action": "EditData",
     "Target": "Data/Machines",

@@ -1,4 +1,14 @@
 ﻿{
+"config.Version.name": "Version",
+"config.Version.description": "Toggles whether Leilani is antisocial (meaning she won't appear in the social menu, can't be gifted, etc) or behaves like a normal NPC",
+"config.Version.values.antisocial": "antisocial",
+"config.Version.values.hardmode": "hardmode",
+
+"config.Portrait Style.name": "Portrait Style",
+"config.Portrait Style.description": "Changes Leilani's portraits to ZoeDoll, Airyn, or Nyapu's art style.",
+"config.Portrait Style.values.ZoeDoll": "ZoeDoll",
+"config.Portrait Style.values.Nyapu": "Nyapu",
+"config.Portrait Style.values.Airyn": "Airyn",
 
 "Leilanidispo.Pika": "husband",
 "Leilanidispo.Keahi": "son",
@@ -11,6 +21,7 @@
 "gifttastes.3": "They say it's the thought that counts...$s",
 "gifttastes.4": "Ugh, this is a terrible gift. Why would you give me this?$a",
 "gifttastes.5": "Oh, thank you.",
+"gifttastes.PikaCooking": "This is one of Pika's recipes, isn't it? I could never get tired of my husband's cooking.$h",
 
 "antisocial.summer_1": "Pika already cooked Willy some crab cakes to say thanks for rowing me back to the beach, but I want to get him something too. Do you make mead at your farm?",
 "antisocial.summer_1_2": "Pika already cooked Willy some crab cakes to say thanks for rowing me back to the beach, but I want to get him something too. Do you make mead at your farm?",
@@ -112,7 +123,7 @@
 "LeilaniKeahiEvent.10": "Don't push your luck!$1",
 "LeilaniKeahiEvent.11": "Alternate hypothesis - he's so busy pranking her he has no time to cause trouble anywhere else.",
 
-"LeilaniDigsiteEvent.0": "I just got a call from the head of my department!#$b#She wants me to go to a dig in Valleriath - they've found ancient Samaowaiian pottery there, hundreds of miles from the Fern Islands!#$b#It could revolutionise our understanding of ancient trade routes!$1",
+"LeilaniDigsiteEvent.0": "I just got a call from the head of my department!#$b#She wants me to go to a dig in Valleriath - they've found ancient Islander pottery there, hundreds of miles from the Fern Islands!#$b#It could revolutionise our understanding of ancient trade routes!$1",
 "LeilaniDigsiteEvent.1": "That's great... but Valleriath is so near the Gotoro border...$s",
 "LeilaniDigsiteEvent.2": "It's not that close. It'll be fine.$2",
 "LeilaniDigsiteEvent.3": "But the war...$s",
@@ -129,7 +140,7 @@
 "LeilaniCameronEvent.5": "I should teach Keahi to surf...#$b#I should be around to teach him a lot of things.$s",
 "LeilaniCameronEvent.6": "Not this again! No self pity! If you want to quit, then quit.$a#$b#Take that teaching job in Grampleton. Teach provincial teens instead of working with city kids who thought going to college in the Islands would be a permanent vacation.$a",
 "LeilaniCameronEvent.7": "Ugh! Don't tempt me!$1",
-"LeilaniCameronEvent.8": "sigh",
+"LeilaniCameronEvent.8": "Sigh",
 "LeilaniCameronEvent.9": "Maybe someday. But not now.",
 "LeilaniCameronEvent.10": "I've got to admit, settling down somewhere like this seems increasingly appealing...$s",
 "LeilaniCameronEvent.11": "Doctor Peasbody, I do believe that sounds dangerously close to regret. No self pity.",
@@ -152,7 +163,7 @@
 "LeilaniPikaEvent.13": "I miss her so much when she's gone.$s",
 "LeilaniPikaEvent.14": "Son, hey... Come here.$4",
 "LeilaniPikaEvent.15": "Pika wipes away Keahi's tears.",
-"LeilaniPikaEvent.16": "Hey now my little keiki.$4#$b#It's all good okay?$s#$b#I miss her too..$s#$b#I'm sorry we've never really talked to you about it all.$2",
+"LeilaniPikaEvent.16": "Hey now, my little keiki.$4#$b#It's all good, okay?$s#$b#I miss her too..$s#$b#I'm sorry we've never really talked to you about it all.$2",
 "LeilaniPikaEvent.17": "Keahi seems speechless but just smiles at Pika.",
 "LeilaniPikaEvent.18": "There there now.$s#$b#I'm here, my little keiki.$s",
 "LeilaniPikaEvent.19": "Keahi calmed down after a while. They called Leilani, and talked more about Keahi's feelings.#It was a refreshing morning for the whole family.",
@@ -176,16 +187,16 @@
 "KeahiDialogue.spring_28_1": "Mom's coming home tomorrow! I hope she brings me something really cool!$1#$b#If you want to come and see her, we'll be meeting her on the beach!",
 "KeahiDialogue.spring_28_2": "Mom's coming home tomorrow! I hope she brings me something really cool!$1#$b#If you want to come and see her, we'll be meeting her on the beach!",
 "KeahiDialogue.LeilaniArrives": "Look! Mom brought me a rock with a bug stuck in it! It's called amber.",
-"KeahiDialogue.summer_Tue8": "My dad is trying to teach me Samaowaii.#$b#It's what they speak on the Fern Islands.#$e#I was born in the village, but my mom and dad are from the islands!",
-"KeahiDialogue.Tue8": "My dad is trying to teach me Samaowaii.#$b#It's what they speak on the Fern Islands.#$e#I was born in the village but my dad is from the islands.#$e#My mom is too...$s",
+"KeahiDialogue.summer_Tue8": "My dad is trying to teach me 'Olelo Mokupini.#$b#It's what they speak on the Fern Islands.#$e#I was born in the village, but my mom and dad are from the islands!",
+"KeahiDialogue.Tue8": "My dad is trying to teach me 'Olelo Mokupini.#$b#It's what they speak on the Fern Islands.#$e#I was born in the village but my dad is from the islands.#$e#My mom is too...$s",
 "KeahiDialogue.Town_97_92": "Don't worry, Mom! I'll be good today! I'll be the best!$4",
 
 "CorineDialogue.LeilaniArrives": "It's such a relief to have Leilani around! Summer is the restaurant's busiest season.",
 "CorineDialogue.summer_23_1": "Pika's taking tonight off to celebrate Leilani's birthday, so Faye and I have to look after the restaurant on our own.#$b#Don't worry, all the food will still be freshly prepared! I've been practicing!",
 "CorineDialogue.summer_23_2": "Pika's taking tonight off to celebrate Leilani's birthday, so Faye and I have to look after the restaurant on our own.#$b#Don't worry, all the food will still be freshly prepared! I've been practicing!",
 
-"WillyDialogue.spring_28_1": "If you're thinkin' of droppin' by the shop tomorrow mornin' I might be out. Got to row Pika's missus back from her boat!",
-"WillyDialogue.spring_28_2": "If you're thinkin' of droppin' by the shop tomorrow mornin' I might be out. Got to row Pika's missus back from her boat!",
+"WillyDialogue.spring_28_1": "If you're thinkin' of droppin' by the shop tomorrow mornin', I might be out. Got to row Pika's missus back from her boat!",
+"WillyDialogue.spring_28_2": "If you're thinkin' of droppin' by the shop tomorrow mornin', I might be out. Got to row Pika's missus back from her boat!",
 
 "OlgaDialogue.LeilaniArrives": "It's a good thing Leilani's back. Keahi behaves so much better when she's here...",
 

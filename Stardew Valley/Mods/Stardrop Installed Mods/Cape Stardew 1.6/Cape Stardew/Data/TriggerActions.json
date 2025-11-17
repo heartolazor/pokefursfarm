@@ -250,6 +250,47 @@
         }
       }
     },
+//greenraintrigger//
+{
+      "Action": "EditData",
+ "When": {
+        "HasMod": "DLX.Bundles"
+      },
+    "Target": "Data/TriggerActions",
+      "Entries": {
+"{{ModId}}_greenRainTrigger":
+{
+  "Id": "{{ModId}}_greenRainTrigger",
+  "Trigger": "LocationChanged",
+  "Condition": "PLAYER_HAS_SEEN_EVENT Current orb_hint_intro",
+
+  "Actions": [
+    "UB_PlaceBundle Cape.SecretOrb",
+    "MarkActionApplied Current {{ModId}}_greenRainTrigger true"
+  ]
+}
+}
+
+},
+///repeat//
+{
+  "Action": "EditData",
+  "When": {
+    "HasMod": "DLX.Bundles"
+  },
+  "Target": "Data/TriggerActions",
+  "Entries": {
+    "{{ModId}}_greenRainTriggerRepeat": {
+      "Id": "{{ModId}}_greenRainTriggerRepeat",
+      "Trigger": "LocationChanged",
+      "Condition": "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_greenRainTrigger, PLAYER_STAT Current weedsEliminated 30",
+      "Actions": [
+        "UB_PlaceBundle Cape.SecretOrb.Repeat",
+        "MarkActionApplied Current {{ModId}}_greenRainTriggerRepeat false"
+      ]
+    }
+  }
+}
 
   ]
 }

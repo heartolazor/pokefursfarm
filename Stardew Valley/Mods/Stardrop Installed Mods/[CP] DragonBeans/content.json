@@ -1,0 +1,2471 @@
+{
+    "Format": "2.0",
+	"ConfigSchema": {
+                    "CursorStyle": {
+           "AllowValues": "Vanilla, xiaoshupaopao, shuopaopao, wangpaopao, lingpaopao, jiepaopao, shupaopao, jipaopao , yipaopao, nianpaopao, xipaopao, yupaopao, jiusepao",
+           "Default": "Vanilla",
+           "Description": "Change your cursor style",
+           "AllowBlank": false,
+           "Section": "Art Assets"
+	    },
+      "paopaoart": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "If you want to see more DragonBeans, it's best not to turn this off :)",
+      "Section": "Art Assets"
+        },
+      "nianma": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "Kinda out there. Fair warning!",
+      "Section": "Art Assets"
+        }
+		},
+	"Changes": 
+[
+  {"Action": "EditData",
+   "Target": "Data/AudioChanges",
+   "Entries": {
+     "DragonBeansSound1": {
+       "ID": "DragonBeansSound1",
+       "Category": "Sound",
+       "FilePaths": ["{{AbsoluteFilePath: assets/sounds/paopaohaoqi.wav}}"],
+       "StreamedVorbis": false,
+       "Looped": false
+     }
+   }
+  },  
+  {"Action": "EditData",
+   "Target": "Data/AudioChanges",
+   "Entries": {
+     "DragonBeansSound2": {
+       "ID": "DragonBeansSound2",
+       "Category": "Sound",
+       "FilePaths": ["{{AbsoluteFilePath: assets/sounds/paopaokaixin.wav}}"],
+       "StreamedVorbis": false,
+       "Looped": false
+     }
+   }
+},
+  {"Action": "EditData",
+   "Target": "Data/AudioChanges",
+   "Entries": {
+     "DragonBeansSound3": {
+       "ID": "DragonBeansSound3",
+       "Category": "Sound",
+       "FilePaths": ["{{AbsoluteFilePath: assets/sounds/paopaoshengqi.wav}}"],
+       "StreamedVorbis": false,
+       "Looped": false
+     }
+   }
+},
+  {"Action": "EditData",
+   "Target": "Data/AudioChanges",
+   "Entries": {
+     "shuopaopaosound": {
+       "ID": "shuopaopaosound",
+       "Category": "Sound",
+       "FilePaths": ["{{AbsoluteFilePath: assets/sounds/shuopaopaosound.ogg}}"],
+       "StreamedVorbis": false,
+       "Looped": false
+     }
+   }
+},
+  {"Action": "EditData",
+   "Target": "Data/AudioChanges",
+   "Entries": {
+     "wangpaopaosound": {
+       "ID": "wangpaopaosound",
+       "Category": "Sound",
+       "FilePaths": ["{{AbsoluteFilePath: assets/sounds/wangpaopaosound.ogg}}"],
+       "StreamedVorbis": false,
+       "Looped": false
+     }
+   }
+},
+  {"Action": "EditData",
+   "Target": "Data/AudioChanges",
+   "Entries": {
+     "lingpaopaosound": {
+       "ID": "lingpaopaosound",
+       "Category": "Sound",
+       "FilePaths": ["{{AbsoluteFilePath: assets/sounds/lingpaopaosound.ogg}}"],
+       "StreamedVorbis": false,
+       "Looped": false
+     }
+   }
+},
+  {"Action": "EditData",
+   "Target": "Data/AudioChanges",
+   "Entries": {
+     "shupaopaosound": {
+       "ID": "shupaopaosound",
+       "Category": "Sound",
+       "FilePaths": ["{{AbsoluteFilePath: assets/sounds/shupaopaosound.ogg}}"],
+       "StreamedVorbis": false,
+       "Looped": false
+     }
+   }
+},
+  {"Action": "EditData",
+   "Target": "Data/AudioChanges",
+   "Entries": {
+     "yipaopaosound": {
+       "ID": "yipaopaosound",
+       "Category": "Sound",
+       "FilePaths": ["{{AbsoluteFilePath: assets/sounds/yipaopaosound.ogg}}"],
+       "StreamedVorbis": false,
+       "Looped": false
+     }
+   }
+},
+  {"Action": "EditData",
+   "Target": "Data/AudioChanges",
+   "Entries": {
+     "nianpaopaosound": {
+       "ID": "nianpaopaosound",
+       "Category": "Sound",
+       "FilePaths": ["{{AbsoluteFilePath: assets/sounds/nianpaopaosound.ogg}}"],
+       "StreamedVorbis": false,
+       "Looped": false
+     }
+   }
+},
+  {"Action": "EditData",
+   "Target": "Data/AudioChanges",
+   "Entries": {
+     "xipaopaosound": {
+       "ID": "xipaopaosound",
+       "Category": "Sound",
+       "FilePaths": ["{{AbsoluteFilePath: assets/sounds/xipaopaosound.ogg}}"],
+       "StreamedVorbis": false,
+       "Looped": false
+     }
+   }
+},
+  {"Action": "EditData",
+   "Target": "Data/AudioChanges",
+   "Entries": {
+     "yupaopaosound": {
+       "ID": "yupaopaosound",
+       "Category": "Sound",
+       "FilePaths": ["{{AbsoluteFilePath: assets/sounds/yupaopaosound.ogg}}"],
+       "StreamedVorbis": false,
+       "Looped": false
+     }
+   }
+},  
+{"Action": "EditData",
+   "Target": "Data/AudioChanges",
+   "Entries": {
+     "frog_slap": {
+       "ID": "frog_slap",
+       "Category": "Sound",
+       "FilePaths": ["{{AbsoluteFilePath: assets/sounds/jineng.ogg}}"],
+       "StreamedVorbis": false,
+       "Looped": false
+     }
+   },
+   "When": {
+     "paopaoart": "true"
+   }
+},
+  {"Action": "EditData",
+   "Target": "Data/AudioChanges",
+   "Entries": {
+     "fairy_heal": {
+       "ID": "fairy_heal",
+       "Category": "Sound",
+       "FilePaths": ["{{AbsoluteFilePath: assets/sounds/shupaopaosound.ogg}}"],
+       "StreamedVorbis": false,
+       "Looped": false
+     }
+   },
+   "When": {
+     "paopaoart": "true"
+   }
+},
+{
+	   	    "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/paopaoImages/paopaocursor.png",
+            "FromArea": { "X": 0, "Y": 0, "Width": 128, "Height": 32 },
+            "ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 32 },
+            "When": { "CursorStyle": "shuopaopao" }
+	   },
+       {
+	   	    "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/paopaoImages/paopaocursor.png",
+            "FromArea": { "X": 0, "Y": 32, "Width": 128, "Height": 32 },
+            "ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 32 },
+            "When": { "CursorStyle": "wangpaopao" }
+	   },
+       {
+	   	    "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/paopaoImages/paopaocursor.png",
+            "FromArea": { "X": 0, "Y": 64, "Width": 128, "Height": 32 },
+            "ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 32 },
+            "When": { "CursorStyle": "lingpaopao" }
+	   },
+       {
+	   	    "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/paopaoImages/paopaocursor.png",
+            "FromArea": { "X": 0, "Y": 96, "Width": 128, "Height": 32 },
+            "ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 32 },
+            "When": { "CursorStyle": "jiepaopao" }
+	   },
+       {
+	   	    "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/paopaoImages/paopaocursor.png",
+            "FromArea": { "X": 0, "Y": 128, "Width": 128, "Height": 32 },
+            "ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 32 },
+            "When": { "CursorStyle": "shupaopao" }
+	   },
+       {
+	   	    "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/paopaoImages/paopaocursor.png",
+            "FromArea": { "X": 0, "Y": 160, "Width": 128, "Height": 32 },
+            "ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 32 },
+            "When": { "CursorStyle": "jipaopao" }
+	   },
+       {
+	   	    "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/paopaoImages/paopaocursor.png",
+            "FromArea": { "X": 0, "Y": 192, "Width": 128, "Height": 32 },
+            "ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 32 },
+            "When": { "CursorStyle": "yipaopao" }
+	   },
+       {
+	   	    "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/paopaoImages/paopaocursor.png",
+            "FromArea": { "X": 0, "Y": 224, "Width": 128, "Height": 32 },
+            "ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 32 },
+            "When": { "CursorStyle": "nianpaopao" }
+	   },
+       {
+	   	    "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/paopaoImages/paopaocursor.png",
+            "FromArea": { "X": 0, "Y": 256, "Width": 128, "Height": 32 },
+            "ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 32 },
+            "When": { "CursorStyle": "xipaopao" }
+	   },
+       {
+	   	    "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/paopaoImages/paopaocursor.png",
+            "FromArea": { "X": 0, "Y": 288, "Width": 128, "Height": 32 },
+            "ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 32 },
+            "When": { "CursorStyle": "yupaopao" }
+	   },
+       {
+	   	    "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/paopaoImages/paopaocursor.png",
+            "FromArea": { "X": 0, "Y": 320, "Width": 128, "Height": 32 },
+            "ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 32 },
+            "When": { "CursorStyle": "xiaoshupaopao" }
+	   },
+            {
+	   	    "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/paopaoImages/paopaocursor.png",
+            "FromArea": { "X": 0, "Y": 352, "Width": 128, "Height": 32 },
+            "ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 32 },
+            "When": { "CursorStyle": "jiusepao" }
+	   },
+        {
+			"Action": "EditImage",
+			"Target": "TileSheets/bobbers",
+			"FromFile": "assets/paopaoImages/bobbers.png",
+			"ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 160 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},
+		{
+			"Action": "EditImage",
+			"Target": "TileSheets/companions",
+			"FromFile": "assets/paopaoImages/companions.png",
+			"ToArea": { "X": 0, "Y": 0, "Width": 256, "Height": 256 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},	
+        {
+			"Action": "EditImage",
+			"Target": "TileSheets/Craftables",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 64, "Y": 64, "Width": 48, "Height": 32 },
+			"ToArea": { "X": 32, "Y": 1152, "Width": 48, "Height": 32 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},		
+        {
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheaterScreen_TileSheet",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 48, "Y": 64, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 103, "Y": 176, "Width": 16, "Height": 16 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},
+		{
+			"Action": "EditImage",
+			"Target": "TileSheets/BuffsIcons",
+			"FromFile": "assets/paopaoImages/BuffsIcons.png",
+			"ToArea": { "X": 0, "Y": 0, "Width": 192, "Height": 64 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},
+            {
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors2",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 0, "Y": 126, "Width": 208, "Height": 18 },
+			"ToArea": { "X": 0, "Y": 302, "Width": 208, "Height": 18 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},
+                {
+			"Action": "EditImage",
+			"Target": "Minigames/TitleButtons",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 0, "Y": 123, "Width": 104, "Height": 26 },
+			"ToArea": { "X": 296, "Y": 226, "Width": 104, "Height": 26 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},
+                {
+			"Action": "EditImage",
+			"Target": "Minigames/TitleButtons",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 208, "Y": 64, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 264, "Y": 351, "Width": 16, "Height": 16 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},
+                {
+			"Action": "EditImage",
+			"Target": "Minigames/TitleButtons",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 128, "Y": 96, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 250, "Y": 222, "Width": 16, "Height": 16 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},
+                {
+			"Action": "EditImage",
+			"Target": "Minigames/TitleButtons",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 144, "Y": 96, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 250, "Y": 280, "Width": 16, "Height": 16 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},
+                    {
+			"Action": "EditImage",
+			"Target": "Minigames/TitleButtons",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 224, "Y": 64, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 377, "Y": 353, "Width": 16, "Height": 16 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},       
+                {
+			"Action": "EditImage",
+			"Target": "Minigames/jojacorps",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 144, "Y": 64, "Width": 23, "Height": 21 },
+			"ToArea": { "X": 377, "Y": 717, "Width": 23, "Height": 21 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},		
+                    {
+			"Action": "EditImage",
+			"Target": "Minigames/jojacorps",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 112, "Y": 80, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 152, "Y": 217, "Width": 16, "Height": 16 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},		
+                        {
+			"Action": "EditImage",
+			"Target": "Minigames/jojacorps",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 176, "Y": 32, "Width": 25, "Height": 37 },
+			"ToArea": { "X": 46, "Y": 70, "Width": 25, "Height": 37 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},		
+                        {
+			"Action": "EditImage",
+			"Target": "Minigames/jojacorps",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 128, "Y": 89, "Width": 18, "Height": 7 },
+			"ToArea": { "X": 383, "Y": 581, "Width": 18, "Height": 7 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},					
+                        {
+			"Action": "EditImage",
+			"Target": "Minigames/jojacorps",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 256, "Y": 0, "Width": 427, "Height": 240 },
+			"ToArea": { "X": 427, "Y": 0, "Width": 427, "Height": 240 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},			
+                        {
+			"Action": "EditImage",
+			"Target": "Minigames/jojacorps",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 256, "Y": 0, "Width": 427, "Height": 240 },
+			"ToArea": { "X": 427, "Y": 240, "Width": 427, "Height": 240 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},			
+                        {
+			"Action": "EditImage",
+			"Target": "Minigames/Intro",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 240, "Y": 64, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 112, "Y": 16, "Width": 16, "Height": 32 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},			
+                        {
+			"Action": "EditImage",
+			"Target": "Minigames/Intro",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 0, "Y": 96, "Width": 96, "Height": 16 },
+			"ToArea": { "X": 16, "Y": 64, "Width": 96, "Height": 16 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},			
+                {
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors2",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 0, "Y": 64, "Width": 42, "Height": 28 },
+			"ToArea": { "X": 148, "Y": 62, "Width": 42, "Height": 28 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},
+                    {
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 253, "Height": 28 },
+			"ToArea": { "X": 413, "Y": 305, "Width": 253, "Height": 28 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},
+                        {
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 0, "Y": 32, "Width": 169, "Height": 28 },
+			"ToArea": { "X": 517, "Y": 361, "Width": 169, "Height": 28 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},
+                            {
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors_1_6",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 211, "Y": 0, "Width": 42, "Height": 57 },
+			"ToArea": { "X": 424, "Y": 447, "Width": 42, "Height": 57 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},
+                {
+			"Action": "EditImage",
+			"Target": "TileSheets/Objects_2",
+			"FromFile": "assets/paopaoImages/shuopaopaoegg.png",
+			"ToArea": { "X": 96, "Y": 0, "Width": 16, "Height": 16 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},
+                    {
+			"Action": "EditImage",
+			"Target": "TileSheets/Objects_2",
+			"FromFile": "assets/paopaoImages/jipaopaoegg.png",
+			"ToArea": { "X": 32, "Y": 0, "Width": 16, "Height": 16 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},
+                    {
+			"Action": "EditImage",
+			"Target": "TileSheets/Objects_2",
+			"FromFile": "assets/paopaoImages/shupaopaoegg.png",
+			"ToArea": { "X": 32, "Y": 144, "Width": 16, "Height": 16 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},
+                        {
+			"Action": "EditImage",
+			"Target": "Animals/Error",
+			"FromFile": "assets/paopaoImages/Error.png",
+   "When": {
+     "paopaoart": "true"
+   }
+		},
+    {
+			"Action": "EditImage",
+			"Target": "Buildings/Shipping Bin",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 0, "Y": 144, "Width": 32, "Height": 32 },
+   "When": {
+     "paopaoart": "true"
+   }
+		},
+    {
+			"Action": "EditImage",
+			"Target": "Buildings/Stable",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 32, "Y": 144, "Width": 64, "Height": 96 },
+   "When": {
+     "nianma": "true"
+   }
+		},
+    {
+			"Action": "EditImage",
+			"Target": "Buildings/Stable_PaintMask",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 96, "Y": 144, "Width": 64, "Height": 96 },
+   "When": {
+     "nianma": "true"
+   }
+		},
+    {
+			"Action": "EditImage",
+			"Target": "Animals/horse",
+			"FromFile": "assets/paopaoImages/nianma.png",
+   "When": {
+     "nianma": "true"
+   }
+		},
+                            {
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/paopaoImages/nianpaopao.png",
+      "FromArea": { "X": 0, "Y": 16, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 192, "Y": 192, "Width": 16, "Height": 16 },
+   "When": {
+     "nianma": "true"
+   }
+		},
+                {
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 112, "Y": 64, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 368, "Y": 592, "Width": 16, "Height": 16 },
+   "When": {
+     "nianma": "true"
+   }
+		},
+                    {
+			"Action": "EditImage",
+			"Target": "TileSheets/Objects_2",
+			"FromFile": "assets/paopaoImages/paopaoart.png",
+      "FromArea": { "X": 128, "Y": 64, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 80, "Y": 272, "Width": 16, "Height": 16 },
+   "When": {
+     "nianma": "true"
+   }
+		},
+        {
+            "Action": "Load",
+            "Target": "assets/paopaoImages/shuopaopao, assets/paopaoImages/shuopaopao_icon",
+            "FromFile": "assets/paopaoImages/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "assets/paopaoImages/wangpaopaofenshen,assets/paopaoImages/wangpaopao, assets/paopaoImages/wangpaopao_icon",
+            "FromFile": "assets/paopaoImages/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "assets/paopaoImages/lingpaopao, assets/paopaoImages/lingpaopao_icon",
+            "FromFile": "assets/paopaoImages/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "assets/paopaoImages/shupaopao, assets/paopaoImages/shupaopao_icon, assets/paopaoImages/shupaopao1",
+            "FromFile": "assets/paopaoImages/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "assets/paopaoImages/jipaopao, assets/paopaoImages/jipaopao_icon",
+            "FromFile": "assets/paopaoImages/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "assets/paopaoImages/yipaopao, assets/paopaoImages/yipaopao_icon",
+            "FromFile": "assets/paopaoImages/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "assets/paopaoImages/nianpaopao, assets/paopaoImages/nianpaopao_icon",
+            "FromFile": "assets/paopaoImages/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "assets/paopaoImages/xipaopao, assets/paopaoImages/xipaopao_icon, assets/paopaoImages/xipaopao1, assets/paopaoImages/xipaopao2",
+            "FromFile": "assets/paopaoImages/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "assets/paopaoImages/yupaopao, assets/paopaoImages/yupaopao_icon",
+            "FromFile": "assets/paopaoImages/{{TargetWithoutPath}}.png"
+        },
+                {
+            "Action": "Load",
+            "Target": "assets/paopaoImages/jiusepao, assets/paopaoImages/jiusepao_icon",
+            "FromFile": "assets/paopaoImages/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Load Object",
+            "Action": "Load",
+            "Target": "assets/paopaoImages/nianpaopaoweapon",
+            "FromFile": "assets/paopaoImages/{{TargetWithoutPath}}.png"
+            },
+            {
+      "LogName": "Load Object",
+      "Action": "Load",
+      "Target": "assets/paopaoImages/shuopaopaoegg",
+      "FromFile": "assets/paopaoImages/shuopaopaoegg.png"
+  },
+               {
+      "LogName": "Load Object",
+      "Action": "Load",
+      "Target": "assets/paopaoImages/wangpaopaoegg",
+      "FromFile": "assets/paopaoImages/wangpaopaoegg.png"
+  },
+               {
+      "LogName": "Load Object",
+      "Action": "Load",
+      "Target": "assets/paopaoImages/lingpaopaoegg",
+      "FromFile": "assets/paopaoImages/lingpaopaoegg.png"
+  },
+               {
+      "LogName": "Load Object",
+      "Action": "Load",
+      "Target": "assets/paopaoImages/shupaopaoegg",
+      "FromFile": "assets/paopaoImages/shupaopaoegg.png"
+  },
+               {
+      "LogName": "Load Object",
+      "Action": "Load",
+      "Target": "assets/paopaoImages/jipaopaoegg",
+      "FromFile": "assets/paopaoImages/jipaopaoegg.png"
+  },
+               {
+      "LogName": "Load Object",
+      "Action": "Load",
+      "Target": "assets/paopaoImages/yipaopaoegg",
+      "FromFile": "assets/paopaoImages/yipaopaoegg.png"
+  },
+               {
+      "LogName": "Load Object",
+      "Action": "Load",
+      "Target": "assets/paopaoImages/nianpaopaoegg",
+      "FromFile": "assets/paopaoImages/nianpaopaoegg.png"
+  },
+               {
+      "LogName": "Load Object",
+      "Action": "Load",
+      "Target": "assets/paopaoImages/xipaopaoegg",
+      "FromFile": "assets/paopaoImages/xipaopaoegg.png"
+  },
+               {
+      "LogName": "Load Object",
+      "Action": "Load",
+      "Target": "assets/paopaoImages/yupaopaoegg",
+      "FromFile": "assets/paopaoImages/yupaopaoegg.png"
+  },
+               {
+      "LogName": "Load Object",
+      "Action": "Load",
+      "Target": "assets/paopaoImages/suifamilysisters",
+      "FromFile": "assets/paopaoImages/suifamilysisters.png"
+  },
+               {
+      "LogName": "Load Object",
+      "Action": "Load",
+      "Target": "assets/paopaoImages/thejiegardenthree",
+      "FromFile": "assets/paopaoImages/thejiegardenthree.png"
+  },
+               {
+      "LogName": "Load Object",
+      "Action": "Load",
+      "Target": "assets/paopaoImages/familyandresponsibilities",
+      "FromFile": "assets/paopaoImages/familyandresponsibilities.png"
+  },       
+    {
+      "Action": "Load",  
+      "Target": "Mods/DragonBeans/shupaopaorice", 
+      "FromFile": "assets/paopaoImages/shupaopaorice.png"
+    },
+      {
+        "Action": "EditData",
+        "Target": "Data/Objects",  
+        "Entries": {
+          "shupaopaorice": {
+            "Name": "shupaopaorice",
+            "DisplayName": "Rice Made by Shu Bean",
+            "Description": "What? You're full? No, Shu Bean thinks you are not full yet. Just keep eating!",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 66,
+            "Texture": "Mods\\DragonBeans\\shupaopaorice",
+            "SpriteIndex": 0,
+            "Edibility": 30,
+            "IsDrink": false,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "Buffs": [
+              {
+                "Duration": 66,
+                "CustomAttributes": {
+                  "FarmingLevel": 6,
+                  "FishingLevel": 0,
+                  "MiningLevel": 0,
+                  "LuckLevel": 1,
+                  "ForagingLevel": 0,
+                  "MaxStamina": 1,
+                  "MagneticRadius": 6,
+                  "Speed": 1,
+                  "Defense": 6,
+                  "Attack": 0 
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "Action": "EditData",
+        "Target": "Data/CookingRecipes",   
+        "Entries": {
+          "shupaopaorice": "423 3 / 25 5 / shupaopaorice 1 /  "
+        }   
+      },          
+      {
+              "Action": "EditData",
+              "Target": "Data/NPCGiftTastes",
+              "TextOperations": [
+      { "Operation": "Append",
+                "Target": ["Entries", "Universal_like"],
+                "Value": "shupaopaorice",
+                "Delimiter": " "
+        }
+      ]
+    },
+        {
+      "Action": "Load",  
+      "Target": "Mods/DragonBeans/lingpaopaowine", 
+      "FromFile": "assets/paopaoImages/lingpaopaowine.png"
+    },
+      {
+        "Action": "EditData",
+        "Target": "Data/Objects",  
+        "Entries": {
+          "lingpaopaowine": {
+            "Name": "lingpaopaowine",
+            "DisplayName": "Wine Treasured by Ling Bean",
+            "Description": "An old Shang-Shu wine treasured by Ling Bean. Seems to have a strange taste...",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 33,
+            "Texture": "Mods\\DragonBeans\\lingpaopaowine",
+            "SpriteIndex": 0,
+            "Edibility": 5,
+            "IsDrink": true,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "Buffs": [
+              {
+                "Duration": 5,
+                "CustomAttributes": {
+                  "FarmingLevel": 0,
+                  "FishingLevel": 0,
+                  "MiningLevel": 0,
+                  "LuckLevel": 0,
+                  "ForagingLevel": 0,
+                  "MaxStamina": 0,
+                  "MagneticRadius": 0,
+                  "Speed": -1,
+                  "Defense": 0,
+                  "Attack": 333 
+                }
+              }
+            ]
+          }
+        }
+      },      
+      {
+              "Action": "EditData",
+              "Target": "Data/NPCGiftTastes",
+              "TextOperations": [
+      { "Operation": "Append",
+                "Target": ["Entries", "Universal_Neutral"],
+                "Value": "lingpaopaowine",
+                "Delimiter": " "
+        }
+      ]
+    },
+    {
+      "Action": "Load",  
+      "Target": "Mods/DragonBeans/yupaopaocook", 
+      "FromFile": "assets/paopaoImages/yupaopaocook.png"
+    },
+      {
+        "Action": "EditData",
+        "Target": "Data/Objects",  
+        "Entries": {
+          "yupaopaocook": {
+            "Name": "yupaopaocook",
+            "DisplayName": "Yu Bean's Home-style Stir-fry",
+            "Description": "The most popular dish sold at JieGarden. Also the little chef's specialty.",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 1200,
+            "Texture": "Mods\\DragonBeans\\yupaopaocook",
+            "SpriteIndex": 0,
+            "Edibility": 40,
+            "IsDrink": false,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "Buffs": [
+              {
+                "Duration": 720,
+                "CustomAttributes": {
+                  "FarmingLevel": 0,
+                  "FishingLevel": 0,
+                  "MiningLevel": 8,
+                  "LuckLevel": 0,
+                  "ForagingLevel": 8,
+                  "MaxStamina": 12,
+                  "MagneticRadius": 64,
+                  "Speed": 0,
+                  "Defense": 12,
+                  "Attack": 0 
+                }
+              }
+            ]
+          }
+        }
+      }, 
+      {
+              "Action": "EditData",
+              "Target": "Data/NPCGiftTastes",
+              "TextOperations": [
+      { "Operation": "Append",
+                "Target": ["Entries", "Universal_love"],
+                "Value": "yupaopaocook",
+                "Delimiter": " "
+        }
+      ]
+    },
+{
+        "LogName": "Pet TextureLoad",
+        "Action": "Load",
+        "Target": "assets/paopaoImages/jiepaopao",
+        "FromFile": "assets/paopaoImages/jiepaopao.png"
+      },
+      {
+        "LogName": "Pet TextureLoad",
+        "Action": "Load",
+        "Target": "assets/paopaoImages/jiepaopao_icon",
+        "FromFile": "assets/paopaoImages/jiepaopao_icon.png"
+      },
+      {
+        "LogName": "jiepaopao",
+        "Action": "EditData",
+        "Target": "Data/Pets",
+	      "TargetField": [ "Cat", "Breeds" ],
+            "Entries": {
+              "jiepaopao": {
+			  "DisplayName": "Jie Bean",
+              "Id": "jiepaopao",
+              "Texture": "assets/paopaoImages/jiepaopao",
+              "IconTexture": "assets/paopaoImages/jiepaopao_icon",
+              "IconSourceRect": {
+                "X": 0, "Y": 0, "Width": 16, "Height": 16
+            },
+              "CanBeChosenAtStart": true,
+              "CanBeAdoptedFromMarnie": true,
+              "AdoptionPrice": 44440 ,
+              "BarkOverride": "DragonBeansSound1",
+              "VoicePitch": 5.0,
+			  "GiftChance": 0.2,
+"Gifts": [
+    {
+        "MinimumFriendshipThreshold": 200,
+        "Weight": 0.8,
+        "QualifiedItemID": "(O)814",
+        "Stack": 1
+    },
+    {
+        "MinimumFriendshipThreshold": 400,
+        "Weight": 0.7,
+        "QualifiedItemID": "(O)shupaopaorice",
+        "Stack": 1
+    },
+    {
+        "MinimumFriendshipThreshold": 400,
+        "Weight": 0.6,
+        "QualifiedItemID": "(O)lingpaopaowine", 
+        "Stack": 1
+    },
+    {
+        "MinimumFriendshipThreshold": 500,
+        "Weight": 0.6,
+        "QualifiedItemID": "(O)394",
+        "Stack": 1
+    },
+    {
+        "MinimumFriendshipThreshold": 500,
+        "Weight": 0.5,
+        "QualifiedItemID": "(O)308",
+        "Stack": 1
+    },
+    {
+        "MinimumFriendshipThreshold": 600,
+        "Weight": 0.5,
+        "QualifiedItemID": "(O)yupaopaocook",
+        "Stack": 1
+    },
+    {
+        "MinimumFriendshipThreshold": 750,
+        "Weight": 0.4,
+        "QualifiedItemID": "(O)103",
+        "Stack": 1
+    },
+    {
+        "MinimumFriendshipThreshold": 750,
+        "Weight": 0.3,
+        "QualifiedItemID": "(O)72",
+        "Stack": 1
+    },
+    {
+        "MinimumFriendshipThreshold": 1000,
+        "Weight": 0.2,
+        "QualifiedItemID": "(O)337",
+        "Stack": 1
+    },
+    {
+        "MinimumFriendshipThreshold": 1000,
+        "Weight": 0.15,
+        "QualifiedItemID": "(O)373",
+        "Stack": 1
+    },
+    {
+        "MinimumFriendshipThreshold": 1000,
+        "Weight": 0.1,
+        "QualifiedItemID": "(O)797",
+        "Stack": 1
+    },
+    {
+        "MinimumFriendshipThreshold": 1000,
+        "Weight": 0.05,
+        "QualifiedItemID": "(O)279",
+        "Stack": 1
+    },
+    {
+        "MinimumFriendshipThreshold": 1000,
+        "Weight": 0.02,
+        "QualifiedItemID": "(O)74",
+        "Stack": 1
+    }
+]
+     }
+        }
+	  },
+{
+      "LogName": "Load Hat",
+      "Action": "Load",
+      "Target": "DragonBeans/Objects/shupaopaohat",
+      "FromFile": "assets/paopaoImages/shupaopaohat.png"
+  },
+    {
+      "LogName": "Load Hat",
+      "Action": "Load",
+      "Target": "DragonBeans/Objects/xipaopaohat",
+      "FromFile": "assets/paopaoImages/xipaopaohat.png"
+  },
+      {
+      "LogName": "Load Hat",
+      "Action": "Load",
+      "Target": "DragonBeans/Objects/yupaopaohat",
+      "FromFile": "assets/paopaoImages/yupaopaohat.png"
+  },
+
+  {
+    "Action": "EditData",
+    "Target": "Data/Hats",
+    "Entries": {
+      "shupaopaohat": 
+             "shupaopaohat/A small Shu Bean headpiece,looks like it's lying on your head./true/false//小Shu Bean headpiece/0/DragonBeans\\Objects\\shupaopaohat"
+    }
+},
+          {
+        "Action": "EditData",
+        "Target": "Data/Shops",
+        "TargetField": [
+          "HatMouse",
+          "Items"
+        ],
+        "Entries": {
+          "shupaopaohat": {
+            "Id": "shupaopaohat",
+            "ItemId": "shupaopaohat",
+            "AvailableStock": -1,
+            "IsRecipe": false,
+            "Price": 6666
+        }
+      }
+    },
+  {
+    "Action": "EditData",
+    "Target": "Data/Hats",
+    "Entries": {
+      "xipaopaohat": 
+             "xipaopaohat/A Dusk Bean headpiece,looks like it's lying on your head./true/false//Dusk Bean headpiece/0/DragonBeans\\Objects\\xipaopaohat"
+    }
+},
+          {
+        "Action": "EditData",
+        "Target": "Data/Shops",
+        "TargetField": [
+          "HatMouse",
+          "Items"
+        ],
+        "Entries": {
+          "xipaopaohat": {
+            "Id": "xipaopaohat",
+            "ItemId": "xipaopaohat",
+            "AvailableStock": -1,
+            "IsRecipe": false,
+            "Price": 11111
+        }
+      }
+    },
+  {
+    "Action": "EditData",
+    "Target": "Data/Hats",
+    "Entries": {
+      "yupaopaohat": 
+             "yupaopaohat/A Yu Bean headpiece,looks like it's lying on your head./true/false//Yu Bean headpiece/0/DragonBeans\\Objects\\yupaopaohat"
+    }
+},
+          {
+        "Action": "EditData",
+        "Target": "Data/Shops",
+        "TargetField": [
+          "HatMouse",
+          "Items"
+        ],
+        "Entries": {
+          "yupaopaohat": {
+            "Id": "yupaopaohat",
+            "ItemId": "yupaopaohat",
+            "AvailableStock": -1,
+            "IsRecipe": false,
+            "Price": 12121
+        }
+      }
+    },
+            {
+                "Action": "EditData",
+                "Target": "Data/Weapons",
+                "Entries": {
+                    "nianpaopaoweapon": {
+                        "Name": "nianpaopaoweapon",
+                        "DisplayName": "Super Nian Bean",
+                        "Description": "A sword materialized from Nian Bean. Has high defense and relatively fast attack speed, but unfortunately doesn't explode.",
+                        "MinDamage": 80,
+                        "MaxDamage": 90,
+                        "Knockback": 1.0,
+                        "Speed": 15,
+                        "Precision": 80,
+                        "Defense": 35,
+                        "Type": 3,
+                        "AreaOfEffect": 2,
+                        "CritChance": 0.5,
+                        "CritMultiplier": 1.0,
+                        "CanBeLostOnDeath": false,
+                        "Texture": "assets/paopaoImages/nianpaopaoweapon",
+                        "SpriteIndex": 0
+                    }
+      }
+    },
+    {
+            "LogName": "Load Object",
+            "Action": "Load",
+            "Target": "assets/paopaoImages/xipaopaoweapon",
+            "FromFile": "assets/paopaoImages/{{TargetWithoutPath}}.png"
+            },
+            {
+                "Action": "EditData",
+                "Target": "Data/Weapons",
+                "Entries": {
+                    "xipaopaoweapon": {
+                        "Name": "xipaopaoweapon",
+                        "DisplayName": "Super Dusk Bean",
+                        "Description": "A dagger materialized from Dusk Bean. Because Dusk Bean is afraid of monsters, she doesn't want any monsters to get close. Effectively repels flying monsters.",
+                        "MinDamage": 60,
+                        "MaxDamage": 70,
+                        "Knockback": 15.0,
+                        "Speed": 2,
+                        "Precision": 80,
+                        "Defense": 10,
+                        "Type": 1,
+                        "AreaOfEffect": 2,
+                        "CritChance": 0.5,
+                        "CritMultiplier": 1.0,
+                        "CanBeLostOnDeath": false,
+                        "Texture": "assets/paopaoImages/xipaopaoweapon",
+                        "SpriteIndex": 0
+                    }
+      }
+    },
+    {
+            "LogName": "Load Object",
+            "Action": "Load",
+            "Target": "assets/paopaoImages/shuopaopaoweapon",
+            "FromFile": "assets/paopaoImages/{{TargetWithoutPath}}.png"
+            },
+            {
+                "Action": "EditData",
+                "Target": "Data/Weapons",
+                "Entries": {
+                    "shuopaopaoweapon": {
+                        "Name": "shuopaopaoweapon",
+                        "DisplayName": "Super Shuo Bean",
+                        "Description": "A hammer materialized from Shuo Bean, imbues you with the martial power of Sui Monster.",
+                        "MinDamage": 300,
+                        "MaxDamage": 1350,
+                        "Knockback": 4.0,
+                        "Speed": -3,
+                        "Precision": 80,
+                        "Defense": 10,
+                        "Type": 2,
+                        "AreaOfEffect": 5,
+                        "CritChance": 0.7,
+                        "CritMultiplier": 1000.0,
+                        "CanBeLostOnDeath": false,
+                        "Texture": "assets/paopaoImages/shuopaopaoweapon",
+                        "SpriteIndex": 0
+                    }
+      }
+    },
+        {
+            "LogName": "Load Object",
+            "Action": "Load",
+            "Target": "assets/paopaoImages/wangpaopaoweapon",
+            "FromFile": "assets/paopaoImages/{{TargetWithoutPath}}.png"
+            },
+            {
+                "Action": "EditData",
+                "Target": "Data/Weapons",
+                "Entries": {
+                    "wangpaopaoweapon": {
+                        "Name": "wangpaopaoweapon",
+                        "DisplayName": "Super Wang Bean",
+                        "Description": "A sword materialized from Wang Bean, possesses a sword aura that can attack from very far away.",
+                        "MinDamage": 65,
+                        "MaxDamage": 70,
+                        "Knockback": 2.0,
+                        "Speed": 0,
+                        "Precision": 80,
+                        "Defense": 10,
+                        "Type": 3,
+                        "AreaOfEffect": 80,
+                        "CritChance": 0.1,
+                        "CritMultiplier": 1.0,
+                        "CanBeLostOnDeath": false,
+                        "Texture": "assets/paopaoImages/wangpaopaoweapon",
+                        "SpriteIndex": 0
+                    }
+      }
+    },
+  {
+    "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "wangpaopaoegg": {
+          "Name": "wangpaopaoegg",
+          "DisplayName": "Wang Bean's Clone Egg",
+          "Description": "Wang Bean's Clone Egg, represents 'Family'. Produces a A Wang Bean's Clone.",
+          "Type": "Basic -5",
+          "Category": 0,
+          "Price": 1212,
+          "Texture": "assets/paopaoImages/wangpaopaoegg",
+          "SpriteIndex": "0",
+          "Edibility": -300,
+          "ContextTags": [
+            "color_black"
+          ]
+        }
+      }
+},
+  {
+    "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "lingpaopaoegg": {
+          "Name": "lingpaopaoegg",
+          "DisplayName": "Ling Bean Egg",
+          "Description": "Ling Bean's egg, represents 'Freedom'. Hatches into a Ling Bean overnight.",
+          "Type": "Basic -5",
+          "Category": 0,
+          "Price": 666,
+          "Texture": "assets/paopaoImages/lingpaopaoegg",
+          "SpriteIndex": "0",
+          "Edibility": -300,
+          "ContextTags": [
+            "color_blue"
+          ]
+        }
+      }
+},
+  {
+    "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "shupaopaoegg": {
+          "Name": "shupaopaoegg",
+          "DisplayName": "Shu Bean Egg",
+          "Description": "Shu Bean's egg, represents 'Care'. Hatches into a Shu Bean overnight.",
+          "Type": "Basic -5",
+          "Category": 0,
+          "Price": 999,
+          "Texture": "assets/paopaoImages/shupaopaoegg",
+          "SpriteIndex": "0",
+          "Edibility": -300,
+          "ContextTags": [
+            "color_white"
+          ]
+        }
+      }
+},
+  {
+    "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "jipaopaoegg": {
+          "Name": "jipaopaoegg",
+          "DisplayName": "Ji Bean Egg",
+          "Description": "Ji Bean's egg, represents 'Wealth'. Hatches into a Ji Bean overnight.",
+          "Type": "Basic -5",
+          "Category": 0,
+          "Price": 777,
+          "Texture": "assets/paopaoImages/jipaopaoegg",
+          "SpriteIndex": "0",
+          "Edibility": -300,
+          "ContextTags": [
+            "color_brown"
+          ]
+        }
+      }
+},
+  {
+    "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "yipaopaoegg": {
+          "Name": "yipaopaoegg",
+          "DisplayName": "Yi Bean Egg",
+          "Description":  "Yi Bean's egg, represents 'Cherish'. Hatches into a Yi Bean overnight.",
+          "Type": "Basic -5",
+          "Category": 0,
+          "Price": 688,
+          "Texture": "assets/paopaoImages/yipaopaoegg",
+          "SpriteIndex": "0",
+          "Edibility": -300,
+          "ContextTags": [
+            "color_green"
+          ]
+        }
+      }
+},
+  {
+    "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "nianpaopaoegg": {
+          "Name": "nianpaopaoegg",
+          "DisplayName": "Director Nian's Souvenir",
+          "Description": "Nian Bean's egg, painted over by Nian with low-quality pigment, represents... 'Remember to come support my next new movie!'. Hatches into a Nian Bean overnight.",
+          "Type": "Basic -5",
+          "Category": 0,
+          "Price": 333,
+          "Texture": "assets/paopaoImages/nianpaopaoegg",
+          "SpriteIndex": "0",
+          "Edibility": -300,
+          "ContextTags": [
+            "color_red"
+          ]
+        }
+      }
+},
+  {
+    "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "xipaopaoegg": {
+          "Name": "xipaopaoegg",
+          "DisplayName": "Dusk Bean Egg",
+          "Description": "A Dusk Bean egg sculpture artwork, where Dusk Bean discarded the 'spirit' from her own egg, making it her most powerful artwork.",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 40000,
+          "Texture": "assets/paopaoImages/xipaopaoegg",
+          "SpriteIndex": "0",
+          "Edibility": -300,
+          "ContextTags": [
+            "color_green"
+          ]
+        }
+      }
+},
+  {
+    "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "yupaopaoegg": {
+          "Name": "yupaopaoegg",
+          "DisplayName": "Yu Bean Egg",
+          "Description": "Yu Bean's egg, represents 'Reunion'. Hatches into a small Yu Bean overnight.",
+          "Type": "Basic -5",
+          "Category": 0,
+          "Price": 612,
+          "Texture": "assets/paopaoImages/yupaopaoegg",
+          "SpriteIndex": "0",
+          "Edibility": -300,
+          "ContextTags": [
+            "color_black"
+          ]
+        }
+      }
+},
+  {
+    "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "familyandresponsibilities": {
+          "Name": "familyandresponsibilities",
+          "DisplayName": "Family and Responsibilities",
+          "Description": "A Dusk Bean egg sculpture artwork. Made under the guidance of Shu Bean.",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 33777,
+          "Texture": "assets/paopaoImages/familyandresponsibilities",
+          "SpriteIndex": "0",
+          "Edibility": -300,
+          "ContextTags": [
+            "color_white"
+          ]
+        }
+      }
+},
+  {
+    "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "thejiegardenthree": {
+          "Name": "thejiegardenthree",
+          "DisplayName": "the JieGarden three",
+          "Description": "A Dusk Bean egg sculpture artwork. Originates from Dusk Bean's experience after not playing well at JieGarden. Compared to other works, it probably won't sell well.",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 3200,
+          "Texture": "assets/paopaoImages/thejiegardenthree",
+          "SpriteIndex": "0",
+          "Edibility": -300,
+          "ContextTags": [
+            "color_white"
+          ]
+        }
+      }
+},
+  {
+    "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "suifamilysisters": {
+          "Name": "suifamilysisters",
+          "DisplayName": "Sui Family Sisters",
+          "Description": "A Dusk Bean egg sculpture artwork. Made because Nian Bean and Ling Bean insisted.",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 34543,
+          "Texture": "assets/paopaoImages/suifamilysisters",
+          "SpriteIndex": "0",
+          "Edibility": -300,
+          "ContextTags": [
+            "color_white"
+          ]
+        }
+      }
+},
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "DragonBeans.shuopaopao": {
+                    "DisplayName": "Shuo Beans",
+                    "House": "Barn",
+                    "Gender": "Male",
+                    "PurchasePrice": "60606",
+                    "ShopSourceRect": {"X": 0, "Y": 0, "Width": 32, "Height": 16},
+                    "RequiredBuilding": "Barn",
+                    "UnlockCondition": null,
+                    "ShopDescription": "Shuo Bean, a kungfu Bean. Shuo Bean is very strong, gives you fish he catches every two days. Occasionally teaches you tactical skills, and can also produce all DragonBeans eggs.",
+                    "ShopMissingBuildingDescription": "Shuo Bean wants Barn.",
+                    "DaysToMature": "14",
+                    "CanGetPregnant": false,
+                    "DaysToProduce": "2",
+                    "HarvestType": 0,
+                    "HarvestTool": null,
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "shuopaopaosound",
+                    "BabySound": "shuopaopaosound",
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": "32",
+                    "SpriteHeight": "32",
+                    "ShowInSummitCredits": true,
+                    "SellPrice": "45000",
+                    "ShadowWhenBabySwims": null,
+                    "ShadowWhenBaby": null,
+                    "ShadowWhenAdultSwims": null,
+                    "ShadowWhenAdult": null,
+                    "CanSwim": true,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 12,
+                    "Skins": null,
+                    "ShopTexture": "assets/paopaoImages/shuopaopao_icon",
+                    "Texture": "assets/paopaoImages/shuopaopao",
+                    "BabyTexture": "assets/paopaoImages/shuopaopao"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "DragonBeans.wangpaopao": {
+                    "DisplayName": "Wang Beans",
+                    "House": "Coop",
+                    "Gender": "Male",
+                    "PurchasePrice": "75000",
+                    "ShopSourceRect": {"X": 0, "Y": 0, "Width": 32, "Height": 16},
+                    "RequiredBuilding": "Coop",
+                    "UnlockCondition": null,
+                    "ShopDescription": "Wang Bean, a strategist Bean. Has countless clones in the human world. Teaches you a piece of strategic knowledge every six days.",
+                    "ShopMissingBuildingDescription": "Wang Bean clone wants Coop to cultivate strategy, maybe for playing weiqi?",
+                    "DaysToMature": "14",
+                    "CanGetPregnant": false,
+                    "DaysToProduce": "6",
+                    "HarvestType": 0,
+                    "HarvestTool": null,
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "wangpaopaosound", 
+                    "BabySound": "wangpaopaosound", 
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": "16",
+                    "SpriteHeight": "16",
+                    "ShowInSummitCredits": true,
+                    "SellPrice": "75000",
+                    "ShadowWhenBabySwims": null,
+                    "ShadowWhenBaby": null,
+                    "ShadowWhenAdultSwims": null,
+                    "ShadowWhenAdult": null,
+                    "CanSwim": true,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 12,
+                    "Skins": null,
+                    "ShopTexture": "assets/paopaoImages/wangpaopao_icon",
+                    "Texture": "assets/paopaoImages/wangpaopao",
+                    "BabyTexture": "assets/paopaoImages/wangpaopaofenshen",
+  "EggItemIds": ["wangpaopaoegg"],
+  "IncubationTime": 9680,
+  "IncubatorParentSheetOffset": 1,
+  "BirthText": "A new Wang Bean clone has appeared!"
+                                   }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "DragonBeans.lingpaopao": {
+                    "DisplayName": "Ling Beans",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "PurchasePrice": "4000",
+                    "ShopSourceRect": {"X": 0, "Y": 0, "Width": 32, "Height": 16},
+                    "RequiredBuilding": "Coop",
+                    "UnlockCondition": null,
+                    "ShopDescription": "Ling Bean, a Bean who loves drinking. Shares the wine she drinks with you. Shares a bottle of wine every two days.",
+                    "ShopMissingBuildingDescription": "Ling Bean wants Coop to hide and store her wine!",
+                    "DaysToMature": "28",
+                    "CanGetPregnant": false,
+                    "DaysToProduce": "2",
+                    "HarvestType": 0,
+                    "HarvestTool": null,
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "lingpaopaosound", 
+                    "BabySound": "DragonBeansSound2", 
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": "16",
+                    "SpriteHeight": "16",
+                    "ShowInSummitCredits": true,
+                    "SellPrice": "4000",
+                    "ShadowWhenBabySwims": null,
+                    "ShadowWhenBaby": null,
+                    "ShadowWhenAdultSwims": null,
+                    "ShadowWhenAdult": null,
+                    "CanSwim": true,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 12,
+                    "Skins": null,
+                    "ShopTexture": "assets/paopaoImages/lingpaopao_icon",
+                    "Texture": "assets/paopaoImages/lingpaopao",
+                    "BabyTexture": "assets/paopaoImages/lingpaopao",
+  "EggItemIds": ["lingpaopaoegg"],
+  "IncubationTime": 9720,
+  "IncubatorParentSheetOffset": 1,
+  "BirthText": "A Ling Bean has born!"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "DragonBeans.shupaopao": {
+                    "DisplayName": "Shu Beans",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "PurchasePrice": "2000",
+                    "ShopSourceRect": {"X": 0, "Y": 0, "Width": 32, "Height": 16},
+                    "RequiredBuilding": "Coop",
+                    "UnlockCondition": null,
+                    "ShopDescription": "Shu Bean, a Bean who loves growing vegetables, Goddess of Tilled Land. Shu Bean gives you some crops as a gift every two days.",
+                    "ShopMissingBuildingDescription": "Shu Bean wants Coop to settle down.",
+                    "DaysToMature": "28",
+                    "CanGetPregnant": false,
+                    "DaysToProduce": "2",
+                    "HarvestType": 0,
+                    "HarvestTool": null,
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "shupaopaosound", 
+                    "BabySound": "DragonBeansSound2", 
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": "16",
+                    "SpriteHeight": "16",
+                    "ShowInSummitCredits": true,
+                    "SellPrice": "2000",
+                    "ShadowWhenBabySwims": null,
+                    "ShadowWhenBaby": null,
+                    "ShadowWhenAdultSwims": null,
+                    "ShadowWhenAdult": null,
+                    "CanSwim": true,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 12,
+                    "Skins": [                {
+                    "Id": "DragonBeans.shupaopao1",
+                    "Texture": "assets/paopaoImages/shupaopao1",
+                    "DisplayName": "Flowerdance Shu Bean"
+                }],
+                    "ShopTexture": "assets/paopaoImages/shupaopao_icon",
+                    "Texture": "assets/paopaoImages/shupaopao",
+                    "BabyTexture": "assets/paopaoImages/shupaopao",
+  "EggItemIds": ["shupaopaoegg"],
+  "IncubationTime": 9840,
+  "IncubatorParentSheetOffset": 1,
+  "BirthText": "A Shu Bean has born!"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "DragonBeans.jipaopao": {
+                    "DisplayName": "Ji Beans",
+                    "House": "Coop",
+                    "Gender": "Male",
+                    "PurchasePrice": "89000",
+                    "ShopSourceRect": {"X": 0, "Y": 0, "Width": 32, "Height": 16},
+                    "RequiredBuilding": "Coop",
+                    "UnlockCondition": null,
+                    "ShopDescription": "Ji Bean, a merchant Bean. Gives you his treasures and cloth every day.",
+                    "ShopMissingBuildingDescription": "Ji Bean wants Coop to hide his treasures.",
+                    "DaysToMature": "28",
+                    "CanGetPregnant": false,
+                    "DaysToProduce": "1",
+                    "HarvestType": 0,
+                    "HarvestTool": null,
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "yipaopaosound",
+                    "BabySound": "rabbit",
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": "16",
+                    "SpriteHeight": "16",
+                    "ShowInSummitCredits": true,
+                    "SellPrice": "89000",
+                    "ShadowWhenBabySwims": null,
+                    "ShadowWhenBaby": null,
+                    "ShadowWhenAdultSwims": null,
+                    "ShadowWhenAdult": null,
+                    "CanSwim": true,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 12,
+                    "Skins": null,
+                    "ShopTexture": "assets/paopaoImages/jipaopao_icon",
+                    "Texture": "assets/paopaoImages/jipaopao",
+                    "BabyTexture": "assets/paopaoImages/jipaopao",
+  "EggItemIds": ["jipaopaoegg"],
+  "IncubationTime": 9880,
+  "IncubatorParentSheetOffset": 1,
+  "BirthText": "A Ji Bean has born!"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "DragonBeans.yipaopao": {
+                    "DisplayName": "Yi Beans",
+                    "House": "Coop",
+                    "Gender": "Male",
+                    "PurchasePrice": "56500",
+                    "ShopSourceRect": {"X": 0, "Y": 0, "Width": 32, "Height": 16},
+                    "RequiredBuilding": "Coop",
+                    "UnlockCondition": null,
+                    "ShopDescription": "Yi Bean, an architect Bean. Gives you materials needed for farm construction every day.",
+                    "ShopMissingBuildingDescription": "Yi Bean wants Coop to draw blueprints.",
+                    "DaysToMature": "28",
+                    "CanGetPregnant": false,
+                    "DaysToProduce": "1",
+                    "HarvestType": 0,
+                    "HarvestTool": null,
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "yipaopaosound",
+                    "BabySound": "rabbit",
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": "16",
+                    "SpriteHeight": "16",
+                    "ShowInSummitCredits": true,
+                    "SellPrice": "56500",
+                    "ShadowWhenBabySwims": null,
+                    "ShadowWhenBaby": null,
+                    "ShadowWhenAdultSwims": null,
+                    "ShadowWhenAdult": null,
+                    "CanSwim": true,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 12,
+                    "Skins": null,
+                    "ShopTexture": "assets/paopaoImages/yipaopao_icon",
+                    "Texture": "assets/paopaoImages/yipaopao",
+                    "BabyTexture": "assets/paopaoImages/yipaopao",
+  "EggItemIds": ["yipaopaoegg"],
+  "IncubationTime": 9920,
+  "IncubatorParentSheetOffset": 1,
+  "BirthText": "A Yi Bean has born!"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "DragonBeans.nianpaopao": {
+                    "DisplayName": "Nian Beans",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "PurchasePrice": "6500",
+                    "ShopSourceRect": {"X": 0, "Y": 0, "Width": 32, "Height": 16},
+                    "RequiredBuilding": "Coop",
+                    "UnlockCondition": null,
+                    "ShopDescription": "Nian Bean, a Bean who loves spicy food and movies. Gives you peppers every two days. Uh... so spicy! Wait, are those movie tickets under Nian Bean?",
+                    "ShopMissingBuildingDescription": "Nian Bean wants Coop... or maybe we should separate Dusk and Nian...",
+                    "DaysToMature": "28",
+                    "CanGetPregnant": false,
+                    "DaysToProduce": "2",
+                    "HarvestType": 0,
+                    "HarvestTool": null,
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "nianpaopaosound",
+                    "BabySound": "DragonBeansSound1",
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": "16",
+                    "SpriteHeight": "16",
+                    "ShowInSummitCredits": true,
+                    "SellPrice": "6500",
+                    "ShadowWhenBabySwims": null,
+                    "ShadowWhenBaby": null,
+                    "ShadowWhenAdultSwims": null,
+                    "ShadowWhenAdult": null,
+                    "CanSwim": true,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 12,
+                    "Skins": null,
+                    "ShopTexture": "assets/paopaoImages/nianpaopao_icon",
+                    "Texture": "assets/paopaoImages/nianpaopao",
+                    "BabyTexture": "assets/paopaoImages/nianpaopao",
+  "EggItemIds": ["nianpaopaoegg"],
+  "IncubationTime": 9960,
+  "IncubatorParentSheetOffset": 1,
+  "BirthText": "A Nian Bean has born!"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "DragonBeans.xipaopao": {
+                    "DisplayName": "Dusk Beans",
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "PurchasePrice": "45000",
+                    "ShopSourceRect": {"X": 0, "Y": 0, "Width": 32, "Height": 16},
+                    "RequiredBuilding": "Barn",
+                    "UnlockCondition": null,
+                    "ShopDescription": "Dusk Bean, a Bean switched love to egg sculpting. Gives you her artwork every half month.",
+                    "ShopMissingBuildingDescription": "Dusk Bean... seems to want more space? Let her live in the Barn.",
+                    "DaysToMature": "28",
+                    "CanGetPregnant": false,
+                    "DaysToProduce": "14",
+                    "HarvestType": 0,
+                    "HarvestTool": null,
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "xipaopaosound",
+                    "BabySound": "DragonBeansSound3",
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": "32",
+                    "SpriteHeight": "32",
+                    "ShowInSummitCredits": true,
+                    "SellPrice": "18000",
+                    "ShadowWhenBabySwims": null,
+                    "ShadowWhenBaby": null,
+                    "ShadowWhenAdultSwims": null,
+                    "ShadowWhenAdult": null,
+                    "CanSwim": true,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 1,
+                    "HappinessDrain": 12,
+                    "Skins": [                {
+                    "Id": "DragonBeans.xipaopao2",
+                    "Texture": "assets/paopaoImages/xipaopao2",
+                    "DisplayName": "Nian Bean和Dusk Bean"
+                }],
+                    "ShopTexture": "assets/paopaoImages/xipaopao_icon",
+                    "Texture": "assets/paopaoImages/xipaopao1",
+                    "BabyTexture": "assets/paopaoImages/xipaopao"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "DragonBeans.yupaopao": {
+                    "DisplayName": "Yu Beans",
+                    "House": "Coop",
+                    "Gender": "Male",
+                    "PurchasePrice": "41000",
+                    "ShopSourceRect": {"X": 0, "Y": 0, "Width": 32, "Height": 16},
+                    "RequiredBuilding": "Coop",
+                    "UnlockCondition": null,
+                    "ShopDescription": "Yu Bean, a Bean who loves cooking. Cooks a meal for you every day.",
+                    "ShopMissingBuildingDescription": "Yu Bean wants Coop to cook.",
+                    "DaysToMature": "28",
+                    "CanGetPregnant": false,
+                    "DaysToProduce": "1",
+                    "HarvestType": 0,
+                    "HarvestTool": null,
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "yupaopaosound",
+                    "BabySound": "rabbit",
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": "16",
+                    "SpriteHeight": "16",
+                    "ShowInSummitCredits": true,
+                    "SellPrice": "41000",
+                    "ShadowWhenBabySwims": null,
+                    "ShadowWhenBaby": null,
+                    "ShadowWhenAdultSwims": null,
+                    "ShadowWhenAdult": null,
+                    "CanSwim": true,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 1,
+                    "HappinessDrain": 12,
+                    "Skins": null,
+                    "ShopTexture": "assets/paopaoImages/yupaopao_icon",
+                    "Texture": "assets/paopaoImages/yupaopao",
+                    "BabyTexture": "assets/paopaoImages/yupaopao",
+  "EggItemIds": ["yupaopaoegg"],
+  "IncubationTime": 10080,
+  "IncubatorParentSheetOffset": 1,
+  "BirthText": "A small Yu Bean has born!"
+                }
+            }
+        },
+              {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "DragonBeans.jiusepao": {
+                    "DisplayName": "Nine-colored Beans",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "PurchasePrice": "4999995",
+                    "ShopSourceRect": {"X": 0, "Y": 0, "Width": 32, "Height": 16},
+                    "RequiredBuilding": "Coop",
+                    "UnlockCondition": null,
+                    "ShopDescription": "A rare Bean that ordinary people cannot find. But when you are willing to search with huge gold, she will come before you and help you with items of equal value. Gives you one Prismatic Shard and one Magic Rock Candy every day.",
+                    "ShopMissingBuildingDescription": "???",
+                    "DaysToMature": "28",
+                    "CanGetPregnant": false,
+                    "DaysToProduce": "1",
+                    "HarvestType": 0,
+                    "HarvestTool": null,
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "rabbit", 
+                    "BabySound": "rabbit", 
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": "16",
+                    "SpriteHeight": "16",
+                    "ShowInSummitCredits": true,
+                    "SellPrice": "999999",
+                    "ShadowWhenBabySwims": null,
+                    "ShadowWhenBaby": null,
+                    "ShadowWhenAdultSwims": null,
+                    "ShadowWhenAdult": null,
+                    "CanSwim": true,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 12,
+                    "Skins": null,
+                    "ShopTexture": "assets/paopaoImages/jiusepao_icon",
+                    "Texture": "assets/paopaoImages/jiusepao",
+                    "BabyTexture": "assets/paopaoImages/jiusepao",
+  "EggItemIds": ["279"],
+  "IncubationTime": 99999,
+  "IncubatorParentSheetOffset": 1,
+  "BirthText": "Strange, it seems a very rare Bean has appeared here..."
+                }
+            }
+        },
+              {
+              "Action": "EditData",
+              "Target": "Data/NPCGiftTastes",
+              "TextOperations": [
+      { "Operation": "Append",
+                "Target": ["Entries", "Universal_like"],
+                "Value": "shupaopaoegg",
+                "Delimiter": " "
+        }
+      ]
+    },                          
+    {
+              "Action": "EditData",
+              "Target": "Data/NPCGiftTastes",
+              "TextOperations": [
+      { "Operation": "Append",
+                "Target": ["Entries", "Universal_like"],
+                "Value": "wangpaopaoegg",
+                "Delimiter": " "
+        }
+      ]
+    },              
+    {
+              "Action": "EditData",
+              "Target": "Data/NPCGiftTastes",
+              "TextOperations": [
+      { "Operation": "Append",
+                "Target": ["Entries", "Universal_like"],
+                "Value": "lingpaopaoegg",
+                "Delimiter": " "
+        }
+      ]
+    },              
+    {
+              "Action": "EditData",
+              "Target": "Data/NPCGiftTastes",
+              "TextOperations": [
+      { "Operation": "Append",
+                "Target": ["Entries", "Universal_like"],
+                "Value": "nianpaopaoegg",
+                "Delimiter": " "
+        }
+      ]
+    },              
+    {
+              "Action": "EditData",
+              "Target": "Data/NPCGiftTastes",
+              "TextOperations": [
+      { "Operation": "Append",
+                "Target": ["Entries", "Universal_like"],
+                "Value": "yipaopaoegg",
+                "Delimiter": " "
+        }
+      ]
+    },              
+    {
+              "Action": "EditData",
+              "Target": "Data/NPCGiftTastes",
+              "TextOperations": [
+      { "Operation": "Append",
+                "Target": ["Entries", "Universal_like"],
+                "Value": "jipaopaoegg",
+                "Delimiter": " "
+        }
+      ]
+    },              
+    {
+              "Action": "EditData",
+              "Target": "Data/NPCGiftTastes",
+              "TextOperations": [
+      { "Operation": "Append",
+                "Target": ["Entries", "Universal_like"],
+                "Value": "yupaopaoegg",
+                "Delimiter": " "
+        }
+      ]
+    },              
+    {
+              "Action": "EditData",
+              "Target": "Data/NPCGiftTastes",
+              "TextOperations": [
+      { "Operation": "Append",
+                "Target": ["Entries", "Universal_love"],
+                "Value": "xipaopaoegg",
+                "Delimiter": " "
+        }
+      ]
+    },              
+    {
+              "Action": "EditData",
+              "Target": "Data/NPCGiftTastes",
+              "TextOperations": [
+      { "Operation": "Append",
+                "Target": ["Entries", "Universal_love"],
+                "Value": "suifamilysisters",
+                "Delimiter": " "
+        }
+      ]
+    },              
+    {
+              "Action": "EditData",
+              "Target": "Data/NPCGiftTastes",
+              "TextOperations": [
+      { "Operation": "Append",
+                "Target": ["Entries", "Universal_love"],
+                "Value": "thejiegardenthree",
+                "Delimiter": " "
+        }
+      ]
+    },              
+    {
+              "Action": "EditData",
+              "Target": "Data/NPCGiftTastes",
+              "TextOperations": [
+      { "Operation": "Append",
+                "Target": ["Entries", "Universal_love"],
+                "Value": "familyandresponsibilities",
+                "Delimiter": " "
+        }
+      ]
+    },
+            {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "TargetField": ["DragonBeans.shupaopao"],
+            "Entries": {
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{Random: 190, 250, 24, 192, 252}}" 
+                    }
+                ],
+                "DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 750,
+                        "ItemId": "{{Random: 190, 250, 24, 192, 252, 400, 454, shupaopaoegg}}"
+                    }
+                ]
+            },
+            "When": {
+                "Season": "spring"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "TargetField": ["DragonBeans.shupaopao"],
+            "Entries": {
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{Random: 258, 304, 254, 256}}"
+                    }
+                ],
+                "DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 750,
+                        "ItemId": "{{Random: 258, 304, 254, 256, 266, 268, 832, 830, 454, shupaopaoegg}}"
+                    }
+                ]
+            },
+            "When": {
+                "Season": "summer"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "TargetField": ["DragonBeans.shupaopao"],
+            "Entries": {
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{Random: 300, 278, 282, 272, 398, 276, 280}}"
+                    }
+                ],
+                "DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 750,
+                        "ItemId": "{{Random: 300, 278, 282, 272, 398, 276, 280, 417, 454, shupaopaoegg}}"
+                    }
+                ]
+            },
+            "When": {
+                "Season": "fall"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "TargetField": ["DragonBeans.shupaopao"],
+            "Entries": {
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "-75"
+                    }
+                ]
+            },
+            "When": {
+                "Season": "winter"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "TargetField": ["DragonBeans.xipaopao"],
+            "Entries": {
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{Random: suifamilysisters, thejiegardenthree, familyandresponsibilities}}"
+                    }
+                ],
+                "DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 750,
+                        "ItemId": "{{Random: suifamilysisters, thejiegardenthree, familyandresponsibilities, xipaopaoegg}}"
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "TargetField": ["DragonBeans.wangpaopao"],
+            "Entries": {
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{Random: Book_Artifact, Book_Trash, Book_Crabbing, Book_Bombs, Book_Roe, Book_WildSeeds, Book_Woodcutting, Book_Defense, Book_Friendship, Book_Void, Book_Marlon}}"
+                    }
+                ],
+                "DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 750,
+                        "ItemId": "{{Random: Book_Artifact, Book_Trash, Book_Crabbing, Book_Bombs, Book_Roe, Book_WildSeeds, Book_Woodcutting, Book_Defense, Book_Friendship, Book_Void, Book_Marlon, Book_QueenOfSauce, wangpaopaoegg}}"
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "TargetField": ["DragonBeans.shuopaopao"],
+            "Entries": {
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{Random: 128, 129, 130, 131, 132, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 156, 164, 267, 698, 699, 700, 701, 702, 704, 705, 706, 707, 708, 734}}"
+                    }
+                ],
+                "DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 750,
+                        "ItemId": "{{Random: 155, 154, 158, 161, 162, 165, 682, 795, 796, 798, 799, 800, 836, 837, 838, 269, wangpaopaoegg, lingpaopaoegg, shupaopaoegg, yipaopaoegg, jipaopaoegg, nianpaopaoegg, xipaopaoegg, yupaopaoegg}}"
+                    }
+                ]
+            },
+            "When": {
+                "Season": "spring"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "TargetField": ["DragonBeans.shuopaopao"],
+            "Entries": {
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{Random: 128, 129, 130, 131, 132, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 156, 164, 267, 698, 699, 700, 701, 702, 704, 705, 706, 707, 708, 734}}"
+                    }
+                ],
+                "DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 750,
+                        "ItemId": "{{Random: 155, 154, 158, 161, 162, 165, 682, 795, 796, 798, 799, 800, 836, 837, 838, 269, wangpaopaoegg, lingpaopaoegg, shupaopaoegg, yipaopaoegg, jipaopaoegg, nianpaopaoegg, xipaopaoegg, yupaopaoegg}}"
+                    }
+                ]
+            },
+            "When": {
+                "Season": "summer"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "TargetField": ["DragonBeans.shuopaopao"],
+            "Entries": {
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{Random: 128, 129, 130, 131, 132, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 156, 164, 267, 698, 699, 700, 701, 702, 704, 705, 706, 707, 708, 734}}"
+                    }
+                ],
+                "DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 750,
+                        "ItemId": "{{Random: 155, 154, 158, 161, 162, 165, 682, 795, 796, 798, 799, 800, 836, 837, 838, 269, wangpaopaoegg, lingpaopaoegg, shupaopaoegg, yipaopaoegg, jipaopaoegg, nianpaopaoegg, xipaopaoegg, yupaopaoegg}}"
+                    }
+                ]
+            },
+            "When": {
+                "Season": "fall"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "TargetField": ["DragonBeans.shuopaopao"],
+            "Entries": {
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{Random:128, 129, 130, 131, 132, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 156, 164, 267, 698, 699, 700, 701, 702, 704, 705, 706, 707, 708, 734}}"
+                    }
+                ]
+            },
+            "When": {
+                "Season": "winter"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "TargetField": ["DragonBeans.yupaopao"],
+            "Entries": {
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{Random: 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 253, 265, 279, 604, 605, 606, 607, 608, 609, 610, 611, 612, 618, 648, 649, 651, 727, 728, 729, 730, 731, 732, 733, 772, 773, 873, 903, 904, 905, 906, 907, 921, yupaopaocook}}"
+                    }
+                ],
+                "DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 750,
+                        "ItemId": "{{Random: 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 253, 265, 279, 604, 605, 606, 607, 608, 609, 610, 611, 612, 618, 648, 649, 651, 727, 728, 729, 730, 731, 732, 733, 772, 773, 873, 903, 904, 905, 906, 907, 921, yupaopaocook, yupaopaoegg}}"
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "TargetField": ["DragonBeans.nianpaopao"],
+            "Entries": {
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{Random: 260, 809}}"
+                    }
+                ],
+                "DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 750,
+                        "ItemId": "{{Random: 260, 809, nianpaopaoegg}}"
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "TargetField": ["DragonBeans.lingpaopao"],
+            "Entries": {
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{Random: 348, 303, 346, 459}}"
+                    }
+                ],
+                "DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 750,
+                        "ItemId": "{{Random: 348, 303, 346, 459, lingpaopaoegg, lingpaopaowine, 733}}"
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "TargetField": ["DragonBeans.yipaopao"],
+            "Entries": {
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{Random: 334, 335, 336, 337, 338}}"
+                    }
+                ],
+                "DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 750,
+                        "ItemId": "{{Random: 334, 335, 336, 337, 338, 910, yipaopaoegg}}"
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "TargetField": ["DragonBeans.jipaopao"],
+            "Entries": {
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{Random: GoldenMysteryBox, 791, 428}}"
+                    }
+                ],
+                "DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 750,
+                        "ItemId": "{{Random: jipaopaoegg, GoldenMysteryBox, 791, 428}}"
+                    }
+                ]
+            }
+        },
+                {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "TargetField": ["DragonBeans.jiusepao"],
+            "Entries": {
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{Random: 279, 74}}"
+                    }
+                ]
+            }
+        }
+    ]
+}

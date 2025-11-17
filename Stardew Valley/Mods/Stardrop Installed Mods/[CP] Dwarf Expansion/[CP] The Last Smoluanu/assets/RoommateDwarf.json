@@ -32,8 +32,7 @@
             "Action": "EditData",
             "Target": "Data/Events/FarmHouse",
             "When": {
-                // "HasMod": "aedenthorn.FreeLove, ApryllForever.CPPolyamorySweet",
-                "HasMod |contains=Lemurkat.NPCJasper": true
+                "HasMod": "aedenthorn.FreeLove, ApryllForever.CPPolyamorySweet"
             },
             "Entries": {
                 "96420096/A JasperMeetsDwarf/n Dwarf_Friend/O Jasper/f Dwarf 2500": "libraryTheme/-100 -100/Jasper 54 25 2 farmer 50 25 1/ignoreCollisions farmer/skippable/addObject 54 26 79 1/showFrame Jasper 27/viewport 50 24 clamp true/pause 1000/move farmer 3 0 1/showFrame Jasper 0/jump Jasper 5/pause 500/faceDirection Jasper 3/textAboveHead Jasper \"{{i18n:96420096.01}}{{playername}}!\"/pause 500/speak Jasper \"{{i18n:96420096.02}}\"/emote farmer 40/speak Jasper \"{{i18n:96420096.03}}\"/emote farmer 8/speak Jasper \"{{i18n:96420096.04}}\"/jump farmer 5/emote farmer 16/speak Jasper \"{{i18n:96420096.05}}\"/pause 500/question fork0 \"{{i18n:96420096.06}}#{{i18n:96420096.07}}#{{i18n:96420096.08}}#\"/fork DwarfRoommate_1/speak Jasper \"{{i18n:96420096.09}}\"/pause 500/emote farmer 60/pause 1000/end",
@@ -45,8 +44,8 @@
             "Action": "EditData",
             "Target": "Data/Events/FarmHouse",
             "When": {
-                "HasMod |contains=Lemurkat.NPCJasper": true,
-                //"HasMod": "aedenthorn.FreeLove, ApryllForever.CPPolyamorySweet",
+                // "HasMod |contains=Lemurkat.NPCJasper": true,
+                "HasMod": "aedenthorn.FreeLove, ApryllForever.CPPolyamorySweet",
                 "HasFlag": "DwarfRoommate_2"
             },
             "Entries": {
@@ -108,20 +107,25 @@
             }
         },
         //Spouse Room
-        {
+        /*{
             "Action": "EditData",
             "Target": "Data/SpouseRooms",
             "Entries": {
                 "Dwarf": "Lemurkat_Dwarf_SpouseRoom/0"
             }
-        },
+        },*/
         {
             "Action": "Load",
             "Target": "Maps/Lemurkat_Dwarf_SpouseRoom",
             "FromFile": "assets/maps/SpouseRoomDwarf.tmx"
         },
         {
-            "LogName": "Changes Dwarf's Name",
+            "Action": "Load",
+            "Target": "Maps/Lemurkat_Dwarf_SpousePatio",
+            "FromFile": "assets/maps/SpousePatiosDwarf.tmx"
+        },
+        {
+            "LogName": "Adds Dwarf's Spouse room",
             "Action": "EditData",
             "Target": "Data/Characters",
             "TargetField": [
@@ -135,6 +139,15 @@
                         "Y": 0,
                         "Width": 6,
                         "Height": 9
+                    }
+                },
+                "SpousePatio": {
+                    "MapAsset": "Lemurkat_Dwarf_SpousePatio",
+                    "MapSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 4,
+                        "Height": 4
                     }
                 },
             }

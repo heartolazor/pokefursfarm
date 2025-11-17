@@ -64,6 +64,9 @@
     "added-by-mod": "Mod tarafından eklendi",
     "added-by-mod.summary": "{{modName}}",
 
+    // internal ID
+    "internal-id": "Internal ID", // TODO
+
 
     /*********
     ** Data translations
@@ -182,6 +185,7 @@
     "animal.produce-ready": "Ürün hazır",
     "animal.growth": "Büyüme",
     "animal.sells-for": "Karşılığında sat",
+    "animal.golden-cracker": "Golden animal cracker", // also used for fish ponds // TODO
 
     // values
     "animal.complaints.hungry": "dün beslenmedi",
@@ -190,6 +194,8 @@
     "animal.complaints.no-heater": "kış için ısıtıcı yok",
     "animal.complaints.not-petted": "bugün henüz sevilmedi",
     "animal.complaints.wild-animal-attack": "gece vahşi hayvanların saldırısına uğradı",
+    "animal.golden-cracker.none": "None. Add a golden animal cracker to double produced items.", // TODO
+    "animal.golden-cracker.applied": "Applied; produced items are doubled.", // TODO
 
 
     /*********
@@ -328,6 +334,7 @@
     "item.dislikes-this": "Bunu beğenmez",
     "item.hates-this": "Bundan nefret eder",
     "item.needed-for": "Şunun için lazım",
+    "item.flavor": "Flavor", // TODO // links to the flavor item (e.g. 'Blueberry' for Blueberry Wine)
     "item.number-owned": "Sahip",
     "item.number-cooked": "Pişmiş",
     "item.number-crafted": "Yapılmış",
@@ -352,6 +359,7 @@
     "item.needed-for.gourmet-chef": "gurme şef başarısı (pişir {{recipes}})",
     "item.needed-for.craft-master": "zanaat ustası başarısı (yap {{recipes}})",
     "item.needed-for.quests": "şuanki görevler ({{quests}})",
+    "item.needed-for.trash-bear": "trash bear (deliver one)", // TODO
     "item.unknown-recipes": "{{count}} adet bilinmeyen tarif",
     "item.sells-to.shipping-box": "gönderi kutusu",
     "item.recipes-for-ingredient.entry": "{{name}} (lazım {{count}})",
@@ -361,6 +369,7 @@
     "item.number-owned.summary": "bundan {{count}} tane sahipsin",
     "item.number-owned-flavored.summary": "you own {{count}} ({{name}}) or {{baseCount}} ({{baseName}}) of these", // TODO // e.g. "you own 5 (Sturgeon Roe) or 20 (Roe) of these"
     "item.number-crafted.summary": "bundan {{count}} tane yaptın",
+    "item.internal-id.summary": "{{itemId}} (globally unique 'qualified ID': {{qualifiedItemId}})", // TODO
 
 
     /*********
@@ -640,7 +649,6 @@
     // labels
     "tile.title": "Harita karosu ({{x}}, {{y}})",
     "tile.description": "Bir karonun haritadaki konumu. Bu gösteriliyor çünkü konfigürasyonda karo gösterimini etkinleştirdin.",
-    "tile.game-location": "Konum",
     "tile.map-name": "Harita ismi",
     "tile.map-properties": "Harita Özellikleri",
     "tile.layer-tile": "{{layer}} Karo",
@@ -701,10 +709,33 @@
 
 
     /*********
+    ** Data mining fields
+    *********/
+    // TODO
+    "data-mining.name": "Raw data",
+    "data-mining.name.map-tile": "Raw data (map tile)",
+    "data-mining.name.map-location": "Raw data (location)",
+
+    "data-mining.section-pinned": "Pinned", // 'pinned' section has notable values (i.e. it's pinned at the top of the list)
+
+
+    /*********
     ** Generic Mod Config Menu UI
     *********/
-    // main options
-    "config.title.main-options": "Ana seçenekler",
+    // appearance
+    // TODO
+    "config.title.appearance": "Appearance",
+
+    "config.theme.name": "Visual theme",
+    "config.theme.desc": "The appearance to apply for the lookup and search menu.",
+
+    "config.theme.values.Parchment": "Parchment",
+    "config.theme.values.Joja": "Joja",
+    "config.theme.values.MenuBox_Border": "Menu box (border)",
+    "config.theme.values.MenuBox_Inset": "Menu box (inset)",
+    "config.theme.values.MenuBox_Raised": "Menu box (raised)",
+    "config.theme.values.Plain": "Plain",
+
     "config.force-full-screen.name": "Tam ekranı zorla",
     "config.force-full-screen.desc": "Menünün pencerede ortalanmak yerine her zaman tam ekran olup olmayacağı. Bu, özellikle veri madenciliği alanlarını görüntülerken kullanışlıdır.",
 

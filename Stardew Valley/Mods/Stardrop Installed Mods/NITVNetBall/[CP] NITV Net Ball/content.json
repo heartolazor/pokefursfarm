@@ -1,0 +1,131 @@
+{
+  "Format": "2.7.0",
+  
+  "ConfigSchema": {
+    "NetBallRequirement": {
+        "AllowValues": "true, false",
+        "Default": "false",
+        "Section": "Donation Requirement for Net Balls"
+    }
+  },
+
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "TileSheets/NetBall",
+      "FromFile": "assets/NetBall.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "TileSheets/NetBall2",
+      "FromFile": "assets/NetBall2.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "TileSheets/NetBallNote",
+      "FromFile": "assets/NetBallNote.png"
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+          "NetBallThrow": {
+              "ID": "NetBallThrow",
+              "FilePaths": [ "{{AbsoluteFilePath: NetBallThrow.ogg}}" ],
+              "Category": "Music",
+              "StreamedVorbis": false,
+              "Looped": false
+          }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "LogName":  "Created Net Ball Data",
+      "Target": "Data/Objects",
+      "Entries": {
+        "Net Ball": {
+          "Name": "Net Ball",
+          "DisplayName": "{{i18n:Netball.DisplayName}}",
+          "Description": "{{i18n:Netball.Description}}",
+          "Edibility": -300,
+          "Type": "Basic",
+          "Category": "-29",
+          "Texture": "TileSheets/NetBall",
+          "SpriteIndex": "0"
+        },
+        "Net Ball=": {
+        "Name": "Net Ball=",
+        "DisplayName": "{{i18n:BetterNetball.DisplayName}}",
+        "Description": "{{i18n:BetterNetball.Description}}",
+        "Edibility": -300,
+        "Type": "Basic",
+        "Category": "-29",
+        "Texture": "TileSheets/NetBall2",
+        "SpriteIndex": "0"
+        },
+        "Net Ball Note": {
+        "Name": "Net Ball Note",
+        "DisplayName": "{{i18n:NetballNote.DisplayName}}",
+        "Description": "{{i18n:NetballNote.Description}}",
+        "Edibility": -300,
+        "Type": "Basic",
+        "Category": "-29",
+        "Texture": "TileSheets/NetBallNote",
+        "SpriteIndex": "0"
+        }
+      }
+    },
+
+    {
+          "Action": "EditData",
+          "Target": "Data/Shops",
+          "TargetField": [ "NIVInsectariumShop", "Items" ],
+          "Entries": {
+            "Net Ball": {
+              "ItemId": "Net Ball",
+              "Price": 200,
+              "Condition":"ANY \"{{NetBallRequirement}}\" \"NAT_NIV_DonatedSpecific CommonButterfly, NAT_NIV_DonatedSpecific Moth, NAT_NIV_DonatedSpecific EarthWorm, NAT_NIV_DonatedSpecific BlackAnt, NAT_NIV_DonatedSpecific CaveBeetle, NAT_NIV_DonatedSpecific PillBug, NAT_NIV_DonatedSpecific HermitCrab, NAT_NIV_DonatedSpecific SandWorm\""
+            },
+            "Net Ball=": {
+              "ItemId": "Net Ball=",
+              "Price": 400,
+              "Condition":"ANY \"{{NetBallRequirement}}\" \"NAT_NIV_DonatedSpecific CommonButterfly, NAT_NIV_DonatedSpecific Moth, NAT_NIV_DonatedSpecific EarthWorm, NAT_NIV_DonatedSpecific BlackAnt, NAT_NIV_DonatedSpecific CaveBeetle, NAT_NIV_DonatedSpecific PillBug, NAT_NIV_DonatedSpecific HermitCrab, NAT_NIV_DonatedSpecific SandWorm\" , ANY \"{{NetBallRequirement}}\" \"IS_COMMUNITY_CENTER_COMPLETE\" \"IS_JOJA_MART_COMPLETE\""
+            },
+            "Net Ball Note": {
+              "ItemId": "Net Ball Note",
+              "Price": 10
+            }
+          }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+      "Entries": {
+        "Net Ball": {
+          "CategoryTextOverride": "{{i18n:Netball.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 50,
+            "G": 95,
+            "B": 175,
+            "A": 255
+          }
+        },
+        "Net Ball=": {
+          "CategoryTextOverride": "{{i18n:Netball.CategoryTag}}",
+          "CategoryColorOverride": {
+            "R": 50,
+            "G": 95,
+            "B": 175,
+            "A": 255
+          }
+        }
+      }
+    }
+
+  ]
+}

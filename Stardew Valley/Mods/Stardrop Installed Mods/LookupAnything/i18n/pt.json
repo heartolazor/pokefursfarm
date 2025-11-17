@@ -65,6 +65,9 @@
     "added-by-mod": "Added by mod",
     "added-by-mod.summary": "{{modName}}",
 
+    // internal ID
+    "internal-id": "Internal ID", // TODO
+
 
     /*********
     ** Data translations
@@ -184,6 +187,7 @@
     "animal.produce-ready": "Produto pronto",
     "animal.growth": "Crescimento",
     "animal.sells-for": "Vende por",
+    "animal.golden-cracker": "Golden animal cracker", // also used for fish ponds // TODO
 
     // values
     "animal.complaints.hungry": "Não foi alimentado ontem",
@@ -192,6 +196,8 @@
     "animal.complaints.no-heater": "Sem aquecedor no inverno",
     "animal.complaints.not-petted": "Não recebeu carinho hoje",
     "animal.complaints.wild-animal-attack": "Foi atacado por animais selvagens durante a noite",
+    "animal.golden-cracker.none": "None. Add a golden animal cracker to double produced items.", // TODO
+    "animal.golden-cracker.applied": "Applied; produced items are doubled.", // TODO
 
 
     /*********
@@ -330,6 +336,7 @@
     "item.dislikes-this": "Não gosta disso",
     "item.hates-this": "Odeia isso",
     "item.needed-for": "Preciso para",
+    "item.flavor": "Flavor", // TODO // links to the flavor item (e.g. 'Blueberry' for Blueberry Wine)
     "item.number-owned": "Possui",
     "item.number-cooked": "Cozinhado",
     "item.number-crafted": "Criados",
@@ -354,6 +361,7 @@
     "item.needed-for.gourmet-chef": "conquista de Chefe Gourmet (cozinhe {{recipes}})",
     "item.needed-for.craft-master": "conquista de Mestre do Artesanato (crie {{recipes}})",
     "item.needed-for.quests": "Missões atuais ({{quests}})",
+    "item.needed-for.trash-bear": "trash bear (deliver one)", // TODO
     "item.unknown-recipes": "{{count}} unknown recipes", // TODO
     "item.sells-to.shipping-box": "Caixa de envio",
     "item.recipes-for-ingredient.entry": "{{name}} (precisa de {{count}})",
@@ -363,6 +371,7 @@
     "item.number-owned.summary": "Possui {{count}} desses",
     "item.number-owned-flavored.summary": "you own {{count}} ({{name}}) or {{baseCount}} ({{baseName}}) of these", // TODO // e.g. "you own 5 (Sturgeon Roe) or 20 (Roe) of these"
     "item.number-crafted.summary": "Criou {{count}} desses",
+    "item.internal-id.summary": "{{itemId}} (globally unique 'qualified ID': {{qualifiedItemId}})", // TODO
 
 
     /*********
@@ -642,7 +651,6 @@
     // labels
     "tile.title": "Bloco ({{x}}, {{y}})",
     "tile.description": "A posição de um bloco no mapa. Isso é exibido porque você ativou as pesquisas de blocos na configuração",
-    "tile.game-location": "Localização",
     "tile.map-name": "Nome do mapa",
     "tile.map-properties": "Map properties", // TODO
     "tile.layer-tile": "{{layer}} tile", // TODO
@@ -703,10 +711,33 @@
 
 
     /*********
+    ** Data mining fields
+    *********/
+    // TODO
+    "data-mining.name": "Raw data",
+    "data-mining.name.map-tile": "Raw data (map tile)",
+    "data-mining.name.map-location": "Raw data (location)",
+
+    "data-mining.section-pinned": "Pinned", // 'pinned' section has notable values (i.e. it's pinned at the top of the list)
+
+
+    /*********
     ** Generic Mod Config Menu UI
     *********/
-    // main options
-    "config.title.main-options": "Opções principais",
+    // appearance
+    // TODO
+    "config.title.appearance": "Appearance",
+
+    "config.theme.name": "Visual theme",
+    "config.theme.desc": "The appearance to apply for the lookup and search menu.",
+
+    "config.theme.values.Parchment": "Parchment",
+    "config.theme.values.Joja": "Joja",
+    "config.theme.values.MenuBox_Border": "Menu box (border)",
+    "config.theme.values.MenuBox_Inset": "Menu box (inset)",
+    "config.theme.values.MenuBox_Raised": "Menu box (raised)",
+    "config.theme.values.Plain": "Plain",
+
     "config.force-full-screen.name": "Forçar tela cheia",
     "config.force-full-screen.desc": "Se o menu deve estar sempre em tela cheia, em vez de centralizado na janela. Isso é útil principalmente ao visualizar campos de mineração de dados.",
 

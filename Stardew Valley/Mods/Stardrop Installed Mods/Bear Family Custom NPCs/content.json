@@ -1,0 +1,3185 @@
+/*
+
+
+   /## /##   /BBBBBBB                                /FFFFFFFF                    
+  / ##/ ##  | BB__  BB                              | FF_____/                    
+ /##########| BB  \ BB  /EEEEEE   /AAAAAA   /RRRRRR | FF    /AAAAAA  /MMMMMM/MMMM 
+|   ##  ##_/| BBBBBBB  /EE__  EE |____  AA /RR__  RR| FFFFF|____  AA| MM_  MM_  MM
+ /##########| BB__  BB| EEEEEEEE  /AAAAAAA| RR  \__/| FF__/ /AAAAAAA| MM \ MM \ MM
+|_  ##  ##_/| BB  \ BB| EE_____/ /AA__  AA| RR      | FF   /AA__  AA| MM | MM | MM
+  | ##| ##  | BBBBBBB/|  EEEEEEE|  AAAAAAA| RR      | FF  |  AAAAAAA| MM | MM | MM
+  |__/|__/  |_______/  \_______/ \_______/|__/      |__/   \_______/|__/ |__/ |__/
+                                                                                  
+
+  */
+{
+  "Format": "2.0.0",
+
+  "ConfigSchema": {
+
+    "IncludeinIntroductionQuest": {
+      "AllowValues": "true, false",
+      "Default": true,
+      "AllowBlank": false,
+      "Description": "Determines whether Sig and Sondra count for the introduction quest. Default is true; they will count for the introduction quest when added at the beginning of a new game.",
+      "Section": "General"
+    },
+
+    "ExcludeFromPerfection": {
+      "AllowValues": "true, false",
+      "Default": false,
+      "AllowBlank": false,
+      "Description": "Excludes BearFam items from Perfection tracking. This will not exclude recipes due to the game's code but will exclude the items from the shipping requirements at least. False by default, meaning items/crops count by default.",
+      "Section": "General"
+    },
+
+    "ExcludeFishFromPerfection": {
+      "AllowValues": "true, false",
+      "Default": false,
+      "AllowBlank": false,
+      "Description": "Excludes BearFam fish from Perfection tracking. This means Bearfam fish won't need to be caught for perfection. False by default, meaning the fish count by default.",
+      "Section": "General"
+    },
+
+    "FarmerJobTitle": {
+      "Default": "Farmer",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Description": "Sets the player's job title for more immersive roleplay for users who aren't playing as farmers specifically. Default is 'farmer'.",
+      "Section": "General"
+    },
+
+    "KrakensWords": {
+      "AllowValues": "Wise, Funny, Squidfact",
+      "Default": "Wise",
+      "AllowBlank": false,
+      "Description": "Is the Kraken speaking wisdom, comedy, or facts? Has no effect than whether you get allegedly wise quotes from the internet, allegedly funny jokes, or mostly verified facts about squids. Default is wise.",
+      "Section": "General"
+    },
+
+    "ProfanityFilter": {
+      "AllowValues": "True, False",
+      "Default": false,
+      "AllowBlank": false,
+      "Description": "Changes profanity to mild non-swears for those who prefer a cleaner game. (Think hell becomes heck, damn becomes darn, etc. etc.) False by default, meaning there may be some profanity in the dialogue by default",
+      "Section": "General"
+    },
+
+    "BearsGiveGifts": {
+      "AllowValues": "True, False",
+      "Default": true,
+      "AllowBlank": false,
+      "Description": "Allows the Bear siblings to give extra gifts at Winter Star. True by default; disable if you don't want them to add on to whatever your secret gift-giver is giving you for the year.",
+      "Section": "General"
+    },
+
+    "BearFamStarterGift": {
+      "AllowValues": "true, false",
+      "Default": true,
+      "AllowBlank": false,
+      "Description": "Sends a letter at the start of a new game that welcomes the player with a little starter gift. Default is true, as in you will get a letter within 5 days of starting a new game.",
+      "Section": "General"
+    },
+
+    "EnableBonusEvents": {
+      "AllowValues": "true, false",
+      "Default": true,
+      "AllowBlank": false,
+      "Description": "Enables extra events that are not necessarily plot-mandatory, but add to the story of the NPC and/or their platonic relationships with vanilla characters. True/Enabled by default, meaning you can see the bonus events by default.",
+      "Section": "General"
+    },
+
+    "NoIntroEvents": {
+      "AllowValues": "true, false",
+      "Default": false,
+      "AllowBlank": false,
+      "Description": "Disables the pair of intro events for Sondra + Sigurd and then later Gunnar + Gudrun. Great for if you're adding to an existing save and don't want to feel bombarded with events! False/disabled by default, meaning the intro events will play.",
+      "Section": "General"
+    },
+
+    "IncludeExtraLetters": {
+      "AllowValues": "true, false",
+      "Default": true,
+      "AllowBlank": false,
+      "Description": "Adds some randomized letters from members of BearFam that probably contain gifts. True by default, meaning you may get some random letters",
+      "Section": "General"
+    },
+
+    "SeasonalOutfits": {
+      "AllowValues": "full, lite, vanilla",
+      "Default": "full",
+      "AllowBlank": false,
+      "Description": "Choose how many outfits Bearfam wears in game. Full means Bearfam will have multiple outfits per season, along with unique festival outfits. Lite means they wear a different outfit per season, plus Spirit's Eve and Flower Dance. Vanilla means they wear the same outfit for all of spring + summer + fall, a different outfit for winter, and unique outfits for Spirit's Eve and Flower Dance. Default is full.",
+      "Section": "General"
+    },
+
+    "SigurdHairColor": {
+      "AllowValues": "bluehaired, blackhaired",
+      "Default": "bluehaired",
+      "AllowBlank": false,
+      "Description": "Decide if Sig has black hair like his initial concept or blue hair like his current concept. Default is bluehaired. Note, if you change the configuration while playing, the change takes effect the next day.",
+      "Section": "General"
+    },
+    "GunnarHasFreckles": {
+      "AllowValues": "freckled, nofreckles",
+      "Default": "nofreckles",
+      "AllowBlank": false,
+      "Description": "Decide if Gunnar has freckles or no freckles. Only changes portraits. Default is nofreckles. Note, if you change the configuration while playing, the change takes effect the next day.",
+      "Section": "General"
+    },
+    "VPRWorldMapFallVariant": {
+      "AllowValues": "orange, green",
+      "Default": "orange",
+      "AllowBlank": false,
+      "Description": "Are you using VPR to recolor the world map? Wonderful! Choose your fall variant here please. Default is orange.",
+      "Section": "General"
+    },
+    "Player Pronouns 1": {
+      "Default": "They",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Description": "Sets the player's desired pronouns.",
+      "Section": "Pronouns"
+    },
+    "Player Pronouns 2": {
+      "Default": "Them",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Description": "Sets the player's desired pronouns.",
+      "Section": "Pronouns"
+    },
+    "Player Pronouns 3": {
+      "Default": "Theirs",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Description": "Sets the player's desired pronouns.",
+      "Section": "Pronouns"
+    },
+    "Player Pronouns 4": {
+      "Default": "Themselves",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Description": "Sets the player's desired pronouns.",
+      "Section": "Pronouns"
+    },
+    "Player Pronoun Identifier": {
+      "Default": "are",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Description": "Would usually be \"is\" or \"are\", depending on context. Example: She IS so cool! VS. They ARE so cool!",
+      "Section": "Pronouns"
+    },
+
+    "BearFamDatingLength": {
+      "AllowValues": "5, 7, 10",
+      "Default": "10",
+      "AllowBlank": false,
+      "Description": "Set the delay between the two pre-marriage dating events for Sig, Gunnar, and Teren. Options are 5, 7, 10. Default is 10.",
+      "Section": "Romance"
+    },
+
+    "SigRomance": {
+      "AllowValues": "Chaste, Spicy, Both",
+      "Default": "Both",
+      "AllowBlank": false,
+      "Description": "Adds extra dialogue at 8-10 hearts and beyond that can be chaste/ace-friendly, spicy, or both. Defaults to both, meaning a mix of both types of kinds will be used. Only matters if you choose to romance him. For Sig Bear if a Rival Hearts option is not chosen.",
+      "Section": "Romance"
+    },
+    "GunnarRomance": {
+      "AllowValues": "Chaste, Spicy, Both",
+      "Default": "Both",
+      "AllowBlank": false,
+      "Description": "Adds extra dialogue at 8-10 hearts and beyond that can be chaste/ace-friendly, spicy, or both. Defaults to both, meaning a mix of both types of kinds will be used. Only matters if you choose to romance him. For Gunnar Bear.",
+      "Section": "Romance"
+    },
+    "TerenRomance": {
+      "AllowValues": "Chaste, Spicy, Both",
+      "Default": "Both",
+      "AllowBlank": false,
+      "Description": "Adds extra dialogue at 8-10 hearts and beyond that can be chaste/ace-friendly, spicy, or both. Defaults to both, meaning a mix of both types of kinds will be used. Only matters if you choose to romance him. For Teren Barnes if a Rival Hearts option is not chosen.",
+      "Section": "Romance"
+    },
+    "SigurdSpouseNickname1": {
+      "Default": "Bumblebee",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Description": "Sets the player's desired term of endearment if they romance Sigurd. Each romance option has default names they'd use but players can input their own to personalize it further. His default nickname for his partner is bumblebee.",
+      "Section": "Romance"
+    },
+
+    "GunnarSpouseNickname1": {
+      "Default": "Sweets",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Description": "Sets the player's desired term of endearment if they romance Gunnar. Each romance option has default names they'd use but players can input their own to personalize it further. Gunnar notably uses multiple different names. His default nicknames for his partner are sweets, sweetling, and delight.",
+      "Section": "Romance"
+    },
+
+    "GunnarSpouseNickname2": {
+      "Default": "Sweetling",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Description": "Sets the player's desired term of endearment if they romance Gunnar. Each romance option has default names they'd use but players can input their own to personalize it further. Gunnar notably uses multiple different names. His default nicknames for his partner are sweets, sweetling, and delight.",
+      "Section": "Romance"
+    },
+
+    "GunnarSpouseNickname3": {
+      "Default": "Delight",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Description": "Sets the player's desired term of endearment if they romance Gunnar. Each romance option has default names they'd use but players can input their own to personalize it further. Gunnar notably uses multiple different names. His default nicknames for his partner are sweets, sweetling, and delight.",
+      "Section": "Romance"
+    },
+
+    "TerenSpouseNickname1": {
+      "Default": "Darling",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Description": "Sets the player's desired term of endearment if they romance Teren. Each romance option has default names they'd use but players can input their own to personalize it further. His default nickname for his partner is darling.",
+      "Section": "Romance"
+    },
+
+    "FarmhouseSpouse": {
+      "AllowValues": "Decorated, Empty",
+      "Default": "Decorated",
+      "AllowBlank": false,
+      "Description": "Use Sig's, Gunnar's, or Teren's custom spouse room and patio, or load empty ones instead. Defaults to Decorated; each spouse room/patio will be customized to the spouse.",
+      "Section": "Romance"
+    },
+
+    "SassySpawnMarriedTerenOutdoorX": {
+      "AllowValues": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160",
+      "Default": 71,
+      "AllowBlank": false,
+      "Description": "Select the X coordinate for Sassy's MEEP spawn point if you've married Teren for on the farm. Frontier Farm users, use 129.",
+      "Section": "Romance"
+    },
+
+    "SassySpawnMarriedTerenOutdoorY": {
+      "AllowValues": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160",
+      "Default": 16,
+      "AllowBlank": false,
+      "Description": "Select the Y coordinate for Sassy's MEEP spawn point if you've married Teren for on the farm. Frontier Farm users, use 28.",
+      "Section": "Romance"
+    },
+    "SassySpawnMarriedTerenIndoorX": {
+      "AllowValues": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160",
+      "Default": 26,
+      "AllowBlank": false,
+      "Description": "Select the X coordinate for Sassy's MEEP spawn point if you've married Teren for in the house. If you're still on House Upgrade Level 1, use 3.",
+      "Section": "Romance"
+    },
+
+    "SassySpawnMarriedTerenIndoorY": {
+      "AllowValues": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160",
+      "Default": 26,
+      "AllowBlank": false,
+      "Description": "Select the Y coordinate for Sassy's MEEP spawn point if you've married Teren for in the house. If you're still on House Upgrade Level 1, use 9.",
+      "Section": "Romance"
+    },
+
+    "KidsWithSigurd": {
+      "AllowValues": "NoKids, AdoptedKids, NaturalKids",
+      "Default": "NaturalKids",
+      "AllowBlank": false,
+      "Description": "Decide how (adopted vs. natural) to have kids (if any) with Sig if romanced. Default is NaturalKids.",
+      "Section": "Children"
+    },
+
+    "SigurdCustomToddlerSprite": {
+      "AllowValues": "vanilla, customseasonal, customstatic",
+      "Default": "customseasonal",
+      "AllowBlank": false,
+      "Description": "Decide if Sig's children take after him, with seasonal outfits, the same outfit every season, or if they just use the vanilla toddler sprites. Default is customseasonal.",
+      "Section": "Children"
+    },
+
+    "SigurdGunhildrHair": {
+      "AllowValues": "bluehaired, blackhaired",
+      "Default": "bluehaired",
+      "AllowBlank": false,
+      "Description": "Decide if Sig's daughter has black hair like his initial concept or blue hair like his current concept. Default is bluehaired.",
+      "Section": "Children"
+    },
+    "SigurdRuneHair": {
+      "AllowValues": "bluehaired, blackhaired",
+      "Default": "bluehaired",
+      "AllowBlank": false,
+      "Description": "Decide if Sig's son has black hair like his initial concept or blue hair like his current concept. Default is bluehaired.",
+      "Section": "Children"
+    },
+
+    "KidsWithGunnar": {
+      "AllowValues": "NoKids, AdoptedKids, NaturalKids",
+      "Default": "NaturalKids",
+      "AllowBlank": false,
+      "Description": "Decide how (adopted vs. natural) to have kids (if any) with Gunnar if romanced. Default is NaturalKids.",
+      "Section": "Children"
+    },
+
+    "GunnarCustomToddlerSprite": {
+      "AllowValues": "vanilla, customseasonal, customstatic",
+      "Default": "customseasonal",
+      "AllowBlank": false,
+      "Description": "Decide if Gunnar's children take after him, with seasonal outfits, the same outfit every season, or if they just use the vanilla toddler sprites. Default is customseasonal.",
+      "Section": "Children"
+    },
+
+    "GunnarSigneHair": {
+      "AllowValues": "blondhair, strawberryhair",
+      "Default": "blondhair",
+      "AllowBlank": false,
+      "Description": "Decide if Gunnar's daughter has strawberry blonde hair or blonde hair like Gunnar. Default is blondhair.",
+      "Section": "Children"
+    },
+    "GunnarLeifHair": {
+      "AllowValues": "blondhair, strawberryhair",
+      "Default": "blondhair",
+      "AllowBlank": false,
+      "Description": "Decide if Gunnar's son has strawberry blond hair or blond hair like Gunnar. Default is blondhair.",
+      "Section": "Children"
+    },
+
+    "KidsWithTeren": {
+      "AllowValues": "NoKids, AdoptedKids, NaturalKids",
+      "Default": "NoKids",
+      "AllowBlank": false,
+      "Description": "Decide how (adopted vs. natural) to have kids (if any) with Teren if romanced. Default is NoKids.",
+      "Section": "Children"
+    },
+
+    "TerenCustomToddlerSprite": {
+      "AllowValues": "vanilla, customseasonal, customstatic",
+      "Default": "customseasonal",
+      "AllowBlank": false,
+      "Description": "Decide if Teren's children take after him, with seasonal outfits, the same outfit every season, or if they just use the vanilla toddler sprites. Default is customseasonal.",
+      "Section": "Children"
+    },
+
+    "TerenFredericaHair": {
+      "AllowValues": "darkbrown, blondbrown",
+      "Default": "darkbrown",
+      "AllowBlank": false,
+      "Description": "Decide if Teren's daughter has a darker brown hair that matches Teren or a blonder-brown hair. Default is darkbrown.",
+      "Section": "Children"
+    },
+    "TerenJaysonHair": {
+      "AllowValues": "darkbrown, blondbrown",
+      "Default": "darkbrown",
+      "AllowBlank": false,
+      "Description": "Decide if Teren's son has a darker brown hair that matches Teren or a blonder-brown hair. Default is darkbrown.",
+      "Section": "Children"
+    },
+
+    "EnableRivalHeartsTerenSig": {
+      "AllowValues": "true, false",
+      "Default": false,
+      "AllowBlank": false,
+      "Description": "Activates a rival hearts romance between Teren and Sig if neither are romanced by the player or other rival hearts. Cannot be true while the EliTeren or DylanSig Rival Hearts are true. Default is false.",
+      "Section": "RivalHearts"
+    },
+
+    "EnableRivalHeartsTerenEli": {
+      "AllowValues": "true, false",
+      "Default": false,
+      "AllowBlank": false,
+      "Description": "Activates a rival hearts romance between Teren and Eli if neither are romanced by the player or other rival hearts. Cannot be true while TerenSig Rival Hearts is true. Requires Eli & Dylan by Tenebrous Nova. Default is false.",
+      "Section": "RivalHearts"
+    },
+
+    "EnableRivalHeartsSigDylan": {
+      "AllowValues": "true, false",
+      "Default": false,
+      "AllowBlank": false,
+      "Description": "Activates a rival hearts romance between Sig and Dylan if neither are romanced by the player or other rival hearts. Cannot be true while the TerenSig Rival Hearts is true. Requires Eli & Dylan by Tenebrous Nova. Default is false.",
+      "Section": "RivalHearts"
+    }/*,
+
+    "RivalHeartsRoutes": {
+      "AllowValues": "None, TerenSig, TwoHands, SigDylan, TerenEli, MorayDoubleDate",
+      "Default": "None",
+      "AllowBlank": false,
+      "Description": "Activates the rival heart events. The options are None, as is no rival hearts events - Sig and Teren are both romanceable but do not romantically intertwine with each other; Teren & Sig, as in Teren and Sig get together; Teren & Sig & You as in Teren and Sig get together with you, the player; Sig & Dylan as in Sig and Dylan from TenebrousNova's Eli & Dylan mod get together; Teren & Eli as in Teren and Eli from TenebrousNova's Eli & Dylan mod get together; Sig & Dylan + Teren & Eli as in both crossover routes happen. If neither None nor Teren & Sig & You are selected, Teren and Sig will not accept the flower bouquet. Default is None, allowing either one or both to be romanced separate from each other. The poly + rival hearts content is not included yet; this config is for future proofing the mod.",
+      "Section": "RivalHearts"
+    }*/
+  },
+
+  "DynamicTokens": [
+    //home location tokens
+    //////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Name": "GunnarMap",
+      "Value": "MadDog.BearFam.Custom_BearFamLoadingZone",
+      "When": {
+        "HasFlag: anyPlayer|contains=Gunnar7DayAbsence": true,
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": true
+
+      }
+    },
+    {
+      "Name": "GunnarMapX",
+      "Value": 2,
+      "When": {
+        "HasFlag: anyPlayer|contains=Gunnar7DayAbsence": true,
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "Name": "GunnarMapY",
+      "Value": 5,
+      "When": {
+        "HasFlag: anyPlayer|contains=Gunnar7DayAbsence": true,
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "Name": "GunnarMap",
+      "Value": "MadDog.BearFam.Custom_BearFamLoadingZone"
+    },
+    {
+      "Name": "GunnarMapX",
+      "Value": 2
+    },
+    {
+      "Name": "GunnarMapY",
+      "Value": 5
+    },
+    {
+      "Name": "GunnarMap",
+      "Value": "MadDog.BearFam.Custom_BearLodge",
+      "When": {
+        "HasFlag: anyPlayer|contains=Gunnar7DayAbsence": false,
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "Name": "GunnarMapX",
+      "Value": 53,
+      "When": {
+        "HasFlag: anyPlayer|contains=Gunnar7DayAbsence": false,
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "Name": "GunnarMapY",
+      "Value": 7,
+      "When": {
+        "HasFlag: anyPlayer|contains=Gunnar7DayAbsence": false,
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": true
+      }
+    },
+    //////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Name": "GudrunMap",
+      "Value": "Mountain",
+      "When": {
+        "HasFlag: anyPlayer|contains=GudruntheRunaway": true,
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "Name": "GudrunMapX",
+      "Value": 60,
+      "When": {
+        "HasFlag: anyPlayer|contains=GudruntheRunaway": true,
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "Name": "GudrunMapY",
+      "Value": 19,
+      "When": {
+        "HasFlag: anyPlayer|contains=GudruntheRunaway": true,
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "Name": "GudrunMap",
+      "Value": "MadDog.BearFam.Custom_BearFamLoadingZone"
+    },
+    {
+      "Name": "GudrunMapX",
+      "Value": 5
+    },
+    {
+      "Name": "GudrunMapY",
+      "Value": 4
+    },
+    {
+      "Name": "GudrunMap",
+      "Value": "MadDog.BearFam.Custom_BearLodge",
+      "When": {
+        "HasFlag: anyPlayer|contains=GudruntheRunaway": false,
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "Name": "GudrunMapX",
+      "Value": 35,
+      "When": {
+        "HasFlag: anyPlayer|contains=GudruntheRunaway": false,
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": true
+      }
+    },
+    {
+      "Name": "GudrunMapY",
+      "Value": 7,
+      "When": {
+        "HasFlag: anyPlayer|contains=GudruntheRunaway": false,
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": true
+      }
+    },
+    //////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Name": "TerenMap",
+      "Value": "MadDog.BearFam.Custom_BearFamLoadingZone"
+    },
+    {
+      "Name": "TerenMapX",
+      "Value": 6
+    },
+    {
+      "Name": "TerenMapY",
+      "Value": 6
+    },
+    {
+      "Name": "TerenMap",
+      "Value": "MadDog.BearFam.Custom_BearLodge",
+      "When": {
+        "HasFlag: anyPlayer|contains=TerenIsHere": true
+      }
+    },
+    {
+      "Name": "TerenMapX",
+      "Value": 45,
+      "When": {
+        "HasFlag: anyPlayer|contains=TerenIsHere": true
+      }
+    },
+    {
+      "Name": "TerenMapY",
+      "Value": 26,
+      "When": {
+        "HasFlag: anyPlayer|contains=TerenIsHere": true
+      }
+    },
+    //////////////////////////////////////////////////////////////////////////////////////////////
+
+    //Day stuff for dialogue keys - credit to Axell and Pooh
+    {
+      "Name": "WeekDayList",
+      "Value": "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
+    },
+    {
+      "Name": "WeekDay",
+      "Value": "{{WeekDayList |valueAt={{Query: {{Day}}%7}}}}"
+    },
+    {
+      "Name": "CountForShipping",
+      "Value": "true"
+    },
+    {
+      "Name": "CountForShipping",
+      "Value": "false",
+      "When": {
+        "ExcludeFromPerfection": true
+      }
+    },
+
+    //romanceable 
+    //sig
+    {
+      "Name": "SigurdRelationshipStatus",
+      "Value": "true",
+      "When": {
+        "HasFlag: anyPlayer|contains=SigDateable": true
+      }
+    },
+    {
+      "Name": "SigurdRelationshipStatus",
+      "Value": "false",
+      "When": {
+        "HasFlag: anyPlayer|contains=SigDateable": false
+      }
+    },
+    //
+    //teren
+    {
+      "Name": "TerenRelationshipStatus",
+      "Value": "true",
+      "When": {
+        "HasFlag: anyPlayer|contains=TerenDateable": true
+      }
+    },
+    {
+      "Name": "TerenRelationshipStatus",
+      "Value": "false",
+      "When": {
+        "HasFlag: anyPlayer|contains=TerenDateable": false
+      }
+    },
+    //
+    //gunnar
+    {
+      "Name": "GunnarRelationshipStatus",
+      "Value": "true",
+      "When": {
+        "HasFlag: anyPlayer|contains=GunnarDateable": true
+      }
+    },
+    {
+      "Name": "GunnarRelationshipStatus",
+      "Value": "false",
+      "When": {
+        "HasFlag: anyPlayer|contains=GunnarDateable": false
+      }
+    },
+    //sigurd hair color stuff
+    {
+      "Name": "SigurdHairColorSpriteIndex",
+      "Value": "0"
+    },
+    {
+      "Name": "SigurdHairColorSpriteIndex",
+      "Value": "2",
+      "When": {
+        "SigurdHairColor": "blackhaired"
+      }
+    },
+    {
+      "Name": "SigurdHairColorMail",
+      "Value": "4"
+    },
+    {
+      "Name": "SigurdHairColorMail",
+      "Value": "5",
+      "When": {
+        "SigurdHairColor": "blackhaired"
+      }
+    },
+
+    {
+      "Name": "LewisStationary",
+      "Value": "3"
+    },
+    {
+      "Name": "LewisStationary",
+      "Value": "7",
+      "When": {
+        "HasMod |contains=Claw.NoTownNoMayor": false,
+        "HasMod |contains=CC.Louise": true
+      }
+    },
+    {
+      "Name": "LewisStationary",
+      "Value": "6",
+      "When": {
+        "HasMod |contains=Claw.NoTownNoMayor": true,
+        "HasMod |contains=CC.Louise": false
+      }
+    },
+    {
+      "Name": "LewisStationary",
+      "Value": "6",
+      "When": {
+        "HasMod |contains=Claw.NoTownNoMayor": true,
+        "HasMod |contains=CC.Louise": true
+      }
+    },
+    {
+      "Name": "BearFamFinaleLetter",
+      "Value": ""
+    },
+    {
+      "Name": "BearFamFinaleLetter",
+      "Value": "%action AddItem (O)MadDog.HashtagBearFam_BearFamilyKeyChain %%",
+      "When": {
+        "HasMod": "DN.SnS",
+        "HasFlag": "DN.SnS_ObtainedLLTK"
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //odd or even year token
+
+    {
+      "Name": "yearType",
+      "Value": "even"
+    },
+    {
+      "Name": "yearType",
+      "Value": "odd",
+      "When": {
+        "Query: {{Year}} % 2": 1
+      }
+    },
+
+    {
+      "Name": "ThisYear",
+      "Value": "2"
+    },
+    {
+      "Name": "ThisYear",
+      "Value": "1",
+      "When": {
+        "Year": "1"
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //wizard zone??
+    {
+      "Name": "WizardName",
+      "Value": "Rasmodius"
+    },
+    {
+      "Name": "WizardName",
+      "Value": "Rasmodia",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //weapon intro letter
+    {
+      "Name": "WhichSword",
+      "Value": "12"
+    },
+    {
+      "Name": "WhichSword",
+      "Value": "15",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// CachePrice
+    //potions in the cache token
+
+    {
+      "Name": "PotionTokenHere",
+      "Value": "MadDog.HashtagBearFam_GunnarFirstPotion, MadDog.HashtagBearFam_GunnarSecondPotion, MadDog.HashtagBearFam_GunnarThirdPotion, MadDog.HashtagBearFam_GunnarRemedyAll, MadDog.HashtagBearFam_GunnarWeirdPotion, MadDog.HashtagBearFam_GunnarBadPotion, MadDog.HashtagBearFam_GunnarMysteryPotion, MadDog.HashtagBearFam_GunnarPhoenixDown, MadDog.HashtagBearFam_NineHerbsCharm, MadDog.HashtagBearFam_GunnarPerfectPotion, 351, 349"
+    },
+    {
+      "Name": "PotionTokenHere",
+      "Value": "MadDog.HashtagBearFam_GunnarThirdPotion, MadDog.HashtagBearFam_GunnarRemedyAll, MadDog.HashtagBearFam_GunnarPhoenixDown, MadDog.HashtagBearFam_NineHerbsCharm, MadDog.HashtagBearFam_GunnarPerfectPotion, MadDog.HashtagBearFam_RegenPotions_AngelWingPotion, MadDog.HashtagBearFam_RegenPotions_TidesofFatePotion, MadDog.HashtagBearFam_RegenPotions_FreeEnergyPotion, DN.SnS_verdantpotion, DN.SnS_scarletpotion, DN.SnS_heatherpotion, DN.SnS_zydratepotion, DN.SnS_pistachiopotion, DN.SnS_dahliapotion, DN.SnS_slushiepotion, DN.SnS_matrixpotion, DN.SnS_mcdougalpotion, DN.SnS_toirneachpotion",
+      "When": {
+        "HasFlag": "GunnarCopsDandelionStyle"
+      }
+    },
+    {
+      "Name": "CachePrice",
+      "Value": "1000"
+    },
+    {
+      "Name": "CachePrice",
+      "Value": "4000",
+      "When": {
+        "HasFlag": "GunnarCopsDandelionStyle"
+      }
+    },
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //tokens for romance dialogue type
+    {
+      "Name": "SigRomanceDialogueType",
+      "Value": "{{SigRomance}}" // this one stays the same, technically possible options are Chaste, Spicy and Both, but we override Both with the one below
+    },
+    {
+      "Name": "SigRomanceDialogueType",
+      "Value": "{{Random:Chaste, Spicy}}",
+      "When": {
+        "SigRomance": "Both" //Instead of needing a separate xRomanceAll config option you check for a specific value in xRomance instead, still get the same affect as if using xRomanceAll
+      }
+    },
+
+    {
+      "Name": "GunnarRomanceDialogueType",
+      "Value": "{{GunnarRomance}}" // this one stays the same, technically possible options are Chaste, Spicy and Both, but we override Both with the one below
+    },
+    {
+      "Name": "GunnarRomanceDialogueType",
+      "Value": "{{Random:Chaste, Spicy}}",
+      "When": {
+        "SigRomance": "Both" //Instead of needing a separate xRomanceAll config option you check for a specific value in xRomance instead, still get the same affect as if using xRomanceAll
+      }
+    },
+
+    {
+      "Name": "TerenRomanceDialogueType",
+      "Value": "{{TerenRomance}}" // this one stays the same, technically possible options are Chaste, Spicy and Both, but we override Both with the one below
+    },
+    {
+      "Name": "TerenRomanceDialogueType",
+      "Value": "{{Random:Chaste, Spicy}}",
+      "When": {
+        "SigRomance": "Both" //Instead of needing a separate xRomanceAll config option you check for a specific value in xRomance instead, still get the same affect as if using xRomanceAll
+      }
+    },
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //tokens for children stuff
+    //sig
+    {
+      "Name": "SigWantsChildren",
+      "Value": "false"
+    },
+    {
+      "Name": "SigWantsChildren",
+      "Value": "false",
+      "When": {
+        "KidsWithSigurd": "NoKids"
+      }
+
+    },
+    {
+      "Name": "SigWantsChildren",
+      "Value": "true",
+      "When": {
+        "KidsWithSigurd": "AdoptedKids"
+      }
+    },
+    {
+      "Name": "SigWantsChildren",
+      "Value": "true",
+      "When": {
+        "KidsWithSigurd": "NaturalKids"
+      }
+    },
+    //gunnar
+    {
+      "Name": "GunnarWantsChildren",
+      "Value": "false"
+    },
+    {
+      "Name": "GunnarWantsChildren",
+      "Value": "false",
+      "When": {
+        "KidsWithGunnar": "NoKids"
+      }
+
+    },
+    {
+      "Name": "GunnarWantsChildren",
+      "Value": "true",
+      "When": {
+        "KidsWithGunnar": "AdoptedKids"
+      }
+    },
+    {
+      "Name": "GunnarWantsChildren",
+      "Value": "true",
+      "When": {
+        "KidsWithGunnar": "NaturalKids"
+      }
+    },
+    //teren
+    {
+      "Name": "TerenWantsChildren",
+      "Value": "false"
+    },
+    {
+      "Name": "TerenWantsChildren",
+      "Value": "false",
+      "When": {
+        "KidsWithTeren": "NoKids"
+      }
+
+    },
+    {
+      "Name": "TerenWantsChildren",
+      "Value": "true",
+      "When": {
+        "KidsWithTeren": "AdoptedKids"
+      }
+    },
+    {
+      "Name": "TerenWantsChildren",
+      "Value": "true",
+      "When": {
+        "KidsWithTeren": "NaturalKids"
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //solstice stuff
+    {
+      "Name": "Sigurd.SolsticeGift.Spot1",
+      "Value": "(O)340"
+    },
+    {
+      "Name": "Sigurd.SolsticeGift.Spot1",
+      "Value": "(O)200",
+      "When": {
+        "HasMod": "Airyn.CPSolsticeWinterStar"
+      }
+    },
+    {
+      "Name": "Sigurd.SolsticeGift.Spot2",
+      "Value": "(O)636"
+    },
+    {
+      "Name": "Sigurd.SolsticeGift.Spot2",
+      "Value": "(O)MadDog.HashtagBearFam_FerskenPeachCobbler",
+      "When": {
+        "HasMod": "Airyn.CPSolsticeWinterStar"
+      }
+    },
+    {
+      "Name": "Sigurd.SolsticeGift.Spot3",
+      "Value": "(O)346"
+    },
+    {
+      "Name": "Sigurd.SolsticeGift.Spot3",
+      "Value": "(O)MadDog.HashtagBearFam_SigurdPerfectRamen",
+      "When": {
+        "HasMod": "Airyn.CPSolsticeWinterStar"
+      }
+    },
+
+    {
+      "Name": "Sondra.SolsticeGift.Spot1",
+      "Value": "(O)731"
+    },
+    {
+      "Name": "Sondra.SolsticeGift.Spot1",
+      "Value": "(O)MadDog.HashtagBearFam_SondraPerfectRamen",
+      "When": {
+        "HasMod": "Airyn.CPSolsticeWinterStar"
+      }
+    },
+    {
+      "Name": "Sondra.SolsticeGift.Spot2",
+      "Value": "(O)220"
+    },
+    {
+      "Name": "Sondra.SolsticeGift.Spot2",
+      "Value": "(O)220",
+      "When": {
+        "HasMod": "Airyn.CPSolsticeWinterStar"
+      }
+    },
+    {
+      "Name": "Sondra.SolsticeGift.Spot3",
+      "Value": "(O)100"
+    },
+    {
+      "Name": "Sondra.SolsticeGift.Spot3",
+      "Value": "(O)MadDog.HashtagBearFam_BrazierSecretAlfredo",
+      "When": {
+        "HasMod": "Airyn.CPSolsticeWinterStar"
+      }
+    },
+
+    {
+      "Name": "Gunnar.SolsticeGift.Spot1",
+      "Value": "(O)80"
+    },
+    {
+      "Name": "Gunnar.SolsticeGift.Spot1",
+      "Value": "(O)MadDog.HashtagBearFam_TriangleGrilledCheese",
+      "When": {
+        "HasMod": "Airyn.CPSolsticeWinterStar"
+      }
+    },
+    {
+      "Name": "Gunnar.SolsticeGift.Spot2",
+      "Value": "(O)552"
+    },
+    {
+      "Name": "Gunnar.SolsticeGift.Spot2",
+      "Value": "(O)MadDog.HashtagBearFam_GunnarPerfectRamen",
+      "When": {
+        "HasMod": "Airyn.CPSolsticeWinterStar"
+      }
+    },
+    {
+      "Name": "Gunnar.SolsticeGift.Spot3",
+      "Value": "(O)444"
+    },
+    {
+      "Name": "Gunnar.SolsticeGift.Spot3",
+      "Value": "(O)MadDog.HashtagBearFam_HoneyCakes",
+      "When": {
+        "HasMod": "Airyn.CPSolsticeWinterStar"
+      }
+    },
+
+    {
+      "Name": "Gudrun.SolsticeGift.Spot1",
+      "Value": "(O)253"
+    },
+    {
+      "Name": "Gudrun.SolsticeGift.Spot1",
+      "Value": "(O)MadDog.HashtagBearFam_GudrunPerfectRamen",
+      "When": {
+        "HasMod": "Airyn.CPSolsticeWinterStar"
+      }
+    },
+    {
+      "Name": "Gudrun.SolsticeGift.Spot2",
+      "Value": "(O)394"
+    },
+    {
+      "Name": "Gudrun.SolsticeGift.Spot2",
+      "Value": "(O)MadDog.HashtagBearFam_BrambleBerryPie",
+      "When": {
+        "HasMod": "Airyn.CPSolsticeWinterStar"
+      }
+    },
+    {
+      "Name": "Gudrun.SolsticeGift.Spot3",
+      "Value": "(O)392"
+    },
+    {
+      "Name": "Gudrun.SolsticeGift.Spot3",
+      "Value": "(O)206",
+      "When": {
+        "HasMod": "Airyn.CPSolsticeWinterStar"
+      }
+    },
+
+    {
+      "Name": "Teren.SolsticeGift.Spot1",
+      "Value": "(O)346"
+    },
+    {
+      "Name": "Teren.SolsticeGift.Spot1",
+      "Value": "(O)MadDog.HashtagBearFam_TerenBakes_HeartHealthCookies",
+      "When": {
+        "HasMod": "Airyn.CPSolsticeWinterStar"
+      }
+    },
+    {
+      "Name": "Teren.SolsticeGift.Spot2",
+      "Value": "(O)206"
+    },
+    {
+      "Name": "Teren.SolsticeGift.Spot2",
+      "Value": "(O)MadDog.HashtagBearFam_JojaFloatr",
+      "When": {
+        "HasMod": "Airyn.CPSolsticeWinterStar"
+      }
+    },
+    {
+      "Name": "Teren.SolsticeGift.Spot3",
+      "Value": "(O)240"
+    },
+    {
+      "Name": "Teren.SolsticeGift.Spot3",
+      "Value": "(O)MadDog.HashtagBearFam_TTBrownies",
+      "When": {
+        "HasMod": "Airyn.CPSolsticeWinterStar"
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //intro event token stuff
+    {
+      "Name": "NoIntroEventsSonSigRequirement",
+      "Value": "e MadDog.BearFam.16197000"
+    },
+    {
+      "Name": "NoIntroEventsSonSigRequirement",
+      "Value": "",
+      "When": {
+        "NoIntroEvents": true
+      }
+    },
+    {
+      "Name": "NoIntroEventsGunGudRequirement",
+      "Value": "e MadDog.BearFam.16197002"
+    },
+    {
+      "Name": "NoIntroEventsGunGudRequirement",
+      "Value": "",
+      "When": {
+        "NoIntroEvents": true
+      }
+    },
+    {
+      "Name": "NoIntroEventsGunGudRequirementBrambleTrigger",
+      "Value": "PLAYER_HAS_SEEN_EVENT Current MadDog.BearFam.16197002"
+    },
+    {
+      "Name": "NoIntroEventsGunGudRequirementBrambleTrigger",
+      "Value": "PLAYER_HAS_MET Current MadDog.HashtagBearFam.Gudrun",
+      "When": {
+        "NoIntroEvents": true
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //nightmare wedding stuff
+    //sig
+    {
+      "Name": "WhereMateoSigWedding",
+      "Value": "-100 -100 2",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": false,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "WhereMateoSigWedding",
+      "Value": "31 30 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "WhereMateoSigWedding",
+      "Value": "-100 -100 2",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": true
+      }
+    },
+    {
+      "Name": "WhereCirrusSigWedding",
+      "Value": "-100 -100 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.1": false
+      }
+    },
+    {
+      "Name": "WhereCirrusSigWedding",
+      "Value": "30 29 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //gunnar
+    {
+      "Name": "WhereCirrusGunnarSnSWedding",
+      "Value": "-100 -100 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.1": false
+      }
+    },
+    {
+      "Name": "WhereCirrusGunnarSnSWedding",
+      "Value": "30 29 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true
+      }
+    },
+    {
+      "Name": "WhereHectorGunnarSnSWedding",
+      "Value": "-100 -100 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.1": false
+      }
+    },
+    {
+      "Name": "WhereHectorGunnarSnSWedding",
+      "Value": "31 29 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.1": true
+      }
+    },
+    {
+      "Name": "WhereDandelionGunnarSnSWedding",
+      "Value": "-100 -100 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch4.Dandelion.1": false
+      }
+    },
+    {
+      "Name": "WhereDandelionGunnarSnSWedding",
+      "Value": "32 29 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch4.Dandelion.1": true
+      }
+    },
+    {
+      "Name": "WhereRoslinGunnarSnSWedding",
+      "Value": "-100 -100 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch4.Dandelion.1": false
+      }
+    },
+    {
+      "Name": "WhereRoslinGunnarSnSWedding",
+      "Value": "33 29 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch4.Dandelion.1": true
+      }
+    },
+    {
+      "Name": "WhereMateoGunnarWedding",
+      "Value": "-100 -100 2",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": false,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "WhereMateoGunnarWedding",
+      "Value": "39 32 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "WhereMateoGunnarWedding",
+      "Value": "-100 -100 2",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": true
+      }
+    },
+    {
+      "Name": "WhereCirrusGunnarWedding",
+      "Value": "-100 -100 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.1": false
+      }
+    },
+    {
+      "Name": "WhereCirrusGunnarWedding",
+      "Value": "30 29 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true
+      }
+    },
+    {
+      "Name": "WhereHectorGunnarWedding",
+      "Value": "-100 -100 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.1": false
+      }
+    },
+    {
+      "Name": "WhereHectorGunnarWedding",
+      "Value": "31 29 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.1": true
+      }
+    },
+    {
+      "Name": "WhereDandelionGunnarWedding",
+      "Value": "-100 -100 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.1": false
+      }
+    },
+    {
+      "Name": "WhereDandelionGunnarWedding",
+      "Value": "32 29 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.1": true
+      }
+    },
+    {
+      "Name": "WhereRoslinGunnarWedding",
+      "Value": "-100 -100 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.1": false
+      }
+    },
+    {
+      "Name": "WhereRoslinGunnarWedding",
+      "Value": "33 29 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.1": true
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //teren
+    {
+      "Name": "WhereMateoTerenWedding",
+      "Value": "-100 -100 2",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": false,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "WhereMateoTerenWedding",
+      "Value": "38 30 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "WhereMateoTerenWedding",
+      "Value": "-100 -100 2",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": true
+      }
+    },
+    {
+      "Name": "WhereCirrusTerenWedding",
+      "Value": "-100 -100 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.1": false
+      }
+    },
+    {
+      "Name": "WhereCirrusTerenWedding",
+      "Value": "30 29 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //tab ui compat zone ty DestyNOVA
+
+    {
+      "Name": "TabRecolorCompat",
+      "Value": "MadDogBearFamTabs"
+    },
+    {
+      "Name": "TabRecolorCompat",
+      "Value": "Bos.UIInterface_MadDogBearFamTabs",
+      "When": {
+        "HasMod": "Bos.UIInterface"
+      }
+    },
+    {
+      "Name": "TabRecolorCompat",
+      "Value": "daisyniko.earthyinterface_MadDogBearFamTabs",
+      "When": {
+        "HasMod": "daisyniko.earthyinterface"
+      }
+    },
+    {
+      "Name": "TabRecolorCompat",
+      "Value": "enteis.woodeninterfeis_MadDogBearFamTabs",
+      "When": {
+        "HasMod": "enteis.woodeninterfeis"
+      }
+    },
+    {
+      "Name": "TabRecolorCompat",
+      "Value": "nom0ri.vintageuifix_MadDogBearFamTabs",
+      "When": {
+        "HasMod": "ManaKirel.VintageInterface2"
+      }
+    },
+    {
+      "Name": "TabRecolorCompat",
+      "Value": "shinchan.cppurpleinterface_MadDogBearFamTabs",
+      "When": {
+        "HasMod": "shinchan.cppurpleinterface"
+      }
+    },
+    {
+      "Name": "TabRecolorCompat",
+      "Value": "Sqbr.StarryBlueUI_MadDogBearFamTabs",
+      "When": {
+        "HasMod": "Sqbr.StarryBlueUI"
+      }
+    },
+    {
+      "Name": "TabRecolorCompat",
+      "Value": "thefrenchdodo.sakurainterfaceredux_MadDogBearFamTabs",
+      "When": {
+        "HasMod": "thefrenchdodo.sakurainterfaceredux"
+      }
+    },
+    {
+      "Name": "TabRecolorCompat",
+      "Value": "VinillaBean.LavenderDreams_MadDogBearFamTabs",
+      "When": {
+        "HasMod": "VinillaBean.LavenderDreams"
+      }
+    },
+    {
+      "Name": "TabRecolorCompat",
+      "Value": "silvermoonchan.PurpleGalaxyUI_MadDogBearFamTabs",
+      "When": {
+        "HasMod": "silvermoonchan.PurpleGalaxyUI"
+      }
+    },
+    {
+      "Name": "TabRecolorCompat",
+      "Value": "notbelovely.CAccent_MadDogBearFamTabs",
+      "When": {
+        "HasMod": "notbelovely.CAccent"
+      }
+    },
+    {
+      "Name": "TabRecolorCompat",
+      "Value": "Slime.SlimeUI_MadDogBearFamTabs",
+      "When": {
+        "HasMod": "Slime.SlimeUI"
+      }
+    },
+    {
+      "Name": "TabRecolorCompat",
+      "Value": "Perlade.LowkeySpringUI_MadDogBearFamTabs",
+      "When": {
+        "HasMod": "Perlade.LowkeySpringUI"
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //world map recolors compat zone
+
+    {
+      "Name": "WorldMapRecolors",
+      "Value": "Boring"
+    },
+    {
+      "Name": "WorldMapRecolors",
+      "Value": "VPRish",
+      "When": {
+        "HasMod |contains=Sandman53.ESVPRSM, VibrantPastoral.EastScarp, grapeponta.VibrantPastoralRecolor": true
+      }
+    },
+    {
+      "Name": "WorldMapRecolors",
+      "Value": "DaisyNikoEarthy",
+      "When": {
+        "HasMod |contains=N3cro_92.WorldMapEastScarp, N3cro_92.DaisyNikosEarthyMapsAllinOne": true
+      }
+    },
+    {
+      "Name": "WorldMapRecolors",
+      "Value": "Overgrown",
+      "When": {
+        "HasMod": "nuu.overgrownmap"
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Spirits Eve Defense Division Fix
+    {
+      "Name": "Gudrun.DefenseDivisionFix",
+      "Value": "9 53 2"
+    },
+    {
+      "Name": "Gudrun.DefenseDivisionFix",
+      "Value": "9 54 2",
+      "When": {
+        "HasMod": "DD.DefenseDivision"
+      }
+    },
+    {
+      "Name": "Sondra.DefenseDivisionFix",
+      "Value": "10 53 2"
+    },
+    {
+      "Name": "Sondra.DefenseDivisionFix",
+      "Value": "10 54 2",
+      "When": {
+        "HasMod": "DD.DefenseDivision"
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //event tokens
+
+    //Gunnar's Mine Accident
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineSetup",
+      "Value": "farmer 10 8 2 MadDog.HashtagBearFam.Gunnar 7 26 0 MadDog.HashtagBearFam.Sigurd 11 8 2"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineSetup",
+      "Value": "{{MadDog.HashtagBearFam.GunnarMineSetup}} Nova.Eli 12 8 2",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliSword",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliSword",
+      "Value": "animate Nova.Eli false false 400 55 56 57 55/pause 2000/showFrame Nova.Eli 55",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliStill1",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliStill1",
+      "Value": "showFrame Nova.Eli 55",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliStill2",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliStill2",
+      "Value": "showFrame Nova.Eli 2",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliSpeak1",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliSpeak1",
+      "Value": "speak Nova.Eli \"{{i18n:MadDog.HashtagBearFam.GunnarMineEliSpeak1.Eli1}}\"",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliMove1",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliMove1",
+      "Value": "advancedMove Nova.Eli false 0 2 3 0 0 2 1 10",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliSpeak2",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliSpeak2",
+      "Value": "textAboveHead Nova.Eli \"{{i18n:MadDog.HashtagBearFam.GunnarMineEliSpeak2.Eli2}}\"",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliSpeak3",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliSpeak3",
+      "Value": "speak Nova.Eli \"{{i18n:MadDog.HashtagBearFam.GunnarMineEliSpeak3.Eli3}}\"",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliMove2",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliMove2",
+      "Value": "advancedMove Nova.Eli false 3 0 0 5 3 0 0 2 2 10",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliSpeak4",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliSpeak4",
+      "Value": "textAboveHead Nova.Eli \"{{i18n:MadDog.HashtagBearFam.GunnarMineEliSpeak4.Eli4}}\"",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliEmote1",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliEmote1",
+      "Value": "emote Nova.Eli 16",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliMove3",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliMove3",
+      "Value": "speed Nova.Eli 4/advancedMove Nova.Eli false 0 8 -13 0 3 10",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineChoice1",
+      "Value": "speak MadDog.HashtagBearFam.Sigurd \"{{i18n:MadDog.HashtagBearFam.GunnarMineChoice1.Sig1}}\"/faceDirection farmer 1/advancedMove MadDog.HashtagBearFam.Sigurd false -1 0 2 10/speak MadDog.HashtagBearFam.Sigurd \"{{i18n:MadDog.HashtagBearFam.GunnarMineChoice1.Sig3}}\"/showFrame MadDog.HashtagBearFam.Gunnar 4/speed farmer 4/advancedMove farmer false 4 0 1 1000 0 -2 1 1000 0 2 1 1000 -4 0 3 10/waitForAllStationary"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineChoice1",
+      "Value": "speak MadDog.HashtagBearFam.Sigurd \"{{i18n:MadDog.HashtagBearFam.GunnarMineChoice1.Sig2}}\"/faceDirection Nova.Eli 1/advancedMove MadDog.HashtagBearFam.Sigurd false -1 0 2 10/speak MadDog.HashtagBearFam.Sigurd \"{{i18n:MadDog.HashtagBearFam.GunnarMineChoice1.Sig3}}\"/showFrame MadDog.HashtagBearFam.Gunnar 4/speed Nova.Eli 4/advancedMove Nova.Eli false 4 0 1 1000 0 -2 1 1000 0 2 1 1000 -4 0 3 10/waitForAllStationary",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineChoice2",
+      "Value": "speak MadDog.HashtagBearFam.Gunnar \"{{i18n:MadDog.HashtagBearFam.GunnarMineChoice2.Gunnar1}}\""
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineChoice2",
+      "Value": "speak MadDog.HashtagBearFam.Gunnar \"{{i18n:MadDog.HashtagBearFam.GunnarMineChoice2.Gunnar2}}\"",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliSpeak5",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliSpeak5",
+      "Value": "speak Nova.Eli \"{{i18n:MadDog.HashtagBearFam.GunnarMineEliSpeak5.Eli5}}\"/pause 500/textAboveHead MadDog.HashtagBearFam.Gunnar \"{{i18n:MadDog.HashtagBearFam.GunnarMineEliSpeak5.Gunnar1}}\"/pause 500",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliEmote2",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliEmote2",
+      "Value": "pause 250/emote Nova.Eli 32",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliEmote3",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliEmote3",
+      "Value": "emote Nova.Eli 16 true",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliSpeak6",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliSpeak6",
+      "Value": "speak Nova.Eli \"{{i18n:MadDog.HashtagBearFam.GunnarMineEliSpeak6.Eli6}}\"/pause 500",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliEmote3",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliEmote3",
+      "Value": "emote Nova.Eli 28/pause 300",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineChoice3",
+      "Value": "speak MadDog.HashtagBearFam.Sigurd \"{{i18n:MadDog.HashtagBearFam.GunnarMineChoice3.Sig1}}\"/pause 500"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineChoice3",
+      "Value": "speak Nova.Eli \"{{i18n:MadDog.HashtagBearFam.GunnarMineChoice3.Eli1}}\"/speak MadDog.HashtagBearFam.Sigurd \"{{i18n:MadDog.HashtagBearFam.GunnarMineChoice3.Sig2}}\"/pause 500",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliEmote4",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineEliEmote4",
+      "Value": "emote Nova.Eli 28/pause 300",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineChoice4",
+      "Value": "message \"{{i18n:MadDog.HashtagBearFam.GunnarMineChoice4.message1}}\""
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarMineChoice4",
+      "Value": "message \"{{i18n:MadDog.HashtagBearFam.GunnarMineChoice4.message2}}\"",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //Gunnar's Triumphant Return
+
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunitySetup",
+      "Value": "farmer 53 8 1 MadDog.HashtagBearFam.Gunnar 71 13 3 Emily 54 7 2 Demetrius 41 14 0 Clint -100 -100 2"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunitySetup",
+      "Value": "farmer 53 8 1 MadDog.HashtagBearFam.Gunnar 71 13 3 Emily 54 7 2 Demetrius 41 14 0 Clint -100 -100 2",
+      "When": {
+        "HasMod |contains=DN.SnS": true,
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": false,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunitySetup",
+      "Value": "farmer 53 8 1 MadDog.HashtagBearFam.Gunnar 71 13 3 Emily 54 7 2 Demetrius 41 14 0 Clint -100 -100 2 Mateo 55 8 3",
+      "When": {
+        "HasMod |contains=DN.SnS": true,
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunitySetup",
+      "Value": "farmer 53 8 1 MadDog.HashtagBearFam.Gunnar 71 13 3 Emily 54 7 2 Demetrius 41 14 0 Clint -100 -100 2",
+      "When": {
+        "HasMod |contains=DN.SnS": true,
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": true
+      }
+    },
+
+
+
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunityMateo",
+      "Value": "speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.SpeakEmily}}\"/pause 400/speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.0}}\"/quickQuestion {{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.1}}(break)speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v3.5}}\"(break)speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.2}}\"/addItem MadDog.HashtagBearFam_GunnarThirdPotion 0"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunityMateo",
+      "Value": "speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.SpeakEmily}}\"/pause 400/speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v2.0}}\"/quickQuestion {{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v2.1}}(break)speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v3.5}}\"(break)speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v2.2}}\"/addItem MadDog.HashtagBearFam_GunnarThirdPotion 0",
+      "When": {
+        "HasMod |contains=DN.SnS": true,
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": false,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunityMateo",
+      "Value": "faceDirection Emily 1/speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v3.0}}\"/pause 500/textAboveHead Mateo \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v3.1}}\"/advancedMove Mateo false 0 -2 -1 0 -2 0 4 10/pause 1000/warp Mateo -100 -100/faceDirection Emily 2/speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v3.2}}\"/quickQuestion {{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v3.3}}(break)speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v3.5}}\"(break)speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v3.4}}\"/addItem MadDog.HashtagBearFam_GunnarThirdPotion 0",
+      "When": {
+        "HasMod |contains=DN.SnS": true,
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunityMateo",
+      "Value": "speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.SpeakEmily}}\"/pause 400/speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.0}}\"/quickQuestion {{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.1}}(break)speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v3.5}}\"(break)speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.2}}\"/addItem MadDog.HashtagBearFam_GunnarThirdPotion 0",
+      "When": {
+        "HasMod |contains=DN.SnS": true,
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": true
+      }
+    },
+
+
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunitySetupSVE",
+      "Value": "farmer 79 11 1 MadDog.HashtagBearFam.Gunnar 86 26 2 Emily 80 10 2 Demetrius 58 9 1 Clint -100 -100 2"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunitySetupSVE",
+      "Value": "farmer 79 11 1 MadDog.HashtagBearFam.Gunnar 86 26 2 Emily 80 10 2 Demetrius 58 9 1 Clint -100 -100 2",
+      "When": {
+        "HasMod |contains=DN.SnS": true,
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": false,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunitySetupSVE",
+      "Value": "farmer 79 11 1 MadDog.HashtagBearFam.Gunnar 86 26 2 Emily 80 10 2 Demetrius 58 9 1 Clint -100 -100 2 Mateo 81 10 3",
+      "When": {
+        "HasMod |contains=DN.SnS": true,
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunitySetupSVE",
+      "Value": "farmer 79 11 1 MadDog.HashtagBearFam.Gunnar 86 26 2 Emily 80 10 2 Demetrius 58 9 1 Clint -100 -100 2",
+      "When": {
+        "HasMod |contains=DN.SnS": true,
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": true
+      }
+    },
+
+
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunityMateoSVE",
+      "Value": "speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.SpeakEmily}}\"/pause 400/speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.0}}\"/quickQuestion {{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.1}}(break)speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v3.5}}\"(break)speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.2}}\"/addItem MadDog.HashtagBearFam_GunnarThirdPotion 0"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunityMateoSVE",
+      "Value": "speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.SpeakEmily}}\"/pause 400/speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.0}}\"/quickQuestion {{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.1}}(break)speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v3.5}}\"(break)speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.2}}\"/addItem MadDog.HashtagBearFam_GunnarThirdPotion 0",
+      "When": {
+        "HasMod |contains=DN.SnS": true,
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": false,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunityMateoSVE",
+      "Value": "faceDirection Emily 1/speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v3.0}}\"/pause 500/textAboveHead Mateo \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v3.1}}\"/advancedMove Mateo false 0 -2 -1 0 -2 0 4 10/pause 1000/warp Mateo -100 -100/faceDirection Emily 2/speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v3.2}}\"/quickQuestion {{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v3.3}}(break)speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v3.5}}\"(break)speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v3.4}}\"/addItem MadDog.HashtagBearFam_GunnarThirdPotion 0",
+      "When": {
+        "HasMod |contains=DN.SnS": true,
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunityMateoSVE",
+      "Value": "speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.SpeakEmily}}\"/pause 400/speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.0}}\"/quickQuestion {{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.1}}(break)speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.v3.5}}\"(break)speak Emily \"{{i18n:MadDog.HashtagBearFam.GunnarCommunityMateo.2}}\"/addItem MadDog.HashtagBearFam_GunnarThirdPotion 0",
+      "When": {
+        "HasMod |contains=DN.SnS": true,
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": true
+      }
+    },
+
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunityMateo1SVE",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunityMateo1SVE",
+      "Value": "pause 1",
+      "When": {
+        "HasMod |contains=DN.SnS": true,
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": false,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunityMateo1SVE",
+      "Value": "warp Mateo -100 -100",
+      "When": {
+        "HasMod |contains=DN.SnS": true,
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GunnarCommunityMateo1SVE",
+      "Value": "pause 1",
+      "When": {
+        "HasMod |contains=DN.SnS": true,
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": true
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //Gunnar's Review
+
+    {
+      "Name": "Marlon",
+      "Value": "Marlon"
+    },
+    {
+      "Name": "Marlon",
+      "Value": "MarlonFay",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //Teren Romance Life
+
+    {
+      "Name": "MadDog.HashtagBearFam.TerenSingleQuestion",
+      "Value": "speak MadDog.HashtagBearFam.Teren \"{{i18n:MadDog.HashtagBearFam.TerenSingleQuestion.v1.1}}\"/quickQuestion #{{i18n:MadDog.HashtagBearFam.TerenSingleQuestion.v1.2}}#{{i18n:MadDog.HashtagBearFam.TerenSingleQuestion.v1.3}}(break)speak MadDog.HashtagBearFam.Teren \"{{i18n:MadDog.HashtagBearFam.TerenSingleQuestion.v1.4}}\"(break)speak MadDog.HashtagBearFam.Teren \"{{i18n:MadDog.HashtagBearFam.TerenSingleQuestion.v1.5}}\"/pause 500"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.TerenSingleQuestion",
+      "Value": "speak MadDog.HashtagBearFam.Teren \"{{i18n:MadDog.HashtagBearFam.TerenSingleQuestion.v2.1}}\"/quickQuestion #{{i18n:MadDog.HashtagBearFam.TerenSingleQuestion.v2.2}}#{{i18n:MadDog.HashtagBearFam.TerenSingleQuestion.v2.3}}#{{i18n:MadDog.HashtagBearFam.TerenSingleQuestion.v2.4}}(break)speak MadDog.HashtagBearFam.Teren \"{{i18n:MadDog.HashtagBearFam.TerenSingleQuestion.v2.5}}\"(break)speak MadDog.HashtagBearFam.Teren \"{{i18n:MadDog.HashtagBearFam.TerenSingleQuestion.v2.6}}\"(break)speak MadDog.HashtagBearFam.Teren \"{{i18n:MadDog.HashtagBearFam.TerenSingleQuestion.v2.7}}\"/pause 500",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //Sondra's battle of the bands PT 1
+
+    {
+      "Name": "MadDog.HashtagBearFam.BattleoftheBandSponsors", //Morris not, Pika not
+      "Value": "speak MadDog.HashtagBearFam.Sondra \"{{i18n:MadDog.HashtagBearFam.BattleoftheBandSponsors.v1}}\""
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.BattleoftheBandSponsors", //Morris available, Pika not
+      "Value": "speak MadDog.HashtagBearFam.Sondra \"{{i18n:MadDog.HashtagBearFam.BattleoftheBandSponsors.v2}}\"",
+      "When": {
+        "HasSeenEvent |contains=191393": false,
+        "HasMod |contains=Rafseazz.RSVCP": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.BattleoftheBandSponsors", //Morris available, Pika available
+      "Value": "speak MadDog.HashtagBearFam.Sondra \"{{i18n:MadDog.HashtagBearFam.BattleoftheBandSponsors.v3}}\"",
+      "When": {
+        "HasSeenEvent |contains=191393": false,
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.BattleoftheBandSponsors", //Morris not, Pika available
+      "Value": "speak MadDog.HashtagBearFam.Sondra \"{{i18n:MadDog.HashtagBearFam.BattleoftheBandSponsors.v4}}\"",
+      "When": {
+        "HasSeenEvent |contains=191393": true,
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Gudrun's Protest
+
+    {
+      "Name": "Morris",
+      "Value": "Morris"
+    },
+    {
+      "Name": "Morris",
+      "Value": "MorrisTod",
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //Gudrun's Boat Ride
+    {
+      "Name": "MadDog.HashtagBearFam.GudrunBoatRideDylan2",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GudrunBoatRideDylan2",
+      "Value": "emote Nova.Dylan? 8/pause 400/stopAnimation Nova.Dylan? 0/textAboveHead Nova.Dylan? \"{{i18n:GudrunBoat.1}}\"/pause 1500/textAboveHead MadDog.HashtagBearFam.Sigurd \"{{i18n:GudrunBoat.2}}\"/pause 1500/textAboveHead Nova.Dylan? \"{{i18n:GudrunBoat.3}}\"/pause 1500/textAboveHead MadDog.HashtagBearFam.Sigurd \"{{i18n:GudrunBoat.4}}\"/pause 1500/textAboveHead Nova.Dylan? \"{{i18n:GudrunBoat.5}}\"/pause 1500/textAboveHead Nova.Dylan? \"{{i18n:GudrunBoat.6}}\"/pause 1500/textAboveHead MadDog.HashtagBearFam.Sigurd \"{{i18n:GudrunBoat.7}}.\"/",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GudrunBoatRideYesDylan",
+      "Value": "textAboveHead MadDog.HashtagBearFam.Sigurd \"{{i18n:GudrunBoat.8}}\"/pause 1000"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.GudrunBoatRideYesDylan",
+      "Value": "textAboveHead MadDog.HashtagBearFam.Sigurd \"{{i18n:GudrunBoat.9}}\"/pause 1000",
+      "When": {
+        "HasMod": "TenebrousNova.EliDylan.CP"
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //Sigurd's Mine Adventure /neg
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentSetup",
+      "Value": "farmer -100 -100 2 MadDog.HashtagBearFam.Sigurd -100 -100 2 MadDog.HashtagBearFam.Teren -100 -100 2 MadDog.HashtagBearFam.Gunnar -100 -100 2"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentSetup",
+      "Value": "farmer -100 -100 2 MadDog.HashtagBearFam.Sigurd -100 -100 2 MadDog.HashtagBearFam.Teren -100 -100 2 MadDog.HashtagBearFam.Gunnar -100 -100 2",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentSetup",
+      "Value": "farmer -100 -100 2 MadDog.HashtagBearFam.Sigurd -100 -100 2 MadDog.HashtagBearFam.Teren -100 -100 2 MadDog.HashtagBearFam.Gunnar -100 -100 2 Nova.Eli -100 -100 1",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli1",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli1",
+      "Value": "pause 1",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli1",
+      "Value": "warp Nova.Eli 8 12",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli2",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli2",
+      "Value": "pause 1",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli2",
+      "Value": "/speak Nova.Eli \"{{i18n:SiginTheMines.1}}\"",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli3",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli3",
+      "Value": "pause 1",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli3",
+      "Value": "emote Nova.Eli 28 true",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli4",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli4",
+      "Value": "pause 1",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli4",
+      "Value": "emote Nova.Eli 16 true",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli5",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli5",
+      "Value": "pause 1",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli5",
+      "Value": "emote Nova.Eli 28 true",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli6",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli6",
+      "Value": "pause 1",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli6",
+      "Value": "speak Nova.Eli \"{{i18n:SiginTheMines.2}}\"",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli7",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli7",
+      "Value": "pause 1",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli7",
+      "Value": "textAboveHead Nova.Eli \"{{i18n:SiginTheMines.3}}\"",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli8",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli8",
+      "Value": "pause 1",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli8",
+      "Value": "speak Nova.Eli \"{{i18n:SiginTheMines.4}}\"",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli9",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli9",
+      "Value": "pause 1",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli9",
+      "Value": "speed Nova.Eli 5/advancedMove Nova.Eli false 14 0 1 10",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli10",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli10",
+      "Value": "pause 1",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli10",
+      "Value": "jump Nova.Eli/emote Nova.Eli 16",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli11",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli11",
+      "Value": "pause 1",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli11",
+      "Value": "speak Nova.Eli \"{{i18n:SiginTheMines.5}}\"",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli12",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli12",
+      "Value": "pause 1",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli12",
+      "Value": "emote Nova.Eli 28/pause 800/textAboveHead Nova.Eli \"{{i18n:SiginTheMines.6}}\"",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli13",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli13",
+      "Value": "pause 1",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli13",
+      "Value": "animate Nova.Eli false false 50 32 33 34 35 35 36 36 37 37 38 39 39 40 41 41 44 45 46 47 51 29 29 29 29 29 29 29/pause 500/shake Nova.Eli 2200 true/pause 900/playSound throw/pause 240/warp Nova.Eli -999 -999/pause 150/stopAnimation Nova.Eli 0/screenShake 15 0.5/animate Nova.Eli false false 50 46 45 44 41 41 40 39 39 38 37 37 36 36 35 35 34 33 32 32 32 32 32/warp Nova.Eli 31 12 true/pause 400/playSound throw/pause 700/stopAnimation Nova.Eli 12/addConversationTopic SigurdWhatHappened 5/addMailReceived EliWasThere",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli14",
+      "Value": "speak MadDog.HashtagBearFam.Gunnar \"{{i18n:SiginTheMines.7}}\""
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli14",
+      "Value": "speak MadDog.HashtagBearFam.Gunnar \"{{i18n:SiginTheMines.7}}\"",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli14",
+      "Value": "positionOffset Nova.Eli -20 0/pause 250/shake Nova.Eli 1000/shake MadDog.HashtagBearFam.Sigurd 1000/speak MadDog.HashtagBearFam.Gunnar \"{{i18n:SiginTheMines.8}}\"",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli15",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli15",
+      "Value": "pause 1",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli15",
+      "Value": "emote Nova.Eli 16 true",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli16",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli16",
+      "Value": "pause 1",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli16",
+      "Value": "emote Nova.Eli 36 true",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli17",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli17",
+      "Value": "pause 1",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli17",
+      "Value": "warp Nova.Eli 30 18/faceDirection Nova.Eli 0",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli18",
+      "Value": "speak MadDog.HashtagBearFam.Gunnar \"{{i18n:SiginTheMines.9}}\""
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli18",
+      "Value": "speak MadDog.HashtagBearFam.Gunnar \"{{i18n:SiginTheMines.9}}\"",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli18",
+      "Value": "speak Nova.Eli \"{{i18n:SiginTheMines.10}}\"/emote MadDog.HashtagBearFam.Gunnar 16/pause 800",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli19",
+      "Value": "message \"{{i18n:SiginTheMines.11}}\""
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli19",
+      "Value": "message \"{{i18n:SiginTheMines.11}}\"",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdMineAccidentEli19",
+      "Value": "message \"{{i18n:SiginTheMines.12}}\"",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true,
+        "HasSeenEvent |contains=EnD.Eli.05": true
+      }
+    },
+
+
+
+
+
+    //SVE variant Gunther
+    {
+      "Name": "Gunther",
+      "Value": "Gunther"
+    },
+    {
+      "Name": "Gunther",
+      "Value": "GuntherSilvian",
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+
+    //Sigurd's Teaching Experience 
+
+
+
+    //Sigurd's Man of the Hour event
+    {
+      "Name": "MadDog.HashtagBearFam.SigMotHSetup",
+      "Value": "Pierre 1 18 1 Willy 3 17 2 Marnie 4 17 2 Shane 6 17 2 Caroline 2 19 0 Lewis 4 19 0 Harvey 5 19 0 Elliott 2 20 2 Leah 1 21 1 RodneyOBrien? 1 22 1 Nora? 3 21 3 Robin 3 22 3 Pam 7 18 1 Gus 9 18 2 MadDog.HashtagBearFam.Sondra 11 18 2 Jodi 12 18 2 Evelyn 8 20 0 George 9 20 0 Sam 11 20 0 Sebastian 12 20 0 Wizard 14 17 2 {{Marlon}} 15 17 2 MadDog.HashtagBearFam.Gunnar 15 20 2 Clint 14 21 1 Demetrius 14 22 1 Emily 16 21 3 Sandy 16 22 3 MadDog.HashtagBearFam.Sigurd 21 19 2 Penny 20 20 1 MadDog.HashtagBearFam.Teren 23 20 3 farmer 21 21 0 {{Gunther}} 22 19 2 Linus 24 18 1 Jessie? 26 18 3 Mateo? 24 21 2 Nova.Eli? 25 21 2 Nova.Dylan? 26 23 0 Otter.Cambria? 26 21 2 Aideen 23 22 1 Maru 25 23 0 Haley 32 18 1 Alex 34 18 3 PlumForrest? 35 19 2 TraceV? 35 21 0 Abigail 36 19 2 EveT? 25 19 0 WaffleW? 22 18 2 Rosa 38 22 1 Juliet? 40 22 3 Lavril? 42 18 3 Void? 42 19 0 Jacob 39 17 2 Jasper? 24 23 0 MadDog.HashtagBearFam.Gudrun 37 18 1 Eloise 38 19 0 Jas 39 19 0 Vincent 40 18 3 Olivia? 5 17 2 Victor? 33 19 0 Sophia? 34 20 1 Andy? 7 17 1 Susan? 6 19 0"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigMotHSetup",
+      "Value": "{{MadDog.HashtagBearFam.SigMotHSetup}} Mateo? 24 21 2",
+      "When": {
+        "HasMod": "DN.SnS",
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigMotHSetup",
+      "Value": "{{MadDog.HashtagBearFam.SigMotHSetup}} Cirrus? 16 17 0",
+      "When": {
+        "HasMod": "DN.SnS",
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigMotHSetup",
+      "Value": "{{MadDog.HashtagBearFam.SigMotHSetup}} Hector? 4 13 0",
+      "When": {
+        "HasMod": "DN.SnS",
+        "HasSeenEvent |contains=SnS.Ch2.Hector.1": true
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigMotHMateo",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigMotHMateo",
+      "Value": "emote Mateo? 28",
+      "When": {
+        "HasMod": "DN.SnS",
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigMotHCirrus",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigMotHCirrus",
+      "Value": "emote Cirrus? 16",
+      "When": {
+        "HasMod": "DN.SnS",
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigMotHHector",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigMotHHector",
+      "Value": "emote Hector? 24",
+      "When": {
+        "HasMod": "DN.SnS",
+        "HasSeenEvent |contains=SnS.Ch2.Hector.1": true
+      }
+    },
+    //Sondra BoTB
+    {
+      "Name": "MadDogBotBSVETiles",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDogBotBSVETiles",
+      "Value": "removeTile 38 57 Buildings/removeTile 39 57 Buildings/removeTile 40 57 Buildings/removeTile 38 56 Front/removeTile 39 56 Front/removeTile 40 56 Front/removeTile 34 71 Buildings/removeTile 35 71 Buildings/removeTile 36 71 Buildings/removeTile 34 70 Buildings/removeTile 35 70 Buildings/removeTile 36 70 Buildings/removeTile 34 69 Buildings/removeTile 35 69 Buildings/removeTile 36 69 Buildings/removeTile 34 68 Buildings/removeTile 35 68 Buildings/removeTile 36 68 Buildings/removeTile 34 67 Buildings/removeTile 35 67 Buildings/removeTile 36 67 Buildings/removeTile 34 66 Buildings/removeTile 35 66 Buildings/removeTile 36 66 Buildings/removeTile 34 66 Front/removeTile 35 66 Front/removeTile 36 66 Front/removeTile 34 69 Front/removeTile 35 69 Front/removeTile 36 69 Front/removeTile 35 67 Front/removeTile 35 70 Front/removeTile 21 78 Buildings/removeTile 22 78 Buildings/removeTile 23 78 Buildings/removeTile 21 77 Buildings/removeTile 22 77 Buildings/removeTile 23 77 Buildings/removeTile 21 76 Buildings/removeTile 22 76 Buildings/removeTile 23 76 Buildings/removeTile 21 76 Front/removeTile 22 76 Front/removeTile 23 76 Front/removeTile 22 77 Front",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Name": "WhereMateo",
+      "Value": "-100 -100 2",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": false,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "WhereMateo",
+      "Value": "31 69 2",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "WhereMateo",
+      "Value": "-100 -100 2",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": true
+      }
+    },
+    {
+      "Name": "WhereCirrus",
+      "Value": "-100 -100 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.1": false
+      }
+    },
+    {
+      "Name": "WhereCirrus",
+      "Value": "30 65 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true
+      }
+    },
+    {
+      "Name": "WhereHector",
+      "Value": "-100 -100 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.1": false
+      }
+    },
+    {
+      "Name": "WhereHector",
+      "Value": "31 74 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.1": true
+      }
+    },
+
+    //Gunnar Finale
+
+    {
+      "Name": "MateoCoords",
+      "Value": "26 74 0",
+      "When": {
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+
+    {
+      "Name": "MateoCoords",
+      "Value": "-100 -100 0",
+      "When": {
+        "HasConversationTopic |contains=MateoPain": true
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Teren Intro Tweak
+    {
+      "Name": "TerenIntroFix",
+      "Value": "pause 250/emote farmer 8/jump MadDog.HashtagBearFam.Teren/emote MadDog.HashtagBearFam.Teren 60/pause 200/changeName MadDog.HashtagBearFam.Teren Teren/speak MadDog.HashtagBearFam.Teren \"{{i18n:event-MadDog.BearFam.16199000.MadDog.HashtagBearFam.Teren.11}}\""
+    },
+    {
+      "Name": "TerenIntroFix",
+      "Value": "speak MadDog.HashtagBearFam.Teren \"{{i18n:16199000.Expanded.1}}\"/pause 500/speak MadDog.HashtagBearFam.Teren \"{{i18n:16199000.Expanded.8}}\"/pause 100/quickQuestion #{{i18n:16199000.Expanded.2}}#{{i18n:16199000.Expanded.3.{{HasFlag: anyPlayer|contains=TerenDanceYear1}}}}#{{i18n:16199000.Expanded.4}}(break)emote MadDog.HashtagBearFam.Teren 8\\speak MadDog.HashtagBearFam.Teren \"{{i18n:16199000.Expanded.5}}\"\\emote farmer 32\\pause 500(break)speak MadDog.HashtagBearFam.Teren \"{{i18n:16199000.Expanded.6.{{HasFlag: anyPlayer|contains=TerenDanceYear1}}}}\"\\emote farmer 56\\pause 500(break)speak MadDog.HashtagBearFam.Teren \"{{i18n:16199000.Expanded.7}}\"\\faceDirection farmer 2\\animate farmer false true 100 102 103\\pause 1000\\faceDirection farmer 0/pause 250/emote farmer 8/jump MadDog.HashtagBearFam.Teren/emote MadDog.HashtagBearFam.Teren 60/pause 200/changeName MadDog.HashtagBearFam.Teren Teren/speak MadDog.HashtagBearFam.Teren \"{{i18n:16199000.Expanded.9}}\"",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Teren": "Friendly"
+      }
+    },
+    {
+      "Name": "TerenIntroFix_Message",
+      "Value": "message \"{{i18n:event-MadDog.BearFam.16199000.Message.24}}\""
+    },
+    {
+      "Name": "TerenIntroFix_Message",
+      "Value": "message \"{{i18n:16199000.Expanded.10}}\"",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Teren": "Friendly"
+      }
+    },
+    //Sig Date
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdDateQuestion",
+      "Value": "quickQuestion #{{i18n:SigRomanceDT.1}}#{{i18n:SigRomanceDT.2}}(break)addMailReceived SigDateable true\\speak MadDog.HashtagBearFam.Sigurd \"{{i18n:SigRomanceDT.3}}\"\\emote farmer 20\\addConversationTopic SigEligible {{BearFamDatingLength}}(break)speak MadDog.HashtagBearFam.Sigurd \"{{i18n:SigRomanceDT.4}}\"\\emote farmer 32",
+      "When": {
+        "EnableRivalHeartsTerenSig": "false",
+        "EnableRivalHeartsSigDylan": "false"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdDateQuestion",
+      "Value": "quickQuestion #{{i18n:SigRomanceDT.5}}#{{i18n:SigRomanceDT.6}}(break)speak MadDog.HashtagBearFam.Sigurd \"{{i18n:SigRomanceDT.7}}\"\\emote farmer 12(break)speak MadDog.HashtagBearFam.Sigurd \"{{i18n:SigRomanceDT.4}}\"\\emote farmer 32",
+      "When": {
+        "EnableRivalHeartsTerenSig": "true",
+        "EnableRivalHeartsSigDylan": "false"
+      }
+    },
+    {
+      "Name": "MadDog.HashtagBearFam.SigurdDateQuestion",
+      "Value": "quickQuestion #{{i18n:SigRomanceDT.5}}#{{i18n:SigRomanceDT.6}}(break)speak MadDog.HashtagBearFam.Sigurd \"{{i18n:SigRomanceDT.7}}\"\\emote farmer 12(break)speak MadDog.HashtagBearFam.Sigurd \"{{i18n:SigRomanceDT.4}}\"\\emote farmer 32",
+      "When": {
+        "EnableRivalHeartsTerenSig": "false",
+        "EnableRivalHeartsSigDylan": "true"
+      }
+    },
+
+    //Teren Date - sets the flag
+    {
+      "Name": "MadDog.HashtagBearFam.TerenDateQuestion",
+      "Value": "quickQuestion #{{i18n:TerenRomanceDT.1}}#{{i18n:TerenRomanceDT.2}}(break)addMailReceived TerenDateable true\\addConversationTopic TerenEligible {{BearFamDatingLength}}\\speak MadDog.HashtagBearFam.Teren \"{{i18n:TerenRomanceDT.3}}\"\\emote farmer 36\\speak MadDog.HashtagBearFam.Teren \"{{i18n:TerenRomanceDT.4}}\"\\emote farmer 20\\jump MadDog.HashtagBearFam.Teren\\pause 500\\speak MadDog.HashtagBearFam.Teren \"{{i18n:TerenRomanceDT.5}}\"\\emote farmer 40\\speak MadDog.HashtagBearFam.Teren \"{{i18n:TerenRomanceDT.6}}\"\\emote farmer 20\\pause 500(break)speak MadDog.HashtagBearFam.Teren \"{{i18n:TerenRomanceDT.7}}\"\\emote farmer 8\\speak MadDog.HashtagBearFam.Teren \"{{i18n:TerenRomanceDT.8}}\"\\emote farmer 60\\pause 400\\emote farmer 40\\speak MadDog.HashtagBearFam.Teren \"{{i18n:TerenRomanceDT.9}}\"\\emote farmer 32\\pause 500",
+      "When": {
+        "EnableRivalHeartsTerenSig": "false",
+        "EnableRivalHeartsTerenEli": "false"
+      }
+    },
+
+    {
+      "Name": "MadDog.HashtagBearFam.TerenDateQuestion",
+      "Value": "quickQuestion #{{i18n:TerenRomanceDT.10}}#{{i18n:TerenRomanceDT.11}}(break)speak MadDog.HashtagBearFam.Teren \"{{i18n:TerenRomanceDT.12}}\"\\emote farmer 20pause 500(break)speak MadDog.HashtagBearFam.Teren \"{{i18n:TerenRomanceDT.7}}\"\\emote farmer 8\\speak MadDog.HashtagBearFam.Teren \"{{i18n:TerenRomanceDT.8}}\"\\emote farmer 60\\pause 400\\emote farmer 40\\speak MadDog.HashtagBearFam.Teren \"{{i18n:TerenRomanceDT.9}}\"\\emote farmer 32\\pause 500",
+      "When": {
+        "EnableRivalHeartsTerenSig": "true",
+        "EnableRivalHeartsTerenEli": "false"
+      }
+    },
+
+    {
+      "Name": "MadDog.HashtagBearFam.TerenDateQuestion",
+      "Value": "quickQuestion #{{i18n:TerenRomanceDT.13}}#{{i18n:TerenRomanceDT.11}}(break)speak MadDog.HashtagBearFam.Teren \"{{i18n:TerenRomanceDT.14}}\"\\emote farmer 20\\pause 500(break)speak MadDog.HashtagBearFam.Teren \"{{i18n:TerenRomanceDT.7}}\"\\emote farmer 8\\speak MadDog.HashtagBearFam.Teren \"{{i18n:TerenRomanceDT.8}}\"\\emote farmer 60\\pause 400\\emote farmer 40\\speak MadDog.HashtagBearFam.Teren \"{{i18n:TerenRomanceDT.9}}\"\\emote farmer 32\\pause 500",
+      "When": {
+        "EnableRivalHeartsTerenSig": "false",
+        "EnableRivalHeartsTerenEli": "true"
+      }
+    },
+
+
+    //Rival Hearts dynamic token DylanSig event1
+    {
+      "Name": "DylanSig1DynamicPositions",
+      "Value": "farmer -100 -100 0 MadDog.HashtagBearFam.Sigurd -100 -100 0 Nova.Dylan 10 9 0 {{Gunther}} 3 8 2"
+    },
+    {
+      "Name": "DylanSig1DynamicPositions",
+      "Value": "farmer -100 -100 0 MadDog.HashtagBearFam.Sigurd -100 -100 0 Nova.Dylan 10 9 0 {{Gunther}} 4 8 2",
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+    {
+      "Name": "DylanSig1DynamicTokenA",
+      "Value": "advancedMove MadDog.HashtagBearFam.Sigurd false 0 4 -5 0 0 -4 -3 0 4 10/advancedMove Nova.Dylan false 0 4 -3 0 0 -4 -2 0 4 10"
+    },
+    {
+      "Name": "DylanSig1DynamicTokenA",
+      "Value": "advancedMove MadDog.HashtagBearFam.Sigurd false 0 4 -5 0 0 -4 -2 0 4 10/advancedMove Nova.Dylan false 0 4 -3 0 0 -4 -1 0 4 10",
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+
+    {
+      "Name": "DylanSig1DynamicTokenB",
+      "Value": "animate {{Gunther}} false true 400 2 2 2 3 3 3"
+    },
+    {
+      "Name": "DylanSig1DynamicTokenB",
+      "Value": "animate {{Gunther}} false true 400 17 17 17 18 18 18",
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+    {
+      "Name": "DylanSig1DynamicTokenC",
+      "Value": "advancedMove MadDog.HashtagBearFam.Sigurd false 0 4 2 10"
+    },
+    {
+      "Name": "DylanSig1DynamicTokenC",
+      "Value": "advancedMove MadDog.HashtagBearFam.Sigurd false 0 1 -1 0 0 4 2 10",
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+    //Gunnar 10 Heart Platonic Event
+    {
+      "Name": "MadDogGunnarPrizeSVETiles",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "MadDogGunnarPrizeSVETiles",
+      "Value": "removeTile 34 71 Buildings/removeTile 35 71 Buildings/removeTile 36 71 Buildings/removeTile 34 70 Buildings/removeTile 35 70 Buildings/removeTile 36 70 Buildings/removeTile 34 69 Buildings/removeTile 35 69 Buildings/removeTile 36 69 Buildings/removeTile 34 68 Buildings/removeTile 35 68 Buildings/removeTile 36 68 Buildings/removeTile 34 67 Buildings/removeTile 35 67 Buildings/removeTile 36 67 Buildings/removeTile 34 66 Buildings/removeTile 35 66 Buildings/removeTile 36 66 Buildings/removeTile 34 66 Front/removeTile 35 66 Front/removeTile 36 66 Front/removeTile 34 69 Front/removeTile 35 69 Front/removeTile 36 69 Front/removeTile 35 67 Front/removeTile 35 70 Front",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+
+    //Gunnar Mateo Event 1
+    {
+      "Name": "MateoGunnarEvent1Noise",
+      "Value": "playSound doorClose/warp farmer 76 9/advancedMove farmer false 0 4 2 10"
+    },
+    {
+      "Name": "MateoGunnarEvent1Noise",
+      "Value": "pause 1/warp farmer 80 0/advancedMove farmer false 0 4 -4 0 0 4 2 10",
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+    {
+      "Name": "MateoNoWaterWalk",
+      "Value": "advancedMove Mateo false -5 0 0 -3 -1 0 0 -1 4 10"
+    },
+    {
+      "Name": "MateoNoWaterWalk",
+      "Value": "advancedMove Mateo false -5 0 0 -4 -1 0 4 10",
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+    {
+      "Name": "GunnarNoWaterWalk",
+      "Value": "advancedMove MadDog.HashtagBearFam.Gunnar false 0 4 4 0 0 5 3 0 0 7 2 10/advancedMove Mateo false -1 0 0 -7 -12 0 1 10"
+    },
+    {
+      "Name": "GunnarNoWaterWalk",
+      "Value": "advancedMove MadDog.HashtagBearFam.Gunnar false 1 0 0 4 4 0 0 5 3 0 0 7 2 10/advancedMove Mateo false 0 -7 -12 0 1 10",
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+
+    //Sig helps out Cambria's bees if installed
+    {
+      "Name": "SigInLoresCove",
+      "Value": "900 EastScarp_Village 39 16 2 Sig_sodasit/1300 EastScarp_Village 64 89 3 Sig_smoke"
+    },
+    {
+      "Name": "SigInLoresCove",
+      "Value": "900 EastScarp_LoresCove 41 24 0/1300 EastScarp_LoresCove 39 28 0/1310 EastScarp_LoresCove 39 28 0 \"Strings\\schedules\\MadDog.HashtagBearFam.Sigurd:SigurdCambriaHivesA.000\"/1400 EastScarp_LoresCove 39 28 0/1430 EastScarp_LoresCove 42 26 0/1440 EastScarp_LoresCove 42 26 0 \"Strings\\schedules\\MadDog.HashtagBearFam.Sigurd:SigurdCambriaHivesB.000\"/1530 EastScarp_LoresCove 42 26 0",
+      "When": {
+        "HasMod": "Squeaks.MGC.CP"
+      }
+    },
+    {
+      "Name": "SigInLoresCoveWinter",
+      "Value": "900 EastScarp_Village 39 16 2 Sig_wintersoda/1300 EastScarp_Village 64 89 3 Sig_smoke"
+    },
+    {
+      "Name": "SigInLoresCoveWinter",
+      "Value": "900 EastScarp_LoresCove 41 24 0/1300 EastScarp_LoresCove 39 28 0/1310 EastScarp_LoresCove 39 28 0 \"Strings\\schedules\\MadDog.HashtagBearFam.Sigurd:SigurdCambriaHivesA.000\"/1400 EastScarp_LoresCove 39 28 0/1430 EastScarp_LoresCove 42 26 0/1440 EastScarp_LoresCove 42 26 0 \"Strings\\schedules\\MadDog.HashtagBearFam.Sigurd:SigurdCambriaHivesB.000\"/1530 EastScarp_LoresCove 42 26 0",
+      "When": {
+        "HasMod": "Squeaks.MGC.CP"
+      }
+    },
+    //Cirrus at the Opening of Caritas
+    {
+      "Name": "WhereCirrusBakeryOpening",
+      "Value": "-100 -100 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.1": false
+      }
+    },
+    {
+      "Name": "WhereCirrusBakeryOpening",
+      "Value": "6 9 0",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true
+      }
+    },
+    //sig married date event
+    {
+      "Name": "WhereMateoAnyOneCanCook",
+      "Value": "Mateo? -100 -100 2",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": false,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "WhereMateoAnyOneCanCook",
+      "Value": "Mateo? 20 19 3",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "WhereMateoAnyOneCanCook",
+      "Value": "Mateo? -100 -100 2",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": true
+      }
+    },
+    {
+      "Name": "WhereMateoAnyOneCanCook.Interact",
+      "Value": "emote MadDog.HashtagBearFam.Sondra 56",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": false,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "WhereMateoAnyOneCanCook.Interact",
+      "Value": "textAboveHead MadDog.HashtagBearFam.Sondra \"Need a refill, dear?\"/emote Mateo? 56/",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": false
+      }
+    },
+    {
+      "Name": "WhereMateoAnyOneCanCook.Interact",
+      "Value": "emote MadDog.HashtagBearFam.Sondra 56",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.1": true,
+        "HasConversationTopic |contains=MateoPain": true
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //all schedule shenanigans
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //POASB schedule shenanigans
+    {
+      "Name": "TerenPOASBSchedule",
+      "Value": "1200 Saloon 13 18 2 Teren_mixingbowl \"Strings\\schedules\\MadDog.HashtagBearFam.Teren:TerenSaloonChef.000\"/1300 Saloon 13 18 2 Teren_mixingbowl"
+    },
+    {
+      "Name": "TerenPOASBSchedule",
+      "Value": "1000 Saloon 13 18 2 Teren_mixingbowl \"Strings\\schedules\\MadDog.HashtagBearFam.Teren:TerenSaloonChef.000\"/1200 Saloon 13 18 2 Teren_mixingbowl",
+      "When": {
+        "HasMod": "agentlyoko.stardropbreakfast",
+        "HasSeenEvent": "177755"
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Name": "SondraPOASBSchedule",
+      "Value": "1200 Saloon 2 18 2 Sondra_dance/1330 Saloon 4 19 2 Sondra_withchaircoffee"
+    },
+    {
+      "Name": "SondraPOASBSchedule",
+      "Value": "800 Saloon 1 22 2 Sondra_withchaircoffee/1000 Saloon 1 22 2 Sondra_withchaircoffee \"Strings\\schedules\\MadDog.HashtagBearFam.Sondra:SondraPoaSB.000\"/1200 Saloon 2 18 2 Sondra_dance/1330 Saloon 1 22 2 Sondra_withchaircoffee",
+      "When": {
+        "HasMod": "agentlyoko.stardropbreakfast",
+        "HasSeenEvent": "177755"
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Gunnar SVE Schedule shenanigans
+    {
+      "Name": "GunnarScheduleSVE1",
+      "Value": "1200 Mountain 68 15 2 Gun_nodrinksit"
+    },
+    {
+      "Name": "GunnarScheduleSVE1",
+      "Value": "1200 Mountain 75 15 2 Gun_nodrinksit",
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Sondra SVE schedule Shenanigans
+    {
+      "Name": "SondraScheduleSVE1",
+      "Value": "1010 SeedShop 13 20 0"
+    },
+    {
+      "Name": "SondraScheduleSVE1",
+      "Value": "1010 SeedShop 11 30 0",
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Sigurd SVE schedule shenanigans
+    {
+      "Name": "SigurdScheduleSVE1",
+      "Value": "1800 Town 110 77 3 Sig_smoke"
+    },
+    {
+      "Name": "SigurdScheduleSVE1",
+      "Value": "1800 Town 109 81 3 Sig_smoke",
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+    {
+      "Name": "SigSaloonFix",
+      "Value": "1 22 2"
+    },
+    {
+      "Name": "SigSaloonFix",
+      "Value": "6 17 2",
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Teren SVE schedule shenanigans
+    {
+      "Name": "TerenSaloonFix",
+      "Value": "3 23 3"
+    },
+    {
+      "Name": "TerenSaloonFix",
+      "Value": "5 18 1",
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Gudrun SVE Schedule shenanigans
+    {
+      "Name": "GudrunScheduleSVE1",
+      "Value": "ArchaeologyHouse 14 16 2"
+    },
+    {
+      "Name": "GudrunScheduleSVE1",
+      "Value": "ArchaeologyHouse 17 14 2",
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Sig helps out Cambria's bees if installed
+    {
+      "Name": "SigInLoresCove",
+      "Value": "900 EastScarp_Village 39 16 2 Sig_sodasit/1300 EastScarp_Village 64 89 3 Sig_smoke"
+    },
+    {
+      "Name": "SigInLoresCove",
+      "Value": "900 EastScarp_LoresCove 41 24 0/1300 EastScarp_LoresCove 39 28 0/1310 EastScarp_LoresCove 39 28 0 \"Strings\\schedules\\MadDog.HashtagBearFam.Sigurd:SigurdCambriaHivesA.000\"/1400 EastScarp_LoresCove 39 28 0/1430 EastScarp_LoresCove 42 26 0/1440 EastScarp_LoresCove 42 26 0 \"Strings\\schedules\\MadDog.HashtagBearFam.Sigurd:SigurdCambriaHivesB.000\"/1530 EastScarp_LoresCove 42 26 0",
+      "When": {
+        "HasMod": "Squeaks.MGC.CP"
+      }
+    },
+    {
+      "Name": "SigInLoresCoveWinter",
+      "Value": "900 EastScarp_Village 39 16 2 Sig_wintersoda/1300 EastScarp_Village 64 89 3 Sig_smoke"
+    },
+    {
+      "Name": "SigInLoresCoveWinter",
+      "Value": "900 EastScarp_LoresCove 41 24 0/1300 EastScarp_LoresCove 39 28 0/1310 EastScarp_LoresCove 39 28 0 \"Strings\\schedules\\MadDog.HashtagBearFam.Sigurd:SigurdCambriaHivesA.000\"/1400 EastScarp_LoresCove 39 28 0/1430 EastScarp_LoresCove 42 26 0/1440 EastScarp_LoresCove 42 26 0 \"Strings\\schedules\\MadDog.HashtagBearFam.Sigurd:SigurdCambriaHivesB.000\"/1530 EastScarp_LoresCove 42 26 0",
+      "When": {
+        "HasMod": "Squeaks.MGC.CP"
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //end of schedule stuff
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Name": "SigIsRomanced",
+      "Value": "relationshipped",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Sigurd": "Dating, Engaged, Married"
+      }
+    },
+    {
+      "Name": "SigIsRomanced",
+      "Value": "friendshipped",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Sigurd": "Unmet, Friendly"
+      }
+    },
+    {
+      "Name": "SigIsRomanced",
+      "Value": "divorced",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Sigurd": "Divorced"
+      }
+    },
+
+    {
+      "Name": "GunIsRomanced",
+      "Value": "relationshipped",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Dating, Engaged, Married"
+      }
+    },
+    {
+      "Name": "GunIsRomanced",
+      "Value": "friendshipped",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Unmet, Friendly"
+      }
+    },
+    {
+      "Name": "GunIsRomanced",
+      "Value": "divorced",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Gunnar": "Divorced"
+      }
+    },
+
+    {
+      "Name": "TerenIsRomanced",
+      "Value": "relationshipped",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Teren": "Dating, Engaged, Married"
+      }
+    },
+    {
+      "Name": "TerenIsRomanced",
+      "Value": "friendshipped",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Teren": "Unmet, Friendly"
+      }
+    },
+    {
+      "Name": "TerenIsRomanced",
+      "Value": "divorced",
+      "When": {
+        "Relationship:MadDog.HashtagBearFam.Teren": "Divorced"
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Pass In Zone?
+    {
+      "Name": "BearFamGlobalToken",
+      "Value": "|BearFamProfanityA={{i18n:BearFam.Profanity.1.{{ProfanityFilter}}}} |BearFamProfanityB={{i18n:BearFam.Profanity.2.{{ProfanityFilter}}}} |BearFamProfanityC={{i18n:BearFam.Profanity.3.{{ProfanityFilter}}}} |BearFamProfanityD={{i18n:BearFam.Profanity.4.{{ProfanityFilter}}}} |BearFamProfanityE={{i18n:BearFam.Profanity.5.{{ProfanityFilter}}}} |BearFamProfanityF={{i18n:BearFam.Profanity.6.{{ProfanityFilter}}}} |BearFamProfanityG={{i18n:BearFam.Profanity.7.{{ProfanityFilter}}}} |BearFamProfanityH={{i18n:BearFam.Profanity.8.{{ProfanityFilter}}}} |BearFamProfanityI={{i18n:BearFam.Profanity.9.{{ProfanityFilter}}}} |BearFamProfanityJ={{i18n:BearFam.Profanity.10.{{ProfanityFilter}}}} |BearFamProfanityK={{i18n:BearFam.Profanity.11.{{ProfanityFilter}}}} |BearFamProfanityL={{i18n:BearFam.Profanity.12.{{ProfanityFilter}}}} |BearFamProfanityM={{i18n:BearFam.Profanity.13.{{ProfanityFilter}}}} |BearFamProfanityN={{i18n:BearFam.Profanity.14.{{ProfanityFilter}}}} |BearFamProfanityO={{i18n:BearFam.Profanity.15.{{ProfanityFilter}}}} |BearFamProfanityP={{i18n:BearFam.Profanity.16.{{ProfanityFilter}}}} |BearFamProfanityQ={{i18n:BearFam.Profanity.17.{{ProfanityFilter}}}} |CPPN1={{Random: {{Player Pronouns 1}} |key=PlayerPronouns}} |CPPN2={{Random: {{Player Pronouns 2}} |key=PlayerPronouns}} |CPPN3={{Random: {{Player Pronouns 3}} |key=PlayerPronouns}} |CPPN4={{Random: {{Player Pronouns 4}} |key=PlayerPronouns}} |CPPNI={{Random: {{Player Pronoun Identifier}} |key=PlayerPronouns}} |LPPN1={{Random: {{Lowercase: {{Player Pronouns 1}}}} |key=PlayerPronouns}} |LPPN2={{Random: {{Lowercase: {{Player Pronouns 2}}}} |key=PlayerPronouns}} |LPPN3={{Random: {{Lowercase: {{Player Pronouns 3}}}} |key=PlayerPronouns}} |LPPN4={{Random: {{Lowercase: {{Player Pronouns 4}}}} |key=PlayerPronouns}} |LPPNI={{Random: {{Lowercase: {{Player Pronoun Identifier}}}} |key=PlayerPronouns}} |NonBinaryMaddiePronoun1={{i18n:NonBinaryMaddiePronoun1.{{HasMod |contains=Airyn.NonbinaryMaddie}}}}, |NonBinaryMaddiePronoun2={{i18n:NonBinaryMaddiePronoun2.{{HasMod |contains=Airyn.NonbinaryMaddie}}}}, |NonBinaryMaddieVerbConjugation={{i18n:NonBinaryMaddieVerbConjugation.{{HasMod |contains=Airyn.NonbinaryMaddie}}}}, |NonBinaryMaddieVerbConjugation2={{i18n:NonBinaryMaddieVerbConjugation2.{{HasMod |contains=Airyn.NonbinaryMaddie}}}}, |MadDog.BearFam_ReylaOrWilly={{i18n:MadDog.BearFam_ReylaOrWilly.{{HasMod |contains=RaffieJohn.Reyla_ES}}}}, |IsLewisMayor1={{i18n:IsLewisMayor1.{{HasMod |contains=Claw.NoTownNoMayor}}}}, |IsLewisMayor2={{i18n:IsLewisMayor2.{{HasMod |contains=Claw.NoTownNoMayor}}}}, |IsLewisMayor3={{i18n:IsLewisMayor3.{{HasMod |contains=Claw.NoTownNoMayor}}}}, |IsLewisMayor4={{i18n:IsLewisMayor4.{{HasMod |contains=Claw.NoTownNoMayor}}}}, |LewisOrLouise={{i18n:LewisOrLouise.{{HasMod |contains=CC.Louise}}}}, |LewisOrLouisePronoun1={{i18n:LewisOrLouisePronoun1.{{HasMod |contains=CC.Louise}}}}, |LewisOrLouisePronoun2={{i18n:LewisOrLouisePronoun2.{{HasMod |contains=CC.Louise}}}}, |LewisOrLouisePronoun3={{i18n:LewisOrLouisePronoun3.{{HasMod |contains=CC.Louise}}}}, |LewisOrLouisePronoun4={{i18n:LewisOrLouisePronoun4.{{HasMod |contains=CC.Louise}}}}, |LewisOrLouisePronoun5={{i18n:LewisOrLouisePronoun5.{{HasMod |contains=CC.Louise}}}}, |LewisOrLouisePronoun6={{i18n:LewisOrLouisePronoun6.{{HasMod |contains=CC.Louise}}}}, |LewisOrLouisePronoun7={{i18n:LewisOrLouisePronoun7.{{HasMod |contains=CC.Louise}}}} |LewisOrLouisePronoun8={{i18n:LewisOrLouisePronoun8.{{HasMod |contains=CC.Louise}}}}, |LewisOrLouisePronoun9={{i18n:LewisOrLouisePronoun9.{{HasMod |contains=CC.Louise}}}}, |LewisOrLouisePronoun10={{i18n:LewisOrLouisePronoun10.{{HasMod |contains=CC.Louise}}}}, |LewisOrLouisePronoun11={{i18n:LewisOrLouisePronoun11.{{HasMod |contains=CC.Louise}}}}, |LewisOrLouisePronoun12={{i18n:LewisOrLouisePronoun12.{{HasMod |contains=CC.Louise}}}} |CPJobTitle={{Random: {{FarmerJobTitle}} |key=MDBFJobTitle1}} |LPJobTitle={{Random: {{Lowercase: {{FarmerJobTitle}}}} |key=MDBFJobTitle1}}"
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Name": "SigurdSpousePetName",
+      "Value": "|CPSigurdSpouseNameA={{Random: {{SigurdSpouseNickname1}} |key=SigurdTermOE1}} |LPSigurdSpouseNameA={{Random: {{Lowercase: {{SigurdSpouseNickname1}}}} |key=SigurdTermOE1}}"
+    },
+
+    {
+      "Name": "GunnarSpousePetName",
+      "Value": "|CPGunnarSpouseNameA={{Random: {{GunnarSpouseNickname1}} |key=GunnarTermOE1}} |CPGunnarSpouseNameB={{Random: {{GunnarSpouseNickname2}} |key=GunnarTermOE2}} |CPGunnarSpouseNameC={{Random: {{GunnarSpouseNickname3}} |key=GunnarTermOE3}} |LPGunnarSpouseNameA={{Random: {{Lowercase: {{GunnarSpouseNickname1}}}} |key=GunnarTermOE1}} |LPGunnarSpouseNameB={{Random: {{Lowercase: {{GunnarSpouseNickname2}}}} |key=GunnarTermOE2}} |LPGunnarSpouseNameC={{Random: {{Lowercase: {{GunnarSpouseNickname3}}}} |key=GunnarTermOE3}}"
+    },
+    {
+      "Name": "TerenSpousePetName",
+      "Value": "|CPTerenSpouseNameA={{Random: {{TerenSpouseNickname1}} |key=TerenTermOE1}} |LPTerenSpouseNameA={{Random: {{Lowercase: {{TerenSpouseNickname1}}}} |key=TerenTermOE1}}"
+    },
+    {
+      "Name": "SigurdRandomTokens",
+      "Value": "|SigurdHorrorFilm={{i18n:Sigurd.Random.Marriage.HorrorMovies.{{Random:{{Range: 1, 7}}}}}} |SigurdTeachingExperience={{i18n:Sigurd.Random.Marriage.TeachingDays.{{Random:{{Range: 1, 7}}}}}} |SigurdBookTitle={{i18n:Sigurd.Random.Marriage.Books.{{Random:{{Range: 1, 7}}}}}} |SigurdVacationIdea={{i18n:Sigurd.Random.Marriage.Vacations.{{Random:{{Range: 1, 7}}}}}} |SigurdFilmOpinion={{i18n:Sigurd.Random.Marriage.FilmAdjectives.{{Random:{{Range: 1, 7}}}}}} |SigurdSchoolDay={{i18n:Sigurd.Random.Marriage.SchoolDaysEnd.{{Random:{{Range: 1, 7}}}}}} |SigurdBookDescriptor={{i18n:Sigurd.Random.Marriage.BooksAbout.{{Random:{{Range: 1, 7}}}}}} |SigurdVacationWhen={{i18n:Sigurd.Random.Marriage.VacationTimeFrames.{{Random:{{Range: 1, 7}}}}}} |SigurdVacationAttraction={{i18n:Sigurd.Random.Marriage.TouristAttractions.{{Random:{{Range: 1, 7}}}}}} |SigurdRisqueBookDescriptor={{i18n:Sigurd.Random.Marriage.RisqueBooksAbout.{{Random:{{Range: 1, 7}}}}}} |SigurdClassSubjectDescriptor={{i18n:Sigurd.Random.Marriage.TeachingSubject.{{Random:{{Range: 1, 7}}}}}} |SigurdBirdsDescriptor={{i18n:Sigurd.Random.Marriage.Birds.{{Random:{{Range: 1, 7}}}}}}"
+    },
+    {
+      "Name": "GunnarRandomTokens",
+      "Value": "|GunnarGameEdition={{i18n:Gunnar.Random.Marriage.Games.{{Random:{{Range: 1, 7}}}}}} |GunnarMovieTitle={{i18n:Gunnar.Random.Marriage.Movies.{{Random:{{Range: 1, 7}}}}}} |GunnarShowTitle={{i18n:Gunnar.Random.Marriage.TVShows.{{Random:{{Range: 1, 7}}}}}} |GunnarMineSurprise={{i18n:Gunnar.Random.Marriage.MineVisits.{{Random:{{Range: 1, 7}}}}}} |GunnarMonsterEncounter={{i18n:Gunnar.Random.Marriage.Monsters.{{Random:{{Range: 1, 7}}}}}} |GunnarShowAnticipation={{i18n:Gunnar.Random.Marriage.TVShowState.{{Random:{{Range: 1, 7}}}}}} |GunnarMovieStarsA={{i18n:Gunnar.Random.Marriage.MovieStarringA.{{Random:{{Range: 1, 7}}}}}} |GunnarVideoGameSeries={{i18n:Gunnar.Random.Marriage.GameFranchises.{{Random:{{Range: 1, 7}}}}}} |GunnarGameSituations={{i18n:Gunnar.Random.Marriage.GameSituations.{{Random:{{Range: 1, 7}}}}}} |GunnarGameSeriesNumbered={{i18n:Gunnar.Random.Marriage.GameFranchiseSeriesNumbers.{{Random:{{Range: 1, 7}}}}}} |GunnarSpouseCompliment={{i18n:Gunnar.Random.Marriage.SpouseCompliments.{{Random:{{Range: 1, 7}}}}}} |GunnarMovieRumor={{i18n:Gunnar.Random.Marriage.MovieRumors.{{Random:{{Range: 1, 7}}}}}} |GunnarMovieStarsB={{i18n:Gunnar.Random.Marriage.MovieStarringB.{{Random:{{Range: 1, 7}}}}}} |GunnarRandomTown={{i18n:Gunnar.Random.Commentary.RandomTown.{{Random:{{Range: 1, 5}}}}}} |MarlonOrMateo={{i18n:MarlonorMateo.{{HasFlag: anyPlayer|contains=MateoInductsGunnar}}}}, |MarlonOrMateoPronoun1={{i18n:MarlonorMateoPronoun1.{{HasFlag: anyPlayer|contains=MateoInductsGunnar}}}}, |MarlonOrMateoPronoun2={{i18n:MarlonorMateoPronoun2.{{HasFlag: anyPlayer|contains=MateoInductsGunnar}}}}, |MarlonOrMateoPronoun3={{i18n:MarlonorMateoPronoun2.{{HasFlag: anyPlayer|contains=MateoInductsGunnar}}}}, |MateoLesson={{i18n:Gunnar.Random.Commentary.MateoLesson.{{Random:{{Range: 1, 5}}}}}} |HasMetHector={{i18n:HasMetHector.{{HasSeenEvent |contains=SnS.Ch2.Hector.1}}}} |GunnarPlumBookTitles={{i18n:Gunnar.Random.Commentary.RandomPlumBook.{{Random:{{Range: 1, 10}}}}}} |GunnarBookAdjectives={{i18n:Gunnar.Random.Commentary.BookAdjectives.{{Random:{{Range: 1, 5}}}}}} |GunnarBarronBookSubjects={{i18n:Gunnar.Random.Commentary.RandomBarronBookSubject.{{Random:{{Range: 1, 5}}}}}} |MineVisitAndThen={{i18n:Gunnar.Random.Marriage.MineVisitsAndThen.{{Random:{{Range: 1, 7}}}}}}"
+    },
+    {
+      "Name": "TerenRandomTokens",
+      "Value": "|TerenAlbumTitle={{i18n:Teren.Random.Marriage.Albums.{{Random:{{Range: 1, 7}}}}}} |TerenMusician={{i18n:Teren.Random.Marriage.Musicians.{{Random:{{Range: 1, 7}}}}}} |TerenDinnerMain={{i18n:Teren.Random.Marriage.Dinners.{{Random:{{Range: 1, 7}}}}}} |TerenDinnerSide={{i18n:Teren.Random.Marriage.DinnerSides.{{Random:{{Range: 1, 7}}}}}} |TerenDessert={{i18n:Teren.Random.Marriage.Desserts.{{Random:{{Range: 1, 7}}}}}} |TerenBreakfast={{i18n:Teren.Random.Marriage.Breakfasts.{{Random:{{Range: 1, 7}}}}}} |TerenConcertSpot={{i18n:Teren.Random.Marriage.ConcertLocations.{{Random:{{Range: 1, 7}}}}}} |TerenAnimalSpotted={{i18n:Teren.Random.Marriage.WhatAnimals.{{Random:{{Range: 1, 7}}}}}} |TerenAnimalLocation={{i18n:Teren.Random.Marriage.WhereAnimals.{{Random:{{Range: 1, 7}}}}}} |TerenFestival={{i18n:Teren.Random.Marriage.MusicFestivals.{{Random:{{Range: 1, 7}}}}}} |TerenFruits={{i18n:Teren.Random.Marriage.Fruit.{{Random:{{Range: 1, 5}}}}}}"
+    }
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //End of Dynamic Hecc Zone
+
+  ],
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+  "Changes": [
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //BBFiles - Load Things
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //BearFam - Load Things
+    //Load Blanks
+    {
+      "LogName": "Blanks",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MadDog.HashtagBearFam.Sigurd, Characters/Dialogue/MarriageDialogueMadDog.HashtagBearFam.Sigurd, Characters/schedules/MadDog.HashtagBearFam.Sigurd, Strings/schedules/MadDog.HashtagBearFam.Sigurd, Characters/Dialogue/MadDog.HashtagBearFam.Sondra, Strings/schedules/MadDog.HashtagBearFam.Sondra, Characters/schedules/MadDog.HashtagBearFam.Sondra, Characters/Dialogue/MadDog.HashtagBearFam.Gunnar, Characters/Dialogue/MarriageDialogueMadDog.HashtagBearFam.Gunnar, Strings/schedules/MadDog.HashtagBearFam.Gunnar, Characters/schedules/MadDog.HashtagBearFam.Gunnar, Characters/Dialogue/MadDog.HashtagBearFam.Gudrun, Strings/schedules/MadDog.HashtagBearFam.Gudrun, Characters/schedules/MadDog.HashtagBearFam.Gudrun, Characters/Dialogue/MadDog.HashtagBearFam.Teren, Strings/schedules/MadDog.HashtagBearFam.Teren, Characters/Dialogue/MarriageDialogueMadDog.HashtagBearFam.Teren, Characters/schedules/MadDog.HashtagBearFam.Teren, data/events/MadDog.BearFam.Custom_BearLodge, data/events/MadDog.BearFam.Custom_BearLodge_Cliff, data/events/MadDog.BearFam.Custom_BearFamNoKrakenMap, data/events/MadDog.BearFam.Custom_BearLodge_BoatMap, data/events/MadDog.HashtagBearFam_CharityShop, data/events/MadDog.HashtagBearFam_WeddingMap, data/events/MadDog.BearFam.Custom_BearFamLoadingZone, data/events/MadDog.BearFam.Custom_BearLodge_BearEventMine, data/events/MadDog.HashtagBearFam_BusMap, data/events/MadDog.HashtagBearFam_CavingDate, data/events/MadDog.HashtagBearFam_CollegeClassroom, data/events/MadDog.HashtagBearFam_CityDate, data/events/MadDog.HashtagBearFam_CityDateViewCG",
+      "FromFile": "Data/Dialogue/blank.json"
+    },
+    {
+      "LogName": "AG Blanks",
+      "Action": "Load",
+      "Target": "data/events/AdventureGuild",
+      "FromFile": "Data/Dialogue/blank.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Wolf.Marlon, supert.adventureguildexpanded, Rafseazz.RSVCP, BlatantDecoy.BugmeatRecipes-CP, purrplingcat.npcadventure, DN.SnS, thatotterthing.Biscuit": false
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //end of blanks zone
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //other loads
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //BB Includes
+    {
+      "LogName": "Includes all the things",
+      "Action": "Include",
+      "FromFile": "Data/AppearanceLoads.json, Data/MapStrings.json, Data/LocationsData.json, Data/{{SeasonalOutfits}}_NPCData.json, Data/NPCGiftData.json, Data/Compatibility/EventLookup.json, Data/EventData.json, Data/Animations.json, Data/Mail.json, Data/Movies.json, Data/Dialogue/Sig_dialogue.json, Data/schedules/Sig_schedule.json, Data/Dialogue/Sondra_dialogue.json, Data/schedules/Sondra_schedule.json, Data/schedules/Gudrun_schedule.json, Data/Dialogue/VisitorDialogue.json, Data/schedules/Gunnar_schedule.json, Data/schedules/Teren_schedule.json, Data/Dialogue/SigurdStrings.json, Data/Dialogue/SondraStrings.json, Data/Dialogue/GudrunStrings.json, Data/Dialogue/GunnarStrings.json, Data/Dialogue/TerenStrings.json, Data/Dialogue/FestivalDialogue.json, Data/Dialogue/ConversationTopics.json, Data/SpecialOrders.json, Data/SOStrings.json, Data/Triggers.json, Data/Fish.json, Data/QuestData.json, Data/FurnitureFront.json, Data/GiftTastes.json, Data/Jukebox.json, Data/CustomAudioChanges.json, Data/Shops.json, Data/Objects.json, Data/Recipes.json, Data/Hats.json, Data/Weapons.json, Data/FruitTrees.json, Data/Crops.json, Data/Furniture.json, Data/BigCrafty.json, Data/Festivals/SigFestivalLocations.json, Data/Festivals/SondraFestivalLocations.json, Data/Festivals/GunnarFestivalLocations.json, Data/Festivals/GudrunFestivalLocations.json, Data/Festivals/TerenFestivalLocations.json, Data/Shirts.json, Data/WearableBuffs.json, Data/PhoneCalls.json, Data/MarriageDialogue/MarriageDialogueTeren.json, Data/MarriageDialogue/MarriageDialogueSigurd.json, Data/MarriageDialogue/MarriageDialogueGunnar.json, Data/Compatibility/CJBCheats.json, Data/CustomWedding.json, Data/Compatibility/SolsticeWinterStar.json, Data/SpaceCoreData.json, Data/MEEPData.json, Data/SigurdIncludes.json"
+    },
+    /*{
+      "LogName": "Includes all the things",
+      "Action": "Include",
+      "FromFile": "Data/VioletMoonData.json",
+      "When": {
+        "HasMod": "DN.SnS"
+      }
+    },*/
+    {
+      "LogName": "G + G Unique Includes",
+      "Action": "Include",
+      "FromFile": "Data/GGIncludes.json, Data/Dialogue/Gunnar_dialogue.json, Data/Dialogue/Gudrun_dialogue.json",
+      "When": {
+        "HasFlag": "BearFamExtraMembers"
+      }
+    },
+    {
+      "LogName": "Teren Unique Includes",
+      "Action": "Include",
+      "FromFile": "Data/TerenIncludes.json, Data/Dialogue/Teren_dialogue.json",
+      "When": {
+        "HasFlag": "TerenIsHere"
+      }
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="14" height="12" tilewidth="16" tileheight="16" infinite="0" nextlayerid="25" nextobjectid="27">
+ <properties>
+  <property name="forceLoadPathLayerLights" value="T"/>
+  <property name="LocationContext" value="Island"/>
+ </properties>
+ <tileset firstgid="1" name="Building_interiors" tilewidth="16" tileheight="16" tilecount="3570" columns="85">
+  <image source="Building_interiors.png" width="1360" height="672"/>
+  <tile id="212">
+   <properties>
+    <property name="Action" value="MineSign There seems to be many books about Pokemon here."/>
+   </properties>
+  </tile>
+  <tile id="213">
+   <properties>
+    <property name="Action" value="MineSign There's an odd book about supernatural occurrences at night."/>
+   </properties>
+  </tile>
+  <tile id="637">
+   <properties>
+    <property name="Action" value="MineSign There's a diary entry about the supernatural preferring Fall and Winter."/>
+   </properties>
+  </tile>
+  <tile id="649">
+   <properties>
+    <property name="Action" value="MineSign The pages are blank."/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="3571" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
+ </tileset>
+ <layer id="21" name="Back" width="14" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,219,220,221,222,223,224,0,0,227,228,229,230,0,
+0,304,305,0,0,0,309,310,311,312,313,314,315,0,
+0,389,390,0,0,0,394,395,396,397,398,399,400,0,
+0,474,475,476,477,478,479,480,481,482,483,484,485,0,
+0,559,560,561,562,563,564,565,566,567,0,0,570,0,
+0,559,645,646,647,648,649,0,0,652,0,0,655,0,
+0,0,730,731,732,733,734,735,736,737,738,739,740,0,
+0,814,815,816,817,818,819,820,821,822,823,824,825,0,
+0,0,0,0,0,0,806,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="12" name="Back"/>
+ <layer id="8" name="Buildings" width="14" height="12">
+  <data encoding="csv">
+802,802,802,802,802,802,802,802,802,802,802,802,802,802,
+802,49,50,51,52,53,54,55,56,57,58,59,60,802,
+802,134,135,136,137,138,139,140,141,142,143,144,145,802,
+802,0,0,0,0,0,0,225,226,0,0,0,0,802,
+802,0,0,306,307,308,0,0,0,0,0,0,0,802,
+802,0,0,391,392,393,0,0,0,0,0,0,0,802,
+802,0,0,0,0,0,0,0,0,0,0,0,0,802,
+802,0,0,0,0,0,0,0,0,0,568,569,0,802,
+802,0,0,0,0,0,0,650,651,0,653,654,0,802,
+802,729,0,0,0,0,0,0,0,0,0,0,0,802,
+802,802,802,802,802,802,0,802,808,808,808,808,802,802,
+808,808,808,808,808,808,0,808,808,808,808,808,808,808
+</data>
+ </layer>
+ <objectgroup id="14" name="Buidings"/>
+ <layer id="9" name="Paths" width="14" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,3579,
+0,0,0,0,0,0,0,3579,0,0,3579,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,3579,0,0,0,3579,0,0,0,3579,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,3579,0,0,0,3579,0,0,
+0,0,0,0,3579,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="15" name="Paths"/>
+ <layer id="10" name="Front" width="14" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,972,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="16" name="Front"/>
+ <layer id="11" name="AlwaysFront" width="14" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="17" name="AlwaysFront"/>
+</map>

@@ -72,15 +72,27 @@
       }
     },
     {
-      "LogName": "Portraits and Sprites - Kevin",
+      "LogName": "Portraits - Kevin",
       "Action": "Load",
-      "Target": "Portraits/KevinTheCrow, Characters/KevinTheCrow",
+      "Target": "Portraits/KevinTheCrow",
+      "FromFile": "assets/{{PortraitStyleToken}}/Kevin.png"
+    },
+    {
+      "LogName": "Sprites - Kevin",
+      "Action": "Load",
+      "Target": "Characters/KevinTheCrow",
       "FromFile": "assets/{{TargetPathOnly}}/Kevin.png"
     },
     {
-      "LogName": "Portraits and Sprites - Titania",
+      "LogName": "Portraits - Titania",
       "Action": "Load",
-      "Target": "Portraits/TitaniaTheCrow, Characters/TitaniaTheCrow",
+      "Target": "Portraits/TitaniaTheCrow",
+      "FromFile": "assets/{{PortraitStyleToken}}/Titania.png"
+    },
+    {
+      "LogName": "Sprites - Titania",
+      "Action": "Load",
+      "Target": "Characters/TitaniaTheCrow",
       "FromFile": "assets/{{TargetPathOnly}}/Titania.png"
     },
     {

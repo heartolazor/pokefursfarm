@@ -1,0 +1,3117 @@
+{
+  "Changes": [
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //load maps
+    {
+      "LogName": "Load House Interior",
+      "Action": "Load",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "FromFile": "assets/Maps/BearLodgeHouse.tmx"
+    },
+    {
+      "LogName": "Load Cellar",
+      "Action": "Load",
+      "Target": "Maps/MadDog.HashtagBearFam_Cellar",
+      "FromFile": "assets/Maps/Custom_BearLodge_Cliff.tmx"
+    },
+    {
+      "LogName": "Load Loading Zone",
+      "Action": "Load",
+      "Target": "Maps/MadDog.HashtagBearFam_LoadingZone",
+      "FromFile": "assets/Maps/Custom_BearLoadingZone.tmx"
+    },
+    {
+      "LogName": "Load Mine Map",
+      "Action": "Load",
+      "Target": "Maps/MadDog.HashtagBearFam_BearEventMine",
+      "FromFile": "assets/Maps/HashtagBearFamCaveEvent.tmx"
+    },
+    {
+      "LogName": "Load Kraken Cave",
+      "Action": "Load",
+      "Target": "Maps/MadDog.HashtagBearFam_KrakenCave",
+      "FromFile": "assets/Maps/Custom_BearCaveWaterEvents.tmx"
+    },
+    {
+      "LogName": "Load Gudrun Boat",
+      "Action": "Load",
+      "Target": "Maps/MadDog.HashtagBearFam_BoatMap",
+      "FromFile": "assets/Maps/BearFamBoatRideMap.tmx"
+    },
+    {
+      "LogName": "Load Gudrun Classroom",
+      "Action": "Load",
+      "Target": "Maps/MadDog.HashtagBearFam_CollegeClassroom",
+      "FromFile": "assets/Maps/MadDog.HashtagBearFam_GudrunClassRoom.tmx"
+    },
+    {
+      "LogName": "Load Charity Shop",
+      "Action": "Load",
+      "Target": "Maps/MadDog.HashtagBearFam_CharityShop",
+      "FromFile": "assets/Maps/MadDogBearFam_CharityShopInside.tmx"
+    },
+    {
+      "LogName": "Load Wedding Map",
+      "Action": "Load",
+      "Target": "Maps/MadDog.HashtagBearFam_WeddingMap",
+      "FromFile": "assets/Maps/MadDog.HashtagBearFam_WeddingMap.tmx"
+    },
+    {
+      "LogName": "Load Bathroom Map",
+      "Action": "Load",
+      "Target": "Maps/MadDog.HashtagBearFam_BoyBathroom",
+      "FromFile": "assets/Maps/MadDog.HashtagBearFam_BathroomB.tmx"
+    },
+    {
+      "LogName": "Load Bathroom Map",
+      "Action": "Load",
+      "Target": "Maps/MadDog.HashtagBearFam_GirlBathroom",
+      "FromFile": "assets/Maps/MadDog.HashtagBearFam_BathroomG.tmx"
+    },
+    {
+      "LogName": "Load City Date",
+      "Action": "Load",
+      "Target": "Maps/MadDog.HashtagBearFam_CityDate",
+      "FromFile": "assets/Maps/BearFam_CityDate.tmx"
+    },
+    {
+      "LogName": "Load City Date CG",
+      "Action": "Load",
+      "Target": "Maps/MadDog.HashtagBearFam_CityDateViewCG",
+      "FromFile": "assets/Maps/MadDog.HashtagBearFam_CityDateViewCG.tmx"
+    },
+    {
+      "LogName": "Load Caving Date",
+      "Action": "Load",
+      "Target": "Maps/MadDog.HashtagBearFam_CavingDate",
+      "FromFile": "assets/Maps/MadDog.HashtagBearFam_DateCave.tmx"
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //Make maps functional here
+    {
+      "LogName": "New Map Formatting Shenanigans",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+
+        "MadDog.BearFam.Custom_BearLodge": {
+          "DisplayName": "{{i18n:MadDog.BearFam.Custom_BearLodge}}",
+          "DefaultArrivalTile": {
+            "X": 19,
+            "Y": 31
+          },
+          "Music": [
+            {
+              "Id": "MadDog.HashtagBearFam_TheManorOnMadisonStreet",
+              "Track": "MadDog.HashtagBearFam_TheManorOnMadisonStreet",
+              "Condition": "RANDOM .75"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TheBearFamilyDen",
+              "Track": "MadDog.HashtagBearFam_TheBearFamilyDen",
+              "Condition": "RANDOM .25"
+            }
+          ],
+          "CreateOnLoad": { "MapPath": "Maps/MadDog.HashtagBearFam_BearLodge" },
+          "FormerLocationNames": [ "Custom_BearLodge" ]
+        },
+
+        "MadDog.HashtagBearFam_GirlBathroom": {
+          "DisplayName": "{{i18n:MadDog.BearFam.GirlBathroom}}",
+          "DefaultArrivalTile": {
+            "X": 3,
+            "Y": 7
+          },
+          "Music": [
+            {
+              "Id": "MadDog.HashtagBearFam_BathroomG_Madison",
+              "Track": "MadDog.HashtagBearFam_TheManorOnMadisonStreet" //,
+            }
+          ],
+          "CreateOnLoad": { "MapPath": "Maps/MadDog.HashtagBearFam_GirlBathroom" },
+          "FormerLocationNames": null
+        },
+
+        "MadDog.HashtagBearFam_BoyBathroom": {
+          "DisplayName": "{{i18n:MadDog.BearFam.BoyBathroom}}",
+          "DefaultArrivalTile": {
+            "X": 5,
+            "Y": 7
+          },
+          "Music": [
+            {
+              "Id": "MadDog.HashtagBearFam_BathroomB_Den",
+              "Track": "MadDog.HashtagBearFam_TheBearFamilyDen" //,
+            }
+          ],
+          "CreateOnLoad": { "MapPath": "Maps/MadDog.HashtagBearFam_BoyBathroom" },
+          "FormerLocationNames": null
+        },
+
+        "MadDog.BearFam.Custom_BearFamLoadingZone": {
+          "DisplayName": "{{i18n:MadDog.BearFam.Custom_BearFamLoadingZone}}",
+          "DefaultArrivalTile": {
+            "X": 15,
+            "Y": 19
+          },
+          "CreateOnLoad": { "MapPath": "Maps/MadDog.HashtagBearFam_LoadingZone" },
+          "FormerLocationNames": [ "Custom_BearLoadingZone" ]
+        },
+
+        "MadDog.BearFam.Custom_BearFamNoKrakenMap": {
+          "DisplayName": "{{i18n:MadDog.BearFam.Custom_BearFamNoKrakenMap}}",
+          "DefaultArrivalTile": {
+            "X": 44,
+            "Y": 14
+          },
+          "Music": [
+            {
+              "Id": "MadDog.HashtagBearFam_Overcast",
+              "Track": "Overcast",
+              "Condition": "!PLAYER_HAS_SEEN_EVENT Current MadDog.BearFam.16193011"
+            },
+            {
+              "Id": "MadDog.HashtagBearFam_TheKraken",
+              "Track": "MadDog.HashtagBearFam_TheKraken",
+              "Condition": "PLAYER_HAS_SEEN_EVENT Current MadDog.BearFam.16193011"
+            }
+          ],
+          "CreateOnLoad": { "MapPath": "Maps/MadDog.HashtagBearFam_KrakenCave" },
+          "FormerLocationNames": [ "Custom_BearFamNoKrakenMap" ],
+
+          "Forage": [
+            {
+              "Chance": 0.2,
+              "Season": null,
+              "Id": "(O)167", //joja cola
+              "ItemId": "(O)167"
+            },
+            {
+              "Chance": 0.2,
+              "Season": null,
+              "Id": "(O)168", //trash
+              "ItemId": "(O)168"
+
+            },
+            {
+              "Chance": 0.2,
+              "Season": null,
+              "Id": "(O)169", //driftwood
+              "ItemId": "(O)169"
+            },
+            {
+              "Chance": 0.2,
+              "Season": null,
+              "Id": "(O)170", //broken glasses
+              "ItemId": "(O)170"
+            },
+            {
+              "Chance": 0.2,
+              "Season": null,
+              "Id": "(O)171", //broken cd
+              "ItemId": "(O)171"
+            },
+            {
+              "Chance": 0.2,
+              "Season": null,
+              "Id": "(O)172", //soggy newspaper
+              "ItemId": "(O)172"
+            },
+            {
+              "Chance": 0.1,
+              "Season": null,
+              "Id": "(O)589", //trilobite
+              "ItemId": "(O)589"
+            },
+            {
+              "Chance": 0.1,
+              "Season": null,
+              "Id": "(O)586", //nautilus fossil
+              "ItemId": "(O)586"
+            },
+            {
+              "Chance": 0.1,
+              "Season": null,
+              "Id": "(O)117", //anchor
+              "ItemId": "(O)117"
+            }
+
+          ],
+          "MinDailyWeeds": 2,
+          "MaxDailyWeeds": 5,
+          "FirstDayWeedMultiplier": 15,
+          "MinDailyForageSpawn": 1,
+          "MaxDailyForageSpawn": 3,
+          "MaxSpawnedForageAtOnce": 8,
+
+          "ArtifactSpots": [
+            {
+              "Chance": 0.7,
+              "Id": "(O)378",
+              "ItemId": "(O)378", //copper ore
+              "MinStack": 5,
+              "MaxStack": 8
+            },
+            {
+              "Chance": 0.5,
+              "Id": "(O)380",
+              "ItemId": "(O)380", //iron ore
+              "MinStack": 4,
+              "MaxStack": 6
+            },
+            {
+              "Chance": 0.3,
+              "Id": "(O)384",
+              "ItemId": "(O)384", //gold ore
+              "MinStack": 2,
+              "MaxStack": 5
+            },
+            {
+              "Chance": 0.1,
+              "Id": "(O)386",
+              "ItemId": "(O)386", //iridium ore
+              "MinStack": 1,
+              "MaxStack": 3
+            },
+            {
+              "Chance": 0.6,
+              "Id": "(O)118",
+              "ItemId": "(O)118" //glass shards
+            },
+            {
+              "Chance": 0.4,
+              "Id": "(O)535",
+              "ItemId": "(O)535" //geode
+            },
+            {
+              "Chance": 0.08,
+              "Id": "(O)109",
+              "ItemId": "(O)109" //prehistoric handaxe
+            },
+            {
+              "Chance": 0.08,
+              "Id": "(O)120",
+              "ItemId": "(O)120" //ancient sword
+            }
+          ],
+
+          "FishAreas": {
+            "UndergroundKrakenLake": {
+              "DisplayName": "{{i18n:MadDog.BearFam.Custom_KrakenLakeName}}",
+              "Position": null,
+              "CrabPotFishTypes": [ "ocean" ],
+              "CrabPotJunkChance": 0.5
+            }
+          },
+
+          "Fish": [
+            //custom fish
+            {
+              "Id": "MadDog.BearFam.Krakenling",
+              "ItemId": "MadDog.HashtagBearFam_Krakenling",
+              "Chance": 0.5,
+              "FishAreaID": "UndergroundKrakenLake",
+              "Season": null,
+              "Precedence": -500
+            },
+            {
+              "Id": "MadDog.BearFam.Lyngbakr",
+              "ItemId": "MadDog.HashtagBearFam_Lyngbakr",
+              "FishAreaID": "UndergroundKrakenLake",
+              "Chance": 0.5,
+              "Condition": "LOCATION_Season Here spring summer",
+              "Precedence": -500
+            },
+            {
+              "Id": "MadDog.BearFam.Hafgufa",
+              "ItemId": "MadDog.HashtagBearFam_Hafgufa",
+              "FishAreaID": "UndergroundKrakenLake",
+              "Chance": 0.5,
+              "Condition": "LOCATION_Season Here fall winter",
+              "Precedence": -500
+            },
+            {
+              "Id": "MadDog.BearFam.Jojellyfish",
+              "Chance": 0.5,
+              "ItemId": "MadDog.HashtagBearFam_Jojellyfish",
+              "FishAreaID": "UndergroundKrakenLake",
+              "Season": null,
+              "Precedence": -500
+            },
+            {
+              "Id": "MadDog.BearFam.Colacrab",
+              "ItemId": "MadDog.HashtagBearFam_Colacrab",
+              "Chance": 0.5,
+              "FishAreaID": "UndergroundKrakenLake",
+              "Season": null,
+              "Precedence": -500
+            },
+            //not fish
+            {
+              "Id": "MadDog.BearFam.FerskenPeach_PotentMead",
+              "ItemId": "MadDog.HashtagBearFam_FerskenPeach_PotentMead",
+              "FishAreaID": "UndergroundKrakenLake",
+              "Season": "Summer",
+              "Precedence": -500,
+              "Chance": 0.05
+            },
+            {
+              "Id": "MadDog.BearFam.Mjolnir",
+              "ItemId": "MadDog.HashtagBearFam_Mjolnir",
+              "FishAreaID": "UndergroundKrakenLake",
+              "Condition": "PLAYER_HEARTS Current MadDog.HashtagBearFam.Sigurd 5",
+              "Season": "Fall",
+              "Precedence": -500,
+              "Chance": 0.05
+            },
+            {
+              "Id": "MadDog.BearFam.MilitaryRapier",
+              "ItemId": "MadDog.HashtagBearFam_MilitaryRapier",
+              "FishAreaID": "UndergroundKrakenLake",
+              "Condition": "PLAYER_HEARTS Current MadDog.HashtagBearFam.Teren 5",
+              "Season": "Spring",
+              "Precedence": -500,
+              "Chance": 0.05
+            },
+            {
+              "Id": "MadDog.BearFam.BusterSword",
+              "ItemId": "MadDog.HashtagBearFam_BusterSword",
+              "FishAreaID": "UndergroundKrakenLake",
+              "Condition": "PLAYER_HEARTS Current MadDog.HashtagBearFam.Gunnar 5",
+              "Season": "Fall",
+              "Precedence": -500,
+              "Chance": 0.05
+            },
+            {
+              "Id": "MadDog.BearFam.FishStick",
+              "ItemId": "MadDog.HashtagBearFam_FishStick",
+              "FishAreaID": "UndergroundKrakenLake",
+              "Condition": "PLAYER_HEARTS Current MadDog.HashtagBearFam.Gudrun 5",
+              "Season": "Winter",
+              "Precedence": -500,
+              "Chance": 0.05
+            },
+            {
+              "Id": "MadDog.BearFam.KitchenCleaver",
+              "ItemId": "MadDog.HashtagBearFam_KitchenCleaver",
+              "FishAreaID": "UndergroundKrakenLake",
+              "Condition": "PLAYER_HEARTS Current MadDog.HashtagBearFam.Sondra 5",
+              "Season": "Spring",
+              "Precedence": -500,
+              "Chance": 0.05
+            },
+            //vanilla fish
+            {
+              "Id": "(O)147", //herring
+              "ItemId": "(O)147",
+              "FishAreaID": "UndergroundKrakenLake",
+              "Condition": "LOCATION_Season Here Spring Winter"
+            },
+            {
+              "Id": "(O)156", //Ghostfish
+              "ItemId": "(O)156",
+              "FishAreaID": "UndergroundKrakenLake",
+              "Season": null
+            },
+            {
+              "Id": "(O)158", //stonefish
+              "ItemId": "(O)158",
+              "FishAreaID": "UndergroundKrakenLake",
+              "Season": null
+            },
+
+            {
+              "Id": "(O)149", //octopus
+              "ItemId": "(O)149",
+              "FishAreaID": "UndergroundKrakenLake",
+              "Season": null
+            },
+            {
+              "Id": "(O)CaveJelly", //cave jelly
+              "ItemId": "(O)CaveJelly",
+              "Chance": 0.5,
+              "FishAreaID": "UndergroundKrakenLake",
+              "Season": null
+            },
+            {
+              "Id": "(O)SeaJelly", //Sea Jelly
+              "ItemId": "(O)SeaJelly",
+              "Chance": 0.5,
+              "FishAreaID": "UndergroundKrakenLake",
+              "Season": null
+            }
+          ]
+        },
+
+
+        "MadDog.BearFam.Custom_BearLodge_Cliff": {
+          "DisplayName": "{{i18n:MadDog.BearFam.Custom_BearLodge_Cliff}}",
+          "DefaultArrivalTile": {
+            "X": 3,
+            "Y": 10
+          },
+          "Music": [
+            {
+              "Id": "MadDog.HashtagBearFam_TheBearFamilyDen",
+              "Track": "MadDog.HashtagBearFam_TheBearFamilyDen"
+            }
+          ],
+          "MusicIgnoredInRain": true,
+          "CreateOnLoad": { "MapPath": "Maps/MadDog.HashtagBearFam_Cellar" },
+          "FormerLocationNames": [ "Custom_BearLodge_Cliff" ],
+          "Forage": [
+            {
+              "Chance": 0.1,
+              "Season": "Summer",
+              "Id": "(O)169", //driftwood
+              "ItemId": "(O)169"
+            }
+          ],
+
+          "FishAreas": {
+            "UndergroundBearRiver": {
+              "DisplayName": "{{i18n:MadDog.BearFam.Custom_BearRiverName}}",
+              "Position": null,
+              "CrabPotFishTypes": [],
+              "CrabPotJunkChance": 1.0
+            }
+          },
+          "Fish": [
+            {
+              "Id": "MadDog.BearFam.Lyngbakr",
+              "ItemId": "MadDog.HashtagBearFam_Lyngbakr",
+              "FishAreaID": "UndergroundBearRiver",
+              "Chance": 0.5,
+              "Condition": "LOCATION_Season Here spring summer",
+              "Precedence": -500
+            },
+            {
+              "Id": "MadDog.BearFam.Hafgufa",
+              "ItemId": "MadDog.HashtagBearFam_Hafgufa",
+              "FishAreaID": "UndergroundBearRiver",
+              "Chance": 0.5,
+              "Condition": "LOCATION_Season Here fall winter",
+              "Precedence": -500
+            },
+            {
+              "Id": "MadDog.BearFam.Colacrab",
+              "ItemId": "MadDog.HashtagBearFam_Colacrab",
+              "FishAreaID": "UndergroundBearRiver",
+              "Chance": 0.5,
+              "Season": null,
+              "Precedence": -500
+            },
+            {
+              "Id": "MadDog.BearFam.Krakenling",
+              "ItemId": "MadDog.HashtagBearFam_Krakenling",
+              "Chance": 0.5,
+              "FishAreaID": "UndergroundBearRiver",
+              "Season": "Winter",
+              "Precedence": -500
+            },
+            {
+              "Id": "MadDog.BearFam.Jojellyfish",
+              "Chance": 0.5,
+              "ItemId": "MadDog.HashtagBearFam_Jojellyfish",
+              "FishAreaID": "UndergroundBearRiver",
+              "Season": "Winter",
+              "Precedence": -500
+            },
+            //not fish
+            {
+              "Id": "MadDog.BearFam.FerskenPeach_PotentMead",
+              "ItemId": "MadDog.HashtagBearFam_FerskenPeach_PotentMead",
+              "FishAreaID": "UndergroundBearRiver",
+              "Season": "Summer",
+              "Precedence": -500,
+              "Chance": 0.05
+            },
+            {
+              "Id": "MadDog.BearFam.Mjolnir",
+              "ItemId": "MadDog.HashtagBearFam_Mjolnir",
+              "FishAreaID": "UndergroundBearRiver",
+              "Condition": "PLAYER_HEARTS Current MadDog.HashtagBearFam.Sigurd 5",
+              "Season": "Fall",
+              "Precedence": -500,
+              "Chance": 0.05
+            },
+            {
+              "Id": "MadDog.BearFam.MilitaryRapier",
+              "ItemId": "MadDog.HashtagBearFam_MilitaryRapier",
+              "FishAreaID": "UndergroundBearRiver",
+              "Condition": "PLAYER_HEARTS Current MadDog.HashtagBearFam.Teren 5",
+              "Season": "Spring",
+              "Precedence": -500,
+              "Chance": 0.05
+            },
+            {
+              "Id": "MadDog.BearFam.BusterSword",
+              "ItemId": "MadDog.HashtagBearFam_BusterSword",
+              "FishAreaID": "UndergroundBearRiver",
+              "Condition": "PLAYER_HEARTS Current MadDog.HashtagBearFam.Gunnar 5",
+              "Season": "Fall",
+              "Precedence": -500,
+              "Chance": 0.05
+            },
+            {
+              "Id": "MadDog.BearFam.FishStick",
+              "ItemId": "MadDog.HashtagBearFam_FishStick",
+              "FishAreaID": "UndergroundBearRiver",
+              "Condition": "PLAYER_HEARTS Current MadDog.HashtagBearFam.Gudrun 5",
+              "Season": "Winter",
+              "Precedence": -500,
+              "Chance": 0.05
+            },
+            {
+              "Id": "MadDog.BearFam.KitchenCleaver",
+              "ItemId": "MadDog.HashtagBearFam_KitchenCleaver",
+              "FishAreaID": "UndergroundBearRiver",
+              "Condition": "PLAYER_HEARTS Current MadDog.HashtagBearFam.Sondra 5",
+              "Season": "Spring",
+              "Precedence": -500,
+              "Chance": "0.1"
+            },
+            //vanilla fish
+            {
+              "Season": null,
+              "FishAreaId": "UndergroundBearRiver",
+              "Id": "(O)139", //salmon
+              "ItemId": "(O)139"
+            },
+            {
+              "Season": "Winter",
+              "FishAreaId": "UndergroundBearRiver",
+              "Id": "(O)707", //lingcod
+              "ItemId": "(O)707"
+            },
+            {
+              "Season": "Winter",
+              "FishAreaId": "UndergroundBearRiver",
+              "Id": "(O)141", //perch
+              "ItemId": "(O)141"
+            },
+            {
+              "Season": "Spring",
+              "FishAreaId": "UndergroundBearRiver",
+              "Id": "(O)145", //sunfish
+              "ItemId": "(O)145"
+            },
+            {
+              "Season": "Fall",
+              "FishAreaId": "UndergroundBearRiver",
+              "Id": "(O)137", //smallmouth bass
+              "ItemId": "(O)137"
+            },
+            {
+              "Season": "Summer",
+              "FishAreaId": "UndergroundBearRiver",
+              "Id": "(O)138", //rainbow trout
+              "ItemId": "(O)138"
+            },
+            {
+              "Season": null,
+              "FishAreaId": "UndergroundBearRiver",
+              "Chance": 0.5,
+              "Id": "(O)RiverJelly", //river jelly
+              "ItemId": "(O)RiverJelly"
+            }
+          ]
+        },
+
+        "MadDog.BearFam.Custom_BearLodge_BearEventMine": {
+          "DisplayName": "{{i18n:MadDog.BearFam_BearEventMine}}",
+          "DefaultArrivalTile": {
+            "X": 12,
+            "Y": 17
+          },
+          "CreateOnLoad": { "MapPath": "Maps/MadDog.HashtagBearFam_BearEventMine" },
+          "FormerLocationNames": [ "Custom_BearFamMinesMapEvents" ]
+        },
+
+        "MadDog.HashtagBearFam_CollegeClassroom": {
+          "DisplayName": "{{i18n:MadDog.HashtagBearFam_CollegeClassroom}}",
+          "DefaultArrivalTile": {
+            "X": 10,
+            "Y": 16
+          },
+          "Music": [
+            {
+              "Id": "MadDog.HashtagBearFam_GudrunClassTheme",
+              "Track": "MadDog.HashtagBearFam_GudrunTheme" //,
+            }
+          ],
+          "CreateOnLoad": { "MapPath": "Maps/MadDog.HashtagBearFam_CollegeClassroom" },
+          "FormerLocationNames": null
+        },
+
+
+        "MadDog.BearFam.Custom_BearLodge_BoatMap": {
+          "DisplayName": "{{i18n:MadDog.BearFam_BearBoatMap}}",
+          "DefaultArrivalTile": {
+            "X": 15,
+            "Y": 9
+          },
+          "CreateOnLoad": { "MapPath": "Maps/MadDog.HashtagBearFam_BoatMap" },
+          "FormerLocationNames": null
+        },
+
+        "MadDog.HashtagBearFam_WeddingMap": {
+          "DisplayName": "{{i18n:MadDog.BearFam_BearBoatMap}}",
+          "DefaultArrivalTile": {
+            "X": 15,
+            "Y": 9
+          },
+          "CreateOnLoad": { "MapPath": "Maps/MadDog.HashtagBearFam_WeddingMap" },
+          "FormerLocationNames": null
+        },
+
+        "MadDog.HashtagBearFam_CharityShop": {
+          "DisplayName": "{{i18n:MadDog.BearFam.CharityShop}}",
+          "DefaultArrivalTile": {
+            "X": 4,
+            "Y": 11
+          },
+          "Music": [
+            {
+              "Id": "MadDog.HashtagBearFam_TerenTheme",
+              "Track": "MadDog.HashtagBearFam_TerenTheme"
+            }
+          ],
+          "CreateOnLoad": { "MapPath": "Maps/MadDog.HashtagBearFam_CharityShop" },
+          "FormerLocationNames": null
+        }
+      }
+    },
+
+
+    //fucking up forage lmao
+    {
+      "LogName": "Self conchuous",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [ "MadDog.BearFam.Custom_BearFamNoKrakenMap", "Forage" ],
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      },
+      "Entries": {
+        "(O)FlashShifter.StardewValleyExpandedCP_Big_Conch": {
+          "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Big_Conch",
+          "Chance": 0.05
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [ "MadDog.BearFam.Custom_BearFamNoKrakenMap", "Forage" ],
+      "When": {
+        "HasMod": "Cornucopia.ArtisanGoods"
+      },
+      "Entries": {
+        "(O)Cornucopia_SeaSalt": {
+          "ItemId": "(O)Cornucopia_SeaSalt"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [ "MadDog.BearFam.Custom_BearFamNoKrakenMap", "Forage" ],
+      "When": {
+        "HasMod": "Cornucopia.MoreCrops",
+        "HasFlag": "Cornucopia_ExtendedCropsPackEnabled"
+      },
+      "Entries": {
+        "(O)Cornucopia_JuniperBerries": {
+          "ItemId": "(O)Cornucopia_JuniperBerries",
+          "Chance": 0.1
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [ "MadDog.BearFam.Custom_BearLodge_Cliff", "Forage" ],
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      },
+      "Entries": {
+        "(O)FlashShifter.StardewValleyExpandedCP_Big_Conch": {
+          "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Big_Conch",
+          "Chance": 0.05
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [ "MadDog.BearFam.Custom_BearLodge_Cliff", "Forage" ],
+      "When": {
+        "HasMod": "Cornucopia.MoreCrops"
+      },
+      "Entries": {
+        "(O)Cornucopia_Raspberry": {
+          "ItemId": "(O)Cornucopia_Raspberry",
+          "Chance": 0.1,
+          "Season": "Summer"
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [ "MadDog.BearFam.Custom_BearLodge_Cliff", "Forage" ],
+      "When": {
+        "HasMod": "Cornucopia.MoreCrops",
+        "HasFlag": "Cornucopia_ExtendedCropsPackEnabled"
+      },
+      "Entries": {
+        "(O)Cornucopia_JuniperBerries": {
+          "ItemId": "(O)Cornucopia_JuniperBerries",
+          "Chance": 0.1
+        },
+        "(O)Cornucopia_BlackCurrants": {
+          "ItemId": "(O)Cornucopia_BlackCurrants",
+          "Chance": 0.1,
+          "Season": "Winter"
+        }
+
+      }
+    },
+    //Location on World Map Stuff????
+    {
+      "LogName": "World Map - SVE Not installed",
+      "Action": "EditData",
+      "Target": "Data/WorldMap",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+      },
+      "TargetField": [ "EastScarp", "MapAreas" ],
+      "Entries": {
+        "BearLodge": {
+          "Id": "BearLodge",
+          "PixelArea": {
+            "X": 133,
+            "Y": 6,
+            "Width": 19,
+            "Height": 10
+          },
+          "Tooltips": [
+            {
+              "Id": "BearLodge",
+              "Text": "{{i18n:MadDog.HashtagBearFam_MapLodge}}"
+            }
+          ],
+          "WorldPositions": [
+            {
+              "Id": "BearLodge",
+              "LocationName": "MadDog.BearFam.Custom_BearLodge",
+              "ExtendedTileArea": null,
+              "MapPixelArea": {
+                "X": 133,
+                "Y": 6,
+                "Width": 19,
+                "Height": 10
+              },
+              "ScrollText": "{{i18n:MadDog.HashtagBearFam_MapLodge}}"
+            },
+            {
+              "Id": "BearLodgeCellarGentsRoom",
+              "LocationName": "MadDog.HashtagBearFam_BoyBathroom",
+              "MapPixelArea": {
+                "X": 133,
+                "Y": 6,
+                "Width": 19,
+                "Height": 10
+              },
+              "ScrollText": "{{i18n:MadDog.HashtagBearFam_MapLodge}}"
+            },
+            {
+              "Id": "BearLodgeLadiesRoom",
+              "LocationName": "MadDog.HashtagBearFam_GirlBathroom",
+              "MapPixelArea": {
+                "X": 133,
+                "Y": 6,
+                "Width": 19,
+                "Height": 10
+              },
+              "ScrollText": "{{i18n:MadDog.HashtagBearFam_MapLodge}}"
+            },
+            {
+              "Id": "BearLodgeCellar",
+              "LocationName": "MadDog.BearFam.Custom_BearLodge_Cliff",
+              "MapPixelArea": {
+                "X": 133,
+                "Y": 6,
+                "Width": 19,
+                "Height": 10
+              },
+              "ScrollText": "{{i18n:MadDog.HashtagBearFam_MapLodgeCellar}}"
+            },
+            {
+              "Id": "KrakenCave",
+              "Condition": "PLAYER_HAS_SEEN_EVENT Host MadDog.BearFam.16193008",
+              "LocationName": "MadDog.BearFam.Custom_BearFamNoKrakenMap",
+              "ExtendedTileArea": null,
+              "MapPixelArea": {
+                "X": 133,
+                "Y": 6,
+                "Width": 19,
+                "Height": 10
+              },
+              "ScrollText": "{{i18n:MadDog.HashtagBearFam_MapLodgeKrakenCave}}"
+            },
+            {
+              "ScrollTextZones": [],
+              "Id": "Default",
+              "LocationName": "EastScarp_Village",
+              "ScrollText": null
+            }
+          ]
+        },
+        "CaritasBakery": {
+          "Id": "CaritasBakery",
+          "PixelArea": {
+            "X": 148,
+            "Y": 24,
+            "Width": 6,
+            "Height": 5
+          },
+          "Tooltips": [
+            {
+              "Id": "CaritasBakery",
+              "Text": "{{i18n:MadDog.Hashtag_CaritasBakery.{{HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens}}}}"
+            }
+          ],
+          "WorldPositions": [
+            {
+              "Id": "CaritasBakery",
+              "LocationName": "MadDog.HashtagBearFam_CharityShop",
+              "ExtendedTileArea": null,
+              "MapPixelArea": {
+                "X": 148,
+                "Y": 24,
+                "Width": 6,
+                "Height": 5
+              },
+              "ScrollText": "{{i18n:MadDog.Hashtag_CaritasBakery.{{HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens}}}}"
+            },
+            {
+              "ScrollTextZones": [],
+              "Id": "Default",
+              "LocationName": "EastScarp_Village",
+              "ScrollText": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "YES SVE IS INSTALLED",
+      "Action": "EditData",
+      "Target": "Data/WorldMap",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      },
+      "TargetField": [ "EastScarp", "MapAreas" ],
+      "Entries": {
+        "BearLodge": {
+          "Id": "BearLodge",
+          "PixelArea": {
+            "X": 53,
+            "Y": 6,
+            "Width": 19,
+            "Height": 10
+          },
+          "Tooltips": [
+            {
+              "Id": "BearLodge",
+              "Text": "{{i18n:MadDog.HashtagBearFam_MapLodge}}"
+            }
+          ],
+          "WorldPositions": [
+            {
+              "Id": "BearLodge",
+              "LocationName": "MadDog.BearFam.Custom_BearLodge",
+              "ExtendedTileArea": null,
+              "MapPixelArea": {
+                "X": 53,
+                "Y": 6,
+                "Width": 19,
+                "Height": 10
+              },
+              "ScrollText": "{{i18n:MadDog.HashtagBearFam_MapLodge}}"
+            },
+            {
+              "Id": "BearLodgeCellarGentsRoom",
+              "LocationName": "MadDog.HashtagBearFam_BoyBathroom",
+              "MapPixelArea": {
+                "X": 53,
+                "Y": 6,
+                "Width": 19,
+                "Height": 10
+              },
+              "ScrollText": "{{i18n:MadDog.HashtagBearFam_MapLodge}}"
+            },
+            {
+              "Id": "BearLodgeLadiesRoom",
+              "LocationName": "MadDog.HashtagBearFam_GirlBathroom",
+              "MapPixelArea": {
+                "X": 53,
+                "Y": 6,
+                "Width": 19,
+                "Height": 10
+              },
+              "ScrollText": "{{i18n:MadDog.HashtagBearFam_MapLodge}}"
+            },
+            {
+              "Id": "BearLodgeCellar",
+              "LocationName": "MadDog.BearFam.Custom_BearLodge_Cliff",
+              "MapPixelArea": {
+                "X": 53,
+                "Y": 6,
+                "Width": 19,
+                "Height": 10
+              },
+              "ScrollText": "{{i18n:MadDog.HashtagBearFam_MapLodgeCellar}}"
+            },
+            {
+              "Id": "KrakenCave",
+              "Condition": "PLAYER_HAS_SEEN_EVENT Host MadDog.BearFam.16193008",
+              "LocationName": "MadDog.BearFam.Custom_BearFamNoKrakenMap",
+              "ExtendedTileArea": null,
+              "MapPixelArea": {
+                "X": 53,
+                "Y": 6,
+                "Width": 19,
+                "Height": 10
+              },
+              "ScrollText": "{{i18n:MadDog.HashtagBearFam_MapLodgeKrakenCave}}"
+            },
+            {
+              "ScrollTextZones": [],
+              "Id": "Default",
+              "LocationName": "EastScarp_Village",
+              "ScrollText": null
+            }
+          ]
+        },
+        "CaritasBakery": {
+          "Id": "CaritasBakery",
+          "PixelArea": {
+            "X": 68,
+            "Y": 24,
+            "Width": 6,
+            "Height": 5
+          },
+          "Tooltips": [
+            {
+              "Id": "CaritasBakery",
+              "Text": "{{i18n:MadDog.Hashtag_CaritasBakery.{{HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens}}}}"
+            }
+          ],
+          "WorldPositions": [
+            {
+              "Id": "CaritasBakery",
+              "LocationName": "MadDog.HashtagBearFam_CharityShop",
+              "ExtendedTileArea": null,
+              "MapPixelArea": {
+                "X": 68,
+                "Y": 24,
+                "Width": 6,
+                "Height": 5
+              },
+              "ScrollText": "{{i18n:MadDog.Hashtag_CaritasBakery.{{HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens}}}}"
+            },
+            {
+              "ScrollTextZones": [],
+              "Id": "Default",
+              "LocationName": "EastScarp_Village",
+              "ScrollText": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Edit ES World Map WITH SVE NOT INSTALLED YES VPR FALL",
+      "Action": "EditImage",
+      "When": {
+        "Season": "fall",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+        "HasMod |contains=Sandman53.ESVPRSM, VibrantPastoral.EastScarp, grapeponta.VibrantPastoralRecolor": true
+      },
+      "Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+      "PatchMode": "Overlay",
+      "FromFile": "assets/WorldMapPatch/fall_{{WorldMapRecolors}}_{{VPRWorldMapFallVariant}}_BearLodgeWorldMapPatch.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 18,
+        "Height": 19
+      },
+      "ToArea": {
+        "X": 132,
+        "Y": 0,
+        "Width": 18,
+        "Height": 19
+      }
+    },
+    {
+      "LogName": "Edit ES World Map YES SVE IS INSTALLED YES VPR FALL",
+      "Action": "EditImage",
+      "When": {
+        "Season": "fall",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod |contains=Sandman53.ESVPRSM, VibrantPastoral.EastScarp, grapeponta.VibrantPastoralRecolor": true
+      },
+      "Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+      "PatchMode": "Overlay",
+      "FromFile": "assets/WorldMapPatch/fall_{{WorldMapRecolors}}_{{VPRWorldMapFallVariant}}_BearLodgeWorldMapPatch.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 18,
+        "Height": 19
+      },
+      "ToArea": {
+        "X": 52,
+        "Y": 0,
+        "Width": 18,
+        "Height": 19
+      }
+    },
+
+
+    {
+      "LogName": "Edit ES World Map NO SVE INSTALLED YES VPR - FALL - Caritas",
+      "Action": "EditImage",
+      "When": {
+        "Season": "fall",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+        "HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens": true,
+        "HasMod |contains=Sandman53.ESVPRSM, VibrantPastoral.EastScarp, grapeponta.VibrantPastoralRecolor": true
+      },
+      "Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+      "PatchMode": "Overlay",
+      "FromFile": "assets/WorldMapPatch/fall_{{WorldMapRecolors}}_{{VPRWorldMapFallVariant}}_CaritasBakeryWorldMapPatch.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 6,
+        "Height": 7
+      },
+      "ToArea": {
+        "X": 148,
+        "Y": 25,
+        "Width": 6,
+        "Height": 7
+      }
+    },
+    {
+      "LogName": "Edit ES World Map YES SVE INSTALLED YES VPR - FALL - Caritas",
+      "Action": "EditImage",
+      "When": {
+        "Season": "fall",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens": true,
+        "HasMod |contains=Sandman53.ESVPRSM, VibrantPastoral.EastScarp, grapeponta.VibrantPastoralRecolor": true
+      },
+      "Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+      "PatchMode": "Overlay",
+      "FromFile": "assets/WorldMapPatch/fall_{{WorldMapRecolors}}_{{VPRWorldMapFallVariant}}_CaritasBakeryWorldMapPatch.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 6,
+        "Height": 7
+      },
+      "ToArea": {
+        "X": 68,
+        "Y": 25,
+        "Width": 6,
+        "Height": 7
+      }
+    },
+    {
+      "LogName": "Edit ES World Map NO SVE NO VPR FALL",
+      "Action": "EditImage",
+      "When": {
+        "Season": "fall",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+        "HasMod |contains=Sandman53.ESVPRSM, VibrantPastoral.EastScarp, grapeponta.VibrantPastoralRecolor": false
+      },
+      "Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+      "PatchMode": "Overlay",
+      "FromFile": "assets/WorldMapPatch/fall_{{WorldMapRecolors}}_BearLodgeWorldMapPatch.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 18,
+        "Height": 19
+      },
+      "ToArea": {
+        "X": 132,
+        "Y": 0,
+        "Width": 18,
+        "Height": 19
+      }
+    },
+    {
+      "LogName": "Edit ES World Map YES SVE NO VPR FALL",
+      "Action": "EditImage",
+      "When": {
+        "Season": "fall",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod |contains=Sandman53.ESVPRSM, VibrantPastoral.EastScarp, grapeponta.VibrantPastoralRecolor": false
+      },
+      "Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+      "PatchMode": "Overlay",
+      "FromFile": "assets/WorldMapPatch/fall_{{WorldMapRecolors}}_BearLodgeWorldMapPatch.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 18,
+        "Height": 19
+      },
+      "ToArea": {
+        "X": 52,
+        "Y": 0,
+        "Width": 18,
+        "Height": 19
+      }
+    },
+
+
+    {
+      "LogName": "Edit ES World Map NO SVE - NO VPR - Caritas",
+      "Action": "EditImage",
+      "When": {
+        "Season": "fall",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+        "HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens": true,
+        "HasMod |contains=Sandman53.ESVPRSM, VibrantPastoral.EastScarp, grapeponta.VibrantPastoralRecolor": false
+      },
+      "Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+      "PatchMode": "Overlay",
+      "FromFile": "assets/WorldMapPatch/fall_{{WorldMapRecolors}}_CaritasBakeryWorldMapPatch.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 6,
+        "Height": 7
+      },
+      "ToArea": {
+        "X": 148,
+        "Y": 25,
+        "Width": 6,
+        "Height": 7
+      }
+    },
+    {
+      "LogName": "Edit ES World Map YES SVE - NO VPR - Caritas",
+      "Action": "EditImage",
+      "When": {
+        "Season": "fall",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens": true,
+        "HasMod |contains=Sandman53.ESVPRSM, VibrantPastoral.EastScarp, grapeponta.VibrantPastoralRecolor": false
+      },
+      "Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+      "PatchMode": "Overlay",
+      "FromFile": "assets/WorldMapPatch/fall_{{WorldMapRecolors}}_CaritasBakeryWorldMapPatch.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 6,
+        "Height": 7
+      },
+      "ToArea": {
+        "X": 68,
+        "Y": 25,
+        "Width": 6,
+        "Height": 7
+      }
+    },
+
+    {
+      "LogName": "Edit ES World Map NO SVE OTHER SEASONS",
+      "Action": "EditImage",
+      "When": {
+        "Season": "spring, summer, winter",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+      },
+      "Target": "Mods/Lemurkat.EastScarp/ESWorldMap_{{season}}",
+      "PatchMode": "Overlay",
+      "FromFile": "assets/WorldMapPatch/{{season}}_{{WorldMapRecolors}}_BearLodgeWorldMapPatch.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 18,
+        "Height": 19
+      },
+      "ToArea": {
+        "X": 132,
+        "Y": 0,
+        "Width": 18,
+        "Height": 19
+      }
+    },
+    {
+      "LogName": "Edit ES World Map when SVE is installed OTHER SEASONS",
+      "Action": "EditImage",
+      "When": {
+        "Season": "spring, summer, winter",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      },
+      "Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+      "PatchMode": "Overlay",
+      "FromFile": "assets/WorldMapPatch/{{season}}_{{WorldMapRecolors}}_BearLodgeWorldMapPatch.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 18,
+        "Height": 19
+      },
+      "ToArea": {
+        "X": 52,
+        "Y": 0,
+        "Width": 18,
+        "Height": 19
+      }
+    },
+
+
+    {
+      "LogName": "Edit ES World Map when SVE isn't installed for Caritas OTHER SEASONS",
+      "Action": "EditImage",
+      "When": {
+        "Season": "spring, summer, winter",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+        "HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens": true
+      },
+      "Target": "Mods/Lemurkat.EastScarp/ESWorldMap_{{season}}",
+      "PatchMode": "Overlay",
+      "FromFile": "assets/WorldMapPatch/{{season}}_{{WorldMapRecolors}}_CaritasBakeryWorldMapPatch.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 6,
+        "Height": 7
+      },
+      "ToArea": {
+        "X": 148,
+        "Y": 25,
+        "Width": 6,
+        "Height": 7
+      }
+    },
+    {
+      "LogName": "Edit ES World Map when SVE is installed for Caritas OTHER SEASONS",
+      "Action": "EditImage",
+      "When": {
+        "Season": "spring, summer, winter",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens": true
+      },
+      "Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+      "PatchMode": "Overlay",
+      "FromFile": "assets/WorldMapPatch/{{season}}_{{WorldMapRecolors}}_CaritasBakeryWorldMapPatch.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 6,
+        "Height": 7
+      },
+      "ToArea": {
+        "X": 68,
+        "Y": 25,
+        "Width": 6,
+        "Height": 7
+      }
+    },
+
+    {
+      "LogName": "Don't steal my trees! - thanks Atra, Lemur",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_Cellar",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 17,
+            "Y": 13
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "EastScarpe.FruitTreeCut": "{{i18n:MadDogBearfamPeachTree}}"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Don't steal my trees! - thanks Atra, Lemur - Part 3",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 36,
+            "Y": 13
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "EastScarpe.FruitTreeCut": "{{i18n:MadDogBearfamPeachTree}}"
+          }
+        }
+      ]
+    },
+
+    //npc locations compat zone
+    {
+      "LogName": "Hide the Bear Loading Zone",
+      "Action": "EditData",
+      "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+      "Entries": {
+        "MadDog.BearFam.Custom_BearFamLoadingZone": {
+          "Exclude": true
+        }
+      }
+    },
+    {
+      "LogName": "Hide npcs for reasons",
+      "Action": "EditData",
+      "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+      "When": {
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": false
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": {
+          "Exclude": true
+        }
+      }
+    },
+    {
+      "LogName": "Hide npcs for reasons",
+      "Action": "EditData",
+      "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+      "When": {
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": true
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam.Gunnar": {
+          "Exclude": false
+        }
+      }
+    },
+    {
+      "LogName": "Hide npcs for reasons",
+      "Action": "EditData",
+      "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+      "When": {
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": false
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": {
+          "Exclude": true
+        }
+      }
+    },
+    {
+      "LogName": "Hide npcs for reasons",
+      "Action": "EditData",
+      "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+      "When": {
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": true
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": {
+          "Exclude": false
+        }
+      }
+    },
+    {
+      "LogName": "Hide npcs for reasons",
+      "Action": "EditData",
+      "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+      "When": {
+        "HasFlag: anyPlayer|contains=TerenIsHere": false
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": {
+          "Exclude": true
+        }
+      }
+    },
+    {
+      "LogName": "Hide npcs for reasons",
+      "Action": "EditData",
+      "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+      "When": {
+        "HasFlag: anyPlayer|contains=TerenIsHere": true
+      },
+      "Entries": {
+        "MadDog.HashtagBearFam.Teren": {
+          "Exclude": false
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+      "Entries": {
+        "MadDog.HashtagBearFam.Gudrun": { "MarkerCropOffset": 4 },
+        "MadDog.HashtagBearFam.Sondra": { "MarkerCropOffset": 4 },
+        "MadDog.HashtagBearFam.Gunnar": { "MarkerCropOffset": 2 },
+        "MadDog.HashtagBearFam.Teren": { "MarkerCropOffset": 2 }
+
+      },
+      "When": { "HasMod: |contains=Bouhm.NPCMapLocations": true }
+    },
+    {
+      "LogName": "Autograph lol",
+      "Action": "EditData",
+      "When": {
+        "HasMod": "TheFrenchDodo.WWWA"
+      },
+      "Target": "Data/Locations",
+      "TargetField": [
+        "MadDog.BearFam.Custom_BearFamNoKrakenMap",
+        "Fish"
+      ],
+      "Entries": {
+        "WWWA.RodneyAutograph": {
+          //"Chance": 0.5,
+          "Precedence": 2000,
+          "Id": "WWWA.AutographedPhoto",
+          "ItemId": "(O)WWWA.AutographedPhoto"
+        }
+      }
+    },
+    {
+      "LogName": "Autograph lol",
+      "Action": "EditData",
+      "When": {
+        "HasMod": "TheFrenchDodo.WWWA"
+      },
+      "Target": "Data/Locations",
+      "TargetField": [
+        "MadDog.BearFam.Custom_BearLodge_Cliff",
+        "Fish"
+      ],
+      "Entries": {
+        "WWWA.RodneyAutograph": {
+          //"Chance": 0.5,
+          "Precedence": 2000,
+          "Id": "WWWA.AutographedPhoto",
+          "ItemId": "(O)WWWA.AutographedPhoto",
+          "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "MadDog.BearFam.Custom_BearFamNoKrakenMap",
+        "Fish"
+      ],
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      },
+      "Entries": {
+
+        "FlashShifter.StardewValleyExpandedCP_Shark": {
+          "Chance": 0.5,
+          "Id": "FlashShifter.StardewValleyExpandedCP_Shark",
+          "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Shark",
+          "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
+        },
+        "FlashShifter.StardewValleyExpandedCP_Ocean_Sunfish": {
+          "Chance": 0.5,
+          "Id": "FlashShifter.StardewValleyExpandedCP_Ocean_Sunfish",
+          "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Ocean_Sunfish",
+          "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
+        },
+        "FlashShifter.StardewValleyExpandedCP_Arrowhead_Shark": {
+          "Chance": 0.5,
+          "Id": "FlashShifter.StardewValleyExpandedCP_Arrowhead_Shark",
+          "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Arrowhead_Shark",
+          "Condition": "LOCATION_Season Here Spring Summer Fall Winter"
+        },
+
+        "FlashShifter.StardewValleyExpandedCP_Barred_Knifejaw": {
+          "Chance": 0.5,
+          "Id": "FlashShifter.StardewValleyExpandedCP_Barred_Knifejaw",
+          "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Barred_Knifejaw",
+          "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "MadDog.BearFam.Custom_BearLodge_Cliff",
+        "Fish"
+      ],
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      },
+      "Entries": {
+        "FlashShifter.StardewValleyExpandedCP_Frog": {
+          "Id": "FlashShifter.StardewValleyExpandedCP_Frog",
+          "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Frog",
+          "Condition": "LOCATION_Season Here Spring Summer"
+        },
+        "FlashShifter.StardewValleyExpandedCP_Tadpole": {
+          "Chance": 0.5,
+          "Id": "FlashShifter.StardewValleyExpandedCP_Tadpole",
+          "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Tadpole",
+          "Condition": "LOCATION_Season Here Spring Summer"
+        },
+        "FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed": {
+          "Id": "FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed",
+          "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed",
+          "Condition": "LOCATION_Season Here Spring Summer Fall Winter",
+          "CanUseTrainingRod": false
+        },
+        "FlashShifter.StardewValleyExpandedCP_Wolf_Snapper": {
+          "Chance": 0.5,
+          "Id": "FlashShifter.StardewValleyExpandedCP_Wolf_Snapper",
+          "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Wolf_Snapper",
+          "Condition": "LOCATION_Season Here Fall Spring Summer"
+        }
+
+      }
+
+    },
+    ///spouse stuff
+    {
+      "LogName": "Loud 3 Spouse Rooms",
+      "Action": "Load",
+      "Target": "Maps/MadDog.Bearfam_Decorated_SpouseRoom",
+      "FromFile": "assets/Maps/MadDogBearfam_spouseRooms.tmx"
+    },
+    {
+      "LogName": "Loud 3 Spouse Patios",
+      "Action": "Load",
+      "Target": "Maps/MadDog.Bearfam_Decorated_SpousePatio",
+      "FromFile": "assets/Maps/MadDogBearfam_spousePatios.tmx"
+    },
+    {
+      "LogName": "Loud 3 Empty Spouse Rooms",
+      "Action": "Load",
+      "Target": "Maps/MadDog.Bearfam_Empty_SpouseRoom",
+      "FromFile": "assets/Maps/MadDogBearFam_EmptySpouseRoom.tmx"
+    },
+    {
+      "LogName": "Loud 3 Empty Spouse Patios",
+      "Action": "Load",
+      "Target": "Maps/MadDog.Bearfam_Empty_SpousePatio",
+      "FromFile": "assets/Maps/MadDogBearFam_EmptySpousePatio.tmx"
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //clean up Gunnar's room
+    {
+      "LogName": "Clean Gun's room",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16193010": true //Gunnar tells you he's moving on and cleans up his room in the process
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 51,
+            "Y": 11
+          },
+
+          "Layer": "Front",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 46,
+            "Y": 9
+          },
+
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 48,
+            "Y": 12
+          },
+
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 49,
+            "Y": 12
+          },
+
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 52,
+            "Y": 10
+          },
+
+          "Layer": "Buildings",
+          "Remove": true
+        }
+      ]
+    },
+
+    {
+      "LogName": "Add Guild Badge if Mateo Gave It to Him",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "When": {
+        "HasFlag: anyPlayer|contains=MateoInductsGunnar": true //Mateo gives Gunnar the Badge
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 49,
+            "Y": 5
+          },
+
+          "Layer": "Front",
+          "SetTileSheet": "z_maddogfurniture",
+          "SetIndex": "34"
+        },
+        {
+          "Position": {
+            "X": 49,
+            "Y": 7
+          },
+
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message \"GunnarBadgeEarned\""
+          }
+        }
+      ]
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //rest the bees
+    {
+      "LogName": "Wintererize the Cellar",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_Cellar",
+      "When": {
+        "Season": "winter"
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 17,
+            "Y": 4
+          },
+
+          "Layer": "AlwaysFront",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 17,
+            "Y": 5
+          },
+
+          "Layer": "AlwaysFront",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 16,
+            "Y": 6
+          },
+
+          "Layer": "AlwaysFront",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 14,
+            "Y": 7
+          },
+
+          "Layer": "AlwaysFront",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 20,
+            "Y": 10
+          },
+
+          "Layer": "AlwaysFront",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 20,
+            "Y": 12
+          },
+
+          "Layer": "AlwaysFront",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 20,
+            "Y": 13
+          },
+
+          "Layer": "AlwaysFront",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 15,
+            "Y": 12
+          },
+
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 14,
+            "Y": 11
+          },
+
+          "Layer": "Buildings",
+          "Remove": true
+        },
+
+        {
+          "Position": {
+            "X": 20,
+            "Y": 10
+          },
+
+          "Layer": "Front",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 20,
+            "Y": 11
+          },
+
+          "Layer": "Buildings",
+          "Remove": true
+        },
+
+        {
+          "Position": {
+            "X": 20,
+            "Y": 12
+          },
+
+          "Layer": "Front",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 20,
+            "Y": 13
+          },
+
+          "Layer": "Buildings",
+          "Remove": true
+        },
+
+        {
+          "Position": {
+            "X": 20,
+            "Y": 14
+          },
+
+          "Layer": "Front",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 20,
+            "Y": 15
+          },
+
+          "Layer": "Buildings",
+          "Remove": true
+        }
+      ]
+    },
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Cornucopia Shop Exclusive Patch Zone
+    {
+      "LogName": "Cornucopia Flowers",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_Cellar",
+      "When": {
+        "HasMod": "Cornucopia.MoreFlowers"
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 12,
+            "Y": 14
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "OpenShop MadDog.HashtagBearFam_CellarFlowerBox none 600 2600"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Cornucopia Fruits",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "When": {
+        "HasMod": "Cornucopia.MoreCrops"
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 33,
+            "Y": 25
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "OpenShop MadDog.HashtagBearFam_FruitBowl none 600 2600"
+          }
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Questionable Map Edits
+    //Gudrun summer mon schedule
+    {
+      "LogName": "Breaking The Bridge",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 62,
+            "Y": 25
+          },
+          "Layer": "Front",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 65,
+            "Y": 25
+          },
+          "Layer": "Front",
+          "Remove": true
+        }
+      ]
+    },
+    //SAFETY EDITS~
+    {
+      "LogName": "Add property",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "MapProperties": {
+        "PassOutSafe": "T"
+      }
+    },
+    {
+      "LogName": "Add property",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_Cellar",
+      "MapProperties": {
+        "PassOutSafe": "T"
+      }
+    },
+    {
+      "LogName": "Add property",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_CharityShop",
+      "When": {
+        "HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens": true
+      },
+      "MapProperties": {
+        "PassOutSafe": "T"
+      }
+    },
+    ///KITCHEN EDITS~
+    {
+      "LogName": "Really Cool Kitchen THing - Bear Lodge",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 29,
+            "Y": 25
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "kitchen"
+          }
+        }
+      ]
+    },
+    /*{
+      "LogName": "Really Cool Kitchen THing - RH House",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_RHTerenSigInterior",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 18,
+            "Y": 20
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "kitchen"
+          }
+        }
+      ]
+    },*/
+    //bakery edits zone
+    //Teren's patch
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "When": {
+        "HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens": true
+      },
+      "FromFile": "assets/Maps/MadDogBearFam_CharityShop_Patch.tmx",
+      "Priority": "Late",
+      "ToArea": {
+        "X": 45,
+        "Y": 16,
+        "Width": 4,
+        "Height": 5
+      }
+    },
+    //Bakery to ES
+    {
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_CharityShop",
+      "AddWarps": [
+        "4 12 EastScarp_Village 48 21"
+      ]
+    },
+    //ES to Bakery
+    {
+      "LogName": "Patches ES to Bakery",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_CharityShop",
+      "When": {
+        "HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens": true
+      },
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "MapProperties",
+            "NPCWarp"
+          ],
+          "Value": "47 20 MadDog.HashtagBearFam_CharityShop 4 11",
+          "Delimiter": " "
+        }
+      ]
+    },
+    //ES to bakery
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "Priority": "Late",
+      "When": {
+        "HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens": true
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 48,
+            "Y": 19
+          },
+
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "LockedDoorWarp 4 11 MadDog.HashtagBearFam_CharityShop 800 2200"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Caritas Bakery Shop",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_CharityShop",
+      "When": {
+        "HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens": true
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 10,
+            "Y": 8
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "OpenShop MadDog.HashtagBearFam_CaritasBakeryShop Down 800 2600 9 6 2 2"
+          }
+        },
+        {
+          "Position": {
+            "X": 9,
+            "Y": 8
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "OpenShop MadDog.HashtagBearFam_CaritasBakeryShop Down 800 2600 9 6 2 2"
+          }
+        }
+      ]
+    },
+    //Outside Strings
+    {
+      "Action": "EditMap",
+      "When": {
+        "HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens": true
+      },
+      "Target": "Maps/EastScarp_Village",
+      "Priority": "Late",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 46,
+            "Y": 19
+          },
+
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message MadDog.BakeryWindow"
+          }
+        }
+      ]
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_CharityShop",
+      "When": {
+        "HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens": true
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 16,
+            "Y": 5
+          },
+
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message MadDog.BakeryDisplayShelves"
+          }
+        },
+        {
+          "Position": {
+            "X": 17,
+            "Y": 5
+          },
+
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message MadDog.BakeryDisplayShelves"
+          }
+        },
+        {
+          "Position": {
+            "X": 20,
+            "Y": 5
+          },
+
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message MadDog.BakeryDisplayShelves"
+          }
+        },
+        {
+          "Position": {
+            "X": 21,
+            "Y": 5
+          },
+
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message MadDog.BakeryDisplayShelves"
+          }
+        },
+        {
+          "Position": {
+            "X": 15,
+            "Y": 5
+          },
+
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message MadDog.BakeryPlantA"
+          }
+        },
+        {
+          "Position": {
+            "X": 3,
+            "Y": 5
+          },
+
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message MadDog.BakeryPlantB"
+          }
+        },
+        {
+          "Position": {
+            "X": 2,
+            "Y": 9
+          },
+
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message MadDog.BakeryPlantC"
+          }
+        },
+        {
+          "Position": {
+            "X": 2,
+            "Y": 4
+          },
+
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message MadDog.BakeryWashroom"
+          }
+        },
+        {
+          "Position": {
+            "X": 10,
+            "Y": 4
+          },
+
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message MadDog.BakeryFridge"
+          }
+        },
+        {
+          "Position": {
+            "X": 6,
+            "Y": 4
+          },
+
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message MadDog.BakeryHangingPlants"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Really Cool Kitchen THing - Caritas Bakery",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_CharityShop",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 4
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "kitchen"
+          }
+        },
+        {
+          "Position": {
+            "X": 12,
+            "Y": 4
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "kitchen"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens": true
+      }
+    },
+    {
+      "LogName": "Calendar Edit - Caritas Bakery",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_CharityShop",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 13,
+            "Y": 4
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Billboard"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens": true
+      }
+    },
+    {
+      "LogName": "Makes the windows stop yelling in smapi Bakery edition", //Teren's shop is built
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_CharityShop",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "MapProperties",
+            "DayTiles"
+          ],
+          "Value": "Front 7 1 256 Front 7 2 288 Front 8 1 256 Front 8 2 288 Front 16 2 256 Front 16 3 288 Front 17 2 256 Front 17 3 288 Front 20 2 256 Front 20 3 288 Front 21 2 256 Front 21 3 288",
+          "Delimiter": " "
+        },
+
+        {
+          "Operation": "Append",
+          "Target": [
+            "MapProperties",
+            "NightTiles"
+          ],
+          "Value": "Front 7 1 1253 Front 7 2 1285 Front 8 1 1253 Front 8 2 1285 Front 16 2 1253 Front 16 3 1285 Front 17 2 1253 Front 17 3 1285 Front 20 2 1253 Front 20 3 1285 Front 21 2 1253 Front 21 3 1285",
+          "Delimiter": " "
+        },
+
+        {
+          "Operation": "Append",
+          "Target": [
+            "MapProperties",
+            "spacechase0.SpaceCore_ColoredLights"
+          ],
+          "Value": "11 1 8 5 255 0 0 12 1 8 5 207 0 0 16 5 8 5 36 239 255 17 5 8 5 36 239 255",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "HasFlag: anyPlayer|contains=MadDog.HashtagBearFam_CaritasOpens": true
+      }
+    },
+    //House Patch for ES
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "FromFile": "assets/Maps/EastScarpeRevised_BearLodge.tmx",
+      "ToArea": {
+        "X": 36,
+        "Y": 0,
+        "Width": 14,
+        "Height": 15
+      }
+    },
+    //BBHousetoES
+    {
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "AddWarps": [
+        "19 33 EastScarp_Village 43 10"
+      ]
+    },
+
+    //Door - this one shouldn't work yet it does so I'm sure that's going to be a problem down the road love it can't wait
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 43,
+            "Y": 8
+          },
+
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 19 32 MadDog.BearFam.Custom_BearLodge",
+            "Spiderbuttons.BETAS_Action": "Spiderbuttons.BETAS_PlaySound doorClose"
+          }
+        }
+      ]
+    },
+    //Outside Strings
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 46,
+            "Y": 10
+          },
+
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message MadDog.LodgeWaterPump"
+          }
+        },
+        {
+          "Position": {
+            "X": 39,
+            "Y": 13
+          },
+
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message MadDog.LodgeWoodStump"
+          }
+        },
+        {
+          "Position": {
+            "X": 42,
+            "Y": 8
+          },
+
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message MadDog.LodgeBearSign"
+          }
+        }
+      ]
+    },
+
+
+    //bear loading zone to house 
+    {
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.BearFam.Custom_BearFamLoadingZone",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "MapProperties",
+            "NPCWarp"
+          ],
+          "Value": "4 7 MadDog.BearFam.Custom_BearLodge 27 18",
+          "Delimiter": " "
+        }
+      ]
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Hide Rooms until they move in
+    {
+      "LogName": "Hide G&G space until they move in",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "FromFile": "assets/Maps/MadDogBearfam_GGpatch.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 24,
+        "Height": 14
+      },
+      "ToArea": {
+        "X": 33,
+        "Y": 0,
+        "Width": 24,
+        "Height": 14
+      },
+      "When": {
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": false
+      },
+      "Priority": "Late"
+    },
+    {
+      "LogName": "Hide Teren's space until he moves in",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "FromFile": "assets/Maps/MadDogBearfam_TerenBlankRoompatch.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 13,
+        "Height": 10
+      },
+      "ToArea": {
+        "X": 37,
+        "Y": 22,
+        "Width": 13,
+        "Height": 10
+      },
+      "When": {
+        "HasFlag: anyPlayer|contains=TerenIsHere": false
+      },
+      "Priority": "Late"
+    },
+    {
+      "LogName": "Makes the windows stop yelling in smapi",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "MapProperties",
+            "DayTiles"
+          ],
+          "Value": "Front 36 4 1955 Front 36 5 2000 Front 50 4 1957 Front 50 5 2002",
+          "Delimiter": " "
+        },
+
+        {
+          "Operation": "Append",
+          "Target": [
+            "MapProperties",
+            "NightTiles"
+          ],
+          "Value": "Front 36 4 1956 Front 36 5 2001 Front 50 4 1958 Front 50 5 2003",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "MapProperties",
+            "spacechase0.SpaceCore_ColoredLights"
+          ],
+          "Value": "34 10 Mods\\MadDog.HashtagBearfam\\RightLight 1 0 114 255",
+          "Delimiter": " "
+        }
+
+      ],
+      "When": {
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": "true"
+      }
+    },
+    {
+      "LogName": "Teren PC light",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "MapProperties",
+            "spacechase0.SpaceCore_ColoredLights"
+          ],
+          "Value": "38 26 Mods\\MadDog.HashtagBearfam\\RightLight 1 0 195 160",
+          "Delimiter": " "
+        }
+
+      ],
+      "When": {
+        "HasFlag: anyPlayer|contains=TerenIsHere": true
+      }
+    },
+    {
+      "LogName": "Sondra & Sig PC light",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "MapProperties",
+            "spacechase0.SpaceCore_ColoredLights"
+          ],
+          "Value": "17 11 Mods\\MadDog.HashtagBearfam\\LeftLight 1 180 89 157 29 8 8 1 120 33 255",
+          "Delimiter": " "
+        }
+      ]
+    },
+    {
+      "LogName": "Kraken light",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_KrakenCave",
+      "When": {
+        "HasFlag: anyPlayer|contains=TerenIsHere": true
+      },
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "MapProperties",
+            "spacechase0.SpaceCore_ColoredLights"
+          ],
+          "Value": "13 13 Mods/MadDog.HashtagBearfam/WaterLight 1 120 33 255",
+          "Delimiter": " "
+        }
+      ]
+    },
+    {
+      "LogName": "Disable Lock Door - Gudrun",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 38,
+            "Y": 17
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message LodgeSpareRoom"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": false
+      }
+    },
+    {
+      "LogName": "Disable Lock Door - Gunnar",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 50,
+            "Y": 17
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message LodgeSpareRoom"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag: anyPlayer|contains=BearFamExtraMembers": false
+      }
+    },
+    {
+      "LogName": "Disable Lock Door - Teren",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 42,
+            "Y": 22
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message LodgeSpareRoom"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag: anyPlayer|contains=TerenIsHere": false
+      }
+    },
+    {
+      "LogName": "Disable Lock Door - Empty Room",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 55,
+            "Y": 22
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message LodgeSpareRoom"
+          }
+        }
+      ]
+    },
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Gun's Shop Patch for outside the Mine
+    {
+      "LogName": "Add Gunnar's Mine Shop",
+      "Action": "EditMap",
+      "Target": "Maps/Mountain",
+      "FromFile": "assets/Maps/Custom_BearFamGunShopPatch.tmx",
+      "ToArea": {
+        "X": 54,
+        "Y": 7,
+        "Width": 1,
+        "Height": 2
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasFlag": "BearFamExtraMembers",
+        //"HasSeenEvent |contains=MadDog.BearFam.16197002": true,
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+
+      }
+    },
+    {
+      "LogName": "Add Gunnar's Mine Shop", //SVE friendly
+      "Action": "EditMap",
+      "Target": "Maps/Mountain",
+      "FromFile": "assets/Maps/Custom_BearFamGunShopPatch.tmx",
+      "ToArea": {
+        "X": 80,
+        "Y": 10,
+        "Width": 1,
+        "Height": 2
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasFlag": "BearFamExtraMembers",
+        //"HasSeenEvent |contains=MadDog.BearFam.16197002": true,
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Mountain",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 80,
+            "Y": 10
+          },
+          "Layer": "Paths",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 83,
+            "Y": 14
+          },
+          "Layer": "Paths",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 82,
+            "Y": 27
+          },
+          "Layer": "Paths",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 84,
+            "Y": 29
+          },
+          "Layer": "Paths",
+          "Remove": true
+        }
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 50,
+            "Y": 16
+          },
+          "Layer": "Paths",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 48,
+            "Y": 17
+          },
+          "Layer": "Paths",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 59,
+            "Y": 16
+          },
+          "Layer": "Paths",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 45,
+            "Y": 20
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 45,
+            "Y": 19
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 35,
+            "Y": 10
+          },
+          "Layer": "AlwaysFront",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 38,
+            "Y": 15
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 35,
+            "Y": 9
+          },
+          "Layer": "AlwaysFront",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 35,
+            "Y": 8
+          },
+          "Layer": "AlwaysFront",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 35,
+            "Y": 7
+          },
+          "Layer": "AlwaysFront",
+          "Remove": true
+        }
+      ]
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Patch the Cellar for Shenanigans
+    {
+      "LogName": "Adds Temp Patch for Hole after Explosion", //ct is active
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_Cellar",
+      "FromFile": "assets/Maps/Custom_BearLodge_Cliff_Hole.tmx",
+      "ToArea": {
+        "X": 0,
+        "Y": 5,
+        "Width": 3,
+        "Height": 4
+      },
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16193006": true,
+        "HasConversationTopic |contains=GunnarBombDelay": true
+      }
+    },
+    {
+      "LogName": "Adds Temp Patch for Hole after Repair", //ct is over
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_Cellar",
+      "FromFile": "assets/Maps/Custom_BearLodge_Cliff_HoleExplorable.tmx",
+      "ToArea": {
+        "X": 0,
+        "Y": 5,
+        "Width": 3,
+        "Height": 4
+      },
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "MapProperties",
+            "Warp"
+          ],
+          "Value": "1 8 MadDog.BearFam.Custom_BearFamNoKrakenMap 45 13",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16193007": true,
+        "HasFlag: anyPlayer|contains=RocksAreRemoved": true
+      }
+    },
+    {
+      "LogName": "Adds Patch for Kraken Spawn",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_KrakenCave",
+      "FromFile": "assets/Maps/Custom_BearCaveKrakenPatch.tmx",
+      "ToArea": {
+        "X": 9,
+        "Y": 10,
+        "Width": 7,
+        "Height": 5
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasSeenEvent |contains=MadDog.BearFam.16193011": true //kraken spawns after player and Gun see it
+      }
+    },
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //green rain shenanigans
+    {
+      "LogName": "TV Patch during Green",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "FromFile": "assets/Maps/MadDogBearfam_TVpatch.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 3,
+        "Height": 3
+      },
+      "ToArea": {
+        "X": 20,
+        "Y": 24,
+        "Width": 3,
+        "Height": 3
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "Weather": "GreenRain"
+      }
+    },
+    {
+      "LogName": "Storm Fireplace",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "FromFile": "assets/Maps/MadDog.HashtagBearFam_FirePlacePatch.tmx",
+      "ToArea": {
+        "X": 18,
+        "Y": 22,
+        "Width": 2,
+        "Height": 5
+      },
+      "When": {
+        "Weather": "GreenRain"
+      }
+    },
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //fireplace shenanigans
+    {
+      "LogName": "Winter Fireplace",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "FromFile": "assets/Maps/MadDog.HashtagBearFam_FirePlacePatch.tmx",
+      "ToArea": {
+        "X": 18,
+        "Y": 22,
+        "Width": 2,
+        "Height": 5
+      },
+      "When": {
+        "Season": "Winter"
+      }
+    },
+    {
+      "LogName": "Rain Fireplace",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "FromFile": "assets/Maps/MadDog.HashtagBearFam_FirePlacePatch.tmx",
+      "ToArea": {
+        "X": 18,
+        "Y": 22,
+        "Width": 2,
+        "Height": 5
+      },
+      "When": {
+        "Weather": "Rain"
+      }
+    },
+    {
+      "LogName": "Storm Fireplace",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_BearLodge",
+      "FromFile": "assets/Maps/MadDog.HashtagBearFam_FirePlacePatch.tmx",
+      "ToArea": {
+        "X": 18,
+        "Y": 22,
+        "Width": 2,
+        "Height": 5
+      },
+      "When": {
+        "Weather": "Storm"
+      }
+    },
+    {
+      "LogName": "Fireflies - BF",
+      "Action": "EditMap",
+      "Target": "Maps/MadDog.HashtagBearFam_Cellar",
+      "Update": "OnLocationChange",
+      "When": {
+        "Time": "{{Range: 1830, 2600}}",
+        "Weather": "Sun, Wind",
+        "Season": "Summer",
+        "HasMod": "mushymato.MMAP"
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 12,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_Critter": "Firefly T 3"
+          }
+        },
+        {
+          "Position": {
+            "X": 18,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_Critter": "Firefly T 4"
+          }
+        },
+        {
+          "Position": {
+            "X": 16,
+            "Y": 4
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_Critter": "Firefly T 2"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Fireflies - BF ES",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "Update": "OnLocationChange",
+      "When": {
+        "Time": "{{Range: 1830, 2600}}",
+        "Weather": "Sun, Wind",
+        "Season": "Summer"
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 48,
+            "Y": 8
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_Critter": "Firefly T 3"
+          }
+        },
+        {
+          "Position": {
+            "X": 38,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_Critter": "Firefly T 4"
+          }
+        },
+        {
+          "Position": {
+            "X": 42,
+            "Y": 15
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_Critter": "Firefly T 3"
+          }
+        },
+        {
+          "Position": {
+            "X": 45,
+            "Y": 20
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_Critter": "Firefly T 2"
+          }
+        },
+        {
+          "Position": {
+            "X": 48,
+            "Y": 14
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_Critter": "Firefly T 4"
+          }
+        },
+        {
+          "Position": {
+            "X": 51,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_Critter": "Firefly T 4"
+          }
+        },
+        {
+          "Position": {
+            "X": 48,
+            "Y": 3
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_Critter": "Firefly T 4"
+          }
+        },
+        {
+          "Position": {
+            "X": 39,
+            "Y": 5
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_Critter": "Firefly T 3"
+          }
+        },
+        {
+          "Position": {
+            "X": 43,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_Critter": "Firefly T 1"
+          }
+        }
+      ]
+    }
+  ]
+}

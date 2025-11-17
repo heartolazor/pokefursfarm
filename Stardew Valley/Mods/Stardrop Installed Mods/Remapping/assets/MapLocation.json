@@ -3,11 +3,342 @@
 
 	//NOMES E LOCALIZAÇÕES DE REGIÕES
 		{
+            "LogName": "RMP Therapist on Minimap",
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "TargetField": [ "Valley", "MapAreas" ],
+          	"When": {
+				"RMPEnableTherapist": true,
+				"HasMod: |contains=Endwyr.TherapistNPC": true },
+            "Entries": {
+				"Endwyr.TherapistNPC": {
+                  	"Id": "Custom_GreysHome",
+                  	"ScrollText": "{{i18n: RMP.therapist}}",
+                  	"Tooltips": [{
+                        	"Id": "Custom_GreysHome", 
+                        	"Text": "{{i18n: RMP.therapist}}",
+                        	"PixelArea": { "X": 117, "Y": 102, "Width": 4, "Height": 5}
+                    }],
+					"WorldPositions": [{
+                      	"Id": "Custom_GreysHome",
+                      	"LocationName": "Custom_GreysHome",
+                      	"MapPixelArea": { "X": 118, "Y": 104, "Width": 1, "Height": 1}
+                    }]
+               	}
+			}
+        },
+		{
+            "LogName": "RMP Downhill Project on Minimap",
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "TargetField": [ "Valley", "MapAreas" ],
+          	"When": {
+				"RMPEnableDownhill": true,
+				"HasMod: |contains=DH.Kiyuga.Main": true },
+            "Entries": {
+				"DH.Kiyuga.Main": {
+                  	"Id": "Downhill",
+                  	"ScrollText": "{{i18n: RMP.downhill.project6}}",
+					"WorldPositions": [{
+                      	"Id": "Downhill",
+                      	"LocationName": "Downhill",
+                      	"MapPixelArea": { "X": 112, "Y": 10, "Width": 45, "Height": 41 }
+                    }]
+               	},
+				"DH.Church": {
+                  	"Id": "DH.Church",
+                  	"ScrollText": "{{i18n: RMP.downhill.project}}",
+                  	"Tooltips": [{
+                        	"Id": "DH.Church", 
+                        	"Text": "{{i18n: RMP.downhill.project}}",
+                        	"PixelArea": { "X": 135, "Y": 27, "Width": 5, "Height": 7}
+                    }],
+					"WorldPositions": [{
+                      	"Id": "DH.Church",
+                      	"LocationName": "DH.Church",
+                      	"MapPixelArea": { "X": 137, "Y": 30, "Width": 1, "Height": 1}
+                    }]
+               	},
+				"DH.Anderson.House": {
+                  	"Id": "DH.Anderson.House",
+                  	"ScrollText": "{{i18n: RMP.downhill.project3}}",
+                  	"Tooltips": [{
+                        	"Id": "DH.Anderson.House", 
+                        	"Text": "{{i18n: RMP.downhill.project3}}",
+                        	"PixelArea": { "X": 140, "Y": 27, "Width": 3, "Height": 5}
+                    }],
+					"WorldPositions": [{
+                      	"Id": "DH.Anderson.House",
+                      	"LocationName": "DH.Anderson.House",
+                      	"MapPixelArea": { "X": 141, "Y": 29, "Width": 1, "Height": 1}
+                    }]
+               	},
+				"DH.Julia.House": {
+                  	"Id": "DH.Julia.House",
+                  	"ScrollText": "{{i18n: RMP.downhill.project2}}",
+                  	"Tooltips": [{
+                        	"Id": "DH.Julia.House", 
+                        	"Text": "{{i18n: RMP.downhill.project2}}",
+                        	"PixelArea": { "X": 148, "Y": 38, "Width": 6, "Height": 6}
+                    }],
+					"WorldPositions": [{
+                      	"Id": "DH.Julia.House",
+                      	"LocationName": "DH.Julia.House",
+                      	"MapPixelArea": { "X": 152, "Y": 40, "Width": 1, "Height": 1}
+                    }]
+               	},
+				"DH.Arthur.House": {
+                  	"Id": "DH.Arthur.House",
+                  	"ScrollText": "{{i18n: RMP.downhill.project4}}",
+                  	"Tooltips": [{
+                        	"Id": "DH.Arthur.House", 
+                        	"Text": "{{i18n: RMP.downhill.project4}}",
+                        	"PixelArea": { "X": 123, "Y": 18, "Width": 6, "Height": 6}
+                    }],
+					"WorldPositions": [{
+                      	"Id": "DH.Arthur.House",
+                      	"LocationName": "DH.Arthur.House",
+                      	"MapPixelArea": { "X": 126, "Y": 20, "Width": 1, "Height": 1}
+                    }]
+               	},
+				"DH.Mine": {
+                  	"Id": "DH.Mine",
+                  	"ScrollText": "{{i18n: RMP.downhill.project5}}",
+                  	"Tooltips": [{
+                        	"Id": "DH.Mine", 
+                        	"Text": "{{i18n: RMP.downhill.project5}}",
+                        	"PixelArea": { "X": 116, "Y": 12, "Width": 4, "Height": 3}
+                    }],
+					"WorldPositions": [{
+                      	"Id": "DH.Mine",
+                      	"LocationName": "DH.Mine",
+                      	"MapPixelArea": { "X": 117, "Y": 12, "Width": 2, "Height": 1}
+                    }]
+               	}
+			}
+        },
+		{
+            "LogName": "RMP Downhill Project Fix Church on Minimap",
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "TargetField": [ "Valley", "MapAreas" ],
+          	"When": {
+				"RMPEnableDownhill": true,
+				"HasMod: |contains=DH.Kiyuga.Main": true,
+				"HasSeenEvent: anyPlayer|contains=28645005": true },
+            "Entries": {
+				"DH.Kiyuga.Main": {
+                  	"Id": "DH.Church",
+                  	"ScrollText": "{{i18n: RMP.downhill.project1}}",
+                  	"Tooltips": [{
+                        	"Id": "DH.Church", 
+                        	"Text": "{{i18n: RMP.downhill.project1}}",
+                        	"PixelArea": { "X": 135, "Y": 27, "Width": 5, "Height": 7}
+                    }],
+					"WorldPositions": [{
+                      	"Id": "DH.Church",
+                      	"LocationName": "DH.Church",
+                      	"MapPixelArea": { "X": 137, "Y": 30, "Width": 1, "Height": 1}
+                    }]
+               	}
+			}
+        },
+		{
+            "LogName": "RMP Sunberry on Minimap",
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "TargetField": [ "Valley", "MapAreas" ],
+          	"When": {
+				"RMPEnableSunberryVillage": true,
+				"HasMod: |contains=skellady.SBVCP": true},
+            "Entries": {
+               	"skellady.SBVCP_Sunberry_RMP": {
+                  	"Id": "skellady.SBVCP_Sunberry_RMP",
+                  	"ScrollText": "skellady.SBVCP_Sunberry_RMP",
+                  	"Tooltips": [{
+                        	"Id": "skellady.SBVCP_Sunberry_RMP", 
+                        	"Text": "{{i18n: RMP.sunberry}}",
+                        	"PixelArea": { "X": 286, "Y": 116, "Width": 14, "Height": 38}
+                    }]
+               	},
+				"Custom_SBV_SunberryRoad": {
+                  	"Id": "Custom_SBV_SunberryRoad",
+                  	"ScrollText": "{{i18n: RMP.sunberry1}}",
+					"WorldPositions": [{
+                      	"Id": "Custom_SBV_SunberryRoad",
+                      	"LocationName": "Custom_SBV_SunberryRoad",
+                      	"MapPixelArea": { "X": 299, "Y": 111, "Width": 1, "Height": 1 }
+                    }]
+               	},
+				"Custom_SBV_ForestShortcut": {
+                  	"Id": "Custom_SBV_ForestShortcut",
+                  	"ScrollText": "{{i18n: RMP.sunberry2}}",
+					"WorldPositions": [{
+                      	"Id": "Custom_SBV_ForestShortcut",
+                      	"LocationName": "Custom_SBV_ForestShortcut",
+                      	"MapPixelArea": { "X": 299, "Y": 150, "Width": 1, "Height": 1 }
+                    }]
+               	}
+            }
+        },
+		{
+            "LogName": "RMP Demon Slayer on Minimap",
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "TargetField": [ "Valley", "MapAreas" ],
+          	"When": {
+				"RMPEnableDemonSlayer": true,
+				"HasMod: |contains=hana.shinazugawa": true,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+            "Entries": {
+               	"Custom_Town_Updated": {
+                  	"Id": "Custom_Town_Updated",
+                  	"ScrollText": "Custom_Town_Updated",
+                  	"Tooltips": [{
+                        	"Id": "Custom_Town_Updated", 
+                        	"Text": "{{i18n: RMP.demon.slayer}}",
+                        	"PixelArea": { "X": 179, "Y": 41, "Width": 5, "Height": 7}
+                    }]
+               	},
+				"Custom_Town_Updated1": {
+                  	"Id": "Custom_Town_Updated1",
+                  	"ScrollText": "Custom_Town_Updated1",
+					"Tooltips": [{
+                        	"Id": "Custom_Town_Updated1", 
+                        	"Text": "{{i18n: RMP.demon.slayer1}}",
+                        	"PixelArea": { "X": 195, "Y": 44, "Width": 5, "Height": 7}
+                    }]
+               	},
+				"Custom_Town_Updated2": {
+                  	"Id": "Custom_Town_Updated2",
+                  	"ScrollText": "Custom_Town_Updated2",
+					"Tooltips": [{
+                        	"Id": "Custom_Town_Updated2", 
+                        	"Text": "{{i18n: RMP.demon.slayer2}}",
+                        	"PixelArea": { "X": 220, "Y": 44, "Width": 5, "Height": 7}
+                    }]
+               	},
+				"Custom_Town_Updated3": {
+                  	"Id": "Custom_Town_Updated3",
+                  	"ScrollText": "Custom_Town_Updated3",
+					"Tooltips": [{
+                        	"Id": "Custom_Town_Updated3", 
+                        	"Text": "{{i18n: RMP.demon.slayer3}}",
+                        	"PixelArea": { "X": 226, "Y": 48, "Width": 5, "Height": 7}
+                    }]
+               	},
+				"Custom_Town_Updated4": {
+                  	"Id": "Custom_Town_Updated4",
+                  	"ScrollText": "Custom_Town_Updated4",
+					"Tooltips": [{
+                        	"Id": "Custom_Town_Updated4", 
+                        	"Text": "{{i18n: RMP.demon.slayer4}}",
+                        	"PixelArea": { "X": 235, "Y": 46, "Width": 5, "Height": 7}
+                    }]
+               	},
+				"Custom_Town_Updated5": {
+                  	"Id": "Custom_Town_Updated5",
+                  	"ScrollText": "Custom_Town_Updated5",
+					"Tooltips": [{
+                        	"Id": "Custom_Town_Updated5", 
+                        	"Text": "{{i18n: RMP.demon.slayer5}}",
+                        	"PixelArea": { "X": 214, "Y": 57, "Width": 5, "Height": 7}
+                    }]
+               	},
+				"Custom_Town_Updated6": {
+                  	"Id": "Custom_Town_Updated6",
+                  	"ScrollText": "Custom_Town_Updated6",
+					"Tooltips": [{
+                        	"Id": "Custom_Town_Updated6", 
+                        	"Text": "{{i18n: RMP.demon.slayer6}}",
+                        	"PixelArea": { "X": 224, "Y": 55, "Width": 5, "Height": 7}
+                    }]
+               	},
+				"Custom_Town_Updated7": {
+                  	"Id": "Custom_Town_Updated7",
+                  	"ScrollText": "Custom_Town_Updated7",
+					"Tooltips": [{
+                        	"Id": "Custom_Town_Updated7", 
+                        	"Text": "{{i18n: RMP.demon.slayer7}}",
+                        	"PixelArea": { "X": 237, "Y": 54, "Width": 5, "Height": 7}
+                    }]
+               	},
+				"Custom_Town_Updated8": {
+                  	"Id": "Custom_Town_Updated8",
+                  	"ScrollText": "Custom_Town_Updated8",
+					"Tooltips": [{
+                        	"Id": "Custom_Town_Updated8", 
+                        	"Text": "{{i18n: RMP.demon.slayer8}}",
+                        	"PixelArea": { "X": 235, "Y": 61, "Width": 5, "Height": 7}
+                    }]
+               	}
+            }
+        },
+		{
+            "LogName": "RMP Fiasa Platonic on Minimap",
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "TargetField": [ "Valley", "MapAreas" ],
+          	"When": {
+				"RMPEnableFIASA": true,
+				"HasMod: |contains=CC.Koda.Platonic": true,
+				"Season": "summer, winter",
+				"DayofWeek": "Sunday, Monday, Tuesday, Thursday, Friday",
+				"Weather": "Sun, Snow, Wind",
+				"DayEvent |contains=dance of the moonlight jellies": false },
+            "Entries": {
+               	"Boattime": {
+                  	"Id": "Boattime",
+                  	"ScrollText": "{{i18n: RMP.fiasa}}",
+					"Tooltips": [{
+                        	"Id": "Boattime", 
+                        	"Text": "{{i18n: RMP.fiasa}}",
+                        	"PixelArea": { "X": 187, "Y": 165, "Width": 11, "Height": 7}
+                    }],
+						"WorldPositions": [{
+                      	"Id": "Boattime",
+                      	"LocationName": "Boattime",
+                      	"MapPixelArea": { "X": 189, "Y": 167, "Width": 6, "Height": 2 }
+                    }]
+               	}	
+			}
+        },
+		{
+            "LogName": "RMP Fiasa Romance on Minimap",
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "TargetField": [ "Valley", "MapAreas" ],
+          	"When": {
+				"RMPEnableFIASA": true,
+				"HasMod: |contains=CC.Koda.Romance": true,
+				"Season": "summer, winter",
+				"DayofWeek": "Sunday, Monday, Tuesday, Thursday, Friday",
+				"Weather": "Sun, Snow, Wind",
+				"DayEvent |contains=dance of the moonlight jellies": false },
+            "Entries": {
+               	"Boattime": {
+                  	"Id": "Boattime",
+                  	"ScrollText": "{{i18n: RMP.fiasa}}",
+					"Tooltips": [{
+                        	"Id": "Boattime", 
+                        	"Text": "{{i18n: RMP.fiasa}}",
+                        	"PixelArea": { "X": 187, "Y": 165, "Width": 11, "Height": 7}
+                    }],
+						"WorldPositions": [{
+                      	"Id": "Boattime",
+                      	"LocationName": "Boattime",
+                      	"MapPixelArea": { "X": 189, "Y": 167, "Width": 6, "Height": 2 }
+                    }]
+               	}	
+			}
+        },
+		{
             "LogName": "RMP Northwest Coast on Minimap",
             "Action": "EditData",
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableNorthwestCoast": true,
 				"FarmType |contains=FrontierFarm": "false",
 				"HasMod: |contains=MK215.Northwestcoast": true},
             "Entries": {
@@ -33,6 +364,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableNorthwestCoast": true,
 				"FarmType |contains=FrontierFarm": "true",
 				"HasMod: |contains=MK215.Northwestcoast": true},
             "Entries": {
@@ -58,6 +390,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableAspen": true,
 				"HasMod: |contains=invatorzen.AspenCP": true,
 				"DaysPlayed |contains={{Range:0, 30}}": "true" },
             "Entries": {
@@ -87,6 +420,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableAspen": true,
 				"HasMod: |contains=invatorzen.AspenCP": true,
 				"DaysPlayed |contains={{Range:0, 30}}": "false" },
             "Entries": {
@@ -121,6 +455,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableRangerTaro": true,
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
 				"HasMod: |contains=CC.AMeadow": true },
             "Entries": {
@@ -173,6 +508,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableRangerTaro": true,
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
 				"HasMod: |contains=CC.AMeadow": true },
             "Entries": {
@@ -220,6 +556,8 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableIsla": true,
+				"HasMod: |contains=skellady.SBVCP": false,
 				"HasMod: |contains=PaperNautilus.Isla": true},
             "Entries": {
                	"Isla_UnderwaterCove_Exterior": {
@@ -243,6 +581,41 @@
                       	"Id": "Isla_UnderwaterCove",
                       	"LocationName": "Isla_UnderwaterCove",
                       	"MapPixelArea": { "X": 289, "Y": 130, "Width": 3, "Height": 3 }
+                    }]
+               	}
+            }
+        },
+		{
+            "LogName": "RMP Isla Sunberry on Minimap",
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "TargetField": [ "Valley", "MapAreas" ],
+          	"When": {
+				"RMPEnableIsla": true,
+				"HasMod: |contains=skellady.SBVCP": true,
+				"HasMod: |contains=PaperNautilus.Isla": true},
+            "Entries": {
+               	"Isla_UnderwaterCove_Exterior": {
+                  	"Id": "Isla_UnderwaterCove_Exterior",
+                  	"ScrollText": "{{i18n: RMP.isla}}",
+                  	"Tooltips": [{
+                        	"Id": "Isla_UnderwaterCove_Exterior", 
+                        	"Text": "{{i18n: RMP.isla}}",
+                        	"PixelArea": { "X": 251, "Y": 135, "Width": 17, "Height": 16}
+                    }],
+					"WorldPositions": [{
+                      	"Id": "Isla_UnderwaterCove_Exterior",
+                      	"LocationName": "Isla_UnderwaterCove_Exterior",
+                      	"MapPixelArea": { "X": 249, "Y": 143, "Width": 20, "Height": 35}
+                    }]
+               	},
+					"Isla_UnderwaterCove": {
+                  	"Id": "Isla_UnderwaterCove",
+                  	"ScrollText": "{{i18n: RMP.isla1}}",
+					"WorldPositions": [{
+                      	"Id": "Isla_UnderwaterCove",
+                      	"LocationName": "Isla_UnderwaterCove",
+                      	"MapPixelArea": { "X": 259, "Y": 143, "Width": 1, "Height": 1 }
                     }]
                	}
             }
@@ -278,6 +651,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableMineralTown": true,
 				"HasMod: |contains=Rexstrife20.MineralTownCP": true },
             "Entries": {
                	"Rexstrife20.MineralTownCP_HighwayEntrance": {
@@ -329,7 +703,9 @@
             "Action": "EditData",
             "Target": "Data/WorldMap",
             "TargetField": [ "GingerIsland", "MapAreas" ],
-          	"When": {"HasMod: |contains=VoidWitchCult.CP.TheFishmongerNPC": true},
+          	"When": {
+				"RMPEnableTheFishmonger": true,
+				"HasMod: |contains=VoidWitchCult.CP.TheFishmongerNPC": true},
             "Entries": {
                	"VoidWitchCult.TheFishmonger_Fishmonger_GI_Inside": {
                   	"Id": "VoidWitchCult.TheFishmonger_Fishmonger_GI_Inside",
@@ -353,6 +729,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableLawOrder": true,
 				"HasMod: |contains=sdvhead.LawAndOrderSV": true,
 				"HasSeenEvent: anyPlayer|contains=239792002": true },
             "Entries": {
@@ -373,6 +750,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableLawOrder": true,
 				"HasMod: |contains=sdvhead.LawAndOrderSV": true,
 				"HasSeenEvent: anyPlayer|contains=239792002": false},
             "Entries": {
@@ -393,6 +771,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableTheBackwoodHill": true,
 				"HasMod: |contains=NeMax.BackWoodHill": true },
             "Entries": {
                	"Custom_Backwood_Hill": {
@@ -412,6 +791,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableLouisGarage": true,
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
 				"HasMod: |contains=R5.CP": true},
             "Entries": {
@@ -437,6 +817,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableLouisGarage": true,
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
 				"HasMod: |contains=R5.CP": true},
             "Entries": {
@@ -461,7 +842,9 @@
             "Action": "EditData",
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
-          	"When": {"HasMod: |contains=Tarniyar.CP.WalkToDesert": true},
+          	"When": {
+				"RMPEnableAWalktotheDesert": true,
+				"HasMod: |contains=Tarniyar.CP.WalkToDesert": true},
             "Entries": {
                	"Tarniyar.CP.WalkToDesert_Ghost_Shop": {
                   	"Id": "Tarniyar.CP.WalkToDesert_Ghost_Shop",
@@ -496,7 +879,7 @@
 				  	"WorldPositions": [{
 						"Id": "Tarniyar.CP.WalkToDesert_Winding_Road",
 						"LocationName": "Tarniyar.CP.WalkToDesert_Winding_Road",
-						"MapPixelArea": { "X": 59, "Y": 17, "Width": 15, "Height": 40 }
+						"MapPixelArea": { "X": 56, "Y": 18, "Width": 16, "Height": 41 }
 					}]
 				},
 				"Tarniyar.CP.WalkToDesert_Forest_Road": {
@@ -516,6 +899,8 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableLittleRedSchool": true,
+				"RMPRedSchoolLazyVersion": "Default",
 				"HasSeenEvent: anyPlayer|contains=9695002": false,
 				"HasMod: |contains=Xiddav.LittleRedSchoolHouse": true},
             "Entries": {
@@ -536,7 +921,30 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableLittleRedSchool": true,
+				"RMPRedSchoolLazyVersion": "Default",
 				"HasSeenEvent: anyPlayer|contains=9695002": true,
+				"HasMod: |contains=Xiddav.LittleRedSchoolHouse": true},
+            "Entries": {
+				"Custom_SchoolHouse_New": {
+					"Id": "Custom_SchoolHouse_New",
+					"ScrollText": "Custom_SchoolHouse_New",
+					"Tooltips": [{
+						  "Id": "Custom_SchoolHouse", 
+						  "Text": "{{i18n: RMP.red.school.new}}",
+						  "PixelArea": { "X": 150, "Y": 53, "Width": 5, "Height": 5 }
+					}]
+				}
+            }
+        },
+		{
+            "LogName": "RMP Red School Lazy on Minimap",
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "TargetField": [ "Valley", "MapAreas" ],
+          	"When": {
+				"RMPEnableLittleRedSchool": true,
+				"RMPRedSchoolLazyVersion": "LazyVersion",
 				"HasMod: |contains=Xiddav.LittleRedSchoolHouse": true},
             "Entries": {
 				"Custom_SchoolHouse_New": {
@@ -555,7 +963,9 @@
             "Action": "EditData",
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
-          	"When": {"HasMod: |contains=TheLimeyDragon.Ayeisha": true},
+          	"When": {
+				"RMPEnableAyeisha": true,
+				"HasMod: |contains=TheLimeyDragon.Ayeisha": true},
             "Entries": {
                	"TheLimeyDragon.Ayeisha_AyeishaVanRoad": {
                   	"Id": "TheLimeyDragon.Ayeisha_AyeishaVanRoad",
@@ -573,7 +983,9 @@
             "Action": "EditData",
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
-          	"When": {"HasMod: |contains=Tarniyar.CP.GardenVillage": true},
+          	"When": {
+				"RMPEnableGardenVillage": true,
+				"HasMod: |contains=Tarniyar.CP.GardenVillage": true},
             "Entries": {
             	"Custom_MainShops": {
                 	"Id": "Custom_MainShops",
@@ -597,6 +1009,7 @@
 			"Target": "Data/WorldMap",
 			"TargetField": [ "Valley", "MapAreas" ],
 			"When": {
+				"RMPEnableGardenVillage": true,
 				"HasMod: |contains=Tarniyar.CP.GardenVillage": true,
 				"HasFlag |contains=ccVault,jojaVault": true},
 			"Entries": {
@@ -621,7 +1034,9 @@
             "Action": "EditData",
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
-          	"When": {"HasMod: |contains=Ivy.OrnithologistsGuild.CP": true},
+          	"When": {
+				"RMPEnableOrnithologistGuild": true,
+				"HasMod: |contains=Ivy.OrnithologistsGuild.CP": true},
             "Entries": {
             	"Custom_Ivy_OrnithologistsGuild": {
                 	"Id": "Custom_Ivy_OrnithologistsGuild",
@@ -645,48 +1060,62 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableCapeStardew": true,
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
 				"HasMod: |contains=dreamy.kickitspot": true},
             "Entries": {
 				"Custom_TunnelCape": {
 					"Id": "Custom_TunnelCape",
 					"ScrollText": "{{i18n: RMP.cape.stardew5}}",
+					"Condition": "!LOCATION_NAME Here Custom_TunnelCape",
 				  "WorldPositions": [{
 						"Id": "Custom_TunnelCape",
+						"Condition": "!LOCATION_NAME Here Custom_TunnelCape",
 						"LocationName": "Custom_TunnelCape",
-						"MapPixelArea": { "X": 42, "Y": 147, "Width": 9, "Height": 5 }
+						"MapPixelArea": { "X": 42, "Y": 147, "Width": 9, "Height": 5 },
+						"Priority": "Early-999"
 				  }]
 				},
 				"Custom_AnnettaHouse": {
 					"Id": "Custom_AnnettaHouse",
 					"ScrollText": "{{i18n: RMP.cape.stardew}}",
+					"Condition": "!LOCATION_NAME Here Custom_AnnettaHouse",
 				  "WorldPositions": [{
 						"Id": "Custom_AnnettaHouse",
+						"Condition": "!LOCATION_NAME Here Custom_AnnettaHouse",
 						"LocationName": "Custom_AnnettaHouse",
-						"MapPixelArea": { "X": 51, "Y": 152, "Width": 6, "Height": 5 }
+						"MapPixelArea": { "X": 51, "Y": 152, "Width": 6, "Height": 5 },
+						"Priority": "Early-999"
 				  }]
 				 },
 				"Custom_CapeBusStop2": {
 					"Id": "Custom_CapeBusStop2",
 					"ScrollText": "{{i18n: RMP.cape.stardew4}}",
+					"Condition": "!LOCATION_NAME Here Custom_CapeBusStop2",
 				  "WorldPositions": [{
 						"Id": "Custom_CapeBusStop2",
+						"Condition": "!LOCATION_NAME Here Custom_CapeBusStop2",
 						"LocationName": "Custom_CapeBusStop2",
-						"MapPixelArea": { "X": 42, "Y": 147, "Width": 9, "Height": 5 }
+						"MapPixelArea": { "X": 42, "Y": 147, "Width": 9, "Height": 5 },
+						"Priority": "Early-999"
 				  }]
 				 },
                	"Custom_CapeBusStop": {
                   	"Id": "Custom_CapeBusStop",
                   	"ScrollText": "{{i18n: RMP.cape.stardew4}}",
+					"Condition": "!LOCATION_NAME Here Custom_CapeBusStop",
 					"WorldPositions": [{
                       	"Id": "Custom_CapeBusStop",
+						"Condition": "!LOCATION_NAME Here Custom_CapeBusStop",
                       	"LocationName": "Custom_CapeBusStop",
-                      	"MapPixelArea": { "X": 42, "Y": 147, "Width": 9, "Height": 5 }
+                      	"MapPixelArea": { "X": 42, "Y": 147, "Width": 9, "Height": 5 },
+						"Priority": "Early-999"
                     }]
                	},
 				"Custom_CapeStardew": {
 					"Id": "Custom_CapeStardew",
 					"ScrollText": "{{i18n: RMP.cape.stardew3}}",
+					"Condition": "!LOCATION_NAME Here Custom_CapeStardew",
 					"Tooltips": [{
 						"Id": "Custom_CapeStardew", 
 						"Text": "{{i18n: RMP.cape.stardew}}",
@@ -694,26 +1123,34 @@
 					}],
 				  	"WorldPositions": [{
 						"Id": "Custom_CapeStardew",
+						"Condition": "!LOCATION_NAME Here Custom_CapeStardew",
 						"LocationName": "Custom_CapeStardew",
-						"MapPixelArea": { "X": 38, "Y": 150, "Width": 36, "Height": 30 }
+						"MapPixelArea": { "X": 38, "Y": 150, "Width": 36, "Height": 30 },
+						"Priority": "Early-999"
 					}]
 				},
 				"Custom_SeaCape": {
 				"Id": "Custom_SeaCape",
 				"ScrollText": "{{i18n: RMP.cape.stardew2}}",
+				"Condition": "!LOCATION_NAME Here Custom_SeaCape",
 				"WorldPositions": [{
 					"Id": "Custom_SeaCape",
+					"Condition": "!LOCATION_NAME Here Custom_SeaCape",
 					"LocationName": "Custom_SeaCape",
-					"MapPixelArea": { "X": 64, "Y": 154, "Width": 5, "Height": 7 }
+					"MapPixelArea": { "X": 64, "Y": 154, "Width": 5, "Height": 7 },
+					"Priority": "Early-999"
 					}]
 				},
 				"Custom_AnnettaForest": {
 					"Id": "Custom_AnnettaForest",
 					"ScrollText": "{{i18n: RMP.cape.stardew1}}",
+					"Condition": "!LOCATION_NAME Here Custom_AnnettaForest",
 		  			"WorldPositions": [{
 						"Id": "Custom_AnnettaForest",
+						"Condition": "!LOCATION_NAME Here Custom_AnnettaForest",
 						"LocationName": "Custom_AnnettaForest",
-						"MapPixelArea": { "X": 54, "Y": 144, "Width": 9, "Height": 7 }
+						"MapPixelArea": { "X": 54, "Y": 144, "Width": 9, "Height": 7 },
+						"Priority": "Early-999"
 					}]
 				}
             }
@@ -724,6 +1161,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableCapeStardew": true,
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
 				"HasMod: |contains=dreamy.kickitspot": true},
             "Entries": {
@@ -803,6 +1241,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableJuliet.Jessie": true,
 				"HasMod: |contains=LemurKat.JulietHouse.NPC": true,
 				"HasMod: |contains=LemurKat.EastScarpe.CP": false},
             "Entries": {
@@ -828,6 +1267,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableJuliet.Jessie": true,
 				"HasMod: |contains=LemurKat.JulietHouse.NPC": true,
 				"HasMod: |contains=LemurKat.EastScarpe.CP": true,
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
@@ -854,6 +1294,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableATheStrayCatfe": true,
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
 				"HasMod: |contains=ch20youk.TSCCP": true},
             "Entries": {
@@ -888,6 +1329,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableATheStrayCatfe": true,
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
 				"HasMod: |contains=ch20youk.TSCCP": true},
             "Entries": {
@@ -921,7 +1363,9 @@
             "Action": "EditData",
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
-          	"When": {"HasMod: |contains=Tikamin557.CP.FishingPondFacilities": true},
+          	"When": {
+				"RMPEnableFishingPond": true,
+				"HasMod: |contains=Tikamin557.CP.FishingPondFacilities": true},
             "Entries": {
                	"Custom_FishingPondFacilitiesMap": {
                   	"Id": "Custom_FishingPondFacilitiesMap",
@@ -945,6 +1389,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableFishingPond": true,
 				"HasMod: |contains=Tikamin557.CP.FishingPondFacilities": true,
 				"HasFlag": "Tikamin557.CP.FishingPondFacilities_FacilitiesOpen.Mail"},
             "Entries": {
@@ -969,7 +1414,9 @@
             "Action": "EditData",
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
-          	"When": {"HasMod: |contains=Rafseazz.LunnaCP": true},
+          	"When": {
+				"RMPEnableLunna": true,
+				"HasMod: |contains=Rafseazz.LunnaCP": true},
             "Entries": {
 				"Custom_LASV_LunnaHouse": {
                 	"Id": "Custom_LASV_LunnaHouse",
@@ -1016,6 +1463,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableLunna": true,
 				"HasMod: |contains=Rafseazz.LunnaCP": true,
 				"HasSeenEvent: anyPlayer|contains=75160009": true},
             "Entries": {
@@ -1040,7 +1488,9 @@
             "Action": "EditData",
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
-          	"When": {"HasMod: |contains=elhrvy.NPCJuna": true},
+          	"When": {
+				"RMPEnableJuna": true,
+				"HasMod: |contains=elhrvy.NPCJuna": true},
             "Entries": {
                	"Custom_JunaNPC_JunaCave": {
                   	"Id": "Custom_JunaNPC_JunaCave",
@@ -1064,6 +1514,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableSubmarine": true,
 				"HasMod: |contains=Tikamin557.CP.MySubmarine": true,
 				"HasReadLetter": "MySubmarine.AvailableMailId"},
             "Entries": {
@@ -1083,7 +1534,9 @@
             "Action": "EditData",
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
-          	"When": {"HasMod: |contains=woshi.Jane": true},
+          	"When": {
+				"RMPEnableJane": true,
+				"HasMod: |contains=woshi.Jane": true},
             "Entries": {
             	"Custom_JaneNPC_JaneRoom": {
                 	"Id": "Custom_JaneNPC_JaneRoom",
@@ -1106,7 +1559,9 @@
             "Action": "EditData",
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
-          	"When": {"HasMod: |contains=Fernandtea.NewNPCWilford": true},
+          	"When": {
+				"RMPEnableWilford": true,
+				"HasMod: |contains=Fernandtea.NewNPCWilford": true},
             "Entries": {
                	"Custom_EastWoods": {
                   	"Id": "Custom_EastWoods",
@@ -1129,7 +1584,9 @@
             "Action": "EditData",
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
-          	"When": {"HasMod: |contains=kabulla.bakery": true},
+          	"When": {
+				"RMPEnableHaleyBakery": true,
+				"HasMod: |contains=kabulla.bakery": true},
             "Entries": {
                	"Custom_Bakeryshop": {
                   	"Id": "Custom_Bakeryshop",
@@ -1152,6 +1609,7 @@
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
           	"When": {
+				"RMPEnableHaleyBakery": true,
 				"HasMod: |contains=kabulla.bakery": true,
 				"HasSeenEvent: anyPlayer|contains=80801010": true},
             "Entries": {
@@ -1175,7 +1633,9 @@
             "Action": "EditData",
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
-          	"When": {"HasMod: |contains=Tikamin557.BeachAdditionalStorageSpaceArea": true},
+          	"When": {
+				"RMPEnableBeachAdditionalStorage": true,
+				"HasMod: |contains=Tikamin557.BeachAdditionalStorageSpaceArea": true},
             	"Entries": {
             		"Custom_Beach_Storage_Space": {
                   		"Id": "Custom_Beach_Storage_Space",
@@ -1194,7 +1654,9 @@
             "Action": "EditData",
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
-          	"When": {"HasMod: |contains=Lex.Sydney": true},
+          	"When": {
+				"RMPEnableSydney": true,
+				"HasMod: |contains=Lex.Sydney": true},
             "Entries": {
                	"Custom_Sydney_House": {
                   	"Id": "Custom_Sydney_House",
@@ -1216,7 +1678,9 @@
             "Action": "EditData",
             "Target": "Data/WorldMap",
             "TargetField": [ "Valley", "MapAreas" ],
-          	"When": {"HasMod: |contains=Rafseazz.RSVFTM": true},
+          	"When": {
+				"RMPEnableRidgesideVillage": true,
+				"HasMod: |contains=Rafseazz.RSVFTM": true},
             "Entries": {
            		"Custom_Ridgeside_RSVCableCar": {
                   	"Id": "Custom_Ridgeside_RSVCableCar",
@@ -1234,6 +1698,5 @@
                	}
             }
         }
-		//SVE
 	]
 }

@@ -144,11 +144,22 @@ Change bombs into Mana Bombs when config option is enabled
           "LogName": "Modify bomb crafting requirements",
           "Action": "EditData",
           "Target": "Data/CraftingRecipes",
-          "When": { "BombType": "Mana Bombs" },
+          "When": { "BombType": "Mana Bombs", "EasierManaBombs": "false" },
           "Entries": {
             "Cherry Bomb": "378 3 Morghoula.AlchemistryCP_EmptyFlask 1 Morghoula.AlchemistryCP_ManaOrb 1/Field/286/false/Mining 1/",
             "Bomb": "380 3 Morghoula.AlchemistryCP_EmptyFlask 1 Morghoula.AlchemistryCP_ManaOrb 1/Field/287/false/Mining 6/",
             "Mega Bomb": "384 3 Morghoula.AlchemistryCP_EmptyFlask 1 Morghoula.AlchemistryCP_ManaOrb 1/Field/288/false/Mining 8/"
+          }
+        },
+        {
+          "LogName": "Modify bomb crafting requirements for easier mana bombs",
+          "Action": "EditData",
+          "Target": "Data/CraftingRecipes",
+          "When": { "BombType": "Mana Bombs", "EasierManaBombs": "true" },
+          "Entries": {
+            "Cherry Bomb": "378 3 Morghoula.AlchemistryCP_ManaOrb 1/Field/286/false/Mining 1/",
+            "Bomb": "380 3 Morghoula.AlchemistryCP_ManaOrb 1/Field/287/false/Mining 6/",
+            "Mega Bomb": "384 3 Morghoula.AlchemistryCP_ManaOrb 1/Field/288/false/Mining 8/"
           }
         },
         //Load icons
