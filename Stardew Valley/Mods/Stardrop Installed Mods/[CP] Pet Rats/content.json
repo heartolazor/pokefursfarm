@@ -1,0 +1,1107 @@
+{
+    "Format": "2.0.0",
+    "ConfigSchema": {
+        "Rat Price": {
+            "AllowValues": "",
+            "Default": "10000",
+            "Description": "{{i18n:RothagHuptiq.Rat.PriceDescription}}"
+        }
+    },
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Animals/Rat1",
+            "FromFile": "assets/rothag_huptiq_rat_1.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Rat1Icon",
+            "FromFile": "assets/rothag_huptiq_rat_1_icon.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Rat2",
+            "FromFile": "assets/rothag_huptiq_rat_2.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Rat2Icon",
+            "FromFile": "assets/rothag_huptiq_rat_2_icon.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Rat3",
+            "FromFile": "assets/rothag_huptiq_rat_3.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Rat3Icon",
+            "FromFile": "assets/rothag_huptiq_rat_3_icon.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Rat4",
+            "FromFile": "assets/rothag_huptiq_rat_4.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/Rat4Icon",
+            "FromFile": "assets/rothag_huptiq_rat_4_icon.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "RothagHuptiq.RatSound1": {
+                    "ID": "RothagHuptiq.RatSound1",
+                    "Category": "Sound",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/rothag_huptiq_rat_sound_1.ogg}}"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "RothagHuptiq.RatSound2": {
+                    "ID": "RothagHuptiq.RatSound2",
+                    "Category": "Sound",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/rothag_huptiq_rat_sound_2.ogg}}"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "RothagHuptiq.RatSound3": {
+                    "ID": "RothagHuptiq.RatSound3",
+                    "Category": "Sound",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/rothag_huptiq_rat_sound_3.ogg}}"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "RothagHuptiq.RatSound4": {
+                    "ID": "RothagHuptiq.RatSound4",
+                    "Category": "Sound",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/rothag_huptiq_rat_sound_4.ogg}}"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "hats.json",
+            "When": {
+                "HasMod": "Syma.HatsOnPetsPlus"
+            }
+        },
+        {
+            "LogName": "Add Pet Rats",
+            "Action": "EditData",
+            "Target": "Data/Pets",
+            "Entries": {
+                "RothagHuptiq.Rat": {
+                    "DisplayName": "{{i18n:RothagHuptiq.Rat.Name}}",
+                    "BarkSound": "RothagHuptiq.RatSound2",
+                    "ContentSound": "RothagHuptiq.RatSound4",
+                    "EventOffset": {
+                        "X": -32,
+                        "Y": 0
+                    },
+                    "AdoptionEventLocation": "Farm",
+                    "AdoptionEventId": "RothagHuptiq.AdoptRatEvent",
+                    "SleepOnBedChance": 0.75,
+                    "SleepNearBedChance": 0.3,
+                    "SleepOnRugChance": 0.5,
+                    "MoveSpeed": 2,
+                    "Behaviors": [
+                        {
+                            "Id": "Walk",
+                            "IsSideBehavior": false,
+                            "RandomizeDirection": true,
+                            "Direction": null,
+                            "WalkInDirection": true,
+                            "MoveSpeed": -1,
+                            "SoundOnStart": null,
+                            "SoundRangeFromBorder": -1,
+                            "SoundRange": -1,
+                            "SoundIsVoice": false,
+                            "Shake": 0,
+                            "Animation": null,
+                            "LoopMode": "None",
+                            "AnimationMinimumLoops": -1,
+                            "AnimationMaximumLoops": -1,
+                            "AnimationEndBehaviorChanges": null,
+                            "Duration": -1,
+                            "MinimumDuration": -1,
+                            "MaximumDuration": -1,
+                            "TimeoutBehaviorChanges": null,
+                            "PlayerNearbyBehaviorChanges": null,
+                            "RandomBehaviorChangeChance": 0.01,
+                            "RandomBehaviorChanges": [
+                            {
+                                "Weight": 3.0,
+                                "OutsideOnly": false,
+                                "UpBehavior": null,
+                                "DownBehavior": null,
+                                "LeftBehavior": null,
+                                "RightBehavior": null,
+                                "Behavior": null
+                            },
+                            {
+                                "Weight": 0.25,
+                                "OutsideOnly": false,
+                                "UpBehavior": "BeginSitDown",
+                                "DownBehavior": "BeginSitDown",
+                                "LeftBehavior": null,
+                                "RightBehavior": null,
+                                "Behavior": "Flop"
+                            },
+                            {
+                                "Weight": 0.15,
+                                "OutsideOnly": false,
+                                "UpBehavior": "BeginSitDown",
+                                "DownBehavior": "BeginSitDown",
+                                "LeftBehavior": null,
+                                "RightBehavior": null,
+                                "Behavior": "Leap"
+                            }
+                        ],
+                        "JumpLandBehaviorChanges": null
+                    },
+                    {
+                        "Id": "BeginSitDown",
+                        "IsSideBehavior": false,
+                        "RandomizeDirection": false,
+                        "Direction": "down",
+                        "WalkInDirection": false,
+                        "MoveSpeed": -1,
+                        "SoundOnStart": null,
+                        "SoundRangeFromBorder": -1,
+                        "SoundRange": -1,
+                        "SoundIsVoice": false,
+                        "Shake": 0,
+                        "Animation": [
+                            {
+                                "Frame": 16,
+                                "Duration": 100,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            },
+                            {
+                                "Frame": 17,
+                                "Duration": 100,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            },
+                            {
+                                "Frame": 18,
+                                "Duration": 100,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            },
+                            {
+                                "Frame": 19,
+                                "Duration": 100,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            }
+                        ],
+                        "LoopMode": "None",
+                        "AnimationMinimumLoops": -1,
+                        "AnimationMaximumLoops": -1,
+                        "AnimationEndBehaviorChanges": [
+                            {
+                                "Weight": 1.0,
+                                "OutsideOnly": false,
+                                "UpBehavior": null,
+                                "DownBehavior": null,
+                                "LeftBehavior": null,
+                                "RightBehavior": null,
+                                "Behavior": "SitDown"
+                            }
+                        ],
+                        "Duration": -1,
+                        "MinimumDuration": -1,
+                        "MaximumDuration": -1,
+                        "TimeoutBehaviorChanges": null,
+                        "PlayerNearbyBehaviorChanges": null,
+                        "RandomBehaviorChangeChance": 0.0,
+                        "RandomBehaviorChanges": null,
+                        "JumpLandBehaviorChanges": null
+                    },
+                    {
+                        "Id": "SitDownBlinkShort",
+                        "IsSideBehavior": false,
+                        "RandomizeDirection": false,
+                        "Direction": "down",
+                        "WalkInDirection": false,
+                        "MoveSpeed": -1,
+                        "SoundOnStart": null,
+                        "SoundRangeFromBorder": -1,
+                        "SoundRange": -1,
+                        "SoundIsVoice": false,
+                        "Shake": 0,
+                        "Animation": [
+                            {
+                                "Frame": 19,
+                                "Duration": 100,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            }
+                        ],
+                        "LoopMode": "Hold",
+                        "AnimationMinimumLoops": -1,
+                        "AnimationMaximumLoops": -1,
+                        "AnimationEndBehaviorChanges": null,
+                        "Duration": 200,
+                        "MinimumDuration": -1,
+                        "MaximumDuration": -1,
+                        "TimeoutBehaviorChanges": [
+                            {
+                                "Weight": 1.0,
+                                "OutsideOnly": false,
+                                "UpBehavior": null,
+                                "DownBehavior": null,
+                                "LeftBehavior": null,
+                                "RightBehavior": null,
+                                "Behavior": "SitDown"
+                            }
+                        ],
+                        "PlayerNearbyBehaviorChanges": null,
+                        "RandomBehaviorChangeChance": 0.0,
+                        "RandomBehaviorChanges": null,
+                        "JumpLandBehaviorChanges": null
+                    },
+                    {
+                        "Id": "SitDownBlink",
+                        "IsSideBehavior": false,
+                        "RandomizeDirection": false,
+                        "Direction": "down",
+                        "WalkInDirection": false,
+                        "MoveSpeed": -1,
+                        "SoundOnStart": null,
+                        "SoundRangeFromBorder": -1,
+                        "SoundRange": -1,
+                        "SoundIsVoice": false,
+                        "Shake": 0,
+                        "Animation": [
+                            {
+                                "Frame": 19,
+                                "Duration": 100,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            }
+                        ],
+                        "LoopMode": "Hold",
+                        "AnimationMinimumLoops": -1,
+                        "AnimationMaximumLoops": -1,
+                        "AnimationEndBehaviorChanges": null,
+                        "Duration": -1,
+                        "MinimumDuration": 8000,
+                        "MaximumDuration": 30000,
+                        "TimeoutBehaviorChanges": [
+                            {
+                                "Weight": 1.0,
+                                "OutsideOnly": false,
+                                "UpBehavior": null,
+                                "DownBehavior": null,
+                                "LeftBehavior": null,
+                                "RightBehavior": null,
+                                "Behavior": "SitDown"
+                            }
+                        ],
+                        "PlayerNearbyBehaviorChanges": null,
+                        "RandomBehaviorChangeChance": 0.0,
+                        "RandomBehaviorChanges": null,
+                        "JumpLandBehaviorChanges": null
+                    },
+                    {
+                        "Id": "SitDownBlinkShortContent",
+                        "IsSideBehavior": false,
+                        "RandomizeDirection": false,
+                        "Direction": "down",
+                        "WalkInDirection": false,
+                        "MoveSpeed": -1,
+                        "SoundOnStart": "BARK",
+                        "SoundRangeFromBorder": 2,
+                        "SoundRange": -1,
+                        "SoundIsVoice": true,
+                        "Shake": 200,
+                        "Animation": [
+                            {
+                                "Frame": 19,
+                                "Duration": 100,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            }
+                        ],
+                        "LoopMode": "Hold",
+                        "AnimationMinimumLoops": -1,
+                        "AnimationMaximumLoops": -1,
+                        "AnimationEndBehaviorChanges": null,
+                        "Duration": 200,
+                        "MinimumDuration": -1,
+                        "MaximumDuration": -1,
+                        "TimeoutBehaviorChanges": [
+                            {
+                                "Weight": 1.0,
+                                "OutsideOnly": false,
+                                "UpBehavior": null,
+                                "DownBehavior": null,
+                                "LeftBehavior": null,
+                                "RightBehavior": null,
+                                "Behavior": "SitDown"
+                            }
+                        ],
+                        "PlayerNearbyBehaviorChanges": null,
+                        "RandomBehaviorChangeChance": 0.0,
+                        "RandomBehaviorChanges": null,
+                        "JumpLandBehaviorChanges": null
+                    },
+                    {
+                        "Id": "SitDownBlinkContent",
+                        "IsSideBehavior": false,
+                        "RandomizeDirection": false,
+                        "Direction": "down",
+                        "WalkInDirection": false,
+                        "MoveSpeed": -1,
+                        "SoundOnStart": "BARK",
+                        "SoundRangeFromBorder": 2,
+                        "SoundRange": -1,
+                        "SoundIsVoice": true,
+                        "Shake": 200,
+                        "Animation": [
+                            {
+                                "Frame": 19,
+                                "Duration": 100,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            }
+                        ],
+                        "LoopMode": "Hold",
+                        "AnimationMinimumLoops": -1,
+                        "AnimationMaximumLoops": -1,
+                        "AnimationEndBehaviorChanges": null,
+                        "Duration": -1,
+                        "MinimumDuration": 8000,
+                        "MaximumDuration": 30000,
+                        "TimeoutBehaviorChanges": [
+                            {
+                                "Weight": 1.0,
+                                "OutsideOnly": false,
+                                "UpBehavior": null,
+                                "DownBehavior": null,
+                                "LeftBehavior": null,
+                                "RightBehavior": null,
+                                "Behavior": "SitDown"
+                            }
+                        ],
+                        "PlayerNearbyBehaviorChanges": null,
+                        "RandomBehaviorChangeChance": 0.0,
+                        "RandomBehaviorChanges": null,
+                        "JumpLandBehaviorChanges": null
+                    },
+                    {
+                        "Id": "SitDownLick",
+                        "IsSideBehavior": false,
+                        "RandomizeDirection": false,
+                        "Direction": "down",
+                        "WalkInDirection": false,
+                        "MoveSpeed": -1,
+                        "SoundOnStart": null,
+                        "SoundRangeFromBorder": -1,
+                        "SoundRange": -1,
+                        "SoundIsVoice": false,
+                        "Shake": 0,
+                        "Animation": [
+                            {
+                                "Frame": 19,
+                                "Duration": 300,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            },
+                            {
+                                "Frame": 21,
+                                "Duration": 200,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            },
+                            {
+                                "Frame": 22,
+                                "Duration": 200,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": "Cowboy_Footstep",
+                                "SoundRangeFromBorder": 2,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            },
+                            {
+                                "Frame": 23,
+                                "Duration": 200,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            }
+                        ],
+                        "LoopMode": "None",
+                        "AnimationMinimumLoops": -1,
+                        "AnimationMaximumLoops": -1,
+                        "AnimationEndBehaviorChanges": [
+                            {
+                                "Weight": 1.0,
+                                "OutsideOnly": false,
+                                "UpBehavior": null,
+                                "DownBehavior": null,
+                                "LeftBehavior": null,
+                                "RightBehavior": null,
+                                "Behavior": "SitDownLickRepeat"
+                            }
+                        ],
+                        "Duration": -1,
+                        "MinimumDuration": -1,
+                        "MaximumDuration": -1,
+                        "TimeoutBehaviorChanges": null,
+                        "PlayerNearbyBehaviorChanges": null,
+                        "RandomBehaviorChangeChance": 0.0,
+                        "RandomBehaviorChanges": null,
+                        "JumpLandBehaviorChanges": null
+                    },
+                    {
+                        "Id": "SitDownLickRepeat",
+                        "IsSideBehavior": false,
+                        "RandomizeDirection": false,
+                        "Direction": "down",
+                        "WalkInDirection": false,
+                        "MoveSpeed": -1,
+                        "SoundOnStart": null,
+                        "SoundRangeFromBorder": -1,
+                        "SoundRange": -1,
+                        "SoundIsVoice": false,
+                        "Shake": 0,
+                        "Animation": [
+                            {
+                                "Frame": 21,
+                                "Duration": 150,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            },
+                            {
+                                "Frame": 22,
+                                "Duration": 150,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": "Cowboy_Footstep",
+                                "SoundRangeFromBorder": 2,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            },
+                            {
+                                "Frame": 23,
+                                "Duration": 150,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            }
+                        ],
+                        "LoopMode": "None",
+                        "AnimationMinimumLoops": 1,
+                        "AnimationMaximumLoops": 5,
+                        "AnimationEndBehaviorChanges": [
+                            {
+                                "Weight": 1.0,
+                                "OutsideOnly": false,
+                                "UpBehavior": null,
+                                "DownBehavior": null,
+                                "LeftBehavior": null,
+                                "RightBehavior": null,
+                                "Behavior": "SitDown"
+                            }
+                        ],
+                        "Duration": -1,
+                        "MinimumDuration": -1,
+                        "MaximumDuration": -1,
+                        "TimeoutBehaviorChanges": null,
+                        "PlayerNearbyBehaviorChanges": null,
+                        "RandomBehaviorChangeChance": 0.0,
+                        "RandomBehaviorChanges": null,
+                        "JumpLandBehaviorChanges": null
+                    },
+                    {
+                        "Id": "SitDown",
+                        "IsSideBehavior": false,
+                        "RandomizeDirection": false,
+                        "Direction": "down",
+                        "WalkInDirection": false,
+                        "MoveSpeed": -1,
+                        "SoundOnStart": null,
+                        "SoundRangeFromBorder": -1,
+                        "SoundRange": -1,
+                        "SoundIsVoice": false,
+                        "Shake": 0,
+                        "Animation": [
+                            {
+                                "Frame": 18,
+                                "Duration": 100,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            }
+                        ],
+                        "LoopMode": "Hold",
+                        "AnimationMinimumLoops": -1,
+                        "AnimationMaximumLoops": -1,
+                        "AnimationEndBehaviorChanges": null,
+                        "Duration": -1,
+                        "MinimumDuration": -1,
+                        "MaximumDuration": -1,
+                        "TimeoutBehaviorChanges": null,
+                        "PlayerNearbyBehaviorChanges": null,
+                        "RandomBehaviorChangeChance": 0.01,
+                        "RandomBehaviorChanges": [
+                            {
+                                "Weight": 2.0,
+                                "OutsideOnly": false,
+                                "UpBehavior": null,
+                                "DownBehavior": null,
+                                "LeftBehavior": null,
+                                "RightBehavior": null,
+                                "Behavior": "StandUpDown"
+                            },
+                            {
+                                "Weight": 2.0,
+                                "OutsideOnly": false,
+                                "UpBehavior": null,
+                                "DownBehavior": null,
+                                "LeftBehavior": null,
+                                "RightBehavior": null,
+                                "Behavior": "SitDownLick"
+                            },
+                            {
+                                "Weight": 0.72,
+                                "OutsideOnly": false,
+                                "UpBehavior": null,
+                                "DownBehavior": null,
+                                "LeftBehavior": null,
+                                "RightBehavior": null,
+                                "Behavior": "SitDownBlinkShort"
+                            },
+                            {
+                                "Weight": 0.88,
+                                "OutsideOnly": false,
+                                "UpBehavior": null,
+                                "DownBehavior": null,
+                                "LeftBehavior": null,
+                                "RightBehavior": null,
+                                "Behavior": "SitDownBlink"
+                            },
+                            {
+                                "Weight": 0.18,
+                                "OutsideOnly": false,
+                                "UpBehavior": null,
+                                "DownBehavior": null,
+                                "LeftBehavior": null,
+                                "RightBehavior": null,
+                                "Behavior": "SitDownBlinkShortContent"
+                            },
+                            {
+                                "Weight": 0.22,
+                                "OutsideOnly": false,
+                                "UpBehavior": null,
+                                "DownBehavior": null,
+                                "LeftBehavior": null,
+                                "RightBehavior": null,
+                                "Behavior": "SitDownBlinkContent"
+                            }
+                        ],
+                        "JumpLandBehaviorChanges": null
+                    },
+                    {
+                        "Id": "StandUpDown",
+                        "IsSideBehavior": false,
+                        "RandomizeDirection": false,
+                        "Direction": "down",
+                        "WalkInDirection": false,
+                        "MoveSpeed": -1,
+                        "SoundOnStart": null,
+                        "SoundRangeFromBorder": -1,
+                        "SoundRange": -1,
+                        "SoundIsVoice": false,
+                        "Shake": 0,
+                        "Animation": [
+                            {
+                                "Frame": 17,
+                                "Duration": 200,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            },
+                            {
+                                "Frame": 16,
+                                "Duration": 200,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            },
+                            {
+                                "Frame": 0,
+                                "Duration": 200,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            }
+                        ],
+                        "LoopMode": "None",
+                        "AnimationMinimumLoops": -1,
+                        "AnimationMaximumLoops": -1,
+                        "AnimationEndBehaviorChanges": [
+                            {
+                                "Weight": 1.0,
+                                "OutsideOnly": false,
+                                "UpBehavior": null,
+                                "DownBehavior": null,
+                                "LeftBehavior": null,
+                                "RightBehavior": null,
+                                "Behavior": "Walk"
+                            }
+                        ],
+                        "Duration": -1,
+                        "MinimumDuration": -1,
+                        "MaximumDuration": -1,
+                        "TimeoutBehaviorChanges": null,
+                        "PlayerNearbyBehaviorChanges": null,
+                        "RandomBehaviorChangeChance": 0.0,
+                        "RandomBehaviorChanges": null,
+                        "JumpLandBehaviorChanges": null
+                    },
+                    {
+                        "Id": "Leap",
+                        "IsSideBehavior": true,
+                        "RandomizeDirection": false,
+                        "Direction": null,
+                        "WalkInDirection": false,
+                        "MoveSpeed": -1,
+                        "SoundOnStart": "RothagHuptiq.RatSound1",
+                        "SoundRangeFromBorder": 1,
+                        "SoundRange": -1,
+                        "SoundIsVoice": false,
+                        "Shake": 0,
+                        "Animation": [
+                            {
+                                "Frame": 30,
+                                "Duration": 300,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            },
+                            {
+                                "Frame": 31,
+                                "Duration": 300,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            },
+                            {
+                                "Frame": 30,
+                                "Duration": 300,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            },
+                            {
+                                "Frame": 31,
+                                "Duration": 300,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            },
+                            {
+                                "Frame": 30,
+                                "Duration": 300,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            },
+                            {
+                                "Frame": 31,
+                                "Duration": 500,
+                                "HitGround": false,
+                                "Jump": false,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            }
+                        ],
+                        "LoopMode": "None",
+                        "AnimationMinimumLoops": -1,
+                        "AnimationMaximumLoops": -1,
+                        "AnimationEndBehaviorChanges": [
+                            {
+                                "Weight": 1.0,
+                                "OutsideOnly": false,
+                                "UpBehavior": null,
+                                "DownBehavior": null,
+                                "LeftBehavior": null,
+                                "RightBehavior": null,
+                                "Behavior": "LeapJump"
+                            }
+                        ],
+                        "Duration": -1,
+                        "MinimumDuration": -1,
+                        "MaximumDuration": -1,
+                        "TimeoutBehaviorChanges": null,
+                        "PlayerNearbyBehaviorChanges": null,
+                        "RandomBehaviorChangeChance": 0.0,
+                        "RandomBehaviorChanges": null,
+                        "JumpLandBehaviorChanges": null
+                    },
+                    {
+                        "Id": "LeapJump",
+                        "IsSideBehavior": true,
+                        "RandomizeDirection": false,
+                        "Direction": null,
+                        "WalkInDirection": true,
+                        "MoveSpeed": 4,
+                        "SoundOnStart": null,
+                        "SoundRangeFromBorder": -1,
+                        "SoundRange": -1,
+                        "SoundIsVoice": false,
+                        "Shake": 0,
+                        "Animation": [
+                            {
+                                "Frame": 24,
+                                "Duration": 800,
+                                "HitGround": false,
+                                "Jump": true,
+                                "Sound": null,
+                                "SoundRangeFromBorder": -1,
+                                "SoundRange": -1,
+                                "SoundIsVoice": false
+                            }
+                        ],
+                        "LoopMode": "Hold",
+                        "AnimationMinimumLoops": -1,
+                        "AnimationMaximumLoops": -1,
+                        "AnimationEndBehaviorChanges": null,
+                        "Duration": -1,
+                        "MinimumDuration": -1,
+                        "MaximumDuration": -1,
+                        "TimeoutBehaviorChanges": null,
+                        "PlayerNearbyBehaviorChanges": null,
+                        "RandomBehaviorChangeChance": 0.0,
+                        "RandomBehaviorChanges": null,
+                        "JumpLandBehaviorChanges": [
+                            {
+                                "Weight": 1.0,
+                                "OutsideOnly": false,
+                                "UpBehavior": null,
+                                "DownBehavior": null,
+                                "LeftBehavior": null,
+                                "RightBehavior": null,
+                                "Behavior": "Walk"
+                            }
+                            ]
+                        },
+                        {
+                            "Id": "Flop",
+                            "IsSideBehavior": true,
+                            "RandomizeDirection": false,
+                            "Direction": null,
+                            "WalkInDirection": false,
+                            "MoveSpeed": -1,
+                            "SoundOnStart": null,
+                            "SoundRangeFromBorder": -1,
+                            "SoundRange": -1,
+                            "SoundIsVoice": false,
+                            "Shake": 0,
+                            "Animation": [
+                                {
+                                    "Frame": 24,
+                                    "Duration": 200,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 25,
+                                    "Duration": 200,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 26,
+                                    "Duration": 200,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": null,
+                                    "SoundRangeFromBorder": -1,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                },
+                                {
+                                    "Frame": 27,
+                                    "Duration": 200,
+                                    "HitGround": false,
+                                    "Jump": false,
+                                    "Sound": "thudStep",
+                                    "SoundRangeFromBorder": 2,
+                                    "SoundRange": -1,
+                                    "SoundIsVoice": false
+                                }
+                            ],
+                            "LoopMode": "Hold",
+                            "AnimationMinimumLoops": -1,
+                            "AnimationMaximumLoops": -1,
+                            "AnimationEndBehaviorChanges": null,
+                            "Duration": -1,
+                            "MinimumDuration": 8000,
+                            "MaximumDuration": 30000,
+                            "TimeoutBehaviorChanges": [
+                                {
+                                    "Weight": 1.0,
+                                    "OutsideOnly": false,
+                                    "UpBehavior": null,
+                                    "DownBehavior": null,
+                                    "LeftBehavior": null,
+                                    "RightBehavior": null,
+                                    "Behavior": "Walk"
+                                }
+                            ],
+                            "PlayerNearbyBehaviorChanges": null,
+                            "RandomBehaviorChangeChance": 0.0,
+                            "RandomBehaviorChanges": null,
+                            "JumpLandBehaviorChanges": null
+                        }
+                    ],
+                    "GiftChance": 0.3,
+                    "Gifts": [
+                        {
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 1.0,
+                            "QualifiedItemID": "(O)424",
+                            "Stack": 1
+                        },
+                        {
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 0.5,
+                            "QualifiedItemID": "(O)881",
+                            "Stack": 10
+                        },
+                        {
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 0.3,
+                            "QualifiedItemID": "(O)296",
+                            "Stack": 3
+                        },
+                        {
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 0.3,
+                            "QualifiedItemID": "(O)398",
+                            "Stack": 3
+                        },
+                        {
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 0.3,
+                            "QualifiedItemID": "(O)410",
+                            "Stack": 3
+                        },
+                        {
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 0.3,
+                            "QualifiedItemID": "(O)271",
+                            "Stack": 3
+                        },
+                        {
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 0.3,
+                            "QualifiedItemID": "(O)270",
+                            "Stack": 2
+                        },
+                        {
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 0.3,
+                            "QualifiedItemID": "(O)262",
+                            "Stack": 4
+                        },
+                        {
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 0.1,
+                            "QualifiedItemID": "(O)206",
+                            "Stack": 1
+                        },
+                        {
+                            "MinimumFriendshipThreshold": 1000,
+                            "Weight": 0.1,
+                            "QualifiedItemID": "(O)119",
+                            "Stack": 1
+                        }
+                    ],
+                    "Breeds": [
+                        {
+                            "Id": "RothagHuptiq.Rat1",
+                            "Texture": "Animals/Rat1",
+                            "IconTexture": "Animals/Rat1Icon",
+                            "IconSourceRect": {
+                                "X": 8,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "CanBeChosenAtStart": true,
+                            "CanBeAdoptedFromMarnie": true,
+                            "AdoptionPrice": "{{Rat Price}}"
+                        },
+                        {
+                            "Id": "RothagHuptiq.Rat2",
+                            "Texture": "Animals/Rat2",
+                            "IconTexture": "Animals/Rat2Icon",
+                            "IconSourceRect": {
+                                "X": 8,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "CanBeChosenAtStart": true,
+                            "CanBeAdoptedFromMarnie": true,
+                            "AdoptionPrice": "{{Rat Price}}"
+                        },
+                        {
+                            "Id": "RothagHuptiq.Rat3",
+                            "Texture": "Animals/Rat3",
+                            "IconTexture": "Animals/Rat3Icon",
+                            "IconSourceRect": {
+                                "X": 8,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "CanBeChosenAtStart": true,
+                            "CanBeAdoptedFromMarnie": true,
+                            "AdoptionPrice": "{{Rat Price}}"
+                        },
+                        {
+                            "Id": "RothagHuptiq.Rat4",
+                            "Texture": "Animals/Rat4",
+                            "IconTexture": "Animals/Rat4Icon",
+                            "IconSourceRect": {
+                                "X": 8,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "CanBeChosenAtStart": true,
+                            "CanBeAdoptedFromMarnie": true,
+                            "AdoptionPrice": "{{Rat Price}}"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Add Pet Rat Adoption Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "RothagHuptiq.AdoptRatEvent/m 1000/t 600 930/d Mon Tue Thu Sat Sun/w sunny/h RothagHuptiq.Rat/H": "continue/64 15/farmer 64 15 2 Marnie 65 16 0 pet 63 16 2/skippable/faceDirection PetActor 2/pause 500/animate PetActor false false 120 16 17 18 18/pause 480/animate PetActor false true 120 18/pause 2000/speak Marnie \"{{i18n:RothagHuptiq.Rat.AdoptionDialogue1}}\"/faceDirection Marnie 3/pause 400/showFrame PetActor 18/playPetSound RothagHuptiq.RatSound1/pause 1200/faceDirection Marnie 0/speak Marnie \"{{i18n:RothagHuptiq.Rat.AdoptionDialogue2}}\"/showFrame PetActor 19/pause 500/showFrame PetActor 18/playPetSound RothagHuptiq.RatSound2/shake PetActor 150/pause 1500/speak Marnie \"{{i18n:RothagHuptiq.Rat.AdoptionDialogue3}}\"/catQuestion/pause 1000/faceDirection Marnie 3/speak Marnie \"{{i18n:RothagHuptiq.Rat.AdoptionDialogue4}}\"/pause 500/showFrame PetActor 19/shake PetActor 100/playPetSound RothagHuptiq.RatSound4/pause 800/animate PetActor false false 120 20 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23/pause 200/globalFade/viewport -1000 -1000/end"
+            }
+        }
+    ]
+ }
