@@ -1,0 +1,1852 @@
+{
+    "Format": "2.5.0",
+	"Changes": [
+	
+	{
+		"LogName": "Load assets",
+			"Action": "Load",
+			"Target": "{{ModId}}/assets/trice1, {{ModId}}/assets/trice2, {{ModId}}/assets/trice3, {{ModId}}/assets/trice4, {{ModId}}/assets/trice5, {{ModId}}/assets/triceshop, {{ModId}}/assets/smilodon1, {{ModId}}/assets/smilodon2, {{ModId}}/assets/smilodon3, {{ModId}}/assets/smilodon4, {{ModId}}/assets/smilodonshop, {{ModId}}/assets/runner1, {{ModId}}/assets/runner2, {{ModId}}/assets/runner3, {{ModId}}/assets/runner4, {{ModId}}/assets/runnershop, {{ModId}}/assets/raptor1, {{ModId}}/assets/raptor2, {{ModId}}/assets/raptor3, {{ModId}}/assets/raptor4, {{ModId}}/assets/raptor5, {{ModId}}/assets/raptorshop, {{ModId}}/assets/mammothbrown, {{ModId}}/assets/mammothbrownshorn, {{ModId}}/assets/mammothblack, {{ModId}}/assets/mammothblackshorn, {{ModId}}/assets/mammothwhite, {{ModId}}/assets/mammothwhiteshorn, {{ModId}}/assets/mammothshop, {{ModId}}/assets/DinoCave, {{ModId}}/assets/DinoCave_PaintMask, {{ModId}}/assets/mine_dino_expand, {{ModId}}/assets/livestockdinositems",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Load map",
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}_DinoBarnInterior",
+			"FromFile": "assets/DinoBarnInterior.tmx"
+		},
+		{
+            "LogName": "Animal Data",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_triceratops": {
+                    "DisplayName": "{{i18n: trice.DisplayName}}",
+                    "House": "{{ModId}}_DinoCave",
+                    "Gender": 2,
+                    "PurchasePrice": 1300,
+					"SellPrice": 600,
+                    "ShopTexture": "{{ModId}}/assets/triceshop",
+                    "Sound": "turtle_pet",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "RequiredBuilding": "{{ModId}}_DinoCave",
+					"UnlockCondition": null,
+                    "ShopDisplayName": "{{i18n: trice.ShopDisplayName}}",
+                    "ShopDescription": "{{i18n: trice.ShopDescription}}",
+                    "ShopMissingBuildingDescription": "{{i18n: trice.ShopMissingBuildingDescription}}",
+				    "AlternatePurchaseTypes": [
+					{
+					"Condition": null,
+					"AnimalIds": [
+					"{{ModId}}_triceratops",
+					]
+					}
+					],
+				    "BirthText": "{{i18n: trice.BirthText}}",
+					"IncubationTime": -1,
+                    "DaysToMature": 1,
+				    "DaysToProduce": 1,
+					"HarvestType": 2,
+					"HarvestTool": null,
+                    "ProduceItemIDs": [
+                        {
+                            "Id": "{{ModId}}_horn",
+                            "Condition": null,
+                            "MinimumFriendship": 200,
+                            "ItemID": "{{ModId}}_horn"
+                        },
+                        {
+                            "Id": "{{ModId}}_herbtooth",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemID": "{{ModId}}_herbtooth"
+                        }
+                    ],
+					"DeluxeProduceItemIds": [
+					  {
+						"Id": "{{ModId}}_dinoskin",
+						"Condition": "RANDOM 0.5 @addDailyLuck",
+						"MinimumFriendship": 400,
+						"ItemId": "{{ModId}}_dinoskin"
+					  },
+					  {
+						"Id": "{{ModID}}_barriersphere",
+						"Condition": "RANDOM 0.3 @addDailyLuck",
+						"MinimumFriendship": 600,
+						"ItemId": "{{ModID}}_barriersphere"
+					  },
+					  {
+						"Id": "{{ModId}}_dinoegginert",
+						"Condition": "RANDOM 0.2 @addDailyLuck",
+						"MinimumFriendship": 800,
+						"ItemId": "{{ModId}}_dinoegginert"
+					  }
+					],
+                    "HappinessDrain": 1,
+                    "GrassEatAmount": 4,
+                    "ShowSummitCredits": false,
+                    "CanGetPregnant": false,
+                    "BabiesFollowAdults": true,
+                    "Texture": "{{ModId}}/assets/trice1",
+					"SleepFrame": "12",
+					"Skins": [
+					{
+                        "id": "trice1",
+                        "Texture": "{{ModId}}/assets/trice1",
+						"HarvestedTexture": "{{ModId}}/assets/trice1",
+						"BabyTexture": "{{ModId}}/assets/trice1",
+                        "Weight": 1
+                    },
+                    {
+                        "id": "trice2",
+                        "Texture": "{{ModId}}/assets/trice2",
+						"HarvestedTexture": "{{ModId}}/assets/trice2",
+						"BabyTexture": "{{ModId}}/assets/trice2",
+                        "Weight": 0.2
+                    },
+					                    {
+                        "id": "trice3",
+                        "Texture": "{{ModId}}/assets/trice3",
+						"HarvestedTexture": "{{ModId}}/assets/trice3",
+						"BabyTexture": "{{ModId}}/assets/trice3",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "trice4",
+                        "Texture": "{{ModId}}/assets/trice4",
+						"HarvestedTexture": "{{ModId}}/assets/trice4",
+						"BabyTexture": "{{ModId}}/assets/trice4",
+                        "Weight": 0.25
+                    },
+					                    {
+                        "id": "trice5",
+                        "Texture": "{{ModId}}/assets/trice5",
+						"HarvestedTexture": "{{ModId}}/assets/trice5",
+						"BabyTexture": "{{ModId}}/assets/trice5",
+                        "Weight": 0.2
+                    }
+                ],
+                    "BabyTexture": "{{ModId}}/assets/trice1",
+					"HarvestedTexture": null,
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -4 },
+							"Scale": 3.0
+					},
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -10 },
+							"Scale": 5.0
+					},
+					"CanSwim": false,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"CustomFields": {
+					"meatIndex": "{{ModId}}_dinomeat"
+				},
+                },
+                "{{ModId}}_raptor": {
+                    "DisplayName": "{{i18n: raptor.DisplayName}}",
+                    "House": "{{ModId}}_DinoCave",
+                    "Gender": 2,
+                    "PurchasePrice": 1500,
+					"SellPrice": 800,
+                    "ShopTexture": "{{ModId}}/assets/raptorshop",
+                    "Sound": "magma_sprite_spot",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "RequiredBuilding": "{{ModId}}_DinoCave",
+					"UnlockCondition": null,
+                    "ShopDisplayName": "{{i18n: raptor.ShopDisplayName}}",
+                    "ShopDescription": "{{i18n: raptor.ShopDescription}}",
+                    "ShopMissingBuildingDescription": "{{i18n: raptor.ShopMissingBuildingDescription}}",
+				    "AlternatePurchaseTypes": [
+					{
+					"Condition": null,
+					"AnimalIds": [
+					"{{ModId}}_raptor",
+					]
+					}
+					],
+				    "BirthText": "{{i18n: raptor.BirthText}}",
+					"IncubationTime": -1,
+                    "DaysToMature": 0,
+				    "DaysToProduce": 1,
+					"HarvestType": 2,
+					"HarvestTool": null,
+                    "ProduceItemIDs": [
+                        {
+                            "Id": "{{ModId}}_talon",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemID": "{{ModId}}_talon"
+                        }
+                    ],
+					"DeluxeProduceItemIds": [
+					  {
+						"Id": "{{ModId}}_dinoskin",
+						"Condition": "RANDOM 0.33 @addDailyLuck",
+						"MinimumFriendship": 200,
+						"ItemId": "{{ModId}}_dinoskin"
+					  },
+					  {
+						"Id": "{{ModId}}_featherprehistoric",
+						"Condition": "RANDOM 0.33 @addDailyLuck",
+						"MinimumFriendship": 200,
+						"ItemId": "{{ModId}}_featherprehistoric"
+					  },
+					  {
+						"Id": "{{ModId}}_dinoegginert",
+						"Condition": "RANDOM 0.2 @addDailyLuck",
+						"MinimumFriendship": 800,
+						"ItemId": "{{ModId}}_dinoegginert"
+					  }
+					],
+                    "HappinessDrain": 1,
+                    "GrassEatAmount": 2,
+                    "ShowSummitCredits": false,
+                    "CanGetPregnant": false,
+                    "BabiesFollowAdults": true,
+                    "Texture": "{{ModId}}/assets/raptor1",
+					"SleepFrame": "12",
+					"Skins": [
+					{
+                        "id": "raptor1",
+                        "Texture": "{{ModId}}/assets/raptor1",
+						"HarvestedTexture": "{{ModId}}/assets/raptor1",
+						"BabyTexture": "{{ModId}}/assets/raptor1",
+                        "Weight": 1
+                    },
+                    {
+                        "id": "raptor2",
+                        "Texture": "{{ModId}}/assets/raptor2",
+						"HarvestedTexture": "{{ModId}}/assets/raptor2",
+						"BabyTexture": "{{ModId}}/assets/raptor2",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "raptor3",
+                        "Texture": "{{ModId}}/assets/raptor3",
+						"HarvestedTexture": "{{ModId}}/assets/raptor3",
+						"BabyTexture": "{{ModId}}/assets/raptor3",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "raptor4",
+                        "Texture": "{{ModId}}/assets/raptor4",
+						"HarvestedTexture": "{{ModId}}/assets/raptor4",
+						"BabyTexture": "{{ModId}}/assets/raptor4",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "raptor5",
+                        "Texture": "{{ModId}}/assets/raptor5",
+						"HarvestedTexture": "{{ModId}}/assets/raptor5",
+						"BabyTexture": "{{ModId}}/assets/raptor5",
+                        "Weight": 0.25
+                    }
+                ],
+                    "BabyTexture": "{{ModId}}/assets/raptor1",
+					"HarvestedTexture": null,
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 48,
+					"SpriteHeight": 32,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -4 },
+							"Scale": 3.0
+					},
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -10 },
+							"Scale": 5.0
+					},
+					"CanSwim": false,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"CustomFields": {
+					"meatIndex": "{{ModId}}_dinomeat"
+				},
+                },
+                "{{ModId}}_runner": {
+                    "DisplayName": "{{i18n: runner.DisplayName}}",
+                    "House": "{{ModId}}_DinoCave",
+                    "Gender": 2,
+                    "PurchasePrice": 3000,
+					"SellPrice": 800,
+                    "ShopTexture": "{{ModId}}/assets/runnershop",
+                    "Sound": "batScreech",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "RequiredBuilding": "{{ModId}}_DinoCave",
+					"UnlockCondition": null,
+                    "ShopDisplayName": "{{i18n: runner.ShopDisplayName}}",
+                    "ShopDescription": "{{i18n: runner.ShopDescription}}",
+                    "ShopMissingBuildingDescription": "{{i18n: runner.ShopMissingBuildingDescription}}",
+				    "AlternatePurchaseTypes": [
+					{
+					"Condition": null,
+					"AnimalIds": [
+					"{{ModId}}_runner",
+					]
+					}
+					],
+				    "BirthText": "{{i18n: runner.BirthText}}",
+					"IncubationTime": -1,
+                    "DaysToMature": 0,
+				    "DaysToProduce": 1,
+					"HarvestType": 2,
+					"HarvestTool": null,
+                    "ProduceItemIDs": [
+                        {
+                            "Id": "{{ModId}}_horn",
+                            "Condition": null,
+                            "MinimumFriendship": 300,
+                            "ItemID": "{{ModId}}_horn"
+                        },
+                        {
+                            "Id": "{{ModId}}_herbtooth",
+                            "Condition": null,
+                            "MinimumFriendship": 100,
+                            "ItemID": "{{ModId}}_herbtooth"
+                        }
+                    ],
+					"DeluxeProduceItemIds": [
+					  {
+						"Id": "{{ModId}}_dinoskin",
+						"Condition": "RANDOM 0.5 @addDailyLuck",
+						"MinimumFriendship": 400,
+						"ItemId": "{{ModId}}_dinoskin"
+					  },
+					  {
+						"Id": "{{ModID}}_shieldsphere",
+						"Condition": "RANDOM 0.3 @addDailyLuck",
+						"MinimumFriendship": 600,
+						"ItemId": "{{ModID}}_shieldsphere"
+					  },
+					  {
+						"Id": "773",
+						"Condition": "RANDOM 0.3 @addDailyLuck",
+						"MinimumFriendship": 600,
+						"ItemId": "773"
+					  }
+					],
+                    "HappinessDrain": 1,
+                    "GrassEatAmount": 2,
+                    "ShowSummitCredits": false,
+                    "CanGetPregnant": false,
+                    "BabiesFollowAdults": true,
+                    "Texture": "{{ModId}}/assets/runner1",
+					"SleepFrame": "12",
+					"Skins": [
+					{
+                        "id": "runner1",
+                        "Texture": "{{ModId}}/assets/runner1",
+						"HarvestedTexture": "{{ModId}}/assets/runner1",
+						"BabyTexture": "{{ModId}}/assets/runner1",
+                        "Weight": 1
+                    },
+                    {
+                        "id": "runner2",
+                        "Texture": "{{ModId}}/assets/runner2",
+						"HarvestedTexture": "{{ModId}}/assets/runner2",
+						"BabyTexture": "{{ModId}}/assets/runner2",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "runner3",
+                        "Texture": "{{ModId}}/assets/runner3",
+						"HarvestedTexture": "{{ModId}}/assets/runner3",
+						"BabyTexture": "{{ModId}}/assets/runner3",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "runner4",
+                        "Texture": "{{ModId}}/assets/runner4",
+						"HarvestedTexture": "{{ModId}}/assets/runner4",
+						"BabyTexture": "{{ModId}}/assets/runner4",
+                        "Weight": 1
+                    }
+                ],
+                    "BabyTexture": "{{ModId}}/assets/runner1",
+					"HarvestedTexture": null,
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 32,
+					"SpriteHeight": 48,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -4 },
+							"Scale": 3.0
+					},
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -10 },
+							"Scale": 5.0
+					},
+					"CanSwim": false,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"CustomFields": {
+					"meatIndex": "{{ModId}}_dinomeat"
+				},
+                },
+				"{{ModId}}_smilodon": {
+                    "DisplayName": "{{i18n: smilodon.DisplayName}}",
+                    "House": "{{ModId}}_DinoCave",
+                    "Gender": 2,
+                    "PurchasePrice": 3000,
+					"SellPrice": 1000,
+                    "ShopTexture": "{{ModId}}/assets/smilodonshop",
+                    "Sound": "terraria_boneSerpent",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "RequiredBuilding": "{{ModId}}_DinoCave",
+					"UnlockCondition": null,
+                    "ShopDisplayName": "{{i18n: smilodon.ShopDisplayName}}",
+                    "ShopDescription": "{{i18n: smilodon.ShopDescription}}",
+                    "ShopMissingBuildingDescription": "{{i18n: smilodon.ShopMissingBuildingDescription}}",
+				    "AlternatePurchaseTypes": [
+					{
+					"Condition": null,
+					"AnimalIds": [
+					"{{ModId}}_smilodon",
+					]
+					}
+					],
+				    "BirthText": "{{i18n: smilodon.BirthText}}",
+					"IncubationTime": -1,
+                    "DaysToMature": 1,
+				    "DaysToProduce": 3,
+                    "ProduceItemIDs": [
+                        {
+                            "Id": "{{ModId}}_smilodonfur",
+                            "Condition": null,
+                            "MinimumFriendship": 50,
+                            "ItemID": "{{ModId}}_smilodonfur"
+                        },
+                    ],
+					"DeluxeProduceItemIds": [
+					    {
+                            "Id": "{{ModId}}_fang",
+                            "Condition": null,
+                            "MinimumFriendship": 350,
+                            "ItemID": "{{ModId}}_fang"
+                        }
+					],
+                    "HappinessDrain": 1,
+                    "GrassEatAmount": 2,
+                    "ShowSummitCredits": false,
+                    "CanGetPregnant": false,
+                    "BabiesFollowAdults": true,
+                    "Texture": "{{ModId}}/assets/smilodon1",
+					"SleepFrame": "12",
+					"Skins": [
+					{
+                        "id": "smilodon1",
+                        "Texture": "{{ModId}}/assets/smilodon1",
+						"HarvestedTexture": "{{ModId}}/assets/smilodon1",
+						"BabyTexture": "{{ModId}}/assets/smilodon1",
+                        "Weight": 1
+                    },
+                    {
+                        "id": "smilodon2",
+                        "Texture": "{{ModId}}/assets/smilodon2",
+						"HarvestedTexture": "{{ModId}}/assets/smilodon2",
+						"BabyTexture": "{{ModId}}/assets/smilodon2",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "smilodon3",
+                        "Texture": "{{ModId}}/assets/smilodon3",
+						"HarvestedTexture": "{{ModId}}/assets/smilodon3",
+						"BabyTexture": "{{ModId}}/assets/smilodon3",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "smilodon4",
+                        "Texture": "{{ModId}}/assets/smilodon4",
+						"HarvestedTexture": "{{ModId}}/assets/smilodon4",
+						"BabyTexture": "{{ModId}}/assets/smilodon4",
+                        "Weight": 0.25
+                    }
+                ],
+                    "BabyTexture": "{{ModId}}/assets/smilodon1",
+					"HarvestedTexture": "{{ModId}}/assets/smilodon1",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -4 },
+							"Scale": 3.0
+					},
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -10 },
+							"Scale": 5.0
+					},
+					"CanSwim": false,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"CustomFields": {
+					"meatIndex": "{{ModId}}_beastmeat"
+				},
+                },
+                "{{ModId}}_mammothbrown": {
+                    "DisplayName": "{{i18n: mammothbrown.DisplayName}}",
+                    "House": "{{ModId}}_DinoCave",
+                    "Gender": "Female",
+                    "PurchasePrice": 2000,
+					"SellPrice": 800,
+                    "ShopTexture": "{{ModId}}/assets/mammothshop",
+                    "Sound": "grunt",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "RequiredBuilding": "{{ModId}}_DinoCave",
+					"UnlockCondition": null,
+                    "ShopDisplayName": "{{i18n: mammothbrown.ShopDisplayName}}",
+                    "ShopDescription": "{{i18n: mammothbrown.ShopDescription}}",
+                    "ShopMissingBuildingDescription": "{{i18n: mammothbrown.ShopMissingBuildingDescription}}",
+				    "AlternatePurchaseTypes": [
+					{
+					"Condition": null,
+					"AnimalIds": [
+					"{{ModId}}_mammothbrown",
+					"{{ModId}}_mammothblack",
+					"{{ModId}}_mammothwhite",
+					]
+					}
+					],
+				    "BirthText": "{{i18n: mammothbrown.BirthText}}",
+					"IncubationTime": -1,
+                    "DaysToMature": 5,
+				    "DaysToProduce": 1,
+					"HarvestType": 1,
+					"HarvestTool": "Shears",
+                    "ProduceItemIDs": [
+                        {
+                        "Id": "{{ModId}}_mammothwool",
+                        "Condition": "DAY_OF_MONTH even",
+                        "MinimumFriendship": 0,
+                        "ItemID": "{{ModId}}_mammothwool"
+                        },
+						{
+                        "Id": "{{ModId}}_mammothmilk",
+						"Condition": "DAY_OF_MONTH odd",
+						"MinimumFriendship": 400,
+                        "ItemID": "{{ModId}}_mammothmilk"
+                        }
+                    ],
+					"DeluxeProduceItemIds": [
+						{
+                        "Id": "{{ModId}}_tusk",
+						"Condition": "RANDOM 0.33 @addDailyLuck",
+						"MinimumFriendship": 600,
+                        "ItemID": "{{ModId}}_tusk"
+                        }
+					],
+                    "HappinessDrain": 1,
+                    "GrassEatAmount": 4,
+                    "ShowSummitCredits": false,
+                    "CanGetPregnant": false,
+                    "BabiesFollowAdults": true,
+                    "Texture": "{{ModId}}/assets/mammothbrownshorn",
+                    "BabyTexture": "{{ModId}}/assets/mammothbrownshorn",
+					"HarvestedTexture": "{{ModId}}/assets/mammothbrownshorn",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 48,
+					"SpriteHeight": 32,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -4 },
+							"Scale": 3.0
+					},
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -10 },
+							"Scale": 5.0
+					},
+					"CanSwim": false,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"CustomFields": {
+						"meatIndex": "{{ModId}}_mammothmeat"
+					}
+                },
+                "{{ModId}}_mammothblack": {
+                    "DisplayName": "{{i18n: mammothblack.DisplayName}}",
+                    "House": "{{ModId}}_DinoCave",
+                    "Gender": "Female",
+                    "PurchasePrice": -1,
+					"SellPrice": 800,
+                    "ShopTexture": null,
+                    "Sound": "grunt",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+					"ShopDisplayName": null,
+					"ShopDescription": null,
+					"ShopMissingBuildingDescription": null,
+					"RequiredBuilding": null,
+					"UnlockCondition": null,
+					"AlternatePurchaseTypes": null,
+					"IncubationTime": -1,
+                    "DaysToMature": 5,
+				    "DaysToProduce": 1,
+					"HarvestType": 1,
+					"HarvestTool": "Shears",
+                    "ProduceItemIDs": [
+                        {
+                        "Id": "{{ModId}}_mammothwool",
+                        "Condition": "DAY_OF_MONTH even",
+                        "MinimumFriendship": 0,
+                        "ItemID": "{{ModId}}_mammothwool"
+                        },
+						{
+                        "Id": "{{ModId}}_mammothmilk",
+						"Condition": "DAY_OF_MONTH odd",
+						"MinimumFriendship": 400,
+                        "ItemID": "{{ModId}}_mammothmilk"
+                        }
+                    ],
+					"DeluxeProduceItemIds": [
+						{
+                        "Id": "{{ModId}}_tusk",
+						"Condition": "RANDOM 0.33 @addDailyLuck",
+						"MinimumFriendship": 600,
+                        "ItemID": "{{ModId}}_tusk"
+                        }
+					],
+                    "HappinessDrain": 1,
+                    "GrassEatAmount": 4,
+                    "ShowSummitCredits": false,
+                    "CanGetPregnant": false,
+                    "BabiesFollowAdults": true,
+                    "Texture": "{{ModId}}/assets/mammothblackshorn",
+                    "BabyTexture": "{{ModId}}/assets/mammothblackshorn",
+					"HarvestedTexture": "{{ModId}}/assets/mammothblackshorn",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 48,
+					"SpriteHeight": 32,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -4 },
+							"Scale": 3.0
+					},
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -10 },
+							"Scale": 5.0
+					},
+					"CanSwim": false,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"CustomFields": {
+						"meatIndex": "{{ModId}}_mammothmeat"
+					}
+                },
+                "{{ModId}}_mammothwhite": {
+                    "DisplayName": "{{i18n: mammothwhite.DisplayName}}",
+                    "House": "{{ModId}}_DinoCave",
+                    "Gender": "Female",
+                    "PurchasePrice": -1,
+					"SellPrice": 800,
+                    "ShopTexture": null,
+                    "Sound": "grunt",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+					"ShopDisplayName": null,
+					"ShopDescription": null,
+					"ShopMissingBuildingDescription": null,
+					"RequiredBuilding": null,
+					"UnlockCondition": null,
+					"AlternatePurchaseTypes": null,
+					"IncubationTime": -1,
+                    "DaysToMature": 5,
+				    "DaysToProduce": 1,
+					"HarvestType": 1,
+					"HarvestTool": "Shears",
+                    "ProduceItemIDs": [
+                        {
+                        "Id": "{{ModId}}_mammothwool",
+                        "Condition": "DAY_OF_MONTH even",
+                        "MinimumFriendship": 0,
+                        "ItemID": "{{ModId}}_mammothwool"
+                        },
+						{
+                        "Id": "{{ModId}}_mammothmilk",
+						"Condition": "DAY_OF_MONTH odd",
+						"MinimumFriendship": 400,
+                        "ItemID": "{{ModId}}_mammothmilk"
+                        }
+                    ],
+					"DeluxeProduceItemIds": [
+						{
+                        "Id": "{{ModId}}_tusk",
+						"Condition": "RANDOM 0.33 @addDailyLuck",
+						"MinimumFriendship": 600,
+                        "ItemID": "{{ModId}}_tusk"
+                        }
+					],
+                    "HappinessDrain": 1,
+                    "GrassEatAmount": 4,
+                    "ShowSummitCredits": false,
+                    "CanGetPregnant": false,
+                    "BabiesFollowAdults": true,
+                    "Texture": "{{ModId}}/assets/mammothwhiteshorn",
+                    "BabyTexture": "{{ModId}}/assets/mammothwhiteshorn",
+					"HarvestedTexture": "{{ModId}}/assets/mammothwhiteshorn",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 48,
+					"SpriteHeight": 32,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -4 },
+							"Scale": 3.0
+					},
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -10 },
+							"Scale": 5.0
+					},
+					"CanSwim": false,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"CustomFields": {
+						"meatIndex": "{{ModId}}_mammothmeat"
+					}
+                },
+            }
+        },
+				{
+		"Action": "EditData",
+		"Target": "Data/Buildings",
+		"Entries": {
+        "{{ModId}}_DinoCave": {
+          "Name": "{{i18n: dinocave.Name}}",
+          "Description": "{{i18n: dinocave.Description}}",
+          "Texture": "{{ModId}}/assets/DinoCave",
+          "Skins": [],
+          "DrawShadow": true,
+		"UpgradeSignTile": "4.5, 2",
+		"UpgradeSignHeight": 31.0,
+          "Size": {
+            "X": 7,
+            "Y": 4
+          },
+          "FadeWhenBehind": true,
+          "SourceRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 112,
+            "Height": 112
+          },
+          "SeasonOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "DrawOffset": "0, 0",
+          "SortTileOffset": 0.0,
+          "CollisionMap": null,
+          "AdditionalPlacementTiles": null,
+          "BuildingType": null,
+          "Builder": "Robin",
+          "BuildCondition": null,
+          "BuildDays": 2,
+          "BuildCost": 10000,
+          "BuildMaterials": [
+            {
+              "ItemId": "(O)335",
+              "Amount": 10
+            },
+            {
+              "ItemId": "(O)390",
+              "Amount": 200
+            }
+
+          ],
+          "BuildingToUpgrade": null,
+          "MagicalConstruction": false,
+          "BuildMenuDrawOffset": {
+            "X": 0,
+            "Y": 0
+
+          },
+          "HumanDoor": {
+            "X": 1,
+            "Y": 3
+          },
+
+          "AnimalDoor": {
+            "X": 3,
+            "Y": 3,
+            "Width": 3,
+            "Height": 1
+          },
+    "AnimalDoorOpenDuration": 1.8,
+    "AnimalDoorOpenSound": "ticket_machine_whir",
+    "AnimalDoorCloseDuration": 1.8,
+          "AnimalDoorCloseSound": "ticket_machine_whir",
+          "NonInstancedIndoorLocation": null,
+          "IndoorMap": "{{ModId}}_DinoBarnInterior",
+          "IndoorMapType": "StardewValley.AnimalHouse",
+
+          "MaxOccupants": 10,
+          "ValidOccupantTypes": [
+            "{{ModId}}_DinoCave"
+          ],
+          "IndoorItemMoves": null,
+          "IndoorItems": [
+      {
+        "Id": "Default_FeedHopper",
+        "ItemId": "(BC)99",
+        "Tile": {
+          "X": 3,
+          "Y": 4
+        },
+        "Indestructible": true
+      }
+          ],
+          "AddMailOnBuild": null,
+          "Metadata": {},
+          "ModData": {},
+          "HayCapacity": 0,
+          "Chests": null,
+          "DefaultAction": null,
+          "AdditionalTilePropertyRadius": 0,
+          "ActionTiles": [],
+          "TileProperties": [],
+          "ItemConversions": null,
+          "DrawLayers": [
+            {
+              "Id": "Default_AnimalDoor_Bottom",
+              "Texture": null,
+              "SourceRect": {
+                "X": 48,
+                "Y": 112,
+                "Width": 48,
+                "Height": 48
+              },
+              "DrawPosition": "48, 64",
+              "DrawInBackground": false,
+              "SortTileOffset": 0.02,
+              "OnlyDrawIfChestHasContents": null,
+              "FrameDuration": 90,
+              "FrameCount": 1,
+              "FramesPerRow": -1,
+              "AnimalDoorOffset": {
+                "X": 0,
+                "Y": 0
+              }
+            },
+            {
+              "Id": "Default_AnimalDoor_Top",
+              "Texture": null,
+              "SourceRect": {
+                "X": 0,
+                "Y": 112,
+                "Width": 48,
+                "Height": 48
+              },
+         "DrawPosition": "49, 65",
+              "DrawInBackground": false,
+              "SortTileOffset": 0.02,
+              "OnlyDrawIfChestHasContents": null,
+              "FrameDuration": 90,
+              "FrameCount": 1,
+              "FramesPerRow": -1,
+              "AnimalDoorOffset": {
+                "X": 0,
+                "Y": -34
+              }
+            },
+            {
+              "Id": "Default_AnimalDoor_Open_Top",
+              "Texture": null,
+              "SourceRect": {
+                "X": 48,
+                "Y": 112,
+                "Width": 0,
+                "Height": 0
+              },
+                "DrawPosition": "49, 34",
+              "DrawInBackground": false,
+              "SortTileOffset": 1.0,
+              "OnlyDrawIfChestHasContents": null,
+              "FrameDuration": 90,
+              "FrameCount": 1,
+              "FramesPerRow": -1,
+              "AnimalDoorOffset": {
+                "X": 0,
+                "Y": 0
+              }
+            },
+            {
+              "Id": "Default_AnimalDoor_Open_Bottom",
+              "Texture": null,
+              "SourceRect": {
+                "X": 48,
+                "Y": 112,
+                "Width": 48,
+                "Height": 48
+              },
+              "DrawPosition": "48, 64",
+              "DrawInBackground": false,
+              "SortTileOffset": 1.0,
+              "OnlyDrawIfChestHasContents": null,
+              "FrameDuration": 90,
+              "FrameCount": 1,
+              "FramesPerRow": -1,
+              "AnimalDoorOffset": {
+                "X": 0,
+                "Y": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        }
+			}
+		},
+	        {
+				
+            "Action": "EditData",
+            "Target": "Data/PaintData",
+            "Entries": {
+			"{{ModId}}_DinoCave": "Building/-15 0/Roof/-10 5/Trim/-10 5"
+            }
+        },
+				{
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/kibble.png",
+         "ToArea": { "X": 160, "Y": 112, "Width": 16, "Height": 16 },
+         "When": { "LocationName": "{{ModId}}_DinoCave" }, 
+        "Update": "OnLocationChange"
+        },
+		{
+         "Action": "EditImage",
+         "Target": "TileSheets/Craftables",
+         "FromFile": "assets/kibblecart.png",
+         "ToArea": { "X": 48, "Y": 384, "Width": 32, "Height": 32 },
+         "When": { "LocationName": "{{ModId}}_DinoCave" }, 
+        "Update": "OnLocationChange"
+        },
+		{
+            "LogName": "Item Data",      
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+					"{{ModId}}_tusk": {
+					"Type": "Basic",
+					"Category": -18,
+					"Price": 500,
+                    "Description": "{{i18n: tusk.Description}}",
+                    "Displayname": "{{i18n: tusk.Displayname}}",
+                    "Name": "{{i18n: tusk.Name}}",
+                    "Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 4,
+					"Edibility": -300,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "bone_item",
+					  "color_white",
+					  "prehistoric_item"
+					],
+					"CustomFields": null
+				},
+				    "{{ModId}}_fang": {
+					"Type": "Basic",
+					"Category": -18,
+					"Price": 300,
+                    "Description": "{{i18n: fang.Description}}",
+                    "Displayname": "{{i18n: fang.Displayname}}",
+                    "Name": "{{i18n: fang.Name}}",
+                    "Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 10,
+					"Edibility": -300,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "bone_item",
+					  "color_white",
+					  "prehistoric_item"
+					],
+					"CustomFields": null
+				},
+				    "{{ModId}}_horn": {
+					"Type": "Basic",
+					"Category": -18,
+					"Price": 100,
+                    "Description": "{{i18n: horn.Description}}",
+                    "Displayname": "{{i18n: horn.Displayname}}",
+                    "Name": "{{i18n: horn.Name}}",
+                    "Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 9,
+					"Edibility": -300,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "bone_item",
+					  "color_white",
+					  "prehistoric_item"
+					],
+					"CustomFields": null
+				},
+				    "{{ModId}}_talon": {
+					"Type": "Basic",
+					"Category": -18,
+					"Price": 100,
+                    "Description": "{{i18n: talon.Description}}",
+                    "Displayname": "{{i18n: talon.Displayname}}",
+                    "Name": "{{i18n: talon.Name}}",
+                    "Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 8,
+					"Edibility": -300,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "bone_item",
+					  "color_white",
+					  "prehistoric_item"
+					],
+					"CustomFields": null
+				},
+					"{{ModId}}_featherprehistoric": {
+					"Type": "Basic",
+					"Category": -18,
+					"Price": 200,
+                    "Description": "{{i18n: featherprehistoric.Description}}",
+                    "Displayname": "{{i18n: featherprehistoric.Displayname}}",
+                    "Name": "{{i18n: featherprehistoric.Name}}",
+                    "Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 12,
+					"Edibility": -300,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "color_blue",
+					  "prehistoric_item"
+					],
+					"CustomFields": null
+				   },
+					"{{ModId}}_petalprehistoric": {
+					"Type": "Basic",
+					"Category": -80,
+					"Price": 200,
+                    "Description": "{{i18n: petal.Description}}",
+                    "Displayname": "{{i18n: petal.Displayname}}",
+                    "Name": "{{i18n: petal.Name}}",
+                    "Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 11,
+					"Edibility": -300,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "color_pink",
+					  "flower_item",
+					  "prehistoric_item"
+					],
+					"CustomFields": null
+				   },
+					"{{ModId}}_mammothwool": {
+					"Type": "Basic",
+					"Category": -18,
+					"Price": 400,
+                    "Description": "{{i18n: mammothwool.Description}}",
+                    "Displayname": "{{i18n: mammothwool.Displayname}}",
+                    "Name": "{{i18n: mammothwool.Name}}",
+                    "Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 3,
+					"Edibility": -300,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "color_brown",
+					  "prehistoric_item"
+					],
+					"CustomFields": null
+				},
+					"{{ModId}}_dinoskin": {
+					"Type": "Basic",
+					"Category": -18,
+					"Price": 150,
+                    "Description": "{{i18n: dinoskin.Description}}",
+                    "Displayname": "{{i18n: dinoskin.Displayname}}",
+                    "Name": "{{i18n: dinoskin.Name}}",
+                    "Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 5,
+					"Edibility": -300,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "prehistoric_item",
+					  "dinosaur_item"
+					],
+					"CustomFields": null
+				},
+					"{{ModId}}_dinoegginert": {
+					"Type": "Basic",
+					"Category": -5,
+					"Price": 175,
+                    "Description": "{{i18n: dinoegginert.Description}}",
+                    "Displayname": "{{i18n: dinoegginert.Displayname}}",
+                    "Name": "{{i18n: dinoegginert.Name}}",
+                    "Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 13,
+					"Edibility": 25,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+						"prehistoric_item",
+					    "color_orange",
+						"dinosaur_item",
+						"dye_strong",
+						"egg_item",
+						"large_egg_item"
+					],
+					"CustomFields": null
+				},
+					"{{ModId}}_herbtooth": {
+					"Type": "Basic",
+					"Category": -18,
+					"Price": 75,
+                    "Description": "{{i18n: herbtooth.Description}}",
+                    "Displayname": "{{i18n: herbtooth.Displayname}}",
+                    "Name": "{{i18n: herbtooth.Name}}",
+                    "Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 7,
+					"Edibility": -300,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "bone_item",
+					  "color_black",
+					  "prehistoric_item"
+					],
+					"CustomFields": null
+				},
+					"{{ModId}}_smilodonfur": {
+					"Type": "Basic",
+					"Category": -18,
+					"Price": 250,
+                    "Description": "{{i18n: smilodonfur.Description}}",
+                    "Displayname": "{{i18n: smilodonfur.Displayname}}",
+                    "Name": "{{i18n: smilodonfur.Name}}",
+                    "Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 14,
+					"Edibility": -300,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "color_orange",
+					  "prehistoric_item"
+					],
+					"CustomFields": null
+					},
+					"{{ModId}}_pycnofibers": {
+					"Type": "Basic",
+					"Category": -18,
+					"Price": 200,
+                    "Description": "{{i18n: pycnofibers.Description}}",
+                    "Displayname": "{{i18n: pycnofibers.Displayname}}",
+                    "Name": "{{i18n: pycnofibers.Name}}",
+                    "Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 18,
+					"Edibility": -300,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "color_gray",
+					  "prehistoric_item"
+					],
+					"CustomFields": null
+					},
+					"{{ModId}}_shieldsphere": {
+					"Name": "{{i18n: shieldsphere.Name}}",
+					"DisplayName": "{{i18n: shieldsphere.DisplayName}}",
+					"Description": "{{i18n: shieldsphere.Description}}",
+					"Type": "Basic",
+					"Category": -18,
+					"Price": 2500,
+					"Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 19,
+					"Edibility": 0,
+					"IsDrink": false,
+					"Buffs": [
+					  {
+						"Id": "{{ModID}}_shieldspherebuff",
+						"BuffId": "{{ModID}}_shieldspherebuff",
+						"IconTexture": "{{ModId}}/assets/livestockdinositems",
+						"IconSpriteIndex": 21,
+						"Effects": {
+						"Defense": 4.0,
+									},
+						"Duration": 500,
+						"IsDebuff": false,
+						"GlowColor": null,
+						"CustomAttributes": null,
+						"CustomFields": null
+					  }
+					],
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+					  "color_gray"
+					],
+					"CustomFields": null
+				  },
+					"{{ModId}}_barriersphere": {
+					"Name": "{{i18n: barriersphere.Name}}",
+					"DisplayName": "{{i18n: barriersphere.Displayname}}",
+					"Description": "{{i18n: barriersphere.Description}}",
+					"Type": "Basic",
+					"Category": -18,
+					"Price": 2500,
+					"Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 20,
+					"Edibility": 0,
+					"IsDrink": false,
+					"Buffs": [
+					  {
+						"Id": "{{ModID}}_barrierspherebuff",
+						"BuffId": "{{ModID}}_barrierspherebuff",
+						"IconTexture": "{{ModId}}/assets/livestockdinositems",
+						"IconSpriteIndex": 22,
+						"Effects": {
+						"Immunity": 12.0,
+									},
+						"Duration": 500,
+						"IsDebuff": false,
+						"GlowColor": null,
+						"CustomAttributes": null,
+						"CustomFields": null
+					  }
+					],
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+					  "color_brown"
+					],
+					"CustomFields": null
+				  },
+					"{{ModId}}_tigerbikini": {
+					"Type": "Ring",
+					"Category": 0,
+					"Price": 1000,
+                    "Description": "{{i18n: tigerbikini.Description}}",
+                    "Displayname": "{{i18n: tigerbikini.Displayname}}",
+                    "Name": "{{i18n: tigerbikini.Name}}",
+                    "Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 15,
+					"Edibility": -300,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "color_yellow",
+					  "prehistoric_item",
+					  "ring_item"
+					],
+					"CustomFields": null
+					},
+					
+				}
+				},
+		{
+            "LogName": "Recipe Data",      
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+			"Tiger Bikini": "{{ModID}}_smilodonfur 5 428 5 768 5/Home/{{ModID}}_tigerbikini 1/Ring/Foraging 2/",
+			},
+			},
+			/*{
+			"LogName": "Shirt Data",      
+            "Action": "EditData",
+            "Target": "Data/Shirts",
+            "Entries": {
+					"{{ModId}}_tigertop": {
+					"Name": "{{i18n: tigertop.Name}}",
+					"DisplayName": "{{i18n: tigertop.DisplayName}}",   // shirt version, maybe not gonna use this also unfinished
+					"Description": "{{i18n: tigertop.Description}}r",
+					"Price": 50,
+					"Texture": null,
+					"SpriteIndex": 299,
+					"DefaultColor": "255 235 203",
+					"CanBeDyed": true,
+					"IsPrismatic": false,
+					"CanChooseDuringCharacterCustomization": false,
+					"CustomFields": null
+					},
+					},
+			},
+			*/
+		    {
+			"LogName": "Wearable Buffs",  
+            "Action": "EditData",
+			"When": {"HasMod|contains=spacechase0.SpaceCore" : "true"},
+            "Target": "spacechase0.SpaceCore/WearableData",
+            "Entries":
+            {
+                "(O){{ModId}}_tigerbikini": { "BuffIdToApply": "{{ModId}}_tigerbikinibuff" },
+            }
+        },
+        {
+			"LogName": " Buffs",
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries":
+            {
+                "{{ModId}}_tigerbikinibuff": {
+                    "DisplayName":"{{i18n: tigerbikinibuff.DisplayName}}",
+                    "IconTexture": "{{ModId}}/assets/livestockdinositems",
+                    "IconSpriteIndex": 23,
+                    "Effects": {
+					"LuckLevel": 1,
+					"Speed": 2,
+					"MagneticRadius": 128
+					}
+                },
+                "{{ModId}}_shieldspherebuff": {
+                    "DisplayName":"{{i18n: shieldspherebuff.DisplayName}}",
+					"IconTexture": "{{ModId}}/assets/livestockdinositems",
+					"IconSpriteIndex": 21,
+					"Effects": {
+					"Defense": 4.0,
+					},
+					"Duration": 500,
+					"IsDebuff": false,
+					"GlowColor": "Lime",
+					"CustomAttributes": null,
+					"CustomFields": null
+                },
+                "{{ModId}}_barrierspherebuff": {
+                    "DisplayName":"{{i18n: barrierspherebuff.DisplayName}}",
+					"IconTexture": "{{ModId}}/assets/livestockdinositems",
+					"IconSpriteIndex": 22,
+					"Effects": {
+					"Immunity": 12.0,
+					},
+					"Duration": 500,
+					"IsDebuff": false,
+					"GlowColor": "Gold",
+					"CustomAttributes": null,
+					"CustomFields": null
+                }
+            }
+        },
+		{
+            "LogName": "Animal Husbandry Items",      
+            "Action": "EditData",
+            "Target": "Data/Objects",
+			"When": {"HasMod|contains=DIGUS.ANIMALHUSBANDRYMOD" : "true"},
+            "Entries": {
+                "{{ModId}}_mammothmeat": {
+					"Type": "Basic",
+					"Category": -14,
+					"Price": 1000,
+                    "Description": " {{i18n: mammothmeat.Description}}",
+                    "Displayname": " {{i18n: mammothmeat.Displayname}}",
+                    "Name": " {{i18n: mammothmeat.Name}}",
+                    "Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 2,
+					"Edibility": 70,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "color_red",
+					  "prehistoric_item",
+					  "meat_item",
+					],
+				},
+				"{{ModId}}_dinomeat": {
+					"Type": "Basic",
+					"Category": -14,
+					"Price": 700,
+                    "Description": " {{i18n: dinomeat.Description}}",
+                    "Displayname": " {{i18n: dinomeat.Displayname}}",
+                    "Name": " {{i18n: dinomeat.Name}}",
+                    "Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 6,
+					"Edibility": 25,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "color_red",
+					  "prehistoric_item",
+					  "meat_item",
+					],
+				},
+				"{{ModId}}_beastmeat": {
+					"Type": "Basic",
+					"Category": -14,
+					"Price": 800,
+                    "Description": "{{i18n: beastmeat.Description}}",
+                    "Displayname": "{{i18n: beastmeat.Displayname}}",
+                    "Name": "{{i18n: beastmeat.Name}}",
+                    "Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 16,
+					"Edibility": 50,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "color_red",
+					  "prehistoric_item",
+					  "meat_item",
+					],
+				},
+				"{{ModId}}_pterosaurmeat": {
+					"Type": "Basic",
+					"Category": -14,
+					"Price": 500,
+                    "Description": "{{i18n: pterosaurmeat.Description}}",
+                    "Displayname": "{{i18n: pterosaurmeat.Displayname}}",
+                    "Name": "{{i18n: pterosaurmeat.Name}}",
+                    "Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 17,
+					"Edibility": 30,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					  "color_sand",
+					  "prehistoric_item",
+					  "meat_item",
+					],
+				},					
+			}
+				},
+				{
+			"LogName": "Extra Animals Config Items",      
+            "Action": "EditData",
+            "Target": "Data/Objects",
+			"When": {"HasMod|contains=selph.ExtraAnimalConfig" : "true"},
+            "Entries": {
+                "{{ModId}}_mammothmilk": {
+					"Type": "Basic",
+					"Category": -6,
+					"Price": 300,
+                    "Description": " {{i18n: mammothmilk.Description}}",
+                    "Displayname": " {{i18n: mammothmilk.Displayname}}",
+                    "Name": " {{i18n: mammothmilk.Name}}",
+                    "Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 0,
+					"Edibility": 40,
+					"IsDrink": true,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					"prehistoric_item",
+					"color_white",
+					"drink_item",
+					"large_milk_item",
+					"milk_item"
+					],
+				},
+                "{{ModId}}_mammothcheese": {
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 500,
+                    "Description": "{{i18n: mammothcheese.Description}}.",
+                    "Displayname": "{{i18n: mammothcheese.Displayname}}",
+                    "Name": "{{i18n: mammothcheese.Name}}",
+                    "Texture": "{{ModId}}/assets/livestockdinositems",
+					"SpriteIndex": 1,
+					"Edibility": 80,
+					"IsDrink": false,
+					"Buffs": null,
+					"GeodeDropsDefaultItems": false,
+					"GeodeDrops": null,
+					"ArtifactSpotChances": null,
+					"ExcludeFromFishingCollection": false,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": false,
+					"ContextTags": [
+					"prehistoric_item",
+					"color_yellow",
+					],
+				},
+			}
+			},
+			{
+			"LogName": "Machine Data",      
+            "Action": "EditData",
+            "Target": "Data/Machines",
+			"When": {"HasMod|contains=selph.ExtraAnimalConfig" : "true"},
+            "TargetField": ["(BC)16", "OutputRules"],
+			"Entries": {
+					"Mammoth Cheese": {
+					"Id": "{{ModID}}_mammothcheese",
+					"Triggers": [{"RequiredItemId": "(O){{ModID}}_mammothmilk"}],
+					"OutputItem": [
+					{
+						"ItemId": "(O){{ModId}}_mammothcheese",
+						"ObjectDisplayName": "Mammoth Cheese",
+					}
+					],
+					"MinutesUntilReady": 200,
+				},
+			},
+			},
+			{
+			"LogName": "brown mammoth extra produce",
+			"Action": "EditData",
+			"Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+			"Priority": "Late",
+			"TargetField": ["{{ModId}}_mammothbrown", "AnimalProduceExtensionData"],
+			"When": {"HasMod|contains=selph.ExtraAnimalConfig" : "true"},
+			"Entries": {
+						"(O){{ModId}}_mammothwool": {
+						"HarvestTool": "Shears",
+						"ProduceTexture": "{{ModId}}/assets/mammothbrown",
+						},
+						"(O){{ModId}}_mammothmilk": {
+						"HarvestTool": "Milk Pail",
+						"ProduceTexture": "{{ModId}}/assets/mammothbrownshorn",
+						},
+						"(O){{ModId}}_tusk": {
+						"HarvestTool": "Debris",
+						"ProduceTexture": "{{ModId}}/assets/mammothbrownshorn",
+						},
+					}
+				},
+{
+			"LogName": "black mammoth extra produce",
+			"Action": "EditData",
+			"Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+			"Priority": "Late",
+			"TargetField": ["{{ModId}}_mammothblack", "AnimalProduceExtensionData"],
+			"When": {"HasMod|contains=selph.ExtraAnimalConfig" : "true"},
+			"Entries": {
+						"(O){{ModId}}_mammothwool": {
+						"HarvestTool": "Shears",
+						"ProduceTexture": "{{ModId}}/assets/mammothblack",
+						},
+						"(O){{ModId}}_mammothmilk": {
+						"HarvestTool": "Milk Pail",
+						"ProduceTexture": "{{ModId}}/assets/mammothblackshorn",
+						},
+						"(O){{ModId}}_tusk": {
+						"HarvestTool": "Debris",
+						"ProduceTexture": "{{ModId}}/assets/mammothblackshorn",
+						},
+					}
+				},
+{
+			"LogName": "white mammoth extra produce",
+			"Action": "EditData",
+			"Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+			"Priority": "Late",
+			"TargetField": ["{{ModId}}_mammothwhite", "AnimalProduceExtensionData"],
+			"When": {"HasMod|contains=selph.ExtraAnimalConfig" : "true"},
+			"Entries": {
+						"(O){{ModId}}_mammothwool": {
+						"HarvestTool": "Shears",
+						"ProduceTexture": "{{ModId}}/assets/mammothwhite",
+						},
+						"(O){{ModId}}_mammothmilk": {
+						"HarvestTool": "Milk Pail",
+						"ProduceTexture": "{{ModId}}/assets/mammothwhiteshorn",
+						},
+						"(O){{ModId}}_tusk": {
+						"HarvestTool": "Debris",
+						"ProduceTexture": "{{ModId}}/assets/mammothwhiteshorn",
+						},
+					}
+				},
+				{
+			"LogName": "raptor extra produce",
+			"Action": "EditData",
+			"Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+			"Priority": "Late",
+			"TargetField": ["{{ModId}}_raptor", "AnimalProduceExtensionData"],
+			"When": {"HasMod|contains=selph.ExtraAnimalConfig" : "true"},
+			"Entries": {
+						"(O){{ModId}}_dinoskin": {
+						"HarvestTool": "Debris",
+						},
+						"(O){{ModId}}_featherprehistoric": {
+						"HarvestTool": "Debris",
+						},
+						"(O){{ModId}}_talon": {
+						"HarvestTool": "Debris",
+						},
+						"(O){{ModId}}_dinoegginert": {
+						"HarvestTool": "DigUp",
+						},
+					}
+				},
+				{
+			"LogName": "trice extra produce",
+			"Action": "EditData",
+			"Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+			"Priority": "Late",
+			"TargetField": ["{{ModId}}_triceratops", "AnimalProduceExtensionData"],
+			"When": {"HasMod|contains=selph.ExtraAnimalConfig" : "true"},
+			"Entries": {
+						"(O){{ModId}}_dinoskin": {
+						"HarvestTool": "Debris",
+						},
+						"(O){{ModId}}_horn": {
+						"HarvestTool": "DropOvernight",
+						},
+						"(O){{ModId}}_herbtooth": {
+						"HarvestTool": "Debris",
+						},
+						"(O){{ModId}}_dinoegginert": {
+						"HarvestTool": "DropOvernight",
+						},
+						"(O){{ModId}}_barriersphere": {
+						"HarvestTool": "DropOvernight",
+						},
+					}
+				},
+				{
+			"LogName": "runner extra produce",
+			"Action": "EditData",
+			"Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+			"Priority": "Late",
+			"TargetField": ["{{ModId}}_runner", "AnimalProduceExtensionData"],
+			"When": {"HasMod|contains=selph.ExtraAnimalConfig" : "true"},
+			"Entries": {
+						"(O){{ModId}}_dinoskin": {
+						"HarvestTool": "Debris",
+						},
+						"(O){{ModId}}_horn": {
+						"HarvestTool": "DropOvernight",
+						},
+						"(O){{ModId}}_herbtooth": {
+						"HarvestTool": "Debris",
+						},
+						"(O)773": {
+						"HarvestTool": "DropOvernight",
+						},
+						"(O){{ModId}}_shieldsphere": {
+						"HarvestTool": "DropOvernight",
+						},
+					}
+				},
+				{
+			"LogName": "smilodon extra produce",
+			"Action": "EditData",
+			"Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+			"Priority": "Late",
+			"TargetField": ["{{ModId}}_smilodon", "AnimalProduceExtensionData"],
+			"When": {"HasMod|contains=selph.ExtraAnimalConfig" : "true"},
+			"Entries": {
+						"(O){{ModId}}_smilodonfur": {
+						"HarvestTool": "DropOvernight",
+						},
+						"(O){{ModId}}_fang": {
+						"HarvestTool": "Debris",
+						},
+					}
+				},
+				{
+			"LogName": "brown mammoth ignorewinter",
+			"Action": "EditData",
+			"Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+			"Priority": "Late",
+			"TargetField": ["{{ModId}}_mammothbrown"],
+			"When": {"HasMod|contains=selph.ExtraAnimalConfig" : "true"},
+			"Entries": {
+						"IgnoreWinter": true,
+					}
+				},		
+							{
+			"LogName": "black mammoth ignorewinter",
+			"Action": "EditData",
+			"Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+			"Priority": "Late",
+			"TargetField": ["{{ModId}}_mammothblack"],
+			"When": {"HasMod|contains=selph.ExtraAnimalConfig" : "true"},
+			"Entries": {
+						"IgnoreWinter": true,
+					}
+				},		
+			{
+			"LogName": "white mammoth ignorewinter",
+			"Action": "EditData",
+			"Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+			"Priority": "Late",
+			"TargetField": ["{{ModId}}_mammothwhite"],
+			"When": {"HasMod|contains=selph.ExtraAnimalConfig" : "true"},
+			"Entries": {
+						"IgnoreWinter": true,
+					}
+				},					
+        ]
+}
+
