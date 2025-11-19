@@ -7,45 +7,49 @@
       "LogName": "Default Portraits",
       "Action": "EditImage",
       "Target": "Portraits/Nova.Eli, Portraits/Nova.Dylan",
+      "Priority": "Early",
       "FromFile": "Assets/Portraits/{{TargetWithoutPath}}/spring.png"
     },
 	
 	{
         "LogName": "Island Portraits",
         "Action": "EditImage",
-		"Priority": "Late",
+      	"Priority": "Early",
         "Target": "Portraits/Nova.Eli_Beach, Portraits/Nova.Dylan_Beach",
         "FromFile": "Assets/Portraits/{{TargetWithoutPath}}/{{TargetWithoutPath}}.png"
     },
 	{
         "LogName": "Eli's Seasonal & Festival Portraits",
         "Action": "EditImage",
-		"Priority": "Late",
+      	"Priority": "Early",
         "Target": "Portraits/Nova.Eli/spring, Portraits/Nova.Eli/spring2, Portraits/Nova.Eli/summer, Portraits/Nova.Eli/summer2, Portraits/Nova.Eli/fall, Portraits/Nova.Eli/fall2, Portraits/Nova.Eli/winter, Portraits/Nova.Eli/winter2, Portraits/Nova.Eli/springRain, Portraits/Nova.Eli/springRain2, Portraits/Nova.Eli/summerRain, Portraits/Nova.Eli/summerRain2, Portraits/Nova.Eli/fallRain, Portraits/Nova.Eli/fallRain2, Portraits/Nova.Eli/winterRain, Portraits/Nova.Eli/winterRain2, Portraits/Nova.Eli/adventure, Portraits/Nova.Eli/adventureRain, Portraits/Nova.Eli/islandRain, Portraits/Nova.Eli/pride, Portraits/Nova.Eli/prideRain, Portraits/Nova.Eli/eggfestival, Portraits/Nova.Eli/fair, Portraits/Nova.Eli/flowerdance, Portraits/Nova.Eli/icefestival, Portraits/Nova.Eli/luau, Portraits/Nova.Eli/moonlight, Portraits/Nova.Eli/spiritseve, Portraits/Nova.Eli/spiritseve2, Portraits/Nova.Eli/winterstar",
         "FromFile": "Assets/Portraits/Nova.Eli/{{TargetWithoutPath}}.png"
     },
 	{
         "LogName": "Dylan's Seasonal & Festival Portraits",
         "Action": "EditImage",
-		"Priority": "Late",
+      	"Priority": "Early",
         "Target": "Portraits/Nova.Dylan/spring, Portraits/Nova.Dylan/spring2, Portraits/Nova.Dylan/summer, Portraits/Nova.Dylan/summer2, Portraits/Nova.Dylan/fall, Portraits/Nova.Dylan/fall2, Portraits/Nova.Dylan/winter, Portraits/Nova.Dylan/winter2, Portraits/Nova.Dylan/springRain, Portraits/Nova.Dylan/springRain2, Portraits/Nova.Dylan/summerRain, Portraits/Nova.Dylan/summerRain2, Portraits/Nova.Dylan/fallRain, Portraits/Nova.Dylan/fallRain2, Portraits/Nova.Dylan/winterRain, Portraits/Nova.Dylan/winterRain2, Portraits/Nova.Dylan/pride, Portraits/Nova.Dylan/prideRain, Portraits/Nova.Dylan/eggfestival, Portraits/Nova.Dylan/fair, Portraits/Nova.Dylan/flowerdance, Portraits/Nova.Dylan/icefestival, Portraits/Nova.Dylan/luau, Portraits/Nova.Dylan/moonlight, Portraits/Nova.Dylan/spiritseve, Portraits/Nova.Dylan/spiritseve2, Portraits/Nova.Dylan/winterstar",
         "FromFile": "Assets/Portraits/Nova.Dylan/{{TargetWithoutPath}}.png"
     },
 	{
 		"LogName": "Thistle Portrait",
 		"Action": "EditImage",
+    "Priority": "Early",
 		"Target": "Portraits/Thistle",
 		"FromFile": "Assets/Portraits/Other/ThistlePortrait.png"
 	},
 	{
 		"LogName": "Junimo Portrait",
 		"Action": "EditImage",
+    "Priority": "Early",
 		"Target": "Portraits/JunimoFriendPurple",
 		"FromFile": "Assets/Images/JunimoFriend_purplePortrait.png"
 	},
 	{
 		"LogName": "Maximum Portrait",
 		"Action": "EditImage",
+    "Priority": "Early",
 		"Target": "Portraits/ARVMax",
 		"FromFile": "Assets/Portraits/Other/MaximumPortrait.png",
 		"When": {
