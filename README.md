@@ -24,11 +24,10 @@ This Modpack was tested with SMAPI 4.2.1 with Stardew Valley 1.6.15.
  - Pokemon related mods: Pokemon farm animals, pokemon furniture, pokemon pets, pokemon fishes and most of pokemon mods found in nexus. Not included the mod that changes the terrain or existing npcs, because of compatibility.
  - Portrait npcs furry/nyapu versions, Mod fallback order: Dergvalley > Anthro Characters > Nyapu > Default portraits
  - Personalization of the main character using Fashion Sense mod, including a hundred of accesories as tails or wings to make any fantasy creature.
- - Important modpacks with additional npcs and content: Stardew Valley Expanded, Raffadax, Ridgeside Valley, East Carp, Sunberry Village, Lumisteria Visit Mount Vapius, Downtown Zuzu, Axolot Valley, Deep Woods, Adventure Guild Expanded, Boss Battles, Alchemistry, Dwarven Expansion, Animal Husbandry, Love of Cooking, Restauranteer, MarketTown, Ornithologist Guild, Nature in the Valley, Stardew Aquarium, Chocobo Valley, Everia's Dragons, Fishing Trawler, Prestige, Level Forever, new Skills and many more.
+ - Important modpacks with additional npcs and content: Stardew Valley Expanded, Ridgeside Valley, East Carp, Sunberry Village, Lumisteria Visit Mount Vapius, Downtown Zuzu, Axolot Valley, Deep Woods, Adventure Guild Expanded, Boss Battles, Alchemistry, Dwarven Expansion, Animal Husbandry, Love of Cooking, Restauranteer, MarketTown, Ornithologist Guild, Nature in the Valley, Stardew Aquarium, Chocobo Valley, Everia's Dragons, Fishing Trawler, Prestige, Level Forever, new Skills and many more.
  - Misc mods that enhances the Quality of life, balance or add more accesories from known franchises: Ragnarok Online hats, MIA Nanachi Relic Hat, Rabite pet from Secret of mana, Sanrio furniture and farm animals, tamagotchi farm animals, Animal Crossing themed furniture, Automate, Better Junimos, Better Chests, Hundreds of additional fishes, Better Balance, Enhanced reflections, Animated icons, Event Lookup, Faster Path Speed, Ferngill item packs, Cornucopia item packs, Fresh Item Produce, Longevity, Horse Overhaul, Lookup Anything, Machine Progression System, Fish Helper UI, Mini Bars, The return of backpack upgrades, Swim Mod, Visible Fish, Giant Crops/Flowers mods and many more.
 
 ## Caveats
-This modpack uses Raffadax (https://www.nexusmods.com/stardewvalley/mods/8256) which is on beta in discord, they have a disclaimer to **not stream** using this mod until it's ready. If you want to stream using this modpack, make a copy of the Mods folders and rename it to _ModsPokefursComplete as backup and remove the "Raffadax.5.0.0-beta.03" folder from "\Stardew Valley\Mods\Stardrop Installed Mods\" that you have copied to your stardew installation. If you have Stardrop Modmanager installed, you can do it with profiles.
 Remember taht in multiplayer all player should have the same mods.
 
 ## Folder Structure
@@ -1064,22 +1063,6 @@ Adds a custom NPC named Jade
 Paul the Optometrist v1.0.16 by ginnyclaire:
 - https://www.nexusmods.com/stardewvalley/mods/???
 Paul the Optometrist
-
-Raffadax Complete Production v5.0.0-beta.03 by Raffadax:
-- https://www.nexusmods.com/stardewvalley/mods/8256
-A massive expansion mod that adds thousands of items to the game.
-
-(FTM) Raffadax Forage v5.0.0-beta.03 by Raffadax:
-- no update key
-Adds forage for Raffadax Complete Production. Requires Farm Type Manager.
-
-(IE) Raffadax Gems v5.0.0-beta.03 by Raffadax:
-- no update key
-Spawns gem ores in mines.
-
-(PFM) Raffadax Complete Production v5.0.0-beta.03 by Raffadax:
-- no update key
-Base production for Raffadax Crops.
 
 Remapping v1.3.2 by Vlgor:
 - https://www.nexusmods.com/stardewvalley/mods/29049
