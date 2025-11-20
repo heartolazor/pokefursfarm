@@ -368,6 +368,7 @@
           "Action": "Load",
           "Target": "LooseSprites/Cursors2",
           "FromFile": "assets/Cursors2.png",
+          "Priority": "Medium",
 	      "When": {"Miscellaneous": "true"}
        },
        {
@@ -408,6 +409,7 @@
           "Action": "Load",
           "Target": "TileSheets/Craftables",
           "FromFile": "assets/Craftables.png",
+          "Priority": "Medium",
           "When": {"Furniture": "true"}
        },
        {
@@ -470,6 +472,7 @@
        {
           "Action": "Load",
           "Target": "Characters/Dwarf",
+          "Priority": "Medium",
           "FromFile": "assets/Elgyem.png",
           "When": {"CharacterChanges": "true"}
        },
@@ -541,12 +544,14 @@
           "Action": "Load",
           "Target": "Maps/night_market_tilesheet_objects",
           "FromFile": "assets/night_market_tilesheet_objects.png",
+          "Priority": "Medium",
           "When": {"Festivals": "true"}
        },
        {
          "Action": "Load",
          "Target": "Maps/desert_festival_tilesheet",
          "FromFile": "assets/desert_festival_tilesheet.png",
+         "Priority": "Medium",
          "ToArea":   { "X": 274, "Y": 368, "Width": 142, "Height": 32 },
          "When": {"Festivals": "true"}
       },
@@ -600,11 +605,13 @@
           "Action": "Load",
           "Target": "Characters/Krobus, Characters/Krobus_Trenchcoat, Characters/KrobusRaven, Characters/SeaMonsterKrobus ",
           "FromFile": "assets/trubbish/{{TargetWithoutPath}}.png",
+          "Priority": "Medium",
           "When": {"Krobus": "Trubbish"}
        },
        {
           "Action": "Load",
           "Target": "Portraits/Krobus",
+          "Priority": "Medium",
           "FromFile": "assets/trubbish/TrubbishPortrait.png",
           "When": {"Krobus": "Trubbish"}
        },
