@@ -1,0 +1,46 @@
+{
+    "Changes": [
+		{
+			"LogName": "Loading bush assets",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/kookadoba_bush",
+			"FromFile": "assets/crops/{{TargetWithoutPath}}.png"
+		},
+        {
+            "LogName": "Add to Custom Bush Framework",
+			"Action": "EditData",
+			"Target": "furyx639.CustomBush/Data",
+			"Entries": {
+				"(O){{ModId}}.Kookadoba_Bush_Sapling": {
+					"DisplayName": "{{i18n: crop.kookadoba.name}}",
+					"Description": "{{i18n: crop.kookadoba.description}}",
+					"AgeToProduce": 20,
+					"DayToBeginProducing": 0,
+					"Seasons": [
+						"spring",
+						"summer",
+						"fall",
+						"winter"
+					],
+					"ItemsProduced": [
+						{
+							"ItemId": "(O){{ModId}}.Kookadoba",
+							"Chance": 1.0,
+							"MinStack": 1,
+							"MaxStack": 2,
+							"QualityModifiers": [
+								{
+									"Modification": "Add", 
+									"RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4]
+								}
+							]
+						}
+					],
+					"Texture": "Mods/{{ModId}}/kookadoba_bush",
+					"IndoorTexture": "Mods/{{ModId}}/kookadoba_bush",
+					"TextureSpriteRow": 0
+				}
+            }
+        }
+    ]
+}

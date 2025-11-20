@@ -1,0 +1,91 @@
+{
+    "Changes": [
+        {
+            "LogName": "Loading fruit tree assets",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/cuberry_tree, Mods/{{ModId}}/mint_mango_tree, Mods/{{ModId}}/phase_lemon_tree, Mods/{{ModId}}/pogofruit_tree, Mods/{{ModId}}/prickle_pear_tree",
+            "FromFile": "assets/crops/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "EditData",
+			"Target": "Data/FruitTrees",
+			"Entries": {
+				"{{ModId}}.Cuberry_Tree_Sapling": {
+					"DisplayName": "{{i18n: crop.cuberry.name}}",
+					"Seasons": [ 
+                        "spring", 
+                        "summer" 
+                    ],
+					"Fruit": [
+                        {
+                            "Id": "{{ModId}}.Cuberry",
+                            "ItemId": "{{ModId}}.Cuberry"
+                        }
+                    ],
+					"Texture": "Mods/{{ModId}}/cuberry_tree",
+					"TextureSpriteRow": 0
+				},
+                "{{ModId}}.Mint_Mango_Tree_Sapling": {
+					"DisplayName": "{{i18n: crop.mint_mango.name}}",
+					"Seasons": [ 
+                        "spring", 
+                        "summer" 
+                    ],
+					"Fruit": [
+                        {
+                            "Id": "{{ModId}}.Mint_Mango",
+                            "ItemId": "{{ModId}}.Mint_Mango"
+                        }
+                    ],
+					"Texture": "Mods/{{ModId}}/mint_mango_tree",
+					"TextureSpriteRow": 0
+				},
+                "{{ModId}}.Pogofruit_Tree_Sapling": {
+					"DisplayName": "{{i18n: crop.pogofruit.name}}",
+					"Seasons": [ 
+                        "spring", 
+                        "fall" 
+                    ],
+					"Fruit": [
+                        {
+                            "Id": "{{ModId}}.Pogofruit",
+                            "ItemId": "{{ModId}}.Pogofruit"
+                        }
+                    ],
+					"Texture": "Mods/{{ModId}}/pogofruit_tree",
+					"TextureSpriteRow": 0
+				},
+                "{{ModId}}.Phase_Lemon_Tree_Sapling": {
+					"DisplayName": "{{i18n: crop.phase_lemon.name}}",
+					"Seasons": [ 
+                        "fall",
+                        "winter"
+                    ],
+					"Fruit": [
+                        {
+                            "Id": "{{ModId}}.Phase_Lemon",
+                            "ItemId": "{{ModId}}.Phase_Lemon"
+                        }
+                    ],
+					"Texture": "Mods/{{ModId}}/phase_lemon_tree",
+					"TextureSpriteRow": 0
+				},
+                "{{ModId}}.Prickle_Pear_Tree_Sapling": {
+					"DisplayName": "{{i18n: crop.prickle_pear.name}}",
+					"Seasons": [ 
+                        "spring", 
+                        "fall" 
+                    ],
+					"Fruit": [
+                        {
+                            "Id": "{{ModId}}.Prickle_Pear",
+                            "ItemId": "{{ModId}}.Prickle_Pear"
+                        }
+                    ],
+					"Texture": "Mods/{{ModId}}/prickle_pear_tree",
+					"TextureSpriteRow": 0
+				}
+			}
+        }
+    ]
+}

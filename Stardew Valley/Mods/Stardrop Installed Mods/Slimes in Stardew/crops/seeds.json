@@ -1,0 +1,122 @@
+{
+    "Changes": [
+        {
+            "LogName": "Editing crop seeds and crop object data",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}.Heart_Beet_Seeds": {
+                    "Name": "{{ModId}}.Heart_Beet_Seeds",
+                    "Displayname": "{{i18n: crop.heart_beet.name}}",
+                    "Description": "{{i18n: crop.heart_beet.description}}",
+                    "Type": "Basic",
+                    "Category": -74,
+                    "Price": "{{Heart Beet Seeds Price}}",
+                    "Texture": "Mods/{{ModId}}/heart_beet_seeds",
+                    "SpriteIndex": 0
+                },
+                "{{ModId}}.Heart_Beet": {
+                    "Name": "{{ModId}}.Heart_Beet",
+                    "Displayname": "{{i18n: item.heart_beet}}",
+                    "Description": "{{i18n: item_description.heart_beet}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": "{{Heart Beet Price}}",
+                    "Texture": "Mods/{{ModId}}/heart_beet",
+                    "SpriteIndex": 0,
+                    "Edibility": 12
+                },
+                "{{ModId}}.Oca_Oca_Seeds": {
+                    "Name": "{{ModId}}.Oca_Oca_Seeds",
+                    "Displayname": "{{i18n: crop.oca_oca.name}}",
+                    "Description": "{{i18n: crop.oca_oca.description}}",
+                    "Type": "Basic",
+                    "Category": -74,
+                    "Price": "{{Oca Oca Seeds Price}}",
+                    "Texture": "Mods/{{ModId}}/oca_oca_seeds",
+                    "SpriteIndex": 0
+                },
+                "{{ModId}}.Oca_Oca": {
+                    "Name": "{{ModId}}.Oca_Oca",
+                    "Displayname": "{{i18n: item.oca_oca}}",
+                    "Description": "{{i18n: item_description.oca_oca}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": "{{Oca Oca Price}}",
+                    "Texture": "Mods/{{ModId}}/oca_oca",
+                    "SpriteIndex": 0,
+                    "Edibility": 10
+                },
+                "{{ModId}}.Odd_Onion_Seeds": {
+                    "Name": "{{ModId}}.Odd_Onion_Seeds",
+                    "Displayname": "{{i18n: crop.odd_onion.name}}",
+                    "Description": "{{i18n: crop.odd_onion.description}}",
+                    "Type": "Basic",
+                    "Category": -74,
+                    "Price": "{{Odd Onion Seeds Price}}",
+                    "Texture": "Mods/{{ModId}}/odd_onion_seeds",
+                    "SpriteIndex": 0
+                },
+                "{{ModId}}.Odd_Onion": {
+                    "Name": "{{ModId}}.Odd_Onion",
+                    "Displayname": "{{i18n: item.odd_onion}}",
+                    "Description": "{{i18n: item_description.odd_onion}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": "{{Odd Onion Price}}",
+                    "Texture": "Mods/{{ModId}}/odd_onion",
+                    "SpriteIndex": 0,
+                    "Edibility": 8
+                },
+                "{{ModId}}.Silver_Parsnip_Seeds": {
+                    "Name": "{{ModId}}.Silver_Parsnip_Seeds",
+                    "Displayname": "{{i18n: crop.silver_parsnip.name}}",
+                    "Description": "{{i18n: crop.silver_parsnip.description}}",
+                    "Type": "Basic",
+                    "Category": -74,
+                    "Price": "{{Silver Parsnip Seeds Price}}",
+                    "Texture": "Mods/{{ModId}}/silver_parsnip_seeds",
+                    "SpriteIndex": 0
+                },
+                "{{ModId}}.Silver_Parsnip": {
+                    "Name": "{{ModId}}.Silver_Parsnip",
+                    "Displayname": "{{i18n: item.silver_parsnip}}",
+                    "Description": "{{i18n: item_description.silver_parsnip}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": "{{Silver Parsnip Price}}",
+                    "Texture": "Mods/{{ModId}}/silver_parsnip",
+                    "SpriteIndex": 0,
+                    "Edibility": 10
+                },
+                "{{ModId}}.Gilded_Ginger_Seeds": {
+                    "Name": "{{ModId}}.Gilded_Ginger_Seeds",
+                    "Displayname": "{{i18n: crop.gilded_ginger.name}}",
+                    "Description": "{{i18n: crop.gilded_ginger.description}}",
+                    "Type": "Basic",
+                    "Category": -74,
+                    "Price": "{{Gilded Ginger Seeds Price}}",
+                    "Texture": "Mods/{{ModId}}/gilded_ginger_seeds",
+                    "SpriteIndex": 0
+                },
+                "{{ModId}}.Gilded_Ginger": {
+                    "Name": "{{ModId}}.Gilded_Ginger",
+                    "Displayname": "{{i18n: item.gilded_ginger}}",
+                    "Description": "{{i18n: item_description.gilded_ginger}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": "{{Gilded Ginger Price}}",
+                    "Texture": "Mods/{{ModId}}/gilded_ginger",
+                    "SpriteIndex": 0,
+                    "Edibility": 10
+                }
+            }
+        },
+        {
+            "LogName": "Loading seeds and vegetable assets",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/heart_beet_seeds, Mods/{{ModId}}/heart_beet, Mods/{{ModId}}/oca_oca_seeds, Mods/{{ModId}}/oca_oca, Mods/{{ModId}}/odd_onion_seeds, Mods/{{ModId}}/odd_onion, Mods/{{ModId}}/silver_parsnip_seeds, Mods/{{ModId}}/silver_parsnip, Mods/{{ModId}}/gilded_ginger_seeds, Mods/{{ModId}}/gilded_ginger",
+            "FromFile": "assets/crops/{{TargetWithoutPath}}.png"
+        }
+    ]
+}

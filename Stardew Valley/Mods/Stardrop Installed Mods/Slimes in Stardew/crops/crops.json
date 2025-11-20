@@ -1,0 +1,78 @@
+{
+    "Changes": [
+        {
+            "LogName": "Editing crop data",
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "{{ModId}}.Heart_Beet_Seeds": {
+                    "Seasons": [
+                        "summer",
+                        "fall"
+                    ],
+                    "DaysInPhase": [
+                        2, 3, 1
+                    ],
+                    "HarvestItemId": "{{ModId}}.Heart_Beet",
+                    "Texture": "Mods/{{ModId}}/heart_beet_plant",
+                    "SpriteIndex": 0
+                },
+                "{{ModId}}.Oca_Oca_Seeds": {
+                    "Seasons": [
+                        "spring",
+                        "fall"
+                    ],
+                    "DaysInPhase": [
+                        2, 2, 1, 1
+                    ],
+                    "HarvestItemId": "{{ModId}}.Oca_Oca",
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 3,
+                    "Texture": "Mods/{{ModId}}/oca_oca_plant",
+                    "SpriteIndex": 0
+                },
+                "{{ModId}}.Odd_Onion_Seeds": {
+                    "Seasons": [
+                        "spring",
+                        "fall"
+                    ],
+                    "DaysInPhase": [
+                        2, 2, 1, 1
+                    ],
+                    "HarvestItemId": "{{ModId}}.Odd_Onion",
+                    "Texture": "Mods/{{ModId}}/odd_onion_plant",
+                    "SpriteIndex": 0
+                },
+                "{{ModId}}.Silver_Parsnip_Seeds": {
+                    "Seasons": [
+                        "fall",
+                        "winter"
+                    ],
+                    "DaysInPhase": [
+                        2, 2, 1, 1
+                    ],
+                    "HarvestItemId": "{{ModId}}.Silver_Parsnip",
+                    "Texture": "Mods/{{ModId}}/silver_parsnip_plant",
+                    "SpriteIndex": 0
+                },
+                "{{ModId}}.Gilded_Ginger_Seeds": {
+                    "Seasons": [
+                        "summer"
+                    ],
+                    "DaysInPhase": [
+                        2, 2, 3, 1
+                    ],
+                    "HarvestItemId": "{{ModId}}.Gilded_Ginger",
+                    "Texture": "Mods/{{ModId}}/gilded_ginger_plant",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+        {
+            "LogName": "Loading vegetable plant assets",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/heart_beet_plant, Mods/{{ModId}}/oca_oca_plant, Mods/{{ModId}}/odd_onion_plant, Mods/{{ModId}}/silver_parsnip_plant, Mods/{{ModId}}/gilded_ginger_plant",
+            "FromFile": "assets/crops/{{TargetWithoutPath}}.png"
+        }
+    ]
+}

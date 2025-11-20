@@ -1,0 +1,217 @@
+{
+    "Changes": [
+        {
+            "LogName": "Editing mayo object data",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}.Hen_Hen_Mayo": {
+                    "Name": "{{ModId}}.Hen_Hen_Mayo",
+                    "Displayname": "{{i18n: item.hen_hen_mayo}}",
+                    "Description": "{{i18n: item_description.hen_hen_mayo}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": "{{Hen Hen Mayo Sell Price}}",
+                    "Texture": "Mods/{{ModId}}/hen_hen_mayo",
+                    "SpriteIndex": 0,
+                    "IsDrink": true,
+                    "Edibility": 20
+                },
+                "{{ModId}}.Stony_Hen_Mayo": {
+                    "Name": "{{ModId}}.Stony_Hen_Mayo",
+                    "Displayname": "{{i18n: item.stony_hen_mayo}}",
+                    "Description": "{{i18n: item_description.stony_hen_mayo}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": "{{Stony Hen Mayo Sell Price}}",
+                    "Texture": "Mods/{{ModId}}/stony_hen_mayo",
+                    "SpriteIndex": 0,
+                    "IsDrink": true,
+                    "Edibility": 22
+                },
+                "{{ModId}}.Briar_Hen_Mayo": {
+                    "Name": "{{ModId}}.Briar_Hen_Mayo",
+                    "Displayname": "{{i18n: item.briar_hen_mayo}}",
+                    "Description": "{{i18n: item_description.briar_hen_mayo}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": "{{Briar Hen Mayo Sell Price}}",
+                    "Texture": "Mods/{{ModId}}/briar_hen_mayo",
+                    "SpriteIndex": 0,
+                    "IsDrink": true,
+                    "Edibility": 24
+                },
+                "{{ModId}}.Painted_Hen_Mayo": {
+                    "Name": "{{ModId}}.Painted_Hen_Mayo",
+                    "Displayname": "{{i18n: item.painted_hen_mayo}}",
+                    "Description": "{{i18n: item_description.painted_hen_mayo}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": "{{Painted Hen Mayo Sell Price}}",
+                    "Texture": "Mods/{{ModId}}/painted_hen_mayo",
+                    "SpriteIndex": 0,
+                    "IsDrink": true,
+                    "Edibility": 28
+                }
+            }
+        },
+        {
+            "LogName": "Editing mayonnaise maker data",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [ "(BC)24", "OutputRules" ],
+            "Entries": {
+                "{{ModId}}.Hen_Hen_Egg": {
+                    "Id": "{{ModId}}.Hen_Hen_Egg",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Hen_Hen_Egg",
+							"RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "{{ModId}}.Hen_Hen_Mayo",
+                            "ItemId": "{{ModId}}.Hen_Hen_Mayo",
+                            "Quality": 0
+                        }
+                    ],
+                    "MinutesUntilReady": 180
+                },
+                "{{ModId}}.Hen_Hen_Large_Egg": {
+                    "Id": "{{ModId}}.Hen_Hen_Large_Egg",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Hen_Hen_Large_Egg",
+							"RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "{{ModId}}.Hen_Hen_Mayo",
+                            "ItemId": "{{ModId}}.Hen_Hen_Mayo",
+                            "Quality": 2
+                        }
+                    ],
+                    "MinutesUntilReady": 180
+                },
+                "{{ModId}}.Stony_Hen_Egg": {
+                    "Id": "{{ModId}}.Stony_Hen_Egg",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Stony_Hen_Egg",
+							"RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "{{ModId}}.Stony_Hen_Mayo",
+                            "ItemId": "{{ModId}}.Stony_Hen_Mayo",
+                            "Quality": 0
+                        }
+                    ],
+                    "MinutesUntilReady": 180
+                },
+                "{{ModId}}.Stony_Hen_Large_Egg": {
+                    "Id": "{{ModId}}.Stony_Hen_Large_Egg",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Stony_Hen_Large_Egg",
+							"RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "{{ModId}}.Stony_Hen_Mayo",
+                            "ItemId": "{{ModId}}.Stony_Hen_Mayo",
+                            "Quality": 2
+                        }
+                    ],
+                    "MinutesUntilReady": 180
+                },
+                "{{ModId}}.Briar_Hen_Egg": {
+                    "Id": "{{ModId}}.Briar_Hen_Egg",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Briar_Hen_Egg",
+							"RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "{{ModId}}.Briar_Hen_Mayo",
+                            "ItemId": "{{ModId}}.Briar_Hen_Mayo",
+                            "Quality": 0
+                        }
+                    ],
+                    "MinutesUntilReady": 180
+                },
+                "{{ModId}}.Briar_Hen_Large_Egg": {
+                    "Id": "{{ModId}}.Briar_Hen_Large_Egg",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Briar_Hen_Large_Egg",
+							"RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "{{ModId}}.Briar_Hen_Mayo",
+                            "ItemId": "{{ModId}}.Briar_Hen_Mayo",
+                            "Quality": 2
+                        }
+                    ],
+                    "MinutesUntilReady": 180
+                },
+                "{{ModId}}.Painted_Hen_Egg": {
+                    "Id": "{{ModId}}.Painted_Hen_Egg",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Painted_Hen_Egg",
+							"RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "{{ModId}}.Painted_Hen_Mayo",
+                            "ItemId": "{{ModId}}.Painted_Hen_Mayo",
+                            "Quality": 0
+                        }
+                    ],
+                    "MinutesUntilReady": 180
+                },
+                "{{ModId}}.Painted_Hen_Large_Egg": {
+                    "Id": "{{ModId}}.Painted_Hen_Large_Egg",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Painted_Hen_Large_Egg",
+							"RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "{{ModId}}.Painted_Hen_Mayo",
+                            "ItemId": "{{ModId}}.Painted_Hen_Mayo",
+                            "Quality": 2
+                        }
+                    ],
+                    "MinutesUntilReady": 180
+                }
+            }
+        },
+        {
+            "LogName": "Loading mayo assets",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/hen_hen_mayo, Mods/{{ModId}}/stony_hen_mayo, Mods/{{ModId}}/briar_hen_mayo, Mods/{{ModId}}/painted_hen_mayo",
+            "FromFile": "assets/items/{{TargetWithoutPath}}.png"
+        }
+    ]
+}

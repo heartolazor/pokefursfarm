@@ -1,0 +1,619 @@
+{
+    "Format": "2.0",
+    "ConfigSchema": {
+        "Livestock Slimes": {
+            "Section": "General Configurations",
+            "Default": "true",
+            "AllowValues": "true, false",
+            "Description": "Set true to enable slimes as coop livestock."
+        },
+        "Fishing Slimes": {
+            "Section": "General Configurations",
+            "Default": "true",
+            "AllowValues": "true, false",
+            "Description": "Set true to enable some slimes for fishing."
+        },
+        "Hen Livestock": {
+            "Section": "General Configurations",
+            "Default": "true",
+            "AllowValues": "true, false",
+            "Description": "Set true to enable Hens purchaseable from Marnie's."
+        },
+        "Crops": {
+            "Section": "General Configurations",
+            "Default": "true",
+            "AllowValues": "true, false",
+            "Description": "Set true to enable crops and saplings purchaseable from Pierre's and mailable by Beatrix if the mail mod is installed."
+        },
+        "Pink Slime Purchase Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 400,
+            "Description": "Purchase price from Marnie's Ranch. This value is multiplied by 2."
+        },
+        "Pink Slime Sell Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 400,
+            "Description": "Base selling price. This value is multiplied by a number between 0.3 and 1.3 based on the friendship value."
+        },
+        "Tabby Slime Purchase Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 400,
+            "Description": "Purchase price from Marnie's Ranch. This value is multiplied by 2."
+        },
+        "Tabby Slime Sell Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 400,
+            "Description": "Base selling price. This value is multiplied by a number between 0.3 and 1.3 based on the friendship value."
+        },
+        "Honey Slime Purchase Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 600,
+            "Description": "Purchase price from Marnie's Ranch. This value is multiplied by 2."
+        },
+        "Honey Slime Sell Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 600,
+            "Description": "Base selling price. This value is multiplied by a number between 0.3 and 1.3 based on the friendship value."
+        },
+        "Phosphor Slime Purchase Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 400,
+            "Description": "Purchase price from Marnie's Ranch. This value is multiplied by 2."
+        },
+        "Phosphor Slime Sell Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 400,
+            "Description": "Base selling price. This value is multiplied by a number between 0.3 and 1.3 based on the friendship value."
+        },
+        "Hunter Slime Purchase Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 600,
+            "Description": "Purchase price from Marnie's Ranch. This value is multiplied by 2."
+        },
+        "Hunter Slime Sell Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 600,
+            "Description": "Base selling price. This value is multiplied by a number between 0.3 and 1.3 based on the friendship value."
+        },
+        "Dervish Slime Purchase Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 1000,
+            "Description": "Purchase price from Marnie's Ranch. This value is multiplied by 2."
+        },
+        "Dervish Slime Sell Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 1000,
+            "Description": "Base selling price. This value is multiplied by a number between 0.3 and 1.3 based on the friendship value."
+        },
+        "Tangle Slime Purchase Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 1000,
+            "Description": "Purchase price from Marnie's Ranch. This value is multiplied by 2."
+        },
+        "Tangle Slime Sell Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 1000,
+            "Description": "Base selling price. This value is multiplied by a number between 0.3 and 1.3 based on the friendship value."
+        },
+        "Quantum Slime Purchase Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 3000,
+            "Description": "Purchase price from Marnie's Ranch. This value is multiplied by 2."
+        },
+        "Quantum Slime Sell Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 3000,
+            "Description": "Base selling price. This value is multiplied by a number between 0.3 and 1.3 based on the friendship value."
+        },
+        "Saber Slime Purchase Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 3000,
+            "Description": "Purchase price from Marnie's Ranch. This value is multiplied by 2."
+        },
+        "Saber Slime Sell Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 3000,
+            "Description": "Base selling price. This value is multiplied by a number between 0.3 and 1.3 based on the friendship value."
+        },
+        "Rock Slime Purchase Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 400,
+            "Description": "Purchase price from Marnie's Ranch. This value is multiplied by 2."
+        },
+        "Rock Slime Sell Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 400,
+            "Description": "Base selling price. This value is multiplied by a number between 0.3 and 1.3 based on the friendship value."
+        },
+        "Rad Slime Purchase Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 2000,
+            "Description": "Purchase price from Marnie's Ranch. This value is multiplied by 2."
+        },
+        "Rad Slime Sell Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 2000,
+            "Description": "Base selling price. This value is multiplied by a number between 0.3 and 1.3 based on the friendship value."
+        },
+        "Boom Slime Purchase Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 2000,
+            "Description": "Purchase price from Marnie's Ranch. This value is multiplied by 2."
+        },
+        "Boom Slime Sell Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 2000,
+            "Description": "Base selling price. This value is multiplied by a number between 0.3 and 1.3 based on the friendship value."
+        },
+        "Crystal Slime Purchase Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 2000,
+            "Description": "Purchase price from Marnie's Ranch. This value is multiplied by 2."
+        },
+        "Crystal Slime Sell Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 2000,
+            "Description": "Base selling price. This value is multiplied by a number between 0.3 and 1.3 based on the friendship value."
+        },
+        "Mosaic Slime Purchase Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 1000,
+            "Description": "Purchase price from Marnie's Ranch. This value is multiplied by 2."
+        },
+        "Mosaic Slime Sell Price": {
+            "Section": "Slime Purchase and Selling Prices",
+            "Default": 1000,
+            "Description": "Base selling price. This value is multiplied by a number between 0.3 and 1.3 based on the friendship value."
+        },
+        "Slime Days To Produce": {
+            "Section": "Slime Production and Maturation",
+            "Default": 1,
+            "Description": "The number of days before slimes drop plorts or other items."
+        },
+        "Slime Days To Mature": {
+            "Section": "Slime Production and Maturation",
+            "Default": 3,
+            "Description": "The number of days before baby slimes grow into adults."
+        },
+        "Difficulty": {
+            "Section": "Fishing Difficulty",
+            "Default": 45,
+            "Description": "Difficulty level of catching fishing slimes."
+        },
+        "Hen Hen Purchase Price": {
+            "Section": "Hen Purchase and Selling Prices",
+            "Default": 400,
+            "Description": "Purchase price from Marnie's Ranch. This value is multiplied by 2."
+        },
+        "Hen Hen Sell Price": {
+            "Section": "Hen Purchase and Selling Prices",
+            "Default": 400,
+            "Description": "Base selling price. This value is multiplied by a number between 0.3 and 1.3 based on the friendship value."
+        },
+        "Stony Hen Purchase Price": {
+            "Section": "Hen Purchase and Selling Prices",
+            "Default": 600,
+            "Description": "Purchase price from Marnie's Ranch. This value is multiplied by 2."
+        },
+        "Stony Hen Sell Price": {
+            "Section": "Hen Purchase and Selling Prices",
+            "Default": 600,
+            "Description": "Base selling price. This value is multiplied by a number between 0.3 and 1.3 based on the friendship value."
+        },
+        "Briar Hen Purchase Price": {
+            "Section": "Hen Purchase and Selling Prices",
+            "Default": 800,
+            "Description": "Purchase price from Marnie's Ranch. This value is multiplied by 2."
+        },
+        "Briar Hen Sell Price": {
+            "Section": "Hen Purchase and Selling Prices",
+            "Default": 800,
+            "Description": "Base selling price. This value is multiplied by a number between 0.3 and 1.3 based on the friendship value."
+        },
+        "Painted Hen Purchase Price": {
+            "Section": "Hen Purchase and Selling Prices",
+            "Default": 1000,
+            "Description": "Purchase price from Marnie's Ranch. This value is multiplied by 2."
+        },
+        "Painted Hen Sell Price": {
+            "Section": "Hen Purchase and Selling Prices",
+            "Default": 1000,
+            "Description": "Base selling price. This value is multiplied by a number between 0.3 and 1.3 based on the friendship value."
+        },
+        "Hen Days To Produce": {
+            "Section": "Hen Production and Maturation",
+            "Default": 1,
+            "Description": "The number of days before hens drop eggs."
+        },
+        "Hen Days To Mature": {
+            "Section": "Hen Production and Maturation",
+            "Default": 3,
+            "Description": "The number of days before baby chickadoos grow into adult hens."
+        },
+        "Pink Plort Sell Price": {
+            "Section": "Economy",
+            "Default": 50,
+            "Description": "Sell price of Pink Plorts."
+        },
+        "Tabby Plort Sell Price": {
+            "Section": "Economy",
+            "Default": 75,
+            "Description": "Sell price of Tabby Plorts."
+        },
+        "Honey Plort Sell Price": {
+            "Section": "Economy",
+            "Default": 100,
+            "Description": "Sell price of Honey Plorts."
+        },
+        "Phosphor Plort Sell Price": {
+            "Section": "Economy",
+            "Default": 75,
+            "Description": "Sell price of Phosphor Plorts."
+        },
+        "Hunter Plort Sell Price": {
+            "Section": "Economy",
+            "Default": 100,
+            "Description": "Sell price of Hunter Plorts."
+        },
+        "Dervish Plort Sell Price": {
+            "Section": "Economy",
+            "Default": 150,
+            "Description": "Sell price of Dervish Plorts."
+        },
+        "Tangle Plort Sell Price": {
+            "Section": "Economy",
+            "Default": 150,
+            "Description": "Sell price of Tangle Plorts."
+        },
+        "Mosaic Plort Sell Price": {
+            "Section": "Economy",
+            "Default": 150,
+            "Description": "Sell price of Mosaic Plorts."
+        },
+        "Quantum Plort Sell Price": {
+            "Section": "Economy",
+            "Default": 350,
+            "Description": "Sell price of Quantum Plorts."
+        },
+        "Saber Plort Sell Price": {
+            "Section": "Economy",
+            "Default": 350,
+            "Description": "Sell price of Saber Plorts."
+        },
+        "Rock Plort Sell Price": {
+            "Section": "Economy",
+            "Default": 75,
+            "Description": "Sell price of Rock Plorts."
+        },
+        "Rad Plort Sell Price": {
+            "Section": "Economy",
+            "Default": 200,
+            "Description": "Sell price of Rad Plorts."
+        },
+        "Boom Plort Sell Price": {
+            "Section": "Economy",
+            "Default": 200,
+            "Description": "Sell price of Boom Plorts."
+        },
+        "Crystal Plort Sell Price": {
+            "Section": "Economy",
+            "Default": 200,
+            "Description": "Sell price of Crystal Plorts."
+        },
+        "Puddle Plort Sell Price": {
+            "Section": "Economy",
+            "Default": 100,
+            "Description": "Sell price of Puddle Plorts."
+        },
+        "Fire Plort Sell Price": {
+            "Section": "Economy",
+            "Default": 250,
+            "Description": "Sell price of Fire Plorts."
+        },
+        "Cuberry Sell Price": {
+            "Section": "Economy",
+            "Default": 150,
+            "Description": "Sell price of Cuberries."
+        },
+        "Cuberry Sapling Price": {
+            "Section": "Economy",
+            "Default": 2000,
+            "Description": "Sell price of Cuberry Saplings."
+        },
+        "Prickle Pear Sell Price": {
+            "Section": "Economy",
+            "Default": 150,
+            "Description": "Sell price of Prickle Pears."
+        },
+        "Prickle Pear Sapling Price": {
+            "Section": "Economy",
+            "Default": 2000,
+            "Description": "Sell price of Prickle Pear Saplings."
+        },
+        "Phase Lemon Sell Price": {
+            "Section": "Economy",
+            "Default": 150,
+            "Description": "Sell price of Phase Lemons."
+        },
+        "Phase Lemon Sapling Price": {
+            "Section": "Economy",
+            "Default": 2000,
+            "Description": "Sell price of Phase Lemon Saplings."
+        },
+        "Mint Mango Sell Price": {
+            "Section": "Economy",
+            "Default": 150,
+            "Description": "Sell price of Mint Mangoes."
+        },
+        "Mint Mango Sapling Price": {
+            "Section": "Economy",
+            "Default": 2000,
+            "Description": "Sell price of Mint Mango Saplings."
+        },
+        "Pogofruit Sell Price": {
+            "Section": "Economy",
+            "Default": 150,
+            "Description": "Sell price of Pogofruits."
+        },
+        "Pogofruit Sapling Price": {
+            "Section": "Economy",
+            "Default": 2000,
+            "Description": "Sell price of Pogofruit Saplings."
+        },
+        "Kookadoba Sell Price": {
+            "Section": "Economy",
+            "Default": 120,
+            "Description": "Sell price of Kookadobas."
+        },
+        "Kookadoba Bush Sapling Price": {
+            "Section": "Economy",
+            "Default": 2500,
+            "Description": "Sell price of Kookadoba Bush Saplings."
+        },
+        "Heart Beet Seeds Price": {
+            "Section": "Economy",
+            "Default": 40,
+            "Description": "Sell price of Heart Beet Seeds."
+        },
+        "Heart Beet Price": {
+            "Section": "Economy",
+            "Default": 60,
+            "Description": "Sell price of Heart Beets."
+        },
+        "Oca Oca Seeds Price": {
+            "Section": "Economy",
+            "Default": 50,
+            "Description": "Sell price of Oca Oca Seeds."
+        },
+        "Oca Oca Price": {
+            "Section": "Economy",
+            "Default": 80,
+            "Description": "Sell price of Oca Ocas."
+        },
+        "Odd Onion Seeds Price": {
+            "Section": "Economy",
+            "Default": 40,
+            "Description": "Sell price of Odd Onion Seeds."
+        },
+        "Odd Onion Price": {
+            "Section": "Economy",
+            "Default": 60,
+            "Description": "Sell price of Odd Onions."
+        },
+        "Silver Parsnip Seeds Price": {
+            "Section": "Economy",
+            "Default": 30,
+            "Description": "Sell price of Silver Parsnip Seeds."
+        },
+        "Silver Parsnip Price": {
+            "Section": "Economy",
+            "Default": 60,
+            "Description": "Sell price of Silver Parsnips."
+        },
+        "Gilded Ginger Seeds Price": {
+            "Section": "Economy",
+            "Default": 120,
+            "Description": "Sell price of Gilded Ginger Seeds."
+        },
+        "Gilded Ginger Price": {
+            "Section": "Economy",
+            "Default": 225,
+            "Description": "Sell price of Gilded Ginger."
+        },
+        "Hen Hen Egg Sell Price": {
+            "Section": "Economy",
+            "Default": 50,
+            "Description": "Sell price of Hen Hen eggs."
+        },
+        "Hen Hen Large Egg Sell Price": {
+            "Section": "Economy",
+            "Default": 100,
+            "Description": "Sell price of large Hen Hen eggs."
+        },
+        "Stony Hen Egg Sell Price": {
+            "Section": "Economy",
+            "Default": 100,
+            "Description": "Sell price of Stony Hen eggs."
+        },
+        "Stony Hen Large Egg Sell Price": {
+            "Section": "Economy",
+            "Default": 150,
+            "Description": "Sell price of large Stony Hen eggs."
+        },
+        "Briar Hen Egg Sell Price": {
+            "Section": "Economy",
+            "Default": 150,
+            "Description": "Sell price of Briar Hen eggs."
+        },
+        "Briar Hen Large Egg Sell Price": {
+            "Section": "Economy",
+            "Default": 200,
+            "Description": "Sell price of large Briar Hen eggs."
+        },
+        "Painted Hen Egg Sell Price": {
+            "Section": "Economy",
+            "Default": 200,
+            "Description": "Sell price of Painted Hen eggs."
+        },
+        "Painted Hen Large Egg Sell Price": {
+            "Section": "Economy",
+            "Default": 250,
+            "Description": "Sell price of large Painted Hen eggs."
+        },
+        "Hen Hen Mayo Sell Price": {
+            "Section": "Economy",
+            "Default": 200,
+            "Description": "Sell price of Hen Hen mayonnaise."
+        },
+        "Stony Hen Mayo Sell Price": {
+            "Section": "Economy",
+            "Default": 250,
+            "Description": "Sell price of Stony Hen mayonnaise."
+        },
+        "Briar Hen Mayo Sell Price": {
+            "Section": "Economy",
+            "Default": 300,
+            "Description": "Sell price of Briar Hen mayonnaise."
+        },
+        "Painted Hen Mayo Sell Price": {
+            "Section": "Economy",
+            "Default": 400,
+            "Description": "Sell price of Painted Hen mayonnaise."
+        },
+        "Spicy Tofu Sell Price": {
+            "Section": "Economy",
+            "Default": 400,
+            "Description": "Sell price of Spicy Tofu."
+        }
+    },
+    "Changes": [
+        {
+            "LogName": "Loading farm_slimes.json",
+            "Action": "Include",
+            "FromFile": "farm_slimes/farm_slimes.json",
+            "When": {
+                "Livestock Slimes": "true"
+            }
+        },
+        {
+            "LogName": "Loading livestock plorts.json",
+            "Action": "Include",
+            "FromFile": "farm_slimes/plorts.json",
+            "When": {
+                "Livestock Slimes": "true"
+            }
+        },
+        {
+            "LogName": "Loading drop_data.json",
+            "Action": "Include",
+            "FromFile": "farm_slimes/drop_data.json",
+            "When": {
+                "Livestock Slimes": "true"
+            }
+        },
+        {
+            "LogName": "Loading fish_slimes.json",
+            "Action": "Include",
+            "FromFile": "fish_slimes/fish_slimes.json",
+            "When": {
+                "Fishing Slimes": "true"
+            }
+        },
+        {
+            "LogName": "Loading location_data.json",
+            "Action": "Include",
+            "FromFile": "fish_slimes/location_data.json",
+            "When": {
+                "Fishing Slimes": "true"
+            }
+        },
+        {
+            "LogName": "Loading fishing plorts.json",
+            "Action": "Include",
+            "FromFile": "fish_slimes/plorts.json",
+            "When": {
+                "Fishing Slimes": "true"
+            }
+        },
+        {
+            "LogName": "Loading fruit_trees.json",
+            "Action": "Include",
+            "FromFile": "crops/fruit_trees.json",
+            "When": {
+                "Crops": "true"
+            }
+        },
+        {
+            "LogName": "Loading fruits_and_saplings.json",
+            "Action": "Include",
+            "FromFile": "crops/fruits_and_saplings.json",
+            "When": {
+                "Crops": "true"
+            }
+        },
+        {
+            "LogName": "Loading bushes.json",
+            "Action": "Include",
+            "FromFile": "crops/bushes.json",
+            "When": {
+                "Crops": "true"
+            }
+        },
+        {
+            "LogName": "Loading recipes.json",
+            "Action": "Include",
+            "FromFile": "recipes/recipes.json",
+            "When": {
+                "Crops": "true"
+            }
+        },
+        {
+            "LogName": "Loading shop_data.json",
+            "Action": "Include",
+            "FromFile": "crops/shop_data.json",
+            "When": {
+                "Crops": "true"
+            }
+        },
+        {
+            "LogName": "Loading crops.json",
+            "Action": "Include",
+            "FromFile": "crops/crops.json",
+            "When": {
+                "Crops": "true"
+            }
+        },
+        {
+            "LogName": "Loading seeds.json",
+            "Action": "Include",
+            "FromFile": "crops/seeds.json",
+            "When": {
+                "Crops": "true"
+            }
+        },
+        {
+            "LogName": "Loading hens.json",
+            "Action": "Include",
+            "FromFile": "hens/hens.json",
+            "When": {
+                "Hen Livestock": "true"
+            }
+        },
+        {
+            "LogName": "Loading eggs.json",
+            "Action": "Include",
+            "FromFile": "hens/eggs.json",
+            "When": {
+                "Hen Livestock": "true"
+            }
+        },
+        {
+            "LogName": "Loading mayos.json",
+            "Action": "Include",
+            "FromFile": "hens/mayos.json",
+            "When": {
+                "Hen Livestock": "true"
+            }
+        }
+    ]
+}

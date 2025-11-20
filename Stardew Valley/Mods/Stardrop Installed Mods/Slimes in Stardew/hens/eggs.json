@@ -1,0 +1,97 @@
+{
+    "Changes": [
+        {
+            "LogName": "Editing Hen egg object data",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}.Hen_Hen_Egg": {
+                    "Name": "{{ModId}}.Hen_Hen_Egg",
+                    "Displayname": "{{i18n: item.hen_hen_egg}}",
+                    "Description": "{{i18n: item_description.hen_hen_egg}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": "{{Hen Hen Egg Sell Price}}",
+                    "Texture": "Mods/{{ModId}}/hen_hen_egg",
+                    "SpriteIndex": 0
+                },
+                "{{ModId}}.Hen_Hen_Large_Egg": {
+                    "Name": "{{ModId}}.Hen_Hen_Large_Egg",
+                    "Displayname": "{{i18n: item.hen_hen_large_egg}}",
+                    "Description": "{{i18n: item_description.hen_hen_large_egg}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": "{{Hen Hen Large Egg Sell Price}}",
+                    "Texture": "Mods/{{ModId}}/hen_hen_large_egg",
+                    "SpriteIndex": 0
+                },
+                "{{ModId}}.Stony_Hen_Egg": {
+                    "Name": "{{ModId}}.stony_hen_Egg",
+                    "Displayname": "{{i18n: item.stony_hen_egg}}",
+                    "Description": "{{i18n: item_description.stony_hen_egg}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": "{{Stony Hen Egg Sell Price}}",
+                    "Texture": "Mods/{{ModId}}/stony_hen_egg",
+                    "SpriteIndex": 0
+                },
+                "{{ModId}}.Stony_Hen_Large_Egg": {
+                    "Name": "{{ModId}}.stony_hen_Large_Egg",
+                    "Displayname": "{{i18n: item.stony_hen_large_egg}}",
+                    "Description": "{{i18n: item_description.stony_hen_large_egg}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": "{{Stony Hen Large Egg Sell Price}}",
+                    "Texture": "Mods/{{ModId}}/stony_hen_large_egg",
+                    "SpriteIndex": 0
+                },
+                "{{ModId}}.Briar_Hen_Egg": {
+                    "Name": "{{ModId}}.briar_hen_Egg",
+                    "Displayname": "{{i18n: item.briar_hen_egg}}",
+                    "Description": "{{i18n: item_description.briar_hen_egg}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": "{{Briar Hen Egg Sell Price}}",
+                    "Texture": "Mods/{{ModId}}/briar_hen_egg",
+                    "SpriteIndex": 0
+                },
+                "{{ModId}}.Briar_Hen_Large_Egg": {
+                    "Name": "{{ModId}}.briar_hen_Large_Egg",
+                    "Displayname": "{{i18n: item.briar_hen_large_egg}}",
+                    "Description": "{{i18n: item_description.briar_hen_large_egg}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": "{{Briar Hen Large Egg Sell Price}}",
+                    "Texture": "Mods/{{ModId}}/briar_hen_large_egg",
+                    "SpriteIndex": 0
+                },
+                "{{ModId}}.Painted_Hen_Egg": {
+                    "Name": "{{ModId}}.painted_hen_Egg",
+                    "Displayname": "{{i18n: item.painted_hen_egg}}",
+                    "Description": "{{i18n: item_description.painted_hen_egg}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": "{{Painted Hen Egg Sell Price}}",
+                    "Texture": "Mods/{{ModId}}/painted_hen_egg",
+                    "SpriteIndex": 0
+                },
+                "{{ModId}}.Painted_Hen_Large_Egg": {
+                    "Name": "{{ModId}}.painted_hen_Large_Egg",
+                    "Displayname": "{{i18n: item.painted_hen_large_egg}}",
+                    "Description": "{{i18n: item_description.painted_hen_large_egg}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": "{{Painted Hen Large Egg Sell Price}}",
+                    "Texture": "Mods/{{ModId}}/painted_hen_large_egg",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+        {
+            "LogName": "Loading Hen egg assets",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/hen_hen_egg, Mods/{{ModId}}/hen_hen_large_egg, Mods/{{ModId}}/briar_hen_egg, Mods/{{ModId}}/briar_hen_large_egg, Mods/{{ModId}}/painted_hen_egg, Mods/{{ModId}}/painted_hen_large_egg, Mods/{{ModId}}/stony_hen_egg, Mods/{{ModId}}/stony_hen_large_egg,",
+            "FromFile": "assets/items/{{TargetWithoutPath}}.png"
+        }
+    ]
+}

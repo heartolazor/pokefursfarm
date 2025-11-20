@@ -1,0 +1,37 @@
+{
+    "Changes": [
+        {
+            "LogName": "Editing fishing plort object data",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}.Puddle_Plort": {
+                    "Name": "{{ModId}}.Puddle_Plort",
+                    "Displayname": "{{i18n: item.puddle_plort}}",
+                    "Description": "{{i18n: item_description.puddle_plort}}",
+                    "Type": "Basic",
+                    "Category": -23,
+                    "Price": "{{Puddle Plort Sell Price}}",
+                    "Texture": "Mods/{{ModId}}/puddle_plort",
+                    "SpriteIndex": 0
+                },
+                "{{ModId}}.Fire_Plort": {
+                    "Name": "{{ModId}}.Fire_Plort",
+                    "Displayname": "{{i18n: item.fire_plort}}",
+                    "Description": "{{i18n: item_description.fire_plort}}",
+                    "Type": "Basic",
+                    "Category": -23,
+                    "Price": "{{Fire Plort Sell Price}}",
+                    "Texture": "Mods/{{ModId}}/fire_plort",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+        {
+            "LogName": "Loading fishing plort assets",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/puddle_plort, Mods/{{ModId}}/fire_plort",
+            "FromFile": "assets/plorts/{{TargetWithoutPath}}.png"
+        }
+    ]
+}

@@ -1,0 +1,396 @@
+{
+    "Changes": [
+        {
+            "LogName": "Loading livestock Hen assets",
+            "Action": "Load",
+            "Target": "{{ModId}}/chickadoo, {{ModId}}/hen_hen, {{ModId}}/stony_chickadoo, {{ModId}}/stony_hen, {{ModId}}/briar_chickadoo, {{ModId}}/briar_hen, {{ModId}}/painted_chickadoo, {{ModId}}/painted_hen, {{ModId}}/roostro, {{ModId}}/hen_hen_shop_texture, {{ModId}}/stony_hen_shop_texture,  {{ModId}}/briar_hen_shop_texture, {{ModId}}/painted_hen_shop_texture",
+            "FromFile": "assets/animals/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Editing data for livestock Hens",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}.Hen_Hen": {
+                    "DisplayName": "{{i18n: hen_hen.name}}",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "PurchasePrice": "{{Hen Hen Purchase Price}}",
+                    "SellPrice": "{{Hen Hen Sell Price}}",
+                    "ShopTexture": "{{ModID}}/hen_hen_shop_texture",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "ShopDisplayName": "{{i18n: hen_hen.name}}",
+                    "ShopDescription": "{{i18n: hen_hen.description |days={{Hen Days To Produce}}}}",
+                    "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5926]",
+                    "RequiredBuilding": "Coop",
+                    "UnlockCondition": null,
+                    "AlternatePurchaseTypes": [
+                        {
+                            "Condition": null,
+                            "AnimalIds": [
+                                "{{ModId}}.Hen_Hen",
+                                "{{ModId}}.Roostro"
+                            ]
+                        }
+                    ],
+                    "EggItemIds": [
+                        "{{ModId}}.Hen_Hen_Egg",
+                        "{{ModId}}.Hen_Hen_Large_Egg"
+                    ],
+                    "IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "{{i18n: hen_hen.birth}}",
+                    "DaysToMature": "{{Hen Days To Mature}}",
+                    "CanGetPregnant": false,
+                    "DaysToProduce": "{{Hen Days To Produce}}",
+                    "HarvestType": 0,
+                    "HarvestTool": null,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}.Hen_Hen_Egg"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}.Hen_Hen_Large_Egg"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "cluck",
+                    "BabySound": null,
+                    "Texture": "{{ModID}}/hen_hen",
+                    "HarvestedTexture": null,
+                    "BabyTexture": "{{ModID}}/chickadoo",
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "Skins": null,
+                    "ShadowWhenBabySwims": null,
+                    "ShadowWhenBaby": null,
+                    "ShadowWhenAdultSwims": null,
+                    "ShadowWhenAdult": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 7,
+                    "ShowInSummitCredits": true,
+                    "CustomFields": null
+                },
+                "{{ModId}}.Roostro": {
+                    "DisplayName": "{{i18n: roostro.name}}",
+                    "House": "Coop",
+                    "Gender": "Male",
+                    "PurchasePrice": -1,
+                    "SellPrice": "{{Hen Hen Sell Price}}",
+                    "ShopTexture": null,
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 0,
+                        "Height": 0
+                    },
+                    "ShopDisplayName": null,
+                    "ShopDescription": null,
+                    "ShopMissingBuildingDescription": null,
+                    "RequiredBuilding": null,
+                    "UnlockCondition": null,
+                    "EggItemIds": [
+                        "{{ModId}}.Hen_Hen_Egg",
+                        "{{ModId}}.Hen_Hen_Large_Egg"
+                    ],
+                    "IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "{{i18n: hen_hen.birth}}",
+                    "DaysToMature": "{{Hen Days To Mature}}",
+                    "CanGetPregnant": false,
+                    "DaysToProduce": "{{Hen Days To Produce}}",
+                    "HarvestType": 0,
+                    "HarvestTool": null,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}.Hen_Hen_Egg"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}.Hen_Hen_Large_Egg"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "cluck",
+                    "BabySound": null,
+                    "Texture": "{{ModID}}/roostro",
+                    "HarvestedTexture": null,
+                    "BabyTexture": "{{ModID}}/chickadoo",
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "Skins": null,
+                    "ShadowWhenBabySwims": null,
+                    "ShadowWhenBaby": null,
+                    "ShadowWhenAdultSwims": null,
+                    "ShadowWhenAdult": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 7,
+                    "ShowInSummitCredits": true,
+                    "CustomFields": null
+                },
+                "{{ModId}}.Stony_Hen": {
+                    "DisplayName": "{{i18n: stony_hen.name}}",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "PurchasePrice": "{{Stony Hen Purchase Price}}",
+                    "SellPrice": "{{Stony Hen Sell Price}}",
+                    "ShopTexture": "{{ModID}}/stony_hen_shop_texture",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "ShopDisplayName": "{{i18n: stony_hen.name}}",
+                    "ShopDescription": "{{i18n: stony_hen.description |days={{Hen Days To Produce}}}}",
+                    "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5926]",
+                    "RequiredBuilding": "Coop",
+                    "UnlockCondition": null,
+                    "EggItemIds": [
+                        "{{ModId}}.Stony_Hen_Egg",
+                        "{{ModId}}.Stony_Hen_Large_Egg"
+                    ],
+                    "IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "{{i18n: stony_hen.birth}}",
+                    "DaysToMature": "{{Hen Days To Mature}}",
+                    "CanGetPregnant": false,
+                    "DaysToProduce": "{{Hen Days To Produce}}",
+                    "HarvestType": 0,
+                    "HarvestTool": null,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}.Stony_Hen_Egg"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}.Stony_Hen_Large_Egg"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "cluck",
+                    "BabySound": null,
+                    "Texture": "{{ModID}}/stony_hen",
+                    "HarvestedTexture": null,
+                    "BabyTexture": "{{ModID}}/stony_chickadoo",
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "Skins": null,
+                    "ShadowWhenBabySwims": null,
+                    "ShadowWhenBaby": null,
+                    "ShadowWhenAdultSwims": null,
+                    "ShadowWhenAdult": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 7,
+                    "ShowInSummitCredits": true,
+                    "CustomFields": null
+                },
+                "{{ModId}}.Briar_Hen": {
+                    "DisplayName": "{{i18n: briar_hen.name}}",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "PurchasePrice": "{{Briar Hen Purchase Price}}",
+                    "SellPrice": "{{Briar Hen Sell Price}}",
+                    "ShopTexture": "{{ModID}}/briar_hen_shop_texture",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "ShopDisplayName": "{{i18n: briar_hen.name}}",
+                    "ShopDescription": "{{i18n: briar_hen.description |days={{Hen Days To Produce}}}}",
+                    "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5926]",
+                    "RequiredBuilding": "Coop",
+                    "UnlockCondition": "PLAYER_VISITED_LOCATION Current Woods",
+                    "EggItemIds": [
+                        "{{ModId}}.Briar_Hen_Egg",
+                        "{{ModId}}.Briar_Hen_Large_Egg"
+                    ],
+                    "IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "{{i18n: briar_hen.birth}}",
+                    "DaysToMature": "{{Hen Days To Mature}}",
+                    "CanGetPregnant": false,
+                    "DaysToProduce": "{{Hen Days To Produce}}",
+                    "HarvestType": 0,
+                    "HarvestTool": null,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}.Briar_Hen_Egg"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}.Briar_Hen_Large_Egg"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "cluck",
+                    "BabySound": null,
+                    "Texture": "{{ModID}}/briar_hen",
+                    "HarvestedTexture": null,
+                    "BabyTexture": "{{ModID}}/briar_chickadoo",
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "Skins": null,
+                    "ShadowWhenBabySwims": null,
+                    "ShadowWhenBaby": null,
+                    "ShadowWhenAdultSwims": null,
+                    "ShadowWhenAdult": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 7,
+                    "ShowInSummitCredits": true,
+                    "CustomFields": null
+                },
+                "{{ModId}}.Painted_Hen": {
+                    "DisplayName": "{{i18n: painted_hen.name}}",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "PurchasePrice": "{{Painted Hen Purchase Price}}",
+                    "SellPrice": "{{Painted Hen Sell Price}}",
+                    "ShopTexture": "{{ModID}}/painted_hen_shop_texture",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "ShopDisplayName": "{{i18n: painted_hen.name}}",
+                    "ShopDescription": "{{i18n: painted_hen.description |days={{Hen Days To Produce}}}}",
+                    "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5926]",
+                    "RequiredBuilding": "Coop",
+                    "UnlockCondition": "LOCATION_ACCESSIBLE Desert",
+                    "EggItemIds": [
+                        "{{ModId}}.Painted_Hen_Egg",
+                        "{{ModId}}.Painted_Hen_Large_Egg"
+                    ],
+                    "IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "{{i18n: painted_hen.birth}}",
+                    "DaysToMature": "{{Hen Days To Mature}}",
+                    "CanGetPregnant": false,
+                    "DaysToProduce": "{{Hen Days To Produce}}",
+                    "HarvestType": 0,
+                    "HarvestTool": null,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}.Painted_Hen_Egg"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}.Painted_Hen_Large_Egg"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "cluck",
+                    "BabySound": null,
+                    "Texture": "{{ModID}}/painted_hen",
+                    "HarvestedTexture": null,
+                    "BabyTexture": "{{ModID}}/painted_chickadoo",
+                    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "Skins": null,
+                    "ShadowWhenBabySwims": null,
+                    "ShadowWhenBaby": null,
+                    "ShadowWhenAdultSwims": null,
+                    "ShadowWhenAdult": null,
+                    "CanSwim": false,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 7,
+                    "ShowInSummitCredits": true,
+                    "CustomFields": null
+                }
+            }
+        }
+    ]
+}

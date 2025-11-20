@@ -1,0 +1,35 @@
+{
+    "Changes": [
+        {
+            "LogName": "Editing recipe object data",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}.Spicy_Tofu": {
+                    "Name": "{{ModId}}.Spicy_Tofu",
+                    "Displayname": "{{i18n: item.spicy_tofu}}",
+                    "Description": "{{i18n: item_description.spicy_tofu}}",
+                    "Type": "Basic",
+                    "Category": -7,
+                    "Price": "{{Spicy Tofu Sell Price}}",
+                    "Texture": "Mods/{{ModId}}/spicy_tofu",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+        {
+            "LogName": "Loading recipe assets",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/spicy_tofu",
+            "FromFile": "assets/items/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Editing cooking recipes",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}.Spicy_Tofu": "{{ModId}}.Kookadoba 3/10 10/{{ModId}}.Spicy_Tofu/none"
+            }
+        }
+    ]
+}
