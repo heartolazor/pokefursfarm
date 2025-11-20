@@ -1,0 +1,27 @@
+{
+
+    /**
+     * The mod IDs SMAPI should load before any other mods (except those needed to load them)
+     * or after any other mods.
+     *
+     * This lets you manually fix the load order if needed, but this is a last resort — SMAPI
+     * automatically adjusts the load order based on mods' dependencies, so needing to manually
+     * edit the order is usually a problem with one or both mods' metadata that can be reported to
+     * the mod author.
+     */
+    "ModsToLoadEarly": [
+        "Nyapu.Portraits",
+        "Aelinore.FievelPortrait",
+        "SeaSea50.NyapuStylePortrait",
+        "AhCuteArt.NyapuNora",
+        "SeaSea.NyapuStylePortrait.AnnettaAndJelli",
+        "nugmods.NyapuEND",
+        "nugmods.nyapurosealchemist",
+        "nugmods.nyapuripley",
+        "sion9000.AnthroCharactersContinued",
+        "RydelTheOtter.FurrySVE",
+    ],
+    "ModsToLoadLate": [
+        "FSL6.StarDergValley"
+    ]
+}
