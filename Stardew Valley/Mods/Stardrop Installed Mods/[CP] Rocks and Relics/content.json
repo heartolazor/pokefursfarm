@@ -1,6 +1,24 @@
 {
-   "Format": "2.3.0",
+   "Format": "2.8.0",
    "ConfigSchema": {
+        "Transmute.UnlockMethod": {
+			"AllowValues": "Story, Skill, Lazy",
+			"Default": "Story",
+			"AllowBlank": false,
+			"Section": "Transmutation"
+        },
+        "Jewelry.Variants": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"AllowBlank": false,
+			"Section": "Jewelry"
+        },
+        "Jewelry.UnlockMethod": {
+			"AllowValues": "Skill, Lazy",
+			"Default": "Skill",
+			"AllowBlank": false,
+			"Section": "Jewelry"
+        },
         "Coal.Spawn": {
             "Default": 0.00174,
             "Section": "Rate"
@@ -201,7 +219,15 @@
     },
     {
         "Action": "Include",
+        "FromFile": "assets/Data/CraftingRecipes.json",
+    },
+    {
+        "Action": "Include",
         "FromFile": "assets/Data/CustomOre.json"
+    },
+    {
+        "Action": "Include",
+        "FromFile": "assets/Data/Events.json"
     },
     {
         "Action": "Include",
@@ -213,12 +239,23 @@
     },
     {
         "Action": "Include",
+        "FromFile": "assets/Data/NPCGiftTastes.json",
+    },
+    {
+        "Action": "Include",
         "FromFile": "assets/Data/Weapons.json",
     },
     {
         "Action": "Include",
         "FromFile": "assets/Data/MuseumRewards.json",
     },
+    {
+        "Action": "Include",
+        "FromFile": "assets/Data/Quests.json",
+    },
+    {
+        "Action": "Include",
+        "FromFile": "assets/Data/Strings.json",
+    }
     ]
 }
-

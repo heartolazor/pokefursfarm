@@ -1,0 +1,58 @@
+{
+   "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "When": {
+                "Transmute.UnlockMethod": "Story"
+            },
+            "Entries": {
+                "{{ModId}}.TransmutationTable": "388 40 771 10 336 2 93 1/Home/{{ModId}}.TransmutationTable/true/none/{{i18n: RAR.TransmutationTable.name}}",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "When": {
+                "Transmute.UnlockMethod": "Skill"
+            },
+            "Entries": {
+                "{{ModId}}.TransmutationTable": "388 40 771 10 336 2 93 1/Home/{{ModId}}.TransmutationTable/true/Mining 9/{{i18n: RAR.TransmutationTable.name}}",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "When": {
+                "Transmute.UnlockMethod": "Lazy"
+            },
+            "Entries": {
+                "{{ModId}}.TransmutationTable": "388 40 771 10 336 2 93 1/Home/{{ModId}}.TransmutationTable/true/default/{{i18n: RAR.TransmutationTable.name}}",
+            }
+        },
+
+        //Jewelry
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "When": {
+                "Jewelry.UnlockMethod": "Skill"
+            },
+            "Entries": {
+                "{{ModId}}.GemTumbler": "388 40 334 2/Home/{{ModId}}.GemTumbler/true/Mining 3/{{i18n: RAR.GemTumbler.name}}",
+                "{{ModId}}.LapidaryBench": "390 100 335 5/Home/{{ModId}}.LapidaryBench/true/Mining 6/{{i18n: RAR.LapidaryBench.name}}",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "When": {
+                "Jewelry.UnlockMethod": "Lazy"
+            },
+            "Entries": {
+                "{{ModId}}.GemTumbler": "388 40 334 2/Home/{{ModId}}.GemTumbler/true/default/{{i18n: RAR.GemTumbler.name}}",
+                "{{ModId}}.LapidaryBench": "390 100 335 5/Home/{{ModId}}.LapidaryBench/true/default/{{i18n: RAR.LapidaryBench.name}}",
+            }
+        },
+    ]
+}

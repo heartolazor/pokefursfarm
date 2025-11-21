@@ -1,0 +1,419 @@
+{
+	"Changes": [
+		{
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/Objects, Mods/{{ModId}}/Artisan, Mods/{{ModId}}/Artisan-Vanilla, Mods/{{ModId}}/Base",
+			"FromFile": "assets/Resources/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "RAR Object",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				//MINERALS
+				"{{ModId}}.Olivine": {
+					"Name": "Olivine",
+					"Displayname": "{{i18n: RAR.Olivine.name}}",
+					"Description": "{{i18n: RAR.Olivine.description}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 95,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 0,
+					"ContextTags": [
+						"color_green",
+						"5_iron"
+					],
+				},
+				"{{ModId}}.Peridot": {
+					"Name": "Peridot",
+					"Displayname": "{{i18n: RAR.Peridot.name}}",
+					"Description": "{{i18n: RAR.Peridot.description}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 170,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 1,
+					"ContextTags": [
+						"color_lime",
+						"5_iron"
+					],
+				},
+				"{{ModId}}.LapisLazuli": {
+					"Name": "Lapis Lazuli",
+					"Displayname": "{{i18n: RAR.LapisLazuli.name}}",
+					"Description": "{{i18n: RAR.LapisLazuli.description}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 180,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 2,
+					"ContextTags": [
+						"color_dark_blue",
+						"5_gold"
+					],
+				},
+				"{{ModId}}.Zircon": {
+					"Name": "Zircon",
+					"Displayname": "{{i18n: RAR.Zircon.name}}",
+					"Description": "{{i18n: RAR.Zircon.description}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 140,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 3,
+					"ContextTags": [
+						"color_red",
+						"5_gold"
+					],
+				},
+				"{{ModId}}.Onyx": {
+					"Name": "Onyx",
+					"Displayname": "{{i18n: RAR.Onyx.name}}",
+					"Description": "{{i18n: RAR.Onyx.description}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 130,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 4,
+					"ContextTags": [
+						"color_black",
+						"3_quartz"
+					],
+				},
+				"{{ModId}}.Vanadinite": {
+					"Name": "Vanadinite",
+					"Displayname": "{{i18n: RAR.Vanadinite.name}}",
+					"Description": "{{i18n: RAR.Vanadinite.description}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 160,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 5,
+					"ContextTags": [
+						"color_dark_orange",
+						"12_iron"
+					],
+				},
+				"{{ModId}}.Sapphire": {
+					"Name": "Sapphire",
+					"Displayname": "{{i18n: RAR.Sapphire.name}}",
+					"Description": "{{i18n: RAR.Sapphire.description}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 250,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 6,
+					"ContextTags": [
+						"color_light_cyan",
+						"7_gold"
+					],
+				},
+				"{{ModId}}.Rhodochrosite": {
+					"Name": "Rhodochrosite",
+					"Displayname": "{{i18n: RAR.Rhodochrosite.name}}",
+					"Description": "{{i18n: RAR.Rhodochrosite.description}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 235,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 7,
+					"ContextTags": [
+						"color_pink",
+						"10_copper"
+					],
+				},
+				"{{ModId}}.Sunstone": {
+					"Name": "Sunstone",
+					"Displayname": "{{i18n: RAR.Sunstone.name}}",
+					"Description": "{{i18n: RAR.Sunstone.description}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 520,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 8,
+					"ContextTags": [
+						"color_dark_orange",
+						"10_gold"
+					],
+				},
+				"{{ModId}}.PrismaticPieces": {
+					"Name": "Prismatic Pieces",
+					"Displayname": "{{i18n: RAR.PrismaticPieces.name}}",
+					"Description": "{{i18n: RAR.PrismaticPieces.description}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 150,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 9,
+					"ContextTags": [
+						"color_prismatic",
+					],
+				},
+				"{{ModId}}.Hornblende": {
+					"Name": "Hornblende",
+					"Displayname": "{{i18n: RAR.Hornblende.name}}",
+					"Description": "{{i18n: RAR.Hornblende.description}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 80,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 10,
+					"ContextTags": [
+						"color_black",
+						"5_iron"
+					],
+				},
+				"{{ModId}}.Gneiss": {
+					"Name": "Gneiss",
+					"Displayname": "{{i18n: RAR.Gneiss.name}}",
+					"Description": "{{i18n: RAR.Gneiss.description}} [LocalizedText Strings\\Objects:FrozenGeode_Description]",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 160,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 11,
+					"ContextTags": [
+						"color_brown",
+						"10_iron"
+					],
+					"GeodeDrops": [
+						{
+							"Chance": 0.05,
+							"Condition": "RANDOM 0.1 @addDailyLuck",
+							"Id": "Rare-Mineral",
+							"RandomItemId": [
+								"(O)538",						//Alamite
+								"(O)62",						//Aquamarine
+								"(O)60",						//Emerald
+								"(O)70",						//Jade
+								"(O)553",						//Neptunite
+								"(O){{ModId}}.Sapphire",
+								"(O)82",						//Fire Quartz
+								"(O){{ModId}}.LapisLazuli",
+								"(O)547",						//Helvite
+								"(O)550",						//Kyanite
+								"(O)556",						//Orpiment
+								"(O)64",						//Ruby
+								"(O)577",						//Fairy Stone
+								"(O)68",						//Topaz
+							],
+						},
+						{
+							"Chance": 0.05,
+							"Condition": null,
+							"Id": "Rare-Ore",
+							"MinStack": 1,
+							"MaxStack": 2,
+							"ItemId": "(O)384" //Gold Ore
+						},
+						{
+							"Chance": 0.25,
+							"Condition": "RANDOM 0.25 @addDailyLuck",
+							"Id": "Uncommon-Mineral",
+							"RandomItemId": [
+								"(O)66",						//Amethyst
+								"(O)540",						//Baryte
+								"(O)542",						//Calcite
+								"(O)554",						//Lemon Stone
+								"(O)543",						//Dolomite
+								"(O)561",						//Ghost Crystal
+								"(O)573",						//Hematite
+								"(O){{ModId}}.LapisLazuli",
+								"(O)559",						//Pyrite
+								"(O){{ModId}}.Rhodochrosite",
+								"(O){{ModId}}.Sunstone",
+								"(O)562",						//Tigerseye
+								"(O){{ModId}}.Olivine",
+								"(O){{ModId}}.Peridot",
+							],
+						},
+						{
+							"Chance": 0.25,
+							"Condition": null,
+							"Id": "Uncommon-Ore",
+							"MinStack": 1,
+							"MaxStack": 3,
+							"ItemId": "(O)378" //Copper Ore
+						},
+						{
+							"Chance": 1.0,
+							"Condition": "RANDOM 0.4 @addDailyLuck",
+							"Id": "Common-Mineral",
+							"RandomItemId": [
+								"(O)80",						//Quartz
+								"(O)545",						//Fluorapatite
+								"(O){{ModId}}.Zircon"
+							],
+						},
+						{
+							"Chance": 1.0,
+							"Condition": null,
+							"Id": "Common-Ore",
+							"MinStack": 3,
+							"MaxStack": 6,
+							"ItemId": "(O)380" //Iron Ore
+						}
+					],
+				},
+				"{{ModId}}.Schist": {
+					"Name": "Schist",
+					"Displayname": "{{i18n: RAR.Schist.name}}",
+					"Description": "{{i18n: RAR.Schist.description}} [LocalizedText Strings\\Objects:FrozenGeode_Description]",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 235,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 12,
+					"ContextTags": [
+						"color_brown",
+						"15_iron"
+					],
+					"GeodeDrops": [
+						{
+							"Chance": 0.05,
+							"Condition": "RANDOM 0.1 @addDailyLuck",
+							"Id": "Rare-Mineral",
+							"RandomItemId": [
+								"(O)538",						//Alamite
+								"(O)60",						//Emerald
+								"(O)70",						//Jade
+								"(O)553",						//Neptunite
+								"(O){{ModId}}.Sapphire",
+								"(O)82",						//Fire Quartz
+								"(O)556",						//Orpiment
+								"(O)64",						//Ruby
+							],
+						},
+						{
+							"Chance": 0.05,
+							"Condition": null,
+							"Id": "Rare-Ore",
+							"MinStack": 1,
+							"MaxStack": 2,
+							"ItemId": "(O)382" //Coal
+						},
+						{
+							"Chance": 0.25,
+							"Condition": "RANDOM 0.25 @addDailyLuck",
+							"Id": "Uncommon-Mineral",
+							"RandomItemId": [
+								"(O)66",						//Amethyst
+								"(O)540",						//Baryte
+								"(O)542",						//Calcite
+								"(O)554",						//Lemon Stone
+								"(O)543",						//Dolomite
+								"(O)561",						//Ghost Crystal
+								"(O)573",						//Hematite
+								"(O){{ModId}}.LapisLazuli",
+								"(O)559",						//Pyrite
+								"(O){{ModId}}.Rhodochrosite",
+								"(O){{ModId}}.Sunstone",
+								"(O)562",						//Tigerseye
+								"(O){{ModId}}.Olivine",
+								"(O){{ModId}}.Peridot",
+							],
+						},
+						{
+							"Chance": 0.25,
+							"Condition": null,
+							"Id": "Uncommon-Ore",
+							"MinStack": 1,
+							"MaxStack": 3,
+							"RandomItemId": [
+								"(O)378",	//Copper Ore
+								"(O)384"	//Gold Ore
+							],
+						},
+						{
+							"Chance": 1.0,
+							"Condition": "RANDOM 0.4 @addDailyLuck",
+							"Id": "Common-Mineral",
+							"RandomItemId": [
+								"(O)80",						//Quartz
+								"(O)545",						//Fluorapatite
+								"(O){{ModId}}.Zircon",
+								"(O)550",						//Kyanite
+								"(O)577",						//Fairy Stone
+							],
+						},
+						{
+							"Chance": 1.0,
+							"Condition": null,
+							"Id": "Common-Ore",
+							"MinStack": 3,
+							"MaxStack": 6,
+							"ItemId": "(O)380" //Iron Ore
+						}
+					],
+				},
+				"{{ModId}}.Halite": {
+					"Name": "Halite",
+					"Displayname": "{{i18n: RAR.Halite.name}}",
+					"Description": "{{i18n: RAR.Halite.description}}",
+					"Type": "Minerals",
+					"Category": -2,
+					"Price": 475,
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 13,
+					"ContextTags": [
+						"color_gray"
+					],
+				},
+			},
+		},
+
+		//Data\\Objects
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Objects/AddGoldBase.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Objects/AddPolishedGem.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Objects/AddGemEarrings.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Objects/AddGemRing.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Objects/AddGemNecklace.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Objects/AddGemBracelet.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Objects/AddGemLocket.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Objects/AddGemTiara.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Objects/AddGemHairpin.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Objects/AppendCategories.json",
+			"When": {"HasMod": "sophie.Calcifer"}
+			
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Objects/AppendContextTags.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Objects/AppendGeodeDrops.json"
+		},
+	]
+}
+

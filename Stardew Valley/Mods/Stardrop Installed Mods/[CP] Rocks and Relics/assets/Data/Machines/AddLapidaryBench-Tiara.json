@@ -1,0 +1,452 @@
+{
+    "Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"Entries": {
+				"{{ModId}}.LapidaryBench.Tiara": {
+					"Name": "Lapidary Bench (Tiara)",
+					"DisplayName": "{{i18n: RAR.LapidaryBench.name}} {{i18n: RAR.Open.Parenthesis}}{{i18n: RAR.Tiara.Base.name}}{{i18n: RAR.Close.Parenthesis}}",
+					"Description": "{{i18n: RAR.LapidaryBench.Tiara.description}} {{i18n: RAR.LapidaryBench.description}}",
+					"Texture": "Mods/{{ModId}}/Machines",
+					"SpriteIndex": 12,
+				},
+			}
+		},
+		//Base
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": {
+				"(BC){{ModId}}.LapidaryBench.Tiara": {
+					"LoadEffects": [
+						{
+							"Sounds": [
+								{
+									"Id": "fireball"
+								}
+							],
+						}
+					],
+					"ShowNextIndexWhileWorking": true,
+					"ShowNextIndexWhenReady": true,
+				}
+			}
+		},
+		//RAR
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC){{ModId}}.LapidaryBench.Tiara", "OutputRules" ],
+			"When": {"Jewelry.Variants": true},
+			"Entries": {
+				"{{ModId}}.Peridot.Tiara": {
+					"Id": "{{ModId}}.Peridot.Tiara",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Peridot",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Peridot.Tiara",
+							"ItemId": "(O){{ModId}}.Peridot.Tiara",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Tiara.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.LapisLazuli.Tiara": {
+					"Id": "{{ModId}}.LapisLazuli.Tiara",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.LapisLazuli",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.LapisLazuli.Tiara",
+							"ItemId": "(O){{ModId}}.LapisLazuli.Tiara",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Tiara.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Zircon.Tiara": {
+					"Id": "{{ModId}}.Zircon.Tiara",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Zircon",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Zircon.Tiara",
+							"ItemId": "(O){{ModId}}.Zircon.Tiara",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Tiara.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Onyx.Tiara": {
+					"Id": "{{ModId}}.Onyx.Tiara",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Onyx",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Onyx.Tiara",
+							"ItemId": "(O){{ModId}}.Onyx.Tiara",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Tiara.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Vanadinite.Tiara": {
+					"Id": "{{ModId}}.Vanadinite.Tiara",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Vanadinite",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Vanadinite.Tiara",
+							"ItemId": "(O){{ModId}}.Vanadinite.Tiara",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Tiara.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Sapphire.Tiara": {
+					"Id": "{{ModId}}.Sapphire.Tiara",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Sapphire",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Sapphire.Tiara",
+							"ItemId": "(O){{ModId}}.Sapphire.Tiara",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Tiara.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Rhodochrosite.Tiara": {
+					"Id": "{{ModId}}.Rhodochrosite.Tiara",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Rhodochrosite",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Rhodochrosite.Tiara",
+							"ItemId": "(O){{ModId}}.Rhodochrosite.Tiara",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Tiara.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Sunstone.Tiara": {
+					"Id": "{{ModId}}.Sunstone.Tiara",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Sunstone",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Sunstone.Tiara",
+							"ItemId": "(O){{ModId}}.Sunstone.Tiara",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Tiara.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				}
+			}
+		},
+		//VMV
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC){{ModId}}.LapidaryBench.Tiara", "OutputRules" ],
+			"When": {
+				"Jewelry.Variants": true,
+				"HasMod": "Lumisteria.MtVapius"
+			},
+			"Entries": {
+				"{{ModId}}.Amethyst.Tiara": {
+					"Id": "{{ModId}}.Amethyst.Tiara",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Amethyst_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Amethyst.Tiara",
+							"ItemId": "(O){{ModId}}.Amethyst.Tiara",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Tiara.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Aquamarine.Tiara": {
+					"Id": "{{ModId}}.Aquamarine.Tiara",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Aquamarine_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Aquamarine.Tiara",
+							"ItemId": "(O){{ModId}}.Aquamarine.Tiara",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Tiara.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Diamond.Tiara": {
+					"Id": "{{ModId}}.Diamond.Tiara",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Diamond_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Diamond.Tiara",
+							"ItemId": "(O){{ModId}}.Diamond.Tiara",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Tiara.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Emerald.Tiara": {
+					"Id": "{{ModId}}.Emerald.Tiara",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Emerald_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Emerald.Tiara",
+							"ItemId": "(O){{ModId}}.Emerald.Tiara",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Tiara.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Jade.Tiara": {
+					"Id": "{{ModId}}.Jade.Tiara",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Jade_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Jade.Tiara",
+							"ItemId": "(O){{ModId}}.Jade.Tiara",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Tiara.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Ruby.Tiara": {
+					"Id": "{{ModId}}.Ruby.Tiara",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Ruby_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Ruby.Tiara",
+							"ItemId": "(O){{ModId}}.Ruby.Tiara",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Tiara.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Topaz.Tiara": {
+					"Id": "{{ModId}}.Topaz.Tiara",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Topaz_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Topaz.Tiara",
+							"ItemId": "(O){{ModId}}.Topaz.Tiara",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Tiara.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+			}
+		},
+		//Generic
+		{
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [ "(BC){{ModId}}.LapidaryBench.Tiara", "OutputRules" ],
+            "Entries": {
+                "{{ModId}}.Gem.Tiara": {
+					"Id": "{{ModId}}.Gem.Tiara",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": [
+								"polished_gem"
+							],
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ObjectInternalName": "{0} Tiara",
+							"ObjectDisplayName": "[LocalizedText Strings\\Objects:Solariaze.RAR.Gem.Tiara %PRESERVED_DISPLAY_NAME]",
+							"Id": "{{ModId}}.Gem.Tiara",
+							"ItemId": "(O){{ModId}}.Gem.Tiara",
+							"PreserveId": "DROP_IN",
+							"CopyQuality": true,
+							"CopyPrice": true,
+							"PriceModifierMode": "Minimum",
+							"PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2.2
+								},
+								{
+									"Modification": "Set",
+									"Amount": 10000
+								},
+							],
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Tiara.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+								"selph.ExtraMachineConfig.CopyColor": "true",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+                },
+			}
+		}
+    ]
+}

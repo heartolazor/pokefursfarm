@@ -1,0 +1,258 @@
+{
+    "Changes": [
+        {
+            "LogName": "RAR Gift Tastes Vanilla",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries","Universal_Hate"],
+                    "Value": "{{ModId}}.Halite",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries","Universal_Dislike"],
+                    "Value": "{{ModId}}.Gneiss {{ModId}}.Schist {{ModId}}.Hornblende",
+                    "Delimiter": " "
+                },
+                //UNIVERSAL LIKE
+                ////Minerals
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries","Universal_Like"],
+                    "Value": "{{ModId}}.LapisLazuli {{ModId}}.Olivine {{ModId}}.Onxy {{ModId}}.Peridot {{ModId}}.Rhodochrosite {{ModId}}.Sapphire {{ModId}}.Sunstone {{ModId}}.Vanadinite {{ModId}}.Zircon",
+                    "Delimiter": " "
+                },
+                ////Polished
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries","Universal_Like"],
+                    "Value": "{{ModId}}.Polished.LapisLazuli {{ModId}}.Polished.Olivine {{ModId}}.Polished.Onyx {{ModId}}.Polished.Peridot {{ModId}}.Polished.Rhodochrosite {{ModId}}.Polished.Sapphire {{ModId}}.Polished.Sunstone {{ModId}}.Polished.Vanadinite {{ModId}}.Polished.Zircon {{ModId}}.Polished.Malachite {{ModId}}.Polished.Tigerseye {{ModId}}.Polished.FireOpal",
+                    "Delimiter": " "
+                },
+                //LOVES
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields","Emily", 1],
+                    "Value": "{{ModId}}.LapisLazuli {{ModId}}.Olivine {{ModId}}.Onxy {{ModId}}.Peridot {{ModId}}.Rhodochrosite {{ModId}}.Sapphire {{ModId}}.Sunstone {{ModId}}.Vanadinite {{ModId}}.Zircon",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields","Dwarf", 1],
+                    "Value": "{{ModId}}.LapisLazuli {{ModId}}.Olivine {{ModId}}.Onxy {{ModId}}.Peridot {{ModId}}.Rhodochrosite {{ModId}}.Sapphire {{ModId}}.Sunstone {{ModId}}.Vanadinite {{ModId}}.Zircon",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields","Clint", 1],
+                    "Value": "{{ModId}}.LapisLazuli {{ModId}}.Olivine {{ModId}}.Onxy {{ModId}}.Peridot {{ModId}}.Rhodochrosite {{ModId}}.Sapphire {{ModId}}.Sunstone {{ModId}}.Vanadinite {{ModId}}.Zircon",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields","Alex", 1],
+                    "Value": "{{ModId}}.Peridot",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields","Elliott", 1],
+                    "Value": "{{ModId}}.Vanadinite",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields","Haley", 1],
+                    "Value": "{{ModId}}.Sunstone",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields","Harvey", 1],
+                    "Value": "{{ModId}}.Olivine",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields","Maru", 1],
+                    "Value": "{{ModId}}.Zircon",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields","Shane", 1],
+                    "Value": "{{ModId}}.LapisLazuli",
+                    "Delimiter": " "
+                },
+                //LIKES
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields","Wizard", 3],
+                    "Value": "{{ModId}}.Gneiss {{ModId}}.Schist {{ModId}}.Hornblende",
+                    "Delimiter": " "
+                },
+                //DISLIKES
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields","Leah", 5],
+                    "Value": "{{ModId}}.LapisLazuli {{ModId}}.Olivine {{ModId}}.Onxy {{ModId}}.Peridot {{ModId}}.Rhodochrosite {{ModId}}.Sapphire {{ModId}}.Sunstone {{ModId}}.Vanadinite {{ModId}}.Zircon",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields","Linus", 5],
+                    "Value": "{{ModId}}.LapisLazuli {{ModId}}.Olivine {{ModId}}.Onxy {{ModId}}.Peridot {{ModId}}.Rhodochrosite {{ModId}}.Sapphire {{ModId}}.Sunstone {{ModId}}.Vanadinite {{ModId}}.Zircon",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields","Pierre", 5],
+                    "Value": "{{ModId}}.LapisLazuli {{ModId}}.Olivine {{ModId}}.Onxy {{ModId}}.Peridot {{ModId}}.Rhodochrosite {{ModId}}.Sapphire {{ModId}}.Sunstone {{ModId}}.Vanadinite {{ModId}}.Zircon",
+                    "Delimiter": " "
+                },
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "When": {
+                "Jewelry.Variants": true,
+            },
+            "TextOperations": [
+                //Earrings
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries","Universal_Like"],
+                    "Value": "{{ModId}}.LapisLazuli.Earrings {{ModId}}.Olivine.Earrings {{ModId}}.Onyx.Earrings {{ModId}}.Peridot.Earrings {{ModId}}.Rhodochrosite.Earrings {{ModId}}.Sapphire.Earrings {{ModId}}.Sunstone.Earrings {{ModId}}.Vanadinite.Earrings {{ModId}}.Zircon.Earrings",
+                    "Delimiter": " "
+                },
+                //Ring
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries","Universal_Like"],
+                    "Value": "{{ModId}}.LapisLazuli.Ring {{ModId}}.Olivine.Ring {{ModId}}.Onyx.Ring {{ModId}}.Peridot.Ring {{ModId}}.Rhodochrosite.Ring {{ModId}}.Sapphire.Ring {{ModId}}.Sunstone.Ring {{ModId}}.Vanadinite.Ring {{ModId}}.Zircon.Ring",
+                    "Delimiter": " "
+                },
+                //Necklace
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries","Universal_Like"],
+                    "Value": "{{ModId}}.LapisLazuli.Necklace {{ModId}}.Olivine.Necklace {{ModId}}.Onyx.Necklace {{ModId}}.Peridot.Necklace {{ModId}}.Rhodochrosite.Necklace {{ModId}}.Sapphire.Necklace {{ModId}}.Sunstone.Necklace {{ModId}}.Vanadinite.Necklace {{ModId}}.Zircon.Necklace",
+                    "Delimiter": " "
+                },
+                //Bracelet
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries","Universal_Like"],
+                    "Value": "{{ModId}}.LapisLazuli.Bracelet {{ModId}}.Olivine.Bracelet {{ModId}}.Onyx.Bracelet {{ModId}}.Peridot.Bracelet {{ModId}}.Rhodochrosite.Bracelet {{ModId}}.Sapphire.Bracelet {{ModId}}.Sunstone.Bracelet {{ModId}}.Vanadinite.Bracelet {{ModId}}.Zircon.Bracelet",
+                    "Delimiter": " "
+                },
+                //Locket
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries","Universal_Like"],
+                    "Value": "{{ModId}}.LapisLazuli.Locket {{ModId}}.Olivine.Locket {{ModId}}.Onyx.Locket {{ModId}}.Peridot.Locket {{ModId}}.Rhodochrosite.Locket {{ModId}}.Sapphire.Locket {{ModId}}.Sunstone.Locket {{ModId}}.Vanadinite.Locket {{ModId}}.Zircon.Locket",
+                    "Delimiter": " "
+                },
+                //Tiara
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries","Universal_Like"],
+                    "Value": "{{ModId}}.LapisLazuli.Tiara {{ModId}}.Olivine.Tiara {{ModId}}.Onyx.Tiara {{ModId}}.Peridot.Tiara {{ModId}}.Rhodochrosite.Tiara {{ModId}}.Sapphire.Tiara {{ModId}}.Sunstone.Tiara {{ModId}}.Vanadinite.Tiara {{ModId}}.Zircon.Tiara",
+                    "Delimiter": " "
+                },
+                //Hairpin
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries","Universal_Like"],
+                    "Value": "{{ModId}}.LapisLazuli.Hairpin {{ModId}}.Olivine.Hairpin {{ModId}}.Onyx.Hairpin {{ModId}}.Peridot.Hairpin {{ModId}}.Rhodochrosite.Hairpin {{ModId}}.Sapphire.Hairpin {{ModId}}.Sunstone.Hairpin {{ModId}}.Vanadinite.Hairpin {{ModId}}.Zircon.Hairpin",
+                    "Delimiter": " "
+                },
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+			"When": {
+				"Jewelry.Variants": true,
+				"HasMod": "Lumisteria.MtVapius"
+			},
+            "TextOperations": [
+                //Ring
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries","Universal_Like"],
+                    "Value": "{{ModId}}.Amethyst.Ring {{ModId}}.Aquamarine.Ring {{ModId}}.Diamond.Ring {{ModId}}.Emerald.Ring {{ModId}}.Jade.Ring {{ModId}}.Ruby.Ring {{ModId}}.Topaz.Ring",
+                    "Delimiter": " "
+                },
+                //Necklace
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries","Universal_Like"],
+                    "Value": "{{ModId}}.Amethyst.Necklace {{ModId}}.Aquamarine.Necklace {{ModId}}.Diamond.Necklace {{ModId}}.Emerald.Necklace {{ModId}}.Jade.Necklace {{ModId}}.Ruby.Necklace {{ModId}}.Topaz.Necklace",
+                    "Delimiter": " "
+                },
+                //Bracelet
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries","Universal_Like"],
+                    "Value": "{{ModId}}.Amethyst.Bracelet {{ModId}}.Aquamarine.Bracelet {{ModId}}.Diamond.Bracelet {{ModId}}.Emerald.Bracelet {{ModId}}.Jade.Bracelet {{ModId}}.Ruby.Bracelet {{ModId}}.Topaz.Bracelet",
+                    "Delimiter": " "
+                },
+                //Locket
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries","Universal_Like"],
+                    "Value": "{{ModId}}.Amethyst.Locket {{ModId}}.Aquamarine.Locket {{ModId}}.Diamond.Locket {{ModId}}.Emerald.Locket {{ModId}}.Jade.Locket {{ModId}}.Ruby.Locket {{ModId}}.Topaz.Locket",
+                    "Delimiter": " "
+                },
+                //Tiara
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries","Universal_Like"],
+                    "Value": "{{ModId}}.Amethyst.Tiara {{ModId}}.Aquamarine.Tiara {{ModId}}.Diamond.Tiara {{ModId}}.Emerald.Tiara {{ModId}}.Jade.Tiara {{ModId}}.Ruby.Tiara {{ModId}}.Topaz.Tiara",
+                    "Delimiter": " "
+                },
+                //Hairpin
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries","Universal_Like"],
+                    "Value": "{{ModId}}.Amethyst.Hairpin {{ModId}}.Aquamarine.Hairpin {{ModId}}.Diamond.Hairpin {{ModId}}.Emerald.Hairpin {{ModId}}.Jade.Hairpin {{ModId}}.Ruby.Hairpin {{ModId}}.Topaz.Hairpin",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "RAR Gift Tastes SVE",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            },
+            "TextOperations": [
+                //LOVES
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields","Victor", 1],
+                    "Value": "{{ModId}}.Onyx",
+                    "Delimiter": " "
+                },
+                // {
+                //     "Operation": "Append",
+                //     "Target": ["Fields","Lance", 1],
+                //     "Value": "{{ModId}}.Rhodochrosite",
+                //     "Delimiter": " "
+                // },
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields","Claire", 1],
+                    "Value": "{{ModId}}.Sapphire",
+                    "Delimiter": " "
+                },
+            ]
+        }
+    ]
+}

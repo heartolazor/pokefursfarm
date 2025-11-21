@@ -1,0 +1,452 @@
+{
+    "Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"Entries": {
+				"{{ModId}}.LapidaryBench.Ring": {
+					"Name": "Lapidary Bench (Ring)",
+					"DisplayName": "{{i18n: RAR.LapidaryBench.name}} {{i18n: RAR.Open.Parenthesis}}{{i18n: RAR.Ring.Base.name}}{{i18n: RAR.Close.Parenthesis}}",
+					"Description": "{{i18n: RAR.LapidaryBench.Ring.description}} {{i18n: RAR.LapidaryBench.description}}",
+					"Texture": "Mods/{{ModId}}/Machines",
+					"SpriteIndex": 12,
+				},
+			}
+		},
+		//Base
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": {
+				"(BC){{ModId}}.LapidaryBench.Ring": {
+					"LoadEffects": [
+						{
+							"Sounds": [
+								{
+									"Id": "fireball"
+								}
+							],
+						}
+					],
+					"ShowNextIndexWhileWorking": true,
+					"ShowNextIndexWhenReady": true,
+				}
+			}
+		},
+		//RAR
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC){{ModId}}.LapidaryBench.Ring", "OutputRules" ],
+			"When": {"Jewelry.Variants": true},
+			"Entries": {
+				"{{ModId}}.Peridot.Ring": {
+					"Id": "{{ModId}}.Peridot.Ring",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Peridot",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Peridot.Ring",
+							"ItemId": "(O){{ModId}}.Peridot.Ring",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Ring.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.LapisLazuli.Ring": {
+					"Id": "{{ModId}}.LapisLazuli.Ring",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.LapisLazuli",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.LapisLazuli.Ring",
+							"ItemId": "(O){{ModId}}.LapisLazuli.Ring",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Ring.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Zircon.Ring": {
+					"Id": "{{ModId}}.Zircon.Ring",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Zircon",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Zircon.Ring",
+							"ItemId": "(O){{ModId}}.Zircon.Ring",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Ring.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Onyx.Ring": {
+					"Id": "{{ModId}}.Onyx.Ring",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Onyx",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Onyx.Ring",
+							"ItemId": "(O){{ModId}}.Onyx.Ring",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Ring.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Vanadinite.Ring": {
+					"Id": "{{ModId}}.Vanadinite.Ring",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Vanadinite",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Vanadinite.Ring",
+							"ItemId": "(O){{ModId}}.Vanadinite.Ring",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Ring.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Sapphire.Ring": {
+					"Id": "{{ModId}}.Sapphire.Ring",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Sapphire",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Sapphire.Ring",
+							"ItemId": "(O){{ModId}}.Sapphire.Ring",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Ring.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Rhodochrosite.Ring": {
+					"Id": "{{ModId}}.Rhodochrosite.Ring",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Rhodochrosite",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Rhodochrosite.Ring",
+							"ItemId": "(O){{ModId}}.Rhodochrosite.Ring",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Ring.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Sunstone.Ring": {
+					"Id": "{{ModId}}.Sunstone.Ring",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Sunstone",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Sunstone.Ring",
+							"ItemId": "(O){{ModId}}.Sunstone.Ring",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Ring.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				}
+			}
+		},
+		//VMV
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC){{ModId}}.LapidaryBench.Ring", "OutputRules" ],
+			"When": {
+				"Jewelry.Variants": true,
+				"HasMod": "Lumisteria.MtVapius"
+			},
+			"Entries": {
+				"{{ModId}}.Amethyst.Ring": {
+					"Id": "{{ModId}}.Amethyst.Ring",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Amethyst_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Amethyst.Ring",
+							"ItemId": "(O){{ModId}}.Amethyst.Ring",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Ring.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Aquamarine.Ring": {
+					"Id": "{{ModId}}.Aquamarine.Ring",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Aquamarine_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Aquamarine.Ring",
+							"ItemId": "(O){{ModId}}.Aquamarine.Ring",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Ring.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Diamond.Ring": {
+					"Id": "{{ModId}}.Diamond.Ring",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Diamond_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Diamond.Ring",
+							"ItemId": "(O){{ModId}}.Diamond.Ring",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Ring.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Emerald.Ring": {
+					"Id": "{{ModId}}.Emerald.Ring",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Emerald_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Emerald.Ring",
+							"ItemId": "(O){{ModId}}.Emerald.Ring",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Ring.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Jade.Ring": {
+					"Id": "{{ModId}}.Jade.Ring",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Jade_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Jade.Ring",
+							"ItemId": "(O){{ModId}}.Jade.Ring",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Ring.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Ruby.Ring": {
+					"Id": "{{ModId}}.Ruby.Ring",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Ruby_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Ruby.Ring",
+							"ItemId": "(O){{ModId}}.Ruby.Ring",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Ring.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Topaz.Ring": {
+					"Id": "{{ModId}}.Topaz.Ring",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Topaz_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Topaz.Ring",
+							"ItemId": "(O){{ModId}}.Topaz.Ring",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Ring.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+			}
+		},
+		//Generic
+		{
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [ "(BC){{ModId}}.LapidaryBench.Ring", "OutputRules" ],
+            "Entries": {
+                "{{ModId}}.Gem.Ring": {
+					"Id": "{{ModId}}.Gem.Ring",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": [
+								"polished_gem"
+							],
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ObjectInternalName": "{0} Ring",
+							"ObjectDisplayName": "[LocalizedText Strings\\Objects:Solariaze.RAR.Gem.Ring %PRESERVED_DISPLAY_NAME]",
+							"Id": "{{ModId}}.Gem.Ring",
+							"ItemId": "(O){{ModId}}.Gem.Ring",
+							"PreserveId": "DROP_IN",
+							"CopyQuality": true,
+							"CopyPrice": true,
+							"PriceModifierMode": "Minimum",
+							"PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2.2
+								},
+								{
+									"Modification": "Set",
+									"Amount": 10000
+								},
+							],
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Ring.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+								"selph.ExtraMachineConfig.CopyColor": "true",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+                },
+			}
+		}
+    ]
+}

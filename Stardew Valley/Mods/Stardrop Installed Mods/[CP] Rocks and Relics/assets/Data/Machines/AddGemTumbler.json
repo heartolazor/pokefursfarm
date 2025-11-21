@@ -1,0 +1,480 @@
+{
+    "Changes": [
+        {
+			"LogName": "RAR Machine Setup",
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"Entries": {
+				"{{ModId}}.GemTumbler": {
+					"Name": "Gem Tumbler",
+					"DisplayName": "{{i18n: RAR.GemTumbler.name}}",
+					"Description": "{{i18n: RAR.GemTumbler.description}}",
+					"Texture": "Mods/{{ModId}}/Machines",
+					"SpriteIndex": 6,
+				},
+            }
+        },
+		//BASE
+        {
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": {
+				"(BC){{ModId}}.GemTumbler": {
+					"AdditionalConsumedItems": [
+						{
+							"ItemID": "(O)92",
+							"RequiredCount": 16,
+							"InvalidCountMessage": "{{i18n: RAR.Sap.missing}}"
+						}
+					],
+					"LoadEffects": [
+						{
+							"Sounds": [
+								{
+									"Id": "coin"
+								}
+							],
+							"Frames": [ 3,4,5 ],
+							"Interval": 100,
+						}
+					],
+					"WorkingEffects": [
+						{
+							"Frames": [ 3,4,5 ],
+							"Interval": 100,
+						}
+					],
+					"WorkingEffectChance": 1,
+					"ShowNextIndexWhenReady": true,
+				}
+			}
+		},
+		//RAR
+        {
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC){{ModId}}.GemTumbler", "OutputRules" ],
+			"When": {"Jewelry.Variants": true},
+			"Entries": {
+				"{{ModId}}.Polished.Peridot": {
+					"Id": "{{ModId}}.Peridot.Polished",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O){{ModId}}.Peridot"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O){{ModId}}.Polished.Peridot",
+							"CopyQuality": true,
+						},
+					],
+					"MinutesUntilReady": 4480
+				},
+				"{{ModId}}.Polished.LapisLazuli": {
+					"Id": "{{ModId}}.Polished.LapisLazuli",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O){{ModId}}.LapisLazuli",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O){{ModId}}.Polished.LapisLazuli",
+							"CopyQuality": true,
+						}
+					],
+					"MinutesUntilReady": 3760,
+				},
+				"{{ModId}}.Polished.Zircon": {
+					"Id": "{{ModId}}.Polished.Zircon",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O){{ModId}}.Zircon",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O){{ModId}}.Polished.Zircon",
+							"CopyQuality": true,
+						}
+					],
+					"MinutesUntilReady": 4480,
+				},
+				"{{ModId}}.Polished.Onyx": {
+					"Id": "{{ModId}}.Polished.Onyx",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O){{ModId}}.Onyx",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O){{ModId}}.Polished.Onyx",
+							"CopyQuality": true,
+						}
+					],
+					"MinutesUntilReady": 3360,
+				},
+				"{{ModId}}.Polished.Vanadinite": {
+					"Id": "{{ModId}}.Polished.Vanadinite",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O){{ModId}}.Vanadinite",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O){{ModId}}.Polished.Vanadinite",
+							"CopyQuality": true,
+						}
+					],
+					"MinutesUntilReady": 4080,
+				},
+				"{{ModId}}.Polished.Sapphire": {
+					"Id": "{{ModId}}.Polished.Sapphire",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O){{ModId}}.Sapphire",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O){{ModId}}.Polished.Sapphire",
+							"CopyQuality": true,
+						}
+					],
+					"MinutesUntilReady": 6000,
+				},
+				"{{ModId}}.Polished.Rhodochrosite": {
+					"Id": "{{ModId}}.Polished.Rhodochrosite",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O){{ModId}}.Rhodochrosite",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O){{ModId}}.Polished.Rhodochrosite",
+							"CopyQuality": true,
+						}
+					],
+					"MinutesUntilReady": 5600,
+				},
+				"{{ModId}}.Polished.Sunstone": {
+					"Id": "{{ModId}}.Polished.Sunstone",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O){{ModId}}.Sunstone",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O){{ModId}}.Polished.Sunstone",
+							"CopyQuality": true,
+						}
+					],
+					"MinutesUntilReady": 10000,
+				},
+				"{{ModId}}.Polished.Malachite": {
+					"Id": "{{ModId}}.Polished.Malachite",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)552",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O){{ModId}}.Polished.Malachite",
+							"CopyQuality": true,
+						}
+					],
+					"MinutesUntilReady": 2240,
+				},
+				"{{ModId}}.Polished.Tigerseye": {
+					"Id": "{{ModId}}.Polished.Tigerseye",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)562",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O){{ModId}}.Polished.Tigerseye",
+							"CopyQuality": true,
+						}
+					],
+					"MinutesUntilReady": 6000,
+				},
+				"{{ModId}}.Polished.FireOpal": {
+					"Id": "{{ModId}}.Polished.FireOpal",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)565",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O){{ModId}}.Polished.FireOpal",
+							"CopyQuality": true,
+						}
+					],
+					"MinutesUntilReady": 5600,
+				},
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC){{ModId}}.GemTumbler", "OutputRules" ],
+			"When": {
+				"Jewelry.Variants": true,
+				"HasMod": "Lumisteria.MtVapius"
+			},
+			"Entries": {
+				"{{ModId}}.Amethyst.Polished": {
+					"Id": "{{ModId}}.Amethyst.Polished",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)66",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_Amethyst_Polished",
+							"ItemId": "(O)Lumisteria.MtVapius_Amethyst_Polished",
+							"CopyQuality": true,
+						}
+					],
+					"MinutesUntilReady": 6000
+				},
+				"{{ModId}}.Aquamarine.Polished": {
+					"Id": "{{ModId}}.Aquamarine.Polished",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)62",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_Aquamarine_Polished",
+							"ItemId": "(O)Lumisteria.MtVapius_Aquamarine_Polished",
+							"CopyQuality": true,
+						}
+					],
+					"MinutesUntilReady": 4480
+				},
+				"{{ModId}}.Diamond.Polished": {
+					"Id": "{{ModId}}.Diamond.Polished",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)72",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_Diamond_Polished",
+							"ItemId": "(O)Lumisteria.MtVapius_Diamond_Polished",
+							"CopyQuality": true,
+						}
+					],
+					"MinutesUntilReady": 14400
+				},
+				"{{ModId}}.Emerald.Polished": {
+					"Id": "{{ModId}}.Emerald.Polished",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)60",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_Emerald_Polished",
+							"ItemId": "(O)Lumisteria.MtVapius_Emerald_Polished",
+							"CopyQuality": true,
+						}
+					],
+					"MinutesUntilReady": 2720
+				},
+				"{{ModId}}.Jade.Polished": {
+					"Id": "{{ModId}}.Jade.Polished",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)70",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_Jade_Polished",
+							"ItemId": "(O)Lumisteria.MtVapius_Jade_Polished",
+							"CopyQuality": true,
+						}
+					],
+					"MinutesUntilReady": 4800
+				},
+				"{{ModId}}.Ruby.Polished": {
+					"Id": "{{ModId}}.Ruby.Polished",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)64",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_Ruby_Polished",
+							"ItemId": "(O)Lumisteria.MtVapius_Ruby_Polished",
+							"CopyQuality": true,
+						}
+					],
+					"MinutesUntilReady": 6000
+				},
+				"{{ModId}}.Topaz.Polished": {
+					"Id": "{{ModId}}.Topaz.Polished",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)68",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "Lumisteria.MtVapius_Topaz_Polished",
+							"ItemId": "(O)Lumisteria.MtVapius_Topaz_Polished",
+							"CopyQuality": true,
+						}
+					],
+					"MinutesUntilReady": 6000
+				},
+			}
+		},
+		//GENERIC
+        {
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC){{ModId}}.GemTumbler", "OutputRules" ],
+			"When": {
+				"HasMod|contains=Lumisteria.MtVapius": "false"
+			},
+			"Entries": {
+				"{{ModId}}.Generic": {
+					"Id": "{{ModId}}.Gem.Polished",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": [
+								"category_gem",
+								"!polished_gem"
+							],
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ObjectInternalName": "{0} Gem Polished",
+							"ObjectDisplayName": "[LocalizedText Strings\\Objects:Solariaze.RAR.Gem.Polished %PRESERVED_DISPLAY_NAME]",
+							"Id": "{{ModId}}.Gem.Polished",
+							"ItemId": "(O){{ModId}}.Polished.Gem",
+							"PreserveId": "DROP_IN",
+							"CopyQuality": true,
+							"CopyPrice": true,
+							"CopyColor": true,
+							"PriceModifierMode": "Minimum",
+							"PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2.5
+								},
+								{
+									"Modification": "Set",
+									"Amount": 4000
+								},
+							],
+						}
+					],
+					"MinutesUntilReady": 14400
+				},
+            }
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC){{ModId}}.GemTumbler", "OutputRules" ],
+			"When": {
+				"HasMod": "Lumisteria.MtVapius"
+			},
+			"Entries": {
+				"{{ModId}}.Generic": {
+					"Id": "Lumisteria.MtVapius_GenericGemPolished",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": [
+								"category_gem",
+								"!id_(o)74",
+								"!polished_gem"
+							],
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+							"ObjectInternalName": "{0} Gem Polished",
+							"ObjectDisplayName": "[LocalizedText Strings\\Objects:Lumisteria.MtVapius_Polished %PRESERVED_DISPLAY_NAME]",
+							"Id": "Lumisteria.MtVapius_QuartzGem_Polished",
+							"ItemId": "(O)Lumisteria.MtVapius_QuartzGem_Polished",
+							"PreserveId": "DROP_IN",
+							"CopyQuality": true,
+							"CopyPrice": true,
+							"PriceModifierMode": "Minimum",
+							"PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2.5
+								},
+								{
+									"Modification": "Set",
+									"Amount": 4000
+								},
+							],
+						}
+					],
+					"MinutesUntilReady": 14400
+				},
+            }
+        }
+    ]
+}

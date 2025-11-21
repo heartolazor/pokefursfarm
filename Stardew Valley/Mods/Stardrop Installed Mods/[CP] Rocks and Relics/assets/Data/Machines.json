@@ -1,0 +1,154 @@
+{
+	"Changes": [
+		//LOAD ASSET
+		{
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/Machines",
+			"FromFile": "assets/Resources/Machines.png"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+				"{{ModId}}.Transmute": {
+					"ID": "{{ModId}}.Transmute",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/Sounds/transmute.ogg}}", ],
+					"StreamedVorbis": true,
+                    "Looped": false
+				},	
+            }
+        },
+		//VANILLA APPEND
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)13",
+				"OutputRules"
+			],
+			"Entries": {
+				"{{ModId}}.PrismaticOre.Process": {
+					"Triggers": [
+					  {
+						"Id": "ItemPlacedInMachine",
+						"Trigger": "ItemPlacedInMachine",
+						"RequiredItemId": "(O){{ModId}}.PrismaticPieces",
+						"RequiredCount": 5,
+					  }
+					],
+					"OutputItem": [
+					  {
+						"PriceModifierMode": "Stack",
+						"Id": "(O)74",
+						"ItemId": "(O)74",
+						"StackModifierMode": "Stack",
+						"QualityModifierMode": "Stack",
+					  }
+					],
+					"DaysUntilReady": 4,
+					"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)21",
+				"ReadyTimeModifiers"
+			],
+			"Entries": {
+				"{{ModId}}.Peridot.Crystalarium": {
+					"Id": "{{ModId}}.Peridot.Crystalarium",
+					"Condition": "ITEM_ID Target (O){{ModId}}.Peridot",
+					"Modification": "Set",
+					"Amount": 1455.0,
+				},
+				"{{ModId}}.LapisLazuli.Crystalarium": {
+					"Id": "{{ModId}}.LapisLazuli.Crystalarium",
+					"Condition": "ITEM_ID Target (O){{ModId}}.LapisLazuli",
+					"Modification": "Set",
+					"Amount": 1445.0,
+				},
+				"{{ModId}}.Zircon.Crystalarium": {
+					"Id": "{{ModId}}.Zircon.Crystalarium",
+					"Condition": "ITEM_ID Target (O){{ModId}}.Zircon",
+					"Modification": "Set",
+					"Amount": 1441.0,
+				},
+				"{{ModId}}.Onyx.Crystalarium": {
+					"Id": "{{ModId}}.Onyx.Crystalarium",
+					"Condition": "ITEM_ID Target (O){{ModId}}.Onyx",
+					"Modification": "Set",
+					"Amount": 1440.0,
+				},
+				"{{ModId}}.Sapphire.Crystalarium": {
+					"Id": "{{ModId}}.Sapphire.Crystalarium",
+					"Condition": "ITEM_ID Target (O){{ModId}}.Sapphire",
+					"Modification": "Set",
+					"Amount": 2882.0,
+				},
+				"{{ModId}}.Rhodochrosite.Crystalarium": {
+					"Id": "{{ModId}}.Rhodochrosite.Crystalarium",
+					"Condition": "ITEM_ID Target (O){{ModId}}.Rhodochrosite",
+					"Modification": "Set",
+					"Amount": 2160.0,
+				},
+				"{{ModId}}.Vanadinite.Crystalarium": {
+					"Id": "{{ModId}}.Vanadinite.Crystalarium",
+					"Condition": "ITEM_ID Target (O){{ModId}}.Vanadinite",
+					"Modification": "Set",
+					"Amount": 2160.0,
+				},
+			}
+		},
+		//Data\\Machines
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Machines/AddGemTumbler.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Machines/AddTransmutationTable.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Machines/AddLapidaryBench-Earrings.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Machines/AddLapidaryBench-Ring.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Machines/AddLapidaryBench-Necklace.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Machines/AddLapidaryBench-Bracelet.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Machines/AddLapidaryBench-Locket.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Machines/AddLapidaryBench-Tiara.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Machines/AddLapidaryBench-Hairpin.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Machines/AddLapidaryBench.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Machines/AppendVMVMachines.json",
+            "When": {"HasMod": "Lumisteria.MtVapius"}	
+		},
+    ],
+}

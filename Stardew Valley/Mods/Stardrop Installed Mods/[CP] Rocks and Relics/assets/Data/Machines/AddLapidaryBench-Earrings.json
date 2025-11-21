@@ -1,0 +1,405 @@
+{
+    "Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"Entries": {
+				"{{ModId}}.LapidaryBench.Earrings": {
+					"Name": "Lapidary Bench (Earrings)",
+					"DisplayName": "{{i18n: RAR.LapidaryBench.name}} {{i18n: RAR.Open.Parenthesis}}{{i18n: RAR.Earrings.Base.name}}{{i18n: RAR.Close.Parenthesis}}",
+					"Description": "{{i18n: RAR.LapidaryBench.Earrings.description}} {{i18n: RAR.LapidaryBench.description}}",
+					"Texture": "Mods/{{ModId}}/Machines",
+					"SpriteIndex": 12,
+				},
+			}
+		},
+		//Base
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": {
+				"(BC){{ModId}}.LapidaryBench.Earrings": {
+					"LoadEffects": [
+						{
+							"Sounds": [
+								{
+									"Id": "fireball"
+								}
+							],
+						}
+					],
+					"ShowNextIndexWhileWorking": true,
+					"ShowNextIndexWhenReady": true,
+				}
+			}
+		},
+		//RAR
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC){{ModId}}.LapidaryBench.Earrings", "OutputRules" ],
+			"When": {"Jewelry.Variants": true},
+			"Entries": {
+				"{{ModId}}.Peridot.Earrings": {
+					"Id": "{{ModId}}.Peridot.Earrings",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Peridot",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Peridot.Earrings",
+							"ItemId": "(O){{ModId}}.Peridot.Earrings",
+							"CopyQuality": true,
+							"CopyPrice": true,
+							"PriceModifierMode": "Minimum",
+							"PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2.0
+								},
+							],
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O)336",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Gold.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.LapisLazuli.Earrings": {
+					"Id": "{{ModId}}.LapisLazuli.Earrings",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.LapisLazuli",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.LapisLazuli.Earrings",
+							"ItemId": "(O){{ModId}}.LapisLazuli.Earrings",
+							"CopyQuality": true,
+							"CopyPrice": true,
+							"PriceModifierMode": "Minimum",
+							"PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2.0
+								},
+							],
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O)336",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Gold.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Zircon.Earrings": {
+					"Id": "{{ModId}}.Zircon.Earrings",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Zircon",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Zircon.Earrings",
+							"ItemId": "(O){{ModId}}.Zircon.Earrings",
+							"CopyQuality": true,
+							"CopyPrice": true,
+							"PriceModifierMode": "Minimum",
+							"PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2.0
+								},
+							],
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O)336",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Gold.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Onyx.Earrings": {
+					"Id": "{{ModId}}.Onyx.Earrings",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Onyx",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Onyx.Earrings",
+							"ItemId": "(O){{ModId}}.Onyx.Earrings",
+							"CopyQuality": true,
+							"CopyPrice": true,
+							"PriceModifierMode": "Minimum",
+							"PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2.0
+								},
+							],
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O)336",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Gold.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Vanadinite.Earrings": {
+					"Id": "{{ModId}}.Vanadinite.Earrings",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Vanadinite",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Vanadinite.Earrings",
+							"ItemId": "(O){{ModId}}.Vanadinite.Earrings",
+							"CopyQuality": true,
+							"CopyPrice": true,
+							"PriceModifierMode": "Minimum",
+							"PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2.0
+								},
+							],
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O)336",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Gold.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Sapphire.Earrings": {
+					"Id": "{{ModId}}.Sapphire.Earrings",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Sapphire",
+							"RequiredCount": 1,
+							"CopyPrice": true,
+							"PriceModifierMode": "Minimum",
+							"PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2.0
+								},
+							],
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Sapphire.Earrings",
+							"ItemId": "(O){{ModId}}.Sapphire.Earrings",
+							"CopyQuality": true,
+							"CopyPrice": true,
+							"PriceModifierMode": "Minimum",
+							"PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2.0
+								},
+							],
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O)336",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Gold.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Rhodochrosite.Earrings": {
+					"Id": "{{ModId}}.Rhodochrosite.Earrings",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Rhodochrosite",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Rhodochrosite.Earrings",
+							"ItemId": "(O){{ModId}}.Rhodochrosite.Earrings",
+							"CopyQuality": true,
+							"CopyPrice": true,
+							"PriceModifierMode": "Minimum",
+							"PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2.0
+								},
+							],
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O)336",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Gold.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Sunstone.Earrings": {
+					"Id": "{{ModId}}.Sunstone.Earrings",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Sunstone",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Sunstone.Earrings",
+							"ItemId": "(O){{ModId}}.Sunstone.Earrings",
+							"CopyQuality": true,
+							"CopyPrice": true,
+							"PriceModifierMode": "Minimum",
+							"PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2.0
+								},
+							],
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O)336",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Gold.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				}
+			}
+		},
+		//Generic
+		{
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [ "(BC){{ModId}}.LapidaryBench.Earrings", "OutputRules" ],
+			"When": {
+				"HasMod|contains=Lumisteria.MtVapius": "false"
+			},
+            "Entries": {
+                "{{ModId}}.Gem.Earrings": {
+					"Id": "{{ModId}}.Gem.Earrings",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": [
+								"polished_gem"
+							],
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ObjectInternalName": "{0} Earrings",
+							"ObjectDisplayName": "[LocalizedText Strings\\Objects:Solariaze.RAR.Gem.Earrings %PRESERVED_DISPLAY_NAME]",
+							"Id": "{{ModId}}.Gem.Earrings",
+							"ItemId": "(O){{ModId}}.Gem.Earrings",
+							"PreserveId": "DROP_IN",
+							"CopyQuality": true,
+							"CopyPrice": true,
+							"PriceModifierMode": "Minimum",
+							"PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2.0
+								},
+								{
+									"Modification": "Set",
+									"Amount": 10000
+								},
+							],
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O)336",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Gold.missing }}",
+								"selph.ExtraMachineConfig.CopyColor": "true",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+                },
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [ "(BC){{ModId}}.LapidaryBench.Earrings", "OutputRules" ],
+			"When": {
+				"HasMod": "Lumisteria.MtVapius"
+			},
+            "Entries": {
+                "{{ModId}}.Gem.Earrings": {
+					"Id": "{{ModId}}.Gem.Earrings",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": [
+								"polished_gem"
+							],
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ObjectInternalName": "{0} Earrings",
+							"ObjectDisplayName": "[LocalizedText Strings\\Objects:Solariaze.RAR.Gem.Earrings %PRESERVED_DISPLAY_NAME]",
+							"Id": "Lumisteria.MtVapius_Earrings_EmeraldEarrings",
+							"ItemId": "(O)Lumisteria.MtVapius_Earrings_EmeraldEarrings",
+							"PreserveId": "DROP_IN",
+							"CopyQuality": true,
+							"CopyPrice": true,
+							"PriceModifierMode": "Minimum",
+							"PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2.0
+								},
+								{
+									"Modification": "Set",
+									"Amount": 10000
+								},
+							],
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O)336",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Gold.missing }}",
+								"selph.ExtraMachineConfig.CopyColor": "true",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+                },
+			}
+		}
+    ]
+}

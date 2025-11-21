@@ -1,0 +1,452 @@
+{
+    "Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"Entries": {
+				"{{ModId}}.LapidaryBench.Hairpin": {
+					"Name": "Lapidary Bench (Hairpin)",
+					"DisplayName": "{{i18n: RAR.LapidaryBench.name}} {{i18n: RAR.Open.Parenthesis}}{{i18n: RAR.Hairpin.Base.name}}{{i18n: RAR.Close.Parenthesis}}",
+					"Description": "{{i18n: RAR.LapidaryBench.Hairpin.description}} {{i18n: RAR.LapidaryBench.description}}",
+					"Texture": "Mods/{{ModId}}/Machines",
+					"SpriteIndex": 12,
+				},
+			}
+		},
+		//Base
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": {
+				"(BC){{ModId}}.LapidaryBench.Hairpin": {
+					"LoadEffects": [
+						{
+							"Sounds": [
+								{
+									"Id": "fireball"
+								}
+							],
+						}
+					],
+					"ShowNextIndexWhileWorking": true,
+					"ShowNextIndexWhenReady": true,
+				}
+			}
+		},
+		//RAR
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC){{ModId}}.LapidaryBench.Hairpin", "OutputRules" ],
+			"When": {"Jewelry.Variants": true},
+			"Entries": {
+				"{{ModId}}.Peridot.Hairpin": {
+					"Id": "{{ModId}}.Peridot.Hairpin",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Peridot",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Peridot.Hairpin",
+							"ItemId": "(O){{ModId}}.Peridot.Hairpin",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Hairpin.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.LapisLazuli.Hairpin": {
+					"Id": "{{ModId}}.LapisLazuli.Hairpin",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.LapisLazuli",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.LapisLazuli.Hairpin",
+							"ItemId": "(O){{ModId}}.LapisLazuli.Hairpin",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Hairpin.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Zircon.Hairpin": {
+					"Id": "{{ModId}}.Zircon.Hairpin",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Zircon",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Zircon.Hairpin",
+							"ItemId": "(O){{ModId}}.Zircon.Hairpin",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Hairpin.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Onyx.Hairpin": {
+					"Id": "{{ModId}}.Onyx.Hairpin",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Onyx",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Onyx.Hairpin",
+							"ItemId": "(O){{ModId}}.Onyx.Hairpin",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Hairpin.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Vanadinite.Hairpin": {
+					"Id": "{{ModId}}.Vanadinite.Hairpin",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Vanadinite",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Vanadinite.Hairpin",
+							"ItemId": "(O){{ModId}}.Vanadinite.Hairpin",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Hairpin.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Sapphire.Hairpin": {
+					"Id": "{{ModId}}.Sapphire.Hairpin",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Sapphire",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Sapphire.Hairpin",
+							"ItemId": "(O){{ModId}}.Sapphire.Hairpin",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Hairpin.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Rhodochrosite.Hairpin": {
+					"Id": "{{ModId}}.Rhodochrosite.Hairpin",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Rhodochrosite",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Rhodochrosite.Hairpin",
+							"ItemId": "(O){{ModId}}.Rhodochrosite.Hairpin",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Hairpin.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Sunstone.Hairpin": {
+					"Id": "{{ModId}}.Sunstone.Hairpin",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}.Polished.Sunstone",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Sunstone.Hairpin",
+							"ItemId": "(O){{ModId}}.Sunstone.Hairpin",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Hairpin.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				}
+			}
+		},
+		//VMV
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC){{ModId}}.LapidaryBench.Hairpin", "OutputRules" ],
+			"When": {
+				"Jewelry.Variants": true,
+				"HasMod": "Lumisteria.MtVapius"
+			},
+			"Entries": {
+				"{{ModId}}.Amethyst.Hairpin": {
+					"Id": "{{ModId}}.Amethyst.Hairpin",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Amethyst_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Amethyst.Hairpin",
+							"ItemId": "(O){{ModId}}.Amethyst.Hairpin",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Hairpin.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Aquamarine.Hairpin": {
+					"Id": "{{ModId}}.Aquamarine.Hairpin",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Aquamarine_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Aquamarine.Hairpin",
+							"ItemId": "(O){{ModId}}.Aquamarine.Hairpin",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Hairpin.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Diamond.Hairpin": {
+					"Id": "{{ModId}}.Diamond.Hairpin",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Diamond_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Diamond.Hairpin",
+							"ItemId": "(O){{ModId}}.Diamond.Hairpin",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Hairpin.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Emerald.Hairpin": {
+					"Id": "{{ModId}}.Emerald.Hairpin",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Emerald_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Emerald.Hairpin",
+							"ItemId": "(O){{ModId}}.Emerald.Hairpin",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Hairpin.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Jade.Hairpin": {
+					"Id": "{{ModId}}.Jade.Hairpin",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Jade_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Jade.Hairpin",
+							"ItemId": "(O){{ModId}}.Jade.Hairpin",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Hairpin.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Ruby.Hairpin": {
+					"Id": "{{ModId}}.Ruby.Hairpin",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Ruby_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Ruby.Hairpin",
+							"ItemId": "(O){{ModId}}.Ruby.Hairpin",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Hairpin.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+				"{{ModId}}.Topaz.Hairpin": {
+					"Id": "{{ModId}}.Topaz.Hairpin",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_Topaz_Polished",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Topaz.Hairpin",
+							"ItemId": "(O){{ModId}}.Topaz.Hairpin",
+							"CopyQuality": true,
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Hairpin.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+				},
+			}
+		},
+		//Generic
+		{
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [ "(BC){{ModId}}.LapidaryBench.Hairpin", "OutputRules" ],
+            "Entries": {
+                "{{ModId}}.Gem.Hairpin": {
+					"Id": "{{ModId}}.Gem.Hairpin",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": [
+								"polished_gem"
+							],
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ObjectInternalName": "{0} Hairpin",
+							"ObjectDisplayName": "[LocalizedText Strings\\Objects:Solariaze.RAR.Gem.Hairpin %PRESERVED_DISPLAY_NAME]",
+							"Id": "{{ModId}}.Gem.Hairpin",
+							"ItemId": "(O){{ModId}}.Gem.Hairpin",
+							"PreserveId": "DROP_IN",
+							"CopyQuality": true,
+							"CopyPrice": true,
+							"PriceModifierMode": "Minimum",
+							"PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2.2
+								},
+								{
+									"Modification": "Set",
+									"Amount": 10000
+								},
+							],
+							"CustomData": {
+								"selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}.Hairpin.Base",
+								"selph.ExtraMachineConfig.RequirementCount.1": "1",
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n: RAR.Mount.missing }}",
+								"selph.ExtraMachineConfig.CopyColor": "true",
+							},
+						}
+					],
+					"MinutesUntilReady": 4320,
+                },
+			}
+		}
+    ]
+}

@@ -765,8 +765,10 @@
                     "MaxDrops": 1, 
                     "MineSpawns": [
                         {
-                            "Floors": "31/50, 121/130, 146/155, 181/77376",
-                            "SpawnFrequency": "{{Query: {{Oynx.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
+                            "Floors": "1",
+                            "SpawnFrequency": "1.0", 
+                            // "Floors": "31/50, 121/130, 146/155, 181/77376",
+                            // "SpawnFrequency": "{{Query: {{Oynx.Spawn}} + {{Query: {{DailyLuck}} / 100}} }}", 
                             "AdditionalChancePerLevel": "{{Query: {{Oynx.Growth}} + {{Query: {{DailyLuck}} / 10000}} }}",
                             "Type": "All" 
                         }

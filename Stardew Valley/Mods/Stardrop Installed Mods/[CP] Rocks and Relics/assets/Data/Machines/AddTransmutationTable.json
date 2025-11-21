@@ -1,0 +1,542 @@
+{
+	"Changes": [
+        {
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"Entries": {
+				"{{ModId}}.TransmutationTable": {
+					"Name": "Transmutation Table",
+					"DisplayName": "{{i18n: RAR.TransmutationTable.name}}",
+					"Description": "{{i18n: RAR.TransmutationTable.description}}",
+					"Texture": "Mods/{{ModId}}/Machines",
+					"SpriteIndex": 0
+				}
+            },
+        },
+        {
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": {
+				"(BC){{ModId}}.TransmutationTable": {
+					"OutputRules": [
+						//COPPER
+						{
+							"Id": "7.Copper",
+							"Triggers": [
+								{
+									"RequiredTags": [
+										"7_copper"
+									],
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)334",
+									"Condition": "RANDOM 0.3",
+									"MinStack": 2,
+									"MaxStack": 4,
+								},
+								{
+									"ItemId": "(O)378",
+									"MinStack": 7,
+									"MaxStack": 16,
+								}
+							],
+							"MinutesUntilReady": 60
+
+						},
+						{
+							"Id": "10.Copper",
+							"Triggers": [
+								{
+									"RequiredTags": [
+										"10_copper"
+									],
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)334",
+									"Condition": "RANDOM 0.4",
+									"MinStack": 2,
+									"MaxStack": 5,
+								},
+								{
+									"ItemId": "(O)378",
+									"MinStack": 10,
+									"MaxStack": 22,
+								}
+							],
+							"MinutesUntilReady": 60
+
+						},
+						{
+							"Id": "15.Copper",
+							"Triggers": [
+								{
+									"RequiredTags": [
+										"15_copper"
+									],
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)334",
+									"Condition": "RANDOM 0.5",
+									"MinStack": 3,
+									"MaxStack": 6,
+								},
+								{
+									"ItemId": "(O)378",
+									"MinStack": 15,
+									"MaxStack": 30,
+								}
+							],
+							"MinutesUntilReady": 60
+
+						},
+						//IRON
+						{
+							"Id": "5.Iron",
+							"Triggers": [
+								{
+									"RequiredTags": [
+										"5_iron"
+									],
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)335",
+									"Condition": "RANDOM 0.3",
+									"MinStack": 2,
+									"MaxStack": 3,
+								},
+								{
+									"ItemId": "(O)380",
+									"MinStack": 5,
+									"MaxStack": 12,
+								}
+							],
+							"MinutesUntilReady": 240
+
+						},
+						{
+							"Id": "7.Iron",
+							"Triggers": [
+								{
+									"RequiredTags": [
+										"7_iron"
+									],
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)335",
+									"Condition": "RANDOM 0.3",
+									"MinStack": 2,
+									"MaxStack": 3,
+								},
+								{
+									"ItemId": "(O)380",
+									"MinStack": 7,
+									"MaxStack": 15,
+								}
+							],
+							"MinutesUntilReady": 240
+
+						},
+						{
+							"Id": "8.Iron",
+							"Triggers": [
+								{
+									"RequiredTags": [
+										"8_iron"
+									],
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)335",
+									"Condition": "RANDOM 0.3",
+									"MinStack": 2,
+									"MaxStack": 4,
+								},
+								{
+									
+									"ItemId": "(O)380",
+									"MinStack": 8,
+									"MaxStack": 18,
+								}
+							],
+							"MinutesUntilReady": 240
+
+						},
+						{
+							"Id": "10.Iron",
+							"Triggers": [
+								{
+									"RequiredTags": [
+										"10_iron"
+									],
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)335",
+									"Condition": "RANDOM 0.4",
+									"MinStack": 2,
+									"MaxStack": 5,
+								},
+								{
+									"ItemId": "(O)380",
+									"MinStack": 10,
+									"MaxStack": 22,
+								}
+							],
+							"MinutesUntilReady": 240
+
+						},
+						{
+							"Id": "12.Iron",
+							"Triggers": [
+								{
+									"RequiredTags": [
+										"12_iron"
+									],
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)335",
+									"Condition": "RANDOM 0.4",
+									"MinStack": 2,
+									"MaxStack": 5,
+								},
+								{
+									"ItemId": "(O)380",
+									"MinStack": 12,
+									"MaxStack": 24,
+								}
+							],
+							"MinutesUntilReady": 240
+
+						},
+						{
+							"Id": "15.Iron",
+							"Triggers": [
+								{
+									"RequiredTags": [
+										"15_iron"
+									],
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)335",
+									"Condition": "RANDOM 0.5",
+									"MinStack": 2,
+									"MaxStack": 6,
+								},
+								{
+									"ItemId": "(O)380",
+									"MinStack": 15,
+									"MaxStack": 27,
+								}
+							],
+							"MinutesUntilReady": 240
+
+						},
+						//GOLD
+						{
+							"Id": "5.Gold",
+							"Triggers": [
+								{
+									"RequiredTags": [
+										"5_gold"
+									],
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)336",
+									"Condition": "RANDOM 0.3",
+									"MinStack": 1,
+									"MaxStack": 2,
+								},
+								{
+									"ItemId": "(O)384",
+									"MinStack": 5,
+									"MaxStack": 9,
+								}
+							],
+							"MinutesUntilReady": 600
+
+						},
+						{
+							"Id": "7.Gold",
+							"Triggers": [
+								{
+									"RequiredTags": [
+										"7_gold"
+									],
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)336",
+									"Condition": "RANDOM 0.3",
+									"MinStack": 2,
+									"MaxStack": 3,
+								},
+								{
+									"ItemId": "(O)384",
+									"MinStack": 7,
+									"MaxStack": 15,
+								}
+							],
+							"MinutesUntilReady": 600
+
+						},
+						{
+							"Id": "10.Gold",
+							"Triggers": [
+								{
+									"RequiredTags": [
+										"10_gold"
+									],
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)336",
+									"Condition": "RANDOM 0.4",
+									"MinStack": 2,
+									"MaxStack": 4,
+								},
+								{
+									"ItemId": "(O)384",
+									"MinStack": 10,
+									"MaxStack": 20,
+								}
+							],
+							"MinutesUntilReady": 600
+
+						},
+						{
+							"Id": "12.Gold",
+							"Triggers": [
+								{
+									"RequiredTags": [
+										"12_gold"
+									],
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)336",
+									"Condition": "RANDOM 0.5",
+									"MinStack": 3,
+									"MaxStack": 5,
+								},
+								{
+									"ItemId": "(O)384",
+									"MinStack": 12,
+									"MaxStack": 25,
+								}
+							],
+							"MinutesUntilReady": 600
+
+						},
+						//IRIDIUM
+						{
+							"Id": "4.Iridium",
+							"Triggers": [
+								{
+									"RequiredTags": [
+										"4_iridium"
+									],
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)337",
+									"Condition": "RANDOM 0.3",
+									"MinStack": 1,
+									"MaxStack": 2,
+								},
+								{
+									"ItemId": "(O)386",
+									"MinStack": 4,
+									"MaxStack": 8,
+								}
+							],
+							"MinutesUntilReady": 960
+
+						},
+						//COAL
+						{
+							"Id": "5.Coal",
+							"Triggers": [
+								{
+									"RequiredTags": [
+										"5_coal"
+									],
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)382",
+									"MinStack": 5,
+									"MaxStack": 12,
+								}
+							],
+							"MinutesUntilReady": 360
+
+						},
+						{
+							"Id": "10.Coal",
+							"Triggers": [
+								{
+									"RequiredTags": [
+										"10_coal"
+									],
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)382",
+									"MinStack": 10,
+									"MaxStack": 21,
+								}
+							],
+							"MinutesUntilReady": 360
+
+						},
+						{
+							"Id": "Diamond.Coal",
+							"Triggers": [
+								{
+									"RequiredItemId": "(O)72"
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)382",
+									"MinStack": 40,
+									"MaxStack": 60,
+								}
+							],
+							"MinutesUntilReady": 360
+
+						},
+						//QUARTZ
+						{
+							"Id": "3.Quartz",
+							"Triggers": [
+								{
+									"RequiredTags": [
+										"3_quartz"
+									],
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)80",
+									"MinStack": 3,
+									"MaxStack": 5,
+								}
+							],
+							"MinutesUntilReady": 180
+
+						},
+						//PYRITE
+						{
+							"Id": "Pyrite.Wow",
+							"Triggers": [
+								{
+									"RequiredItemId": "(O)559"
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)384",
+									"Condition": "RANDOM 0.1",
+									"MinStack": 5,
+									"MaxStack": 9,
+								},
+								{
+									"ItemId": "(O)380",
+									"MinStack": 8,
+									"MaxStack": 18,
+								}
+							],
+							"MinutesUntilReady": 360
+
+						},
+						//LIMESTONE
+						{
+							"Id": "Limestone.Bone",
+							"Triggers": [
+								{
+									"RequiredItemId": "(O)571"
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)881",
+									"MinStack": 10,
+									"MaxStack": 30,
+								}
+							],
+							"MinutesUntilReady": 360
+
+						},
+						//MUDSTONE
+						{
+							"Id": "Mudstone.Clay",
+							"Triggers": [
+								{
+									"RequiredItemId": "(O)574"
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)330",
+									"MinStack": 10,
+									"MaxStack": 30,
+								}
+							],
+							"MinutesUntilReady": 360
+
+						},
+					],
+					"LoadEffects": [
+						{
+							"Sounds": [
+								{
+									"Id": "{{ModId}}.Transmute"
+								}
+							],
+							"Frames": [ 2,3,4,5 ],
+							"Interval": 100,
+						}
+					],
+					"WorkingEffects": [
+						{
+							"Frames": [ 2,3,4,5 ],
+							"Interval": 100,
+						}
+					],
+					"LightWhileWorking": {
+						"Radius": 1.5,
+						"Color": "DarkCyan"
+					},
+					"WorkingEffectChance": 1,
+					"ShowNextIndexWhenReady": true,
+					"WobbleWhileWorking": false
+				}
+            }
+        }
+    ]
+}
