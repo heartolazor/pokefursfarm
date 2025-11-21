@@ -779,6 +779,7 @@
       "FromFile": "assets/LooseSprites/marnie_winter_dance.png",
       "Priority": "Late + 1"
     },
+    /*
     {
       "Action": "EditImage",
       "Target": "Maps/desert_festival_tilesheet",
@@ -857,6 +858,7 @@
         "Height": 16
       }
     },
+    */
     {
       "Action": "EditImage",
       "Target": "Maps/FishingDerbyTiles",
@@ -872,11 +874,13 @@
     },
     {
       "Action": "EditImage",
-      "Target": "Maps/DesertTiles, Maps/Festivals, Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_TileSheet, Maps/night_market_tilesheet_objects, Maps/pirates_tilesheet, Maps/samshowtiles, Maps/stadium_tiles",
+      //"Target": "Maps/DesertTiles, Maps/Festivals, Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_TileSheet, Maps/night_market_tilesheet_objects, Maps/pirates_tilesheet, Maps/samshowtiles, Maps/stadium_tiles",
+      "Target": "Maps/DesertTiles, Maps/Festivals, Maps/night_market_tilesheet_objects, Maps/pirates_tilesheet, Maps/samshowtiles, Maps/stadium_tiles",
       "FromFile": "assets/{{Target}}.png",
       "PatchMode": "Overlay",
       "Priority": "Late + 1"
     },
+    /*
     {
       "Action": "EditImage",
       "Target": "Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_TileSheet",
@@ -930,7 +934,7 @@
         "Width": 16,
         "Height": 64
       }
-    },
+    },*/
     {
       "Action": "EditImage",
       "Target": "Maps/pirates_tilesheet",
