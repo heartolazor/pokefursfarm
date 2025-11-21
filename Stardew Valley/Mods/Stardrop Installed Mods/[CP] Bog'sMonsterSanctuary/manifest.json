@@ -1,0 +1,32 @@
+{
+    "Name": "Bog's Monster Sanctuary",
+    "Author": "BogWyytch and Abagaianye",
+    "Version": "1.0.0",
+    "Description": "Allows Monsters to seek refuge on your farm in exchange for treasures!",
+    "UniqueID": "Bogs.MonsterSanctuary",
+    "UpdateKeys": [
+        "Nexus:39430"
+    ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "juminos.MonsterHutchFramework",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "Bogs.Monsters",
+            "IsRequired": true,
+            "MinimumVersion": "1.1.0"
+        },
+        {
+            "UniqueID": "Spiderbuttons.CMCT",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "Spiderbuttons.BETAS",
+            "IsRequired": true
+        }
+    ],
+}

@@ -1,0 +1,1710 @@
+/*
+
+Mod by BogWyytch and Abagaianye!
+
+Art: BogWyytch
+Json: Abagaianye
+
+*/
+
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Format": "2.8.0",
+	"ConfigSchema": {
+		"CT_IridiumColour": {
+			"AllowValues": "Green, Purple, Pink",
+			"Default": "Green"
+		},
+        "CT_MonstersEverywhere": {
+            "AllowValues": "true, false",
+            "Default": "false"
+        },
+        "CT_SuperRareRate": {
+            "AllowValues": "easier, standard, harder",
+            "Default": "standard",
+        },
+        "CT_EnableBat": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "MonsterChoices"
+        },
+        "CT_EnableBug": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "MonsterChoices"
+        },
+        "CT_EnableCaveFly": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "MonsterChoices"
+        },
+        "CT_EnableCrab": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "MonsterChoices"
+        },
+        "CT_EnableDuggy": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "MonsterChoices"
+        },
+        "CT_EnableDustSprite": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "MonsterChoices"
+        },
+        "CT_EnableGhost": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "MonsterChoices"
+        },
+        "CT_EnableGrub": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "MonsterChoices"
+        },
+        "CT_EnableMetalHead": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "MonsterChoices"
+        },
+        "CT_EnableShadowBrute": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "MonsterChoices"
+        },
+        "CT_EnableShadowShaman": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "MonsterChoices"
+        },
+        "CT_EnableSkeleton": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "MonsterChoices"
+        },
+        "CT_EnableBigSlime": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "MonsterChoices"
+        },
+        "CT_EnableSlime": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "MonsterChoices"
+        },
+        "CT_EnableSquidKid": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "MonsterChoices"
+        },
+        "CT_EnableStoneGolem": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "MonsterChoices"
+        },
+	},
+    "DynamicTokens": [
+        {
+            "Name": "DT_SuperRareRate",
+            "Value": "0.0904", // Standard
+        },
+        {
+            "Name": "DT_SuperRareRate",
+            "Value": "0.3007",
+            "When": {
+                "CT_SuperRareRate": "easier"
+            }
+        },
+        {
+            "Name": "DT_SuperRareRate",
+            "Value": "0.0269",
+            "When": {
+                "CT_SuperRareRate": "harder"
+            }
+        },
+        {
+            "Name": "DT_MonsterLocation",
+            "Value": "ANY \"LOCATION_IS_MINES Here\" \"LOCATION_NAME Target Farm\""
+        },
+        {
+            "Name": "DT_MonsterLocation",
+            "Value": "!LOCATION_NAME Target juminos.MonsterHutchFramework_MonsterHutch juminos.MonsterHutchFramework_MonsterHutchExpanded \\\"Slime Hutch\\\"",
+            "When": {
+                "CT_MonstersEverywhere": true
+            }
+        },
+        {
+            "Name": "DT_SlimeLocation",
+            "Value": "ANY \"LOCATION_IS_MINES Here\" \"LOCATION_NAME Here Farm juminos.MonsterHutchFramework_MonsterHutch juminos.MonsterHutchFramework_MonsterHutchExpanded \\\"Slime Hutch\\\"\""
+        },
+        {
+            "Name": "DT_SlimeLocation",
+            "Value": "true",
+            "When": {
+                "CT_MonstersEverywhere": true
+            }
+        },
+        {
+            "Name": "DT_HUDRockCrabIcon",
+            "Value": "(O){{ModId}}_RockCrabSoul"
+        },
+        {
+            "Name": "DT_HUDRockCrabIcon",
+            "Value": "(O)Bogs.MonsterSanctuary_RockCrabTreasureSoul",
+            "When": {
+                "HasMod |contains=Bogs.MonsterSanctuary": true,
+            }
+        },
+        {
+            "Name": "DT_HUDDuggyIcon",
+            "Value": "(O){{ModId}}_DuggySoul"
+        },
+        {
+            "Name": "DT_HUDDuggyIcon",
+            "Value": "(O)Bogs.MonsterSanctuary_DuggyStarfruitSoul",
+            "When": {
+                "HasMod |contains=Bogs.MonsterSanctuary": true,
+            }
+        },
+        {
+            "Name": "DT_HUDDustSpriteIcon",
+            "Value": "{{ModId}}_DustSpriteSoul"
+        },
+        {
+            "Name": "DT_HUDDustSpriteIcon",
+            "Value": "(O)Bogs.MonsterSanctuary_DustSpriteMagmaCapSoul",
+            "When": {
+                "HasMod |contains=Bogs.MonsterSanctuary": true,
+            }
+        },
+        {
+            "Name": "DT_HUDMetalHeadIcon",
+            "Value": "(O){{ModId}}_MetalHeadSoul"
+        },
+        {
+            "Name": "DT_HUDMetalHeadIcon",
+            "Value": "(O)Bogs.MonsterSanctuary_MetalHeadGoldSoul",
+            "When": {
+                "HasMod |contains=Bogs.MonsterSanctuary": true,
+            }
+        },
+        {
+            "Name": "DT_HUDShadowBruteIcon",
+            "Value": "(O){{ModId}}_ShadowBruteSoul"
+        },
+        {
+            "Name": "DT_HUDShadowBruteIcon",
+            "Value": "(O)Bogs.MonsterSanctuary_ShadowBruteMushroomSoul",
+            "When": {
+                "HasMod |contains=Bogs.MonsterSanctuary": true,
+            }
+        },
+        {
+            "Name": "DT_HUDShadowShamanIcon",
+            "Value": "(O){{ModId}}_ShadowShamanSoul"
+        },
+        {
+            "Name": "DT_HUDShadowShamanIcon",
+            "Value": "(O)Bogs.MonsterSanctuary_ShadowShamanMuskSoul",
+            "When": {
+                "HasMod |contains=Bogs.MonsterSanctuary": true,
+            }
+        },
+        {
+            "Name": "DT_HUDSkeletonIcon",
+            "Value": "(O){{ModId}}_SkeletonSoul"
+        },
+        {
+            "Name": "DT_HUDSkeletonIcon",
+            "Value": "(O)Bogs.MonsterSanctuary_SkeletonGoldPumpkinSoul",
+            "When": {
+                "HasMod |contains=Bogs.MonsterSanctuary": true,
+            }
+        },
+        {
+            "Name": "DT_HUDSquidKidIcon",
+            "Value": "(O){{ModId}}_SquidKidSoul"
+        },
+        {
+            "Name": "DT_HUDSquidKidIcon",
+            "Value": "(O)Bogs.MonsterSanctuary_SquidKidPinkSoul",
+            "When": {
+                "HasMod |contains=Bogs.MonsterSanctuary": true,
+            }
+        },
+        {
+            "Name": "DT_HUDStoneGolemIcon",
+            "Value": "(O){{ModId}}_StoneGolemSoul"
+        },
+        {
+            "Name": "DT_HUDStoneGolemIcon",
+            "Value": "(O)Bogs.MonsterSanctuary_StoneGolemPrismaticSoul",
+            "When": {
+                "HasMod |contains=Bogs.MonsterSanctuary": true,
+            }
+        },
+    ],
+	"Changes": [
+
+/*
+   ▄▄                                                       ▄▄                                  ▄▄           
+  ████                                    ██                ██                                  ██           
+  ████    ▄▄█████▄  ▄▄█████▄   ▄████▄   ███████             ██         ▄████▄    ▄█████▄   ▄███▄██  ▄▄█████▄ 
+ ██  ██   ██▄▄▄▄ ▀  ██▄▄▄▄ ▀  ██▄▄▄▄██    ██                ██        ██▀  ▀██   ▀ ▄▄▄██  ██▀  ▀██  ██▄▄▄▄ ▀ 
+ ██████    ▀▀▀▀██▄   ▀▀▀▀██▄  ██▀▀▀▀▀▀    ██                ██        ██    ██  ▄██▀▀▀██  ██    ██   ▀▀▀▀██▄ 
+▄██  ██▄  █▄▄▄▄▄██  █▄▄▄▄▄██  ▀██▄▄▄▄█    ██▄▄▄             ██▄▄▄▄▄▄  ▀██▄▄██▀  ██▄▄▄███  ▀██▄▄███  █▄▄▄▄▄██ 
+▀▀    ▀▀   ▀▀▀▀▀▀    ▀▀▀▀▀▀     ▀▀▀▀▀      ▀▀▀▀             ▀▀▀▀▀▀▀▀    ▀▀▀▀     ▀▀▀▀ ▀▀    ▀▀▀ ▀▀   ▀▀▀▀▀▀  
+Asset Loads
+*/
+		//////////////////////////////////////
+		// LOAD MONSTER TEXTURES
+		//////////////////////////////////////
+		{
+            "LogName": "Load monster textures",
+            "Action": "Load",
+            "Target": "{{ModId}}/Bat, {{ModId}}/BigSlime, {{ModId}}/BugGreen, {{ModId}}/BugOrange, {{ModId}}/BugPurple, {{ModId}}/CaveFly, {{ModId}}/DuggyFall, {{ModId}}/DuggySpring, {{ModId}}/DuggyStar, {{ModId}}/DuggySummer, {{ModId}}/DuggyWinter, {{ModId}}/DustSpriteBrown, {{ModId}}/DustSpriteChant, {{ModId}}/DustSpriteMagma, {{ModId}}/DustSpriteMorel, {{ModId}}/DustSpritePurp, {{ModId}}/DustSpriteRed, {{ModId}}/FrostBat, {{ModId}}/GhostGreen, {{ModId}}/GhostOrange, {{ModId}}/GhostPurple, {{ModId}}/Grub, {{ModId}}/LavaBat, {{ModId}}/LavaCrab, {{ModId}}/MetalHeadFurn, {{ModId}}/MetalHeadGem, {{ModId}}/MetalHeadGold, {{ModId}}/MetalHeadWeapon, {{ModId}}/RockCrabClay, {{ModId}}/RockCrabFrozen, {{ModId}}/RockCrabGeode, {{ModId}}/RockCrabOmni, {{ModId}}/RockCrabTreasure, {{ModId}}/ShadowBruteBlue, {{ModId}}/ShadowBruteBrown, {{ModId}}/ShadowBruteGard, {{ModId}}/ShadowBruteMush, {{ModId}}/ShadowBrutePurp, {{ModId}}/ShadowShamanHat, {{ModId}}/ShadowShamanMusk, {{ModId}}/ShadowShamanStaff, {{ModId}}/SkeletonFall, {{ModId}}/SkeletonGoldPumpkin, {{ModId}}/SkeletonPumpkin, {{ModId}}/SkeletonSpring, {{ModId}}/SkeletonSummer, {{ModId}}/SkeletonWinter, {{ModId}}/Slimes, {{ModId}}/SquidKidBlood, {{ModId}}/SquidKidEye, {{ModId}}/SquidKidPink, {{ModId}}/SquidKidVine, {{ModId}}/StoneGolemCopper, {{ModId}}/StoneGolemGold, {{ModId}}/StoneGolemIridiumGreen, {{ModId}}/StoneGolemIridiumPink, {{ModId}}/StoneGolemIridiumPurple, {{ModId}}/StoneGolemIron, {{ModId}}/StoneGolemPrismatic",
+            "FromFile": "assets/monsters/{{TargetWithoutPath}}.png",
+			"Priority": "Low",
+        },
+
+        //////////////////////////////////////
+		// LOAD MONSTER SOUL TEXTURES
+        // Mod content when played without Monster Sanctuary installed
+		//////////////////////////////////////
+		{
+            "LogName": "Load monster soul textures",
+            "Action": "Load",
+            "Target": "{{ModId}}/Souls",
+            "FromFile": "assets/icons/{{TargetWithoutPath}}.png",
+			"Priority": "Low",
+            "When": {
+                "HasMod |contains=Bogs.MonsterSanctuary": false
+            }
+        },
+/*
+    ▄▄▄▄                                                              
+  ██▀▀▀▀█                        ██                            ██     
+ ██▀        ▄████▄   ██▄████▄  ███████    ▄████▄   ██▄████▄  ███████  
+ ██        ██▀  ▀██  ██▀   ██    ██      ██▄▄▄▄██  ██▀   ██    ██     
+ ██▄       ██    ██  ██    ██    ██      ██▀▀▀▀▀▀  ██    ██    ██     
+  ██▄▄▄▄█  ▀██▄▄██▀  ██    ██    ██▄▄▄   ▀██▄▄▄▄█  ██    ██    ██▄▄▄  
+    ▀▀▀▀     ▀▀▀▀    ▀▀    ▀▀     ▀▀▀▀     ▀▀▀▀▀   ▀▀    ▀▀     ▀▀▀▀  
+Content
+*/
+
+        //////////////////////////////////////
+		// ADD MONSTER SOUL OBJECT DATA
+        // Mod content when played without Monster Sanctuary installed
+		//////////////////////////////////////
+        {
+            "LogName": "Add monster souls",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_DuggySoul": {
+                    "Name": "{{ModId}}_DuggySoul",
+                    "DisplayName": "{{i18n: object.display-name.duggy-soul}}",
+                    "Description": "{{i18n: object.desc.duggy-soul}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 500,
+                    "Texture": "{{ModId}}/Souls",
+                    "SpriteIndex": 0,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "soul_item",
+                        "not_giftable"
+                    ]
+                },
+                "{{ModId}}_DustSpriteSoul": {
+                    "Name": "{{ModId}}_DustSpriteSoul",
+                    "DisplayName": "{{i18n: object.display-name.dust-sprite-soul}}",
+                    "Description": "{{i18n: object.desc.dust-sprite-soul}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 500,
+                    "Texture": "{{ModId}}/Souls",
+                    "SpriteIndex": 1,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "soul_item",
+                        "not_giftable"
+                    ]
+                },
+                "{{ModId}}_MetalHeadSoul": {
+                    "Name": "{{ModId}}_MetalHeadSoul",
+                    "DisplayName": "{{i18n: object.display-name.metal-head-soul}}",
+                    "Description": "{{i18n: object.desc.metal-head-soul}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 500,
+                    "Texture": "{{ModId}}/Souls",
+                    "SpriteIndex": 2,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "soul_item",
+                        "not_giftable"
+                    ]
+                },
+                "{{ModId}}_RockCrabSoul": {
+                    "Name": "{{ModId}}_RockCrabSoul",
+                    "DisplayName": "{{i18n: object.display-name.rock-crab-soul}}",
+                    "Description": "{{i18n: object.desc.rock-crab-soul}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 500,
+                    "Texture": "{{ModId}}/Souls",
+                    "SpriteIndex": 3,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "soul_item",
+                        "not_giftable"
+                    ]
+                },
+                "{{ModId}}_ShadowBruteSoul": {
+                    "Name": "{{ModId}}_ShadowBruteSoul",
+                    "DisplayName": "{{i18n: object.display-name.shadow-brute-soul}}",
+                    "Description": "{{i18n: object.desc.shadow-brute-soul}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 500,
+                    "Texture": "{{ModId}}/Souls",
+                    "SpriteIndex": 4,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "soul_item",
+                        "not_giftable"
+                    ]
+                },
+                "{{ModId}}_ShadowShamanSoul": {
+                    "Name": "{{ModId}}_ShadowShamanSoul",
+                    "DisplayName": "{{i18n: object.display-name.shadow-shaman-soul}}",
+                    "Description": "{{i18n: object.desc.shadow-shaman-soul}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 500,
+                    "Texture": "{{ModId}}/Souls",
+                    "SpriteIndex": 5,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "soul_item",
+                        "not_giftable"
+                    ]
+                },
+                "{{ModId}}_SkeletonSoul": {
+                    "Name": "{{ModId}}_SkeletonSoul",
+                    "DisplayName": "{{i18n: object.display-name.skeleton-soul}}",
+                    "Description": "{{i18n: object.desc.skeleton-soul}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 500,
+                    "Texture": "{{ModId}}/Souls",
+                    "SpriteIndex": 6,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "soul_item",
+                        "not_giftable"
+                    ]
+                },
+                "{{ModId}}_SquidKidSoul": {
+                    "Name": "{{ModId}}_SquidKidSoul",
+                    "DisplayName": "{{i18n: object.display-name.squid-kid-soul}}",
+                    "Description": "{{i18n: object.desc.squid-kid-soul}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 500,
+                    "Texture": "{{ModId}}/Souls",
+                    "SpriteIndex": 7,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "soul_item",
+                        "not_giftable"
+                    ]
+                },
+                "{{ModId}}_StoneGolemSoul": {
+                    "Name": "{{ModId}}_StoneGolemSoul",
+                    "DisplayName": "{{i18n: object.display-name.stone-golem-soul}}",
+                    "Description": "{{i18n: object.desc.stone-golem-soul}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 500,
+                    "Texture": "{{ModId}}/Souls",
+                    "SpriteIndex": 8,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "soul_item",
+                        "not_giftable"
+                    ]
+                },
+            },
+            "When": {
+                "HasMod |contains=Bogs.MonsterSanctuary": false
+            }
+        },
+/*
+ ▄▄▄  ▄▄▄                                                                       
+ ███  ███                                  ██                                   
+ ████████   ▄████▄   ██▄████▄  ▄▄█████▄  ███████    ▄████▄    ██▄████  ▄▄█████▄ 
+ ██ ██ ██  ██▀  ▀██  ██▀   ██  ██▄▄▄▄ ▀    ██      ██▄▄▄▄██   ██▀      ██▄▄▄▄ ▀ 
+ ██ ▀▀ ██  ██    ██  ██    ██   ▀▀▀▀██▄    ██      ██▀▀▀▀▀▀   ██        ▀▀▀▀██▄ 
+ ██    ██  ▀██▄▄██▀  ██    ██  █▄▄▄▄▄██    ██▄▄▄   ▀██▄▄▄▄█   ██       █▄▄▄▄▄██ 
+ ▀▀    ▀▀    ▀▀▀▀    ▀▀    ▀▀   ▀▀▀▀▀▀      ▀▀▀▀     ▀▀▀▀▀    ▀▀        ▀▀▀▀▀▀  
+Monsters
+*/
+
+        //////////////////////////////////////
+		// REMOVE VANILLA BUG DROP
+		//////////////////////////////////////
+        {
+            "LogName": "Remove bug meat drops from bugs",
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "Priority": "Early",
+            "TextOperations": [
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [ "Fields", "Bug", "6" ],
+                    "Search": "684",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [ "Fields", "Bug", "6" ],
+                    "Search": ".76",
+                    "Delimiter": " "
+                }
+            ]
+        },
+
+		//////////////////////////////////////
+		// ADD MONSTER VARIANTS
+		//////////////////////////////////////
+/*
+ ▄▄▄▄▄▄                                 
+ ██▀▀▀▀██              ██               
+ ██    ██   ▄█████▄  ███████   ▄▄█████▄ 
+ ███████    ▀ ▄▄▄██    ██      ██▄▄▄▄ ▀ 
+ ██    ██  ▄██▀▀▀██    ██       ▀▀▀▀██▄ 
+ ██▄▄▄▄██  ██▄▄▄███    ██▄▄▄   █▄▄▄▄▄██ 
+ ▀▀▀▀▀▀▀    ▀▀▀▀ ▀▀     ▀▀▀▀    ▀▀▀▀▀▀  
+Bats
+Bat
+Frost Bat
+Lava Bat
+*/
+        {
+            "When": {
+                "CT_EnableBat": true
+            },
+            "LogName": "Add bats",
+            "Action": "EditData",
+            "Target": "mushymato.MonsterVariety/Data",
+            "Entries": {
+
+                "{{ModId}}_Bat": { // Floors 31-39
+                    "Id": "{{ModId}}_Bat",
+                    "MonsterName": "Bat",
+                    "Varieties": {
+                        "{{ModId}}_Bat": {
+                            "Sprite": "{{ModId}}/Bat",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_MonsterLocation}}"
+                        },
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerBat": {
+                            "Sprite": "Characters/Monsters/Bat_dangerous",
+                        },
+                    }
+                },
+                "{{ModId}}_FrostBat": { // Floors 41-79
+                    "Id": "{{ModId}}_FrostBat",
+                    "MonsterName": "Frost Bat",
+                    "Varieties": {
+                        "{{ModId}}_FrostBat": {
+                            "Sprite": "{{ModId}}/FrostBat",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_MonsterLocation}}"
+                        },
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerFrostBat": {
+                            "Sprite": "Characters/Monsters/Frost Bat_dangerous",
+                        },
+                    }
+                },
+                "{{ModId}}_LavaBat": { // Floors 81-119
+                    "Id": "{{ModId}}_LavaBat",
+                    "MonsterName": "Lava Bat",
+                    "Varieties": {
+                        "{{ModId}}_LavaBat": {
+                            "Sprite": "{{ModId}}/LavaBat",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_MonsterLocation}}"
+                        },
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerLavaBat": {
+                            "Sprite": "Characters/Monsters/Lava Bat_dangerous",
+                        },
+                    }
+                },
+            }
+        },
+/*
+ ▄▄▄▄▄▄                                 
+ ██▀▀▀▀██                               
+ ██    ██  ██    ██   ▄███▄██  ▄▄█████▄ 
+ ███████   ██    ██  ██▀  ▀██  ██▄▄▄▄ ▀ 
+ ██    ██  ██    ██  ██    ██   ▀▀▀▀██▄ 
+ ██▄▄▄▄██  ██▄▄▄███  ▀██▄▄███  █▄▄▄▄▄██ 
+ ▀▀▀▀▀▀▀    ▀▀▀▀ ▀▀   ▄▀▀▀ ██   ▀▀▀▀▀▀  
+                      ▀████▀▀           
+Bugs
+Floors 1-39
+*/
+        {
+            "When": {
+                "CT_EnableBug": true
+            },
+            "LogName": "Add bugs",
+            "Action": "EditData",
+            "Target": "mushymato.MonsterVariety/Data",
+            "Entries": {
+                "{{ModId}}_Bug": {
+                    "Id": "{{ModId}}_Bug",
+                    "MonsterName": "Bug",
+                    "Varieties": {
+                        "{{ModId}}_BugGreen": {
+                            "Sprite": "{{ModId}}/BugGreen",
+                            "AlwaysOverride": true,
+                            "LightProps": "2 White",
+                            "Condition": "{{DT_MonsterLocation}}"
+                        },
+                        "{{ModId}}_BugOrange": {
+                            "Sprite": "{{ModId}}/BugOrange",
+                            "AlwaysOverride": true,
+                            "LightProps": "2 White",
+                            "Condition": "{{DT_MonsterLocation}}"
+                        },
+                        "{{ModId}}_BugPurple": {
+                            "Sprite": "{{ModId}}/BugPurple",
+                            "AlwaysOverride": true,
+                            "LightProps": "2 White",
+                            "Condition": "{{DT_MonsterLocation}}"
+                        },
+                    },
+                    "SharedExtraDrops": {
+                        "{{ModId}}_FrozenTear": {
+                            "Id": "{{ModId}}_FrozenTear",
+                            "ItemId": "(O)84",
+                            "Condition": "RANDOM 0.5", // 50%, not affected by luck
+                        },
+                        "{{ModId}}_Torch": {
+                            "Id": "{{ModId}}_Torch",
+                            "ItemId": "(O)93",
+                            "Condition": "RANDOM 0.5", // 50%, not affected by luck
+                        },
+                        "{{ModId}}_SpiritTorch": {
+                            "Id": "{{ModId}}_SpiritTorch",
+                            "ItemId": "(O)94",
+                            "Condition": "RANDOM 0.01", // 1%, not affected by luck
+                        }
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerBug": {
+                            "Sprite": "Characters/Monsters/Bug_dangerous",
+                        },
+                    }
+                },
+            }
+        },
+/*
+    ▄▄▄▄                                           ▄▄▄▄▄▄▄▄  ▄▄▄▄         ██                        
+  ██▀▀▀▀█                                          ██▀▀▀▀▀▀  ▀▀██         ▀▀                        
+ ██▀        ▄█████▄  ██▄  ▄██   ▄████▄             ██          ██       ████      ▄████▄   ▄▄█████▄ 
+ ██         ▀ ▄▄▄██   ██  ██   ██▄▄▄▄██            ███████     ██         ██     ██▄▄▄▄██  ██▄▄▄▄ ▀ 
+ ██▄       ▄██▀▀▀██   ▀█▄▄█▀   ██▀▀▀▀▀▀            ██          ██         ██     ██▀▀▀▀▀▀   ▀▀▀▀██▄ 
+  ██▄▄▄▄█  ██▄▄▄███    ████    ▀██▄▄▄▄█            ██          ██▄▄▄   ▄▄▄██▄▄▄  ▀██▄▄▄▄█  █▄▄▄▄▄██ 
+    ▀▀▀▀    ▀▀▀▀ ▀▀     ▀▀       ▀▀▀▀▀             ▀▀           ▀▀▀▀   ▀▀▀▀▀▀▀▀    ▀▀▀▀▀    ▀▀▀▀▀▀  
+Cave Flies
+Floors 1-29
+*/
+        {
+            "When": {
+                "CT_EnableCaveFly": true
+            },
+            "LogName": "Add cave flies",
+            "Action": "EditData",
+            "Target": "mushymato.MonsterVariety/Data",
+            "Entries": {
+                "{{ModId}}_CaveFly": {
+                    "Id": "{{ModId}}_CaveFly",
+                    "MonsterName": "Fly",
+                    "Varieties": {
+                        "{{ModId}}_CaveFly": {
+                            "Sprite": "{{ModId}}/CaveFly",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_MonsterLocation}}"
+                        },
+                    },
+                    "SharedExtraDrops": {
+                        "{{ModId}}_BugMeat": {
+                            "Id": "{{ModId}}_BugMeat",
+                            "ItemId": "(O)684",
+                            "Condition": "RANDOM 0.5", // 50%, not affected by luck
+                            "MinStack": 1,
+                            "MaxStack": 2
+                        },
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerCaveFly": {
+                            "Sprite": "Characters/Monsters/Fly_dangerous",
+                        },
+                    }
+                },
+            }
+        },
+/*
+    ▄▄▄▄                       ▄▄                 
+  ██▀▀▀▀█                      ██                 
+ ██▀        ██▄████   ▄█████▄  ██▄███▄   ▄▄█████▄ 
+ ██         ██▀       ▀ ▄▄▄██  ██▀  ▀██  ██▄▄▄▄ ▀ 
+ ██▄        ██       ▄██▀▀▀██  ██    ██   ▀▀▀▀██▄ 
+  ██▄▄▄▄█   ██       ██▄▄▄███  ███▄▄██▀  █▄▄▄▄▄██ 
+    ▀▀▀▀    ▀▀        ▀▀▀▀ ▀▀  ▀▀ ▀▀▀     ▀▀▀▀▀▀  
+Crabs
+Rock crab
+Floors 1-29
+
+Lava crab
+Floors 81-119
+*/
+        {
+            "When": {
+                "CT_EnableCrab": true
+            },
+            "LogName": "Add rock and lava crabs",
+            "Action": "EditData",
+            "Target": "mushymato.MonsterVariety/Data",
+            "Entries": {
+                "{{ModId}}_RockCrab": {
+                    "Id": "{{ModId}}_RockCrab",
+                    "MonsterName": "Rock Crab",
+                    "Varieties": {
+                        "{{ModId}}_RockCrabClay": {
+                            "Sprite": "{{ModId}}/RockCrabClay",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "Precedence": 0, // This is set to spawn 100% of the time, but this condition is checked after all the ones below it so it should only spawn if none of the others did. This is to prevent a vanilla version from ever spawning.
+                            "ExtraDrops": {
+                                "{{ModId}}_Clay": {
+                                    "Id": "{{ModId}}_Clay",
+                                    "ItemId": "(O)330",
+                                }
+                            },
+                        },
+                        "{{ModId}}_RockCrabGeode": {
+                            "Sprite": "{{ModId}}/RockCrabGeode",
+                            "AlwaysOverride": true,
+                            "Condition": "RANDOM .25, {{DT_MonsterLocation}}", // 25% chance to spawn, no luck
+                            "Precedence": -1,
+                            "ExtraDrops": {
+                                "{{ModId}}_Geode": {
+                                    "Id": "{{ModId}}_Geode",
+                                    "ItemId": "(O)535",
+                                }
+                            },
+                        },
+                        "{{ModId}}_RockCrabFrozenGeode": {
+                            "Sprite": "{{ModId}}/RockCrabFrozen",
+                            "AlwaysOverride": true,
+                            "Condition": "RANDOM .125, {{DT_MonsterLocation}}", // 12.5% chance to spawn, no luck
+                            "Precedence": -2,
+                            "ExtraDrops": {
+                                "{{ModId}}_FrozenGeode": {
+                                    "Id": "{{ModId}}_FrozenGeode",
+                                    "ItemId": "(O)536",
+                                }
+                            },
+                        },
+                        "{{ModId}}_RockCrabOmniGeode": {
+                            "Sprite": "{{ModId}}/RockCrabOmni",
+                            "AlwaysOverride": true,
+                            "Condition": "RANDOM .025 @addDailyLuck, {{DT_MonsterLocation}}", // 2.5% chance to spawn, add daily luck
+                            "Precedence": -4,
+                            "ExtraDrops": {
+                                "{{ModId}}_OmniGeode": {
+                                    "Id": "{{ModId}}_OmniGeode",
+                                    "ItemId": "(O)749",
+                                }
+                            },
+                        },
+                        "{{ModId}}_RockCrabTreasure": { // SUPER RARE
+                            "Sprite": "{{ModId}}/RockCrabTreasure",
+                            "AlwaysOverride": true,
+                            "Condition": "mushymato.MonsterVariety_LUCKY_RANDOM 0.0019 @addPlayerLuck {{DT_SuperRareRate}}, {{DT_MonsterLocation}}", // 0.19% chance to spawn, + player-configurable increase for every level of player luck.
+                            "Precedence": -5,
+                            "ExtraDrops": {
+                                "{{ModId}}_ArtifactTrove": {
+                                    "Id": "{{ModId}}_ArtifactTrove",
+                                    "ItemId": "(O)275",
+                                },
+                            },
+                            "HUDNotif": "SUPER RARE APPEARED",
+                            "HUDNotifIconItem": "{{DT_HUDRockCrabIcon}}"
+                        },
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerRockCrab": {
+                            "Sprite": "Characters/Monsters/Rock Crab_dangerous",
+                        },
+                    }
+                },
+                "{{ModId}}_LavaCrab": {
+                    "Id": "{{ModId}}_LavaCrab",
+                    "MonsterName": "Lava Crab",
+                    "Varieties": {
+                        "{{ModId}}_LavaCrab": {
+                            "Sprite": "{{ModId}}/LavaCrab",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "ExtraDrops": {
+                                "{{ModId}}_MagmaGeode": {
+                                    "Id": "{{ModId}}_MagmaGeode",
+                                    "ItemId": "(O)537",
+                                }
+                            },
+                        },
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerLavaCrab": {
+                            "Sprite": "Characters/Monsters/Lava Crab_dangerous",
+                        },
+                    }
+                },
+            }
+        },
+/*
+ ▄▄▄▄▄                                      ██                        
+ ██▀▀▀██                                    ▀▀                        
+ ██    ██  ██    ██   ▄███▄██   ▄███▄██   ████      ▄████▄   ▄▄█████▄ 
+ ██    ██  ██    ██  ██▀  ▀██  ██▀  ▀██     ██     ██▄▄▄▄██  ██▄▄▄▄ ▀ 
+ ██    ██  ██    ██  ██    ██  ██    ██     ██     ██▀▀▀▀▀▀   ▀▀▀▀██▄ 
+ ██▄▄▄██   ██▄▄▄███  ▀██▄▄███  ▀██▄▄███  ▄▄▄██▄▄▄  ▀██▄▄▄▄█  █▄▄▄▄▄██ 
+ ▀▀▀▀▀      ▀▀▀▀ ▀▀   ▄▀▀▀ ██   ▄▀▀▀ ██  ▀▀▀▀▀▀▀▀    ▀▀▀▀▀    ▀▀▀▀▀▀  
+                      ▀████▀▀   ▀████▀▀                               
+Duggies
+Floors 2-29
+*/
+        {
+            "When": {
+                "CT_EnableDuggy": true
+            },
+            "LogName": "Add duggies",
+            "Action": "EditData",
+            "Target": "mushymato.MonsterVariety/Data",
+            "Entries": {
+                "{{ModId}}_Duggy": {
+                    "Id": "{{ModId}}_Duggy",
+                    "MonsterName": "Duggy",
+                    "Varieties": {
+                        "{{ModId}}_DuggySpring": {
+                            "Sprite": "{{ModId}}/DuggySpring",
+                            "AlwaysOverride": true,
+                            "Season": "spring",
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "Precedence": 0,
+                            "ExtraDrops": {
+                                "{{ModId}}_SpringForage": {
+                                    "Id": "{{ModId}}_SpringForage",
+                                    "RandomItemId": [ "(O)92", "(O)296", "(O)399", "(O)18", "(O)22", "(O)404", "(O)16", "(O)20", "(O)257" ] // Sap, salmonberry, spring onion, daffodil, dandelion, common mushroom, wild horseradish, leek, morel
+                                },
+                            },
+                        },
+                        "{{ModId}}_DuggySummer": {
+                            "Sprite": "{{ModId}}/DuggySummer",
+                            "AlwaysOverride": true,
+                            "Season": "summer",
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "Precedence": 0,
+                            "ExtraDrops": {
+                                "{{ModId}}_SummerForage": {
+                                    "Id": "{{ModId}}_SummerForage",
+                                    "RandomItemId": [ "(O)92", "(O)404", "(O)402", "(O)420", "(O)396", "(O)259" ] // Sap, common mushroom, sweet pea, red mushroom, spice berry, fiddlehead fern
+                                }
+                            },
+                        },
+                        "{{ModId}}_DuggyFall": {
+                            "Sprite": "{{ModId}}/DuggyFall",
+                            "AlwaysOverride": true,
+                            "Season": "fall",
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "Precedence": 0,
+                            "ExtraDrops": {
+                                "{{ModId}}_FallForage": {
+                                    "Id": "{{ModId}}_FallForage",
+                                    "RandomItemId": [ "(O)92", "(O)410", "(O)404", "(O)420", "(O)406", "(O)408", "(O)281", "(O)422" ] // Sap, blackberry, common mushroom, red mushroom, wild plum, hazelnut, chanterelle, purple mushroom
+                                }
+                            },
+                        },
+                        "{{ModId}}_DuggyWinter": {
+                            "Sprite": "{{ModId}}/DuggyWinter",
+                            "AlwaysOverride": true,
+                            "Season": "winter",
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "Precedence": 0,
+                            "ExtraDrops": {
+                                "{{ModId}}_WinterForage": {
+                                    "Id": "{{ModId}}_WinterForage",
+                                    "RandomItemId": [ "(O)92", "(O)418", "(O)412", "(O)283", "(O)416", "(O)414" ] // Sap, crocus, winter root, holly, snow yam, crystal fruit
+                                }
+                            },
+                        },
+                        "{{ModId}}_DuggyStarfruit": { // SUPER RARE
+                            "Sprite": "{{ModId}}/DuggyStar",
+                            "AlwaysOverride": true,
+                            "Condition": "mushymato.MonsterVariety_LUCKY_RANDOM 0.0019 @addPlayerLuck {{DT_SuperRareRate}}, {{DT_MonsterLocation}}", // 0.195% chance to spawn, affected by daily luck and player-configurable increase for every level of player luck.
+                            "Precedence": -1,
+                            "ExtraDrops": {
+                                "{{ModId}}_Starfruit": {
+                                    "Id": "{{ModId}}_Starfruit",
+                                    "RandomItemId": [ "(O)268", "(O)486" ] // Starfruit or starfruit seeds
+                                },
+                            },
+                            "HUDNotif": "SUPER RARE APPEARED",
+                            "HUDNotifIconItem": "{{DT_HUDDuggyIcon}}"
+                        },
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerDuggy": {
+                            "Sprite": "Characters/Monsters/Duggy_dangerous",
+                        },
+                    }
+                },
+            }
+        },
+/*
+ ▄▄▄▄▄                                               ▄▄▄▄                           ██                                  
+ ██▀▀▀██                         ██                ▄█▀▀▀▀█                          ▀▀       ██                         
+ ██    ██  ██    ██  ▄▄█████▄  ███████             ██▄       ██▄███▄    ██▄████   ████     ███████    ▄████▄   ▄▄█████▄ 
+ ██    ██  ██    ██  ██▄▄▄▄ ▀    ██                 ▀████▄   ██▀  ▀██   ██▀         ██       ██      ██▄▄▄▄██  ██▄▄▄▄ ▀ 
+ ██    ██  ██    ██   ▀▀▀▀██▄    ██                     ▀██  ██    ██   ██          ██       ██      ██▀▀▀▀▀▀   ▀▀▀▀██▄ 
+ ██▄▄▄██   ██▄▄▄███  █▄▄▄▄▄██    ██▄▄▄             █▄▄▄▄▄█▀  ███▄▄██▀   ██       ▄▄▄██▄▄▄    ██▄▄▄   ▀██▄▄▄▄█  █▄▄▄▄▄██ 
+ ▀▀▀▀▀      ▀▀▀▀ ▀▀   ▀▀▀▀▀▀      ▀▀▀▀              ▀▀▀▀▀    ██ ▀▀▀     ▀▀       ▀▀▀▀▀▀▀▀     ▀▀▀▀     ▀▀▀▀▀    ▀▀▀▀▀▀  
+                                                             ██                                                         
+Dust Sprites
+Floors 41-79
+*/
+        {
+            "When": {
+                "CT_EnableDustSprite": true
+            },
+            "LogName": "Add dust sprites",
+            "Action": "EditData",
+            "Target": "mushymato.MonsterVariety/Data",
+            "Entries": {
+                "{{ModId}}_DustSprite": {
+                    "Id": "{{ModId}}_DustSprite",
+                    "MonsterName": "Dust Spirit",
+                    "Varieties": {
+                        "{{ModId}}_DustSpriteBrown": { 
+                            "Sprite": "{{ModId}}/DustSpriteBrown",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "Precedence": 0,
+                            "ExtraDrops": {
+                                "{{ModId}}_CommonMushroom": {
+                                    "Id": "{{ModId}}_CommonMushroom",
+                                    "ItemId": "(O)404"
+                                }
+                            }
+                        },
+                        "{{ModId}}_DustSpriteRed": { 
+                            "Sprite": "{{ModId}}/DustSpriteRed",
+                            "AlwaysOverride": true,
+                            "Condition": "RANDOM .123, {{DT_MonsterLocation}}", // 12.3% chance to spawn, no luck
+                            "Precedence": -1,
+                            "ExtraDrops": {
+                                "{{ModId}}_RedMushroom": {
+                                    "Id": "{{ModId}}_RedMushroom",
+                                    "ItemId": "(O)420"
+                                }
+                            }
+                        },
+                        "{{ModId}}_DustSpriteMorel": { 
+                            "Sprite": "{{ModId}}/DustSpriteMorel",
+                            "AlwaysOverride": true,
+                            "Condition": "RANDOM .081, {{DT_MonsterLocation}}", // 8.1% chance to spawn, no luck
+                            "Precedence": -2,
+                            "ExtraDrops": {
+                                "{{ModId}}_MorelMushroom": {
+                                    "Id": "{{ModId}}_MorelMushroom",
+                                    "ItemId": "(O)257"
+                                }
+                            }
+                        },
+                        "{{ModId}}_DustSpriteChanterelle": { 
+                            "Sprite": "{{ModId}}/DustSpriteChant",
+                            "AlwaysOverride": true,
+                            "Condition": "RANDOM .073, {{DT_MonsterLocation}}", // 7.3% chance to spawn, no luck
+                            "Precedence": -2,
+                            "ExtraDrops": {
+                                "{{ModId}}_ChanterelleMushroom": {
+                                    "Id": "{{ModId}}_ChanterelleMushroom",
+                                    "ItemId": "(O)281"
+                                }
+                            }
+                        },
+                        "{{ModId}}_DustSpritePurple": { 
+                            "Sprite": "{{ModId}}/DustSpritePurp",
+                            "AlwaysOverride": true,
+                            "Condition": "RANDOM .025 @addDailyLuck, {{DT_MonsterLocation}}", // 2.5% chance to spawn, add daily luck
+                            "Precedence": -3,
+                            "ExtraDrops": {
+                                "{{ModId}}_PurpleMushroom": {
+                                    "Id": "{{ModId}}_PurpleMushroom",
+                                    "ItemId": "(O)422"
+                                }
+                            }
+                        },
+                        "{{ModId}}_DustSpriteMagmaCap": { // SUPER RARE
+                            "Sprite": "{{ModId}}/DustSpriteMagma",
+                            "AlwaysOverride": true,
+                            "Condition": "mushymato.MonsterVariety_LUCKY_RANDOM 0.0019 @addPlayerLuck {{DT_SuperRareRate}}, {{DT_MonsterLocation}}", // 0.195% chance to spawn, affected by daily luck and player-configurable increase for every level of player luck.
+                            "Precedence": -4,
+                            "ExtraDrops": {
+                                "{{ModId}}_MagmaCapMushroom": {
+                                    "Id": "{{ModId}}_MagmaCapMushroom",
+                                    "ItemId": "(O)851"
+                                },
+                            },
+                            "HUDNotif": "SUPER RARE APPEARED",
+                            "HUDNotifIconItem": "{{DT_HUDDustSpriteIcon}}"
+                        },
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerDustSprite": {
+                            "Sprite": "Characters/Monsters/Dust Spirit_dangerous",
+                        },
+                    }
+                },
+            }
+        },
+/*
+    ▄▄▄▄   ▄▄                                               
+  ██▀▀▀▀█  ██                              ██               
+ ██        ██▄████▄   ▄████▄   ▄▄█████▄  ███████   ▄▄█████▄ 
+ ██  ▄▄▄▄  ██▀   ██  ██▀  ▀██  ██▄▄▄▄ ▀    ██      ██▄▄▄▄ ▀ 
+ ██  ▀▀██  ██    ██  ██    ██   ▀▀▀▀██▄    ██       ▀▀▀▀██▄ 
+  ██▄▄▄██  ██    ██  ▀██▄▄██▀  █▄▄▄▄▄██    ██▄▄▄   █▄▄▄▄▄██ 
+    ▀▀▀▀   ▀▀    ▀▀    ▀▀▀▀     ▀▀▀▀▀▀      ▀▀▀▀    ▀▀▀▀▀▀  
+Ghosts
+Floors 51-79
+*/
+        {
+            "When": {
+                "CT_EnableGhost": true
+            },
+            "LogName": "Add ghosts",
+            "Action": "EditData",
+            "Target": "mushymato.MonsterVariety/Data",
+            "Entries": {
+                "{{ModId}}_Ghost": {
+                    "Id": "{{ModId}}_Ghost",
+                    "MonsterName": "Ghost",
+                    "Varieties": {
+                        "{{ModId}}_GhostGreen": {
+                            "Sprite": "{{ModId}}/GhostGreen",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "LightProps": "5 White"
+                        },
+                        "{{ModId}}_GhostOrange": {
+                            "Sprite": "{{ModId}}/GhostOrange",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "LightProps": "5 White"
+                        },
+                        "{{ModId}}_GhostPurple": {
+                            "Sprite": "{{ModId}}/GhostPurple",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "LightProps": "5 White"
+                        },
+                    },
+                    "SharedExtraDrops": {
+                        "{{ModId}}_Torch": {
+                            "Id": "{{ModId}}_Torch",
+                            "ItemId": "(O)93",
+                            "Condition": "RANDOM 0.5", // 50%, not affected by luck
+                        },
+                        "{{ModId}}_SpiritTorch": {
+                            "Id": "{{ModId}}_SpiritTorch",
+                            "ItemId": "(O)94",
+                            "Condition": "RANDOM 0.01", // 1%, not affected by luck
+                        }
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerGhost": {
+                            "Sprite": "Characters/Monsters/Ghost_dangerous",
+                        },
+                    }
+                },
+            }
+        },
+/*
+    ▄▄▄▄                       ▄▄                 
+  ██▀▀▀▀█                      ██                 
+ ██         ██▄████  ██    ██  ██▄███▄   ▄▄█████▄ 
+ ██  ▄▄▄▄   ██▀      ██    ██  ██▀  ▀██  ██▄▄▄▄ ▀ 
+ ██  ▀▀██   ██       ██    ██  ██    ██   ▀▀▀▀██▄ 
+  ██▄▄▄██   ██       ██▄▄▄███  ███▄▄██▀  █▄▄▄▄▄██ 
+    ▀▀▀▀    ▀▀        ▀▀▀▀ ▀▀  ▀▀ ▀▀▀     ▀▀▀▀▀▀  
+Grubs
+Floors 15-29
+*/
+        {
+            "When": {
+                "CT_EnableGrub": true
+            },
+            "LogName": "Add grubs",
+            "Action": "EditData",
+            "Target": "mushymato.MonsterVariety/Data",
+            "Entries": {
+                "{{ModId}}_Grub": {
+                    "Id": "{{ModId}}_Grub",
+                    "MonsterName": "Grub",
+                    "Varieties": {
+                        "{{ModId}}_Grub": {
+                            "Sprite": "{{ModId}}/Grub",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_MonsterLocation}}",
+                        },
+                    },
+                    "SharedExtraDrops": {
+                        "{{ModId}}_BugMeat": {
+                            "Id": "{{ModId}}_BugMeat",
+                            "ItemId": "(O)684",
+                            "Condition": "RANDOM 0.5", // 50%, not affected by luck
+                            "MinStack": 1,
+                            "MaxStack": 2
+                        },
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerGrub": {
+                            "Sprite": "Characters/Monsters/Grub_dangerous",
+                        },
+                    }
+                },
+            }
+        },
+/*
+ ▄▄▄  ▄▄▄                                ▄▄▄▄                ▄▄    ▄▄                            ▄▄           
+ ███  ███              ██                ▀▀██                ██    ██                            ██           
+ ████████   ▄████▄   ███████    ▄█████▄    ██                ██    ██   ▄████▄    ▄█████▄   ▄███▄██  ▄▄█████▄ 
+ ██ ██ ██  ██▄▄▄▄██    ██       ▀ ▄▄▄██    ██                ████████  ██▄▄▄▄██   ▀ ▄▄▄██  ██▀  ▀██  ██▄▄▄▄ ▀ 
+ ██ ▀▀ ██  ██▀▀▀▀▀▀    ██      ▄██▀▀▀██    ██                ██    ██  ██▀▀▀▀▀▀  ▄██▀▀▀██  ██    ██   ▀▀▀▀██▄ 
+ ██    ██  ▀██▄▄▄▄█    ██▄▄▄   ██▄▄▄███    ██▄▄▄             ██    ██  ▀██▄▄▄▄█  ██▄▄▄███  ▀██▄▄███  █▄▄▄▄▄██ 
+ ▀▀    ▀▀    ▀▀▀▀▀      ▀▀▀▀    ▀▀▀▀ ▀▀     ▀▀▀▀             ▀▀    ▀▀    ▀▀▀▀▀    ▀▀▀▀ ▀▀    ▀▀▀ ▀▀   ▀▀▀▀▀▀  
+Metal Heads
+Floors 81-119
+*/
+        {
+            "When": {
+                "CT_EnableMetalHead": true
+            },
+            "LogName": "Add metal heads",
+            "Action": "EditData",
+            "Target": "mushymato.MonsterVariety/Data",
+            "Entries": {
+                "{{ModId}}_MetalHead": {
+                    "Id": "{{ModId}}_MetalHead",
+                    "MonsterName": "Metal Head",
+                    "Varieties": {
+                        "{{ModId}}_MetalHeadGems": {
+                            "Sprite": "{{ModId}}/MetalHeadGem",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "Precedence": 0,
+                            "ExtraDrops": {
+                                "{{ModId}}_RandomGem": {
+                                    "Id": "{{ModId}}_RandomGem",
+                                    "RandomItemId": [ "(O)68", "(O)66", "(O)62", "(O)70", "(O)60", "(O)64", "(O)72" ] // Topaz, amethyst, aquamarine, jade, emerald, ruby, diamond
+                                },
+                                "{{ModId}}_PrismaticShard": {
+                                    "Id": "{{ModId}}_PrismaticShard",
+                                    "ItemId": "(O)74",
+                                    "Condition": "RANDOM 0.0001" // 0.001% chance, not affected by luck
+                                }
+                            },
+                        },
+                        "{{ModId}}_MetalHeadFurniture": {
+                            "Sprite": "{{ModId}}/MetalHeadFurn",
+                            "AlwaysOverride": true,
+                            "Condition": "RANDOM .65, {{DT_MonsterLocation}}", // 65% chance to spawn, not affected by luck
+                            "Precedence": -1,
+                            "ExtraDrops": {
+                                "{{ModId}}_Furniture": {
+                                    "Id": "{{ModId}}_Furniture",
+                                    "ItemId": "RANDOM_ITEMS (F) @isRandomSale", // won't drop furniture that isn't available for random sale
+                                    "Condition": "mushymato.MonsterVariety_LUCKY_RANDOM 0.9 @addDailyLuck @addPlayerLuck 10", // 90% chance to drop one piece of furniture that's available for random sale, affected by daily luck, +10% per player luck level
+                                    "MaxItems": 1,
+                                }
+                            },
+                        },
+                        "{{ModId}}_MetalHeadWeapon": {
+                            "Sprite": "{{ModId}}/MetalHeadWeapon",
+                            "AlwaysOverride": true,
+                            "Condition": "mushymato.MonsterVariety_LUCKY_RANDOM 0.02 @addDailyLuck @addPlayerLuck 1, {{DT_MonsterLocation}}", // 2% chance to spawn, affected by daily luck and 1% increase for every level of player luck.
+                            "Precedence": -2,
+                            "ExtraDrops": {
+                                "{{ModId}}_Weapons": {
+                                    "Id": "{{ModId}}_Weapons",
+                                    "RandomItemId": [ "(W)35", "(W)40", "(W)60", "(W)39", "(W)42", "(W)25", "(W)30", "(W)36", "(W)37", "(W)38", "(W)41", "(W)2", "(W)9", "(W)54", "(W)55", "(W)34" ] // Elliott's Pencil, Abby's Planchette, Ossified Blade, Leah's Whittler, Haley's Iron, Alex's Bat, Sam's Old Guitar, Maru's Wrench, Harvey's Mallet, Penny's Fryer, Seb's Lost Mace, Dark Sword, Lava Katana, Dwarf Sword, Dwarf Hammer, Galaxy Slingshot
+                                }
+                            },
+                        },
+                        "{{ModId}}_MetalHeadGold": { // SUPER RARE
+                            "Sprite": "{{ModId}}/MetalHeadGold",
+                            "AlwaysOverride": true,
+                            "Condition": "mushymato.MonsterVariety_LUCKY_RANDOM 0.0019 @addPlayerLuck {{DT_SuperRareRate}}, {{DT_MonsterLocation}}", // 0.195% chance to spawn, affected by daily luck and player-configurable increase for every level of player luck.
+                            "Precedence": -3,
+                            "ExtraDrops": {
+                                "{{ModId}}_GoldArtifacts": {
+                                    "Id": "{{ModId}}_GoldArtifacts",
+                                    "RandomItemId": [ "(O)166", "(O)928", "(O)124", "(O)125" ] // Treasure chest, golden egg, golden mask, golden relic
+                                },
+                            },
+                            "HUDNotif": "SUPER RARE APPEARED",
+                            "HUDNotifIconItem": "{{DT_HUDMetalHeadIcon}}"
+                        },
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerMetalHead": {
+                            "Sprite": "Characters/Monsters/Metal Head_dangerous",
+                        },
+                    }
+                },
+            }
+        },
+/*
+   ▄▄▄▄    ▄▄                        ▄▄                               
+ ▄█▀▀▀▀█   ██                        ██                               
+ ██▄       ██▄████▄   ▄█████▄   ▄███▄██   ▄████▄  ██      ██ ▄▄█████▄ 
+  ▀████▄   ██▀   ██   ▀ ▄▄▄██  ██▀  ▀██  ██▀  ▀██ ▀█  ██  █▀ ██▄▄▄▄ ▀ 
+      ▀██  ██    ██  ▄██▀▀▀██  ██    ██  ██    ██  ██▄██▄██   ▀▀▀▀██▄ 
+ █▄▄▄▄▄█▀  ██    ██  ██▄▄▄███  ▀██▄▄███  ▀██▄▄██▀  ▀██  ██▀  █▄▄▄▄▄██ 
+  ▀▀▀▀▀    ▀▀    ▀▀   ▀▀▀▀ ▀▀    ▀▀▀ ▀▀    ▀▀▀▀     ▀▀  ▀▀    ▀▀▀▀▀▀  
+Shadows
+Shadow brute
+Shadow shaman
+Floors 81-119
+*/
+        {
+            "When": {
+                "CT_EnableShadowBrute": true
+            },
+            "LogName": "Add shadow brutes",
+            "Action": "EditData",
+            "Target": "mushymato.MonsterVariety/Data",
+            "Entries": {
+                "{{ModId}}_ShadowBrute": {
+                    "Id": "{{ModId}}_ShadowBrute",
+                    "MonsterName": "Shadow Brute",
+                    "Varieties": {
+                        "{{ModId}}_ShadowBruteBrown": {
+                            "Sprite": "{{ModId}}/ShadowBruteBrown",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "Precedence": 0,
+                            "ExtraDrops": {
+                                "{{ModId}}_EarthCrystal": {
+                                    "Id": "{{ModId}}_EarthCrystal",
+                                    "ItemId": "(O)86",
+                                }
+                            },
+                        },
+                        "{{ModId}}_ShadowBruteBlue": {
+                            "Sprite": "{{ModId}}/ShadowBruteBlue",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "Precedence": 0,
+                            "ExtraDrops": {
+                                "{{ModId}}_EarthCrystal": {
+                                    "Id": "{{ModId}}_EarthCrystal",
+                                    "ItemId": "(O)86",
+                                }
+                            },
+                        },
+                        "{{ModId}}_ShadowBrutePurple": {
+                            "Sprite": "{{ModId}}/ShadowBrutePurp",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "Precedence": 0,
+                            "ExtraDrops": {
+                                "{{ModId}}_EarthCrystal": {
+                                    "Id": "{{ModId}}_EarthCrystal",
+                                    "ItemId": "(O)86",
+                                }
+                            },
+                        },
+                        "{{ModId}}_ShadowBruteGardener": {
+                            "Sprite": "{{ModId}}/ShadowBruteGard",
+                            "AlwaysOverride": true,
+                            "Condition": "mushymato.MonsterVariety_LUCKY_RANDOM 0.05 @addDailyLuck @addPlayerLuck 1, {{DT_MonsterLocation}}", // 5% chance to spawn, affected by daily luck and 1% increase for every level of player luck.
+                            "Precedence": -1,
+                            "ExtraDrops": {
+                                "{{ModId}}_GardenThings": {
+                                    "Id": "{{ModId}}_GardenThings",
+                                    "RandomItemId": [ "(O)251", "(BC)62" ]
+                                },
+                            },
+                        },
+                        "{{ModId}}_ShadowBruteMushroom": { // SUPER RARE
+                            "Sprite": "{{ModId}}/ShadowBruteMush",
+                            "AlwaysOverride": true,
+                            "Condition": "mushymato.MonsterVariety_LUCKY_RANDOM 0.0019 @addPlayerLuck {{DT_SuperRareRate}}, {{DT_MonsterLocation}}", // 0.195% chance to spawn, affected by daily luck and player-configurable increase for every level of player luck.
+                            "Precedence": -2,
+                            "ExtraDrops": {
+                                "{{ModId}}_MushroomTreeSeed": {
+                                    "Id": "{{ModId}}_MushroomTreeSeed",
+                                    "ItemId": "(O)891",
+                                },
+                            },
+                            "HUDNotif": "SUPER RARE APPEARED",
+                            "HUDNotifIconItem": "{{DT_HUDShadowBruteIcon}}"
+                        },
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerShadowBrute": {
+                            "Sprite": "Characters/Monsters/Shadow Brute_dangerous",
+                        },
+                    }
+                },
+            }
+        },
+        {
+            "When": {
+                "CT_EnableShadowShaman": true
+            },
+            "LogName": "Add shadow shamans",
+            "Action": "EditData",
+            "Target": "mushymato.MonsterVariety/Data",
+            "Entries": {
+                "{{ModId}}_ShadowShaman": {
+                    "Id": "{{ModId}}_ShadowShaman",
+                    "MonsterName": "Shadow Shaman",
+                    "Varieties": {
+                        "{{ModId}}_ShadowShamanStaff": {
+                            "Sprite": "{{ModId}}/ShadowShamanStaff",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "Precedence": 0,
+                        },
+                        "{{ModId}}_ShadowShamanHat": {
+                            "Sprite": "{{ModId}}/ShadowShamanHat",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "Precedence": 0,
+                        },
+                        "{{ModId}}_ShadowShamanMusk": { // SUPER RARE
+                            "Sprite": "{{ModId}}/ShadowShamanMusk",
+                            "AlwaysOverride": true,
+                            "Condition": "mushymato.MonsterVariety_LUCKY_RANDOM 0.0019 @addPlayerLuck {{DT_SuperRareRate}}, {{DT_MonsterLocation}}", // 0.195% chance to spawn, affected by daily luck and player-configurable increase for every level of player luck.
+                            "Precedence": -1,
+                            "ExtraDrops": {
+                                "{{ModId}}_MonsterMusk": {
+                                    "Id": "{{ModId}}_MonsterMusk",
+                                    "ItemId": "(O)879",
+                                },
+                            },
+                            "HUDNotif": "SUPER RARE APPEARED",
+                            "HUDNotifIconItem": "{{DT_HUDShadowShamanIcon}}"
+                        },
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerShadowShaman": {
+                            "Sprite": "Characters/Monsters/Shadow Shaman_dangerous",
+                        },
+                    }
+                },
+            }
+        },
+/*
+   ▄▄▄▄    ▄▄                  ▄▄▄▄                                                       
+ ▄█▀▀▀▀█   ██                  ▀▀██                  ██                                   
+ ██▄       ██ ▄██▀    ▄████▄     ██       ▄████▄   ███████    ▄████▄   ██▄████▄  ▄▄█████▄ 
+  ▀████▄   ██▄██     ██▄▄▄▄██    ██      ██▄▄▄▄██    ██      ██▀  ▀██  ██▀   ██  ██▄▄▄▄ ▀ 
+      ▀██  ██▀██▄    ██▀▀▀▀▀▀    ██      ██▀▀▀▀▀▀    ██      ██    ██  ██    ██   ▀▀▀▀██▄ 
+ █▄▄▄▄▄█▀  ██  ▀█▄   ▀██▄▄▄▄█    ██▄▄▄   ▀██▄▄▄▄█    ██▄▄▄   ▀██▄▄██▀  ██    ██  █▄▄▄▄▄██ 
+  ▀▀▀▀▀    ▀▀   ▀▀▀    ▀▀▀▀▀      ▀▀▀▀     ▀▀▀▀▀      ▀▀▀▀     ▀▀▀▀    ▀▀    ▀▀   ▀▀▀▀▀▀  
+Skeletons
+Floors 71-79
+  */
+        {
+            "When": {
+                "CT_EnableSkeleton": true
+            },
+            "LogName": "Add skeletons",
+            "Action": "EditData",
+            "Target": "mushymato.MonsterVariety/Data",
+            "Entries": {
+                "{{ModId}}_Skeleton": {
+                    "Id": "{{ModId}}_Skeleton",
+                    "MonsterName": "Skeleton",
+                    "Varieties": {
+                        "{{ModId}}_SkeletonSpring": {
+                            "Sprite": "{{ModId}}/SkeletonSpring",
+                            "AlwaysOverride": true,
+                            "Season": "spring",
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "Precedence": 0,
+                        },
+                        "{{ModId}}_SkeletonSummer": { 
+                            "Sprite": "{{ModId}}/SkeletonSummer",
+                            "AlwaysOverride": true,
+                            "Season": "summer",
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "Precedence": 0,
+                        },
+                        "{{ModId}}_SkeletonFall": { 
+                            "Sprite": "{{ModId}}/SkeletonFall",
+                            "AlwaysOverride": true,
+                            "Season": "fall",
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "Precedence": 0,
+                        },
+                        "{{ModId}}_SkeletonWinter": { 
+                            "Sprite": "{{ModId}}/SkeletonWinter",
+                            "AlwaysOverride": true,
+                            "Season": "winter",
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "Precedence": 0,
+                        },
+						"{{ModId}}_SkeletonPumpkin": { 
+                            "Sprite": "{{ModId}}/SkeletonPumpkin",
+                            "AlwaysOverride": true,
+                            "Condition": "SEASON_DAY fall 22 fall 23 fall 24 fall 25 fall 26 fall 27 fall 28, {{DT_MonsterLocation}}", // Checks that the current date is between Fall 22 and Fall 28 in year 1 or later
+                            "Precedence": -1,
+                            "ExtraDrops": {
+                                "{{ModId}}_Pumpkin": {
+                                    "Id": "{{ModId}}_Pumpkin",
+                                    "ItemId": "(O)276",
+									"Condition": "RANDOM .5" // Only drops a pumpkin half the time
+                                }
+                            }
+                        },
+						"{{ModId}}_SkeletonGoldPumpkin": { // SUPER RARE
+                            "Sprite": "{{ModId}}/SkeletonGoldPumpkin",
+                            "AlwaysOverride": true,
+                            "Condition": "mushymato.MonsterVariety_LUCKY_RANDOM 0.0019 @addPlayerLuck {{DT_SuperRareRate}}, {{DT_MonsterLocation}}", // 0.195% chance to spawn, affected by daily luck and player-configurable increase for every level of player luck.
+                            "Precedence": -2,
+                            "Season": "fall",
+                            "ExtraDrops": {
+                                "{{ModId}}_GoldPumpkin": {
+                                    "Id": "{{ModId}}_GoldPumpkin",
+                                    "ItemId": "(O)373"
+                                },
+                            },
+                            "HUDNotif": "SUPER RARE APPEARED",
+                            "HUDNotifIconItem": "{{DT_HUDSkeletonIcon}}"
+                        },
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerSkeleton": {
+                            "Sprite": "Characters/Monsters/Skeleton_dangerous",
+                        },
+                    }
+                },
+            }
+        },
+/*
+   ▄▄▄▄    ▄▄▄▄         ██                                  
+ ▄█▀▀▀▀█   ▀▀██         ▀▀                                  
+ ██▄         ██       ████     ████▄██▄   ▄████▄   ▄▄█████▄ 
+  ▀████▄     ██         ██     ██ ██ ██  ██▄▄▄▄██  ██▄▄▄▄ ▀ 
+      ▀██    ██         ██     ██ ██ ██  ██▀▀▀▀▀▀   ▀▀▀▀██▄ 
+ █▄▄▄▄▄█▀    ██▄▄▄   ▄▄▄██▄▄▄  ██ ██ ██  ▀██▄▄▄▄█  █▄▄▄▄▄██ 
+  ▀▀▀▀▀       ▀▀▀▀   ▀▀▀▀▀▀▀▀  ▀▀ ▀▀ ▀▀    ▀▀▀▀▀    ▀▀▀▀▀▀  
+Slimes
+Big SLime
+Green Slime
+Frost Jelly
+Red Sludge
+*/
+        {
+            "When": {
+                "CT_EnableBigSlime": true
+            },
+            "LogName": "Add big slime",
+            "Action": "EditData",
+            "Target": "mushymato.MonsterVariety/Data",
+            "Entries": {
+                "{{ModId}}_BigSlime": { // Infested floors
+                    "Id": "{{ModId}}_BigSlime",
+                    "MonsterName": "Big Slime",
+                    "Varieties": {
+                        "{{ModId}}_BigSlime": {
+                            "Sprite": "{{ModId}}/BigSlime",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_SlimeLocation}}"
+                        },
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerBigSlime": {
+                            "Sprite": "Characters/Monsters/Big Slime_dangerous",
+                        },
+                    }
+                },
+            }
+        },
+        {
+            "When": {
+                "CT_EnableSlime": true
+            },
+            "LogName": "Add slimes",
+            "Action": "EditData",
+            "Target": "mushymato.MonsterVariety/Data",
+            "Entries": {
+                "{{ModId}}_GreenSlime": { // Floors 1-29
+                    "Id": "{{ModId}}_GreenSlime",
+                    "MonsterName": "Green Slime",
+                    "Varieties": {
+                        "{{ModId}}_SlugSlime": {
+                            "Sprite": "{{ModId}}/Slimes",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_SlimeLocation}}"
+                        },
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerSlugSlime": {
+                            "Sprite": "Characters/Monsters/Green Slime_dangerous",
+                        },
+                    }
+                },
+                "{{ModId}}_FrostJelly": { // Floors 41-79
+                    "Id": "{{ModId}}_FrostJelly",
+                    "MonsterName": "Frost Jelly",
+                    "Varieties": {
+                        "{{ModId}}_SlugJelly": {
+                            "Sprite": "{{ModId}}/Slimes",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_SlimeLocation}}"
+                        },
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerSlugJelly": {
+                            "Sprite": "Characters/Monsters/Green Slime_dangerous",
+                        },
+                    }
+                },
+                "{{ModId}}_Sludge": { // Floors 81-119
+                    "Id": "{{ModId}}_Sludge",
+                    "MonsterName": "Sludge",
+                    "Varieties": {
+                        "{{ModId}}_SlugSludge": {
+                            "Sprite": "{{ModId}}/Slimes",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_SlimeLocation}}"
+                        },
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerSlugSludge": {
+                            "Sprite": "Characters/Monsters/Green Slime_dangerous",
+                        },
+                    }
+                },
+            }
+        },
+/*
+   ▄▄▄▄                           ██           ▄▄            ▄▄   ▄▄▄     ██           ▄▄           
+ ▄█▀▀▀▀█                          ▀▀           ██            ██  ██▀      ▀▀           ██           
+ ██▄        ▄███▄██  ██    ██   ████      ▄███▄██            ██▄██      ████      ▄███▄██  ▄▄█████▄ 
+  ▀████▄   ██▀  ▀██  ██    ██     ██     ██▀  ▀██            █████        ██     ██▀  ▀██  ██▄▄▄▄ ▀ 
+      ▀██  ██    ██  ██    ██     ██     ██    ██            ██  ██▄      ██     ██    ██   ▀▀▀▀██▄ 
+ █▄▄▄▄▄█▀  ▀██▄▄███  ██▄▄▄███  ▄▄▄██▄▄▄  ▀██▄▄███            ██   ██▄  ▄▄▄██▄▄▄  ▀██▄▄███  █▄▄▄▄▄██ 
+  ▀▀▀▀▀      ▀▀▀ ██   ▀▀▀▀ ▀▀  ▀▀▀▀▀▀▀▀    ▀▀▀ ▀▀            ▀▀    ▀▀  ▀▀▀▀▀▀▀▀    ▀▀▀ ▀▀   ▀▀▀▀▀▀  
+                 ██                                                                                 
+Squid Kids
+Floors 91-119
+*/
+        {
+            "When": {
+                "CT_EnableSquidKid": true
+            },
+            "LogName": "Add squid kids",
+            "Action": "EditData",
+            "Target": "mushymato.MonsterVariety/Data",
+            "Entries": {
+                "{{ModId}}_SquidKid": {
+                    "Id": "{{ModId}}_SquidKid",
+                    "MonsterName": "Squid Kid",
+                    "Varieties": {
+                        "{{ModId}}_SquidKidEye": {
+                            "Sprite": "{{ModId}}/SquidKidEye",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "Precedence": 0
+                        },
+                        "{{ModId}}_SquidKidVine": {
+                            "Sprite": "{{ModId}}/SquidKidVine",
+                            "AlwaysOverride": true,
+                            "Condition": "RANDOM .3, {{DT_MonsterLocation}}", // 30%, unaffected by luck
+                            "Precedence": -1,
+                            "ExtraDrops": {
+                                "{{ModId}}_Mossy": {
+                                    "Id": "{{ModId}}_Mossy",
+                                    "RandomItemId": [ "(O)Moss", "(O)MossySeed" ]
+                                }
+                            },
+                        },
+                        "{{ModId}}_SquidKidBlood": {
+                            "Sprite": "{{ModId}}/SquidKidBlood",
+                            "AlwaysOverride": true,
+                            "Condition": "RANDOM .025 @addDailyLuck, {{DT_MonsterLocation}}", // 2.5% chance to spawn, add daily luck
+                            "Precedence": -2,
+                            "ExtraDrops": {
+                                "{{ModId}}_Drops": {
+                                    "Id": "{{ModId}}_Drops",
+                                    "RandomItemId": [ "(O)305", "(O)82" ] // Void Egg, Fire Quartz
+                                }
+                            },
+                        },
+                        "{{ModId}}_SquidKidPink": { // SUPER RARE
+                            "Sprite": "{{ModId}}/SquidKidPink",
+                            "AlwaysOverride": true,
+                            "Condition": "mushymato.MonsterVariety_LUCKY_RANDOM 0.0019 @addPlayerLuck {{DT_SuperRareRate}}, {{DT_MonsterLocation}}", // 0.195% chance to spawn, affected by daily luck and player-configurable increase for every level of player luck.
+                            "Precedence": -3,
+                            "ExtraDrops": {
+                                "{{ModId}}_StardropTea": {
+                                    "Id": "{{ModId}}_StardropTea",
+                                    "ItemId": "(O)StardropTea",
+                                },
+                            },
+                            "HUDNotif": "SUPER RARE APPEARED",
+                            "HUDNotifIconItem": "{{DT_HUDSquidKidIcon}}"
+                        },
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerSquidKid": {
+                            "Sprite": "Characters/Monsters/Squid Kid_dangerous",
+                        },
+                    }
+                },
+            }
+        },
+/*
+   ▄▄▄▄                                                         ▄▄▄▄             ▄▄▄▄                                   
+ ▄█▀▀▀▀█     ██                                               ██▀▀▀▀█            ▀▀██                                   
+ ██▄       ███████    ▄████▄   ██▄████▄   ▄████▄             ██         ▄████▄     ██       ▄████▄   ████▄██▄  ▄▄█████▄ 
+  ▀████▄     ██      ██▀  ▀██  ██▀   ██  ██▄▄▄▄██            ██  ▄▄▄▄  ██▀  ▀██    ██      ██▄▄▄▄██  ██ ██ ██  ██▄▄▄▄ ▀ 
+      ▀██    ██      ██    ██  ██    ██  ██▀▀▀▀▀▀            ██  ▀▀██  ██    ██    ██      ██▀▀▀▀▀▀  ██ ██ ██   ▀▀▀▀██▄ 
+ █▄▄▄▄▄█▀    ██▄▄▄   ▀██▄▄██▀  ██    ██  ▀██▄▄▄▄█             ██▄▄▄██  ▀██▄▄██▀    ██▄▄▄   ▀██▄▄▄▄█  ██ ██ ██  █▄▄▄▄▄██ 
+  ▀▀▀▀▀       ▀▀▀▀     ▀▀▀▀    ▀▀    ▀▀    ▀▀▀▀▀                ▀▀▀▀     ▀▀▀▀       ▀▀▀▀     ▀▀▀▀▀   ▀▀ ▀▀ ▀▀   ▀▀▀▀▀▀  
+Stone Golems
+Floors 31-39
+*/
+        {
+            "When": {
+                "CT_EnableStoneGolem": true
+            },
+            "LogName": "Add stone golems",
+            "Action": "EditData",
+            "Target": "mushymato.MonsterVariety/Data",
+            "Entries": {
+                "{{ModId}}_StoneGolem": {
+                    "Id": "{{ModId}}_StoneGolem",
+                    "MonsterName": "Stone Golem",
+                    "Varieties": {
+                        "{{ModId}}_StoneGolemCopper": { 
+                            "Sprite": "{{ModId}}/StoneGolemCopper",
+                            "AlwaysOverride": true,
+                            "Condition": "{{DT_MonsterLocation}}",
+                            "Precedence": 0,
+                            "ExtraDrops": {
+                                "{{ModId}}_CopperOre": {
+                                    "Id": "{{ModId}}_CopperOre",
+                                    "ItemId": "(O)378",
+                                    "MinStack": 2,
+                                    "MaxStack": 4
+                                }
+                            }
+                        },
+                        "{{ModId}}_StoneGolemIron": { 
+                            "Sprite": "{{ModId}}/StoneGolemIron",
+                            "AlwaysOverride": true,
+                            "Condition": "RANDOM .35, {{DT_MonsterLocation}}", // 35% chance to spawn, no luck affects it
+                            "Precedence": -1,
+                            "ExtraDrops": {
+                                "{{ModId}}_IronOre": {
+                                    "Id": "{{ModId}}_IronOre",
+                                    "ItemId": "(O)380",
+                                    "MinStack": 2,
+                                    "MaxStack": 4
+                                }
+                            }
+                        },
+                        "{{ModId}}_StoneGolemGold": { 
+                            "Sprite": "{{ModId}}/StoneGolemGold",
+                            "AlwaysOverride": true,
+                            "Condition": "RANDOM .2, {{DT_MonsterLocation}}", // 20% chance to spawn, no luck affects it
+                            "Precedence": -2,
+                            "ExtraDrops": {
+                                "{{ModId}}_GoldOre": {
+                                    "Id": "{{ModId}}_GoldOre",
+                                    "ItemId": "(O)384",
+                                    "MinStack": 2,
+                                    "MaxStack": 3
+                                }
+                            }
+                        },
+                        "{{ModId}}_StoneGolemIridium": { 
+                            "Sprite": "{{ModId}}/StoneGolemIridium{{CT_IridiumColour}}",
+                            "AlwaysOverride": true,
+                            "Condition": "RANDOM .01 @addDailyLuck, {{DT_MonsterLocation}}", // 1% chance to spawn, daily luck affects it
+                            "Precedence": -3,
+                            "ExtraDrops": {
+                                "{{ModId}}_IridiumOre": {
+                                    "Id": "{{ModId}}_IridiumOre",
+                                    "ItemId": "(O)386",
+                                    "MinStack": 2,
+                                    "MaxStack": 3
+                                }
+                            }
+                        },
+                        "{{ModId}}_StoneGolemPrismatic": { // SUPER RARE
+                            "Sprite": "{{ModId}}/StoneGolemPrismatic",
+                            "AlwaysOverride": true,
+                            "Condition": "mushymato.MonsterVariety_LUCKY_RANDOM 0.0019 @addPlayerLuck {{DT_SuperRareRate}}, {{DT_MonsterLocation}}", // 0.195% chance to spawn, affected by daily luck and player-configurable increase for every level of player luck.
+                            "Precedence": -4,
+                            "ExtraDrops": {
+                                "{{ModId}}_PrismaticShard": {
+                                    "Id": "{{ModId}}_PrismaticShard",
+                                    "ItemId": "(O)74"
+                                },
+                            },
+                            "HUDNotif": "SUPER RARE APPEARED",
+                            "HUDNotifIconItem": "{{DT_HUDStoneGolemIcon}}"
+                        },
+                    },
+                    "DangerousVarieties": {
+                        "{{ModId}}_DangerGolem": {
+                            "Sprite": "Characters/Monsters/Stone Golem_dangerous",
+                        },
+                    }
+                },
+            }
+        },
+	]
+}

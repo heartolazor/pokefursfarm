@@ -1,0 +1,222 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        //////////////////////////////////////
+		// RINGS
+		//////////////////////////////////////
+
+        // CREATE RING OBJECT
+		//////////////////////////////////////
+
+        {
+            "LogName": "LT_Add charm ring",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_{{LT_MonsterId}}Ring": {
+                    "Name": "{{ModId}}_{{LT_MonsterId}}Ring",
+                    "DisplayName": "{{i18n: object.display-name.charm-ring |name.monster= {{i18n: name.monster.{{LT_MonsterId}} }} }}",
+                    "Description": "{{i18n: object.description.{{LT_MonsterId}}-charm-ring}}",
+                    "Type": "Ring",
+                    "Category": 0,
+                    "Price": 150,
+                    "Texture": "{{ModId}}/Rings",
+                    "SpriteIndex": "{{LT_RingSpriteIndex}}",
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "ring_item",
+                        "{{LT_RingColour}}",
+                        "not_giftable"
+                    ]
+                },
+            }
+        },
+
+        // ADD VANILLA MONSTERS TO RING DATA
+		//////////////////////////////////////
+
+        // Individual charm ring
+        {
+            "LogName": "LT_Individual charm ring data",
+            "Action": "EditData",
+            "Target": "juminos.MonsterHutchFramework/CharmerRingData",
+            "TargetField": [ "{{ModId}}_{{LT_MonsterId}}Ring", "CharmedMonsters" ],
+            "Entries": {
+                // Vanilla monster
+                "{{ModId}}_Vanilla{{LT_MonsterId}}": {
+                    "Id": "{{ModId}}_Vanilla{{LT_MonsterId}}",
+                    "MonsterName": "{{LT_VanillaMonsterId}}",
+                    "Sound": "magma_sprite_spot",
+                    "SpeechBubbles": [
+                        {
+                            "Id": "heart",
+                            "Text": "<", // this character is displayed as a heart
+                            "Weight": 1,
+                            "Pretimer": -1,
+                            "Duration": 1500,
+                            "Style": 2,
+                        }
+                    ]
+                },
+            },
+        },
+        {
+            "LogName": "LT_Individual charm ring data",
+            "Action": "EditData",
+            "Target": "juminos.MonsterHutchFramework/CharmerRingData",
+            "TargetField": [ "{{ModId}}_{{LT_MonsterId}}Ring", "CharmedMonsters" ],
+            "Entries": {
+                // Vanilla monster
+                "{{ModId}}_VanillaGrub": {
+                    "Id": "{{ModId}}_VanillaGrub",
+                    "MonsterName": "Grub",
+                    "Sound": "magma_sprite_spot",
+                    "SpeechBubbles": [
+                        {
+                            "Id": "heart",
+                            "Text": "<", // this character is displayed as a heart
+                            "Weight": 1,
+                            "Pretimer": -1,
+                            "Duration": 1500,
+                            "Style": 2,
+                        }
+                    ]
+                },
+            },
+            "When": {
+                "LT_MonsterId": "CaveFly"
+            }
+        },
+
+        // Master charm ring
+        {
+            "LogName": "LT_Master charm ring data",
+            "Action": "EditData",
+            "Target": "juminos.MonsterHutchFramework/CharmerRingData",
+            "TargetField": [ "{{ModId}}_MasterCharmerRing", "CharmedMonsters" ],
+            "Entries": {
+                // Vanilla monster
+                "{{ModId}}_Vanilla{{LT_MonsterId}}": {
+                    "Id": "{{ModId}}_Vanilla{{LT_MonsterId}}",
+                    "MonsterName": "{{LT_VanillaMonsterId}}",
+                    "Sound": "magma_sprite_spot",
+                    "SpeechBubbles": [
+                        {
+                            "Id": "heart",
+                            "Text": "<", // this character is displayed as a heart
+                            "Weight": 1,
+                            "Pretimer": -1,
+                            "Duration": 1500,
+                            "Style": 2,
+                        }
+                    ]
+                },
+            },
+        },
+        {
+            "LogName": "LT_Master charm ring data",
+            "Action": "EditData",
+            "Target": "juminos.MonsterHutchFramework/CharmerRingData",
+            "TargetField": [ "{{ModId}}_MasterCharmerRing", "CharmedMonsters" ],
+            "Entries": {
+                // Vanilla monster
+                "{{ModId}}_VanillaGrub": {
+                    "Id": "{{ModId}}_VanillaGrub",
+                    "MonsterName": "Grub",
+                    "Sound": "magma_sprite_spot",
+                    "SpeechBubbles": [
+                        {
+                            "Id": "heart",
+                            "Text": "<", // this character is displayed as a heart
+                            "Weight": 1,
+                            "Pretimer": -1,
+                            "Duration": 1500,
+                            "Style": 2,
+                        }
+                    ]
+                },
+            },
+            "When": {
+                "LT_MonsterId": "CaveFly"
+            }
+        },
+
+        //////////////////////////////////////
+		// INNER INCLUDE
+		//////////////////////////////////////
+
+        {
+            "Action": "Include",
+            "FromFile": "data/inner.json", // Inner adds more ring data, soul object, and soul drops to MM monsters
+            "LocalTokens": {
+                "LT_MonsterId": "{{LT_MonsterId}}",
+                "LT_MS_VariantId": "{{LT_MS_VariantId_1}}",
+                "LT_SoulSpriteIndex": "{{LT_SoulSpriteIndex_1}}",
+            },
+            "When": {
+                "HasValue:{{LT_MS_VariantId_1}}": true
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "data/inner.json",
+            "LocalTokens": {
+                "LT_MonsterId": "{{LT_MonsterId}}",
+                "LT_MS_VariantId": "{{LT_MS_VariantId_2}}",
+                "LT_SoulSpriteIndex": "{{LT_SoulSpriteIndex_2}}",
+            },
+            "When": {
+                "HasValue:{{LT_MS_VariantId_2}}": true
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "data/inner.json",
+            "LocalTokens": {
+                "LT_MonsterId": "{{LT_MonsterId}}",
+                "LT_MS_VariantId": "{{LT_MS_VariantId_3}}",
+                "LT_SoulSpriteIndex": "{{LT_SoulSpriteIndex_3}}",
+            },
+            "When": {
+                "HasValue:{{LT_MS_VariantId_3}}": true
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "data/inner.json",
+            "LocalTokens": {
+                "LT_MonsterId": "{{LT_MonsterId}}",
+                "LT_MS_VariantId": "{{LT_MS_VariantId_4}}",
+                "LT_SoulSpriteIndex": "{{LT_SoulSpriteIndex_4}}",
+            },
+            "When": {
+                "HasValue:{{LT_MS_VariantId_4}}": true
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "data/inner.json",
+            "LocalTokens": {
+                "LT_MonsterId": "{{LT_MonsterId}}",
+                "LT_MS_VariantId": "{{LT_MS_VariantId_5}}",
+                "LT_SoulSpriteIndex": "{{LT_SoulSpriteIndex_5}}",
+            },
+            "When": {
+                "HasValue:{{LT_MS_VariantId_5}}": true
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "data/inner.json",
+            "LocalTokens": {
+                "LT_MonsterId": "{{LT_MonsterId}}",
+                "LT_MS_VariantId": "{{LT_MS_VariantId_SuperRare}}",
+                "LT_SoulSpriteIndex": "{{LT_SoulSpriteIndex_SuperRare}}",
+            },
+            "When": {
+                "HasValue:{{LT_MS_VariantId_SuperRare}}": true
+            }
+        },
+    ]
+}

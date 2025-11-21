@@ -1,0 +1,281 @@
+{
+	"Format": "2.8.0",
+	
+	"ConfigSchema": {
+		"CanolaFlowerChance": {
+			"AllowValues": "0.0, 0.05, 0.01, 0.005, 0.001",
+			"Default": "0.005"
+		},
+		"PeanutChance": {
+			"AllowValues": "0.0, 0.05, 0.01, 0.005, 0.001",
+			"Default": "0.005"
+		},
+		"ShallotChance": {
+			"AllowValues": "0.0, 0.05, 0.01, 0.005, 0.001",
+			"Default": "0.005"
+		},
+		"CeleryChance": {
+			"AllowValues": "0.0, 0.05, 0.01, 0.005, 0.001",
+			"Default": "0.005"
+		},
+		"AsparagusChance": {
+			"AllowValues": "0.0, 0.05, 0.01, 0.005, 0.001",
+			"Default": "0.005"
+		},
+		"TurmericChance": {
+			"AllowValues": "0.0, 0.05, 0.01, 0.005, 0.001",
+			"Default": "0.005"
+		},
+		"GroundCherryChance": {
+			"AllowValues": "0.0, 0.05, 0.01, 0.005, 0.001",
+			"Default": "0.005"
+		},
+		"RegrowableCrops": {
+			"AllowValues": "true, false",
+			"Default": false
+		},
+	},
+
+	"Changes": [
+	
+		{
+			"LogName": "Load images",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/GiantCrops",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+	
+		{
+			"LogName": "Giant Crops",
+			"Action": "EditData",
+			"Target": "Data/GiantCrops",
+			"Entries": {
+				"{{ModId}}_CanolaFlower": {
+					"FromItemId": "(O)Cornucopia_CanolaFlower",
+					"HarvestItems": [
+						{
+							"Chance": 1.0,
+							"Id": "Cornucopia_CanolaFlower",
+							"ItemId": "(O)Cornucopia_CanolaFlower",
+							"MinStack": 15,
+							"MaxStack": 18,
+						},
+						{
+							"Chance": 1.0,
+							"Id": "Cornucopia_CanolaFlowerSeeds",
+							"ItemId": "(O)Cornucopia_CanolaFlowerSeeds",
+							"MinStack": 6,
+							"MaxStack": 12,
+						}
+					],
+					"Texture": "Mods\\{{ModId}}\\GiantCrops",
+					"TexturePosition": {
+						"X": 0,
+						"Y": 0
+					},
+					"TileSize": {
+						"X": 3,
+						"Y": 2
+					},
+					"Health": 3,
+					"Chance": "{{CanolaFlowerChance}}",
+				},
+				"{{ModId}}_Peanut": {
+					"FromItemId": "(O)Cornucopia_Peanut",
+					"HarvestItems": [
+						{
+							"Chance": 1.0,
+							"Id": "Cornucopia_Peanut",
+							"ItemId": "(O)Cornucopia_Peanut",
+							"MinStack": 40,
+							"MaxStack": 68,
+						},
+						{
+							"Chance": 1.0,
+							"Id": "Cornucopia_PeanutSeeds",
+							"ItemId": "(O)Cornucopia_PeanutSeeds",
+							"MinStack": 6,
+							"MaxStack": 8,
+						}
+					],
+					"Texture": "Mods\\{{ModId}}\\GiantCrops",
+					"TexturePosition": {
+						"X": 48,
+						"Y": 0
+					},
+					"TileSize": {
+						"X": 3,
+						"Y": 2
+					},
+					"Health": 3,
+					"Chance": "{{PeanutChance}}",
+				},
+				"{{ModId}}_Shallot": {
+					"FromItemId": "(O)Cornucopia_Shallot",
+					"HarvestItems": [
+						{
+							"Chance": 1.0,
+							"Id": "Cornucopia_Shallot",
+							"ItemId": "(O)Cornucopia_Shallot",
+							"MinStack": 15,
+							"MaxStack": 18,
+						},
+						{
+							"Chance": 1.0,
+							"Id": "Cornucopia_ShallotSeeds",
+							"ItemId": "(O)Cornucopia_ShallotSeeds",
+							"MinStack": 3,
+							"MaxStack": 7,
+						}
+					],
+					"Texture": "Mods\\{{ModId}}\\GiantCrops",
+					"TexturePosition": {
+						"X": 96,
+						"Y": 0
+					},
+					"TileSize": {
+						"X": 3,
+						"Y": 2
+					},
+					"Health": 3,
+					"Chance": "{{ShallotChance}}",
+				},
+				"{{ModId}}_Celery": {
+					"FromItemId": "(O)Cornucopia_Celery",
+					"HarvestItems": [
+						{
+							"Chance": 1.0,
+							"Id": "Cornucopia_Celery",
+							"ItemId": "(O)Cornucopia_Celery",
+							"MinStack": 15,
+							"MaxStack": 18,
+						},
+						{
+							"Chance": 1.0,
+							"Id": "Cornucopia_CelerySeeds",
+							"ItemId": "(O)Cornucopia_CelerySeeds",
+							"MinStack": 3,
+							"MaxStack": 7,
+						}
+					],
+					"Texture": "Mods\\{{ModId}}\\GiantCrops",
+					"TexturePosition": {
+						"X": 144,
+						"Y": 0
+					},
+					"TileSize": {
+						"X": 3,
+						"Y": 2
+					},
+					"Health": 3,
+					"Chance": "{{CeleryChance}}",
+				},
+				"{{ModId}}_Asparagus": {
+					"FromItemId": "(O)Cornucopia_Asparagus",
+					"HarvestItems": [
+						{
+							"Chance": 1.0,
+							"Id": "Cornucopia_Asparagus",
+							"ItemId": "(O)Cornucopia_Asparagus",
+							"MinStack": 15,
+							"MaxStack": 18,
+						},
+						{
+							"Chance": 1.0,
+							"Id": "Cornucopia_AsparagusSeeds",
+							"ItemId": "(O)Cornucopia_AsparagusSeeds",
+							"MinStack": 3,
+							"MaxStack": 7,
+						}
+					],
+					"Texture": "Mods\\{{ModId}}\\GiantCrops",
+					"TexturePosition": {
+						"X": 192,
+						"Y": 0
+					},
+					"TileSize": {
+						"X": 3,
+						"Y": 2
+					},
+					"Health": 3,
+					"Chance": "{{AsparagusChance}}",
+				},
+				"{{ModId}}_Turmeric": {
+					"FromItemId": "(O)Cornucopia_Turmeric",
+					"HarvestItems": [
+						{
+							"Chance": 1.0,
+							"Id": "Cornucopia_Turmeric",
+							"ItemId": "(O)Cornucopia_Turmeric",
+							"MinStack": 15,
+							"MaxStack": 18,
+						},
+						{
+							"Chance": 1.0,
+							"Id": "Cornucopia_TurmericSeeds",
+							"ItemId": "(O)Cornucopia_TurmericSeeds",
+							"MinStack": 3,
+							"MaxStack": 7,
+						}
+					],
+					"Texture": "Mods\\{{ModId}}\\GiantCrops",
+					"TexturePosition": {
+						"X": 240,
+						"Y": 0
+					},
+					"TileSize": {
+						"X": 3,
+						"Y": 2
+					},
+					"Health": 3,
+					"Chance": "{{TurmericChance}}",
+				},
+			}
+		},
+		{
+			"LogName": "Giant Crops Regrow",
+			"Action": "EditData",
+			"Target": "Data/GiantCrops",
+			"Entries": {
+				"{{ModId}}_GroundCherry": {
+					"FromItemId": "(O)Cornucopia_GroundCherry",
+					"HarvestItems": [
+						{
+							"Chance": 1.0,
+							"Id": "Cornucopia_GroundCherry",
+							"ItemId": "(O)Cornucopia_GroundCherry",
+							"MinStack": 22,
+							"MaxStack": 32,
+						},
+						{
+							"Chance": 1.0,
+							"Id": "Cornucopia_GroundCherrySeeds",
+							"ItemId": "(O)Cornucopia_GroundCherrySeeds",
+							"MinStack": 3,
+							"MaxStack": 7,
+						}
+					],
+					"Texture": "Mods\\{{ModId}}\\GiantCrops",
+					"TexturePosition": {
+						"X": 288,
+						"Y": 0
+					},
+					"TileSize": {
+						"X": 3,
+						"Y": 2
+					},
+					"Health": 3,
+					"Chance": "{{GroundCherryChance}}",
+				},
+			},
+			"When": {
+				"RegrowableCrops": true,
+			},
+		},
+	
+	]
+}
+
+
+
+
