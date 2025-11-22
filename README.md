@@ -21,14 +21,15 @@ This Modpack was tested with SMAPI 4.2.1 with Stardew Valley 1.6.15.
 5. Optional: Install Stardrop Mod Manager, this is useful to check what mods are installed and install more mods: https://www.nexusmods.com/stardewvalley/mods/10455
 
 ## Summary of mods included in this modpack.
- - Pokemon related mods: Pokemon farm animals, pokemon furniture, pokemon pets, pokemon fishes and most of pokemon mods found in nexus. Not included the mod that changes the terrain or existing npcs, because of compatibility.
- - Portrait npcs furry/nyapu versions, Mod fallback order: Dergvalley > Anthro Characters > Nyapu > Default portraits
- - Personalization of the main character using Fashion Sense mod, including a hundred of accesories as tails or wings to make any fantasy creature.
- - Important modpacks with additional npcs and content: Stardew Valley Expanded, Ridgeside Valley, East Carp, Sunberry Village, Lumisteria Visit Mount Vapius, Downtown Zuzu, Axolot Valley, Deep Woods, Adventure Guild Expanded, Boss Battles, Alchemistry, Dwarven Expansion, Animal Husbandry, Love of Cooking, Restauranteer, MarketTown, Ornithologist Guild, Nature in the Valley, Stardew Aquarium, Chocobo Valley, Everia's Dragons, Fishing Trawler, Prestige, Level Forever, new Skills and many more.
+ - Pokemon related mods: [Pokemon Mystery Dungeon Farmer](https://www.nexusmods.com/stardewvalley/mods/39038), Pokemon farm animals, pokemon furniture, pokemon pets, pokemon fishes, pokemon scenery and most of pokemon mods found in nexus.
+ - Portrait npcs furry/nyapu versions, Mod fallback order: Derg valley > Anthro Characters > Nyapu > Default portraits.
+ - Personalization of the main character using Fashion Sense mod. Be a pokemon with [Pokemon Mystery Dungeon Farmer](https://www.nexusmods.com/stardewvalley/mods/39038) or create your character using a hundred of accesories as tails or wings to make any fantasy creature.
+ - Many Collection like mods. Collect: pokemons, bugs, fishes, minerals (geology), birds, cooking recipes, mushrooms and more. 
+ - Important modpacks with additional npcs and content: Stardew Valley Expanded, Ridgeside Valley, East Carp, Sunberry Village, Lumisteria Visit Mount Vapius, Downtown Zuzu, Axolot Valley, Sword and Sorcery, Deep Woods, Slimes in Stardew, Adventure Guild Expanded, Boss Battles, Alchemistry, Dwarven Expansion, Animal Husbandry, Love of Cooking, Restauranteer, Walk Of Life - Profession Overhaul, MarketTown, Ornithologist Guild, Nature in the Valley, Bog's Monster, Stardew Aquarium, Chocobo Valley, Everia's Dragons, Dragon Beans, Fishing Trawler, , Level Forever, new Skills and many more.
  - Misc mods that enhances the Quality of life, balance or add more accesories from known franchises: Ragnarok Online hats, MIA Nanachi Relic Hat, Rabite pet from Secret of mana, Sanrio furniture and farm animals, tamagotchi farm animals, Animal Crossing themed furniture, Automate, Better Junimos, Better Chests, Hundreds of additional fishes, Better Balance, Enhanced reflections, Animated icons, Event Lookup, Faster Path Speed, Ferngill item packs, Cornucopia item packs, Fresh Item Produce, Longevity, Horse Overhaul, Lookup Anything, Machine Progression System, Fish Helper UI, Mini Bars, The return of backpack upgrades, Swim Mod, Visible Fish, Giant Crops/Flowers mods and many more.
 
 ## Caveats
-Remember taht in multiplayer all player should have the same mods.
+Remember that in multiplayer all player should have the same mods.
 
 ## Folder Structure
 Description of what it is each folder:
@@ -233,7 +234,7 @@ Cauldron v2.2.1 by Kedi and sophie:
 - https://www.nexusmods.com/stardewvalley/mods/22926
 Manages config options for Wildflour Atelier Goods.
 
-ExtraMachineConfig v1.17.7 by selph:
+ExtraMachineConfig v1.17.8 by selph:
 - https://www.nexusmods.com/stardewvalley/mods/22256
 Add extra functionalities to machine artisan recipes and other misc data structures.
 
@@ -260,10 +261,6 @@ Nyapu-Style portraits for Ripley the Farmer
 Anthro Characters Continued v10.0.0 by Gaveliere (Twitter: @Gavelly) Blanchard a.k.a sion9000 (Twitter: @NekoBlanchard) Krystedez (Twitter: @ChiefKryz) donedonedone (FurAffinity: donedonedone):
 - https://www.nexusmods.com/stardewvalley/mods/1083
 Overwrites every NPC sprite, portrait and event sprites, effectively transforming everyone into anthropormorphic animal characters. Art by Gav!
-
-(CP) Furry Stardew Valley Expanded v1.1.6 by RydelTheOtter:
-- https://www.nexusmods.com/stardewvalley/mods/22271
-Overwrites NPC sprites, portraita and event sprites, for Stardew Valley Expanded to match with Anthro Characters Continued. Based off Lycanglass' SVE - Furry Conversion Patch, RTGirl's AVE Furry Mod Hotfix, and MrTea's SDVE Unique Furry Sprite.
 
 Console Commands v4.2.1 by SMAPI:
 - no update key
@@ -676,6 +673,10 @@ Adds Pusheen plushies to the game!
 Crafting Collections Page v1.3.0 by Gurm0:
 - https://www.nexusmods.com/stardewvalley/mods/21620
 Track your crafted items in the collections page!
+
+Cross-Mod Compatibility Tokens v1.1.2 by Spiderbuttons:
+- https://www.nexusmods.com/stardewvalley/mods/28284
+Grab config values, translations, dynamic tokens, and internal assets from other mods with special Content Patcher tokens.
 
 The Return of Custom Backpack Framework v1.1.0 by platinummyr:
 - https://www.nexusmods.com/stardewvalley/mods/21588
@@ -1112,6 +1113,14 @@ Mod List v1.2.0 by Blackclaw, Arphox:
 - https://www.nexusmods.com/stardewvalley/mods/5131
 Simple SMAPI command to list the installed mods to the console or a CSV file
 
+Monster Hutch Framework v1.1.3 by juminos:
+- https://www.nexusmods.com/stardewvalley/mods/31782
+A framework for adding more types of monsters to raise in the slime hutch and custom charmer rings
+
+Monster Variety v0.6.0 by mushymato:
+- https://www.nexusmods.com/stardewvalley/mods/32241
+Add skins to monsters.
+
 (CP) The Return of More Backpack Upgrades v1.0.2 by platinummyr:
 - https://www.nexusmods.com/stardewvalley/mods/21591
 More Backpacks (originally by aedenthorn).
@@ -1293,7 +1302,7 @@ Adds a skill related to befriending villagers.
 - no update key
 Socializing Skill Content Patcher
 
-The Homesteader - Spore Galore v1.0.0 by The Homesteader:
+HomesteadyEddy - Spore Galore v1.0.2 by HomesteadyEddy:
 - no update key
 Adds realistic gourmet & medicinal mushroom cultivation, mealworm farming, and integrated homesteading systems to Stardew Valley.
 
@@ -1504,9 +1513,25 @@ Replaces the babies and toddlers spridesheet with anthro versions to look like y
 - https://www.nexusmods.com/stardewvalley/mods/20266
 Adds a special blue egg that can be turned into blue mayo. Adds golden and ostrich mayos.
 
+Bog's Monster Mash v1.1.0 by BogWyytch and Abagaianye:
+- https://www.nexusmods.com/stardewvalley/mods/38014
+Loads of new monsters and monster drops!
+
+Bog's Monster Sanctuary v1.0.0 by BogWyytch and Abagaianye:
+- https://www.nexusmods.com/stardewvalley/mods/39430
+Allows Monsters to seek refuge on your farm in exchange for treasures!
+
 CalendarCrops v2.0.0 by IanAkari:
 - https://www.nexusmods.com/stardewvalley/mods/10586
 Add icons in the calendar to see the last day to plant a crop
+
+Flexible Cooking v1.2.0 by 6480:
+- https://www.nexusmods.com/stardewvalley/mods/38862
+Opens up vanilla cooking recipes to be able to use a variety of ingredients.
+
+Cornucopia - Cooking Recipes v1.0.2 by Cornucopia:
+- https://www.nexusmods.com/stardewvalley/mods/39057
+An additional Cooking Recipes mod for Stardew Valley 1.6 Content Patcher
 
 (CP) CV Naturalistic Variants Pack v1.0.1 by Kitsutsune:
 - https://www.nexusmods.com/stardewvalley/mods/23450
@@ -1527,14 +1552,6 @@ Add cute DragonBeans to stardewvalley!
 The Last Smoluanu: A Dwarf Expansion v1.1.5 by Lemurkat:
 - https://www.nexusmods.com/stardewvalley/mods/9642
 Adds more events, dialogue and personality to Dwarf and allows you to invite them to live with you
-
-The Geology Mod v1.3.4 by Solariaze and IgneousInsanity:
-- https://www.nexusmods.com/stardewvalley/mods/21038
-Adds new ore nodes and minerals to the game.
-
-(CP) Dwarven Expansion - The Geology Mod Patch v1.0.2 by mytigio:
-- https://www.nexusmods.com/stardewvalley/mods/23439
-Adds compatability for Dwarven Expansion jewelry making with The Geology Mod minerals.
 
 (CP) Dwarven Expansion - Visit Mount Vapius Patch v1.0.3 by mytigio:
 - https://www.nexusmods.com/stardewvalley/mods/23660
@@ -1624,6 +1641,10 @@ Lux's Sprite Mod v3.0.3 by Ceedtroid:
 - https://www.nexusmods.com/stardewvalley/mods/10035
 Replaces cooked item and crop sprites
 
+Lumisteria Giant Crops for Cornucopia More Crops v1.0.0 by Lumisteria:
+- https://www.nexusmods.com/stardewvalley/mods/39001
+Grow more giant crops for Cornucopia More Crops' crops
+
 (CP) My Submarine v2.7.0 by Tikamin557:
 - https://www.nexusmods.com/stardewvalley/mods/12285
 add [CP] My Submarine.
@@ -1700,6 +1721,10 @@ Marnie Immersive v1.5.8 by Lemurkat:
 - https://www.nexusmods.com/stardewvalley/mods/5070
 Overhaul of dialogue and cut scenes for Marnie
 
+Rocks and Relics v2.0.0 by Solariaze:
+- https://www.nexusmods.com/stardewvalley/mods/21038
+Introduces mineralogy, jewelry, and transmutation.
+
 Sanrio Plushies v1.2.0 by otohimexoxo:
 - https://www.nexusmods.com/stardewvalley/mods/25088
 Adds Sanrio Plushies to the game!
@@ -1717,9 +1742,9 @@ Swim Mod Dive Maps v1.0.3 by aedenthorn:
 - https://www.nexusmods.com/stardewvalley/mods/23169
 Adds underwater maps.
 
-(CP)Cat Valley(Interface) v1.0.0 by RimeNovi:
+猫露谷物语Cat Valley UI v1.0.0 by RimeNovi:
 - https://www.nexusmods.com/stardewvalley/mods/39379
-cat-inspired UI theme,With feline friends by your side.
+猫咪主题界面，伴你左右，如喵相随。Cat-inspired UI theme,With feline friends by your side.
 
 (FS) - Animal Features v1.0.1 by Mousymodder:
 - https://www.nexusmods.com/stardewvalley/mods/22828
@@ -2036,5 +2061,9 @@ Several new creatures with several new produce items. And a cave for them to liv
 StarDerg Valley v0.2.0 by FSL6_烦君:
 - https://www.nexusmods.com/stardewvalley/mods/25099
 StarDerg Valley converted to Content Patcher by XNB2CP-Web
+
+(CP) Furry Stardew Valley Expanded v1.1.6 by RydelTheOtter:
+- https://www.nexusmods.com/stardewvalley/mods/22271
+Overwrites NPC sprites, portraita and event sprites, for Stardew Valley Expanded to match with Anthro Characters Continued. Based off Lycanglass' SVE - Furry Conversion Patch, RTGirl's AVE Furry Mod Hotfix, and MrTea's SDVE Unique Furry Sprite.
 
 </details>
