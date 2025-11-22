@@ -21,14 +21,15 @@ This Modpack was tested with SMAPI 4.2.1 with Stardew Valley 1.6.15.
 5. Optional: Install Stardrop Mod Manager, this is useful to check what mods are installed and install more mods: https://www.nexusmods.com/stardewvalley/mods/10455
 
 ## Summary of mods included in this modpack.
- - Pokemon related mods: Pokemon farm animals, pokemon furniture, pokemon pets, pokemon fishes and most of pokemon mods found in nexus. Not included the mod that changes the terrain or existing npcs, because of compatibility.
- - Portrait npcs furry/nyapu versions, Mod fallback order: Dergvalley > Anthro Characters > Nyapu > Default portraits
- - Personalization of the main character using Fashion Sense mod, including a hundred of accesories as tails or wings to make any fantasy creature.
- - Important modpacks with additional npcs and content: Stardew Valley Expanded, Ridgeside Valley, East Carp, Sunberry Village, Lumisteria Visit Mount Vapius, Downtown Zuzu, Axolot Valley, Deep Woods, Adventure Guild Expanded, Boss Battles, Alchemistry, Dwarven Expansion, Animal Husbandry, Love of Cooking, Restauranteer, MarketTown, Ornithologist Guild, Nature in the Valley, Stardew Aquarium, Chocobo Valley, Everia's Dragons, Fishing Trawler, Prestige, Level Forever, new Skills and many more.
+ - Pokemon related mods: [Pokemon Mystery Dungeon Farmer](https://www.nexusmods.com/stardewvalley/mods/39038), Pokemon farm animals, pokemon furniture, pokemon pets, pokemon fishes, pokemon scenery and most of pokemon mods found in nexus.
+ - Portrait npcs furry/nyapu versions, Mod fallback order: Derg valley > Anthro Characters > Nyapu > Default portraits.
+ - Personalization of the main character using Fashion Sense mod. Be a pokemon with [Pokemon Mystery Dungeon Farmer](https://www.nexusmods.com/stardewvalley/mods/39038) or create your character using a hundred of accesories as tails or wings to make any fantasy creature.
+ - Many Collection like mods. Collect: pokemons, bugs, fishes, minerals (geology), birds, cooking recipes, mushrooms and more. 
+ - Important modpacks with additional npcs and content: Stardew Valley Expanded, Ridgeside Valley, East Carp, Sunberry Village, Lumisteria Visit Mount Vapius, Downtown Zuzu, Axolot Valley, Sword and Sorcery, Deep Woods, Slimes in Stardew, Adventure Guild Expanded, Boss Battles, Alchemistry, Dwarven Expansion, Animal Husbandry, Love of Cooking, Restauranteer, Walk Of Life - Profession Overhaul, MarketTown, Ornithologist Guild, Nature in the Valley, Bog's Monster, Stardew Aquarium, Chocobo Valley, Everia's Dragons, Dragon Beans, Fishing Trawler, , Level Forever, new Skills and many more.
  - Misc mods that enhances the Quality of life, balance or add more accesories from known franchises: Ragnarok Online hats, MIA Nanachi Relic Hat, Rabite pet from Secret of mana, Sanrio furniture and farm animals, tamagotchi farm animals, Animal Crossing themed furniture, Automate, Better Junimos, Better Chests, Hundreds of additional fishes, Better Balance, Enhanced reflections, Animated icons, Event Lookup, Faster Path Speed, Ferngill item packs, Cornucopia item packs, Fresh Item Produce, Longevity, Horse Overhaul, Lookup Anything, Machine Progression System, Fish Helper UI, Mini Bars, The return of backpack upgrades, Swim Mod, Visible Fish, Giant Crops/Flowers mods and many more.
 
 ## Caveats
-Remember taht in multiplayer all player should have the same mods.
+Remember that in multiplayer all player should have the same mods.
 
 ## Folder Structure
 Description of what it is each folder:
