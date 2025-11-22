@@ -1742,7 +1742,7 @@ Swim Mod Dive Maps v1.0.3 by aedenthorn:
 - https://www.nexusmods.com/stardewvalley/mods/23169
 Adds underwater maps.
 
-猫露谷物语Cat Valley UI v1.0.0 by RimeNovi:
+猫露谷物语Cat Valley UI v1.0.3 by RimeNovi:
 - https://www.nexusmods.com/stardewvalley/mods/39379
 猫咪主题界面，伴你左右，如喵相随。Cat-inspired UI theme,With feline friends by your side.
 
