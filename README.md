@@ -1721,7 +1721,7 @@ Marnie Immersive v1.5.8 by Lemurkat:
 - https://www.nexusmods.com/stardewvalley/mods/5070
 Overhaul of dialogue and cut scenes for Marnie
 
-Rocks and Relics v2.0.0 by Solariaze:
+Rocks and Relics v2.0.2 by Solariaze:
 - https://www.nexusmods.com/stardewvalley/mods/21038
 Introduces mineralogy, jewelry, and transmutation.
 
