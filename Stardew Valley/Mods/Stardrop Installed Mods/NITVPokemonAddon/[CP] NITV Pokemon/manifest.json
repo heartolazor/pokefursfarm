@@ -1,7 +1,7 @@
 {
-    "Name": "PokemonCreaturePack",
+    "Name": "NITV Pokemon Creatures",
     "Author": "Xan",
-    "Version": "1.0.5",
+    "Version": "1.1.0",
     "Description": "Adds Pokemon to Nature In The Valley",
     "UniqueID": "Xan.PokemonCreaturePack",
     "UpdateKeys": ["Nexus:37156"],
@@ -11,6 +11,10 @@
     "Dependencies": [
       {
         "UniqueID": "Nature.NatureInValleyContent",
+        "IsRequired": true
+      },
+      {
+        "UniqueID": "Xan.NITVPokemonAddon",
         "IsRequired": true
       }
     ]

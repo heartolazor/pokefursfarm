@@ -1,14 +1,18 @@
   {
-    "Name": "NITVPokemonAddon",
+    "Name": "NITV Pokemon Features",
     "Author": "Xan",
-    "Version": "1.0.5",
-    "Description": "Overrides the textures of the NITV nets and may add other features in the future.",
+    "Version": "1.1.0",
+    "Description": "Overrides the textures of the NITV nets and adds a bunch of other features as well.",
     "UniqueID": "Xan.NITVPokemonAddon",
     "EntryDll": "NITVPokemonAddon.dll",
 	  "MinimumApiVersion": "4.0.0",
     "Dependencies": [
       {
         "UniqueID": "Nature.NatureInTheValley",
+        "IsRequired": true
+      },
+      {
+        "UniqueID": "Pathoschild.ContentPatcher",
         "IsRequired": true
       }
     ]
