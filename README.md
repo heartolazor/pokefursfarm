@@ -12,7 +12,7 @@ The idea is to install this and don't configure anything, so all of the players 
 **Mods that will not be found in this modpack: Cheat like mods, Meme mods, Adult themed mods.**
 
 ## How to install
-This Modpack was tested with SMAPI 4.2.1 with Stardew Valley 1.6.15.
+This Modpack was tested with SMAPI 4.3.2 with Stardew Valley 1.6.15.
 
 1. Install latest version of SMAPI, this enables modding: https://smapi.io/
 2. Copy "_Stardew Valley_" folder content to the Stardew Valley folder. You should end with something like "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Stardrop Installed Mods\"
