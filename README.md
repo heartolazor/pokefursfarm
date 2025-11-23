@@ -234,7 +234,7 @@ Cauldron v2.2.1 by Kedi and sophie:
 - https://www.nexusmods.com/stardewvalley/mods/22926
 Manages config options for Wildflour Atelier Goods.
 
-ExtraMachineConfig v1.17.8 by selph:
+ExtraMachineConfig v1.17.9 by selph:
 - https://www.nexusmods.com/stardewvalley/mods/22256
 Add extra functionalities to machine artisan recipes and other misc data structures.
 
@@ -638,7 +638,7 @@ Cornucopia - More Flowers v1.5.6 by Cornucopia:
 - https://www.nexusmods.com/stardewvalley/mods/20290
 An additional flowers mod for Stardew Valley 1.6 Content Patcher
 
-Cornucopia - Artisan Machines v1.0.12 by Cornucopia:
+Cornucopia - Artisan Machines v1.0.14 by Cornucopia:
 - https://www.nexusmods.com/stardewvalley/mods/24842
 An additional Artisan Goods and Machines mod for Stardew Valley 1.6 Content Patcher
 
@@ -1173,7 +1173,7 @@ NITVNetBallContent v1.0.2 by Xan:
 - https://www.nexusmods.com/stardewvalley/mods/37172
 Creates the Net Ball to be purchased from the Insectarium shop.
 
-NITVPokemonAddon v1.0.5 by Xan:
+NITVPokemonAddon v1.1.0 by Xan:
 - no update key
 Overrides the textures of the NITV nets and may add other features in the future.
 
@@ -1529,7 +1529,7 @@ Flexible Cooking v1.2.0 by 6480:
 - https://www.nexusmods.com/stardewvalley/mods/38862
 Opens up vanilla cooking recipes to be able to use a variety of ingredients.
 
-Cornucopia - Cooking Recipes v1.0.2 by Cornucopia:
+Cornucopia - Cooking Recipes v1.0.3 by Cornucopia:
 - https://www.nexusmods.com/stardewvalley/mods/39057
 An additional Cooking Recipes mod for Stardew Valley 1.6 Content Patcher
 
@@ -1721,7 +1721,7 @@ Marnie Immersive v1.5.8 by Lemurkat:
 - https://www.nexusmods.com/stardewvalley/mods/5070
 Overhaul of dialogue and cut scenes for Marnie
 
-Rocks and Relics v2.0.2 by Solariaze:
+Rocks and Relics v2.0.3 by Solariaze:
 - https://www.nexusmods.com/stardewvalley/mods/21038
 Introduces mineralogy, jewelry, and transmutation.
 
