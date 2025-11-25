@@ -218,7 +218,7 @@ StardewUI v0.6.1 by focustense:
 - https://github.com/focustense/StardewUI/releases
 Declarative UI framework
 
-Livestock Bazaar v1.5.1 by mushymato:
+Livestock Bazaar v1.5.2 by mushymato:
 - https://www.nexusmods.com/stardewvalley/mods/29997
 Revamp animal shop UI and allow custom animal shops.
 
@@ -1529,7 +1529,7 @@ Flexible Cooking v1.2.0 by 6480:
 - https://www.nexusmods.com/stardewvalley/mods/38862
 Opens up vanilla cooking recipes to be able to use a variety of ingredients.
 
-Cornucopia - Cooking Recipes v1.0.3 by Cornucopia:
+Cornucopia - Cooking Recipes v1.0.4 by Cornucopia:
 - https://www.nexusmods.com/stardewvalley/mods/39057
 An additional Cooking Recipes mod for Stardew Valley 1.6 Content Patcher
 
@@ -2018,7 +2018,7 @@ MGC - Pets v1.0.0 by ottersqueaks:
 - no update key
 Cambria's retired service dog
 
-Metalcore Goes Cottagecore v1.0.3 by ottersqueaks:
+Metalcore Goes Cottagecore v1.0.4 by ottersqueaks:
 - https://www.nexusmods.com/stardewvalley/mods/29995
 A story about getting a fresh start.
 
