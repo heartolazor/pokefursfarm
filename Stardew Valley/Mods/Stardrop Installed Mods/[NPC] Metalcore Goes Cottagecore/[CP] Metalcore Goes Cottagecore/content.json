@@ -35,20 +35,6 @@
 			}
 		},
 		{
-			"Name": "NicknameChange",
-			"Value": "{{i18n:Name.Cambria}}",
-			"When": {
-				"HasSeenEvent |contains=MGC.Cambria.06": false
-			}
-		},
-		{
-			"Name": "NicknameChange",
-			"Value": "{{i18n:Name.Castle}}",
-			"When": {
-				"HasSeenEvent |contains=MGC.Cambria.06": true
-			}
-		},
-		{
 			"Name": "OrchidRain",
 			"Value": "0 TenebrousNova.EliDylan.CP_ESEDHouse 25 7 2 OrchidRoost/2300 25 8 2 OrchidRoost",
 			"When": {
@@ -61,31 +47,24 @@
 			"Value": "610 Squeaks.MGC.CP_CCHouse 15 21 2 OrchidRoost/2300 16 21 2 OrchidRoost"
 		},
 		{
-			"Name": "FamilyMail",
-			"Value": "{{i18n:CambriaHouse.String.FamilyMail.1}}",
+			"Name": "CoffeehouseMail",
+			"Value": "{{i18n:CambriaHouse.String.CoffeehouseMail.1}}",
 			"When": {
-				"Hearts:Otter.Cambria": "0, 1, 2"
+				"Hearts:Otter.Cambria": "0, 1, 2, 3"
 			}
 		},
 		{
-			"Name": "FamilyMail",
-			"Value": "{{i18n:CambriaHouse.String.FamilyMail.2}}",
+			"Name": "CoffeehouseMail",
+			"Value": "{{i18n:CambriaHouse.String.CoffeehouseMail.2}}",
 			"When": {
-				"Hearts:Otter.Cambria": "3, 4"
+				"Hearts:Otter.Cambria": "4, 5, 6, 7"
 			}
 		},
 		{
-			"Name": "FamilyMail",
-			"Value": "{{i18n:CambriaHouse.String.FamilyMail.3}}",
+			"Name": "CoffeehouseMail",
+			"Value": "{{i18n:CambriaHouse.String.CoffeehouseMail.3}}",
 			"When": {
-				"Hearts:Otter.Cambria": "5, 6"
-			}
-		},
-		{
-			"Name": "FamilyMail",
-			"Value": "{{i18n:CambriaHouse.String.FamilyMail.4}}",
-			"When": {
-				"Hearts:Otter.Cambria": "7, 8, 9, 10"
+				"Hearts:Otter.Cambria": "8, 9, 10"
 			}
 		}
 	],

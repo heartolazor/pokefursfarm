@@ -89,19 +89,19 @@
                 "HasFlag |contains=MGC_Cambria_OverrideSeenToday": false
             }
         },
-        {
-            "LogName": "Cambria Dialogue - Darien and Dolly",
+        /*{
+            "LogName": "Cambria Dialogue - City",
             "Action": "EditData",
             "Target": "Characters/Dialogue/Otter.Cambria",
             "Entries": {
-                "{{WeekDay}}": "{{i18n:Cambria.Dialogue.Family.{{Random:{{Range: 1, 8}}|key={{Time}}}}}}#$action AddMail Current MGC_Cambria_OverrideSeenToday received"
+                "{{WeekDay}}": "{{i18n:Cambria.Dialogue.City.{{Random:{{Range: 1, 8}}|key={{Time}}}}}}#$action AddMail Current MGC_Cambria_OverrideSeenToday received"
             },
             "When": {
                 "Query: {{Random: {{Range: 1, 20}}|key=CFO}} = 1": true,
                 "HasSeenEvent |contains=MGC.Cambria.04": true,
                 "HasFlag |contains=MGC_Cambria_OverrideSeenToday": false
             }
-        },
+        },*/
         {
             "LogName": "Cambria Dialogue - Early Seasonal Override",
             "Action": "EditData",

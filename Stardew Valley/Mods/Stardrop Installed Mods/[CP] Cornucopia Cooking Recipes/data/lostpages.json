@@ -2020,7 +2020,7 @@
 					"Trigger": "DayStarted",
 					"HostOnly": true,
 					"MarkActionApplied": false,
-					//"Condition": "PLAYER_HAS_MAIL Any Cornucopia.CookingRecipes_Chef_Met Received, !PLAYER_HAS_MAIL Host Cornucopia.CookingRecipes_LostPage_InlandSea_Obtained Received, DAY_OF_WEEK Thursday",
+					"Condition": "PLAYER_HAS_MAIL Any Cornucopia.CookingRecipes_Chef_Met Received, !PLAYER_HAS_MAIL Host Cornucopia.CookingRecipes_LostPage_InlandSea_Obtained Received, DAY_OF_WEEK Thursday",
 					"Actions": [
 						"spacechase0.SpaceCore_TriggerSpawnGroup Cornucopia_LostPage_InlandSea Desert"
 					]

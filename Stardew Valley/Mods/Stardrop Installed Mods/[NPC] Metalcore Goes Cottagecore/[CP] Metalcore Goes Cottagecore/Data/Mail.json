@@ -7,16 +7,10 @@
             "FromFile": "Assets/Images/MGC_stationary.png"
         },
         {
-            "LogName": "Rin Stationary - MEEP",
+            "LogName": "Coffeehouse Letter - MEEP",
             "Action": "Load",
-            "Target": "Mods/Squeaks.MGC.CP/RinStationary",
-            "FromFile": "Assets/Images/DarienStationary.png"
-        },
-        {
-            "LogName": "Dolly Stationary - MEEP",
-            "Action": "Load",
-            "Target": "Mods/Squeaks.MGC.CP/DollyStationary",
-            "FromFile": "Assets/Images/DollyStationary.png"
+            "Target": "Mods/Squeaks.MGC.CP/CoffeehouseLetter",
+            "FromFile": "Assets/Images/CoffeehouseLetter.png"
         },
         {
             "Action": "EditMap",
@@ -29,8 +23,8 @@
                     },
                     "Layer": "Buildings",
                     "SetProperties": {
-                        "Action": "MEEP_Letter {{FamilyMail}}",
-                        "MEEP_Letter_Type": "Mods/Squeaks.MGC.CP/RinStationary"
+                        "Action": "MEEP_Letter {{CoffeehouseMail}}",
+                        "MEEP_Letter_Type": "Mods/Squeaks.MGC.CP/CoffeehouseLetter"
                     }
                 }
             ]
@@ -56,7 +50,7 @@
             "Action": "EditData",
             "Target": "Data/Mail",
             "Entries": {
-                "GabeLetter": "{{i18n:Mail.Gabriel.Misdelivered}}%item quest MGC.WrongLetter true %%[#]{{i18n:Mail.Gabriel.Misdelivered.Title}}"
+                "GabeLetter": "{{i18n:Mail.Gabriel.Misdelivered}}%item quest MGC.WrongLetter true %%[letterbg Mods/Squeaks.MGC.CP/LetterBackgrounds 0][#]{{i18n:Mail.Gabriel.Misdelivered.Title}}"
             }
         }
     ]
