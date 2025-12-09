@@ -50,7 +50,8 @@
                             "Precedence": 0,
                             "ContinueOnDrop": true,
                             "Id": "{{ModId}}_Artifacts",
-                            "ItemId": "RANDOM_ARTIFACT_FOR_DIG_SPOT",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target sbv_artifact",
                             "MinStack": 1,
                             "MaxStack": 1
                         },
@@ -82,19 +83,19 @@
                         },
                         {
                             "Id": "{{ModId}}_VSeaCow",
-                            "ItemId": "{{ModId}}_SeaCow",
+                            "ItemId": "(O){{ModId}}_SeaCow",
                             "Precedence": -1,
                             "Season": "Summer"
                         },
                         {
                             "Id": "{{ModId}}_FiretailGuppy",
-                            "ItemId": "{{ModId}}_FiretailGuppy",
+                            "ItemId": "(O){{ModId}}_FiretailGuppy",
                             "Precedence": -1,
                             "Season": "Fall"
                         },
                         {
                             "Id": "{{ModId}}_EmeraldSnapper",
-                            "ItemId": "{{ModId}}_EmeraldSnapper",
+                            "ItemId": "(O){{ModId}}_EmeraldSnapper",
                             "Precedence": -1,
                             "Condition": "LOCATION_SEASON Here summer fall winter"
                         },
@@ -127,7 +128,6 @@
                             "Condition": "LOCATION_SEASON Here summer winter"
                         },
                         {
-
                             "Id": "{{ModId}}_VTigerTrout",
                             "ItemId": "(O)699",
                             "Condition": "LOCATION_SEASON Here fall winter"
@@ -155,6 +155,18 @@
                             "Id": "{{ModId}}_VDandelion",
                             "ItemId": "(O)22",
                             "Season": "Spring",
+                            "Chance": 0.7
+                        },
+                        {
+                            "Id": "{{ModId}}_VBluestar",
+                            "ItemId": "(O){{ModId}}_Bluestar",
+                            "Season": "Spring",
+                            "Chance": 0.7
+                        },
+                        {
+                            "Id": "{{ModId}}_VCloudberry",
+                            "ItemId": "(O){{ModId}}_Cloudberry",
+                            "Season": "Summer",
                             "Chance": 0.7
                         },
                         {
@@ -265,7 +277,8 @@
                             "Precedence": 0,
                             "ContinueOnDrop": true,
                             "Id": "{{ModId}}_Artifacts",
-                            "ItemId": "RANDOM_ARTIFACT_FOR_DIG_SPOT",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target sbv_artifact",
                             "MinStack": 1,
                             "MaxStack": 1
                         },
@@ -298,29 +311,29 @@
                         },
                         {
                             "Id": "{{ModId}}_ChartreuseTilapia",
-                            "ItemId": "{{ModId}}_ChartreuseTilapia",
+                            "ItemId": "(O){{ModId}}_ChartreuseTilapia",
                             "Condition": "LOCATION_SEASON Here summer fall"
                         },
                         {
                             "Id": "{{ModId}}_FSeaCow",
-                            "ItemId": "{{ModId}}_SeaCow",
+                            "ItemId": "(O){{ModId}}_SeaCow",
                             "Condition": "LOCATION_SEASON Here spring fall",
                             "Precedence": -1
                         },
                         {
                             "Id": "{{ModId}}_EeltailedCatfish",
-                            "ItemId": "{{ModId}}_EeltailedCatfish",
+                            "ItemId": "(O){{ModId}}_EeltailedCatfish",
                             "Condition": "LOCATION_SEASON Here spring summer, ANY \"TIME 600 1100\" \"TIME 1900 2600\"",
                             "Precedence": -1
                         },
                         {
                             "Id": "{{ModId}}_BubblyBetta",
-                            "ItemId": "{{ModId}}_BubblyBetta",
+                            "ItemId": "(O){{ModId}}_BubblyBetta",
                             "Condition": "LOCATION_SEASON Here spring winter"
                         },
                         {
                             "Id": "{{ModId}}_FBarkfish",
-                            "ItemId": "{{ModId}}_Barkfish"
+                            "ItemId": "(O){{ModId}}_Barkfish"
                         },
                         {
                             "Id": "{{ModId}}_FBream",
@@ -391,6 +404,18 @@
                             "ItemId": "(O)16",
                             "Season": "Spring",
                             "Chance": 0.9
+                        },
+                        {
+                            "Id": "{{ModId}}_FMarigold",
+                            "ItemId": "(O){{ModId}}_Marigold",
+                            "Season": "Summer",
+                            "Chance": 0.7
+                        },
+                        {
+                            "Id": "{{ModId}}_FCloudberry",
+                            "ItemId": "(O){{ModId}}_Cloudberry",
+                            "Season": "Summer",
+                            "Chance": 0.7
                         },
                         {
                             "Id": "{{ModId}}_FSweetPea",
@@ -529,8 +554,8 @@
                             "OneDebrisPerDrop": true,
                             "Precedence": 0,
                             "ContinueOnDrop": true,
-                            "Id": "{{ModId}}_Artifacts",
-                            "ItemId": "RANDOM_ARTIFACT_FOR_DIG_SPOT",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target sbv_artifact",
                             "MinStack": 1,
                             "MaxStack": 1
                         },
@@ -561,17 +586,17 @@
                         },
                         {
                             "Id": "{{ModId}}_MBonbonFish",
-                            "ItemId": "{{ModId}}_BonbonFish",
+                            "ItemId": "(O){{ModId}}_BonbonFish",
                             "Precedence": -1
                         },
                         {
                             "Id": "{{ModId}}_MNajelfish",
-                            "ItemId": "{{ModId}}_Najelfish",
+                            "ItemId": "(O){{ModId}}_Najelfish",
                             "Precedence": -1
                         },
                         {
                             "Id": "{{ModId}}_AzureanCarp",
-                            "ItemId": "{{ModId}}_AzureanCarp",
+                            "ItemId": "(O){{ModId}}_AzureanCarp",
                             "Condition": "LOCATION_SEASON Here spring summer fall",
                             "Precedence": -1
                         },
@@ -613,6 +638,24 @@
                             "Id": "{{ModId}}_MDandelion",
                             "ItemId": "(O)22",
                             "Season": "Spring",
+                            "Chance": 0.7
+                        },
+                        {
+                            "Id": "{{ModId}}_MBluestar",
+                            "ItemId": "(O){{ModId}}_Bluestar",
+                            "Season": "Spring",
+                            "Chance": 0.7
+                        },
+                        {
+                            "Id": "{{ModId}}_MMarigold",
+                            "ItemId": "(O){{ModId}}_Marigold",
+                            "Season": "Summer",
+                            "Chance": 0.7
+                        },
+                        {
+                            "Id": "{{ModId}}_MCloudberry",
+                            "ItemId": "(O){{ModId}}_Cloudberry",
+                            "Season": "Summer",
                             "Chance": 0.7
                         },
                         {
@@ -705,8 +748,8 @@
                             "OneDebrisPerDrop": true,
                             "Precedence": 0,
                             "ContinueOnDrop": true,
-                            "Id": "{{ModId}}_Artifacts",
-                            "ItemId": "RANDOM_ARTIFACT_FOR_DIG_SPOT",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target sbv_artifact",
                             "MinStack": 1,
                             "MaxStack": 1
                         },
@@ -737,17 +780,17 @@
                         },
                         {
                             "Id": "{{ModId}}_BonbonFish",
-                            "ItemId": "{{ModId}}_BonbonFish",
+                            "ItemId": "(O){{ModId}}_BonbonFish",
                             "Precedence": -1
                         },
                         {
                             "Id": "{{ModId}}_Najelfish",
-                            "ItemId": "{{ModId}}_Najelfish",
+                            "ItemId": "(O){{ModId}}_Najelfish",
                             "Precedence": -1
                         },
                         {
                             "Id": "{{ModId}}_AzureanCarp",
-                            "ItemId": "{{ModId}}_AzureanCarp",
+                            "ItemId": "(O){{ModId}}_AzureanCarp",
                             "Condition": "LOCATION_SEASON Here spring summer fall",
                             "Precedence": -1
                         },
@@ -789,6 +832,24 @@
                             "Id": "{{ModId}}_Dandelion",
                             "ItemId": "(O)22",
                             "Season": "Spring",
+                            "Chance": 0.7
+                        },
+                        {
+                            "Id": "{{ModId}}_SFBluestar",
+                            "ItemId": "(O){{ModId}}_Bluestar",
+                            "Season": "Spring",
+                            "Chance": 0.7
+                        },
+                        {
+                            "Id": "{{ModId}}_SFMarigold",
+                            "ItemId": "(O){{ModId}}_Marigold",
+                            "Season": "Summer",
+                            "Chance": 0.7
+                        },
+                        {
+                            "Id": "{{ModId}}_SFCloudberry",
+                            "ItemId": "(O){{ModId}}_Cloudberry",
+                            "Season": "Summer",
                             "Chance": 0.7
                         },
                         {
@@ -886,8 +947,8 @@
                             "OneDebrisPerDrop": true,
                             "Precedence": 0,
                             "ContinueOnDrop": true,
-                            "Id": "{{ModId}}_Artifacts",
-                            "ItemId": "RANDOM_ARTIFACT_FOR_DIG_SPOT",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target sbv_artifact",
                             "MinStack": 1,
                             "MaxStack": 1
                         },
@@ -968,6 +1029,12 @@
                             "ItemId": "(O)22",
                             "Season": "Spring",
                             "Chance": 0.4
+                        },
+                        {
+                            "Id": "{{ModId}}_RCloudberry",
+                            "ItemId": "(O){{ModId}}_Cloudberry",
+                            "Season": "Summer",
+                            "Chance": 0.5
                         },
                         {
                             "Id": "{{ModId}}_RSweetPea",
@@ -1053,8 +1120,8 @@
                             "OneDebrisPerDrop": true,
                             "Precedence": 0,
                             "ContinueOnDrop": true,
-                            "Id": "{{ModId}}_Artifacts",
-                            "ItemId": "RANDOM_ARTIFACT_FOR_DIG_SPOT",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target sbv_artifact",
                             "MinStack": 1,
                             "MaxStack": 1
                         },
@@ -1122,7 +1189,7 @@
                         },
                         {
                             "Id": "{{ModId}}_SBarkfish",
-                            "ItemId": "{{ModId}}_Barkfish"
+                            "ItemId": "(O){{ModId}}_Barkfish"
                         }
                     ],
                     "Forage": [
@@ -1206,8 +1273,8 @@
                             "OneDebrisPerDrop": true,
                             "Precedence": 0,
                             "ContinueOnDrop": true,
-                            "Id": "{{ModId}}_Artifacts",
-                            "ItemId": "RANDOM_ARTIFACT_FOR_DIG_SPOT",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target sbv_artifact",
                             "MinStack": 1,
                             "MaxStack": 1
                         },
@@ -1239,7 +1306,7 @@
                         },
                         {
                             "Id": "{{ModId}}_S1ChartreuseTilapia",
-                            "ItemId": "{{ModId}}_ChartreuseTilapia",
+                            "ItemId": "(O){{ModId}}_ChartreuseTilapia",
                             "Condition": "LOCATION_SEASON Here summer fall"
                         },
                         {
@@ -1288,7 +1355,7 @@
                         },
                         {
                             "Id": "{{ModId}}_S1Barkfish",
-                            "ItemId": "{{ModId}}_Barkfish"
+                            "ItemId": "(O){{ModId}}_Barkfish"
                         }
                     ],
                     "Forage": [
@@ -1389,8 +1456,8 @@
                             "OneDebrisPerDrop": true,
                             "Precedence": 0,
                             "ContinueOnDrop": true,
-                            "Id": "{{ModId}}_Artifacts",
-                            "ItemId": "RANDOM_ARTIFACT_FOR_DIG_SPOT",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target sbv_artifact",
                             "MinStack": 1,
                             "MaxStack": 1
                         },
@@ -1417,7 +1484,7 @@
                     "Fish": [
                         {
                             "Id": "{{ModId}}_S2AnglerJr",
-                            "ItemId": "{{ModId}}_AnglerJr",
+                            "ItemId": "(O){{ModId}}_AnglerJr",
                             "Season": "fall",
                             "IsBossFish": "true",
                             "CatchLimit": 1,
@@ -1436,7 +1503,7 @@
                         },
                         {
                             "Id": "{{ModId}}_S2ChartreuseTilapia",
-                            "ItemId": "{{ModId}}_ChartreuseTilapia",
+                            "ItemId": "(O){{ModId}}_ChartreuseTilapia",
                             "Condition": "LOCATION_SEASON Here summer fall"
                         },
                         {
@@ -1485,7 +1552,7 @@
                         },
                         {
                             "Id": "{{ModId}}_S2Barkfish",
-                            "ItemId": "{{ModId}}_Barkfish"
+                            "ItemId": "(O){{ModId}}_Barkfish"
                         }
                     ],
                     "Forage": [
@@ -2018,6 +2085,17 @@
                     "Fish": [],
                     "Forage": []
                 },
+                // WEDDING VENUE
+                "Custom_SBV_RipleyOrchard": {
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/Custom_SBV_RipleyOrchard"
+                    },
+                    "ExcludeFromNpcPathfinding": true,
+                    "ArtifactSpots": [],
+                    "FishAreas": {},
+                    "Fish": [],
+                    "Forage": []
+                },
                 // MINES
                 "Custom_SBV_Mines1": {
                     "CreateOnLoad": {
@@ -2483,6 +2561,18 @@
                             "Amount": 0
                         }
                     ]
+                },
+                "{{ModId}}_Bluestar": {
+                    "Id": "{{ModId}}_Bluestar",
+                    "ItemId": "{{ModId}}_Bluestar",
+                    "Season": "Spring",
+                    "Chance": 0.5,
+                },
+                "{{ModId}}_Cloudberry": {
+                    "Id": "{{ModId}}_Cloudberry",
+                    "ItemId": "{{ModId}}_Cloudberry",
+                    "Season": "Summer",
+                    "Chance": 0.7,
                 }
             }
         },
@@ -2504,6 +2594,30 @@
                             "Amount": 0
                         }
                     ]
+                },
+                "{{ModId}}_CarmineBlossom": {
+                    "Id": "{{ModId}}_CarmineBlossom",
+                    "ItemId": "{{ModId}}_CarmineBlossom",
+                    "Season": "Winter",
+                    "Chance": 0.6
+                },
+                "{{ModId}}_Bluestar": {
+                    "Id": "{{ModId}}_Bluestar",
+                    "ItemId": "{{ModId}}_Bluestar",
+                    "Season": "Spring",
+                    "Chance": 0.5,
+                },
+                "{{ModId}}_Marigold": {
+                    "Id": "{{ModId}}_Marigold",
+                    "ItemId": "{{ModId}}_Marigold",
+                    "Season": "Summer",
+                    "Chance": 0.5,
+                },
+                "{{ModId}}_Cloudberry": {
+                    "Id": "{{ModId}}_Cloudberry",
+                    "ItemId": "{{ModId}}_Cloudberry",
+                    "Season": "Summer",
+                    "Chance": 0.7,
                 }
             }
         },

@@ -12,7 +12,7 @@
       "Target": "Nature.NITV/Creatures",
       "Entries": {
         "Spearow_Attack_Safari": {
-          "rarity": 1,
+          "rarity": 2,
           "grounded": false,
           "speed": 0.006,
           "pauseTime": 1600,
@@ -144,6 +144,7 @@
           "itemDropItemIds": [
             "(O)NatInValley.Creature.Koffing_Attack_Shiny",
             "288", //mega bomb
+            "(TR)NITVPokemon_KoffingTrinket",
             "386", //iridium ore
             "287", //bomb
             "879", //monster musk
@@ -153,16 +154,17 @@
             0.01,
             0.05,
             0.05,
+            0.05,
             0.2,
             0.2,
             0.2
           ],
-          "itemDropOnlyItemBools": [ false, false, false, false, false, false ],
-          "itemDropExclusiveItem": [ true, true, true, true, true, true ]
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true ]
         },
 
         "Oddish_Stump_Safari": {
-          "rarity": 1,
+          "rarity": 2,
           "grounded": false,
           "speed": 0.007,
           "pauseTime": 100,
@@ -236,7 +238,7 @@
         },
 
        "Bellsprout_Roam_Safari": {
-          "rarity": 1,
+          "rarity": 2,
           "grounded": true,
           "speed": 0.005,
           "pauseTime": 1200,
@@ -291,6 +293,7 @@
           "alternativeDropChance": 1.0,
           "itemDropItemIds": [
             "(O)NatInValley.Creature.Bellsprout_Roam_Shiny",
+            "(TR)NITVPokemon_BellsproutTrinket",
             "(BC)25", //Seed Maker
             "347", //Rare Seed
             "SkillBook_2", //woodcutting exp
@@ -299,18 +302,19 @@
           ],
           "itemDropItemChances": [
             0.01,
+            0.05,
             0.06,
             0.1,
             0.2,
             0.3,
             0.3
           ],
-          "itemDropOnlyItemBools": [ false, false, false, false, false, false ],
-          "itemDropExclusiveItem": [ true, true, true, true, true, true ]
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true ]
         },
 
         "Grimer_Roam_Safari": {
-          "rarity": 1,
+          "rarity": 2,
           "grounded": true,
           "speed": 0.003,
           "pauseTime": 1600,
@@ -367,6 +371,7 @@
             "(O)NatInValley.Creature.Grimer_Roam_Shiny",
             "74", //prismatic shard
             "910", //radioactive ore
+            "(TR)NITVPokemon_GrimerTrinket",
             "879", //monster musk
             "749", //omni geode
             "796", //Slimejack
@@ -376,13 +381,14 @@
             0.01,
             0.01,
             0.03,
+            0.05,
             0.2,
             0.2,
             0.3,
             0.3
           ],
-          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false],
-          "itemDropExclusiveItem": [ true, true, true, true, true, true, true ]
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true, true ]
         },
 
         "Cubone_Roam_Safari": {
@@ -443,6 +449,7 @@
             "GoldenAnimalCracker",
             "(O)NatInValley.Creature.Cubone_Roam_Shiny",
             "107", //dino egg
+            "(TR)NITVPokemon_CuboneTrinket",
             "SkillBook_4",  //combat exp
             "261", //desert totem
             "820", //Fossilized Skull
@@ -452,13 +459,14 @@
             0.008,
             0.01,
             0.03,
+            0.05,
             0.1,
             0.1,
             0.2,
             0.3
           ],
-          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false ],
-          "itemDropExclusiveItem": [ true, true, true, true, true, true, true ]
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true, true ]
         },
 
         "Rhyhorn_Attack_Safari": {
@@ -518,6 +526,7 @@
           "itemDropItemIds": [
             "74", //prismatic shard
             "(O)NatInValley.Creature.Rhyhorn_Attack_Shiny",
+            "(TR)NITVPokemon_RhyhornTrinket",
             "386", //iridium ore
             "336", //gold bar
             "537", //magma geode
@@ -528,6 +537,7 @@
           "itemDropItemChances": [
             0.007,
             0.01,
+            0.05,
             0.07,
             0.15,
             0.2,
@@ -535,8 +545,8 @@
             0.3,
             0.6
           ],
-          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false, false ],
-          "itemDropExclusiveItem": [ true, true, true, true, true, true, true, true ]
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true, true, true ]
         },
 
         "Pikachu_Roam": {
@@ -597,7 +607,7 @@
         },
 
         "Pikachu_Attack": {
-          "rarity": 1,
+          "rarity": 2,
           "grounded": true,
           "speed": 0.007,
           "pauseTime": 1000,
@@ -710,6 +720,7 @@
             "(O)NatInValley.Creature.Pikachu_Roam_Shiny",
             "PrizeTicket",
             "(BC)231", //Solar Panel
+            "(TR)NITVPokemon_PikachuTrinket",
             "787", //Battery Pack
             "(BC)10", //Lightning Rod
             "287", //bomb
@@ -719,13 +730,14 @@
             0.01,
             0.01,
             0.01,
+            0.05,
             0.1,
             0.1,
             0.2,
             0.3
           ],
-          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false ],
-          "itemDropExclusiveItem": [ true, true, true, true, true, true, true ]
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true, true ]
         },
 
         "Pikachu_Attack_Safari": {
@@ -787,6 +799,7 @@
             "PrizeTicket",
             "(BC)231", //Solar Panel
             "288", //mega bomb
+            "(TR)NITVPokemon_PikachuTrinket",
             "787", //Battery Pack
             "(BC)10", //Lightning Rod
             "441", //Explosive Ammo
@@ -797,17 +810,18 @@
             0.01,
             0.01,
             0.05,
+            0.05,
             0.1,
             0.2,
             0.3,
             0.3
           ],
-          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false, false ],
-          "itemDropExclusiveItem": [ true, true, true, true, true, true, true, true ]
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true, true, true ]
         },
 
         "Shellder_Swim_Safari": {
-          "rarity": 1,
+          "rarity": 2,
           "grounded": true,
           "speed": 0.008,
           "pauseTime": 1800,
@@ -863,6 +877,7 @@
           "itemDropItemIds": [
             "(O)NatInValley.Creature.Shellder_Swim_Shiny",
             "166", //treasure chest
+            "797", //pearl
             "908", //magic bait
             "710", //Crab Pot
             "SkillBook_1", //fish exp
@@ -882,7 +897,7 @@
         },
 
         "Goldeen_Swim_Safari": {
-          "rarity": 1,
+          "rarity": 2,
           "grounded": true,
           "speed": 0.005,
           "pauseTime": 2000,
@@ -939,6 +954,7 @@
             "(O)NatInValley.Creature.Goldeen_Swim_Shiny",
             "166", //treasure chest
             "908", //magic bait
+            "ChallengeBait",
             "710", //Crab Pot
             "SkillBook_1", //fish exp
             "DeluxeBait"
@@ -947,7 +963,7 @@
             0.01,
             0.05,
             0.05,
-            0.1,
+            0.05,
             0.2,
             0.2,
             0.5
@@ -1015,19 +1031,20 @@
             "(O)NatInValley.Creature.Psyduck_Swim_Shiny",
             "681", //rain totem
             "908", //magic bait
-            "710", //Crab Pot
+            "(TR)NITVPokemon_PsyduckTrinket",
             "SkillBook_1", //fish exp
             "444", //Duck Feather
+            "710", //Crab Pot
             "DeluxeBait"
           ],
           "itemDropItemChances": [
             0.01,
             0.05,
             0.05,
-            0.1,
+            0.05,
             0.2,
             0.2,
-            0.2,
+            0.3,
             0.5
           ],
           "itemDropOnlyItemBools": [ false, false, false, false, false, false, false, false ],

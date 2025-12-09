@@ -111,11 +111,39 @@
 },
 
 {
+  "Action": "Load",
+  "Target": "Characters/Jonghyuk_Sun",
+  "FromFile": "Assets/Characters/Jonghyuk/Jonghyuk_Sun.png"
+},
+
+{
+  "Action": "Load",
+  "Target": "Portraits/Jonghyuk_Sun",
+  "FromFile": "Assets/Portraits/Jonghyuk/Jonghyuk_Sun.png"
+},
+
+{
   "LogName": "Jonghyuk Dance Shoes (B)",
   "Action": "Load",
   "Target": "Characters/Jonghyuk_Black",
   "FromFile": "Assets/Characters/Jonghyuk/Jonghyuk_Black.png"
 },
+
+{
+  "LogName": "Jonghyuk Wedding Fit",
+  "Action": "Load",
+  "Target": "Characters/Jonghyuk_Wedding",
+  "FromFile": "Assets/Characters/Jonghyuk/Jonghyuk_Wedding.png"
+},
+
+{
+  "LogName": "Jonghyuk Wedding Fit",
+  "Action": "Load",
+  "Target": "Portraits/Jonghyuk_Wedding",
+  "FromFile": "Assets/Portraits/Jonghyuk/Jonghyuk_Wedding.png"
+},
+
+
 
     {
       "LogName": "Raymond Sprites y0",
@@ -127,6 +155,21 @@
         "HasSeenEvent: anyPlayer |contains=63071092": false
       }
     },
+
+
+    {
+  "LogName": "Spanner Wedding Fit",
+  "Action": "Load",
+  "Target": "Characters/Spanner_PendantBearer",
+  "FromFile": "Assets/Characters/Raymond/y0/Raymond_PendantBearer.png"
+},
+
+    {
+  "LogName": "Spanner Wedding Fit",
+  "Action": "Load",
+  "Target": "Portraits/Spanner_PendantBearer",
+  "FromFile": "Assets/Portraits/Raymond/Raymond_PendantBearer.png"
+},
 
 
     {
@@ -165,7 +208,7 @@
       "Action": "Include",
       "FromFile": "Data/DynamicChanges/OutfitChanges.json"
     },
-
+    
 
     // Portrait Shake
     {
@@ -174,19 +217,6 @@
       "Entries": {
         "Jonghyuk": {
           "IndexList": [ 7 ]
-        }
-      }
-    },
-
-
-    {
-      "Action": "EditData",
-      "Target": "KediDili.KNU/UtilityData", // Target this asset
-      "Entries": {
-        "Jonghyuk": { //Keys under here has to be one of the listed below. Anything else is ignored by the mod. Omit the keys for said feature if you will not use the feature. Nullifying would cause errors!
-
-          "datableNotMarriable": "Cannot marry until a certain event has been seen." //Makes the NPC deny the mermaid pendant
-
         }
       }
     },
@@ -274,6 +304,34 @@
 			"FromFile": "Data/Music.json",
 		},
 
+    // Rejection
+
+    	{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jonghyuk",
+			"Entries": {
+
+				"RejectItem_(O)460": "{{i18n:Jonghyuk.RejectMermaidPendant}}",
+      },
+        "When": {
+        "HasSeenEvent |contains= jhMount": false
+      }
+    },
+
+    {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+
+                "Game1.cs.2782": "{{i18n:WeddingJonghyuk.27}}",
+            },
+
+                "When": {
+                "Spouse": "Jonghyuk"
+            }
+        },
+            
+
     // Map Data Includes
 
     {
@@ -293,14 +351,15 @@
     {
       "LogName": "Includes Dialogue and Schedule",
       "Action": "Include",
-      "FromFile": "Data/Dialogue/JonghyukDialogue.json, Data/Schedules/JonghyukSchedule.json, Data/Dialogue/RaymondDialogue.json, Data/Schedules/RaymondSchedule.json"
+      "FromFile": "Data/Dialogue/JonghyukDialogue.json, Data/Dialogue/MarriageJonghyukDialogue.json, Data/Schedules/JonghyukSchedule.json, Data/Dialogue/RaymondDialogue.json, Data/Schedules/RaymondSchedule.json"
     },
+    
 
 //Festival attempt
     {
       "LogName": "Include Festival Stuff",
       "Action": "Include",
-      "FromFile": "Data/Festivals/FestivalDialogue.json, Data/Festivals/locations/EggFestival.json, Data/Festivals/locations/FlowerDance.json, Data/Festivals/locations/Luau.json, Data/Festivals/locations/MoonlightJellies.json, Data/Festivals/locations/SVFair.json, Data/Festivals/locations/SpiritEve.json, Data/Festivals/locations/IceFestival.json, Data/Festivals/locations/WinterStar.json, Data/Festivals/locations/GatheringFestival.json, Data/Festivals/locations/EmberOfResolutions.json"
+      "FromFile": "Data/Festivals/FestivalDialogue.json, Data/Festivals/locations/EggFestival.json, Data/Festivals/locations/FlowerDance.json, Data/Festivals/locations/Luau.json, Data/Festivals/locations/MoonlightJellies.json, Data/Festivals/locations/SVFair.json, Data/Festivals/locations/SpiritEve.json, Data/Festivals/locations/IceFestival.json, Data/Festivals/locations/WinterStar.json, Data/Festivals/locations/GatheringFestival.json, Data/Festivals/locations/EmberOfResolutions.json, Data/Festivals/locations/FashionShow.json"
     },
 
 
@@ -316,14 +375,12 @@
       } 
     },
 
-
     // Event Data Includes
     {
       "LogName": "Include Event Data",
       "Action": "Include",
-      "FromFile": "Data/Events/EventData.json"
+      "FromFile": "Data/Events/EventData.json, Data/Events/WeddingEvent.json"
     },
-
 
     {
       "LogName": "Include Event Data",
@@ -340,7 +397,21 @@
         "FromFile": "Data/TriggerActions/Mail.json"
       },
 
-    
+
+    {
+        "Action": "Load",
+        "Target": "Maps/JonghyukSpouseRoom",
+        "FromFile": "Assets/Maps/JonghyukSpouseRoom.tmx"
+    },     
+
+        //Load Spouse Patios
+    {
+      "Action": "Load",
+      "Target": "Maps/JonghyukSpousePatio",
+      "FromFile": "Assets/Maps/JonghyukSpousePatio.tmx"
+    },
+
+
 
     /// Event Actors (Spoilers)
 
@@ -354,6 +425,13 @@
       "Action": "Load",
       "Target": "Jonghyuk/Particles",
       "FromFile": "Assets/EventFiles/Sprites/Particles.png"
+    },
+
+        {
+      "LogName": "SpaceCore Particles for Events", //Casey is so cool. Thanks TenebrousNova for showing me how to use this Spacecore feature.
+      "Action": "Load",
+      "Target": "Jonghyuk/staticMermaidPendant",
+      "FromFile": "Assets/Maps/tempMaps/jhMermaidPendant.png"
     },
 
     /*********
@@ -433,6 +511,60 @@
       "Target": "Characters/RaymondFall",
       "FromFile": "Assets/Maps/tempMaps/RaymondMaps/z_RaymondFall.png"
     },
+
+    {
+      "Action": "Load",
+      "Target": "Characters/jhWeddingCG",
+      "FromFile": "Assets/Maps/tempMaps/z_WeddingCG.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Characters/jhSunset1",
+      "FromFile": "Assets/Maps/tempMaps/jhSunset1.png"
+    },
+
+        {
+      "Action": "Load",
+      "Target": "Characters/jhSunset2",
+      "FromFile": "Assets/Maps/tempMaps/jhSunset2.png"
+    },
+
+        {
+      "Action": "Load",
+      "Target": "Characters/jhSunset3",
+      "FromFile": "Assets/Maps/tempMaps/jhSunset3.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Characters/jhSunset4",
+      "FromFile": "Assets/Maps/tempMaps/jhSunset4.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Characters/jhSunset5",
+      "FromFile": "Assets/Maps/tempMaps/jhSunset5.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Characters/jhSunset6",
+      "FromFile": "Assets/Maps/tempMaps/jhSunset6.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Characters/jhSunset7",
+      "FromFile": "Assets/Maps/tempMaps/jhSunset7.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Characters/jhSunset8",
+      "FromFile": "Assets/Maps/tempMaps/jhSunset8.png"
+    },    
     
     {
       "LogName": "Jonghyuk's Dropbox",
@@ -742,15 +874,18 @@
     "Name": "LanternFestivalWAGToken",
     "Value": ""
   },
+
   {
       "Name": "LanternFestivalWAGToken",
       "Value": ".WAG",
       "When":
       {
-          "HasMod": "Atelier.Cauldron",
+          "HasMod |contains= Atelier.Cauldron": true,
+          "HasMod |contains= Wildflour.AtelierGoods": true,
           "Atelier.Cauldron/ConfigValue:Candles": true
       }
   },
+
   {
     "Name": "LanternFestivalWAGCandleToken",
     "Value": "item_torch"
@@ -775,6 +910,138 @@
           "LanternFestivalWAGToken": ".WAG"
       }
   },
+
+  		{
+			"Name": "LanternFestivalTriggerDateToken",
+			"Value": "false"
+		},
+		{
+			"Name": "LanternFestivalTriggerDateToken",
+			"Value": "7",
+			"When": {
+				"HasFlag: anyPlayer |contains= jhLanternFestivalTrigger": true,
+				"Day": "{{Range:1,7}}",
+				"Season |contains= winter": false
+			}
+		},
+		{
+			"Name": "LanternFestivalTriggerDateToken",
+			"Value": "14",
+			"When": {
+				"HasFlag: anyPlayer |contains= jhLanternFestivalTrigger": true,
+				"Day": "{{Range:8,14}}",
+				"Season |contains= winter": false
+			}
+		},
+		{
+			"Name": "LanternFestivalTriggerDateToken",
+			"Value": "21",
+			"When": {
+				"HasFlag: anyPlayer |contains= jhLanternFestivalTrigger": true,
+				"Day": "{{Range:15,21}}",
+				"Season |contains= winter": false
+			}
+		},
+		{
+			"Name": "LanternFestivalTriggerDateToken",
+			"Value": "28",
+			"When": {
+				"HasFlag: anyPlayer |contains= jhLanternFestivalTrigger": true,
+				"Day": "{{Range:22,28}}",
+				"Season |contains= summer, winter": false
+			}
+		},
+		{
+			"Name": "LanternFestivalRecurringSeasonToken",
+			"Value": "false"
+		},
+		{
+			"Name": "LanternFestivalRecurringSeasonToken",
+			"Value": "spring",
+			"When": {
+				"HasFlag: anyPlayer |contains= jhFestivalDatespring7,jhFestivalDatespring14,jhFestivalDatespring21,jhFestivalDatespring28": true,
+			}
+		},
+		{
+			"Name": "LanternFestivalRecurringSeasonToken",
+			"Value": "summer",
+			"When": {
+				"HasFlag: anyPlayer |contains= jhFestivalDatesummer7,jhFestivalDatesummer14,jhFestivalDatesummer21": true,
+			}
+		},
+		{
+			"Name": "LanternFestivalRecurringSeasonToken",
+			"Value": "fall",
+			"When": {
+				"HasFlag: anyPlayer |contains= jhFestivalDatefall7,jhFestivalDatefall14,jhFestivalDatefall21,jhFestivalDatefall28": true,
+			}
+		},
+		{
+			"Name": "LanternFestivalRecurringDateToken",
+			"Value": "false"
+		},
+		{
+			"Name": "LanternFestivalRecurringDateToken",
+			"Value": "7",
+			"When": {
+				"HasFlag: anyPlayer |contains= jhFestivalDatespring7,jhFestivalDatesummer7,jhFestivalDatefall7": true,
+			}
+		},
+		{
+			"Name": "LanternFestivalRecurringDateToken",
+			"Value": "14",
+			"When": {
+				"HasFlag: anyPlayer |contains= jhFestivalDatespring14,jhFestivalDatesummer14,jhFestivalDatefall14": true,
+			}
+		},
+		{
+			"Name": "LanternFestivalRecurringDateToken",
+			"Value": "21",
+			"When": {
+				"HasFlag: anyPlayer |contains= jhFestivalDatespring21,jhFestivalDatesummer21,jhFestivalDatefall21": true,
+			}
+		},
+		{
+			"Name": "LanternFestivalRecurringDateToken",
+			"Value": "28",
+			"When": {
+				"HasFlag: anyPlayer |contains= jhFestivalDatespring28,jhFestivalDatesummer28,jhFestivalDatefall28": true,
+			}
+		},
+
+  /*
+  
+  {{GenderNeutralToken}}
+  
+  */
+  {
+			"Name": "GenderNeutralToken",
+			"Value": "",
+	},
+	{
+			"Name": "GenderNeutralToken",
+			"Value": ".GN",
+			"When": { "HasMod": "Hana.GNMTokens" }
+	},
+
+  		{
+			"Name": "GNMTSubjectivePronoun",
+			"Value": "false",
+		},
+		{
+			"Name": "GNMTSubjectivePronoun",
+			"Value": "{{Hana.GNMTokens/SubjectivePronoun}}",
+			"When": { "HasMod": "Hana.GNMTokens" }
+		},
+		{
+			"Name": "GNMTObjectivePronoun",
+			"Value": "false",
+		},
+		{
+			"Name": "GNMTObjectivePronoun",
+			"Value": "{{Hana.GNMTokens/ObjectivePronoun}}",
+			"When": { "HasMod": "Hana.GNMTokens" }
+		},
 
 
 

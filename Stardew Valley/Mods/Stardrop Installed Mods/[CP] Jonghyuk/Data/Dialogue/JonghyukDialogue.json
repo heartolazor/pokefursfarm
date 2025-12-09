@@ -1,64 +1,6 @@
 {
 	"Changes": [
-/*
 
-		{
-            "LogName": "JH Dialogue 0 hearts",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Jonghyuk",
-
-            "Entries": {
-                "spring":  "{{i18n: jh.spring.dialogue.zerohearts.{{Random 1,2,3,4,5}} }}",
-                 "fall":  "{{i18n: jh.fall.dialogue.zerohearts.{{Random 1,2,3,4,5}} }}",
-                 "summer":  "{{i18n: jh.summer.dialogue.zerohearts.{{Random 1,2,3,4,5}} }}",
-                 "winter":  "{{i18n: jh.winter.dialogue.zerohearts.{{Random 1,2,3,4,5}} }}",
-                    }
-        },
-
-        {
-            "LogName": "JH Dialogue 2 hearts",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Jonghyuk",
-            "When": "Hearts:Jonghyuk: 2",
-
-            "Entries": {
-                "spring":  "{{i18n: jh.spring.dialogue.twohearts.{{Random 1,2,3,4,5}} }}"
-                    }
-        },
-
-        {
-            "LogName": "JH Dialogue 4 hearts",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Jonghyuk",
-            "When": "Hearts:Jonghyuk: 4",
-
-            "Entries": {
-                "spring":  "{{i18n: jh.spring.dialogue.fourhearts.{{Random 1,2,3,4,5}} }}"
-                    }
-        },
-
-		{
-            "LogName": "JH Dialogue 6 hearts",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Jonghyuk",
-            "When": "Hearts:Jonghyuk: 6",
-
-            "Entries": {
-                "spring":  "{{i18n: jh.spring.dialogue.sixhearts.{{Random 1,2,3,4,5}} }}"
-                    }
-        },
-
-		{
-            "LogName": "JH Dialogue 8 hearts",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/Jonghyuk",
-            "When": "Hearts:Jonghyuk: 8",
-
-            "Entries": {
-                "spring":  "{{i18n: jh.spring.dialogue.eighthearts.{{Random 1,2,3,4,5}} }}"
-                    }
-        },
-*/
 		{
             "Action": "EditData",
             "Target": "Strings/schedules/Jonghyuk",
@@ -79,9 +21,8 @@
 				"dumped_Guys": "{{i18n:Jonghyuk.Dialogue.dumped_Guys}}",
 				"secondChance_Guys": "{{i18n:Jonghyuk.Dialogue.secondChance_Guys}}",
 				"MovieInvitation": "{{i18n:Jonghyuk.Dialogue.MovieInvitation}}",
-				"RejectItem_(O)460": "{{i18n:Jonghyuk.RejectMermaidPendant}}",
-                "RejectMermaidPendant": "{{i18n:Jonghyuk.RejectMermaidPendant}}",
-
+				"RejectMermaidPendant": "{{i18n:Jonghyuk.RejectMermaidPendant}}",
+                "SpouseStardrop": "{{i18n:Jonghyuk.Marriage.SpouseStardrop}}",
 
 				//spring
 				"spring_1": "{{i18n:Jonghyuk.Dialogue.spring_1}}",
@@ -145,13 +86,14 @@
 				"Sun8": "{{i18n:Jonghyuk.Dialogue.Sun8}}",
 
 				//10 Hearts
-				/*				"Mon10": "{{i18n:Jonghyuk.Dialogue.Mon10}}",
-				"Tue10": "{{i18n:Jonghyuk.Dialogue.Tue10}}",
-				"Wed10": "{{i18n:Jonghyuk.Dialogue.Wed10}}",
-				"Thu10": "{{i18n:Jonghyuk.Dialogue.Thu10}}",
-				"Fri10": "{{i18n:Jonghyuk.Dialogue.Fri10}}",
-				"Sat10": "{{i18n:Jonghyuk.Dialogue.Sat10}}",
-				"Sun10": "{{i18n:Jonghyuk.Dialogue.Sun10}}" */
+				"Mon10": "{{i18n:Jonghyuk.Marriage.Outdoor_Jonghyuk.GN}}",
+				"Tue10": "{{i18n:Jonghyuk.Marriage.patio_Jonghyuk.{{Random: 1,2}}}}",
+				"winter_Tue10": "{{i18n:Jonghyuk.Marriage.Good_7}}",
+				"Wed10": "{{i18n:Jonghyuk.Marriage.Indoor_Day_7}}",
+				"Thu10": "{{i18n:Jonghyuk.Marriage.Indoor_Day_8}}",
+				"Fri10": "{{i18n:Jonghyuk.flirtuwu}}",
+				"Sat10": "{{i18n:Jonghyuk.Marriage.Good_5}}",
+				"Sun10": "{{i18n:Jonghyuk.Marriage.Good_11}}",
 
 				
 				"Resort_Entering": "{{i18n:Jonghyuk.Dialogue.Resort_Entering}}",
@@ -339,29 +281,7 @@
 "GreenRainFinished": "{{i18n:Jonghyuk.Dialogue.GreenRainFinished}}",
 "GreenRain_2": "{{i18n:Jonghyuk.Dialogue.GreenRain_2}}",
 
-/*				"AcceptGift_424": "", //Cheese
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "",
-				"AcceptGift_": "", */
+
 				
 			}
 		}

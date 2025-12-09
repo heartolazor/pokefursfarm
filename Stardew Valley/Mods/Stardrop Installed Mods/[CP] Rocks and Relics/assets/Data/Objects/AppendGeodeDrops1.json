@@ -1,0 +1,726 @@
+{
+	"Changes": [
+		//Geode
+		{
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "535", "GeodeDrops", "Default", "RandomItemId" ],
+            "Entries": {
+                "{{ModId}}.Hornblende": "{{ModId}}.Hornblende", 
+				"{{ModId}}.Gneiss": "{{ModId}}.Gneiss", 
+				"{{ModId}}.Schist": "{{ModId}}.Schist", 
+				"{{ModId}}.Olivine": "{{ModId}}.Olivine", 
+            }
+        },
+		//Frozen Geode
+		{
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "536", "GeodeDrops", "Default", "RandomItemId" ],
+            "Entries": {
+				"{{ModId}}.LapisLazuli": "{{ModId}}.LapisLazuli", 
+				"{{ModId}}.Zircon": "{{ModId}}.Zircon", 
+				"{{ModId}}.Onyx": "{{ModId}}.Onyx", 
+            }
+        },
+		//Magma Geode
+		{
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "537", "GeodeDrops", "Default", "RandomItemId" ],
+            "Entries": {
+				"{{ModId}}.Vanadinite": "{{ModId}}.Vanadinite", 
+				"{{ModId}}.Sapphire": "{{ModId}}.Sapphire", 
+				"{{ModId}}.Peridot": "{{ModId}}.Peridot", 
+            }
+        },
+		//Omni Geode
+		{
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "749", "GeodeDrops", "Default", "RandomItemId" ],
+            "Entries": {
+                "{{ModId}}.Hornblende": "{{ModId}}.Hornblende", 
+				"{{ModId}}.Gneiss": "{{ModId}}.Gneiss", 
+				"{{ModId}}.Schist": "{{ModId}}.Schist", 
+				"{{ModId}}.Olivine": "{{ModId}}.Olivine", 
+				"{{ModId}}.Peridot": "{{ModId}}.Peridot", 
+				"{{ModId}}.LapisLazuli": "{{ModId}}.LapisLazuli", 
+				"{{ModId}}.Zircon": "{{ModId}}.Zircon", 
+				"{{ModId}}.Onyx": "{{ModId}}.Onyx", 
+				"{{ModId}}.Vanadinite": "{{ModId}}.Vanadinite", 
+				"{{ModId}}.Sapphire": "{{ModId}}.Sapphire", 
+				"{{ModId}}.Rhodochrosite": "{{ModId}}.Rhodochrosite", 
+				"{{ModId}}.Sunstone": "{{ModId}}.Sunstone", 
+				"{{ModId}}.PrismaticPieces": "{{ModId}}.PrismaticPieces", 
+            }
+        },
+		//Mudstone
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": [ "574" ],
+			"Entries": {
+				"GeodeDrops": [
+					{
+						"Chance": 0.05,
+						"Condition": "RANDOM 0.1 @addDailyLuck",
+						"Id": "Rare-Mineral",
+						"RandomItemId": [
+							"(O)566",						//Celestine
+							"(O)560",						//Ocean Stone
+							"(O)561",						//Ghost Crystal
+							"(O)556",						//Orpiment
+							"(O){{ModId}}.Vanadinite",
+						],
+					},
+					{
+						"Chance": 0.25,
+						"Condition": "RANDOM 0.25 @addDailyLuck",
+						"Id": "Uncommon-Mineral",
+						"RandomItemId": [
+							"(O)66",						//Amethyst
+							"(O)540",						//Baryte
+							"(O)542",						//Calcite
+							"(O)543",						//Dolomite
+							"(O)545",						//Fluorapatite
+							"(O)561",						//Ghost Crystal
+							"(O){{ModId}}.Halite",
+							"(O)573",						//Hematite
+							"(O)563",						//Jasper
+							"(O){{ModId}}.LapisLazuli",
+							"(O)554",						//Lemon Stone
+							"(O)552",						//Malachite
+							"(O){{ModId}}.Onyx",
+							"(O)564",						//Opal
+							"(O)559",						//Pyrite
+							"(O)80",						//Quartz
+							"(O){{ModId}}.Rhodochrosite",
+							"(O){{ModId}}.Zircon",
+						],
+					},
+					{
+						"Chance": 0.25,
+						"Condition": null,
+						"Id": "Uncommon-Ore",
+						"MinStack": 1,
+						"MaxStack": 3,
+						"ItemId": "(O)378" //Copper Ore
+					},
+					{
+						"Chance": 1.0,
+						"Condition": "RANDOM 0.4 @addDailyLuck",
+						"Id": "Common-Ore",
+						"MinStack": 2,
+					  	"MaxStack": 4,
+						"RandomItemId": [
+							"(O)380", 	//Iron Ore
+							"(O)382" 	//Coal
+						],
+					},
+					{
+					  "Chance": 1.0,
+					  "Id": "Default",
+					  "ItemId": 330,	//Clay
+					  "MinStack": 2,
+					  "MaxStack": 7,
+					}
+				],
+			}
+		},
+		//Basalt
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": [ "570" ],
+			"Entries": {
+				"Description": "[LocalizedText Strings\\Objects:Basalt_Description] [LocalizedText Strings\\Objects:FrozenGeode_Description]",
+				"GeodeDrops": [
+					{
+						"Chance": 0.05,
+						"Condition": "RANDOM 0.1 @addDailyLuck",
+						"Id": "Rare-Mineral",
+						"RandomItemId": [
+							"(O)541",						//Aerinite
+							"(O)538",						//Alamite
+							"(O)62",						//Aquamarine
+							"(O)539",						//Bixite
+							"(O)60",						//Emerald
+							"(O)565",						//Fire Opal
+							"(O)70",						//Jade
+							"(O)553",						//Neptunite
+							"(O)560",						//Ocean Stone
+							"(O){{ModId}}.Sapphire",
+						],
+					},
+					{
+						"Chance": 0.05,
+						"Id": "Rare-Ore",
+						"MinStack": 1,
+					  	"MaxStack": 2,
+						"RandomItemId": [
+							"(O)384",	//Gold Ore
+							"(O)386"	//Iridium Ore
+						],
+					},
+					{
+						"Chance": 0.25,
+						"Condition": "RANDOM 0.25 @addDailyLuck",
+						"Id": "Uncommon-Mineral",
+						"RandomItemId": [
+							"(O)66",						//Amethyst
+							"(O)540",						//Baryte
+							"(O)542",						//Calcite
+							"(O)543",						//Dolomite
+							"(O)561",						//Ghost Crystal
+							"(O)573",						//Hematite
+							"(O)563",						//Jasper
+							"(O){{ModId}}.LapisLazuli",
+							"(O)554",						//Lemon Stone
+							"(O)552",						//Malachite
+							"(O){{ModId}}.Onyx",
+							"(O)564",						//Opal
+							"(O)559",						//Pyrite
+							"(O)80",						//Quartz
+							"(O){{ModId}}.Rhodochrosite",
+							"(O){{ModId}}.Sunstone",
+						],
+					},
+					{
+						"Chance": 1.0,
+						"Condition": "RANDOM 0.4 @addDailyLuck",
+						"Id": "Common-Mineral",
+						"RandomItemId": [
+							"(O)545",						//Fluorapatite
+							"(O){{ModId}}.Zircon",
+							"(O){{ModId}}.Olivine",
+							"(O){{ModId}}.Peridot",
+						],
+					},
+					{
+						"Chance": 1.0,
+						"Id": "Common-Ore",
+						"MinStack": 4,
+						"MaxStack": 7,
+						"RandomItemId": [
+							"(O)378", 	//Copper Ore
+							"(O)380" 	//Iron Ore
+						],
+					}
+				],
+			}
+		},
+		//Sandstone
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": [ "568" ],
+			"Entries": {
+				"Description": "[LocalizedText Strings\\Objects:Sandstone_Description] [LocalizedText Strings\\Objects:FrozenGeode_Description]",
+				"GeodeDrops": [
+					{
+						"Chance": 0.05,
+						"Condition": "RANDOM 0.1 @addDailyLuck",
+						"Id": "Rare-Mineral",
+						"RandomItemId": [
+							"(O)566",						//Celestine
+							"(O)565",						//Fire Opal
+							"(O)82",						//Fire Quartz
+						],
+					},
+					{
+						"Chance": 0.05,
+						"Id": "Rare-Ore",
+						"MinStack": 1,
+					  	"MaxStack": 2,
+						"RandomItemId": [
+							"(O)384",	//Gold Ore
+						],
+					},
+					{
+						"Chance": 0.25,
+						"Condition": "RANDOM 0.25 @addDailyLuck",
+						"Id": "Uncommon-Mineral",
+						"RandomItemId": [
+							"(O)66",						//Amethyst
+							"(O)540",						//Baryte
+							"(O)542",						//Calcite
+							"(O)543",						//Dolomite
+							"(O)545",						//Fluorapatite
+							"(O)561",						//Ghost Crystal
+							"(O){{ModId}}.LapisLazuli",
+							"(O)554",						//Lemon Stone
+							"(O)552",						//Malachite
+							"(O)564",						//Opal
+							"(O){{ModId}}.Rhodochrosite",
+							"(O){{ModId}}.Zircon",
+							"(O){{ModId}}.Sunstone",
+						],
+					},
+					{
+						"Chance": 0.25,
+						"Id": "Uncommon-Ore",
+						"MinStack": 1,
+						"MaxStack": 3,
+						"ItemId": "(O)378" 	//Copper Ore
+					},
+					{
+						"Chance": 1.0,
+						"Condition": "RANDOM 0.4 @addDailyLuck",
+						"Id": "Common-Mineral",
+						"MinStack": 2,
+					  	"MaxStack": 4,
+						"RandomItemId": [
+							"(O){{ModId}}.Halite",
+							"(O)573",						//Hematite
+							"(O)560",						//Ocean Stone
+							"(O)563",						//Jasper
+							"(O){{ModId}}.Onyx",
+							"(O)559",						//Pyrite
+							"(O)80",						//Quartz
+							"(O)562",						//Tigerseye
+
+						],
+					},
+					{
+						"Chance": 1.0,
+						"Id": "Common-Ore",
+						"MinStack": 2,
+						"MaxStack": 5,
+						"ItemId": "(O)380" 	//Iron Ore
+					}
+				],
+			}
+		},
+		//Limestone
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": [ "571" ],
+			"Entries": {
+				"Description": "[LocalizedText Strings\\Objects:Limestone_Description] [LocalizedText Strings\\Objects:FrozenGeode_Description]",
+				"GeodeDrops": [
+					{
+						"Chance": 0.05,
+						"Condition": "RANDOM 0.1 @addDailyLuck",
+						"Id": "Rare-Mineral",
+						"RandomItemId": [
+							"(O)566",						//Celestine
+							"(O)560",						//Ocean Stone
+							"(O)556",						//Orpiment
+							"(O){{ModId}}.Vanadinite",
+							"(O)60",						//Emerald
+							"(O)544",						//Esperite
+							"(O)549",						//Jagoite
+							"(O)555",						//Nekoite
+						],
+					},
+					{
+						"Chance": 0.05,
+						"Condition": null,
+						"Id": "Rare-Ore",
+						"MinStack": 1,
+						"MaxStack": 2,
+						"RandomItemId": [
+							"(O)378", //Copper Ore
+							"(O)384", //Gold Ore
+						],
+					},
+					{
+						"Chance": 0.25,
+						"Condition": "RANDOM 0.25 @addDailyLuck",
+						"Id": "Uncommon-Mineral",
+						"RandomItemId": [
+							"(O)66",						//Amethyst
+							"(O)540",						//Baryte
+							"(O)545",						//Fluorapatite
+							"(O)561",						//Ghost Crystal
+							"(O){{ModId}}.Halite",
+							"(O)573",						//Hematite
+							"(O)563",						//Jasper
+							"(O){{ModId}}.LapisLazuli",
+							"(O)554",						//Lemon Stone
+							"(O)552",						//Malachite
+							"(O){{ModId}}.Onyx",
+							"(O)564",						//Opal
+							"(O)559",						//Pyrite
+							"(O)80",						//Quartz
+							"(O){{ModId}}.Rhodochrosite",
+						],
+					},
+					{
+						"Chance": 0.25,
+						"Condition": null,
+						"Id": "Uncommon-Ore",
+						"MinStack": 1,
+						"MaxStack": 3,
+						"ItemId": "(O)382" //Coal
+					},
+					{
+						"Chance": 1.0,
+						"Condition": "RANDOM 0.25 @addDailyLuck",
+						"Id": "Common-Mineral",
+						"RandomItemId": [ 
+							"(O)542",						//Calcite
+							"(O)543",						//Dolomite
+						],
+					},
+					{
+						"Chance": 1.0,
+						"Condition": "RANDOM 0.4 @addDailyLuck",
+						"Id": "Common-Ore",
+						"MinStack": 2,
+					  	"MaxStack": 5,
+						"ItemId": "(O)380", 	//Iron Ore
+					},
+					{
+					  "Chance": 1.0,
+					  "Id": "Default",
+					  "ItemId": "(O)881", //Bone Fragment
+					  "MinStack": 2,
+					  "MaxStack": 7,
+					}
+				],
+			}
+		},
+		//Slate
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": [ "576" ],
+			"Entries": {
+				"Description": "[LocalizedText Strings\\Objects:Slate_Description] [LocalizedText Strings\\Objects:FrozenGeode_Description]",
+				"GeodeDrops": [
+					{
+						"Chance": 0.05,
+						"Condition": "RANDOM 0.1 @addDailyLuck",
+						"Id": "Rare-Mineral",
+						"RandomItemId": [
+							"(O)566",						//Celestine
+							"(O)70",						//Jade
+						],
+					},
+					{
+						"Chance": 0.05,
+						"Id": "Rare-Ore",
+						"MinStack": 1,
+					  	"MaxStack": 2,
+						"RandomItemId": [
+							"(O)378",	//Copper Ore
+							"(O)384",	//Gold Ore
+						],
+					},
+					{
+						"Chance": 0.25,
+						"Condition": "RANDOM 0.25 @addDailyLuck",
+						"Id": "Uncommon-Mineral",
+						"RandomItemId": [
+							"(O)66",						//Amethyst
+							"(O)540",						//Baryte
+							"(O)542",						//Calcite
+							"(O)543",						//Dolomite
+							"(O)545",						//Fluorapatite
+							"(O)561",						//Ghost Crystal
+							"(O)573",						//Hematite
+							"(O)554",						//Lemon Stone
+							"(O)552",						//Malachite
+							"(O)564",						//Opal
+							"(O)559",						//Pyrite
+							"(O)80",						//Quartz
+							"(O){{ModId}}.Rhodochrosite",
+							"(O){{ModId}}.Zircon",
+						],
+					},
+					{
+						"Chance": 0.25,
+						"Id": "Uncommon-Ore",
+						"MinStack": 1,
+						"MaxStack": 3,
+						"ItemId": "(O)382" 	//Coal
+					},
+					{
+						"Chance": 1.0,
+						"Id": "Common-Ore",
+						"MinStack": 3,
+						"MaxStack": 6,
+						"ItemId": "(O)380" 	//Iron Ore
+					}
+				],
+			}
+		},
+		//Granite
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": [ "569" ],
+			"Entries": {
+				"Description": "[LocalizedText Strings\\Objects:Granite_Description] [LocalizedText Strings\\Objects:FrozenGeode_Description]",
+				"GeodeDrops": [
+					{
+						"Chance": 0.05,
+						"Condition": "RANDOM 0.1 @addDailyLuck",
+						"Id": "Rare-Mineral",
+						"RandomItemId": [
+							"(O)538",						//Alamite
+							"(O)539",						//Bixite
+							"(O)60",						//Emerald
+							"(O)82",						//Fire Quartz
+							"(O)547",						//Helvite
+							"(O)553",						//Neptunite
+							"(O)556",						//Orpiment
+							"(O)64",						//Ruby
+							"(O){{ModId}}.Sapphire",
+						],
+					},
+					{
+						"Chance": 0.05,
+						"Id": "Rare-Ore",
+						"ItemId": "(O)386",	//Iridium Ore
+					},
+					{
+						"Chance": 0.25,
+						"Condition": "RANDOM 0.25 @addDailyLuck",
+						"Id": "Uncommon-Mineral",
+						"RandomItemId": [
+							"(O)66",						//Amethyst
+							"(O)540",						//Baryte
+							"(O)542",						//Calcite
+							"(O)543",						//Dolomite
+							"(O)545",						//Fluorapatite
+							"(O)561",						//Ghost Crystal
+							"(O)573",						//Hematite
+							"(O){{ModId}}.LapisLazuli",
+							"(O)554",						//Lemon Stone
+							"(O)552",						//Malachite
+							"(O)564",						//Opal
+							"(O)559",						//Pyrite
+							"(O){{ModId}}.Rhodochrosite",
+							"(O){{ModId}}.Olivine",
+							"(O){{ModId}}.Peridot",
+						],
+					},
+					{
+						"Chance": 0.25,
+						"Id": "Uncommon-Ore",
+						"MinStack": 1,
+						"MaxStack": 3,
+						"RandomItemId": [
+							"(O)380", 	//Iron Ore
+							"(O)384" 	//Gold Ore
+						]
+					},
+					{
+						"Chance": 1.0,
+						"Condition": "RANDOM 0.4 @addDailyLuck",
+						"Id": "Common-Mineral",
+						"RandomItemId": [
+							"(O)62",						//Aquamarine
+							"(O)545",						//Fluorapatite
+							"(O)80",						//Quartz
+							"(O){{ModId}}.Sunstone",
+							"(O)68",						//Topaz
+							"(O){{ModId}}.Zircon",
+						],
+					},
+					{
+						"Chance": 1.0,
+						"Id": "Common-Ore",
+						"MinStack": 4,
+						"MaxStack": 7,
+						"ItemId": "(O)378" 	//Copper Ore
+					}
+				],
+			}
+		},
+		//Marble
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": [ "567" ],
+			"Entries": {
+				"Description": "[LocalizedText Strings\\Objects:Marble_Description] [LocalizedText Strings\\Objects:FrozenGeode_Description]",
+				"GeodeDrops": [
+					{
+						"Chance": 0.05,
+						"Condition": "RANDOM 0.1 @addDailyLuck",
+						"Id": "Rare-Mineral",
+						"RandomItemId": [
+							"(O)566",						//Celestine
+							"(O)60",						//Emerald
+							"(O)544",						//Esperite
+							"(O)70",						//Jade
+							"(O)549",						//Jagoite
+							"(O)555",						//Nekoite
+							"(O)556",						//Orpiment
+							"(O)64",						//Ruby
+							"(O){{ModId}}.Sapphire",
+							"(O){{ModId}}.Vanadinite",
+						],
+					},
+					{
+						"Chance": 0.05,
+						"Id": "Rare-Ore",
+						"ItemId": "(O)378",	//Copper Ore
+					},
+					{
+						"Chance": 0.25,
+						"Condition": "RANDOM 0.25 @addDailyLuck",
+						"Id": "Uncommon-Mineral",
+						"RandomItemId": [
+							"(O)66",						//Amethyst
+							"(O)540",						//Baryte
+							"(O)545",						//Fluorapatite
+							"(O)561",						//Ghost Crystal
+							"(O)573",						//Hematite
+							"(O)563",						//Jasper
+							"(O){{ModId}}.LapisLazuli",
+							"(O)554",						//Lemon Stone
+							"(O)552",						//Malachite
+							"(O){{ModId}}.Olivine",
+							"(O){{ModId}}.Onyx",
+							"(O)564",						//Opal
+							"(O){{ModId}}.Peridot",
+							"(O)559",						//Pyrite
+							"(O)80",						//Quartz
+							"(O){{ModId}}.Rhodochrosite",
+							"(O){{ModId}}.Zircon",
+						],
+					},
+					{
+						"Chance": 0.25,
+						"Id": "Uncommon-Ore",
+						"MinStack": 1,
+						"MaxStack": 4,
+						"ItemId": "(O)380", 	//Iron Ore
+					},
+					{
+						"Chance": 1.0,
+						"Condition": "RANDOM 0.4 @addDailyLuck",
+						"Id": "Common-Mineral",
+						"RandomItemId": [
+							"(O)542",						//Calcite
+							"(O)543",						//Dolomite
+						],
+					},
+				],
+			}
+		},
+		//Soapstone
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": [ "572" ],
+			"Entries": {
+				"Description": "[LocalizedText Strings\\Objects:Soapstone_Description] [LocalizedText Strings\\Objects:FrozenGeode_Description]",
+				"GeodeDrops": [
+					{
+						"Chance": 0.05,
+						"Condition": "RANDOM 0.1 @addDailyLuck",
+						"Id": "Rare-Mineral",
+						"ItemId": "(O)70",			//Jade
+					},
+					{
+						"Chance": 0.05,
+						"Id": "Rare-Ore",
+						"ItemId": "(O)380",	//Iron Ore
+					},
+					{
+						"Chance": 0.25,
+						"Condition": "RANDOM 0.25 @addDailyLuck",
+						"Id": "Uncommon-Mineral",
+						"RandomItemId": [
+							"(O)66",						//Amethyst
+							"(O)542",						//Calcite
+							"(O)543",						//Dolomite
+							"(O)545",						//Fluorapatite
+							"(O)561",						//Ghost Crystal
+							"(O)573",						//Hematite
+							"(O)554",						//Lemon Stone
+							"(O)552",						//Malachite
+							"(O){{ModId}}.Olivine",
+							"(O)564",						//Opal
+							"(O){{ModId}}.Peridot",
+							"(O)559",						//Pyrite
+							"(O)80",						//Quartz
+							"(O){{ModId}}.Rhodochrosite",
+							"(O){{ModId}}.Zircon",
+						],
+					},
+					{
+						"Chance": 1.0,
+						"Id": "Default",
+						"MinStack": 1,
+						"MaxStack": 10,
+						"ItemId": "(O)390"	//Stone
+					}
+				],
+			}
+		},
+		//Obsidian
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": [ "575" ],
+			"Entries": {
+				"Description": "[LocalizedText Strings\\Objects:Obsidian_Description] [LocalizedText Strings\\Objects:FrozenGeode_Description]",
+				"GeodeDrops": [
+					{
+						"Chance": 0.05,
+						"Condition": "RANDOM 0.1 @addDailyLuck",
+						"Id": "Rare-Mineral",
+						"RandomItemId": [
+							"(O)565",						//Fire Opal
+							"(O)560",						//Ocean Stone
+						],
+					},
+					{
+						"Chance": 0.05,
+						"Id": "Rare-Ore",
+						"ItemId": "(O)378",	//Copper Ore
+					},
+					{
+						"Chance": 0.25,
+						"Condition": "RANDOM 0.25 @addDailyLuck",
+						"Id": "Uncommon-Mineral",
+						"RandomItemId": [
+							"(O)66",						//Amethyst
+							"(O)542",						//Calcite
+							"(O)543",						//Dolomite
+							"(O)545",						//Fluorapatite
+							"(O)561",						//Ghost Crystal
+							"(O)573",						//Hematite
+							"(O)563",						//Jasper
+							"(O)554",						//Lemon Stone
+							"(O)552",						//Malachite
+							"(O){{ModId}}.Olivine",
+							"(O){{ModId}}.Onyx",
+							"(O)564",						//Opal
+							"(O){{ModId}}.Peridot",
+							"(O)559",						//Pyrite
+							"(O)80",						//Quartz
+							"(O){{ModId}}.Sunstone",
+							"(O){{ModId}}.Zircon",
+						],
+					},
+					{
+						"Chance": 0.25,
+						"Id": "Uncommon-Ore",
+						"MinStack": 1,
+						"MaxStack": 3,
+						"RandomItemId": [
+							"(O)380", 	//Iron Ore
+							"(O)384", 	//Gold Ore
+						] 
+					},
+					{
+						"Chance": 1.0,
+						"Id": "Default",
+						"MinStack": 1,
+						"MaxStack": 10,
+						"ItemId": "(O)390"	//Stone
+					}
+				],
+			}
+		},
+    ]
+}

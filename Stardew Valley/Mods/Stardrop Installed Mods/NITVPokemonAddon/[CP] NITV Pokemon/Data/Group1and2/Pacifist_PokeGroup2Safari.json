@@ -61,6 +61,7 @@
           "alternativeDropChance": 1.0,
           "itemDropItemIds": [
             "(O)NatInValley.Creature.Butterfree_Roam_Shiny",
+            "(TR)NITVPokemon_ButterfreeTrinket",
             "114", //ancient seed
             "745", //strawberry seeds
             "724", //maple
@@ -70,13 +71,14 @@
           "itemDropItemChances": [
             0.01,
             0.05,
+            0.05,
             0.2,
             0.2,
             0.2,
             0.2
           ],
-          "itemDropOnlyItemBools": [ false, false, false, false, false, false ],
-          "itemDropExclusiveItem": [ true, true, true, true, true, true ]
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true ]
         },
 
         "Beedrill_Attack_Safari": {
@@ -135,6 +137,7 @@
           "alternativeDropChance": 1.0,
           "itemDropItemIds": [
             "(O)NatInValley.Creature.Beedrill_Attack_Shiny",
+            "(TR)NITVPokemon_BeedrillTrinket",
             "114", //ancient seed
             "745", //strawberry seeds
             "724", //maple
@@ -144,13 +147,14 @@
           "itemDropItemChances": [
             0.01,
             0.05,
+            0.05,
             0.2,
             0.2,
             0.2,
             0.2
           ],
-          "itemDropOnlyItemBools": [ false, false, false, false, false, false ],
-          "itemDropExclusiveItem": [ true, true, true, true, true, true ]
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true ]
         },
 
         "Ekans_Attack_Safari": {
@@ -210,6 +214,7 @@
           "itemDropItemIds": [
             "(O)NatInValley.Creature.Ekans_Attack_Shiny",
             "PrizeTicket",
+            "(TR)NITVPokemon_EkansTrinket",
             "825", //snake skull
             "826", //snake vert
             "879", //monster musk
@@ -218,13 +223,14 @@
           "itemDropItemChances": [
             0.01,
             0.01,
+            0.05,
             0.3,
             0.3,
             0.3,
             0.3
           ],
-          "itemDropOnlyItemBools": [ false, false, false, false, false, false ],
-          "itemDropExclusiveItem": [ true, true, true, true, true, true ]
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true ]
         },
 
        "Poliwag_Swim_Safari": {
@@ -431,6 +437,7 @@
             "GoldenAnimalCracker",
             "(O)NatInValley.Creature.Growlithe_Roam_Shiny",
             "446", //rabbit's foot
+            "(TR)NITVPokemon_GrowlitheTrinket",
             "Book_Void", //monster compendium
             "82", //fire quartz
             "226", //spicy eel
@@ -441,12 +448,13 @@
             0.01,
             0.05,
             0.05,
+            0.05,
             0.1,
             0.1,
             0.1
           ],
-          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false ],
-          "itemDropExclusiveItem": [ true, true, true, true, true, true, true ]
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true, true ]
         },
 
         "Venonat_Stump_Safari": {
@@ -737,8 +745,8 @@
           "itemDropItemIds": [
             "PrizeTicket",
             "103", //ancient doll
-            "(TR)NITVPokemon_GastlyTrinket",
             "(O)NatInValley.Creature.Gastly_Attack_Shiny",
+            "(TR)NITVPokemon_GastlyTrinket",
             "Book_Void", //monster compendium
             "561", //ghost crystal
             "879" //monster musk
@@ -746,8 +754,8 @@
           "itemDropItemChances": [
             0.01, //prize ticket
             0.01,
-            0.01, //trinket
             0.01, //shiny
+            0.05, //trinket
             0.1,
             0.2,
             0.1
@@ -818,6 +826,7 @@
             "114", //ancient seed
             "124", //golden mask
             "125", //golden relic
+            "(TR)NITVPokemon_SandshrewTrinket",
             "261", //totem desert
             "749", //omni geode
             "108", //rare disc
@@ -826,13 +835,14 @@
             "330" //clay
           ],
           "itemDropItemChances": [
+            0.001, //dino egg
             0.001,
             0.001,
-            0.001,
+            0.01, //shiny
             0.01,
             0.01,
-            0.01,
-            0.01,
+            0.01, //golden relic
+            0.05, //trinket
             0.05,
             0.05,
             0.1,
@@ -840,8 +850,8 @@
             0.3,
             0.3
           ],
-          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false, false, false, false, false, false, false ],
-          "itemDropExclusiveItem": [ true, true, true, true, true, true, true, true, true, true, true, true, true ]
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false, false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true, true, true, true, true, true, true, true ]
         },
 
         "Sandshrew_Attack_Safari": {
@@ -906,6 +916,7 @@
             "114", //ancient seed
             "124", //golden mask
             "125", //golden relic
+            "(TR)NITVPokemon_SandshrewTrinket",
             "261", //totem desert
             "749", //omni geode
             "108", //rare disc
@@ -914,13 +925,14 @@
             "330" //clay
           ],
           "itemDropItemChances": [
+            0.001, //dino egg
             0.001,
             0.001,
-            0.001,
+            0.01, //shiny
             0.01,
             0.01,
-            0.01,
-            0.01,
+            0.01, //golden relic
+            0.05, //trinket
             0.05,
             0.05,
             0.1,
@@ -928,8 +940,8 @@
             0.3,
             0.3
           ],
-          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false, false, false, false, false, false, false ],
-          "itemDropExclusiveItem": [ true, true, true, true, true, true, true, true, true, true, true, true, true ]
+          "itemDropOnlyItemBools": [ false, false, false, false, false, false, false, false, false, false, false, false, false, false ],
+          "itemDropExclusiveItem": [ true, true, true, true, true, true, true, true, true, true, true, true, true, true ]
         }
       }
     }

@@ -18,6 +18,7 @@
     "Name.Nadia": "Nadia",
     "Name.Ophelia": "Ophelia",
     "Name.PanSBV": "Pan",
+    "Name.Raccoon": "Raccoon",
     "Name.Reihana": "Reihana",
     "Name.Silas": "Silas",
 
@@ -56,6 +57,7 @@
     "config.FestivalPatches.description": "Disables festival patches but keeps the NPCs where they are. Only disable if you run into a visual issue that annoys you.",
     "config.BoardUnlock.description": "Toggles whether you want the Sunberry special order board to unlock when the vanilla special orders board unlocks, or when any player reaches 4 hearts with Elias.",
     "config.IncludeNPCsInPerfection.description": "Whether or not Sunberry Village NPCs count towards perfection. True by default. Set to false if you don't want them to count.",
+    "config.RemoveSunberryKitchen.description": "Removes the kitchen from the Sunberry Farmhouse if you purchase the Sunberry Farm. False by default. Set to true if you want to remove it and have a completely empty house.", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Locations for Event Lookup/1.6 Display Names
     //-------------------------
@@ -150,9 +152,9 @@
     "WorldMap.Village.ReiHouse": "???", // FOR TRANSLATORS: NEW IN 1.0.3
     "WorldMap.Village.ThyHouse": "Thysania's House", // FOR TRANSLATORS: NEW IN 1.0.3
     "WorldMap.Village.AlchemistHouse": "Alchemist's House", // FOR TRANSLATORS: NEW IN 1.0.3
-	"Worldmap.Village.Sunberrymountains": "Sunberry Mountains", // FOR TRANSLATORS: NEW IN 1.0.3
-	"Worldmap.Village.Sunberryvillage": "Sunberry Village", // FOR TRANSLATORS: NEW IN 1.0.3
-	"Worldmap.Village.Sunberryforest": "Sunberry Forest", // FOR TRANSLATORS: NEW IN 1.0.3
+	"Worldmap.Village.SunberryMountains": "Sunberry Mountains", // FOR TRANSLATORS: NEW IN 1.0.3
+	"Worldmap.Village.SunberryVillage": "Sunberry Village", // FOR TRANSLATORS: NEW IN 1.0.3
+	"Worldmap.Village.SunberryForest": "Sunberry Forest", // FOR TRANSLATORS: NEW IN 1.0.3
 
 
     //Dynamic Tokens
@@ -191,6 +193,7 @@
     "Gift.Love.Nadia": "Placeholder.",
     "Gift.Love.Ophelia": "Thanks, I love it!",
     "Gift.Love.Pan": "Placeholder.",
+    "Gift.Love.Raccoon": "The raccoon chirps happily! He's pleased with you and has decided to spare you from his shenanigans today.", // FOR TRANSLATORS: NEW IN 1.0.4
     "Gift.Love.Reihana": "This is a... surprisingly good gift. Thanks.",
     "Gift.Love.Silas": "Wow, thank you! I love it.",
     //Like
@@ -211,6 +214,7 @@
     "Gift.Like.Nadia": "Placeholder.",
     "Gift.Like.Ophelia": "Thanks, this is nice.",
     "Gift.Like.Pan": "Placeholder.",
+    "Gift.Like.Raccoon": "The raccoon purrs. He's happy with your gift and has decided to spare you from his shenanigans for the next hour.", // FOR TRANSLATORS: NEW IN 1.0.4
     "Gift.Like.Reihana": "Huh, this is nice. Thanks.",
     "Gift.Like.Silas": "This is a nice gift. Thank you!.",
     //Dislike
@@ -231,6 +235,7 @@
     "Gift.Dislike.Nadia": "Placeholder.",
     "Gift.Dislike.Ophelia": "...This is disappointing.",
     "Gift.Dislike.Pan": "Placeholder.",
+    "Gift.Dislike.Raccoon": "The raccoon glares at you. He doesn't look happy with his gift.", // FOR TRANSLATORS: NEW IN 1.0.4
     "Gift.Dislike.Reihana": "...Okay, then.",
     "Gift.Dislike.Silas": "Hmph. Why would you give this to me?",
     //Hate
@@ -251,6 +256,7 @@
     "Gift.Hate.Nadia": "Placeholder.",
     "Gift.Hate.Ophelia": "Hm. I'm not sure why you thought I'd like this. Get it out of my face, please.",
     "Gift.Hate.Pan": "Placeholder.",
+    "Gift.Hate.Raccoon": "The raccoon hisses at you. He looks quite angry. In fact, he's stomping on your gift!", // FOR TRANSLATORS: NEW IN 1.0.4
     "Gift.Hate.Reihana": "...Have you by any chance seen all the weapons I have in my house, @?",
     "Gift.Hate.Silas": "Really, @? I hate this.",
     //Neutral
@@ -271,6 +277,7 @@
     "Gift.Neutral.Nadia": "Placeholder.",
     "Gift.Neutral.Ophelia": "Hm. I'm not sure this is useful to me.",
     "Gift.Neutral.Pan": "Placeholder.",
+    "Gift.Neutral.Raccoon": "The raccoon doesn't seem to be affected by your gift. He's simply holding on to it and inspecting it.", // FOR TRANSLATORS: NEW IN 1.0.4
     "Gift.Neutral.Reihana": "Thanks, I guess.",
     "Gift.Neutral.Silas": "Huh, thank you, I guess.",
 
@@ -756,7 +763,7 @@
     "Gift.RadishSalad.Moon": "...Moon hates salads.$s#$b#Maybe I'll leave it for Derya to eat.",
     "Gift.Starfruit.Moon.1": "Blegh, Moon hates starfruit. Moon's junimo friends love it, but it tastes sour and bad.$s",
     "Gift.Starfruit.Moon.2": "...Why is it called starfruit? Moon knows real stars don't look like this.$a",
-    "Gift.Starfruit.Moom.3": "No. No starfruit for Moon. Tastes sour.$a",
+    "Gift.Starfruit.Moon.3": "No. No starfruit for Moon. Tastes sour.$a",
 
     //JA Items
 
@@ -846,6 +853,15 @@
 
     //Love
     "Gift.StardropTea.Pan": "Arf?$4#$b#%Pan drinks from the cup hesitantly before wagging her tail and drinking some more. She seems to really like it!",
+
+    //R   A   C   C   O   O   N
+
+    //Positive/Negative
+    "Gift.Positive.Raccoon": "The raccoon chitters happily! He's so glad you figured out when his birthday is AND got him a nice gift!",
+    "Gift.Negative.Raccoon": "The raccoon hisses at you. He's disappointed you gave him a bad gift. AND on his birthday, nonetheless.",
+
+    //Love
+    "Gift.StardropTea.Raccoon": "The raccoon tilts his head in confusion as he sniffs the tea. He takes a sip and starts twirling around! You join him in his little dance.",
 
     //R   E   I   H   A   N   A
 
@@ -981,6 +997,10 @@
     "Ophelia.Dialogue.Fountain3": "It's always good to see everyone here. I try to make sure we keep these gatherings well-organized.$h",
     "Ophelia.Dialogue.TwilightFestival1": "I'm glad you were able to make it, farmer. We're happy to have you here.#$b#Please, feel free to look around or come back when the festival starts at 4 PM.$h",
     "Ophelia.Dialogue.TwilightFestival2": "I'm incredibly happy to see how much effort everyone has put into their stalls. It makes me proud of the community we've created.$h",
+
+    // FOR TRANSLATORS: NEW IN 1.0.4
+    "Raccoon.Dialogue.TwilightFestival1": "The raccoon doesn't seem to be too happy about being confined to the pet daycare.",
+    "Raccoon.Dialogue.TwilightFestival2": "The raccoon still doesn't seem to be too happy about being confined to the pet daycare. It *does* look like he's trying to hatch an escape plan...",
 
     "Reihana.Dialogue.Fountain1": "Ugh, I can't believe I have to be around these people. At least we can stay back here.$12",
     "Reihana.Dialogue.Fountain2": "Hah, Aicha tried crawling in to grab some food. Just... completely forgetting she can transform or go invisible.$8",
@@ -1874,6 +1894,7 @@
     "event-20031467.12": "Thank you for listening. I really appreciate it, @. I'll see you around.$h",
 
     // Elias 4 Hearts Event
+    // FOR TRANSLATORS: NEW IN 1.0.4. event-20031468q1 and q2 are new, the rest of the event is the same.
     "event-20031468.01": "Ah, it's you. You caught me on my break. I'm makin' somethin' quick before I get back to work.$h",
     "event-20031468.02": "I learnt how to cook properly from both Miyoung and Jumana.$h",
     "event-20031468.03": "Ari helped teach me, too. All these years and that man still won't believe me when I tell him I enjoy his food.$u",
@@ -1882,6 +1903,8 @@
     "event-20031468.06": "No, thank you.",
     "event-20031468.07": "Alright, come on over.",
     "event-20031468.08": "Elias lifts up a spoonful of rice to your mouth, placing his hand beneath it.",
+    "event-20031468.q1": "Take the spoon from his hand",
+    "event-20031468.q2": "Let him feed you.",
     "event-20031468.09": "You taste the rice. It's very flavorful!",
     "event-20031468.10": "Good, right? I adjusted the recipe a little since I learnt how to make it.$h",
     "event-20031468.11": "The secret is... Actually, I'll just send you the recipe someday. Can't let you in on all my secrets at once.$10",
@@ -2171,6 +2194,122 @@
     "event-20031484.16": "I understand. I'm just happy to have you here. We don't gotta do anythin' you ain't comfortable with.$7",
     "event-20031484.17": "Say, why don't we get outta here and grab a bite? My treat.$h",
 
+    // Ophelia 10 Hearts Special Order
+    // FOR TRANSLATORS: NEW IN 1.0.4
+    "event-20031485.01": "Hello, @. I hope you don't mind my sudden visit. I had something to tell you and it would be better relayed face to face.$h",
+    "event-20031485.02": "I've grown fond of you, farmer. You know that? I'm happy to call you a friend.$9",
+    "event-20031485.03": "Now, I won't take up much of your time. I have a very strong weapon, the Sunslash, that was given to me by my mentor a long time ago.",
+    "event-20031485.04": "It's one of a kind, truly. Which is why I want you to have it.$h",
+    "event-20031485.05": "I'm not giving you the actual weapon, don't worry!$u#$b#I'm giving a blueprint to Maia so she can forge one for you, too.$h",
+    "event-20031485.06": "I'll give you a list of the materials you need. Whenever you're ready, just drop them at the inn.$h",
+
+    // Iman 4 Hearts Event
+    // FOR TRANSLATORS: NEW IN 1.0.4
+    "event-20031486.01": "I've noticed you've been heading down to the forest a lot recently. Is it about...?",
+    "event-20031486.02": "The barn? Yeah. Gotta have a reminder of how badly I messed up.$11",
+    "event-20031486.03": "Hey, now. You didn't mess up. You didn't ask to be put in that situation.$s",
+    "event-20031486.04": "*sigh*",
+    "event-20031486.05": "I guess so, yeah. Doesn't really change the fact that I could've...$s",
+    "event-20031486.06": "You know that my offer to help is still available, right? My sister has also offered. You don't have to do this alone.$h",
+    "event-20031486.07": "I know, I know. It just... doesn't feel right to do that to you or Nadia.$s",
+    "event-20031486.08": "Oh, hey, @. Were we being too loud? Sorry, we haven't been able to find our inside voices just yet.$10",
+    "event-20031486.09": "Hey, @ might know a thing or two about barns.$h",
+    "event-20031486.10": "Ezra...$7",
+    "event-20031486.11": "Sure, what do you want to know?",
+    "event-20031486.12": "I don't know all *that* much, but I'll answer what I can.",
+    "event-20031486.13": "Thank you! Hypothetically speaking, how much would it cost and what materials would we need?$h",
+    "event-20031486.14": "That's not bad! Thank you for the info, @.$6",
+    "event-20031486.15": "I can't do this, Ezra. I'm sorry.$s",
+    "event-20031486.16": "Iman...$s",
+    "event-20031486.17": "Sorry, @. I gotta go check on her.",
+    "event-20031486.18": "Maybe I should check on Iman once she's had some space.",
+
+    // Iman 6 Hearts Event
+    // FOR TRANSLATORS: NEW IN 1.0.4
+    "event-20031487.01": "Alright, girl. Spill. What did you do?$7",
+    "event-20031487.02": "Okay, before I tell you, I need you to know that I HAD to do it. I couldn't just leave her behind.$13",
+    "event-20031487.03": "Iman.",
+    "event-20031487.04": "Who's 'her'? What's going on?$7",
+    "event-20031487.05": "I think it'll be easier if I just show you.$13",
+    "event-20031487.06": "Iman.$8",
+    "event-20031487.07": "Why is there an alpaca in front of the cat cafe?$8",
+    "event-20031487.08": "I- I was out at a nearby town, and- and she was in bad shape, and I just had to-$s",
+    "event-20031487.09": "I had to rescue her. I took her to a vet and paid someone to transport her back here.$s",
+    "event-20031487.10": "Iman... I know you had good intentions, but now what?$s",
+    "event-20031487.11": "I-I don't know. I didn't think that far ahead, okay? I just needed to save her.$a",
+    "event-20031487.12": "Hey, I'm on your side. You don't need to get angry with me, I'm just trying to help you. Isn't that what you called me here for?$a",
+    "event-20031487.13": "I... I'm sorry. You're right. I just don't know what to do now. If I had that barn, then...$s",
+    "event-20031487.14": "Why don't we take her to Marnie?",
+    "event-20031487.15": "Why don't you keep her loose in the village?",
+    "event-20031487.16": "That's not a bad idea. She'll be able to help her recover, she's an expert!$h",
+    "event-20031487.17": "Oh. I can't believe I didn't think of that. Thank you, @.$12",
+    "event-20031487.18": "I don't think that's a good idea. We need someone who can help with her recovery.$s",
+    "event-20031487.19": "Why don't we ask Marnie for help? She's an expert, surely she'll be able to take care of her.$h",
+    "event-20031487.20": "Oh. I can't believe I didn't think of that. Thank you, Ezra.$12",
+    "event-20031487.21": "...I'm going to walk back inside now. I saw absolutely nothing and want to know nothing.$12",
+    "event-20031487.22": "Well... I think that's our sign to start heading over to Marnie's.$3",
+    "event-20031487.23": "Do you wanna join us, @? You don't have to if you've got stuff to do.",
+    "event-20031487.24": "I'll join you.",
+    "event-20031487.25": "I have work to do, sorry.",
+    "event-20031487.26": "Alright, no problem. Thank you for showing up for me. I appreciate it.$12",
+    "event-20031487.27": "Great! Let's go, then.$h",
+    "event-20031487.28": "It looks like the vet patched her up well, but we'll still need to keep an eye on her for a while.",
+    "event-20031487.29": "Thank you, Marnie. Really. I made a reckless decision and I don't know how it would've gone if you weren't here.$s",
+    "event-20031487.30": "Nonsense! You're passionate, I can tell. You would've found a way.$h",
+    "event-20031487.31": "I have to go now, but I'll keep you updated on her recovery. Feel free to stop by if you want to check on her yourself.$h",
+    "event-20031487.32": "Thank you, you're an angel. I'll drop by for sure.$h",
+    "event-20031487.33": "Goodbye, little one. I'll come back for you, I promise.$s",
+    "event-20031487.34": "Iman seems to have gotten attached to the alpaca. I hope she makes a full recovery.",
+
+    // Iman 8 Hearts Pt. 1 Event
+    // FOR TRANSLATORS: NEW IN 1.0.4
+    "event-20031488.01": "Oh, before you all head off, I need to talk to you.",
+    "event-20031488.02": "Hey, @. Mind joining us? I want you to be included, too.$12",
+    "event-20031488.03": "I haven't been the best at asking for help. Like, ever. I always feel guilty doing so for some reason.$13",
+    "event-20031488.04": "Iman takes a deep breath.",
+    "event-20031488.05": "But... rescuing Fluffy has made me realize that I shouldn't hesitate to ask for help when I need it.",
+    "event-20031488.06": "And everyone here has been so kind, I guess I felt like asking for help would be taking advantage of that.$12",
+    "event-20031488.07": "...You named the alpaca Fluffy? Creative.$6",
+    "event-20031488.08": "Shut up! I'm trying to be vulnerable right now and you're totally ruining it.$10",
+    "event-20031488.09": "I guess what I'm asking is, I need help getting my barn all set up. I was doing that when I first moved to Sunberry, but...$s",
+    "event-20031488.10": "Things went wrong, and I haven't been able to do so. At least not on my own.$s",
+    "event-20031488.11": "Oh, Iman... First of all, I'm mad that you didn't just come to me sooner!$6",
+    "event-20031488.12": "But, I understand. I know it's hard. Second of all, I'm absolutely ready to help with whatever you need.#$b#I can make you a list of the materials I need, but I won't charge you any money.",
+    "event-20031488.13": "Robin... Ugh, you're gonna make me cry and I do NOT cry in public.$u",
+    "event-20031488.14": "I'll mostly need help gathering wood, stone, and paint.$h",
+    "event-20031488.15": "What should I contribute?",
+    "event-20031488.16": "Wood.",
+    "event-20031488.17": "Stone.",
+    "event-20031488.18": "Red paint.",
+    "event-20031488.19": "Perfect!$h",
+    "event-20031488.20": "I should have some stone to spare, I'll cover that.$h",
+    "event-20031488.21": "I have plenty of material to make some red paint. I can take care of that part.$h",
+    "event-20031488.22": "You're all so kind. I owe you all big time. Thank you so, so much.$12",
+    "event-20031488.23": "You know I'd do anything for you. I've got your back, always.$3",
+    "event-20031488.24": "Great! So we're all set. Drop off your materials by the barn in Sunberry Forest, and I'll get to work when it's all ready.$h",
+    "event-20031488.25": "I should have some wood to spare, I'll cover that.$h",
+    "event-20031488.26": "I... was gonna pick the red paint, but it's alright, I can gather some wood.$h",
+    "event-20031488.27": "YOU will gather the wood?$u",
+    "event-20031488.28": "Fine, Elias and I will gather the wood. He's strong, may as well put him to use.$u",
+    "event-20031488.29": "A quest has been added to your journal!",
+
+    // Iman 8 Hearts Pt. 2 Event
+    // FOR TRANSLATORS: NEW IN 1.0.4
+    "event-20031489.01": "Beautiful!",
+    "event-20031489.02": "Oh, dear. I haven't done public speaking in almost a decade. This is a little scary.$13",
+    "event-20031489.03": "You got this, rancher!",
+    "event-20031489.04": "Ahem... Thank you to everyone who showed up. Not just to the opening of the barn, but for me as well.$12",
+    "event-20031489.05": "I moved to Sunberry not too long ago, but the people here embraced me like one of their own immediately.#$b#I will never be able to express just how grateful I am to have you all in my life.$12",
+    "event-20031489.06": "Thanks to all of you, especially Ezra, @, Marnie, and Robin, I'm finally able to say my dream came true.$u",
+    "event-20031489.07": "I've always wanted to raise animals and care for them. It's been my dream since I was a little girl.$h",
+    "event-20031489.08": "But... I had to deal with my past first. It held me back for years, and so I had to put this project on pause.$s",
+    "event-20031489.09": "But with your help, I'm now a proud rancher!$12",
+    "event-20031489.10": "Yeah!",
+    "event-20031489.11": "It really does take a village. Thank you all, from the bottom of my heart.$u",
+    "event-20031489.12": "I will get to work tomorrow, and I'll be bringing in Fluffy the alpaca, as well as a few friends.$h",
+    "event-20031489.13": "Marnie and I have worked out a deal, and our alpacas will be sold through her for anyone who wishes to raise these lovely animals.$u",
+    "event-20031489.14": "What a ride! Iman has finally opened up the barn of her dreams. I can buy alpacas from Marnie now.",
+
     // Prank Goes Wrong - Blake and Lyenne's SO event
     "event-PrankGoesWrong.01": "Hehehe...",
     "event-PrankGoesWrong.02": "Here they come!",
@@ -2189,6 +2328,15 @@
     "event-PrankGoesWrong.15": "*sigh*",
     "event-PrankGoesWrong.16": "If you'll excuse me, farmer, I need to go get cleaned up.$15",
     "event-PrankGoesWrong.17": "...And ask Ophelia if it's too late to un-adopt that kid.$17",
+
+    // Wedding 
+    // FOR TRANSLATORS: NEW IN 1.0.4
+    "SBVWedding.01": "Friends, family, and loved ones. We are here today to celebrate love, a lifelong bond.$h#$b#There's no better feeling than finding your person.$h",
+    "SBVWedding.02": "The one who really sees you. The one who loves you endlessly. The one who wishes to spend the rest of their life by your side.$h#$b#And so, it is my great honor to unite @ and %spouse in the bonds of marriage on this beautiful day.$u",
+    "SBVWedding.03": "@... %spouse... #$b#I'm honored to be here and witness you seal the bond of your love.$h#$b#As the administrator of Sunberry Village, and regional bearer of the matrimonial seal, I now pronounce you life partners!$u",
+    "SBVWedding.04": "You may kiss.$h",
+    "SBVWedding.05": "Yay!",
+    "SBVWedding.06": "Congrats!",
 
     //Animation Dialogue
     //------------------
@@ -2258,33 +2406,33 @@
 
     // Maia First Weapon (Theirin's Sword)
     "SBV.SpecialOrder.MaiaWeapon1_Name": "Maia's New Sword",
-    "SBV.SpecialOrder.MaiaWeapon1_Text": "I may or may not have overworked myself last week (look away, mother) and I'm unable to go into the caves to gather materials for this new sword I wanna make. If you gather the materials, please leave 'em in the box in the back room.",
+    "SBV.SpecialOrder.MaiaWeapon1_Text": "I may or may not have overworked myself last week (look away, mother) and I'm unable to go into the caves to gather materials for this new sword I wanna make. If you gather the materials, please leave 'em in the box in the back room of Silas' Blacksmith.", // FOR TRANSLATORS: NEW IN 1.0.4 (Added clarification on where the back room is. This is changed for all of Maia's weapon special orders)
     "SBV.SpecialOrder.MaiaWeapon1_Objective_Text_0": "Collect 5 Aquamarine.",
     "SBV.SpecialOrder.MaiaWeapon1_Objective_Text_1": "Collect 5 Frozen Tears.",
     "SBV.SpecialOrder.MaiaWeapon1_Objective_Text_2": "Collect 15 Iron Bars.",
-    "SBV.SpecialOrder.MaiaWeapon1_Objective_Text_3": "Drop off 5 Aquamarine in the back room.",
-    "SBV.SpecialOrder.MaiaWeapon1_Objective_Text_4": "Drop off 5 Frozen Tears in the back room.",
-    "SBV.SpecialOrder.MaiaWeapon1_Objective_Text_5": "Drop off 15 Iron Bars in the back room.",
+    "SBV.SpecialOrder.MaiaWeapon1_Objective_Text_3": "Drop off 5 Aquamarine in the back room of Silas' Blacksmith..",
+    "SBV.SpecialOrder.MaiaWeapon1_Objective_Text_4": "Drop off 5 Frozen Tears in the back room of Silas' Blacksmith..",
+    "SBV.SpecialOrder.MaiaWeapon1_Objective_Text_5": "Drop off 15 Iron Bars in the back room of Silas' Blacksmith..",
 
     // Maia Second Weapon (Dawne's Battle Axe)
     "SBV.SpecialOrder.MaiaWeapon2_Name": "Maia's Battle Axe",
-    "SBV.SpecialOrder.MaiaWeapon2_Text": "I found a blueprint of an axe that once belonged to a hero named Dawne. I'd like to recreate it, but I'm running low on materials. Drop the items in the box in the back room, I'll make it worth your while.",
+    "SBV.SpecialOrder.MaiaWeapon2_Text": "I found a blueprint of an axe that once belonged to a hero named Dawne. I'd like to recreate it, but I'm running low on materials. Drop the items in the box in the back room of Silas' Blacksmith, I'll make it worth your while.",
     "SBV.SpecialOrder.MaiaWeapon2_Objective_Text_0": "Collect 5 Topaz.",
     "SBV.SpecialOrder.MaiaWeapon2_Objective_Text_1": "Collect 10 Gold Bars.",
     "SBV.SpecialOrder.MaiaWeapon2_Objective_Text_2": "Collect 15 Iron Bars.",
-    "SBV.SpecialOrder.MaiaWeapon2_Objective_Text_3": "Drop off 5 Topaz in the back room.",
-    "SBV.SpecialOrder.MaiaWeapon2_Objective_Text_4": "Drop off 10 Gold Bars in the back room.",
-    "SBV.SpecialOrder.MaiaWeapon2_Objective_Text_5": "Drop off 15 Iron Bars in the back room.",
+    "SBV.SpecialOrder.MaiaWeapon2_Objective_Text_3": "Drop off 5 Topaz in the back room of Silas' Blacksmith..",
+    "SBV.SpecialOrder.MaiaWeapon2_Objective_Text_4": "Drop off 10 Gold Bars in the back room of Silas' Blacksmith..",
+    "SBV.SpecialOrder.MaiaWeapon2_Objective_Text_5": "Drop off 15 Iron Bars in the back room of Silas' Blacksmith..",
 
     // Maia Third Weapon (Dragonfang)
     "SBV.SpecialOrder.MaiaWeapon3_Name": "The Dragonfang",
-    "SBV.SpecialOrder.MaiaWeapon3_Text": "I stayed up last night planning out this sword and I think it'll be worthwhile. Elias told me one of the items I need is native to Ginger Island. Unfortunately, I won't be able to get it myself, so any help is appreciated. Drop 'em in the box in the back room, please.",
+    "SBV.SpecialOrder.MaiaWeapon3_Text": "I stayed up last night planning out this sword and I think it'll be worthwhile. Elias told me one of the items I need is native to Ginger Island. Unfortunately, I won't be able to get it myself, so any help is appreciated. Drop 'em in the box in the back room of Silas' Blacksmith, please.",
     "SBV.SpecialOrder.MaiaWeapon3_Objective_Text_0": "Collect 3 Dragon Teeth.",
     "SBV.SpecialOrder.MaiaWeapon3_Objective_Text_1": "Collect 10 Solar Essence.",
     "SBV.SpecialOrder.MaiaWeapon3_Objective_Text_2": "Collect 15 Iron Bars.",
-    "SBV.SpecialOrder.MaiaWeapon3_Objective_Text_3": "Drop off 3 Dragon Teeth in the back room.",
-    "SBV.SpecialOrder.MaiaWeapon3_Objective_Text_4": "Drop off 10 Solar Essence in the back room.",
-    "SBV.SpecialOrder.MaiaWeapon3_Objective_Text_5": "Drop off 15 Iron Bars in the back room.",
+    "SBV.SpecialOrder.MaiaWeapon3_Objective_Text_3": "Drop off 3 Dragon Teeth in the back room of Silas' Blacksmith..",
+    "SBV.SpecialOrder.MaiaWeapon3_Objective_Text_4": "Drop off 10 Solar Essence in the back room of Silas' Blacksmith..",
+    "SBV.SpecialOrder.MaiaWeapon3_Objective_Text_5": "Drop off 15 Iron Bars in the back room of Silas' Blacksmith..",
 
     // Maia Fourth Weapon (Baleful Blade)
     "SBV.SpecialOrder.MaiaWeapon4_Name": "Menacing Blade",
@@ -2293,10 +2441,23 @@
     "SBV.SpecialOrder.MaiaWeapon4_Objective_Text_1": "Collect 10 Void Essence.",
     "SBV.SpecialOrder.MaiaWeapon4_Objective_Text_2": "Collect 10 Bat Wings.",
     "SBV.SpecialOrder.MaiaWeapon4_Objective_Text_3": "Collect 15 Iron Bars.",
-    "SBV.SpecialOrder.MaiaWeapon4_Objective_Text_4": "Drop off 5 Rubies in the back room.",
-    "SBV.SpecialOrder.MaiaWeapon4_Objective_Text_5": "Drop off 10 Void Essence in the back room.",
-    "SBV.SpecialOrder.MaiaWeapon4_Objective_Text_6": "Drop off 10 Bat Wings in the back room.",
-    "SBV.SpecialOrder.MaiaWeapon4_Objective_Text_7": "Drop off 15 Iron Bars in the back room.",
+    "SBV.SpecialOrder.MaiaWeapon4_Objective_Text_4": "Drop off 5 Rubies in the back room of Silas' Blacksmith..",
+    "SBV.SpecialOrder.MaiaWeapon4_Objective_Text_5": "Drop off 10 Void Essence in the back room of Silas' Blacksmith..",
+    "SBV.SpecialOrder.MaiaWeapon4_Objective_Text_6": "Drop off 10 Bat Wings in the back room of Silas' Blacksmith..",
+    "SBV.SpecialOrder.MaiaWeapon4_Objective_Text_7": "Drop off 15 Iron Bars in the back room of Silas' Blacksmith..",
+
+    // Ophelia's Weapon (Sunslash)
+    //FOR TRANSLATORS: NEW IN 1.0.4
+    "SBV.SpecialOrder.OpheliaSunslash_Name": "Ophelia's Weapon",
+    "SBV.SpecialOrder.OpheliaSunslash_Text": "Ophelia considers you a good friend, and an even better adventurer. She wants you to have a replica of her sword. In order to do so, she needs you to collect some materials and drop them off in the box by the stairs at Serenity Inn.",
+    "SBV.SpecialOrder.OpheliaSunslash_Objective_Text_0": "Collect 5 Aquamarine.",
+    "SBV.SpecialOrder.OpheliaSunslash_Objective_Text_1": "Collect 5 Topaz",
+    "SBV.SpecialOrder.OpheliaSunslash_Objective_Text_2": "Collect 10 Solar Essences.",
+    "SBV.SpecialOrder.OpheliaSunslash_Objective_Text_3": "Collect 15 Gold Bars.",
+    "SBV.SpecialOrder.OpheliaSunslash_Objective_Text_4": "Drop off 5 Aquamarine in the box at Serenity Inn.",
+    "SBV.SpecialOrder.OpheliaSunslash_Objective_Text_5": "Drop off 5 Topaz in the box at Serenity Inn.",
+    "SBV.SpecialOrder.OpheliaSunslash_Objective_Text_6": "Drop off 10 Solar Essences in the box at Serenity Inn.",
+    "SBV.SpecialOrder.OpheliaSunslash_Objective_Text_7": "Drop off 15 Gold Bars in the box at Serenity Inn.",
 
     // Aicha Floral Weapon (Flower Power)
     "SBV.SpecialOrder.AichaFloralWeapon_Name": "Flower Sword!",
@@ -2304,9 +2465,9 @@
     "SBV.SpecialOrder.AichaFloralWeapon_Objective_Text_0": "Collect 5 Tulips.",
     "SBV.SpecialOrder.AichaFloralWeapon_Objective_Text_1": "Collect 30 Fiber.",
     "SBV.SpecialOrder.AichaFloralWeapon_Objective_Text_2": "Collect 15 Iron Bars.",
-    "SBV.SpecialOrder.AichaFloralWeapon_Objective_Text_3": "Drop off 5 Tulips in the back room.",
-    "SBV.SpecialOrder.AichaFloralWeapon_Objective_Text_4": "Drop off 30 Fiber in the back room.",
-    "SBV.SpecialOrder.AichaFloralWeapon_Objective_Text_5": "Drop off 15 Iron Bars in the back room.",
+    "SBV.SpecialOrder.AichaFloralWeapon_Objective_Text_3": "Drop off 5 Tulips in the back room of Silas' Blacksmith..",
+    "SBV.SpecialOrder.AichaFloralWeapon_Objective_Text_4": "Drop off 30 Fiber in the back room of Silas' Blacksmith..",
+    "SBV.SpecialOrder.AichaFloralWeapon_Objective_Text_5": "Drop off 15 Iron Bars in the back room of Silas' Blacksmith..",
 
     // Blake and Lyenne Monster Parts
     "SBV.SpecialOrder.BlakeLyenneExperiment_Name": "Help Us Do Science",
@@ -2361,6 +2522,20 @@
     "SBV.SpecialOrder.SBVMuseumArtifacts2_Objective_Text_3": "Donate 1 Dwarf Key III",
     "SBV.SpecialOrder.SBVMuseumArtifacts2_Objective_Text_4": "Donate 1 Dwarf Key IV",
 
+    // Iman's Barn
+    // FOR TRANSLATORS: NEW IN 1.0.4
+    "SBV.SpecialOrder.ImanWoodGathering_Name": "Iman's Barn Repair",
+    "SBV.SpecialOrder.ImanWoodGathering_Text": "Iman has asked for your help to repair her abandoned barn. You've chosen to donate some wood towards her project.",
+    "SBV.SpecialOrder.ImanWoodGathering_Objective_Text_0": "Drop off 500 wood by the abandoned barn in Sunberry Forest",
+
+    "SBV.SpecialOrder.ImanStoneGathering_Name": "Iman's Barn Repair",
+    "SBV.SpecialOrder.ImanStoneGathering_Text": "Iman has asked for your help to repair her abandoned barn. You've chosen to donate some stone towards her project.",
+    "SBV.SpecialOrder.ImanStoneGathering_Objective_Text_0": "Drop off 350 stone by the abandoned barn in Sunberry Forest",
+
+    "SBV.SpecialOrder.ImanDyeGathering_Name": "Iman's Barn Repair",
+    "SBV.SpecialOrder.ImanDyeGathering_Text": "Iman has asked for your help to repair her abandoned barn. You've chosen to donate some items that can be turned into red paint.",
+    "SBV.SpecialOrder.ImanDyeGathering_Objective_Text_0": "Drop off 30 red items by the abandoned barn in Sunberry Forest",
+
     //Mail 
     //----
 
@@ -2383,6 +2558,8 @@
     "Mail.EliasHouseFinishedLetter.Title": "Elias' New House",
     "Mail.Elias10HeartsLetter.Body": "@,^^Meet me by Serenity Inn after dark, please. I'd like to see you.^^- Elias",
     "Mail.Elias10HeartsLetter.Title": "Meeting Elias",
+    "Mail.Iman6HeartsLetter.Body": "@,^^Please meet me outside of Ezra's store as soon as you can. I've done something that may be a little dumb. Need help.^^- Iman", // FOR TRANSLATORS: NEW IN 1.0.4
+    "Mail.Iman6HeartsLetter.Title": "Iman's Problem", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Recipe Letters
     "Mail.DialaHotChocoLetter.Body": "Hey, @!^^I've been experimenting with this hot chocolate recipe for a while now, and I finally found what makes it taste SO good! It's Carob! I used to see my mother use it in her dessert back home, and I managed to find some at Ari's. Enjoy the recipe and let me know if you try it!^^- Diala",
@@ -2391,6 +2568,8 @@
     "Mail.DeryaIceCreamLetter.Title": "Ice Cream, You Scream? No?",
     "Mail.MoonCookieLetter.Body": "Hello!^^Moon found this recipe in one of Diala's books. Moon tried to make it but... it didn't work very well. So, Moon decided to send you the recipe instead! It's very sweet and chewy, heh. Moon is going to go eat some of Diala's cookies now!^^...Moon hopes this letter gets sent. Goodbye!^^- Your junimo friend, Moon",
     "Mail.MoonCookieLetter.Title": "Choco Cookies!",
+    "Mail.MiyoungCloudberryPie.Body": "Dear @,^^I was mailing my son a recipe he had asked for, and thought I'd mail you one as well. I appreciate you making time to befriend this old lady, so I hope this pie can make you feel as warm and cozy as our friendship makes me feel.^^- Miyoung", // FOR TRANSLATORS - NEW IN 1.0.4
+    "Mail.MiyoungCloudberryPie.Title": "Cloudberry Pie Recipe", // FOR TRANSLATORS - NEW IN 1.0.4
     "Mail.SilasGrinderLetter.Body": "Hey, @!^^Maia grabbed our mineral grinder from storage the other day and I thought you might get some use out of it. I looked around for the blueprint and attached it to this letter.^^P.S: The grinder is programmed to take in specific kinds of minerals, so it won't work on everything. It should work on any minerals native to Sunberry Village, as well as Dolomite, Lunarite, Tigerseye, and Fairy Stone.^^P.P.S: The powder you make out of the minerals can be used in potions, but you'll need an alchemy table for that!^^- Silas%item craftingRecipe skellady.SBVCP_MineralGrinder %%",
     "Mail.SilasGrinderLetter.Title": "Mineral Grinder Recipe",
     "Mail.DDAlchemyTableLetter.Body": "Hi, @!^^I've been using my alchemy table a lot more recently, mostly to get better at what I do without... summoning a demon or two. I think I'm getting the hang of it! I'm sending you the recipe to make it since you might find it useful. To make potions, I grind my minerals at Silas' blacksmith, but I'm sure he can set you up with your own mineral grinder if he hasn't already. Oh, also, you'll need some cinder leaves! Maia usually grabs me some from the cave by the blacksmith.^^- Diala",
@@ -2429,6 +2608,10 @@
     "Mail.SBVMuseumSO2.Title": "Sunberry Museum Pt. 2",
     "Mail.SBVMuseumSO3.Body": "Dearest @,^^I can't believe it's done! It's all here, right in front of me. I never thought I'd see the day where we can finally showcase our history. Thank you, from the bottom of my heart, for all you've done for me and this village. With your consent, I'd love to give you the biggest, most bone-crushin' hug when I see you for the grand opening. Oh, you're invited, of course. Drop by the museum when you can, please.^^- Elias", // FOR TRANSLATORS (1.0.1 UPDATE): changed "tomorrow" to "when you can" 
     "Mail.SBVMuseumSO3.Title": "Sunberry Museum Restored",
+    "Mail.OpheliaSunslashSO.Body": "Dear @,^^Thank you for gathering the materials I asked for. I've sent them over to Maia earlier, and she immediately started to work on it. It should be available in her shop tomorrow if you want to pick it up. Free of charge, of course. It is a gift after all. Take care, @.^^- Your friend, Ophelia", // FOR TRANSLATORS: NEW IN 1.0.4
+    "Mail.OpheliaSunslashSO.Title": "Ophelia's Sunslash", // FOR TRANSLATORS: NEW IN 1.0.4
+    "Mail.SBVImanBarnComplete.Body": "Hey @,^^Robin got to work as soon as she had all the materials, and she's one speedy woman! The barn is done! I actually can't believe this. I saw it for myself when she was done, and I cried. Yes, in front of her. She held me like a baby. Thank you, thank you, thank you. Please come by to see it when you can.^^- Iman, Sunberry's Newest Rancher", // FOR TRANSLATORS: NEW IN 1.0.4
+    "Mail.SBVImanBarnComplete.Title": "Dream Barn", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Pass Out Letter
     "Mail.passedOutSBV.Body": "@,^^Found you unconscious last night while I was doing my sweep with Maia. Try to be more careful next time. If there's anything I can do for you, you know where to find me.^^- Ophelia",
@@ -2457,7 +2640,7 @@
     "Mail.ReihanaSlime.Title": "Get Slimed",
     "Mail.AichaSeeds.Body": "Hi, @!!^^Guess what? I bought some seeds! Yes, with my own money! I hope you like them. I'll come by the farm to see them when they're grown. Bye, have fun! :3^^- Aicha",
     "Mail.AichaSeeds.Title": "Aicha's Seeds",
-    "Mail.EliasFishCompendiumIntro.Body": "^Hi @,^^I see you've taken an interest in Sunberry's aquatic fauna! There's an incredible array of critters unique to the waters in the region.^^I've been wanting to put together a compendium of sorts, and if you're interested I'd appreciate your assistance.^^^^^ ^Just show me anything you fish up in the village and surrounding areas, and if it's unique to Sunberry I'll write up some notes on it and add it to my book. Don't worry, you can keep the fish when I'm done with it.^^You can look through the book whenever you like; I'll keep it in the library, on the table left of the entrance.^^ ^Here's a li'l extra bait to get you started on^your journey!^^- Elias^^P.S: Yes, I used my fancy paper for this letter. I'm just happy to see someone else enjoying the rivers and lakes of Sunberry!",
+    "Mail.EliasFishCompendiumIntro.Body": "^Hi @,^^I see you've taken an interest in Sunberry's aquatic fauna! There's an incredible array of critters unique to the waters in the region.^^I've been wanting to put together a compendium of sorts, and if you're interested, I'd appreciate your assistance.^^^^^ ^Just show me anything you fish up in the village and surrounding areas, and if it's unique to Sunberry, I'll write up some notes on it and add it to my book. Don't worry, you can keep the fish when I'm done with it.^^You can look through the book whenever you like; I'll keep it in the library, on the table left of the entrance.^^ ^Here's a li'l extra bait to get you started on^your journey!^^- Elias^^P.S: Yes, I used my fancy paper for this letter. I'm just happy to see someone else enjoying the rivers and lakes of Sunberry!",
     "Mail.EliasFishCompendiumIntro.Title": "Fishy Fact Or Fishy Fiction?",
     "Mail.EliasFishCompendiumReward1.Body": "Hi @,^^Thank you for helping me fill out the fish compendium! It's coming along nicely, though there's still plenty to discover.^^Here's a li'l somethin' to keep those fish biting!^^- Elias",
     "Mail.EliasFishCompendiumReward1.Title": "Smooth Sailing",
@@ -3228,6 +3411,7 @@
     "MapString.sbv.mountain4": "There are flowers besides this tombstone.#\"Here lies Levi\"",
     // Forest
     "MapString.sbv.forest1": "Looks like an unfinished barn. The door is barred.",
+    "MapString.sbv.tempbarn": "Doesn't look like there's much to see inside right now.",
     // Road
     "MapString.sbv.road1": "@ Sunberry Forest",
     // Rei's Door
@@ -3348,7 +3532,7 @@
     "MapString.sbv.pepdialogue3": "Pep growls at you. It doesn't sound very threatening.",
     "MapString.sbv.pepdialogue4": "Pep: Be nice to Pip. If you are mean to Pip, Pep will bite you.",
     "MapString.sbv.pepdialogue5": "Pep: ...What? What? Go look at goods, not Pep.",
-    "PipPepShopNotification": "Pip and Pep have set up shop in the final level of the Sunberry Mines.",
+    "PipPepShopNotification": "Pip and Pep have set up shop at the bottom of the Sunberry Mines for today.", // FOR TRANSLATORS: NEW IN 1.0.4: Reworded this line to clarify that it's only happening for that day.
     // Serenity Inn
     "MapString.sbv.inn.notenoughmoney": "You can buy a farm in Sunberry for 150,000$, but you don't have enough money. Come back when you do.",
     "MapString.sbv.inn.farmalreadypurchased": "You already purchased a farm in Sunberry.",
@@ -3792,7 +3976,7 @@
     "Derya.Dialogue.Sun8": "Hey, I ordered some cute clothes for the cats. Wanna see?$h",
 
     //10 hearts
-    "Derya.Dialogue.Mon10": "Hey, @.$h#$b#Wanna join Diala and I for lunch tomorrow? I'll make your favorite.$h",
+    "Derya.Dialogue.Mon10": "Hey, @.$h#$b#Wanna join Diala and me for lunch tomorrow? I'll make your favorite.$h",
     "Derya.Dialogue.Tue10": "Hm, I wonder if Diala's free tomorrow.#$b#I've been planning a little road trip for us.$u",
     "Derya.Dialogue.Wed10": "Oh, @! Ta-da! The result of my baking session. Enjoy! [651 223 234]$u",
     "Derya.Dialogue.Thu10": "Hey, @. Know where I can take Diala sky-gazing around here?$h#$b#$y '..._Forest._Ooh, perfect. Thanks, @!$u_Beach._Ooh, perfect. Thanks, @!$u' ",
@@ -3923,6 +4107,9 @@
     "Moon.Dialogue.GreenRain": "Woah! @ walked through the green rain! Maybe Moon can go too!$3",
     "Moon.Dialogue.GreenRainFinished": "Moon was too scared to go outside during the rain.$s#$b#Maybe next time! Is there going to be a next time?$3",
     "Moon.Dialogue.GreenRain_2": "Moon climbed the weird tree!$3",
+
+    //Other Dialogue
+    "Moon.Dialogue.MovieInvitation": "Movie time! Movie time!$h#$b#Can @ carry Moon in the backpack?$3", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Trashcan
     "Moon.Dialogue.DumpsterDiveComment.1": "Woah, Moon can't reach into the trash can like that. Can you help Moon learn?$3",
@@ -4166,6 +4353,9 @@
     "Reihana.Dialogue.GreenRainFinished": "See? Everything's back to normal. I don't understand why everyone was panicking. Cowards.$h",
     "Reihana.Dialogue.GreenRain_2": "*Yawn*... Perfect weather for a long, long nap, huh?$h",
 
+    //Other Dialogue
+    "Reihana.Dialogue.MovieInvitation": "...Movie? Well, you better pick something I haven't seen before. You know, considering that I've been around for eons.$8", // FOR TRANSLATORS: NEW IN 1.0.4
+
     // Resort Dialogue
 
     //Vanilla
@@ -4261,6 +4451,9 @@
     "Aicha.Dialogue.GreenRain": "The rain? It's not scary at all! I collected enough moss to make at LEAST ten batches of moss soup!$u",
     "Aicha.Dialogue.GreenRainFinished": "Oh, @! Want some of the moss soup I made? It's delicious! [(O)MossSoup]$h",
     "Aicha.Dialogue.GreenRain_2": "Rei doesn't want me to make moss soup this year. Apparently she's sick of it. How can someone be sick of such a delicious dish?!$s",
+
+    //Other Dialogue
+    "Aicha.Dialogue.MovieInvitation": "Ooh! Can we get those funky glasses for the movie? I've never tried them before!$15", // FOR TRANSLATORS: NEW IN 1.0.4
 
     // Resort Dialogue
 
@@ -4360,6 +4553,9 @@
     "Amina.Dialogue.GreenRainFinished": "I can't believe Vincent wanted to play outside yesterday... He's so brave.$3",
     "Amina.Dialogue.GreenRain_2": "Mom told me the weather isn't something to be afraid of. She said we can go look at the weird trees together!$3",
 
+    //Other Dialogue
+    "Amina.Dialogue.MovieInvitation": "Yay! I love movies. Mom always puts on a movie for us when she doesn't have work.$h", // FOR TRANSLATORS: NEW IN 1.0.4
+
     // Resort Dialogue
 
     //Vanilla
@@ -4455,6 +4651,9 @@
     "Ari.Dialogue.GreenRain": "I already asked Silas about the weather earlier and he rambled a little, but all I understood was that it's safe to go outside if needed.#$b#Hm? Oh, we just yelled back and forth from the window. Couldn't call him, the phone won't work.$u",
     "Ari.Dialogue.GreenRainFinished": "I heard Pierre was worried about his sales yesterday rather than the weird weather we experienced. What an odd man...$u",
     "Ari.Dialogue.GreenRain_2": "Blake and Lyenne are probably going out to play in the rain. Don't think I've seen Blake do that since he was a kid.$u",
+
+    //Other Dialogue
+    "Ari.Dialogue.MovieInvitation": "Huh! Thanks for the ticket, @. I'll meet you there.$h#$b#I hope you have better taste in movies than Blake and Lyenne.$12", // FOR TRANSLATORS: NEW IN 1.0.4
 
     // Resort Dialogue
 
@@ -4553,6 +4752,9 @@
     "Blake.Dialogue.GreenRain": "Ugh, how am I gonna get to Lyenne in this weather? I can't even play any of my video games to pass the time.$s",
     "Blake.Dialogue.GreenRainFinished": "I'm so glad that's done with. How dare the weather separate me from my video games and best friend for a whole day?$s",
     "Blake.Dialogue.GreenRain_2": "Those big plants are kinda crazy, huh? Sucks that none of our devices work, but we can still play in the rain.$h",
+
+    //Other Dialogue
+    "Blake.Dialogue.MovieInvitation": "Oh, yeah! I've been meaning to go to the movies, thanks for the invite! I'll meet you there.$h", // FOR TRANSLATORS: NEW IN 1.0.4
 
     // Resort Dialogue
 
@@ -4665,6 +4867,11 @@
     "Elias.Dialogue.GreenRain": "$query PLAYER_NPC_RELATIONSHIP Current EliasSBV Married#Yoba, what is this? I've never seen anythin' like it. Please, be careful if you go out there my love.$s|Yoba, what is this? I wonder if that's documented somewhere in the library books.#$b#Hm, no. That's impossible. I've read every book in here.$8",
     "Elias.Dialogue.GreenRainFinished": "I met up with Silas to ask about yesterday's weather. Apparently, it's harmless. He's such a knowledgeable man, I envy him a little bit sometimes.",
     "Elias.Dialogue.GreenRain_2": "This year, I'm gonna make sure I document everything there is to know about green rain. It's so fascinating.$h",
+
+    //Other Dialogue
+    "Elias.Dialogue.MovieInvitation": "Hm, I haven't seen a movie in a hot minute. Thanks, @. I'll see you there soon.$h", // FOR TRANSLATORS: NEW IN 1.0.4
+    "Elias.Dialogue.BreakUp": "Oh... I... I wasn't expectin' that.$s#$b#It's alright, I understand. I wish you the best, @.$s", // FOR TRANSLATORS: NEW IN 1.0.4
+    "Elias.Dialogue.Divorced": "Definitely wasn't expectin' one divorce, let alone two divorces in one lifetime. What a joke.$s#$b#Please, just go, @.$11", // FOR TRANSLATORS: NEW IN 1.0.4
 
     // Resort Dialogue
 
@@ -4818,6 +5025,12 @@
     "Elias.Marriage.funReturn_2": "It was nice catchin' up with Maia and Jumana today.$h#$b#Jumana made me all my favorite dishes, I felt incredibly spoiled.$u",
     "Elias.Marriage.funReturn_3": "Apparently, Blake and Lyenne are back to their prankin' habits.$10#$b#Poor Ari, always bein' the victim of these pranks.$u",
 
+    // Summit Event 
+    // FOR TRANSLATORS: NEW IN 1.0.4
+    "Elias.SummitEvent.1": "I... was afraid of love for a while, you know?$12#$b#I thought I've already tried my luck with love, and that was it.$11",
+    "Elias.SummitEvent.2": "But I guess the universe had other plans for me, because it brought you here. Brought you to me.$4",
+    "Elias.SummitEvent.3": "I love you so dearly, @. I'm glad I didn't give up on love, because I would've missed out on all this with you.$4",
+
     // Fish Compendium
     "Elias.FishCompendium.NewFish": "Well, now ain't that a fine catch! Let me take some notes real quick and I'll have it back to ya in a jiffy.$3#$b#You can check the book tomorrow to see my updated notes!$3",
     "Elias.FishCompendium.NewFishLegendary": "What in the Sam Hill is that?! Farmer, I've been fishin' these parts for years and I've never seen a fish like that.$14#$b#Let me take some measurements on that beastie and I'll have it back to ya in a jiffy.$3#$b#You can check the book tomorrow to see my notes on... whatever that is.$3",
@@ -4908,6 +5121,9 @@
     "Ezra.Dialogue.GreenRain": "I JUST got my hair done. I refuse to leave the house.$s#$b#Oh God, what if it stains my clothes green?!$8",
     "Ezra.Dialogue.GreenRainFinished": "Phew, that was a little scary, huh? I managed to save my hair from being ruined by the rain, so that's a win in my books.$h",
     "Ezra.Dialogue.GreenRain_2": "You know... this weather might inspire my next clothing line. Keep an eye out for that.$6",
+
+    //Other Dialogue
+    "Ezra.Dialogue.MovieInvitation": "Ah! I'd love to go to the movies.$h#$b#Just so you know, I'm NOT a fan of horror. I will have my eyes closed the whole time.$u", // FOR TRANSLATORS: NEW IN 1.0.4
 
     // CT added in Nadia dialogue
     "Ezra.Dialogue.EzraNadiaFight": "Hey, @. Nadia told you about our fight, huh?$2#$b#It was pretty stupid, honestly. I just blew up over nothing and then, before you know it, out comes a couple years of repressed anger.$9#$b#She handled it really well, all things considered! I'll give her a big hug next time I see her.$3",
@@ -5009,6 +5225,9 @@
     "Iman.Dialogue.GreenRainFinished": "Ezra refused to even come over last night. Something about his hair getting ruined and his clothes getting stained.$u",
     "Iman.Dialogue.GreenRain_2": "You know, it looks kinda pretty outside. I wonder what's up with those trees, though.",
 
+    //Other Dialogue
+    "Iman.Dialogue.MovieInvitation": "Oh? Thanks, @. I'd love to go with you. I'm looking forward to seeing what Pelican Town's precious farmer is into.$10", // FOR TRANSLATORS: NEW IN 1.0.4
+
     // Resort Dialogue
 
     //Vanilla
@@ -5107,6 +5326,9 @@
     "Jumana.Dialogue.GreenRainFinished": "This weather... it made my flowers grow! They weren't supposed to be fully grown for another week!$6",
     "Jumana.Dialogue.GreenRain_2": "I wonder what the rain does to plants and trees to make them grow so fast. They look so healthy too!$h",
 
+    //Other Dialogue
+    "Jumana.Dialogue.MovieInvitation": "Aw, you want to take this old lady to the movies? I'd love to, dear. I'll see you there!$6", // FOR TRANSLATORS: NEW IN 1.0.4
+
     // Resort Dialogue
 
     //Vanilla
@@ -5202,6 +5424,9 @@
     "Lyenne.Dialogue.GreenRain": "Ugh, I miss Blake already. Ophelia won't let me leave the inn.$s",
     "Lyenne.Dialogue.GreenRainFinished": "Freedom! I've never been happier to be able to leave my room!$h",
     "Lyenne.Dialogue.GreenRain_2": "Well, I'm glad Ophelia's letting me leave the inn this time. I get to see these weird plants up close!$u",
+
+    //Other Dialogue 
+    "Lyenne.Dialogue.MovieInvitation": "Nice! I haven't been to the movie theater in a while. I'm excited!$u", // FOR TRANSLATORS: NEW IN 1.0.4
 
     // Resort Dialogue
 
@@ -5300,6 +5525,9 @@
     "Maia.Dialogue.GreenRainFinished": "Well, Silas is happy, mother is happy. Glad to see everything's back to normal.$h",
     "Maia.Dialogue.GreenRain_2": "My mother has been anticipating this day. Apparently, the rain is good for her flowers. I'm just glad she ain't panicking anymore.$h",
 
+    //Other Dialogue
+    "Maia.Dialogue.MovieInvitation": "Hey, thank you! I'm looking forward to this. It'll be nice to spend time together.$9", // FOR TRANSLATORS: NEW IN 1.0.4
+
     // Resort Dialogue
 
     //Vanilla
@@ -5396,6 +5624,9 @@
     "Miyoung.Dialogue.GreenRain": "Oh, darling. I was horrified when I looked out the window today! I'm so thankful I had Silas by my side to reassure me.$4",
     "Miyoung.Dialogue.GreenRainFinished": "Poor Jumana... she must've been so scared yesterday. I'm glad she's doing okay.$h",
     "Miyoung.Dialogue.GreenRain_2": "Silas has been very excited since he saw the weather forecast yesterday. He's always been so curious about everything. This man has vowed to learn everything he could in this lifetime.$7",
+
+    //Other Dialogue
+    "Miyoung.Dialogue.MovieInvitation": "Aw, thank you, sweetheart! I appreciate the invite.$h", // FOR TRANSLATORS: NEW IN 1.0.4
 
     // Resort Dialogue
 
@@ -5502,6 +5733,9 @@
     "Nadia.Dialogue.GreenRainFinished": "Ahem... I wasn't even all that scared yesterday. In fact, I went outside! Yup. I stepped outside while it was pouring.$h#$b#...Then I tripped on a giant plant.$s",
     "Nadia.Dialogue.GreenRain_2": "I have GOT to start checking the weather forecast before bed. I walked outside and jumped back in like one of those cats you see in those videos.$s#$b#You know, the ones where they see a cucumber and jump. Hah, I wonder why they do that.$h",
 
+    //Other Dialogue
+    "Nadia.Dialogue.MovieInvitation": "Placeholder.", // FOR TRANSLATORS: NEW IN 1.0.4
+
     // Resort Dialogue
 
     //Vanilla
@@ -5599,6 +5833,9 @@
     "Ophelia.Dialogue.GreenRain": "Please stay safe, @. I'm sure it's harmless, but I still don't want people walking around until we get enough information.$8",
     "Ophelia.Dialogue.GreenRainFinished": "Hm, I wonder if this rain had any effect on our mines. I'll have to ask Maia to investigate when she can.",
     "Ophelia.Dialogue.GreenRain_2": "I assume this will be a yearly thing, now. I'm just glad no one's spreading any misinformation about this phenomenon.$h",
+
+    //Other Dialogue
+    "Ophelia.Dialogue.MovieInvitation": "Ah, thank you, @. It'll be good to get out of the inn for a bit. I appreciate this.$h", // FOR TRANSLATORS: NEW IN 1.0.4
 
     // Resort Dialogue
 
@@ -5761,6 +5998,9 @@
     "Silas.Dialogue.GreenRainFinished": "I knew it was harmless. Our Goddesses would never bring any harm our way, but it was still nice to hear it from Razz when I asked.$h",
     "Silas.Dialogue.GreenRain_2": "Ah, those trees. They're beautiful, aren't they? I wish we could grow some around here.$h",
 
+    //Other Dialogue
+    "Silas.Dialogue.MovieInvitation": "Oh, nice! I can't remember the last time I watched a movie. Thanks, @.$h", // FOR TRANSLATORS: NEW IN 1.0.4
+
     // Resort Dialogue
 
     //Vanilla
@@ -5774,106 +6014,254 @@
 
     //Raccoon Dialogue
     //----------------
+    // FOR TRANSLATORS: NEW IN 1.0.4. The raccoon's dialogue has been overhauled. Most lines were reused with the key changed, but there are some that are new. Apologies for the inconvenience, but this was needed with changing him into an NPC. Some lines are repeated, so you can just copy paste them. Feel free to reach out with any questions.
 
     //Default
     "RaccoonDialogue.default": "The raccoon seems to be enjoying the weather.",
 
-    //Spring
-    "RaccoonDialogue.Spring.Monday.1": "The raccoon hisses at you. He throws a broken CD at your feet. It's still dripping from when he washed it. [171]#$t RaccoonCD 1",
-    "RaccoonDialogue.Spring.Monday.2": "The raccoon hands you a head of cauliflower. He chitters happily. [190]",
-    "RaccoonDialogue.Spring.Monday.3": "The raccoon purrs. He hands you a rusty spoon. It's still wet from when he washed it. [110]",
-    "RaccoonDialogue.Spring.Tuesday.1": "The raccoon snarls at you. He throws a soggy newspaper at your feet. It's soaking wet. [172]",
-    "RaccoonDialogue.Spring.Tuesday.2": "The raccoon seems to be enjoying an apple. Better leave him be.",
-    "RaccoonDialogue.Spring.Tuesday.3": "The raccoon chitters. He hands you a piece of wood. It's been gnawed on around the edges. [388]",
-    "RaccoonDialogue.Spring.Wednesday.1": "The raccoon seems to be enjoying the weather. He pats the spot next to him.",
-    "RaccoonDialogue.Spring.Wednesday.2": "The raccoon seems to be holding... a broken knife. Better back away.",
-    "RaccoonDialogue.Spring.Wednesday.3": "The raccoon quietly hands you a doll. He seems reluctant to part with it... [103]",
-    "RaccoonDialogue.Spring.Thursday.1": "The raccoon purrs. He gives you a bottle of maple syrup. It's half full. [724]",
-    "RaccoonDialogue.Spring.Thursday.2": "The raccoon throws a Halibut at your feet. It's still dripping. [708]",
-    "RaccoonDialogue.Spring.Thursday.3": "The raccoon purrs. He hands you a pack of starfruit seeds. You wonder where he got this from. [486]",
-    "RaccoonDialogue.Spring.Thursday.4": "You hold out your hand to the raccoon and he chitters happily before emptying a wallet into your palm. You see a fish-scale pattern engraved in the leather.#$action AddMoney 50#$t RaccoonWallet 1", //FOR TRANSLATORS: NEW 1.0.1
-    "RaccoonDialogue.Spring.Friday.1": "The raccoon gives you a Soapstone. He seems reluctant to part with it... [572]",
-    "RaccoonDialogue.Spring.Friday.2": "The raccoon chitters happily. He's holding a shiny piece of glass. It doesn't seem like he's willing to part with it...",
-    "RaccoonDialogue.Spring.Friday.3": "The raccoon purrs and hands you a tulip. It's been gnawed on around the edges. [591]",
-    "RaccoonDialogue.Spring.Saturday.1": "The raccoon snarls at you and throws a stone at your feet. It's still dripping from when he washed it. [390]",
-    "RaccoonDialogue.Spring.Saturday.2": "The raccoon seems to be enjoying a Poppyseed Muffin. You ask him to hand it over. He shakes his head and hisses at you.#$t RaccoonMuffin 1",
-    "RaccoonDialogue.Spring.Saturday.3": "The raccoon hands you a spring onion. It's soaking wet. [399]",
-    "RaccoonDialogue.Spring.Sunday.1": "The raccoon seems to be holding a piece of obsidian. He extends his hands out to give it to you before pulling away and chittering.",
-    "RaccoonDialogue.Spring.Sunday.2": "The raccoon gives you a pair of broken glasses. They look familiar... [170]",
-    "RaccoonDialogue.Spring.Sunday.3": "The raccoon purrs. He gives you a hazelnut. You wonder where he got that from... [408]",
+    // Dumpster Dive
+    "Raccoon.Dialogue.DumpsterDiveComment": "The raccoon hisses at you. Looks like he's claimed this trashcan and is NOT happy about you rummaging in it...",
 
-    //Summer
-    "RaccoonDialogue.Summer.Monday.1": "The raccoon seems to be enjoying the weather. He pats the spot next to him.",
-    "RaccoonDialogue.Summer.Monday.2": "The raccoon purrs. He gives you some cheese. It's been gnawed on around the edges. [424]",
-    "RaccoonDialogue.Summer.Monday.3": "The raccoon chitters happily before handing you a pack of garlic seeds. The pouch is soaking wet. [476]",
-    "RaccoonDialogue.Summer.Tuesday.1": "The raccoon hisses at you. He throws a can of Joja Cola at your feet. It's still dripping from when he washed it. [167]",
-    "RaccoonDialogue.Summer.Tuesday.2": "The raccoon gives you a bottle of oak resin. He chitters happily. [725]",
-    "RaccoonDialogue.Summer.Tuesday.3": "The raccoon seems to be holding an... ancient sword. Looks like he's holding onto it. Where did he manage to find that?!",
-    "RaccoonDialogue.Summer.Wednesday.1": "The raccoon seems to be enjoying a peach. Better leave him be.",
-    "RaccoonDialogue.Summer.Wednesday.2": "The raccoon purrs and hands you a half eaten plate of spaghetti. Its... a little wet. [224]",
-    "RaccoonDialogue.Summer.Wednesday.3": "The raccoon chitters happily and hands you a cup of coffee. It smells like the kind Diala makes... [395]#$t RaccoonCoffee 1",
-    "RaccoonDialogue.Summer.Wednesday.4": "The raccoon purrs and nuzzles your hand. You pet him for a moment before realizing he used your distraction to pick your pocket.#$action AddMoney -100", //FOR TRANSLATORS: NEW 1.0.1
-    "RaccoonDialogue.Summer.Thursday.1": "The raccoon is holding onto a piece of Lunarite. He snarls at you when you try to take it.#$t RaccoonLunarite 1",
-    "RaccoonDialogue.Summer.Thursday.2": "The raccoon whines before giving you a golden mask. He seems reluctant to part with it... [124]",
-    "RaccoonDialogue.Summer.Thursday.3": "The raccoon purrs and hands you a packet of... ancient seeds! You wonder where he got that from... [499]",
-    "RaccoonDialogue.Summer.Friday.1": "The raccoon chitters. He seems to be gnawing at a piece of hardwood. He hands it to you, but it's soaking wet. [709]",
-    "RaccoonDialogue.Summer.Friday.2": "The raccoon hisses at you before throwing a snail at your feet. It's a little sticky... [721]",
-    "RaccoonDialogue.Summer.Friday.3": "The raccoon is holding onto a pair of broken glasses. You wonder if those are Ari's reading glasses.#$t RaccoonGlasses 1",
-    "RaccoonDialogue.Summer.Saturday.1": "The raccoon hands you a ruby. It's still dripping from when he washed it. [64]",
-    "RaccoonDialogue.Summer.Saturday.2": "The raccoon purrs. He gives you some bug meat. It's soaking wet. Gross. [684]",
-    "RaccoonDialogue.Summer.Saturday.3": "The raccoon seems to be enjoying a cherry. You ask him to hand it over. He shakes his head and hisses at you.",
-    "RaccoonDialogue.Summer.Sunday.1": "The raccoon seems to be holding... a broken knife. Better back away.",
-    "RaccoonDialogue.Summer.Sunday.2": "The raccoon whines before giving you an apple. He seems reluctant to part with it... [613]",
-    "RaccoonDialogue.Summer.Sunday.3": "The raccoon chitters happily before giving you a pumpkin. It's still dripping from when he washed it. [276]",
+    //Introduction
+    "Raccoon.Dialogue.Introduction": "The raccoon stares you down. You're a little intimidated.#$b#When he's done intimidating you, he hands you 100$! What a nice gift to get you started on your farm.#$action AddMoney 100",
 
-    //Fall
-    "RaccoonDialogue.Fall.Monday.1": "The raccoon is holding onto a pile of leaves. He throws them into the air then proceeds to step on them.",
-    "RaccoonDialogue.Fall.Monday.2": "The raccoon hisses at you before throwing a piece of trash at your feet. It's soaking wet. [168]",
-    "RaccoonDialogue.Fall.Monday.3": "The raccoon purrs and hands you a pouch of rare seeds! It's soaking wet. [347]",
-    "RaccoonDialogue.Fall.Tuesday.1": "The raccoon reluctantly gives you a treasure chest. You have to wrestle it out of his little hands. [166]",
-    "RaccoonDialogue.Fall.Tuesday.2": "The raccoon seems to be holding a cookie. He extends his hands out to give it to you before pulling away and chittering.",
-    "RaccoonDialogue.Fall.Tuesday.3": "The raccoon hands you a bottle of wine. It's still dripping from when he washed it. Where'd he even find that?! [348]",
-    "RaccoonDialogue.Fall.Wednesday.1": "The raccoon twirls around. He beckons you to join him. You share a silly little dance.",
-    "RaccoonDialogue.Fall.Wednesday.2": "The raccoon purrs. He gives you a poppy. It's still dripping from when he washed it. [376]",
-    "RaccoonDialogue.Fall.Wednesday.3": "The raccoon is holding onto an iridium bar. He hands it over to you reluctantly. Did he get that from Clint or Silas? [337]#$t RaccoonBar 1",
-    "RaccoonDialogue.Fall.Thursday.1": "The raccoon chitters happily before handing you a box of deluxe fertilizer. You wonder if he snagged that from Pierre's or Ari's. [919]#$t RaccoonFertilizer 1",
-    "RaccoonDialogue.Fall.Thursday.2": "The raccoon hisses and throws an orange at your feet. It's gnawed on around the edges. Maybe he didn't enjoy it? [635]",
-    "RaccoonDialogue.Fall.Thursday.3": "You try to converse with the raccoon. He tilts his head in confusion. Alas, you are unable to communicate with him.",
-    "RaccoonDialogue.Fall.Friday.1": "The raccoon is holding onto what looks like a dwarven gadget. Doesn't look like he's willing to part with it.#$t RaccoonGadget 1",
-    "RaccoonDialogue.Fall.Friday.2": "The raccoon purrs. He gives you some mixed seeds. They're still dripping from when he washed them. [770]",
-    "RaccoonDialogue.Fall.Friday.3": "The raccoon chitters happily before handing you a Tiger Trout. It's still dripping. [699]",
-    "RaccoonDialogue.Fall.Saturday.1": "The raccoon purrs before giving you some tea leaves. They're soaking wet. Where did he get those from? [815]#$t RaccoonTea 1",
-    "RaccoonDialogue.Fall.Saturday.2": "The raccoon seems to be holding onto a pair of purple shorts. You... don't want to know whose shorts these are.",
-    "RaccoonDialogue.Fall.Saturday.3": "The raccoon chitters happily and hands you some plum pudding. It's half eaten and a little wet. [604]",
-    "RaccoonDialogue.Fall.Sunday.1": "The raccoon seems to be enjoying the breeze. He's holding onto a knitted scarf. It looks like something Miyoung would make...#$t RaccoonScarf 1",
-    "RaccoonDialogue.Fall.Sunday.2": "The raccoon hisses at you. He throws a can of Joja Cola at your feet. It's still dripping from when he washed it. [167]",
-    "RaccoonDialogue.Fall.Sunday.3": "The raccoon seems to be happy to see you. Not happy enough to give you the opal he's holding, though.",
+    // 0-3 Hearts - Spring
+    "RaccoonDialogue.Early.Spring.Monday.1": "The raccoon hisses at you. He throws a broken CD at your feet. It's still dripping from when he washed it. [171]#$t RaccoonCD 1",
+    "RaccoonDialogue.Early.Spring.Monday.2": "The raccoon hands you a head of cauliflower. He chitters happily. [190]",
+    "RaccoonDialogue.Early.Spring.Monday.3": "The raccoon approaches you warily. He sniffs you and makes a face. How rude!",
 
-    //Winter
-    "RaccoonDialogue.Winter.Monday.1": "The raccoon chitters happily. He gives you a potato. It's still dripping from when he washed it. [192]",
-    "RaccoonDialogue.Winter.Monday.2": "The raccoon doesn't seem to be enjoying the weather. You agree, it *is* a little cold.",
-    "RaccoonDialogue.Winter.Monday.3": "You try to converse with the raccoon. He tilts his head in confusion. Alas, you are unable to communicate with him.",
-    "RaccoonDialogue.Winter.Tuesday.1": "The raccoon rubs his hands together. You're not sure if he's warming them up or scheming.",
-    "RaccoonDialogue.Winter.Tuesday.2": "The raccoon purrs. He hands you a half-eaten apricot. It's still dripping from when he washed it. [634]",
-    "RaccoonDialogue.Winter.Tuesday.3": "The raccoon is holding onto a sunflower. It's been gnawed on around the edges. He seems reluctant to part with it... [421]",
-    "RaccoonDialogue.Winter.Wednesday.1": "The raccoon is holding onto an anchor. You try to wrestle it out of his hands and... you did it! You're now the proud owner of an anchor. He doesn't seem to be pleased with this outcome. [117]",
-    "RaccoonDialogue.Winter.Wednesday.2": "The raccoon is holding a snowball in his little hands. You look away for a moment and he throws it at you. He chitters happily.",
-    "RaccoonDialogue.Winter.Wednesday.3": "The raccoon purrs. He hands you pack of artichoke seeds. The pouch is soaking wet. [489]",
-    "RaccoonDialogue.Winter.Thursday.1": "The raccoon chitters happily. He's holding onto a book. You wonder if Elias is missing a book from the library...#$t RaccoonBook 1",
-    "RaccoonDialogue.Winter.Thursday.2": "The raccoon is holding onto a piece of basalt. You ask him to hand it over. He throws it at your feet. It's still dripping from when he washed it. [570]",
-    "RaccoonDialogue.Winter.Thursday.3": "The raccoon purrs. He seems to be enjoying a jar of caviar. He offers the rest to you. You wonder where he got that from...[445]#$t RaccoonCaviar 1 ",
-    "RaccoonDialogue.Winter.Friday.1": "The raccoon snarls at you. He throws a piece of ginger at your feet. It's soaking wet. [829]",
-    "RaccoonDialogue.Winter.Friday.2": "The raccoon seems to be gnawing on a piece of vertebra. He hands it over to you. It's still dripping from when he washed it. [584]",
-    "RaccoonDialogue.Winter.Friday.3": "The raccoon chitters happily. He sips on a cup of green tea. Good for him, he's staying warm.",
-    "RaccoonDialogue.Winter.Saturday.1": "The raccoon hisses at you. He throws a piece of driftwood at your feet. It's soaking wet. [169]",
-    "RaccoonDialogue.Winter.Saturday.2": "The raccoon purrs and hands you a pack of... ancient seeds! You wonder where he got that from... [499]",
-    "RaccoonDialogue.Winter.Saturday.3": "The raccoon twirls around. He beckons you to join him. You share a silly little dance in the snow.",
-    "RaccoonDialogue.Winter.Sunday.1": "The raccoon is holding onto a fairy stone. He reluctantly gives it to you. [577]",
-    "RaccoonDialogue.Winter.Sunday.2": "The raccoon seems to be enjoying an apple. Better leave him be.",
-    "RaccoonDialogue.Winter.Sunday.3": "The raccoon is holding onto a toy. Did he steal that from one of the kids?#$t RaccoonToy 1",
+    "RaccoonDialogue.Early.Spring.Tuesday.1": "The raccoon snarls at you. He throws a soggy newspaper at your feet. It's soaking wet. [172]",
+    "RaccoonDialogue.Early.Spring.Tuesday.2": "The raccoon seems to be enjoying an apple. Better leave him be.",
+    "RaccoonDialogue.Early.Spring.Tuesday.3": "The raccoon chitters. He hands you a piece of wood. It's been gnawed on around the edges. [388]",
 
+    "RaccoonDialogue.Early.Spring.Wednesday.1": "The raccoon seems to be enjoying the weather. He pats the spot next to him.",
+    "RaccoonDialogue.Early.Spring.Wednesday.2": "The raccoon seems to be holding... a broken knife. Better back away.",
+    "RaccoonDialogue.Early.Spring.Wednesday.3": "The raccoon quietly hands you a doll. He seems reluctant to part with it... [103]",
+
+    "RaccoonDialogue.Early.Spring.Thursday.1": "The raccoon throws a Halibut at your feet. It's still dripping. [708]",
+    "RaccoonDialogue.Early.Spring.Thursday.2": "The raccoon purrs. He hands you a pack of starfruit seeds. You wonder where he got this from. [486]",
+    "RaccoonDialogue.Early.Spring.Thursday.3": "The raccoon points to his bow. He seems to be very happy about it. You wonder who put that on his head. Or how they managed to do so.",
+
+    "RaccoonDialogue.Early.Spring.Friday.1": "You hold out your hand to the raccoon and he chitters happily before emptying a wallet into your palm. You see a fish-scale pattern engraved in the leather.#$action AddMoney 50#$t RaccoonWallet 1",
+    "RaccoonDialogue.Early.Spring.Friday.2": "The raccoon purrs. He gives you a bottle of maple syrup. It's half full. [724]",
+    "RaccoonDialogue.Early.Spring.Friday.3": "The raccoon chitters happily. He's holding a shiny piece of glass. It doesn't seem like he's willing to part with it...",
+
+    "RaccoonDialogue.Early.Spring.Saturday.1": "The raccoon purrs and hands you a tulip. It's been gnawed on around the edges. [591]",
+    "RaccoonDialogue.Early.Spring.Saturday.2": "The raccoon snarls at you and throws a stone at your feet. It's still dripping from when he washed it. [390]",
+    "RaccoonDialogue.Early.Spring.Saturday.3": "The raccoon seems to be enjoying a Poppyseed Muffin. You ask him to hand it over. He shakes his head and hisses at you.#$t RaccoonMuffin 1",
+
+    "RaccoonDialogue.Early.Spring.Sunday.1": "The raccoon hands you a spring onion. It's soaking wet. [399]",
+    "RaccoonDialogue.Early.Spring.Sunday.2": "The raccoon seems to be holding a piece of obsidian. He extends his hands out to give it to you before pulling away and chittering.",
+    "RaccoonDialogue.Early.Spring.Sunday.3": "The raccoon purrs. He gives you a hazelnut. You wonder where he got that from... [408]",
+
+    // 0-3 Hearts - Summer
+    "RaccoonDialogue.Early.Summer.Monday.1": "The raccoon seems to be enjoying the weather. He pats the spot next to him.",
+    "RaccoonDialogue.Early.Summer.Monday.2": "The raccoon purrs. He gives you some cheese. It's been gnawed on around the edges. [424]",
+    "RaccoonDialogue.Early.Summer.Monday.3": "The raccoon chitters happily before handing you a pack of garlic seeds. The pouch is soaking wet. [476]",
+
+    "RaccoonDialogue.Early.Summer.Tuesday.1": "The raccoon hisses at you. He throws a can of Joja Cola at your feet. It's still dripping from when he washed it. [167]",
+    "RaccoonDialogue.Early.Summer.Tuesday.2": "The raccoon seems to be holding an... ancient sword. Looks like he's holding onto it. Where did he manage to find that?!",
+    "RaccoonDialogue.Early.Summer.Tuesday.3": "The raccoon does not seem to be enjoying this heat. You consider leading him into an air conditioned place, but decide against it to avoid the chaos it would cause.",
+
+    "RaccoonDialogue.Early.Summer.Wednesday.1": "The raccoon seems to be enjoying a peach. Better leave him be.",
+    "RaccoonDialogue.Early.Summer.Wednesday.2": "The raccoon purrs and hands you a half eaten plate of spaghetti. Its... a little wet. [224]",
+    "RaccoonDialogue.Early.Summer.Wednesday.3": "The raccoon chitters happily and hands you a cup of coffee. It smells like the kind Diala makes... [395]#$t RaccoonCoffee 1",
+
+    "RaccoonDialogue.Early.Summer.Thursday.1": "The raccoon purrs and nuzzles your hand. You pet him for a moment before realizing he used your distraction to pick your pocket.#$action AddMoney -100",
+    "RaccoonDialogue.Early.Summer.Thursday.2": "The raccoon is holding onto a piece of Lunarite. He snarls at you when you try to take it.#$t RaccoonLunarite 1",
+    "RaccoonDialogue.Early.Summer.Thursday.3": "The raccoon chitters. He seems to be gnawing at a piece of hardwood. He hands it to you, but it's soaking wet. [709]",
+
+    "RaccoonDialogue.Early.Summer.Friday.1": "The raccoon hisses at you before throwing a snail at your feet. It's a little sticky... [721]",
+    "RaccoonDialogue.Early.Summer.Friday.2": "The raccoon is holding onto a pair of broken glasses. You wonder if those are Ari's reading glasses.#$t RaccoonGlasses 1",
+    "RaccoonDialogue.Early.Summer.Friday.3": "The raccoon is gnawing on a field snack. He doesn't seem to be enjoying it, but he eats it nonetheless.",
+
+    "RaccoonDialogue.Early.Summer.Saturday.1": "The raccoon hands you a ruby. It's still dripping from when he washed it. [64]",
+    "RaccoonDialogue.Early.Summer.Saturday.2": "The raccoon purrs. He gives you some bug meat. It's soaking wet. Gross. [684]",
+    "RaccoonDialogue.Early.Summer.Saturday.3": "The raccoon seems to be enjoying a cherry. You ask him to hand it over. He shakes his head and hisses at you.",
+
+    "RaccoonDialogue.Early.Summer.Sunday.1": "The raccoon seems to be holding... a broken knife. Better back away.",
+    "RaccoonDialogue.Early.Summer.Sunday.2": "The raccoon whines before giving you an apple. He seems reluctant to part with it... [613]",
+    "RaccoonDialogue.Early.Summer.Sunday.3": "The raccoon chitters happily before giving you a pumpkin. It's still dripping from when he washed it. [276]",
+
+    // 0-3 Hearts - Fall
+    "RaccoonDialogue.Early.Fall.Monday.1": "The raccoon is holding onto a pile of leaves. He throws them into the air then proceeds to step on them.",
+    "RaccoonDialogue.Early.Fall.Monday.2": "The raccoon hisses at you before throwing a piece of trash at your feet. It's soaking wet. [168]",
+    "RaccoonDialogue.Early.Fall.Monday.3": "The raccoon hands you an eel. How... did he catch that? [148]",
+
+    "RaccoonDialogue.Early.Fall.Tuesday.1": "The raccoon reluctantly gives you a large egg. You have to wrestle it out of his little hands. [182]",
+    "RaccoonDialogue.Early.Fall.Tuesday.2": "The raccoon seems to be holding a cookie. He extends his hands out to give it to you before pulling away and chittering.",
+    "RaccoonDialogue.Early.Fall.Tuesday.3": "The raccoon seems to be holding onto a sea cow. He's petting the fish gently. It's dripping wet.",
+
+    "RaccoonDialogue.Early.Fall.Wednesday.1": "The raccoon twirls around. He beckons you to join him. You share a silly little dance.",
+    "RaccoonDialogue.Early.Fall.Wednesday.2": "The raccoon purrs. He gives you a poppy. It's still dripping from when he washed it. [376]",
+    "RaccoonDialogue.Early.Fall.Wednesday.3": "The raccoon is holding onto a gold bar. He seems to be gnawing at it and getting frustrated at its inedibility.",
+
+    "RaccoonDialogue.Early.Fall.Thursday.1": "The raccoon chitters happily before handing you a box of deluxe fertilizer. You wonder if he snagged that from Pierre's or Ari's. [919]#$t RaccoonFertilizer 1",
+    "RaccoonDialogue.Early.Fall.Thursday.2": "The raccoon hisses and throws an orange at your feet. It's gnawed on around the edges. Maybe he didn't enjoy it? [635]",
+    "RaccoonDialogue.Early.Fall.Thursday.3": "You try to converse with the raccoon. He tilts his head in confusion. Alas, you are unable to communicate with him.",
+
+    "RaccoonDialogue.Early.Fall.Friday.1": "The raccoon is holding onto what looks like a dwarven gadget. Doesn't look like he's willing to part with it.#$t RaccoonGadget 1",
+    "RaccoonDialogue.Early.Fall.Friday.2": "The raccoon purrs. He gives you some mixed seeds. They're still dripping from when he washed them. [770]",
+    "RaccoonDialogue.Early.Fall.Friday.3": "The raccoon chitters happily before handing you a Tiger Trout. It's still dripping. [699]",
+
+    "RaccoonDialogue.Early.Fall.Saturday.1": "The raccoon purrs before giving you some tea leaves. They're soaking wet. Where did he get those from? [815]#$t RaccoonTea 1",
+    "RaccoonDialogue.Early.Fall.Saturday.2": "The raccoon seems to be holding onto a pair of purple shorts. You... don't want to know whose shorts these are.",
+    "RaccoonDialogue.Early.Fall.Saturday.3": "The raccoon chitters happily and hands you some plum pudding. It's half eaten and a little wet. [604]",
+
+    "RaccoonDialogue.Early.Fall.Sunday.1": "The raccoon seems to be enjoying the breeze. He's holding onto a knitted scarf. It looks like something Miyoung would make...#$t RaccoonScarf 1",
+    "RaccoonDialogue.Early.Fall.Sunday.2": "The raccoon hisses at you. He throws a can of Joja Cola at your feet. It's still dripping from when he washed it. [167]",
+    "RaccoonDialogue.Early.Fall.Sunday.3": "The raccoon seems to be happy to see you. Not happy enough to give you the opal he's holding, though.",
+
+    // 0-3 Hearts - Winter
+    "RaccoonDialogue.Early.Winter.Monday.1": "The raccoon chitters happily. He gives you a potato. It's still dripping from when he washed it. [192]",
+    "RaccoonDialogue.Early.Winter.Monday.2": "The raccoon doesn't seem to be enjoying the weather. You agree, it *is* a little cold.",
+    "RaccoonDialogue.Early.Winter.Monday.3": "The raccoon purrs. He hands you a half-eaten apricot. It's still dripping from when he washed it. [634]",
+
+    "RaccoonDialogue.Early.Winter.Tuesday.1": "You try to converse with the raccoon. He tilts his head in confusion. Alas, you are unable to communicate with him.",
+    "RaccoonDialogue.Early.Winter.Tuesday.2": "The raccoon rubs his hands together. You're not sure if he's warming them up or scheming.",
+    "RaccoonDialogue.Early.Winter.Tuesday.3": "The raccoon is holding onto a sunflower. It's been gnawed on around the edges. He seems reluctant to part with it... [421]",
+
+    "RaccoonDialogue.Early.Winter.Wednesday.1": "The raccoon is holding onto an anchor. You try to wrestle it out of his hands and... you did it! You're now the proud owner of an anchor. He doesn't seem to be pleased with this outcome. [117]",
+    "RaccoonDialogue.Early.Winter.Wednesday.2": "The raccoon is holding a snowball in his little hands. You look away for a moment and he throws it at you. He chitters happily.",
+    "RaccoonDialogue.Early.Winter.Wednesday.3": "The raccoon purrs. He hands you pack of artichoke seeds. The pouch is soaking wet. [489]",
+
+    "RaccoonDialogue.Early.Winter.Thursday.1": "The raccoon chitters happily. He's holding onto a book. You wonder if Elias is missing a book from the library...#$t RaccoonBook 1",
+    "RaccoonDialogue.Early.Winter.Thursday.2": "The raccoon is holding onto a piece of basalt. You ask him to hand it over. He throws it at your feet. It's still dripping from when he washed it. [570]",
+    "RaccoonDialogue.Early.Winter.Thursday.3": "The raccoon purrs. He seems to be enjoying a jar of caviar. He offers the rest to you. You wonder where he got that from...[445]#$t RaccoonCaviar 1",
+
+    "RaccoonDialogue.Early.Winter.Friday.1": "The raccoon snarls at you. He throws a piece of ginger at your feet. It's soaking wet. [829]",
+    "RaccoonDialogue.Early.Winter.Friday.2": "The raccoon seems to be gnawing on a piece of vertebra. He hands it over to you. It's still dripping from when he washed it. [584]",
+    "RaccoonDialogue.Early.Winter.Friday.3": "The raccoon chitters happily. He sips on a cup of green tea. Good for him, he's staying warm.",
+
+    "RaccoonDialogue.Early.Winter.Saturday.1": "The raccoon hisses at you. He throws a piece of driftwood at your feet. It's soaking wet. [169]",
+    "RaccoonDialogue.Early.Winter.Saturday.2": "The raccoon twirls around. He beckons you to join him. You share a silly little dance in the snow.",
+    "RaccoonDialogue.Early.Winter.Saturday.3": "The raccoon is holding onto a fairy stone. He clutches it tighter when he notices you. Doesn't seem like he's ready to part with it, yet.",
+
+    "RaccoonDialogue.Early.Winter.Sunday.1": "The raccoon seems to be enjoying an apple. Better leave him be.",
+    "RaccoonDialogue.Early.Winter.Sunday.2": "The raccoon is holding onto a toy. Did he steal that from one of the kids?#$t RaccoonToy 1",
+    "RaccoonDialogue.Early.Winter.Sunday.3": "The raccoon is holding a bowl of trout soup. He brings it up to his mouth and slurps from it before handing it to you. [219]",
+
+    // 4-7 Hearts - Spring
+    "RaccoonDialogue.Mid.Spring.Monday.1": "The raccoon purrs and rolls around in the grass.#$b#$y 'What do you do?_Tell him he isn't a cat. This is cat behavior._He hisses at you and continues to roll around._Join him. Be one with the grass._You join him and roll around for a while. You hope no one sees you.'",
+    "RaccoonDialogue.Mid.Spring.Monday.2": "The raccoon is holding onto a battery pack. He throws it at your feet. Did he get that from Maru? [787]#$t RaccoonBattery 1",
+    "RaccoonDialogue.Mid.Spring.Monday.3": "The raccoon is holding onto a shiny emerald.#$b#$y 'What do you do?_Ask him to hand it over._He whimpers sadly and hands it to you. Well... now you feel bad. [60]_Let him keep it._He chitters happily and twirls around, holding the emerald over his head.'",
+
+    "RaccoonDialogue.Mid.Spring.Tuesday.1": "The raccoon purrs and hands you a pack of... ancient seeds! You wonder where he got that from... [499]",
+    "RaccoonDialogue.Mid.Spring.Tuesday.2": "The raccoon gives you a pair of broken glasses. They look familiar... [170]",
+    "RaccoonDialogue.Mid.Spring.Tuesday.3": "The raccoon raises one of his little arms. What do you do?#$b#$y '..._Fight the raccoon._You try to fight the raccoon, but he puts his arms up in surrender. You've betrayed his trust...#$action AddFriendshipPoints -70_Shake his hand._You extend your hand a share a friendly handshake. You both walk away pleased with the outcome.'",
+
+    "RaccoonDialogue.Mid.Spring.Wednesday.1": "The raccoon is sniffing a tulip. He's happy with its scent. Can you blame him? Who doesn't enjoy spring flowers?#$b#He then proceeds to take a bite out of it. He doesn't seem to be as happy with the taste.",
+    "RaccoonDialogue.Mid.Spring.Wednesday.2": "The raccoon is holding onto a fairy stone. He reluctantly gives it to you. [577]",
+    "RaccoonDialogue.Mid.Spring.Wednesday.3": "The raccoon chitters. He hands you a piece of hardwood. It's been gnawed on around the edges. [709]",
+
+    "RaccoonDialogue.Mid.Spring.Thursday.1": "The raccoon purrs. He hands you a rusty spoon. It's still wet from when he washed it. [110]",
+    "RaccoonDialogue.Mid.Spring.Thursday.2": "The raccoon seems to be enjoying a plate of spaghetti. You're a little envious. You wish you had some spaghetti, too.",
+    "RaccoonDialogue.Mid.Spring.Thursday.3": "The raccoon is holding onto a treasure chest. He looks at you pleadingly.#$b#You could almost hear him say, 'Please, @. Don't take away my treasure chest. I have a family to feed.'#$b#You decide to let him keep it this time. He giggles mischievously.",
+
+    "RaccoonDialogue.Mid.Spring.Friday.1": "The raccoon excitedly hands you a piece of paper. It has paw prints on it. You wonder if he's trying to communicate with you.",
+    "RaccoonDialogue.Mid.Spring.Friday.2": "You ask the raccoon if he can understand you. He nods eagerly.#$b#You then ask him if he has an item for you today. He shakes his head.",
+    "RaccoonDialogue.Mid.Spring.Friday.3": "The raccoon chitters and hands you a pack of garlic seeds! It's soaking wet... [476]",
+
+    "RaccoonDialogue.Mid.Spring.Saturday.1": "The raccoon is snacking on some kale. He offers you a bite, but doesn't give you any more than that.",
+    "RaccoonDialogue.Mid.Spring.Saturday.2": "The raccoon seems to be enjoying a Poppyseed Muffin. You ask him to hand it over. He shakes his head and hisses at you.#$t RaccoonMuffin 1",
+    "RaccoonDialogue.Mid.Spring.Saturday.3": "The raccoon hisses at you and drops a soggy newspaper at your feet. When you bend down to pick it up, he grabs some money from your wallet. Little rascal!#$action AddMoney -50",
+
+    "RaccoonDialogue.Mid.Spring.Sunday.1": "The raccoon gives you a bottle of oak resin. He chitters happily. [725]",
+    "RaccoonDialogue.Mid.Spring.Sunday.2": "The raccoon is holding a jar of strawberry jelly. He seems to be too attached to his jelly to hand it over.",
+    "RaccoonDialogue.Mid.Spring.Sunday.3": "The raccoon hands you a bottle of wine. It's still dripping from when he washed it. Where'd he even find that?! [348]",
+
+    // 4-7 Hearts - Summer
+    "RaccoonDialogue.Mid.Summer.Monday.1": "The raccoon does a little dance. He twirls around before handing you an orange. It's dripping wet. [635]",
+    "RaccoonDialogue.Mid.Summer.Monday.2": "The raccoon is holding onto a piece of cloth. Did he steal that from Emily or Ezra...?#$t RaccoonCloth 1",
+    "RaccoonDialogue.Mid.Summer.Monday.3": "The raccoon purrs and takes a bite out of a blueberry.#$b#$y 'What do you do?_Ask him to share._The raccoon happily gives you a blueberry. [258]_Steal some from him._You manage to grab a blueberry. The raccoon gasps! He's impressed with your thievery. [258]'",
+
+    "RaccoonDialogue.Mid.Summer.Tuesday.1": "The raccoon looks confused. He's holding onto a bottle of wine, but he doesn't seem to know how to crack it open.",
+    "RaccoonDialogue.Mid.Summer.Tuesday.2": "The raccoon gives you a Soapstone. He seems reluctant to part with it... [572]",
+    "RaccoonDialogue.Mid.Summer.Tuesday.3": "The raccoon is holding onto an iridium bar. He hands it over to you reluctantly. Did he get that from Clint or Silas? [337]#$t RaccoonBar 1",
+
+    "RaccoonDialogue.Mid.Summer.Wednesday.1": "The raccoon whines before giving you a golden mask. He seems reluctant to part with it... [124]",
+    "RaccoonDialogue.Mid.Summer.Wednesday.2": "The raccoon chitters happily. He seems to be gnawing on a piece of cake. You wonder where he found that...",
+    "RaccoonDialogue.Mid.Summer.Wednesday.3": "The raccoon seems to be in a weird mood. Maybe you'll have better luck talking to him on another day.",
+
+    "RaccoonDialogue.Mid.Summer.Thursday.1": "The raccoon is snacking on a melon. He offers you a bite, but doesn't give you any more than that.",
+    "RaccoonDialogue.Mid.Summer.Thursday.2": "The raccoon purrs. He gives you a bug steak. It's soaking wet. Gross. [874]",
+    "RaccoonDialogue.Mid.Summer.Thursday.3": "The raccoon hands you a... cave jelly! It's still dripping wet. How did he find this?! [(O)CaveJelly]",
+
+    "RaccoonDialogue.Mid.Summer.Friday.1": "The raccoon seems to be holding... a broken knife. Better back away.",
+    "RaccoonDialogue.Mid.Summer.Friday.2": "The raccoon is holding an egg. He gently bites at it, careful not to break it. He then hands it over to you. You better take good care of this egg for him. [174]",
+    "RaccoonDialogue.Mid.Summer.Friday.3": "The raccoon hisses at you before throwing a crab at your feet. It's dripping wet... [717]",
+
+    "RaccoonDialogue.Mid.Summer.Saturday.1": "The raccoon seems to be enjoying a chocolate chip cookie. You ask him to hand it over. He shakes his head and hisses at you.",
+    "RaccoonDialogue.Mid.Summer.Saturday.2": "The raccoon purrs. He gives you some mixed flower seeds. They're still dripping from when he washed them. [(O)MixedFlowerSeeds]",
+    "RaccoonDialogue.Mid.Summer.Saturday.3": "The raccoon seems to be enjoying a chocolate chip cookie. You ask him to hand it over. He reluctantly gives it to you. It looks like the kinda the cat cafe sells. [(O)skellady.SBVCP_ChocoChipCookies]",
+
+    "RaccoonDialogue.Mid.Summer.Sunday.1": "The raccoon whines before giving you a cherry. He seems reluctant to part with it... [638]",
+    "RaccoonDialogue.Mid.Summer.Sunday.2": "The raccoon chitters happily before giving you a pumpkin. It's still dripping from when he washed it. [276]",
+    "RaccoonDialogue.Mid.Summer.Sunday.3": "The raccoon purrs and hands you a pouch of rare seeds! It's soaking wet. [347]",
+
+    // 4-7 Hearts - Fall
+    "RaccoonDialogue.Mid.Fall.Monday.1": "The raccoon seems to be happy to see you. Happy enough to give you the opal he's holding! What a treat. [564]",
+    "RaccoonDialogue.Mid.Fall.Monday.2": "The raccoon is holding onto... an apple sapling. He drops it at your feet. Did he steal that from Pierre...? [633]$t RaccoonSapling 1",
+    "RaccoonDialogue.Mid.Fall.Monday.3": "The raccoon is is holding onto a few leaves. He puts them down and proceeds to step on them. Is it really fall if you haven't stepped on some crunchy leaves?",
+
+    "RaccoonDialogue.Mid.Fall.Tuesday.1": "The raccoon purrs and hands you a packet of... ancient seeds! You wonder where he got that from... [499]",
+    "RaccoonDialogue.Mid.Fall.Tuesday.2": "The raccoon doesn't seem to have anything on hand today. What a sad day for both of you.",
+    "RaccoonDialogue.Mid.Fall.Tuesday.3": "The raccoon chitters happily. He's holding onto a little coin purse. It doesn't look like he's in the mood to share today.",
+
+    "RaccoonDialogue.Mid.Fall.Wednesday.1": "The raccoon chitters as you approach.#$b#$y 'What do you ask him?_Can you understand me?_The raccoon nods eagerly. Hooray! Now, all you need to do is find a way to understand *him*._Do you consider me a friend?_The raccoon thinks about it for a second, then nods. Hooray! Friendship!'",
+    "RaccoonDialogue.Mid.Fall.Wednesday.2": "The raccoon excitedly hands you a piece of paper. It has paw prints on it in the shape of an... oval? Or an egg? You wonder if he's trying to communicate with you.",
+    "RaccoonDialogue.Mid.Fall.Wednesday.3": "The raccoon hisses and drops a bag of flour at your feet. Ugh, of course he tried washing the bag. [246]",
+
+    "RaccoonDialogue.Mid.Fall.Thursday.1": "The raccoon is holding onto what looks like a dwarven gadget. He reluctantly gives it to you. You have to wrestle it out of his little hands. [122]",
+    "RaccoonDialogue.Mid.Fall.Thursday.2": "The raccoon is holding onto an iridium sprinkler! You absolutely need that. What do you do?#$b#$y '..._Please, Mr. Raccoon. My crops need this sprinkler._The raccoon hesitates before handing it over to you. He trusts you will take good care of it. [645]_You are going to give me that sprinkler right NOW._The raccoon hisses at you and sticks his tongue out. Maybe you should've been nicer...'",
+    "RaccoonDialogue.Mid.Fall.Thursday.3": "The raccoon seems to be enjoying the weather. Better leave him alone.",
+
+    "RaccoonDialogue.Mid.Fall.Friday.1": "The raccoon is holding a squeaky toy in his mouth. He squeaks, and squeaks, and squeaks. You're starting to think he's doing this just to aggravate you.",
+    "RaccoonDialogue.Mid.Fall.Friday.2": "The raccoon chitters happily and drops a sturgeon at your feet. He quickly snatches it back as you try to grab it, giggling mischievously.",
+    "RaccoonDialogue.Mid.Fall.Friday.3": "The raccoon chitters happily and drops a sturgeon at your feet. He tries to snatch it back, but you're too quick! Hah! You're now the proud owner of one sturgeon.",
+
+    "RaccoonDialogue.Mid.Fall.Saturday.1": "The raccoon is holding onto a... skeletal hand? He waves it at you. Once he's done waving, he hands it to you. Not creepy at all. [582]",
+    "RaccoonDialogue.Mid.Fall.Saturday.2": "The raccoon hisses and throws a cranberry at your feet. It's gnawed on around the edges. Maybe he didn't enjoy it? [282]",
+    "RaccoonDialogue.Mid.Fall.Saturday.3": "$y 'The raccoon is here!_Greet him._You say hello. He chitters happily and extends his hand out for a handshake. How sweet._Pet him._You extend your hand warily and gently pet him. He looks confused, but he doesn't seem to mind._Smile at him awkwardly._The raccoon tilts his head in confusion. He then starts trying to imitate your awkward smile.",
+
+    "RaccoonDialogue.Mid.Fall.Sunday.1": "The raccoon is holding onto an... ancient sword?! He holds it up and smiles mischievously. You do NOT want to know what he's doing with that or where he got it from.",
+    "RaccoonDialogue.Mid.Fall.Sunday.2": "The raccoon purrs. He hands you a life elixir. It's half empty... Did he steal that from the clinic? [773]$t RaccoonElixir 1",
+    "RaccoonDialogue.Mid.Fall.Sunday.3": "The raccoon immediately extends his hands out to you. He's giving you some monster musk. He winks as you take it from him. Is... is this a threat? [879]",
+
+    // 4-7 Hearts - Winter
+    "RaccoonDialogue.Mid.Winter.Monday.1": "The raccoon doesn't seem to be enjoying the weather. You agree, it *is* a little cold.",
+    "RaccoonDialogue.Mid.Winter.Monday.2": "The raccoon points at his little beanie excitedly.#$b#$y 'What do you do?_Compliment his beanie._The raccoon chitters happily. He's glad you have good taste!_Pretend you don't notice it._The raccoon is disappointed. He crosses his arms and shakes his head at you.'",
+    "RaccoonDialogue.Mid.Winter.Monday.3": "The raccoon purrs and drops a pouch of powdermelon seeds at your feet. It's soaking wet... [(O)PowdermelonSeeds]",
+
+    "RaccoonDialogue.Mid.Winter.Tuesday.1": "The raccoon reluctantly gives you a treasure chest. You have to wrestle it out of his little hands. [166]",
+    "RaccoonDialogue.Mid.Winter.Tuesday.2": "The raccoon shivers. He wraps his scarf around him tighter. You wonder who knitted that for him...$t RaccoonKnitting 2",
+    "RaccoonDialogue.Mid.Winter.Tuesday.3": "The raccoon purrs and drops a piece of truffle at your feet. How'd he get this? It's winter... [430]",
+
+    "RaccoonDialogue.Mid.Winter.Wednesday.1": "The raccoon is holding onto a souvenir of some sort. He clutches it tighter as you approach. Who did he steal that from?$t RaccoonSouvenir 1",
+    "RaccoonDialogue.Mid.Winter.Wednesday.2": "The raccoon chitters happily. He extends his little hands outwards to offer you his burger. You take it and thank him. [241]",
+    "RaccoonDialogue.Mid.Winter.Wednesday.3": "The raccoon hisses and throws a piece of bait at your feet. It's wet and sticky... [685]",
+
+    "RaccoonDialogue.Mid.Winter.Thursday.1": "The raccoon seems to be holding a book. The cover has magical girls on it. Who did he steal that from?$t RaccoonManga 1",
+    "RaccoonDialogue.Mid.Winter.Thursday.2": "The raccoon purrs and hands you a packet of... ancient seeds! You wonder where he got that from... [499]",
+    "RaccoonDialogue.Mid.Winter.Thursday.3": "The raccoon chitters happily. He's holding a dinosaur egg! It's bigger than his face.#$b#$y 'What do you do?_Ask him to hand it over nicely._The raccoon hesitates and reluctantly gives it to you. He waves goodbye at it as you hold it. [107]_Snatch it from his little hands._You try to forcefully take it away from him. He gasps in disbelief! Chaos ensues! You tug, he tugs, and then... the egg breaks. Neither of you win, I guess.'",
+
+    "RaccoonDialogue.Mid.Winter.Friday.1": "The raccoon dips his paw into a jar of duck mayonnaise. He licks it, makes a face, and then throws it at your feet. Doesn't look like he enjoyed that. [307]",
+    "RaccoonDialogue.Mid.Winter.Friday.2": "The raccoon twirls around. He beckons you to join him. You share a silly little dance in the snow.",
+    "RaccoonDialogue.Mid.Winter.Friday.3": "The raccoon chitters happily. He sips on a cup of green tea. Good for him, he's staying warm.",
+
+    "RaccoonDialogue.Mid.Winter.Saturday.1": "The raccoon is holding onto a sea jelly. He throws it at your feet. It's wet and sticky... [(O)SeaJelly]",
+    "RaccoonDialogue.Mid.Winter.Saturday.2": "The raccoon purrs. He inspects the rusty cog he's holding before handing it over to you. [112]",
+    "RaccoonDialogue.Mid.Winter.Saturday.3": "The raccoon chitters happily. He's snacking on some seaweed. Better leave him be.",
+
+    "RaccoonDialogue.Mid.Winter.Sunday.1": "The raccoon is holding a snowball in his little hands. You look away for a moment and he throws it at you. He chitters happily.",
+    "RaccoonDialogue.Mid.Winter.Sunday.2": "The raccoon is holding a snowball in his little hands. This time, you keep an eye on him and grab your own snowball. You have a staring contest.#$b#$y 'What do you do?_Throw the snowball at him._You throw your snowball, and so does he. You both get hit. Guess you're even now._Throw the snowball away._You surrender, throwing your snowball away. However, the raccoon throws his at you! He chitters happily.'",
+    "RaccoonDialogue.Mid.Winter.Sunday.3": "The raccoon is sipping on some hot chocolate. You ask him to share, and he immediately hands you the cup! How nice of him. [(O)skellady.SBVCP_DialaHotChoco]",
     //Items
     //-----
+
+    //Animal Stuff
+    "SBV.Alpaca.Name": "Alpaca", // FOR TRANSLATORS: NEW IN 1.0.4
+    "SBV.Alpaca.Description": "Iman's alpacas! Alpacas who form a close bond with their owners can grow wool faster. A pair of shears is required to harvest their wool", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Crops
     "SBV.Arfaj.Name": "Arfaj",
@@ -5902,6 +6290,12 @@
     "SBV.Carob.Description": "A sweet, ripe pod that is used as a substitute for chocolate.",
     "SBV.CarmineBlossom.Name": "Carmine Blossom",
     "SBV.CarmineBlossom.Description": "An elegant red flower. Its blue foliage feels otherworldly.",
+    "SBV.Marigold.Name": "Marigold", // FOR TRANSLATORS: NEW IN 1.0.4
+    "SBV.Marigold.Description": "A sweet and vibrant yellow flower. Its petals can make a delicious tea!", // FOR TRANSLATORS: NEW IN 1.0.4
+    "SBV.Bluestar.Name": "Bluestar", // FOR TRANSLATORS: NEW IN 1.0.4
+    "SBV.Bluestar.Description": "A small, low maintenance blue flower. Its petals almost resemble a star.", // FOR TRANSLATORS: NEW IN 1.0.4
+    "SBV.Cloudberry.Name": "Cloudberry", // FOR TRANSLATORS: NEW IN 1.0.4
+    "SBV.Cloudberry.Description": "A sweet and juicy summer-time berry. Perfect for making dessert!", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Food
     "SBV.ChocoChipCookies.Name": "Chocolate Chip Cookies",
@@ -5910,6 +6304,8 @@
     "SBV.DialaHotChoco.Description": "Guaranteed to make you feel warm and cozy on cold days!",
     "SBV.IceCreamBowl.Name": "Ice Cream Bowl",
     "SBV.IceCreamBowl.Description": "A refreshing bowl of ice cream consisting of Diala and Derya's favorite flavors: Mango, Strawberry, and Blueberry.",
+    "SBV.CloudberryPie.Name": "Cloudberry Pie", // FOR TRANSLATORS: NEW IN 1.0.4
+    "SBV.CloudberryPie.Description": "A sweet and tangy pie with a beautiful crust!", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Gems and Artifacts
     "SBV.Annabergite.Name": "Annabergite",
@@ -5952,6 +6348,7 @@
     //Misc Items
     "SBV.CinderLeaf.Name": "Cinder Leaf",
     "SBV.CinderLeaf.Description": "A pink leaf which seems to hold some residual heat. Can be used to brew potions.",
+    "SBV.CinderTree.Name": "Cinder Tree", // UII2 Compat (FOR TRANSLATORS: NEW IN 1.0.4)
     "SBV.TwilightFeather.Name": "Twilight Feather",
     "SBV.TwilightFeather.Description": "A feather with the coloration of the twilight sky. It's used as currency during Sunberry Village's Twilight Festival. Better hold on to it!",
     "SBV.SunriseOrb.Name": "Sunrise Orb",
@@ -5964,7 +6361,11 @@
     "SBV.EclipseOrb.Description": "A blacksmith can open this for you. Who knows what might be inside?",
     "SBV.PrismaticOrb.Name": "Prismatic Orb",
     "SBV.PrismaticOrb.Description": "A blacksmith can open this for you. Who knows what might be inside?",
-
+    "SBV.LunarBeanJuice.Name": "Lunar Bean Juice", // FOR TRANSLATORS: NEW IN 1.0.4
+    "SBV.LunarBeanJuice.Description": "A delicious juice made out of Lunar Beans. It smells like cotton candy.", // FOR TRANSLATORS: NEW IN 1.0.4
+    "SBV.MarigoldTea.Name": "Marigold Tea", // FOR TRANSLATORS: NEW IN 1.0.4
+    "SBV.MarigoldTea.Description": "A warm, comforting beverage made out of marigold petals.", // FOR TRANSLATORS: NEW IN 1.0.4
+ 
     //Potions
     "SBV.SerpentinePotion.Name": "Serpentine Potion",
     "SBV.SerpentinePotion.Description": "A glimmering green liquid. It smells fresh. Surely it can't taste as bad as the {{title}}'s concoctions...?",
@@ -5986,6 +6387,8 @@
     "SBV.LunaritePotion.Description": "A translucent liquid. It smells like nothing, but it makes you feel safe.",
     "SBV.FairyStonePotion.Name": "Fairy Stone Potion",
     "SBV.FairyStonePotion.Description": "A dark purple liquid sloshes around. You're not sure you want to drink a potion that may or may not be made from the bones of ancient fairies.",
+    "SBV.LunarBeanPotion.Name": "Lunar Bean Potion", // FOR TRANSLATORS: NEW IN 1.0.4
+    "SBV.LunarBeanPotion.Description": "A sparkly liquid. It smells delicious! It makes you feel like the luckiest person alive.", // FOR TRANSLATORS: NEW IN 1.0.4
     "SBV.GenericPotion.Name": "{0} Potion",
     "SBV.GenericPotion.DisplayName": "Potion",
     "SBV.GenericPotion.Description": "This potion may not do much, but at least it looks pretty.",
@@ -6011,6 +6414,8 @@
     "SBV.LunaritePowder.Description": "A fine gem powder used in potion brewing.",
     "SBV.FairyStonePowder.Name": "Powdered Fairy Stone",
     "SBV.FairyStonePowder.Description": "A fine gem powder used in potion brewing.",
+    "SBV.LunarBeanPowder.Name": "Lunar Bean Powder", // FOR TRANSLATORS: NEW IN 1.0.4
+    "SBV.LunarBeanPowder.Description": "A fine gem powder used in potion brewing", // FOR TRANSLATORS: NEW IN 1.0.4
     "SBV.GenericPowder.Name": "Powdered {0}",
     "SBV.GenericPowder.DisplayName": "Powdered Gem",
     "SBV.GenericPowder.Description": "A fine gem powder used in potion brewing.",
@@ -6049,7 +6454,7 @@
     "SBV.WildMustardSeeds.Name": "Wild Mustard Seeds",
     "SBV.WildMustardSeeds.Description": "Plant in fall. Takes 7 days to produce a four-petaled yellow flower.",
     "SBV.CarobSapling.Name": "Carob Sapling",
-    "SBV.CarobSapling.Description": "Takes 28 days to produce a mature Carob. Bears fruit in the fall.",
+    "SBV.CarobSapling.Description": "Takes 28 days to grow into a mature Carob tree. Bears fruit in the fall.",
 
     //Fish
     "SBV.Mothfish.Name": "Mothfish",
@@ -6194,6 +6599,7 @@
     "Aicha.Dialogue.luauShorts": "Were those... someone's shorts in the soup? I wonder how they got there. Surely it was just an accident.$7",
     "Aicha.Dialogue.luauPoisoned": "Ugh, that soup was horrible. Rei healed me but I felt sooo sick for a while. Maybe she was right not to try the soup.$s",
     "Aicha.Dialogue.AriGetsSlimed": "I saw Ari getting slime poured on his head earlier. It looked so fun!$3#$b#Do you think I can get Blake and Lyenne to do that to me too?$1",
+    "Aicha.Dialogue.ImanBarnReveal": "Ahh! We have alpaca neighbors now! Isn't that SO exciting?$3", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Amina
     "Amina.Dialogue.cc_Complete": "Mom told me you fixed the community center! You're so cool!$3",
@@ -6211,6 +6617,7 @@
     "Amina.Dialogue.RaccoonToy": "Vincent told us a raccoon stole one of his toys. Do you think he's telling the truth?$3",
     "Amina.Dialogue.AriGetsSlimed": "Mom said I shouldn't do stuff like what Blake and Lyenne did with that slime, but... it looked pretty fun.$4#$b#You won't tell on me if I do a prank, will you?$3",
     "Amina.Dialogue.EliasCompendiumComplete": "I was at the library earlier and Elias showed me the copend- the comped- um, the book he wrote about all our fish!$1#$b#He said you helped him a lot with it, that was really nice of you.$3",
+    "Amina.Dialogue.ImanBarnReveal": "Iman said I can come by and play with the alpacas! They look sooo fluffy!$h", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Ari
     "Ari.Dialogue.cc_Complete": "I'm glad to hear the community center is up and running again. It'll be good for the villagers.$h",
@@ -6231,6 +6638,7 @@
     "Ari.Dialogue.AriGetsSlimed": "Hey, @. Don't worry, I know you weren't behind that little stunt with the slime earlier.$0#$b#Truth be told, once I'd calmed down and cleaned off, it was a little bit funny.$7#$b#Blake will never hear this from me, but... I used to be a bit of a troublemaker in my youth, if you can believe it.$12#$b#Of course, that doesn't mean he's off the hook. I'll have him doing chores around the shop for weeks.$6",
     "Ari.Dialogue.EliasHouseBegin": "Hm? Elias is...?#$b#HE'S WHAT? I can't believe that man. I swear, he's allergic to asking people for help.$a",
     "Ari.Dialogue.EliasCompendiumComplete": "Elias dropped by earlier to show me the finished compendium. He's so proud of that thing, Blake might start getting jealous!$3#$b#Thank you for helping him with it. I know how he gets with these little projects of his, and I don't plan to pick up a fishing rod ever again if I can help it.$9",
+    "Ari.Dialogue.ImanBarnReveal": "I'm glad Iman was able to get her barn up and running.$h#$b#I remember she got halfway through getting it set up when she first moved here, but suddenly stopped for some reason.$8", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Blake
     "Blake.Dialogue.cc_Complete": "You fixed up the community center? That's so cool! Maybe we can start hanging out there sometime.$h",
@@ -6250,6 +6658,7 @@
     "Blake.Dialogue.AriGetsSlimed": "Oh, hey. You probably guessed that the slime prank was supposed to be on you and not my dad.$8#$b#I'm basically gonna be living in the market for the next week or two. Don't worry, I totally learned my lesson.$12",
     "Blake.Dialogue.EliasHouseBegin": "Hey, @. How's it going?#$b#$y '..._Your father is renovating the old house by the fountain._Wait... that's awesome! I've got to talk him into making me a room over there.$u'",
     "Blake.Dialogue.EliasCompendiumComplete": "My father showed me the book that the two of you have been working on! He said it's all finished up.$1#$b#It looks pretty cool, I gotta say.$3",
+    "Blake.Dialogue.ImanBarnReveal": "For some reason, Iman didn't strike me as the rancher type. Guess you really can't judge a book by its cover. I'm happy for her.$h", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Diala
     "Diala.Dialogue.cc_Complete": "@! We heard the good news.$h#$b#Congrats on fixing up the community center!$u",
@@ -6289,6 +6698,7 @@
     "Diala.Dialogue.RaccoonMuffin": "Ugh... that raccoon stole one of my freshly baked muffins. I'm going to need to start making double the amount now that both Derya AND the raccoon keep taking them.$9",
     "Diala.Dialogue.AriGetsSlimed": "Hey, @, I heard Ari got slimed. Do you know anything about that?$1#$b#Derya's been asking around to see if anyone got a picture, she thinks it's hilarious.$3",
     "Diala.Dialogue.EliasHouseBegin": "Hey, @! I spent like, an hour unboxing some cat food earlier. What have you been up to?$h#$b#$y '..._Elias is renovating his father's house._Oh, that's great news! I'm happy for him, I hope it goes well.$h'",
+    "Diala.Dialogue.ImanBarnReveal": "Iman looked so happy during the barn opening. I remember how Derya and I felt when we opened up the cafe, so I totally get her excitement.$h", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Derya
     "Derya.Dialogue.cc_Complete": "Hey! It's great to see the Community Center up and running, thank you, @!$h",
@@ -6328,6 +6738,7 @@
     "Derya.Dialogue.RaccoonCoffee": "Can you believe this? Diala made me a cup of coffee and this raccoon snagged it right out of my hands!$13#$b#She did make me another cup, though. It was very sweet of her.$h",
     "Derya.Dialogue.AriGetsSlimed": "Ohoho, I *so* wish I'd gotten to see Ari all covered in slime.$3#$b#Hey, you didn't happen to get a picture, did you?$6",
     "Derya.Dialogue.EliasHouseBegin": "Elias is renovating his old house? No... please tell me you're kidding.$s#$b#Dammit, I just lost the bet I had with Iman. I didnt think he'd ever move out of that storage room!$11",
+    "Derya.Dialogue.ImanBarnReveal": "I'm SO happy we now have alpacas so close by!$h#$e#Oh, yeah. I'm happy for Iman too!$u", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Elias
     "Elias.Dialogue.cc_Complete": "I can't believe you fixed up the community center! Lewis better be so incredibly thankful for your existence right now.$u",
@@ -6348,6 +6759,7 @@
     "Elias.Dialogue.AriGetsSlimed": "Howdy, @. Ari marched our boy over here to tell me what he'd done himself.$1#$b#I had to act upset, but honestly? Blake's li'l prank pales in comparison to half the stuff his dad used to pull off.$3#$b#Oh, the stories I could tell...$11#$b#Ari probably wouldn't be too happy with me if I did, though.$3",
     "Elias.Dialogue.EliasHouseBegin": "Thanks again for droppin' by and for agreein' to spread the word. I hope no one's given you any trouble.$10",
     "Elias.Dialogue.EliasCompendiumComplete": "Hey, farmer. Thanks for all your help with the compendium.$1#$b#You must have fishing in your blood, the way you hooked all those beauties!$3",
+    "Elias.Dialogue.ImanBarnReveal": "I'm glad Iman was able to ask for help. She's passionate, that one. I look forward to seein' these alpacas myself.$h", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Ezra
     "Ezra.Dialogue.cc_Complete": "Ah! I heard the community center's fixed up! That's wonderful news.$h#$b#I wonder if the townsfolk would mind me doing a little advertising over there.$u",
@@ -6365,6 +6777,9 @@
     "Ezra.Dialogue.ReihanaIntro": "Oh, great. A demon. Sorry, TWO demons. What is going on in this place?$s",
     "Ezra.Dialogue.AriGetsSlimed": "That prank Blake and Lyenne pulled with the bucket of slime sounds like something my sister would do to me.$7",
     "Ezra.Dialogue.EliasHouseBegin": "@! You look stunning. You've go-... Sorry, what was that?$h#$b#$y '..._Elias is renovating his old house._Ooh! That's nice. I hope he finally gets a bedroom with an actual door!$u'",
+    "Ezra.Dialogue.RaccoonCloth": "When I find that little raccoon...$a#$b#He stole a piece of cloth! Snatched it right out of my hands!$s#$b#...It was an expensive one, too.$s", // FOR TRANSLATORS: NEW IN 1.0.4
+    "Ezra.Dialogue.Iman4HEvent": "Ah, @. Sorry for leaving so abruptly. Iman's okay, she's just having a hard time.$s#$b#It's not my story to tell, but hopefully she'll open up to you, too, someday.", // FOR TRANSLATORS: NEW IN 1.0.4
+    "Ezra.Dialogue.ImanBarnReveal": "Ugh, I've been so emotional over all this! I'm so proud of my girl.$u#$b#It's been a long journey, and I'm happy to have been by her side through it all.$h", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Iman
     "Iman.Dialogue.cc_Complete": "The community center? That broken down building? Huh, never thought I'd see that get fixed up. Congrats!$h",
@@ -6381,6 +6796,8 @@
     "Iman.Dialogue.ReihanaIntro": "Okay, I've probably seen weirder things than two demons in a small town, however, that demon is stylish! I wonder where she got that outfit from.$u",
     "Iman.Dialogue.AriGetsSlimed": "Ari was in a terrible mood when I saw him earlier. What happened?$7#$b#Ezra mentioned something about a prank Blake and Lyenne pulled, but I kind of zoned out...$2#$b#Their pranks get a little repetitive, that's all.$11",
     "Iman.Dialogue.EliasHouseBegin": "Oh, if it isn't Ferngill's favorite farmer. Hm? You have something to tell me?$10#$b#$y '..._Elias is renovating his old house._...No way. Oh, @, I could kiss you right now! I'm going to go rub this in Derya's face. Thank you for telling me!$u'",
+    "Iman.Dialogue.Iman4HEvent": "Oh, it's you. Yeah, sorry you had to see that. I... I'll be fine. I've dealt with worse.$11", // FOR TRANSLATORS: NEW IN 1.0.4
+    "Iman.Dialogue.ImanBarnReveal": "Oh, @. I know I've already said it plenty, but thank you. Gosh, I still can't believe it's real!$u", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Jumana
     "Jumana.Dialogue.cc_Complete": "I heard the wonderful news! I'm glad the community center is back up and running.$h",
@@ -6400,6 +6817,7 @@
     "Jumana.Dialogue.ReihanaIntro": "That... incident earlier was horrifying. I'm glad everyone's okay. We just need to keep an eye out for each other until this is resolved.$s#$b#...All this for fertilizer. Poor Diala.$s",
     "Jumana.Dialogue.AriGetsSlimed": "Oh, hi dear. Miyoung caught me up on what happened earlier with Lyenne and Blake.$0#$b#After the pranks Ari used to pull, I'm not sure he has any room to be upset.$6",
     "Jumana.Dialogue.EliasHouseBegin": "Oh, hello, sweetheart! Are you here to chit-chat or gossip? I can do both within limits.$6#$b#Elias is renovating the house? Oh, that's wonderful! It always saddened me to see him live in that storage room above the library.$4",
+    "Jumana.Dialogue.ImanBarnReveal": "Iman has always been incredibly kind. I'm glad people were able to help her out.$h#$b#I couldn't contribute, but I'll definitely be making her a nice bouquet and a delicious pie to congratulate her!$6", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Lyenne
     "Lyenne.Dialogue.cc_Complete": "I wonder if Sam, Seb, and Abby want to hang out in the community center now that it's fixed up.#$b#We tried hanging out when it was still broken down, but it was way too scary.$7",
@@ -6417,6 +6835,7 @@
     "Lyenne.Dialogue.AriGetsSlimed": "Hey, sorry about, uh, trying to dump a bucket of slime on you.$4#$b#That was maybe not one of our most well-planned pranks.$3#$b#Ophelia hasn't said anything to me about it yet, but I wish she'd just get it over with. I hate the waiting more than the scolding.$7",
     "Lyenne.Dialogue.EliasHouseBegin": "Hey, @! Sorry, I'm all over the place today. I had to submit an assignment last minute and it threw me off.$7#$b#$y '..._Elias is renovating his old house._...YES! If he's giving Blake a room, he better buy two beds.$6'",
     "Lyenne.Dialogue.EliasCompendiumComplete": "Elias showed me and Blake the book you two've been working on together! It's super cool.$3#$b#Maybe sometime I could show you some of my writing and see what you think?$4",
+    "Lyenne.Dialogue.ImanBarnReveal": "The alpacas are so cute! I got a glimpse at them when they were being transported here.$h", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Maia
     "Maia.Dialogue.cc_Complete": "Glad to see the community center restored. Maybe Silas and I will join Clint to help out.$h",
@@ -6435,6 +6854,7 @@
     "Maia.Dialogue.AriGetsSlimed": "Poor Ari, I heard about the slime incident from Elias.$2#$b#I know he loves those kids to death, but I'm sure he could do without all the pranks.$0",
     "Maia.Dialogue.EliasHouseBegin": "*yawn*... Oh, hey, @... Huh?#$b#...Okay, I'll need Elias himself to confirm this information. I never thought I'd see the day. Props to whoever convinced him, that man is stubborn as hell.$h",
     "Maia.Dialogue.EliasCompendiumComplete": "Hey, @. Elias was so excited to show me his finished compendium earlier. I hadn't even had my morning coffee yet.$0#$b#But I guess as long as he's not waving another slimy fish in my face first thing in the morning, I'm happy.$1",
+    "Maia.Dialogue.ImanBarnReveal": "Hey, @. It was nice of you to contribute to Iman's barn. I've never seen her this happy.$h", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Miyoung
     "Miyoung.Dialogue.cc_Complete": "I heard about the community center! That's wonderful news. Maybe Eve, Jumana and I could start hanging out there, now.$u",
@@ -6451,6 +6871,7 @@
     "Miyoung.Dialogue.RaccoonScarf": "That raccoon took the scarf I was knitting for Silas... I worked really hard on it.$s#$b#Oh, well. I guess Silas has enough scarves as is.$7",
     "Miyoung.Dialogue.AriGetsSlimed": "Hello, darling. I heard Ari got quite a surprise from Blake and Lyenne outside the inn.$0#$b#Personally, I think it's karma for all the tricks he used to pull when he was younger.$7",
     "Miyoung.Dialogue.EliasHouseBegin": "Elias...? Oh, this is wonderful news! I'll have to prepare a nice gift for this occasion. Ooh, I'll even get a nice bouquet from Jumana!$u",
+    "Miyoung.Dialogue.ImanBarnReveal": "Oh, I just love seeing our youngsters prosper and achieve their goals and dreams. Seeing how happy Iman was... I think she's going to make a wonderful rancher.$h", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Moon
     "Moon.Dialogue.cc_Complete": "Community Center is repaired?$u#$b#But... junimo friends left?$s",
@@ -6487,6 +6908,7 @@
     "Moon.Dialogue.ReihanaIntro": "Diala summoned demons? How... you know what? Moon won't question that too much.$s",
     "Moon.Dialogue.RaccoonLunarite": "Hmph, the raccoon took Moon's Lunarite! Moon took that from Diala first.$s",
     "Moon.Dialogue.AriGetsSlimed": "Moon saw Ari get slime all over him! Moon laughed.$1#$b#Will @ pull prank on Diala and Derya with Moon?$0",
+    "Moon.Dialogue.ImanBarnReveal": "Alpacas better not lick Moon. Moon is not food.$a", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Nadia
     "Nadia.Dialogue.AriGetsSlimed": "Hah, that prank Blake and Lyenne pulled was awesome!$1#$b#Seems like something I would have done to my brother.$6",
@@ -6505,6 +6927,7 @@
     "Ophelia.Dialogue.ReihanaIntro": "...It's times like these I wish I was still a full-time adventurer. We wouldn't have had demons in town.$s#$b#I have to make sure everyone's okay and then deal with those two.$a",
     "Ophelia.Dialogue.AriGetsSlimed": "Ari came into the inn in a foul mood earlier, and he was tracking slime all over my clean floor.$12#$b#I suppose it's only appropriate to have Lyenne clean it up, since she was almost certainly involved.$10",
     "Ophelia.Dialogue.EliasHouseBegin": "Hello, @. You've got 'gossip' written all over your face. What's going on?$8#$b#$y '..._Elias is renovating the old house by the fountain._Huh! Well, that's certainly surprising. I'll have to talk to him and see if he needs any help.'",
+    "Ophelia.Dialogue.ImanBarnReveal": "Sunberry's newest rancher. What a great time for our little village.$h", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Reihana
     "Reihana.Dialogue.cc_Complete": "Oh, wow, you fixed up a broken down building!$12#$b#No one cares, bud. What, you want a cookie?#$b#...Actually, nevermind. I'm on my last cookie. You can't have it.$8",
@@ -6521,6 +6944,7 @@
     "Reihana.Dialogue.luauShorts": "HAH! Everytime I remember how those shorts got fished out of the soup, I start laughing until I cry. Oh, that was amazing.$u",
     "Reihana.Dialogue.luauPoisoned": "Aicha got poisoned yesterday. Was it you, @? How dare you mess with the soup?$14#$b#She's never going to have soup ever again.$s",
     "Reihana.Dialogue.AriGetsSlimed": "Hah! I so wish I'd gotten to see that shopkeeper's face when the slime was pouring onto his head.$1#$b#How do I know about that? I certainly haven't been spying on the villagers, if that's what you're implying.$3#$b#...Get out of my face.$25",
+    "Reihana.Dialogue.ImanBarnReveal": "Aicha's already planning on befriending these alpacas.$12#$e#Hm? @! I'm not going to *hurt* the alpacas. I'm a demon, not a monster.$20", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //Silas
     "Silas.Dialogue.cc_Complete": "I'm really glad the community center is fixed up. Maia and I should drop by to hang out with Clint sometimes.$u",
@@ -6537,6 +6961,7 @@
     "Silas.Dialogue.RaccoonBar": "That sneaky raccoon snatched the bar right out of my hands! I was caught off guard!$8",
     "Silas.Dialogue.AriGetsSlimed": "Hi, @. My wife filled me in on the whole incident with Blake and Ari.$0#$b#Between you and me, I wish I'd gotten to see Ari's face when it happened.$3",
     "Silas.Dialogue.EliasHouseBegin": "Always nice to see you around, @! Hm? Sorry, this old man's hearing isn't as good as it used to be.$u#$b#$y '..._Elias is renovating the old house by the fountain._Well, that definitely wasn't on my bingo card. I'm happy for him! He needs a bigger space than the room he's using at the library.$h'",
+    "Silas.Dialogue.ImanBarnReveal": "What a beautiful day for animal lovers! I hope Iman doesn't get sick of me dropping by to say 'hi' to the alpacas.$u", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //CTs (Vanilla Villagers)
 
@@ -6544,6 +6969,7 @@
     "MeetDND.Alex": "Yo! Are you going to that cat cafe? What, me?#$b#Nah, it's not really my thing.$h#$b#Unless you're going, I could always go then... you know, to keep you company.$h",
     "MeetDND.Jodi": "Diala's always sending me pictures of the cats from the cafe.$h#$b#They always make my day so much better!$h",
     "MeetDND.Caroline": "It's nice to know Abby's making more friends. Lyenne and Blake are good kids.$h",
+    "RaccoonTea.Caroline": "That mischievous raccoon snuck into my tea room and grabbed a few tea leaves! I should really be more careful about closing the door when I leave.$2", // FOR TRANSLATORS: NEW IN 1.0.4
     "MeetDND.Shane1": "Jas wanted to see the cat cafe, so we went. Gotta say, they make great coffee and cookies there.$h",
     "MeetDND.Shane2": "Ugh, like we don't have enough cats, now they want us to drink with them.$2",
 
@@ -6572,14 +6998,18 @@
     "DDFinalConfession.Jas": "Aunt Marnie agreed to let Amina and I have a sleepover! Amina is bringing the toys her dad got her",
     "RaccoonToy.Jas": "Maybe Vincent is telling the truth about the raccoon. I have seen him around causing trouble.$3",
     "DDFinalConfession.Marnie": "The ranch is a long walk from the cat cafe, but Diala and Derya always make the trip here for supplies.$h",
+    "ImanBarnReveal.Marnie": "I'm so glad there's another rancher around now! Don't forget, you can drop by my ranch to buy some of Iman's alpacas.$h", // FOR TRANSLATORS: NEW IN 1.0.4
     "DDFinalConfession.Pierre": "I've been to Sunberry Village a few times, It's lovely.$h#$b#Ari on the other hand...$a",
     "RaccoonFertilizer.Pierre": "Oh, you just wait til' I can get my hands on that fertilizer stealing raccoon. Do you think he's working for Ari? He's definitely trying to stir things up.$a",
+    "RaccoonSapling.Pierre": "*sigh*...I need to find a way to keep that raccoon out! He just stole a sapling. Can you believe it? A whole sapling!$2", // FOR TRANSLATORS: NEW IN 1.0.4
     "DDFinalConfession.Robin": "The owners of the cafe over at Sunberry Village came to me for help with some renovations a while back.#$b#They sent a big batch of cookies our way when I was done working.$h",
+    "ImanBarnReveal.Robin": "Whew! Took a lot of effort, but I'm very proud of how that barn turned out. Thanks for helping out, @!$h", // FOR TRANSLATORS: NEW IN 1.0.4
 
     //DDEngaged
     "DDEngaged.Demetrius": "Robin is making me go to the cat cafe.#$b#She told me I could debate science and astrology there, rather than to her ears. I think she just wants to see the cats.$h",
     "DDEngaged.Sebastian": "Diala and Derya always invite us over for game night.#$b#We almost always get distracted by the cats, though.$h",
     "DDEngaged.Maru": "I met Diala when I was doing some research in Sunberry Village, and she's really sweet.#$b#I was invited to the cafe, and man... between cookies and cats... I don't know which to research first!$h",
+    "RaccoonBattery.Maru": "Ugh, that pesky raccoon stole a battery while I was working on a new project. *sigh*... I'll borrow one from dad.$2", // FOR TRANSLATORS: NEW IN 1.0.4
     "DDEngaged.Linus": "Maia and Ophelia always bring over hot meals and baked goods when they're passing by.$h#$b#We even sit around the fire and share stories, sometimes.",
 
     //ReihanaIntro
@@ -6613,6 +7043,10 @@
     "MeetDND.Olga": "Bert's been begging me to make one of the recipes Miyoung shared with us, maybe I'll make one of them for dinner tonight.$h",
     "MeetDND.Kiarra": "It's a long walk to Sunberry Village but definitely worth it to shop local!$h",
 
+    //CTs (SBV Addons)
+    "RaccoonGadget.Spanner": "That raccoon is out to get me, I swear! He stole one of my dwarven gadgets while I was working on it.$s", // FOR TRANSLATORS: NEW IN 1.0.4
+    "RaccoonSouvenir.Dao": "@, have you seen that raccoon of ours around anywhere? He's stolen a little trinket of mine.#$b#He's a gremlin, isn't he? Normally I have a soft spot for him, but I really would like that back.$8#$b#I don't keep many souvenirs, so the few I do have are precious to me.$s", // FOR TRANSLATORS: NEW IN 1.0.4
+    
     // Custom Features
 
     // Market specials - override display names
@@ -6641,12 +7075,12 @@
     "MarketSpecial.SeedPacket_(O)PowdermelonSeeds": "powdermelon seeds",
 
     // Fish Compendium
-    // FOR TRANSLATORS: NEW IN 1.0.3. ONLY SOME NEW LINES HERE IN 1.0.3
+
     // Cover page
     "FishCompendium.Title": " ", // translation of the title text which is baked into the letter background: "Aquatic Creatures of Sunberry Village"
     "FishCompendium.Author": "a Compendium by Elias R.",
 
-    "FishCompendium.Intro": " ^^^This volume contains all the knowledge I have gathered about the aquatic fauna native to Sunberry Village and the surrounding area.",
+    "FishCompendium.Intro": " ^^^^^This volume contains all the knowledge I have gathered about the aquatic fauna native to Sunberry Village and the surrounding area.",
     "FishCompendium.SpecialThanks": "Special thanks to my tireless research partner, @, who provided the specimens for me to study.",
 
     // Headers

@@ -2,9 +2,26 @@
   "Changes": [                    
 
     {
+      "Action": "Load",
+      "Target": "Mods/Xan.PokemonCreaturePack/MothIcon",
+      "FromFile": "Assets/{{TargetWithoutPath}}.png"
+    },
+
+    {
 			"Action": "EditData",
 			"Target": "Data/Objects",
 			"Entries": {
+        "NatInValley.Creature.AtlasMoth": {
+          "Name": "TicketBoothIcon",
+          "DisplayName": "Insectarium Icon",
+          "Description": "The icon used for the Insectarium ticket booth.",
+          "Type": "Basic",
+          "Category": 0,
+          "Price": 0,
+          "Edibility": -300,
+          "Texture": "Mods/Xan.PokemonCreaturePack/MothIcon",
+          "SpriteIndex": 0
+        },
         "PokeGroup1Contract": {
           "Name": "PokeGroup1Contract",
           "DisplayName": "{{i18n:PokeGroup1Contract.DisplayName}}",

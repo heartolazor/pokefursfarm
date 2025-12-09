@@ -49,7 +49,7 @@
 		"Recipe Book Accessibility": {
 			"AllowValues": "true, false",
 			"Default": "false",
-			"Description": "For players that use screenreader support, this option replaces the custom recipe book menu with a more intuitive message box that has only text descriptions instead of images."
+			"Description": "(FOR MOBILE SMAPI PLAYERS OR PLAYERS USING STARDEW ACCESS.) For players that use screenreader support, this option replaces the custom recipe book menu with a more intuitive message box that has only text descriptions instead of images."
 		},
 		"Enable Installation Help Message": {
 			"AllowValues": "true, false",
@@ -1160,7 +1160,7 @@
 		},
 		{
 			"Name": "RecipeBook_Dessert_ListB",
-			"Value": "{{i18n:pageseparator}}{{i18n:separator}}{{i18n:CandiedOrangePeel_name}}{{i18n:separator}}{{i18n:ChocolateLavaCake_name}}{{i18n:separator}}{{i18n:FigCookies_name}}{{i18n:separator}}{{i18n:GooseberryCrumble_name}}{{i18n:separator}}{{i18n:Knafeh_name}}{{i18n:Lamington_name}}{{i18n:separator}}{{i18n:Madeleines_name}}{{i18n:separator}}{{i18n:MarshmallowSquares_name}}{{i18n:separator}}{{i18n:PecanBrittle_name}}{{i18n:separator}}{{i18n:Strudel_name}}{{i18n:separator}}{{i18n:TreacleTart_name}}{{i18n:separator}}{{i18n:UbeCake_name}}{{i18n:pageend}}",
+			"Value": "{{i18n:pageseparator}}{{i18n:separator}}{{i18n:CandiedOrangePeel_name}}{{i18n:separator}}{{i18n:ChocolateLavaCake_name}}{{i18n:separator}}{{i18n:FigCookies_name}}{{i18n:separator}}{{i18n:GooseberryCrumble_name}}{{i18n:separator}}{{i18n:Knafeh_name}}{{i18n:separator}}{{i18n:Lamington_name}}{{i18n:separator}}{{i18n:Madeleines_name}}{{i18n:separator}}{{i18n:MarshmallowSquares_name}}{{i18n:separator}}{{i18n:PecanBrittle_name}}{{i18n:separator}}{{i18n:Strudel_name}}{{i18n:separator}}{{i18n:TreacleTart_name}}{{i18n:separator}}{{i18n:UbeCake_name}}{{i18n:pageend}}",
 		},
 		{
 			"Name": "RecipeBook_ComfortFood_List",
@@ -1685,7 +1685,7 @@
 			"FromFile": "data/hyperflexiblerecipes.json",
 			"When": {
 				"Enable Hyperflexible Recipes": true,
-				"HasMod|contains=blueberry.LoveOfCooking.CP": true,
+				//"HasMod|contains=blueberry.LoveOfCooking.CP": true,
 			}
 		},
 		{

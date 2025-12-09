@@ -32,15 +32,16 @@
             "Value": "MarnieShop",
             "When":{"HasMod:|contains= mushymato.LivestockBazaar": false}
         },
-       /* {
+        {
             "Name": "Bush_Token",
             "Value": "Bushes",
              "When":{"HasMod:|contains= furyx639.CustomBush":true}
-        },*/
+        },
         {
             "Name": "Bush_Token",
             "Value": "NoBushes",
-        },
+            "When":{"HasMod:|contains= furyx639.CustomBush":false}
+        }
     ],
 
   "Changes": [
@@ -166,9 +167,9 @@
         "Action": "Include",
         "FromFile": "Data/Locations/Shops_WAG_Patch.json",
         "When": {"HasMod:|contains= Wildflour.AtelierGoods": true}
-    }
+    },
 
-   /* {
+    /*{
         "LogName": "Mush Log Data",
         "Action": "Include",
         "FromFile": "Data/Items/Mush_Log.json",

@@ -991,7 +991,17 @@ El tercer capítulo de S&S sigue a Cirrus, una estrella del pop-rock conocida en
 [/else]
 [/if]
  
-{{JulietJessie}}
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.4]
+[font=dialogue]Evento Cirrus: 3 corazones, parte 2[/font]
+[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.5]¡Completado![/if]
+[else]
+[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 750, !PLAYER_HAS_CONVERSATION_TOPIC Current CirrusGuild]Pista: Visita [color=green]East Scarp[/color] entre las 12:00 y las 20:00 horas en un día soleado.[/if]
+[else]
+[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 750]Requisito: 3 corazones con [color=red]Cirrus[/color][/if]
+[if=PLAYER_HAS_CONVERSATION_TOPIC Current CirrusGuild]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
+[/else]
+[/else]
+[/if]
  
 [if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.4]
 [font=dialogue]Evento de Cirrus: 4 Corazones[/font]
@@ -1164,19 +1174,6 @@ El tercer capítulo de S&S sigue a Cirrus, una estrella del pop-rock conocida en
 [/if]
 [/if]
 ",
-"guidebook.UP.Events.JJ.true": "[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.4]
-[font=dialogue]Evento de Cirrus: 3 Corazones Pt 2[/font]
-[if=PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.5]¡Completado![/if]
-[else]
-[if=PLAYER_FRIENDSHIP_POINTS Current Cirrus 750, !PLAYER_HAS_CONVERSATION_TOPIC Current CirrusGuild]Pista: Visita [color=green]East Scarp[/color] entre las 12 y las 20 hrs con tiempo soleado.[/if]
-[else]
-[if=!PLAYER_FRIENDSHIP_POINTS Current Cirrus 750]Requisito: 3 Corazón con [color=red]Cirrus[/color][/if]
-[if=PLAYER_HAS_CONVERSATION_TOPIC Current CirrusGuild]Requisito: Espera {{VariableTimegate}} días después del evento anterior.[/if]
-[/else]
-[/else]
-[/if]",
-"guidebook.UP.Events.JJ.false": "[font=dialogue]Evento de Cirrus: 3 Corazones Pt 2[/font]
-Juliet y Jessie no está instalado. Evento omitido.",
 "guidebook.chapter.Up.Cirrus": "[nospacing]
 [nextposition=0,10][center=300][font=dialogue]Cirrus[/font][/center]
 [offset=118,50][image=Characters/Cirrus:0,0,16,32:4]

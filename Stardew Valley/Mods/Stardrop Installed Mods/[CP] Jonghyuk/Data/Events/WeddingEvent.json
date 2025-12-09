@@ -1,0 +1,228 @@
+{
+    "Changes": [
+        {
+            "LogName": "Jonghyuk Wedding",
+            "Action": "EditData",
+            "Target": "Data/Weddings",
+            "TargetField": [
+                "EventScript"
+            ],
+            "Entries": {
+                "Jonghyuk": "sweet/-100 -100/farmer 32 33 0 [SpouseFarmerText [EscapedText] [EscapedText spouse 33 33 0]] OpheliaSBV 31 20 2 otherFarmers 34 25 0[SetupContextualWeddingAttendees]/changeLocation Custom_SBV_RipleyOrchard/addTemporaryActor jhAmina 16 32 -299 -999 0 false character/addTemporaryActor jhRaccoon 32 32 -99999 -999 1 false character/warp AminaSBV 999 1150 true/warp jhAmina 32 31 true/changePortrait Jonghyuk Wedding/changeSprite Jonghyuk Wedding/changeSprite Spanner PendantBearer/changePortrait Spanner PendantBearer/addTemporaryActor jhWeddingCG 448 304 999 500 0 false/[SpouseFarmerText [EscapedText faceDirection [SpouseActor] 2/warp [SpouseActor] 33 33] [EscapedText faceDirection spouse 0]]/positionOffset farmer 8 2/positionOffset Jonghyuk -8 2/
+                
+                
+                warp jhWeddingCG -1000 -1000/positionOffset jhWeddingCG -867 320/showFrame jhWeddingCG 0 true/viewport -1000 -1000/
+                
+
+                ambientLight 200 200 200/pause 50/ambientLight 190 190 190/pause 50/ambientLight 180 180 180/pause 50/ambientLight 170 170 170/pause 50/ambientLight 160 160 160/pause 50/ambientLight 150 150 150/pause 50/ambientLight 140 140 140/pause 50/ambientLight 130 130 130/pause 50/ambientLight 120 120 120/pause 50/ambientLight 110 110 110/pause 50/ambientLight 100 100 100/pause 50/ambientLight 90 90 90/pause 50/ambientLight 80 80 80/pause 50/ambientLight 70 70 70/pause 50/ambientLight 60 60 60/pause 50/ambientLight 50 50 50/pause 50/ambientLight 40 40 40/pause 50/ambientLight 30 30 30/pause 50/ambientLight 20 20 20/pause 50/ambientLight 10 10 10/pause 50/ambientLight 0 0 0/
+
+                pause 2000/
+
+                speak Jonghyuk \"{{i18n:WeddingJonghyuk.0}}\"/
+
+                pause 500/
+
+                speak Jonghyuk \"{{i18n:WeddingJonghyuk.1}}\"/
+
+                pause 500/
+
+                speak Jonghyuk \"{{i18n:WeddingJonghyuk.2}}\"/pause 500/
+
+                message \"{{i18n:WeddingJonghyuk.3}}\"/pause 200/message \"{{i18n:WeddingJonghyuk.4}}\"/
+
+                speak Jonghyuk \"{{i18n:WeddingJonghyuk.5}}\"/
+
+                pause 1000/globalFade/viewport 500 500/warp jhWeddingCG 200 3500 true/
+                pause 2000/
+
+                viewport 32 25 true/
+
+                ambientLight 190 190 190/pause 50/ambientLight 180 180 180/pause 50/ambientLight 170 170 170/pause 50/ambientLight 160 160 160/pause 50/ambientLight 150 150 150/pause 50/ambientLight 140 140 140/pause 50/ambientLight 130 130 130/pause 50/ambientLight 120 120 120/pause 50/ambientLight 110 110 110/pause 50/ambientLight 100 100 100/pause 50/ambientLight 90 90 90/pause 50/ambientLight 80 80 80/pause 50/ambientLight 70 70 70/pause 50/ambientLight 60 60 60/pause 50/ambientLight 50 50 50/pause 50/ambientLight 40 40 40/pause 50/ambientLight 30 30 30/pause 50/ambientLight 20 20 20/pause 50/ambientLight 10 10 10/pause 50/ambientLight 0 0 0/bgColor 0 0 0/
+                
+                pause 2000/changeName jhRaccoon Raccoon/changeName jhAmina Amina/textAboveHead Spanner \"{{i18n:WeddingJonghyuk.6}}\"/pause 2000/faceDirection Spanner 3 true/pause 300/speak Spanner \"{{i18n:WeddingJonghyuk.7}}\"/faceDirection jhAmina 1/emote jhAmina 32 true/pause 450/speak jhAmina \"{{i18n:WeddingJonghyuk.8}}\"/speak Spanner \"{{i18n:WeddingJonghyuk.9}}\"/pause 300/faceDirection Spanner 2 true/pause 200/faceDirection jhAmina 2 true/pause 100/pause 500/emote Spanner 32 true/emote jhAmina 32/
+
+                advancedMove jhAmina false 0 -2 4 10/advancedMove Spanner false 0 -2 4 10/waitForAllStationary/faceDirection WildflourSASS? 1 true/faceDirection AichaSBV? 3 true/jump jhAmina/faceDirection jhAmina 1 true/pause 90/faceDirection jhAmina 2 true/pause 90/faceDirection jhAmina 3 true/pause 90/faceDirection RoseSASS? 1 true/faceDirection ReihanaSBV? 3 true/positionOffset jhAmina -4 0/faceDirection jhAmina 0 true/temporaryAnimatedSprite Jonghyuk\\Particles 32 32 16 16 8000 1 1 31 28 false false 1 0.00333 1 0 0.01 0.05 motion -1 -1.0 acceleration 0 0.01/temporaryAnimatedSprite Jonghyuk\\Particles 32 32 16 16 1000 1 1 32 28 false false 1 0.00333 1 0 0.01 0.05 motion 0 -1.0 acceleration 0 0.01/temporaryAnimatedSprite Jonghyuk\\Particles 32 32 16 16 8000 1 1 33 28 false false 1 0.00333 1 0 0.01 0.05 motion 1 -1.0 acceleration 0 0.01/pause 300/
+                
+                advancedMove jhAmina false 0 -2 4 10/advancedMove Spanner false 0 -2 4 10/waitForAllStationary/faceDirection LaniSBV? 1 true/faceDirection LyenneSBV 1 true/faceDirection Henry? 3 true/faceDirection Mia? 3 true/jump jhAmina/faceDirection jhAmina 1 true/pause 90/faceDirection jhAmina 2 true/pause 90/faceDirection jhAmina 3 true/faceDirection Sterling? 3 true/faceDirection Clara.Ripley? 1 true/pause 90/faceDirection jhAmina 0 true/temporaryAnimatedSprite Jonghyuk\\Particles 32 32 16 16 8000 1 1 31 26 false false 1 0.00333 1 0 0.01 0.05 motion -1 -1.0 acceleration 0 0.01/temporaryAnimatedSprite Jonghyuk\\Particles 32 32 16 16 1000 1 1 32 26 false false 1 0.00333 1 0 0.01 0.05 motion 0 -1.0 acceleration 0 0.01/temporaryAnimatedSprite Jonghyuk\\Particles 32 32 16 16 8000 1 1 33 26 false false 1 0.00333 1 0 0.01 0.05 motion 1 -1.0 acceleration 0 0.01/pause 300/
+                
+                advancedMove jhAmina false 0 -2 4 10/advancedMove Spanner false 0 -2 4 10/waitForAllStationary/faceDirection AirynDao? 1 true/faceDirection AriSBV 1 true/faceDirection DialaSBV 3 true/jump jhAmina/faceDirection jhAmina 1 true/pause 90/faceDirection MiyoungSBV 1 true/faceDirection SilasSBV 1 true/faceDirection EzraSBV 3 true/faceDirection jhAmina 2 true/pause 90/faceDirection jhAmina 3 true/pause 90/faceDirection ImanSBV 3 true/faceDirection EliasSBV 1 true/faceDirection DeryaSBV 3 true/faceDirection BlakeSBV 1 true/faceDirection MoonSBV? 3 true/faceDirection jhAmina 0 true/temporaryAnimatedSprite Jonghyuk\\Particles 32 32 16 16 8000 1 1 31 24 false false 1 0.00333 1 0 0.01 0.05 motion -1 -1.0 acceleration 0 0.01/temporaryAnimatedSprite Jonghyuk\\Particles 32 32 16 16 1000 1 1 32 24 false false 1 0.00333 1 0 0.01 0.05 motion 0 -1.0 acceleration 0 0.01/temporaryAnimatedSprite Jonghyuk\\Particles 32 32 16 16 8000 1 1 33 24 false false 1 0.00333 1 0 0.01 0.05 motion 1 -1.0 acceleration 0 0.01/pause 300/
+                
+                advancedMove jhAmina false 0 -2 4 10/advancedMove Spanner false 0 -2 4 10/waitForAllStationary/faceDirection MaiaSBV 1 true/faceDirection JumanaSBV 1 true/faceDirection WrenSong? 3 true/faceDirection Harvey 3 true/jump jhAmina/faceDirection jhAmina 1 true/pause 90/faceDirection jhAmina 2 true/pause 90/faceDirection jhAmina 3 true/pause 90/faceDirection jhAmina 0 true/temporaryAnimatedSprite Jonghyuk\\Particles 32 32 16 16 8000 1 1 31 22 false false 1 0.00333 1 0 0.01 0.05 motion -1 -1.0 acceleration 0 0.01/temporaryAnimatedSprite Jonghyuk\\Particles 32 32 16 16 3000 1 1 32 22 false false 1 0.00333 1 0 0.01 0.05 motion 0 -1.0 acceleration 0 0.01/temporaryAnimatedSprite Jonghyuk\\Particles 32 32 16 16 8000 1 1 33 22 false false 1 0.00333 1 0 0.01 0.05 motion 1 -1.0 acceleration 0 0.01/pause 800/advancedMove jhAmina false 0 -1 -1 0 1 1000/advancedMove Spanner false 0 -1 1 0 3 1000/waitForAllStationary/advancedMove farmer false 0 -13 4 10/advancedMove Jonghyuk false 0 -13 4 10/pause 1500/viewport move 0 -1 2500/waitForAllStationary/positionOffset farmer -8 0/positionOffset Jonghyuk 8 0/faceDirection WildflourSASS? 0 true/faceDirection RoseSASS? 0 true/faceDirection Mia? 0 true/faceDirection Henry? 0 true/pause 90/faceDirection AirynDao? 0 true/faceDirection Sterling? 0 true/faceDirection Clara.Ripley? 0 true/faceDirection WrenSong? 0 true/faceDirection Spanner? 0 true/faceDirection LaniSBV? 0 true/pause 90/faceDirection LyenneSBV 0 true/faceDirection BlakeSBV 0 true/faceDirection MiyoungSBV 0 true/faceDirection SilasSBV 0 true/positionOffset jhAmina -2 0/faceDirection jhAmina 0 true/faceDirection MaiaSBV 0 true/faceDirection JumanaSBV 0 true/faceDirection EzraSBV 0 true/faceDirection ImanSBV 0 true/faceDirection EliasSBV 0 true/faceDirection Harvey 0 true/pause 90/faceDirection AichaSBV? 0 true/faceDirection ReihanaSBV? 0 true/faceDirection MoonSBV? 0 true/faceDirection DeryaSBV 0 true/faceDirection DialaSBV 0 true/faceDirection AriSBV 0 true/advancedMove farmer false 0 -1 1 10/advancedMove Jonghyuk false 0 -1 3 10/
+
+                waitForAllStationary/pause 1500/speak OpheliaSBV \"{{i18n:WeddingJonghyuk.10}}\"/faceDirection farmer 1/faceDirection Jonghyuk 3/pause 500/
+            
+              
+                speak OpheliaSBV \"{{i18n:WeddingJonghyuk.11}}\"/jump Spanner 5/pause 100/speak Spanner \"{{i18n:WeddingJonghyuk.12}}\"/advancedMove Spanner false 0 -1 -3 0 4 2500 3 0 0 1 4 1000/viewport move 0 -1 4000/pause 1000/faceDirection farmer 2 true/faceDirection Jonghyuk 2/pause 1500/
+
+                temporaryAnimatedSprite Jonghyuk\\staticMermaidPendant 0 0 92 90 13000 1 1 30 10 false false 1 0 1 0 0 0/
+
+                faceDirection OpheliaSBV 0/
+                speak OpheliaSBV \"{{i18n:WeddingJonghyuk.13}}\"/   
+
+                playMusic none/
+
+                viewport move 0 1 4000/
+
+                speak OpheliaSBV \"{{i18n:WeddingJonghyuk.14}}\"/
+
+                faceDirection farmer 1/faceDirection Jonghyuk 3/pause 1000/faceDirection OpheliaSBV 1/
+
+                speak OpheliaSBV \"{{i18n:WeddingJonghyuk.15}}\"/pause 300/quickQuestion #{{i18n:WeddingJonghyuk.16}}(break)pause 1/speak OpheliaSBV \"{{i18n:WeddingJonghyuk.17}}\"/pause 300/quickQuestion #{{i18n:WeddingJonghyuk.18}}(break)pause 1/
+
+                speak OpheliaSBV \"{{i18n:WeddingJonghyuk.19}}\"/pause 300/speak Jonghyuk \"{{i18n:WeddingJonghyuk.20}}\"/speak OpheliaSBV \"{{i18n:WeddingJonghyuk.21}}\"/pause 300/speak Jonghyuk \"{{i18n:WeddingJonghyuk.22}}\"/
+
+                speak OpheliaSBV \"{{i18n:WeddingJonghyuk.23}}\"/pause 500/speak OpheliaSBV \"{{i18n:WeddingJonghyuk.24}}\"/pause 1000/showFrame 101/[SpouseFarmerText [EscapedText showFrame [SpouseActor] 101 true] [EscapedText showFrame spouse 38]]/positionOffset Jonghyuk -24 0/specificTemporarySprite heart 33 18/playSound dwop/pause 2000/specificTemporarySprite wed//positionOffset Jonghyuk 24 0/faceDirection farmer 2 true/[SpouseFarmerText [EscapedText faceDirection [SpouseActor] 2] [EscapedText showFrame spouse 36]]/[ContextualWeddingCelebrations]/move OpheliaSBV -2 0 1/pause 4000/faceDirection farmer 1/[SpouseFarmerText [EscapedText showFrame [SpouseActor] 3 true] [EscapedText showFrame spouse 37]]/globalFade/viewport -1000 -1000/pause 1000/
+
+                message \"[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5381]\"/pause 500/message \"[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5383]\"/pause 4000/waitForOtherPlayers weddingEnd[FarmerUniqueId]/end wedding",
+            }
+
+            //viewport 32 22
+        },
+        {
+            "LogName": "SBV Wedding Attendees",
+            "Action": "EditData",
+            "Target": "Data/Weddings",
+            "Fields": {
+                "Attendees": {
+                    "Henry": {
+                        "Id": "Henry",
+                        "Setup": "Henry 34 28 0",
+                    },
+                    "Mia": {
+                        "Id": "Mia",
+                        "Setup": "Mia 35 28 0",
+                        "Celebration": "emote Mia 32",
+                    },
+                    "Clara.Ripley": {
+                        "Id": "Clara.Ripley",
+                        "Setup": "Clara.Ripley 29 28 0",
+                        "Condition": "{{HasMod|contains=Clara.Ripley}}"
+                    },
+                    "AriSBV": {
+                        "Id": "AriSBV",
+                        "Setup": "AriSBV 31 26 0"
+                    },
+                    "AminaSBV": {
+                        "Id": "AminaSBV",
+                        "Setup": "AminaSBV 999 250 0",
+                        "Celebration": "jump AminaSBV 2/emote AminaSBV 32",
+                    },
+                    "AichaSBV": {
+                        "Id": "AichaSBV",
+                        "Setup": "AichaSBV 35 30 0",
+                        "Condition": "PLAYER_HAS_SEEN_EVENT Current skellady.SBVCP_20031427",
+                        "Celebration": "textAboveHead AichaSBV \"{{i18n:WeddingJonghyuk.25}}\""
+                    },
+                    "BlakeSBV": {
+                        "Id": "BlakeSBV",
+                        "Setup": "BlakeSBV 30 26 0",
+                        "Celebration": "emote BlakeSBV 20"
+                    },
+                    "EliasSBV": {
+                        "Id": "EliasSBV",
+                        "Setup": "EliasSBV 29 24 0"
+                    },
+                    "EzraSBV": {
+                        "Id": "EzraSBV",
+                        "Setup": "EzraSBV 34 24 0"
+                    },
+                    "DialaSBV": {
+                        "Id": "DialaSBV",
+                        "Setup": "DialaSBV 35 26 0",
+                        "Celebration": "emote DialaSBV 20"
+                    },
+                    "DeryaSBV": {
+                        "Id": "DeryaSBV",
+                        "Setup": "DeryaSBV 36 26 0"
+                    },
+                    "ImanSBV": {
+                        "Id": "ImanSBV",
+                        "Setup": "ImanSBV 35 24 0"
+                    },
+                    "JumanaSBV": {
+                        "Id": "JumanaSBV",
+                        "Setup": "JumanaSBV 30 22 0",
+                        "Celebration": "emote JumanaSBV 20"
+                    },
+                    "LyenneSBV": {
+                        "Id": "LyenneSBV",
+                        "Setup": "LyenneSBV 30 28 0"
+                    },
+                    "MaiaSBV": {
+                        "Id": "MaiaSBV",
+                        "Setup": "MaiaSBV 29 22 0"
+                    },
+                    "MiyoungSBV": {
+                        "Id": "MiyoungSBV",
+                        "Setup": "MiyoungSBV 30 24 0",
+                        "Celebration": "textAboveHead MiyoungSBV \"{{i18n:WeddingJonghyuk.26}}\""
+                    },
+                    "MoonSBV": {
+                        "Id": "MoonSBV",
+                        "Setup": "MoonSBV 34 26 0",
+                        "Condition": "PLAYER_HAS_SEEN_EVENT Current skellady.SBVCP_20031402"
+                    },
+                    "ReihanaSBV": {
+                        "Id": "ReihanaSBV",
+                        "Setup": "ReihanaSBV 34 30 0",
+                        "Condition": "PLAYER_HEARTS Current ReihanaSBV 6"
+                    },
+                    "SilasSBV": {
+                        "Id": "SilasSBV",
+                        "Setup": "SilasSBV 31 24 0"
+                    },
+                    // addons
+                    "Sterling": {
+                        "Id": "Sterling",
+                        "Setup": "Sterling 36 28 0",
+                        "Condition": "{{HasMod|contains=Himetarts.ARV.CP}}",
+                        "Celebration": "textAboveHead Sterling \"{{i18n:WeddingJonghyuk.Sterling}}\"",                        
+                        
+                    },
+                    "WrenSong": {
+                        "Id": "WrenSong",
+                        "Setup": "WrenSong 35 22 0",
+                        "Condition": "{{HasMod|contains=tiakall.wren}}"
+                    },                    
+                    "Harvey": {
+                        "Id": "Harvey",
+                        "Setup": "Harvey 36 22 0"
+                    },              
+
+                    "AirynDao": {
+                        "Id": "AirynDao",
+                        "Setup": "AirynDao 29 26 0",
+                        "Condition": "{{HasMod|contains=Airyn.Dao.CP}}"
+                    },
+                    "Jonghyuk": {
+                        "Id": "Jonghyuk",
+                        "Setup": "Jonghyuk 31 28 0",
+                        "Condition": "{{HasMod|contains=Arknir.Jonghyuk}}"
+                    },
+                    "Spanner": {
+                        "Id": "Spanner",
+                        "Setup": "Spanner 33 31 0",
+                        "Condition": "PLAYER_HAS_SEEN_EVENT Current SpannerIntroConclusion, {{HasMod|contains=Arknir.Jonghyuk}}"
+                    },
+                    "LaniSBV": {
+                        "Id": "LaniSBV",
+                        "Setup": "LaniSBV 31 28 0",
+                        "Celebration": "emote LaniSBV 20",
+                        "Condition": "{{HasMod|contains=atelier99.SBV.NPCLani}}"
+                    },
+                    "WildflourSASS": {
+                        "Id": "WildflourSASS",
+                        "Setup": "WildflourSASS 31 30 0",
+                        "Condition": "{{HasMod|contains=Wildflour.SASS}}"
+                    },
+                    "RoseSASS": {
+                        "Id": "RoseSASS",
+                        "Setup": "RoseSASS 30 30 0",
+                        "Celebration": "emote RoseSASS 20",
+                        "Condition": "{{HasMod|contains=Wildflour.SASS}}"
+                    },
+                }
+            }
+        }
+    ]
+}

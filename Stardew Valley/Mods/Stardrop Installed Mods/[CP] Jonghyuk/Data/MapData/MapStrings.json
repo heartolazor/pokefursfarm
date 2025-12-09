@@ -14,14 +14,96 @@
 				"jh.trash": "{{i18n:MapString.jh.trash}}",
 				"jh.catposter": "{{i18n:MapString.jh.catposter}}",
 				"jh.scroll": "{{i18n:MapString.jh.scroll}}",
-				"jh.punch": "{{i18n:MapString.jh.punch}}",
+				"jh.punch": "{{i18n:MapString.jh.punch}}",				
+				"jh.punch2": "{{i18n:MapString.jh.punch2}}",
 				"jh.console": "{{i18n:MapString.jh.console}}",
 				"jh.memoir": "{{Random:{{i18n:MapString.jh.memoir0}}#\"{{i18n:MapString.jh.memoir1}}\"++{{i18n:MapString.jh.memoir2}}#\"{{i18n:MapString.jh.memoir3}}\"|inputSeparator=++}}",
 				"jh.lani": "{{Random:{{i18n:MapString.jh.lani1}}++{{i18n:MapString.jh.lani2}}++{{i18n:MapString.jh.lani3}}|inputSeparator=++}}", 
-				"jh.ladder": "{{i18n:MapString.jh.ladder}}"
-
+				"jh.ladder": "{{i18n:MapString.jh.ladder}}",
+				"jh.console2": "{{i18n:MapString.jh.console2}}",
+				"jh.pottedplant": "{{i18n:MapString.jh.pottedplant}}"
 			}
-		}
+		},
+
+		//				"jh.journal": "{{Random:{{i18n:MapString.jh.journal1}}++{{i18n:MapString.jh.journal2}}++{{i18n:MapString.jh.journal3}}|inputSeparator=++}}",
+
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",  
+			"When": {"DayOfWeek" : "Monday"},
+			"Entries": {
+				//{{i18n:MapString.jh.}}
+				"jh.journal": "{{i18n:MapString.jh.journal1{{GenderNeutralToken}} |PlayerName={{PlayerName}}}}"
+			},
+
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",  
+			"When": {"DayOfWeek" : "Tuesday"},
+			"Entries": {
+				//{{i18n:MapString.jh.}}
+				"jh.journal": "{{i18n:MapString.jh.journal2{{GenderNeutralToken}} |PlayerName={{PlayerName}}}}"
+			},
+
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",  
+			"When": {"DayOfWeek" : "Wednesday"},
+			"Entries": {
+				//{{i18n:MapString.jh.}}
+				"jh.journal": "{{i18n:MapString.jh.journal3 |jhTrueName={{jhTrueName}}}}"
+			},
+
+		},
+		//{{jhTrueName}}
+
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",  
+			"When": {"DayOfWeek" : "Thursday"},
+			"Entries": {
+				//{{i18n:MapString.jh.}}
+				"jh.journal": "{{i18n:MapString.jh.journal4 |PlayerName={{PlayerName}}}}"
+			},
+
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",  
+			"When": {"DayOfWeek" : "Friday"},
+			"Entries": {
+				//{{i18n:MapString.jh.}}
+				"jh.journal": "{{i18n:MapString.jh.journal5 |PlayerName={{PlayerName}}}}"
+			},
+
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",  
+			"When": {"DayOfWeek" : "Saturday"},
+			"Entries": {
+				//{{i18n:MapString.jh.}}
+				"jh.journal": "{{i18n:MapString.jh.journal6 |PlayerName={{PlayerName}}}}"
+			},
+
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",  
+			"When": {"DayOfWeek" : "Sunday"},
+			"Entries": {
+				//{{i18n:MapString.jh.}}
+				"jh.journal": "{{i18n:MapString.jh.journal7{{GenderNeutralToken}} |PlayerName={{PlayerName}}}}"
+			},
+
+		},
 
 	]
 }

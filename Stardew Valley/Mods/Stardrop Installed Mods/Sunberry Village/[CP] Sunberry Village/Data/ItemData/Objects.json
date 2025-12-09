@@ -129,7 +129,8 @@
                         "season_winter",
                         "color_sand",
                         "not_museum_donatable",
-                        "sbv_unique_mineral"
+                        "sbv_unique_mineral",
+                        "item_lunar_bean"
                     ]
                 },
                 "skellady.SBVCP_RoyalAnemone": {
@@ -192,6 +193,7 @@
                     "SpriteIndex": 10,
                     "ContextTags": [
                         "season_fall",
+                        "edible_flower_item",
                         "flower_item",
                         "color_yellow"
                     ]
@@ -224,11 +226,62 @@
                     "SpriteIndex": 12,
                     "ContextTags": [
                         "season_winter",
+                        "edible_flower_item",
                         "flower_item",
                         "color_dark_red",
                         "color_dark_blue"
                     ]
-                }
+                },
+                "skellady.SBVCP_Marigold": {
+                    "Name": "skellady.SBVCP_Marigold",
+                    "DisplayName": "{{i18n:SBV.Marigold.Name}}",
+                    "Description": "{{i18n:SBV.Marigold.Description}}",
+                    "Edibility": "10",
+                    "Type": "Flower",
+                    "Category": -80,
+                    "Price": 30,
+                    "Texture": "Mods\\skellady.SBVCP\\Produce",
+                    "SpriteIndex": 13,
+                    "ContextTags": [
+                        "season_summer",
+                        "edible_flower_item",
+                        "flower_item",
+                        "color_yellow",
+                    ]
+                },
+                "skellady.SBVCP_Bluestar": {
+                    "Name": "skellady.SBVCP_Bluestar",
+                    "DisplayName": "{{i18n:SBV.Bluestar.Name}}",
+                    "Description": "{{i18n:SBV.Bluestar.Description}}",
+                    "Edibility": "10",
+                    "Type": "Flower",
+                    "Category": -80,
+                    "Price": 20,
+                    "Texture": "Mods\\skellady.SBVCP\\Produce",
+                    "SpriteIndex": 14,
+                    "ContextTags": [
+                        "season_spring",
+                        "edible_flower_item",
+                        "flower_item",
+                        "color_blue",
+                    ]
+                },
+                "skellady.SBVCP_Cloudberry": {
+                    "Name": "skellady.SBVCP_Cloudberry",
+                    "DisplayName": "{{i18n:SBV.Cloudberry.Name}}",
+                    "Description": "{{i18n:SBV.Cloudberry.Description}}",
+                    "Edibility": "10",
+                    "Type": "Fruit",
+                    "Category": -79,
+                    "Price": 10,
+                    "Texture": "Mods\\skellady.SBVCP\\Produce",
+                    "SpriteIndex": 15,
+                    "ContextTags": [
+                        "season_summer",
+                        "fruit_item",
+                        "color_orange",
+                    ]
+                },
             }
         },
         // Food
@@ -257,6 +310,12 @@
                         }
                     ],
                     "IsDrink": false,
+                    "ContextTags": [
+                        "cookie_item",
+                        "food_bakery",
+                        "food_sweet",
+                        "color_dark_brown",
+                    ]
                 },
                 "skellady.SBVCP_DialaHotChoco": {
                     "Name": "skellady.SBVCP_DialaHotChoco",
@@ -278,6 +337,10 @@
                         }
                     ],
                     "IsDrink": true,
+                    "ContextTags": [
+                        "color_dark_brown",
+                        "drink_item"
+                    ]
                 },
                 "skellady.SBVCP_IceCreamBowl": {
                     "Name": "skellady.SBVCP_IceCreamBowl",
@@ -299,7 +362,28 @@
                         }
                     ],
                     "IsDrink": false,
-                }
+                    "ContextTags": [
+                        "food_sweet",
+                        "ice_cream_item"
+                    ]
+                },
+                "skellady.SBVCP_CloudberryPie": {
+                    "Name": "skellady.SBVCP_CloudberryPie",
+                    "DisplayName": "{{i18n:SBV.CloudberryPie.Name}}",
+                    "Description": "{{i18n:SBV.CloudberryPie.Description}}",
+                    "Edibility": "86",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 300,
+                    "Texture": "Mods\\skellady.SBVCP\\Food",
+                    "SpriteIndex": 3,
+                    "IsDrink": false,
+                    "ContextTags": [
+                        "food_bakery",
+                        "food_sweet",
+                        "color_orange",
+                    ]
+                },
             }
         },
         // Gems and Artifacts
@@ -471,7 +555,8 @@
                     "Texture": "Mods\\skellady.SBVCP\\GemsArtifacts",
                     "SpriteIndex": 7,
                     "ContextTags": [
-                        "not_museum_donatable"
+                        "not_museum_donatable",
+                        "sbv_artifact"
                     ]
                 },
                 "skellady.SBVCP_AncientStaff": {
@@ -484,7 +569,8 @@
                     "Texture": "Mods\\skellady.SBVCP\\GemsArtifacts",
                     "SpriteIndex": 8,
                     "ContextTags": [
-                        "not_museum_donatable"
+                        "not_museum_donatable",
+                        "sbv_artifact"
                     ]
                 },
                 "skellady.SBVCP_SilverMask": {
@@ -497,7 +583,8 @@
                     "Texture": "Mods\\skellady.SBVCP\\GemsArtifacts",
                     "SpriteIndex": 9,
                     "ContextTags": [
-                        "not_museum_donatable"
+                        "not_museum_donatable",
+                        "sbv_artifact"
                     ]
                 },
                 "skellady.SBVCP_LapisNecklace": {
@@ -510,7 +597,8 @@
                     "Texture": "Mods\\skellady.SBVCP\\GemsArtifacts",
                     "SpriteIndex": 10,
                     "ContextTags": [
-                        "not_museum_donatable"
+                        "not_museum_donatable",
+                        "sbv_artifact"
                     ]
                 },
                 "skellady.SBVCP_WickedVase": {
@@ -523,7 +611,8 @@
                     "Texture": "Mods\\skellady.SBVCP\\GemsArtifacts",
                     "SpriteIndex": 11,
                     "ContextTags": [
-                        "not_museum_donatable"
+                        "not_museum_donatable",
+                        "sbv_artifact"
                     ]
                 },
                 "skellady.SBVCP_GoldenCoins": {
@@ -536,7 +625,8 @@
                     "Texture": "Mods\\skellady.SBVCP\\GemsArtifacts",
                     "SpriteIndex": 12,
                     "ContextTags": [
-                        "not_museum_donatable"
+                        "not_museum_donatable",
+                        "sbv_artifact"
                     ]
                 },
                 "skellady.SBVCP_ChippedJug": {
@@ -549,7 +639,8 @@
                     "Texture": "Mods\\skellady.SBVCP\\GemsArtifacts",
                     "SpriteIndex": 13,
                     "ContextTags": [
-                        "not_museum_donatable"
+                        "not_museum_donatable",
+                        "sbv_artifact"
                     ]
                 },
                 "skellady.SBVCP_DwarfKeyI": {
@@ -562,7 +653,8 @@
                     "Texture": "Mods\\skellady.SBVCP\\GemsArtifacts",
                     "SpriteIndex": 14,
                     "ContextTags": [
-                        "not_museum_donatable"
+                        "not_museum_donatable",
+                        "sbv_artifact"
                     ]
                 },
                 "skellady.SBVCP_DwarfKeyII": {
@@ -575,7 +667,8 @@
                     "Texture": "Mods\\skellady.SBVCP\\GemsArtifacts",
                     "SpriteIndex": 15,
                     "ContextTags": [
-                        "not_museum_donatable"
+                        "not_museum_donatable",
+                        "sbv_artifact"
                     ]
                 },
                 "skellady.SBVCP_DwarfKeyIII": {
@@ -588,7 +681,8 @@
                     "Texture": "Mods\\skellady.SBVCP\\GemsArtifacts",
                     "SpriteIndex": 16,
                     "ContextTags": [
-                        "not_museum_donatable"
+                        "not_museum_donatable",
+                        "sbv_artifact"
                     ]
                 },
                 "skellady.SBVCP_DwarfKeyIV": {
@@ -601,7 +695,8 @@
                     "Texture": "Mods\\skellady.SBVCP\\GemsArtifacts",
                     "SpriteIndex": 17,
                     "ContextTags": [
-                        "not_museum_donatable"
+                        "not_museum_donatable",
+                        "sbv_artifact"
                     ]
                 },
             }
@@ -648,6 +743,9 @@
                     ],
                     "IsDrink": true,
                     "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "potion_item"
+                    ]
                 },
                 "skellady.SBVCP_PurpuritePotion": {
                     "Name": "skellady.SBVCP_PurpuritePotion",
@@ -671,6 +769,9 @@
                     ],
                     "IsDrink": true,
                     "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "potion_item"
+                    ]
                 },
                 "skellady.SBVCP_AnnabergitePotion": {
                     "Name": "skellady.SBVCP_AnnabergitePotion",
@@ -694,6 +795,9 @@
                     ],
                     "IsDrink": true,
                     "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "potion_item"
+                    ]
                 },
                 "skellady.SBVCP_CitrinePotion": {
                     "Name": "skellady.SBVCP_CitrinePotion",
@@ -717,6 +821,9 @@
                     ],
                     "IsDrink": true,
                     "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "potion_item"
+                    ]
                 },
                 "skellady.SBVCP_BlueAuraQuartzPotion": {
                     "Name": "skellady.SBVCP_BlueAuraQuartzPotion",
@@ -741,6 +848,9 @@
                     ],
                     "IsDrink": true,
                     "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "potion_item"
+                    ]
                 },
                 "skellady.SBVCP_MoonberryPotion": {
                     "Name": "skellady.SBVCP_MoonberryPotion",
@@ -765,6 +875,9 @@
                     ],
                     "IsDrink": true,
                     "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "potion_item"
+                    ]
                 },
                 "skellady.SBVCP_DolomitePotion": {
                     "Name": "skellady.SBVCP_DolomitePotion",
@@ -789,6 +902,9 @@
                     ],
                     "IsDrink": true,
                     "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "potion_item"
+                    ]
                 },
                 "skellady.SBVCP_TigerseyePotion": {
                     "Name": "skellady.SBVCP_TigerseyePotion",
@@ -812,6 +928,9 @@
                     ],
                     "IsDrink": true,
                     "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "potion_item"
+                    ]
                 },
                 "skellady.SBVCP_LunaritePotion": {
                     "Name": "skellady.SBVCP_LunaritePotion",
@@ -835,6 +954,9 @@
                     ],
                     "IsDrink": true,
                     "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "potion_item"
+                    ]
                 },
                 "skellady.SBVCP_FairyStonePotion": {
                     "Name": "skellady.SBVCP_FairyStonePotion",
@@ -859,6 +981,9 @@
                     ],
                     "IsDrink": true,
                     "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "potion_item"
+                    ]
                 },
                 "{{ModId}}_SerpentinePowder": {
                     "Name": "{{ModId}}_SerpentinePowder",
@@ -1531,7 +1656,78 @@
                         "geode",
                         "geode_crusher_ignored"
                     ]
-                }
+                },
+                "skellady.SBVCP_LunarBeanPowder": {
+                    "Name": "{{ModId}}_LunarBeanPowder",
+                    "DisplayName": "{{i18n:SBV.LunarBeanPowder.Name}}",
+                    "Description": "{{i18n:SBV.LunarBeanPowder.Description}}",
+                    "Edibility": "-300",
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Price": 290,
+                    "Texture": "Mods\\skellady.SBVCP\\MiscItems",
+                    "SpriteIndex": 32,
+                    "ExcludeFromShippingCollection": true,
+                },
+                "skellady.SBVCP_LunarBeanPotion": {
+                    "Name": "skellady.SBVCP_LunarBeanPotion",
+                    "DisplayName": "{{i18n:SBV.LunarBeanPotion.Name}}",
+                    "Description": "{{i18n:SBV.LunarBeanPotion.Description}}",
+                    "Edibility": "50",
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Price": 260,
+                    "Texture": "Mods\\skellady.SBVCP\\MiscItems",
+                    "SpriteIndex": 31,
+                    "Buffs": [
+                        {
+                            "Id": "LunarBeanPotion_Buffs",
+                            "Duration": 560,
+                            "CustomAttributes": {
+                                "LuckLevel": 5
+                            }
+                        }
+                    ],
+                    "IsDrink": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "potion_item"
+                    ]
+                },
+                "skellady.SBVCP_LunarBeanJuice": {
+                    "Name": "skellady.SBVCP_LunarBeanJuice",
+                    "DisplayName": "{{i18n:SBV.LunarBeanJuice.Name}}",
+                    "Description": "{{i18n:SBV.LunarBeanJuice.Description}}",
+                    "Edibility": "30",
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Price": 450,
+                    "Texture": "Mods\\skellady.SBVCP\\MiscItems",
+                    "SpriteIndex": 30,
+                    "IsDrink": true,
+                    "ExcludeFromShippingCollection": false,
+                    "ContextTags": [
+                        "drink_item",
+                        "juice_item"
+                    ]
+                },
+                "skellady.SBVCP_MarigoldTea": {
+                    "Name": "skellady.SBVCP_MarigoldTea",
+                    "DisplayName": "{{i18n:SBV.MarigoldTea.Name}}",
+                    "Description": "{{i18n:SBV.MarigoldTea.Description}}",
+                    "Edibility": "30",
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Price": 100,
+                    "Texture": "Mods\\skellady.SBVCP\\MiscItems",
+                    "SpriteIndex": 33,
+                    "IsDrink": true,
+                    "ExcludeFromShippingCollection": false,
+                    "ContextTags": [
+                        "drink_item",
+                        "tea_item"
+                    ]
+                },
             }
         },
         // Seeds
@@ -1697,7 +1893,7 @@
                     "Price": 520,
                     "Texture": "Mods\\skellady.SBVCP\\AnimalProduce",
                     "SpriteIndex": 0,
-                    "ExcludeFromShippingCollection": true
+                    "ExcludeFromShippingCollection": false
                 },
                 "{{ModID}}_AlpacaWoolFabric": {
                     "Name": "{{ModID}}_AlpacaWoolFabric",
@@ -1709,7 +1905,7 @@
                     "Price": 720,
                     "Texture": "Mods\\skellady.SBVCP\\AnimalProduce",
                     "SpriteIndex": 1,
-                    "ExcludeFromShippingCollection": true
+                    "ExcludeFromShippingCollection": false
                 }
             }
         },

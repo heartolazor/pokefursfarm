@@ -2,7 +2,7 @@
     "Changes":
     // Custom Companions - CP
     [
-        {
+        /*{
             "LogName": "CP Integration for Raccoon",
             "Action": "EditData",
             "Target": "{{PeacefulEnd.CustomCompanions/Companions:skellady.SBVCC.SBVRaccoon}}",
@@ -152,7 +152,7 @@
             "When": {
                 "Season": "Summer"
             }
-        },
+        },*/
         {
             "LogName": "D&D's House Custom Companions",
             "Action": "EditMap",
@@ -389,7 +389,7 @@
                 }
             ],
             "When": {
-                "Weather": "Rain, Storm",
+                "Weather": "Rain, Storm, GreenRain",
                 "Season": "Spring, Summer, Fall"
             },
             "Update": "OnLocationChange"
@@ -411,7 +411,7 @@
                 }
             ],
             "When": {
-                "Weather": "Rain, Storm",
+                "Weather": "Rain, Storm, GreenRain",
                 "Season": "Spring, Summer, Fall"
             },
             "Update": "OnLocationChange"
@@ -433,7 +433,7 @@
                 }
             ],
             "When": {
-                "Weather": "Rain, Storm",
+                "Weather": "Rain, Storm, GreenRain",
                 "Season": "Spring, Summer, Fall"
             },
             "Update": "OnLocationChange"
@@ -920,7 +920,7 @@
                 },
             ],
         },
-        {
+        /*{
             "LogName": "Raccoon in Forest",
             "Action": "EditMap",
             "Target": "Maps/Forest",
@@ -937,7 +937,7 @@
                 }
             ],
             "When": {
-                "Weather |contains=Rain, Storm": false,
+                "Weather |contains=Rain, Storm, GreenRain": false,
                 "DayOfWeek": "Monday"
             }
         },
@@ -958,7 +958,7 @@
                 }
             ],
             "When": {
-                "Weather |contains=Rain, Storm": false,
+                "Weather |contains=Rain, Storm, GreenRain": false,
                 "DayOfWeek": "Tuesday"
             }
         },
@@ -979,7 +979,7 @@
                 }
             ],
             "When": {
-                "Weather |contains=Rain, Storm": false,
+                "Weather |contains=Rain, Storm, GreenRain": false,
                 "DayOfWeek": "Wednesday, Sunday"
             }
         },
@@ -1000,7 +1000,7 @@
                 }
             ],
             "When": {
-                "Weather |contains=Rain, Storm": false,
+                "Weather |contains=Rain, Storm, GreenRain": false,
                 "DayOfWeek": "Thursday"
             }
         },
@@ -1021,7 +1021,7 @@
                 }
             ],
             "When": {
-                "Weather |contains=Rain, Storm": false,
+                "Weather |contains=Rain, Storm, GreenRain": false,
                 "DayOfWeek": "Friday"
             }
         },
@@ -1042,7 +1042,7 @@
                 }
             ],
             "When": {
-                "Weather |contains=Rain, Storm": false,
+                "Weather |contains=Rain, Storm, GreenRain": false,
                 "DayOfWeek": "Saturday"
             }
         },
@@ -1077,7 +1077,7 @@
                 "Season": "Spring, Summer, Fall",
             },
             "Update": "OnLocationChange",
-        },
+        },*/
         /*{
          "LogName": "Critters in Mine 1",
          "Action": "EditMap",
@@ -1395,6 +1395,40 @@
             }
          ]
       },*/
+        {
+            "LogName": "Sunberry Forest Alpacas",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SBV_SunberryForest",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 14,
+                        "Y": 51
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 skellady.SBVCC.SBVAlpaca"
+                    },
+                },
+                {
+                    "Position": {
+                        "X": 18,
+                        "Y": 50
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 skellady.SBVCC.SBVBabyAlpaca"
+                    },
+                },
+            ],
+            "When": {
+                "Weather": "Sun, Wind",
+                "Season": "Spring, Summer, Fall",
+                "Time": "{{Range: 600, 1800}}",
+                "HasSeenEvent: anyPlayer |contains=skellady.SBVCP_20031489": true
+            },
+            "Update": "OnLocationChange"
+        },
         {
             "LogName": "Critters in Mine Final",
             "Action": "EditMap",

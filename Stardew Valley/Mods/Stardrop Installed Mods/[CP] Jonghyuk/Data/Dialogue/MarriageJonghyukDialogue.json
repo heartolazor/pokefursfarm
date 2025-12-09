@@ -1,0 +1,107 @@
+{
+    "Changes": 
+    [
+        {
+        
+            "LogName": "Normal Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueJonghyuk",
+            "Entries": 																																	
+//              "patio_Jonghyuk": "{{i18n:Jonghyuk.Marriage.patio_Jonghyuk.{{Random: 1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}}}}}}",
+            {
+                "patio_Jonghyuk": "{{i18n:Jonghyuk.Marriage.patio_Jonghyuk.{{Random: 1,2,3}}}}",
+                "spouseRoom_Jonghyuk": "{{i18n:Jonghyuk.Marriage.spouseRoom_Jonghyuk.{{Random: 1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}},8{{GenderNeutralToken}},9{{GenderNeutralToken}},10{{GenderNeutralToken}}}}}}",
+                "SpouseStardrop": "{{i18n:Jonghyuk.Marriage.SpouseStardrop}}",
+                "FlowerDance_Accept_Spouse": "{{i18n:Jonghyuk.Marriage.FlowerDance_Accept_Spouse}}",
+                "funLeave_Jonghyuk": "{{Random:{{i18n:Jonghyuk.Marriage.Good_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}},8{{GenderNeutralToken}},9{{GenderNeutralToken}},10{{GenderNeutralToken}},11{{GenderNeutralToken}},12{{GenderNeutralToken}},13{{GenderNeutralToken}}}}}}|inputSeparator=++}}",
+                "funReturn_Jonghyuk": "{{i18n:Jonghyuk.Marriage.funReturn_Jonghyuk}}",
+                "spring_Jonghyuk": "{{i18n:Jonghyuk.Marriage.spring_Jonghyuk}}",
+                "spring_13": "{{i18n:Jonghyuk.Marriage.spring_13}}",
+                "spring_14": "{{i18n:Jonghyuk.Marriage.spring_14}}",
+                "spring_23": "{{i18n:Jonghyuk.Marriage.spring_23}}",
+                "spring_24": "{{i18n:Jonghyuk.Marriage.spring_24}}",
+                "spring_25": "{{i18n:Jonghyuk.Marriage.spring_25}}",               
+                "spring_28": "{{i18n:Jonghyuk.Marriage.spring_28}}",
+                "summer_1": "{{i18n:Jonghyuk.Marriage.summer_Jonghyuk}}",                
+                "summer_11": "{{i18n:Jonghyuk.Marriage.summer_11}}", //luau
+                "summer_Jonghyuk": "{{i18n:Jonghyuk.Marriage.summer_Jonghyuk}}",
+                "summer_5": "{{i18n:Jonghyuk.Marriage.summer_5}}",
+                "summer_28": "{{i18n:Jonghyuk.Marriage.summer_28}}",
+                "fall_Jonghyuk": "{{i18n:Jonghyuk.Marriage.fall_Jonghyuk}}",
+                "fall_15": "{{i18n:Jonghyuk.Marriage.fall_15}}",
+                "fall_16": "{{i18n:Jonghyuk.Marriage.fall_16}}",
+                "fall_25": "{{i18n:Jonghyuk.Marriage.fall_25{{GenderNeutralToken}}}}",
+                "winter_Jonghyuk": "{{i18n:Jonghyuk.Marriage.winter_Jonghyuk}}",
+                "winter_7": "{{i18n:Jonghyuk.Marriage.winter_7}}",
+                "winter_24": "{{i18n:Jonghyuk.Marriage.winter_24}}",
+                "winter_28": "{{i18n:Jonghyuk.Marriage.winter_28}}",
+
+                
+                //GENERIC DIALOGUE
+                "Rainy_Day_0": "{{i18n:Jonghyuk.Marriage.Rainy_Day_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}}}}}}",
+                "Rainy_Day_1": "{{i18n:Jonghyuk.Marriage.Rainy_Day_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}}}}}}",
+                "Rainy_Day_2": "{{i18n:Jonghyuk.Marriage.Rainy_Day_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}}}}}}",
+                "Rainy_Day_3": "{{i18n:Jonghyuk.Marriage.Rainy_Day_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}}}}}}",
+                "Rainy_Day_4": "{{i18n:Jonghyuk.Marriage.Rainy_Day_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}}}}}}",
+                "Rainy_Day_5": "{{i18n:Jonghyuk.Marriage.Rainy_Day_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}}}}}}",
+                "Rainy_Day_6": "{{i18n:Jonghyuk.Marriage.Rainy_Day_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}}}}}}",
+                "Rainy_Night_0": "{{i18n:Jonghyuk.Marriage.Rainy_Night_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}}}} }}",
+                "Rainy_Night_1": "{{i18n:Jonghyuk.Marriage.Rainy_Night_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}}}} }}",
+                "Rainy_Night_2": "{{i18n:Jonghyuk.Marriage.Rainy_Night_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}}}} }}",
+                "Rainy_Night_3": "{{i18n:Jonghyuk.Marriage.Rainy_Night_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}}}} }}",
+                "Rainy_Night_4": "{{i18n:Jonghyuk.Marriage.Rainy_Night_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}}}} }}",
+                "Rainy_Night_Jonghyuk": "{{i18n:Jonghyuk.Marriage.Rainy_Night_Jonghyuk}}",
+                "Indoor_Day_0": "{{i18n:Jonghyuk.Marriage.Indoor_Day_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}}}}}}",
+                "Indoor_Day_1": "{{i18n:Jonghyuk.Marriage.Indoor_Day_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}}}}}}",
+                "Indoor_Day_2": "{{i18n:Jonghyuk.Marriage.Indoor_Day_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}}}}}}",
+                "Indoor_Day_3": "{{i18n:Jonghyuk.Marriage.Indoor_Day_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}}}}}}",
+                "Indoor_Day_4": "{{i18n:Jonghyuk.Marriage.Indoor_Day_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}}}}}}",
+                "Indoor_Day_5": "{{i18n:Jonghyuk.Marriage.Indoor_Day_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}}}}}}",
+                "Indoor_Night_0": "{{i18n:Jonghyuk.Marriage.Indoor_Night_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}},8,9}} }}",
+                "Indoor_Night_1": "{{i18n:Jonghyuk.Marriage.Indoor_Night_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}},8,9}} }}",
+                "Indoor_Night_2": "{{i18n:Jonghyuk.Marriage.Indoor_Night_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}},8,9}} }}",
+                "Indoor_Night_3": "{{i18n:Jonghyuk.Marriage.Indoor_Night_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}},8,9}} }}",
+                "Indoor_Night_4": "{{i18n:Jonghyuk.Marriage.Indoor_Night_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}},8,9}} }}",
+                "Indoor_Night_Jonghyuk": "{{i18n:Jonghyuk.Marriage.Indoor_Night_Jonghyuk}}",
+                "Outdoor_0": "{{i18n:Jonghyuk.Marriage.Outdoor_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}},8{{GenderNeutralToken}},9{{GenderNeutralToken}},10{{GenderNeutralToken}}}}}}",
+                "Outdoor_1": "{{i18n:Jonghyuk.Marriage.Outdoor_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}},8{{GenderNeutralToken}},9{{GenderNeutralToken}},10{{GenderNeutralToken}}}}}}",
+                "Outdoor_2": "{{i18n:Jonghyuk.Marriage.Outdoor_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}},8{{GenderNeutralToken}},9{{GenderNeutralToken}},10{{GenderNeutralToken}}}}}}",
+                "Outdoor_3": "{{i18n:Jonghyuk.Marriage.Outdoor_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}},8{{GenderNeutralToken}},9{{GenderNeutralToken}},10{{GenderNeutralToken}}}}}}",
+                "Outdoor_4": "{{i18n:Jonghyuk.Marriage.Outdoor_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}},8{{GenderNeutralToken}},9{{GenderNeutralToken}},10{{GenderNeutralToken}}}}}}",
+                "Outdoor_Jonghyuk": "{{i18n:Jonghyuk.Marriage.Outdoor_Jonghyuk}}",
+
+        
+                //AFFECTION DIALOGUE
+            
+                "Good_0": "{{i18n:Jonghyuk.Marriage.Good_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}},8{{GenderNeutralToken}},9{{GenderNeutralToken}},10{{GenderNeutralToken}},11{{GenderNeutralToken}},12{{GenderNeutralToken}}}}}}",
+                "Good_1": "{{i18n:Jonghyuk.Marriage.Good_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}},8{{GenderNeutralToken}},9{{GenderNeutralToken}},10{{GenderNeutralToken}},11{{GenderNeutralToken}},12{{GenderNeutralToken}}}}}}",
+                "Good_2": "{{i18n:Jonghyuk.Marriage.Good_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}},8{{GenderNeutralToken}},9{{GenderNeutralToken}},10{{GenderNeutralToken}},11{{GenderNeutralToken}},12{{GenderNeutralToken}}}}}}",
+                "Good_3": "{{i18n:Jonghyuk.Marriage.Good_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}},8{{GenderNeutralToken}},9{{GenderNeutralToken}},10{{GenderNeutralToken}},11{{GenderNeutralToken}},12{{GenderNeutralToken}}}}}}",
+                "Good_4": "{{i18n:Jonghyuk.Marriage.Good_{{Random:0{{GenderNeutralToken}},1{{GenderNeutralToken}},2{{GenderNeutralToken}},3{{GenderNeutralToken}},4{{GenderNeutralToken}},5{{GenderNeutralToken}},6{{GenderNeutralToken}},7{{GenderNeutralToken}},8{{GenderNeutralToken}},9{{GenderNeutralToken}},10{{GenderNeutralToken}},11{{GenderNeutralToken}},12{{GenderNeutralToken}}}}}}",
+                "Neutral_0": "{{i18n:Jonghyuk.Marriage.Neutral_0{{GenderNeutralToken}}}}",
+                "Neutral_1": "{{i18n:Jonghyuk.Marriage.Neutral_1{{GenderNeutralToken}}}}",
+                "Neutral_2": "{{i18n:Jonghyuk.Marriage.Neutral_2{{GenderNeutralToken}}}}",
+                "Neutral_3": "{{i18n:Jonghyuk.Marriage.Neutral_3{{GenderNeutralToken}}}}",
+                "Neutral_4": "{{i18n:Jonghyuk.Marriage.Neutral_4{{GenderNeutralToken}}}}",
+                "Neutral_5": "{{i18n:Jonghyuk.Marriage.Neutral_5{{GenderNeutralToken}}}}",
+                "Neutral_6": "{{i18n:Jonghyuk.Marriage.Neutral_6{{GenderNeutralToken}}}}",
+                "Neutral_7": "{{i18n:Jonghyuk.Marriage.Neutral_8{{GenderNeutralToken}}}}",                
+                "Neutral_8": "{{i18n:Jonghyuk.Marriage.Neutral_8{{GenderNeutralToken}}}}",
+                "Bad_0": "{{i18n:Jonghyuk.Marriage.Bad_0{{GenderNeutralToken}}}}",
+                "Bad_1": "{{i18n:Jonghyuk.Marriage.Bad_1{{GenderNeutralToken}}}}",
+                "Bad_2": "{{i18n:Jonghyuk.Marriage.Bad_2{{GenderNeutralToken}}}}",
+                "Bad_3": "{{i18n:Jonghyuk.Marriage.Bad_3{{GenderNeutralToken}}}}",
+                "Bad_4": "{{i18n:Jonghyuk.Marriage.Bad_4{{GenderNeutralToken}}}}",
+                "Bad_5": "{{i18n:Jonghyuk.Marriage.Bad_5{{GenderNeutralToken}}}}",
+                "Bad_6": "{{i18n:Jonghyuk.Marriage.Bad_0{{GenderNeutralToken}}}}",
+                "Bad_7": "{{i18n:Jonghyuk.Marriage.Bad_4{{GenderNeutralToken}}}}",
+                "Bad_8": "{{i18n:Jonghyuk.Marriage.Bad_5{{GenderNeutralToken}}}}",
+
+            
+            
+            }
+
+        },
+
+    ]
+}

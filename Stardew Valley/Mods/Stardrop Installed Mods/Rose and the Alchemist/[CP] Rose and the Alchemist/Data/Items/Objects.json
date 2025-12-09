@@ -41,7 +41,7 @@
                 ["faerie_forage",
                 "season_spring",
                 "magical_fruit_item",
-                "sour_apple_item",
+                "candy_apple_item",
                 "color_green"],
 
                 "Texture": "Mods/{{ModId}}/Objects",
@@ -180,6 +180,7 @@
                 "ContextTags":
                 ["faerie_forage",
                 "season_winter",
+                "dreamsicle_item",
                 "magical_fruit_item",
                 "color_orange"],
 
@@ -263,12 +264,11 @@
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 31
         },
-        /*
-            "{{ModId}}_Wild_Raspberry": {
+        /*"{{ModId}}_Wild_Raspberry": {
                 "Name": "{{ModId}}_Wild_Raspberry",
                 "DisplayName": "{{i18n:SASS_Wild_Raspberry.name}}",
                 "Description": "{{i18n:SASS_Wild_Raspberry.description}}",
-                "ExcludeFromShippingCollection":true,
+                "ExcludeFromShippingCollection":false,
                 "Type": "Fruit",          
                 "Category": -79,
                 "Edibility": 7,
@@ -277,7 +277,7 @@
                 "ContextTags":
                 ["faerie_forage",
                 "season_summer",
-                "wild_raspberry_item",
+                "wild_berry_item",
                 "magical_fruit_item",
                 "color_pink"],
 
@@ -288,7 +288,7 @@
                 "Name": "{{ModId}}_Wild_Strawberry",
                 "DisplayName": "{{i18n:SASS_Wild_Strawberry.name}}",
                 "Description": "{{i18n:SASS_Wild_Strawberry.description}}",
-                "ExcludeFromShippingCollection":true,
+                "ExcludeFromShippingCollection":false,
                 "Type": "Fruit",          
                 "Category": -79,
                 "Edibility": 7,
@@ -296,15 +296,14 @@
 
                 "ContextTags":
                 ["faerie_forage",
-                "wild_strawberry_item",
+                "wild_berry_item",
                 "season_spring",
                 "magical_fruit_item",
                 "color_pink"],
 
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 141
-        },
-*/
+        }*/
         }
     },
 
@@ -719,7 +718,7 @@
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 101
         },
-          /*  "{{ModId}}_Snow_Mallow": {
+           /* "{{ModId}}_Snow_Mallow": {
                 "Name": "{{ModId}}_Snow_Mallow",
                 "DisplayName": "{{i18n:SASS_Snow_Mallow.name}}",
                 "Description": "{{i18n:SASS_Snow_Mallow.description}}",
@@ -822,6 +821,8 @@
         }
         }
     },
+
+
 
     {
         "LogName":"SASS Mushrooms",
@@ -936,7 +937,7 @@
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 42
         },
-        /*    "{{ModId}}_Chicken_Woods": {
+            /*"{{ModId}}_Chicken_Woods": {
                 "Name": "{{ModId}}_Chicken_Woods",
                 "DisplayName": "{{i18n:SASS_Chicken_Woods.name}}",
                 "Description": "{{i18n:SASS_Chicken_Woods.description}}",
@@ -961,7 +962,7 @@
                 "Name": "{{ModId}}_Cocoa_Agaric",
                 "DisplayName": "{{i18n:SASS_Cocoa_Agaric.name}}",
                 "Description": "{{i18n:SASS_Cocoa_Agaric.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
+                "ExcludeFromShippingCollection":true,
                 "Type": "Forage",
                 "Category": -81,
                 "Edibility": 20,
@@ -982,7 +983,7 @@
                 "Name": "{{ModId}}_Cookie_Cap",
                 "DisplayName": "{{i18n:SASS_Cookie_Cap.name}}",
                 "Description": "{{i18n:SASS_Cookie_Cap.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
+                "ExcludeFromShippingCollection":true,
                 "Type": "Forage",
                 "Category": -81,
                 "Edibility": 20,
@@ -1025,7 +1026,7 @@
                 "Name": "{{ModId}}_Custard_Cap",
                 "DisplayName": "{{i18n:SASS_Custard_Cap.name}}",
                 "Description": "{{i18n:SASS_Custard_Cap.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
+                "ExcludeFromShippingCollection":true,
                 "Type": "Forage",
                 "Category": -81,
                 "Edibility": 20,
@@ -1046,7 +1047,7 @@
                 "Name": "{{ModId}}_Doughnut_Mushroom",
                 "DisplayName": "{{i18n:SASS_Doughnut_Mushroom.name}}",
                 "Description": "{{i18n:SASS_Doughnut_Mushroom.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
+                "ExcludeFromShippingCollection":true,
                 "Type": "Forage",
                 "Category": -81,
                 "Edibility": 20,
@@ -1067,7 +1068,7 @@
                 "Name": "{{ModId}}_Festive_Agaric",
                 "DisplayName": "{{i18n:SASS_Festive_Agaric.name}}",
                 "Description": "{{i18n:SASS_Festive_Agaric.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
+                "ExcludeFromShippingCollection":true,
                 "Type": "Forage",
                 "Category": -81,
                 "Edibility": 20,
@@ -1130,7 +1131,7 @@
                 "Name": "{{ModId}}_Gumdrop_Fungus",
                 "DisplayName": "{{i18n:SASS_Gumdrop_Fungus.name}}",
                 "Description": "{{i18n:SASS_Gumdrop_Fungus.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
+                "ExcludeFromShippingCollection":true,
                 "Type": "Forage",
                 "Category": -81,
                 "Edibility": 20,
@@ -1147,11 +1148,11 @@
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 121
         },
-          /*  "{{ModId}}_Honey_Fungus": {
+           /* "{{ModId}}_Honey_Fungus": {
                 "Name": "{{ModId}}_Honey_Fungus",
                 "DisplayName": "{{i18n:SASS_Honey_Fungus.name}}",
                 "Description": "{{i18n:SASS_Honey_Fungus.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
+                "ExcludeFromShippingCollection":true,
                 "Type": "Forage",
                 "Category": -81,
                 "Edibility": 20,
@@ -1193,7 +1194,7 @@
                 "Name": "{{ModId}}_Jack_Agaric",
                 "DisplayName": "{{i18n:SASS_Jack_Agaric.name}}",
                 "Description": "{{i18n:SASS_Jack_Agaric.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
+                "ExcludeFromShippingCollection":true,
                 "Type": "Forage",
                 "Category": -81,
                 "Edibility": 20,
@@ -1275,7 +1276,7 @@
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 48
         },
-           /* "{{ModId}}_Meringue_Mushroom": {
+            /*"{{ModId}}_Meringue_Mushroom": {
                 "Name": "{{ModId}}_Meringue_Mushroom",
                 "DisplayName": "{{i18n:SASS_Meringue_Mushroom.name}}",
                 "Description": "{{i18n:SASS_Meringue_Mushroom.description}}",
@@ -1340,7 +1341,7 @@
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 67
         },
-          /*  "{{ModId}}_Milk_Mushroom": {
+           /* "{{ModId}}_Milk_Mushroom": {
                 "Name": "{{ModId}}_Milk_Mushroom",
                 "DisplayName": "{{i18n:SASS_Milk_Mushroom.name}}",
                 "Description": "{{i18n:SASS_Milk_Mushroom.description}}",
@@ -1387,7 +1388,7 @@
                 "Name": "{{ModId}}_Popping_Parasols",
                 "DisplayName": "{{i18n:SASS_Popping_Parasols.name}}",
                 "Description": "{{i18n:SASS_Popping_Parasols.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
+                "ExcludeFromShippingCollection":true,
                 "Type": "Forage",
                 "Category": -81,
                 "Edibility": 20,
@@ -1557,7 +1558,7 @@
                 "Name": "{{ModId}}_Tea_Grass_Fungus",
                 "DisplayName": "{{i18n:SASS_Tea_Grass_Fungus.name}}",
                 "Description": "{{i18n:SASS_Tea_Grass_Fungus.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
+                "ExcludeFromShippingCollection":true,
                 "Type": "Forage",
                 "Category": -81,
                 "Edibility": 20,
@@ -1574,11 +1575,11 @@
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 105
         },
-          /*  "{{ModId}}_Wheatberry_Mushroom": {
+           /*"{{ModId}}_Wheatberry_Mushroom": {
                 "Name": "{{ModId}}_Wheatberry_Mushroom",
                 "DisplayName": "{{i18n:SASS_Wheatberry_Mushroom.name}}",
                 "Description": "{{i18n:SASS_Wheatberry_Mushroom.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
+                "ExcludeFromShippingCollection":true,
                 "Type": "Forage",
                 "Category": -81,
                 "Edibility": 20,
@@ -1594,7 +1595,7 @@
 
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 103
-        },*/
+        }*/
         }
     },
 

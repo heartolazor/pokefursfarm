@@ -83,6 +83,11 @@
                 "GreenRainFinished": "{{i18n:Elias.Dialogue.GreenRainFinished}}",
                 "GreenRain_2": "{{i18n:Elias.Dialogue.GreenRain_2}}",
 
+                //other dialogue
+				"MovieInvitation": "{{i18n:Elias.Dialogue.MovieInvitation}}",
+                "breakUp": "{{i18n:Elias.Dialogue.BreakUp}}",
+                "divorced": "{{i18n:Elias.Dialogue.Divorced}}",
+
                 //Gift Dialogue
                 //Positive/Negative
                 "AcceptBirthdayGift_Positive": "{{i18n:Gift.Positive.Elias}}",
@@ -109,6 +114,15 @@
             },
             "When": {
                 "Relationship:EliasSBV": "Dating"
+            }
+        },
+        // Summit Event
+        {
+            "LogName": "Elias Summit Event",
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries": {
+                "SummitEvent_Dialogue3_EliasSBV": "{{i18n:Elias.SummitEvent.1}}\"/pause 1000/speak EliasSBV \"{{i18n:Elias.SummitEvent.2}}\"/pause 500/faceDirection EliasSBV 3/pause 400/speak EliasSBV \"{{i18n:Elias.SummitEvent.3}}\"/pause 400/emote farmer 20/pause 100/emote EliasSBV 20",
             }
         },
         {

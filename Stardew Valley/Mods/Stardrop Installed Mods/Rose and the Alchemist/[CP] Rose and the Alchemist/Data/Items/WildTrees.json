@@ -186,6 +186,9 @@
             "SeedOnChopChance": 0.15,
             "DropWoodOnChop": true,
             "DropHardwoodOnLumberChop": true,
+            "CustomFields": {
+						"UIInfoSuite.ExtendedData/DisplayName": "{{i18n:Blushing_TopHat_Tree.name}}"
+					},
             "TapItems":[
                 {
                 "ItemId":"{{ModId}}_Blushing_TopHat",
@@ -211,6 +214,9 @@
             "SeedOnChopChance": 0.15,
             "DropWoodOnChop": true,
             "DropHardwoodOnLumberChop": true,
+            "CustomFields": {
+						"UIInfoSuite.ExtendedData/DisplayName": "{{i18n:Candy_Button_Tree.name}}"
+					},
             "TapItems":[
                 {
                 "ItemId":"{{ModId}}_Candy_Button",
@@ -236,6 +242,9 @@
             "SeedOnChopChance": 0.15,
             "DropWoodOnChop": true,
             "DropHardwoodOnLumberChop": true,
+            "CustomFields": {
+						"UIInfoSuite.ExtendedData/DisplayName": "{{i18n:Coral_Fungus_Tree.name}}"
+					},
             "TapItems":[
                 {
                 "ItemId":"{{ModId}}_Coral_Fungus",
@@ -261,6 +270,9 @@
             "SeedOnChopChance": 0.15,
             "DropWoodOnChop": true,
             "DropHardwoodOnLumberChop": true,
+            "CustomFields": {
+						"UIInfoSuite.ExtendedData/DisplayName": "{{i18n:Frilly_Gilly_Tree.name}}"
+					},
             "TapItems":[
                 {
                 "ItemId":"{{ModId}}_Frilly_Gilly",
@@ -286,6 +298,9 @@
             "SeedOnChopChance": 0.15,
             "DropWoodOnChop": true,
             "DropHardwoodOnLumberChop": true,
+            "CustomFields": {
+						"UIInfoSuite.ExtendedData/DisplayName": "{{i18n:Ghostly_Parasol_Tree.name}}"
+					},
             "TapItems":[
                 {
                 "ItemId":"{{ModId}}_Ghostly_Parasol",
@@ -311,6 +326,9 @@
             "SeedOnChopChance": 0.15,
             "DropWoodOnChop": true,
             "DropHardwoodOnLumberChop": true,
+            "CustomFields": {
+						"UIInfoSuite.ExtendedData/DisplayName": "{{i18n:Indigo_Cap_Tree.name}}"
+					},
             "TapItems":[
                 {
                 "ItemId":"{{ModId}}_Indigo_Cap",
@@ -336,6 +354,9 @@
             "SeedOnChopChance": 0.15,
             "DropWoodOnChop": true,
             "DropHardwoodOnLumberChop": true,
+            "CustomFields": {
+						"UIInfoSuite.ExtendedData/DisplayName": "{{i18n:Lilac_Funnel_Tree.name}}"
+					},
             "TapItems":[
                 {
                 "ItemId":"{{ModId}}_Lilac_Funnel",
@@ -361,6 +382,9 @@
             "SeedOnChopChance": 0.15,
             "DropWoodOnChop": true,
             "DropHardwoodOnLumberChop": true,
+            "CustomFields": {
+						"UIInfoSuite.ExtendedData/DisplayName": "{{i18n:Limey_Bonnet_Tree.name}}"
+					},
             "TapItems":[
                 {
                 "ItemId":"{{ModId}}_Limey_Bonnet",
@@ -386,6 +410,9 @@
             "SeedOnChopChance": 0.15,
             "DropWoodOnChop": true,
             "DropHardwoodOnLumberChop": true,
+            "CustomFields": {
+						"UIInfoSuite.ExtendedData/DisplayName": "{{i18n:Lunar_Poof_Tree.name}}"
+					},
             "TapItems":[
                 {
                 "ItemId":"{{ModId}}_Lunar_Poof",
@@ -411,6 +438,9 @@
             "SeedOnChopChance": 0.15,
             "DropWoodOnChop": true,
             "DropHardwoodOnLumberChop": true,
+            "CustomFields": {
+						"UIInfoSuite.ExtendedData/DisplayName": "{{i18n:Rustgill_Tree.name}}"
+					},
             "TapItems":[
                 {
                 "ItemId":"{{ModId}}_Rustgill",
@@ -436,6 +466,9 @@
             "SeedOnChopChance": 0.15,
             "DropWoodOnChop": true,
             "DropHardwoodOnLumberChop": true,
+            "CustomFields": {
+						"UIInfoSuite.ExtendedData/DisplayName": "{{i18n:Seafoam_Waxcap_Tree.name}}"
+					},
             "TapItems":[
                 {
                 "ItemId":"{{ModId}}_Seafoam_Waxcap",
@@ -461,6 +494,9 @@
             "SeedOnChopChance": 0.15,
             "DropWoodOnChop": true,
             "DropHardwoodOnLumberChop": true,
+            "CustomFields": {
+						"UIInfoSuite.ExtendedData/DisplayName": "{{i18n:Sparkling_Agaric_Tree.name}}"
+					},
             "TapItems":[
                 {
                 "ItemId":"{{ModId}}_Sparkling_Agaric",
@@ -486,6 +522,9 @@
             "SeedOnChopChance": 0.15,
             "DropWoodOnChop": true,
             "DropHardwoodOnLumberChop": true,
+            "CustomFields": {
+						"UIInfoSuite.ExtendedData/DisplayName": "{{i18n:Stout_Funnel_Tree.name}}"
+					},
             "TapItems":[
                 {
                 "ItemId":"{{ModId}}_Stout_Funnel",
@@ -513,7 +552,7 @@
             "MaxSize": null,
             "ForStump": false,
             "Season": null,
-            "Chance": 0.1,
+            "Chance": 0.05,
             "Condition": null,
             "Id": "{{ModId}}_Lovebird_Feather",
             "ItemId": "(O){{ModId}}_Lovebird_Feather",
@@ -526,9 +565,26 @@
             "StackModifierMode": "Stack",
             "QualityModifiers": null,
             "QualityModifierMode": "Stack"
+        },
+    }
+},
+
+{
+    "LogName":"Add Mushroom to Pine Tree Shakeable Items",
+    "Action": "EditData",
+    "Target": "Data/WildTrees",
+    "TargetField": ["3","ShakeItems"],
+    "Entries": {
+        "{{ModId}}_Festive_Agaric": {
+            "Season": "winter",
+            "Chance": 0.1,
+            "Condition": null,
+            "Id": "{{ModId}}_Festive_Agaric",
+            "ItemId": "(O){{ModId}}_Festive_Agaric",
         }
     }
 },
+
 
 {
     "LogName":"Add Feather to Oak Tree Choppable Items",
@@ -541,7 +597,7 @@
             "MaxSize": null,
             "ForStump": false,
             "Season": null,
-            "Chance": 0.1,
+            "Chance": 0.05,
             "Condition": null,
             "Id": "{{ModId}}_Crow_Feather",
             "ItemId": "(O){{ModId}}_Crow_Feather",
@@ -559,6 +615,22 @@
 },
 
 {
+    "LogName":"Add Mushroom to Oak Tree Shakeable Items",
+    "Action": "EditData",
+    "Target": "Data/WildTrees",
+    "TargetField": ["1","ShakeItems"],
+    "Entries": {
+        "{{ModId}}_Jack_Agaric": {
+            "Season": "fall",
+            "Chance": 0.1,
+            "Condition": null,
+            "Id": "{{ModId}}_Jack_Agaric",
+            "ItemId": "(O){{ModId}}_Jack_Agaric",
+        }
+    }
+},
+
+{
     "LogName":"Add Feather to Maple Tree Choppable Items",
     "Action": "EditData",
     "Target": "Data/WildTrees",
@@ -569,7 +641,7 @@
             "MaxSize": null,
             "ForStump": false,
             "Season": null,
-            "Chance": 0.1,
+            "Chance": 0.05,
             "Condition": null,
             "Id": "{{ModId}}_Rosefinch_Feather",
             "ItemId": "(O){{ModId}}_Rosefinch_Feather",
