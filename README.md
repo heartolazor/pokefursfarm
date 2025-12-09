@@ -197,19 +197,19 @@ Item extensions v1.16.0 by mistyspring:
 - https://www.nexusmods.com/stardewvalley/mods/20357
 Framework which allows for more item capability.
 
-Sunberry Village - Custom Companions v1.0.3 by skellady:
+Sunberry Village - Custom Companions v1.1.2 by skellady:
 - https://www.nexusmods.com/stardewvalley/mods/-1
 Custom Companions for SBV.
 
-Sunberry Village - Farm Type Manager v1.0.3 by skellady:
+Sunberry Village - Farm Type Manager v1.1.2 by skellady:
 - https://www.nexusmods.com/stardewvalley/mods/-1
 FTM component for Sunberry Village.
 
-(C#) Sunberry Village v1.0.3 by Sunberry Team:
+(C#) Sunberry Village v1.1.2 by Sunberry Team:
 - https://www.nexusmods.com/stardewvalley/mods/-1
 Code portion of Sunberry Village.
 
-Sunberry Village - Content Patcher v1.0.3 by skellady:
+Sunberry Village - Content Patcher v1.1.2 by skellady:
 - https://www.nexusmods.com/stardewvalley/mods/11111
 Adds a new area to Stardew Valley!
 
@@ -218,8 +218,9 @@ StardewUI v0.6.1 by focustense:
 - https://github.com/focustense/StardewUI/releases
 Declarative UI framework
 
-Livestock Bazaar v1.5.2 by mushymato:
+Livestock Bazaar v1.5.4 by mushymato:
 - https://www.nexusmods.com/stardewvalley/mods/29997
+- https://github.com/Mushymato/LivestockBazaar/releases
 Revamp animal shop UI and allow custom animal shops.
 
 Calcifer v0.1.0 by sophie:
@@ -242,7 +243,7 @@ Wildflour's Atelier Goods v2.1.2 by wildflourmods:
 - https://www.nexusmods.com/stardewvalley/mods/27049
 Run the atelier of your dreams with this highly configurable, all-in-one artisan goods expansion mod.
 
-Rose and the Alchemist - NPCs for Sunberry Village v2.0.1 by wildflourmods:
+Rose and the Alchemist - NPCs for Sunberry Village v2.0.2 by wildflourmods:
 - https://www.nexusmods.com/stardewvalley/mods/32385
 Adds two new NPCs to Sunberry Forest!
 
@@ -424,7 +425,7 @@ Animal Squeeze Through v1.0.7 by selph:
 - https://www.nexusmods.com/stardewvalley/mods/33514
 Allows animals who's bigger than their animal house's teeny door to squeeze through regardless.
 
-ExtraAnimalConfig v1.9.3 by selph:
+ExtraAnimalConfig v1.9.4 by selph:
 - https://www.nexusmods.com/stardewvalley/mods/25328
 Add extra functionalities to animal definitions.
 
@@ -450,7 +451,7 @@ Allows ostriches, and modded poultry like geese and turkeys, to live in coops as
 - https://www.nexusmods.com/stardewvalley/mods/-1
 Archaeology Skill Content Patcher
 
-ArchaeologySkill v2.18.0 by moonslime:
+ArchaeologySkill v2.18.2 by moonslime:
 - https://www.nexusmods.com/stardewvalley/mods/22199
 Adds a skill related to digging and panning.
 
@@ -724,7 +725,7 @@ Destroyable Bushes v1.5.2 by Esca:
 - https://www.moddrop.com/stardew-valley/mods/798245
 Allows the player to destroy bushes with an axe.
 
-AimonsWitchSwampOverhaulPatches v2.2.5 by Aimon111:
+AimonsWitchSwampOverhaulPatches v2.2.7 by Aimon111:
 - https://www.nexusmods.com/stardewvalley/mods/???
 Adds fireflies into witch swamp.
 
@@ -732,9 +733,13 @@ Simple Foliage v2.1.2 by Azrashar/itsanette (unofficial update by Morghoula and 
 - https://www.nexusmods.com/stardewvalley/mods/20972
 Decorative content pack to replace trees & bushes
 
-Distant Lands - Witch Swamp Overhaul Map Only v2.2.5 by Aimon111:
+Distant Lands - Witch Swamp Overhaul v2.2.7 by Aimon111:
 - https://www.nexusmods.com/stardewvalley/mods/18109
-A more lively Witch Swamp map overhaul - Map Only version!
+A more lively Witch Swamp map overhaul - new NPC, quests, items, fish, forage and more!
+
+Distant Lands - Witch Swamp Overhaul FTM v2.2.7 by Aimon111:
+- https://www.nexusmods.com/stardewvalley/mods/???
+Distant Lands - Witch Swamp Overhaul FTM
 
 (BL) Downtown Zuzu v0.9.4 by Zuzu Development Team:
 - https://www.nexusmods.com/stardewvalley/mods/8587
@@ -768,11 +773,11 @@ Forage Settings East Scarp v3.0.4 by Lemurkat:
 - https://www.nexusmods.com/stardewvalley/mods/???
 Controls forage and monster spawns in East Scarp
 
-Sword and Sorcery (SMAPI Component) v2.3.8 by EnderTedi, 7thAxis, KittyCatCasey:
+Sword and Sorcery (SMAPI Component) v2.3.10 by EnderTedi, 7thAxis, KittyCatCasey:
 - no update key
 C# code for Sword and Sorcery
 
-Sword & Sorcery (CP) v2.3.8 by DestyNova:
+Sword & Sorcery (CP) v2.3.10 by DestyNova:
 - https://www.nexusmods.com/stardewvalley/mods/12369
 A fantasy expansion for East Scarp that includes NPCs, Skills, Crops, Weapons, Items & More!
 
@@ -963,7 +968,7 @@ Ornithologist's Guild brings a totally new birding experience to Stardew Valley,
 - https://www.nexusmods.com/stardewvalley/mods/26976
 Adds various warblers to the Ornithologists Guild Mod
 
-GrassVariety v1.1.2 by mushymato:
+GrassVariety v1.2.2 by mushymato:
 - https://www.nexusmods.com/stardewvalley/mods/36458
 Add skins to grass.
 
@@ -1007,14 +1012,6 @@ MFM Kin the Axolotl v1.1.8 by otohimexoxo:
 Kokoro - Shockah's core mod v3.0.0 by Shockah:
 - https://www.nexusmods.com/stardewvalley/mods/15682
 A core mod for Shockah's mods.
-
-Lani CC - Sammy v1.1.4 by atelier99:
-- https://www.nexusmods.com/stardewvalley/mods/32689
-Lani's cat, Sammy, as a Custom Companion!
-
-Sunberry NPC - Lani v1.1.4 by atelier99:
-- https://www.nexusmods.com/stardewvalley/mods/32689
-Lani, a custom NPC for Sunberry Village!
 
 Level Forever v1.1.0 by GoldstoneBosonMeadows:
 - https://www.nexusmods.com/stardewvalley/mods/22920
@@ -1077,7 +1074,7 @@ Machine Progression System v3.0.7 by NachOnline:
 - https://www.nexusmods.com/stardewvalley/mods/21720
 Adds tiered upgrades to all the artisan and refining equipment.
 
-Machine Control Panel v2.1.0 by mushymato:
+Machine Control Panel v2.1.1 by mushymato:
 - https://www.nexusmods.com/stardewvalley/mods/28261
 A control panel for machine rules.
 
@@ -1173,15 +1170,15 @@ NITVNetBallContent v1.0.2 by Xan:
 - https://www.nexusmods.com/stardewvalley/mods/37172
 Creates the Net Ball to be purchased from the Insectarium shop.
 
-NITVPokemonAddon v1.1.0 by Xan:
+NITV Pokemon Features v1.1.1 by Xan:
 - no update key
-Overrides the textures of the NITV nets and may add other features in the future.
+Overrides the textures of the NITV nets and adds a bunch of other features as well.
 
-PokemonCreaturePack v1.0.5 by Xan:
+NITV Pokemon Creatures v1.1.1 by Xan:
 - https://www.nexusmods.com/stardewvalley/mods/37156
 Adds Pokemon to Nature In The Valley
 
-(CP) Regional Insectarium v1.0.5 by Xan:
+NITV Pokemon Insectarium v1.1.1 by Xan:
 - no update key
 Uses Zilch's Insectarium Reimagined as a template to create a Pokemon Themed version
 
@@ -1351,7 +1348,7 @@ Constance's ferrets frolocking around.
 - 16326
 Upon visiting a new tropical place you see another boat docked to the pier....what is this about?
 
-TrinketTinker v1.6.3 by mushymato:
+TrinketTinker v1.7.0 by mushymato:
 - https://www.nexusmods.com/stardewvalley/mods/29073
 - https://github.com/Mushymato/TrinketTinker/releases
 Trinket & Companion framework.
@@ -1465,7 +1462,7 @@ Example content pack for BusLocations, which adds the Desert as a destination.
 - https://www.nexusmods.com/stardewvalley/mods/5221
 This mod makes so many crops giant!
 
-Animated East Scarp Fish v1.3.0 by Gervig91 ~zBGEdit/CPA2SC:
+Animated East Scarp Fish v1.3.1 by Gervig91 ~zBGEdit/CPA2SC:
 - https://www.nexusmods.com/stardewvalley/mods/10913
 Animates the fish from the East Scarp mod
 
@@ -1517,7 +1514,7 @@ Bog's Monster Mash v1.1.0 by BogWyytch and Abagaianye:
 - https://www.nexusmods.com/stardewvalley/mods/38014
 Loads of new monsters and monster drops!
 
-Bog's Monster Sanctuary v1.0.0 by BogWyytch and Abagaianye:
+Bog's Monster Sanctuary v1.0.1 by BogWyytch and Abagaianye:
 - https://www.nexusmods.com/stardewvalley/mods/39430
 Allows Monsters to seek refuge on your farm in exchange for treasures!
 
@@ -1529,7 +1526,7 @@ Flexible Cooking v1.2.0 by 6480:
 - https://www.nexusmods.com/stardewvalley/mods/38862
 Opens up vanilla cooking recipes to be able to use a variety of ingredients.
 
-Cornucopia - Cooking Recipes v1.0.4 by Cornucopia:
+Cornucopia - Cooking Recipes v1.0.6 by Cornucopia:
 - https://www.nexusmods.com/stardewvalley/mods/39057
 An additional Cooking Recipes mod for Stardew Valley 1.6 Content Patcher
 
@@ -1613,7 +1610,7 @@ Isla v3.0.4 by PaperNautilus:
 - https://www.nexusmods.com/stardewvalley/mods/6931
 A poetic spirit who lives in the Gem Sea.
 
-Sunberry NPC - Jonghyuk & Spanner v1.1.8 by Arknir27:
+Sunberry NPC - Jonghyuk & Spanner v1.2.3 by Arknir27:
 - https://www.nexusmods.com/stardewvalley/mods/12000
 Sunberry NPCs - Jonghyuk & Spanner
 
@@ -1721,7 +1718,7 @@ Marnie Immersive v1.5.8 by Lemurkat:
 - https://www.nexusmods.com/stardewvalley/mods/5070
 Overhaul of dialogue and cut scenes for Marnie
 
-Rocks and Relics v2.0.3 by Solariaze:
+Rocks and Relics v2.0.5 by Solariaze:
 - https://www.nexusmods.com/stardewvalley/mods/21038
 Introduces mineralogy, jewelry, and transmutation.
 
@@ -1754,7 +1751,7 @@ Animal Accessories v1.5.3 by FoxgloveActual:
 - https://www.nexusmods.com/stardewvalley/mods/99999
 Adds animal features for Furry Farmer.
 
-Animals and Myths Pack v1.5.5 by plurffle:
+Animals and Myths Pack v1.5.6 by plurffle:
 - https://www.nexusmods.com/stardewvalley/mods/10324
 Adds animal-related and mythical creatures stuff for the Fashion Sense framework.
 
@@ -2001,6 +1998,14 @@ Code unit for Eli and Dylan.
 Juna for Custom Companions v1.0.0 by elhrvy:
 - no update key
 Juna's super secret friendship gift.
+
+Lani CC - Sammy v1.1.5 by atelier99:
+- https://www.nexusmods.com/stardewvalley/mods/32689
+Lani's cat, Sammy, as a Custom Companion!
+
+Sunberry NPC - Lani v1.1.5 by atelier99:
+- https://www.nexusmods.com/stardewvalley/mods/32689
+Lani, a custom NPC for Sunberry Village!
 
 CustomCompanionVoid v2.2.0 by Arknir27:
 - https://www.nexusmods.com/stardewvalley/mods/10016
