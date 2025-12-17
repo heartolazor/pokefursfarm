@@ -18,7 +18,7 @@
 	 {
 			"LogName": "Include",
 			"Action": "Include",
-			"FromFile": "Data/AquariumData.json,Data/FishData.json,Data/Location.json,Data/Objects.json,Data/FishPondData.json,Data/EventsAndQuests.json,Data/NPCGiftTastes.json",
+			"FromFile": "Data/AquariumData.json,Data/FishData.json,Data/Location.json,Data/Objects.json,Data/FishPondData.json,Data/EventsAndQuests.json,Data/NPCGiftTastes.json,Data/Clothes.json,Data/Machines.json",
 		},
 		{
         "Action": "EditImage",
@@ -36,18 +36,18 @@
 		"FromArea": { "X": 264, "Y": 528, "Width": 24, "Height": 48 }, 
         "ToArea": { "X": 408, "Y": 96, "Width": 24, "Height": 48 },
 	   },	   
-	 {
-      "LogName": "Load Objects Sprites",
-      "Action": "Load",
-      "Target": "Mods\\MNF.MoreNewFish\\Objects\\Objects",
-      "FromFile": "assets/new_fish.png"
-    },	  
-		{       
-	 "Action": "EditData",
-	 "LogName": "Craftables Elixirs",
-	 "Target": "Data/CraftingRecipes",
-	 "Entries": {		
-		"Warrior Elixir": "MNF.MoreNewFish_void_algae 1 MNF.MoreNewFish_glassfish 1 MNF.MoreNewFish_lamprey 1 MNF.MoreNewFish_jellyfish 1 796 1/Home/MNF.MoreNewFish_warrior_elixir 1/false/null",
+	{
+		"LogName": "Load Objects Sprites",
+		"Action": "Load",
+		"Target": "Mods\\MNF.MoreNewFish\\Objects\\Objects",
+		"FromFile": "assets/new_fish.png"
+	},
+	{
+		"Action": "EditData",
+		"LogName": "Craftables Elixirs",
+		"Target": "Data/CraftingRecipes",
+		"Entries": {
+			"Warrior Elixir": "MNF.MoreNewFish_void_algae 1 MNF.MoreNewFish_glassfish 1 MNF.MoreNewFish_lamprey 1 MNF.MoreNewFish_jellyfish 1 796 1/Home/MNF.MoreNewFish_warrior_elixir 1/false/null",
 		"Fishing Elixir": "MNF.MoreNewFish_spiny_dogfish 1 MNF.MoreNewFish_small_goblin_shark 1 MNF.MoreNewFish_small_manta_ray 1 MNF.MoreNewFish_small_swordfish 1 MNF.MoreNewFish_bonnethead 1/Home/MNF.MoreNewFish_fishing_elixir 1/false/null",
 		"MNF.MoreNewFish_fish_hatchery": "709 10 710 1 122 1 335 1 336 1/Home/MNF.MoreNewFish_fish_hatchery 1/true/null",
 			 },
@@ -61,59 +61,114 @@
 		{
 		"Action": "EditData",
 		"Target": "Data/SpecialOrders",
-			"Entries": { 
-			"MNF.RobaloOrder_Name": {
-			"Name": "[MNF.RobaloOrder_Name]",
-			"Requester": "Willy",
-			"Duration": "Month",
-			"Repeatable": "false",
-			"RequiredTags": "island",
-			"OrderType": "",
-			"SpecialRule": "",
-			"Text": "[MNF.RobaloOrder_Text]",
-			"ItemToRemoveOnEnd": null,
-			"MailToRemoveOnEnd": null,
-			"Objectives": [
-      {
-        "Type": "Fish",
-        "Text": "[MNF.RobaloOrder__Objective_0_Text]",
-        "RequiredCount": "20",
-        "Data": {
-          "AcceptedContextTags": "item_robalo"
-        }
-      },
-			{
-        "Type": "Donate",
-        "Text": "[MNF.RobaloOrder__Objective_1_Text]",
-        "RequiredCount": "20",
-        "Data": {
-          "DropBox": "GusFridge",
-          "DropBoxGameLocation": "Saloon",
-          "DropBoxIndicatorLocation": "18 15",
-          "MinimumCapacity": "24",
-          "AcceptedContextTags": "item_robalo"
-        }
-      },
-	  ],
-	  "Rewards": [
-	  {
-		"Type": "Money",
-		"Data": {
-		"Amount": "2000",
+			"Entries": {
+				"MNF.RobaloOrder_Name": {
+					"Name": "[MNF.RobaloOrder_Name]",
+					"Requester": "Willy",
+					"Duration": "Month",
+					"Repeatable": "false",
+					"RequiredTags": "island",
+					"OrderType": "",
+					"SpecialRule": "",
+					"Text": "[MNF.RobaloOrder_Text]",
+					"ItemToRemoveOnEnd": null,
+					"MailToRemoveOnEnd": null,
+					"Objectives": [
+					{
+						"Type": "Fish",
+						"Text": "[MNF.RobaloOrder__Objective_0_Text]",
+						"RequiredCount": "20",
+						"Data": {
+							"AcceptedContextTags": "item_robalo"
 						}
-					 },
-	  {
-		"Type": "Mail",
-		"Data": {
-		"MailReceived": "MNFSpecialOrder",
-		"NoLetter": "true"
+					},
+					{
+						"Type": "Donate",
+						"Text": "[MNF.RobaloOrder__Objective_1_Text]",
+						"RequiredCount": "20",
+						"Data": {
+							"DropBox": "GusFridge",
+							"DropBoxGameLocation": "Saloon",
+							"DropBoxIndicatorLocation": "18 15",
+							"MinimumCapacity": "24",
+							"AcceptedContextTags": "item_robalo"
 						}
-					  }
+					},
+					],
+					"Rewards": [
+					{
+						"Type": "Money",
+						"Data": {
+							"Amount": "2000",
+						}
+					},
+					{
+						"Type": "Mail",
+						"Data": {
+							"MailReceived": "MNFSpecialOrder",
+							"NoLetter": "true"
+						}
+					}
 					]
-	  },
-	  },
-	  },
-			{
+				},
+			},
+		},
+		//BUFFS
+		{
+		"Action": "EditData",
+		"Target": "Data/Buffs",
+		"Entries": {
+			"MNF.FishingElixir": {
+				"DisplayName": "{{i18n:fishing_elixir}}",
+				"Description": null,
+				"IsDebuff": false,
+				"GlowColor": null,
+				"Duration": -2,
+				"MaxDuration": -2,
+				"IconTexture": "Mods\\MNF.MoreNewFish\\Objects\\Objects",
+				"IconSpriteIndex": 145,
+				"Effects": {
+					"FarmingLevel": 0.0,
+					"FishingLevel": 2.0,
+					"MiningLevel": 0.0,
+					"LuckLevel": 2.0,
+					"ForagingLevel": 0.0,
+					"MaxStamina": 0.0,
+					"MagneticRadius": 0.0,
+					"Speed": 0.0,
+					"Defense": 0.0,
+					"Attack": 0.0,
+				},
+				"ActionsOnApply": null,
+				"CustomFields": null,
+			},
+			"MNF.WarriorElixir": {
+				"DisplayName": "{{i18n:warrior_elixir}}",
+				"Description": null,
+				"IsDebuff": false,
+				"GlowColor": null,
+				"Duration": -2,
+				"MaxDuration": -2,
+				"IconTexture": "Mods\\MNF.MoreNewFish\\Objects\\Objects",
+				"IconSpriteIndex": 144,
+				"Effects": {
+					"FarmingLevel": 0.0,
+					"FishingLevel": 0.0,
+					"MiningLevel": 0.0,
+					"LuckLevel": 0.0,
+					"ForagingLevel": 0.0,
+					"MaxStamina": 0.0,
+					"MagneticRadius": 0.0,
+					"Speed": 1.0,
+					"Defense": 2.0,
+					"Attack": 2.0,
+				},
+				"ActionsOnApply": null,
+				"CustomFields": null,
+			},
+		},
+		},
+		{
 		"Action": "EditData",
 		"Target": "Strings/SpecialOrderStrings",
 			"Entries": {
@@ -137,7 +192,7 @@
 					"Name": "MNF.MoreNewFish_fish_hatchery",
                     "DisplayName": "{{i18n:MNF.MoreNewFish_fish_hatchery_name}}",
                     "Description": "{{i18n:MNF.MoreNewFish_fish_hatchery_description}}",
-                    "CanBePlacedOutDoors": true,
+                    "CanBePlacedOutDoors": false,
                     "CanBePlacedIndoors": true,
                     "Texture": "Mods\\Objects\\MNF.MoreNewFish_fish_hatchery",
                     "SpriteIndex": 0,
@@ -149,7 +204,31 @@
       "Action": "Load",
       "Target": "Mods\\Objects\\MNF.MoreNewFish_fish_hatchery",
       "FromFile": "assets/hatchery.png"
-    },
+    },      
+	{
+	"LogName": "Load Pants Sprites",
+	"Action": "Load",
+	"Target": "Mods\\MNF.MoreNewFish\\Pants",
+	"FromFile": "assets/pants.png"
+	},
+	{
+	"LogName": "Load Hats Sprites",
+	"Action": "Load",
+	"Target": "Mods\\MNF.MoreNewFish\\Hats",
+	"FromFile": "assets/hats.png"
+	},
+	{
+	"LogName": "Load Shit M Sprites",
+	"Action": "Load",
+	"Target": "Mods\\MNF.MoreNewFish\\Shirts_Male",
+	"FromFile": "assets/shirts_male.png"
+	},
+	{
+	"LogName": "Load Shit F Sprites",
+	"Action": "Load",
+	"Target": "Mods\\MNF.MoreNewFish\\Shirts_Female",
+	"FromFile": "assets/shirts_female.png"
+	},
 	{
 		"Action": "EditData",
 		"LogName": "Sword Fish",
@@ -174,19 +253,6 @@
                     "CanBeLostOnDeath": false,
                     "Texture": "Mods\\MNF.MoreNewFish\\Objects\\Objects",
                     "SpriteIndex": 93,
-                },
-			
-			},
-				},
-				{
-		"Action": "EditData",
-		"Target": "Data/Machines",
-		"Entries": {
-			"(BC)MNF.MoreNewFish_fish_hatchery": {
-				"HasInput": false,
-				"HasOutput": false,
-				"InteractMethod": null,
-				"AllowFairyDust": true,
                 },
 			
 			},

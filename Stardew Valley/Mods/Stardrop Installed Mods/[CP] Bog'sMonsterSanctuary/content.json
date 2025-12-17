@@ -27,9 +27,9 @@ Json: Abagaianye
             "AllowValues": "default, super-rare",
             "Default": "default"
         },
-        "CT_Perfection": {
+        "CT_PerfectionExclusion": {
             "AllowValues": "true, false",
-            "Default": "false"
+            "Default": "true"
         },
         "CT_AltSuperRareSouls": {
             "AllowValues": "true, false",
@@ -37,7 +37,7 @@ Json: Abagaianye
         },
         "CT_IsDropped": {
             "AllowValues": "true, false",
-            "Default": "false"
+            "Default": "true"
         },
         "CT_EnableBugGlow": {
             "AllowValues": "true, false",
@@ -350,6 +350,16 @@ Hutch
                         "X": 3,
                         "Y": 4
                     },
+                    "SourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 112,
+                        "Height": 112
+                    },
+                    "SeasonOffset": {
+                        "X": 112,
+                        "Y": 0
+                    },
                     "DrawShadow": false,
                     "BuildCondition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_Arrangement",
                     "BuildCost": 5000,
@@ -379,6 +389,16 @@ Hutch
                     "HumanDoor": {
                         "X": 5,
                         "Y": 4
+                    },
+                    "SourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 176,
+                        "Height": 112
+                    },
+                    "SeasonOffset": {
+                        "X": 176,
+                        "Y": 0
                     },
                     "DrawShadow": false,
                     "BuildCost": 15000,
@@ -702,7 +722,7 @@ Trigger Actions
 				"{{ModId}}_KrobusLetter1": {
                     "Id": "{{ModId}}_KrobusLetter1",
                     "Trigger": "DayStarted",
-					"Condition": "PLAYER_VISITED_LOCATION Current Mine, PLAYER_HAS_SEEN_EVENT Current 0",
+					"Condition": "PLAYER_VISITED_LOCATION Current Mine, PLAYER_KILLED_MONSTERS Current \"Green Slime\" \"Dust Spirit\" Bat \"Frost Bat\" \"Lava Bat\" \"Stone Golem\" Grub Fly \"Frost Jelly\" Sludge Ghost Duggy \"Rock Crab\" \"Lava Crab\" \"Squid Kid\" \"Shadow Brute\" \"Shadow Shaman\" Skeleton Bug 1",
                     "Actions": [
 						"AddMail Current {{ModId}}_KrobusLetter1 now"
                     ]
@@ -7064,7 +7084,7 @@ Floors 81-119
                             "Id": "{{ModId}}_MushroomTreeSeed",
                             "ItemId": "(O)891",
                             "Weight": 1,
-                            "IsDropped": "{{CT_IsDropped}}"
+                            "IsDropped": true
                         },
                     ],
                     "DeluxeChance": 10,
@@ -7780,7 +7800,7 @@ Floors 91-119
                             "Id": "{{ModId}}_MossySeed",
                             "ItemId": "(O)MossySeed",
                             "Weight": 1,
-                            "IsDropped": "{{CT_IsDropped}}"
+                            "IsDropped": true
                         },
                     ],
                     "DeluxeChance": 10,
@@ -8737,7 +8757,7 @@ Local Tokens
                     "Price": 150,
                     "Texture": "{{ModId}}/SuperRareSouls",
                     "SpriteIndex": 0,
-                    "ExcludeFromShippingCollection": "{{CT_Perfection}}",
+                    "ExcludeFromShippingCollection": "{{CT_PerfectionExclusion}}",
                     "ExcludeFromRandomSale": true,
                     "ContextTags": [
                         "soul_item",

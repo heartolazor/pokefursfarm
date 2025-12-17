@@ -5,12 +5,21 @@
 	 "Action": "EditData",
 	 "LogName": "Fishpond",
 	 "Target": "Data/FishPondData",
-	 "Entries": { 
-	 "fish_alien": {
+	 "Entries": {
+		"fish_alien": {
 		"Id": "fish_alien",
 		"RequiredTags": [
 		"fish_alien"
 		],
+		 "WaterColor": [
+      {
+        "Id": "Default",
+        "Color": "60 255 60",
+        "MinPopulation": 3,
+        "MinUnlockedPopulationGate": 0,
+        "Condition": null
+      }
+    ],
 		"SpawnTime": -1,
 		"ProducedItems": [
 		{
@@ -55,6 +64,15 @@
 		"fish_mudskipper"
 		],
 		"SpawnTime": -1,
+		"WaterColor": [
+      {
+        "Id": "Default",
+        "Color": "60 255 60",
+        "MinPopulation": 3,
+        "MinUnlockedPopulationGate": 0,
+        "Condition": null
+      }
+    ],
 		"ProducedItems": [
 		{
 			"RequiredPopulation": 8,	
@@ -107,6 +125,15 @@
 		"RequiredTags": [
 		"fish_koi"
 		],
+		"WaterColor": [
+		{
+			"Id": "fish_koi",
+			"Color": "173 216 230",
+			"MinPopulation": 1,
+			"MinUnlockedPopulationGate": 0,
+			"Condition": null
+			}
+			],
 		"SpawnTime": -1,
 		"ProducedItems": [
 		{
@@ -162,6 +189,15 @@
 		"fish_swordfish"
 		],
 		"SpawnTime": 4,
+				"WaterColor": [
+      {
+        "Id": "Default",
+        "Color": "0 100 100",
+        "MinPopulation": 3,
+        "MinUnlockedPopulationGate": 0,
+        "Condition": null
+      }
+    ],
 		"ProducedItems": [
 		{
 			"RequiredPopulation": 10,
@@ -303,6 +339,15 @@
 		"RequiredTags": [
 		"fish_vampire_fish"
 		],
+		"WaterColor": [
+		{
+			"Id": "Default",
+			"Color": "220 20 60",
+			"MinPopulation": 2,
+			"MinUnlockedPopulationGate": 0,
+			"Condition": null
+      }
+    ],
 		"SpawnTime": -1,
           "ProducedItems": [
 		{
@@ -350,6 +395,15 @@
 		"fish_magic"
 		],
 		"SpawnTime": 8,
+		"WaterColor": [
+		{
+			"Id": "fish_magic",
+			"Color": "255 239 213",
+			"MinPopulation": 1,
+			"MinUnlockedPopulationGate": 2,
+			"Condition": null
+			}
+			],
         "ProducedItems": [
 		{
         "RequiredPopulation": 10,
@@ -407,6 +461,15 @@
 		"RequiredTags": [
 		"fish_vampire_squid"
 		],
+		"WaterColor": [
+		{
+			"Id": "Default",
+			"Color": "220 20 60",
+			"MinPopulation": 2,
+			"MinUnlockedPopulationGate": 0,
+			"Condition": null
+      }
+    ],
 		"SpawnTime": -1,
               "ProducedItems": [
       {
@@ -518,6 +581,15 @@
 		"fish_great_firefly_squid"
 		],
 		"SpawnTime": -1,
+		"WaterColor": [
+      {
+        "Id": "fish_great_firefly_squid",
+        "Color": "90 179 113",
+        "MinPopulation": 1,
+        "MinUnlockedPopulationGate": 2,
+        "Condition": null
+      }
+    ],
     "ProducedItems": [
 		{
         "RequiredPopulation": 9,
@@ -704,6 +776,15 @@
 		"RequiredTags": [
 		"fish_manta_ray"
 		],
+				"WaterColor": [
+      {
+        "Id": "Default",
+        "Color": "0 100 100",
+        "MinPopulation": 3,
+        "MinUnlockedPopulationGate": 0,
+        "Condition": null
+      }
+    ],
 		"SpawnTime": -1,
     "ProducedItems": [
 	 {
@@ -945,6 +1026,15 @@
 		"fish_bonnethead"
 		],
 		"SpawnTime": -1,
+		"WaterColor": [
+      {
+        "Id": "Default",
+        "Color": "0 100 100",
+        "MinPopulation": 3,
+        "MinUnlockedPopulationGate": 0,
+        "Condition": null
+      }
+    ],
     "ProducedItems": [
 		{
         "RequiredPopulation": 10,
@@ -996,6 +1086,15 @@
 		"RequiredTags": [
 		"fish_goblinshark"
 		],
+		"WaterColor": [
+      {
+        "Id": "Default",
+        "Color": "0 100 100",
+        "MinPopulation": 3,
+        "MinUnlockedPopulationGate": 0,
+        "Condition": null
+      }
+    ],
 		"SpawnTime": -1,
     "ProducedItems": [
 		{
@@ -1048,6 +1147,15 @@
 		"RequiredTags": [
 		"fish_dogfish"
 		],
+				"WaterColor": [
+      {
+        "Id": "Default",
+        "Color": "0 100 100",
+        "MinPopulation": 3,
+        "MinUnlockedPopulationGate": 0,
+        "Condition": null
+      }
+    ],
 		"SpawnTime": -1,
     "ProducedItems": [
 		{
@@ -1100,8 +1208,10 @@
 		"RequiredTags": [
 		"fish_cyclopshark"
 		],
+		"Precedence": 0,
+		"MaxPopulation": -1,
 		"SpawnTime": 999999,
-    "ProducedItems": [
+		"ProducedItems": [
 		{
         "RequiredPopulation": 10,
         "Chance": 0.10,
@@ -1200,6 +1310,15 @@
 		"fish_brainslug"
 		],
 		"SpawnTime": -1,
+		"WaterColor": [
+      {
+        "Id": "Default",
+        "Color": "60 255 60",
+        "MinPopulation": 3,
+        "MinUnlockedPopulationGate": 0,
+        "Condition": null
+      }
+    ],
     "ProducedItems": [
 	  {
         "RequiredPopulation": 10,
@@ -1246,12 +1365,177 @@
       ]
     },
 	},
+	"fish_tropicalfish": {
+    "Id": "fish_tropicalfish",
+    "RequiredTags": [
+      "fish_tropicalfish"
+    ],
+    "Precedence": 500,
+    "MaxPopulation": -1,
+    "SpawnTime": -1,
+    "BaseMinProduceChance": 0.15,
+    "BaseMaxProduceChance": 0.95,
+    "WaterColor": null,
+    "ProducedItems": [
+	{
+        "RequiredPopulation": 9,
+        "Chance": 0.1,
+        "Precedence": 0,
+        "MinQuantity": null,
+        "MaxQuantity": null,
+        "Condition": null,
+        "Id": "(O)394",
+        "ItemId": "(O)394",  //Rainbow Shell
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": 1,
+        "MaxStack": 1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+	 {
+        "RequiredPopulation": 9,
+        "Chance": 0.1,
+        "Precedence": 0,
+        "MinQuantity": null,
+        "MaxQuantity": null,
+        "Condition": null,
+        "Id": "(O)372",
+        "ItemId": "(O)372", //Clam
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": 1,
+        "MaxStack": 2,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+	 {
+        "RequiredPopulation": 8,
+        "Chance": 0.05,
+        "Precedence": 0,
+        "MinQuantity": null,
+        "MaxQuantity": null,
+        "Condition": null,
+        "Id": "(O)393",
+        "ItemId": "(O)393", //Coral
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": 1,
+        "MaxStack": 2,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+      {
+        "RequiredPopulation": 5,
+        "Chance": 0.5,
+        "Precedence": 0,
+        "MinQuantity": null,
+        "MaxQuantity": null,
+        "Condition": null,
+        "Id": "(O)812",
+        "ItemId": "(O)812",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": 1,
+        "MaxStack": 4,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+      {
+        "RequiredPopulation": 0,
+        "Chance": 0.7,
+        "Precedence": 0,
+        "MinQuantity": null,
+        "MaxQuantity": null,
+        "Condition": null,
+        "Id": "(O)812",
+        "ItemId": "(O)812",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      }
+    ],
+    "PopulationGates": {
+      "4": [
+        "(O)152 1 2", //Seaweed
+      ],
+      "6": [
+        "(O)393 2", //Coral
+      ],
+      "8": [
+        "(O)SeaJelly 2",
+      ]
+    },
+    "CustomFields": null
+  },
 	"fish_blinky": {
 		"Id": "fish_blinky",
 		"RequiredTags": [
 		"fish_blinky"
 		],
 		"SpawnTime": -1,
+		"WaterColor": [
+      {
+        "Id": "Default",
+        "Color": "60 255 60",
+        "MinPopulation": 3,
+        "MinUnlockedPopulationGate": 0,
+        "Condition": null
+      }
+    ],
     "ProducedItems": [
 	 {
         "RequiredPopulation": 10,
@@ -1301,8 +1585,17 @@
 				"fish_dwarfstingray"
 				],
 			"SpawnTime": -1,
-		   "ProducedItems": [
-		   {
+			"WaterColor": [
+      {
+        "Id": "Default",
+        "Color": "0 100 100",
+        "MinPopulation": 3,
+        "MinUnlockedPopulationGate": 0,
+        "Condition": null
+      }
+    ],
+		"ProducedItems": [
+		{
 			   "RequiredPopulation": 10,
 			   "Chance": 0.02,
 			   "ItemID": "(O)122", //Dwarf Gadget
@@ -1350,16 +1643,139 @@
 			   "(O)393 10", //Coral
 			   ],
 			   },
-			   },
+			},
+		"fish_mushu": {
+			"Id": "fish_mushu",
+			"RequiredTags": [
+				"fish_mushu"
+				],
+			"SpawnTime": -1,
+			"WaterColor": [
+			{
+				"Id": "fish_mushu_pond",
+				"Color": "250 30 30",
+				"MinPopulation": 1,
+				"MinUnlockedPopulationGate": 0,
+			},
+			],
+		"ProducedItems": [
+		{
+			"Id": "fish_mushutooth",
+			"RequiredPopulation": 0,
+			"Chance": 0.20,
+			"ItemId": "(O)852",
+			"RandomItemId": null,
+			"MaxItems": null,
+			"MinStack": 1,
+			"MaxStack": 2,
+		},
+		{
+			"Id": "fish_mushubreakfast",
+			"RequiredPopulation": 0,
+			"Chance": 0.05,
+			"ItemId": "(O)201",
+			"RandomItemId": null,
+			"MaxItems": null,
+			"MinStack": 1,
+			"MaxStack": 1,
+		},
+		{
+			"Id": "fish_mushupudding",
+			"RequiredPopulation": 0,
+			"Chance": 0.10,
+			"ItemId": "(O)232",
+			"RandomItemId": null,
+			"MaxItems": null,
+			"MinStack": 1,
+			"MaxStack": 2,
+		},
+		{
+			"Id": "fish_mushustick",
+			"RequiredPopulation": 0,
+			"Chance": 0.02,
+			"ItemId": "(O)105",
+			"RandomItemId": null,
+			"MaxItems": null,
+			"MinStack": 1,
+			"MaxStack": 1,
+		},
+		{
+			"Id": "fish_mushuelixir",
+			"RequiredPopulation": 0,
+			"Chance": 0.02,
+			"ItemId": "(O)MNF.MoreNewFish_warrior_elixir",
+			"RandomItemId": null,
+			"MaxItems": null,
+			"MinStack": 1,
+			"MaxStack": 1,
+		},
+		],
+		"PopulationGates": null,
+		"CustomFields": null
+		},
+		},
+		},
+		{
+		"Action": "EditData",
+		"LogName": "Fishpond",
+		"Target": "Data/FishPondData",
+		"TargetField": [ "LegendaryFish", "ProducedItems" ],
+		"Entries": {
+		"fish_iridiumfish": {
+					"Id": "IridiumFish",
+					"RequiredPopulation": 0,
+					"Chance": 0.01,
+					"ItemID": "(O)386", //Iridium Ore
+					"Condition": "ITEM_ID Input (O)MNF.MoreNewFish_iridiumfish",
+					"MinQuantity": 3,
+					"MaxQuantity": 10
+					},
+		"fish_iridiumfishroe": {
+					"Id": "IridiumFishRoe",
+					"RequiredPopulation": 0,
+					"Chance": 0.86,
+					 "ItemId": "(O)812",
+					 "RandomItemId": null,
+					 "MaxItems": null,
+					 "MinStack": 1,
+					 "MaxStack": 5,
+					"Condition": "ITEM_ID Input (O)MNF.MoreNewFish_iridiumfish",
+					},
+		"fish_shinidamachu": {
+					"Id": "fish_shinidamachu",
+					"RequiredPopulation": 0,
+					"Chance": 0.1,
+					 "ItemId": "(O)373",
+					 "RandomItemId": null,
+					 "MaxItems": null,
+					 "MinStack": 1,
+					 "MaxStack": 1,
+					"Condition": "ITEM_ID Input (O)MNF.MoreNewFish_shinidamachu",
+					},
+		},
+	},
+	{
+		"Action": "EditData",
+		"LogName": "Fishpond",
+		"Target": "Data/FishPondData",
+		"TargetField": [ "LegendaryFish", "WaterColor" ],
+		"Entries": {
+		"fish_shinidamachu_pond": {
+			"Id": "fish_shinidamachu_pond",
+			"Color": "233 220 198",
+			"MinPopulation": 1,
+			"MinUnlockedPopulationGate": 0,
+			"Condition": "ITEM_ID Input (O)MNF.MoreNewFish_shinidamachu"
 			},
 		},
+	},
 		{
 			"Action": "EditData",
 			"LogName": "Fishpond Entries Handler",
 			"Target": "Data/FishPondData",
 			"MoveEntries": [
-				{ "ID": "fish_alien", "ToPosition": "Top"},
-				{"ID": "fish_mudskipper", "AfterID": "fish_alien"},
+				 {"ID": "fish_alien", "ToPosition": "Top"},
+				 {"ID": "fish_mudskipper", "AfterID": "fish_alien"},
 				 {"ID": "fish_koi", "AfterID": "fish_mudskipper"},
 				 {"ID": "fish_swordfish", "AfterID": "fish_koi"},
 				 {"ID": "fish_cave", "AfterID": "fish_swordfish"},
@@ -1384,9 +1800,19 @@
 				 {"ID": "fish_dumbooctopus","AfterID": "fish_cyclopshark"},
 				 {"ID": "fish_brainslug", "AfterID": "fish_dumbooctopus"},
 				 {"ID": "fish_blinky", "AfterID": "fish_brainslug"},
-				 {"ID": "fish_dwarfstingray", "AfterID": "fish_blinky"},
+				 {"ID": "fish_tropicalfish", "AfterID": "fish_blinky"},
+				 {"ID": "fish_dwarfstingray", "AfterID": "fish_tropicalfish"},
+				 {"ID": "fish_mushu", "AfterID": "fish_dwarfstingray"},
+			],
+		},
+		{
+			"Action": "EditData",
+			"LogName": "Fishpond Entries Handler",
+			"Target": "Data/FishPondData",
+			"TargetField": [ "LegendaryFish", "WaterColor" ],
+			"MoveEntries": [
+				 {"ID": "fish_shinidamachu_pond", "ToPosition": "Top"},
 			],
 		},
 		],
 		}
-		

@@ -7,25 +7,15 @@
     "HarvestBushes": true,
     "HarvestForageCrops": true,
     "ClearDeadCrops": true,
-    "VisitGreenhouse": true,
-    "ChopWildTrees": true,
-    "CollectDroppedObjects": true,
-    "CollectSeeds": true,
-    "PlantTrees": true,
-    "HarvestDebris": true,
-    "HarvestGrass": true,
-    "FertilizeTrees": true,
-    "HarvestFruitTrees": true,
-    "PlantFruitTrees": true,
-    "HoeDirt": true
+    "VisitGreenhouse": true
   },
   "JunimoHuts": {
-    "MaxJunimos": 3,
-    "MaxRadius": 8,
+    "MaxJunimos": 21,
+    "MaxRadius": 13,
     "AvailableAfterCommunityCenterComplete": true,
-    "AvailableImmediately": false,
+    "AvailableImmediately": true,
     "ReducedCostToConstruct": true,
-    "FreeToConstruct": false
+    "FreeToConstruct": true
   },
   "JunimoImprovements": {
     "CanWorkInRain": true,
@@ -41,7 +31,7 @@
     "AvoidPlantingOutOfSeason": true
   },
   "JunimoPayment": {
-    "WorkForWages": false,
+    "WorkForWages": true,
     "DailyWage": {
       "ForagedItems": 1,
       "Flowers": 0,
@@ -51,10 +41,10 @@
     "GiveExperience": false
   },
   "FunChanges": {
-    "RainyJunimoSpiritFactor": 0.7,
-    "JunimosAlwaysHaveLeafUmbrellas": false,
-    "MoreColorfulLeafUmbrellas": false,
-    "InfiniteJunimoInventory": false
+    "RainyJunimoSpiritFactor": 0.35,
+    "JunimosAlwaysHaveLeafUmbrellas": true,
+    "MoreColorfulLeafUmbrellas": true,
+    "InfiniteJunimoInventory": true
   },
   "Other": {
     "SpawnJunimoKeybind": "J",
@@ -63,6 +53,6 @@
     "HutMenuKeybind": "None"
   },
   "Progression": {
-    "Enabled": true
+    "Enabled": false
   }
 }
