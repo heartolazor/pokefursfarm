@@ -145,6 +145,20 @@
             }
         },
         {
+            "LogName": "Cambria Dialogue - Romantic",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Otter.Cambria",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:Cambria.Dialogue.Romance.{{Random:{{Range: 1, 25}}|key={{Time}}}}}}#$action AddMail Current MGC_Cambria_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 10}}|key=CRD}} = 1": true,
+                "HasFlag |contains=MGC_Cambria_OverrideSeenToday": false,
+                "Relationship:Otter.Cambria |contains=Dating": true
+            }
+        },
+        {
             "LogName": "Cambria E&D Commentary",
             "Action": "EditData",
             "Update": "OnLocationChange",

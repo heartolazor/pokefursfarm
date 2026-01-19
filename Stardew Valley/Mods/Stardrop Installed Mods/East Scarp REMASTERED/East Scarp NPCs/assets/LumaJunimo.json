@@ -62,22 +62,24 @@
                 "EastScarp.LumaKidnappingHappy": {
                     "Id": "EastScarp.LumaKidnappingHappy",
                     "Trigger": "DayEnding",
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 57871102", //, !PLAYER_HAS_SEEN_EVENT Host 57871103
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 57871102, !PLAYER_HAS_SEEN_EVENT Host 57871103",
+                    "MarkActionApplied": false,
                     "Actions": [
                         "spacechase0.SpaceCore_PlayEvent 57871103",
-                        "MarkEventSeen 57871103"
                     ]
                 },
                 "EastScarp.HappyAbsent": {
                     "ID": "mail.EastScarp.HappyAbsent",
                     "Trigger": "LocationChanged",
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 57871103",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 57871103, !PLAYER_HAS_SEEN_EVENT Host 57871105",
+                    "MarkActionApplied": false,
                     "Action": "SetNpcInvisible HappySlime 1120"
                 },
                 "EastScarp.HappyReturns": {
                     "ID": "mail.EastScarp.HappyReturns",
                     "Trigger": "DayStarted",
                     "Condition": "PLAYER_HAS_SEEN_EVENT Host 57871105",
+                    "MarkActionApplied": false,
                     "Action": "SetNpcVisible HappySlime"
                 },
             }

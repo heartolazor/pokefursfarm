@@ -2562,7 +2562,7 @@
           "BirthText": "{{i18n:AnimalHouse_Incubator_Hatch_GoldenPheasantMale}}",
           "DaysToMature": 7,
           "CanGetPregnant": false,
-          "DaysToProduce": 7,
+          "DaysToProduce": 2,
           "HarvestType": "DropOvernight",
           "HarvestTool": null,
           "ProduceItemIds": [
@@ -2608,7 +2608,7 @@
           "BirthText": "{{i18n:AnimalHouse_Incubator_Hatch_GoldenPheasantFemale}}",
           "DaysToMature": 7,
           "CanGetPregnant": false,
-          "DaysToProduce": 7,
+          "DaysToProduce": 2,
           "HarvestType": "DropOvernight",
           "HarvestTool": null,
           "ProduceItemIds": [
@@ -2669,6 +2669,28 @@
         }
       }
     },
+    {
+      // Eloise's bird book
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_BirdHide",
+      "Update": "OnTimeChange",
+      "When": {
+        "HasMod": "Lemurkat.ESBirds.OG"
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 5,
+            "Y": 3
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteraction_Image Mods/LemurKat.EastScarp/BirdIllustrations 0 0 125 193",
+            "MEEP_CloseupInteraction_Text": "Blue jays are so smart!"
+          }
+        }
+      ]
+    }
     /* {
             "LogName": "ID change for updates",
             "Action": "EditData",

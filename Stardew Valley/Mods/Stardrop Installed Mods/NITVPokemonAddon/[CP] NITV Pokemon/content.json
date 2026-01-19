@@ -6,11 +6,11 @@
           "AllowValues": "true, false",
           "Default": "true",
           "Section": "Recommended for Pokemon Trinkets"
-      },
+      }/*,
       "PokemonXanEnablePacifist": {
         "AllowValues": "true, false",
         "Default": "false"
-      }
+      }*/
     },
 
   "Changes": [                    
@@ -20,13 +20,53 @@
       "LogName": "Created Mail Data",
       "Target": "Data/Mail",
       "Entries": {
-        "PokeGroup1_Include": "{{i18n:Group1.mail}}",
-        "SafariGroup1_Unlock": "{{i18n:Group1Safari.mail}}",
-        "PokeGroup2_Include":  "{{i18n:Group2.mail}}",
-        "SafariGroup2_Unlock": "{{i18n:Group2Safari.mail}}",
-        "PokeGroup3_Include":  "{{i18n:Group3.mail}}",
-        "SafariGroup3_Unlock": "{{i18n:Group3Safari.mail}}",
-        "UnlockedSafariMap2": "{{i18n:SafariMap2.mail}}"
+        "SafariGroup1_Unlocked": "{{i18n:Group1Safari.mail}}",
+        "SafariGroup2_Unlocked": "{{i18n:Group2Safari.mail}}",
+        "SafariGroup3_Unlocked": "{{i18n:Group3Safari.mail}}",
+        "SafariMap2Unlocked": "{{i18n:SafariMap2.mail}}"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "XanPokemonTrigger1": {
+          "Id": "XanPokemonTrigger1",
+          "Trigger": "LocationChanged",
+          "HostOnly": false,
+          "Condition": "NAT_NIV_DonatedSpecific Pidgey_Roam, NAT_NIV_DonatedSpecific Geodude_Attack, NAT_NIV_DonatedSpecific Zubat_Attack, NAT_NIV_DonatedSpecific Caterpie_Bush, NAT_NIV_DonatedSpecific Weedle_Bush, NAT_NIV_DonatedSpecific Rattata_Roam, NAT_NIV_DonatedSpecific Magikarp_Swim, NAT_NIV_DonatedSpecific Metapod_Tree, NAT_NIV_DonatedSpecific Kakuna_Tree, !PLAYER_HAS_MAIL Any PokemonTrigger1",
+          "Actions": [
+            "AddMail All PokemonTrigger1 received"
+          ]
+        },
+        "XanPokemonTrigger2": {
+          "Id": "XanPokemonTrigger2",
+          "Trigger": "LocationChanged",
+          "HostOnly": false,
+          "Condition": "NAT_NIV_DonatedSpecific Butterfree_Roam, NAT_NIV_DonatedSpecific Beedrill_Attack, NAT_NIV_DonatedSpecific Diglett_Roam, NAT_NIV_DonatedSpecific Ekans_Attack, NAT_NIV_DonatedSpecific Growlithe_Roam, NAT_NIV_DonatedSpecific Paras_Roam, NAT_NIV_DonatedSpecific Poliwag_Swim, NAT_NIV_DonatedSpecific Sandshrew_Roam, NAT_NIV_DonatedSpecific Tentacool_Swim, NAT_NIV_DonatedSpecific Venonat_Stump, !PLAYER_HAS_MAIL Any PokemonTrigger2",
+          "Actions": [
+            "AddMail All PokemonTrigger2 received"
+          ]
+        },
+        "XanPokemonTrigger3": {
+          "Id": "XanPokemonTrigger3",
+          "Trigger": "LocationChanged",
+          "HostOnly": false,
+          "Condition": "NAT_NIV_DonatedSpecific Spearow_Attack, NAT_NIV_DonatedSpecific Koffing_Attack, NAT_NIV_DonatedSpecific Oddish_Stump, NAT_NIV_DonatedSpecific Bellsprout_Roam, NAT_NIV_DonatedSpecific Grimer_Roam, NAT_NIV_DonatedSpecific Cubone_Roam, NAT_NIV_DonatedSpecific Rhyhorn_Attack, NAT_NIV_DonatedSpecific Shellder_Swim, NAT_NIV_DonatedSpecific Goldeen_Swim, NAT_NIV_DonatedSpecific Psyduck_Swim, !PLAYER_HAS_MAIL Any PokemonTrigger3",
+          "Actions": [
+            "AddMail All PokemonTrigger3 received"
+          ]
+        },
+        "XanPokemonTrigger4": {
+          "Id": "XanPokemonTrigger4",
+          "Trigger": "DayEnding",
+          "HostOnly": false,
+          "Condition": "PLAYER_HAS_MAIL Any PokemonTrigger4",
+          "Actions": [
+            "AddMail All SafariGroup3_Unlocked", "AddMail All SafariMap2Unlocked"
+          ]
+        }
       }
     },
 
@@ -186,13 +226,13 @@
 
     {
       "Action": "Include",
-      "LogName": "Added Location Data for the Safari Zone 2",
+      "LogName": "Added Location Data for Safari Zone 2",
       "FromFile": "Data/MapData/SafariZone2LocData.json"
     },
 
     {
       "Action": "Include",
-      "LogName": "Added all the audio files",
+      "LogName": "Added all audio files",
       "FromFile": "Data/Misc/AudioData.json"
     },
 
@@ -205,54 +245,27 @@
     {
       "Action": "Include",
       "LogName": "Included PokeGroup1",
-      "FromFile": "Data/Group1and2/PokeGroup1.json",
-      "When": {
-        "HasFlag": "PokeGroup1_Include", "PokemonXanEnablePacifist": "false"
-      }
-    },
-
-    {
-      "Action": "Include",
-      "LogName": "Included PokeGroup1",
-      "FromFile": "Data/Group1and2/Pacifist_PokeGroup1.json",
-      "When": {
-        "HasFlag": "PokeGroup1_Include", "PokemonXanEnablePacifist": "true"
-      }
-    },
-
-    {
-      "Action": "Include",
-      "LogName": "Included Safari PokeGroup1",
-      "FromFile": "Data/Group1and2/PokeGroup1Safari.json",
-      "When": {
-        "HasFlag": "SafariGroup1_Unlock", "PokemonXanEnablePacifist": "false"
-      }
-    },
-
-    {
-      "Action": "Include",
-      "LogName": "Included Safari PokeGroup1",
-      "FromFile": "Data/Group1and2/Pacifist_PokeGroup1Safari.json",
-      "When": {
-        "HasFlag": "SafariGroup1_Unlock", "PokemonXanEnablePacifist": "true"
-      }
+      "FromFile": "Data/PokeGroups/PokeGroup1.json"
     },
 
     {
       "Action": "Include",
       "LogName": "Included PokeGroup2",
-      "FromFile": "Data/Group1and2/PokeGroup2.json",
-      "When": {
-        "HasFlag": "PokeGroup2_Include", "PokemonXanEnablePacifist": "false"
-      }
+      "FromFile": "Data/PokeGroups/PokeGroup2.json"
     },
 
     {
       "Action": "Include",
-      "LogName": "Included PokeGroup2",
-      "FromFile": "Data/Group1and2/Pacifist_PokeGroup2.json",
+      "LogName": "Included PokeGroup3",
+      "FromFile": "Data/PokeGroups/PokeGroup3.json"
+    },
+
+    {
+      "Action": "Include",
+      "LogName": "Included Safari PokeGroup1",
+      "FromFile": "Data/PokeGroups/PokeGroup1Safari.json",
       "When": {
-        "HasFlag": "PokeGroup2_Include", "PokemonXanEnablePacifist": "true"
+        "HasFlag": "SafariGroup1_Unlocked"
       }
     },
 
@@ -260,7 +273,7 @@
       "Action": "Include",
       "FromFile": "Data/MapData/QuestBoardMapData.json",
       "When": {
-        "HasFlag": "SafariGroup1_Unlock"
+        "HasFlag": "SafariGroup1_Unlocked"
       }
     },
 
@@ -268,25 +281,16 @@
       "Action": "Include",
       "FromFile": "Data/QuestBoard/Group1Quests.json",
       "When": {
-        "HasFlag": "SafariGroup1_Unlock"
+        "HasFlag": "SafariGroup1_Unlocked"
       }
     },
 
     {
       "Action": "Include",
       "LogName": "Included Safari PokeGroup2",
-      "FromFile": "Data/Group1and2/PokeGroup2Safari.json",
+      "FromFile": "Data/PokeGroups/PokeGroup2Safari.json",
       "When": {
-        "HasFlag": "SafariGroup2_Unlock", "PokemonXanEnablePacifist": "false"
-      }
-    },
-
-    {
-      "Action": "Include",
-      "LogName": "Included Safari PokeGroup2",
-      "FromFile": "Data/Group1and2/Pacifist_PokeGroup2Safari.json",
-      "When": {
-        "HasFlag": "SafariGroup2_Unlock", "PokemonXanEnablePacifist": "true"
+        "HasFlag": "SafariGroup2_Unlocked"
       }
     },
 
@@ -294,43 +298,16 @@
       "Action": "Include",
       "FromFile": "Data/QuestBoard/Group2Quests.json",
       "When": {
-        "HasFlag": "SafariGroup2_Unlock"
+        "HasFlag": "SafariGroup2_Unlocked"
       }
     },
 
     {
       "Action": "Include",
-      "LogName": "Included PokeGroup3",
-      "FromFile": "Data/Group3/PokeGroup3.json",
+      "LogName": "Included Safari PokeGroup3",
+      "FromFile": "Data/PokeGroups/PokeGroup3Safari.json",
       "When": {
-        "HasFlag": "PokeGroup3_Include", "PokemonXanEnablePacifist": "false"
-      }
-    },
-
-    {
-      "Action": "Include",
-      "LogName": "Included PokeGroup3",
-      "FromFile": "Data/Group3/Pacifist_PokeGroup3.json",
-      "When": {
-        "HasFlag": "PokeGroup3_Include", "PokemonXanEnablePacifist": "true"
-      }
-    },
-
-    {
-      "Action": "Include",
-      "LogName": "Included Safari PokeGroup2",
-      "FromFile": "Data/Group3/PokeGroup3Safari.json",
-      "When": {
-        "HasFlag": "SafariGroup3_Unlock", "PokemonXanEnablePacifist": "false"
-      }
-    },
-
-    {
-      "Action": "Include",
-      "LogName": "Included Safari PokeGroup2",
-      "FromFile": "Data/Group3/Pacifist_PokeGroup3Safari.json",
-      "When": {
-        "HasFlag": "SafariGroup3_Unlock", "PokemonXanEnablePacifist": "true"
+        "HasFlag": "SafariGroup3_Unlocked"
       }
     },
 
@@ -338,20 +315,8 @@
       "Action": "Include",
       "FromFile": "Data/QuestBoard/Group3Quests.json",
       "When": {
-        "HasFlag": "SafariGroup3_Unlock"
+        "HasFlag": "SafariGroup3_Unlocked"
       }
-    },
-
-    {
-      "Action": "Include",
-      "LogName": "Included Shinies from PokeGroup1and2",
-      "FromFile": "Data/Group1and2/PokeGroup1and2Shiny.json"
-    },
-
-    {
-      "Action": "Include",
-      "LogName": "Included Shinies from PokeGroup3",
-      "FromFile": "Data/Group3/PokeGroup3Shiny.json"
     },
 
     {
@@ -446,7 +411,7 @@
 
     {
       "Action": "Load",
-      "Target": "Mods/Xan.PokemonCreaturePack/PokemonCrops, Mods/Xan.PokemonCreaturePack/PokemonCropItems, Mods/Xan.PokemonCreaturePack/PokemonSmoothies",
+      "Target": "Mods/Xan.PokemonCreaturePack/PokemonCrops, Mods/Xan.PokemonCreaturePack/PokemonCropItems, Mods/Xan.PokemonCreaturePack/PokemonSmoothies, Mods/Xan.PokemonCreaturePack/SafariTeleporter",
       "FromFile": "Assets/{{TargetWithoutPath}}.png"
     },
 
@@ -484,6 +449,11 @@
       "Action": "Load",
       "Target": "LooseSprites/NITV_SpecialOrdersBoard",
       "FromFile": "Assets/NITV_SpecialOrdersBoard.png"
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/PokeGroups/PokeGroupXmas.json"
     }
 
 

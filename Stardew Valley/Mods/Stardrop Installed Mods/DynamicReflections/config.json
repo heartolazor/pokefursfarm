@@ -3,6 +3,13 @@
   "AreMirrorReflectionsEnabled": true,
   "ArePuddleReflectionsEnabled": true,
   "AreNPCReflectionsEnabled": true,
+  "AreCompanionReflectionsEnabled": true,
+  "AreGrassReflectionsEnabled": true,
+  "AreTerrainReflectionsEnabled": true,
+  "ArePlayerBuildingReflectionsEnabled": true,
+  "AreFurnitureReflectionsEnabled": true,
+  "AreMapReflectionsEnabled": true,
+  "ShouldUsePresetMapReflections": true,
   "AreSkyReflectionsEnabled": true,
   "WaterReflectionSettings": {
     "AreReflectionsEnabled": true,
@@ -13,12 +20,13 @@
       "R": 255,
       "A": 255
     },
-    "PlayerReflectionOffset": "0, 1.5",
-    "NPCReflectionOffset": "0, 1.1",
-    "IsReflectionWavy": false,
-    "WaveSpeed": 1.0,
-    "WaveAmplitude": 0.01,
-    "WaveFrequency": 50.0,
+    "PlayerReflectionOffset": "0, 0.8",
+    "NPCReflectionOffset": "0, 1.25",
+    "CompanionReflectionOffset": "0, 0.3",
+    "IsReflectionWavy": true,
+    "WaveSpeed": 2.0,
+    "WaveAmplitude": 0.001,
+    "WaveFrequency": 200.0,
     "OverrideDefaultSettings": false
   },
   "PuddleReflectionSettings": {
@@ -28,6 +36,7 @@
     "ShouldRainSplashPuddles": true,
     "ReflectionOffset": "0, 0",
     "NPCReflectionOffset": "0, 0.3",
+    "CompanionReflectionOffset": "0, 0.3",
     "PuddlePercentageWhileRaining": 20,
     "PuddlePercentageAfterRaining": 10,
     "BigPuddleChance": 25,
@@ -71,6 +80,17 @@
     "FinishedDarkWaterAlpha": 0.005,
     "OverrideDefaultSettings": false
   },
+  "PerformanceSettings": {
+    "EnableSafeCaching": true,
+    "EnableNpcThrottling": false,
+    "NpcUpdateIntervalTicks": 2,
+    "MaxNpcReflections": 100,
+    "EnableMirrorThrottling": false,
+    "MirrorUpdateIntervalTicks": 2,
+    "EnableCompanionThrottling": false,
+    "CompanionUpdateIntervalTicks": 2,
+    "MaxCompanionReflections": 100
+  },
   "MeteorShowerNightChance": 10,
   "LocalWaterReflectionSettings": {
     "Default": {
@@ -82,13 +102,32 @@
         "R": 255,
         "A": 255
       },
-      "PlayerReflectionOffset": "0, 1.5",
-      "NPCReflectionOffset": "0, 1.1",
-      "IsReflectionWavy": false,
-      "WaveSpeed": 1.0,
-      "WaveAmplitude": 0.01,
-      "WaveFrequency": 50.0,
+      "PlayerReflectionOffset": "0, 0.8",
+      "NPCReflectionOffset": "0, 1.25",
+      "CompanionReflectionOffset": "0, 0.3",
+      "IsReflectionWavy": true,
+      "WaveSpeed": 2.0,
+      "WaveAmplitude": 0.001,
+      "WaveFrequency": 200.0,
       "OverrideDefaultSettings": false
+    },
+    "Beach": {
+      "AreReflectionsEnabled": true,
+      "ReflectionDirection": "South",
+      "ReflectionOverlay": {
+        "B": 255,
+        "G": 255,
+        "R": 255,
+        "A": 255
+      },
+      "PlayerReflectionOffset": "0, 0.5",
+      "NPCReflectionOffset": "0, 0.8",
+      "CompanionReflectionOffset": "0, 0.3",
+      "IsReflectionWavy": true,
+      "WaveSpeed": 2.0,
+      "WaveAmplitude": 0.001,
+      "WaveFrequency": 200.0,
+      "OverrideDefaultSettings": true
     }
   },
   "LocalPuddleReflectionSettings": {
@@ -99,6 +138,7 @@
       "ShouldRainSplashPuddles": true,
       "ReflectionOffset": "0, 0",
       "NPCReflectionOffset": "0, 0.3",
+      "CompanionReflectionOffset": "0, 0.3",
       "PuddlePercentageWhileRaining": 20,
       "PuddlePercentageAfterRaining": 10,
       "BigPuddleChance": 25,
@@ -145,5 +185,6 @@
       "OverrideDefaultSettings": false
     }
   },
-  "QuickMenuKey": "R"
+  "QuickMenuKey": "None",
+  "LastInstalledVersion": "4.0.1"
 }

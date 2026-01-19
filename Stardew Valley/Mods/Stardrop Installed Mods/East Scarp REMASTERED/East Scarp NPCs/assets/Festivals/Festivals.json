@@ -862,7 +862,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters_y2"
                     ],
-                    "Value": "Aideen 22 4 2/Eloise 82 25 down/Jacob 83 25 2/Rosa 11 10 3/ToriLK 84 24 2/Jessie 55 7 2/Juliet 10 9 2",
+                    "Value": "Aideen 22 4 2/Eloise 82 25 down/Jacob 83 25 2/Rosa 11 10 3/ToriLK 84 24 2/Jessie 55 7 2/Juliet 10 9 2/DaleWaede 41 34 2/ValkyrieDog 40 34 1",
                     "Delimiter": "/"
                 },
                 {
@@ -963,7 +963,7 @@
             "Action": "EditData",
             "Target": "Data/Festivals/summer28",
             "When": {
-                //"HasSeenEvent |contains=57876033": false,
+                "HasSeenEvent |contains=57876033": false,
                 "HasSeenEvent": "57876020"
             },
             "TextOperations": [
@@ -1050,30 +1050,6 @@
                     "Value": "swimming Leximonster",
                     "Delimiter": "/"
                 }
-            ]
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/Festivals/summer28",
-            "TextOperations": [
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
-                    "Value": "VivienneLK 3 6 2",
-                    "Delimiter": "/"
-                },
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
-                    "Value": "VivienneLK 9 63 2",
-                    "Delimiter": "/"
-                },
             ]
         },
         {
@@ -1429,7 +1405,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters_y2"
                     ],
-                    "Value": "Eloise 27 51 3/Jacob 26 51 1/Rosa 27 23 2/ToriLK 14 63 1/Juliet 26 23 2/Jessie 33 68 2/JadeMalic 29 13 3/DaleWaede 9 67 0/EthanHart 32 39 0/EdithHart 32 65 3/MichaelHart 18 41 1/KeanuAvis 38 59 3",
+                    "Value": "Eloise 27 51 3/Jacob 26 51 1/Rosa 27 23 2/ToriLK 14 63 1/Juliet 26 23 2/Jessie 33 68 2/JadeMalic 29 13 3/DaleWaede 9 66 0/ValkyrieDog 8 66 1/EthanHart 32 39 0/EdithHart 32 65 3/MichaelHart 18 41 1/KeanuAvis 38 59 3",
                     "Delimiter": "/"
                 },
                 {
@@ -1442,6 +1418,27 @@
                     "Value": "animate ValkyrieDog? false true 120 23 31",
                     "Delimiter": "/"
                 },
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasMod |contains=Rafseazz.RSVCP": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up",
+                        7
+                    ],
+                    "Value": "positionOffset DaleWaede 24 0/positionOffset ValkyrieDog? 24 0/animate ValkyrieDog? false true 120 23 31/animate DaleWaede false true 1000 26",
+                    "Delimiter": "/"
+                },
+        
+              
             ]
         },
         {

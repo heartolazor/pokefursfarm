@@ -1,7 +1,7 @@
 {
 	"Changes": [
 		{
-			"LogName": "Egg Festival",//Gabe Shows
+			"LogName": "Egg Festival",
 			"Action": "EditData",
 			"Target": "Data/Festivals/spring13",
 			"Entries": {
@@ -17,7 +17,7 @@
 			}
 		},
 		{
-			"LogName": "Jellies",//Gabe Shows
+			"LogName": "Jellies",
 			"Action": "EditData",
 			"Target": "Data/Festivals/summer28",
 			"Entries": {
@@ -41,7 +41,7 @@
 			}
 		},
 		{
-			"LogName": "RSV Ember of Resolutions",//Gabe Shows
+			"LogName": "RSV Ember of Resolutions",
 			"Action": "EditData",
 			"Target": "Data/Festivals/winter28",
 			"Entries": {
@@ -49,7 +49,7 @@
 			},
 			"When": {
 				"HasMod |contains=Rafseazz.RSVCP": true
-			},
+			}
 		},
 		{
 			"LogName": "RSV Gathering Festival",
@@ -60,7 +60,62 @@
 			},
 			"When": {
 				"HasMod |contains=Rafseazz.RSVCP": true
+			}
+		},
+		{
+			"LogName": "Egg Festival - Cambria - Romantic",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"Entries": {
+				"Otter.Cambria": "{{i18n:Cambria.Dialogue.EggFest.Romance{{Random:{{Range: 1, 2}}}}}}"
 			},
+			"When": {
+				"Relationship:Otter.Cambria": "Dating, Engaged, Married"
+			}
+		},
+		{
+			"LogName": "Luau - Cambria - Romantic",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": {
+				"Otter.Cambria": "{{i18n:Cambria.Dialogue.Luau.Romance{{Random:{{Range: 1, 2}}}}}}"
+			},
+			"When": {
+				"Relationship:Otter.Cambria": "Dating, Engaged, Married"
+			}
+		},
+		{
+			"LogName": "Jellies - Cambria - Romantic",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries": {
+				"Otter.Cambria": "{{i18n:Cambria.Dialogue.Jellies.Romance{{Random:{{Range: 1, 2}}}}}}"
+			},
+			"When": {
+				"Relationship:Otter.Cambria": "Dating, Engaged, Married"
+			}
+		},
+		{
+			"LogName": "SVFair - Cambria - Romantic",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"Entries": {
+				"Otter.Cambria": "{{i18n:Cambria.Dialogue.SVFair.Romance{{Random:{{Range: 1, 2}}}}}}"
+			},
+			"When": {
+				"Relationship:Otter.Cambria": "Dating, Engaged, Married"
+			}
+		},
+		{
+			"LogName": "WinterStar - Cambria - Romantic",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": {
+				"Otter.Cambria": "{{i18n:Cambria.Dialogue.WinterStar.Romance{{Random:{{Range: 1, 2}}}}}}"
+			},
+			"When": {
+				"Relationship:Otter.Cambria": "Dating, Engaged, Married"
+			}
 		}
 	]
 }

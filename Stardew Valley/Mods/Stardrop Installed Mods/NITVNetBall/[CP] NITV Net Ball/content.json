@@ -34,8 +34,22 @@
       "Entries": {
           "NetBallThrow": {
               "ID": "NetBallThrow",
-              "FilePaths": [ "{{AbsoluteFilePath: NetBallThrow.ogg}}" ],
-              "Category": "Music",
+              "FilePaths": [ "{{AbsoluteFilePath: sounds/NetBallThrow.ogg}}" ],
+              "Category": "Sound",
+              "StreamedVorbis": false,
+              "Looped": false
+          },
+          "SpawnSFX": {
+              "ID": "SpawnSFX",
+              "FilePaths": [ "{{AbsoluteFilePath: sounds/SpawnSFX.ogg}}" ],
+              "Category": "Sound",
+              "StreamedVorbis": false,
+              "Looped": false
+          },
+          "CatchSFX": {
+              "ID": "CatchSFX",
+              "FilePaths": [ "{{AbsoluteFilePath: sounds/CatchSFX.ogg}}" ],
+              "Category": "Sound",
               "StreamedVorbis": false,
               "Looped": false
           }
@@ -126,6 +140,5 @@
         }
       }
     }
-
   ]
 }

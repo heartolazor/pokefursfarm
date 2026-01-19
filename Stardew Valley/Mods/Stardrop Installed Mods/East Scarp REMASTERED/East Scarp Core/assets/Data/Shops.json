@@ -658,7 +658,7 @@
             "Action": "EditMap",
             "Target": "Maps/EastScarp_Village",
             "When": {
-                "DayOfWeek": "Wednesday, Friday, Saturday"
+                "DayOfWeek": "Wednesday, Friday"
             },
             "MapTiles": [
                 {
@@ -677,7 +677,7 @@
             "Action": "EditMap",
             "Target": "Maps/EastScarp_Village",
             "When": {
-                "DayOfWeek": "Sunday"
+                "DayOfWeek": "Saturday, Sunday"
             },
             "MapTiles": [
                 {
@@ -799,7 +799,7 @@
                         },
                         {
                             "Id": "Lemurkat.EastScarp_Jessie17",
-                            "Condition": "SEASON summer fall, {{AdditionalCrops}}",
+                            "Condition": "{{AdditionalCrops}}",
                             "ItemId": "(O)Lemurkat.EastScarp_DeepCaveFruitSeeds"
                         },
                         {
@@ -809,7 +809,7 @@
                         },
                         {
                             "Id": "Lemurkat.EastScarp_Jessie19",
-                            "Condition": "SEASON spring winter, {{AdditionalCrops}}",
+                            "Condition": "SEASON fall winter, {{AdditionalCrops}}",
                             "ItemId": "(O)Lemurkat.EastScarp_ChocoFruitSeeds"
                         },
                         {

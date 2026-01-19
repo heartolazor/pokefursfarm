@@ -1,0 +1,226 @@
+{   
+    "Format": "2.9.0",
+    "ConfigSchema": {
+        "Skins": {
+            "AllowValues": "Atlantic, Cave, Lucky, Mystic, Cosmic",
+            "Default": "Atlantic",
+	    "Section": "Horseshoe Crab Skin Options",
+			"Description": "Skin Selection. Alternative Texture ver of this mod available on Nexus by Bibliobeast."
+	}
+        },
+    "Changes": [ 
+    {
+	"LogName": "Include objects",
+	"Action": "Include",
+	"FromFile": "data/objects.json"
+		},
+		{
+	"LogName": "Include gift tastes",
+	"Action": "Include",
+	"FromFile": "data/gifttastes.json"
+		},
+		{
+	"LogName": "Include machines",
+	"Action": "Include",
+	"FromFile": "machines/preservesjar.json"
+		},
+		{
+        "LogName": "Load sound for horseshoe crabs",
+	   "Action": "EditData",
+   	   "Target": "Data/AudioChanges",
+           "Entries": {
+	   "HorseshoeCrabSound": {
+	   "Id": "BB.HSCsound",
+	   "Category": "Sound",
+	   "FilePaths": [ "{{AbsoluteFilePath: assets/HSCadultsound.ogg}}" ],
+		},
+	},
+},
+	{
+	"LogName": "Load data for horseshoe crabs",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "HorseshoeCrab": {
+                    "DisplayName": "{{i18n:HorseshoeCrab}}",
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "PurchasePrice": 5000,
+					"SellPrice": 4500,
+                    "ShopTexture": "Animals/HSCShopIcon_tex",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+	"ShadowWhenBaby": {
+            "Visible": true
+                    },
+        "ShadowWhenAdult": {
+             "Visible": true
+                    },
+        "RequiredBuilding": "Barn",
+        "ShopDisplayName": "{{i18n:HorseshoeCrab}}",
+        "ShopDescription": "{{i18n:HorseshoeCrabDesc}}", 
+        "BabiesFollowAdults": true,
+        "CanSwim": true,
+        "BirthText": "{{i18n:HorseshoeCrab.Hatch}}",
+        "DaysToMature": "3",
+       "DaysToProduce": "1",
+        "EggItemIds": [
+        "HorseshoeCrabEgg"
+          ],
+        "IncubationTime": -1,
+        "IncubatorParentSheetOffset": 1,
+        "HarvestType": "DropOvernight",
+        "HarvestTool": "null",
+        "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "HorseshoeCrabEgg",
+                        }
+                        ],
+        "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 400,
+                            "ItemId": "HorseshoeCrabHemocyanin",
+			    "ProduceOnMature": true,
+ 			    "DeluxeProduceMinimumFriendship": 400,
+  			    "DeluxeProduceCareDivisor": 1200.0,
+			    "DeluxeProduceLuckMultiplier": 0.0,
+			    "FriendshipForFasterProduce": 900,
+		            "ProfessionForHappinessBoost": 3,
+			    "ProfessionForQualityBoost": 3,
+                        }
+                        ],
+		    "CanGetPregnant": false,
+		    "GrassEatAmount": 1,
+		    "HappinessDrain": 2,
+                    "ShowInSummitCredits": true, 
+   	            "Sound":"BB.HSCsound",
+                    "Texture": "Animals/HorseshoeCrab_tex", 
+                    "HarvestedTexture": "Animals/HorseshoeCrab_tex", 
+                    "BabyTexture": "Animals/HorseshoeCrabBaby_tex", 
+		    "UseFlippedRightForLeft": true,
+                    "SpriteWidth": "32",
+                    "SpriteHeight": "32",
+		    "Skins": [
+           		 {
+             		 "Id": "Cave",
+              	       	 "Texture": "Animals/CaveHorseshoeCrab_tex",
+             		 "BabyTexture": "Animals/CaveHorseshoeCrabBaby_tex",
+             		 "Weight": 0.2
+            },
+            {
+               "Id": "Lucky",
+              	       	 "Texture": "Animals/LuckyHorseshoeCrab_tex",
+             		 "BabyTexture": "Animals/LuckyHorseshoeCrabBaby_tex",
+             		 "Weight": 0.1
+            },
+ 	    {
+               "Id": "Mystic",
+              	       	 "Texture": "Animals/MysticHorseshoeCrab_tex",
+             		 "BabyTexture": "Animals/MysticHorseshoeCrabBaby_tex",
+             		 "Weight": 0.1
+            },
+ 	    {
+               "Id": "Cosmic",
+              	       	 "Texture": "Animals/CosmicHorseshoeCrab_tex",
+             		 "BabyTexture": "Animals/CosmicHorseshoeCrabBaby_tex",
+             		 "Weight": 0.1
+            }
+          ]
+	}
+	},
+	},	   
+	{
+            "LogName": "Load shopIcon",
+            "Action": "Load",
+            "Target": "Animals/HSCShopIcon_tex", 
+            "FromFile": "assets/HSCShopIcon.png"
+        },
+        {
+            "LogName": "Load adultSprite for Atlantic",
+            "Action": "Load",
+            "Target": "Animals/HorseshoeCrab_tex", 
+            "FromFile": "assets/HSCatlantic.png"
+        },
+        {
+            "LogName": "Load babySprite for Atlantic",
+            "Action": "Load",
+            "Target": "Animals/HorseshoeCrabBaby_tex",
+            "FromFile": "assets/HSCatlanticbaby.png" 
+        },
+	{
+            "LogName": "Load egg sprite",
+            "Action": "Load",
+            "Target": "Objects/HorseshoeCrabEgg_tex",
+            "FromFile": "assets/HSCegg.png" 
+        },
+	{
+            "LogName": "Load aged egg sprite",
+            "Action": "Load",
+            "Target": "Objects/HorseshoeCrabAgedEgg_tex", 
+            "FromFile": "assets/HSCagedegg.png" 
+        },
+        {
+            "LogName": "Load hemocyanin sprite",
+            "Action": "Load",
+            "Target": "Objects/HorseshoeCrabHemocyanin_tex", 
+            "FromFile": "assets/HSChemocyanin.png" 
+        },
+{
+            "LogName": "Load cave adult",
+            "Action": "Load",
+            "Target": "Animals/CaveHorseshoeCrab_tex",
+            "FromFile": "assets/HSCcave.png" 
+        },
+	{
+            "LogName": "Load cave baby",
+            "Action": "Load",
+            "Target": "Animals/CaveHorseshoeCrabBaby_tex",
+            "FromFile": "assets/HSCcavebaby.png" 
+        },
+{
+            "LogName": "Load lucky adult",
+            "Action": "Load",
+            "Target": "Animals/LuckyHorseshoeCrab_tex",
+            "FromFile": "assets/HSClucky.png" 
+        },
+	{
+            "LogName": "Load lucky baby",
+            "Action": "Load",
+            "Target": "Animals/LuckyHorseshoeCrabBaby_tex",
+            "FromFile": "assets/HSCluckybaby.png" 
+        },
+{
+            "LogName": "Load mystic adult",
+            "Action": "Load",
+            "Target": "Animals/MysticHorseshoeCrab_tex",
+            "FromFile": "assets/HSCmystic.png" 
+        },
+	{
+            "LogName": "Load mystic baby",
+            "Action": "Load",
+            "Target": "Animals/MysticHorseshoeCrabBaby_tex",
+            "FromFile": "assets/HSCmysticbaby.png" 
+        },
+{
+            "LogName": "Load cosmic adult",
+            "Action": "Load",
+            "Target": "Animals/CosmicHorseshoeCrab_tex",
+            "FromFile": "assets/HSCcosmic.png" 
+        },
+	{
+            "LogName": "Load cosmic baby",
+            "Action": "Load",
+            "Target": "Animals/CosmicHorseshoeCrabBaby_tex",
+            "FromFile": "assets/HSCcosmicbaby.png" 
+        }
+   ]
+}

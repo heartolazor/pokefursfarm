@@ -16,7 +16,20 @@
                 "spring_12": "610 EastScarp_Lighthouse 11 20 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/900 EastScarp_Lighthouse 5 15 0/930 ArchaeologyHouse 18 9 2 Beatrice_stool \"Strings\\schedules\\Beatrice:read.002\"/1440 Saloon 19 23 3/1600 EastScarp_Lighthouse 2 20 3/2000 EastScarp_LanternRoom 3 5 0 \"Strings\\schedules\\Beatrice:light.001",
                 "fall_12": "610 EastScarp_Lighthouse 11 20 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/900 EastScarp_Lighthouse 5 15 0/930 ArchaeologyHouse 18 9 2 Beatrice_stool \"Strings\\schedules\\Beatrice:read.002\"/1440 Saloon 19 23 3/1600 EastScarp_Lighthouse 2 20 3/1900 EastScarp_LanternRoom 3 5 0 \"Strings\\schedules\\Beatrice:light.001",
                 "winter_12": "610 EastScarp_Lighthouse 11 20 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/900 EastScarp_Lighthouse 5 15 0/930 ArchaeologyHouse 18 9 2 Beatrice_stool \"Strings\\schedules\\Beatrice:read.002\"/1440 Saloon 19 23 3/1600 EastScarp_Lighthouse 2 20 3/1800 EastScarp_LanternRoom 3 5 0 \"Strings\\schedules\\Beatrice:light.001",
-                "summer": "610 EastScarp_Lighthouse 11 20 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1100 EastScarp_Village 22 102 1/1300 EastScarp_Village 55 84 2 Beatrice_read/1500 EastScarp_Lighthouse 11 15 0/1600 EastScarp_Lighthouse 21 6 1/1700 EastScarp_Lighthouse 5 15 0/2000 EastScarp_LanternRoom 3 5 0 \"Strings\\schedules\\Beatrice:light.001"
+                "summer": "610 EastScarp_Lighthouse 11 20 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1100 EastScarp_Village 22 102 1/1300 EastScarp_Village 55 84 2 Beatrice_read/1500 EastScarp_Lighthouse 11 15 0/1600 EastScarp_Lighthouse 21 6 1/1700 EastScarp_Lighthouse 5 15 0/2000 EastScarp_LanternRoom 3 5 0 \"Strings\\schedules\\Beatrice:light.001",
+                "Sat_A": "GOTO spring",
+                "Sat": "MAIL EastScarp.SpecialOrders.ScarpGreenHouse_Complete/GOTO Sat_A/610 EastScarp_Lighthouse 11 20 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1000 EastScarp_CommunityGreenhouse 3 12 0/1300 EastScarp_CommunityGreenhouse 14 27 2/1400 EastScarp_CommunityGreenhouse 22 27 2/1500 EastScarp_CommunityGreenhouse 20 12 0/1600 EastScarp_CommunityGreenhouse 9 10 2/1700 EastScarp_LanternRoom 3 5 0 \"Strings\\schedules\\Beatrice:light.001\""
+            }
+        },
+        { //Beatrice meeting with Jessie post Community Center
+            "LogName": "Beatrice",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Beatrice",
+            "When": {
+                "HasSeenEvent |contains=191393": true
+            },
+            "Entries": {
+                "Sat_A": "610 EastScarp_Lighthouse 11 20 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1000 EastScarp_Village 80 80 3/1300 EastScarp_Lighthouse 4 19 2 Beatrice_read \"Strings\\schedules\\Beatrice:read.001\"/1500 EastScarp_Lighthouse 5 15 0/1600 EastScarp_Lighthouse 11 15 0/1800 EastScarp_LanternRoom 3 5 0 \"Strings\\schedules\\Beatrice:light.001\"",
             }
         }
     ]

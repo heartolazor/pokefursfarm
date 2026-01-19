@@ -168,50 +168,8 @@
 		{
 			"LogName": "Jasper Portraits",
 			"Action": "EditImage",
-			"Target": "Portraits/Jasper",
-			"FromFile": "assets/NyapuPortraits/Jasper.png"
-		},
-		{
-			"LogName": "Jasper Portraits - wheelchair",
-			"Action": "EditImage",
-			"Target": "Portraits/Jasper",
-			"FromFile": "assets/NyapuPortraits/Jasper_wheelchair.png",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=50709914": true,
-				"HasSeenEvent: hostPlayer |contains=50709930": false
-			}
-		},
-		{
-			"LogName": "Jasper Portrait - prosthetic",
-			"Action": "EditImage",
-			"Target": "Portraits/Jasper",
-			"FromFile": "assets/NyapuPortraits/Jasper_prosthetic.png",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=50709930": true,
-				"Season": "spring, summer, fall"
-			}
-		},
-		{
-			"LogName": "Jasper Portrait - prosthetic",
-			"Action": "EditImage",
-			"Target": "Portraits/Jasper",
-			"FromFile": "assets/NyapuPortraits/Jasper_winter.png",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=50709930": true,
-				"Season": "winter"
-			}
-		},
-		{
-			"LogName": "Jasper Portrait - resort clothing",
-			"Action": "EditImage",
-			"Target": "Portraits/Jasper",
-			"FromFile": "assets/NyapuPortraits/Jasper_prosthetic.png",
-			"Update": "OnLocationChange",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=50709930": true,
-				"Season": "winter",
-				"LocationName": "IslandSouth, IslandNorth, IslandFieldOffice"
-			}
+			"Target": "Portraits/Jasper, Portraits/Jasper_wheelchair, Portraits/Jasper_prosthetic, Portraits/Jasper_winter",
+			"FromFile": "assets/NyapuPortraits/{{TargetWithoutPath}}.png"
 		},
 		{
 			"LogName": "Jasper Portraits",
@@ -247,10 +205,10 @@
 			},
 			"Update": "OnLocationChange, OnTimeChange",
 		},
-				{
-				"Action": "EditImage",
-				"Target": " Characters/MisterGinger, Characters/MisterGinger_Fish",
-				"FromFile": "assets/NyapuPortraits/Animals/{{Target}}.png"
-			}
+		{
+			"Action": "EditImage",
+			"Target": " Characters/MisterGinger, Characters/MisterGinger_Fish",
+			"FromFile": "assets/NyapuPortraits/Animals/{{Target}}.png"
+		}
 	]
 }

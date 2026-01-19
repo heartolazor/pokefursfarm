@@ -19,7 +19,14 @@
                     "CreateOnLoad": {
                         "MapPath": "Maps/EastScarp_LoresCove"
                     },
-                    "MusicDefault": "EastScarpAppleCider",
+                   
+                    "Music": [
+                        {
+                            "Id": "EastScarpAppleCider",
+                            "Track": "EastScarpAppleCider",
+                            "Condition": "TIME 900 1700, !WEATHER Here Rain GreenRain"
+                        }
+                    ],
                     "FormerLocationNames": [
                         "Custom_ESCastlePoint"
                     ],

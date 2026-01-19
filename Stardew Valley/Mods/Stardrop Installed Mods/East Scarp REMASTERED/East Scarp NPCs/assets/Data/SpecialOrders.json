@@ -7,7 +7,8 @@
             "Entries": {
                 "5787_KingCarp": "ItemDelivery/{{i18n:quest.willy.kingcarp.1}}/{{i18n:quest.willy.kingcarp.2}}/{{i18n:quest.willy.kingcarp.3}}/Willy (O)EastScarp_King_Carp/-1/1000/-1/true/{{i18n:quest.willy.kingcarp.4}}",
                 "5787_VintageRubyRing": "Basic/{{i18n:quest.rosa.vintagering.1}}/{{i18n:quest.rosa.vintagering.2}}/{{i18n:quest.rosa.vintagering.3}}/-1/-1/0/-1/false",
-                "5787_LumaBribeIntro": "Basic/{{i18n:quest.luma.raisins.1}}/{{i18n:quest.luma.raisins.2}}/{{i18n:quest.luma.raisins.3.{{HasSeenSecretNote24}} }}/-1/-1/0/-1/false"
+                "5787_LumaBribeIntro": "Basic/{{i18n:quest.luma.raisins.1}}/{{i18n:quest.luma.raisins.2}}/{{i18n:quest.luma.raisins.3.{{HasSeenSecretNote24}} }}/-1/-1/0/-1/false",
+                "5787_JulietProposition": "Basic/{{i18n:quest.juliet.proposition.1}}/{{i18n:quest.juliet.proposition.2}}/{{i18n:quest.juliet.proposition.3}}/-1/-1/0/-1/true"
             } //secret note #24
         },
         {
@@ -244,11 +245,11 @@
                     ]
                 },
                 "EastScarp.SpecialOrders.LadySheba3": { // Part three of unlocking the Lady Sheba NPC/Custom critter
-                    "Name": "{{i18n:EastScarp.SpecialOrders.LadySheba2_Name}}",
+                    "Name": "{{i18n:EastScarp.SpecialOrders.LadySheba3_Name}}",
                     "Requester": "Jas",
                     "Duration": "TwoWeeks",
                     "Repeatable": "false",
-                    "RequiredTags": "mail_EastScarp.SpecialOrders.LadySheba2Mail",
+                    "RequiredTags": "mail_EastScarp.SpecialOrders.LadySheba3Mail",
                     "OrderType": "",
                     "SpecialRule": "",
                     "Text": "{{i18n:EastScarp.SpecialOrders.LadySheba3_Text}}",
@@ -1384,10 +1385,55 @@
             "Action": "EditData",
             "Target": "Data/SpecialOrders",
             "Entries": {
+                "EastScarp.SpecialOrders.RebuildBridge": { //Rebuilds the bridge to the orchard
+                    "Name": "{{i18n:EastScarp.SpecialOrders.RebuildBridge_Name}}",
+                    "Requester": "Rosa",
+                    "Duration": "Month",
+                    "Repeatable": "false",
+                    "OrderType": "INVALID",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.RebuildBridge_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.RebuildBridge_Objective_0_Text}}",
+                            "RequiredCount": "200",
+                            "Data": {
+                                "DropBox": "ESOrchardBox",
+                                "DropBoxGameLocation": "EastScarp_Orchard",
+                                "DropBoxIndicatorLocation": "3 15",
+                                "AcceptedContextTags": "item_wood"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.RebuildBridge_Objective_1_Text}}",
+                            "RequiredCount": "20",
+                            "Data": {
+                                "DropBox": "ESOrchardBox",
+                                "DropBoxGameLocation": "EastScarp_Orchard",
+                                "DropBoxIndicatorLocation": "3 15",
+                                "AcceptedContextTags": "item_hardwood"
+                            }
+                        },
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.RebuildBridgeMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
                 "EastScarp.SpecialOrders.JadeFairyRing": {
                     "Name": "{{i18n:EastScarp.SpecialOrders.JadeFairyRing_Name}}",
                     "Requester": "JadeMalic",
-                    //"Duration": "TwoWeeks",
+                    "Duration": "Month",
                     "Repeatable": "false",
                     "RequiredTags": "event_57871206",
                     "OrderType": "INVALID",
@@ -1611,7 +1657,7 @@
                 "EastScarp.SpecialOrders.LumaSlimeEggs10": {
                     "Name": "{{i18n:EastScarp.SpecialOrders.LumaSlimeEggs_Name}}",
                     "Requester": "LumaJunimo",
-                    //"Duration": "ThreeWeeks",
+                    //"Duration": "ThreeDays",
                     "Repeatable": "false",
                     "OrderType": "INVALID",
                     "SpecialRule": "",
@@ -1659,7 +1705,8 @@
                 "EastScarp.SpecialOrders.JadeFairyRing": "-1",
                 "EastScarp.SpecialOrders.LumaSlimeEggs10": "-1",
                 "EastScarp.SpecialOrders.LumaSlimeEggs25": "-1",
-                "EastScarp.SpecialOrders.LumaSlimeEggs50": "-1"
+                "EastScarp.SpecialOrders.LumaSlimeEggs50": "-1",
+                "EastScarp.SpecialOrders.RebuildBridge": "-1"
             }
         },
         {
@@ -1679,8 +1726,8 @@
                 "EastScarp.SpecialOrders.JojaCola": "{{i18n:EastScarp.SpecialOrders.JojaCola.text}}%item bigobject 117 %%[#]{{i18n:EastScarp.SpecialOrders.JojaCola.title}}",
                 "EastScarp.SpecialOrders.JacobCornMail": "{{i18n:EastScarp.SpecialOrders.JacobCornMail.text}}%item object 176 12 %%[#]{{i18n:EastScarp.SpecialOrders.JacobCornMail.title}}",
                 "EastScarp.SpecialOrders.JacobHayMail": "{{i18n:EastScarp.SpecialOrders.JacobHayMail.text}}%item object 184 5 %% [#]{{i18n:EastScarp.SpecialOrders.JacobHayMail.title}}",
-                "EastScarp.SpecialOrders.EloiseJasJayMail": "{{i18n:EastScarp.SpecialOrders.EloiseJasJayMail.text}}[#]{{i18n:EastScarp.SpecialOrders.EloiseJasJayMail.title}}",
-                "EastScarp.SpecialOrders.EloiseRealMacawMail": "{{i18n:EastScarp.SpecialOrders.EloiseRealMacawMail.text}}[#]{{i18n:EastScarp.SpecialOrders.EloiseRealMacawMail.title}}",
+                "EastScarp.SpecialOrders.EloiseJasJayMail": "{{i18n:EastScarp.SpecialOrders.EloiseJasJayMail.text}}[letterbg Mods/LemurKat.EastScarp/LetterBackgrounds 0][#]{{i18n:EastScarp.SpecialOrders.EloiseJasJayMail.title}}",
+                "EastScarp.SpecialOrders.EloiseRealMacawMail": "{{i18n:EastScarp.SpecialOrders.EloiseRealMacawMail.text}}[letterbg Mods/LemurKat.EastScarp/LetterBackgrounds 0][#]{{i18n:EastScarp.SpecialOrders.EloiseRealMacawMail.title}}",
                 "EastScarp.SpecialOrders.ZUCUBoneCollectorsMail": "{{i18n:EastScarp.SpecialOrders.ZUCUBoneCollectorsMail.text}} %item bigobject 21 %%[#]{{i18n:EastScarp.SpecialOrders.ZUCUBoneCollectorsMail.title}}",
                 "EastScarp.SpecialOrders.AideenFlowersMail.invite": "{{i18n:EastScarp.SpecialOrders.AideenFlowersMail.invite.text}}[#]{{i18n:EastScarp.SpecialOrders.AideenFlowersMail.invite.title}}",
                 "EastScarp.SpecialOrders.JasperGeodesMail": "{{i18n:EastScarp.SpecialOrders.JasperGeodesMail.text}}.%item bigobject 21 %%[#]{{i18n:EastScarp.SpecialOrders.JasperGeodesMail.title}}",
@@ -1691,7 +1738,8 @@
                 "EastScarp.SpecialOrders.VictoriaEnrichment": "{{i18n:EastScarp.SpecialOrders.VictoriaEnrichment.text}}%item id (O)413 1 (O)437 1 (O)439 1  %%[#]{{i18n:EastScarp.SpecialOrders.VictoriaEnrichment.title}}",
                 "EastScarp.SpecialOrders.EthanScienceProjectMail": "{{i18n:EastScarp.SpecialOrders.EthanScienceProject.text}}%item bigobject 221 %%[#]{{i18n:EastScarp.SpecialOrders.EthanScienceProject.title}}",
                 "EastScarp.SpecialOrders.EthanScienceProjectMail2": "{{i18n:EastScarp.SpecialOrders.EthanScienceProject2.text}}[#]{{i18n:EastScarp.SpecialOrders.EthanScienceProject2.title}}",
-                "EastScarp.SpecialOrders.ScarpGreenHouse_Complete": "{{i18n:EastScarp.SpecialOrders.ScarpGreenHouse_Complete.text}}[#]{{i18n:EastScarp.SpecialOrders.ScarpGreenHouse_Complete.title}}"
+                "EastScarp.SpecialOrders.ScarpGreenHouse_Complete": "{{i18n:EastScarp.SpecialOrders.ScarpGreenHouse_Complete.text}}[#]{{i18n:EastScarp.SpecialOrders.ScarpGreenHouse_Complete.title}}",
+                "EastScarp.SpecialOrders.RebuildBridgeMail":"{{i18n:EastScarp.SpecialOrders.RebuildBridgeMail.text}}[#]{{i18n:EastScarp.SpecialOrders.RebuildBridgeMail.title}}"
             }
         },
         //E V E N T S

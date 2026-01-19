@@ -16,6 +16,7 @@
                     "SocialAnxiety": "Outgoing",
                     "Optimism": "Neutral",
                     "CanBeRomanced": true,
+                    "FlowerDanceCanDance": true,
                     "LoveInterest": null,
                     "WinterStarGifts": [
                         {
@@ -676,15 +677,15 @@
                         {
                             "Id": "JulietEggFestival",
                             "Condition": "IS_EVENT festival_spring13",
-                            "Sprite": "Characters/Juliet_EggFest",
-                            "Portrait": "Portraits/Juliet_EggFest",
+                            "Sprite": "Characters/Juliet_eggfest",
+                            "Portrait": "Portraits/Juliet_eggfest",
                             "Precedence": -1000,
                         },
                         {
                             "Id": "JulietFlowerDance",
                             "Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
-                            "Sprite": "Characters/Juliet_FlowerDance",
-                            "Portrait": "Portraits/Juliet_FlowerDance",
+                            "Sprite": "Characters/Juliet_flowerdance",
+                            "Portrait": "Portraits/Juliet_flowerdance",
                             "Precedence": -1000,
                         },
                         {
@@ -705,7 +706,7 @@
                             "Id": "JulietSDVFAir",
                             "Condition": "IS_EVENT festival_fall16",
                             "Sprite": "Characters/Juliet_SVFair",
-                            "Portrait": "Portraits/Juliet_SVFAir",
+                            "Portrait": "Portraits/Juliet_SVFair",
                             "Precedence": -1000,
                         },
                         {
@@ -1224,8 +1225,8 @@
                             "Season": "Winter",
                             "Outdoors": true,
                             "Indoors": true,
-                            "Portrait": "Portraits/Jasper_prosthetic",
-                            "Sprite": "Characters/Jasper_prosthetic",
+                            "Portrait": "Portraits/Jasper_winter",
+                            "Sprite": "Characters/Jasper_winter",
                             "Precedence": -1
                         },
                     ],
@@ -1741,14 +1742,6 @@
                     "WinterStarParticipant": true,
                     "Appearance": [
                         {
-                            "ID": "KeanuAvisDefault",
-                            "Outdoors": true,
-                            "Indoors": true,
-                            "Portrait": "Portraits/KeanuAvis",
-                            "Sprite": "Characters/KeanuAvis",
-                            "Precedence": -100
-                        },
-                        {
                             "ID": "KeanuAvisSummer",
                             "Season": "Summer",
                             "Outdoors": true,
@@ -2123,6 +2116,15 @@
                             "Direction": "down"
                         }
                     ],
+                    "Appearance": [
+                        {
+                            "Id": "ValkyrieSpiritEve",
+                            "Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing\"",
+                            "Sprite": "Characters/ValkyrieDog_SpiritsEve",
+                            "Portrait": "Portraits/ValkyrieDog_SpiritsEve",
+                            "Precedence": -1000,
+                        }
+                    ],
                     "CustomFields": {
                         "EastScarpe.ForceOneTileWide": "true"
                     },
@@ -2396,7 +2398,9 @@
                 "StellaHart"
             ],
             "Entries": {
-                "CanSocialize": "true"
+                "CanSocialize": "true",
+                "Calendar": "HiddenUntilMet",
+                "SocialTab": "HiddenUntilMet",
             }
         },
         {
@@ -2410,7 +2414,9 @@
                 "KennedyLK"
             ],
             "Entries": {
-                "CanSocialize": "{{FriendableZuzuNPCs |contains=Kennedy}}"
+                "CanSocialize": "true",
+                "Calendar": "HiddenUntilMet",
+                "SocialTab": "HiddenUntilMet",
             }
         },
         {
@@ -2419,7 +2425,7 @@
             "Target": "Data/Characters",
             "When": {
                 "HasSeenEvent": "5295000",
-                "EnableTristan": true
+                "EnableTristan": "true"
             },
             "TargetField": [
                 "MisterGinger"
@@ -2501,14 +2507,6 @@
                     ],
                     "Appearance": [
                         {
-                            "ID": "JadeDefault",
-                            "Outdoors": true,
-                            "Indoors": true,
-                            "Portrait": "Portraits/JadeMalic",
-                            "Sprite": "Characters/JadeMalic",
-                            "Precedence": -1
-                        },
-                        {
                             "ID": "JadeSummer",
                             "Season": "Summer",
                             "Outdoors": true,
@@ -2541,7 +2539,14 @@
                             "Sprite": "Characters/Jade_SpiritsEve",
                             "Portrait": "Portraits/Jade_SpiritsEve",
                             "Precedence": -1000,
-                        }
+                        },
+                        {
+                            "ID": "JadeFlowerDance",
+                            "Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+                            "Portrait": "Portraits/Jade_FlowerDance",
+                            "Sprite": "Characters/Jade_FlowerDance",
+                            "Precedence": -1000
+                        },
                     ],
                     "Home": [
                         {
@@ -2579,7 +2584,7 @@
                 "Aideen": "{{i18n:gifts.aideen.love}}/104 106 597/{{i18n:gifts.aideen.like}}/-80 64 68 60 540 376 18 22 283/{{i18n:gifts.aideen.dislike}}/84 213 -4/{{i18n:gifts.aideen.hate}}/190 197 206 346/{{i18n:gifts.aideen.neutral}}/-2 -26/",
                 "Beatrice": "{{i18n:gift.beatrice.love}}/84 192 199/{{i18n:gift.beatrice.like.{{GenderNeutral}} }}/207 117 24/{{i18n:gift.beatrice.dislike}}/152 202/{{i18n:gift.beatrice.hate}}/129 130 131 148/{{i18n:gift.beatrice.neutral}}/74/",
                 "CorwinLK": "{{i18n:gift.corwin.love.{{WillCorwinFlirt}} }}/422 303 166/{{i18n:gift.corwin.like.{{WillCorwinFlirt}} }}/459 346 -79 -75/{{i18n:gift.corwin.dislike.{{WillCorwinFlirt}} }}//{{i18n:gift.corwin.hate}}/88/{{i18n:gift.corwin.neutral.{{WillCorwinFlirt}} }}//",
-                "DaleWaede": "{{i18n:gifts.dalewaede.love}}/tea_item Lemurkat.EastScarp_HotChoco Lemurkat.EastScarp_SoothingCure/{{i18n:gifts.dalewaede.like}}/-2 bone_item/{{i18n:gifts.dalewaede.dislike}}//{{i18n:gifts.dalewaede.hate}}//{{i18n:gifts.dalewaede.neutral}}//",
+                "DaleWaede": "{{i18n:gifts.dalewaede.love}}/614 tea_item Lemurkat.EastScarp_HotChoco Lemurkat.EastScarp_SoothingCure/{{i18n:gifts.dalewaede.like}}/580 -2 bone_item/{{i18n:gifts.dalewaede.dislike}}//{{i18n:gifts.dalewaede.hate}}//{{i18n:gifts.dalewaede.neutral}}//",
                 "Eyvinder": "{{i18n:gift.love.eyvinder}}/279 EastScarp_Azure_Chrysanthemum EastScarp_Serruria EastScarp_PuckerWort EastScarp_Void_Goat_Cheese_Aged/{{i18n:gift.like.eyvinder}}/417 440 Vintage_Ruby_Ring bauble_curio EastScarp_Void_Goat_Milk EastScarp_L_Void_Goat_Milk EastScarp_Void_Goat_Cheese/{{i18n:gift.dislike.eyvinder}}/-15 -16/{{i18n:gift.hate.eyvinder}}/-20 -24 -8/{{i18n:gift.neutral.eyvinder}}/-81 -2 -79 -75 -4 -5 -7 -26 -74 -6 -18 74 446 797 373/",
                 "EdithHart": "{{i18n:gift.edith.love}}/724 723 812 394 200 610 395/{{i18n:gift.edith.like}}/257 281 404 -6/{{i18n:gift.edith.dislike}}/248 16 215 226/{{i18n:gift.edith.hate}}/260/{{i18n:gift.edith.neutral}}/446/",
                 "EthanHart": "{{i18n:gift.ethan.love}}/724 201 200 408 Lemurkat.EastScarp_HotChoco/{{i18n:gift.ethan.like}}/-5 -6 -81 403/{{i18n:gift.ethan.dislike}}/260 92 420 202/{{i18n:gift.ethan.hate}}/151 798/{{i18n:gift.ethan.neutral}}/399/",

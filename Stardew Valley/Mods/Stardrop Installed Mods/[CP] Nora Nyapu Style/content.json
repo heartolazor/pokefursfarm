@@ -5,14 +5,14 @@
             "LogName": "Load Nora's Portraits in Nyapu Style",
             "Action": "Load",
             "Priority": "High",
-            "Target": "Portraits/Nora_Spring_Portrait, Portraits/Nora_Summer_Portrait,Portraits/Nora_Fall_Portrait,Portraits/Nora_Winter_Outdoor_Portrait,Portraits/Nora_Spirit_Portrait,Portraits/Nora_Winter_Indoor",
+            "Target": "Portraits/Nora_Spring_Portrait, Portraits/Nora_Summer_Portrait,Portraits/Nora_Fall_Portrait,Portraits/Nora_Winter_Outdoor_Portrait,Portraits/Nora_Spirit_Portrait,Portraits/Nora_Egg_Portrait,Portraits/Nora_Flower_Portrait,Portraits/Nora_Winter_Indoor,Portraits/Nora_Luau, Portraits/Nora_Jellies, Portraits/Nora_Ice, Portraits/Nora_Star",
             "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png"
         },
         {
             "LogName": "Load Nora's Winter Indoor Outfit",
             "Action": "Load",
             "Priority": "High",
-            "Target": "Characters/Nora_Winter_Indoor",
+            "Target": "Characters/Nora_Luau, Characters/Nora_Jellies, Characters/Nora_Ice, Characters/Nora_Star, Characters/Nora_Winter_Indoor",
             "FromFile": "assets/Characters/{{TargetWithoutPath}}.png"
         },
         {
@@ -43,6 +43,44 @@
                 },
                 "Spirit's Eve":{
                     "Portrait": "Portraits/Nora_Spirit_Portrait"
+                },
+                "Egg Festival":{
+                    "Portrait": "Portraits/Nora_Egg_Portrait"
+                },
+                "Flower Dance":{
+                    "Portrait": "Portraits/Nora_Flower_Portrait"
+                }
+            }
+        },
+        {
+            "LogName": "Nora Luau",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField":["Nora","Appearance"],
+            "When": {"DayEvent": "Luau"},
+            "Entries":{
+                "{{ModId}}.NoraLuau":{
+                    "ID": "{{ModId}}.NoraLuau",
+                    "Condition": "IS_EVENT festival_summer11",
+                    "Sprite": "Characters/Nora_Luau",
+                    "Portrait": "Portraits/Nora_Luau",
+                    "Precedence": -100
+                }
+            }
+        },
+                {
+            "LogName": "Nora Moonlight Jellies",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField":["Nora","Appearance"],
+            "When": {"DayEvent": "Dance of the Moonlight Jellies"},
+            "Entries":{
+                "{{ModId}}.NoraMoonJellies":{
+                    "ID": "{{ModId}}.NoraMoonJellies",
+                    "Condition": "IS_EVENT festival_summer28",
+                    "Sprite": "Characters/Nora_Jellies",
+                    "Portrait": "Portraits/Nora_Jellies",
+                    "Precedence": -100
                 }
             }
         },
@@ -59,6 +97,38 @@
                     "Sprite": "Characters/Nora_Winter_Indoor",
                     "Portrait": "Portraits/Nora_Winter_Indoor",
                     "Outdoors": false,
+                    "Precedence": -100
+                }
+            }
+        },
+        {
+            "LogName": "Nora Ice",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField":["Nora","Appearance"],
+            "When": {"DayEvent": "Festival of Ice"},
+            "Entries":{
+                "{{ModId}}.NoraIce":{
+                    "ID": "{{ModId}}.NoraIce",
+                    "Condition": "IS_EVENT festival_winter8",
+                    "Sprite": "Characters/Nora_Ice",
+                    "Portrait": "Portraits/Nora_Ice",
+                    "Precedence": -100
+                }
+            }
+        },
+        {
+            "LogName": "Nora Star",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField":["Nora","Appearance"],
+            "When": {"DayEvent": "Feast of the Winter Star"},
+            "Entries":{
+                "{{ModId}}.NoraStar":{
+                    "ID": "{{ModId}}.NoraStar",
+                    "Condition": "IS_EVENT festival_winter25",
+                    "Sprite": "Characters/Nora_Star",
+                    "Portrait": "Portraits/Nora_Star",
                     "Precedence": -100
                 }
             }

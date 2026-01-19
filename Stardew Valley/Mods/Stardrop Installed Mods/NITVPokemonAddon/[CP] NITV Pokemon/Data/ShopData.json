@@ -9,31 +9,31 @@
         "PokeGroup1Contract": {
           "ItemId": "PokeGroup1Contract",
           "Price": 1000,
-          "Condition": "NAT_NIV_DonatedSpecific Pidgey_Roam, NAT_NIV_DonatedSpecific Geodude_Attack, NAT_NIV_DonatedSpecific Zubat_Attack, NAT_NIV_DonatedSpecific Caterpie_Bush, NAT_NIV_DonatedSpecific Weedle_Bush, NAT_NIV_DonatedSpecific Rattata_Roam, NAT_NIV_DonatedSpecific Magikarp_Swim, NAT_NIV_DonatedSpecific Metapod_Tree, NAT_NIV_DonatedSpecific Kakuna_Tree",
+          "Condition": "PLAYER_HAS_MAIL Any PokemonTrigger1",
           "AvailableStock": 1,
           "AvailableStockLimit": "Global",
           "ActionsOnPurchase": [
-            "AddMail All SafariGroup1_Unlock received"
+            "AddMail All SafariGroup1_Unlocked"
           ]
         },
         "PokeGroup2Contract": {
           "ItemId": "PokeGroup2Contract",
           "Price": 5000,
-          "Condition": "NAT_NIV_DonatedSpecific Butterfree_Roam, NAT_NIV_DonatedSpecific Beedrill_Attack, NAT_NIV_DonatedSpecific Diglett_Roam, NAT_NIV_DonatedSpecific Ekans_Attack, NAT_NIV_DonatedSpecific Growlithe_Roam, NAT_NIV_DonatedSpecific Paras_Roam, NAT_NIV_DonatedSpecific Poliwag_Swim, NAT_NIV_DonatedSpecific Sandshrew_Roam, NAT_NIV_DonatedSpecific Tentacool_Swim, NAT_NIV_DonatedSpecific Venonat_Stump",
+          "Condition": "PLAYER_HAS_MAIL Any PokemonTrigger2",
           "AvailableStock": 1,
           "AvailableStockLimit": "Global",
           "ActionsOnPurchase": [
-            "AddMail All SafariGroup2_Unlock received"
+            "AddMail All SafariGroup2_Unlocked"
           ]
         },
         "PokeGroup3Contract": {
           "ItemId": "PokeGroup3Contract",
           "Price": 10000,
-          "Condition": "NAT_NIV_DonatedSpecific Spearow_Attack, NAT_NIV_DonatedSpecific Koffing_Attack, NAT_NIV_DonatedSpecific Oddish_Stump, NAT_NIV_DonatedSpecific Bellsprout_Roam, NAT_NIV_DonatedSpecific Grimer_Roam, NAT_NIV_DonatedSpecific Cubone_Roam, NAT_NIV_DonatedSpecific Rhyhorn_Attack, NAT_NIV_DonatedSpecific Shellder_Swim, NAT_NIV_DonatedSpecific Goldeen_Swim, NAT_NIV_DonatedSpecific Psyduck_Swim",
+          "Condition": "PLAYER_HAS_MAIL Any PokemonTrigger3",
           "AvailableStock": 1,
           "AvailableStockLimit": "Global",
           "ActionsOnPurchase": [
-            "AddMail All SafariGroup3_Unlock received"
+            "AddMail All PokemonTrigger4 received"
           ]
         },
         "SafariGrass": {
@@ -173,7 +173,7 @@
         "Gastly_Shiny_Buy": {
           "ItemId": "(O)NatInValley.Creature.Gastly_Attack_Shiny",
           "Condition": "NAT_NIV_DonatedSpecific Gastly_Attack_Shiny",
-          "Price": 250000
+          "Price": 200000
         },
         "Sandshrew_Shiny_Buy": {
           "ItemId": "(O)NatInValley.Creature.Sandshrew_Roam_Shiny",
@@ -246,6 +246,36 @@
           "ItemId": "(O)NatInValley.Creature.Psyduck_Swim_Shiny",
           "Condition": "NAT_NIV_DonatedSpecific Psyduck_Swim_Shiny",
           "Price": 175000
+        },
+        "Cryogonal_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Cryogonal_Roam_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Cryogonal_Roam_Shiny",
+          "Price": 212500
+        },
+        "Cubchoo_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Cubchoo_Roam_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Cubchoo_Roam_Shiny",
+          "Price": 200000
+        },
+        "Snom_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Snom_Roam_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Snom_Roam_Shiny",
+          "Price": 175000
+        },
+        "Delibird_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Delibird_Roam_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Delibird_Roam_Shiny",
+          "Price": 225000
+        },
+        "Snover_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Snover_Roam_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Snover_Roam_Shiny",
+          "Price": 212500
+        },
+        "Stantler_Shiny_Buy": {
+          "ItemId": "(O)NatInValley.Creature.Stantler_Roam_Shiny",
+          "Condition": "NAT_NIV_DonatedSpecific Stantler_Roam_Shiny",
+          "Price": 225000
         }
       }
     }

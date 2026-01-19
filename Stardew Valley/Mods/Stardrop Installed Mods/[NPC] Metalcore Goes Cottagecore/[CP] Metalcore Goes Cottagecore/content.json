@@ -1,7 +1,7 @@
 {
 	"Format": "2.4.0",
 	"ConfigSchema": {
-		"PortraitStyle": {
+		"Portrait Style": {
 			"AllowValues": "NinTheCactus, Original",
 			"Default": "Original",
 			"AllowBlank": false,
@@ -12,9 +12,26 @@
 			"Default": "false",
 			"AllowBlank": false,
 			"Description": "Excludes MGC items from Perfection"
+		},
+		"Cambria Romantic Nickname": {
+			"Default": "Starlight",
+			"AllowBlank": false,
+			"AllowMultiple": true,
+			"Description": "Custom term of endearment for the player. Default is 'Starlight' but can be edited per preference."
 		}
 	},
 	"DynamicTokens": [
+		{
+			"Name": "CambriaRomance",
+			"Value": false
+		},
+		{
+			"Name": "CambriaRomance",
+			"Value": true,
+			"When": {
+				"HasFlag": "Dating_Cambria"
+			}
+		},
 		{
 			"Name": "WeekDayList",
 			"Value": "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
@@ -88,12 +105,12 @@
 		{
 			"LogName": "Blank File Load",
 			"Action": "Load",
-			"Target": "Characters/Dialogue/Otter.Cambria, Characters/Dialogue/Otter.Orchid, Characters/Schedules/Otter.Cambria, Characters/Schedules/Otter.Orchid",
+			"Target": "Characters/Dialogue/Otter.Cambria, Characters/Dialogue/Otter.Orchid, Characters/Schedules/Otter.Cambria, Characters/Schedules/Otter.Orchid, Strings/OS.MGC",
 			"FromFile": "Assets/blank.json"
 		},
 		{
 			"Action": "Include",
-			"FromFile": "Data/AppearanceData.json, Data/Dialogue/Cambria_Dialogue.json, Data/Schedules/Cambria_Schedule.json, Data/Animations.json, Data/Cambria_Strings.json, Data/Cambria_Events.json, Data/Mail.json, Data/Dialogue/ConversationTopics.json, Data/Dialogue/FestivalDialogue.json, Data/FestivalLocations.json, Data/Dialogue/Orchid_Dialogue.json, Data/Schedules/Orchid_Schedule.json, Data/DogPathing.json, Data/NPCData.json, Data/Quests.json, Data/Shops.json, Data/TriggerActions.json, Data/LocationData.json, Data/MovieData.json, Data/Objects.json, Data/Dialogue/CustomGiftDialogue.json, Data/Crops.json, Data/Machines.json"
+			"FromFile": "Data/AppearanceData.json, Data/Dialogue/Cambria_Dialogue.json, Data/Schedules/Cambria_Schedule.json, Data/Animations.json, Data/Cambria_Strings.json, Data/Cambria_Events.json, Data/Mail.json, Data/Dialogue/ConversationTopics.json, Data/Dialogue/FestivalDialogue.json, Data/FestivalLocations.json, Data/Dialogue/Orchid_Dialogue.json, Data/Schedules/Orchid_Schedule.json, Data/DogPathing.json, Data/NPCData.json, Data/Quests.json, Data/Shops.json, Data/TriggerActions.json, Data/LocationData.json, Data/MovieData.json, Data/Objects.json, Data/Dialogue/CustomGiftDialogue.json, Data/Crops.json, Data/Machines.json, Data/Recipes.json, Data/DynamicStrings.json"
 		}
 	]
 }

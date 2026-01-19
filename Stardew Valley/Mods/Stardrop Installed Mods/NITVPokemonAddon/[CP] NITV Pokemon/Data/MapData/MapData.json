@@ -182,7 +182,7 @@
       "Target": "Maps/NITVPokemon_SafariZone",
       "Update": "OnTimeChange",
       "When": {
-        "HasFlag": "SafariGroup2_Unlock",
+        "HasFlag": "SafariGroup2_Unlocked",
         "Query: ( {{Time}} >= 0600 AND {{Time}} < 1800 )": "true"
       },
       "MapTiles": [
@@ -201,7 +201,7 @@
       "Target": "Maps/NITVPokemon_SafariZone",
       "Update": "OnTimeChange",
       "When": {
-        "HasFlag": "SafariGroup2_Unlock",
+        "HasFlag": "SafariGroup2_Unlocked",
         "Query: ( {{Time}} >= 1800 OR {{Time}} < 0200 )": "true"
       },
       "MapTiles": [
@@ -257,7 +257,7 @@
       "Target": "Maps/NITVPokemon_SafariZone",
       "FromFile": "Maps/safarimap_cutTree1.tmx",
       "ToArea": { "X": 11, "Y": 35, "Width": 12, "Height": 1 },
-      "When": { "HasFlag": "SafariGroup3_Unlock" }
+      "When": { "HasFlag": "SafariGroup3_Unlocked" }
     },
 
     {

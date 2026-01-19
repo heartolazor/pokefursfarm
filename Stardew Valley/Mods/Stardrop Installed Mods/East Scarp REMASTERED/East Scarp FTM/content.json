@@ -789,6 +789,12 @@
                 "Name": "Cave Carrot",
                 "Stack": 1,
                 "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "EastScarp_BiteBackMelon_Seed",
+                "Stack": 5,
+                "PercentChanceToSpawn": 2
               }
             ]
           }
@@ -844,6 +850,12 @@
                 "Name": "Cave Carrot",
                 "Stack": 1,
                 "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "EastScarp_PuckerWort_Seed",
+                "Stack": 5,
+                "PercentChanceToSpawn": 2
               }
             ]
           }
@@ -899,6 +911,18 @@
                 "Name": "Cave Carrot",
                 "Stack": 1,
                 "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "EastScarp_Cuccaroot_Seed",
+                "Stack": 5,
+                "PercentChanceToSpawn": 2
+              },
+              {
+                "Category": "Object",
+                "Name": "Lemurkat.EastScarp_GiggleFitSeeds",
+                "Stack": 1,
+                "PercentChanceToSpawn": 2
               }
             ]
           }
@@ -954,6 +978,18 @@
                 "Name": "Cave Carrot",
                 "Stack": 1,
                 "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "EastScarp_FrostBerry_Seed",
+                "Stack": 5,
+                "PercentChanceToSpawn": 2
+              },
+              {
+                "Category": "Object",
+                "Name": "Lemurkat.EastScarp_GiggleFitSeeds",
+                "Stack": 1,
+                "PercentChanceToSpawn": 2
               }
             ]
           }
@@ -968,6 +1004,126 @@
           "34,18/40,24",
           "42,36/46,40",
           "41,48/45,52"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 3
+      },
+      {
+        "SpringItemIndex": [
+          {
+            "category": "buried",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "coal",
+                "Stack": 1
+              },
+              {
+                "Category": "Object",
+                "Name": "EastScarp_BiteBackMelon_Seed",
+                "Stack": 3,
+                "PercentChanceToSpawn": 25
+              }
+            ]
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "category": "buried",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "coal",
+                "Stack": 1
+              },
+              {
+                "Category": "Object",
+                "Name": "EastScarp_PuckerWort_Seed",
+                "Stack": 3,
+                "PercentChanceToSpawn": 25
+              }
+            ]
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "category": "buried",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "coal",
+                "Stack": 1
+              },
+              {
+                "Category": "Object",
+                "Name": "EastScarp_Cuccaroot_Seed",
+                "Stack": 3,
+                "PercentChanceToSpawn": 25
+              },
+              {
+                "Category": "Object",
+                "Name": "Lemurkat.EastScarp_GiggleFitSeeds",
+                "Stack": 1,
+                "PercentChanceToSpawn": 25
+              }
+            ]
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "category": "buried",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "coal",
+                "Stack": 1
+              },
+              {
+                "Category": "Object",
+                "Name": "EastScarp_FrostBerry_Seed",
+                "Stack": 3,
+                "PercentChanceToSpawn": 25
+              },
+              {
+                "Category": "Object",
+                "Name": "Lemurkat.EastScarp_GiggleFitSeeds",
+                "Stack": 1,
+                "PercentChanceToSpawn": 25
+              }
+            ]
+          }
+        ],
+        "UniqueAreaID": "Deepdark Buried area 1",
+        "MapName": "EastScarp_DeepDark",
+        "MinimumSpawnsPerDay": -2,
+        "MaximumSpawnsPerDay": 5,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "35,19/40,24",
+          "43,36/45,39",
+          "40,48/45,52"
         ],
         "ExcludeCoordinates": [],
         "StrictTileChecking": "High",
@@ -1179,25 +1335,25 @@
       {
         "SpringItemIndex": [
           {
-            "Category": "Object",
+            "Category": "item",
             "Name": "EastScarp_Vintage_Ruby_Ring"
           }
         ],
         "SummerItemIndex": [
           {
-            "Category": "Object",
+            "Category": "item",
             "Name": "EastScarp_Vintage_Ruby_Ring"
           }
         ],
         "FallItemIndex": [
           {
-            "Category": "Object",
+            "Category": "item",
             "Name": "EastScarp_Vintage_Ruby_Ring"
           }
         ],
         "WinterItemIndex": [
           {
-            "Category": "Object",
+            "Category": "item",
             "Name": "EastScarp_Vintage_Ruby_Ring"
           }
         ],

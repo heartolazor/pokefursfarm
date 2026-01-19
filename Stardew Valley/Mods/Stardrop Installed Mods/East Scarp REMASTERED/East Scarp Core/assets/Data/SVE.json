@@ -1,5 +1,19 @@
 {
     "Changes": [
+        { // Expanded/Water Filled Gorge
+            "Action": "EditMap",
+            "Target": "Maps/Mountain",
+            "FromFile": "assets/Patches/MountainEastScarpeSVE.tmx",
+            "ToArea": {
+                "X": 86,
+                "Y": 35,
+                "Width": 9,
+                "Height": 6
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, megmom84.waterfilledgorge": true
+            }
+        },
         {
             "Action": "EditMap",
             "Target": "Maps/EastScarp_Crossing",

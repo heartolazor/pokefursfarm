@@ -75,10 +75,28 @@
                     ],
                     "Value": "Jasper 4 29 right",
                     "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Jasper 4 29 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Jasper 4 29 right",
+                    "Delimiter": "/"
                 }
             ]
         },
-        /* {
+        { //Not sure what was going on - I thought I fixed this ages ago, but I guess I didn't. Admittedly, I did fix it by moving Rasmodius, so probably a bad idea in the great cosmic scheme of things.
             "Action": "EditData",
             "Target": "Data/Festivals/summer11",
             "TextOperations": [
@@ -90,12 +108,24 @@
                     ],
                     "Value": "Jasper 12 39 down",
                     "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Jasper 12 39 down",
+                    "Delimiter": "/"
                 }
             ]
-        },*/
-        {
+        },
+        { //... and then cos I realized I moved him initially because he clashed with Morgan (and Wizard was on 11 39 at that point) Wish SVE wouldn't keep moving them!
             "Action": "EditData",
             "Target": "Data/Festivals/summer11",
+            "When": {
+                "HasSeenEvent": "5978924"
+            },
             "TextOperations": [
                 {
                     "Operation": "Append",
@@ -103,7 +133,16 @@
                         "Entries",
                         "Set-Up_additionalCharacters"
                     ],
-                    "Value": "Jasper 10 39 down",
+                    "Value": "Jasper 11 39 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Jasper 11 39 down",
                     "Delimiter": "/"
                 }
             ]
@@ -212,6 +251,15 @@
                         "Set-Up_additionalCharacters"
                     ],
                     "Value": "Jasper 115 16 up",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Jasper 47 16 3",
                     "Delimiter": "/"
                 }
             ]

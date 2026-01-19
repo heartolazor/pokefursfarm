@@ -2,8 +2,8 @@
     "config.section.name": "Recommended for Pokemon Trinkets",
     "config.PokemonXanEarlyTrinketSlot.name": "Enable early trinket slot?",
     "config.PokemonXanEarlyTrinketSlot.description": "Gives the player the trinket slot without needing combat mastery",
-    "config.PokemonXanEnablePacifist.name": "Enable Pacifist mode?",
-    "config.PokemonXanEnablePacifist.description": "Player does not need to attack Pokemon and Pokemon won't attack players",
+    //"config.PokemonXanEnablePacifist.name": "Enable Pacifist mode?",
+    //"config.PokemonXanEnablePacifist.description": "Player does not need to attack Pokemon and Pokemon won't attack players",
 
     "Pokemon.CategoryTag": "Pokémon",
     "Terrarium.CategoryTag": "Terrarium",
@@ -22,26 +22,27 @@
 
     "Q1_reaction_yes": "$q Q2_why/Q2_ok#Is that what they're calling it now? I kind of liked that we were called monsters.$1#$b#Well if you catch any, don't just leave them in your pocket.$0#$b#Donate them to that Insectarium over there.#$r Q2_why 0 Q2_reaction_why#Why? What do I get out of it?#$r Q2_ok 0 Q2_reaction_ok#Yeah sure, no problem.",
     "Q1_reaction_no": "$q Q2_why/Q2_ok#What really? Maybe it's called something different these days.$3#$b#Anyway, if you see any strange looking creatures, don't just hang on to them or sell them.#$b#Donate them to that Insectarium over there.#$r Q2_why 0 Q2_reaction_why#Why? What do I get out of it?#$r Q2_ok 0 Q2_reaction_ok#Yeah sure, no problem.",
-    "Q2_reaction_why": "Huh?! Aren't you the least bit curious?$3#$b#Anyway, you should start seeing Pokemon tomorrow.$0#$b#I'll be waiting here, you won't regret it.$0#$action AddMail All PokeGroup1_Include received",
-    "Q2_reaction_ok": "Great! You should start seeing Pokemon tomorrow.$1#$b#I'll be waiting here when you're finished.$1#$action AddMail All PokeGroup1_Include received",
+    "Q2_reaction_why": "Huh?! Aren't you the least bit curious?$3#$b#Anyway, you should start seeing Pokemon around the Valley.$0#$b#When you've donated enough Pokemon to Ivy you can purchase some contracts in her shop.$0#$b#Check your progress with me so I can see if you've got what it takes to be more than just a farmer.$1",
+    "Q2_reaction_ok": "Great! You should start seeing Pokemon around the Valley.$1#$b#When you've donated enough Pokemon to Ivy you can purchase some contracts in her shop.$0#$b#Check your progress with me so I can see if you've got what it takes to be more than just a farmer.$1",
 
-    "Spiritomb_fallback": "Oh, you're back..",
+    "Spiritomb_fallback": "Oh, you're back.. I hope those Pokemon aren't giving you too much trouble.",
+    "Spiritomb_fallback_1": "There are rumours more Pokemon are looking for a way into the Valley.",
+    "Spiritomb_fallback_2": "The Valley feels quieter today.",
+    "Spiritomb_fallback_3": "The winds whisper something new is on the horizon.",
+    "Spiritomb_fallback_4": ". . . . . . Oh, I feel asleep. It must have been a Gastly using Hypnosis.",
     "Menu_prompt": "What do you want?",
     "Menu_checkprogress": "Check progress",
     "Menu_safari": "Go to the Safari Zone!",
     "Menu_nevermind": "Nevermind",
 
-    "Q3_all": "You actually caught and donated them all?$1#$b#Well I guess I could reward you...$0#$b#Talk to me to go somewhere new and check Ivy's shop for Pokemon contracts.#$b#Oh! I almost forgot!$3#$b#You'll see some new Pokemon around, so check with me when you've donated some more.$1#$action AddMail All PokeGroup2_Include received",
-    "Q3_some": "You've donated some but it's not enough.$0#$b#If you donate them all something good might happen.$1",
-    "Q3_none": "You have to start donating Pokemon to the Insectarium first...$2",
+    "Q3_all": "You actually caught and donated this many Pokemon already?$1#$b#Well I guess I could reward you...$0#$b#Talk to me to go the Safari Zone! It's a nice place, peaceful..#$b#The Pokemon in there may also drop some items they picked up from the Valley.$0#$b#Oh! and if you want to see the Pokemon you donated in the Safari Zone, then purchase contracts from the Insectarium Gift Shop!$1#$action AddMail Current Spiritomb_1st_reward received",
+    "Q3_none": "You'll need to donate the following Pokemon.$0#$b#Pidgey, Geodude, Caterpie, Weedle, Rattata, Magikarp, Metapod, Kukuna and Zubat.$0",
 
-    "Q4_all": "You did it again! Well.. of course you did..$1#$b#And you want another reward right?$0#$b#Check Ivy's shop, nothing comes for free.$0#$b#...$2#$b#Oh you want more Pokemon right?$1#$b#Check tomorrow, you might find some around the usual places and some new places too.$0#$action AddMail All PokeGroup3_Include received",
-    "Q4_some": "You've donated some but it's not enough.$0#$b#You know the drill, keep going!$1",
-    "Q4_none": "You haven't donated any new Pokemon yet..$2",
+    "Q4_all": "You did it again! Well.. of course you did..$1#$b#And you want another reward right?$0#$b#I guess you can have this hat. I won it in a battle but I don't need it anymore.$0#$action AddItem (H)XanTrainerHat 1#$action AddMail Current Spiritomb_2nd_reward received",
+    "Q4_none": "You'll need to donate the following Pokemon.$0#$b#Butterfree, Beedrill, Ekans, Poliwag, Tentacool, Growlithe, Venonat, Paras, Diglett and Sandshrew.$0",
 
-    "Q5_all": "There's no stopping you is there?$1#$b#Well it has finally come to this. Our worlds are going to be more tangled than a Tangela!$1#$b#What does this mean? Well I guess you won't need to check your progress with me anymore, I think you've mastered it.$0#$b#Oh but don't worry, I'll still be here..$0",
-    "Q5_some": "You still have more to donate.$0#$b#Keep it up!$1",
-    "Q5_none": "You haven't donated any new Pokemon yet..$2",
+    "Q5_all": "There's no stopping you is there?$3#$b#Well it has finally come to this.. Our worlds are going to be more tangled than a Tangela!$1#$b#Ivy doesn't seem too concerned about it, so I am going to leave you both to it!$0#$b#Word has spread and Pokemon will start entering the Valley of their own accord.$0#$b#I think it's time to sit back and look for a fire Pokemon to make me some popcorn!$1#$action AddItem (BC)Xan_PokeTeleporter 1#$action AddMail Current Spiritomb_3rd_reward received",
+    "Q5_none": "You'll need to donate the following Pokemon.$0#$b#Spearow, Cubone, Rhyhorn, Oddish, Bellsprout, Koffing, Grimer, Shellder, Goldeen and Psyduck.$0",
 
     "SafariGrassItem.DisplayName": "Safari Grass",
     "SafariGrassItem.Description": "It's not very useful, but it is certainly stubborn.",
@@ -67,11 +68,11 @@
     "PechaSmoothie.Description": "The silky texture and sweet taste is almost like a dessert.",
 
     "PokeGroup1Contract.DisplayName": "Pokemon Spawn Contract",
-    "PokeGroup1Contract.Description": "Adds donated Pokemon to the Safari Zone.\nPokemon caught there may drop items.\nAlso grants access to new quest board.",
+    "PokeGroup1Contract.Description": "Adds donated Pokemon to the Safari Zone.\nPokemon caught there may drop items.\nAlso grants access to a new quest board.",
     "PokeGroup2Contract.DisplayName": "Pokemon Spawn Contract 2",
     "PokeGroup2Contract.Description": "Adds more donated Pokemon to the Safari Zone.\nAlso grants access to the house in the Safari Zone.",
     "PokeGroup3Contract.DisplayName": "Pokemon Spawn Contract 3",
-    "PokeGroup3Contract.Description": "Adds the recently donated Pokemon to a new area of the Safari Zone.\nBe wary there have been reports of electric mice!",
+    "PokeGroup3Contract.Description": "Adds the most recently donated Pokemon to a new area of the Safari Zone.\nThey might help you get in there.",
 
     "GastlyTrinket.DisplayName": "{0} Trinket",
     "GastlyTrinket.DisplayName.Arg.0": "Gastly",
@@ -213,19 +214,22 @@
     "Safari1HouseDay.DisplayName": "Haunted House (Day)",
     "Safari1HouseNight.DisplayName": "Haunted House (Night)",
     "TrinketHouse.DisplayName": "Trinket Seller House",
+
     "Colorizer.OmniGeodeReq": "You need 50 Omni Geodes",
     "BuffAnvil.InvalidCount": "You need 10 Gold Bars",
     "BuffAnvil.InvalidItem": "Trinket is already at max level",
     "BuffAnvil.DisplayName": "PokéTrinket Device",
     "BuffAnvil.Description": "Increases the level of Pokemon Trinkets",
 
-    "Group1.mail": "Pokemon should now begin spawning in the Valley.",
-    "Group1Safari.mail": "Pokemon should now begin spawning in the Safari Zone.",
-    "Group2.mail": "A new group of Pokemon should now begin to spawn in the Valley.",
-    "Group2Safari.mail": "That new group of Pokemon should now be able to spawn in the Safari Zone. Oh, and check the house there, I left the door open for you.",
-    "Group3.mail": "Another new group of Pokemon should now begin to spawn in the Valley.",
-    "Group3Safari.mail": "The newest group of Pokemon should now spawn in the Safari Zone.",
-    "SafariMap2.mail": "A new part of the Safari Map is accessible. Sorry about the caves, they are still under construction.",
+    "PokeTeleporter.DisplayName": "Spiritomb Relic",
+    "PokeTeleporter.Description": "A relic containing some of Spiritomb's power.\nIt can take you to other places.",
+    "XanTrainerHat.DisplayName": "Pokémon Trainer Hat",
+    "XanTrainerHat.Description": "A hat that Pokémon Trainers wear.\nI hope the owner doesn't miss it too much.",
+
+    "Group1Safari.mail": "Dear @,^I've finalized your first Safari contract.^The following Pokémon will now begin appearing in the Safari Zone:^Pidgey, Geodude, Zubat, Caterpie, Weedle, Metapod, Kakuna, Rattata and Magikarp.^ Keep up the good work!^ -Ivy[#]First Safari Contract",
+    "Group2Safari.mail": "Dear @,^Your second contract has been approved.^The following Pokémon will now appear in the Safari Zone:^Butterfree, Beedrill, Diglett, Ekans, Growlithe, Paras, Poliwag, Sandshrew, Tentacool and Venonat.^Oh also, the strange house in the Safari Zone had the door left open, I tried to shut it but it flew open again.^I think it's haunted.. Anyway, goodluck!^ -Ivy[#]Second Safari Contract",
+    "Group3Safari.mail": "Dear @,^Your third contract is now in effect.^The following Pokémon should now appear in a deeper part of the Safari Zone:^Spearow, Koffing, Oddish, Bellsprout, Grimer, Cubone, Rhyhorn, Shellder, Goldeen, Psyduck and Pikachu.^Nice work getting this far!^ -Ivy[#]Third Safari Contract",
+    "SafariMap2.mail": "Dear @,^I thought I'd let you know that some troublesome Bellsprout cleared a new path into the Safari Zone.^I was hoping to finish some things there but Ivy insisted on behalf of the other Pokémon.^The caves in there on the other hand have a barrier preventing you access.^I could use infiltrate to bypass the barrier, but with all the work I am doing it will have to wait.^Regards,^ -Spiritomb[#]Safari Zone Expansion",
 
     "Xan.Buff.Farming": "Farming",
     "Xan.Buff.Fishing": "Fishing",
@@ -343,7 +347,26 @@
     "Shellder.displayDescription": "A tough shelled Pokemon resembling a clam.\nIt uses its long tongue to feed but only when it is safe.",
     "Psyduck.displayName": "Psyduck",
     "ShinyPsyduck.displayName": "Shiny Psyduck",
-    "Psyduck.displayDescription": "A large duck-like Pokemon that loves being around bodies of water.\nIt may look lazy but it is cautious and quick to flee."
+    "Psyduck.displayDescription": "A large duck-like Pokemon that loves being around bodies of water.\nIt may look lazy but it is cautious and quick to flee.",
+
+    "Cryogonal.displayName": "Cryogonal",
+    "ShinyCryogonal.displayName": "Shiny Cryogonal",
+    "Cryogonal.displayDescription": "A floating ice type Pokemon that resembles a snowflake.\nIt chills the air into glistening ice crystals.",
+    "Snom.displayName": "Snom",
+    "ShinySnom.displayName": "Shiny Snom",
+    "Snom.displayDescription": "A tiny ice bug Pokemon that waddles through snow drifts.\nIt hides itself in the bushes during blizzards.",
+    "Cubchoo.displayName": "Cubchoo",
+    "ShinyCubchoo.displayName": "Shiny Cubchoo",
+    "Cubchoo.displayDescription": "A playful ice Pokemon that resembles a polar cub.\nIts nose is always wet and runny to humidify the cold temperatures.",
+    "Delibird.displayName": "Delibird",
+    "ShinyDelibird.displayName": "Shiny Delibird",
+    "Delibird.displayDescription": "A bird Pokemon wearing a red suit and spreading winter cheer.\nIt has been known to deliver surprise gifts.",
+    "Snover.displayName": "Snover",
+    "ShinySnover.displayName": "Shiny Snover",
+    "Snover.displayDescription": "A Pokemon that is reminiscent of a snow covered pine-tree.\nIt's safe to say they are not fond of axes.",
+    "Stantler.displayName": "Stantler",
+    "ShinyStantler.displayName": "Shiny Stantler",
+    "Stantler.displayDescription": "A graceful reindeer Pokemon with glowing lights on its antlers.\nThe only thing missing is a bright red nose."
     
 
 }

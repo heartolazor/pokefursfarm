@@ -149,6 +149,13 @@
 		},
 		{
 			"Name": "SpousePatioExit",
+			"Value": "128 16",
+			"When": {
+				"FarmType": "FrontierFarm"
+			}
+		},
+		{
+			"Name": "SpousePatioExit",
 			"Value": "{{CustomFarmSpousePatioExit}}",
 			"When": {
 				"CustomFarmSpousePatioExit |contains=none": false
@@ -516,6 +523,18 @@
 		},
 		//Rosa's 10 heart event
 		{
+			"Name": "MrGingerOrTristan",
+			"Value": "MisterGinger?"
+		},
+		{
+			"Name": "MrGingerOrTristan",
+			"Value": "TristanLK",
+			"When": {
+				"HasSeenEvent": "5295000",
+				"EnableTristan | contains=false": false
+			}
+		},
+		{
 			"Name": "57874015_PepperPup_1",
 			"Value": "pause 5"
 		},
@@ -762,7 +781,7 @@
 		},
 		{
 			"Name": "Juliet_MrGinger",
-			"Value": "warp MisterGinger? 43 13/faceDirection MisterGinger? 3",
+			"Value": "warp TristanLK? 43 13/faceDirection TristanLK? 3",
 			"When": {
 				"HasSeenEvent": "5295000"
 			}
@@ -956,10 +975,10 @@
 		},
 		{
 			"Name": "ESWeddingGuests",
-			"Value": "{{ESWeddingGuests}} TristanLK 28 67 0",
+			"Value": "{{ESWeddingGuests}} TristanLK? 28 67 0",
 			"When": {
 				"HasSeenEvent": "5295000",
-				"EnableTristan": true
+				"EnableTristan | contains=false": false
 			}
 		},
 		{
@@ -1039,7 +1058,7 @@
 		{
 			"LogName": "Loads Blank files (Dialogues and events)",
 			"Action": "Load",
-			"Target": "Characters/Dialogue/Aideen, Characters/Dialogue/MarriageDialogueAideen, Characters/Dialogue/Eloise, Strings/schedules/Eloise, Characters/Dialogue/Jacob, Strings/schedules/Jacob, Characters/Dialogue/Eyvinder, Characters/Dialogue/LittleGruff, Characters/Dialogue/Jasper, Characters/Dialogue/MarriageDialogueJasper, Characters/Dialogue/Jessie, Characters/Dialogue/Juliet, Characters/Dialogue/MarriageDialogueJuliet, Strings/schedules/Juliet, Characters/Dialogue/JosephineK, Characters/Dialogue/KatarynaLK, Characters/Dialogue/MarriageDialogueKatarynaLK, Strings/schedules/KatarynaLK, Characters/Dialogue/Leximonster, Characters/Dialogue/LumaJunimo, Characters/Dialogue/OliverK, Characters/Dialogue/Rosa, Strings/schedules/Rosa, Characters/Dialogue/ToriLK, Characters/Dialogue/VivienneLK, Characters/Dialogue/Beatrice, Strings/schedules/Beatrice, Data/Events/EastScarp_VillageInn_SpiritEve, Data/Events/EastScarp_JessieHouse, Data/Events/EastScarp_JojaBreakroom, Data/Events/EastScarp_JessieHouseBasement, Characters/Dialogue/KennedyLK, Characters/Dialogue/TristanLK, Characters/schedules/TristanLK, Characters/Dialogue/MarriageDialogueTristanLK, Characters/Dialogue/EdithHart, Characters/Dialogue/MichaelHart, Characters/Dialogue/EthanHart, Characters/Dialogue/StellaHart, Characters/schedules/EdithHart, Characters/schedules/MichaelHart, Characters/schedules/EthanHart, Characters/schedules/StellaHart, Characters/Dialogue/HappySlime, Characters/schedules/HappySlime, Strings/schedules/EdithHart, Strings/schedules/MichaelHart, Strings/schedules/StellaHart, Strings/schedules/EthanHart, Characters/Dialogue/DaleWaede, Characters/schedules/DaleWaede, Characters/schedules/Beatrice, Characters/schedules/ValkyrieDog, Characters/Dialogue/ValkyrieDog, Characters/Dialogue/CameronLK, Characters/Dialogue/KeanuAvis, Characters/schedules/KeanuAvis, Characters/schedules/Juliet, Characters/schedules/Gremlin",
+			"Target": "Characters/Dialogue/Aideen, Characters/Dialogue/MarriageDialogueAideen, Characters/Dialogue/Eloise, Strings/schedules/Eloise, Characters/Dialogue/Jacob, Strings/schedules/Jacob, Characters/Dialogue/Eyvinder, Characters/Dialogue/LittleGruff, Characters/Dialogue/Jasper, Characters/Dialogue/MarriageDialogueJasper, Characters/Dialogue/Jessie, Characters/Dialogue/Juliet, Characters/Dialogue/MarriageDialogueJuliet, Strings/schedules/Juliet, Characters/Dialogue/JosephineK, Characters/Dialogue/KatarynaLK, Characters/Dialogue/MarriageDialogueKatarynaLK, Strings/schedules/KatarynaLK, Characters/Dialogue/Leximonster, Characters/Dialogue/LumaJunimo, Characters/Dialogue/OliverK, Characters/Dialogue/Rosa, Strings/schedules/Rosa, Characters/Dialogue/ToriLK, Characters/Dialogue/VivienneLK, Characters/Dialogue/Beatrice, Strings/schedules/Beatrice, Data/Events/EastScarp_VillageInn_SpiritEve, Data/Events/EastScarp_JessieHouse, Data/Events/EastScarp_JojaBreakroom, Data/Events/EastScarp_JessieHouseBasement, Characters/Dialogue/KennedyLK, Characters/Dialogue/TristanLK, Characters/schedules/TristanLK, Characters/Dialogue/MarriageDialogueTristanLK, Characters/Dialogue/EdithHart, Characters/Dialogue/MichaelHart, Characters/Dialogue/EthanHart, Characters/Dialogue/StellaHart, Characters/schedules/EdithHart, Characters/schedules/MichaelHart, Characters/schedules/EthanHart, Characters/schedules/StellaHart, Characters/Dialogue/HappySlime, Characters/schedules/HappySlime, Strings/schedules/EdithHart, Strings/schedules/MichaelHart, Strings/schedules/StellaHart, Strings/schedules/EthanHart, Characters/Dialogue/DaleWaede, Characters/schedules/DaleWaede, Characters/schedules/Beatrice, Characters/schedules/ValkyrieDog, Characters/Dialogue/ValkyrieDog, Characters/Dialogue/CameronLK, Characters/Dialogue/KeanuAvis, Characters/schedules/KeanuAvis, Characters/schedules/Juliet, Characters/schedules/Gremlin, Characters/Dialogue/MarriageDialogueToriLK",
 			"FromFile": "assets/blank.json"
 		},
 		{
@@ -1668,6 +1687,7 @@
 					"ID": "mail.Lemurkat.EastScarp_RemoveAideenMateoDating",
 					"Trigger": "DayStarted",
 					"Condition": "PLAYER_HAS_MAIL Current RivalHearts_AideenMateo Received",
+					"MarkActionApplied": false,
 					"Actions": [
 						"RemoveMail Current RivalHearts_AideenMateo Received",
 						"MarkEventSeen Current 57871054 false"
@@ -1736,14 +1756,15 @@
 			"Target": "Data/TriggerActions",
 			"When": {
 				"HasMod": "LemurKat.Mr.Ginger.NPC",
-				"EnableTristan |contains=true": false
+				"EnableTristan |contains=true, True": false
 			},
 			"Entries": {
-				"EastScarp.MisterGingerVisible": {
+				"EastScarp.MisterGingerVisible2": {
 					"ID": "mail.EastScarp.MisterGingerVisible",
 					"Trigger": "DayEnding",
 					"Condition": "PLAYER_HAS_SEEN_EVENT Host 5295000",
-					"Action": "SetNpcVisible MisterGinger"
+					"Action": "SetNpcVisible MisterGinger",
+					"MarkActionApplied": false,
 				}
 			}
 		},
@@ -1755,7 +1776,7 @@
 				"50706131/e 5295000/NPCVisible MisterGinger": "none/64 15/MisterGinger 65 16 2 farmer 64 16 2/skippable/pause 500/animate MisterGinger false true 250 24 25 26 27 23 29 30 31 30/pause 1500/emote farmer 40/pause 1500/faceDirection MisterGinger 3/stopAnimation MisterGinger/pause 500/emote MisterGinger 8/pause 500/speak MisterGinger \"{{i18n:50706131.1}}\"/pause 400/quickQuestion {{i18n:50706131.2}}(break)jump MisterGinger 3\\speak MisterGinger \"{{i18n:50706131.3}}\"(break)speak MisterGinger \"{{i18n:50706131.4}}\"(break)speak MisterGinger \"{{i18n:50706131.5}}\"/pause 500/speak MisterGinger \"{{i18n:50706131.6}}\"/quickQuestion {{i18n:50706131.7}}(break)speak MisterGinger \"{{i18n:50706131.8}}\"(break)speak MisterGinger \"{{i18n:50706131.9}}\"(break)speak MisterGinger \"{{i18n:50706131.10}}\"/pause 500/speak MisterGinger \"{{i18n:50706131.11}}\"/pause 500/emote MisterGinger 20/emote farmer 32/pause 1000/end"
 			},
 			"When": {
-				"EnableTristan": false,
+				"EnableTristan": "false",
 				"HasMod": "LemurKat.Mr.Ginger.NPC",
 				"HasMod |contains=Lemurkat.Tristan.CP": false
 			}

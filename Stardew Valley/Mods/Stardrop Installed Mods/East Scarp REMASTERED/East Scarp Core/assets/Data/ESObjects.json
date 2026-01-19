@@ -56,7 +56,9 @@
                         "flower_item",
                         "season_fall",
                         "season_summer",
-                        "season_winter"
+                        "season_winter",
+                        "chrysanthemum_item",
+                        "edible_flower_item"
                     ],
                     "CustomFields": {}
                 },
@@ -87,7 +89,7 @@
                     "Price": 300,
                     "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
                     "SpriteIndex": 2,
-                    "Edibility": 5,
+                    "Edibility": -300,
                     "IsDrink": false,
                     "Buffs": null,
                     "GeodeDropsDefaultItems": false,
@@ -131,7 +133,7 @@
                     "Price": 200,
                     "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
                     "SpriteIndex": 4,
-                    "Edibility": 5,
+                    "Edibility": -300,
                     "IsDrink": false,
                     "Buffs": null,
                     "GeodeDropsDefaultItems": false,
@@ -268,7 +270,8 @@
                     "ContextTags": [
                         "color_red",
                         "fish_red_herring",
-                        "fish_ocean"
+                        "fish_ocean",
+                        "herring_item"
                     ],
                     "CustomFields": {}
                 },
@@ -287,6 +290,7 @@
                         "color_gold",
                         "fish_golden_trout",
                         "fish_lake",
+                        "trout_item"
                     ],
                     "CustomFields": {}
                 },
@@ -305,6 +309,7 @@
                         "color_red",
                         "fish_kokanee_salmon",
                         "fish_lake",
+                        "salmon_item"
                     ],
                     "CustomFields": {}
                 },
@@ -323,6 +328,7 @@
                         "color_gold",
                         "fish_king_carp",
                         "fish_lake",
+                        "carp_item"
                     ],
                     "CustomFields": {}
                 },
@@ -758,7 +764,7 @@
                     "Description": "{{i18n:object.PuckerWort.description}}",
                     "Type": "Vegetable",
                     "Category": -75,
-                    "Price": 100,
+                    "Price": 50,
                     "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
                     "SpriteIndex": 36,
                     "Edibility": 10,
@@ -823,7 +829,8 @@
                     "ExcludeFromRandomSale": true,
                     "ContextTags": [
                         "category_fruit",
-                        "category_ingredients"
+                        "category_ingredients",
+                        "melon_item"
                     ],
                     "CustomFields": null
                 },
@@ -874,7 +881,8 @@
                     "ExcludeFromRandomSale": true,
                     "ContextTags": [
                         "category_vegetable",
-                        "category_ingredients"
+                        "category_ingredients",
+                        "root_vegetable_item"
                     ],
                     "CustomFields": null
                 },
@@ -925,7 +933,8 @@
                     "ExcludeFromRandomSale": true,
                     "ContextTags": [
                         "category_fruit",
-                        "color_blue"
+                        "color_blue",
+                        "berry_item"
                     ],
                     "CustomFields": null
                 },
@@ -1407,7 +1416,9 @@
                     "ExcludeFromShippingCollection": true,
                     "ContextTags": [
                         "color_black",
-                        "cheese_item"
+                        "cheese_item",
+                        "goat_cheese_item",
+                        "soft_cheese_item"
                     ],
                     "CustomFields": {}
                 },
@@ -1435,8 +1446,8 @@
                     "Name": "EastScarp_Void_Cake",
                     "DisplayName": "{{i18n:object.voidcake.name}}",
                     "Description": "{{i18n:object.voidcake.description}}",
-                    "Type": "Cooking",
-                    "Category": -7,
+                    "Type": "Basic",
+                    "Category": 0,
                     "IsDrink": false,
                     "Price": 220,
                     "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
@@ -1477,8 +1488,8 @@
                     "Name": "EastScarp_Void_CheeseCake",
                     "DisplayName": "{{i18n:object.voidcheesecake.name}}",
                     "Description": "{{i18n:object.voidcheesecake.description}}",
-                    "Type": "Cooking",
-                    "Category": -7,
+                    "Type": "Basic",
+                    "Category": 0,
                     "IsDrink": false,
                     "Buffs": [
                         {
@@ -1520,8 +1531,8 @@
                     "Name": "EastScarp_Void_SalmonCake",
                     "DisplayName": "{{i18n:object.voidsalmoncake.name}}",
                     "Description": "{{i18n:object.voidsalmoncake.description}}",
-                    "Type": "Cooking",
-                    "Category": -7,
+                    "Type": "Basic",
+                    "Category": 0,
                     "IsDrink": false,
                     "Buffs": [
                         {
@@ -1609,6 +1620,7 @@
                         "color_red",
                         "alcohol_item",
                         "drink_item",
+                        "wine_item"
                     ],
                     "CustomFields": {}
                 },
@@ -1653,8 +1665,8 @@
                     "Name": "Lemurkat.EastScarp_FrostBerryTea",
                     "DisplayName": "{{i18n:object.FrostBerryTea}}",
                     "Description": "{{i18n:object.FrostBerryTea.Desc}}",
-                    "Type": "Cooking",
-                    "Category": -7,
+                    "Type": "Basic",
+                    "Category": -26,
                     "Price": 80,
                     "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
                     "SpriteIndex": 90,
@@ -1751,6 +1763,58 @@
                         "color_brown"
                     ]
                 },
+                "Lemurkat.EastScarp_GiggleFitSeeds": {
+                    "Name": "Lemurkat.EastScarp_GiggleFitSeeds",
+                    "DisplayName": "{{i18n:object.GiggleFitSeeds}}",
+                    "Description": "{{i18n:object.GiggleFitSeeds.Desc}}",
+                    "Type": "Seed",
+                    "Category": -74,
+                    "Price": 80,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 82,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_seeds",
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_GiggleFit": {
+                    "Name": "Lemurkat.EastScarp_GiggleFit",
+                    "DisplayName": "{{i18n:object.GiggleFit}}",
+                    "Description": "{{i18n:object.GiggleFit.Desc}}",
+                    "Type": "Vegetable",
+                    "Category": -75,
+                    "Price": 175,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 83,
+                    "Edibility": 10,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_vegetable",
+                        "category_ingredients",
+                        "color_white",
+                        "mandrake_item",
+                        "root_vegetable_item"
+                    ],
+                    "CustomFields": null
+                },
             }
         },
         {
@@ -1834,7 +1898,7 @@
                     "Description": "{{i18n:object.ButterTuff.Desc}}",
                     "Type": "Vegetable",
                     "Category": -75,
-                    "Price": 50,
+                    "Price": 75,
                     "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
                     "SpriteIndex": 65,
                     "Edibility": 3,
@@ -1848,9 +1912,10 @@
                     "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
                     "ExcludeFromRandomSale": true,
                     "ContextTags": [
-                        "category_vegetable",
                         "category_ingredients",
                         "color_Yellow",
+                        "broccoli_item",
+                        "cauliflower_item"
                     ],
                     "CustomFields": null
                 },
@@ -1934,7 +1999,7 @@
                     "Description": "{{i18n:object.Paneeki.Desc}}",
                     "Type": "Vegetable",
                     "Category": -75,
-                    "Price": 230,
+                    "Price": 170,
                     "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
                     "SpriteIndex": 69,
                     "Edibility": 18,
@@ -1950,7 +2015,8 @@
                     "ContextTags": [
                         "category_vegetable",
                         "category_ingredients",
-                        "color_red"
+                        "color_red",
+                        "root_vegetable_item"
                     ],
                     "CustomFields": null
                 },
@@ -2134,7 +2200,7 @@
                     "Description": "{{i18n:object.DeepCaveFruit.Desc}}",
                     "Type": "Fruit",
                     "Category": -79,
-                    "Price": 275,
+                    "Price": 175,
                     "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
                     "SpriteIndex": 77,
                     "Edibility": 3,
@@ -2185,7 +2251,7 @@
                     "Description": "{{i18n:object.CaveFlower.Desc}}",
                     "Type": "Flower",
                     "Category": -80,
-                    "Price": 75,
+                    "Price": 150,
                     "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
                     "SpriteIndex": 79,
                     "Edibility": 1,
@@ -2201,6 +2267,7 @@
                     "ContextTags": [
                         "color_orange",
                         "category_flower",
+                        "edible_flower_item"
                     ],
                     "CustomFields": null
                 },
@@ -2251,56 +2318,7 @@
                     "ContextTags": [
                         "color_orange",
                         "category_vegetable",
-                    ],
-                    "CustomFields": null
-                },
-                "Lemurkat.EastScarp_GiggleFitSeeds": {
-                    "Name": "Lemurkat.EastScarp_GiggleFitSeeds",
-                    "DisplayName": "{{i18n:object.GiggleFitSeeds}}",
-                    "Description": "{{i18n:object.GiggleFitSeeds.Desc}}",
-                    "Type": "Seed",
-                    "Category": -74,
-                    "Price": 80,
-                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
-                    "SpriteIndex": 82,
-                    "Edibility": -300,
-                    "IsDrink": false,
-                    "CanBeGivenAsGift": true,
-                    "CanBeTrashed": true,
-                    "GeodeDropsDefaultItems": false,
-                    "GeodeDrops": null,
-                    "ArtifactSpotChances": null,
-                    "ExcludeFromFishingCollection": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ExcludeFromRandomSale": true,
-                    "ContextTags": [
-                        "category_seeds",
-                    ],
-                    "CustomFields": null
-                },
-                "Lemurkat.EastScarp_GiggleFit": {
-                    "Name": "Lemurkat.EastScarp_GiggleFit",
-                    "DisplayName": "{{i18n:object.GiggleFit}}",
-                    "Description": "{{i18n:object.GiggleFit.Desc}}",
-                    "Type": "Vegetable",
-                    "Category": -75,
-                    "Price": 175,
-                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
-                    "SpriteIndex": 83,
-                    "Edibility": 10,
-                    "IsDrink": false,
-                    "CanBeGivenAsGift": true,
-                    "CanBeTrashed": true,
-                    "GeodeDropsDefaultItems": false,
-                    "GeodeDrops": null,
-                    "ArtifactSpotChances": null,
-                    "ExcludeFromFishingCollection": true,
-                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
-                    "ExcludeFromRandomSale": true,
-                    "ContextTags": [
-                        "category_vegetable",
-                        "category_ingredients",
-                        "color_white",
+                        "chili_item"
                     ],
                     "CustomFields": null
                 },
@@ -2352,6 +2370,7 @@
                         "category_ingredients",
                         "category_Lemurkat.EastScarp_extractproduct",
                         "color_brown",
+                        "cocoa_fruit_item"
                     ],
                     "CustomFields": null
                 },
@@ -2768,7 +2787,7 @@
                     "Category": -7,
                     "Price": 745, //Giggle Fit Tuber 50 Truffle 625 Seaweed 20
                     "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
-                    "SpriteIndex": 97,
+                    "SpriteIndex": 98,
                     "Edibility": 5,
                     "IsDrink": true,
                     "CanBeGivenAsGift": true,
@@ -2797,7 +2816,7 @@
                         "category_cooking",
                     ]
                 }, //Mashed Giggles
-                "{{ModID}}_MashedGiggles": {
+                /* "{{ModID}}_MashedGiggles": {
                     "Name": "{{ModID}}_MashedGiggles",
                     "DisplayName": "{{i18n:object.MashedGiggles.name}}",
                     "Description": "{{i18n:object.MashedGiggles.Desc}}",
@@ -2805,7 +2824,7 @@
                     "Category": -7,
                     "Price": 260, //Giggle Fit Tuber 50 Kale 110 Oil 50
                     "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
-                    "SpriteIndex": 98,
+                    "SpriteIndex": 99,
                     "Edibility": 10,
                     "IsDrink": false,
                     "CanBeGivenAsGift": true,
@@ -2819,7 +2838,7 @@
                     "ContextTags": [
                         "category_cooking",
                     ]
-                },
+                },*/
             }
         },
         {
@@ -2868,13 +2887,13 @@
             "Entries": {
                 "Lemurkat.EastScarp_ZinfazuIcecream": "Lemurkat.EastScarp_ZinfazuFruit 1 EastScarp_FrostBerry 5/1 10/Lemurkat.EastScarp_ZinfazuIcecream/f JosephineK 7/{{i18n:object.ZinfazuIcecream.name}}",
                 "Lemurkat.EastScarp_ButtonFruitCake": "Lemurkat.EastScarp_ButtonFruit 1 246 1 245 1 -6 1/1 10/Lemurkat.EastScarp_ButtonFruitCake/f EdithHart 5/{{i18n:object.ButtonFruitCake.name}}",
-                "Lemurkat.EastScarp_FairyCapAmbrosia": "Lemurkat.EastScarp_FairyCap 2 -6 1 245 1/1 10/Lemurkat.EastScarp_FairyCapAmbrosia/f Jade 7/{{i18n:object.FairyCapAmbrosia.name}}",
+                "Lemurkat.EastScarp_FairyCapAmbrosia": "Lemurkat.EastScarp_FairyCap 2 -6 1 245 1/1 10/Lemurkat.EastScarp_FairyCapAmbrosia/f JadeMalic 7/{{i18n:object.FairyCapAmbrosia.name}}",
                 "Lemurkat.EastScarp_YohoHash": "Lemurkat.EastScarp_YohoFruit 2 192 1 247 1/1 10/Lemurkat.EastScarp_YohoHash/f CorwinLK 7/{{i18n:object.YohoHash.name}}",
                 "Lemurkat.EastScarp_HotChoco": "Lemurkat.EastScarp_ChocoFruit 1 -6 1 245 2/1 10/Lemurkat.EastScarp_HotChoco/f MichaelHart 5/{{i18n:object.HotChoco.name}}",
                 "Lemurkat.EastScarp_ChocoBun": "Lemurkat.EastScarp_ChocoFruit 1 246 1 245 1 -6 1/1 10/Lemurkat.EastScarp_ChocoBun/f Juliet 7/{{i18n:object.ChocoBun.name}}",
                 "Lemurkat.EastScarp_GiggleSmoothie": "Lemurkat.EastScarp_GiggleFit 1 430 1 152 1/1 1/Lemurkat.EastScarp_GiggleSmoothie/f Jasper 3/{{i18n:object.GiggleSmoothie.name}}",
                 "Lemurkat.EastScarp_SoothingCure": "Lemurkat.EastScarp_YohoFruit 2 Lemurkat.EastScarp_ButtonFruit 1 245 1/1 10/Lemurkat.EastScarp_SoothingCure//{{i18n:object.SoothingCure.name}}",
-                //"Lemurkat.EastScarp_MashedGiggles": "Lemurkat.EastScarp_GiggleFit 1 250 1 247 1/1 1/Lemurkat.EastScarp_MashedGiggles/f Jasper 7/{{i18n:object.MashedGiggles.name}}",
+                //"Lemurkat.EastScarp_MashedGiggles": "Lemurkat.EastScarp_GiggleFit 1 250 1 247 1/1 1/Lemurkat.EastScarp_MashedGiggles//{{i18n:object.MashedGiggles.name}}",
             }
         },
         {
@@ -3373,8 +3392,8 @@
                     "OutputItem": [
                         {
                             "CustomData": null,
-                            "Id": "(0)306",
-                            "ItemId": "(0)306",
+                            "Id": "(O)306",
+                            "ItemId": "(O)306",
                             "MinStack": 2,
                             "MaxStack": 3,
                             "Quality": 2,

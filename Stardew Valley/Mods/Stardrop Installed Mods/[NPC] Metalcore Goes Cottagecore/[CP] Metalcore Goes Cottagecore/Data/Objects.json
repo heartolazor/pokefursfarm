@@ -262,7 +262,8 @@
                     "ContextTags": [
                         "color_dark_red",
                         "dye_strong",
-                        "coffee_item"
+                        "coffee_item",
+                        "trash_bear_ignore"
                     ]
                 },
                 "Squeaks.MGC.CP_DriedElderLilyPetals": {
@@ -293,6 +294,114 @@
                     "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
                     "ContextTags": [
                         "color_dark_red"
+                    ]
+                },
+                "Squeaks.MGC.CP_HeirloomBouquet": {
+                    "Name": "Squeak.MGC.CP_HeirloomBouquet",
+                    "DisplayName": "{{i18n:Objects.HeirloomBouquet.Name}}",
+                    "Description": "{{i18n:Objects.HeirloomBouquet.Description}}",
+                    "Type": "Basic",
+                    "Category": 0,
+                    "Price": 100,
+                    "Texture": "Mods/Squeaks.MGC.CP/Objects",
+                    "SpriteIndex": 11,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                        "color_orange"
+                    ],
+                    "CustomFields": null
+                },
+                "Squeaks.MGC.CP_StarMiasmaCookies": {
+                    "Name": "Squeaks.MGC.CP_StarMiasmaCookies",
+                    "DisplayName": "{{i18n:Objects.StarMiasmaCookies.Name}}",
+                    "Description": "{{i18n:Objects.StarMiasmaCookies.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 700,
+                    "Texture": "Mods/Squeaks.MGC.CP/Objects",
+                    "SpriteIndex": 12,
+                    "Edibility": 15,
+                    "IsDrink": false,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 3.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.0,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
+                    "ContextTags": [
+                        "trash_bear_ignore"
+                    ]
+                },
+                //Seasalt Coffee
+                "Squeaks.MGC.CP_VoidMelonSoda": {
+                    "Name": "Squeaks.MGC.CP_VoidMelonSoda",
+                    "DisplayName": "{{i18n:Objects.VoidMelonSoda.Name}}",
+                    "Description": "{{i18n:Objects.VoidMelonSoda.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 125,
+                    "Texture": "Mods/Squeaks.MGC.CP/Objects",
+                    "SpriteIndex": 15,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 960,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 1.0,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
+                    "ContextTags": [
+                        "color_purple",
+                        "drink_item",
+                        "trash_bear_ignore"
                     ]
                 }
             }

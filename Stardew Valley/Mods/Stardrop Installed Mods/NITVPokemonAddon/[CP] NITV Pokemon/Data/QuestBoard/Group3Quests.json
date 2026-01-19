@@ -140,6 +140,122 @@
               }
             }
           ]
+        },
+        "NITVQuest.Berry1ThreeDays": {
+        "Name": "[PkmnDifficulty1]",
+        "Requester": "Spiritomb",
+        "OrderType": "NITVPokemonSO",
+        "Duration": "ThreeDays",
+        "Repeatable": true,
+        "ItemToRemoveOnEnd": null,
+        "MailToRemoveOnEnd": null,
+        "Text": "[PkmnBerryCollectText]",
+        "RandomizedElements": [
+            {
+              "Name": "PkmnBerry",
+              "Values": [
+                { "Value": "Text|Pecha Berry|Tags|id_(o)PechaFruitItem" }
+              ]
+            },
+            {
+              "Name": "Count",
+              "Values": [
+                { "Value": "4" }, { "Value": "5" }, { "Value": "6" }
+              ]
+            }
+          ],
+          "Objectives": [
+            {
+              "Type": "Collect",
+              "Text": "[PkmnBerryCollectObj0Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "AcceptedContextTags": "{PkmnBerry:Tags}"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[PkmnBerryCollectObj1Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "DropBox": "PokePC",
+                "DropBoxGameLocation": "NatValleyOutsideInsec",
+                "DropBoxIndicatorLocation": "10 16",
+                "AcceptedContextTags": "{PkmnBerry:Tags}"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": { "Amount": "8000" }
+            },
+            {
+              "Type": "Friendship",
+              "Data": {
+                  "Amount": "60",
+                  "TargetName": "Spiritomb"
+              }
+            }
+          ]
+        },
+        "NITVQuest.Berry1Weekly": {
+          "Name": "[PkmnDifficulty2]",
+          "Requester": "Spiritomb",
+          "OrderType": "NITVPokemonSO",
+          "Duration": "Week",
+          "Repeatable": true,
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "Text": "[PkmnBerryCollectText]",
+          "RandomizedElements": [
+            {
+              "Name": "PkmnBerry",
+              "Values": [
+                { "Value": "Text|Pecha Berry|Tags|id_(o)PechaFruitItem" }
+              ]
+            },
+            {
+              "Name": "Count",
+              "Values": [
+                { "Value": "10" }, { "Value": "12" }, { "Value": "14" }
+              ]
+            }
+          ],
+          "Objectives": [
+            {
+              "Type": "Collect",
+              "Text": "[PkmnBerryCollectObj0Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "AcceptedContextTags": "{PkmnBerry:Tags}"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[PkmnBerryCollectObj1Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "DropBox": "PokePC",
+                "DropBoxGameLocation": "NatValleyOutsideInsec",
+                "DropBoxIndicatorLocation": "10 16",
+                "AcceptedContextTags": "{PkmnBerry:Tags}"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": { "Amount": "15000" }
+            },
+            {
+              "Type": "Friendship",
+              "Data": {
+                  "Amount": "80",
+                  "TargetName": "Spiritomb"
+              }
+            }
+          ]
         }
       }
     }

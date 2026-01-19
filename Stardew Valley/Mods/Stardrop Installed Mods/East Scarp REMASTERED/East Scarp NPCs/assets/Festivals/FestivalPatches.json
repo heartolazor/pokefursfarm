@@ -133,6 +133,24 @@
             "PatchMode": "Replace"
         },
         {
+            "LogName": "Spirits Eve",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween",
+            "FromFile": "assets/Maps/Festivals/ES_RSVHalloween.tmx",
+            "When": {
+                "HasMod |contains=Rafseazz.RSVCP": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "ToArea": {
+                "X": 16,
+                "Y": 56,
+                "Width": 5,
+                "Height": 2
+            },
+            "PatchMode": "Overlay"
+        },
+        
+        {
             "LogName": "Ice Festival Snow Slime",
             "Action": "EditMap",
             "Target": "Maps/Forest-IceFestival",
@@ -148,7 +166,7 @@
             },
             "PatchMode": "Overlay"
         },
-                {
+        {
             "LogName": "Ice Festival Coffee Cart",
             "Action": "EditMap",
             "Target": "Maps/Forest-IceFestival",
@@ -196,13 +214,13 @@
             },
             "PatchMode": "Replace"
         },
-                {
+        {
             "LogName": "Solstice",
             "Action": "EditMap",
             "Target": "Maps/Town-Christmas, Maps/Town-Christmas2",
             "FromFile": "assets/Maps/Festivals/ES_WinterStar_Solstice.tmx",
             "When": {
-                "HasMod":"Airyn.CPSolsticeWinterStar"
+                "HasMod": "Airyn.CPSolsticeWinterStar"
             },
             "ToArea": {
                 "X": 9,
@@ -212,7 +230,7 @@
             },
             "PatchMode": "Overlay"
         },
-         {
+        {
             "LogName": "WinterStar SVE",
             "Action": "EditMap",
             "Target": "Maps/Town-Christmas",

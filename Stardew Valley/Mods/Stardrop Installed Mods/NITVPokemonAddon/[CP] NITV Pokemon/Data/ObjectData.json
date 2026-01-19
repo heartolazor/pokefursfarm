@@ -3,7 +3,7 @@
 
     {
       "Action": "Load",
-      "Target": "Mods/Xan.PokemonCreaturePack/MothIcon",
+      "Target": "Mods/Xan.PokemonCreaturePack/MothIcon, Mods/Xan.PokemonCreaturePack/TrainerHat",
       "FromFile": "Assets/{{TargetWithoutPath}}.png"
     },
 
@@ -261,6 +261,31 @@
         "Cheri Smoothie": "CheriFruitItem 5 184 1 245 1/1 10/CheriSmoothie/default/",
         "Pecha Smoothie": "PechaFruitItem 5/1 10/PechaSmoothie/default/"
       }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "Xan_PokeTeleporter": {
+          "Name": "PokeTeleporter",
+          "DisplayName": "{{i18n:PokeTeleporter.DisplayName}}",
+          "Description": "{{i18n:PokeTeleporter.Description}}",
+          "Texture": "Mods/Xan.PokemonCreaturePack/SafariTeleporter",
+          "IsLamp": true,
+          "CustomFields": {
+            "Xan.SafariDestination": "NITVPokemon_SafariZone|52|32|2"
+          }
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Hats",
+      "Entries": {
+          "XanTrainerHat": "XanTrainerHat/{{i18n: XanTrainerHat.Description}}/false/true/none/{{i18n: XanTrainerHat.DisplayName}}/0/Mods\\Xan.PokemonCreaturePack\\TrainerHat"
+        }
     }
 
   ]

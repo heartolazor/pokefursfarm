@@ -1,0 +1,33 @@
+{
+	"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)15", "OutputRules" ],
+			"Entries": {
+				"HorseshoeCrabEgg": {
+					"Id": "HorseshoeCrabEgg",
+					"Triggers": 
+						[
+							{
+								"RequiredItemId": "HorseshoeCrabEgg",
+								"RequiredCount": 1,
+							}
+						],
+					"UseFirstValidOutput": true,
+					"OutputItem":
+						[
+							{
+								"ItemId": "HorseshoeCrabAgedEgg",
+								"CopyQuality":true, 
+								"MinStack": 1,
+								"MaxStack": 1,
+							}
+						],
+					"MinutesUntilReady": 4000,
+				}
+			}
+		}
+    ]
+}

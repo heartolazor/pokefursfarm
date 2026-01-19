@@ -39,7 +39,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters_y2"
                     ],
-                    "Value": "Beatrice 36 72 3/Eloise 13 61 2/Jacob 14 62 3/ToriLK 13 63 0/Juliet 33 61 3/Jessie 30 61 1/Aideen 24 74 2/MichaelHart 15 96 2/EthanHart 16 96 2/EdithHart 27 68 0/DaleWaede 21 58 3/ValkyrieDog 22 58 1/KeanuAvis 20 57 2",
+                    "Value": "Beatrice 36 72 3/Eloise 13 61 2/Jacob 14 62 3/ToriLK 13 63 0/Juliet 33 61 3/Jessie 30 61 1/Aideen 24 74 2/MichaelHart 15 96 2/EthanHart 16 96 2/EdithHart 27 68 0/DaleWaede 21 58 1/ValkyrieDog 22 59 1/KeanuAvis 20 57 2",
                     "Delimiter": "/"
                 },
                 {
@@ -51,7 +51,7 @@
                     "Value": "Beatrice 35 72 3/Eloise 34 61 2/Jacob 33 60 2/Juliet 38 70 3/Jessie 17 57 2/Aideen 24 74 2",
                     "Delimiter": "/"
                 },
-                       {
+                {
                     "Operation": "Append",
                     "Target": [
                         "Fields",
@@ -63,7 +63,6 @@
                 },
             ]
         },
-
         {
             "LogName": "AddsCorwin to the Egg Festival",
             "Action": "EditData",
@@ -106,7 +105,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters"
                     ],
-                    "Value": "JosephineK 31 68 0",
+                    "Value": "JosephineK 38 69 3",
                     "Delimiter": "/"
                 },
                 {
@@ -340,7 +339,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters"
                     ],
-                    "Value": "Aideen 5 31 3/Beatrice 4 22 1/Eloise 14 30 3/Jacob 3 30 1/Rosa 30 41 2/ToriLK 25 41 3/Juliet 31 41 2/Jessie 25 27 3",
+                    "Value": "Aideen 5 31 3/Beatrice 4 22 1/Eloise 14 30 3/Jacob 3 30 1/Rosa 30 41 2/ToriLK 25 41 3/Juliet 31 41 2/Jessie 25 27 3/JadeMalic 10 42 2/CaptainRod 55 31 2/EdithHart 41 43 2/MichaelHart 42 43 2/EthanHart 70 15 2/KeanuAvis 51 36 1/DaleWaede 54 37 0/ValkyrieDog 55 37 3",
                     "Delimiter": "/"
                 },
                 {
@@ -349,7 +348,7 @@
                         "Entries",
                         "MainEvent_additionalCharacters"
                     ],
-                    "Value": "Aideen 19 32 0/Eloise 17 32 0/Jacob 18 32 0/Rosa 23 32 3/Juliet 22 32 0/Jessie 19 30 0",
+                    "Value": "Aideen 19 32 0/Eloise 17 32 0/Jacob 18 32 0/Rosa 23 32 3/Juliet 22 32 0/Jessie 19 30 0/JadeMalic 15 31 0/DaleWaede 54 37 0/ValkyrieDog 55 37 3/ToriLK 16 32 0/",
                     "Delimiter": "/"
                 },
                 {
@@ -358,7 +357,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters_y2"
                     ],
-                    "Value": "Aideen 5 32 3/Beatrice 3 22 1/Eloise 20 22 3/Jacob 4 25 1/Rosa 30 41 2/ToriLK 53 46 3/Juliet 31 41 2/Jessie 25 25 3",
+                    "Value": "Aideen 5 32 3/Beatrice 3 22 1/Eloise 20 22 3/Jacob 4 25 1/Rosa 30 41 2/ToriLK 53 46 3/Juliet 31 41 2/Jessie 25 25 3/CaptainRod 55 31 2/JadeMalic 62 44 1/EdithHart 15 20 2/MichaelHart 14 20 2/EthanHart 43 42 2/KeanuAvis 51 36 1/DaleWaede 54 37 0/ValkyrieDog 55 37 3",
                     "Delimiter": "/"
                 },
                 {
@@ -367,9 +366,29 @@
                         "Entries",
                         "MainEvent_additionalCharacters_y2"
                     ],
-                    "Value": "Aideen 19 32 0/Eloise 17 34 0/Jacob 18 34 0/Rosa 23 32 3/Juliet 22 32 0/Jessie 19 30 0",
+                    "Value": "Aideen 19 32 0/Eloise 17 34 0/Jacob 18 34 0/Rosa 23 32 3/Juliet 22 32 0/Jessie 19 30 0/ToriLK 21 21 2/JadeMalic 15 31 0/EdithHart 15 20 2/MichaelHart 14 20 2/EthanHart 43 42 2/KeanuAvis 51 36 1/DaleWaede 54 37 0/ValkyrieDog 55 37 3",
                     "Delimiter": "/"
-                }
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up",
+                        7
+                    ],
+                    "Value": "animate ValkyrieDog? true true 120 23 31",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up_y2",
+                        7
+                    ],
+                    "Value": "animate ValkyrieDog? true true 120 23 31",
+                    "Delimiter": "/"
+                },
             ]
         },
         {
@@ -436,7 +455,7 @@
                 "HasSeenEvent |contains=57876033": false
             }
         },
-                {
+        {
             "Action": "EditData",
             "Target": "Data/Festivals/spring24",
             "When": {
@@ -690,7 +709,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters"
                     ],
-                    "Value": "Aideen 22 4 2/Eloise 5 7 down/Jacob 4 7 2/Rosa 10 10 3/ToriLK 90 24 2/Juliet 9 9 2/Jessie 55 7 2/JadeMalic 98 46 2/CaptainRod 94 46 2/JadeMalic 72 25 2/EdithHart 90 46 2/MichaelHart 91 46 2/EthanHart 101 45 2/DaleWaede 41 34 2/ValkyrieDog 40 34 1/KeanuAvis 86 40 2",
+                    "Value": "Aideen 22 4 2/Eloise 5 7 down/Jacob 4 7 2/Rosa 10 10 3/ToriLK 90 24 2/Juliet 9 9 2/Jessie 55 7 2/JadeMalic 98 46 2/CaptainRod 94 46 2/JadeMalic 72 25 2/EdithHart 90 46 2/MichaelHart 91 46 2/EthanHart 101 45 2/DaleWaede 41 34 2/ValkyrieDog 42 34 3/KeanuAvis 86 40 2",
                     "Delimiter": "/"
                 },
                 {
@@ -700,7 +719,7 @@
                         "set-up",
                         7
                     ],
-                    "Value": "addLantern 735 98 43 3/animate ValkyrieDog? false true 120 23 31/animate DaleWaede false true 240 16 17",
+                    "Value": "addLantern 735 98 43 3/animate ValkyrieDog? true true 120 23 31/animate DaleWaede false true 240 16 17",
                     "Delimiter": "/"
                 },
                 {
@@ -709,7 +728,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters_y2"
                     ],
-                    "Value": "Aideen 22 4 2/Eloise 82 25 down/Jacob 83 25 2/Rosa 11 10 3/ToriLK 84 24 2/Jessie 55 7 2/Juliet 10 9 2",
+                    "Value": "Aideen 22 4 2/Eloise 82 25 down/Jacob 83 25 2/Rosa 11 10 3/ToriLK 84 24 2/Jessie 55 7 2/Juliet 10 9 2/DaleWaede 41 34 2/ValkyrieDog 42 34 3",
                     "Delimiter": "/"
                 },
                 {
@@ -719,7 +738,7 @@
                         "set-up_y2",
                         7
                     ],
-                    "Value": "addLantern 735 98 43 3/animate ValkyrieDog? false true 120 23 31/animate DaleWaede true false 240 16 17",
+                    "Value": "addLantern 735 98 43 3/animate ValkyrieDog? true true 120 23 31/animate DaleWaede true false 240 16 17",
                     "Delimiter": "/"
                 },
             ]
@@ -1156,12 +1175,12 @@
                 }
             ]
         },
-                {
+        {
             "Action": "EditData",
             "Target": "Data/Festivals/fall16",
             "When": {
                 "HasSeenEvent": "57873000",
-                "HasMod":"skellady.SBVCP"
+                "HasMod": "skellady.SBVCP"
             },
             "TextOperations": [
                 {
@@ -1173,7 +1192,6 @@
                     "Value": "OliverK 59 31 0",
                     "Delimiter": "/"
                 },
-            
             ]
         },
         {
@@ -1198,12 +1216,42 @@
                         "Entries",
                         "Set-Up_additionalCharacters_y2"
                     ],
-                    "Value": "CorwinLK 18 77 1",
+                    "Value": "CorwinLK 19 77 1",
                     "Delimiter": "/"
                 }
             ]
         },
         //Spirit's Eve
+        {
+            "LogName": "Spirits Eve",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween",
+            "FromFile": "assets/Maps/Festivals/ES-SVEHalloweenY1.tmx",
+            "When": {
+                "Year": "1, 5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49, 53, 56, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99"
+            },
+            "ToArea": {
+                "X": 22,
+                "Y": 33,
+                "Width": 2,
+                "Height": 2
+            },
+            "PatchMode": "Replace"
+        },
+                {
+            "LogName": "Spirits Eve",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween2",
+            "FromFile": "assets/Maps/Festivals/ES-SVEHalloweenY2.tmx",
+            
+            "ToArea": {
+                "X": 27,
+                "Y": 34,
+                "Width": 1,
+                "Height": 3
+            },
+            "PatchMode": "Replace"
+        },
         {
             "Action": "EditData",
             "Target": "Data/Festivals/fall27",
@@ -1217,7 +1265,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters"
                     ],
-                    "Value": "Eloise 15 53 1/Jacob 16 53 3/Rosa 34 25 3/ToriLK 32 56 2/Juliet 33 25 2/Jessie 32 69 2/DaleWaede 18 57 2/ValkyrieDog 17 57 1/EdithHart 18 63 1/MichaelHart 19 63 3/EthanHart 19 42 1/KeanuAvis 23 72 1",
+                    "Value": "Eloise 15 53 1/Jacob 16 53 3/Rosa 34 25 3/ToriLK 32 56 2/Juliet 33 25 2/Jessie 32 69 2/DaleWaede 23 34 2/ValkyrieDog 22 34 1/EdithHart 18 63 1/MichaelHart 19 63 3/EthanHart 19 42 1/KeanuAvis 23 72 1",
                     "Delimiter": "/"
                 },
                 {
@@ -1227,7 +1275,7 @@
                         "set-up",
                         7
                     ],
-                    "Value": "animate ValkyrieDog? false true 120 23 31",
+                    "Value": "animate ValkyrieDog? false true 120 23 31/animate DaleWaede false true 1000 26",
                     "Delimiter": "/"
                 },
             ],
@@ -1245,7 +1293,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters_y2"
                     ],
-                    "Value": "Eloise 23 48 3/Jacob 22 48 1/Rosa 27 23 2/ToriLK 14 63 1/Juliet 26 23 2/Jessie 33 68 2/JadeMalic 29 13 3/DaleWaede 9 67 0/ValkyrieDog 10 67 3/EthanHart 32 39 0/EdithHart 27 65 1/MichaelHart 18 41 1/KeanuAvis 38 59 3",
+                    "Value": "Eloise 23 48 3/Jacob 22 48 1/Rosa 27 23 2/ToriLK 14 63 1/Juliet 26 23 2/Jessie 33 68 2/JadeMalic 29 13 3/DaleWaede 27 36 2/ValkyrieDog 26 36 1/EthanHart 32 39 0/MichaelHart 18 41 1/KeanuAvis 38 59 3",
                     "Delimiter": "/"
                 },
                 {
@@ -1255,7 +1303,7 @@
                         "set-up_y2",
                         7
                     ],
-                    "Value": "animate ValkyrieDog? false true 120 23 31",
+                    "Value": "animate ValkyrieDog? false true 120 23 31/animate DaleWaede false true 1000 26",
                     "Delimiter": "/"
                 },
             ]
@@ -1277,7 +1325,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters"
                     ],
-                    "Value": "CorwinLK 27 64 2",
+                    "Value": "CorwinLK 26 63 2",
                     "Delimiter": "/"
                 },
             ]
@@ -1320,9 +1368,19 @@
                         "Entries",
                         "Set-Up_additionalCharacters"
                     ],
-                    "Value": "Eloise 51 42 1/Jacob 52 42 3/Juliet 48 34 1/Rosa 49 34 3/ToriLK 35 73 3/JadeMalic 29 23 1/KeanuAvis 34 58 2/EdithHart 52 80 1/MichaelHart 53 80 3/EthanHart 47 90 0",
+                    "Value": "Eloise 51 42 1/Jacob 52 42 3/Juliet 48 34 1/Rosa 49 34 3/ToriLK 35 73 3/JadeMalic 29 23 1/KeanuAvis 34 58 2/EdithHart 51 80 1/MichaelHart 52 80 3/EthanHart 47 90 0/DaleWaede 33 58 2/ValkyrieDog 32 58 1",
                     "Delimiter": "/"
-                }
+                },
+                 {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up",
+                        7
+                    ],
+                    "Value": "animate ValkyrieDog? false true 120 23 31",
+                    "Delimiter": "/"
+                },
             ]
         },
         {
@@ -1450,7 +1508,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters_y2"
                     ],
-                    "Value": "Eloise 71 51 1/Jacob 73 51 3/ToriLK 72 50 2/Beatrice 59 33 1/Rosa 69 11 3/Aideen 68 10 2/Jessie 114 15 1",
+                    "Value": "Eloise 71 51 1/Jacob 73 51 3/ToriLK 72 50 2/Beatrice 59 33 1/Rosa 69 11 3/Aideen 68 10 2/Jessie 114 15 1/DaleWaede 85 41 3/ValkyrieDog 84 41 3/EdithHart 77 52 3/MichaelHart 76 52 1/EthanHart 72 54 0/KeanuAvis 46 33 3/JadeMalic 74 25 3/Juliet 59 42 0",
                     "Delimiter": "/"
                 },
                 {
@@ -1458,6 +1516,16 @@
                     "Target": [
                         "Fields",
                         "set-up",
+                        8
+                    ],
+                    "Value": "animate ValkyrieDog? true true 120 23 31",
+                    "Delimiter": "/"
+                },
+                 {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up_y2",
                         8
                     ],
                     "Value": "animate ValkyrieDog? true true 120 23 31",
@@ -1487,7 +1555,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters_y2"
                     ],
-                    "Value": "CorwinLK 86 37 3",
+                    "Value": "CorwinLK 87 34 2",
                     "Delimiter": "/"
                 }
             ]
@@ -1539,7 +1607,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters_y2"
                     ],
-                    "Value": "Aideen 13 66 3/Beatrice 12 68 2/Eloise 36 79 3/Jacob 13 71 3/Rosa 9 63 1/ToriLK 13 64 3 2/Juliet 10 62 2/Jessie 9 70 1/JadeMalic 12 62 2/DaleWaede 37 59 0/MichaelHart 10 68 2/EthanHart 9 68 1/EdithHart 26 75 0/ValkyrieDog 36 59 1",
+                    "Value": "Aideen 13 66 3/Beatrice 12 68 2/Eloise 36 77 2/Jacob 13 71 3/Rosa 9 63 1/ToriLK 13 64 3 2/Juliet 10 62 2/Jessie 9 70 1/JadeMalic 12 62 2/DaleWaede 37 59 0/MichaelHart 10 68 2/EthanHart 9 68 1/EdithHart 26 75 0/ValkyrieDog 36 59 1",
                     "Delimiter": "/"
                 },
                 {
