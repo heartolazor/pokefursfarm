@@ -124,6 +124,42 @@
 	"BundleCompletedRibbon": "Raccoon",
 },
 
+"FloweryBook": {
+	"ShopType": "CCBundle",
+	
+	"ShopTexture": "UnlockableBundles/ShopTextures/FloweryBook",
+	"ShopTextureSource": { "X": 16, "Y": 0, "Width": 24, "Height": 16 },
+	"ShopAnimation": "0",
+	"ShopDrawDimensions": "96, 64",
+	"ShopDrawOffset": "-16, 64",
+	"ShopEvent": "none",
+	"DrawQuestionMark": true,
+	"QuestionMarkOffset": "40, -16",
+	
+	"JunimoNoteTexture": "UnlockableBundles/UI/FloweryBookJunimoNote",
+	"BundleCompletedRibbon": "Valentine",
+	
+	"AnimatedSprites": [
+		{ //Flowery Background
+			"Texture": "UnlockableBundles/UI/FloweryBookJunimoNote",
+			"SourceRect": { "X": 0, "Y": 309, "Width": 346, "Height": 206},
+			"PositionOffset": "-36, -64", //-9, -16 at 4x Scale
+			"Loops": 999999,
+			"Interval": 999999,
+			"Scale": 4.0
+		},
+		{ //Banner
+			"Id": "#Book.Banner", //if the sprite id starts with #Book it won't be drawn in the page and vice versa for #Page
+			"Texture": "UnlockableBundles/UI/Banners",
+			"SourceRect": { "X": 0, "Y": 0, "Width": 149, "Height": 25},
+			"PositionOffset": "344, -12", //86, -3 at 4x Scale
+			"Loops": 999999,
+			"Interval": 999999,
+			"Scale": 4.0
+		}
+	]
+},
+
 "TrashBear": {
 	"ShopType": "SpeechBubble",
 	

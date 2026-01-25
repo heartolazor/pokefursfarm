@@ -29,7 +29,7 @@
 	  "Late-Game Animal Product Value Multiplier": {
          "AllowValues": "",
          "Default": "0.7",
-         "Description": "This stacks multiplicatively with the above multiplier, but only activates later in the game once certain crackers become available (Does not apply to Truffles, since those are unaffected by crackers). This is intended to help Crops to stay viable after the huge boost to animal profits at that point. (Set this to 1 to effectively disable this feature)"
+         "Description": "This stacks multiplicatively with the above multiplier, but only activates later in the game once certain crackers become available (Does not apply to Truffles as those are unaffected by crackers and instead increase in value 1.2x once crackers become available). This is intended to help Crops to stay viable after the huge boost to animal profits at that point. (Set this to 1 to effectively disable this feature)"
       },
 	  "Animal Resale Value Multiplier": {
          "AllowValues": "",
@@ -93,7 +93,7 @@
       },
 	  "Smoked Fish Quality": {
          "AllowValues": "Regular, Silver, Gold, Iridium, Preserved",
-         "Default": "Silver",
+         "Default": "Preserved",
          "Description": "Makes Smoked Fish from the Fish Smoker always come out at the specified Quality. Selecting Preserved makes it match the quality of the raw fish, the way it works in Vanilla."
       },
 	  "Smoked Fish are Artisan Goods": {
@@ -150,6 +150,17 @@
       {
          "Name": "Animal Product Effective Multiplier",
          "Value": "{{Query: {{Animal Product Value Multiplier}} * {{Late-Game Animal Product Value Multiplier}} }}",
+         "When": {
+            "HasCraftingRecipe |contains=Statue Of Blessings": "true"
+         }
+      },
+	  {
+         "Name": "Truffle Product Effective Multiplier",
+         "Value": "{{Query: {{Animal Product Value Multiplier}} * 1 }}"
+      },
+      {
+         "Name": "Truffle Product Effective Multiplier",
+         "Value": "{{Query: {{Animal Product Value Multiplier}} * 1.2 }}",
          "When": {
             "HasCraftingRecipe |contains=Statue Of Blessings": "true"
          }

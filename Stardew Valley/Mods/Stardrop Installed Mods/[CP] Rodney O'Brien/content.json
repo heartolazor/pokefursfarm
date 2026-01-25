@@ -1,6 +1,6 @@
 {
 	"Format": "2.0.0",
-/*
+	/*
    _____ ____  _   _ ______ _____ _____ 
   / ____/ __ \| \ | |  ____|_   _/ ____|
  | |   | |  | |  \| | |__    | || |  __ 
@@ -10,30 +10,29 @@
 */
 	"ConfigSchema": {
 		"Rodney Portrait Style": {
-	  "AllowValues": "Vanilla, Nyapu, Bassoonicorn",
-	  "Default": "Vanilla",
-	  "AllowBlank": false,
-	  "AllowMultiple": false,
-	  "Description": "Choose Rodney's portraits: default portraits (vanilla style), Nyapu's version or Bassoonicorn's version (based on a drawing by GoldenCoyotte).",
-	  "Section": "Appearance"
-	},
-	"Rodney Sprite Style": {
-	  "AllowValues": "Vanilla, Bassoonicorn",
-	  "Default": "Vanilla",
-	  "AllowBlank": false,
-	  "AllowMultiple": false,
-	  "Description": "Choose Rodney's sprites: default sprites (vanilla style), or Bassoonicorn's version (based on a drawing by GoldenCoyotte).",
-	  "Section": "Appearance"
-	},
-	"Meredith Portrait Style": {
-	  "AllowValues": "Vanilla, Nyapu",
-	  "Default": "Vanilla",
-	  "AllowBlank": false,
-	  "AllowMultiple": false,
-	  "Description": "Choose Meredith's portraits: default portraits (vanilla style) or Nyapu's style. Note that at the moment, Meredith's portraits are only visible in one event",
-	  "Section": "Appearance"
-	},
-
+			"AllowValues": "Vanilla, Nyapu, Bassoonicorn, New",
+			"Default": "Vanilla",
+			"AllowBlank": false,
+			"AllowMultiple": false,
+			"Description": "Choose Rodney's portraits: default portraits (vanilla style), Nyapu's version, Bassoonicorn's version (based on a drawing by GoldenCoyotte) or the new version (released 2026). Note that the sprites for the new version are not included yet because they are not finished.",
+			"Section": "Appearance"
+		},
+		"Rodney Sprite Style": {
+			"AllowValues": "Vanilla, Bassoonicorn",
+			"Default": "Vanilla",
+			"AllowBlank": false,
+			"AllowMultiple": false,
+			"Description": "Choose Rodney's sprites: default sprites (vanilla style), or Bassoonicorn's version (based on a drawing by GoldenCoyotte).",
+			"Section": "Appearance"
+		},
+		"Meredith Portrait Style": {
+			"AllowValues": "Vanilla, Nyapu",
+			"Default": "Vanilla",
+			"AllowBlank": false,
+			"AllowMultiple": false,
+			"Description": "Choose Meredith's portraits: default portraits (art by 7thAxis) or Nyapu's style. Note that at the moment, Meredith's portraits are only visible in one event",
+			"Section": "Appearance"
+		},
 		"EnableAutograph": {
 			"AllowValues": "true, false",
 			"Default": true,
@@ -57,14 +56,16 @@
 	"Changes": [
 		{
 			"Logname": "The Writer, The Witch & The Wardrobe Assistant Includes",
-			"Action": "Include", 
+			"Action": "Include",
 			"FromFile": "Data/BlanksLoading.json, Data/Locations/MapPatches.json, Data/Locations/TempLocations.json, Data/Locations/Tilesheets.json, Data/Locations/MapData.json, Data/Dialogue/VillagersCT.json, Data/Dialogue/VillagersGiftDialogue.json, Data/Events.json, Data/MEEP/MEEP_Rodney.json, Data/SpecialOrders.json, Data/Strings.json, Data/MusicLoading.json, Data/TempActors.json, Data/Animations.json, Data/Shops.json, Data/Items.json, Data/Gift Tastes/ItemGiftTastes.json, Data/Mail.json, Data/TriggerActions/MailTriggerActions.json, Data/TriggerActions/JAmigrationTriggerActions.json, Data/AutographRecycling.json, Data/Locations/TrashData.json"
 		},
 		{
 			"Logname": "The Writer, The Witch & The Wardrobe Assistant SVE Includes",
 			"Action": "Include",
 			"FromFile": "Data/Gift Tastes/ItemGiftTastesSVE.json",
-			"When": { "HasMod": "FlashShifter.StardewValleyExpandedCP", },
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+			},
 		},
 		{
 			"Logname": "Rodney Includes",
@@ -74,7 +75,7 @@
 		{
 			"LogName": "Rodney's autograph spawn",
 			"Action": "Include",
-			"FromFile": "Data/FishableAutograph.json", 
+			"FromFile": "Data/FishableAutograph.json",
 			"When": {
 				"EnableAutograph": true,
 			},
@@ -101,13 +102,13 @@
 			"LogName": "Portraits Meredith",
 			"Action": "Load",
 			"Target": "Portraits/MeredithOBrien",
-			"FromFile": "Assets/Portraits/{{Meredith Portrait Style}}/MeredithOBrien/Portraits-Meredith.png"
+			"FromFile": "Assets/Portraits/{{Meredith Portrait Style}}/MeredithOBrien/MeredithOBrien_Spring.png"
 		},
 		{
 			"LogName": "Sprites Meredith",
 			"Action": "Load",
 			"Target": "Characters/MeredithOBrien",
-			"FromFile": "Assets/Characters/Vanilla/MeredithOBrien/MeredithOBrien.png"
+			"FromFile": "Assets/Characters/Vanilla/MeredithOBrien/MeredithOBrien_Spring.png"
 		},
 		{
 			"LogName": "Young Rodney Sprite",
@@ -160,8 +161,8 @@
 	 |____/   \__, | |_| |_|  \__,_| |_| |_| |_| |_|  \___|     |_|    \___/  |_|\_\  \___| |_| |_| |___/
 			   |___/                                                                                      
 	*/
-	"DynamicTokens": [	
-	//Rasmodia Compatibility
+	"DynamicTokens": [
+		//Rasmodia Compatibility
 		{
 			"Name": "WizardGender",
 			"Value": "{{i18n:WizardFemale}}",
@@ -282,7 +283,7 @@
 				"Hearts:RodneyOBrien": "8, 10"
 			}
 		},
-/*		{
+		/*		{
 			"Name": "RodneyMountainDialogue",
 			"Value": "{{i18n:rod.007.Romantic}}",
 			"When": {
@@ -541,7 +542,7 @@
 				"HasSeenEvent": "MadDog.BearFam.16197002",
 			}
 		},
-{
+		{
 			"Name": "Rodney_SaloonParty",
 			"Value": "{{Rodney_SaloonParty}} Nora 3 22 1",
 			"When": {
@@ -671,7 +672,7 @@
 				"HasSeenEvent": "MadDog.BearFam.16197002",
 			}
 		},
-{
+		{
 			"Name": "Rodney_PoetryReadingActor",
 			"Value": "{{Rodney_PoetryReadingActor}} MadDog.HashtagBearFam.Teren -1000 -1000 0",
 			"When": {
@@ -781,7 +782,7 @@
 				"HasMod": "TiaraPhoenixCupcake.cp.PlumForrest",
 			}
 		},
-{
+		{
 			"Name": "Rodney_PoetryReadingReactions",
 			"Value": "{{Rodney_PoetryReadingReactions}} speak MadDog.HashtagBearFam.Teren \"{{i18n:event-134371017.Teren.PoetryReaction}}\"/emote RodneyOBrien 60/",
 			"When": {
@@ -876,6 +877,21 @@
 			"Value": "{{4HeartsSaloonAnimations}}/animate Sigurd false true 1200 56",
 			"When": {
 				"HasMod": "MadDog.HashtagBearFam",
+			}
+		},
+		//TEMP ESR Token
+		{
+			"Name": "SiloPatchVersion",
+			"Value": "Silo_Outdoor",
+			"When": {
+				"HasMod": "LemurKat.EastScarpe.CP"
+			}
+		},
+		{
+			"Name": "SiloPatchVersion",
+			"Value": "Silo_Outdoor_ESR",
+			"When": {
+				"HasMod": "Lemurkat.EastScarp"
 			}
 		},
 	],

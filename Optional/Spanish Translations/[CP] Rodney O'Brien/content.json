@@ -10,30 +10,29 @@
 */
 	"ConfigSchema": {
 		"Rodney Portrait Style": {
-	  "AllowValues": "Vanilla, Nyapu, Bassoonicorn",
-	  "Default": "Vanilla",
-	  "AllowBlank": false,
-	  "AllowMultiple": false,
-	  "Description": "Elige los retratos de Rodney: retratos predeterminados (estilo vainilla), versión de Nyapu o versión de Bassoonicorn (basada en un dibujo de GoldenCoyotte).",
-	  "Section": "Appearance"
-	},
-	"Rodney Sprite Style": {
-	  "AllowValues": "Vanilla, Bassoonicorn",
-	  "Default": "Vanilla",
-	  "AllowBlank": false,
-	  "AllowMultiple": false,
-	  "Description": "Elige los sprites de Rodney: sprites predeterminados (estilo vainilla) o la versión de Bassoonicorn (basada en un dibujo de GoldenCoyotte).",
-	  "Section": "Appearance"
-	},
-	"Meredith Portrait Style": {
-	  "AllowValues": "Vanilla, Nyapu",
-	  "Default": "Vanilla",
-	  "AllowBlank": false,
-	  "AllowMultiple": false,
-	  "Description": "Elige los retratos de Meredith: retratos predeterminados (estilo vainilla) o estilo Nyapu. Ten en cuenta que, por el momento, los retratos de Meredith solo son visibles en un evento.",
-	  "Section": "Appearance"
-	},
-
+			"AllowValues": "Vanilla, Nyapu, Bassoonicorn, New",
+			"Default": "Vanilla",
+			"AllowBlank": false,
+			"AllowMultiple": false,
+			"Description": "Elige los retratos de Rodney: retratos predeterminados (estilo vainilla), versión de Nyapu, versión de Bassoonicorn (basada en un dibujo de GoldenCoyotte) o la nueva versión (lanzada en 2026). Ten en cuenta que los sprites de la nueva versión aún no están incluidos porque no están terminados.",
+			"Section": "Appearance"
+		},
+		"Rodney Sprite Style": {
+			"AllowValues": "Vanilla, Bassoonicorn",
+			"Default": "Vanilla",
+			"AllowBlank": false,
+			"AllowMultiple": false,
+			"Description": "Elige los sprites de Rodney: sprites predeterminados (estilo vainilla), o la versión de Bassoonicorn (basada en un dibujo de GoldenCoyotte).",
+			"Section": "Appearance"
+		},
+		"Meredith Portrait Style": {
+			"AllowValues": "Vanilla, Nyapu",
+			"Default": "Vanilla",
+			"AllowBlank": false,
+			"AllowMultiple": false,
+			"Description": "Elige los retratos de Meredith: retratos predeterminados (arte de 7thAxis) o estilo Nyapu. Ten en cuenta que, por el momento, los retratos de Meredith solo son visibles en un evento.",
+			"Section": "Appearance"
+		},
 		"EnableAutograph": {
 			"AllowValues": "true, false",
 			"Default": true,
@@ -43,7 +42,7 @@
 		"Silo": {
 			"AllowValues": "Vanilla, Yri",
 			"Default": "Vanilla",
-			"Description": "Elige el estilo del silo de Rodney: estilo vainilla (por defecto) o Yri (para que coincida con el Proyecto Yellog de Yri)'",
+			"Description": "Elige el estilo del silo de Rodney: estilo vainilla (por defecto) o Yri (para que coincida con el Proyecto Yellog de Yri)",
 			"Section": "Silo's appearance"
 		},
 		"Rodney Polyamory": {
@@ -57,14 +56,16 @@
 	"Changes": [
 		{
 			"Logname": "The Writer, The Witch & The Wardrobe Assistant Includes",
-			"Action": "Include", 
+			"Action": "Include",
 			"FromFile": "Data/BlanksLoading.json, Data/Locations/MapPatches.json, Data/Locations/TempLocations.json, Data/Locations/Tilesheets.json, Data/Locations/MapData.json, Data/Dialogue/VillagersCT.json, Data/Dialogue/VillagersGiftDialogue.json, Data/Events.json, Data/MEEP/MEEP_Rodney.json, Data/SpecialOrders.json, Data/Strings.json, Data/MusicLoading.json, Data/TempActors.json, Data/Animations.json, Data/Shops.json, Data/Items.json, Data/Gift Tastes/ItemGiftTastes.json, Data/Mail.json, Data/TriggerActions/MailTriggerActions.json, Data/TriggerActions/JAmigrationTriggerActions.json, Data/AutographRecycling.json, Data/Locations/TrashData.json"
 		},
 		{
 			"Logname": "The Writer, The Witch & The Wardrobe Assistant SVE Includes",
 			"Action": "Include",
 			"FromFile": "Data/Gift Tastes/ItemGiftTastesSVE.json",
-			"When": { "HasMod": "FlashShifter.StardewValleyExpandedCP", },
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+			},
 		},
 		{
 			"Logname": "Rodney Includes",
@@ -74,7 +75,7 @@
 		{
 			"LogName": "Rodney's autograph spawn",
 			"Action": "Include",
-			"FromFile": "Data/FishableAutograph.json", 
+			"FromFile": "Data/FishableAutograph.json",
 			"When": {
 				"EnableAutograph": true,
 			},
@@ -101,13 +102,13 @@
 			"LogName": "Portraits Meredith",
 			"Action": "Load",
 			"Target": "Portraits/MeredithOBrien",
-			"FromFile": "Assets/Portraits/{{Meredith Portrait Style}}/MeredithOBrien/Portraits-Meredith.png"
+			"FromFile": "Assets/Portraits/{{Meredith Portrait Style}}/MeredithOBrien/MeredithOBrien_Spring.png"
 		},
 		{
 			"LogName": "Sprites Meredith",
 			"Action": "Load",
 			"Target": "Characters/MeredithOBrien",
-			"FromFile": "Assets/Characters/Vanilla/MeredithOBrien/MeredithOBrien.png"
+			"FromFile": "Assets/Characters/Vanilla/MeredithOBrien/MeredithOBrien_Spring.png"
 		},
 		{
 			"LogName": "Young Rodney Sprite",
@@ -160,8 +161,8 @@
 	 |____/   \__, | |_| |_|  \__,_| |_| |_| |_| |_|  \___|     |_|    \___/  |_|\_\  \___| |_| |_| |___/
 			   |___/                                                                                      
 	*/
-	"DynamicTokens": [	
-	//Rasmodia Compatibility
+	"DynamicTokens": [
+		//Rasmodia Compatibility
 		{
 			"Name": "WizardGender",
 			"Value": "{{i18n:WizardFemale}}",
@@ -186,6 +187,76 @@
 		{
 			"Name": "WizardPronoun",
 			"Value": "{{i18n:WizardHis}}",
+			"When": {
+				"HasMod |contains=Nom0ri.RomRas": "false",
+			}
+		},
+		{
+			"Name": "gW",
+			"Value": "a",
+			"When": {
+				"HasMod": "Nom0ri.RomRas"
+			}
+		},
+		{
+			"Name": "gW",
+			"Value": "o",
+			"When": {
+				"HasMod |contains=Nom0ri.RomRas": "false",
+			}
+		},
+		{
+			"Name": "gnW",
+			"Value": "a\u00AD",
+			"When": {
+				"HasMod": "Nom0ri.RomRas"
+			}
+		},
+		{
+			"Name": "gnW",
+			"Value": "\u00AD",
+			"When": {
+				"HasMod |contains=Nom0ri.RomRas": "false",
+			}
+		},
+		{
+			"Name": "tW",
+			"Value": "la",
+			"When": {
+				"HasMod": "Nom0ri.RomRas"
+			}
+		},
+		{
+			"Name": "tW",
+			"Value": "el",
+			"When": {
+				"HasMod |contains=Nom0ri.RomRas": "false",
+			}
+		},
+		{
+			"Name": "ttW",
+			"Value": "a la",
+			"When": {
+				"HasMod": "Nom0ri.RomRas"
+			}
+		},
+		{
+			"Name": "ttW",
+			"Value": "al",
+			"When": {
+				"HasMod |contains=Nom0ri.RomRas": "false",
+			}
+		},
+		{
+			"Name": "tuW",
+			"Value": "La",
+			"When": {
+				"HasMod": "Nom0ri.RomRas"
+			}
+		},
+		{
+			"Name": "tuW",
+			"Value": "El",
 			"When": {
 				"HasMod |contains=Nom0ri.RomRas": "false",
 			}
@@ -282,7 +353,7 @@
 				"Hearts:RodneyOBrien": "8, 10"
 			}
 		},
-/*		{
+		/*		{
 			"Name": "RodneyMountainDialogue",
 			"Value": "{{i18n:rod.007.Romantic}}",
 			"When": {
@@ -541,7 +612,7 @@
 				"HasSeenEvent": "MadDog.BearFam.16197002",
 			}
 		},
-{
+		{
 			"Name": "Rodney_SaloonParty",
 			"Value": "{{Rodney_SaloonParty}} Nora 3 22 1",
 			"When": {
@@ -671,7 +742,7 @@
 				"HasSeenEvent": "MadDog.BearFam.16197002",
 			}
 		},
-{
+		{
 			"Name": "Rodney_PoetryReadingActor",
 			"Value": "{{Rodney_PoetryReadingActor}} MadDog.HashtagBearFam.Teren -1000 -1000 0",
 			"When": {
@@ -781,7 +852,7 @@
 				"HasMod": "TiaraPhoenixCupcake.cp.PlumForrest",
 			}
 		},
-{
+		{
 			"Name": "Rodney_PoetryReadingReactions",
 			"Value": "{{Rodney_PoetryReadingReactions}} speak MadDog.HashtagBearFam.Teren \"{{i18n:event-134371017.Teren.PoetryReaction}}\"/emote RodneyOBrien 60/",
 			"When": {
@@ -878,117 +949,20 @@
 				"HasMod": "MadDog.HashtagBearFam",
 			}
 		},
+		//TEMP ESR Token
 		{
-			"Name": "gW",
-			"Value": "a",
+			"Name": "SiloPatchVersion",
+			"Value": "Silo_Outdoor",
 			"When": {
-				"HasMod": "Nom0ri.RomRas"
+				"HasMod": "LemurKat.EastScarpe.CP"
 			}
 		},
 		{
-			"Name": "gW",
-			"Value": "o",
+			"Name": "SiloPatchVersion",
+			"Value": "Silo_Outdoor_ESR",
 			"When": {
-				"HasMod |contains=Nom0ri.RomRas": "false",
+				"HasMod": "Lemurkat.EastScarp"
 			}
 		},
-		{
-			"Name": "gnW",
-			"Value": "a\u00AD",
-			"When": {
-				"HasMod": "Nom0ri.RomRas"
-			}
-		},
-		{
-			"Name": "gnW",
-			"Value": "\u00AD",
-			"When": {
-				"HasMod |contains=Nom0ri.RomRas": "false",
-			}
-		},
-		{
-			"Name": "tW",
-			"Value": "la",
-			"When": {
-				"HasMod": "Nom0ri.RomRas"
-			}
-		},
-		{
-			"Name": "tW",
-			"Value": "el",
-			"When": {
-				"HasMod |contains=Nom0ri.RomRas": "false",
-			}
-		},
-		{
-			"Name": "ttW",
-			"Value": "a la",
-			"When": {
-				"HasMod": "Nom0ri.RomRas"
-			}
-		},
-		{
-			"Name": "ttW",
-			"Value": "al",
-			"When": {
-				"HasMod |contains=Nom0ri.RomRas": "false",
-			}
-		},
-		{
-			"Name": "tuW",
-			"Value": "La",
-			"When": {
-				"HasMod": "Nom0ri.RomRas"
-			}
-		},
-		{
-			"Name": "tuW",
-			"Value": "El",
-			"When": {
-				"HasMod |contains=Nom0ri.RomRas": "false",
-			}
-		},
-	{
-		"Name": "g",
-		"Value": "a",
-		"When": {
-			"PlayerGender": "Female"
-		}
-	},
-	{
-		"Name": "g",
-		"Value": "o",
-		"When": {
-			"PlayerGender |contains=Female": "false",
-		}
-	},
-	{
-		"Name": "gn",
-		"Value": "a\u00AD",
-		"When": {
-			"PlayerGender": "Female"
-		}
-	},
-	{
-		"Name": "gn",
-		"Value": "\u00AD",
-		"When": {
-			"PlayerGender |contains=Female": "false",
-		}
-	},
-	{
-		"Name": "t",
-		"Value": "la",
-		"When": {
-			"PlayerGender": "Female"
-		}
-	},
-	{
-		"Name": "t",
-		"Value": "el",
-		"When": {
-			"PlayerGender |contains=Female": "false",
-		}
-	},
 	],
 }
