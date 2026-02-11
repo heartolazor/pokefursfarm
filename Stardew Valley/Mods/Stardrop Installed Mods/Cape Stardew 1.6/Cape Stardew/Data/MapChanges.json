@@ -64,184 +64,1394 @@
       "When": {
         "LocationName": "Custom_AreaSecretBossLvl4"
       }
+    },
+//AmbientLightPatchesVanilla//
+
+
+/* /essenceambientlight_Vanilla/ */
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_DarkCave2",
+  "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+    
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
     }
-    /*/essenceambientlight//*/,
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_DarkCave",
+  "When": {
+    "EssenceComplete": true,
+   "AmbientLightPatches": "Vanilla",
+
+  },
+  "Update": "OnLocationChange", 
+  "TextOperations": [
     {
-      "Action": "EditMap",
-      "Target": "Maps/Custom_DarkCave2",
-      "When": {
-        "EssenceComplete": true
-      },
-      "Update": "OnLocationChange",
-      "MapProperties": {
-        "AmbientLight": "90 90 90"
-      }
-    },
-    {
-      "Action": "EditMap",
-      "Target": "Maps/Custom_DarkCave",
-      "When": {
-        "EssenceComplete": true
-      },
-      "Update": "OnLocationChange",
-      "MapProperties": {
-        "AmbientLight": "90 90 90"
-      }
-    },
-    {
-      "Action": "EditMap",
-      "Target": "Maps/Custom_SecretBase",
-      "When": {
-        "EssenceComplete": true
-      },
-      "Update": "OnLocationChange",
-      "MapProperties": {
-        "AmbientLight": "90 90 90"
-      }
-    },
-    {
-      "Action": "EditMap",
-      "Target": "Maps/Custom_CapeSecretBaseDropArea",
-      "When": {
-        "EssenceComplete": true
-      },
-      "Update": "OnLocationChange",
-      "MapProperties": {
-        "AmbientLight": "100 110 90"
-      }
-    },
-    {
-      "Action": "EditMap",
-      "Target": "Maps/Custom_SecretBase2",
-      "When": {
-        "EssenceComplete": true
-      },
-      "Update": "OnLocationChange",
-      "MapProperties": {
-        "AmbientLight": "100 110 90"
-      }
-    },
-    {
-      "Action": "EditMap",
-      "Target": "Maps/Custom_CapeCavingArea2",
-      "When": {
-        "EssenceComplete": true
-      },
-      "Update": "OnLocationChange",
-      "MapProperties": {
-        "AmbientLight": "120 110 90"
-      }
-    },
-    {
-      "Action": "EditMap",
-      "Target": "Maps/Custom_AreaSecretBossLvl2",
-      "When": {
-        "EssenceComplete": true
-      },
-      "Update": "OnLocationChange",
-      "MapProperties": {
-        "AmbientLight": "110 110 90"
-      }
-    },
-    {
-      "Action": "EditMap",
-      "Target": "Maps/Custom_AreaSecretTrapRoom",
-      "When": {
-        "EssenceComplete": true
-      },
-      "Update": "OnLocationChange",
-      "MapProperties": {
-        "AmbientLight": "110 110 90"
-      }
-    },
-    {
-      "Action": "EditMap",
-      "Target": "Maps/Custom_CapeCave",
-      "When": {
-        "EssenceComplete": true
-      },
-      "Update": "OnLocationChange",
-      "MapProperties": {
-        "AmbientLight": "110 110 90"
-      }
-    },
-    {
-      "Action": "EditMap",
-      "Target": "Maps/Custom_CapeCaving",
-      "When": {
-        "EssenceComplete": true
-      },
-      "Update": "OnLocationChange",
-      "MapProperties": {
-        "AmbientLight": "110 110 90"
-      }
-    },
-    {
-      "Action": "EditMap",
-      "Target": "Maps/Custom_AreaSecretBoss",
-      "When": {
-        "EssenceComplete": true
-      },
-      "Update": "OnLocationChange",
-      "MapProperties": {
-        "AmbientLight": "110 110 90"
-      }
-    },
-    {
-      "Action": "EditMap",
-      "Target": "Maps/Custom_SecretBaseRoom",
-      "When": {
-        "EssenceComplete": true
-      },
-      "Update": "OnLocationChange",
-      "MapProperties": {
-        "AmbientLight": "110 110 90"
-      }
-    },
-    {
-      "Action": "EditMap",
-      "Target": "Maps/Custom_AreaSecretBossLvl3",
-      "When": {
-        "EssenceComplete": true
-      },
-      "Update": "OnLocationChange",
-      "MapProperties": {
-        "AmbientLight": "110 110 90"
-      }
-    },
-    {
-      "Action": "EditMap",
-      "Target": "Maps/Custom_CapeCavingArea3",
-      "When": {
-        "EssenceComplete": true
-      },
-      "Update": "OnLocationChange",
-      "MapProperties": {
-        "AmbientLight": "110 110 90"
-      }
-    },
-    {
-      "Action": "EditMap",
-      "Target": "Maps/Custom_RealSecretBase",
-      "When": {
-        "EssenceComplete": true
-      },
-      "Update": "OnLocationChange",
-      "MapProperties": {
-        "AmbientLight": "110 110 90"
-      }
-    },
-    {
-      "Action": "EditMap",
-      "Target": "Maps/Custom_SeaCaveSecrets",
-      "When": {
-        "EssenceComplete": true
-      },
-      "Update": "OnLocationChange",
-      "MapProperties": {
-        "AmbientLight": "110 110 90"
-      }
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
     }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBase",
+  "When": {
+    "EssenceComplete": false,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "244 244 255",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBase",
+  "When": {
+    "EssenceComplete": true,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeSecretBaseDropArea",
+  "When": {
+    "EssenceComplete": true,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBase2",
+  "When": {
+    "EssenceComplete": true,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCavingArea2",
+  "When": {
+    "EssenceComplete": true,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretBossLvl2",
+  "When": {
+    "EssenceComplete": true,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretTrapRoom",
+  "When": {
+    "EssenceComplete": true,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "90 90 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCave",
+  "When": {
+    "EssenceComplete": true,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCaving",
+  "When": {
+    "EssenceComplete": true,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretBoss",
+  "When": {
+    "EssenceComplete": true,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBaseRoom",
+  "When": {
+    "EssenceComplete": true,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretBossLvl3",
+  "When": {
+    "EssenceComplete": true,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCavingArea3",
+  "When": {
+    "EssenceComplete": true,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "220 240 130",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_RealSecretBase",
+  "When": {
+    "EssenceComplete": true,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SeaCaveSecrets",
+  "When": {
+    "EssenceComplete": true,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_DarkCave2",
+  "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+    
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_DarkCave",
+  "When": {
+    "EssenceComplete": false,
+   "AmbientLightPatches": "Vanilla",
+
+  },
+  "Update": "OnLocationChange", 
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBase",
+  "When": {
+    "EssenceComplete": false,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "244 244 255",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBase",
+  "When": {
+    "EssenceComplete": false,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeSecretBaseDropArea",
+  "When": {
+    "EssenceComplete": false,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBase2",
+  "When": {
+    "EssenceComplete": false,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCavingArea2",
+  "When": {
+    "EssenceComplete": false,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretBossLvl2",
+  "When": {
+    "EssenceComplete": false,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretTrapRoom",
+  "When": {
+    "EssenceComplete": false,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "90 90 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCave",
+  "When": {
+    "EssenceComplete": false,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCaving",
+  "When": {
+    "EssenceComplete": false,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretBoss",
+  "When": {
+    "EssenceComplete": false,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBaseRoom",
+  "When": {
+    "EssenceComplete": false,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretBossLvl3",
+  "When": {
+    "EssenceComplete": false,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCavingArea3",
+  "When": {
+    "EssenceComplete": false,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "220 240 130",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_RealSecretBase",
+  "When": {
+    "EssenceComplete": false,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SeaCaveSecrets",
+  "When": {
+    "EssenceComplete": false,
+    "AmbientLightPatches": "Vanilla",
+  },
+  "Update": "OnLocationChange",
+  "TextOperations": [
+    {
+      "Operation": "ReplaceDelimited",
+      "Target": [ "MapProperties", "AmbientLight" ],
+      "Search": "80 80 90",
+      "Value": "",
+      "Delimiter": " "
+    }
+  ]
+},
+//ambientlightpatchesdark//
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_DarkCave2",
+  "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dark",
+  },
+  "Update": "OnLocationChange",
+
+  "MapProperties": {
+    "AmbientLight": "120 120 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_DarkCave",
+  "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dark",
+  },
+  "Update": "OnLocationChange",
+
+  "MapProperties": {
+    "AmbientLight": "120 120 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBase",
+  "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dark",
+  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "120 120 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeSecretBaseDropArea",
+  "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dark",
+  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 130 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBase2",
+  "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dark",
+  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 130 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCavingArea2",
+  "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dark",
+  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "130 130 125"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretBossLvl2",
+  "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dark",
+  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 125 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretTrapRoom",
+  "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dark",
+  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 125 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCave",
+  "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dark",
+  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 125 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCaving",
+  "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dark",  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 125 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretBoss",
+  "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dark",  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 125 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBaseRoom",
+  "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dark",  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 125 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretBossLvl3",
+  "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dark",  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 125 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCavingArea3",
+  "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dark",  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 125 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_RealSecretBase",
+  "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dark",  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 125 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SeaCaveSecrets",
+  "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dark",  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "130 140 145"
+  }
+},
+
+//////
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_DarkCave2",
+  "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dark",
+  },
+  "Update": "OnLocationChange",
+
+  "MapProperties": {
+    "AmbientLight": "120 120 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_DarkCave",
+  "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dark",
+  },
+  "Update": "OnLocationChange",
+
+  "MapProperties": {
+    "AmbientLight": "120 120 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBase",
+  "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dark",
+  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "120 120 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeSecretBaseDropArea",
+  "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dark",
+  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 130 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBase2",
+  "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dark",
+  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 130 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCavingArea2",
+  "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dark",
+  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "130 130 125"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretBossLvl2",
+  "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dark",
+  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 125 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretTrapRoom",
+  "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dark",
+  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 125 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCave",
+  "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dark",
+  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 125 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCaving",
+  "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dark",  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 125 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretBoss",
+  "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dark",  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 125 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBaseRoom",
+  "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dark",  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 125 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretBossLvl3",
+  "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dark",  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 125 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCavingArea3",
+  "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dark",  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 125 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_RealSecretBase",
+  "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dark",  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "125 125 120"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SeaCaveSecrets",
+  "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dark",  },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "130 140 145"
+  }
+},
+///ambientlightpatchesdim//
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_DarkCave2",
+    "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "105 105 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_DarkCave",
+    "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "105 105 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBase",
+    "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "105 105 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeSecretBaseDropArea",
+    "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "180 180 90"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBase2",
+    "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "180 180 90"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCavingArea2",
+    "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "115 120 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretBossLvl2",
+    "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "110 110 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretTrapRoom",
+    "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "110 110 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCave",
+    "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "110 110 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCaving",
+    "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "110 110 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretBoss",
+    "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "110 110 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBaseRoom",
+    "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "110 110 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretBossLvl3",
+    "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "110 110 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCavingArea3",
+    "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "110 110 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_RealSecretBase",
+    "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "110 110 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SeaCaveSecrets",
+    "When": {
+    "EssenceComplete": true,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "115 125 130"
+  }
+},
+
+////
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_DarkCave2",
+    "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "105 105 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_DarkCave",
+    "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "105 105 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBase",
+    "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "105 105 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeSecretBaseDropArea",
+    "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "180 180 90"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBase2",
+    "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "180 180 90"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCavingArea2",
+    "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "115 120 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretBossLvl2",
+    "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "110 110 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretTrapRoom",
+    "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "110 110 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCave",
+    "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "110 110 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCaving",
+    "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "110 110 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretBoss",
+    "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "110 110 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SecretBaseRoom",
+    "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "110 110 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_AreaSecretBossLvl3",
+    "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "110 110 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeCavingArea3",
+    "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "110 110 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_RealSecretBase",
+    "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "110 110 105"
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SeaCaveSecrets",
+    "When": {
+    "EssenceComplete": false,
+"AmbientLightPatches": "Dim",
+   },
+  "Update": "OnLocationChange",
+  "MapProperties": {
+    "AmbientLight": "115 125 130"
+  }
+},
+
+
     /*/LightChanges///*/,
     {
       "Action": "EditMap",
@@ -625,10 +1835,7 @@
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeStardew",
-      "When": {
-        "Time": "{{Range: 1830, 2600}}"
-      },
-      "Update": "OnTimeChange",
+      "Update": "OnLocationChange",
       "TextOperations": [
         {
           "Operation": "Append",
@@ -726,7 +1933,7 @@
         "Time": "{{Range: 1930, 2600}}",
         "Day |contains=5,12,19,26": false
       },
-      "Update": "OnLocationChange,OnTimeChange",
+      "Update": "OnLocationChange",
       "TextOperations": [
         {
           "Operation": "Append",
@@ -746,7 +1953,7 @@
         "Weather": "Rain,Storm,Wind,Snow",
         "Time": "{{Range: 1030, 2600}}"
       },
-      "Update": "OnLocationChange,OnTimeChange",
+      "Update": "OnLocationChange",
       "TextOperations": [
         {
           "Operation": "Append",
@@ -1034,14 +2241,7 @@
         }
       ]
     },
-{
-      "Action": "EditMap",
-      "Target": "Maps/Custom_CapeKeyMaze",
-      "Update": "OnLocationChange",
-      "MapProperties": {
-        "AmbientLight": "10 80 140"
-      }
-    },
+///lightchangescontinued..//
 
 {
       "Action": "EditMap",
@@ -1061,6 +2261,9 @@
           "Delimiter": " "
         }
       ]
-    },
+    }
+
+
+
   ]
 }

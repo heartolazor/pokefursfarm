@@ -1,13 +1,17 @@
 {
     "Name": "SNES Livestock Dinos",
     "Author": "cryomancer",
-    "Version": "1.1.0",
+    "Version": "2.1.0",
     "Description": "Several new creatures with several new produce items. And a cave for them to live in.",
   "UniqueID": "cryomancer.livestockdinos",
   "UpdateKeys": [ "Nexus:30907" ],
   "Dependencies": [
   		{
 			"UniqueID": "selph.ExtraAnimalConfig",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "mistyspring.ItemExtensions",
 			"IsRequired": true
 		},
 		{

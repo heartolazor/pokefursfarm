@@ -264,46 +264,7 @@
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 31
         },
-        /*"{{ModId}}_Wild_Raspberry": {
-                "Name": "{{ModId}}_Wild_Raspberry",
-                "DisplayName": "{{i18n:SASS_Wild_Raspberry.name}}",
-                "Description": "{{i18n:SASS_Wild_Raspberry.description}}",
-                "ExcludeFromShippingCollection":false,
-                "Type": "Fruit",          
-                "Category": -79,
-                "Edibility": 7,
-                "Price": 98,
 
-                "ContextTags":
-                ["faerie_forage",
-                "season_summer",
-                "wild_berry_item",
-                "magical_fruit_item",
-                "color_pink"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 140
-        },
-        "{{ModId}}_Wild_Strawberry": {
-                "Name": "{{ModId}}_Wild_Strawberry",
-                "DisplayName": "{{i18n:SASS_Wild_Strawberry.name}}",
-                "Description": "{{i18n:SASS_Wild_Strawberry.description}}",
-                "ExcludeFromShippingCollection":false,
-                "Type": "Fruit",          
-                "Category": -79,
-                "Edibility": 7,
-                "Price": 98,
-
-                "ContextTags":
-                ["faerie_forage",
-                "wild_berry_item",
-                "season_spring",
-                "magical_fruit_item",
-                "color_pink"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 141
-        }*/
         }
     },
 
@@ -718,27 +679,6 @@
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 101
         },
-           /* "{{ModId}}_Snow_Mallow": {
-                "Name": "{{ModId}}_Snow_Mallow",
-                "DisplayName": "{{i18n:SASS_Snow_Mallow.name}}",
-                "Description": "{{i18n:SASS_Snow_Mallow.description}}",
-                "ExcludeFromShippingCollection":true,
-                "Type": "Flower",          
-                "Category": -80,
-                "Edibility": 7,
-                "Price": 98,
-
-                "ContextTags":
-                ["faerie_forage",
-                "edible_flower_item",
-                "marshmallow_item",
-                "season_spring",
-                "magical_flower_item",
-                "color_pink"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 142
-        },*/
             "{{ModId}}_Titania_Bell": {
                 "Name": "{{ModId}}_Titania_Bell",
                 "DisplayName": "{{i18n:SASS_Titania_Bell.name}}",
@@ -823,33 +763,11 @@
     },
 
 
-
     {
         "LogName":"SASS Mushrooms",
         "Action": "EditData",
         "Target": "Data/Objects",
         "Entries": {
-            "{{ModId}}_Alchemists_Hat": {
-                "Name": "{{ModId}}_Alchemists_Hat",
-                "DisplayName": "{{i18n:SASS_Alchemists_Hat.name}}",
-                "Description": "{{i18n:SASS_Alchemists_Hat.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                "Type": "Forage",
-                "Category": -81,
-                "Edibility": 20,
-                "Price": 90,
-
-                "ContextTags":
-                ["faerie_forage",
-                "edible_mushroom",
-                "season_winter",
-                "magical_mushroom_item",
-                "seedmaker_banned",
-                "color_pink"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 123
-        },
             "{{ModId}}_Baby_Bluegill": {
                 "Name": "{{ModId}}_Baby_Bluegill",
                 "DisplayName": "{{i18n:SASS_Baby_Bluegill.name}}",
@@ -870,135 +788,6 @@
 
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 44
-        },
-            "{{ModId}}_Blushing_TopHat": {
-                "Name": "{{ModId}}_Blushing_TopHat",
-                "DisplayName": "{{i18n:SASS_Blushing_TopHat.name}}",
-                "Description": "{{i18n:SASS_Blushing_TopHat.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                "Type": "Forage",          
-                "Category": -81,
-                "Edibility": 7,
-                "Price": 80,
-
-                "ContextTags":
-                ["faerie_forage",
-                "forage_item",
-                "season_summer",
-                "magical_mushroom_item",
-                "edible_mushroom",
-                "seedmaker_banned",
-                "color_pink"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 52
-        },
-            "{{ModId}}_Bubblegum_Funnel": {
-                "Name": "{{ModId}}_Bubblegum_Funnel",
-                "DisplayName": "{{i18n:SASS_Bubblegum_Funnel.name}}",
-                "Description": "{{i18n:SASS_Bubblegum_Funnel.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                "Type": "Forage",          
-                "Category": -81,
-                "Edibility": 30,
-                "Price": 95,
-
-                "ContextTags":
-                ["faerie_forage",
-                "magical_forage_item",
-                "edible_mushroom",
-                "magical_mushroom_item",
-                "seedmaker_banned",
-                "season_spring",
-                "color_white"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 60
-        },
-            "{{ModId}}_Candy_Button": {
-                "Name": "{{ModId}}_Candy_Button",
-                "DisplayName": "{{i18n:SASS_Candy_Button.name}}",
-                "Description": "{{i18n:SASS_Candy_Button.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                "Type": "Forage",          
-                "Category": -81,
-                "Edibility": 50,
-                "Price": 30,
-                
-                "ContextTags":
-                ["faerie_forage",
-                "forage_item",
-                "season_spring",
-                "edible_mushroom",
-                "seedmaker_banned",
-                "magical_mushroom_item",
-                "color_pink"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 42
-        },
-            /*"{{ModId}}_Chicken_Woods": {
-                "Name": "{{ModId}}_Chicken_Woods",
-                "DisplayName": "{{i18n:SASS_Chicken_Woods.name}}",
-                "Description": "{{i18n:SASS_Chicken_Woods.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                "Type": "Forage",
-                "Category": -81,
-                "Edibility": 20,
-                "Price": 115,
-
-                "ContextTags":
-                ["faerie_forage",
-                "edible_mushroom",
-                "season_winter",
-                "magical_mushroom_item",
-                "seedmaker_banned",
-                "color_brown"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 126
-        },*/
-            "{{ModId}}_Cocoa_Agaric": {
-                "Name": "{{ModId}}_Cocoa_Agaric",
-                "DisplayName": "{{i18n:SASS_Cocoa_Agaric.name}}",
-                "Description": "{{i18n:SASS_Cocoa_Agaric.description}}",
-                "ExcludeFromShippingCollection":true,
-                "Type": "Forage",
-                "Category": -81,
-                "Edibility": 20,
-                "Price": 70,
-
-                "ContextTags":
-                ["faerie_forage",
-                "edible_mushroom",
-                "season_winter",
-                "magical_mushroom_item",
-                "seedmaker_banned",
-                "color_brown"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 118
-        },
-            "{{ModId}}_Cookie_Cap": {
-                "Name": "{{ModId}}_Cookie_Cap",
-                "DisplayName": "{{i18n:SASS_Cookie_Cap.name}}",
-                "Description": "{{i18n:SASS_Cookie_Cap.description}}",
-                "ExcludeFromShippingCollection":true,
-                "Type": "Forage",
-                "Category": -81,
-                "Edibility": 20,
-                "Price": 140,
-
-                "ContextTags":
-                ["faerie_forage",
-                "edible_mushroom",
-                "season_winter",
-                "magical_mushroom_item",
-                "seedmaker_banned",
-                "color_sand"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 119
         },
             "{{ModId}}_Coral_Fungus": {
                 "Name": "{{ModId}}_Coral_Fungus",
@@ -1021,69 +810,6 @@
 
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 59
-        },
-            "{{ModId}}_Custard_Cap": {
-                "Name": "{{ModId}}_Custard_Cap",
-                "DisplayName": "{{i18n:SASS_Custard_Cap.name}}",
-                "Description": "{{i18n:SASS_Custard_Cap.description}}",
-                "ExcludeFromShippingCollection":true,
-                "Type": "Forage",
-                "Category": -81,
-                "Edibility": 20,
-                "Price": 90,
-
-                "ContextTags":
-                ["faerie_forage",
-                "edible_mushroom",
-                "season_winter",
-                "magical_mushroom_item",
-                "seedmaker_banned",
-                "color_white"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 125
-        },
-            "{{ModId}}_Doughnut_Mushroom": {
-                "Name": "{{ModId}}_Doughnut_Mushroom",
-                "DisplayName": "{{i18n:SASS_Doughnut_Mushroom.name}}",
-                "Description": "{{i18n:SASS_Doughnut_Mushroom.description}}",
-                "ExcludeFromShippingCollection":true,
-                "Type": "Forage",
-                "Category": -81,
-                "Edibility": 20,
-                "Price": 145,
-
-                "ContextTags":
-                ["faerie_forage",
-                "edible_mushroom",
-                "season_winter",
-                "magical_mushroom_item",
-                "seedmaker_banned",
-                "color_iridium"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 124
-        },
-            "{{ModId}}_Festive_Agaric": {
-                "Name": "{{ModId}}_Festive_Agaric",
-                "DisplayName": "{{i18n:SASS_Festive_Agaric.name}}",
-                "Description": "{{i18n:SASS_Festive_Agaric.description}}",
-                "ExcludeFromShippingCollection":true,
-                "Type": "Forage",
-                "Category": -81,
-                "Edibility": 20,
-                "Price": 330,
-
-                "ContextTags":
-                ["faerie_forage",
-                "edible_mushroom",
-                "season_winter",
-                "magical_mushroom_item",
-                "seedmaker_banned",
-                "color_green"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 120
         },
             "{{ModId}}_Frilly_Gilly": {
                 "Name": "{{ModId}}_Frilly_Gilly",
@@ -1127,48 +853,6 @@
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 47
         },
-            "{{ModId}}_Gumdrop_Fungus": {
-                "Name": "{{ModId}}_Gumdrop_Fungus",
-                "DisplayName": "{{i18n:SASS_Gumdrop_Fungus.name}}",
-                "Description": "{{i18n:SASS_Gumdrop_Fungus.description}}",
-                "ExcludeFromShippingCollection":true,
-                "Type": "Forage",
-                "Category": -81,
-                "Edibility": 20,
-                "Price": 170,
-
-                "ContextTags":
-                ["faerie_forage",
-                "edible_mushroom",
-                "season_winter",
-                "magical_mushroom_item",
-                "seedmaker_banned",
-                "color_pink"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 121
-        },
-           /* "{{ModId}}_Honey_Fungus": {
-                "Name": "{{ModId}}_Honey_Fungus",
-                "DisplayName": "{{i18n:SASS_Honey_Fungus.name}}",
-                "Description": "{{i18n:SASS_Honey_Fungus.description}}",
-                "ExcludeFromShippingCollection":true,
-                "Type": "Forage",
-                "Category": -81,
-                "Edibility": 20,
-                "Price": 100,
-
-                "ContextTags":
-                ["faerie_forage",
-                "edible_mushroom",
-                "season_winter",
-                "magical_mushroom_item",
-                "seedmaker_banned",
-                "color_brown"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 127
-        },*/
             "{{ModId}}_Indigo_Cap": {
                 "Name": "{{ModId}}_Indigo_Cap",
                 "DisplayName": "{{i18n:SASS_Indigo_Cap.name}}",
@@ -1189,27 +873,6 @@
 
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 46
-        },
-            "{{ModId}}_Jack_Agaric": {
-                "Name": "{{ModId}}_Jack_Agaric",
-                "DisplayName": "{{i18n:SASS_Jack_Agaric.name}}",
-                "Description": "{{i18n:SASS_Jack_Agaric.description}}",
-                "ExcludeFromShippingCollection":true,
-                "Type": "Forage",
-                "Category": -81,
-                "Edibility": 20,
-                "Price": 320,
-
-                "ContextTags":
-                ["faerie_forage",
-                "edible_mushroom",
-                "season_winter",
-                "magical_mushroom_item",
-                "seedmaker_banned",
-                "color_orange"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 122
         },
             "{{ModId}}_Lilac_Funnel": {
                 "Name": "{{ModId}}_Lilac_Funnel",
@@ -1276,27 +939,6 @@
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 48
         },
-            /*"{{ModId}}_Meringue_Mushroom": {
-                "Name": "{{ModId}}_Meringue_Mushroom",
-                "DisplayName": "{{i18n:SASS_Meringue_Mushroom.name}}",
-                "Description": "{{i18n:SASS_Meringue_Mushroom.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                "Type": "Forage",
-                "Category": -81,
-                "Edibility": 20,
-                "Price": 75,
-
-                "ContextTags":
-                ["faerie_forage",
-                "edible_mushroom",
-                "season_winter",
-                "magical_mushroom_item",
-                "seedmaker_banned",
-                "color_pink"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 102
-        },*/
             "{{ModId}}_Midas_Cap": {
                 "Name": "{{ModId}}_Midas_Cap",
                 "DisplayName": "{{i18n:SASS_Midas_Cap.name}}",
@@ -1341,70 +983,6 @@
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 67
         },
-           /* "{{ModId}}_Milk_Mushroom": {
-                "Name": "{{ModId}}_Milk_Mushroom",
-                "DisplayName": "{{i18n:SASS_Milk_Mushroom.name}}",
-                "Description": "{{i18n:SASS_Milk_Mushroom.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                "Type": "Forage",
-                "Category": -81,
-                "Edibility": 20,
-                "Price": 105,
-
-                "ContextTags":
-                ["faerie_forage",
-                "edible_mushroom",
-                "season_winter",
-                "magical_mushroom_item",
-                "seedmaker_banned",
-                "color_white"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 104
-        },*/
-            "{{ModId}}_Mottled_Fieldcap": {
-                "Name": "{{ModId}}_Mottled_Fieldcap",
-                "DisplayName": "{{i18n:SASS_Mottled_Fieldcap.name}}",
-                "Description": "{{i18n:SASS_Mottled_Fieldcap.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                "Type": "Forage",          
-                "Category": -81,
-                "Edibility": 30,
-                "Price": 110,
-
-                "ContextTags":
-                ["faerie_forage",
-                "magical_forage_item",
-                "magical_mushroom_item",
-                "seedmaker_banned",
-                "season_fall",
-                "edible_mushroom",
-                "color_copper"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 57
-        },
-            "{{ModId}}_Popping_Parasols": {
-                "Name": "{{ModId}}_Popping_Parasols",
-                "DisplayName": "{{i18n:SASS_Popping_Parasols.name}}",
-                "Description": "{{i18n:SASS_Popping_Parasols.description}}",
-                "ExcludeFromShippingCollection":true,
-                "Type": "Forage",
-                "Category": -81,
-                "Edibility": 20,
-                "Price": 35,
-
-                "ContextTags":
-                ["faerie_forage",
-                "edible_mushroom",
-                "season_winter",
-                "magical_mushroom_item",
-                "seedmaker_banned",
-                "color_iridium"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 143
-        },
             "{{ModId}}_Queen_Bolete": {
                 "Name": "{{ModId}}_Queen_Bolete",
                 "DisplayName": "{{i18n:SASS_Queen_Bolete.name}}",
@@ -1447,27 +1025,6 @@
 
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 65
-        },
-            "{{ModId}}_Rustgill": {
-                "Name": "{{ModId}}_Rustgill",
-                "DisplayName": "{{i18n:SASS_Rustgill.name}}",
-                "Description": "{{i18n:SASS_Rustgill.description}}",
-                "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                "Type": "Forage",          
-                "Category": -81,
-                "Edibility": 15,
-                "Price": 215,
-                
-                "ContextTags":
-                ["faerie_forage",
-                "edible_mushroom",
-                "magical_mushroom_item",
-                "seedmaker_banned",
-                "season_fall",
-                "color_dark_brown"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 54
         },
             "{{ModId}}_Seafoam_Waxcap": {
                 "Name": "{{ModId}}_Seafoam_Waxcap",
@@ -1554,48 +1111,6 @@
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 43
         },
-            "{{ModId}}_Tea_Grass_Fungus": {
-                "Name": "{{ModId}}_Tea_Grass_Fungus",
-                "DisplayName": "{{i18n:SASS_Tea_Grass_Fungus.name}}",
-                "Description": "{{i18n:SASS_Tea_Grass_Fungus.description}}",
-                "ExcludeFromShippingCollection":true,
-                "Type": "Forage",
-                "Category": -81,
-                "Edibility": 20,
-                "Price": 35,
-
-                "ContextTags":
-                ["faerie_forage",
-                "edible_mushroom",
-                "season_winter",
-                "magical_mushroom_item",
-                "seedmaker_banned",
-                "color_green"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 105
-        },
-           /*"{{ModId}}_Wheatberry_Mushroom": {
-                "Name": "{{ModId}}_Wheatberry_Mushroom",
-                "DisplayName": "{{i18n:SASS_Wheatberry_Mushroom.name}}",
-                "Description": "{{i18n:SASS_Wheatberry_Mushroom.description}}",
-                "ExcludeFromShippingCollection":true,
-                "Type": "Forage",
-                "Category": -81,
-                "Edibility": 20,
-                "Price": 85,
-
-                "ContextTags":
-                ["faerie_forage",
-                "edible_mushroom",
-                "season_winter",
-                "magical_mushroom_item",
-                "seedmaker_banned",
-                "color_sand"],
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 103
-        }*/
         }
     },
 

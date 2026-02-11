@@ -1,0 +1,145 @@
+{
+  "Changes": [
+    		{
+            "LogName": "Animal Data",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+				"{{ModId}}_stegosaur": {
+                    "DisplayName": "{{i18n: stego.DisplayName}}",
+                    "House": "{{ModId}}_DinoCave",
+                    "Gender": 2,
+                    "PurchasePrice": 1500,
+					"SellPrice": 800,
+                    "ShopTexture": "{{ModId}}/assets/shops/stegoshop",
+                    "Sound": "croak",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "RequiredBuilding": "{{ModId}}_DinoCave",
+					"UnlockCondition": null,
+                    "ShopDisplayName": "{{i18n: stego.ShopDisplayName}}",
+                    "ShopDescription": "{{i18n: stego.ShopDescription}}",
+                    "ShopMissingBuildingDescription": "{{i18n: stego.ShopMissingBuildingDescription}}",
+				    "AlternatePurchaseTypes": [
+					{
+					"Condition": null,
+					"AnimalIds": [
+					"{{ModId}}_stegosaur",
+					]
+					}
+					],
+				    "BirthText": "{{i18n: stego.BirthText}}",
+					"IncubationTime": -1,
+                    "DaysToMature": 3,
+				    "DaysToProduce": 3,
+					"HarvestType": "DropOvernight",
+					"HarvestTool": null,
+                    "ProduceItemIDs": [
+                        {
+                            "Id": "{{ModId}}_dinoskin",
+                            "Condition": null,
+                            "MinimumFriendship": 150,
+                            "ItemID": "{{ModId}}_dinoskin"
+                        },
+                        {
+                            "Id": "{{ModId}}_herbtooth",
+                            "Condition": null,
+                            "MinimumFriendship": 50,
+                            "ItemID": "{{ModId}}_herbtooth"
+                        }
+                    ],
+					"DeluxeProduceItemIds": [
+					  {
+						"Id": "{{ModId}}_dorsalplate",
+						"Condition": "RANDOM 0.25 @addDailyLuck",
+						"MinimumFriendship": 700,
+						"ItemId": "{{ModId}}_dorsalplate"
+					  },
+					  {
+						"Id": "{{ModId}}_thagomizer",
+						"Condition": "RANDOM 0.5 @addDailyLuck",
+						"MinimumFriendship": 400,
+						"ItemId": "{{ModId}}_thagomizer"
+					  }
+					],
+                    "HappinessDrain": 1,
+                    "GrassEatAmount": 3,
+                    "ShowSummitCredits": false,
+                    "CanGetPregnant": false,
+                    "BabiesFollowAdults": true,
+                    "Texture": "{{ModId}}/assets/stego/stego1",
+					"SleepFrame": "12",
+					"Skins": [
+                    {
+                        "id": "stego2",
+                        "Texture": "{{ModId}}/assets/stego/stego2",
+						"HarvestedTexture": "{{ModId}}/assets/stego/stego2",
+						"BabyTexture": "{{ModId}}/assets/stego/stego2",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "stego3",
+                        "Texture": "{{ModId}}/assets/stego/stego3",
+						"HarvestedTexture": "{{ModId}}/assets/stego/stego3",
+						"BabyTexture": "{{ModId}}/assets/stego/stego3",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "stego4",
+                        "Texture": "{{ModId}}/assets/stego/stego4",
+						"HarvestedTexture": "{{ModId}}/assets/stego/stego4",
+						"BabyTexture": "{{ModId}}/assets/stego/stego4",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "stego5",
+                        "Texture": "{{ModId}}/assets/stego/stego5",
+						"HarvestedTexture": "{{ModId}}/assets/stego/stego5",
+						"BabyTexture": "{{ModId}}/assets/stego/stego5",
+                        "Weight": 0.2
+                    }
+                ],
+                    "BabyTexture": "{{ModId}}/assets/stego/stego1",
+					"HarvestedTexture": null,
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -4 },
+							"Scale": 3.0
+					},
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -10 },
+							"Scale": 5.0
+					},
+					"CanSwim": false,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"CustomFields": {
+					"meatIndex": "{{ModId}}_dinomeat"
+				}
+                }
+			},
+			},
+    {
+      "LogName": "stegosaur EAC",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": ["cryomancer.livestockdinos_stegosaur"],
+      "Entries": {
+		"IgnoreRain": true,
+        "SpeedOverride": 1.5,
+      }
+    },
+	]
+}

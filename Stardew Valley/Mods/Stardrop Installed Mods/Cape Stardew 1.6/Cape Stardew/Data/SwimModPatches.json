@@ -14,7 +14,7 @@
         "Height": 94
       },
       "PatchMode": "ReplaceByLayer",
-      "Update": "OnTimeChange",
+      "Update": "OnLocationChange",
 "Priority": "Late",
     },
     {
@@ -30,7 +30,7 @@
       },
       "PatchMode": "Replace",
 "Priority": "Late",
-      "Update": "OnTimeChange"
+      "Update": "OnLocationChange"
     },
 
 {
@@ -46,7 +46,7 @@
       },
       "PatchMode": "Replace",
 "Priority": "Late",
-      "Update": "OnTimeChange"
+      "Update": "OnLocationChange"
     },
 
 {
@@ -62,7 +62,7 @@
       },
       "PatchMode": "Replace",
 "Priority": "Late",
-      "Update": "OnTimeChange"
+      "Update": "OnLocationChange"
     },
 {
       "LogName": "MapEditComplete2x3",
@@ -77,7 +77,7 @@
       },
       "PatchMode": "Replace",
 "Priority": "Late",
-      "Update": "OnTimeChange"
+      "Update": "OnLocationChange"
     },
 
 
@@ -110,8 +110,9 @@
         "Height": 6
       },
       "PatchMode": "Replace",
-"Priority": "Late",
-      "Update": "OnLocationChange"
+"Priority": "Late +1",
+      "Update": "OnLocationChange",
+"SmallDockAtCape": "Off",
     },
     {
       "LogName": "MapEditComplete5",
@@ -247,11 +248,7 @@
       "PatchMode": "Replace",
 "Priority": "Late + 10",
       "Update": "OnLocationChange"
-    },
+    }
 
   ]
 }
-
-
-
-  

@@ -1,0 +1,1123 @@
+{
+  "Changes": [
+//Load Texture
+    {
+    "Action": "Load", 
+    "Target": "Animals/ZippyEggplant_Adult",
+    "FromFile": "assets/ZippyEggplant_Adult.png"
+    },
+    {
+     "Action": "Load", 
+    "Target": "Animals/ZippyEggplant_Baby",
+    "FromFile": "assets/ZippyEggplant_Baby.png"
+    },
+    {
+    "Action": "Load", 
+    "Target": "Animals/PepperRex_Adult",
+    "FromFile": "assets/PepperRex_Adult.png"
+    },
+    {
+     "Action": "Load", 
+    "Target": "Animals/PepperRex_Baby",
+    "FromFile": "assets/PepperRex_Baby.png"
+    },
+    {
+    "Action": "Load", 
+    "Target": "Animals/CornHorn_Adult",
+    "FromFile": "assets/CornHorn_Adult.png"
+    },
+    {
+     "Action": "Load", 
+    "Target": "Animals/CornHorn_Baby",
+    "FromFile": "assets/CornHorn_Baby.png"
+    },
+    {
+    "Action": "Load", 
+    "Target": "Animals/LadleNeck_Adult",
+    "FromFile": "assets/LadleNeck_Adult.png"
+    },
+    {
+     "Action": "Load", 
+    "Target": "Animals/LadleNeck_Baby",
+    "FromFile": "assets/LadleNeck_Baby.png"
+    },
+    {
+    "Action": "Load", 
+    "Target": "Animals/ChiliChomp_Adult",
+    "FromFile": "assets/ChiliChomp_Adult.png"
+    },
+    {
+     "Action": "Load", 
+    "Target": "Animals/ChiliChomp_Baby",
+    "FromFile": "assets/ChiliChomp_Baby.png"
+    },
+        {
+    "Action": "Load", 
+    "Target": "Animals/FinTart_Adult",
+    "FromFile": "assets/FinTart_Adult.png"
+    },
+    {
+     "Action": "Load", 
+    "Target": "Animals/FinTart_Baby",
+    "FromFile": "assets/FinTart_Baby.png"
+    },
+//Add Dinosaurs Sounds 
+    {
+     "LogName": "Dinosaurs produce entry",
+     "Action": "EditData",
+     "Target": "Data/FarmAnimals",
+     "When": { "DinoSounds": "true" },
+     "Entries": {
+        "Amichwan.DinoExpanded_ZippyEggplant": {
+        "DisplayName": "{{i18n:Amichwan.DinoExpanded.ZippyEggplant.Name}}",
+          "House": "Amichwan.DinoExpanded_DinoHutch",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": 10000,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 0,
+             "Y": 0,
+             "Width": 0,
+            "Height": 0
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": [
+            "Amichwan.DinoExpanded_ZippyEggplantEgg"
+          ],
+          "IncubationTime": 9000,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "{{i18n:Amichwan.DinoExpanded.ZippyEggplant.Birth}}",
+          "DaysToMature": 4,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": [
+              {
+                  "Id": "Feather",
+                   "Condition": null,
+                   "ItemId": "Amichwan.DinoExpanded_Feather"
+              }
+           ],
+           "DeluxeProduceItemIds": [
+              {
+                  "Id": "Hoof",
+                  "Condition": null,
+                  "MinimumFriendship": 0,
+                  "ItemId": "Amichwan.DinoExpanded_Hoof"
+              }
+           ],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 400,
+          "DeluxeProduceCareDivisor":5000.0,
+          "DeluxeProduceLuckMultiplier": 1.05,
+          "CanEatGoldenCrackers": true,
+          "ProfessionForHappinessBoost": 2,
+          "ProfessionForQualityBoost": 2,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "Amichwan.DinoExpanded.Sound.ZippyEggplant",
+          "BabySound": null,
+          "Texture": "Animals/ZippyEggplant_Adult",
+          "HarvestedTexture": null,
+          "BabyTexture": "Animals/ZippyEggplant_Baby",
+          "UseFlippedRightForLeft": true,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "UseDoubleUniqueAnimationFrames": false,
+          "SleepFrame": 12,
+          "EmoteOffset": {
+           "X": 0,
+           "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": { "Visible" : false },
+          "ShadowWhenBaby": { "Visible" : false },
+          "ShadowWhenAdultSwims": { "Visible" : false },
+          "ShadowWhenAdult": { "Visible" : false },
+          "CanSwim": false,
+          "BabiesFollowAdults": true,
+          "GrassEatAmount": 2,
+          "HappinessDrain": 8,
+          "UpDownPetHitboxTileSize": "1, 1",
+          "LeftRightPetHitboxTileSize": "1, 1",
+          "BabyUpDownPetHitboxTileSize": "1, 1",
+          "BabyLeftRightPetHitboxTileSize": "1, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": true,
+          "CustomFields": null
+        },
+        "Dinosaur": {
+        "DisplayName": "{{i18n:Amichwan.DinoExpanded.PepperRex.Name}}",
+          "House": "Amichwan.DinoExpanded_DinoHutch",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": 8000,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 0,
+             "Y": 0,
+             "Width": 0,
+            "Height": 0
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": [
+            "107",
+            "Amichwan.DinoExpanded_DinoEggXXL"
+          ],
+          "IncubationTime": 12000,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "{{i18n:Amichwan.DinoExpanded.PepperRex.Birth}}",
+          "DaysToMature": 5,
+          "CanGetPregnant": false,
+          "DaysToProduce": 3,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": [
+              {
+                  "Id": "Egg",
+                   "Condition": null,
+                   "ItemId": "107"
+              }
+           ],
+           "DeluxeProduceItemIds": [
+              {
+                  "Id": "EggXXL",
+                  "Condition": null,
+                  "MinimumFriendship": 0,
+                  "ItemId": "Amichwan.DinoExpanded_DinoEggXXL"
+              },
+              {
+                  "Id": "Plate",
+                  "Condition": null,
+                  "MinimumFriendship": 750,
+                  "ItemId": "Amichwan.DinoExpanded_Plate"
+              }
+           ],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 400,
+          "DeluxeProduceCareDivisor":1800.0,
+          "DeluxeProduceLuckMultiplier": 1.0,
+          "CanEatGoldenCrackers": true,
+          "ProfessionForHappinessBoost": 2,
+          "ProfessionForQualityBoost": 2,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "Amichwan.DinoExpanded.Sound.PepperRex",
+          "BabySound": null,
+          "Texture": "Animals/PepperRex_Adult",
+          "HarvestedTexture": null,
+          "BabyTexture": "Animals/PepperRex_Baby",
+          "UseFlippedRightForLeft": true,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "UseDoubleUniqueAnimationFrames": false,
+          "SleepFrame": 12,
+          "EmoteOffset": {
+           "X": 0,
+           "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": { "Visible" : false },
+          "ShadowWhenBaby": { "Visible" : false },
+          "ShadowWhenAdultSwims": { "Visible" : false },
+          "ShadowWhenAdult": { "Visible" : false },
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 2,
+          "HappinessDrain": 3,
+          "UpDownPetHitboxTileSize": "1, 1",
+          "LeftRightPetHitboxTileSize": "1, 1",
+          "BabyUpDownPetHitboxTileSize": "1, 1",
+          "BabyLeftRightPetHitboxTileSize": "1, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": true,
+          "CustomFields": null
+        },
+        "Amichwan.DinoExpanded_CornHorn": {
+        "DisplayName": "{{i18n:Amichwan.DinoExpanded.CornHorn.Name}}",
+          "House": "Amichwan.DinoExpanded_DinoHutch",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": 12000,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 0,
+             "Y": 0,
+             "Width": 0,
+            "Height": 0
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": [
+            "Amichwan.DinoExpanded_CornHornEgg"
+          ],
+          "IncubationTime": 12000,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "{{i18n:Amichwan.DinoExpanded.CornHorn.Birth}}",
+          "DaysToMature": 6,
+          "CanGetPregnant": false,
+          "DaysToProduce": 7,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": [
+              {
+                  "Id": "Corn",
+                   "Condition": null,
+                   "ItemId": "Amichwan.DinoExpanded_Corn"
+              }
+           ],
+          "DeluxeProduceItemIds": [],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor":1200.0,
+          "DeluxeProduceLuckMultiplier": 0.0,
+          "CanEatGoldenCrackers": true,
+          "ProfessionForHappinessBoost": 2,
+          "ProfessionForQualityBoost": 2,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "Amichwan.DinoExpanded.Sound.CornHorn",
+          "BabySound": null,
+          "Texture": "Animals/CornHorn_Adult",
+          "HarvestedTexture": null,
+          "BabyTexture": "Animals/CornHorn_Baby",
+          "UseFlippedRightForLeft": true,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "UseDoubleUniqueAnimationFrames": false,
+          "SleepFrame": 12,
+          "EmoteOffset": {
+           "X": 0,
+           "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": { "Visible" : false },
+          "ShadowWhenBaby": { "Visible" : false },
+          "ShadowWhenAdultSwims": { "Visible" : false },
+          "ShadowWhenAdult": { "Visible" : false },
+          "CanSwim": false,
+          "BabiesFollowAdults": true,
+          "GrassEatAmount": 2,
+          "HappinessDrain": 4,
+          "UpDownPetHitboxTileSize": "1, 1",
+          "LeftRightPetHitboxTileSize": "1, 1",
+          "BabyUpDownPetHitboxTileSize": "1, 1",
+          "BabyLeftRightPetHitboxTileSize": "1, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": true,
+          "CustomFields": null
+        },
+        "Amichwan.DinoExpanded_LadleNeck": {
+        "DisplayName": "{{i18n:Amichwan.DinoExpanded.LadleNeck.Name}}",
+          "House": "Amichwan.DinoExpanded_DinoHutch",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": 18000,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 0,
+             "Y": 0,
+             "Width": 0,
+            "Height": 0
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": [
+            "Amichwan.DinoExpanded_LadleNeckEgg"
+          ],
+          "IncubationTime": 15000,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "{{i18n:Amichwan.DinoExpanded.LadleNeck.Birth}}",
+          "DaysToMature": 9,
+          "CanGetPregnant": false,
+          "DaysToProduce": 2,
+          "HarvestType": "HarvestWithTool",
+          "HarvestTool": "Shears",
+          "ProduceItemIds": [
+              {
+                  "Id": "Scales",
+                   "Condition": null,
+                   "ItemId": "Amichwan.DinoExpanded_Scales"
+              }
+           ],
+          "DeluxeProduceItemIds": [],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor":1200.0,
+          "DeluxeProduceLuckMultiplier": 0.0,
+          "CanEatGoldenCrackers": true,
+          "ProfessionForHappinessBoost": 2,
+          "ProfessionForQualityBoost": 2,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "Amichwan.DinoExpanded.Sound.LadleNeck",
+          "BabySound": null,
+          "Texture": "Animals/LadleNeck_Adult",
+          "HarvestedTexture": null,
+          "BabyTexture": "Animals/LadleNeck_Baby",
+          "UseFlippedRightForLeft": true,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "UseDoubleUniqueAnimationFrames": false,
+          "SleepFrame": 12,
+          "EmoteOffset": {
+           "X": 0,
+           "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": { "Visible" : false },
+          "ShadowWhenBaby": { "Visible" : false },
+          "ShadowWhenAdultSwims": { "Visible" : false },
+          "ShadowWhenAdult": { "Visible" : false },
+          "CanSwim": false,
+          "BabiesFollowAdults": true,
+          "GrassEatAmount": 4,
+          "HappinessDrain": 6,
+          "UpDownPetHitboxTileSize": "1, 1",
+          "LeftRightPetHitboxTileSize": "1, 1",
+          "BabyUpDownPetHitboxTileSize": "1, 1",
+          "BabyLeftRightPetHitboxTileSize": "1, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": true,
+          "CustomFields": null
+        },
+        "Amichwan.DinoExpanded_ChiliChomp": {
+        "DisplayName": "{{i18n:Amichwan.DinoExpanded.ChiliChomp.Name}}",
+          "House": "Amichwan.DinoExpanded_DinoHutch",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": 20000,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 0,
+             "Y": 0,
+             "Width": 0,
+            "Height": 0
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": [
+            "Amichwan.DinoExpanded_ChiliChompEgg"
+          ],
+          "IncubationTime": 18000,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "{{i18n:Amichwan.DinoExpanded.ChiliChomp.Birth}}",
+          "DaysToMature": 8,
+          "CanGetPregnant": false,
+          "DaysToProduce": 4,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": [
+              {
+                  "Id": "Claw",
+                   "Condition": null,
+                   "ItemId": "Amichwan.DinoExpanded_Claw"
+              }
+           ],
+           "DeluxeProduceItemIds": [
+              {
+                  "Id": "Nodule",
+                  "Condition": null,
+                  "MinimumFriendship": 0,
+                  "ItemId": "Amichwan.DinoExpanded_Nodule"
+              }
+           ],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 300,
+          "DeluxeProduceCareDivisor":4500.0,
+          "DeluxeProduceLuckMultiplier": 1.1,
+          "CanEatGoldenCrackers": true,
+          "ProfessionForHappinessBoost": 2,
+          "ProfessionForQualityBoost": 2,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "Amichwan.DinoExpanded.Sound.ChiliChomp",
+          "BabySound": null,
+          "Texture": "Animals/ChiliChomp_Adult",
+          "HarvestedTexture": null,
+          "BabyTexture": "Animals/ChiliChomp_Baby",
+          "UseFlippedRightForLeft": true,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "UseDoubleUniqueAnimationFrames": false,
+          "SleepFrame": 12,
+          "EmoteOffset": {
+           "X": 0,
+           "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": { "Visible" : false },
+          "ShadowWhenBaby": { "Visible" : false },
+          "ShadowWhenAdultSwims": { "Visible" : false },
+          "ShadowWhenAdult": { "Visible" : false },
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 4,
+          "HappinessDrain": 5,
+          "UpDownPetHitboxTileSize": "1, 1",
+          "LeftRightPetHitboxTileSize": "1, 1",
+          "BabyUpDownPetHitboxTileSize": "1, 1",
+          "BabyLeftRightPetHitboxTileSize": "1, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": true,
+          "CustomFields": null
+        },
+        "Amichwan.DinoExpanded_FinTart": {
+        "DisplayName": "{{i18n:Amichwan.DinoExpanded.FinTart.Name}}",
+          "House": "Amichwan.DinoExpanded_DinoHutch",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": 15000,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 0,
+             "Y": 0,
+             "Width": 0,
+            "Height": 0
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": [
+            "Amichwan.DinoExpanded_FinTartEgg"
+          ],
+          "IncubationTime": 15000,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "{{i18n:Amichwan.DinoExpanded.FinTart.Birth}}",
+          "DaysToMature": 7,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DigUp",
+          "HarvestTool": null,
+          "ProduceItemIds": [
+              {
+                  "Id": "Epibiont",
+                   "Condition": null,
+                   "ItemId": "Amichwan.DinoExpanded_Epibiont"
+              }
+           ],
+          "DeluxeProduceItemIds": [],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 300,
+          "DeluxeProduceCareDivisor":4500.0,
+          "DeluxeProduceLuckMultiplier": 1.1,
+          "CanEatGoldenCrackers": true,
+          "ProfessionForHappinessBoost": 2,
+          "ProfessionForQualityBoost": 2,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "Amichwan.DinoExpanded.Sound.FinTart",
+          "BabySound": null,
+          "Texture": "Animals/FinTart_Adult",
+          "HarvestedTexture": null,
+          "BabyTexture": "Animals/FinTart_Baby",
+          "UseFlippedRightForLeft": true,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "UseDoubleUniqueAnimationFrames": false,
+          "SleepFrame": 12,
+          "EmoteOffset": {
+           "X": 0,
+           "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": { "Visible" : false },
+          "ShadowWhenBaby": { "Visible" : false },
+          "ShadowWhenAdultSwims": { "Visible" : false },
+          "ShadowWhenAdult": { "Visible" : false },
+          "CanSwim": true,
+          "BabiesFollowAdults": true,
+          "GrassEatAmount": 4,
+          "HappinessDrain": 5,
+          "UpDownPetHitboxTileSize": "1, 1",
+          "LeftRightPetHitboxTileSize": "1, 1",
+          "BabyUpDownPetHitboxTileSize": "1, 1",
+          "BabyLeftRightPetHitboxTileSize": "1, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": true,
+          "CustomFields": null
+        }
+      }
+    },
+//Add Dinosaurs Off Sounds 
+    {
+     "LogName": "Dinosaurs produce entry",
+     "Action": "EditData",
+     "Target": "Data/FarmAnimals",
+     "When": { "DinoSounds": "false" },
+     "Entries": {
+        "Amichwan.DinoExpanded_ZippyEggplant": {
+        "DisplayName": "{{i18n:Amichwan.DinoExpanded.ZippyEggplant.Name}}",
+          "House": "Amichwan.DinoExpanded_DinoHutch",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": 10000,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 0,
+             "Y": 0,
+             "Width": 0,
+            "Height": 0
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": [
+            "Amichwan.DinoExpanded_ZippyEggplantEgg"
+          ],
+          "IncubationTime": 9000,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "{{i18n:Amichwan.DinoExpanded.ZippyEggplant.Birth}}",
+          "DaysToMature": 4,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": [
+              {
+                  "Id": "Feather",
+                   "Condition": null,
+                   "ItemId": "Amichwan.DinoExpanded_Feather"
+              }
+           ],
+           "DeluxeProduceItemIds": [
+              {
+                  "Id": "Hoof",
+                  "Condition": null,
+                  "MinimumFriendship": 0,
+                  "ItemId": "Amichwan.DinoExpanded_Hoof"
+              }
+           ],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 400,
+          "DeluxeProduceCareDivisor":5000.0,
+          "DeluxeProduceLuckMultiplier": 1.05,
+          "CanEatGoldenCrackers": true,
+          "ProfessionForHappinessBoost": 2,
+          "ProfessionForQualityBoost": 2,
+          "ProfessionForFasterProduce": -1,
+          "Sound": null,
+          "BabySound": null,
+          "Texture": "Animals/ZippyEggplant_Adult",
+          "HarvestedTexture": null,
+          "BabyTexture": "Animals/ZippyEggplant_Baby",
+          "UseFlippedRightForLeft": true,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "UseDoubleUniqueAnimationFrames": false,
+          "SleepFrame": 12,
+          "EmoteOffset": {
+           "X": 0,
+           "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": { "Visible" : false },
+          "ShadowWhenBaby": { "Visible" : false },
+          "ShadowWhenAdultSwims": { "Visible" : false },
+          "ShadowWhenAdult": { "Visible" : false },
+          "CanSwim": false,
+          "BabiesFollowAdults": true,
+          "GrassEatAmount": 2,
+          "HappinessDrain": 8,
+          "UpDownPetHitboxTileSize": "1, 1",
+          "LeftRightPetHitboxTileSize": "1, 1",
+          "BabyUpDownPetHitboxTileSize": "1, 1",
+          "BabyLeftRightPetHitboxTileSize": "1, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": true,
+          "CustomFields": null
+        },
+        "Dinosaur": {
+        "DisplayName": "{{i18n:Amichwan.DinoExpanded.PepperRex.Name}}",
+          "House": "Amichwan.DinoExpanded_DinoHutch",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": 8000,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 0,
+             "Y": 0,
+             "Width": 0,
+            "Height": 0
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": [
+            "107",
+            "Amichwan.DinoExpanded_DinoEggXXL"
+          ],
+          "IncubationTime": 12000,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "{{i18n:Amichwan.DinoExpanded.PepperRex.Birth}}",
+          "DaysToMature": 5,
+          "CanGetPregnant": false,
+          "DaysToProduce": 3,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": [
+              {
+                  "Id": "Egg",
+                   "Condition": null,
+                   "ItemId": "107"
+              }
+           ],
+           "DeluxeProduceItemIds": [
+              {
+                  "Id": "EggXXL",
+                  "Condition": null,
+                  "MinimumFriendship": 0,
+                  "ItemId": "Amichwan.DinoExpanded_DinoEggXXL"
+              },
+              {
+                  "Id": "Plate",
+                  "Condition": null,
+                  "MinimumFriendship": 750,
+                  "ItemId": "Amichwan.DinoExpanded_Plate"
+              }
+           ],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 400,
+          "DeluxeProduceCareDivisor":1800.0,
+          "DeluxeProduceLuckMultiplier": 1.0,
+          "CanEatGoldenCrackers": true,
+          "ProfessionForHappinessBoost": 2,
+          "ProfessionForQualityBoost": 2,
+          "ProfessionForFasterProduce": -1,
+          "Sound": null,
+          "BabySound": null,
+          "Texture": "Animals/PepperRex_Adult",
+          "HarvestedTexture": null,
+          "BabyTexture": "Animals/PepperRex_Baby",
+          "UseFlippedRightForLeft": true,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "UseDoubleUniqueAnimationFrames": false,
+          "SleepFrame": 12,
+          "EmoteOffset": {
+           "X": 0,
+           "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": { "Visible" : false },
+          "ShadowWhenBaby": { "Visible" : false },
+          "ShadowWhenAdultSwims": { "Visible" : false },
+          "ShadowWhenAdult": { "Visible" : false },
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 2,
+          "HappinessDrain": 3,
+          "UpDownPetHitboxTileSize": "1, 1",
+          "LeftRightPetHitboxTileSize": "1, 1",
+          "BabyUpDownPetHitboxTileSize": "1, 1",
+          "BabyLeftRightPetHitboxTileSize": "1, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": true,
+          "CustomFields": null
+        },
+        "Amichwan.DinoExpanded_CornHorn": {
+        "DisplayName": "{{i18n:Amichwan.DinoExpanded.CornHorn.Name}}",
+          "House": "Amichwan.DinoExpanded_DinoHutch",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": 12000,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 0,
+             "Y": 0,
+             "Width": 0,
+            "Height": 0
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": [
+            "Amichwan.DinoExpanded_CornHornEgg"
+          ],
+          "IncubationTime": 12000,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "{{i18n:Amichwan.DinoExpanded.CornHorn.Birth}}",
+          "DaysToMature": 6,
+          "CanGetPregnant": false,
+          "DaysToProduce": 7,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": [
+              {
+                  "Id": "Corn",
+                   "Condition": null,
+                   "ItemId": "Amichwan.DinoExpanded_Corn"
+              }
+           ],
+          "DeluxeProduceItemIds": [],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor":1200.0,
+          "DeluxeProduceLuckMultiplier": 0.0,
+          "CanEatGoldenCrackers": true,
+          "ProfessionForHappinessBoost": 2,
+          "ProfessionForQualityBoost": 2,
+          "ProfessionForFasterProduce": -1,
+          "Sound": null,
+          "BabySound": null,
+          "Texture": "Animals/CornHorn_Adult",
+          "HarvestedTexture": null,
+          "BabyTexture": "Animals/CornHorn_Baby",
+          "UseFlippedRightForLeft": true,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "UseDoubleUniqueAnimationFrames": false,
+          "SleepFrame": 12,
+          "EmoteOffset": {
+           "X": 0,
+           "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": { "Visible" : false },
+          "ShadowWhenBaby": { "Visible" : false },
+          "ShadowWhenAdultSwims": { "Visible" : false },
+          "ShadowWhenAdult": { "Visible" : false },
+          "CanSwim": false,
+          "BabiesFollowAdults": true,
+          "GrassEatAmount": 2,
+          "HappinessDrain": 4,
+          "UpDownPetHitboxTileSize": "1, 1",
+          "LeftRightPetHitboxTileSize": "1, 1",
+          "BabyUpDownPetHitboxTileSize": "1, 1",
+          "BabyLeftRightPetHitboxTileSize": "1, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": true,
+          "CustomFields": null
+        },
+        "Amichwan.DinoExpanded_LadleNeck": {
+        "DisplayName": "{{i18n:Amichwan.DinoExpanded.LadleNeck.Name}}",
+          "House": "Amichwan.DinoExpanded_DinoHutch",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": 18000,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 0,
+             "Y": 0,
+             "Width": 0,
+            "Height": 0
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": [
+            "Amichwan.DinoExpanded_LadleNeckEgg"
+          ],
+          "IncubationTime": 15000,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "{{i18n:Amichwan.DinoExpanded.LadleNeck.Birth}}",
+          "DaysToMature": 9,
+          "CanGetPregnant": false,
+          "DaysToProduce": 2,
+          "HarvestType": "HarvestWithTool",
+          "HarvestTool": "Shears",
+          "ProduceItemIds": [
+              {
+                  "Id": "Scales",
+                   "Condition": null,
+                   "ItemId": "Amichwan.DinoExpanded_Scales"
+              }
+           ],
+          "DeluxeProduceItemIds": [],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor":1200.0,
+          "DeluxeProduceLuckMultiplier": 0.0,
+          "CanEatGoldenCrackers": true,
+          "ProfessionForHappinessBoost": 2,
+          "ProfessionForQualityBoost": 2,
+          "ProfessionForFasterProduce": -1,
+          "Sound": null,
+          "BabySound": null,
+          "Texture": "Animals/LadleNeck_Adult",
+          "HarvestedTexture": null,
+          "BabyTexture": "Animals/LadleNeck_Baby",
+          "UseFlippedRightForLeft": true,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "UseDoubleUniqueAnimationFrames": false,
+          "SleepFrame": 12,
+          "EmoteOffset": {
+           "X": 0,
+           "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": { "Visible" : false },
+          "ShadowWhenBaby": { "Visible" : false },
+          "ShadowWhenAdultSwims": { "Visible" : false },
+          "ShadowWhenAdult": { "Visible" : false },
+          "CanSwim": false,
+          "BabiesFollowAdults": true,
+          "GrassEatAmount": 4,
+          "HappinessDrain": 6,
+          "UpDownPetHitboxTileSize": "1, 1",
+          "LeftRightPetHitboxTileSize": "1, 1",
+          "BabyUpDownPetHitboxTileSize": "1, 1",
+          "BabyLeftRightPetHitboxTileSize": "1, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": true,
+          "CustomFields": null
+        },
+        "Amichwan.DinoExpanded_ChiliChomp": {
+        "DisplayName": "{{i18n:Amichwan.DinoExpanded.ChiliChomp.Name}}",
+          "House": "Amichwan.DinoExpanded_DinoHutch",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": 20000,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 0,
+             "Y": 0,
+             "Width": 0,
+            "Height": 0
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": [
+            "Amichwan.DinoExpanded_ChiliChompEgg"
+          ],
+          "IncubationTime": 18000,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "{{i18n:Amichwan.DinoExpanded.ChiliChomp.Birth}}",
+          "DaysToMature": 8,
+          "CanGetPregnant": false,
+          "DaysToProduce": 4,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": [
+              {
+                  "Id": "Claw",
+                   "Condition": null,
+                   "ItemId": "Amichwan.DinoExpanded_Claw"
+              }
+           ],
+           "DeluxeProduceItemIds": [
+              {
+                  "Id": "Nodule",
+                  "Condition": null,
+                  "MinimumFriendship": 0,
+                  "ItemId": "Amichwan.DinoExpanded_Nodule"
+              }
+           ],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 300,
+          "DeluxeProduceCareDivisor":4500.0,
+          "DeluxeProduceLuckMultiplier": 1.1,
+          "CanEatGoldenCrackers": true,
+          "ProfessionForHappinessBoost": 2,
+          "ProfessionForQualityBoost": 2,
+          "ProfessionForFasterProduce": -1,
+          "Sound": null,
+          "BabySound": null,
+          "Texture": "Animals/ChiliChomp_Adult",
+          "HarvestedTexture": null,
+          "BabyTexture": "Animals/ChiliChomp_Baby",
+          "UseFlippedRightForLeft": true,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "UseDoubleUniqueAnimationFrames": false,
+          "SleepFrame": 12,
+          "EmoteOffset": {
+           "X": 0,
+           "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": { "Visible" : false },
+          "ShadowWhenBaby": { "Visible" : false },
+          "ShadowWhenAdultSwims": { "Visible" : false },
+          "ShadowWhenAdult": { "Visible" : false },
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 4,
+          "HappinessDrain": 5,
+          "UpDownPetHitboxTileSize": "1, 1",
+          "LeftRightPetHitboxTileSize": "1, 1",
+          "BabyUpDownPetHitboxTileSize": "1, 1",
+          "BabyLeftRightPetHitboxTileSize": "1, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": true,
+          "CustomFields": null
+        },
+        "Amichwan.DinoExpanded_FinTart": {
+        "DisplayName": "{{i18n:Amichwan.DinoExpanded.FinTart.Name}}",
+          "House": "Amichwan.DinoExpanded_DinoHutch",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": 15000,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 0,
+             "Y": 0,
+             "Width": 0,
+            "Height": 0
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": [
+            "Amichwan.DinoExpanded_FinTartEgg"
+          ],
+          "IncubationTime": 15000,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "{{i18n:Amichwan.DinoExpanded.FinTart.Birth}}",
+          "DaysToMature": 7,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DigUp",
+          "HarvestTool": null,
+          "ProduceItemIds": [
+              {
+                  "Id": "Epibiont",
+                   "Condition": null,
+                   "ItemId": "Amichwan.DinoExpanded_Epibiont"
+              }
+           ],
+          "DeluxeProduceItemIds": [],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 300,
+          "DeluxeProduceCareDivisor":4500.0,
+          "DeluxeProduceLuckMultiplier": 1.1,
+          "CanEatGoldenCrackers": true,
+          "ProfessionForHappinessBoost": 2,
+          "ProfessionForQualityBoost": 2,
+          "ProfessionForFasterProduce": -1,
+          "Sound": null,
+          "BabySound": null,
+          "Texture": "Animals/FinTart_Adult",
+          "HarvestedTexture": null,
+          "BabyTexture": "Animals/FinTart_Baby",
+          "UseFlippedRightForLeft": true,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "UseDoubleUniqueAnimationFrames": false,
+          "SleepFrame": 12,
+          "EmoteOffset": {
+           "X": 0,
+           "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": { "Visible" : false },
+          "ShadowWhenBaby": { "Visible" : false },
+          "ShadowWhenAdultSwims": { "Visible" : false },
+          "ShadowWhenAdult": { "Visible" : false },
+          "CanSwim": true,
+          "BabiesFollowAdults": true,
+          "GrassEatAmount": 4,
+          "HappinessDrain": 5,
+          "UpDownPetHitboxTileSize": "1, 1",
+          "LeftRightPetHitboxTileSize": "1, 1",
+          "BabyUpDownPetHitboxTileSize": "1, 1",
+          "BabyLeftRightPetHitboxTileSize": "1, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": true,
+          "CustomFields": null
+        }
+      }
+    }
+  ]
+}

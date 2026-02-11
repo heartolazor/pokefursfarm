@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="2" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="47" nextobjectid="209">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="2" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="47" nextobjectid="209">
  <properties>
   <property name="BrookSounds" value="5 19 0"/>
   <property name="Music" value="gentleocean"/>
@@ -4253,8 +4253,8 @@
  <tileset firstgid="4734" name="spring_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
   <image source="spring_town.png" trans="000000" width="512" height="1152"/>
  </tileset>
- <tileset firstgid="7038" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
-  <image source="paths.png" width="64" height="144"/>
+ <tileset firstgid="7038" name="Paths" tilewidth="16" tileheight="16" tilecount="44" columns="4">
+  <image source="paths.png" width="64" height="184"/>
   <tile id="0">
    <properties>
     <property name="PathType" value="NE"/>
@@ -4286,7 +4286,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="7074" name="z_cavetilesalt" tilewidth="16" tileheight="16" tilecount="259" columns="7">
+ <tileset firstgid="7082" name="z_cavetilesalt" tilewidth="16" tileheight="16" tilecount="259" columns="7">
   <image source="watertiles.png" trans="000000" width="122" height="597"/>
   <tile id="68">
    <animation>
@@ -4515,7 +4515,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="7333" name="z_cavetiles" tilewidth="16" tileheight="16" tilecount="259" columns="7">
+ <tileset firstgid="7341" name="z_cavetiles" tilewidth="16" tileheight="16" tilecount="259" columns="7">
   <image source="Custom_CaveTiles.png" trans="000000" width="122" height="597"/>
   <tile id="68">
    <animation>
@@ -4761,8 +4761,8 @@
  <layer id="13" name="Back3" width="2" height="3">
   <data encoding="csv">
 0,0,
-7190,7190,
-1073749017,1073749017
+7198,7198,
+1073749025,1073749025
 </data>
  </layer>
  <layer id="45" name="Back4" width="2" height="3">
@@ -4789,14 +4789,14 @@
  <layer id="14" name="Buildings3" width="2" height="3">
   <data encoding="csv">
 0,0,
-0,7214,
+0,7222,
 0,0
 </data>
  </layer>
  <layer id="27" name="Buildings4" width="2" height="3">
   <data encoding="csv">
 0,0,
-7473,7214,
+7481,7222,
 0,0
 </data>
  </layer>

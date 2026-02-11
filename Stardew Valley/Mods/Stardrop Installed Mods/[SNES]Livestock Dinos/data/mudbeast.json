@@ -1,0 +1,167 @@
+{
+  "Changes": [
+    		{
+            "LogName": "Animal Data",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+				"{{ModId}}_mudbeast": {
+                    "DisplayName": "{{i18n: mudbeast.DisplayName}}",
+                    "House": "{{ModId}}_DinoCave",
+                    "Gender": 2,
+                    "PurchasePrice": 2000,
+					"SellPrice": 1000,
+                    "ShopTexture": "{{ModId}}/assets/shops/mudbeastshop",
+                    "Sound": "cursed_mannequin",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "RequiredBuilding": "{{ModId}}_DinoCave",
+					"UnlockCondition": null,
+                    "ShopDisplayName": "{{i18n: mudbeast.ShopDisplayName}}",
+                    "ShopDescription": "{{i18n: mudbeast.ShopDescription}}",
+                    "ShopMissingBuildingDescription": "{{i18n: mudbeast.ShopMissingBuildingDescription}}",
+				    "AlternatePurchaseTypes": [
+					{
+					"Condition": null,
+					"AnimalIds": [
+					"{{ModId}}_mudbeast",
+					]
+					}
+					],
+				    "BirthText": "{{i18n: mudbeast.BirthText}}",
+					"IncubationTime": -1,
+                    "DaysToMature": 5,
+				    "DaysToProduce": 2,
+					"HarvestType": "DropOvernight",
+					"HarvestTool": null,
+                    "ProduceItemIDs": [
+                        {
+                            "Id": "clay",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemID": "330"
+                        },
+                        {
+                            "Id": "{{ModId}}_talon",
+                            "Condition": null,
+                            "MinimumFriendship": 200,
+                            "ItemID": "{{ModId}}_talon"
+                        }
+                    ],
+					"DeluxeProduceItemIds": [
+					  {
+						"Id": "{{ModId}}_horn",
+						"Condition": "RANDOM 0.5 @addDailyLuck",
+						"MinimumFriendship": 500,
+						"ItemId": "{{ModId}}_horn"
+					  },
+					  {
+						"Id": "life elixir",
+						"Condition": "RANDOM 0.2 @addDailyLuck",
+						"MinimumFriendship": 800,
+						"ItemId": "773"
+					  },
+					],
+                    "HappinessDrain": 1,
+                    "GrassEatAmount": 5,
+                    "ShowSummitCredits": false,
+                    "CanGetPregnant": false,
+                    "BabiesFollowAdults": true,
+                    "Texture": "{{ModId}}/assets/mudbeast/mudbeast1",
+					"SleepFrame": "12",
+					"Skins": [
+                    {
+                        "id": "mudbeast2",
+                        "Texture": "{{ModId}}/assets/mudbeast/mudbeast2",
+						"HarvestedTexture": "{{ModId}}/assets/mudbeast/mudbeast2",
+						"BabyTexture": "{{ModId}}/assets/mudbeast/mudbeast2",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "mudbeast3",
+                        "Texture": "{{ModId}}/assets/mudbeast/mudbeast3",
+						"HarvestedTexture": "{{ModId}}/assets/mudbeast/mudbeast3",
+						"BabyTexture": "{{ModId}}/assets/mudbeast/mudbeast3",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "mudbeast4",
+                        "Texture": "{{ModId}}/assets/mudbeast/mudbeast4",
+						"HarvestedTexture": "{{ModId}}/assets/mudbeast/mudbeast4",
+						"BabyTexture": "{{ModId}}/assets/mudbeast/mudbeast4",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "mudbeast5",
+                        "Texture": "{{ModId}}/assets/mudbeast/mudbeast5",
+						"HarvestedTexture": "{{ModId}}/assets/mudbeast/mudbeast5",
+						"BabyTexture": "{{ModId}}/assets/mudbeast/mudbeast5",
+                        "Weight": 0.2
+                    }
+                ],
+                    "BabyTexture": "{{ModId}}/assets/mudbeast/mudbeast1",
+					"HarvestedTexture": null,
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 48,
+					"SpriteHeight": 48,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -4 },
+							"Scale": 3.0
+					},
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -10 },
+							"Scale": 5.0
+					},
+					"CanSwim": false,
+					"UpDownPetHitboxTileSize": "2, 2",
+					"LeftRightPetHitboxTileSize": "3, 3",
+					"BabyUpDownPetHitboxTileSize": "2, 2",
+					"BabyLeftRightPetHitboxTileSize": "3, 3",
+					"CustomFields": {
+					"meatIndex": "{{ModId}}_beastmeat"
+				}
+                }
+			},
+			},
+    {
+      "LogName": "mudbeast EAC",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": ["cryomancer.livestockdinos_mudbeast"],
+      "Entries": {
+		"IgnoreRain": true,
+        "SpeedOverride": 2.5,
+		"OutsideForager": true,
+      }
+    },
+	{
+      "LogName": "mudbeast extra produce",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": ["cryomancer.livestockdinos_mudbeast", "ExtraProduceSpawnList"],
+      "Entries": {
+        "{{ModID}}_yellowpresentbeast": {
+          "Id": "{{ModID}}_yellowpresentbeast",
+          "ProduceItemIds": [
+            {
+              "Id": "{{ModID}}_yellowpresentbeast",
+			  "Condition": "RANDOM 0.2 @addDailyLuck",
+              "ItemId": "{{ModID}}_yellowpresentbeast",
+			  "MinimumFriendship": 1000,
+            }
+          ],
+          "DaysToProduce": 28,
+          "SyncWithMainProduce": false
+        },
+      },
+    },
+	]
+}

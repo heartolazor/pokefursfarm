@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="3" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="29">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="3" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="29">
  <properties>
-  <property name="AmbientLight" value="180 170 90"/>
   <property name="BrookSounds" value="22 13 0 2 10 0"/>
   <property name="Light" value="28 11 4 28 12 4 28 13 4 28 9 4"/>
   <property name="Music" value="Upper_Ambient"/>
@@ -9,8 +8,8 @@
   <property name="Warp" value="29 9 Custom_SeaCape 1 20"/>
   <property name="indoorWater" value="T"/>
  </properties>
- <tileset firstgid="1" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
-  <image source="paths.png" trans="000000" width="64" height="256"/>
+ <tileset firstgid="1" name="paths" tilewidth="16" tileheight="16" tilecount="44" columns="4">
+  <image source="paths.png" trans="000000" width="64" height="184"/>
   <tile id="0">
    <properties>
     <property name="PathType" value="NE"/>
@@ -42,7 +41,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="65" name="z_mine_dark" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+ <tileset firstgid="45" name="z_mine_dark" tilewidth="16" tileheight="16" tilecount="288" columns="16">
   <image source="Mines/mine_dark.png" trans="000000" width="256" height="288"/>
   <tile id="0">
    <properties>
@@ -100,7 +99,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="353" name="mine_dangerous" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+ <tileset firstgid="333" name="mine_dangerous" tilewidth="16" tileheight="16" tilecount="288" columns="16">
   <image source="Mines/mine_dangerous.png" trans="000000" width="256" height="288"/>
   <tile id="137">
    <properties>
@@ -376,10 +375,10 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="641" name="cave" tilewidth="16" tileheight="16" tilecount="72" columns="6">
+ <tileset firstgid="621" name="cave" tilewidth="16" tileheight="16" tilecount="72" columns="6">
   <image source="cave.png" trans="000000" width="96" height="192"/>
  </tileset>
- <tileset firstgid="713" name="spring_beach" tilewidth="16" tileheight="16" tilecount="527" columns="17">
+ <tileset firstgid="693" name="spring_beach" tilewidth="16" tileheight="16" tilecount="527" columns="17">
   <image source="spring_beach.png" trans="000000" width="272" height="496"/>
   <tile id="90">
    <properties>
@@ -442,8 +441,8 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="1240" name="zz_cavetreasure" tilewidth="16" tileheight="16" tilecount="126" columns="6">
-  <image source="cavetreasure.png" width="96" height="345"/>
+ <tileset firstgid="1220" name="zz_cavetreasure" tilewidth="16" tileheight="16" tilecount="138" columns="6">
+  <image source="cavetreasure.png" width="96" height="374"/>
   <tile id="2">
    <properties>
     <property name="Water" value="T"/>
@@ -457,10 +456,10 @@
  </tileset>
  <layer id="1" name="Back" width="3" height="4">
   <data encoding="csv">
-586,587,587,
-601,490,490,
-617,600,600,
-635,616,616
+566,567,567,
+581,470,470,
+597,580,580,
+615,596,596
 </data>
  </layer>
  <layer id="13" name="Back2" width="3" height="4">
@@ -473,9 +472,9 @@
  </layer>
  <layer id="2" name="Buildings" width="3" height="4">
   <data encoding="csv">
-222,223,186,
-598,0,0,
-603,597,597,
+202,203,166,
+578,0,0,
+583,577,577,
 0,0,0
 </data>
  </layer>

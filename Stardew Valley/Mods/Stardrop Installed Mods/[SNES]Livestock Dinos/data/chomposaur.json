@@ -1,0 +1,170 @@
+{
+  "Changes": [
+    		{
+            "LogName": "Animal Data",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+				"{{ModId}}_chomposaur": {
+                    "DisplayName": "{{i18n: chomp.DisplayName}}",
+                    "House": "{{ModId}}_DinoCave",
+                    "Gender": 2,
+                    "PurchasePrice": 2500,
+					"SellPrice": 2500,
+                    "ShopTexture": "{{ModId}}/assets/shops/chompshop",
+                    "Sound": "shadowDie",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "RequiredBuilding": "{{ModId}}_DinoCave",
+					"UnlockCondition": null,
+                    "ShopDisplayName": "{{i18n: chomp.ShopDisplayName}}",
+                    "ShopDescription": "{{i18n: chomp.ShopDescription}}",
+                    "ShopMissingBuildingDescription": "{{i18n: chomp.ShopMissingBuildingDescription}}",
+				    "AlternatePurchaseTypes": [
+					{
+					"Condition": null,
+					"AnimalIds": [
+					"{{ModId}}_chomposaur",
+					]
+					}
+					],
+				    "BirthText": "{{i18n: chomp.BirthText}}",
+					"IncubationTime": -1,
+                    "DaysToMature": 6,
+				    "DaysToProduce": 2,
+					"HarvestType": "DropOvernight",
+					"HarvestTool": null,
+                    "ProduceItemIDs": [
+                        {
+                            "Id": "{{ModId}}_dinoskin",
+                            "Condition": null,
+                            "MinimumFriendship": 100,
+                            "ItemID": "{{ModId}}_dinoskin"
+                        },
+                        {
+                            "Id": "{{ModId}}_fang",
+                            "Condition": null,
+                            "MinimumFriendship": 200,
+                            "ItemID": "{{ModId}}_fang"
+                        }
+                    ],
+					"DeluxeProduceItemIds": [
+					  {
+						"Id": "inert egg",
+						"Condition": "RANDOM 0.3 @addDailyLuck",
+						"MinimumFriendship": 850,
+						"ItemId": "{{ModId}}_dinoegginert"
+					  }
+					],
+                    "HappinessDrain": 1,
+                    "GrassEatAmount": 7,
+                    "ShowSummitCredits": false,
+                    "CanGetPregnant": false,
+                    "BabiesFollowAdults": true,
+                    "Texture": "{{ModId}}/assets/chomp/chomp1",
+					"SleepFrame": "12",
+					"Skins": [
+                    {
+                        "id": "chomp2",
+                        "Texture": "{{ModId}}/assets/chomp/chomp2",
+						"HarvestedTexture": "{{ModId}}/assets/chomp/chomp2",
+						"BabyTexture": "{{ModId}}/assets/chomp/chomp2",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "chomp3",
+                        "Texture": "{{ModId}}/assets/chomp/chomp3",
+						"HarvestedTexture": "{{ModId}}/assets/chomp/chomp3",
+						"BabyTexture": "{{ModId}}/assets/chomp/chomp3",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "chomp4",
+                        "Texture": "{{ModId}}/assets/chomp/chomp4",
+						"HarvestedTexture": "{{ModId}}/assets/chomp/chomp4",
+						"BabyTexture": "{{ModId}}/assets/chomp/chomp4",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "chomp5",
+                        "Texture": "{{ModId}}/assets/chomp/chomp5",
+						"HarvestedTexture": "{{ModId}}/assets/chomp/chomp5",
+						"BabyTexture": "{{ModId}}/assets/chomp/chomp5",
+                        "Weight": 1
+                    }
+                ],
+                    "BabyTexture": "{{ModId}}/assets/chomp/chomp1",
+					"HarvestedTexture": null,
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -4 },
+							"Scale": 3.0
+					},
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -10 },
+							"Scale": 5.0
+					},
+					"CanSwim": false,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"CustomFields": {
+					"meatIndex": "{{ModId}}_dinomeat"
+				}
+                }
+			},
+			},
+    {
+      "LogName": "chomposaur EAC",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": ["cryomancer.livestockdinos_chomposaur"],
+      "Entries": {
+		"IgnoreRain": true,
+        "SpeedOverride": 1.5,
+		"OutsideForager": true,
+		"IsAttackAnimal": true,
+		"AttackDamage": 10,
+        "AttackIntervalMs": 10000,
+        "AttackRange": 5,
+        "AttackMaxChaseTimeMs": 3000,
+		"AttackCondition": "!selph.ExtraAnimalConfig_ANIMAL_COUNT cryomancer.livestockdinos_chomposaur 850",
+				"ExtraProduceSpawnList": [
+						{
+							"Id": "{{ModID}}_redpresentchomposaur",
+							"DaysToProduce": 3,
+							"ProduceItemIds": [
+								{
+									"ItemId": "{{ModID}}_redpresentchomposaur",
+									"Condition": "RANDOM 0.008 @addDailyLuck",
+									"MinimumFriendship": 1000,
+								}
+							]
+						},
+					],
+      }
+    },
+		{
+      "LogName": "ptero extra produce quality ignore",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": ["cryomancer.livestockdinos_chomposaur", "AnimalProduceExtensionData"],
+      "Entries": {
+		"(O){{ModID}}_redpresentchomposaur": {
+		"IgnoreAnimalQuality": true,
+		},
+      },
+    },
+	]
+}

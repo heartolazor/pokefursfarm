@@ -1,0 +1,70 @@
+{
+  "Changes": [
+
+{
+      "Action": "EditData",
+      "Target": "Data/Events/Farm,Data/Events/BusStop,Data/Events/Beach,Data/Events/Town,Data/Events/Mine,Data/Events/Mountain,Data/Events/FarmHouse,Data/Events/Forest,Data/Events/SeedShop,Data/Events/Saloon/Data/Events/Custom_DarkCave3,Data/Events/Custom_CapeStardew,Data/Events/Custom_Cape",
+      "Update": "OnDayStart",
+      "When": {
+      "JelliLunar": true,
+      "HasMod": "mistyspring.ItemExtensions",
+      "CustomOresEnabled": true,
+      "Query: {{DaysPlayed}} >= 1": true
+      },
+      "Entries": {
+        "14635pstone": "action AddMail current oreunlock received"
+      },
+},
+
+
+{
+  "Action": "EditData",
+  "Target": "Mods/mistyspring.ItemExtensions/Data",
+"HasMod": "mistyspring.ItemExtensions",
+  "Entries": {
+"(O)dreamy.kickitspot_EndlessEmber": {
+      "OnEquip": {
+        "Message": "{{i18n:equip.endless_ember_ring}}",
+        "TriggerAction": "AddBuff dreamy.kickitspot_AshenPromise"
+      },
+      "OnUnequip": {
+        "Message": "{{i18n:unequip.endless_ember_ring}}",
+        "TriggerAction": "RemoveBuff dreamy.kickitspot_AshenPromise"
+      }
+    },
+    "(O)dreamy.kickitspot_MysticArcana": {
+      "OnEquip": {
+        "Message": "{{i18n:equip.mystic_arcana_ring}}",
+        "TriggerAction": "AddBuff dreamy.kickitspot_ArcaneCharm"
+      },
+      "OnUnequip": {
+        "Message": "{{i18n:unequip.mystic_arcana_ring}}",
+        "TriggerAction": "RemoveBuff dreamy.kickitspot_ArcaneCharm"
+      }
+    },
+    "(O)dreamy.kickitspot_SilverPetal": {
+      "OnEquip": {
+        "Message": "{{i18n:equip.silver_petal_ring}}",
+        "TriggerAction": "AddBuff dreamy.kickitspot_PetalGrace"
+      },
+      "OnUnequip": {
+        "Message": "{{i18n:unequip.silver_petal_ring}}",
+        "TriggerAction": "RemoveBuff dreamy.kickitspot_PetalGrace"
+      }
+    },
+    "(O)dreamy.kickitspot_SkyOak": {
+      "OnEquip": {
+        "Message": "{{i18n:equip.sky_oak_ring}}",
+        "TriggerAction": "AddBuff dreamy.kickitspot_OakBlessing"
+      },
+      "OnUnequip": {
+        "Message": "{{i18n:unequip.sky_oak_ring}}",
+        "TriggerAction": "RemoveBuff dreamy.kickitspot_OakBlessing"
+      }
+    }
+  }
+},
+     
+]
+
+}

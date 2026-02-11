@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="23" height="32" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="188">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="23" height="32" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="189">
  <properties>
   <property name="AmbientLight" value="240 140 76"/>
-  <property name="Light" value="15 10 2"/>
+  <property name="Light" value="5 18 2"/>
   <property name="Music" value="Volcano_Ambient"/>
   <property name="indoorWater" value="T"/>
  </properties>
@@ -312,16 +312,22 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="321" name="cavetreasure" tilewidth="16" tileheight="16" tilecount="126" columns="6">
-  <image source="cavetreasure.png" trans="000000" width="96" height="345"/>
+ <tileset firstgid="321" name="cavetreasure" tilewidth="16" tileheight="16" tilecount="138" columns="6">
+  <image source="cavetreasure.png" trans="000000" width="96" height="374"/>
   <tile id="21">
    <animation>
     <frame tileid="21" duration="100"/>
     <frame tileid="22" duration="100"/>
    </animation>
   </tile>
+  <tile id="104">
+   <animation>
+    <frame tileid="104" duration="100"/>
+    <frame tileid="105" duration="100"/>
+   </animation>
+  </tile>
  </tileset>
- <tileset firstgid="447" name="volcano_dungeon" tilewidth="16" tileheight="16" tilecount="576" columns="16">
+ <tileset firstgid="459" name="volcano_dungeon" tilewidth="16" tileheight="16" tilecount="576" columns="16">
   <image source="Mines/volcano_dungeon.png" trans="000000" width="256" height="576"/>
  </tileset>
  <layer id="1" name="Back" width="23" height="32">
@@ -380,7 +386,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -408,7 +414,7 @@
 0,0,80,80,80,80,80,30,30,30,80,80,80,80,80,80,80,80,80,80,80,80,80,
 80,80,80,30,80,80,80,80,80,80,80,30,30,80,80,80,80,80,80,80,80,80,80,
 80,80,80,80,80,80,80,80,80,80,80,30,71,76,77,77,77,94,95,80,80,80,80,
-80,80,80,80,80,80,80,80,80,70,70,71,87,102,92,49,93,110,111,94,95,80,80,
+80,80,80,80,80,80,80,80,80,70,70,71,87,102,92,81,93,110,111,94,95,80,80,
 80,80,80,80,80,80,80,80,71,86,86,87,103,118,108,97,65,126,127,110,111,94,95,
 80,80,80,80,70,70,71,86,87,99,102,103,119,134,124,0,125,142,143,126,127,110,111,
 80,80,80,69,75,86,87,102,103,115,118,119,135,136,0,0,0,158,159,142,143,126,127,
@@ -561,25 +567,14 @@
     <property name="TouchAction" value="Warp Custom_CapeKeyMaze4 1 23"/>
    </properties>
   </object>
+  <object id="188" name="TileData" x="80" y="288" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="MagicWarp Custom_CapeCavingSecretroom 6 11"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="8" name="Back2"/>
- <objectgroup id="5" name="Buildings">
-  <object id="185" name="TileData" x="256" y="176" width="16" height="16">
-   <properties>
-    <property name="Action" value="MineElevator"/>
-   </properties>
-  </object>
-  <object id="186" name="TileData" x="256" y="192" width="16" height="16">
-   <properties>
-    <property name="Action" value="MineElevator"/>
-   </properties>
-  </object>
-  <object id="187" name="TileData" x="240" y="176" width="16" height="16">
-   <properties>
-    <property name="Action" value="MineElevator"/>
-   </properties>
-  </object>
- </objectgroup>
+ <objectgroup id="5" name="Buildings"/>
  <objectgroup id="11" name="Buildings2"/>
  <objectgroup id="6" name="Front"/>
 </map>

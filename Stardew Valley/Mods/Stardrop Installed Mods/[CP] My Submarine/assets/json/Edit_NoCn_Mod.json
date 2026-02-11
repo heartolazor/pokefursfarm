@@ -1,0 +1,172 @@
+{
+
+    "Changes": [
+
+//■■■ 他Mod環境時 の編集 ■■■
+
+
+  //★★★潜水艦解放前 の編集★★★
+
+    //●アイランドビーチ の編集(Lnh's Ginger Island Overhaul 導入時)
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Island_S",
+        "FromFile": "assets/tmx/MySubmarine_Island_S(LIOmod).tmx",
+        "ToArea": { "X": 19, "Y": 44, "Width": 12, "Height": 14 },
+        "When": {
+          "HasMod": "Lnh.IslandOverhaul",
+          "HasMod: |contains=VoidWitchCult.CP.TheFishmongerNPC": "false"
+        }
+      },
+
+    //●アイランドビーチ の編集(The Fishmonger 導入時)
+      {//◆パッチ１
+        "Action": "EditMap",
+        "Target": "Maps/Island_S",
+        "FromFile": "assets/tmx/MySubmarine_Island_S(TFNmod).tmx",
+        "FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 14 },
+        "ToArea": { "X": 19, "Y": 44, "Width": 5, "Height": 14 },
+        "When": {
+          "HasMod": "VoidWitchCult.CP.TheFishmongerNPC"
+        }
+      }, 
+      {//◆パッチ２
+        "Action": "EditMap",
+        "Target": "Maps/Island_S",
+        "FromFile": "assets/tmx/MySubmarine_Island_S(TFNmod).tmx",
+        "FromArea": { "X": 4, "Y": 7, "Width": 8, "Height": 7 },
+        "ToArea": { "X": 23, "Y": 51, "Width": 8, "Height": 7 },
+        "When": {
+          "HasMod": "VoidWitchCult.CP.TheFishmongerNPC"
+        }
+      },
+
+    //●アイランドビーチ の編集(The Fishmonger、Lnh's Ginger Island Overhaul 共通)
+      {//◆ライトのマッププロパティ追加
+        "Action": "EditMap",
+        "Target": "Maps/Island_S",
+        "TextOperations": [
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "DayTiles"],
+            "Value": "AlwaysFront 20 49 61",
+            "Delimiter": " "
+          },
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "Light"],
+            "Value": "20 49 4",
+            "Delimiter": " "
+          },
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "NightTiles"],
+            "Value": "AlwaysFront 20 49 60",
+            "Delimiter": " "
+          }
+        ],
+        "When": {
+          "HasMod": "Lnh.IslandOverhaul, VoidWitchCult.CP.TheFishmongerNPC"
+        }
+      },
+
+
+   //★★★潜水艦内部 のワープ変更★★★
+    //現時点では、「The Fishmonger」「Lnh's Ginger Island Overhaul」どちらも共通
+
+    //●バレーから乗ってアイランドへ向かう時
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Custom_MySubmarine_GoIsland",
+        "FromFile": "assets/tmx/MySubmarine_GoIsland(LIOmod).tmx",
+        "ToArea": { "X": 12, "Y": 9, "Width": 9, "Height": 1 },
+        "When": {
+          "SubmarineAction": "WarpInsideSubmarine",
+          "HasMod": "Lnh.IslandOverhaul, VoidWitchCult.CP.TheFishmongerNPC"
+        }
+      }, 
+
+    //●アイランドから乗ってバレーへ向かう時
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Custom_MySubmarine_GoBeach",
+        "FromFile": "assets/tmx/MySubmarine_GoBeach(LIOmod).tmx",
+        "ToArea": { "X": 11, "Y": 9, "Width": 9, "Height": 1 },
+        "When": {
+          "SubmarineAction": "WarpInsideSubmarine",
+          "HasMod": "Lnh.IslandOverhaul, VoidWitchCult.CP.TheFishmongerNPC"
+        }
+      }, 
+
+
+  //★★★ModConfigで「潜水艦内部無し」時の潜水艦に触った時のワープ変更★★★
+  //現時点では、「The Fishmonger」「Lnh's Ginger Island Overhaul」どちらも共通
+
+     //●バレービーチ の編集
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Beach",
+        "FromFile": "assets/tmx/MySubmarine_Beach_NoIN(LIOmod).tmx",
+        "ToArea": { "X": 92, "Y": 31, "Width": 8, "Height": 1 },
+        "When": {
+          "SubmarineAction": "WarpInstantlyOtherSide",
+          "HasMod": "Lnh.IslandOverhaul, VoidWitchCult.CP.TheFishmongerNPC"
+        }
+      },
+
+     //●アイランドビーチ の編集
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Island_S",
+        "FromFile": "assets/tmx/MySubmarine_Island_S_NoIN.tmx",
+        "ToArea": { "X": 21, "Y": 54, "Width": 2, "Height": 1 },
+        "When": {
+          "SubmarineAction": "WarpInstantlyOtherSide",
+          "HasMod": "Lnh.IslandOverhaul, VoidWitchCult.CP.TheFishmongerNPC"
+        }
+      },
+
+
+  //★★★ModConfigで「イベントシーン有り」の変更★★★
+  //現時点では、「The Fishmonger」「Lnh's Ginger Island Overhaul」どちらも共通
+
+     //●バレービーチ の編集
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Beach",
+        "FromFile": "assets/tmx/MySubmarine_Event_Beach.tmx",
+        "ToArea": { "X": 92, "Y": 31, "Width": 8, "Height": 1 },
+        "When": {
+          "SubmarineAction": "Cutscene(OnceADay), Cutscene(PlaybackEachTime)",
+          "HasMod": "Lnh.IslandOverhaul, VoidWitchCult.CP.TheFishmongerNPC"
+        }
+      },
+
+     //●アイランドビーチ の編集
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Island_S",
+        "FromFile": "assets/tmx/MySubmarine_Event_IslandSouth.tmx",
+        "ToArea": { "X": 21, "Y": 54, "Width": 2, "Height": 1 },
+        "When": {
+          "SubmarineAction": "Cutscene(OnceADay), Cutscene(PlaybackEachTime)",
+          "HasMod": "Lnh.IslandOverhaul, VoidWitchCult.CP.TheFishmongerNPC"
+        }
+      },
+
+     //●イベントマップのワーププロパティ変更(到着位置の変わるバレー➡アイランドだけでOK)
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Custom_MySubmarine_EventSeen_Beach",
+        "MapProperties": {
+            "Warp": "0 0 IslandSouth 21 53"
+        },
+        "When": {
+          "SubmarineAction": "Cutscene(OnceADay), Cutscene(PlaybackEachTime)",
+          "HasMod": "Lnh.IslandOverhaul, VoidWitchCult.CP.TheFishmongerNPC"
+        }
+      }
+
+
+    ]//▼▼"Changes"の終了▼▼
+}

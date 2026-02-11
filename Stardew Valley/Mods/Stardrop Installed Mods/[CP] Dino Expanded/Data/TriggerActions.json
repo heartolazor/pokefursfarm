@@ -1,0 +1,98 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/MuseumRewards",
+      "When": { "Donation": "Normal" },
+      "Entries": {
+        "Amichwan.DinoExpanded.Donated_DinoEgg": { 
+          "TargetContextTags": [
+            {
+              "Tag": "id_o_107",
+              "Count": 1
+            }
+          ],
+          "RewardItemId": "(O)107",
+          "RewardItemCount": 1,
+          "FlagOnCompletion": true 
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": { "Donation": "Normal" },
+      "Entries": {
+        "Amichwan.DinoExpanded.GuntherLetter": {
+          "Id": "Amichwan.DinoExpanded.GuntherLetter",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_MAIL Current Amichwan.DinoExpanded.Donated_DinoEgg",
+          "Actions": [
+            "AddMail Current Amichwan.DinoExpanded.GuntherEggDonation tomorrow"
+          ],
+          "MarkActionApplied": true
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": { "HasMod |contains=aedenthorn.BuffFramework": "true",
+      "BuffBoots": "true",
+      "Requirements": "Normal"},
+      "Entries": {
+          "Amichwan.DinoExpanded.MarlonDinoGear": {
+          "Id": "Amichwan.DinoExpanded.MarlonDinoGear",
+          "Trigger": "DayEnding",
+          "Condition": "BUILDINGS_CONSTRUCTED All \"Amichwan.DinoExpanded_BigDinoHutch\" 1",
+          "Actions": [
+            "AddMail Current Amichwan.DinoExpanded.MarlonDinoGear tomorrow"
+          ],
+          "MarkActionApplied": true
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": { "BuffBoots": "false",
+      "Requirements": "Normal"},
+      "Entries": {
+        "Amichwan.DinoExpanded.MarlonDinoBoots": {
+          "Id": "Amichwan.DinoExpanded.MarlonDinoBoots",
+          "Trigger": "DayEnding",
+          "Condition": "BUILDINGS_CONSTRUCTED All \"Amichwan.DinoExpanded_BigDinoHutch\" 1",
+          "Actions": [
+            "AddMail Current Amichwan.DinoExpanded.MarlonDinoBoots tomorrow"
+          ],
+          "MarkActionApplied": true
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": { "Requirements": "Normal" },
+      "Entries": {
+        "Amichwan.DinoExpanded.Mail.DemetriusDinoEgg": {
+          "Id": "Amichwan.DinoExpanded.Mail.DemetriusDinoEgg", 
+          "Trigger": "DayEnding",
+          "Condition": "BUILDINGS_CONSTRUCTED All \"Amichwan.DinoExpanded_DinoHutch\" 1",
+          "Actions": [
+            "AddMail Current Amichwan.DinoExpanded.Mail.DemetriusDinoEgg tomorrow"
+          ],
+          "MarkActionApplied": true
+        },
+        "Amichwan.DinoExpanded.Mail.Dinoincubator": {
+          "Id": "Amichwan.DinoExpanded.Mail.Dinoincubator",
+          "Trigger": "DayEnding",
+          "Condition": "BUILDINGS_CONSTRUCTED All \"Amichwan.DinoExpanded_DeluxeDinoHutch\" 1, PLAYER_HAS_MAIL Current Amichwan.DinoExpanded.DemetriusMissionComplete",
+          "Actions": [
+            "AddMail Current Amichwan.DinoExpanded.Mail.Dinoincubator tomorrow"
+          ],
+          "MarkActionApplied": true
+        }
+      }
+    }
+  ]
+}

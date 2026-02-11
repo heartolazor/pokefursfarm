@@ -1,7 +1,6 @@
 {
   "Changes": [
 
-//UnlockRSB///
  {
       "LogName": "MapEditComplete",
       "Action": "EditMap",
@@ -18,9 +17,7 @@
         "DLX.Bundles/Purchased": "Cape.Secret"
       },
 "Update": "OnLocationChange",
-    }
-
-    /*paintingpatch//*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_AnnettaUpstairs",
@@ -36,8 +33,7 @@
       "When": {
         "AnetSpringOrdercomplete": true
       }
-    }
-    /*WarpCapeCavePatch//*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_Cape",
@@ -53,8 +49,7 @@
       "When": {
         "JWarp": "true"
       }
-    }
-    /*/CapeCaveLitPatch///*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_Cape",
@@ -70,8 +65,7 @@
       "When": {
         "EssenceComplete": true
       }
-    }
-    /*///CapeWarper/////*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_Cape",
@@ -91,8 +85,7 @@
         "HasFlag": "Jelliwarp"
       },
       "Update": "OnLocationChange"
-    }
-    /*/CapeBoatShorePatch///*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeStardew",
@@ -108,8 +101,7 @@
       "When": {
         "SomeoneUnlockedBoat": true
       }
-    }
-    /*//DarkCaveUnlockPatch///*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_DarkCave3",
@@ -131,8 +123,7 @@
       "When": {
         "SecretCaveKeyUnlocked": true
       }
-    }
-    /*ellebuildingfix//*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeStardew",
@@ -154,8 +145,7 @@
       "When": {
         "HasMod |contains=Elle.TownBuildings": true
       }
-    }
-    /*/YrisBuildingsfix//*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeStardew",
@@ -178,8 +168,7 @@
         "HasMod |contains=yri.ProjectYellogTownOverhaul": true,
         "HasMod |contains=yri.YPY.RoofRecolor": true
       }
-    }
-    /*/campfire///*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeStardew",
@@ -201,8 +190,7 @@
       },
       "PatchMode": "Overlay",
       "Update": "OnLocationChange"
-    }
-    /*BalconyPatch//*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_AnnettaUpstairs",
@@ -225,8 +213,7 @@
         "HasMod |contains=yri.ProjectYellogTownOverhaul": true,
         "HasMod |contains=yri.YPY.RoofRecolor": true
       }
-    }
-    /*balconyentry//*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_AnnettaUpstairs",
@@ -248,9 +235,7 @@
       "When": {
         "HasMod |contains=Elle.TownBuildings": true
       }
-    }
-    /*///ForestMAPPATCHES////*/
-    /*/expanded//*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Forest",
@@ -265,9 +250,8 @@
         "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
         "ExpandedForestPatch": "on"
       },
-"Priority": "Late + 10"
-    }
-    /*VanillaForestEntrancePatch///*/,
+"Priority": "Late"
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Forest",
@@ -275,7 +259,7 @@
       "ToArea": {
         "X": 0,
         "Y": 74,
-        "Width": 48,
+        "Width": 30,
         "Height": 46
       },
       "When": {
@@ -283,9 +267,8 @@
         "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
         "HasMod |contains=DaisyNiko.SVR3": false
       },
-"Priority": "Late + 10"
-    }
-    /*ReimaginedForest///*/,
+"Priority": "Late"
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Forest",
@@ -300,11 +283,8 @@
         "HasMod |contains=DaisyNiko.SVR3": true,
         "ReimaginedForestPatch": "on"
       },
-"Priority": "Late + 10"
-    }
-    /*//AnnettaDinner/////*/,
-
-///SpringHomeEarly//
+"Priority": "Late"
+    },
  {
       "Action": "EditMap",
       "Target": "Maps/Custom_AnnettaHouse",
@@ -319,11 +299,12 @@
       "When": {
         "Time": "{{Range: 2030, 2130}}",
         "Season |contains=spring": true,
-	"Day |contains=5,12,19,26": false
+	"Day |contains=5,12,19,26": false,
+	"TimeBasedMapPatches": "On"
       },
-      "Update": "OnTimeChange"
+      "Update": "OnTimeChange",
+
     },
-///springhomelateFriday//
  {
       "Action": "EditMap",
       "Target": "Maps/Custom_AnnettaHouse",
@@ -338,12 +319,14 @@
       "When": {
         "Time": "{{Range: 2330, 2410}}",
         "Season |contains=spring": true,
-	"Day |contains=5,12,19,26": true
+	"Day |contains=5,12,19,26": true,
+"TimeBasedMapPatches": "On"
       },
-      "Update": "OnTimeChange"
+      "Update": "OnTimeChange",
+
     },
 
-//SaturdaySummerHomeLate//
+
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_AnnettaHouse",
@@ -358,12 +341,13 @@
       "When": {
         "Time": "{{Range: 2330, 2410}}",
         "Season |contains=summer": true,
-	"Day |contains=6,13,20,27": true///SaturdaySummerhomelate//
+	"Day |contains=6,13,20,27": true,
+"TimeBasedMapPatches": "On"
       },
-      "Update": "OnTimeChange"
+      "Update": "OnTimeChange",
+
     },
 
-///Summerhomeearly///
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_AnnettaHouse",
@@ -378,11 +362,13 @@
       "When": {
         "Time": "{{Range: 2030, 2130}}",
         "Season |contains=summer": true,
-        "Day |contains=6,13,20,27": false//NotTheWeekend//
+        "Day |contains=6,13,20,27": false,
+"TimeBasedMapPatches": "On"
       },
-      "Update": "OnTimeChange"
+      "Update": "OnTimeChange",
+
     },
-//FallWinterFridayHomeLate//
+
 {
       "Action": "EditMap",
       "Target": "Maps/Custom_AnnettaHouse",
@@ -397,11 +383,12 @@
       "When": {
         "Time": "{{Range: 2330, 2410}}",
         "Season |contains=winter,fall": true,
-	"Day |contains=5,12,19,26": true
+	"Day |contains=5,12,19,26": true,
+"TimeBasedMapPatches": "On"
       },
-      "Update": "OnTimeChange"
+      "Update": "OnTimeChange",
+
     },
-///winterfallhomeearly//
 {
       "Action": "EditMap",
       "Target": "Maps/Custom_AnnettaHouse",
@@ -416,11 +403,12 @@
       "When": {
         "Time": "{{Range: 2030, 2130}}",
         "Season |contains=winter,fall": true,
-	"Day |contains=5,12,19,26": false
+	"Day |contains=5,12,19,26": false,
+"TimeBasedMapPatches": "On"
       },
-      "Update": "OnTimeChange"
-    }
-    /*RowBoat///*/,
+      "Update": "OnTimeChange",
+
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Beach",
@@ -517,9 +505,7 @@
           "Delimiter": " "
         }
       ]
-    }
-    
-    /*/CapeStardewBeachPlankPatchRecolorAlt//*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeStardew",
@@ -535,8 +521,7 @@
         "HasMod |contains=Lita.StarblueValley": false,
         "HasMod |contains=DaisyNiko.EarthyRecolour": false
       }
-    }
-    /*/AnnettaFireplacePatch///*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_AnnettaHouse",
@@ -550,11 +535,12 @@
       "When": {
         "Season": "Winter",
         "Time": "{{Range: 1930, 2600}}",
-        "Day |contains=5,12,19,26": false
+        "Day |contains=5,12,19,26": false,
+"TimeBasedMapPatches": "On"
       },
-      "Update": "OnTimeChange"
-    }
-    /*/rainfireplace///*/,
+      "Update": "OnTimeChange",
+
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_AnnettaHouse",
@@ -567,12 +553,12 @@
       },
       "When": {
         "Weather": "Rain,Storm,Wind,Snow",
-        "Time": "{{Range: 1030, 2600}}"
+        "Time": "{{Range: 1030, 2600}}",
+"TimeBasedMapPatches": "On"
       },
-      "Update": "OnTimeChange"
-    }
-   
-    /*BackupWarpsCapeStardew//*/,
+      "Update": "OnTimeChange",
+
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeStardew",
@@ -588,8 +574,7 @@
           }
         }
       ]
-    }
-    /*BackupWarpsAnnettaMainDoor//*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeStardew",
@@ -645,8 +630,7 @@
           }
         }
       ]
-    }
-    /*MainwarpsCapeStardewSeaCape//*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeStardew",
@@ -661,9 +645,7 @@
           "Delimiter": " "
         }
       ]
-    }
-   
-    /*yrisUpstairsPatch///*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_AnnettaUpstairs",
@@ -682,8 +664,7 @@
           }
         }
       ]
-    }
-    /*elleUPstairsPatch//*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_AnnettaUpstairs",
@@ -702,9 +683,7 @@
           }
         }
       ]
-    }
-    
-    /*CapeBusStationedPatch//*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeBusStop",
@@ -718,13 +697,14 @@
       "Patchmode": "Replace",
       "When": {
         "Time": "{{Range: 1000, 1700}}",
-        "HasFlag |contains=ccVault,jojaVault": true, /*/BusStopUnlocked/*/
-        "LocationName": "Custom_CapeBusStop"
+        "HasFlag |contains=ccVault,jojaVault": true,
+        "LocationName": "Custom_CapeBusStop",
+      "TimeBasedMapPatches": "On",
+"BusAtCape": "on"
       },
-      "Update": "OnLocationChange,OnTimeChange",
-      "BusAtCape": "on"
-    }
-    /*BoatDockedWarpOut//*/,
+      "Update": "OnLocationChange",
+
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeStardew",
@@ -744,8 +724,7 @@
         "BoatDockedAtBeach": true,
 	"HasSeenEvent": "14635104",
       }
-    }
-    /*/EssencelitMapPatches///*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_DarkCave3",
@@ -760,8 +739,7 @@
       "When": {
         "EssenceComplete": true
       }
-    }
-    /*essencelitMapPatches//*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_AreaSecretBossLvl3",
@@ -956,8 +934,7 @@
         "EssenceComplete": true
       },
       "Update": "OnLocationChange"
-    }
-    /*JelliShopUnlock//*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_SeaCavernDepths2",
@@ -977,8 +954,7 @@
         "HasSeenEvent": "146353398"
       },
       "Update": "OnLocationChange"
-    }
-    /*CapeMineCartForestPatch//*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeMineCart",
@@ -993,8 +969,7 @@
         "HasFlag": "ccBoilerRoom"
       },
       "Update": "OnLocationChange"
-    }
-    /*whirlpoolpatch//*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Forest",
@@ -1005,13 +980,12 @@
         "Width": 3,
         "Height": 3
       },
-"Priority": "Late + 10"
-    }
-    /*warps//*/
-    /*swimmingbackup//*/,
+"Priority": "Late"
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Forest",
+	"Priority": "Late +2",
       "MapTiles": [
         {
           "Position": {
@@ -1026,8 +1000,7 @@
           }
         }
       ]
-    }
-    /*whirlpoolbeach//*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Beach-NightMarket",
@@ -1071,8 +1044,7 @@
         "Width": 3,
         "Height": 3
       }
-    }
-    /*/BeachWarpOuttoCapeStardew//  */,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Beach",
@@ -1144,8 +1116,7 @@
           }
         }
       ]
-    }
-    /*/hiddenMushroomCavewarp///*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_SecretBase",
@@ -1165,8 +1136,7 @@
           }
         }
       ]
-    }
-    /*/mapeditSecretBase//*/,
+    },
     {
       "LogName": "MapEditComplete",
       "Action": "EditMap",
@@ -1183,9 +1153,7 @@
         "SecretBaseMultiplayer": "true",
       },
 "Update": "OnLocationChange",
-    }
-
- /*/mapeditDarkCavePatch//*/,
+    },
     {
       "LogName": "MapEditCompleteDarkCave2Patch",
       "Action": "EditMap",
@@ -1202,9 +1170,8 @@
         "HasFlag": "SecretroomWarpUnlocked"
       },
 "Update": "OnLocationChange",
-"Priority": "Late + 10",
-    }
- /*/mapeditCapeCavingPatch//*/,
+"Priority": "Late",
+    },
     {
       "LogName": "MapEditCompleteCapeCaving",
       "Action": "EditMap",
@@ -1221,10 +1188,8 @@
         "SecretWallExploded": "true",
       },
 "Update": "OnLocationChange",
-"Priority": "Late + 10",
-    }
-
-    /*/CapeStardewSeaGrottoUnlock//*/,
+"Priority": "Late",
+    },
     {
       "LogName": "CapeShortcut",
       "Action": "EditMap",
@@ -1241,8 +1206,7 @@
          },
 
       "PatchMode": "Replace"
-    }
-    /*MapSwitches//*/,
+    },
     {
       "LogName": "CapeBusStopBuildable",
       "Action": "EditMap",
@@ -1275,8 +1239,7 @@
       },
       "PatchMode": "Replace",
       "Update": "OnLocationChange"
-    }
-    /*MapTilePropetySilverPetalEvent//*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeMineForest",
@@ -1297,8 +1260,7 @@
           }
         }
       ]
-    }
-    /*MineCartFallbackMessage//*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeMineForest",
@@ -1319,22 +1281,19 @@
           }
         }
       ]
-    }
-
-////////////*/AnnettaForestWalkWarpExit/////*///////////////////////////////////////////
-
-    /*Monday//Wednesday//Thursday/Sunday/Spring/Summer/Fall/Winter/UnlockTrue/*/,
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_AnnettaForest",
       "TextOperations": [
         {
-          "Operation": "RemoveDelimited",
+          "Operation": "ReplaceDelimited",
           "Target": [
             "MapProperties",
             "NPCWarp"
           ],
           "Search": "18 0 Forest 6 109",
+	  "Value": "0 28 Custom_CapeBusStop 49 29",
           "Delimiter": " ",
           
         }
@@ -1342,34 +1301,32 @@
       "When": {
         "Season": "Spring,Summer,Fall,Winter",
         "Day |contains=1,3,4,7,8,10,11,14,15,17,18,21,22,24,25,28": true,
-        "HasFlag |contains=ccVault,jojaVault": true, /*/BusStopOpen/*/
+        "HasFlag |contains=ccVault": true, 
       }
     },
-    {
+
+ {
       "Action": "EditMap",
       "Target": "Maps/Custom_AnnettaForest",
       "TextOperations": [
         {
-          "Operation": "Append",
+          "Operation": "ReplaceDelimited",
           "Target": [
             "MapProperties",
             "NPCWarp"
           ],
-          "Value": "0 28 Custom_CapeBusStop 49 29",
+          "Search": "18 0 Forest 6 109",
+	  "Value": "0 28 Custom_CapeBusStop 49 29",
           "Delimiter": " ",
-         
+          
         }
       ],
       "When": {
         "Season": "Spring,Summer,Fall,Winter",
         "Day |contains=1,3,4,7,8,10,11,14,15,17,18,21,22,24,25,28": true,
-        "HasFlag |contains=ccVault,jojaVault": true, /*/BusStopUnlocked/*/
+        "HasFlag |contains=jojaVault": true,
       }
     },
-    
-
-
-    /*/open///*/,
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeBusStop",
@@ -1387,11 +1344,11 @@
       ],
       "When": {
         "Time": "{{Range: 1000, 1700}}",
-        "HasFlag |contains=ccVault,jojaVault": true, /*/BusStopUnlocked/*/
+        "HasFlag |contains=ccVault,jojaVault": true, 
       },
-      "Update": "OnLocationChange,OnTimeChange"
-    }
-    /*/closedmorning///*/,
+      "Update": "OnTimeChange"
+    },
+
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeBusStop",
@@ -1409,11 +1366,10 @@
       ],
       "When": {
         "Time": "{{Range: 0600, 1000}}",
-        "HasFlag |contains=ccVault,jojaVault": true, /*/BusStopUnlocked/*/
+        "HasFlag |contains=ccVault,jojaVault": true, 
       },
-      "Update": "OnLocationChange,OnTimeChange"
-    }
-    /*/closednight//*/,
+      "Update": "OnTimeChange"
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeBusStop",
@@ -1431,9 +1387,9 @@
       ],
       "When": {
         "Time": "{{Range: 1700, 2600}}",
-        "HasFlag |contains=ccVault,jojaVault": true, /*/BusStopUnlocked/*/
+        "HasFlag |contains=ccVault,jojaVault": true,
       },
-      "Update": "OnLocationChange,OnTimeChange"
+      "Update": "OnTimeChange"
     },
     {
       "Action": "EditMap",
@@ -1451,13 +1407,11 @@
         }
       ],
       "When": {
-        "HasFlag |contains=ccVault,jojaVault": false, /*/BusStopClosed/*/
+        "HasFlag |contains=ccVault,jojaVault": false,
       },
-      "Update": "OnLocationChange"
+      "Update": "OnTimeChange"
     },
 
-/*//TimerBusStop///*/
-    /*/open///*/,
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeBusStopBuildable",
@@ -1475,11 +1429,10 @@
       ],
       "When": {
         "Time": "{{Range: 1000, 1700}}",
-        "HasFlag |contains=ccVault,jojaVault": true, /*/BusStopUnlocked/*/
+        "HasFlag |contains=ccVault,jojaVault": true, 
       },
-      "Update": "OnLocationChange,OnTimeChange"
-    }
-    /*/closedmorning///*/,
+      "Update": "OnTimeChange"
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeBusStopBuildable",
@@ -1497,11 +1450,10 @@
       ],
       "When": {
         "Time": "{{Range: 0600, 1000}}",
-        "HasFlag |contains=ccVault,jojaVault": true, /*/BusStopUnlocked/*/
+        "HasFlag |contains=ccVault,jojaVault": true,
       },
-      "Update": "OnLocationChange,OnTimeChange"
-    }
-    /*/closednight//*/,
+      "Update": "OnTimeChange"
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeBusStopBuildable",
@@ -1519,9 +1471,9 @@
       ],
       "When": {
         "Time": "{{Range: 1700, 2600}}",
-        "HasFlag |contains=ccVault,jojaVault": true, /*/BusStopUnlocked/*/
+        "HasFlag |contains=ccVault,jojaVault": true,
       },
-      "Update": "OnLocationChange,OnTimeChange"
+      "Update": "OnTimeChange"
     },
     {
       "Action": "EditMap",
@@ -1539,11 +1491,10 @@
         }
       ],
       "When": {
-        "HasFlag |contains=ccVault,jojaVault": false, /*/BusStopClosed/*/
+        "HasFlag |contains=ccVault,jojaVault": false,
       },
-      "Update": "OnLocationChange"
+      "Update": "OnTimeChange"
     },
- /*CapeStardewNPCWarpOut//*/,
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeStardew",
@@ -1559,7 +1510,6 @@
         }
       ]
     },
-/*/newAnnettabusNPCWarpOut//*/,
     {
       "Action": "EditMap",
       "Target": "Maps/Custom_CapeBusStop",
@@ -1575,7 +1525,25 @@
         }
       ],
       "When": {
-        "HasFlag |contains=ccVault,jojaVault": true, /*/BusStopUnlocked/*/
+        "HasFlag |contains=ccVault": true,
+      }
+    },
+ {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_CapeBusStop",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "MapProperties",
+            "NPCWarp"
+          ],
+          "Value": "29 25 BusStop 19 11 51 29 Custom_AnnettaForest 2 28",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "HasFlag |contains=jojaVault": true, 
       }
     },
     {
@@ -1593,10 +1561,28 @@
         }
       ],
       "When": {
-        "HasFlag |contains=ccVault,jojaVault": false, /*/BusStopClosed/*/
+        "HasFlag |contains=ccVault": false,
       }
     },
-//Hospitalswimsuitchangebackup//
+
+ {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_CapeBusStop",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "MapProperties",
+            "NPCWarp"
+          ],
+          "Value": "51 29 Custom_AnnettaForest 2 28",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "HasFlag |contains=jojaVault": false,
+      }
+    },
 {
       "Action": "EditMap",
       "Target": "Maps/Hospital",
@@ -1951,7 +1937,7 @@
  "When": {
         "ExtraMuseumRoom|contains=ExtraMuseumRoom": true,
       },
-      "Priority": "Late"
+      "Priority": "Early"
 		},
 
 
@@ -1963,6 +1949,7 @@
       "Action": "EditMap",
       "Target": "Maps/ArchaeologyHouse",
       "FromFile": "assets/CapeStardewMuseumRoomGlass.tmx",
+"PatchMode": "ReplaceByLayer",
       "ToArea": {
         "X": 27,
         "Y": 18,
@@ -1975,6 +1962,8 @@
 	"HasMod|contains=Lumisteria.MtVapius": false,
 	"MuseumCompatConfig": "ExtraMuseumRoomGlassVer2",
       },
+
+"Priority": "Early",
       
     },
     {
@@ -2123,7 +2112,6 @@
 		},
 
 
-//ExtraMuseumRoomGlass///
 	{
 			"LogName": "Museum ExtraRoom",
 			"Action": "EditMap",
@@ -2159,6 +2147,26 @@
  "When": {
         "ExtraMuseumRoom|contains=ExtraMuseumRoomGlass": true,
       },
+      "Priority": "Early"
+		},
+
+
+{
+			"LogName": "Museum ExtraRoom2",
+			"Action": "EditMap",
+			"Target": "Maps/ArchaeologyHouse",
+			"PatchMode": "Replace",
+			"FromFile": "assets/ExtraRoomCapeStardewMuseumRoom_MapPatchSVE.tbin",
+			"ToArea": {
+				"X": 18,
+				"Y": 18,
+				"Width": 3,
+				"Height": 2
+			},
+
+ "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP",
+      },
       "Priority": "Late"
 		},
 
@@ -2166,9 +2174,6 @@
 
 
 
-
-
-///jellinote///
 
 {
 			"LogName": "JelliNote",
@@ -2302,13 +2307,6 @@
       "Priority": "Late + 10",
 	"Update": "OnLocationChange",
 		},
-
-
-
-
-
-
-
 {
 			"LogName": "SecretroomwarpLadderunlock",
 			"Action": "EditMap",
@@ -2328,5 +2326,24 @@
       "Priority": "Late + 10",
 	"Update": "OnLocationChange",
 		},
+
+{
+      "LogName": "MapEditSmallDock",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_CapeStardew",
+      "FromFile": "assets/CapeStardewDockCustom.tmx",
+      "ToArea": {
+        "X": "45",
+        "Y": "31",
+        "Width": 7,
+        "Height": 6
+      },
+      "PatchMode": "ReplaceByLayer",
+"Priority": "Late +10",
+      "Update": "OnLocationChange",
+"When": {
+"SmallDockAtCape": "On",
+    },
+},
   ]
 }

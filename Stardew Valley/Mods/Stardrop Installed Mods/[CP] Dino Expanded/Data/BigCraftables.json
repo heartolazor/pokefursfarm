@@ -1,0 +1,49 @@
+{
+  "Changes": [
+    {    
+    "Action": "Load",
+    "Target": "BigCraftables/GeneticFuser",
+    "FromFile": "assets/GeneticFuser.png"
+    },
+    {    
+    "Action": "Load",
+    "Target": "BigCraftables/DinoIncubator",
+    "FromFile": "assets/DinoIncubator.png"
+    },
+    {
+      "LogName": "Add Genetic Fuser to big craftables",
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "Amichwan.DinoExpanded_GeneticFuser": {
+          "Name": "Amichwan.DinoExpanded_GeneticFuser",
+          "DisplayName": "{{i18n:Amichwan.DinoExpanded.GeneticFuser.Name}}",
+          "Description": "{{i18n:Amichwan.DinoExpanded.GeneticFuser.Description}}",
+          "Price": 0,
+          "Fragility": 0,
+          "CanBePlacedOutdoors": true,
+          "CanBePlacedIndoors": true,
+          "IsLamp": false,
+          "Texture": "BigCraftables/GeneticFuser",
+          "SpriteIndex": 0,
+          "ContextTags": null,
+          "CustomFields": null
+        },
+        "Amichwan.DinoExpanded_DinoIncubator": {
+          "Name": "Amichwan.DinoExpanded_DinoIncubator",
+          "DisplayName": "{{i18n:Amichwan.DinoExpanded.DinoIncubator.Name}}",
+          "Description": "{{i18n:Amichwan.DinoExpanded.DinoIncubator.Description}}",
+          "Price": 0,
+          "Fragility": 0,
+          "CanBePlacedOutdoors": false,
+          "CanBePlacedIndoors": true,
+          "IsLamp": false,
+          "Texture": "BigCraftables/DinoIncubator",
+          "SpriteIndex": 0,
+          "ContextTags": null,
+          "CustomFields": null
+        }
+      }
+    }
+  ]
+}

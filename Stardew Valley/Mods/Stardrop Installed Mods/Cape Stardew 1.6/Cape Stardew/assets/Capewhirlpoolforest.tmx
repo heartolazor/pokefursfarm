@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="3" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="50" nextobjectid="459">
- <properties>
-  <property name="AllowGrassGrowInWinter" value="T"/>
-  <property name="BrookSounds" value="61 13 0 12 73 0"/>
-  <property name="EnableGrassSpread" value="T"/>
-  <property name="Frog" value="4 30"/>
-  <property name="IsFarm" value="T"/>
-  <property name="Light" value="36 30 4 48 16 4"/>
-  <property name="Music" value="ocean"/>
-  <property name="NPCWarp" value="50 0 Custom_AnnettaForest 7 38"/>
-  <property name="Outdoors" value="T"/>
- </properties>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="3" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="50" nextobjectid="459">
  <tileset firstgid="1" name="_spring_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
   <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
   <tile id="150">
@@ -4260,8 +4249,8 @@
  <tileset firstgid="5598" name="spring_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
   <image source="spring_town.png" trans="000000" width="512" height="1152"/>
  </tileset>
- <tileset firstgid="7902" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
-  <image source="paths.png" width="64" height="256"/>
+ <tileset firstgid="7902" name="Paths" tilewidth="16" tileheight="16" tilecount="44" columns="4">
+  <image source="paths.png" width="64" height="184"/>
   <tile id="0">
    <properties>
     <property name="PathType" value="NE"/>
@@ -4293,7 +4282,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="7966" name="z_cavetiles" tilewidth="16" tileheight="16" tilecount="259" columns="7">
+ <tileset firstgid="7946" name="z_cavetiles" tilewidth="16" tileheight="16" tilecount="259" columns="7">
   <image source="Custom_CaveTiles.png" trans="000000" width="122" height="597"/>
   <tile id="68">
    <animation>
@@ -4522,10 +4511,10 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="8225" name="zz_capebuildings" tilewidth="16" tileheight="16" tilecount="63" columns="7">
+ <tileset firstgid="8205" name="zz_capebuildings" tilewidth="16" tileheight="16" tilecount="63" columns="7">
   <image source="capebuildings.png" trans="000000" width="122" height="146"/>
  </tileset>
- <tileset firstgid="8288" name="z_cavetilesalt" tilewidth="16" tileheight="16" tilecount="259" columns="7">
+ <tileset firstgid="8268" name="z_cavetilesalt" tilewidth="16" tileheight="16" tilecount="259" columns="7">
   <image source="watertiles.png" trans="000000" width="122" height="597"/>
   <tile id="68">
    <animation>
@@ -4757,7 +4746,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="8547" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="527" columns="17">
+ <tileset firstgid="8527" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="527" columns="17">
   <image source="spring_beach.png" width="272" height="496"/>
   <tile id="7">
    <properties>
@@ -5778,7 +5767,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="9074" name="zzz_cabinstuff" tilewidth="16" tileheight="16" tilecount="35" columns="7">
+ <tileset firstgid="9054" name="zzz_cabinstuff" tilewidth="16" tileheight="16" tilecount="35" columns="7">
   <image source="cabinstuff.png" width="116" height="80"/>
   <tile id="27">
    <properties>
@@ -5786,7 +5775,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="9109" name="outdoors" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+ <tileset firstgid="9089" name="outdoors" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
   <image source="spring_outdoorsTileSheet" width="400" height="1264"/>
   <tile id="150">
    <properties>
@@ -7282,7 +7271,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="11084" name="zzz_IslandTilesheet" tilewidth="16" tileheight="16" tilecount="2080" columns="32">
+ <tileset firstgid="11064" name="zzz_IslandTilesheet" tilewidth="16" tileheight="16" tilecount="2080" columns="32">
   <image source="island_tilesheet_1.png" width="512" height="1040"/>
  </tileset>
  <layer id="11" name="Back" width="3" height="3">
@@ -7292,101 +7281,101 @@
 1303,1303,1303
 </data>
  </layer>
- <layer id="12" name="Back2" width="3" height="3" visible="0">
+ <layer id="12" name="Back2" width="3" height="3">
   <data encoding="csv">
-8414,8407,2147492062,
-1610621143,8404,2684362967,
-1073750238,3221233879,3221233886
+8394,8387,2147492042,
+1610621123,8384,2684362947,
+1073750218,3221233859,3221233866
 </data>
  </layer>
- <layer id="13" name="Back3" width="3" height="3" visible="0">
-  <data encoding="csv">
-0,0,0,
-0,0,0,
-0,0,0
-</data>
- </layer>
- <layer id="48" name="Back4" width="3" height="3" visible="0">
+ <layer id="13" name="Back3" width="3" height="3">
   <data encoding="csv">
 0,0,0,
 0,0,0,
 0,0,0
 </data>
  </layer>
- <layer id="16" name="Buildings" width="3" height="3" visible="0">
+ <layer id="48" name="Back4" width="3" height="3">
   <data encoding="csv">
 0,0,0,
 0,0,0,
 0,0,0
 </data>
  </layer>
- <layer id="15" name="Buildings2" width="3" height="3" visible="0">
+ <layer id="16" name="Buildings" width="3" height="3">
   <data encoding="csv">
 0,0,0,
 0,0,0,
 0,0,0
 </data>
  </layer>
- <layer id="14" name="Buildings3" width="3" height="3" visible="0">
+ <layer id="15" name="Buildings2" width="3" height="3">
   <data encoding="csv">
 0,0,0,
 0,0,0,
 0,0,0
 </data>
  </layer>
- <layer id="27" name="Buildings4" width="3" height="3" visible="0">
+ <layer id="14" name="Buildings3" width="3" height="3">
   <data encoding="csv">
 0,0,0,
 0,0,0,
 0,0,0
 </data>
  </layer>
- <layer id="17" name="Paths" width="3" height="3" visible="0">
+ <layer id="27" name="Buildings4" width="3" height="3">
   <data encoding="csv">
 0,0,0,
 0,0,0,
 0,0,0
 </data>
  </layer>
- <layer id="18" name="Front" width="3" height="3" visible="0">
+ <layer id="17" name="Paths" width="3" height="3">
   <data encoding="csv">
 0,0,0,
 0,0,0,
 0,0,0
 </data>
  </layer>
- <layer id="19" name="AlwaysFront" width="3" height="3" visible="0">
+ <layer id="18" name="Front" width="3" height="3">
   <data encoding="csv">
 0,0,0,
 0,0,0,
 0,0,0
 </data>
  </layer>
- <layer id="20" name="AlwaysFront2" width="3" height="3" visible="0">
+ <layer id="19" name="AlwaysFront" width="3" height="3">
   <data encoding="csv">
 0,0,0,
 0,0,0,
 0,0,0
 </data>
  </layer>
- <layer id="21" name="AlwaysFront3" width="3" height="3" visible="0">
+ <layer id="20" name="AlwaysFront2" width="3" height="3">
   <data encoding="csv">
 0,0,0,
 0,0,0,
 0,0,0
 </data>
  </layer>
- <objectgroup id="23" name="Back" visible="0"/>
- <objectgroup id="37" name="Back2" visible="0"/>
- <objectgroup id="38" name="Back3" visible="0"/>
- <objectgroup id="47" name="Back4" visible="0"/>
- <objectgroup id="22" name="Buildings" visible="0"/>
- <objectgroup id="33" name="Buildings2" visible="0"/>
- <objectgroup id="34" name="Buildings3" visible="0"/>
- <objectgroup id="35" name="Buildings4" visible="0"/>
- <objectgroup id="24" name="Paths" visible="0"/>
- <objectgroup id="25" name="Front" visible="0"/>
- <objectgroup id="26" name="AlwaysFront" visible="0"/>
- <objectgroup id="43" name="AlwaysFront2" visible="0"/>
- <objectgroup id="44" name="AlwaysFront3" visible="0"/>
+ <layer id="21" name="AlwaysFront3" width="3" height="3">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <objectgroup id="23" name="Back"/>
+ <objectgroup id="37" name="Back2"/>
+ <objectgroup id="38" name="Back3"/>
+ <objectgroup id="47" name="Back4"/>
+ <objectgroup id="22" name="Buildings"/>
+ <objectgroup id="33" name="Buildings2"/>
+ <objectgroup id="34" name="Buildings3"/>
+ <objectgroup id="35" name="Buildings4"/>
+ <objectgroup id="24" name="Paths"/>
+ <objectgroup id="25" name="Front"/>
+ <objectgroup id="26" name="AlwaysFront"/>
+ <objectgroup id="43" name="AlwaysFront2"/>
+ <objectgroup id="44" name="AlwaysFront3"/>
 </map>

@@ -1,0 +1,152 @@
+{
+  "Changes": [
+    		{
+            "LogName": "Animal Data",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}_raptor": {
+                    "DisplayName": "{{i18n: raptor.DisplayName}}",
+                    "House": "{{ModId}}_DinoCave",
+                    "Gender": 2,
+                    "PurchasePrice": 1500,
+					"SellPrice": 800,
+                    "ShopTexture": "{{ModId}}/assets/shops/raptorshop",
+                    "Sound": "magma_sprite_spot",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "RequiredBuilding": "{{ModId}}_DinoCave",
+					"UnlockCondition": null,
+                    "ShopDisplayName": "{{i18n: raptor.ShopDisplayName}}",
+                    "ShopDescription": "{{i18n: raptor.ShopDescription}}",
+                    "ShopMissingBuildingDescription": "{{i18n: raptor.ShopMissingBuildingDescription}}",
+				    "AlternatePurchaseTypes": [
+					{
+					"Condition": null,
+					"AnimalIds": [
+					"{{ModId}}_raptor",
+					]
+					}
+					],
+				    "BirthText": "{{i18n: raptor.BirthText}}",
+					"IncubationTime": -1,
+                    "DaysToMature": 4,
+				    "DaysToProduce": 2,
+					"HarvestType": "DropOvernight",
+					"HarvestTool": null,
+                    "ProduceItemIDs": [
+                        {
+                            "Id": "{{ModId}}_talon",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemID": "{{ModId}}_talon"
+                        }
+                    ],
+					"DeluxeProduceItemIds": [
+					  {
+						"Id": "{{ModId}}_dinoskin",
+						"Condition": "RANDOM 0.33 @addDailyLuck",
+						"MinimumFriendship": 200,
+						"ItemId": "{{ModId}}_dinoskin"
+					  },
+					  {
+						"Id": "{{ModId}}_featherprehistoric",
+						"Condition": "RANDOM 0.33 @addDailyLuck",
+						"MinimumFriendship": 400,
+						"ItemId": "{{ModId}}_featherprehistoric"
+					  },
+					  {
+						"Id": "{{ModId}}_dinoegginert",
+						"Condition": "RANDOM 0.2 @addDailyLuck",
+						"MinimumFriendship": 800,
+						"ItemId": "{{ModId}}_dinoegginert"
+					  }
+					],
+                    "HappinessDrain": 1,
+                    "GrassEatAmount": 2,
+                    "ShowSummitCredits": false,
+                    "CanGetPregnant": false,
+                    "BabiesFollowAdults": true,
+                    "Texture": "{{ModId}}/assets/raptor/raptor1",
+					"SleepFrame": "12",
+					"Skins": [
+                    {
+                        "id": "raptor2",
+                        "Texture": "{{ModId}}/assets/raptor/raptor2",
+						"HarvestedTexture": "{{ModId}}/assets/raptor/raptor2",
+						"BabyTexture": "{{ModId}}/assets/raptor/raptor2",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "raptor3",
+                        "Texture": "{{ModId}}/assets/raptor/raptor3",
+						"HarvestedTexture": "{{ModId}}/assets/raptor/raptor3",
+						"BabyTexture": "{{ModId}}/assets/raptor/raptor3",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "raptor4",
+                        "Texture": "{{ModId}}/assets/raptor/raptor4",
+						"HarvestedTexture": "{{ModId}}/assets/raptor/raptor4",
+						"BabyTexture": "{{ModId}}/assets/raptor/raptor4",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "raptor5",
+                        "Texture": "{{ModId}}/assets/raptor/raptor5",
+						"HarvestedTexture": "{{ModId}}/assets/raptor/raptor5",
+						"BabyTexture": "{{ModId}}/assets/raptor/raptor5",
+                        "Weight": 0.25
+                    }
+                ],
+                    "BabyTexture": "{{ModId}}/assets/raptor/raptor1",
+					"HarvestedTexture": null,
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 48,
+					"SpriteHeight": 32,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -4 },
+							"Scale": 3.0
+					},
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -10 },
+							"Scale": 5.0
+					},
+					"CanSwim": false,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"CustomFields": {
+					"meatIndex": "{{ModId}}_dinomeat"
+				},
+				},
+			},
+			},
+    {
+      "LogName": "Raptor EAC",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": ["cryomancer.livestockdinos_raptor"],
+      "Entries": {
+        "IgnoreRain": true,
+        "SpeedOverride": 4,
+		"OutsideForager": true,
+		"IsAttackAnimal": true,
+		"AttackDamage": 5,
+        "AttackIntervalMs": 5000,
+        "AttackRange": 10,
+        "AttackMaxChaseTimeMs": 4000,
+		"AttackCondition": "!selph.ExtraAnimalConfig_ANIMAL_COUNT cryomancer.livestockdinos_raptor 400 3"
+	  }
+	},
+	]
+}

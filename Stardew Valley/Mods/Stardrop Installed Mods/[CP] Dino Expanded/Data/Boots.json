@@ -1,0 +1,76 @@
+{
+  "Changes": [
+// Load Texture
+    {
+      "Action": "Load",
+      "Target": "Amichwan.DinoExpanded/DinoBoots",
+      "FromFile": "assets/DinoBoots.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Amichwan.DinoExpanded/ShoeColors",
+      "FromFile": "assets/ShoeColors.png"
+    },
+// Add Boots Off Buffs
+    {
+      "LogName": "Add dino boots",
+      "Action": "EditData",
+      "Target": "Data/Boots",
+      "When": { "BuffBoots": "false" },
+      "Entries": {
+        "Amichwan.DinoExpanded_ScaleBoots": 
+        "ScaleBoots/{{i18n:Amichwan.DinoExpanded.boots.scale.BuffOff.description}}/350/12/5/0/{{i18n:Amichwan.DinoExpanded.boots.scale.name}}/Amichwan.DinoExpanded\\ShoeColors/0/Amichwan.DinoExpanded\\DinoBoots",
+        "Amichwan.DinoExpanded_ClawBoots": 
+        "ClawBoots/{{i18n:Amichwan.DinoExpanded.boots.claw.BuffOff.description}}/750/5/10/1/{{i18n:Amichwan.DinoExpanded.boots.claw.name}}/Amichwan.DinoExpanded\\ShoeColors/1/Amichwan.DinoExpanded\\DinoBoots",
+        "Amichwan.DinoExpanded_HoofBoots": 
+        "HoofBoots/{{i18n:Amichwan.DinoExpanded.boots.hoof.BuffOff.description}}/1200/7/7/2/{{i18n:Amichwan.DinoExpanded.boots.hoof.name}}/Amichwan.DinoExpanded\\ShoeColors/2/Amichwan.DinoExpanded\\DinoBoots"
+      }
+    },
+// Add Boots Buffs
+    {
+      "LogName": "Add dino boots",
+      "Action": "EditData",
+      "Target": "Data/Boots",
+      "When": { "HasMod |contains=aedenthorn.BuffFramework": "true",
+      "BuffBoots": "true" },
+      "Entries": {
+        "Amichwan.DinoExpanded_ScaleBoots": 
+        "ScaleBoots/{{i18n:Amichwan.DinoExpanded.boots.scale.description}}/350/9/8/0/{{i18n:Amichwan.DinoExpanded.boots.scale.name}}/Amichwan.DinoExpanded\\ShoeColors/0/Amichwan.DinoExpanded\\DinoBoots",
+        "Amichwan.DinoExpanded_ClawBoots": 
+        "ClawBoots/{{i18n:Amichwan.DinoExpanded.boots.claw.description}}/750/7/5/1/{{i18n:Amichwan.DinoExpanded.boots.claw.name}}/Amichwan.DinoExpanded\\ShoeColors/1/Amichwan.DinoExpanded\\DinoBoots",
+        "Amichwan.DinoExpanded_HoofBoots": 
+        "HoofBoots/{{i18n:Amichwan.DinoExpanded.boots.hoof.description}}/1200/4/7/2/{{i18n:Amichwan.DinoExpanded.boots.hoof.name}}/Amichwan.DinoExpanded\\ShoeColors/2/Amichwan.DinoExpanded\\DinoBoots"
+      }
+    },
+// Add Buffs
+    {
+      "LogName": "Add Dino Boots Buffs",
+      "Action": "EditData",
+      "Target": "aedenthorn.BuffFramework/dictionary",
+      "When": { "HasMod |contains=aedenthorn.BuffFramework": "true",
+      "BuffBoots": "true" },
+      "Entries": {
+        "Amichwan.DinoExpanded.ClawBoots.Buff": {
+               "Id": "Amichwan.DinoExpanded.ClawBoots.Buff",
+               "DisplayName": "{{i18n:Amichwan.DinoExpanded.boots.claw.buff.name}}",
+               "Description": "{{i18n:Amichwan.DinoExpanded.boots.claw.buff.Description}}",
+               "Source": "Amichwan.DinoExpanded_ClawBoots",
+               "DisplaySource": "{{i18n:Amichwan.DinoExpanded.boots.claw.buff.Source}}",
+               "IconSheetIndex": 11,
+               "Boots": "ClawBoots",
+               "attack": 5
+        },
+        "Amichwan.DinoExpanded.HoofBoots.Buff": {
+               "Id": "Amichwan.DinoExpanded.HoofBoots.Buff",
+               "DisplayName": "{{i18n:Amichwan.DinoExpanded.boots.HoofBoots.buff.name}}",
+               "Description": "{{i18n:Amichwan.DinoExpanded.boots.HoofBoots.buff.Description}}",
+               "Source": "Amichwan.DinoExpanded.HoofBoots",
+               "DisplaySource": "{{i18n:Amichwan.DinoExpanded.boots.HoofBoots.buff.Source}}",
+               "IconSheetIndex": 9,
+               "Boots": "HoofBoots",
+               "speed": 3
+        }
+      }
+    }
+  ]
+}

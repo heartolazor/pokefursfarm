@@ -1,0 +1,198 @@
+{
+  "Changes": [
+    		{
+            "LogName": "Animal Data",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+				"{{ModId}}_drago": {
+                    "DisplayName": "{{i18n: drago.DisplayName}}",
+                    "House": "{{ModId}}_DinoCave",
+                    "Gender": 2,
+                    "PurchasePrice": 3000,
+					"SellPrice": 2500,
+                    "ShopTexture": "{{ModId}}/assets/shops/dragoshop",
+                    "Sound": "shadowDie",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "RequiredBuilding": "{{ModId}}_DinoCave",
+					"UnlockCondition": null,
+                    "ShopDisplayName": "{{i18n: drago.ShopDisplayName}}",
+                    "ShopDescription": "{{i18n: drago.ShopDescription}}",
+                    "ShopMissingBuildingDescription": "{{i18n: drago.ShopMissingBuildingDescription}}",
+				    "AlternatePurchaseTypes": [
+					{
+					"Condition": null,
+					"AnimalIds": [
+					"{{ModId}}_drago",
+					]
+					}
+					],
+				    "BirthText": "{{i18n: drago.BirthText}}",
+					"IncubationTime": -1,
+                    "DaysToMature": 10,
+				    "DaysToProduce": 3,
+					"HarvestType": "DropOvernight",
+					"HarvestTool": null,
+                    "ProduceItemIDs": [
+                        {
+                            "Id": "{{ModId}}_dinoskin",
+                            "Condition": null,
+                            "MinimumFriendship": 300,
+                            "ItemID": "{{ModId}}_dinoskin"
+                        },
+                        {
+                            "Id": "{{ModId}}_petalprehistoric",
+                            "Condition": null,
+                            "MinimumFriendship": 50,
+                            "ItemID": "{{ModId}}_petalprehistoric"
+                        }
+                    ],
+					"DeluxeProduceItemIds": [
+					  {
+						"Id": "sunflower",
+						"Condition": "RANDOM 0.5 @addDailyLuck",
+						"MinimumFriendship": 600,
+						"ItemId": "421"
+					  },
+					  {
+						"Id": "{{ModId}}_fang",
+						"Condition": "RANDOM 0.25 @addDailyLuck",
+						"MinimumFriendship": 500,
+						"ItemId": "{{ModId}}_fang"
+					  },			
+					],
+                    "HappinessDrain": 1,
+                    "GrassEatAmount": 4,
+                    "ShowSummitCredits": false,
+                    "CanGetPregnant": true,
+                    "BabiesFollowAdults": true,
+                    "Texture": "{{ModId}}/assets/drago/drago1",
+					"SleepFrame": "12",
+					"Skins": [
+                    {
+                        "id": "drago2",
+                        "Texture": "{{ModId}}/assets/drago/drago2",
+						"HarvestedTexture": "{{ModId}}/assets/drago/drago2",
+						"BabyTexture": "{{ModId}}/assets/drago/dragopup2",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "drago3",
+                        "Texture": "{{ModId}}/assets/drago/drago3",
+						"HarvestedTexture": "{{ModId}}/assets/drago/drago3",
+						"BabyTexture": "{{ModId}}/assets/drago/dragopup3",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "drago4",
+                        "Texture": "{{ModId}}/assets/drago/drago4",
+						"HarvestedTexture": "{{ModId}}/assets/drago/drago4",
+						"BabyTexture": "{{ModId}}/assets/drago/dragopup4",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "drago5",
+                        "Texture": "{{ModId}}/assets/drago/drago5",
+						"HarvestedTexture": "{{ModId}}/assets/drago/drago5",
+						"BabyTexture": "{{ModId}}/assets/drago/dragopup5",
+                        "Weight": 1
+                    }
+                ],
+                    "BabyTexture": "{{ModId}}/assets/drago/dragopup1",
+					"BabySound": "Ostrich", 
+					"HarvestedTexture": null,
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 64,
+					"SpriteHeight": 48,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -4 },
+							"Scale": 3.0
+					},
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -10 },
+							"Scale": 5.0
+					},
+					"CanSwim": false,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"CustomFields": {
+					"meatIndex": "{{ModId}}_dinomeat"
+				}
+                }
+			},
+			},
+    {
+      "LogName": "Drago EAC",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": ["cryomancer.livestockdinos_drago"],
+      "Entries": {
+		"IgnoreRain": true,
+        "SpeedOverride": 1.5,
+				"ExtraProduceSpawnList": [
+						{
+							"Id": "{{ModID}}_pinkpresentdrago",
+							"DaysToProduce": 4,
+							"ProduceItemIds": [
+								{
+									"ItemId": "{{ModID}}_pinkpresentdrago",
+									"Condition": "RANDOM 0.25 @addDailyLuck",
+									"MinimumFriendship": 700,
+								}
+							]
+						},
+												{
+							"Id": "{{ModID}}_yellowpresentdrago",
+							"DaysToProduce": 4,
+							"ProduceItemIds": [
+								{
+									"ItemId": "{{ModID}}_yellowpresentdrago",
+									"Condition": "RANDOM 0.20 @addDailyLuck",
+									"MinimumFriendship": 800,
+								}
+							]
+						},
+												{
+							"Id": "{{ModID}}_orangepresentdrago",
+							"DaysToProduce": 4,
+							"ProduceItemIds": [
+								{
+									"ItemId": "{{ModID}}_orangepresentdrago",
+									"Condition": "RANDOM 0.15 @addDailyLuck",
+									"MinimumFriendship": 900,
+								}
+							]
+						}
+					],
+      }
+    },
+	{
+      "LogName": "drago extra produce quality ignore",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": ["cryomancer.livestockdinos_drago", "AnimalProduceExtensionData"],
+      "Entries": {
+		"(O){{ModID}}_pinkpresentdrago": {
+		"IgnoreAnimalQuality": true,
+		},
+		"(O){{ModID}}_yellowpresentdrago": {
+		"IgnoreAnimalQuality": true,
+		},
+		"(O){{ModID}}_orangepresentdrago": {
+        "IgnoreAnimalQuality": true,
+        },
+      },
+    },
+	]
+}

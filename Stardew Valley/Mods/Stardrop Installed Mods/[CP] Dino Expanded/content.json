@@ -1,0 +1,164 @@
+{
+  "Format": "2.8.0",
+  "ConfigSchema": {
+    "Difficulty": {
+      "Name": "{{i18n: config.Difficulty.Name}}",
+      "Description": "{{i18n: config.Difficulty.Description}}",
+      "AllowValues": "Normal, Easy",
+      "Default": "Normal"
+    },
+    "Donation": {
+      "Name": "{{i18n: config.Donation.Name}}",
+      "Description": "{{i18n: config.Donation.Description}}",
+      "AllowValues": "Normal, Easy",
+      "Default": "Normal"
+    },
+    "Requirements": {
+      "Name": "{{i18n: config.Requirements.Name}}",
+      "Description": "{{i18n: config.Requirements.Description}}",
+      "AllowValues": "Normal, Easy",
+      "Default": "Normal"
+    },
+    "Collection": {
+      "Name": "{{i18n: config.Collection.Name}}",
+      "Description": "{{i18n: config.Collection.Description}}",
+      "AllowValues": "Normal, Easy",
+      "Default": "Normal"
+    },
+    "IndoorMaps": {
+      "Name": "{{i18n: config.IndoorMaps.Name}}",
+      "Description": "{{i18n: config.IndoorMaps.Description}}",
+      "AllowValues": "Normal, Clean",
+      "Default": "Normal"
+    },
+    "BuffBoots": {
+      "Name": "{{i18n: config.BuffBoots.Name}}",
+      "Description": "{{i18n: config.BuffBoots.Description}}",
+      "AllowValues": "true, false",
+      "Default": "true"
+    },
+    "DinoSounds": {
+      "Name": "{{i18n: config.DinoSounds.Name}}",
+      "Description": "{{i18n: config.DinoSounds.Description}}",
+      "AllowValues": "true, false",
+      "Default": "true"
+    },
+    "SpriteForPaint": {
+      "Name": "{{i18n: config.SpriteForPaint.Name}}",
+      "Description": "{{i18n: config.SpriteForPaint.Description}}",
+      "AllowValues": "true, false",
+      "Default": "false"
+    }
+  },
+  "CustomLocations": [    
+    {
+      "Name": "Amichwan.DinoExpanded_DinoHutch",
+      "FromMapFile": "assets/DinoHutch.tmx"
+    },
+    {
+      "Name": "Amichwan.DinoExpanded_DinoHutch2",
+      "FromMapFile": "assets/DinoHutch2.tmx"
+    },
+    {
+      "Name": "Amichwan.DinoExpanded_DinoHutch3",
+      "FromMapFile": "assets/DinoHutch3.tmx"
+    }
+  ],
+  "Changes": [
+    {
+      "LogName": "Include AudioChanges Data",
+      "Action": "Include",
+      "FromFile": "Data/AudioChanges.json",
+      "When": { "DinoSounds": "true" }
+    },
+    {
+      "LogName": "Include BigCraftables Data",
+      "Action": "Include",
+      "FromFile": "Data/BigCraftables.json"
+    },
+    {
+      "LogName": "Include Boots Data",
+      "Action": "Include",
+      "FromFile": "Data/Boots.json"
+    },
+    {
+      "LogName": "Include Buildings Data",
+      "Action": "Include", 
+      "FromFile": "Data/Buildings.json"
+    },
+    {
+      "LogName": "Include CraftingRecipes Data",
+      "Action": "Include",
+      "FromFile": "Data/CraftingRecipes.json"
+    },
+    {
+      "LogName": "Include FarmAnimals Data",
+      "Action": "Include",
+      "FromFile": "Data/FarmAnimals.json"
+    },
+    {
+      "LogName": "Include Machines Data",
+      "Action": "Include",
+      "FromFile": "Data/Machines.json"
+    },
+    {
+      "LogName": "Include Mail Data",
+      "Action": "Include",
+      "FromFile": "Data/Mail.json"
+    },
+    {
+      "LogName": "Include Objects Data",
+      "Action": "Include",
+      "FromFile": "Data/Objects.json"
+    },
+    {
+      "LogName": "Include Quests Data",
+      "Action": "Include",
+      "FromFile": "Data/Quests.json"
+    },
+    {
+      "LogName": "Include Shirts Data",
+      "Action": "Include",
+      "FromFile": "Data/Shirts.json"
+    },
+    {
+      "LogName": "Include Shops Data",
+      "Action": "Include",
+      "FromFile": "Data/Shops.json"
+    },
+    {
+      "LogName": "Include TriggerActions Data",
+      "Action": "Include",
+      "FromFile": "Data/TriggerActions.json"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Amichwan.DinoExpanded_DinoHutch",
+      "FromFile": "assets/DinoHutchClean.tmx",
+      "When": { "IndoorMaps": "Clean" }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Amichwan.DinoExpanded_DinoHutch2",
+      "FromFile": "assets/DinoHutch2Clean.tmx",
+      "When": { "IndoorMaps": "Clean" }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Amichwan.DinoExpanded_DinoHutch3",
+      "FromFile": "assets/DinoHutch3Clean.tmx",
+      "When": { "IndoorMaps": "Clean" }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Strings/StringsFromCSFiles",
+      "Entries": {
+        "Shears.cs.14240": "{{i18n:Amichwan.DinoExpanded.Shears.Name}}",
+        "Shears.cs.14241": "{{i18n:Amichwan.DinoExpanded.Shears.Desc}}",
+        "Shears.cs.14245": "{{i18n:Amichwan.DinoExpanded.Shears.NoResource}}",
+        "Shears.cs.14246": "{{i18n:Amichwan.DinoExpanded.Shears.TooYoung}}",
+        "Shears.cs.14247": "{{i18n:Amichwan.DinoExpanded.Shears.Empty}}"
+      }
+    }
+  ]
+}

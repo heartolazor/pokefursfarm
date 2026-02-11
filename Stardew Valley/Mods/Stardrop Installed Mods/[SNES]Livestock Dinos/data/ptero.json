@@ -1,0 +1,193 @@
+{
+  "Changes": [
+    		{
+            "LogName": "Animal Data",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+				"{{ModId}}_pterosaur": {
+                    "DisplayName": "{{i18n: ptero.DisplayName}}",
+                    "House": "{{ModId}}_DinoCave",
+                    "Gender": 2,
+                    "PurchasePrice": 2000,
+					"SellPrice": 1000,
+                    "ShopTexture": "{{ModId}}/assets/shops/pteroshop",
+                    "Sound": "batScreech",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "RequiredBuilding": "{{ModId}}_DinoCave",
+					"UnlockCondition": null,
+                    "ShopDisplayName": "{{i18n: ptero.ShopDisplayName}}",
+                    "ShopDescription": "{{i18n: ptero.ShopDescription}}",
+                    "ShopMissingBuildingDescription": "{{i18n: ptero.ShopMissingBuildingDescription}}",
+				    "AlternatePurchaseTypes": [
+					{
+					"Condition": null,
+					"AnimalIds": [
+					"{{ModId}}_pterosaur",
+					]
+					}
+					],
+				    "BirthText": "{{i18n: ptero.BirthText}}",
+					"IncubationTime": -1,
+                    "DaysToMature": 2,
+				    "DaysToProduce": 2,
+					"HarvestType": "DropOvernight",
+					"HarvestTool": null,
+                    "ProduceItemIDs": [
+                        {
+                            "Id": "{{ModId}}_talon",
+                            "Condition": null,
+                            "MinimumFriendship": 100,
+                            "ItemID": "{{ModId}}_talon"
+                        },
+                        {
+                            "Id": "{{ModId}}_pycnofibers",
+                            "Condition": null,
+                            "MinimumFriendship": 300,
+                            "ItemID": "{{ModId}}_pycnofibers"
+                        }
+                    ],
+					"DeluxeProduceItemIds": [
+					  {
+						"Id": "{{ModId}}_featherprehistoric",
+						"Condition": "RANDOM 0.2 @addDailyLuck",
+						"MinimumFriendship": 400,
+						"ItemId": "{{ModId}}_featherprehistoric"
+					  },
+					],
+                    "HappinessDrain": 1,
+                    "GrassEatAmount": 3,
+                    "ShowSummitCredits": false,
+                    "CanGetPregnant": false,
+                    "BabiesFollowAdults": true,
+                    "Texture": "{{ModId}}/assets/ptero/ptero1",
+					"SleepFrame": "12",
+					"Skins": [
+                    {
+                        "id": "ptero2",
+                        "Texture": "{{ModId}}/assets/ptero/ptero2",
+						"HarvestedTexture": "{{ModId}}/assets/ptero/ptero2",
+						"BabyTexture": "{{ModId}}/assets/ptero/ptero2",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "ptero3",
+                        "Texture": "{{ModId}}/assets/ptero/ptero3",
+						"HarvestedTexture": "{{ModId}}/assets/ptero/ptero3",
+						"BabyTexture": "{{ModId}}/assets/ptero/ptero3",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "ptero4",
+                        "Texture": "{{ModId}}/assets/ptero/ptero4",
+						"HarvestedTexture": "{{ModId}}/assets/ptero/ptero4",
+						"BabyTexture": "{{ModId}}/assets/ptero/ptero4",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "ptero5",
+                        "Texture": "{{ModId}}/assets/ptero/ptero5",
+						"HarvestedTexture": "{{ModId}}/assets/ptero/ptero5",
+						"BabyTexture": "{{ModId}}/assets/ptero/ptero5",
+                        "Weight": 0.2
+                    }
+                ],
+                    "BabyTexture": "{{ModId}}/assets/ptero/ptero1",
+					"HarvestedTexture": null,
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -4 },
+							"Scale": 3.0
+					},
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -10 },
+							"Scale": 5.0
+					},
+					"CanSwim": false,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"CustomFields": {
+					"meatIndex": "{{ModId}}_pterosaurmeat"
+				}
+                }
+			},
+			},
+    {
+      "LogName": "pterosaur EAC",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": ["cryomancer.livestockdinos_pterosaur"],
+      "Entries": {
+		"IsHarvester": true,
+		"HarvestRange": 25,
+        "SpeedOverride": 3,
+		"OutsideForager": true,
+		"ExtraProduceSpawnList": [
+						{
+							"Id": "{{ModID}}_cyanpresentptero",
+							"DaysToProduce": 3,
+							"ProduceItemIds": [
+								{
+									"ItemId": "{{ModID}}_cyanpresentptero",
+									"Condition": "RANDOM 0.15 @addDailyLuck",
+									"MinimumFriendship": 700,
+								}
+							]
+						},
+												{
+							"Id": "{{ModID}}_bluepresentptero",
+							"DaysToProduce": 3,
+							"ProduceItemIds": [
+								{
+									"ItemId": "{{ModID}}_bluepresentptero",
+									"Condition": "RANDOM 0.10 @addDailyLuck",
+									"MinimumFriendship": 800,
+								}
+							]
+						},
+												{
+							"Id": "{{ModID}}_greenpresentptero",
+							"DaysToProduce": 3,
+							"ProduceItemIds": [
+								{
+									"ItemId": "{{ModID}}_greenpresentptero",
+									"Condition": "RANDOM 0.07 @addDailyLuck",
+									"MinimumFriendship": 900,
+								}
+							]
+						}
+					],
+      }
+    },
+	{
+      "LogName": "ptero extra produce quality ignore",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": ["cryomancer.livestockdinos_pterosaur", "AnimalProduceExtensionData"],
+      "Entries": {
+		"(O){{ModID}}_cyanpresentptero": {
+		"IgnoreAnimalQuality": true,
+		},
+		"(O){{ModID}}_bluepresentptero": {
+		"IgnoreAnimalQuality": true,
+		},
+		"(O){{ModID}}_greenpresentptero": {
+        "IgnoreAnimalQuality": true,
+        },
+      },
+    },
+	]
+}

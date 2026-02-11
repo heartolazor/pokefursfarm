@@ -3,10 +3,6 @@
 {
             "Action": "EditData",
             "Target": "Data/Weapons",
-"When": {
-        "ShadowStrikeProjectile": "on",
-"HasMod": "dreamy.AniProjectilesPoke,dreamy.Keyblades",
-        },
             "Entries": {
                 "Cape.ShadowStrikeBlade": {
                     "Texture": "Mods/CapeStardew/Weapons/Shadow Strike Blade",
@@ -17,20 +13,20 @@
                     "Type": "3",
                     "Category": -98,
                     "Price": 8000,
-                    "MinDamage": 90,
-                    "MaxDamage": 110,
-                    "Knockback": 0.4,
-                    "Speed": 4,
-                    "Precision": 98,
+                    "MinDamage": 70,
+                    "MaxDamage": 89,
+                    "Knockback": 0.2,
+                    "Speed": 0,
+                    "Precision": 80,
                     "Defense": 0,
                     "AreaOfEffect": 0,
-                    "CritChance": 0.13,
-                    "CritMultiplier": 1.1,
+                    "CritChance": 0.7,
+                    "CritMultiplier": 0.01,
                     "CanPurchase": false,
 "Projectiles": [
                         {
                             "Id": "shadowstrike_projectile1",
-                            "Damage": 55,
+                            "Damage": 30,
                             "Explodes": true,
                             "Bounces": 0,
                             "MaxDistance": 10,
@@ -43,7 +39,7 @@
                         },
                         {
                             "Id": "shadowstrike_projectile2",
-                            "Damage": 55,
+                            "Damage": 30,
                             "Explodes": true,
                             "Bounces": 0,
                             "MaxDistance": 10,
@@ -54,7 +50,7 @@
                         },
                         {
                             "Id": "shadowstrike_projectile3",
-                            "Damage": 55,
+                            "Damage": 30,
                             "Explodes": true,
                             "Bounces": 0,
                             "MaxDistance": 10,
@@ -66,16 +62,129 @@
                     ]
                     
                 }
-            }
+            },
+"When": {
+        "ShadowStrikeProjectile": "on",
+"HasMod": "dreamy.AniProjectilesPoke,dreamy.Keyblades",
+"WeaponsBalance": "Balanced"
+        },
         },
 
 {
             "Action": "EditData",
             "Target": "Data/Weapons",
+            "Entries": {
+                "Cape.ShadowStrikeBlade": {
+                    "Texture": "Mods/CapeStardew/Weapons/Shadow Strike Blade",
+                    "SpriteIndex": 0,
+                    "Name": "Shadow Strike Blade",
+                    "DisplayName": "{{i18n:Shadow-Strike-Blade_Translated}}",
+                    "Description": "{{i18n:Shadow-Strike-Blade_Description_Translated}}",
+                    "Type": "3",
+                    "Category": -98,
+                    "Price": 8000,
+                    "MinDamage": 70,
+                    "MaxDamage": 89,
+                    "Knockback": 0.2,
+                    "Speed": 0,
+                    "Precision": 80,
+                    "Defense": 0,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0.13,
+                    "CritMultiplier": 1.1,
+                    "CanPurchase": false,
+"Projectiles": [
+                        {
+                            "Id": "shadowstrike_projectile1",
+                            "Damage": 30,
+                            "Explodes": true,
+                            "Bounces": 0,
+                            "MaxDistance": 10,
+                            "Velocity": 15,
+                            "RotationVelocity": 32,
+                            "TailLength": 5,
+                            "FireSound": "flameSpell",
+                            "CollisionSound": "shadowDie",
+                            "SpriteIndex": 3
+                        },
+                        {
+                            "Id": "shadowstrike_projectile2",
+                            "Damage": 30,
+                            "Explodes": true,
+                            "Bounces": 0,
+                            "MaxDistance": 10,
+                            "Velocity": 15,
+                            "RotationVelocity": 23,
+                            "TailLength": 5,
+                            "SpriteIndex": 2
+                        },
+                        {
+                            "Id": "shadowstrike_projectile3",
+                            "Damage": 30,
+                            "Explodes": true,
+                            "Bounces": 0,
+                            "MaxDistance": 10,
+                            "Velocity": 15,
+                            "RotationVelocity": 32,
+                            "TailLength": 5,
+                            "SpriteIndex": 3
+                        }
+                    ]
+                    
+                }
+            },
 "When": {
         "ShadowStrikeProjectile": "on",
 	"HasMod |contains=dreamy.AniProjectilesPoke,dreamy.Keyblades": "false",
+"WeaponsBalance": "Balanced"
         },
+        },
+        {
+			"Action": "EditData",
+			"Target": "Data/Weapons",
+            "Entries": {
+		 "Cape.ShadowStrikeBlade": {
+                    "Texture": "Mods/CapeStardew/Weapons/Shadow Strike Blade",
+                    "SpriteIndex": 0,
+                    "Name": "Shadow Strike Blade",
+                    "DisplayName": "{{i18n:Shadow-Strike-Blade_Translated}}",
+                    "Description": "{{i18n:Shadow-Strike-Blade_Description_Translated}}",
+                    "Type": "3",
+                    "Category": -98,
+                    "Price": 8000,
+                    "MinDamage": 70,
+                    "MaxDamage": 89,
+                    "Knockback": 0.2,
+                    "Speed": 0,
+                    "Precision": 80,
+                    "Defense": 0,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0.13,
+                    "CritMultiplier": 1.1,
+                    "CanPurchase": false,
+		
+		},
+		},
+"When": {
+        "ShadowStrikeProjectile": "off",
+"WeaponsBalance": "Balanced"
+        },
+},
+
+
+        {
+            "Action": "Load",
+            "Target": "Mods/CapeStardew/Weapons/Shadow Strike Blade",
+            "FromFile": "Weapons/{{TargetWithoutPath}}/weapon.png"
+        },
+
+
+///////////////
+
+
+{
+            "Action": "EditData",
+            "Target": "Data/Weapons",
             "Entries": {
                 "Cape.ShadowStrikeBlade": {
                     "Texture": "Mods/CapeStardew/Weapons/Shadow Strike Blade",
@@ -135,14 +244,86 @@
                     ]
                     
                 }
-            }
+            },
+"When": {
+        "ShadowStrikeProjectile": "on",
+"HasMod": "dreamy.AniProjectilesPoke,dreamy.Keyblades",
+"WeaponsBalance": "Stronger"
+        },
+        },
+
+{
+            "Action": "EditData",
+            "Target": "Data/Weapons",
+            "Entries": {
+                "Cape.ShadowStrikeBlade": {
+                    "Texture": "Mods/CapeStardew/Weapons/Shadow Strike Blade",
+                    "SpriteIndex": 0,
+                    "Name": "Shadow Strike Blade",
+                    "DisplayName": "{{i18n:Shadow-Strike-Blade_Translated}}",
+                    "Description": "{{i18n:Shadow-Strike-Blade_Description_Translated}}",
+                    "Type": "3",
+                    "Category": -98,
+                    "Price": 8000,
+                    "MinDamage": 90,
+                    "MaxDamage": 110,
+                    "Knockback": 0.4,
+                    "Speed": 4,
+                    "Precision": 98,
+                    "Defense": 0,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0.13,
+                    "CritMultiplier": 1.1,
+                    "CanPurchase": false,
+"Projectiles": [
+                        {
+                            "Id": "shadowstrike_projectile1",
+                            "Damage": 55,
+                            "Explodes": true,
+                            "Bounces": 0,
+                            "MaxDistance": 10,
+                            "Velocity": 15,
+                            "RotationVelocity": 32,
+                            "TailLength": 5,
+                            "FireSound": "flameSpell",
+                            "CollisionSound": "shadowDie",
+                            "SpriteIndex": 3
+                        },
+                        {
+                            "Id": "shadowstrike_projectile2",
+                            "Damage": 55,
+                            "Explodes": true,
+                            "Bounces": 0,
+                            "MaxDistance": 10,
+                            "Velocity": 15,
+                            "RotationVelocity": 23,
+                            "TailLength": 5,
+                            "SpriteIndex": 2
+                        },
+                        {
+                            "Id": "shadowstrike_projectile3",
+                            "Damage": 55,
+                            "Explodes": true,
+                            "Bounces": 0,
+                            "MaxDistance": 10,
+                            "Velocity": 15,
+                            "RotationVelocity": 32,
+                            "TailLength": 5,
+                            "SpriteIndex": 3
+                        }
+                    ]
+                    
+                }
+            },
+"When": {
+        "ShadowStrikeProjectile": "on",
+	"HasMod |contains=dreamy.AniProjectilesPoke,dreamy.Keyblades": "false",
+"WeaponsBalance": "Stronger"
+        },
         },
         {
 			"Action": "EditData",
 			"Target": "Data/Weapons",
-			"When": {
-        "ShadowStrikeProjectile": "off",
-        },
             "Entries": {
 		 "Cape.ShadowStrikeBlade": {
                     "Texture": "Mods/CapeStardew/Weapons/Shadow Strike Blade",
@@ -166,13 +347,11 @@
 		
 		},
 		},
+"When": {
+        "ShadowStrikeProjectile": "off",
+"WeaponsBalance": "Stronger"
+        },
 },
 
-
-        {
-            "Action": "Load",
-            "Target": "Mods/CapeStardew/Weapons/Shadow Strike Blade",
-            "FromFile": "Weapons/{{TargetWithoutPath}}/weapon.png"
-        }
     ]
 }

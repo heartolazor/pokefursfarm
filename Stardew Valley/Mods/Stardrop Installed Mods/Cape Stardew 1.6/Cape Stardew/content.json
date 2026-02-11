@@ -1,8 +1,30 @@
 {
-  "Format": "2.5.0",
+  "Format": "2.8.0",
   "ConfigSchema": {
 
+"AmbientLightPatches": {
+      "AllowValues": "Dim, Dark, Vanilla",
+      "Default": "Vanilla",
+      "Description": "Disables the dark ambient lighting in the cape stardew cavern."
+    },
 
+"SmallDockAtCape": {
+"AllowValues": "On, Off",
+      "Default": "On",
+      "Description": "Adds a small dock on the cape."
+},
+
+"TimeBasedMapPatches": {
+      "AllowValues": "On, Off",
+      "Default": "Off",
+      "Description": "Patches the map at certain times usually to change the setting. Can cause slowdown."
+    },
+
+"WeaponsBalance": {
+      "AllowValues": "Balanced, Stronger",
+      "Default": "Balanced",
+      "Description": "Sets the strength of the weapons found."
+    },
 
 "MuseumCompatConfig": {
 	"AllowValues": "ExtraMuseumRoomVer2, VMVMuseumPatch, JasperNPCMuseumPatch, ExtraMuseumRoomGlassVer2, VMVMuseumPatchGlass, JasperNPCMuseumPatchGlass, None",
@@ -284,6 +306,10 @@
       "Name": "Custom_CapeStardewBoatShore",
       "FromMapFile": "assets/CapeStardewBoatShore.tmx"
     },
+{
+"Name": "Custom_CapeStardewDockCustom",
+"FromMapFile": "assets/CapeStardewDockCustom.tmx"
+},
     {
       "Name": "Custom_AnnettaHouse",
       "FromMapFile": "assets/CapeHouse.tmx"
@@ -1060,6 +1086,11 @@
       "Target": "Custom_CapeStardewBoatShore",
       "FromFile": "assets/CapeStardewBoatShore.tmx"
     },
+{
+"Action": "Load",
+"Target": "Custom_CapeStardewDockCustom",
+"FromFile": "assets/CapeStardewDockCustom.tmx"
+},
     {
 "Action": "Load",
       "Target": "Custom_AnnettaHouse",
@@ -1610,6 +1641,13 @@
         "HasMod |contains=DLX.Bundles": true
       },
       "FromFile": "Data/CapeUnlockableBundles.json"
+    },
+{
+      "Action": "Include",
+      "When": {
+        "HasMod |contains=mistyspring.ItemExtensions": true
+      },
+      "FromFile": "Data/ItemExtensionData.json"
     },
     {
       "Action": "Include",

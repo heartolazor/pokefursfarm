@@ -1,0 +1,231 @@
+{
+  "Changes": [
+    		{
+            "LogName": "Animal Data",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+				    "{{ModId}}_mammoth": {
+                    "DisplayName": "{{i18n: mammoth.DisplayName}}",
+                    "House": "{{ModId}}_DinoCave",
+                    "Gender": "Female",
+                    "PurchasePrice": 2000,
+					"SellPrice": 800,
+                    "ShopTexture": "{{ModId}}/assets/shops/mammothshop",
+                    "Sound": "grunt",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "RequiredBuilding": "{{ModId}}_DinoCave",
+					"UnlockCondition": null,
+                    "ShopDisplayName": "{{i18n: mammoth.ShopDisplayName}}",
+                    "ShopDescription": "{{i18n: mammoth.ShopDescription}}",
+                    "ShopMissingBuildingDescription": "{{i18n: mammoth.ShopMissingBuildingDescription}}",
+				    "AlternatePurchaseTypes": [
+					{
+					"Condition": null,
+					"AnimalIds": ["{{ModId}}_mammoth"]
+					}
+					],
+				    "BirthText": "{{i18n: mammoth.BirthText}}",
+					"IncubationTime": -1,
+                    "DaysToMature": 4,
+				    "DaysToProduce": 3,
+					"HarvestType": "HarvestWithTool",
+					"HarvestTool": "Shears",
+                    "ProduceItemIDs": [
+                        {
+                            "Id": "{{ModID}}_mammothwool",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemID": "{{ModID}}_mammothwool"
+                        },
+                    ],
+                    "HappinessDrain": 1,
+                    "GrassEatAmount": 4,
+                    "ShowSummitCredits": false,
+                    "CanGetPregnant": false,
+                    "BabiesFollowAdults": true,
+                    "Texture": "{{ModId}}/assets/mammoth/mammoth1",
+					"SleepFrame": "12",
+					"BabyTexture": "{{ModId}}/assets/mammoth/mammoth1shorn",
+					"HarvestedTexture": "{{ModId}}/assets/mammoth/mammoth1shorn",
+					"Skins": [
+                    {
+                        "id": "{{ModID}}_blackmammoth",
+                        "Texture": "{{ModId}}/assets/mammoth/mammoth2",
+						"HarvestedTexture": "{{ModId}}/assets/mammoth/mammoth2shorn",
+						"BabyTexture": "{{ModId}}/assets/mammoth/mammoth2shorn",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "{{ModID}}_whitemammoth",
+                        "Texture": "{{ModId}}/assets/mammoth/mammoth3",
+						"HarvestedTexture": "{{ModId}}/assets/mammoth/mammoth3shorn",
+						"BabyTexture": "{{ModId}}/assets/mammoth/mammoth3shorn",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "{{ModID}}_bluemammoth",
+                        "Texture": "{{ModId}}/assets/mammoth/mammoth4",
+						"HarvestedTexture": "{{ModId}}/assets/mammoth/mammoth4shorn",
+						"BabyTexture": "{{ModId}}/assets/mammoth/mammoth4shorn",
+                        "Weight": 0.5
+                    },
+					                    {
+                        "id": "{{ModID}}_pinkmammoth",
+                        "Texture": "{{ModId}}/assets/mammoth/mammoth5",
+						"HarvestedTexture": "{{ModId}}/assets/mammoth/mammoth5shorn",
+						"BabyTexture": "{{ModId}}/assets/mammoth/mammoth5shorn",
+                        "Weight": 0.25
+                    }
+                ],
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 48,
+					"SpriteHeight": 32,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -4 },
+							"Scale": 3.0
+					},
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -10 },
+							"Scale": 5.0
+					},
+					"CanSwim": false,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"CustomFields": {
+						"meatIndex": "{{ModId}}_mammothmeat"
+					}
+                },
+			},
+			},			
+    {
+      "LogName": "Mammoth EAC",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": ["cryomancer.livestockdinos_mammoth"],
+      "Entries": {
+		"IgnoreWinter": true,
+        "SpeedOverride": 1,
+		"IsAttackAnimal": false,
+	    "TextureOverrides": [
+          {
+            "Id": "{{ModID}}_blackwoolly",
+            "Produce": "{{ModId}}_mammothwool",
+            "Skin": "{{ModID}}_blackmammoth",
+            "TextureToUse": "{{ModId}}/assets/mammoth/mammoth2"
+          },
+          {
+            "Id": "{{ModID}}_whitewoolly",
+            "Produce": "{{ModId}}_mammothwool",
+            "Skin": "{{ModID}}_whitemammoth",
+            "TextureToUse": "{{ModId}}/assets/mammoth/mammoth3"
+          },
+          {
+            "Id": "{{ModID}}_bluewoolly",
+            "Produce": "{{ModId}}_mammothwool",
+            "Skin": "{{ModID}}_bluemammoth",
+            "TextureToUse": "{{ModId}}/assets/mammoth/mammoth4"
+          },
+          {
+            "Id": "{{ModID}}_pinkwoolly",
+            "Produce": "{{ModId}}_mammothwool",
+			"Skin": "{{ModID}}_pinkmammoth",
+            "TextureToUse": "{{ModId}}/assets/mammoth/mammoth5"
+          },
+		  {
+            "Id": "{{ModID}}_brownwoolly",
+            "Produce": "{{ModId}}_mammothwool",
+            "TextureToUse": "{{ModId}}/assets/mammoth/mammoth1"
+          },
+          {
+            "Id": "{{ModID}}_blackmilk",
+            "Produce": "{{ModId}}_mammothmilk",
+            "Skin": "{{ModID}}_blackmammoth",
+            "TextureToUse": "{{ModId}}/assets/mammoth/mammoth2shorn"
+          },
+          {
+            "Id": "{{ModID}}_whitemilk",
+            "Produce": "{{ModId}}_mammothmilk",
+            "Skin": "{{ModID}}_whitemammoth",
+            "TextureToUse": "{{ModId}}/assets/mammoth/mammoth3shorn"
+          },
+          {
+            "Id": "{{ModID}}_bluemilk",
+            "Produce": "{{ModId}}_mammothmilk",
+            "Skin": "{{ModID}}_bluemammoth",
+            "TextureToUse": "{{ModId}}/assets/mammoth/mammoth4shorn"
+          },
+          {
+            "Id": "{{ModID}}_pinkmilk",
+            "Produce": "{{ModId}}_mammothmilk",
+			"Skin": "{{ModID}}_pinkmammoth",
+            "TextureToUse": "{{ModId}}/assets/mammoth/mammoth5shorn"
+          },
+		  {
+            "Id": "{{ModID}}_brownmilk",
+            "Produce": "{{ModId}}_mammothmilk",
+            "TextureToUse": "{{ModId}}/assets/mammoth/mammoth1shorn"
+          },
+        ]
+	  }
+	},
+	{
+      "LogName": "Mammoth extra produce",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": ["cryomancer.livestockdinos_mammoth", "ExtraProduceSpawnList"],
+      "Entries": {
+        "{{ModId}}_mammothmilk": {
+          "Id": "{{ModId}}_mammothmilk",
+          "ProduceItemIds": [
+            {
+              "Id": "{{ModId}}_mammothmilk",
+              "ItemId": "{{ModId}}_mammothmilk",
+			  "MinimumFriendship": 100,
+            }
+          ],
+          "DaysToProduce": 1,
+          "SyncWithMainProduce": false
+        },
+		"{{ModId}}_tusk": {
+          "Id": "{{ModId}}_tusk",
+          "ProduceItemIds": [
+            {
+              "Id": "{{ModId}}_tusk",
+              "ItemId": "{{ModId}}_tusk",
+			  "MinimumFriendship": 600,
+            }
+          ],
+          "DaysToProduce": 10,
+          "SyncWithMainProduce": false
+        },
+      },
+    },
+	{
+      "LogName": "Mammoth extra produce drop methods",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": ["cryomancer.livestockdinos_mammoth", "AnimalProduceExtensionData"],
+      "Entries": {
+		"(O){{ModId}}_mammothmilk": {
+		"HarvestTool": "Milk Pail",
+		},
+		"(O){{ModId}}_tusk": {
+		"HarvestTool": "DropOvernight",
+		},
+      },
+    }
+	]
+}
+				

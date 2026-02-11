@@ -13,6 +13,48 @@
                     "Type": "3",
                     "Category": -98,
                     "Price": 8000,
+                    "MinDamage": 70,
+                    "MaxDamage": 85,
+                    "Knockback": 0.1,
+                    "Speed": 0,
+                    "Precision": 60,
+                    "Defense": 0,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0.2,
+                    "CritMultiplier": 0.04,
+                    "CanPurchase": false,
+                    
+                 
+                }
+            },
+
+ "When": { 
+"WeaponsBalance": "Balanced" 
+}
+        },
+
+
+        {
+            "Action": "Load",
+            "Target": "Mods/CapeStardew/Weapons/Golden Obsidian Blade",
+            "FromFile": "Weapons/{{TargetWithoutPath}}/weapon.png"
+        },
+
+
+////////////////////////////////////////////////
+ {
+            "Action": "EditData",
+            "Target": "Data/Weapons",
+            "Entries": {
+                "Cape.GoldenObsidianBlade": {
+                    "Texture": "Mods/CapeStardew/Weapons/Golden Obsidian Blade",
+                    "SpriteIndex": 0,
+                    "Name": "Golden Obsidian Blade",
+                    "DisplayName": "{{i18n:Golden-Obsidian-Blade_Translated}}",
+                    "Description": "{{i18n:Golden-Obsidian-Blade_Description_Translated}}",
+                    "Type": "3",
+                    "Category": -98,
+                    "Price": 8000,
                     "MinDamage": 90,
                     "MaxDamage": 110,
                     "Knockback": 0.7,
@@ -26,12 +68,12 @@
                     
                  
                 }
-            }
+            },
+ "When": { 
+"WeaponsBalance": "Stronger" 
+}
         },
-        {
-            "Action": "Load",
-            "Target": "Mods/CapeStardew/Weapons/Golden Obsidian Blade",
-            "FromFile": "Weapons/{{TargetWithoutPath}}/weapon.png"
-        }
+
+
     ]
 }

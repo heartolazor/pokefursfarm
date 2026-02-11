@@ -32,16 +32,6 @@
             "Value": "MarnieShop",
             "When":{"HasMod:|contains= mushymato.LivestockBazaar": false}
         },
-        {
-            "Name": "Bush_Token",
-            "Value": "Bushes",
-             "When":{"HasMod:|contains= furyx639.CustomBush":true}
-        },
-        {
-            "Name": "Bush_Token",
-            "Value": "NoBushes",
-            "When":{"HasMod:|contains= furyx639.CustomBush":false}
-        }
     ],
 
   "Changes": [
@@ -124,7 +114,7 @@
     {
       "LogName": "Include Item Data",
       "Action": "Include",
-      "FromFile": "Data/Items/Crops_Base.json, Data/Items/Crops_{{Bush_Token}}.json, Data/Items/FruitTrees.json, Data/Items/Objects.json, Data/Locations/Artifact_Spots.json, Data/Items/Orbs_{{Bush_Token}}.json, Data/Items/Machines.json, Data/Items/SpecialOrders.json, Data/Items/WildTrees.json"
+      "FromFile": "Data/Items/Crops.json, Data/Items/FruitTrees.json, Data/Items/Objects.json, Data/Locations/Artifact_Spots.json, Data/Items/Orbs.json, Data/Items/Machines.json, Data/Items/SpecialOrders.json, Data/Items/WildTrees.json"
     },
 
     {
@@ -168,13 +158,6 @@
         "FromFile": "Data/Locations/Shops_WAG_Patch.json",
         "When": {"HasMod:|contains= Wildflour.AtelierGoods": true}
     },
-
-    /*{
-        "LogName": "Mush Log Data",
-        "Action": "Include",
-        "FromFile": "Data/Items/Mush_Log.json",
-        "When": {"HasMod:|contains= BarleyZP.MushroomLogFramework": true}
-    }*/
 
   ]
 }

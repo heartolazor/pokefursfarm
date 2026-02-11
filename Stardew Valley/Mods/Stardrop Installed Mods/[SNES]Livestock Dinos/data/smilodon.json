@@ -1,0 +1,209 @@
+{
+  "Changes": [
+    		{
+            "LogName": "Animal Data",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+					"{{ModId}}_smilodon": {
+                    "DisplayName": "{{i18n: smilodon.DisplayName}}",
+                    "House": "{{ModId}}_DinoCave",
+                    "Gender": 2,
+                    "PurchasePrice": 3000,
+					"SellPrice": 1000,
+                    "ShopTexture": "{{ModId}}/assets/shops/smilodonshop",
+                    "Sound": "terraria_boneSerpent",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "RequiredBuilding": "{{ModId}}_DinoCave",
+					"UnlockCondition": null,
+                    "ShopDisplayName": "{{i18n: smilodon.ShopDisplayName}}",
+                    "ShopDescription": "{{i18n: smilodon.ShopDescription}}",
+                    "ShopMissingBuildingDescription": "{{i18n: smilodon.ShopMissingBuildingDescription}}",
+				    "AlternatePurchaseTypes": [
+					{
+					"Condition": null,
+					"AnimalIds": [
+					"{{ModId}}_smilodon",
+					]
+					}
+					],
+				    "BirthText": "{{i18n: smilodon.BirthText}}",
+					"IncubationTime": -1,
+                    "DaysToMature": 3,
+				    "DaysToProduce": 7,
+					"HarvestType": "HarvestWithTool",
+					"HarvestTool": "Shears",
+                    "ProduceItemIDs": [
+                        {
+                            "Id": "{{ModID}}_smilodonfur",
+                            "Condition": null,
+                            "MinimumFriendship": 50,
+                            "ItemID": "{{ModID}}_smilodonfur"
+                        },
+                    ],
+                    "HappinessDrain": 1,
+                    "GrassEatAmount": 2,
+                    "ShowSummitCredits": false,
+                    "CanGetPregnant": false,
+                    "BabiesFollowAdults": true,
+                    "Texture": "{{ModId}}/assets/smilodon/smilodon1fur",
+					"SleepFrame": "12",
+					"Skins": [
+                    {
+                        "id": "{{ModID}}_whitesmilodon",
+                        "Texture": "{{ModId}}/assets/smilodon/smilodon2fur",
+						"HarvestedTexture": "{{ModId}}/assets/smilodon/smilodon2",
+						"BabyTexture": "{{ModId}}/assets/smilodon/smilodon2",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "{{ModID}}_blacksmilodon",
+                        "Texture": "{{ModId}}/assets/smilodon/smilodon3fur",
+						"HarvestedTexture": "{{ModId}}/assets/smilodon/smilodon3",
+						"BabyTexture": "{{ModId}}/assets/smilodon/smilodon3",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "{{ModID}}_mughismilodon",
+                        "Texture": "{{ModId}}/assets/smilodon/smilodon4fur",
+						"HarvestedTexture": "{{ModId}}/assets/smilodon/smilodon4",
+						"BabyTexture": "{{ModId}}/assets/smilodon/smilodon4",
+                        "Weight": 0.5
+                    },
+					                    {
+                        "id": "{{ModID}}_yellowsmilodon",
+                        "Texture": "{{ModId}}/assets/smilodon/smilodon5fur",
+						"HarvestedTexture": "{{ModId}}/assets/smilodon/smilodon5",
+						"BabyTexture": "{{ModId}}/assets/smilodon/smilodon5",
+                        "Weight": 0.25
+                    }
+                ],
+                    "BabyTexture": "{{ModId}}/assets/smilodon/smilodon1",
+					"HarvestedTexture": "{{ModId}}/assets/smilodon/smilodon1",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -4 },
+							"Scale": 3.0
+					},
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -10 },
+							"Scale": 5.0
+					},
+					"CanSwim": false,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"CustomFields": {
+					"meatIndex": "{{ModId}}_beastmeat"
+				},
+                },
+			},
+			},
+    {
+      "LogName": "Smilodon EAC",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": ["cryomancer.livestockdinos_smilodon"],
+      "Entries": {
+		"IgnoreWinter": true,
+        "SpeedOverride": 3,
+		"IsAttackAnimal": true,
+		"AttackDamage": 5,
+        "AttackIntervalMs": 8000,
+        "AttackRange": 8,
+        "AttackMaxChaseTimeMs": 3000,
+		"AttackCondition": "!selph.ExtraAnimalConfig_ANIMAL_COUNT cryomancer.livestockdinos_smilodon 350 2",
+	    "TextureOverrides": [
+          {
+            "Id": "{{ModID}}_whitefur",
+            "Produce": "{{ModId}}_smilodonfur",
+            "Skin": "{{ModID}}_whitesmilodon",
+            "TextureToUse": "{{ModId}}/assets/smilodon/smilodon2fur"
+          },
+          {
+            "Id": "{{ModID}}_blackfur",
+            "Produce": "{{ModId}}_smilodonfur",
+            "Skin": "{{ModID}}_blacksmilodon",
+            "TextureToUse": "{{ModId}}/assets/smilodon/smilodon3fur"
+          },
+          {
+            "Id": "{{ModID}}_mughifur",
+            "Produce": "{{ModId}}_smilodonfur",
+            "Skin": "{{ModID}}_mughismilodon",
+            "TextureToUse": "{{ModId}}/assets/smilodon/smilodon4fur"
+          },
+          {
+            "Id": "{{ModID}}_yellowfur",
+            "Produce": "{{ModId}}_smilodonfur",
+			"Skin": "{{ModID}}_yellowsmilodon",
+            "TextureToUse": "{{ModId}}/assets/smilodon/smilodon5fur"
+          },
+          {
+            "Id": "{{ModID}}_orangefur",
+            "Produce": "{{ModId}}_smilodonfur",
+            "TextureToUse": "{{ModId}}/assets/smilodon/smilodon1fur"
+          }
+        ]
+	  }
+	},
+ {
+      "LogName": "Smilodon extra produce",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": ["cryomancer.livestockdinos_smilodon", "ExtraProduceSpawnList"],
+      "Entries": {
+        "881": {
+          "Id": "bone fragments",
+          "ProduceItemIds": [
+            {
+              "Id": "881",
+              "ItemId": "881",
+			  "MinimumFriendship": 50,
+            }
+          ],
+          "DaysToProduce": 2,
+          "SyncWithMainProduce": false
+        },
+        "{{ModId}}_fang": {
+          "Id": "{{ModID}}_fang",
+          "ProduceItemIds": [
+            {
+              "Id": "{{ModID}}_fang",
+              "ItemId": "{{ModId}}_fang",
+			  "MinimumFriendship": 350,
+            }
+          ],
+          "DaysToProduce": 5,
+          "SyncWithMainProduce": false
+        },
+      },
+    },
+ {
+      "LogName": "smilodon extra produce drop methods",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": ["cryomancer.livestockdinos_smilodon", "AnimalProduceExtensionData"],
+      "Entries": {
+        "(O)881": {
+          "HarvestTool": "DropOvernight",
+		  "IgnoreAnimalQuality": true,
+        },
+		"(O){{ModId}}_fang": {
+          "HarvestTool": "DropOvernight",
+        },
+      },
+    }
+	]
+}

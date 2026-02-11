@@ -1,0 +1,193 @@
+{
+  "Changes": [
+  {
+      "LogName": "open presents with shears",
+      "Action": "EditData",
+      "Target": "Mods/mistyspring.ItemExtensions/MenuActions/(T)Shears",
+      "Entries": {
+        "{{ModID}}_openredgiftchomp": {
+        "TargetId": "(O){{ModID}}_redpresentchomposaur",
+        "AddItems": {"(O){{ModID}}_redpresentopen":1},
+		/*"ReplaceBy": "(O){{ModID}}_redpresentopen",*/
+				/*"RandomItemId": ["(W)38", "(W){{ModID}}_magicfrypan"],*/
+				"RemoveItems": {"(O){{ModID}}_redpresentchomposaur":1,},
+		"RetainQuality": false,
+        "RetainAmount": true,
+        "PlaySound": "scissors",
+		"TriggerAction": 'Spiderbuttons.BETAS_RandomAction "AddItem (W)38" "AddItem (W){{ModID}}_magicfrypan"', //this is supposed to look like this
+        },
+		"{{ModID}}_openyellowgiftbeast": {
+          "TargetId": "(O){{ModID}}_yellowpresentbeast",
+		  "RetainQuality": false,
+          "RetainAmount": true,
+          "AddItems": {
+            "(F)DustySkull":1, "(O){{ModID}}_yellowpresentopen":1},
+		    "RemoveItems": {
+            "(O){{ModID}}_yellowpresentbeast": 1,},
+          "PlaySound": "scissors"
+        },
+		"{{ModID}}_openpinkgiftdrago": {
+          "TargetId": "(O){{ModID}}_pinkpresentdrago",
+		  "RetainQuality": false,
+          "RetainAmount": true,
+          "AddItems": {"(O){{ModID}}_pinkpresentopen":1},
+		    "RemoveItems": {"(O){{ModID}}_pinkpresentdrago": 1,},
+          "PlaySound": "scissors",
+		  "TriggerAction": 'Spiderbuttons.BETAS_RandomAction "AddItem (O)597 5" "AddItem (O)591 5" "AddItem (O)18 5" "AddItem (O)22 5" "AddItem (O)597 3" "AddItem (O)591 3" "AddItem (O)18 3" "AddItem (O)22 3"',
+        },
+		"{{ModID}}_openyellowgiftdrago": {
+          "TargetId": "(O){{ModID}}_yellowpresentdrago",
+		  "RetainQuality": false,
+          "RetainAmount": true,
+          "AddItems": {"(O){{ModID}}_yellowpresentopen":1},
+		    "RemoveItems": {"(O){{ModID}}_yellowpresentdrago": 1,},
+          "PlaySound": "scissors",
+		  "TriggerAction": 'Spiderbuttons.BETAS_RandomAction "AddItem (O)376 5" "AddItem (O)593 5" "AddItem (O)402 5" "AddItem (O)421 5" "AddItem (O)376 3" "AddItem (O)593 3" "AddItem (O)402 3" "AddItem (O)421 3"',
+        },
+		"{{ModID}}_openorangegiftdrago": {
+          "TargetId": "(O){{ModID}}_orangepresentdrago",
+		  "RetainQuality": false,
+          "RetainAmount": true,
+          "AddItems": {"(O){{ModID}}_orangepresentopen":1},
+		    "RemoveItems": {"(O){{ModID}}_orangepresentdrago": 1,},
+          "PlaySound": "scissors",
+		  "TriggerAction": 'Spiderbuttons.BETAS_RandomAction "AddItem (O)421 5" "AddItem (O)595 5" "AddItem (O)283 5" "AddItem (O)418 5" "AddItem (O)421 3" "AddItem (O)595 3" "AddItem (O)283 3" "AddItem (O)418 3"',
+        },
+		"{{ModID}}_opencyangiftptero": {
+          "TargetId": "(O){{ModID}}_cyanpresentptero", //river fish
+		  "RetainQuality": false,
+          "RetainAmount": true,
+          "AddItems": {"(O){{ModID}}_cyanpresentopen":1},
+		  "RemoveItems": {"(O){{ModID}}_cyanpresentptero": 1,},
+          "PlaySound": "scissors",
+		  "TriggerAction": 'Spiderbuttons.BETAS_RandomAction "AddItem (O)132" "AddItem (O)137" "AddItem (O)138" "AddItem (O)139" "AddItem (O)140" "AddItem (O)141" "AddItem (O)143" "AddItem (O)144" "AddItem (O)145" "AddItem (O)699" "AddItem (O)702" "AddItem (O)704" "AddItem (O)706" "AddItem (O)707" "AddItem (O)Goby" "AddItem (O)RiverJelly" "AddItem (O)153"',
+        },
+		"{{ModID}}_openbluegiftptero": {
+          "TargetId": "(O){{ModID}}_bluepresentptero",  //ocean fish
+		  "RetainQuality": false,
+          "RetainAmount": true,
+          "AddItems": {"(O){{ModID}}_bluepresentopen":1},
+		  "RemoveItems": {"(O){{ModID}}_bluepresentptero": 1,},
+          "PlaySound": "scissors",
+		  "TriggerAction": 'Spiderbuttons.BETAS_RandomAction "AddItem (O)128" "AddItem (O)129" "AddItem (O)130" "AddItem (O)131" "AddItem (O)146" "AddItem (O)147" "AddItem (O)148" "AddItem (O)149" "AddItem (O)150" "AddItem (O)151" "AddItem (O)154" "AddItem (O)155" "AddItem (O)267" "AddItem (O)701" "AddItem (O)708" "AddItem (O)SeaJelly" "AddItem (O)152"',		  
+        },
+		"{{ModID}}_opengreengiftptero": {
+          "TargetId": "(O){{ModID}}_greenpresentptero",  //lake and other fish
+		  "RetainQuality": false,
+          "RetainAmount": true,
+          "AddItems": {"(O){{ModID}}_greenpresentopen":1},
+		  "RemoveItems": {"(O){{ModID}}_greenpresentptero": 1,},
+          "PlaySound": "scissors",
+		  "TriggerAction": 'Spiderbuttons.BETAS_RandomAction "AddItem (O)136" "AddItem (O)138" "AddItem (O)140" "AddItem (O)141" "AddItem (O)142" "AddItem (O)269" "AddItem (O)698" "AddItem (O)700" "AddItem (O)702" "AddItem (O)707" "AddItem (O)716" "AddItem (O)734" "AddItem (O)156" "AddItem (O)164" "AddItem (O)721" "AddItem (O)CaveJelly" "AddItem (O)157"',
+        },
+	  },
+	},
+{
+  "Action": "EditData",
+  "Target": "Mods/mistyspring.ItemExtensions/Data",
+  "Entries": {
+    "(O){{ModID}}_shieldsphere": {
+      "FoodDialogue": {
+	  "ConsumeQuestion":"Activate the {0}?",
+	  "CannotConsume":"You can't do that right now.",
+	  "No":"Not now." 
+      }
+    },
+    "(O){{ModID}}_barriersphere": {
+      "FoodDialogue": {
+	  "ConsumeQuestion":"Activate the {0}?",
+	  "CannotConsume":"You can't do that right now.",
+	  "No":"Not now." 
+      }
+    },
+  },
+},
+{
+  "Action": "EditData",
+  "Target": "Mods/mistyspring.ItemExtensions/EatingAnimations",
+  "Entries": {
+    "(O){{ModId}}_shieldsphere": {
+      "Animation": [
+        {
+          "Frame":0,
+          "Duration": 200,
+          "SecondaryArm": false,
+          "Flip": false
+        },
+        {
+          "Frame":18,
+          "Duration": 150,
+          "SecondaryArm": false,
+          "Flip": false
+        },
+        {
+          "Frame":26,
+          "Duration": 200,
+          "SecondaryArm": false,
+          "Flip": false
+        },
+        {
+          "Frame":25,
+          "Duration": 300,
+          "SecondaryArm": false,
+          "Flip": false
+        },
+
+        {
+          "Frame":68,
+          "Duration": 150,
+          "SecondaryArm": false,
+          "Flip": false
+        },
+
+        {
+          "Frame":86,
+          "Duration": 200,
+          "SecondaryArm": false,
+          "Flip": false
+        },
+        {
+          "Frame":103,
+          "Duration": 200,
+          "SecondaryArm": false,
+          "Flip": false
+        },
+        {
+          "Frame":86,
+          "Duration": 200,
+          "SecondaryArm": false,
+          "Flip": false
+        },
+        {
+          "Frame":103,
+          "Duration": 500,
+          "SecondaryArm": false,
+          "Flip": false
+        }
+      ],
+      "(O){{ModId}}_shieldsphere": {
+        //time - in milliseconds
+        "Duration": 500,
+        "Delay": 350,
+
+        //sounds
+        "StartSound": "dwop",
+        "EndSound": "gulp",
+        "Crunch": false,
+
+        //position
+        "Offset": "25, 40",
+        "Flip": true,
+        "Scale": 3,
+
+        //movement
+        "Speed": "0, 0.02",
+        "Motion": "0.0, -0.9",
+        "StopX": 0,
+        "StopY": -5
+      }
+    }
+  }
+}
+	]
+}

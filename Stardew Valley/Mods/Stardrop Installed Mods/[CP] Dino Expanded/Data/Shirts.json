@@ -1,0 +1,53 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load Dino Shirt texture",
+      "Action": "Load",
+      "Target": "Amichwan.DinoExpanded/Shirts",
+      "FromFile": "assets/DinoShirt.png"
+    },
+    {
+      "LogName": "Add Dino Shirt",
+      "Action": "EditData",
+      "Target": "Data/Shirts",
+      "Entries": {
+        "Amichwan.DinoExpanded_Shirt": {
+          "Name": "Amichwan.Dino.Shirt",
+          "DisplayName": "{{i18n:Amichwan.DinoExpanded.shirt.name}}",
+          "Description": "{{i18n:Amichwan.DinoExpanded.shirt.description}}",
+          "Texture": "Amichwan.DinoExpanded/Shirts",
+          "SpriteIndex": 0,
+          "Price": 600,
+          "DefaultColor": null,
+          "CanBeDyed": false,
+          "IsPrismatic": false,
+          "ContextTags": [ "clothing", "shirt", "dinosaur" ]
+        }
+      }
+    },
+    {
+      "LogName": "Tailoring recipe dino shirt",
+      "Action": "EditData",
+      "Target": "Data/TailoringRecipes",
+      "Entries": {
+        "Amichwan.DinoExpanded_DinoShirtFromPlate": {
+          "Id": "Amichwan.DinoExpanded_DinoShirtFromPlate",
+          "FirstItemTags": [ "item_cloth" ],
+          "SecondItemTags": [ "Amichwan_DinoExpanded_Plate" ],
+          "CraftedItemId": "Amichwan.DinoExpanded_Shirt",
+          "CraftedItemIsClothing": true
+        }
+      }
+    },
+    {
+      "LogName": "Add tailoring tag to dino plate",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Fields": {
+        "Amichwan.DinoExpanded_Plate": {
+          "ContextTags": [ "Amichwan_DinoExpanded_Plate" ]
+        }
+      }
+    }
+  ]
+}

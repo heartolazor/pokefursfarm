@@ -1,0 +1,156 @@
+{
+
+    "Changes": [
+
+//■■■ 共通項目の編集(MC_NoConditionsが有効時) ■■■
+
+
+    //●バレービーチ の編集(共通)
+      {//◆マップの編集
+        "Action": "EditMap",
+        "Target": "Maps/Beach",
+        "FromFile": "assets/tmx/MySubmarine_Beach.tmx",
+        "ToArea": { "X": 85, "Y": 27, "Width": 18, "Height": 8 }
+      },
+      {//◆ライトのマッププロパティ追加
+        "Action": "EditMap",
+        "Target": "Maps/Beach",
+        "TextOperations": [
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "DayTiles"],
+            "Value": "AlwaysFront 96 25 369",
+            "Delimiter": " "
+          },
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "Light"],
+            "Value": "96 25 4",
+            "Delimiter": " "
+          },
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "NightTiles"],
+            "Value": "AlwaysFront 96 25 368",
+            "Delimiter": " "
+          }
+        ]
+      },
+
+    //●アイランドビーチ の編集(バニラ環境)
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Island_S",
+        "FromFile": "assets/tmx/MySubmarine_Island_S.tmx",
+        "ToArea": { "X": 22, "Y": 32, "Width": 21, "Height": 26 },
+        "When": {
+          "HasMod: |contains=Lnh.IslandOverhaul": "false",
+          "HasMod: |contains=VoidWitchCult.CP.TheFishmongerNPC": "false"
+        }
+      },
+      {//◆ライトのマッププロパティ追加
+        "Action": "EditMap",
+        "Target": "Maps/Island_S",
+        "TextOperations": [
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "DayTiles"],
+            "Value": "AlwaysFront 36 35 61 AlwaysFront 38 48 61",
+            "Delimiter": " "
+          },
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "Light"],
+            "Value": "36 35 4 38 48 4",
+            "Delimiter": " "
+          },
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "NightTiles"],
+            "Value": "AlwaysFront 36 35 60 AlwaysFront 38 48 60",
+            "Delimiter": " "
+          }
+        ],
+        "When": {
+          "HasMod: |contains=Lnh.IslandOverhaul": "false",
+          "HasMod: |contains=VoidWitchCult.CP.TheFishmongerNPC": "false"
+        }
+      },
+
+
+  //★★★ModConfigで「潜水艦内部無し」時の潜水艦に触った時のワープ変更★★★
+
+     //●バレービーチ の編集(バニラ環境)
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Beach",
+        "FromFile": "assets/tmx/MySubmarine_Beach_NoIN.tmx",
+        "ToArea": { "X": 92, "Y": 31, "Width": 8, "Height": 1 },
+        "When": {
+          "SubmarineAction": "WarpInstantlyOtherSide",
+          "HasMod: |contains=Lnh.IslandOverhaul": "false",
+          "HasMod: |contains= VoidWitchCult.CP.TheFishmongerNPC": "false"
+        }
+      }, 
+
+     //●アイランドビーチ の編集(バニラ環境)
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Island_S",
+        "FromFile": "assets/tmx/MySubmarine_Island_S_NoIN.tmx",
+        "ToArea": { "X": 36, "Y": 53, "Width": 2, "Height": 1 },
+        "When": {
+          "SubmarineAction": "WarpInstantlyOtherSide",
+          "HasMod: |contains=Lnh.IslandOverhaul": "false",
+          "HasMod: |contains=VoidWitchCult.CP.TheFishmongerNPC": "false"
+        }
+      }, 
+
+
+  //★★★潜水艦内部の明るさの変更★★★
+
+    //●悪天候の明るさ変更
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Custom_MySubmarine_GoIsland",
+        "MapProperties": { "AmbientLight": "120 120 120" },
+        "When": {
+          "SubmarineAction": "WarpInsideSubmarine",
+          "Weather": "Rain, Storm"
+        }
+      }, 
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Custom_MySubmarine_GoBeach",
+        "MapProperties": { "AmbientLight": "120 120 120" },
+        "When": {
+          "SubmarineAction": "WarpInsideSubmarine",
+          "Weather": "Rain, Storm"
+        }
+      }, 
+
+    //●夜の明るさ変更 1900-2150
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Custom_MySubmarine_GoIsland",
+        "MapProperties": { "AmbientLight": "140 140 140" },
+        "When": {
+          "SubmarineAction": "WarpInsideSubmarine",
+          "Time": "{{range:1900,2600}}"
+        },
+        "Update": "OnTimeChange"
+      }, 
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Custom_MySubmarine_GoBeach",
+        "MapProperties": { "AmbientLight": "140 140 140" },
+        "When": {
+          "SubmarineAction": "WarpInsideSubmarine",
+          "Time": "{{range:1900,2600}}"
+        },
+        "Update": "OnTimeChange"
+      }
+
+
+    ]//▼▼"Changes"の終了▼▼
+}

@@ -3515,8 +3515,8 @@
         ],
         "UniqueAreaID": "Secret Cave Key Chest",
         "MapName": "Custom_CapeKeyMaze",
-        "MinimumSpawnsPerDay": 1,
-        "MaximumSpawnsPerDay": 1,
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 2,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
@@ -3544,7 +3544,7 @@
           "GameStateQueries": [],
           "CPConditions": {},
           "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": 1
+          "LimitedNumberOfSpawns": 2
         },
         "DaysUntilSpawnsExpire": 0
       },
@@ -6499,60 +6499,6 @@
       },
       {
         "SpringItemIndex": [
-          "Salal Berry"
-        ],
-        "SummerItemIndex": null,
-        "FallItemIndex": [
-          "Salal Berry"
-        ],
-        "WinterItemIndex": [
-          "Salal Berry"
-        ],
-        "UniqueAreaID": "CapeStardewSalalBerry",
-        "MapName": "Custom_CapeStardew",
-        "MinimumSpawnsPerDay": 0,
-        "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": [],
-        "ExcludeTerrainTypes": [],
-        "IncludeCoordinates": [
-          "18,1;22,2",
-          "16,10;19,13",
-          "1,10;4,13"
-        ],
-        "ExcludeCoordinates": [],
-        "StrictTileChecking": "Maximum",
-        "SpawnTiming": {
-          "StartTime": 600,
-          "EndTime": 610,
-          "MinimumTimeBetweenSpawns": 10,
-          "MaximumSimultaneousSpawns": null,
-          "OnlySpawnIfAPlayerIsPresent": false,
-          "SpawnSound": ""
-        },
-        "ExtraConditions": {
-          "Years": [],
-          "Seasons": [
-            "Spring",
-            "Fall",
-            "Winter"
-          ],
-          "Days": [],
-          "WeatherYesterday": [
-            "Rain"
-          ],
-          "WeatherToday": [],
-          "WeatherTomorrow": [],
-          "GameStateQueries": [],
-          "CPConditions": {
-            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
-          },
-          "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": null
-        },
-        "DaysUntilSpawnsExpire": 1
-      },
-      {
-        "SpringItemIndex": [
           343,
           450,
           670,
@@ -6580,7 +6526,7 @@
           343
         ],
         "UniqueAreaID": "CapeMineCaveForage",
-        "MapName": "Custom_CapeMineCave",
+        "MapName": "Custom_CapeMineCart",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
         "IncludeTerrainTypes": [],
@@ -14407,7 +14353,7 @@
           }
         ],
         "UniqueAreaID": "CapeMineCaveMonsters",
-        "MapName": "Custom_CapeMineCave",
+        "MapName": "Custom_CapeMineCart",
         "MinimumSpawnsPerDay": 17,
         "MaximumSpawnsPerDay": 22,
         "IncludeTerrainTypes": [
@@ -14451,7 +14397,7 @@
           }
         ],
         "UniqueAreaID": "CapeMineCaveMonsters2",
-        "MapName": "Custom_CapeMineCave",
+        "MapName": "Custom_CapeMineCart",
         "MinimumSpawnsPerDay": 2,
         "MaximumSpawnsPerDay": 4,
         "IncludeTerrainTypes": [

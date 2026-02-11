@@ -11,6 +11,10 @@
       "SubmarineAction": {
         "AllowValues": "Cutscene(OnceADay), Cutscene(PlaybackEachTime), WarpInstantlyOtherSide, WarpInsideSubmarine",
         "Default": "Cutscene(OnceADay)"
+      },
+      "MC_NoConditions": {
+        "AllowValues": "true, false",
+        "Default": "false"
       }
 
     },//▼"ConfigSchema"の終了▼
@@ -107,7 +111,7 @@
       {
         "Name": "Custom_MySubmarine_EventSeen_Island",
         "FromMapFile": "assets/tmx/MySubmarine_EventSeen_Island.tmx"
-      },
+      }
 
     ],//▼"CustomLocations"の終了▼
 
@@ -136,6 +140,7 @@
       },
 
   //■■■各種json読み込み■■■
+
       {
         "Action": "Include",
         "FromFile": "assets/json/Edit_Common_Vanilla.json,
@@ -143,7 +148,19 @@
                      assets/json/Edit_EventSeen.json
                     ",
         "When": {
-          "EnableThisMod": "true"
+          "EnableThisMod": "true",
+          "MC_NoConditions": "false"
+        }
+      },
+      {
+        "Action": "Include",
+        "FromFile": "assets/json/Edit_NoCn_Common_Vanilla.json,
+                     assets/json/Edit_NoCn_Mod.json,
+                     assets/json/Edit_NoCn_EventSeen.json
+                    ",
+        "When": {
+          "EnableThisMod": "true",
+          "MC_NoConditions": "true"
         }
       }
 

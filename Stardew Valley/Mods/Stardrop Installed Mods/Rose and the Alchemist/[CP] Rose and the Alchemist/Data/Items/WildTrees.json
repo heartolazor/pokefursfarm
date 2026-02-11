@@ -4,7 +4,7 @@
 
     {
         "Action": "Load",
-        "Target": "Mods/{{ModId}}/Blushing_TopHat_Tree, Mods/{{ModId}}/Candy_Button_Tree, Mods/{{ModId}}/Coral_Fungus_Tree, Mods/{{ModId}}/Frilly_Gilly_Tree, Mods/{{ModId}}/Ghostly_Parasol_Tree, Mods/{{ModId}}/Indigo_Cap_Tree, Mods/{{ModId}}/Lilac_Funnel_Tree, Mods/{{ModId}}/Limey_Bonnet_Tree, Mods/{{ModId}}/Lunar_Poof_Tree, Mods/{{ModId}}/Rustgill_Tree, Mods/{{ModId}}/Seafoam_Waxcap_Tree, Mods/{{ModId}}/Sparkling_Agaric_Tree, Mods/{{ModId}}/Stout_Funnel_Tree",
+        "Target": "Mods/{{ModId}}/Coral_Fungus_Tree, Mods/{{ModId}}/Frilly_Gilly_Tree, Mods/{{ModId}}/Ghostly_Parasol_Tree, Mods/{{ModId}}/Indigo_Cap_Tree, Mods/{{ModId}}/Lilac_Funnel_Tree, Mods/{{ModId}}/Limey_Bonnet_Tree, Mods/{{ModId}}/Lunar_Poof_Tree, Mods/{{ModId}}/Seafoam_Waxcap_Tree, Mods/{{ModId}}/Sparkling_Agaric_Tree, Mods/{{ModId}}/Stout_Funnel_Tree",
         "FromFile": "Assets/Trees/{{TargetWithoutPath}}.png"
     },
 
@@ -13,29 +13,6 @@
         "Action": "EditData",
         "Target": "Data/Objects",
         "Entries": {
-
-            "{{ModId}}_Blushing_TopHat_Seeds": {
-                "Name": "{{ModId}}_Blushing_TopHat_Seeds",
-                "DisplayName": "{{i18n:SASS_Blushing_TopHat_Seeds.name}}",
-                "Description": "{{i18n:SASS_Blushing_TopHat_Seeds.description}}",
-                "Type": "Seeds",
-                "Category": -74,
-                "Price": 1,
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 78
-        },
-            "{{ModId}}_Candy_Button_Seeds": {
-                "Name": "{{ModId}}_Candy_Button_Seeds",
-                "DisplayName": "{{i18n:SASS_Candy_Button_Seeds.name}}",
-                "Description": "{{i18n:SASS_Candy_Button_Seeds.description}}",
-                "Type": "Seeds",
-                "Category": -74,
-                "Price": 1,
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 79
-        },
             "{{ModId}}_Coral_Fungus_Seeds": {
                 "Name": "{{ModId}}_Coral_Fungus_Seeds",
                 "DisplayName": "{{i18n:SASS_Coral_Fungus_Seeds.name}}",
@@ -113,17 +90,6 @@
                 "Texture": "Mods/{{ModId}}/Objects",
                 "SpriteIndex": 106
         },
-            "{{ModId}}_Rustgill_Seeds": {
-                "Name": "{{ModId}}_Rustgill_Seeds",
-                "DisplayName": "{{i18n:SASS_Rustgill_Seeds.name}}",
-                "Description": "{{i18n:SASS_Rustgill_Seeds.description}}",
-                "Type": "Seeds",
-                "Category": -74,
-                "Price": 1,
-
-                "Texture": "Mods/{{ModId}}/Objects",
-                "SpriteIndex": 107
-        },
             "{{ModId}}_Seafoam_Waxcap_Seeds": {
                 "Name": "{{ModId}}_Seafoam_Waxcap_Seeds",
                 "DisplayName": "{{i18n:SASS_Seafoam_Waxcap_Seeds.name}}",
@@ -169,62 +135,6 @@
     "Action": "EditData",
     "Target": "Data/WildTrees",
     "Entries": {
-        "{{ModId}}_Blushing_TopHat_Tree": {
-            "Textures": [
-                {
-                    "Texture":"Mods/{{ModId}}/Blushing_TopHat_Tree"
-                }
-            ],
-            "SeedItemId":"{{ModId}}_Blushing_TopHat_Seeds",
-            "SeedChance":0.15,
-            "IsLeafy": false,
-            "IsLeafyInWinter": false,
-            "GrowsInWinter": true,
-            "SeedPlantable": true,
-            "GrowthChance": 0.25,
-            "FertilizedGrowthChance": 1,
-            "SeedOnChopChance": 0.15,
-            "DropWoodOnChop": true,
-            "DropHardwoodOnLumberChop": true,
-            "CustomFields": {
-						"UIInfoSuite.ExtendedData/DisplayName": "{{i18n:Blushing_TopHat_Tree.name}}"
-					},
-            "TapItems":[
-                {
-                "ItemId":"{{ModId}}_Blushing_TopHat",
-                "DaysUntilReady":4,
-                "Chance":"1"
-                }
-            ]
-        },
-        "{{ModId}}_Candy_Button_Tree": {
-            "Textures": [
-                {
-                    "Texture":"Mods/{{ModId}}/Candy_Button_Tree"
-                }
-            ],
-            "SeedItemId":"{{ModId}}_Candy_Button_Seeds",
-            "SeedChance":0.15,
-            "IsLeafy": false,
-            "IsLeafyInWinter": false,
-            "GrowsInWinter": true,
-            "SeedPlantable": true,
-            "GrowthChance": 0.25,
-            "FertilizedGrowthChance": 1,
-            "SeedOnChopChance": 0.15,
-            "DropWoodOnChop": true,
-            "DropHardwoodOnLumberChop": true,
-            "CustomFields": {
-						"UIInfoSuite.ExtendedData/DisplayName": "{{i18n:Candy_Button_Tree.name}}"
-					},
-            "TapItems":[
-                {
-                "ItemId":"{{ModId}}_Candy_Button",
-                "DaysUntilReady":2,
-                "Chance":"1"
-                }
-            ]
-        },
         "{{ModId}}_Coral_Fungus_Tree": {
             "Textures": [
                 {
@@ -421,34 +331,7 @@
                 }
             ]
         },
-        "{{ModId}}_Rustgill_Tree": {
-            "Textures": [
-                {
-                    "Texture":"Mods/{{ModId}}/Rustgill_Tree"
-                }
-            ],
-            "SeedItemId":"{{ModId}}_Rustgill_Seeds",
-            "SeedChance":0.15,
-            "IsLeafy": false,
-            "IsLeafyInWinter": false,
-            "GrowsInWinter": true,
-            "SeedPlantable": true,
-            "GrowthChance": 0.25,
-            "FertilizedGrowthChance": 1,
-            "SeedOnChopChance": 0.15,
-            "DropWoodOnChop": true,
-            "DropHardwoodOnLumberChop": true,
-            "CustomFields": {
-						"UIInfoSuite.ExtendedData/DisplayName": "{{i18n:Rustgill_Tree.name}}"
-					},
-            "TapItems":[
-                {
-                "ItemId":"{{ModId}}_Rustgill",
-                "DaysUntilReady":7,
-                "Chance":"1"
-                }
-            ]
-        },
+
         "{{ModId}}_Seafoam_Waxcap_Tree": {
             "Textures": [
                 {
@@ -569,22 +452,6 @@
     }
 },
 
-{
-    "LogName":"Add Mushroom to Pine Tree Shakeable Items",
-    "Action": "EditData",
-    "Target": "Data/WildTrees",
-    "TargetField": ["3","ShakeItems"],
-    "Entries": {
-        "{{ModId}}_Festive_Agaric": {
-            "Season": "winter",
-            "Chance": 0.1,
-            "Condition": null,
-            "Id": "{{ModId}}_Festive_Agaric",
-            "ItemId": "(O){{ModId}}_Festive_Agaric",
-        }
-    }
-},
-
 
 {
     "LogName":"Add Feather to Oak Tree Choppable Items",
@@ -614,21 +481,7 @@
     }
 },
 
-{
-    "LogName":"Add Mushroom to Oak Tree Shakeable Items",
-    "Action": "EditData",
-    "Target": "Data/WildTrees",
-    "TargetField": ["1","ShakeItems"],
-    "Entries": {
-        "{{ModId}}_Jack_Agaric": {
-            "Season": "fall",
-            "Chance": 0.1,
-            "Condition": null,
-            "Id": "{{ModId}}_Jack_Agaric",
-            "ItemId": "(O){{ModId}}_Jack_Agaric",
-        }
-    }
-},
+
 
 {
     "LogName":"Add Feather to Maple Tree Choppable Items",

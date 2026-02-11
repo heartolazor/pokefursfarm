@@ -1,0 +1,183 @@
+{
+  "Changes": [
+    		{
+            "LogName": "Animal Data",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+				"{{ModId}}_runner": {
+                    "DisplayName": "{{i18n: runner.DisplayName}}",
+                    "House": "{{ModId}}_DinoCave",
+                    "Gender": 2,
+                    "PurchasePrice": 3000,
+					"SellPrice": 800,
+                    "ShopTexture": "{{ModId}}/assets/shops/runnershop",
+                    "Sound": "batScreech",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "RequiredBuilding": "{{ModId}}_DinoCave",
+					"UnlockCondition": null,
+                    "ShopDisplayName": "{{i18n: runner.ShopDisplayName}}",
+                    "ShopDescription": "{{i18n: runner.ShopDescription}}",
+                    "ShopMissingBuildingDescription": "{{i18n: runner.ShopMissingBuildingDescription}}",
+				    "AlternatePurchaseTypes": [
+					{
+					"Condition": null,
+					"AnimalIds": [
+					"{{ModId}}_runner",
+					]
+					}
+					],
+				    "BirthText": "{{i18n: runner.BirthText}}",
+					"IncubationTime": -1,
+                    "DaysToMature": 3,
+				    "DaysToProduce": 2,
+					"HarvestType": "DropOvernight",
+					"HarvestTool": null,
+                    "ProduceItemIDs": [
+                        {
+                            "Id": "{{ModId}}_horn",
+                            "Condition": null,
+                            "MinimumFriendship": 300,
+                            "ItemID": "{{ModId}}_horn"
+                        },
+                        {
+                            "Id": "{{ModId}}_herbtooth",
+                            "Condition": null,
+                            "MinimumFriendship": 100,
+                            "ItemID": "{{ModId}}_herbtooth"
+                        }
+                    ],
+					"DeluxeProduceItemIds": [
+					  {
+						"Id": "{{ModId}}_dinoskin",
+						"Condition": "RANDOM 0.5 @addDailyLuck",
+						"MinimumFriendship": 400,
+						"ItemId": "{{ModId}}_dinoskin"
+					  },
+					],
+                    "HappinessDrain": 1,
+                    "GrassEatAmount": 2,
+                    "ShowSummitCredits": false,
+                    "CanGetPregnant": false,
+                    "BabiesFollowAdults": true,
+                    "Texture": "{{ModId}}/assets/runner/runner1",
+					"SleepFrame": "12",
+					"Skins": [
+                    {
+                        "id": "runner2",
+                        "Texture": "{{ModId}}/assets/runner/runner2",
+						"HarvestedTexture": "{{ModId}}/assets/runner/runner2",
+						"BabyTexture": "{{ModId}}/assets/runner/runner2",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "runner3",
+                        "Texture": "{{ModId}}/assets/runner/runner3",
+						"HarvestedTexture": "{{ModId}}/assets/runner/runner3",
+						"BabyTexture": "{{ModId}}/assets/runner/runner3",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "runner4",
+                        "Texture": "{{ModId}}/assets/runner/runner4",
+						"HarvestedTexture": "{{ModId}}/assets/runner/runner4",
+						"BabyTexture": "{{ModId}}/assets/runner/runner4",
+                        "Weight": 1
+                    },
+					                    {
+                        "id": "runner5",
+                        "Texture": "{{ModId}}/assets/runner/runner5",
+						"HarvestedTexture": "{{ModId}}/assets/runner/runner5",
+						"BabyTexture": "{{ModId}}/assets/runner/runner5",
+                        "Weight": 1
+                    }
+                ],
+                    "BabyTexture": "{{ModId}}/assets/runner/runner1",
+					"HarvestedTexture": null,
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 32,
+					"SpriteHeight": 48,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -4 },
+							"Scale": 3.0
+					},
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": {
+							"Visible": false,
+							"Offset": { "X": 4, "Y": -10 },
+							"Scale": 5.0
+					},
+					"CanSwim": false,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"CustomFields": {
+					"meatIndex": "{{ModId}}_dinomeat"
+				},
+                },
+			},
+			},
+    {
+      "LogName": "Runner EAC",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": ["cryomancer.livestockdinos_runner"],
+      "Entries": {
+        "IgnoreRain": true,
+        "SpeedOverride": 5,
+		"IsAttackAnimal": true,
+		"AttackDamage": 2,
+        "AttackIntervalMs": 6000,
+        "AttackRange": 5,
+        "AttackMaxChaseTimeMs": 4000,
+		"AttackCondition": "!selph.ExtraAnimalConfig_ANIMAL_COUNT cryomancer.livestockdinos_runner 600 4",
+		"ExtraProduceSpawnList": [
+						{
+							"Id": "{{ModID}}_shieldsphere",
+							"DaysToProduce": 3,
+							"ProduceItemIds": [
+								{
+									"ItemId": "{{ModID}}_shieldsphere",
+									"Condition": "RANDOM 0.3 @addDailyLuck",
+									"MinimumFriendship": 600,
+								}
+							]
+						},
+												{
+							"Id": "life elixir",
+							"DaysToProduce": 5,
+							"ProduceItemIds": [
+								{
+									"ItemId": "(O)773",
+									"Condition": "RANDOM 0.3 @addDailyLuck",
+									"MinimumFriendship": 800,
+								}
+							]
+						},
+					],
+      }
+    },
+	{
+      "LogName": "runner extra produce quality",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": ["cryomancer.livestockdinos_runner", "AnimalProduceExtensionData"],
+      "Entries": {
+		"(O){{ModID}}_shieldsphere": {
+		"IgnoreAnimalQuality": true,
+		},
+		"(O)773": {
+        "IgnoreAnimalQuality": true,
+        }
+      },
+    },
+	]
+}
