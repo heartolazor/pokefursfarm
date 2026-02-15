@@ -86,23 +86,6 @@
   }
 },
 
-{
-    "Action": "EditData",
-    "Target": "Data/TriggerActions",
-    "When": {
-      "UnequippedActiveRings": true
-    },
-    "Entries": {
-      "{{ModId}}_UnequippedActiveRings_Ping": {
-        "Id": "{{ModId}}_UnequippedActiveRings_Ping",
-        "Trigger": "dreamy.kickitspot_UnequippedActiveRings",
-        "MarkActionApplied": false,
-        "Actions": [
-          "Null"
-        ]
-      }
-    }
-  },
 
 
   {
@@ -111,7 +94,7 @@
     "Entries": {
       "{{ModId}}_EndlessEmberRingEquip": {
         "Id": "{{ModId}}_EndlessEmberRingEquip",
-        "ItemId": "{{ModId}}_EndlessEmberRing",
+        "ItemId": "{{ModId}}_EndlessEmber",
         "Trigger": "dreamy.kickitspot_OnRingEndlessEmberEquip",
         "MarkActionApplied": false,
         "Actions": [
@@ -120,7 +103,7 @@
       },
       "{{ModId}}_EndlessEmberRingUnequip": {
         "Id": "{{ModId}}_EndlessEmberRingUnequip",
-        "ItemId": "{{ModId}}_EndlessEmberRing",
+        "ItemId": "{{ModId}}_EndlessEmber",
         "Trigger": "dreamy.kickitspot_OnRingEndlessEmberUnequip",
         "MarkActionApplied": false,
         "Actions": [
@@ -130,7 +113,7 @@
 
       "{{ModId}}_SilverPetalRingEquip": {
         "Id": "{{ModId}}_SilverPetalRingEquip",
-        "ItemId": "{{ModId}}_SilverPetalRing",
+        "ItemId": "{{ModId}}_SilverPetal",
         "Trigger": "dreamy.kickitspot_OnRingSilverPetalEquip",
         "MarkActionApplied": false,
         "Actions": [
@@ -139,7 +122,7 @@
       },
       "{{ModId}}_SilverPetalRingUnequip": {
         "Id": "{{ModId}}_SilverPetalRingUnequip",
-        "ItemId": "{{ModId}}_SilverPetalRing",
+        "ItemId": "{{ModId}}_SilverPetal",
         "Trigger": "dreamy.kickitspot_OnRingSilverPetalUnequip",
         "MarkActionApplied": false,
         "Actions": [
