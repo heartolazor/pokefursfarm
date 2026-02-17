@@ -3,3 +3,5 @@
 because in the latest version pet.wav it's a zero bytes file
 
 Pokefy2.1 replaced desert_festival_tilesheet.png wrong file. Without this fix the desert will look black.
+
+Kin the Axolotl replaces event locations to be compatible with SVE
