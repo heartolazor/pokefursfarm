@@ -376,8 +376,8 @@
             "Target": "Maps/Mine",
             "FromFile": "assets/Maps/MineZinniaEventEdit.tmx",
 	    "Update": "OnTimeChange, OnLocationChange",
-	    "FromArea": { "X": 20, "Y": 0, "Width": 7, "Height": 6},
-            "ToArea": { "X": 20, "Y": 0, "Width": 7, "Height": 6},
+	    "FromArea": { "X": 22, "Y": 0, "Width": 3, "Height": 5},
+            "ToArea": { "X": 22, "Y": 0, "Width": 3, "Height": 5},
 	    "PatchMode": "replace",
 	    "When": {
 		"HasSeenEvent: anyPlayer |contains=8280004": "true",
@@ -396,7 +396,7 @@
             "Action": "EditMap",
             "Target": "Maps/Custom_GE_ZinniaField",
             "MapProperties": {
-               "Music": "ZinniaSorrow"
+               "Music": "{{ZinniaSorrow}}"
             },
         },
 
@@ -610,7 +610,7 @@
 		"ResearchWing.11": "{{i18n:MapStrings.ResearchWing.11}}",
 		"ResearchWing.12": "{{i18n:MapStrings.ResearchWing.12}}",
 		"sillyTrappedMessage": "{{i18n:MapStrings.sillyTrappedMessage}}",
-		"danielsMessage": "{{i18n:MapStrings.danielsMessage.{{Random:00,01,02,03,04,05,06}}|i18n={{danielNPCnamedisplay}}}}",
+		"danielsMessage": "{{i18n:MapStrings.danielsMessage.{{Random:00,01,02,03,04,05,06}}}}",
 		"GabrielBat.Sleep": "{{i18n:MapStrings.GabrielBat.Sleep}}",
 		"GabrielBat.Awake": "{{i18n:MapStrings.GabrielBat.Awake}}",
 		"DaisyGrave": "{{i18n:MapStrings.DaisyGrave}}",

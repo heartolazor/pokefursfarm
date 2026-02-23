@@ -209,6 +209,69 @@
       }
     },
 
+
+///GoldPocketWatchBuff//
+  {
+    "Action": "EditData",
+    "Target": "Data/Buffs",
+    "Entries": {
+      "dreamy.kickitspot_WorkdayWatch": {
+        "DisplayName": "{{i18n:WorkdayWatch_Name}}",
+        "Description": "{{i18n:WorkdayWatch_Desc}}",
+        "Duration": -2,
+        "IconTexture": "Mods/CapeStardew/Objects/WorkDayWatchBuffIcon",
+        "IconSpriteIndex": 0,
+        "Effects": {
+           "WeaponPrecisionMultiplier": 0.1,
+   "WeaponSpeedMultiplier": 0.1,
+"KnockbackMultiplier": 0.1
+        },
+  "CustomFields": {
+          "dreamy.kickitspot/WatchState": "off"
+        },
+
+      },
+}
+},
+
+{
+"Action": "EditData",
+    "Target": "Data/Buffs",
+    "Entries": {
+      "dreamy.kickitspot_WorkdayWatch_AlarmOn": {
+        "DisplayName": "{{i18n:WorkdayWatch_Name}}",
+        "Description": "{{i18n:WorkdayWatch_Desc}}",
+        "Duration": -2,
+        "IconTexture": "Mods/CapeStardew/Objects/WorkDayWatchBuffIcon_AlarmOn",
+        "IconSpriteIndex": 0,
+        "Effects": {
+        "WeaponPrecisionMultiplier": 0.1,
+  "WeaponSpeedMultiplier": 0.1,
+"Immunity": 1,
+        },
+
+"CustomFields": {
+          "dreamy.kickitspot/WatchState": "alarm_on",
+          "dreamy.kickitspot/AlarmBoostTier": "1"
+        },
+
+      }
+    }
+  },
+
+  {
+    "Action": "Load",
+    "Target": "Mods/CapeStardew/Objects/WorkDayWatchBuffIcon",
+    "FromFile": "Objects/Gold Pocket Watch/BuffIcon.png"
+  },
+
+  {
+    "Action": "Load",
+    "Target": "Mods/CapeStardew/Objects/WorkDayWatchBuffIcon_AlarmOn",
+    "FromFile": "Objects/Gold Pocket Watch/BuffIcon_AlarmOn.png"
+  }
+
+
             ]
             
             
