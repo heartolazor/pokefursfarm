@@ -5,31 +5,37 @@ Click the image for a video preview:
 [![Preview](https://img.youtube.com/vi/C_yXpM4nEAE/maxresdefault.jpg)](https://youtu.be/C_yXpM4nEAE)
 
 ## Description
-This is a ModPack created for the PokeFurs server. 
+This is a SFW ModPack created for the PokeFurs server. 
 The main theme is Pokemon mods mixed with Furry mods, expansion packs and QoL mods.
 The idea is to install this and don't configure anything, so all of the players have the same mods and can play in multiplayer.
+
 
 **Mods that will not be found in this modpack: Cheat like mods, Meme mods, Adult themed mods.**
 
 ## How to install
-This Modpack was tested with SMAPI 4.3.2 with Stardew Valley 1.6.15.
+This Modpack was tested with SMAPI 4.5.1 with Stardew Valley 1.6.15.
 
 1. Install latest version of SMAPI, this enables modding: https://smapi.io/
 2. Copy "_Stardew Valley_" folder content to the Stardew Valley folder. You should end with something like "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Stardrop Installed Mods\"
 3. If steam is installed add this command "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\StardewModdingAPI.exe" %command% to start stardew valley with mods when you open it in steam and have achievements. The path is the direction to StardewModdingAPI.exe available in your stardew valley folder after installing SMAPI.
 4. Optional: If you want to add support spanish translation to the mods, Copy the content inside the folder "Optional/Spanish Translations" to the "Your steam directory\Stardew Valley\Mods\Stardrop Installed Mods\", this translates many npcs and expansions dialogs to spanish.
 5. Optional: Install Stardrop Mod Manager, this is useful to check what mods are installed and install more mods: https://www.nexusmods.com/stardewvalley/mods/10455
+   
+## Important when creating a new game
+In the settings **don't** enable random community center bundles, this setting has conflicts with Stardew Valley Balance Overhaul mod.
+Recommended to choose Frontiers Farm, enable hand mirror tool, no penalization in Profits (100%) as this is handled better with the included balance mods, aside if you want to experiment with the profits, a mod for changing it ingame is included.
 
 ## Summary of mods included in this modpack.
  - Pokemon related mods: [Pokemon Mystery Dungeon Farmer](https://www.nexusmods.com/stardewvalley/mods/39038), Pokemon farm animals, pokemon furniture, pokemon pets, pokemon fishes, pokemon scenery and most of pokemon mods found in nexus.
  - Portrait npcs furry/nyapu versions, Mod fallback order: Derg valley > Anthro Characters > Nyapu > Default portraits.
  - Personalization of the main character using Fashion Sense mod. Be a pokemon with [Pokemon Mystery Dungeon Farmer](https://www.nexusmods.com/stardewvalley/mods/39038) or create your character using a hundred of accesories as tails or wings to make any fantasy creature.
  - Many Collection like mods. Collect: pokemons, bugs, fishes, minerals (geology), birds, cooking recipes, mushrooms and more. 
- - Important modpacks with additional npcs and content: Stardew Valley Expanded, Ridgeside Valley, East Carp, Sunberry Village, Lumisteria Visit Mount Vapius, Downtown Zuzu, Axolot Valley, Sword and Sorcery, Deep Woods, Slimes in Stardew, Adventure Guild Expanded, Boss Battles, Alchemistry, Dwarven Expansion, Animal Husbandry, Love of Cooking, Restauranteer, Walk Of Life - Profession Overhaul, MarketTown, Ornithologist Guild, Nature in the Valley, Bog's Monster, Stardew Aquarium, Chocobo Valley, Everia's Dragons, Dragon Beans, Fishing Trawler, , Level Forever, new Skills and many more.
- - Misc mods that enhances the Quality of life, balance or add more accesories from known franchises: Ragnarok Online hats, MIA Nanachi Relic Hat, Rabite pet from Secret of mana, Sanrio furniture and farm animals, tamagotchi farm animals, Animal Crossing themed furniture, Automate, Better Junimos, Better Chests, Hundreds of additional fishes, Better Balance, Enhanced reflections, Animated icons, Event Lookup, Faster Path Speed, Ferngill item packs, Cornucopia item packs, Fresh Item Produce, Longevity, Horse Overhaul, Lookup Anything, Machine Progression System, Fish Helper UI, Mini Bars, The return of backpack upgrades, Swim Mod, Visible Fish, Giant Crops/Flowers mods and many more.
+ - Important modpacks with additional npcs and content: Stardew Valley Expanded, Ridgeside Valley, East Carp, Sunberry Village, Lumisteria Visit Mount Vapius, Downtown Zuzu, Axolot Valley, Sword and Sorcery, Deep Woods, Slimes in Stardew, Adventure Guild Expanded, Boss Battles, Alchemistry, Dwarven Expansion, Animal Husbandry, Love of Cooking, Restauranteer, Walk Of Life - Profession Overhaul, Aquarism, Serfdom, Springmyst, Mineracoustics, Chargeable Resource Tools, Wildcat, MarketTown, Ornithologist Guild, Nature in the Valley, Bog's Monster, Stardew Aquarium, Chocobo Valley, Everia's Dragons, Dragon Beans, Fishing Trawler, new Skills and many more.
+ - Misc mods that enhances the Quality of life, balance or add more accesories from known franchises: Ragnarok Online hats, MIA Nanachi Relic Hat, Rabite pet from Secret of mana, Sanrio furniture and farm animals, tamagotchi farm animals, Animal Crossing themed furniture, Better Junimos, Better Chests, Hundreds of additional fishes, Stardew Valley Balance Overhaul, Enhanced reflections, Animated icons, Event Lookup, Faster Path Speed, Ferngill item packs, Cornucopia item packs, Fresh Item Produce, Longevity, Horse Overhaul, Lookup Anything, Fish Helper UI, Mini Bars, The return of backpack upgrades, Swim Mod, Visible Fish, Giant Crops/Flowers mods and many more.
 
 ## Caveats
-Remember that in multiplayer all player should have the same mods.
+Remember that in multiplayer all player should have the same mods. Mods come already preconfigured to ensure all players share the same settings.
+Automate is not included, because Walk of Life manages the progression better with the hoppers at the end of the game.
 
 ## Folder Structure
 Description of what it is each folder:
@@ -49,9 +55,9 @@ PokeFursFarm
 
 <details>
 <summary>Full list of Mods included in the ModPack.</summary>
-# Detailed Mod List (454):
+# Detailed Mod List (497):
     
-Content Patcher v2.8.1 by Pathoschild:
+Content Patcher v2.9.0 by Pathoschild:
 - https://www.nexusmods.com/stardewvalley/mods/1915
 Loads content packs which edit game data, images, and maps without changing the game files.
 
@@ -91,27 +97,7 @@ Nyapu Styled Portraits for Constance v1.1.2 by SeaSea50:
 - https://www.nexusmods.com/stardewvalley/mods/24721
 A nyapu styled portrait for Constance from The Fishmonger - Custom NPC
 
-Nora The Herpetologist v2.9.1 by Bagi:
-- https://www.nexusmods.com/stardewvalley/mods/18176
-Adds a new NPC named Nora, an enthusiastic herpetologist, to East Scarp
-
-CP Nora Nyapu Style Replacement v1.3.0 by AhCuteArt:
-- https://www.nexusmods.com/stardewvalley/mods/36725
-Content Patcher that replaces custom NPC Nora's portraits
-
-Unlockable Bundles v4.1.2 by DeLiXx:
-- https://www.nexusmods.com/stardewvalley/mods/17265
-Framework for custom bundles
-
-AnnettaNPC v6.9.0 by Arony/DreamyGloom:
-- https://www.nexusmods.com/stardewvalley/mods/14635
-DreamyGloom Inc.
-
-Nyapu Style Annetta and Jelli Portraits v1.1.0 by SeaSea:
-- https://www.nexusmods.com/stardewvalley/mods/25307
-Changes Annetta & Jelli's portrait to match Nyapu's Style
-
-East Scarp C# v3.0.4 by atravita:
+East Scarp: C# v3.0.6 by atravita:
 - -1
 ES C# component
 
@@ -153,11 +139,11 @@ Mail Framework Mod v1.20.0 by Digus:
 - https://www.nexusmods.com/stardewvalley/mods/1536
 Utility classes and content packs to add mail into the game.
 
-Producer Framework Mod v1.9.8 by Digus:
-- https://www.nexusmods.com/stardewvalley/mods/4970
-Framework to add rules to produce objects or change the vanilla rules.
+ExtraMachineConfig v1.17.9 by selph:
+- https://www.nexusmods.com/stardewvalley/mods/22256
+Add extra functionalities to machine artisan recipes and other misc data structures.
 
-More Fish v5.3.2 by HisameArtWork&TrentXV:
+More Fish v5.4.0 by HisameArtWork&TrentXV:
 - https://www.nexusmods.com/stardewvalley/mods/3578
 Adds new fish to the game
 
@@ -165,19 +151,39 @@ Stardew Valley Expanded v1.15.11 by FlashShifter:
 - https://www.nexusmods.com/stardewvalley/mods/???
 An expansive fanmade mod for ConcernedApe's Stardew Valley.
 
-NPC Map Locations v3.4.4 by Bouhm:
+NPC Map Locations v3.5.0 by Bouhm:
 - https://www.nexusmods.com/stardewvalley/mods/239
 Shows NPCs and farmers on a modified map page for accurate tracking.
 
-East Scarp v3.0.4 by LemurKat:
+East Scarp: Locations v3.0.6 by LemurKat:
 - https://www.nexusmods.com/stardewvalley/mods/????
 Adds the suburb of East Scarp
 
-Custom Companions v5.0.0 by PeacefulEnd:
+Nora The Herpetologist v2.9.2 by Bagi:
+- https://www.nexusmods.com/stardewvalley/mods/18176
+Adds a new NPC named Nora, an enthusiastic herpetologist, to East Scarp
+
+CP Nora Nyapu Style Replacement v2.0.0 by AhCuteArt:
+- https://www.nexusmods.com/stardewvalley/mods/36725
+Content Patcher that replaces custom NPC Nora's portraits
+
+Unlockable Bundles v4.2.1 by DeLiXx:
+- https://www.nexusmods.com/stardewvalley/mods/17265
+Framework for custom bundles
+
+AnnettaNPC v7.0.7 by Arony/DreamyGloom:
+- https://www.nexusmods.com/stardewvalley/mods/14635
+DreamyGloom Inc.
+
+Nyapu Style Annetta and Jelli Portraits v1.1.0 by SeaSea:
+- https://www.nexusmods.com/stardewvalley/mods/25307
+Changes Annetta & Jelli's portrait to match Nyapu's Style
+
+Custom Companions v5.1.0 by PeacefulEnd:
 - https://www.nexusmods.com/stardewvalley/mods/8626
 Framework for creating custom entities that can be spawned on maps or follow you around in Stardew Valley.
 
-Button's Extra Trigger Action Stuff v3.3.2 by Spiderbuttons:
+Button's Extra Trigger Action Stuff v3.3.4 by Spiderbuttons:
 - https://www.nexusmods.com/stardewvalley/mods/27100
 A whole bunch of triggers, actions, game state queries, and tokenizable strings for Content Patcher mod authors to utilize.
 
@@ -218,7 +224,7 @@ StardewUI v0.6.1 by focustense:
 - https://github.com/focustense/StardewUI/releases
 Declarative UI framework
 
-Livestock Bazaar v1.5.4 by mushymato:
+Livestock Bazaar v1.5.5 by mushymato:
 - https://www.nexusmods.com/stardewvalley/mods/29997
 - https://github.com/Mushymato/LivestockBazaar/releases
 Revamp animal shop UI and allow custom animal shops.
@@ -235,15 +241,11 @@ Cauldron v2.2.1 by Kedi and sophie:
 - https://www.nexusmods.com/stardewvalley/mods/22926
 Manages config options for Wildflour Atelier Goods.
 
-ExtraMachineConfig v1.17.9 by selph:
-- https://www.nexusmods.com/stardewvalley/mods/22256
-Add extra functionalities to machine artisan recipes and other misc data structures.
-
 Wildflour's Atelier Goods v2.1.2 by wildflourmods:
 - https://www.nexusmods.com/stardewvalley/mods/27049
 Run the atelier of your dreams with this highly configurable, all-in-one artisan goods expansion mod.
 
-Rose and the Alchemist - NPCs for Sunberry Village v2.0.2 by wildflourmods:
+Rose and the Alchemist - NPCs for Sunberry Village v2.0.3 by wildflourmods:
 - https://www.nexusmods.com/stardewvalley/mods/32385
 Adds two new NPCs to Sunberry Forest!
 
@@ -263,15 +265,15 @@ Anthro Characters Continued v10.0.0 by Gaveliere (Twitter: @Gavelly) Blanchard a
 - https://www.nexusmods.com/stardewvalley/mods/1083
 Overwrites every NPC sprite, portrait and event sprites, effectively transforming everyone into anthropormorphic animal characters. Art by Gav!
 
-Console Commands v4.2.1 by SMAPI:
+Console Commands v4.5.1 by SMAPI:
 - no update key
 Adds SMAPI console commands that let you manipulate the game.
 
-Save Backup v4.2.1 by SMAPI:
+Save Backup v4.5.1 by SMAPI:
 - no update key
 Automatically backs up all your saves once per day into its folder.
 
-Fashion Sense v7.0.2 by PeacefulEnd:
+Fashion Sense v7.4.0 by PeacefulEnd:
 - https://www.nexusmods.com/stardewvalley/mods/9969
 Framework which adds hair animation and more into Stardew Valley.
 
@@ -295,7 +297,7 @@ AchtuurCore v1.3.3 by Achtuur:
 - https://www.nexusmods.com/stardewvalley/mods/16827
 Core mod for most of my mods.
 
-(CP) Additional Farm Cave v3.5.0 by Tikamin557:
+(CP) Additional Farm Cave v3.6.0 by Tikamin557:
 - https://www.nexusmods.com/stardewvalley/mods/14109
 Additional Farm Cave.
 
@@ -306,51 +308,6 @@ add [FTM] Additional Farm Cave.
 Adoptable Joltik v2.0.0 by Thylak:
 - https://www.nexusmods.com/stardewvalley/mods/21002
 Subway to Stardew Pet Joltik Demo
-
-(DLL) Downtown Zuzu v0.9.4 by Zuzu Development Team:
-- no update key
-Adds a medium location that is supposed to be the outskirts of Zuzu City. It runs via BusLocations and CP.
-
-(CP) Downtown Zuzu v0.9.4 by Zuzu Development Team:
-- https://www.nexusmods.com/stardewvalley/mods/8587
-Adds a medium location that is supposed to be the outskirts of Zuzu City. It runs via BusLocations and CP.
-
-Ridgeside Village (Custom Companions component) v2.5.17 by Rafseazz:
-- https://www.nexusmods.com/stardewvalley/mods/-1
-Custom Companions pack for Ridgeside Village.
-
-Ridgeside Village (Farm Type Manager component) v2.5.17 by Rafseazz:
-- https://www.nexusmods.com/stardewvalley/mods/-1
-Adds forage and monsters to Ridgeside Village.
-
-Ridgeside Village (SMAPI component) v2.5.17 by Rafseazz:
-- https://www.nexusmods.com/stardewvalley/mods/-1
-Ridgeside Village SMAPI and Harmony Component
-
-Custom NPC Exclusions v1.6.0 by Esca:
-- https://www.nexusmods.com/stardewvalley/mods/7089
-- https://github.com/Esca-MMC/CustomNPCExclusions/releases
-- https://www.moddrop.com/stardew-valley/mods/847997
-Allows modders to exclude custom NPCs from quests and events via Content Patcher.
-
-(CP) Walk to the Desert Redux v1.3.3 by Tarniyar & Aeywoo:
-- https://www.nexusmods.com/stardewvalley/mods/8630
-- https://www.moddrop.com/stardew-valley/mods/980591
-- https://www.curseforge.com/projects/499736
-- https://github.com/Aeywoo/WTDR/releases
-Walk to the Desert Redux adds a way for you to walk to the Calico Desert.
-
-Ridgeside Village (Content Patcher component) v2.5.17 by Rafseazz:
-- https://www.nexusmods.com/stardewvalley/mods/7286
-Adds Ridgeside Village to the game. A Stardew Valley Expansion mod.
-
-Event Lookup v0.2.9 by shekurika:
-- https://www.nexusmods.com/stardewvalley/mods/8505
-Allows event lookup in an ingame menu or console. Also adds an ingame display of currently available heart events
-
-Adventurer's Guild Expanded for 1.6 v2.2.3 by SUPERT and Lorre:
-- https://www.nexusmods.com/stardewvalley/mods/22591
-An expansion for the adventurer's guild complete with quests, story events, new romanceable NPCs and the ability to befriend and recruit a friendly monster to live on your farm!
 
 Adventurers Guild Multiplayer Shared Kills v1.1.0 by Veniamin-Arefev:
 - https://www.nexusmods.com/stardewvalley/mods/19442
@@ -381,7 +338,7 @@ Allow spawning of Alchemistry custom forage across SVE maps.
 - no update key
 Allow spawning of Alchemistry custom forage across vanilla maps and custom Alchemistry maps.
 
-Alternative Textures v8.0.0 by PeacefulEnd:
+Alternative Textures v8.1.1 by PeacefulEnd:
 - https://www.nexusmods.com/stardewvalley/mods/9246
 Framework which allows the usage of different textures for placeable items in Stardew Valley.
 
@@ -405,10 +362,6 @@ Allows a Content Pack to create highly customized Furniture
 - https://www.nexusmods.com/stardewvalley/mods/27398
 Adds 8 furniture sets from the Animal Crossing games + 2 Serena Fountains.
 
-Automate v2.4.5 by Pathoschild:
-- https://www.nexusmods.com/stardewvalley/mods/1063
-Lets you automate crafting machines, fruit trees, and more by connecting them to chests.
-
 Solid Foundations v3.0.0 by PeacefulEnd:
 - https://www.nexusmods.com/stardewvalley/mods/12311
 Custom buildings framework for Stardew Valley.
@@ -425,7 +378,7 @@ Animal Squeeze Through v1.0.7 by selph:
 - https://www.nexusmods.com/stardewvalley/mods/33514
 Allows animals who's bigger than their animal house's teeny door to squeeze through regardless.
 
-ExtraAnimalConfig v1.9.4 by selph:
+ExtraAnimalConfig v1.9.7 by selph:
 - https://www.nexusmods.com/stardewvalley/mods/25328
 Add extra functionalities to animal definitions.
 
@@ -447,6 +400,35 @@ Live your dreams of being a chocobo rancher!
 - https://www.nexusmods.com/stardewvalley/mods/???
 Allows ostriches, and modded poultry like geese and turkeys, to live in coops as well as barns.
 
+Ridgeside Village (Custom Companions component) v2.5.17 by Rafseazz:
+- https://www.nexusmods.com/stardewvalley/mods/-1
+Custom Companions pack for Ridgeside Village.
+
+Ridgeside Village (Farm Type Manager component) v2.5.17 by Rafseazz:
+- https://www.nexusmods.com/stardewvalley/mods/-1
+Adds forage and monsters to Ridgeside Village.
+
+Ridgeside Village (SMAPI component) v2.5.17 by Rafseazz:
+- https://www.nexusmods.com/stardewvalley/mods/-1
+Ridgeside Village SMAPI and Harmony Component
+
+Custom NPC Exclusions v1.6.0 by Esca:
+- https://www.nexusmods.com/stardewvalley/mods/7089
+- https://github.com/Esca-MMC/CustomNPCExclusions/releases
+- https://www.moddrop.com/stardew-valley/mods/847997
+Allows modders to exclude custom NPCs from quests and events via Content Patcher.
+
+(CP) Walk to the Desert Redux v1.3.3 by Tarniyar & Aeywoo:
+- https://www.nexusmods.com/stardewvalley/mods/8630
+- https://www.moddrop.com/stardew-valley/mods/980591
+- https://www.curseforge.com/projects/499736
+- https://github.com/Aeywoo/WTDR/releases
+Walk to the Desert Redux adds a way for you to walk to the Calico Desert.
+
+Ridgeside Village (Content Patcher component) v2.5.17 by Rafseazz:
+- https://www.nexusmods.com/stardewvalley/mods/7286
+Adds Ridgeside Village to the game. A Stardew Valley Expansion mod.
+
 (CP) Archaeology Skill v2.18.0 by moonslime:
 - https://www.nexusmods.com/stardewvalley/mods/-1
 Archaeology Skill Content Patcher
@@ -459,23 +441,19 @@ Molang Plushies v1.0.0 by otohimexoxo:
 - Nexus:
 Adds Molang plushies to the game!
 
-AutomatePipes by MRHacwer v0.0.4 by MRHacwer:
-- https://www.nexusmods.com/stardewvalley/mods/21653
-AutomatePipes is an addon for automate that adds new paths without changing the old ones, they look like pipes on the ground.
-
 Axolotl Barn Animals v1.1.0 by otohimexoxo:
 - https://www.nexusmods.com/stardewvalley/mods/16710
 adds different colored axolotls as barn animals
 
-Axolotl Village (CC) v1.5.17 by otohimexoxo:
+Axolotl Village (CC) v1.5.18 by otohimexoxo:
 - Nexus:
 
 
-Axolotl Village v1.5.17 by otohimexoxo:
+Axolotl Village v1.5.18 by otohimexoxo:
 - https://www.nexusmods.com/stardewvalley/mods/20431
 Adds a new island full of axolotls to meet and befriend!
 
-Axolotl Village (MFM) v1.5.17 by otohimexoxo:
+Axolotl Village (MFM) v1.5.18 by otohimexoxo:
 - Nexus:
 
 
@@ -483,9 +461,13 @@ Axolotls in Stardew Valley v3.3.0 by otohimexoxo:
 - https://www.nexusmods.com/stardewvalley/mods/16016
 Adds axolotls as a new fish in a variety of colors.
 
-Mapping Extensions and Extra Properties (MEEP) v2.5.1 by DecidedlyHuman:
+Mapping Extensions and Extra Properties (MEEP) v2.5.2 by DecidedlyHuman:
 - https://www.nexusmods.com/stardewvalley/mods/14493
 Extra map features and tile/map properties to spice up your custom maps.
+
+Event Lookup v0.2.9 by shekurika:
+- https://www.nexusmods.com/stardewvalley/mods/8505
+Allows event lookup in an ingame menu or console. Also adds an ingame display of currently available heart events
 
 Bear Family - Custom NPCs v1.1.1 by Mad Dog:
 - https://www.nexusmods.com/stardewvalley/mods/16197
@@ -495,14 +477,6 @@ Berry Season Reminder v1.1.2 by Anthony Hilyard:
 - no update key
 Adds berry season icons to your calendar after receiving Bear's Knowledge.
 
-Better Balance C# v1.3.18 by Xen0nex:
-- https://www.nexusmods.com/stardewvalley/mods/Ignore This
-Rebalances some hard-coded item prices in shops
-
-Better Balance v1.3.18 by Xen0nex:
-- https://www.nexusmods.com/stardewvalley/mods/8141
-Rebalances prices, mostly crops, seeds, and animals.
-
 Better Shipping Bin v1.4.8 by MindMeltMax:
 - https://www.nexusmods.com/stardewvalley/mods/10487
 Retreive items from the shipping bin
@@ -511,7 +485,7 @@ Better Friendship v1.1.3 by Urbanyeti:
 - https://www.nexusmods.com/stardewvalley/mods/10287
 Adds thought bubbles over villagers to indicate their favorite gifts from your inventory and when they'd like to talk.
 
-Better Junimos v3.1.0 by hawkfalcon,ceruleandeep:
+Better Junimos v3.1.2 by ceruleandeep:
 - https://www.nexusmods.com/stardewvalley/mods/2221
 Allow your Junimos (from Junimo huts) to automatically plant seeds, fertilize, and so much more!
 
@@ -526,14 +500,6 @@ Prevents failed milk/shear attempts and displays when animals can be milked/shea
 BirbCore v1.1.0 by drbirbdev:
 - https://www.nexusmods.com/stardewvalley/mods/19140
 Core Functionality for drbirbdev mods
-
-Binning Skill v2.1.0 by drbirbdev:
-- https://www.nexusmods.com/stardewvalley/mods/14073
-Adds a skill related to digging through trashcans.
-
-(CP) Binning Skill v2.1.0 by drbirbdev:
-- no update key
-Binning Skill Content Patcher
 
 BobbingDisabler v1.0.2 by HeartoLazor:
 - https://www.nexusmods.com/stardewvalley/mods/39035
@@ -567,7 +533,7 @@ Bus Locations (1.6 fix by Sean) v1.2.2-unofficial.1-Xytronix by nanzington:
 - https://www.nexusmods.com/stardewvalley/mods/2905
 A framework that lets modders dynamically add new locations for the bus to go to.
 
-OrbOfTheTidesCP v6.9.0 by DreamyGloom:
+OrbOfTheTidesCP v7.0.7 by DreamyGloom:
 - https://www.nexusmods.com/stardewvalley/mods/14635
 SeasSideCapeExpansion
 
@@ -584,11 +550,11 @@ Pokefy v2.1.0 by StravaJD:
 - https://www.nexusmods.com/stardewvalley/mods/2529
 Replaces animals with Pokemon
 
-Dynamic Reflections v3.0.0 by PeacefulEnd:
+Dynamic Reflections v4.0.1 by PeacefulEnd:
 - https://www.nexusmods.com/stardewvalley/mods/12831
 Dynamic water and surface reflections for Stardew Valley.
 
-CapeStardew v6.9.0 by Arony/DreamyGloom:
+CapeStardew v7.0.7 by Arony/DreamyGloom:
 - https://www.nexusmods.com/stardewvalley/mods/14635
 SeasSideCapeExpansion
 
@@ -596,13 +562,17 @@ CapeOreNodes v0.1.0 by Arony/DreamyGloom:
 -
 MineNodesUnlock
 
-AnnettesRetreat (Farm Type Manager component) v6.9.0 by Arony/DreamyGloom:
+AnnettesRetreat (Farm Type Manager component) v7.0.7 by Arony/DreamyGloom:
 - https://www.nexusmods.com/stardewvalley/mods/14635
 Adds forage and monsters to Cape Areas
 
-CapeStardewCode v6.9.0 by dreamygloom:
+CapeStardewCode v7.0.7 by dreamygloom:
 - no update key
 misc
+
+Cape Stardew – Bus Destination v1.0.0 by Arony / DreamyGloom:
+- no update key
+Adds Cape Stardew as a bus destination
 
 Catalogue Indicator v1.0.1 by Anthony Hilyard:
 - no update key
@@ -612,11 +582,11 @@ Adds small icons to items to indicate if they are available in a catalogue.
 - https://www.nexusmods.com/stardewvalley/mods/???
 Adds Atelier Cauldron English translation.
 
-Central Station v1.6.0 by Pathoschild:
+Central Station v1.6.2 by Pathoschild:
 - https://www.nexusmods.com/stardewvalley/mods/8000
 Lets you travel to other mods' destinations by boat, bus, or train through the Central Station.
 
-Central Station content v1.6.0 by Pathoschild:
+Central Station content v1.6.2 by Pathoschild:
 - https://www.nexusmods.com/stardewvalley/mods/8000
 Adds the base content for the Central Station mod.
 
@@ -631,15 +601,15 @@ Custom Bush v1.5.2 by LeFauxMatt:
 - https://github.com/LeFauxMatt/CustomBush/releases
 Framework which allows custom bushes to be added to the game which work like the tea sapling.
 
-Cornucopia - More Crops v1.6.1 by Cornucopia:
+Cornucopia - More Crops v1.6.2 by Cornucopia:
 - https://www.nexusmods.com/stardewvalley/mods/19508
 An additional Fruits and Veggies mod for Stardew Valley 1.6 Content Patcher
 
-Cornucopia - More Flowers v1.5.6 by Cornucopia:
+Cornucopia - More Flowers v1.5.7 by Cornucopia:
 - https://www.nexusmods.com/stardewvalley/mods/20290
 An additional flowers mod for Stardew Valley 1.6 Content Patcher
 
-Cornucopia - Artisan Machines v1.0.14 by Cornucopia:
+Cornucopia - Artisan Machines v1.0.15 by Cornucopia:
 - https://www.nexusmods.com/stardewvalley/mods/24842
 An additional Artisan Goods and Machines mod for Stardew Valley 1.6 Content Patcher
 
@@ -687,7 +657,7 @@ Custom Cask Mod v1.6.3 by Digus:
 - https://www.nexusmods.com/stardewvalley/mods/2642
 Adds ways to customize the casks.
 
-Machine Terrain Framework v1.11.2 by selph:
+Machine Terrain Framework v1.11.3 by selph:
 - https://www.nexusmods.com/stardewvalley/mods/22975
 Adds a framework for implementing custom tappers, crab pots and water crops.
 
@@ -699,19 +669,43 @@ DaLionheart v2.2.3 by DaLion:
 - https://www.nexusmods.com/stardewvalley/mods/24332
 Provides core functionality required by DaLion mods.
 
+Chargeable Resource Tools v2.2.0 by DaLion:
+- https://www.nexusmods.com/stardewvalley/mods/23048
+Charge the Axe and Pickaxe to break debris within an area.
+
+Wildcat v1.2.0 by DaLion:
+- https://www.nexusmods.com/stardewvalley/mods/29830
+Combo framework, slick moves & other combat tweaks.
+
+Springmyst v2.2.3 by DaLion:
+- https://www.nexusmods.com/stardewvalley/mods/24832
+Adds some actually interesting enchantments.
+
+Mineracoustics v1.2.0 by DaLion:
+- https://www.nexusmods.com/stardewvalley/mods/29612
+An overly complicated overhaul of gemstone rings based on real Music Theory.
+
+Aquarism v2.2.3 by DaLion:
+- https://www.nexusmods.com/stardewvalley/mods/24356
+Adds persistant fish qualities, scaling roe production, spontaneous algae growth, and radioactive enrichment to Fish Ponds.
+
 Walk Of Life - Rebirth v1.4.2 by DaLion:
 - https://www.nexusmods.com/stardewvalley/mods/24355
 An extensive overhaul of Stardew Valley profession trees and skill progression systems.
+
+Serfdom v2.2.2 by DaLion:
+- https://www.nexusmods.com/stardewvalley/mods/24357
+Provides realistic income and property taxation mechanics.
 
 Dark Creatures Content v2.1.0 by Adri:
 - https://www.nexusmods.com/stardewvalley/mods/31099
 
 
-Data Layers v1.21.1 by Pathoschild:
+Data Layers v1.22.0 by Pathoschild:
 - https://www.nexusmods.com/stardewvalley/mods/1691
 Overlays the world with visual data like accessibility, bee/Junimo/scarecrow/sprinkler coverage, etc.
 
-Deep Woods v4.1.0-beta by Max Makes Mods:
+Deep Woods v4.3.1-beta by Max Makes Mods:
 - https://www.nexusmods.com/stardewvalley/mods/2571
 Adds an explorable forest to the secret woods. How deep does it go?
 
@@ -725,7 +719,7 @@ Destroyable Bushes v1.5.2 by Esca:
 - https://www.moddrop.com/stardew-valley/mods/798245
 Allows the player to destroy bushes with an axe.
 
-AimonsWitchSwampOverhaulPatches v2.2.7 by Aimon111:
+AimonsWitchSwampOverhaulPatches v2.2.8 by Aimon111:
 - https://www.nexusmods.com/stardewvalley/mods/???
 Adds fireflies into witch swamp.
 
@@ -733,11 +727,11 @@ Simple Foliage v2.1.2 by Azrashar/itsanette (unofficial update by Morghoula and 
 - https://www.nexusmods.com/stardewvalley/mods/20972
 Decorative content pack to replace trees & bushes
 
-Distant Lands - Witch Swamp Overhaul v2.2.7 by Aimon111:
+Distant Lands - Witch Swamp Overhaul v2.2.8 by Aimon111:
 - https://www.nexusmods.com/stardewvalley/mods/18109
 A more lively Witch Swamp map overhaul - new NPC, quests, items, fish, forage and more!
 
-Distant Lands - Witch Swamp Overhaul FTM v2.2.7 by Aimon111:
+Distant Lands - Witch Swamp Overhaul FTM v2.2.8 by Aimon111:
 - https://www.nexusmods.com/stardewvalley/mods/???
 Distant Lands - Witch Swamp Overhaul FTM
 
@@ -745,7 +739,15 @@ Distant Lands - Witch Swamp Overhaul FTM
 - https://www.nexusmods.com/stardewvalley/mods/8587
 Adds a medium location that is supposed to be the outskirts of Zuzu City. It runs via BusLocations and CP.
 
+(DLL) Downtown Zuzu v0.9.4 by Zuzu Development Team:
+- no update key
+Adds a medium location that is supposed to be the outskirts of Zuzu City. It runs via BusLocations and CP.
+
 (CC) Downtown Zuzu v0.9.4 by Zuzu Development Team:
+- https://www.nexusmods.com/stardewvalley/mods/8587
+Adds a medium location that is supposed to be the outskirts of Zuzu City. It runs via BusLocations and CP.
+
+(CP) Downtown Zuzu v0.9.4 by Zuzu Development Team:
 - https://www.nexusmods.com/stardewvalley/mods/8587
 Adds a medium location that is supposed to be the outskirts of Zuzu City. It runs via BusLocations and CP.
 
@@ -769,7 +771,7 @@ Dwarven Expansion v2.1.0 by mytigio:
 - https://www.nexusmods.com/stardewvalley/mods/22021
 A 1.6 remake of Dwarvish, adding new mining and dwarven themed items, machines and animals.
 
-Forage Settings East Scarp v3.0.4 by Lemurkat:
+Forage Settings East Scarp v3.0.6 by Lemurkat:
 - https://www.nexusmods.com/stardewvalley/mods/???
 Controls forage and monster spawns in East Scarp
 
@@ -789,15 +791,15 @@ Jas expansion v1.5.8 by Lemurkat:
 - no update key
 Additional events, dialogue and story for Jas
 
-(NPC) Rodney O'Brien v3.2.3 by TheFrenchDodo:
+(NPC) Rodney O'Brien v3.2.6 by TheFrenchDodo:
 - https://www.nexusmods.com/stardewvalley/mods/13437
 Adds a friendly writer that also happens to be Elliott's uncle.
 
-East Scarp NPCs v3.0.4 by Lemurkat:
+East Scarp: NPCs v3.0.6 by Lemurkat:
 - https://www.nexusmods.com/stardewvalley/mods/???
-Adds a cast of characters to East Scarp!
+Adds a cast of characters to East Scarp.
 
-ES-BarberShop v3.0.4 by mushymato:
+East Scarp: Barber Shop v3.0.6 by mushymato:
 - https://github.com/Mushymato/ESBarberShop/releases
 East Scarp's Barber Shop - not compatible with Android
 
@@ -840,6 +842,16 @@ Ferngill Fashion Festival v2.1.0 by UNA:
 - https://www.nexusmods.com/stardewvalley/mods/17404
 Adds a new festival.
 
+Ferngill Simple Economy v2.0.0 by Paul Steele:
+- ferngill.simple.economy
+- https://www.nexusmods.com/stardewvalley/mods/21414
+Adds a simplistic economy to Stardew Valley
+
+Ferngill Simple Economy Default Pack v2.0.0 by Paul Steele:
+- ferngill.simple.economy
+- https://www.nexusmods.com/stardewvalley/mods/21414
+Content Pack for Default FSE items
+
 FilteredChestHopper v1.4.8 by Shivion:
 - https://www.nexusmods.com/stardewvalley/mods/21730
 Makes hoppers move items between chests
@@ -871,6 +883,10 @@ Expands on the Fruit and Nut experience of Stardew Valley!. 1.6 Version
 (FTM) Fruit and Nuts of Ferngill 1.6 v5.2.0 by Stunky McDoo:
 - https://www.nexusmods.com/stardewvalley/mods/8828
 Expands on the Fruit and Nut experience of Stardew Valley!. 1.6 Version
+
+Producer Framework Mod v1.9.8 by Digus:
+- https://www.nexusmods.com/stardewvalley/mods/4970
+Framework to add rules to produce objects or change the vanilla rules.
 
 (PFM) Fruit and Nuts of Ferngill 1.6 v5.2.0 by Stunky McDoo:
 - https://www.nexusmods.com/stardewvalley/mods/8828
@@ -907,18 +923,6 @@ Expands on the Wild Flowers experience of Stardew Valley!. 1.6 Version
 Forage Crops v1.0.0 by Kronosta:
 - no update key
 Adds a way for Content Patcher packs to add custom crops that behave like Wild Seeds.
-
-Forage Fantasy v4.3.2-unofficial.2-justastranger by Goldenrevolver:
-- https://www.nexusmods.com/stardewvalley/mods/7554
-Tappers, mushroom boxes and berry bushes give products with quality, and much more
-
-Forest Amber v3.0.0 by Miru:
-- https://www.nexusmods.com/stardewvalley/mods/16127
-Adds amber crafts made from tree sap, seeds and artifacts.
-
-(PFM) Forest Amber v2.2.0 by Miru:
-- no update key
-Adds amber crafts made from tree sap, seeds and artifacts.
 
 Fresh Farm Produce v2.0.8 by selph:
 - https://www.nexusmods.com/stardewvalley/mods/29299
@@ -960,7 +964,7 @@ Furniture Placement Tweaks v0.1.1 by aedenthorn:
 - https://www.nexusmods.com/stardewvalley/mods/14092
 Furniture Placement Tweaks.
 
-Ornithologist's Guild v1.9.7 by Ivy:
+Ornithologist's Guild v1.9.8 by Ivy:
 - https://www.nexusmods.com/stardewvalley/mods/14510
 Ornithologist's Guild brings a totally new birding experience to Stardew Valley, complete with overhauled bird mechanics, bird feeders and baths, seasonal birds, nests and fledglings, a progression system, a new location and shop, a new NPC with a tragic past, and sooo much more! Do you have what it takes to be Pelican Town's next great birder?
 
@@ -968,8 +972,9 @@ Ornithologist's Guild brings a totally new birding experience to Stardew Valley,
 - https://www.nexusmods.com/stardewvalley/mods/26976
 Adds various warblers to the Ornithologists Guild Mod
 
-GrassVariety v1.2.2 by mushymato:
+GrassVariety v1.2.6 by mushymato:
 - https://www.nexusmods.com/stardewvalley/mods/36458
+- https://github.com/Mushymato/GrassVariety/releases
 Add skins to grass.
 
 (CP) Gudetama Furniture v1.1.0 by otohimexoxo:
@@ -997,9 +1002,17 @@ Horse Overhaul v1.5.9 by Goldenrevolver:
 - https://www.nexusmods.com/stardewvalley/mods/7911
 Thin horse with saddle bags. Give your horse pets, food and water for friendship and increased speed.
 
-Informant v1.9.6 by Slothsoft:
+Informant v1.9.7 by Slothsoft:
 - https://www.nexusmods.com/stardewvalley/mods/21286
 Displays additional information on various objects.
+
+Stardew Aquarium Code v2.3.0 by Cherry:
+- https://www.nexusmods.com/stardewvalley/mods/6372
+The coding portion of the Stardew Aquarium mod
+
+Informant Aquarium Addon v1.9.100 by DK:
+- https://www.nexusmods.com/stardewvalley/mods/21286
+Informant Addon for Stardew Aquarium
 
 Kin the Axolotl v1.1.9 by otohimexoxo:
 - https://www.nexusmods.com/stardewvalley/mods/19361
@@ -1013,15 +1026,7 @@ Kokoro - Shockah's core mod v3.0.0 by Shockah:
 - https://www.nexusmods.com/stardewvalley/mods/15682
 A core mod for Shockah's mods.
 
-Level Forever v1.1.0 by GoldstoneBosonMeadows:
-- https://www.nexusmods.com/stardewvalley/mods/22920
-Extends leveling infinitely via buffs.
-
-Longevity v2.1.6 by RTGOAT:
-- https://www.nexusmods.com/stardewvalley/mods/649
-Overhaul player progression with dynamic item pricing, a progressive tax system, and stamina balance!
-
-Lookup Anything v1.53.0 by Pathoschild:
+Lookup Anything v1.54.0 by Pathoschild:
 - https://www.nexusmods.com/stardewvalley/mods/541
 View metadata about anything by pressing a button.
 
@@ -1065,19 +1070,6 @@ Lurking in the Dark v3.0.11 by 7thAxis:
 - https://www.nexusmods.com/stardewvalley/mods/10770
 Adds a Shadowfolk NPC to East Scarp Remastered.
 
-Machine Upgrade System v1.0.1 by tlitookilakin:
-- https://www.nexusmods.com/stardewvalley/mods/33024
-- https://github.com/tlitookilakin/MachineUpgradeSystem/releases
-A framework to allow drop-in upgrades for machines
-
-Machine Progression System v3.0.7 by NachOnline:
-- https://www.nexusmods.com/stardewvalley/mods/21720
-Adds tiered upgrades to all the artisan and refining equipment.
-
-Machine Control Panel v2.1.1 by mushymato:
-- https://www.nexusmods.com/stardewvalley/mods/28261
-A control panel for machine rules.
-
 MarketTown - Custom Chests v6.0.0 by d5a1lamdtd:
 - https://www.nexusmods.com/stardewvalley/mods/???
 Custom Chests for Market Town
@@ -1114,8 +1106,9 @@ Monster Hutch Framework v1.1.3 by juminos:
 - https://www.nexusmods.com/stardewvalley/mods/31782
 A framework for adding more types of monsters to raise in the slime hutch and custom charmer rings
 
-Monster Variety v0.6.0 by mushymato:
+Monster Variety v0.7.1 by mushymato:
 - https://www.nexusmods.com/stardewvalley/mods/32241
+- https://github.com/Mushymato/MonsterVariety/releases
 Add skins to monsters.
 
 (CP) The Return of More Backpack Upgrades v1.0.2 by platinummyr:
@@ -1162,23 +1155,23 @@ Multi Yield Crops v1.0.5 by Cherry:
 - https://www.nexusmods.com/stardewvalley/mods/6069
 Allows crops to yield more than one kind of item
 
-NITVNetBall v1.0.2 by Xan:
+NITVNetBall v1.0.3 by Xan:
 - no update key
 Adds a new item that makes catching water creatures easier.
 
-NITVNetBallContent v1.0.2 by Xan:
+NITVNetBallContent v1.0.3 by Xan:
 - https://www.nexusmods.com/stardewvalley/mods/37172
 Creates the Net Ball to be purchased from the Insectarium shop.
 
-NITV Pokemon Features v1.1.1 by Xan:
+NITV Pokemon Features v1.1.3 by Xan:
 - no update key
-Overrides the textures of the NITV nets and adds a bunch of other features as well.
+The main file for all NITV harmony patching and added features for Catchable Pokemon.
 
-NITV Pokemon Creatures v1.1.1 by Xan:
+NITV Pokemon Creatures v1.1.3 by Xan:
 - https://www.nexusmods.com/stardewvalley/mods/37156
 Adds Pokemon to Nature In The Valley
 
-NITV Pokemon Insectarium v1.1.1 by Xan:
+NITV Pokemon Insectarium v1.1.3 by Xan:
 - no update key
 Uses Zilch's Insectarium Reimagined as a template to create a Pokemon Themed version
 
@@ -1194,13 +1187,9 @@ ObjectProgressBars v1.0.0 by Andrés del Moral:
 - https://www.nexusmods.com/stardewvalley/mods/22005
 Show progress bar on machines and such. Based in Adeel Tariq ObjectProgressBars
 
-Part of the Community v1.2.1 by Brandon Marquis Markail Green (Space Baby), 1.6 update by Nikki864, GMCM menu by MickeyMik (Eela11):
+Part of the Community v1.3.0 by Brandon Marquis Markail Green (Space Baby), 1.6 update by Nikki864, GMCM menu by MickeyMik (Eela11):
 - https://www.nexusmods.com/stardewvalley/mods/923
 Lets you increase friendship by supporting the community.
-
-PFMAutomate v1.5.0 by Digus:
-- https://www.nexusmods.com/stardewvalley/mods/5038
-Integrate Producer Framework Mod to Automate
 
 Pokemon Ranch v1.8.0 by plaidbees:
 - https://www.nexusmods.com/stardewvalley/mods/24619
@@ -1238,6 +1227,10 @@ Prismatic Tools Continued v1.2.4 by iargue:
 - https://www.nexusmods.com/stardewvalley/mods/21450
 Adds prismatic tools and sprinklers to the game.
 
+Profit Margins v1.5.0 by Cherry:
+- https://www.nexusmods.com/stardewvalley/mods/4663
+Change your profit margin with a config file
+
 Realistic Wind Effects v1.0.1 by ahomiepassingby:
 - https://www.nexusmods.com/stardewvalley/mods/38268
 Wind blows through Stardew Valley randomly and specific weather days!!
@@ -1258,9 +1251,17 @@ Rilakkuma Plushies v1.0.0 by otohimexoxo:
 - https://www.nexusmods.com/stardewvalley/mods/28326
 Adds Rilakkuma plushies to the game!
 
-(FTM) Rose and the Alchemist v2.0.1 by wildflourmods:
+(FTM) Rose and the Alchemist v2.0.3 by wildflourmods:
 - no update key
 adds new foreagables that go with my NPC mod Rose and the Alchemist
+
+SAAT.API v1.1.3-unofficial.1-p1xel8ted by ZeroMeters:
+- https://www.nexusmods.com/stardewvalley/mods/10747
+Audio API for SMAPI
+
+SAAT.Mod v1.1.3-unofficial.1-p1xel8ted by ZeroMeters:
+- https://www.nexusmods.com/stardewvalley/mods/???
+Custom Audio Loader & Management for SMAPI
 
 Sanrio Farm Animals v1.2.0 by otohimexoxo:
 - https://www.nexusmods.com/stardewvalley/mods/28562
@@ -1274,16 +1275,16 @@ Season Affixes v2.0.1 by Shockah:
 - https://www.nexusmods.com/stardewvalley/mods/16297
 Adds seasonal "affixes", making every season unique in its own way.
 
-Secret Note Framework v1.2.0 by ichortower:
+Secret Note Framework v1.2.1 by ichortower:
 - https://www.nexusmods.com/stardewvalley/mods/25055
 - https://github.com/ichortower/SecretNoteFramework/releases
 A framework allowing mods to add their own Secret Notes.
 
-Skillful Clothes Revamp v1.3.6 by Nature:
+Skillful Clothes Revamp v1.3.7 by Nature:
 - https://www.nexusmods.com/stardewvalley/mods/27345
 A love-made rendition of Skillful Clothes by LunaticShade
 
-SkillfulTailoringPatch v1.3.6 by Nature:
+SkillfulTailoringPatch v1.3.7 by Nature:
 - https://www.nexusmods.com/stardewvalley/mods/27345
 Changes to tailoring recipces, shops, and monsters for skilful clothes balancing
 
@@ -1299,14 +1300,6 @@ Adds a skill related to befriending villagers.
 - no update key
 Socializing Skill Content Patcher
 
-HomesteadyEddy - Spore Galore v1.0.2 by HomesteadyEddy:
-- no update key
-Adds realistic gourmet & medicinal mushroom cultivation, mealworm farming, and integrated homesteading systems to Stardew Valley.
-
-Stardew Aquarium Code v2.3.0 by Cherry:
-- https://www.nexusmods.com/stardewvalley/mods/6372
-The coding portion of the Stardew Aquarium mod
-
 Stardew Aquarium (CP) v2.3.0 by Gervig91:
 - https://www.nexusmods.com/stardewvalley/mods/6372
 Animations and stuff
@@ -1319,10 +1312,6 @@ Stardew Travel Skill v1.4.0 by Achtuur:
 - https://www.nexusmods.com/stardewvalley/mods/16820
 - https://github.com/Achtuur/StardewTravelSkill/releases
 Adds a new travel skill that makes all the moving you do more rewarding.
-
-Swim Mod v1.9.0 by aedenthorn, FlyingTNT:
-- https://www.nexusmods.com/stardewvalley/mods/23169
-Allows you to swim.
 
 Tamagotchi Farm Animals v1.0.1 by otohimexoxo:
 - https://www.nexusmods.com/stardewvalley/mods/29032
@@ -1348,7 +1337,7 @@ Constance's ferrets frolocking around.
 - 16326
 Upon visiting a new tropical place you see another boat docked to the pier....what is this about?
 
-TrinketTinker v1.7.0 by mushymato:
+TrinketTinker v1.7.1 by mushymato:
 - https://www.nexusmods.com/stardewvalley/mods/29073
 - https://github.com/Mushymato/TrinketTinker/releases
 Trinket & Companion framework.
@@ -1418,7 +1407,7 @@ WorkbenchHelper v1.2.3 by Ballom41:
 - https://www.nexusmods.com/stardewvalley/mods/21294
 Will allow Workbenches to use all directly connected chests (or other configurable options), and adds button to Stash in Workbench UI
 
-World Atlas v1.0.3 by AlanBF:
+World Atlas v1.1.2 by AlanBF:
 - https://www.nexusmods.com/stardewvalley/mods/38316
 See every map on your Map Tab
 
@@ -1462,7 +1451,11 @@ Example content pack for BusLocations, which adds the Desert as a destination.
 - https://www.nexusmods.com/stardewvalley/mods/5221
 This mod makes so many crops giant!
 
-Animated East Scarp Fish v1.3.1 by Gervig91 ~zBGEdit/CPA2SC:
+Adventurer's Guild Expanded for 1.6 v2.3.2 by SUPERT and Laurie:
+- https://www.nexusmods.com/stardewvalley/mods/22591
+An expansion for the adventurer's guild complete with quests, story events, new romanceable NPCs and the ability to befriend and recruit a friendly monster to live on your farm!
+
+Animated East Scarp Fish v1.3.2 by Gervig91 ~zBGEdit/CPA2SC:
 - https://www.nexusmods.com/stardewvalley/mods/10913
 Animates the fish from the East Scarp mod
 
@@ -1506,6 +1499,10 @@ Anthro Babies Expanded (Furry Mod) v1.2.3 by Crexyen:
 - https://www.nexusmods.com/stardewvalley/mods/9413
 Replaces the babies and toddlers spridesheet with anthro versions to look like your anthro spouse
 
+(CP) BBs New Livestock Horseshoecrabs v1.0.0 by bibliobeast:
+- no update key
+Adds 5 varieties of Horseshoe crabs to the game.
+
 (CP) Blue Eggs and Golden Mayo v1.1.2 by 6480:
 - https://www.nexusmods.com/stardewvalley/mods/20266
 Adds a special blue egg that can be turned into blue mayo. Adds golden and ostrich mayos.
@@ -1514,7 +1511,7 @@ Bog's Monster Mash v1.1.0 by BogWyytch and Abagaianye:
 - https://www.nexusmods.com/stardewvalley/mods/38014
 Loads of new monsters and monster drops!
 
-Bog's Monster Sanctuary v1.0.1 by BogWyytch and Abagaianye:
+Bog's Monster Sanctuary v1.0.2 by BogWyytch and Abagaianye:
 - https://www.nexusmods.com/stardewvalley/mods/39430
 Allows Monsters to seek refuge on your farm in exchange for treasures!
 
@@ -1526,13 +1523,17 @@ Flexible Cooking v1.2.0 by 6480:
 - https://www.nexusmods.com/stardewvalley/mods/38862
 Opens up vanilla cooking recipes to be able to use a variety of ingredients.
 
-Cornucopia - Cooking Recipes v1.0.6 by Cornucopia:
+Cornucopia - Cooking Recipes v1.0.7 by Cornucopia:
 - https://www.nexusmods.com/stardewvalley/mods/39057
 An additional Cooking Recipes mod for Stardew Valley 1.6 Content Patcher
 
 (CP) CV Naturalistic Variants Pack v1.0.1 by Kitsutsune:
 - https://www.nexusmods.com/stardewvalley/mods/23450
 Add real world color variants to your chocobo flock!
+
+Dino Expanded v1.0.2 by Amichwan:
+- https://www.nexusmods.com/stardewvalley/mods/41921
+Adds new dinosaur species, a Dinosaur Hutch, genetic fusion, and unique dino items to expand gameplay.
 
 Dino Variants v1.6.0 by NecroCrab:
 - https://www.nexusmods.com/stardewvalley/mods/825
@@ -1594,6 +1595,14 @@ Elle's Town Animals v1.4.2 by Elle/Junimods:
 - https://www.nexusmods.com/stardewvalley/mods/1965
 Replaces most animals throughout Stardew Valley!
 
+Flexible Cooking SVE v1.0.0 by Kurila:
+- no update key
+Adjust SVE recipes to work with Flexible Cooking
+
+Forest Amber v3.0.0 by Miru:
+- https://www.nexusmods.com/stardewvalley/mods/16127
+Adds amber crafts made from tree sap, seeds and artifacts.
+
 Fresh and Bit v1.0.0 by Minothilos:
 - 25574
 New cooking recipes using Cornucopia ingridients.
@@ -1642,7 +1651,7 @@ Lumisteria Giant Crops for Cornucopia More Crops v1.0.0 by Lumisteria:
 - https://www.nexusmods.com/stardewvalley/mods/39001
 Grow more giant crops for Cornucopia More Crops' crops
 
-(CP) My Submarine v2.7.0 by Tikamin557:
+(CP) My Submarine v2.9.0 by Tikamin557:
 - https://www.nexusmods.com/stardewvalley/mods/12285
 add [CP] My Submarine.
 
@@ -1654,9 +1663,13 @@ Nyapu's Portraits for SVE v1.6.9 by Nyapu:
 - https://www.nexusmods.com/stardewvalley/mods/11491
 Replaces portraits from Stardew Valley Expanded
 
-(CP) Ornithologist's Guild v1.9.7 by Ivy:
+(CP) Ornithologist's Guild v1.9.8 by Ivy:
 - https://www.nexusmods.com/stardewvalley/mods/14510
 Ornithologist's Guild brings a totally new birding experience to Stardew Valley, complete with overhauled bird mechanics, bird feeders and baths, seasonal birds, nests and fledglings, a progression system, a new location and shop, a new NPC with a tragic past, and sooo much more! Do you have what it takes to be Pelican Town's next great birder?
+
+PlatinumCats' Tilesheets v1.1.0 by PlatinumCats:
+- https://www.nexusmods.com/stardewvalley/mods/38116
+Tilesheet version of PlatinumCats' furniture mods.
 
 Pet Rats v1.3.0 by RothagHuptiq:
 - https://www.nexusmods.com/stardewvalley/mods/25215
@@ -1718,7 +1731,7 @@ Marnie Immersive v1.5.8 by Lemurkat:
 - https://www.nexusmods.com/stardewvalley/mods/5070
 Overhaul of dialogue and cut scenes for Marnie
 
-Rocks and Relics v2.0.5 by Solariaze:
+Rocks and Relics v2.0.7 by Solariaze:
 - https://www.nexusmods.com/stardewvalley/mods/21038
 Introduces mineralogy, jewelry, and transmutation.
 
@@ -1731,13 +1744,9 @@ Rats! v1.0.3 by slumberwood:
 - https://www.curseforge.com/projects/1007301
 A great cheese alternative!
 
-Swim Items v1.0.2 by aedenthorn, FlyingTNT:
-- https://www.nexusmods.com/stardewvalley/mods/23169
-Adds swim mod's scuba gear.
-
-Swim Mod Dive Maps v1.0.3 by aedenthorn:
-- https://www.nexusmods.com/stardewvalley/mods/23169
-Adds underwater maps.
+Stardew Valley Balance Overhaul v3.1.2 by Theoddon & Minothilos:
+- https://www.nexusmods.com/stardewvalley/mods/13426
+Rebalances just about everything.
 
 猫露谷物语Cat Valley UI v1.0.3 by RimeNovi:
 - https://www.nexusmods.com/stardewvalley/mods/39379
@@ -1746,6 +1755,10 @@ Adds underwater maps.
 (FS) - Animal Features v1.0.1 by Mousymodder:
 - https://www.nexusmods.com/stardewvalley/mods/22828
 adds animal hats and accessories for use with 'Fashion Sense'
+
+Additional Accessories v1.0.0 by yuninocorn:
+- https://www.nexusmods.com/stardewvalley/mods/41268
+This content pack adds more accessories for the farmer via Fashion Sense.
 
 Animal Accessories v1.5.3 by FoxgloveActual:
 - https://www.nexusmods.com/stardewvalley/mods/99999
@@ -1927,7 +1940,7 @@ FS - Oversized Sleeves v1.0.0 by starrybonns:
 - https://www.nexusmods.com/stardewvalley/mods/13682
 Adds seasonal hats (Originally by Beans and Maea) for FS.
 
-Shardust's Animated Hairstyles for Fashion Sense v15.0.0 by Shardust:
+Shardust's Animated Hairstyles for Fashion Sense v16.0.0 by Shardust:
 - https://www.nexusmods.com/stardewvalley/mods/10294
 Animated hairstyles for the Fashion Sense framework.
 
@@ -1983,10 +1996,6 @@ Mail from moogles!
 - https://www.nexusmods.com/stardewvalley/mods/-1
 Sends anglers guides and MNF letters content to the player.
 
-(PFM) Fish Hatchery v1.0.0 by HisameArtwork&TrentXV:
-- https://www.nexusmods.com/stardewvalley/mods/-1
-Adds the rules to the fish hatchery.
-
 Alecto the Witch v1.2.0 by ZoeDoll:
 - https://www.nexusmods.com/stardewvalley/mods/10671
 Alecto the Witch, a custom NPC
@@ -1999,11 +2008,11 @@ Juna for Custom Companions v1.0.0 by elhrvy:
 - no update key
 Juna's super secret friendship gift.
 
-Lani CC - Sammy v1.1.5 by atelier99:
+Lani CC - Sammy v1.1.7 by atelier99:
 - https://www.nexusmods.com/stardewvalley/mods/32689
 Lani's cat, Sammy, as a Custom Companion!
 
-Sunberry NPC - Lani v1.1.5 by atelier99:
+Sunberry NPC - Lani v1.1.7 by atelier99:
 - https://www.nexusmods.com/stardewvalley/mods/32689
 Lani, a custom NPC for Sunberry Village!
 
@@ -2023,7 +2032,7 @@ MGC - Pets v1.0.0 by ottersqueaks:
 - no update key
 Cambria's retired service dog
 
-Metalcore Goes Cottagecore v1.0.4 by ottersqueaks:
+Metalcore Goes Cottagecore v1.1.2 by ottersqueaks:
 - https://www.nexusmods.com/stardewvalley/mods/29995
 A story about getting a fresh start.
 
@@ -2051,17 +2060,21 @@ West Coast North America Birds for Ornithologist's Guild v1.0.0 by Winston:
 - no update key
 Adds bird species to Ornithologist's Guild.
 
-(PFM) Spore Galore v1.0.0 by The Homesteader Team:
-- no update key
-Producer Framework Mod integration for Spore Galore mushroom cultivation.
+Adventurer's Guild Expanded Music v1.0.0 by SUPERT:
+- https://www.nexusmods.com/stardewvalley/mods/???
+Adds Custom Music to the Adventurer's Guild Expansion.
 
 (Si) Leaves for Nature In The Valley v3.0.0 by SiTheGreat:
 - https://www.nexusmods.com/stardewvalley/mods/18928
 Collect leaves floating around the valley.
 
-SNES Livestock Dinos v1.1.0 by cryomancer:
+SNES Livestock Dinos v2.1.0 by cryomancer:
 - https://www.nexusmods.com/stardewvalley/mods/30907
 Several new creatures with several new produce items. And a cave for them to live in.
+
+(AHM) Livestock Dinos v2.0.0 by cryomancer:
+- no update key
+meats for mammoths and such.
 
 StarDerg Valley v0.2.0 by FSL6_烦君:
 - https://www.nexusmods.com/stardewvalley/mods/25099
