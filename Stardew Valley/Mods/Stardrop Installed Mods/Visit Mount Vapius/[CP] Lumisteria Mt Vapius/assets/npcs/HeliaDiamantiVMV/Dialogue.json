@@ -11,6 +11,11 @@
         "Thu": "{{i18n: HeliaDialogueThu}}",
         "Fri": "{{i18n: HeliaDialogueFri}}",
         "Sat": "{{i18n: HeliaDialogueSat{{Random:R01, R02, R03, R04, R05}}}}",
+        "Lumisteria.MtVapius_SatR01BetasReaction": "{{i18n: HeliaDialogueSatR01BetasReaction}}",
+        "Lumisteria.MtVapius_SatR02BetasReaction": "{{i18n: HeliaDialogueSatR02BetasReaction}}",
+        "Lumisteria.MtVapius_SatR03BetasReaction": "{{i18n: HeliaDialogueSatR03BetasReaction}}",
+        "Lumisteria.MtVapius_SatR04BetasReaction": "{{i18n: HeliaDialogueSatR04BetasReaction}}",
+        "Lumisteria.MtVapius_SatR05BetasReaction": "{{i18n: HeliaDialogueSatR05BetasReaction}}",
         "Sun": "{{i18n: HeliaDialogueSun}}",
 		//2
         "Mon4": "{{i18n: HeliaDialogueMon2{{Random:R01, R02}}}}",
@@ -19,7 +24,10 @@
         "Thu2": "{{i18n: HeliaDialogueThu2}}",
         "Fri2": "{{i18n: HeliaDialogueFri2{{Random:R01, R02}}}}",
         "Sat2": "{{i18n: HeliaDialogueSat2{{Random:R01, R02}}}}",
+        "Lumisteria.MtVapius_Sat2R01BetasReaction": "{{i18n: HeliaDialogueSat2R01BetasReaction}}",
+        "Lumisteria.MtVapius_Sat2R02BetasReaction": "{{i18n: HeliaDialogueSat2R02BetasReaction}}",
         "Sun2": "{{i18n: HeliaDialogueSun2{{Random:R01, R02}}}}",
+        "Lumisteria.MtVapius_Sun2R02BetasReaction": "{{i18n: HeliaDialogueSun2R02BetasReaction}}",
 		//4
         "Mon4": "{{i18n: HeliaDialogueMon4{{Random:R01, R02}}}}",
         "Tue4": "{{i18n: HeliaDialogueTue4{{Random:R01, R02}}}}",
@@ -37,14 +45,33 @@
         "Sat6": "{{i18n: HeliaDialogueSat6{{Random:R01, R02, R03, R04, R05}}}}",
         "Sun6": "{{i18n: HeliaDialogueSun6{{Random:R01, R02}}}}",
 		
+		
+        "fall_15": "{{i18n: HeliaDialoguefall_15|HamletProgress={{HamletProgress|contains={{Range: 0, 5}}}}}}",
+        "Lumisteria.MtVapius_FairReaction": "{{i18n: HeliaDialogueLumisteria.MtVapius_FairReaction}}",
+		
 		//Resort
 		"Resort": "{{i18n: HeliaDialogueResort}}",
+		
+		
+		//FlowerDance_Decline
+        "FlowerDance_Decline": "{{i18n: HeliaDialogueFlowerDance_Decline}}",
+        "FlowerDance_Accept": "{{i18n: HeliaDialogueFlowerDance_Accept}}",
+		
 		//Conversation Topics
         "Lumisteria.MtVapius.Arrival": "{{i18n: HeliaDialogueLumisteria.MtVapius.Arrival}}",
         "eventSeen_Lumisteria.MtVapius_Inn_OdalisIntroduction_memory_oneday": "{{i18n: HeliaDialogueeventSeen_Lumisteria.MtVapius_Inn_OdalisIntroduction_memory_oneday}}",
         "eventSeen_Lumisteria.MtVapius_Hamlet_Helia5H_memory_oneweek": "{{i18n: HeliaDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Helia5H_memory_oneweek}}",
         "eventSeen_Lumisteria.MtVapius_Hamlet_Helia5H_memory_oneweek": "{{i18n: HeliaDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Helia5H_memory_oneweek}}",
         "eventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday": "{{i18n: HeliaDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday}}",
+        "eventSeen_Lumisteria.MtVapius_Hamlet_Gavin2H": "{{i18n: HeliaDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Gavin2H}}",
+        "eventSeen_Lumisteria.MtVapius_Hamlet_Gavin2H_memory_oneweek": "{{i18n: HeliaDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Gavin2H_memory_oneweek}}",
+        "eventSeen_Lumisteria.MtVapius_Faycombe_Helia6HGavin6H_memory_oneday": "{{i18n: HeliaDialogueeventSeen_Lumisteria.MtVapius_Faycombe_Helia6HGavin6H_memory_oneday}}",
+		
+		//
+        "AcceptBouquet": "{{i18n:HeliaDialogueAcceptBouquet}}",
+        "RejectItem_(O)460": "{{i18n:HeliaDialogueRejectMermaidPendant}}",
+        "RejectMermaidPendant": "{{i18n:HeliaDialogueRejectMermaidPendant}}",
+		
       }
     },
     {
@@ -89,6 +116,24 @@
 
     },*/
     {
+      "LogName": "Helia 8 Heart Romantic Conditional",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/HeliaDiamantiVMV",
+      "Entries": {
+        "Mon8": "{{i18n: HeliaDialogueMon8Romantic}}",
+        "Tue8": "{{i18n: HeliaDialogueTue8Romantic}}",
+        "Wed8": "{{i18n: HeliaDialogueWed8Romantic}}",
+        "Fri8": "{{i18n: HeliaDialogueThu8Romantic}}",
+        "Fri8": "{{i18n: HeliaDialogueFri8Romantic}}",
+        "Sat8": "{{i18n: HeliaDialogueSat8Romantic}}",
+        "Sat8": "{{i18n: HeliaDialogueSun8Romantic}}",
+      },
+      "When": {
+        "Random: true, true, true, false": "true",
+		"Relationship:HeliaDiamantiVMV": "Dating, Engaged",
+      }
+    },
+    {
       "LogName": "Helia 10 Heart Conditional",
       "Action": "EditData",
       "Target": "Characters/Dialogue/HeliaDiamantiVMV",
@@ -132,6 +177,7 @@
       "Target": "Characters/Dialogue/HeliaDiamantiVMV",
       "Entries": {
 		"AcceptGift_(O)StardropTea": "{{i18n: HeliaDialogueAcceptGift_(O)StardropTea}}",
+		"AcceptGift_(O)125": "{{i18n: HeliaDialogueAcceptGift_(O)125}}",
 		//"AcceptGift_(O)809": "{{i18n: HeliaDialogueAcceptGift_(O)809}}",
       },
     },

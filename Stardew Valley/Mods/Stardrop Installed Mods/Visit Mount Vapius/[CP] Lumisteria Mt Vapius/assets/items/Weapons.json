@@ -35,6 +35,36 @@
 					],
 					"CustomFields": {}
 				},
+				"Lumisteria.MtVapius_Reflection": {
+					"Name": "Lumisteria.MtVapius_Reflection",
+					"DisplayName": "{{i18n: MtVapiusReflection_Translated}}",
+					"Description": "{{i18n: MtVapiusReflection_Description_Translated}}",
+					"MinDamage": 120,
+					"MaxDamage": 160,
+					"Knockback": 1.0,
+					"Speed": 10,
+					"Precision": 0,
+					"Defense": 4,
+					"Type": 0,
+					"MineBaseLevel": -1,
+					"MineMinLevel": -1,
+					"AreaOfEffect": 2,
+					"CritChance": 0.01,
+					"CritMultiplier": 3.0,
+					"CanBeLostOnDeath": false,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Weapons",
+					"SpriteIndex": 1,
+					"Projectiles": [
+						{
+							"Id": "Lumisteria.MtVapius_WaterBall",
+							"Damage": 40,
+							"Explodes": true,
+							"CollisionSound": "cavedrip",
+							"SpriteIndex": "14",
+						},
+					],
+					"CustomFields": {}
+				},
 			}
 		},
 		/* add weapon  images*/

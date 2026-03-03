@@ -84,13 +84,116 @@
                 "Width": -1,
                 "Height": -1
               },
-              "Chance": 0.03,
+              "Chance": 0.04,
               "Items": [
                 {
                   "Id": "Lumisteria.MtVapius_Monsters_WeirdCoins",
                   "ItemId": "Lumisteria.MtVapius_WeirdCoins",
                   "MinStack": 1,
                   "MaxStack": 3,
+                  "StackModifiers": [
+                    {
+                      "Id": "RareDouble",
+                      "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo04",
+                      "Modification": "Multiply",
+                      "Amount": 2.0,
+                    }
+                  ],
+                },
+              ]
+            },
+            {
+              "Id": "{{ModId}}_SlimeGlobalDropBuff",
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              "Condition": "VMV.MONSTER_NAME \"green slime\" \"frost jelly\" \"big slime\" \"sludge\", PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo04",
+              "Chance": 0.5,
+              "Items": [
+                {
+                  "Id": "Lumisteria.MtVapius_Monsters_Slime",
+                  "ItemId": "766",
+                  "MinStack": 2,
+                  "MaxStack": 4,
+                },
+              ]
+            },
+            {
+              "Id": "{{ModId}}_BugGlobalDropBuff",
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              "Condition": "VMV.MONSTER_NAME \"Bug\", PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo04",
+              "Chance": 0.5,
+              "Items": [
+                {
+                  "Id": "Lumisteria.MtVapius_Monsters_HoneySeeds",
+					  "RandomItemId": [
+						"Lumisteria.MtVapius_WildVapiusSeeds",
+						"Lumisteria.MtVapius_MountainMeadowSeeds",
+						"340",
+					  ],
+                  "MinStack": 1,
+                  "MaxStack": 2,
+                },
+              ]
+            },
+            {
+              "Id": "{{ModId}}_CoalGlobalDropBuff",
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              "Condition": "VMV.MONSTER_NAME \"hot head\" \"metal head\" \"dust spirit\", PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo04",
+              "Chance": 0.5,
+              "Items": [
+                {
+                  "Id": "Lumisteria.MtVapius_Monsters_Coal",
+                  "ItemId": "382",
+                  "MinStack": 2,
+                  "MaxStack": 4,
+                },
+              ]
+            },
+            {
+              "Id": "{{ModId}}_BookStationGlobalDrop",
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              "Chance": 0.03,
+              "Items": [
+                {
+                  "Id": "Lumisteria.MtVapius_Monsters_BooksStation",
+                  "ItemId": "Spiderbuttons.CMF_LOST_BOOK_OR_ITEM Lumisteria.MtVapius_TrainStationIndoor Lumisteria.MtVapius_TrainStation_Books Lumisteria.MtVapius_WildVapiusSeeds",
+                  "MinStack": 1,
+                },
+              ]
+            },
+            {
+              "Id": "{{ModId}}_BookReserveGlobalDrop",
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              "Chance": 0.03,
+              "Items": [
+                {
+                  "Id": "Lumisteria.MtVapius_Monsters_BooksReserve",
+                  "ItemId": "Spiderbuttons.CMF_LOST_BOOK_OR_ITEM Lumisteria.MtVapius_NaturalReserveIndoor Lumisteria.MtVapius_NaturalReserve_Books Lumisteria.MtVapius_WildVapiusSeeds",
+                  "MinStack": 1,
                 },
               ]
             },
@@ -103,7 +206,7 @@
                 "Height": -1
               },
               "Condition": "VMV.MONSTER_NAME \"hot head\" \"metal head\"",
-              "Chance": 0.005,
+              "Chance": 0.01,
               "Items": [
                 {
                   "Id": "Lumisteria.MtVapius_Monsters_Battery",
@@ -189,7 +292,86 @@
                 },
               ]
             },
+            {
+              "Id": "{{ModId}}_ZenithSeedsGlobalDrop",
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              "Condition": "VMV.MONSTER_NAME \"fly\"",
+              "Chance": 0.05,
+              "Items": [
+                {
+                  "Id": "Lumisteria.MtVapius_ZenithFlowerSeeds",
+                  "ItemId": "Lumisteria.MtVapius_ZenithFlowerSeeds",
+                  "MinStack": 1,
+                },
+              ]
+            },
           ],
+        },
+        "Lumisteria.MtVapius_ForestCaveWinterRiftCircle": {
+          "MonsterDropZones": [
+            {
+              "Id": "{{ModId}}_FairyDustRareBugDrop",
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              "Condition": "VMV.MONSTER_NAME \"Bug\" \"Magma Sprite\"",
+              "Chance": 0.08,
+              "Items": [
+                {
+                  "Id": "Lumisteria.MtVapius_Monsters_FairyDust",
+                  "ItemId": "872",
+                  "MinStack": 1,
+                },
+              ]
+            },
+            {
+              "Id": "{{ModId}}_FairyDustRareDrop",
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              "Chance": 0.01,
+              "Items": [
+                {
+                  "Id": "Lumisteria.MtVapius_Monsters_FairyDust",
+                  "ItemId": "872",
+                  "MinStack": 1,
+                },
+              ]
+            },
+          ]
+        },
+        "Lumisteria.MtVapius_ForestCaveAmber": {
+          "MonsterDropZones": [
+            {
+              "Id": "{{ModId}}_StellarSeedsDrop",
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              "Chance": 0.04,
+              "Items": [
+                {
+                  "Id": "Lumisteria.MtVapius_StellarSeeds",
+                  "ItemId": "Lumisteria.MtVapius_StellarSeeds",
+                  "MinStack": 1,
+                  "MaxStack": 3,
+                },
+              ]
+            },
+          ]
         },
         "Lumisteria.MtVapius_ForestCrystalLake": {
           "FishSpotSpawnZones": [
@@ -253,6 +435,43 @@
               "Type": "(O)590",
               "Range": "2-6",
             }
+          ]
+        },
+        "Lumisteria.MtVapius_ForestCaveMarshCliffs": {
+          "ArtifactSpawnZones": [
+            {
+              "Chance": 1,
+              "Area": {
+                "X": 0,
+                "Y": 0,
+                "Width": -1,
+                "Height": -1
+              },
+              "Type": "(O)590",
+              "Range": "1-2",
+            },
+            {
+              "Chance": 1,
+              "Area": {
+                "X": 22,
+                "Y": 14,
+                "Width": 8,
+                "Height": 8
+              },
+              "Type": "(O)590",
+              "Range": "0-1",
+            },
+            {
+              "Chance": 1,
+              "Area": {
+                "X": 22,
+                "Y": 14,
+                "Width": 8,
+                "Height": 8
+              },
+              "Type": "(O)SeedSpot",
+              "Range": "0-1",
+            },
           ]
         },
         /*"MapYouWantMonstersOnORLocationContext": { // note that if a map has a specific one, it will override the location context one entirely. They don't add.

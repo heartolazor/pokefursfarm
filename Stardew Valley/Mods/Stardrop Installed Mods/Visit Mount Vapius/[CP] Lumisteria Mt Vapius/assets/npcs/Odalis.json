@@ -43,6 +43,18 @@
       "FromFile": "assets/npcs/Portraits/OdalisDuboisVelezVMVExtra/SummerV02.png",
     },
     {
+      "LogName": "Odalis Winter Variation Sprites",
+      "Action": "Load",
+      "Target": "Characters/OdalisDuboisVelezVMV_WinterV01",
+      "FromFile": "assets/npcs/Characters/OdalisDuboisVelezVMVExtra/WinterV01.png",
+    },
+    {
+      "LogName": "Odalis Winter Variation Portraits",
+      "Action": "Load",
+      "Target": "Portraits/OdalisDuboisVelezVMV_WinterV01",
+      "FromFile": "assets/npcs/Portraits/OdalisDuboisVelezVMVExtra/WinterV01.png",
+    },
+    {
       "LogName": "Odalis DuboisVelez Dispositions",
       "Action": "EditData",
       "Target": "Data/Characters",
@@ -51,7 +63,7 @@
           "DisplayName": "{{i18n: OdalisDisplayName}}",
           "BirthSeason": "Fall",
           "BirthDay": 14,
-          "HomeRegion": "Other",
+          "HomeRegion": "Lumisteria.MtVapius_Main",
           "Gender": "Male",
           "Age": "Adult",
           "Manner": "Polite",
@@ -106,6 +118,15 @@
 				"Precedence": -100,
 				"Weight": 1
 			  },
+			  {
+				"Id": "Lumisteria.MtVapiusOdalisWinterV01",
+				"Condition": "LOCATION_SEASON Here Winter, PLAYER_HEARTS Current OdalisDuboisVelezVMV 2",
+				"Sprite": "Characters/OdalisDuboisVelezVMV_WinterV01",
+				"Portrait": "Portraits/OdalisDuboisVelezVMV_WinterV01",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 1
+			  },
 			],
 		  "Home": [
 				{
@@ -130,6 +151,18 @@
       "Entries": {
         "OdalisDuboisVelezVMV_wash": "8/16 16 17 16 17 17/8",
         "OdalisDuboisVelezVMV_sort": "12/20 20 20 21 21 22 21 20 20 21 22 22 21/12",
+        "OdalisDuboisVelezVMV_sortfruitbox": "12/13 13 14 14 12 12/12",
+        "OdalisDuboisVelezVMV_tidy": "0/18 18 19 19/0",
+      }
+    },
+	{
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ScheduleAnimationExtensionData",
+      "Entries":
+      {
+        "OdalisDuboisVelezVMV_sortfruitbox": {
+          "SourceRectSize": "32, 32",
+        }
       }
     },
     {

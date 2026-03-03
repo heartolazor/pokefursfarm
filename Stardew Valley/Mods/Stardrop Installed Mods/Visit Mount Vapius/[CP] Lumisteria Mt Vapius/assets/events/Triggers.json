@@ -68,20 +68,40 @@
                     "Trigger": "DayStarted",
                     "Action": "AddMail Current Lumisteria.MtVapius_GazetteMail07 tomorrow"
                 },
-                "Lumisteria.MtVapius_Gazette07Trigger": {
+                "Lumisteria.MtVapius_Gazette08Trigger": {
                     "Id": "Lumisteria.MtVapius_Gazette08Trigger",
 					"Condition": "PLAYER_HAS_SEEN_EVENT Current Lumisteria.MtVapius_Inn_Gazette, PLAYER_STAT Current daysPlayed 40, SYNCED_RANDOM day lumisteria.chanceletter01 0.2",
                     "Trigger": "DayStarted",
-                    "Action": "AddMail Current Lumisteria.MtVapius_GazetteMail07 tomorrow"
+                    "Action": "AddMail Current Lumisteria.MtVapius_GazetteMail08 tomorrow"
                 },
 				
+				//Heart
 				
+                "Lumisteria.MtVapius_Gavin7HSaplingTrigger": {
+                    "Id": "Lumisteria.MtVapius_Gavin7HSaplingTrigger",
+					"Condition": "PLAYER_HEARTS Any GavinPommerelVMV 7, SYNCED_RANDOM day lumisteria.chanceletter02 0.2, PLAYER_HAS_SEEN_EVENT Current Lumisteria.MtVapius_Lodge_Gavin6HFollowUp, !PLAYER_HAS_CONVERSATION_TOPIC Current eventseen_Lumisteria.MtVapius_Lodge_Gavin6HFollowUp",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_Gavin7HSaplingMail tomorrow"
+                },
+                "Lumisteria.MtVapius_GavinDatingForgetMeNotTrigger": {
+                    "Id": "Lumisteria.MtVapius_GavinDatingForgetMeNotTrigger",
+					"Condition": "PLAYER_NPC_RELATIONSHIP Current GavinPommerelVMV Dating Engaged Married, PLAYER_HAS_MAIL Current Lumisteria.MtVapius_GavinForgetMeNowFlag, !PLAYER_HAS_CONVERSATION_TOPIC Current Lumisteria.MtVapius_GavinForgetMeNowConversationTopic",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_GavinDatingForgetMeNotMail tomorrow"
+                },
+
+                "Lumisteria.MtVapius_AsterDatingTrigger": {
+                    "Id": "Lumisteria.MtVapius_AsterDatingTrigger",
+					"Condition": "PLAYER_NPC_RELATIONSHIP Current AsterPellegrinVMV Dating Engaged Married, SYNCED_RANDOM day lumisteria.chanceletter03 0.2",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.Lumisteria.MtVapius_AsterDatingMail tomorrow"
+                },
 				
 				
 				//Quests
                 "Lumisteria.MtVapius_NympheaSeedsQuestTrigger": {
                     "Id": "Lumisteria.MtVapius_NympheaSeedsQuestTrigger",
-					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Current Lumisteria.MtVapius_Nymphea 5, SYNCED_RANDOM day lumisteria.chanceletter05 0.2",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any Lumisteria.MtVapius_Nymphea 5, SYNCED_RANDOM day lumisteria.chanceletter05 0.2",
                     "Trigger": "DayStarted",
                     "Action": "AddMail Current Lumisteria.MtVapius_NympheaSeedsRequestMail tomorrow"
                 },
@@ -281,6 +301,13 @@
                     "MarkActionApplied": false,
                     "Action": "RemoveMail Current Lumisteria.MtVapius_PlanetFishCaught all"
                 },
+                "Lumisteria.MtVapius_RemoveFlagLegendaryFishCaughtTrigger": {
+                    "Id": "Lumisteria.MtVapius_RemoveFlagLegendaryFishCaughtTrigger",
+					"Condition": "PLAYER_HAS_MAIL Current Lumisteria.MtVapius_LegendaryFishCaught, DAY_OF_WEEK Fri",
+                    "Trigger": "DayStarted",
+                    "MarkActionApplied": false,
+                    "Action": "RemoveMail Current Lumisteria.MtVapius_LegendaryFishCaught all"
+                },
 				
 				
 				
@@ -327,6 +354,52 @@
                     ]
                 },
 				
+				
+                "Lumisteria.MtVapius_CookingShow01": {
+                    "Id": "Lumisteria.MtVapius_CookingShow01",
+                    "Trigger": "Manual",
+                    "Actions": [
+                        "MarkCookingRecipeKnown Current Lumisteria.MtVapius_Cooking_CreamAndStrawberries",
+                        "Spiderbuttons.BETAS_Message \"{{i18n: MtVapiusInnCookingShowMessage01}}\""
+                    ]
+                },
+				
+                "Lumisteria.MtVapius_CookingShow02": {
+                    "Id": "Lumisteria.MtVapius_CookingShow02",
+                    "Trigger": "Manual",
+                    "Actions": [
+                        "MarkCookingRecipeKnown Current Lumisteria.MtVapius_Cooking_Chapea",
+                        "Spiderbuttons.BETAS_Message \"{{i18n: MtVapiusInnCookingShowMessage02}}\""
+                    ]
+                },
+				
+                "Lumisteria.MtVapius_CookingShow03": {
+                    "Id": "Lumisteria.MtVapius_CookingShow03",
+                    "Trigger": "Manual",
+                    "Actions": [
+                        "MarkCookingRecipeKnown Current Lumisteria.MtVapius_Cooking_Quiche",
+                        "Spiderbuttons.BETAS_Message \"{{i18n: MtVapiusInnCookingShowMessage03}}\""
+                    ]
+                },
+				
+                "Lumisteria.MtVapius_CookingShow04": {
+                    "Id": "Lumisteria.MtVapius_CookingShow04",
+                    "Trigger": "Manual",
+                    "Actions": [
+                        "MarkCookingRecipeKnown Current \"Rice Pudding\"",
+                        "Spiderbuttons.BETAS_Message \"{{i18n: MtVapiusInnCookingShowMessage04}}\""
+                    ]
+                },
+				
+                "Lumisteria.MtVapius_CookingShow05": {
+                    "Id": "Lumisteria.MtVapius_CookingShow05",
+                    "Trigger": "Manual",
+                    "Actions": [
+                        "MarkCookingRecipeKnown Current Tortilla",
+                        "Spiderbuttons.BETAS_Message \"{{i18n: MtVapiusInnCookingShowMessage05}}\""
+                    ]
+                },
+				
 				//SO related
 				
 				
@@ -369,6 +442,213 @@
                 },
 				
 				
+				//Stellar quest Hint
+                "Lumisteria.MtVapius_StellarQuestHintTrigger": {
+                    "Id": "Lumisteria.MtVapius_StellarQuestHintTrigger",
+					"Condition": "ANY \"PLAYER_SHIPPED_BASIC_ITEM Any Lumisteria.MtVapius_MoonPods 1\" \"PLAYER_HAS_CONVERSATION_TOPIC ANY cropMatured_Lumisteria.MtVapius_MoonPods\", !PLAYER_HAS_SEEN_EVENT Current Lumisteria.MtVapius_AsterHouse_StellarCrops01",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "AddMail Current Lumisteria.MtVapius_StellarQuestHintMail received",
+                        "spacechase0.SpaceCore_ShowHudMessage \"{{i18n: MtVapiusStellarQuestHintMessage}}\""
+                    ]
+                },
+				
+				//Hints to junimo clearing
+                "Lumisteria.MtVapius_JunimoHintsQuestTrigger": {
+                    "Id": "Lumisteria.MtVapius_JunimoHintsQuestTrigger",
+					"Condition": "LOCATION_NAME Here Lumisteria.MtVapius_Hamlet",
+                    "Trigger": "LocationChanged",
+                    "Actions": [
+                        "AddQuest Lumisteria.MtVapiusQuestFindingForest",
+                    ]
+                },
+				//Hints to faycombe areas
+                "Lumisteria.MtVapius_FaycombeHintsQuestTrigger": {
+                    "Id": "Lumisteria.MtVapius_FaycombeHintsQuestTrigger",
+					"Condition": "LOCATION_NAME Here Lumisteria.MtVapius_Faycombe, ANY \"!PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_FaycombeMeadow\" \"!PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_FaycombeOrchard\", !PLAYER_HAS_CONVERSATION_TOPIC Current firstVisit_Lumisteria.MtVapius_Faycombe",
+                    "Trigger": "LocationChanged",
+                    "Actions": [
+                        "AddQuest Lumisteria.MtVapiusQuestFindingMeadow",
+                        "AddQuest Lumisteria.MtVapiusQuestDiscoveringOrchard",
+                    ]
+                },
+				
+				
+				//Gavin Return
+                "Lumisteria.MtVapius_GavinReturnTrigger": {
+                    "Id": "Lumisteria.MtVapius_GavinReturnTrigger",
+					"Condition": "ANY \"PLAYER_HAS_SEEN_EVENT Current Lumisteria.MtVapius_Hamlet_Mariam_1H, !PLAYER_HAS_CONVERSATION_TOPIC Current eventseen_Lumisteria.MtVapius_Hamlet_Mariam_1H\" \"PLAYER_HAS_SEEN_EVENT Current Lumisteria.MtVapius_Lake_Mariam_2H\"",
+                    "Trigger": "LocationChanged",
+                    "Actions": [
+                        "AddMail Current Lumisteria.MtVapius_GavinReturn received",
+                    ]
+                },
+				
+				
+				
+				//Candies
+				
+				
+                "Lumisteria.MtVapius_TakeInnCandy": {
+                    "Id": "Lumisteria.MtVapius_TakeInnCandy",
+					"Condition": "DAY_OF_WEEK Sat, TIME 1800 2200, !PLAYER_HAS_MAIL Current Lumisteria.MtVapius_InnCandyTaken Received",
+                    "Trigger": "Manual",
+                    "Actions": [
+                        "AddMail Current Lumisteria.MtVapius_InnCandyTaken Received",
+                        "spacechase0.SpaceCore_ShowHudMessage \"{{i18n: MtVapiusInnCandyTaken}}\"",
+                        "AddFriendshipPoints AsterPellegrinVMV 8",
+                        "AddFriendshipPoints MaddyPellegrinVMV 8",
+                        "AddFriendshipPoints MoiraDuboisVMV 8",
+                        "AddFriendshipPoints MariamFortinVMV 8",
+                        "AddFriendshipPoints NaveenFaycombeSereneVMV 8",
+                        "AddFriendshipPoints HeliaDiamantiVMV 8",
+                        "AddItem {{Random: Lumisteria.MtVapius_Candy_CottonCandy, Lumisteria.MtVapius_Candy_CandiedFruit, Lumisteria.MtVapius_Candy_CandiedFlower, Lumisteria.MtVapius_Candy_SweetFruitPaste, Lumisteria.MtVapius_Candy_BirchSapBerlingot, Lumisteria.MtVapius_Candy_Calisson, Lumisteria.MtVapius_Candy_CoffeeCandy, Lumisteria.MtVapius_Candy_HoneyDrop, Lumisteria.MtVapius_Candy_FischerCandy}} 1"
+                    ]
+                },
+				
+                "Lumisteria.MtVapius_RemoveFlagInnCandyTaken": {
+                    "Id": "Lumisteria.MtVapius_RemoveFlagInnCandyTaken",
+					"Condition": "PLAYER_HAS_MAIL Current Lumisteria.MtVapius_InnCandyTaken, DAY_OF_WEEK Sun",
+                    "Trigger": "DayStarted",
+                    "MarkActionApplied": false,
+                    "Actions": [
+                        "RemoveMail Current Lumisteria.MtVapius_InnCandyTaken all",
+						]
+                },
+				
+				//Candy machine faster
+				
+                "Lumisteria.MtVapius_CookingCandyBoost": {
+                    "Id": "Lumisteria.MtVapius_CookingCandyBoost",
+					"Condition": "PLAYER_STAT Current itemsCooked 300",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "spacechase0.SpaceCore_ShowHudMessage \"{{i18n: MtVapiusCookingCandyHintMessage}}\""
+                    ]
+                },
+				
+				//Harvested buff
+                "Lumisteria.MtVapius_FourLeavesClover": {
+                    "Id": "Lumisteria.MtVapius_FourLeavesClover",
+					"Condition": "ITEM_CONTEXT_TAG Target clover_item, RANDOM 0.05",
+                    "Trigger": "Spiderbuttons.BETAS_CropHarvested",
+                    "Actions": [
+                        "spacechase0.SpaceCore_ShowHudMessage \"{{i18n: MtVapiusFourLeavesClover}}\"",
+                        "AddBuff Lumisteria.MtVapius_Luck",
+                    ]
+                },
+				//Junimo Tea
+				
+                "Lumisteria.MtVapius_JunimoTea": {
+                    "Id": "Lumisteria.MtVapius_JunimoTea",
+					"Condition": "!PLAYER_HAS_MAIL Any Lumisteria.MtVapius_JunimoTea_Flag",
+                    "Trigger": "Manual",
+                    "Actions": [
+                        "AddMail All Lumisteria.MtVapius_JunimoTea_Flag received",
+                        "Spiderbuttons.BETAS_Message \"{{i18n: MtVapiusJunimoTeaMessage}}\""
+                    ]
+                },
+                "Lumisteria.MtVapius_JunimoTeaNextDay": {
+                    "Id": "Lumisteria.MtVapius_JunimoTeaNextDay",
+					"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_JunimoTea_Flag",
+                    "Trigger": "DayStarted",
+                    "MarkActionApplied": false,
+                    "Actions": [
+                        "RemoveMail All Lumisteria.MtVapius_JunimoTea_Flag All",
+                        "spacechase0.SpaceCore_ShowHudMessage \"{{i18n: MtVapiusJunimoTeaReminder}}\"",
+                        "AddBuff Lumisteria.MtVapius_Junimo{{Random:01, 02, 03, 04}}",
+                    ]
+                },
+				
+				
+				//Mastery
+				
+                "Lumisteria.MtVapius_FarmingMastery": {
+                    "Id": "Lumisteria.MtVapius_FarmingMastery",
+					"Condition": "PLAYER_STAT Any Mastery_0 1",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "AddMail All Lumisteria.MtVapius_FarmingMastery_Flag received",
+                    ]
+                },
+                "Lumisteria.MtVapius_FishingMastery": {
+                    "Id": "Lumisteria.MtVapius_FishingMastery",
+					"Condition": "PLAYER_STAT Any Mastery_1 1",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "AddMail All Lumisteria.MtVapius_FishingMastery_Flag received",
+                    ]
+                },
+                "Lumisteria.MtVapius_ForagingMastery": {
+                    "Id": "Lumisteria.MtVapius_ForagingMastery",
+					"Condition": "PLAYER_STAT Any Mastery_2 1",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "AddMail All Lumisteria.MtVapius_ForagingMastery_Flag received",
+                    ]
+                },
+                "Lumisteria.MtVapius_MiningMastery": {
+                    "Id": "Lumisteria.MtVapius_MiningMastery",
+					"Condition": "PLAYER_STAT Any Mastery_3 1",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "AddMail All Lumisteria.MtVapius_MiningMastery_Flag received",
+                    ]
+                },
+                "Lumisteria.MtVapius_CombatMastery": {
+                    "Id": "Lumisteria.MtVapius_CombatMastery",
+					"Condition": "PLAYER_STAT Any Mastery_4 1",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "AddMail All Lumisteria.MtVapius_CombatMastery_Flag received",
+                    ]
+                },
+				
+				
+				
+				
+				
+				//Bundle
+				
+				
+                "Lumisteria.MtVapius_VillagerBundleTriggerBase": {
+                    "Id": "Lumisteria.MtVapius_VillagerBundleTriggerBase",
+					"Condition": "PLAYER_HAS_MAIL Current DLX.Bundles.Lumisteria.MtVapius_VillagersBundleBook Received",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "AddFriendshipPoints CelestineDuboisVMV 150",
+                        "AddFriendshipPoints AdelaideRosierVMV 150",
+                        "AddFriendshipPoints AsterPellegrinVMV 150",
+                        "AddFriendshipPoints MaddyPellegrinVMV 150",
+                    ]
+                },
+                "Lumisteria.MtVapius_VillagerBundleTriggerMoiraOdalis": {
+                    "Id": "Lumisteria.MtVapius_VillagerBundleTriggerMoiraOdalis",
+					"Condition": "PLAYER_HAS_MAIL Current DLX.Bundles.Lumisteria.MtVapius_VillagersBundleBook Received, PLAYER_HAS_SEEN_EVENT Current Lumisteria.MtVapius_Inn_OdalisArrival",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "AddFriendshipPoints MoiraDuboisVMV 150",
+                        "AddFriendshipPoints OdalisDuboisVelezVMV 150",
+                    ]
+                },
+                "Lumisteria.MtVapius_VillagerBundleTriggerBus": {
+                    "Id": "Lumisteria.MtVapius_VillagerBundleTriggerBus",
+					"Condition": "PLAYER_HAS_MAIL Current DLX.Bundles.Lumisteria.MtVapius_VillagersBundleBook Received, PLAYER_HAS_MAIL Current DLX.Bundles.Lumisteria.MtVapius_BusBundle Received",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "AddFriendshipPoints NaveenFaycombeSereneVMV 150",
+                        "AddFriendshipPoints HeliaDiamantiVMV 150",
+                    ]
+                },
+                "Lumisteria.MtVapius_VillagerBundleTriggerLodge": {
+                    "Id": "Lumisteria.MtVapius_VillagerBundleTriggerLodge",
+					"Condition": "PLAYER_HAS_MAIL Current DLX.Bundles.Lumisteria.MtVapius_VillagersBundleBook Received, PLAYER_HAS_MAIL Current Lumisteria.MtVapius_GavinReturn Received",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "AddFriendshipPoints MariamFortinVMV 150",
+                        "AddFriendshipPoints GavinPommerelVMV 150",
+                    ]
+                },
             }
         },
   ]

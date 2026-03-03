@@ -17,6 +17,22 @@
             {
               "RequiredPopulation": 10,
               "Chance": 0.25,
+			  "Condition": "PLAYER_STAT Any Mastery_1 1",
+              "ItemID": "445", //Caviar
+              "MinQuantity": 3,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.10,
+			  "Condition": "PLAYER_STAT Any Mastery_1 1",
+              "ItemID": "698",
+              "MinQuantity": 3,
+              "MaxQuantity": 4
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.25,
               "ItemID": "445", //Caviar
               "MinQuantity": 2,
               "MaxQuantity": 2
@@ -51,14 +67,14 @@
             },
             {
               "RequiredPopulation": 3,
-              "Chance": 0.4,
+              "Chance": 0.6,
               "ItemID": "445",
               "MinQuantity": 1,
               "MaxQuantity": 1
             },
             {
               "RequiredPopulation": 0,
-              "Chance": 0.2,
+              "Chance": 0.5,
               "ItemID": "445",
               "MinQuantity": 1,
               "MaxQuantity": 1
@@ -89,6 +105,22 @@
           "Precedence": 0,
           "SpawnTime": 14,
           "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.10,
+			  "Condition": "PLAYER_STAT Any Mastery_1 1",
+              "ItemID": "Lumisteria.MtVapius_GalaxySeeds",
+              "MinQuantity": 3,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.10,
+			  "Condition": "PLAYER_STAT Any Mastery_1 1",
+              "ItemID": "Lumisteria.MtVapius_WeirdCoins",
+              "MinQuantity": 10,
+              "MaxQuantity": 15
+            },
             {
               "RequiredPopulation": 10,
               "Chance": 0.05,
@@ -137,6 +169,13 @@
               "ItemID": "812", //roe
               "MinQuantity": 1,
               "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.2,
+              "ItemID": "768", //solar essence
+              "MinQuantity": 1,
+              "MaxQuantity": 1
             }
           ],
           "PopulationGates": {
@@ -163,6 +202,38 @@
           "Precedence": 0,
           "SpawnTime": 10,
           "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.05,
+			  "Condition": "PLAYER_STAT Any Mastery_1 1",
+              "ItemID": "Lumisteria.MtVapius_BlackGeode",
+              "MinQuantity": 6,
+              "MaxQuantity": 12
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.05,
+			  "Condition": "PLAYER_STAT Any Mastery_1 1",
+              "ItemID": "84",
+              "MinQuantity": 6,
+              "MaxQuantity": 8
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.2,
+			  "Condition": "PLAYER_STAT Any Mastery_1 1",
+              "ItemID": "CaveJelly",
+              "MinQuantity": 2,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.2,
+			  "Condition": "PLAYER_STAT Any Mastery_1 1",
+              "ItemID": "Lumisteria.MtVapius_AlpineChar",
+              "MinQuantity": 6,
+              "MaxQuantity": 8
+            },
             {
               "RequiredPopulation": 9,
               "Chance": 0.05,
@@ -200,7 +271,7 @@
             },
             {
               "RequiredPopulation": 0,
-              "Chance": 0.25,
+              "Chance": 0.5,
               "ItemID": "812", //roe
               "MinQuantity": 1,
               "MaxQuantity": 1
@@ -307,6 +378,14 @@
           "SpawnTime": -1,
           "ProducedItems": [
             {
+              "RequiredPopulation": 10,
+              "Chance": 0.1,
+			  "Condition": "PLAYER_STAT Any Mastery_1 1",
+              "ItemID": "Lumisteria.MtVapius_Heliodor",
+              "MinQuantity": 2,
+              "MaxQuantity": 4
+            },
+            {
               "RequiredPopulation": 9,
               "Chance": 0.1,
               "ItemID": "Lumisteria.MtVapius_NympheaSeeds",
@@ -357,7 +436,7 @@
             },
             {
               "RequiredPopulation": 0,
-              "Chance": 0.25,
+              "Chance": 0.5,
               "ItemID": "Lumisteria.MtVapius_Amber",
               "MinQuantity": 1,
               "MaxQuantity": 1
@@ -387,6 +466,14 @@
           ],
           "SpawnTime": -1,
           "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.1,
+			  "Condition": "PLAYER_STAT Any Mastery_1 1",
+              "ItemID": "Lumisteria.MtVapius_Heliodor",
+              "MinQuantity": 3,
+              "MaxQuantity": 6
+            },
             {
               "RequiredPopulation": 9,
               "Chance": 0.1,
@@ -580,6 +667,22 @@
           "SpawnTime": -1,
           "ProducedItems": [
             {
+              "RequiredPopulation": 10,
+              "Chance": 0.1,
+			  "Condition": "PLAYER_STAT Any Mastery_1 1",
+              "ItemID": "(O)885",
+              "MinQuantity": 2,
+              "MaxQuantity": 4
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.1,
+			  "Condition": "PLAYER_STAT Any Mastery_1 1",
+              "ItemID": "(O)Lumisteria.MtVapius_GoblinGentianSeeds",
+              "MinQuantity": 2,
+              "MaxQuantity": 4
+            },
+            {
               "RequiredPopulation": 9,
               "Chance": 0.08,
               "ItemId": "(O)Lumisteria.MtVapius_GoblinGentianSeeds",
@@ -633,7 +736,7 @@
               "Chance": 0.1,
               "ItemId": "(O)885", //Fiber Seeds
               "MinQuantity": 3,
-              "MaxQuantity": 5
+              "MaxQuantity": 6
             },
             {
               "RequiredPopulation": 5,
@@ -685,6 +788,21 @@
           ],
           "SpawnTime": -1,
           "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.1,
+			  "Condition": "PLAYER_STAT Any Mastery_1 1",
+              "ItemID": "(O)Lumisteria.MtVapius_WildVapiusSeeds",
+              "MinQuantity": 5,
+              "MaxQuantity": 6
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.1,
+              "ItemID": "(O)Lumisteria.MtVapius_WildVapiusSeeds",
+              "MinQuantity": 5,
+              "MaxQuantity": 6
+            },
             {
               "RequiredPopulation": 9,
               "Chance": 0.1,
@@ -749,6 +867,14 @@
           "SpawnTime": -1,
           "ProducedItems": [
             {
+              "RequiredPopulation": 10,
+              "Chance": 0.3,
+			  "Condition": "PLAYER_STAT Any Mastery_1 1",
+              "ItemID": "(O)812",
+              "MinQuantity": 5,
+              "MaxQuantity": 6
+            },
+            {
               "RequiredPopulation": 9,
               "Chance": 0.3,
               "ItemID": "812",
@@ -810,6 +936,14 @@
           ],
           "SpawnTime": -1,
           "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.3,
+			  "Condition": "PLAYER_STAT Any Mastery_1 1",
+              "ItemID": "(O)812",
+              "MinQuantity": 5,
+              "MaxQuantity": 6
+            },
             {
               "RequiredPopulation": 9,
               "Chance": 0.3,

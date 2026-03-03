@@ -1,0 +1,89 @@
+{
+  "Changes": [
+    {
+      "LogName": "Blank Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/GavinPommerelVMV",
+      "FromFile": "assets/npcs/BlankDialogue.json"
+    },
+    {
+      "LogName": "Default Schedules",
+      "Action": "EditData",
+      "Target": "Characters/schedules/GavinPommerelVMV",
+      "Entries": {
+        "GreenRain": "610 Lumisteria.MtVapius_Inn 17 39 1/2200 Lumisteria.MtVapius_LodgeIndoor 10 8 3",
+        "Tue": "700 Lumisteria.MtVapius_ForestCrystalLake 23 20 2/1000 Lumisteria.MtVapius_Hamlet 67 80 0 square_2_2/1900 Lumisteria.MtVapius_Inn 24 32 2/2200 Lumisteria.MtVapius_LodgeIndoor 10 8 3",
+        "Wed": "700 Lumisteria.MtVapius_ForestCrystalLake 23 20 2/1200 Lumisteria.MtVapius_ForestCrystalLake 13 20 2 square_3_5/1800 Lumisteria.MtVapius_Lodge 14 9 2 square_3_3/2200 Lumisteria.MtVapius_LodgeIndoor 10 8 3",
+        "Fri": "700 Lumisteria.MtVapius_ForestCrystalLake 23 20 2/1200 Lumisteria.MtVapius_ForestCrystalLake 13 20 2 square_3_5/1800 Lumisteria.MtVapius_Lodge 14 9 2 square_3_3/2200 Lumisteria.MtVapius_LodgeIndoor 10 8 3",
+        "Sun_2": "700 Lumisteria.MtVapius_ForestCrystalLake 23 20 2/1100 Blacksmith 8 16 1/1800 Lumisteria.MtVapius_Lodge 14 9 2 square_3_3/2200 Lumisteria.MtVapius_LodgeIndoor 10 8 3",
+        "spring": "700 Lumisteria.MtVapius_ForestCrystalLake 23 20 2/1200 Lumisteria.MtVapius_Lodge 14 9 2 square_3_3/2200 Lumisteria.MtVapius_LodgeIndoor 10 8 3",
+      }
+    },
+    {
+      "LogName": "Go to the Inn",
+      "Action": "EditData",
+      "Target": "Characters/schedules/GavinPommerelVMV",
+      "Entries": {
+        "Sat": "700 Lumisteria.MtVapius_ForestCrystalLake 23 20 2/1200 Lumisteria.MtVapius_Lodge 14 9 2 square_3_3/1630 Lumisteria.MtVapius_Inn 5 31 0/2400 Lumisteria.MtVapius_LodgeIndoor 10 8 3",
+      },
+      "When": {
+        "HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Inn_Gavin2HHelia2H",
+      }
+    },
+    {
+      "LogName": "Go to the Inn",
+      "Action": "EditData",
+      "Target": "Characters/schedules/GavinPommerelVMV",
+      "Entries": {
+        "winter_15": "900 Town 101 15 2/1000 Blacksmith 8 16 1/1600 Beach 46 24 1/2300 Lumisteria.MtVapius_FaycombeOrchard 18 8 1",
+        "winter_17": "900 Town 101 15 2/1400 Beach 46 24 1/2300 Lumisteria.MtVapius_FaycombeOrchard 18 8 1",
+      },
+      "When": {
+        "query: {{Hearts:GavinPommerelVMV}} >= 3": true
+      }
+    },
+    {
+      "LogName": "Encounter Clint Schedules",
+      "Action": "EditData",
+      "Target": "Characters/schedules/GavinPommerelVMV",
+      "Entries": {
+        "14": "000 AdventureGuild 11 14 0/900 Town 101 15 2/1200 Blacksmith 9 18 2/2300 AdventureGuild 10 4 2",
+      },
+      "When": {
+        "HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Hamlet_ClintMeetMariam",
+      }
+    },
+    {
+      "LogName": "New house",
+      "Action": "EditData",
+      "Target": "Characters/schedules/GavinPommerelVMV",
+      "Entries": {
+		  
+		  
+        "GreenRain": "610 Lumisteria.MtVapius_Inn 17 39 1/2200 Lumisteria.MtVapius_FaycombeOrchard 18 8 1/2400 Lumisteria.MtVapius_GavinHouse 8 6 1",
+        "spring": "700 Lumisteria.MtVapius_FaycombeOrchard 18 8 1/1200 Lumisteria.MtVapius_Faycombe 13 7 2 square_1_1/1500 Lumisteria.MtVapius_Faycombe 27 27 2/2200 Lumisteria.MtVapius_FaycombeOrchard 18 8 1/2400 Lumisteria.MtVapius_GavinHouse 8 6 1",
+        "Tue": "630 Lumisteria.MtVapius_FaycombeOrchard 18 8 1/1000 Lumisteria.MtVapius_Hamlet 67 80 0 square_2_2/1900 Lumisteria.MtVapius_Inn 24 32 2/2400 Lumisteria.MtVapius_GavinHouse 8 6 1",
+        "Wed": "630 Lumisteria.MtVapius_FaycombeOrchard 18 8 1/1000 Lumisteria.MtVapius_GavinHouse 10 16 0/1900 Lumisteria.MtVapius_Faycombe 35 22 3/2400 Lumisteria.MtVapius_GavinHouse 8 6 1",
+        "14": "000 AdventureGuild 11 14 0/900 Town 101 15 2/1200 Blacksmith 9 18 2/1800 Saloon 16 23 1/2230 Lumisteria.MtVapius_FaycombeOrchard 18 8 1/2500 Lumisteria.MtVapius_GavinHouse 8 6 1",
+        "Mon_6": "630 Lumisteria.MtVapius_FaycombeOrchard 18 8 1/1000 Blacksmith 8 16 1/1800 Saloon 16 23 1/2230 Lumisteria.MtVapius_FaycombeOrchard 18 8 1/2500 Lumisteria.MtVapius_GavinHouse 8 6 1",
+        "Sun_6": "630 Lumisteria.MtVapius_FaycombeOrchard 18 8 1/1000 Blacksmith 8 16 1/1800 Saloon 16 23 1/2230 Lumisteria.MtVapius_FaycombeOrchard 18 8 1/2500 Lumisteria.MtVapius_GavinHouse 8 6 1",
+        "winter_15": "630 Lumisteria.MtVapius_FaycombeOrchard 18 8 1/1000 Blacksmith 8 16 1/1600 Beach 46 24 1/2230 Lumisteria.MtVapius_FaycombeOrchard 18 8 1/2500 Lumisteria.MtVapius_GavinHouse 8 6 1",
+        "winter_17": "630 Lumisteria.MtVapius_FaycombeOrchard 18 8 1/1400 Beach 46 24 1/2230 Lumisteria.MtVapius_FaycombeOrchard 18 8 1/2500 Lumisteria.MtVapius_GavinHouse 8 6 1",
+      },
+      "When": {
+        "HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Gavin6H_OrchardIntro",
+      }
+    },
+    {
+      "LogName": "Shortcuts Fixed Schedules",
+      "Action": "EditData",
+      "Target": "Characters/schedules/GavinPommerelVMV",
+      "Entries": {
+        "19": "000 AdventureGuild 11 14 0/900 Mine 23 5 2 square_2_2/1200 Mountains 43 6 2/1800 AdventureGuild 11 14 0/2300 AdventureGuild 10 4 2",
+      },
+      "When": {
+        "HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Lodge_ShortcutsFixed",
+      }
+    },
+  ]
+}

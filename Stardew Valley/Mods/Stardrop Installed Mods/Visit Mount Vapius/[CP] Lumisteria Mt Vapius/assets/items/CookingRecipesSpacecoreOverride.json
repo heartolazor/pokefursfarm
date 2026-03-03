@@ -21,12 +21,16 @@
 				"Lumisteria.MtVapius_Cooking_PomegranateCake": "246 1 Lumisteria.MtVapius_Butter 1 637 1/1 8/Lumisteria.MtVapius_Cooking_PomegranateCake/f MariamFortinVMV 3/{{i18n: MtVapiusPomegranateCake_Translated}}",
 				"Lumisteria.MtVapius_Cooking_FishCurry": "396 1 Lumisteria.MtVapius_VapiusRoach 1 88 1 256 1/1 8/Lumisteria.MtVapius_Cooking_FishCurry/f NaveenFaycombeSereneVMV 3/{{i18n: MtVapiusFishCurry_Translated}}",
 				"Lumisteria.MtVapius_Cooking_Croissant": "246 1 Lumisteria.MtVapius_Butter 1/1 8/Lumisteria.MtVapius_Cooking_Croissant/null/{{i18n: MtVapiusCroissant_Translated}}",
-				"Lumisteria.MtVapius_Cooking_Fougasse": "246 1 Lumisteria.MtVapius_ArtisanGoods_OliveOil 1 426 1/1 8/Lumisteria.MtVapius_Cooking_Fougasse 2/null/{{i18n: MtVapiusFougasse_Translated}}",
+				"Lumisteria.MtVapius_Cooking_Fougasse": "246 1 Lumisteria.MtVapius_Olive 1 426 1/1 8/Lumisteria.MtVapius_Cooking_Fougasse 2/null/{{i18n: MtVapiusFougasse_Translated}}",
 				"Lumisteria.MtVapius_Cooking_Quiche": "-5 1 20 1 Lumisteria.MtVapius_BlueVapiusCheese 1/1 8/Lumisteria.MtVapius_Cooking_Quiche/null/{{i18n: MtVapiusQuiche_Translated}}",
 				"Lumisteria.MtVapius_Cooking_CheeseFritters": "246 2 247 1 Lumisteria.MtVapius_EweCheese 1/1 8/Lumisteria.MtVapius_Cooking_CheeseFritters 2/null/{{i18n: MtVapiusCheeseFritters_Translated}}",
 				"Lumisteria.MtVapius_Cooking_GemOrangeade": "635 1 Lumisteria.MtVapius_Candy_SweetExtract 1/1 8/Lumisteria.MtVapius_Cooking_GemOrangeade 2/null/{{i18n: MtVapiusGemOrangeade_Translated}}", //Letter
 				//"Lumisteria.MtVapius_Cooking_GemCoffee": "395 1 Lumisteria.MtVapius_Cooking_GemOrangeade 1/1 8/Lumisteria.MtVapius_Cooking_GemCoffee 1/null/{{i18n: MtVapiusGemCoffee_Translated}}",
 				"Lumisteria.MtVapius_Cooking_CreamAndStrawberries": "Lumisteria.MtVapius_Cream 1 400 2/1 8/Lumisteria.MtVapius_Cooking_CreamAndStrawberries 2/null/{{i18n: MtVapiusCreamAndStrawberries_Translated}}", //Gus
+				"Lumisteria.MtVapius_Cooking_MangoBingsu": "834 1 -6 1 245 1/1 8/Lumisteria.MtVapius_Cooking_MangoBingsu 1/null/{{i18n: MtVapiusMangoBingsu_Translated}}", //Special
+				"Lumisteria.MtVapius_Cooking_Revoltillo": "-5 2 Lumisteria.MtVapius_BlackChanterelle 1 399 1/1 8/Lumisteria.MtVapius_Cooking_Revoltillo 1/f OdalisDuboisVelezVMV 3/{{i18n: MtVapiusRevoltillo_Translated}}", //Odalis
+				"Lumisteria.MtVapius_Cooking_TomatoSalad": "256 1 Lumisteria.MtVapius_EweCheese 1 Lumisteria.MtVapius_Basil 2/1 8/Lumisteria.MtVapius_Cooking_TomatoSalad 1/null/{{i18n: MtVapiusTomatoSalad_Translated}}", //Maddy Event 4H
+				"Lumisteria.MtVapius_Cooking_PepperFernBeignet": "Lumisteria.MtVapius_GoldPepperFern 1 246 1 247 1/1 8/Lumisteria.MtVapius_Cooking_PepperFernBeignet 1/null/{{i18n: MtVapiusPepperFernBeignet_Translated}}", //todo
 
 			}
 		},*/
@@ -34,188 +38,410 @@
 			"Action": "EditData",
 			"Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
 			"Entries": {
+				"Lumisteria.MtVapius_Cooking_GratinVapius": {
+					"ProductQualifiedId": "(O)Lumisteria.MtVapius_Cooking_GratinVapius",
+					"ProductAmount": 1,
+					"Ingredients": [
+						{
+							"Type": "ContextTag",
+							"Value": "potato_item, id_o_192",
+							"Amount": 2,
+							"OverrideText": "{{i18n: MtVapius_Ingredients_AnyPotato}}",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 0,
+								"Y": 128,
+								"Width": 16,
+								"Height": 16
+							}
+						},
+						{
+							"Type": "ContextTag",
+							"Value": "category_milk",
+							"Amount": 1,
+							"OverrideText": "{{i18n:MtVapius_Ingredients_AnyMilk}}",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 256,
+								"Y": 112,
+								"Width": 16,
+								"Height": 16
+							}
+						},
+						{
+							"Type": "ContextTag",
+							"Value": "garlic_item, id_o_248",
+							"Amount": 1,
+							"OverrideText": "{{i18n:MtVapius_Ingredients_AnyGarlic}}",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 128,
+								"Y": 160,
+								"Width": 16,
+								"Height": 16
+							}
+						}
+					]
+				},
+				"Lumisteria.MtVapius_Cooking_Tourtons": {
+					"ProductQualifiedId": "(O)Lumisteria.MtVapius_Cooking_Tourtons",
+					"ProductAmount": 1,
+					"Ingredients": [
+						{
+							"Type": "ContextTag",
+							"Value": "wheat_flour_item, id_o_246",
+							"Amount": 1,
+							"OverrideText": "{{i18n:MtVapius_Ingredients_AnyWheatFlour}}",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 96,
+								"Y": 160,
+								"Width": 16,
+								"Height": 16
+							}
+						},
+						{
+							"Type": "ContextTag",
+							"Value": "cooking_oil_item, id_o_247",
+							"Amount": 1,
+							"OverrideText": "{{i18n:MtVapius_Ingredients_AnyOil}}",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 112,
+								"Y": 160,
+								"Width": 16,
+								"Height": 16
+							}
+						},
+						{
+							"Type": "ContextTag",
+							"Value": "potato_item, id_o_192",
+							"Amount": 2,
+							"OverrideText": "{{i18n: MtVapius_Ingredients_AnyPotato}}",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 0,
+								"Y": 128,
+								"Width": 16,
+								"Height": 16
+							}
+						},
+						{
+							"Type": "ContextTag",
+							"Value": "leek_item, id_o_20",
+							"Amount": 1,
+							"OverrideText": "{{i18n:MtVapius_Ingredients_AnyLeek}}",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 320,
+								"Y": 0,
+								"Width": 16,
+								"Height": 16
+							}
+						}
+					]
+				},
+				"Lumisteria.MtVapius_Cooking_CallaloSoup": {
+					"ProductQualifiedId": "(O)Lumisteria.MtVapius_Cooking_CallaloSoup",
+					"ProductAmount": 1,
+					"Ingredients": [
+						{
+							"Type": "ContextTag",
+							"Value": "amaranth_item, id_o_300, spinach_item",
+							"Amount": 1,
+							"OverrideText": "{{i18n:MtVapius_Ingredients_AnyAmaranthSpinach}}",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 192,
+								"Y": 192,
+								"Width": 16,
+								"Height": 16
+							}
+						},
+						{
+							"Type": "ContextTag",
+							"Value": "coconut_item, id_o_88",
+							"Amount": 1,
+							"OverrideText": "{{i18n: MtVapius_Ingredients_AnyCoconut}}",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 256,
+								"Y": 48,
+								"Width": 16,
+								"Height": 16
+							}
+						},
+						{
+							"Type": "ContextTag",
+							"Value": "carrot_item, id_o_78, cave_carrot_item, id_o_carrot",
+							"Amount": 2,
+							"OverrideText": "{{i18n: MtVapius_Ingredients_AnyCarrot}}",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 96,
+								"Y": 48,
+								"Width": 16,
+								"Height": 16
+							}
+						},
+						{
+							"Type": "ContextTag",
+							"Value": "leek_item, id_o_20, id_o_248, garlic_item, onion_item",
+							"Amount": 1,
+							"OverrideText": "{{i18n:MtVapius_Ingredients_AnyLeekGarlicOnion}}",
+							"OverrideTexturePath": "Mods/Lumisteria.MtVapius/IngredientsIcons",
+							"OverrideTextureRect": {
+								"X": 112,
+								"Y": 0,
+								"Width": 16,
+								"Height": 16
+							},
+						}
+					]
+				},
 				"Lumisteria.MtVapius_Cooking_TroutAndMushrooms": {
 					"ProductQualifiedId": "(O)Lumisteria.MtVapius_Cooking_TroutAndMushrooms",
 					"ProductAmount": 1,
 					"Ingredients": [
-					{
-						"Type": "ContextTag",
-						"Value": "trout_item, item_rainbow_trout, item_tiger_trout",
-						"Amount": 1,
-						"OverrideText": "{{i18n: MtVapius_Ingredients_AnyTroutAlpineChar}}",
-						"OverrideTexturePath": "Mods/Lumisteria.MtVapius/IngredientsIcons",
-						"OverrideTextureRect": {
-							"X": 0,
-							"Y": 0,
-							"Width": 16,
-							"Height": 16
+						{
+							"Type": "ContextTag",
+							"Value": "trout_item, item_rainbow_trout, item_tiger_trout",
+							"Amount": 1,
+							"OverrideText": "{{i18n: MtVapius_Ingredients_AnyTroutAlpineChar}}",
+							"OverrideTexturePath": "Mods/Lumisteria.MtVapius/IngredientsIcons",
+							"OverrideTextureRect": {
+								"X": 0,
+								"Y": 0,
+								"Width": 16,
+								"Height": 16
+							},
 						},
-					},
-					{
-						"Type": "Item",
-						"Value": "(O)Lumisteria.MtVapius_Porchini",
-						"Amount": 1,
-					},
-					{
-						"Type": "ContextTag",
-						"Value": "cream_item",
-						"Amount": 1,
-						"OverrideText": "{{i18n: MtVapius_Ingredients_AnyCream}}",
-						"OverrideTexturePath": "Mods/Lumisteria.MtVapius/IngredientsIcons",
-						"OverrideTextureRect": {
-							"X": 16,
-							"Y": 0,
-							"Width": 16,
-							"Height": 16
+						{
+							"Type": "Item",
+							"Value": "(O)Lumisteria.MtVapius_Porchini",
+							"Amount": 1,
 						},
-					},
+						{
+							"Type": "ContextTag",
+							"Value": "cream_item",
+							"Amount": 1,
+							"OverrideText": "{{i18n: MtVapius_Ingredients_AnyCream}}",
+							"OverrideTexturePath": "Mods/Lumisteria.MtVapius/IngredientsIcons",
+							"OverrideTextureRect": {
+								"X": 16,
+								"Y": 0,
+								"Width": 16,
+								"Height": 16
+							},
+						},
+					]
+				},
+				"Lumisteria.MtVapius_Cooking_Chapea": {
+					"ProductQualifiedId": "(O)Lumisteria.MtVapius_Cooking_Chapea",
+					"ProductAmount": 2,
+					"Ingredients": [
+						{
+							"Type": "ContextTag",
+							"Value": "rice_item, id_o_423",
+							"Amount": 1,
+							"OverrideText": "{{i18n:MtVapius_Ingredients_AnyRice}}",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 240,
+								"Y": 272,
+								"Width": 16,
+								"Height": 16
+							}
+						},
+						{
+							"Type": "Item",
+							"Value": "(O)Lumisteria.MtVapius_FireBeans",
+							"Amount": 1,
+						},
+						{
+							"Type": "ContextTag",
+							"Value": "pumpkin_item, id_o_276, squash_item, id_o_SummerSquash",
+							"Amount": 1,
+							"OverrideText": "{{i18n:MtVapius_Ingredients_AnyPumpkinSquash}}",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 192,
+								"Y": 176,
+								"Width": 16,
+								"Height": 16
+							}
+						}
 					]
 				},
 				"Lumisteria.MtVapius_Cooking_TroutAndToast": {
 					"ProductQualifiedId": "(O)Lumisteria.MtVapius_Cooking_TroutAndToast",
 					"ProductAmount": 3,
 					"Ingredients": [
-					{
-						"Type": "Item",
-						"Value": "(O)Lumisteria.MtVapius_Cooking_RyeBread",
-						"Amount": 1,
-					},
-					{
-						"Type": "ContextTag",
-						"Value": "trout_item, item_rainbow_trout, item_tiger_trout",
-						"Amount": 1,
-						"OverrideText": "{{i18n: MtVapius_Ingredients_AnyTroutAlpineChar}}",
-						"OverrideTexturePath": "Mods/Lumisteria.MtVapius/IngredientsIcons",
-						"OverrideTextureRect": {
-							"X": 0,
-							"Y": 0,
-							"Width": 16,
-							"Height": 16
+						{
+							"Type": "Item",
+							"Value": "(O)Lumisteria.MtVapius_Cooking_RyeBread",
+							"Amount": 1,
 						},
-					},
-					{
-						"Type": "Item",
-						"Value": "(O)426",
-						"Amount": 1,
-					},
+						{
+							"Type": "ContextTag",
+							"Value": "trout_item, item_rainbow_trout, item_tiger_trout",
+							"Amount": 1,
+							"OverrideText": "{{i18n: MtVapius_Ingredients_AnyTroutAlpineChar}}",
+							"OverrideTexturePath": "Mods/Lumisteria.MtVapius/IngredientsIcons",
+							"OverrideTextureRect": {
+								"X": 0,
+								"Y": 0,
+								"Width": 16,
+								"Height": 16
+							},
+						},
+						{
+							"Type": "Item",
+							"Value": "(O)426",
+							"Amount": 1,
+						},
 					]
 				},
 				"Lumisteria.MtVapius_Cooking_Croissant": {
 					"ProductQualifiedId": "(O)Lumisteria.MtVapius_Cooking_Croissant",
 					"ProductAmount": 1,
 					"Ingredients": [
-					{
-						"Type": "Item",
-						"Value": "(O)246",
-						"Amount": 1,
-					},
-					{
-						"Type": "ContextTag",
-						"Value": "butter_item",
-						"Amount": 1,
-						"OverrideText": "{{i18n: MtVapius_Ingredients_AnyButter}}",
-						"OverrideTexturePath": "Mods/Lumisteria.MtVapius/IngredientsIcons",
-						"OverrideTextureRect": {
-							"X": 48,
-							"Y": 0,
-							"Width": 16,
-							"Height": 16
+						{
+							"Type": "Item",
+							"Value": "(O)246",
+							"Amount": 1,
 						},
-					},
+						{
+							"Type": "ContextTag",
+							"Value": "butter_item",
+							"Amount": 1,
+							"OverrideText": "{{i18n: MtVapius_Ingredients_AnyButter}}",
+							"OverrideTexturePath": "Mods/Lumisteria.MtVapius/IngredientsIcons",
+							"OverrideTextureRect": {
+								"X": 48,
+								"Y": 0,
+								"Width": 16,
+								"Height": 16
+							},
+						},
 					]
 				},
 				"Lumisteria.MtVapius_Cooking_Empanadas": {
 					"ProductQualifiedId": "(O)Lumisteria.MtVapius_Cooking_Empanadas",
 					"ProductAmount": 1,
 					"Ingredients": [
-					{
-						"Type": "Item",
-						"Value": "(O)246",
-						"Amount": 1,
-					},
-					{
-						"Type": "Item",
-						"Value": "(O)247",
-						"Amount": 1,
-					},
-					{
-						"Type": "ContextTag",
-						"Value": "category_egg",
-						"Amount": 1,
-						"OverrideText": "Any Egg",
-						"OverrideTexturePath": "Maps/springobjects",
-						"OverrideTextureRect": {
-							"X": 128,
-							"Y": 112,
-							"Width": 16,
-							"Height": 16
+						{
+							"Type": "Item",
+							"Value": "(O)246",
+							"Amount": 1,
 						},
-					},
-					{
-						"Type": "ContextTag",
-						"Value": "item_hot_pepper, chili_item",
-						"Amount": 1,
-						"OverrideText": "{{i18n: MtVapius_Ingredients_AnyHotPepper}}",
-						"OverrideTexturePath": "Mods/Lumisteria.MtVapius/IngredientsIcons",
-						"OverrideTextureRect": {
-							"X": 80,
-							"Y": 0,
-							"Width": 16,
-							"Height": 16
+						{
+							"Type": "Item",
+							"Value": "(O)247",
+							"Amount": 1,
 						},
-					},
+						{
+							"Type": "ContextTag",
+							"Value": "category_egg",
+							"Amount": 1,
+							"OverrideText": "Any Egg",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 128,
+								"Y": 112,
+								"Width": 16,
+								"Height": 16
+							},
+						},
+						{
+							"Type": "ContextTag",
+							"Value": "item_hot_pepper, chili_item",
+							"Amount": 1,
+							"OverrideText": "{{i18n: MtVapius_Ingredients_AnyHotPepper}}",
+							"OverrideTexturePath": "Mods/Lumisteria.MtVapius/IngredientsIcons",
+							"OverrideTextureRect": {
+								"X": 80,
+								"Y": 0,
+								"Width": 16,
+								"Height": 16
+							},
+						},
 					]
 				},
 				"Lumisteria.MtVapius_Cooking_PistouSoup": {
 					"ProductQualifiedId": "(O)Lumisteria.MtVapius_Cooking_PistouSoup",
 					"ProductAmount": 2,
 					"Ingredients": [
-					/*{
-						"Type": "ContextTag",
-						"Value": "basil_item",
-						"Amount": 3,
-						"OverrideText": "{{i18n: MtVapius_Ingredients_AnyBasil}}",
-						"OverrideTexturePath": "Mods/Lumisteria.MtVapius/IngredientsIcons",
-						"OverrideTextureRect": {
-							"X": 64,
-							"Y": 0,
-							"Width": 16,
-							"Height": 16
+						{
+							"Type": "ContextTag",
+							"Value": "basil_item",
+							"Amount": 3,
+							"OverrideText": "{{i18n: MtVapius_Ingredients_AnyBasil}}",
+							"OverrideTexturePath": "Mods/Lumisteria.MtVapius/IngredientsIcons",
+							"OverrideTextureRect": {
+								"X": 64,
+								"Y": 0,
+								"Width": 16,
+								"Height": 16
+							},
 						},
-					},*/
-					{
-						"Type": "Item",
-						"Value": "(O)Lumisteria.MtVapius_Basil",
-						"Amount": 3,
-					},
-					{
-						"Type": "Item",
-						"Value": "(O)188",
-						"Amount": 1,
-					},
-					{
-						"Type": "Item",
-						"Value": "(O)Lumisteria.MtVapius_FireBeans",
-						"Amount": 1,
-					},
-					{
-						"Type": "ContextTag",
-						"Value": "item_cave_carrot, item_carrot, item_summer_squash, zucchini_item, carrot_item",
-						"Amount": 1,
-						"OverrideText": "{{i18n: MtVapius_Ingredients_AnyCarrotSquash}}",
-						"OverrideTexturePath": "Mods/Lumisteria.MtVapius/IngredientsIcons",
-						"OverrideTextureRect": {
-							"X": 32,
-							"Y": 0,
-							"Width": 16,
-							"Height": 16
+						{
+							"Type": "Item",
+							"Value": "(O)188",
+							"Amount": 1,
 						},
-					},
-					{
-						"Type": "Item",
-						"Value": "(O)424",
-						"Amount": 1,
-					},
+						{
+							"Type": "Item",
+							"Value": "(O)Lumisteria.MtVapius_FireBeans",
+							"Amount": 1,
+						},
+						{
+							"Type": "ContextTag",
+							"Value": "item_cave_carrot, item_carrot, item_summer_squash, zucchini_item, carrot_item",
+							"Amount": 1,
+							"OverrideText": "{{i18n: MtVapius_Ingredients_AnyCarrotSquash}}",
+							"OverrideTexturePath": "Mods/Lumisteria.MtVapius/IngredientsIcons",
+							"OverrideTextureRect": {
+								"X": 32,
+								"Y": 0,
+								"Width": 16,
+								"Height": 16
+							},
+						},
+						{
+							"Type": "Item",
+							"Value": "(O)424",
+							"Amount": 1,
+						},
+					]
+				},
+				"Lumisteria.MtVapius_Cooking_Fougasse": {
+					"ProductQualifiedId": "(O)Lumisteria.MtVapius_Cooking_Fougasse",
+					"ProductAmount": 2,
+					"Ingredients": [
+						{
+							"Type": "Item",
+							"Value": "(O)246",
+							"Amount": 1,
+						},
+						{
+							"Type": "ContextTag",
+							"Value": "olive_item",
+							"Amount": 1,
+							"OverrideText": "{{i18n: MtVapius_Ingredients_AnyOlive}}",
+							"OverrideTexturePath": "Mods/Lumisteria.MtVapius/IngredientsIcons",
+							"OverrideTextureRect": {
+								"X": 96,
+								"Y": 0,
+								"Width": 16,
+								"Height": 16
+							},
+						},
+						{
+							"Type": "Item",
+							"Value": "(O)426",
+							"Amount": 1,
+						},
 					]
 				},
 			}

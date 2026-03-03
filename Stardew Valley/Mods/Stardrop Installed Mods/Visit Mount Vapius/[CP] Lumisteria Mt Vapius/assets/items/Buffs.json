@@ -1,0 +1,76 @@
+{
+  "Changes": [
+  
+		{
+			"LogName": "Load images",
+			"Action": "Load",
+			"Target": "Mods/Lumisteria.MtVapius/BuffsIcons",
+			"FromFile": "assets/images/{{TargetWithoutPath}}.png"
+		},
+  
+  
+    //Buffs entries
+    {
+      "LogName": "Buffs Data",
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "Entries": {
+        "Lumisteria.MtVapius_ImmunitySmall": {
+          "DisplayName": "{{i18n: MtVapiusBuffImmunitySmall_Translated}}",
+          "Duration": 300000,
+          "IconTexture": "Mods/Lumisteria.MtVapius/BuffsIcons",
+          "IconSpriteIndex": 4,
+          "Effects": {
+            "Luck": 2,
+            "Immunity": 2
+          }
+        },
+        "Lumisteria.MtVapius_Luck": {
+          "DisplayName": "{{i18n: MtVapiusBuffLuckBuff_Translated}}",
+          "Duration": 300000,
+          "IconTexture": "Mods/Lumisteria.MtVapius/BuffsIcons",
+          "IconSpriteIndex": 3,
+          "Effects": {
+            "Luck": 2,
+          }
+        },
+        "Lumisteria.MtVapius_Junimo01": {
+          "DisplayName": "{{i18n: MtVapiusBuffJunimoBuff01_Translated}}",
+          "Duration": 300000,
+          "IconTexture": "Mods/Lumisteria.MtVapius/BuffsIcons",
+          "IconSpriteIndex": 0,
+          "Effects": {
+            "Luck": 2,
+          }
+        },
+        "Lumisteria.MtVapius_Junimo02": {
+          "DisplayName": "{{i18n: MtVapiusBuffJunimoBuff02_Translated}}",
+          "Duration": 600000,
+          "IconTexture": "Mods/Lumisteria.MtVapius/BuffsIcons",
+          "IconSpriteIndex": 1,
+          "Effects": {
+            "MaxStamina": 30,
+          }
+        },
+        "Lumisteria.MtVapius_Junimo03": {
+          "DisplayName": "{{i18n: MtVapiusBuffJunimoBuff03_Translated}}",
+          "Duration": 600000,
+          "IconTexture": "Mods/Lumisteria.MtVapius/BuffsIcons",
+          "IconSpriteIndex": 2,
+          "Effects": {
+            "Magnetism": 30,
+          }
+        },
+        "Lumisteria.MtVapius_Junimo04": {
+          "DisplayName": "{{i18n: MtVapiusBuffJunimoBuff04_Translated}}",
+          "Duration": 600000,
+          "IconTexture": "Mods/Lumisteria.MtVapius/BuffsIcons",
+          "IconSpriteIndex": 6,
+          "Effects": {
+            "Defense": 1,
+          }
+        },
+      }
+    },
+  ]
+}

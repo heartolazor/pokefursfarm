@@ -32,6 +32,7 @@
         //Conversation Topics
         "eventSeen_Lumisteria.MtVapius.Arrival_memory_oneweek": "{{i18n: ClintDialogueeventSeen_Lumisteria.MtVapius.Arrival_memory_oneweek}}",
         "Lumisteria.MtVapius.LodgePraise": "{{i18n: ClintDialogueLumisteria.MtVapius.LodgePraise}}",
+        "Lumisteria.MtVapius_FairReaction": "{{i18n: ClintDialogueLumisteria.MtVapius_FairReaction}}",
 		//Gift Taste
         "AcceptGift_(O)Lumisteria.MtVapius_CrystalRose": "{{i18n: ClintDialogueAcceptGift_(O)Lumisteria.MtVapius_CrystalRose}}",
       }
@@ -59,6 +60,7 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/Elliott",
       "Entries": {
+        "Lumisteria.MtVapiusSpecialOrders.MtVapiusFishChallenge": "{{i18n: ElliottDialogueLumisteria.MtVapiusSpecialOrders.MtVapiusFishChallenge}}",
 		//Gift Taste
         "AcceptGift_(O)Lumisteria.MtVapius_Labradorite_Polished": "{{i18n: ElliottDialogueAcceptGift_(O)Lumisteria.MtVapius_Labradorite_Polished}}",
       }
@@ -105,7 +107,9 @@
       "Target": "Characters/Dialogue/Haley",
       "Entries": {
         "Tue6": "{{i18n: HaleyDialogueTue6}}",
-        "Mon": "{{i18n: AsterDialogueMon}}",
+        "Lumisteria.MtVapius_VisitingAsterHouse000BetasReaction": "{{i18n: HaleyScheduleHaleyVisitingAsterHouse000BetasReaction}}",
+        "Lumisteria.MtVapius_VisitingAsterBench000BetasReaction": "{{i18n: HaleyScheduleHaleyVisitingAsterBench000BetasReaction}}",
+        "Lumisteria.MtVapius_VisitingHamletPond000BetasReaction": "{{i18n: HaleyScheduleHaleyVisitingHamletPond000BetasReaction}}",
         //Conversation Topics
         "Lumisteria.MtVapius.Arrival": "{{i18n: HaleyDialogueLumisteria.MtVapius.Arrival}}",
         "eventSeen_Lumisteria.MtVapius_AsterHouse_Aster2H_memory_oneday": "{{i18n: HaleyDialogueeventSeen_Lumisteria.MtVapius_AsterHouse_Aster2H_memory_oneday}}",
@@ -180,6 +184,7 @@
       "Target": "Characters/Dialogue/Willy",
       "Entries": {
         //Conversation Topics
+        "Lumisteria.MtVapiusSpecialOrders.MtVapiusFishChallenge": "{{i18n: WillyDialogueLumisteria.MtVapiusSpecialOrders.MtVapiusFishChallenge}}",
         "fishCaught_Lumisteria.MtVapius_AlpineCharPrince_oneweek": "{{i18n: WillyDialoguefishCaught_Lumisteria.MtVapius_AlpineCharPrince_oneweek}}",
         "fishCaught_Lumisteria.MtVapius_MtVapius_Sturgiant_oneweek": "{{i18n: WillyDialoguefishCaught_Lumisteria.MtVapius_MtVapius_Sturgiant_oneweek}}",
         "fishCaught_Lumisteria.MtVapius_MtVapius_PlanetFish_oneweek": "{{i18n: WillyDialoguefishCaught_Lumisteria.MtVapius_MtVapius_PlanetFish_oneweek}}",
@@ -255,6 +260,32 @@
       },
       "When": {
 		"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Hamlet_ClintMeetMaddy",
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Clint",
+      "Entries": {
+        "summer_Tue8": "{{i18n: Clintsummer_Tue8}}",
+        "Mon8": "{{i18n: ClintMon8}}",
+      },
+      "When": {
+		"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Hamlet_Maddy5HClint5H",
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Clint",
+      "Entries": {
+        "fall_Fri6": "{{i18n: Clintfall_Fri6}}",
+        "Tue8": "{{i18n: ClintTue8}}",
+        "Fri10": "{{i18n: ClintFri10}}",
+        "Sun10": "{{i18n: ClintSun10}}",
+        "divorced_Emily": "{{i18n: Clintdivorced_Emily}}",
+      },
+      "When": {
+		"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Town_ClintApologizes",
+		"HasConversationTopic |contains=eventseen_Lumisteria.MtVapius_Town_ClintApologizes": false,
       }
     },
     {

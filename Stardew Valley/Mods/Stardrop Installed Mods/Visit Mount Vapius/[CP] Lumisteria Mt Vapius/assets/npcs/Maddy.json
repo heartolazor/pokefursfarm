@@ -17,7 +17,7 @@
           "DisplayName": "{{i18n: MaddyDisplayName}}",
           "BirthSeason": "winter",
           "BirthDay": 21,
-          "HomeRegion": "Other",
+          "HomeRegion": "Lumisteria.MtVapius_Main",
           "Gender": "Female",
           "Age": "Adult",
           "Manner": "Neutral",
@@ -41,7 +41,7 @@
 				"Portrait": "Portraits/MaddyPellegrinVMV_Summer",
 				"IsIslandAttire": false,
 				"Precedence": -100,
-				"Weight": 0
+				"Weight": 1
 			  },
 			  {
 				"Id": "Lumisteria.MtVapiusMaddyWinter",
@@ -49,7 +49,16 @@
 				"Portrait": "Portraits/MaddyPellegrinVMV_Winter",
 				"IsIslandAttire": false,
 				"Precedence": -100,
-				"Weight": 0
+				"Weight": 1
+			  },
+			  {
+				"Id": "Lumisteria.MtVapiusMaddyWinterV01",
+				"Condition": "LOCATION_SEASON Here Winter, PLAYER_HEARTS Current MaddyPellegrinVMV 2",
+				"Sprite": "Characters/MaddyPellegrinVMV_WinterV01",
+				"Portrait": "Portraits/MaddyPellegrinVMV_WinterV01",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 1
 			  },
 			],
 		  "Home": [
@@ -81,7 +90,19 @@
       "FromFile": "assets/npcs/Portraits/MaddyPellegrinVMVExtra/Winter.png"
     },
     {
-      "LogName": "Maddy Winter Portraits",
+      "LogName": "Maddy Winter Portraits V01",
+      "Action": "Load",
+      "Target": "Portraits/MaddyPellegrinVMV_WinterV01",
+      "FromFile": "assets/npcs/Portraits/MaddyPellegrinVMVExtra/WinterV01.png"
+    },
+    {
+      "LogName": "Maddy Winter Sprites V01",
+      "Action": "Load",
+      "Target": "Characters/MaddyPellegrinVMV_WinterV01",
+      "FromFile": "assets/npcs/Characters/MaddyPellegrinVMVExtra/WinterV01.png"
+    },
+    {
+      "LogName": "Maddy Summer Portraits",
       "Action": "Load",
       "Target": "Portraits/MaddyPellegrinVMV_Summer",
       "FromFile": "assets/npcs/Portraits/MaddyPellegrinVMVExtra/Summer.png"

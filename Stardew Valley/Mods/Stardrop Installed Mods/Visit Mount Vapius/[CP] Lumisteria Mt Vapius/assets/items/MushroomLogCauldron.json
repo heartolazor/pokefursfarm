@@ -1,0 +1,34 @@
+{
+    "Changes": [
+        {
+            "LogName": "Mushroom Log Output",
+            "Action": "EditData",
+            "Target": "Atelier.Cauldron/MushroomLogOutputData",
+            "Entries": {
+                "Lumisteria.MtVapius.Birchtree": [
+                    {
+                        "ItemId": "(O)Lumisteria.MtVapius_BlackChanterelleTreeSeed",
+											"Condition": "RANDOM .01",
+                    },
+                    {
+                        "ItemId": "(O)Lumisteria.MtVapius_BlackChanterelle",
+						"StackModifiers": [
+										{
+											"Id": "MoreMushrooms",
+											//"Condition": "RANDOM .1",
+											"Modification": "Add",
+											"Amount": 6.0,
+										}
+									],
+						"StackModifierMode": "Stack",
+                    }
+                ],
+                "Lumisteria.MtVapius.SkyshardPineTree": [
+                    {
+                        "ItemId": "(O)Lumisteria.MtVapius_Porchini"
+                    }
+                ],
+            }
+        }
+    ]
+}

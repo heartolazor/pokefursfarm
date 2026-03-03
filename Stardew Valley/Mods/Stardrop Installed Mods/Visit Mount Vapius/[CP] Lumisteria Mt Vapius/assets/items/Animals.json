@@ -56,17 +56,11 @@
               "MinimumFriendship": 0,
               "ItemId": "Lumisteria.MtVapius_SpeckledFowlFeather"
             },
-            {
-              "Id": "Lumisteria.MtVapius_BaseEgg",
-              "MinimumFriendship": 0,
-              "ItemId": "Lumisteria.MtVapius_SpeckledFowlEgg",
-              "Condition": "RANDOM .01",
-            },
           ],
           "ProduceOnMature": false,
           "FriendshipForFasterProduce": -1,
           "DeluxeProduceMinimumFriendship": 200,
-          "DeluxeProduceCareDivisor": 1200.0,
+          "DeluxeProduceCareDivisor": 3200.0,
           "DeluxeProduceLuckMultiplier": 0.0,
           "ProfessionForHappinessBoost": 2,
           "ProfessionForQualityBoost": 2,
@@ -134,13 +128,13 @@
               "Id": "Lumisteria.MtVapius_VoidFeather",
               "MinimumFriendship": 0,
               "ItemId": "Lumisteria.MtVapius_VoidFeather",
-              "Condition": "RANDOM .05",
+              "Condition": "RANDOM .1",
             },
-            {
-              "Id": "Lumisteria.MtVapius_SpeckledFowlVoidFeather",
+			{
+              "Id": "Lumisteria.MtVapius_BundleBonusVoidFeather",
               "MinimumFriendship": 0,
-              "ItemId": "Lumisteria.MtVapius_SpeckledFowlVoidFeather",
-              "Condition": "RANDOM .01",
+              "ItemId": "Lumisteria.MtVapius_VoidFeather",
+			"Condition": "RANDOM .07, PLAYER_HAS_MAIL Any DLX.Bundles.Lumisteria.MtVapius_FarmingBundle03, PLAYER_HAS_MAIL Any DLX.Bundles.Lumisteria.MtVapius_FarmingBundle04",
             },
             {
               "Id": "Default",
@@ -151,7 +145,7 @@
           "ProduceOnMature": false,
           "FriendshipForFasterProduce": -1,
           "DeluxeProduceMinimumFriendship": 200,
-          "DeluxeProduceCareDivisor": 1200.0,
+          "DeluxeProduceCareDivisor": 3200.0,
           "DeluxeProduceLuckMultiplier": 0.0,
           "ProfessionForHappinessBoost": 2,
           "ProfessionForQualityBoost": 2,
@@ -226,7 +220,7 @@
           "ProfessionForFasterProduce": -1,
           "FriendshipForFasterProduce": -1,
           "DeluxeProduceMinimumFriendship": 200,
-          "DeluxeProduceCareDivisor": 1200.0,
+          "DeluxeProduceCareDivisor": 3200.0,
           "DeluxeProduceLuckMultiplier": 0.0,
           "CanGetPregnant": true,
           "Sound": "sheep",
@@ -341,7 +335,7 @@
           "ProduceOnMature": false,
           "FriendshipForFasterProduce": -1,
           "DeluxeProduceMinimumFriendship": 200,
-          "DeluxeProduceCareDivisor": 1200.0,
+          "DeluxeProduceCareDivisor": 3200.0,
           "DeluxeProduceLuckMultiplier": 0.0,
           "ProfessionForHappinessBoost": 2,
           "ProfessionForQualityBoost": 2,
@@ -404,7 +398,6 @@
               "ItemID": "Lumisteria.MtVapius_StellarGooseEgg"
             },
             {
-              "Condition": null,
               "ItemID": "Lumisteria.MtVapius_GooseEgg"
             },
           ],
@@ -414,7 +407,6 @@
               "ItemID": "Lumisteria.MtVapius_StellarGooseEgg"
             },
             {
-              "Condition": null,
               "ItemID": "Lumisteria.MtVapius_GooseDown"
             },
           ],
@@ -423,7 +415,7 @@
           "ProfessionForFasterProduce": -1,
           "FriendshipForFasterProduce": -1,
           "DeluxeProduceMinimumFriendship": 200,
-          "DeluxeProduceCareDivisor": 1200.0,
+          "DeluxeProduceCareDivisor": 3200.0,
           "DeluxeProduceLuckMultiplier": 0.0,
           "CanGetPregnant": false,
           "Sound": "Duck",
@@ -470,7 +462,6 @@
               "MinimumFriendship": 400,
             },
             {
-              "Condition": null,
               "ItemID": "Lumisteria.MtVapius_StellarGooseEgg"
             }
           ],
@@ -479,7 +470,7 @@
           "ProfessionForFasterProduce": -1,
           "FriendshipForFasterProduce": -1,
           "DeluxeProduceMinimumFriendship": 200,
-          "DeluxeProduceCareDivisor": 1200.0,
+          "DeluxeProduceCareDivisor": 3200.0,
           "DeluxeProduceLuckMultiplier": 0.0,
           "CanGetPregnant": false,
           "Sound": "Duck",
@@ -561,7 +552,12 @@
         "Lumisteria.MtVapius_RareMilkExtraLarge": {
           "Id": "Lumisteria.MtVapius_RareMilkExtraLarge",
           "ItemId": "Lumisteria.MtVapius_MilkExtraLarge",
-          "Condition": "RANDOM .01, PLAYER_HAS_PROFESSION Any 3",
+          "Condition": "RANDOM .02, PLAYER_HAS_PROFESSION Any 3",
+        },
+        "Lumisteria.MtVapius_BundleBonusMilkExtraLarge": {
+          "Id": "Lumisteria.MtVapius_BundleBonusMilkExtraLarge",
+          "ItemId": "Lumisteria.MtVapius_MilkExtraLarge",
+          "Condition": "RANDOM .05, PLAYER_HAS_MAIL Any DLX.Bundles.Lumisteria.MtVapius_FarmingBundle03, PLAYER_HAS_MAIL Any DLX.Bundles.Lumisteria.MtVapius_FarmingBundle04",
         },
       },
     },
@@ -581,7 +577,12 @@
         "Lumisteria.MtVapius_RareMilkExtraLarge": {
           "Id": "Lumisteria.MtVapius_RareMilkExtraLarge",
           "ItemId": "Lumisteria.MtVapius_MilkExtraLarge",
-          "Condition": "RANDOM .01, PLAYER_HAS_PROFESSION Any 3",
+          "Condition": "RANDOM .02, PLAYER_HAS_PROFESSION Any 3",
+        },
+        "Lumisteria.MtVapius_BundleBonusMilkExtraLarge": {
+          "Id": "Lumisteria.MtVapius_BundleBonusMilkExtraLarge",
+          "ItemId": "Lumisteria.MtVapius_MilkExtraLarge",
+          "Condition": "RANDOM .05, PLAYER_HAS_MAIL Any DLX.Bundles.Lumisteria.MtVapius_FarmingBundle03, PLAYER_HAS_MAIL Any DLX.Bundles.Lumisteria.MtVapius_FarmingBundle04",
         },
       },
     },
@@ -601,7 +602,12 @@
         "Lumisteria.MtVapius_RareMilkExtraLarge": {
           "Id": "Lumisteria.MtVapius_RareMilkExtraLarge",
           "ItemId": "Lumisteria.MtVapius_GoatMilkExtraLarge",
-          "Condition": "RANDOM .01, PLAYER_HAS_PROFESSION Any 3",
+          "Condition": "RANDOM .02, PLAYER_HAS_PROFESSION Any 3",
+        },
+        "Lumisteria.MtVapius_BundleBonusMilkExtraLarge": {
+          "Id": "Lumisteria.MtVapius_BundleBonusMilkExtraLarge",
+          "ItemId": "Lumisteria.MtVapius_GoatMilkExtraLarge",
+          "Condition": "RANDOM .05, PLAYER_HAS_MAIL Any DLX.Bundles.Lumisteria.MtVapius_FarmingBundle03, PLAYER_HAS_MAIL Any DLX.Bundles.Lumisteria.MtVapius_FarmingBundle04",
         },
       },
     },
@@ -618,10 +624,57 @@
               "Id": "Lumisteria.MtVapius_VoidFeather",
               "MinimumFriendship": 0,
               "ItemId": "Lumisteria.MtVapius_VoidFeather",
-              "Condition": "RANDOM .025",
+              "Condition": "RANDOM .08",
+            },
+        "Lumisteria.MtVapius_BundleBonusVoidFeather": {
+              "Id": "Lumisteria.MtVapius_BundleBonusVoidFeather",
+              "MinimumFriendship": 0,
+              "ItemId": "Lumisteria.MtVapius_VoidFeather",
+          "Condition": "RANDOM .07, PLAYER_HAS_MAIL Any DLX.Bundles.Lumisteria.MtVapius_FarmingBundle03, PLAYER_HAS_MAIL Any DLX.Bundles.Lumisteria.MtVapius_FarmingBundle04",
             },
       },
     },
+    {
+      "LogName": "Animal Products",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "TargetField": [
+        "White Chicken",
+        "CustomFields"
+      ],
+      "Entries": {
+            "mushymato.LivestockBazaar/BuyFrom.{{ModId}}_MoiraAnimalShop": true,
+            "mushymato.LivestockBazaar/TradeItemAmount.{{ModId}}_MoiraAnimalShop": 500,
+      },
+    },
+    {
+      "LogName": "Animal Products",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "TargetField": [
+        "Brown Chicken",
+        "CustomFields"
+      ],
+      "Entries": {
+            "mushymato.LivestockBazaar/BuyFrom.{{ModId}}_MoiraAnimalShop": true,
+            "mushymato.LivestockBazaar/TradeItemAmount.{{ModId}}_MoiraAnimalShop": 500,
+      },
+    },
+    {
+      "LogName": "Animal Products",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "TargetField": [
+        "Duck",
+        "CustomFields"
+      ],
+      "Entries": {
+            "mushymato.LivestockBazaar/BuyFrom.{{ModId}}_MoiraAnimalShop": true,
+            "mushymato.LivestockBazaar/TradeItemAmount.{{ModId}}_MoiraAnimalShop": 1000,
+      },
+    },
+	
+	
     /* add animal  images*/ ,
     {
       "LogName": "Load images",

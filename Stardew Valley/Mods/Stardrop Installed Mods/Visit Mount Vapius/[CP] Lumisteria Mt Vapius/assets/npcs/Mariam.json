@@ -7,14 +7,38 @@
       "FromFile": "assets/npcs/{{Target}}.png"
     },
     {
+      "LogName": "Mariam Season Portraits",
+      "Action": "Load",
+      "Target": "Portraits/MariamFortinVMV_Fall",
+      "FromFile": "assets/npcs/Portraits/MariamFortinVMVExtra/Fall.png",
+    },
+    {
+      "LogName": "Mariam Season Portraits",
+      "Action": "Load",
+      "Target": "Portraits/MariamFortinVMV_Spring",
+      "FromFile": "assets/npcs/Portraits/MariamFortinVMVExtra/Spring.png",
+    },
+    {
+      "LogName": "Mariam Season Portraits",
+      "Action": "Load",
+      "Target": "Portraits/MariamFortinVMV_Winter",
+      "FromFile": "assets/npcs/Portraits/MariamFortinVMVExtra/Winter.png",
+    },
+    {
+      "LogName": "Mariam Season Sprites",
+      "Action": "Load",
+      "Target": "Characters/MariamFortinVMV_Winter",
+      "FromFile": "assets/npcs/Characters/MariamFortinVMVExtra/Winter.png",
+    },
+    /*{
       "LogName": "Mariam Portraits and Sprites",
       "Action": "EditImage",
-      "Target": "Portraits/MariamFortinVMV",
+      "Target": "Portraits/MariamFortinVMV, Characters/MariamFortinVMV",
       "FromFile": "assets/npcs/{{Target}}Extra/{{season}}.png",
       "When": {
         "HasFile:assets/npcs/{{Target}}Extra/{{season}}.png": "true"
       }
-    },
+    },*/
     {
       "LogName": "Mariam Fortin Dispositions",
       "Action": "EditData",
@@ -41,7 +65,41 @@
           "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Clearing01Mariam0H, !PLAYER_HAS_CONVERSATION_TOPIC Host Lumisteria.MtVapius_MariamEncounter",
 		  "CanVisitIsland": "!DAY_OF_WEEK Tuesday, !DAY_OF_WEEK Saturday",
           "SpawnIfMissing": true,
+			"Appearance": [
+			  {
+				"Id": "Lumisteria.MtVapiusMariamFall",
+				"Condition": "LOCATION_SEASON Here Fall",
+				"Portrait": "Portraits/MariamFortinVMV_Fall",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 1
+			  },
+			  {
+				"Id": "Lumisteria.MtVapiusMariamSpring",
+				"Condition": "LOCATION_SEASON Here Spring",
+				"Portrait": "Portraits/MariamFortinVMV_Spring",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 1
+			  },
+			  {
+				"Id": "Lumisteria.MtVapiusMariamWinter",
+				"Condition": "LOCATION_SEASON Here Winter",
+				"Portrait": "Portraits/MariamFortinVMV_Winter",
+				"Sprite": "Characters/MariamFortinVMV_Winter",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 1
+			  },
+			],
 		  "Home": [
+				{
+					"Id": "Lodge Indoor",
+					"Location": "Lumisteria.MtVapius_LodgeIndoor",
+					"Condition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_GavinReturn Any",
+					"Tile": { "X": 2, "Y": 7 },
+					"Direction": "down"
+				},
 				{
 					"Id": "Default",
 					"Location": "Lumisteria.MtVapius_Lodge",

@@ -64,21 +64,21 @@
 				},
 				"Lumisteria.MtVapius_RareArtifactTrove": {
 					"ItemId": "(O)Lumisteria.MtVapius_Treasures_ArtifactTrove",
-					"Chance": 0.005,
+					"Chance": 0.01,
 					"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Main Lumisteria_MtVapius_Forest",
 					"MinStack": 1,
 					"MaxStack": 1
 				},
 				"Lumisteria.MtVapius_RiverJelly": {
 					"ItemId": "(O)RiverJelly",
-					"Chance": 0.08,
+					"Chance": 0.18,
 					"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Main Lumisteria_MtVapius_Forest, LOCATION_IS_OUTDOORS Here",
 					"MinStack": 1,
 					"MaxStack": 3
 				},
 				"Lumisteria.MtVapius_CaveJelly": {
 					"ItemId": "(O)CaveJelly",
-					"Chance": 0.05,
+					"Chance": 0.15,
 					"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Main Lumisteria_MtVapius_Forest, LOCATION_IS_INDOORS Here",
 					"MinStack": 1,
 					"MaxStack": 3
@@ -89,6 +89,48 @@
 					"Condition": "PLAYER_FORAGING_LEVEL Current 6",
 					"MinStack": 2,
 					"MaxStack": 3
+				},
+				"Lumisteria.MtVapius_WeirdCoinsBuff": {
+					"ItemId": "(O)Lumisteria.MtVapius_WeirdCoins",
+					"Chance": 0.5,
+					"Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo03",
+					"MinStack": 2,
+					"MaxStack": 3
+				},
+				"Lumisteria.MtVapius_PolishedGemBuff": {
+					"ItemId": "RANDOM_ITEMS (O)",
+					"Chance": 0.1,
+					"Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo03",
+					"PerItemCondition": "ITEM_CONTEXT_TAG Target polished_gem mt_vapius",
+					"MinStack": 1,
+				},
+				"Lumisteria.MtVapius_ArtifactTroveBuff": {
+					"ItemId": "(O)Lumisteria.MtVapius_Treasures_ArtifactTrove",
+					"Chance": 0.1,
+					"Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo03",
+					"MinStack": 1,
+				},
+				"Lumisteria.MtVapius_MarineItemBuff": {
+					"ItemId": "RANDOM_ITEMS (O)",
+					"Chance": 0.02,
+					"Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo03",
+					"PerItemCondition": "ITEM_CONTEXT_TAG Target marine_item mt_vapius, !ITEM_CONTEXT_TAG Target moonslime_artifact",
+					"MinStack": 1,
+					"MaxStack": 1
+				},
+				"Lumisteria.MtVapius_GoldOreBuff": {
+					"ItemId": "(O)384",
+					"Chance": 0.6,
+					"Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo03",
+					"MinStack": 5,
+					"MaxStack": 6
+				},
+				"Lumisteria.MtVapius_IridiumOreBuff": {
+					"ItemId": "(O)386",
+					"Chance": 0.3,
+					"Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo03",
+					"MinStack": 5,
+					"MaxStack": 6
 				},
 			}
 		},
@@ -145,6 +187,55 @@
 					"Condition": "LOCATION_NAME Here Lumisteria.MtVapius_ForestCaveMarsh",
 					"MinStack": 2,
 					"MaxStack": 4
+				},
+				"Lumisteria.MtVapius_RiverJelly": {
+					"ItemId": "(O)RiverJelly",
+					"Chance": 0.18,
+					"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Main Lumisteria_MtVapius_Forest, LOCATION_IS_OUTDOORS Here",
+					"MinStack": 1,
+					"MaxStack": 3
+				},
+				"Lumisteria.MtVapius_CaveJelly": {
+					"ItemId": "(O)CaveJelly",
+					"Chance": 0.15,
+					"Condition": "LOCATION_CONTEXT Here Lumisteria_MtVapius_Main Lumisteria_MtVapius_Forest, LOCATION_IS_INDOORS Here",
+					"MinStack": 1,
+					"MaxStack": 3
+				},
+				"Lumisteria.MtVapius_MountainMeadowSeeds": {
+					"ItemId": "(O)Lumisteria.MtVapius_MountainMeadowSeeds",
+					"Chance": 0.05,
+					"Condition": "PLAYER_FORAGING_LEVEL Current 6",
+					"MinStack": 2,
+					"MaxStack": 3
+				},
+				"Lumisteria.MtVapius_WeirdCoinsBuff": {
+					"ItemId": "(O)Lumisteria.MtVapius_WeirdCoins",
+					"Chance": 0.5,
+					"Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo03",
+					"MinStack": 2,
+					"MaxStack": 3
+				},
+				"Lumisteria.MtVapius_PolishedGemBuff": {
+					"ItemId": "RANDOM_ITEMS (O)",
+					"Chance": 0.1,
+					"Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo03",
+					"PerItemCondition": "ITEM_CONTEXT_TAG Target polished_gem mt_vapius",
+					"MinStack": 1,
+				},
+				"Lumisteria.MtVapius_ArtifactTroveBuff": {
+					"ItemId": "(O)Lumisteria.MtVapius_Treasures_ArtifactTrove",
+					"Chance": 0.1,
+					"Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo03",
+					"MinStack": 1,
+				},
+				"Lumisteria.MtVapius_MarineItemBuff": {
+					"ItemId": "RANDOM_ITEMS (O)",
+					"Chance": 0.02,
+					"Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo03",
+					"PerItemCondition": "ITEM_CONTEXT_TAG Target marine_item mt_vapius, !ITEM_CONTEXT_TAG Target moonslime_artifact",
+					"MinStack": 1,
+					"MaxStack": 1
 				},
 			}
 		},

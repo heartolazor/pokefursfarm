@@ -7,6 +7,18 @@
       "FromFile": "assets/npcs/{{Target}}.png"
     },
     {
+      "LogName": "Helia Flower Dance Portraits",
+      "Action": "Load",
+      "Target": "Portraits/HeliaDiamantiVMV_FlowerDance",
+      "FromFile": "assets/npcs/Portraits/HeliaDiamantiVMVExtra/FlowerDance.png",
+    },
+    {
+      "LogName": "Helia Flower Dance Sprites",
+      "Action": "Load",
+      "Target": "Characters/HeliaDiamantiVMV_FlowerDance",
+      "FromFile": "assets/npcs/Characters/HeliaDiamantiVMVExtra/FlowerDance.png",
+    },
+    {
       "LogName": "Helia Spring Portraits",
       "Action": "Load",
       "Target": "Portraits/HeliaDiamantiVMV_Spring",
@@ -31,6 +43,18 @@
       "FromFile": "assets/npcs/Characters/HeliaDiamantiVMVExtra/Fall.png",
     },
     {
+      "LogName": "Helia Fall Portraits 2",
+      "Action": "Load",
+      "Target": "Portraits/HeliaDiamantiVMV_Fall2",
+      "FromFile": "assets/npcs/Portraits/HeliaDiamantiVMVExtra/Fall2.png",
+    },
+    {
+      "LogName": "Helia Fall Sprites 2",
+      "Action": "Load",
+      "Target": "Characters/HeliaDiamantiVMV_Fall2",
+      "FromFile": "assets/npcs/Characters/HeliaDiamantiVMVExtra/Fall2.png",
+    },
+    {
       "LogName": "Helia Winter Portraits",
       "Action": "Load",
       "Target": "Portraits/HeliaDiamantiVMV_Winter",
@@ -51,13 +75,13 @@
           "DisplayName": "{{i18n: HeliaDisplayName}}",
           "BirthSeason": "winter",
           "BirthDay": 12,
-          "HomeRegion": "Other",
+          "HomeRegion": "Lumisteria.MtVapius_Main",
           "Gender": "Female",
           "Age": "Adult",
           "Manner": "Rude",
           "SocialAnxiety": "Outgoing",
           "Optimism": "neutral",
-          "CanBeRomanced": false,
+          "CanBeRomanced": true,
           "SocialTab": "UnknownUntilMet",
           "IntroductionsQuest": false,
           "PerfectionScore": false,
@@ -70,13 +94,22 @@
           "SpawnIfMissing": true,
 			"Appearance": [
 			  {
+				"Id": "Lumisteria.MtVapiusHeliaFlowerDance",
+				"Condition": "IS_EVENT festival_spring24",
+				"Portrait": "Portraits/HeliaDiamantiVMV_FlowerDance",
+				"Sprite": "Characters/HeliaDiamantiVMV_FlowerDance",
+				"IsIslandAttire": false,
+				"Precedence": -1000,
+				"Weight": 1
+			  },
+			  {
 				"Id": "Lumisteria.MtVapiusHeliaSpring",
 				"Condition": "LOCATION_SEASON Here Spring",
 				"Portrait": "Portraits/HeliaDiamantiVMV_Spring",
 				"Sprite": "Characters/HeliaDiamantiVMV_Spring",
 				"IsIslandAttire": false,
 				"Precedence": -100,
-				"Weight": 0
+				"Weight": 1
 			  },
 			  {
 				"Id": "Lumisteria.MtVapiusHeliaFall",
@@ -85,7 +118,16 @@
 				"Sprite": "Characters/HeliaDiamantiVMV_Fall",
 				"IsIslandAttire": false,
 				"Precedence": -100,
-				"Weight": 0
+				"Weight": 1
+			  },
+			  {
+				"Id": "Lumisteria.MtVapiusHeliaFall2",
+				"Condition": "LOCATION_SEASON Here Fall",
+				"Portrait": "Portraits/HeliaDiamantiVMV_Fall2",
+				"Sprite": "Characters/HeliaDiamantiVMV_Fall2",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 1
 			  },
 			  {
 				"Id": "Lumisteria.MtVapiusHeliaWinter",
@@ -94,7 +136,7 @@
 				"Sprite": "Characters/HeliaDiamantiVMV_Winter",
 				"IsIslandAttire": false,
 				"Precedence": -100,
-				"Weight": 0
+				"Weight": 1
 			  },
 			],
 		  "Home": [
@@ -122,7 +164,7 @@
       "Action": "EditData",
       "Target": "Data/NPCGiftTastes",
       "Entries": {
-        "HeliaDiamantiVMV": "{{i18n: HeliaGiftLoved{{GiftAnswerHelia}}}}/Lumisteria.MtVapius_Heliodor_Polished/{{i18n: HeliaGiftLiked{{GiftAnswerHelia}}}}/furnace_item/{{i18n: HeliaGiftDislike{{GiftAnswerHelia}}}}/alcohol_item/{{i18n: HeliaGiftHate{{GiftAnswerHelia}}}}/348/{{i18n: HeliaGiftNeutral{{GiftAnswerHelia}}}}/382/",
+        "HeliaDiamantiVMV": "{{i18n: HeliaGiftLoved{{GiftAnswerHelia}}}}/Lumisteria.MtVapius_Heliodor_Polished Lumisteria.MtVapius_Heliodor 336 421 125/{{i18n: HeliaGiftLiked{{GiftAnswerHelia}}}}/furnace_item 768/{{i18n: HeliaGiftDislike{{GiftAnswerHelia}}}}/alcohol_item/{{i18n: HeliaGiftHate{{GiftAnswerHelia}}}}/348/{{i18n: HeliaGiftNeutral{{GiftAnswerHelia}}}}/382/",
       },
     },
     {

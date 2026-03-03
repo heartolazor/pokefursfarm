@@ -26,13 +26,137 @@
 					"Value": "AsterPellegrinVMV 70 14 down",
 					"Delimiter": "/"
 				},
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "AsterPellegrinVMV 70 14 down",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters_y2"
+					],
+					"Value": "AsterPellegrinVMV 70 14 down",
+					"Delimiter": "/"
+				},
 			],
+		},
+		{
+			"LogName": "Flower Dance Festival Gavin",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations": [
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "GavinPommerelVMV 67 14 down",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "GavinPommerelVMV 67 14 down",
+					"Delimiter": "/"
+				},
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "GavinPommerelVMV 67 14 down",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters_y2"
+					],
+					"Value": "GavinPommerelVMV 67 14 down",
+					"Delimiter": "/"
+				},
+			],
+			  "When":
+			  {   
+		"query: {{Hearts:GavinPommerelVMV}} >= 2": true
+				}
+		},
+		{
+			"LogName": "Flower Dance Festival Helia",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations": [
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "HeliaDiamantiVMV 78 14 left",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "HeliaDiamantiVMV 78 14 left",
+					"Delimiter": "/"
+				},
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "HeliaDiamantiVMV 78 14 left",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters_y2"
+					],
+					"Value": "HeliaDiamantiVMV 78 14 left",
+					"Delimiter": "/"
+				},
+			],
+			  "When":
+			  {   
+		"query: {{Hearts:HeliaDiamantiVMV}} >= 2": true
+				}
 		},
 		{
 			"Action": "EditData",
 			"Target": "Data/Festivals/spring24",
 			"Entries": {
-				"AsterPellegrinVMV": "{{i18n: AsterFlowerDanceY2}}",
+				//"AsterPellegrinVMV": "{{i18n: AsterFlowerDanceY2}}",
+				"GavinPommerelVMV": "{{i18n: GavinDialogueFlowerDance}}",
+				"HeliaDiamantiVMV": "{{i18n: HeliaDialogueFlowerDance}}",
 			},
 		},
 		{
@@ -53,6 +177,243 @@
 			"When": {
 				"HasMod": "UNA.FF.CP",
 			},
+		},
+		{
+			"LogName": "Luau Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "CelestineDuboisVMV 27 28 up",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "CelestineDuboisVMV 27 28 up",
+					"Delimiter": "/"
+				},
+				//SetUpY2
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "CelestineDuboisVMV 27 28 up",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters_y2"
+					],
+					"Value": "CelestineDuboisVMV 27 28 up",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{
+			"LogName": "Luau Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "MoiraDuboisVMV 27 26 down",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "MoiraDuboisVMV 27 26 down",
+					"Delimiter": "/"
+				},
+				//SetUpY2
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "MoiraDuboisVMV 27 26 down",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters_y2"
+					],
+					"Value": "MoiraDuboisVMV 27 26 down",
+					"Delimiter": "/"
+				},
+			],
+			  "When":
+			  {   
+				"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Hamlet_MoiraArrival",
+			  }
+		},
+		{
+			"LogName": "Luau Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "OdalisDuboisVelezVMV 26 27 right",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "OdalisDuboisVelezVMV 26 27 right",
+					"Delimiter": "/"
+				},
+				//SetUpY2
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "OdalisDuboisVelezVMV 26 27 right",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters_y2"
+					],
+					"Value": "OdalisDuboisVelezVMV 26 27 right",
+					"Delimiter": "/"
+				},
+			],
+			  "When":
+			  {   
+				"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Inn_OdalisArrival",
+			  }
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": {
+				"MoiraDuboisVMV": "{{i18n: MoiraLuauFestival}}",
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": {
+				"CelestineDuboisVMV": "{{i18n: CelestineLuauFestival}}",
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": {
+				"OdalisDuboisVelezVMV": "{{i18n: OdalisLuauFestival}}",
+			},
+		},
+		//Fair
+		{
+			"LogName": "Festival Fair",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Fair",
+			"FromFile": "assets/Town-FairPatch.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 9,
+				"Height": 9
+			},
+			"ToArea": {
+				"X": 30,
+				"Y": 82,
+				"Width": 9,
+				"Height": 9
+			},
+			"When": {
+                "HamletProgress|contains={{Range: 0, 5}}": false
+			}
+		},
+		{
+			"LogName": "Flower Dance Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "MoiraDuboisVMV 34 90 down/HeliaDiamantiVMV 31 86 down/NaveenFaycombeSereneVMV 36 86 down",
+					"Delimiter": "/"
+				},
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "MoiraDuboisVMV 34 90 down/HeliaDiamantiVMV 31 86 down/NaveenFaycombeSereneVMV 36 86 down",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+                "HamletProgress|contains={{Range: 0, 5}}": false
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"Entries": {
+				"MoiraDuboisVMV": "{{i18n: MoiraFairFestival}}",
+				"MoiraDuboisVMV_y2": "{{i18n: MoiraFairFestivalY2}}",
+				"HeliaDiamantiVMV": "{{i18n: HeliaFairFestival}}",
+				"HeliaDiamantiVMV_y2": "{{i18n: HeliaFairFestivalY2}}",
+				"NaveenFaycombeSereneVMV": "{{i18n: NaveenFairFestival}}",
+				"NaveenFaycombeSereneVMV_y2": "{{i18n: NaveenFairFestivalY2}}",
+			},
+			"When": {
+                "HamletProgress|contains={{Range: 0, 5}}": false
+			}
 		},
 	]
 }

@@ -459,6 +459,14 @@
 							"Condition": "PLAYER_STAT Current GeodesCracked 64",
 							"Id": "Lumisteria.MtVapius_GemPigeonEgg",
 							"ItemId": "(O)Lumisteria.MtVapius_GemPigeonEgg",
+							"StackModifiers": [
+								{
+									"Id": "GeodeCrackedLot",
+									"Condition": "PLAYER_STAT Current GeodesCracked 128",
+									"Modification": "Add",
+									"Amount": 2.0,
+								},
+							],
 						},
 						{
 							"Chance": 0.02,
@@ -468,6 +476,14 @@
 							"ItemId": "RANDOM_ITEMS (O)",
 							"PerItemCondition": "ITEM_CONTEXT_TAG Target polished_gem",
 							"MaxItems": 1,
+							"StackModifiers": [
+								{
+									"Id": "GeodeCrackedLot",
+									"Condition": "PLAYER_STAT Current GeodesCracked 128",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
 						},
 						{
 							"Chance": 0.1,
@@ -477,6 +493,14 @@
 							"ItemId": "RANDOM_ITEMS (O)",
 							"PerItemCondition": "ITEM_CATEGORY Target -2, ITEM_ID_PREFIX Target Lumisteria.MtVapius_, ITEM_CONTEXT_TAG Target lumisteria.gem_tier_3",
 							"MaxItems": 1,
+							"StackModifiers": [
+								{
+									"Id": "GeodeCrackedLot",
+									"Condition": "PLAYER_STAT Current GeodesCracked 128",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
 						},
 						{
 							"Chance": 0.2,
@@ -485,6 +509,14 @@
 							"ItemId": "RANDOM_ITEMS (O)",
 							"PerItemCondition": "ITEM_CATEGORY Target -2, ITEM_ID_PREFIX Target Lumisteria.MtVapius_, ITEM_CONTEXT_TAG Target lumisteria.gem_tier_3",
 							"MaxItems": 1,
+							"StackModifiers": [
+								{
+									"Id": "GeodeCrackedLot",
+									"Condition": "PLAYER_STAT Current GeodesCracked 128",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
 						},
 						{
 							"Chance": 0.4,
@@ -496,6 +528,12 @@
 							"MaxStack": 2,
 							"MaxItems": 1,
 							"StackModifiers": [
+								{
+									"Id": "GeodeCrackedLot",
+									"Condition": "PLAYER_STAT Current GeodesCracked 128",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
 								{
 									"Id": "GeodeCracked",
 									"Condition": "PLAYER_STAT Current GeodesCracked 64",
@@ -542,21 +580,27 @@
 							"MaxStack": 2,
 							"StackModifiers": [
 								{
+									"Id": "Lumisteria.MtVapius_CoalHuge",
+									"Condition": "ITEM_ID Target (O)382, PLAYER_STAT Current GeodesCracked 128",
+									"Modification": "Add",
+									"Amount": 10.0,
+								},
+								{
 									"Id": "Lumisteria.MtVapius_Coal",
 									"Condition": "ITEM_ID Target (O)382",
-									"Modification": "Set",
+									"Modification": "Add",
 									"Amount": 6.0,
 								},
 								{
 									"Id": "Lumisteria.MtVapius_IridiumOre",
 									"Condition": "ITEM_ID Target (O)386",
-									"Modification": "Set",
+									"Modification": "Add",
 									"Amount": 7.0,
 								},
 								{
 									"Id": "Lumisteria.MtVapius_Stone",
 									"Condition": "ITEM_ID Target (O)390",
-									"Modification": "Set",
+									"Modification": "Add",
 									"Amount": 13.0,
 								},
 							],
@@ -1269,7 +1313,8 @@
 					"ArtifactSpotChances": {
 						"Lumisteria.MtVapius_ForestCaveWinterRift": 0.001,
 						"Lumisteria.MtVapius_ForestJunimoClearing": 0.001,
-					}
+					},
+					"ExcludeFromShippingCollection": true,
 				},
 				"Lumisteria.MtVapius_Treasures_PetrifiedFlower": {
 					"Name": "Petrified Flower",
@@ -1965,6 +2010,7 @@
 						"color_green",
 						"trout_item",
 						"fish_has_roe",
+						"fish_mines",
 					],
 				},
 				"Lumisteria.MtVapius_PlanetFish": {
@@ -2010,6 +2056,7 @@
 						"color_orange",
 						"edible_flower_item",
 						"flower_item",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_FireBeans": {
@@ -2025,7 +2072,9 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_plant",
+						"bean_item",
 						"color_pink",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_Rye": {
@@ -2041,7 +2090,9 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_plant",
+						"grain_item",
 						"color_brown",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_BlueMorningGlory": {
@@ -2060,6 +2111,7 @@
 						"mt_vapius_plant",
 						"color_blue",
 						"flower_item",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_PinkMorningGlory": {
@@ -2078,6 +2130,7 @@
 						"mt_vapius_plant",
 						"color_pink",
 						"flower_item",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_Nymphea": {
@@ -2096,6 +2149,7 @@
 						"mt_vapius_plant",
 						"color_purple",
 						"flower_item",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_StarShapedFlower": {
@@ -2117,6 +2171,7 @@
 						"color_pink",
 						"edible_flower_item",
 						"flower_item",
+						"mtvapius_powerfulstellarcrop",
 					],
 				},
 				"Lumisteria.MtVapius_MoonPods": {
@@ -2192,6 +2247,7 @@
 						"stellar_plant",
 						"stellar_item",
 						"color_purple",
+						"mtvapius_powerfulstellarcrop",
 					],
 				},
 				"Lumisteria.MtVapius_FrostApple": {
@@ -2207,7 +2263,9 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_plant",
+						"apple_item",
 						"color_blue",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_WhiteGrape": {
@@ -2223,7 +2281,9 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_plant",
+						"grape_item",
 						"color_white",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_SunGrape": {
@@ -2260,6 +2320,7 @@
 						"herb_item",
 						"basil_item",
 						"color_green",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_Olive": {
@@ -2276,7 +2337,8 @@
 						"mt_vapius",
 						"mt_vapius_plant",
 						"color_green",
-						"oliveoil_item",
+						"olive_item",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_VoidOlive": {
@@ -2293,6 +2355,8 @@
 						"mt_vapius",
 						"mt_vapius_plant",
 						"color_red",
+						"olive_item",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_OrangeBlossom": {
@@ -2310,6 +2374,7 @@
 						"mt_vapius_plant",
 						"mt_vapius_flower",
 						"color_white",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_Primrose": {
@@ -2328,6 +2393,7 @@
 						"mt_vapius_flower",
 						"color_blue",
 						"flower_item",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_Hellebore": {
@@ -2346,6 +2412,7 @@
 						"mt_vapius_flower",
 						"color_purple",
 						"flower_item",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_Fugacine": {
@@ -2365,6 +2432,7 @@
 						"color_orange",
 						"edible_flower_item",
 						"flower_item",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_Elfcup": {
@@ -2383,6 +2451,7 @@
 						"mt_vapius_flower",
 						"color_cyan",
 						"flower_item",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_SweetMyriadin": {
@@ -2402,6 +2471,7 @@
 						"color_blue",
 						"edible_flower_item",
 						"flower_item",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_Neralbane": {
@@ -2420,6 +2490,7 @@
 						"mt_vapius_flower",
 						"color_black",
 						"flower_item",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_RedBouquet": {
@@ -2438,6 +2509,7 @@
 						"mt_vapius_flower",
 						"color_red",
 						"flower_item",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_BalmcreekCarillon": {
@@ -2456,6 +2528,7 @@
 						"mt_vapius_flower",
 						"color_yellow",
 						"flower_item",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_GoblinGentian": {
@@ -2474,6 +2547,7 @@
 						"mt_vapius_flower",
 						"color_pink",
 						"flower_item",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_VelvetIris": {
@@ -2492,6 +2566,7 @@
 						"mt_vapius_flower",
 						"color_purple",
 						"flower_item",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_Cosmos": {
@@ -2527,7 +2602,9 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_plant",
+						"leafy_green_item",
 						"color_green",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_ConstellatedWatermelon": {
@@ -2561,9 +2638,11 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_plant",
+						"root_item",
 						"stellar_plant",
 						"stellar_item",
 						"color_blue",
+						"mtvapius_powerfulstellarcrop",
 					],
 				},
 				"Lumisteria.MtVapius_Sunroot": {
@@ -2579,7 +2658,9 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_plant",
+						"root_item",
 						"color_orange",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_CasalotierFlower": {
@@ -2599,6 +2680,7 @@
 						"color_blue",
 						"edible_flower_item",
 						"flower_item",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_Ringfruit": {
@@ -2615,6 +2697,43 @@
 						"mt_vapius",
 						"mt_vapius_plant",
 						"color_red",
+						"mt_vapius_reserve_donatable",
+					],
+				},
+				"Lumisteria.MtVapius_ZenithFlower": {
+					"Name": "Zenith Flower",
+					"DisplayName": "{{i18n: MtVapiusZenithFlower_Translated}}",
+					"Description": "{{i18n: MtVapiusZenithFlower_Description_Translated}}",
+					"Edibility": "1",
+					"Type": "Flower",
+					"Category": -80,
+					"Price": 222,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Plants",
+					"SpriteIndex": 39,
+					"ContextTags": [
+						"mt_vapius",
+						"mt_vapius_plant",
+						"stellar_plant",
+						"stellar_item",
+						"color_gold",
+					],
+				},
+				"Lumisteria.MtVapius_VoidCitrus": {
+					"Name": "Ringfruit",
+					"DisplayName": "{{i18n: MtVapiusVoidCitrus_Translated}}",
+					"Description": "{{i18n: MtVapiusVoidCitrus_Description_Translated}}",
+					"Edibility": "36",
+					"Type": "Fruit",
+					"Category": -79,
+					"Price": 170,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Plants",
+					"SpriteIndex": 40,
+					"ContextTags": [
+						"mt_vapius",
+						"mt_vapius_plant",
+						"color_red",
+						"mt_vapius_reserve_donatable",
+						"lemon_item",
 					],
 				},
 			}
@@ -2982,7 +3101,7 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_seeds",
-						"mt_vapius_rare_seeds",
+						"mt_vapius_rare_flower_seeds",
 					],
 				},
 				"Lumisteria.MtVapius_CosmosSeeds": {
@@ -3138,7 +3257,7 @@
 						"mt_vapius_seeds",
 					],
 				},
-				/*"Lumisteria.MtVapius_StellarSeeds": {
+				"Lumisteria.MtVapius_StellarSeeds": {
 					"Name": "Stellar Seeds",
 					"DisplayName": "{{i18n: MtVapiusStellarSeeds_Translated}}",
 					"Description": "{{i18n: MtVapiusStellarSeeds_Description_Translated}}",
@@ -3153,7 +3272,7 @@
 						"mt_vapius_seeds",
 						"stellar_seeds",
 					],
-				},*/
+				},
 				"Lumisteria.MtVapius_WildVapiusSeeds": {
 					"Name": "Wild Vapius Seeds",
 					"DisplayName": "{{i18n: MtVapiusWildVapiusSeeds_Translated}}",
@@ -3194,6 +3313,37 @@
 					"Price": 5,
 					"Texture": "Mods\\Lumisteria.MtVapius\\Seeds",
 					"SpriteIndex": 41,
+					"ContextTags": [
+						"mt_vapius",
+						"mt_vapius_seeds",
+					],
+				},
+				"Lumisteria.MtVapius_ZenithFlowerSeeds": {
+					"Name": "Zenith Flower Seeds",
+					"DisplayName": "{{i18n: MtVapiusZenithFlowerSeeds_Translated}}",
+					"Description": "{{i18n: MtVapiusZenithFlowerSeeds_Description_Translated}}",
+					"Edibility": "-300",
+					"Type": "Seeds",
+					"Category": -74,
+					"Price": 76,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Seeds",
+					"SpriteIndex": 42,
+					"ContextTags": [
+						"mt_vapius",
+						"mt_vapius_seeds",
+						"stellar_seeds",
+					],
+				},
+				"Lumisteria.MtVapius_SkyshardPineTreeSeed": {
+					"Name": "Skyshard Tree Seeds",
+					"DisplayName": "{{i18n: MtVapiusSkyshardPineTreeSeeds_Translated}}",
+					"Description": "{{i18n: MtVapiusSkyshardPineTreeSeeds_Description_Translated}}",
+					"Edibility": "-300",
+					"Type": "Seeds",
+					"Category": -74,
+					"Price": 20,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Seeds",
+					"SpriteIndex": 44,
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_seeds",
@@ -3282,6 +3432,21 @@
 						"mt_vapius_sapling",
 					],
 				},
+				"Lumisteria.MtVapius_VoidCitrusSapling": {
+					"Name": "Void Citrus Sapling",
+					"DisplayName": "{{i18n: MtVapiusVoidCitrusSapling_Translated}}",
+					"Description": "{{i18n: MtVapiusVoidCitrusSapling_Description_Translated}}",
+					"Edibility": "-300",
+					"Type": "Basic",
+					"Category": -74,
+					"Price": 8800,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Seeds",
+					"SpriteIndex": 43,
+					"ContextTags": [
+						"mt_vapius",
+						"mt_vapius_sapling",
+					],
+				},
 			}
 		},
 		/*Forage*/
@@ -3307,6 +3472,7 @@
 						"edible_mushroom",
 						"preserves_pickle",
 						"color_black",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_Porchini": {
@@ -3326,6 +3492,7 @@
 						"edible_mushroom",
 						"preserves_pickle",
 						"color_orange",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_PurpleCupFlower": {
@@ -3343,6 +3510,7 @@
 						"mt_vapius_forage",
 						"flower_item",
 						"color_purple",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_WoodSilkFlower": {
@@ -3360,6 +3528,7 @@
 						"mt_vapius_forage",
 						"flower_item",
 						"color_purple",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_CrystalRose": {
@@ -3377,6 +3546,7 @@
 						"mt_vapius_forage",
 						"museum_donatable",
 						"color_pink",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_LaceFlower": {
@@ -3394,6 +3564,7 @@
 						"mt_vapius_forage",
 						"flower_item",
 						"color_pink",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_BirchSap": {
@@ -3411,6 +3582,7 @@
 						"mt_vapius_forage",
 						"syrup_item",
 						"color_yellow",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_WoodgoatMushroom": {
@@ -3430,6 +3602,7 @@
 						"edible_mushroom",
 						"preserves_pickle",
 						"color_brown",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_Reed": {
@@ -3446,6 +3619,7 @@
 						"mt_vapius",
 						"mt_vapius_forage",
 						"color_brown",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_Nevaril": {
@@ -3463,6 +3637,7 @@
 						"mt_vapius_forage",
 						"flower_item",
 						"color_pink",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_BlackChanterelleTreeSeed": {
@@ -3490,7 +3665,7 @@
 					"Edibility": "-300",
 					"Type": "Forage",
 					"Category": -81,
-					"Price": 325,
+					"Price": 295,
 					"Texture": "Mods\\Lumisteria.MtVapius\\Forage",
 					"SpriteIndex": 12,
 					"ContextTags": [
@@ -3499,6 +3674,7 @@
 						"flower_item",
 						"color_gray",
 						"seedmaker_banned",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_BlueClover": {
@@ -3517,6 +3693,8 @@
 						"flower_item",
 						"color_blue",
 						"seedmaker_banned",
+						"mt_vapius_reserve_donatable",
+						"clover_item",
 					],
 				},
 				"Lumisteria.MtVapius_Rosemary": {
@@ -3537,6 +3715,7 @@
 						"herb_item",
 						"rosemary_item",
 						"color_green",
+						"mt_vapius_reserve_donatable",
 					],
 				},
 				"Lumisteria.MtVapius_SeaBuckthornBerry": {
@@ -3553,6 +3732,25 @@
 						"mt_vapius",
 						"mt_vapius_plant",
 						"color_orange",
+						"mt_vapius_reserve_donatable",
+					],
+				},
+				"Lumisteria.MtVapius_GoldPepperFern": {
+					"Name": "Gold Pepper Fern",
+					"DisplayName": "{{i18n: MtVapiusGoldPepperFern_Translated}}",
+					"Description": "{{i18n: MtVapiusGoldPepperFern_Description_Translated}}",
+					"Edibility": "13",
+					"Type": "Forage",
+					"Category": -81,
+					"Price": 67,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Forage",
+					"SpriteIndex": 16,
+					"ContextTags": [
+						"mt_vapius",
+						"mt_vapius_plant",
+						"color_gold",
+						"mt_vapius_reserve_donatable",
+						"spice_item",
 					],
 				},
 			}
@@ -3578,6 +3776,7 @@
 						"ingredient_oil",
 						"oil_item",
 						"olive_oil_item",
+						"cooking_oil_item",
 						"color_yellow",
 					],
 				},
@@ -3596,6 +3795,7 @@
 						"ingredient_oil",
 						"oil_item",
 						"olive_oil_item",
+						"cooking_oil_item",
 						"void_item",
 						"color_black",
 					],
@@ -3709,6 +3909,28 @@
 						"mt_vapius",
 						"color_orange",
 						"oil_item",
+					],
+				},
+				"Lumisteria.MtVapius_ArtisanGoods_RosemaryTea": {
+					"Name": "Rosemary Tea",
+					"DisplayName": "{{i18n: MtVapiusRosemaryTea_Translated}}",
+					"Description": "{{i18n: MtVapiusRosemaryTea_Description_Translated}}",
+					"Edibility": "15",
+					"Type": "Basic",
+					"Category": -26,
+					"Price": 164,
+					"Texture": "Mods\\Lumisteria.MtVapius\\ArtisanGoods",
+					"SpriteIndex": 8,
+					"ContextTags": [
+						"mt_vapius",
+						"color_green",
+					],
+					"IsDrink": true,
+					"Buffs": [
+						{
+						  "Id": "Drink",
+						  "BuffId": "Lumisteria.MtVapius_ImmunitySmall"
+						},
 					],
 				},
 			}
@@ -4221,7 +4443,7 @@
 					"Edibility": "-300",
 					"Type": "Basic",
 					"Category": -18,
-					"Price": 320,
+					"Price": 600,
 					"Texture": "Mods\\Lumisteria.MtVapius\\AnimalProducts",
 					"SpriteIndex": 29,
 					"ContextTags": [
@@ -4987,6 +5209,25 @@
 						"food_salad",
 					],
 				},
+				"Lumisteria.MtVapius_Cooking_PepperFernBeignet": {
+					"Name": "Lumisteria.MtVapius_Cooking_PepperFernBeignet",
+					"DisplayName": "{{i18n: MtVapiusPepperFernBeignet_Translated}}",
+					"Description": "{{i18n: MtVapiusPepperFernBeignet_Description_Translated}}",
+					"Edibility": "48",
+					"Type": "Cooking",
+					"Category": -7,
+					"Price": 188,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Dishes",
+					"SpriteIndex": 25,
+					"IsDrink": false,
+					"ContextTags": [
+						"mt_vapius",
+						"mt_vapius_dish",
+						"mt_vapius_marketrecipe",
+						"color_gold",
+						"food_party",
+					],
+				},
 			},
 		},
 		/*Candy*/
@@ -5032,9 +5273,19 @@
 					"Price": 330,
 					"Texture": "Mods\\Lumisteria.MtVapius\\Candy",
 					"SpriteIndex": 1,
+					"Buffs": [
+						{
+							"BuffId": "Lumisteria.MtVapius_CandyBuff",
+							"Duration": 1000,
+							"CustomAttributes": {
+								"MagneticRadius": 10,
+							}
+						},
+					],
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_dish",
+						"candied_fruit_item",
 						"color_orange",
 						"mt_vapius_candy",
 						"food_sweet",
@@ -5051,6 +5302,15 @@
 					"Price": 140,
 					"Texture": "Mods\\Lumisteria.MtVapius\\Candy",
 					"SpriteIndex": 2,
+					"Buffs": [
+						{
+							"BuffId": "Lumisteria.MtVapius_CandyBuff",
+							"Duration": 1000,
+							"CustomAttributes": {
+								"MaxStamina": 60,
+							}
+						},
+					],
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_dish",
@@ -5092,9 +5352,9 @@
 					"Buffs": [
 						{
 							"BuffId": "Lumisteria.MtVapius_CandyBuff",
-							"Duration": 760,
+							"Duration": 1000,
 							"CustomAttributes": {
-								"LuckLevel": 1,
+								"LuckLevel": 2,
 							}
 						},
 					],
@@ -5116,6 +5376,15 @@
 					"Price": 444,
 					"Texture": "Mods\\Lumisteria.MtVapius\\Candy",
 					"SpriteIndex": 5,
+					"Buffs": [
+						{
+							"BuffId": "Lumisteria.MtVapius_CandyBuff",
+							"Duration": 360,
+							"CustomAttributes": {
+								"FarmingLevel": 3,
+							},
+						},
+					],
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_dish",
@@ -5135,6 +5404,15 @@
 					"Price": 307,
 					"Texture": "Mods\\Lumisteria.MtVapius\\Candy",
 					"SpriteIndex": 6,
+					"Buffs": [
+						{
+							"BuffId": "Lumisteria.MtVapius_CandyBuff",
+							"Duration": 360,
+							"CustomAttributes": {
+								"ForagingLevel": 2,
+							},
+						},
+					],
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_dish",
@@ -5154,6 +5432,15 @@
 					"Price": 337,
 					"Texture": "Mods\\Lumisteria.MtVapius\\Candy",
 					"SpriteIndex": 7,
+					"Buffs": [
+						{
+							"BuffId": "Lumisteria.MtVapius_CandyBuff",
+							"Duration": 360,
+							"CustomAttributes": {
+								"Defense": 1,
+							},
+						},
+					],
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_dish",
@@ -5176,7 +5463,7 @@
 					"Buffs": [
 						{
 							"BuffId": "Lumisteria.MtVapius_CandyBuff",
-							"Duration": 220,
+							"Duration": 330,
 							"CustomAttributes": {
 								"Speed": 1,
 							},
@@ -5200,6 +5487,15 @@
 					"Price": 190,
 					"Texture": "Mods\\Lumisteria.MtVapius\\Candy",
 					"SpriteIndex": 9,
+					"Buffs": [
+						{
+							"BuffId": "Lumisteria.MtVapius_CandyBuff",
+							"Duration": 200,
+							"CustomAttributes": {
+								"Immunity": 1,
+							},
+						},
+					],
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_dish",
@@ -5219,6 +5515,15 @@
 					"Price": 76,
 					"Texture": "Mods\\Lumisteria.MtVapius\\Candy",
 					"SpriteIndex": 10,
+					"Buffs": [
+						{
+							"BuffId": "Lumisteria.MtVapius_CandyBuff",
+							"Duration": 260,
+							"CustomAttributes": {
+								"Attack": 1,
+							},
+						},
+					],
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_dish",
@@ -5808,6 +6113,22 @@
 			"FromFile": "assets/images/items/{{TargetWithoutPath}}.png"
 		},
 		{
+			"LogName": "Universal Gift Taste",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+							"Operation": "Append",
+							"Target": [
+								"Entries",
+								"Universal_Like"
+							],
+							"Value": "polished_gem",
+							"Delimiter": " "
+				},
+				]
+		},
+		{
 			"LogName": "Gift Taste",
 			"Action": "EditData",
 			"Target": "Data/NPCGiftTastes",
@@ -5820,6 +6141,16 @@
 						0
 					],
 					"Value": "mt_vapius_jewel_item",
+					"Delimiter": " "
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Universal_Neutral",
+						0
+					],
+					"Value": "Lumisteria.MtVapius_Cooking_RyeBread",
 					"Delimiter": " "
 				},
 				{
@@ -6160,6 +6491,16 @@
 						1
 					],
 					"Value": "Lumisteria.MtVapius_Sturgiant",
+					"Delimiter": " "
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Wizard",
+						1
+					],
+					"Value": "Lumisteria.MtVapius_Morganite_Polished Lumisteria.MtVapius_PurpleCupFlower",
 					"Delimiter": " "
 				},
 				{

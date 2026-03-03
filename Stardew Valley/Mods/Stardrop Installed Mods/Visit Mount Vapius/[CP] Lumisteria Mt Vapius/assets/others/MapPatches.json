@@ -152,6 +152,30 @@
 			}
 		},
 		{
+			"LogName": "Shop Moira Animal Shop Tuesday",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_Hamlet",
+			"FromFile": "assets/LumisteriaMtVapiusShopStall08IconPatch.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 1,
+				"Height": 1
+			},
+			"ToArea": {
+				"X": 36,
+				"Y": 75,
+				"Width": 1,
+				"Height": 1
+			},
+			"When": {
+				"DayOfWeek": "Tuesday",
+				"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Hamlet_MoiraArrival",
+				"HasMod |contains= mushymato.LivestockBazaar": true,
+                "HamletProgress|contains={{Range: 0, 2}}": false
+			}
+		},
+		{
 			"LogName": "Shop Moira Saturday",
 			"Action": "EditMap",
 			"Target": "Maps/Lumisteria.MtVapius_Hamlet",
@@ -171,6 +195,30 @@
 			"When": {
 				"DayOfWeek": "Saturday",
 				"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Hamlet_MoiraArrival",
+			}
+		},
+		{
+			"LogName": "Shop Moira Animal Shop Saturday",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_Hamlet",
+			"FromFile": "assets/LumisteriaMtVapiusShopStall08IconPatch.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 1,
+				"Height": 1
+			},
+			"ToArea": {
+				"X": 36,
+				"Y": 75,
+				"Width": 1,
+				"Height": 1
+			},
+			"When": {
+				"DayOfWeek": "Saturday",
+				"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Hamlet_MoiraArrival",
+				"HasMod |contains= mushymato.LivestockBazaar": true,
+                "HamletProgress|contains={{Range: 0, 2}}": false
 			}
 		},
 		{
@@ -294,6 +342,45 @@
 			"HasSeenEvent": "Lumisteria.MtVapius_Hamlet_OrderBoard",
             }
 		},
+		//Inn show
+		{
+			"LogName": "Inn Cooking Show",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_Inn",
+			"FromFile": "assets/LumisteriaMtVapiusInnCookingShowPatch.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 3,
+				"Height": 3
+			},
+			"ToArea": {
+				"X": 3,
+				"Y": 27,
+				"Width": 3,
+				"Height": 3
+			},
+			"When": {
+				"DayOfWeek": "Tuesday",
+			}
+		},
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Lumisteria.MtVapius_Inn",
+            "MapTiles": [
+                {
+                    "Position": { "X": 4, "Y": 29 },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "spacechase0.SpaceCore_TriggerAction Lumisteria.MtVapius_CookingShow{{Random:01, 02, 03, 04, 05|key=Lumisteria.MtVapius_CookingShow}}"
+                    }
+                }
+            ],
+			"When": {
+				"DayOfWeek": "Tuesday",
+			}
+        },
+		//Inn Bookshelves
 		{
 			"LogName": "Inn Bookshelves",
 			"Action": "EditMap",
@@ -344,8 +431,40 @@
 			"Action": "EditMap",
 			"Target": "Maps/Lumisteria.MtVapius_ForestCaveStar",
 			"AddWarps": [
-				"5 10 {{Random:Lumisteria.MtVapius_ForestCaveAmber, Lumisteria.MtVapius_ForestCaveMoonPond, Lumisteria.MtVapius_ForestCaveMarsh, Lumisteria.MtVapius_ForestCaveWinterRift|key=Lumisteria.MtVapius_RandomRoom}} 7 37"
+				"5 10 {{Random:Lumisteria.MtVapius_ForestCaveAmber, Lumisteria.MtVapius_ForestCaveMoonPond, Lumisteria.MtVapius_ForestCaveMarsh, Lumisteria.MtVapius_ForestCaveWinterRift, Lumisteria.MtVapius_ForestCaveVoidGrove|key=Lumisteria.MtVapius_RandomRoom}} 7 37"
 			]
+		},
+		//Random cave warp Hamlet Progress Chance
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_ForestCaveStar",
+			"AddWarps": [
+				"24 10 {{Random:Lumisteria.MtVapius_ForestCaveMarsh, Lumisteria.MtVapius_ForestCaveWinterRift, Lumisteria.MtVapius_ForestCaveVoidGrove, Lumisteria.MtVapius_ForestCaveAmber, Lumisteria.MtVapius_ForestCaveMoonPond|key=Lumisteria.MtVapius_RandomRoom}} 7 37"
+			],
+			"When": {
+				"Query: {{Random: {{Range:1,101}} |key=Lumisteria.MtVapius_RandomRoom}} <= ({{HamletProgress}}+12)": true,
+			}
+		},
+		{
+			"LogName": "Star cave Patch",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_ForestCaveStar",
+			"FromFile": "assets/LumisteriaMtVapiusForestCaveStarMapPatch.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 3,
+				"Height": 4
+			},
+			"ToArea": {
+				"X": 23,
+				"Y": 8,
+				"Width": 3,
+				"Height": 4
+			},
+			"When": {
+				"Query: {{Random: {{Range:1,101}} |key=Lumisteria.MtVapius_RandomRoom}} <= ({{HamletProgress}}+12)": true,
+			}
 		},
 		//Amber cave Patch
 		{
@@ -409,7 +528,7 @@
 				"Height": 6
 			},
 			"When": {
-				"HasSeenEvent|contains=Lumisteria.MtVapius_Lodge_ShortcutsFixed": "true",
+				"HasSeenEvent: anyPlayer |contains=Lumisteria.MtVapius_Lodge_ShortcutsFixed": "true",
 			}
 		},
 		{
@@ -430,7 +549,7 @@
 				"Height": 6
 			},
 			"When": {
-				"HasSeenEvent|contains=Lumisteria.MtVapius_Lodge_ShortcutsFixed": "true",
+				"HasSeenEvent: anyPlayer|contains=Lumisteria.MtVapius_Lodge_ShortcutsFixed": "true",
 			}
 		},
 		{
@@ -451,9 +570,32 @@
 				"Height": 4
 			},
 			"When": {
-				"HasSeenEvent|contains=Lumisteria.MtVapius_Lodge_ShortcutsFixed": "true",
+				"HasSeenEvent: anyPlayer|contains=Lumisteria.MtVapius_Lodge_ShortcutsFixed": "true",
 			}
 		},
+		//Cliff shortcut once fixed
+		{
+			"LogName": "Cliff Bridge Patch",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_Cliff",
+			"FromFile": "assets/LumisteriaMtVapiusCliffMapPatch2.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 4,
+				"Height": 3
+			},
+			"ToArea": {
+				"X": 12,
+				"Y": 15,
+				"Width": 4,
+				"Height": 3
+			},
+			"When": {
+                "HasFlag: anyPlayer": "DLX.Bundles.Lumisteria.MtVapius_BridgeBundle"
+			}
+		},
+		
 		//Pond JunimoChest Patch
 		
 		{
@@ -584,6 +726,8 @@
 				"NPCWarp": "34 50 Lumisteria.MtVapius_TrainStation 6 32",
 			},
 		},
+		//Festivals are in festivals.json
+		
 		//Bus Warp Town to Train Station, appending
 		/*{
 			"Action": "EditMap",
@@ -627,6 +771,356 @@
                 }
             ]
         },
+		//Inn Candies
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Lumisteria.MtVapius_Inn",
+            "MapTiles": [
+                {
+                    "Position": { "X": 1, "Y": 30 },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "spacechase0.SpaceCore_TriggerAction Lumisteria.MtVapius_TakeInnCandy"
+                    }
+                }
+            ]
+        },
+		//Junimo Tea
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Lumisteria.MtVapius_ForestJunimoClearing",
+            "MapTiles": [
+                {
+                    "Position": { "X": 9, "Y": 23 },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "spacechase0.SpaceCore_TriggerAction Lumisteria.MtVapius_JunimoTea"
+                    }
+                },
+                {
+                    "Position": { "X": 10, "Y": 23 },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "spacechase0.SpaceCore_TriggerAction Lumisteria.MtVapius_JunimoTea"
+                    }
+                }
+            ]
+        },
+		
+		
+		{
+			"LogName": "Faycombe Sword Patch",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_FaycombeOrchard",
+			"FromFile": "assets/LumisteriaMtVapiusFaycombeOrchard_PatchSword.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 1,
+				"Height": 3
+			},
+			"ToArea": {
+				"X": 14,
+				"Y": 23,
+				"Width": 1,
+				"Height": 3
+			},
+			"When": {
+				"HasSeenEvent|contains=Lumisteria.MtVapius_Lodge_Gavin6HFollowUp": "true",
+				"HasFlag: anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_SwordBundle": "false",
+			}
+		},
+		
+		//Extra Areas
+		
+		{
+			"LogName": "Amber Extra Hint",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_ForestCaveAmber",
+			"FromFile": "assets/LumisteriaMtVapiusForestCaveAmberPatchHint.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 3,
+				"Height": 5
+			},
+			"ToArea": {
+				"X": 14,
+				"Y": 0,
+				"Width": 3,
+				"Height": 5
+			},
+			"When": {
+				"Merge: {{HasFlag:anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook}}, {{HasFlag:anyPlayer|contains=Lumisteria.MtVapius_CombatMastery_Flag}}" : false
+				//"HasFlag: anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook": false,
+			}
+		},
+		{
+			"LogName": "Amber Extra Door",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_ForestCaveAmber",
+			"FromFile": "assets/LumisteriaMtVapiusForestCaveAmberPatchDoor.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 3,
+				"Height": 5
+			},
+			"ToArea": {
+				"X": 14,
+				"Y": 0,
+				"Width": 3,
+				"Height": 5
+			},
+			"When": {
+				"HasFlag: anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook": true,
+				"HasFlag: anyPlayer|contains=Lumisteria.MtVapius_CombatMastery_Flag": true,
+			}
+		},
+        {
+			"LogName": "Amber Extra Warp",
+            "Action": "EditMap",
+            "Target": "Maps/Lumisteria.MtVapius_ForestCaveAmber",
+			"AddWarps": [
+				"15 3 Lumisteria.MtVapius_ForestCaveAmberLarge 7 37"
+			],
+			"When": {
+				"HasFlag: anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook": true,
+				"HasFlag: anyPlayer|contains=Lumisteria.MtVapius_CombatMastery_Flag": true,
+			}
+        },
+		
+		
+		{
+			"LogName": "Winter Rift Extra",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_ForestCaveWinterRift",
+			"FromFile": "assets/LumisteriaMtVapiusForestCaveWinterRiftHint.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 3,
+				"Height": 3
+			},
+			"ToArea": {
+				"X": 18,
+				"Y": 5,
+				"Width": 3,
+				"Height": 3
+			},
+			"When": {
+				"Merge: {{HasFlag:anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook}}, {{HasFlag:anyPlayer|contains=Lumisteria.MtVapius_FarmingMastery_Flag}}" : false
+				//"HasFlag: anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook": false,
+			}
+		},
+		{
+			"LogName": "Winter Rift Extra",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_ForestCaveWinterRift",
+			"FromFile": "assets/LumisteriaMtVapiusForestCaveWinterRiftPatchDoor.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 3,
+				"Height": 4
+			},
+			"ToArea": {
+				"X": 18,
+				"Y": 4,
+				"Width": 3,
+				"Height": 4
+			},
+			"When": {
+				"HasFlag: anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook": true,
+				"HasFlag: anyPlayer|contains=Lumisteria.MtVapius_FarmingMastery_Flag": true,
+			}
+		},
+        {
+			"LogName": "Winter Rift Extra Warp",
+            "Action": "EditMap",
+            "Target": "Maps/Lumisteria.MtVapius_ForestCaveWinterRift",
+			"AddWarps": [
+				"19 6 Lumisteria.MtVapius_ForestCaveWinterRiftCircle 35 39"
+			],
+			"When": {
+				"HasFlag: anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook": true,
+				"HasFlag: anyPlayer|contains=Lumisteria.MtVapius_FarmingMastery_Flag": true,
+			}
+        },
+		
+		{
+			"LogName": "Moon Pond Extra",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_ForestCaveMoonPond",
+			"FromFile": "assets/LumisteriaMtVapiusForestCaveMoonPondHint.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 3,
+				"Height": 4
+			},
+			"ToArea": {
+				"X": 25,
+				"Y": 0,
+				"Width": 3,
+				"Height": 4
+			},
+			"When": {
+				"Merge: {{HasFlag:anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook}}, {{HasFlag:anyPlayer|contains=Lumisteria.MtVapius_FishingMastery_Flag}}" : false
+				//"HasFlag: anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook": false,
+			}
+		},
+		{
+			"LogName": "Moon Pond Extra",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_ForestCaveMoonPond",
+			"FromFile": "assets/LumisteriaMtVapiusForestCaveMoonPondPatchDoor.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 3,
+				"Height": 4
+			},
+			"ToArea": {
+				"X": 25,
+				"Y": 0,
+				"Width": 3,
+				"Height": 4
+			},
+			"When": {
+				"HasFlag: anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook": true,
+				"HasFlag: anyPlayer|contains=Lumisteria.MtVapius_FishingMastery_Flag": true,
+			}
+		},
+        {
+			"LogName": "Moon Pond Extra",
+            "Action": "EditMap",
+            "Target": "Maps/Lumisteria.MtVapius_ForestCaveMoonPond",
+			"AddWarps": [
+				"26 2 Lumisteria.MtVapius_ForestCaveSeasonWoods 12 62"
+			],
+			"When": {
+				"HasFlag: anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook": true,
+				"HasFlag: anyPlayer|contains=Lumisteria.MtVapius_FishingMastery_Flag": true,
+			}
+        },
+		
+		{
+			"LogName": "Marsh Extra Hint",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_ForestCaveMarsh",
+			"FromFile": "assets/LumisteriaMtVapiusForestCaveMarshPatchHint.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 3,
+				"Height": 3
+			},
+			"ToArea": {
+				"X": 16,
+				"Y": 0,
+				"Width": 3,
+				"Height": 3
+			},
+			"When": {
+				"Merge: {{HasFlag:anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook}}, {{HasFlag:anyPlayer|contains=Lumisteria.MtVapius_ForagingMastery_Flag}}" : false
+				//"HasFlag: anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook": false,
+			}
+		},
+		{
+			"LogName": "Marsh Extra Path",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_ForestCaveMarsh",
+			"FromFile": "assets/LumisteriaMtVapiusForestCaveMarshPatchPath.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 3,
+				"Height": 3
+			},
+			"ToArea": {
+				"X": 16,
+				"Y": 0,
+				"Width": 3,
+				"Height": 3
+			},
+			"When": {
+				"HasFlag: anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook": true,
+				"HasFlag: anyPlayer|contains=Lumisteria.MtVapius_ForagingMastery_Flag": true,
+			}
+		},
+        {
+			"LogName": "Marsh Pond Extra Warp",
+            "Action": "EditMap",
+            "Target": "Maps/Lumisteria.MtVapius_ForestCaveMarsh",
+			"AddWarps": [
+				"17 1 Lumisteria.MtVapius_ForestCaveMarshCliffs 9 39"
+			],
+			"When": {
+				"HasFlag: anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook": true,
+				"HasFlag: anyPlayer|contains=Lumisteria.MtVapius_ForagingMastery_Flag": true,
+			}
+        },
+		
+		{
+			"LogName": "Void Grove Extra Hint",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_ForestCaveVoidGrove",
+			"FromFile": "assets/LumisteriaMtVapiusForestCaveVoidGrovePatchHint.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 1,
+				"Height": 3
+			},
+			"ToArea": {
+				"X": 22,
+				"Y": 3,
+				"Width": 1,
+				"Height": 3
+			},
+			"When": {
+				"Merge: {{HasFlag:anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook}}, {{HasFlag:anyPlayer|contains=Lumisteria.MtVapius_MiningMastery_Flag}}" : false
+				//"HasFlag: anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook": false,
+			}
+		},
+		{
+			"LogName": "Void Grove Extra Door",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_ForestCaveVoidGrove",
+			"FromFile": "assets/LumisteriaMtVapiusForestCaveVoidGrovePatchDoor.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 1,
+				"Height": 3
+			},
+			"ToArea": {
+				"X": 22,
+				"Y": 3,
+				"Width": 1,
+				"Height": 3
+			},
+			"When": {
+				"HasFlag: anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook": true,
+				"HasFlag: anyPlayer|contains=Lumisteria.MtVapius_MiningMastery_Flag": true,
+			}
+		},
+        {
+			"LogName": "Void Grove Extra Warp",
+            "Action": "EditMap",
+            "Target": "Maps/Lumisteria.MtVapius_ForestCaveVoidGrove",
+			"AddWarps": [
+				"22 4 Lumisteria.MtVapius_ForestCaveVoidGroveCave 16 20"
+			],
+			"When": {
+				"HasFlag: anyPlayer|contains=DLX.Bundles.Lumisteria.MtVapius_HelpingBundleBook": true,
+				"HasFlag: anyPlayer|contains=Lumisteria.MtVapius_MiningMastery_Flag": true,
+			}
+        },
+		
+		
+		
 		{
 			"LogName": "Train Station Train Patch",
 			"Action": "EditMap",
@@ -684,6 +1178,54 @@
 				"Height": 2
 			},
 		},
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Lumisteria.MtVapius_Lodge",
+            "MapTiles": [
+                {
+                    "Position": { "X": 14, "Y": 6 },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 11 12 Lumisteria.MtVapius_LodgeIndoor"
+                    }
+                }
+            ],
+			"When": {
+				"HasFlag: anyPlayer": "Lumisteria.MtVapius_GavinReturn",
+			}
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Lumisteria.MtVapius_Lodge",
+            "MapTiles": [
+                {
+                    "Position": { "X": 14, "Y": 6 },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message MtVapius.LodgeLocked.01"
+                    }
+                }
+            ],
+			"When": {
+				"HasFlag: anyPlayer|contains=Lumisteria.MtVapius_GavinReturn": false,
+			}
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Lumisteria.MtVapius_FaycombeOrchard",
+            "MapTiles": [
+                {
+                    "Position": { "X": 10, "Y": 8 },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 16 21 Lumisteria.MtVapius_GavinHouse"
+                    }
+                }
+            ],
+			"When": {
+				"HasFlag: anyPlayer": "Lumisteria.MtVapius_GavinReturn",
+			}
+        },
 		//Railroad without Central Station
 		{
 			"LogName": "Railroad Train Patch",
@@ -706,5 +1248,6 @@
 				"HasMod |contains= Pathoschild.CentralStation": false
 			}
 		},
+		
 	]
 }

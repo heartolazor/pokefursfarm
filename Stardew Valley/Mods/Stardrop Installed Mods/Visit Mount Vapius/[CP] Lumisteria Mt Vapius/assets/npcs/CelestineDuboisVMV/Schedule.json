@@ -10,7 +10,8 @@
       "LogName": "Default Schedule",
       "Action": "EditData",
       "Target": "Characters/schedules/CelestineDuboisVMV",
-      "Entries": {
+      "Entries": {		  
+        "GreenRain": "700 Lumisteria.MtVapius_Inn 25 32 0/1200 Lumisteria.MtVapius_Inn 38 37 0/1500 Lumisteria.MtVapius_Inn 25 32 0/2300 Lumisteria.MtVapius_Inn 39 10 2",
         "1": "000 Lumisteria.MtVapius_Inn 29 38 2/700 Lumisteria.MtVapius_Inn 29 38 2/a930 Lumisteria.MtVapius_Hamlet 46 67 2/a940 Lumisteria.MtVapius_Hamlet 46 66 2 CelestineDuboisVMV_sitAdelaide/1000 Lumisteria.MtVapius_Hamlet 46 67 2/1100 Lumisteria.MtVapius_Inn 29 38 2/a1430 Lumisteria.MtVapius_TrainStation 13 15 2 CelestineDuboisVMV_sitAdelaide/1800 Lumisteria.MtVapius_Inn 38 37 0/2000 Lumisteria.MtVapius_Inn 13 40 3/2330 Lumisteria.MtVapius_Inn 39 23 3",
 	    "4": "000 Lumisteria.MtVapius_Inn 29 38 2/a930 Lumisteria.MtVapius_Hamlet 46 67 2/a940 Lumisteria.MtVapius_Hamlet 46 66 2 CelestineDuboisVMV_sitAdelaide/1000 Lumisteria.MtVapius_Hamlet 46 67 2/1100 Lumisteria.MtVapius_Inn 29 38 2/1400 Lumisteria.MtVapius_TrainStation 13 15 2 CelestineDuboisVMV_sitAdelaide/1800 Lumisteria.MtVapius_Inn 38 37 0/2000 Lumisteria.MtVapius_Inn 35 39 1/2330 Lumisteria.MtVapius_Inn 39 23 3",
         "15": "000 Lumisteria.MtVapius_Inn 29 38 2/700 Lumisteria.MtVapius_Inn 29 38 2/a930 Lumisteria.MtVapius_Hamlet 46 67 2/a940 Lumisteria.MtVapius_Hamlet 46 66 2 CelestineDuboisVMV_sitAdelaide/1000 Lumisteria.MtVapius_Hamlet 46 67 2/1100 Lumisteria.MtVapius_Inn 29 38 2/a1430 Lumisteria.MtVapius_TrainStation 13 15 2 CelestineDuboisVMV_sitAdelaide/1800 Lumisteria.MtVapius_Inn 38 37 0/2000 Lumisteria.MtVapius_Inn 13 40 3/2330 Lumisteria.MtVapius_Inn 39 23 3",
@@ -48,7 +49,7 @@
       "When":
       {   
 		"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Hamlet_MoiraArrival",
-		"HasMod": "LemurKat.EastScarpe.CP",
+		"HasMod": "Lemurkat.EastScarp",
       }
     },
     {
@@ -63,6 +64,20 @@
       "When":
       {   
 		"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Inn_OdalisArrival",
+      }
+    },
+    {
+      "LogName": "Odalis Returned + ES Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/CelestineDuboisVMV",
+      "Entries": {
+        "8": "000 Custom_SBV_SunberryMountain 59 36 0/1030 Custom_SBV_SunberryVillage 69 23 1/1400 Custom_SBV_SunberryVillage 63 86 3/1800 Custom_SBV_SunberryMountain 59 36 0/2300 Custom_SBV_SerenityInn 2 12 0",
+        "22": "000 Custom_SBV_SunberryMountain 59 36 0/1030 Custom_SBV_SunberryVillage 69 23 1/1400 Custom_SBV_SunberryVillage 63 86 3/1800 Custom_SBV_SunberryMountain 59 36 0/2300 Custom_SBV_SerenityInn 2 12 0",
+      },
+      "When":
+      {   
+		"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Inn_OdalisArrival",
+		"HasMod": "skellady.SBVCP",
       }
     },
   ]

@@ -62,7 +62,29 @@
           "AllowWoodpeckers": true,
           "UseAlternateSpriteWhenSeedReady": false,
           "UseAlternateSpriteWhenNotShaken": true,
+          "CustomFields": {
+			  "UIInfoSuite.ExtendedData/DisplayName": "{{i18n:MtVapiusWildTreeBirchTreeName}}"
+		  },
           "ChopItems": [
+            {
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+              "MinSize": "Tree",
+              "ForStump": false,
+              "Id": "Lumisteria.MtVapius_WoodBuff",
+              "ItemId": "(O)388",
+              "MinStack": 5,
+              "MaxStack": 10,
+            },
+            {
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+              "MinSize": "Tree",
+              "ForStump": true,
+              "Chance": 0.1,
+              "Id": "Lumisteria.MtVapius_WeirdCoinsBuff",
+              "ItemId": "Lumisteria.MtVapius_WeirdCoins",
+              "MinStack": 1,
+              "MaxStack": 2,
+            },
             {
               "Condition": "PLAYER_HAS_PROFESSION Current 15",
               "MinSize": "Tree",
@@ -80,6 +102,16 @@
               "ItemId": "Lumisteria.MtVapius_WeirdCoins",
               "MinStack": 1,
               "MaxStack": 2,
+            },
+            {
+              "Condition": "PLAYER_HAS_PROFESSION Current 12",
+              "MinSize": "Tree",
+              "ForStump": false,
+              "Chance": 0.4,
+              "Id": "Lumisteria.MtVapius_Wood_Forester",
+              "ItemId": "388",
+              "MinStack": 5,
+              "MaxStack": 8,
             },
             {
               "Condition": "PLAYER_HAS_PROFESSION Current 17",
@@ -101,6 +133,12 @@
             }
           ],
           "ShakeItems": [
+            {
+              "Id": "Lumisteria.MtVapius_SpeckledFowlFeatherBuff",
+              "ItemId": "(O)Lumisteria.MtVapius_SpeckledFowlFeather",
+              "Chance": 0.05,
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+            },
             {
               "Id": "Lumisteria.MtVapius_SpeckledFowlFeatherRare",
               "ItemId": "(O)Lumisteria.MtVapius_SpeckledFowlFeather",
@@ -154,9 +192,6 @@
                 "(O)Lumisteria.MtVapius_GemPigeonEgg",
                 "(O)Lumisteria.MtVapius_GemPigeonFeather",
               ],
-              "CustomFields": {
-				  "UIInfoSuite.ExtendedData/DisplayName": "{{i18n:MtVapiusWildTreeBirchTreeName}}"
-				},
             },
           ],
         },
@@ -234,7 +269,29 @@
           "AllowWoodpeckers": true,
           "UseAlternateSpriteWhenSeedReady": false,
           "UseAlternateSpriteWhenNotShaken": true,
+          "CustomFields": {
+				  "UIInfoSuite.ExtendedData/DisplayName": "{{i18n:MtVapiusWildTreeHazelnutTreeName}}"
+				},
           "ChopItems": [
+            {
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+              "MinSize": "Tree",
+              "ForStump": false,
+              "Id": "Lumisteria.MtVapius_WoodBuff",
+              "ItemId": "(O)388",
+              "MinStack": 5,
+              "MaxStack": 10,
+            },
+            {
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+              "MinSize": "Tree",
+              "ForStump": false,
+              "Chance": 0.3,
+              "Id": "Lumisteria.MtVapius_HazelnutBuff",
+              "ItemId": "(O)408",
+              "MinStack": 1,
+              "MaxStack": 2,
+            },
             {
               "MinSize": "Tree",
               "ForStump": false,
@@ -253,6 +310,16 @@
               "ItemId": "(O)Lumisteria.MtVapius_WoodgoatMushroom",
               "MinStack": 1,
               "MaxStack": 2,
+            },
+            {
+              "Condition": "PLAYER_HAS_PROFESSION Current 12",
+              "MinSize": "Tree",
+              "ForStump": false,
+              "Chance": 0.4,
+              "Id": "Lumisteria.MtVapius_Wood_Forester",
+              "ItemId": "388",
+              "MinStack": 2,
+              "MaxStack": 4,
             },
             {
               "MinSize": "Tree",
@@ -322,6 +389,12 @@
           ],
           "ShakeItems": [
             {
+              "Id": "Lumisteria.MtVapius_HazelnutBuff",
+              "ItemId": "(O)408",
+              "Chance": 0.5,
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+            },
+            {
               "Id": "Lumisteria.MtVapius_Hazelnut",
               "ItemId": "(O)408",
               "Condition": "LOCATION_SEASON Target fall",
@@ -368,9 +441,6 @@
               "Chance": 0.02,
             },
           ],
-          "CustomFields": {
-				  "UIInfoSuite.ExtendedData/DisplayName": "{{i18n:MtVapiusWildTreeHazelnutTreeName}}"
-				},
         },
         "Lumisteria.MtVapius.AmberTree": {
           "Textures": [
@@ -403,7 +473,28 @@
           "AllowWoodpeckers": false,
           "UseAlternateSpriteWhenSeedReady": false,
           "UseAlternateSpriteWhenNotShaken": false,
+          "CustomFields": {
+				  "UIInfoSuite.ExtendedData/DisplayName": "{{i18n:MtVapiusWildTreeAmberTreeName}}"
+				},
           "ChopItems": [
+            {
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+              "MinSize": "Tree",
+              "ForStump": false,
+              "Id": "Lumisteria.MtVapius_WoodBuff",
+              "ItemId": "(O)388",
+              "MinStack": 5,
+              "MaxStack": 10,
+            },
+            {
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+              "MinSize": "Tree",
+              "ForStump": false,
+              "Chance": 0.3,
+              "Id": "Lumisteria.MtVapius_AmberBuff",
+              "ItemId": "(O)Lumisteria.MtVapius_Amber",
+              "MinStack": 1,
+            },
             {
               "MinSize": "Tree",
               "ForStump": false,
@@ -492,14 +583,22 @@
           ],
           "ShakeItems": [
             {
+              "Id": "Lumisteria.MtVapius_AmberBuff",
+              "ItemId": "(O)Lumisteria.MtVapius_Amber",
+              "Chance": 0.5,
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_Amber",
+              "ItemId": "(O)Lumisteria.MtVapius_Amber",
+              "Chance": 0.1,
+            },
+            {
               "Id": "Lumisteria.MtVapius_GemPigeonEggRare",
               "ItemId": "(O)Lumisteria.MtVapius_GemPigeonEgg",
               "Chance": 0.01,
             },
           ],
-          "CustomFields": {
-				  "UIInfoSuite.ExtendedData/DisplayName": "{{i18n:MtVapiusWildTreeAmberTreeName}}"
-				},
         },
         "Lumisteria.MtVapius.BlackChanterelleTree": {
           "Textures": [
@@ -535,20 +634,42 @@
           "AllowWoodpeckers": false,
           "UseAlternateSpriteWhenSeedReady": false,
           "UseAlternateSpriteWhenNotShaken": false,
+          "CustomFields": {
+				  "UIInfoSuite.ExtendedData/DisplayName": "{{i18n:MtVapiusWildTreeBlackChanterelleTreeName}}"
+				},
           "ChopItems": [
             {
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
               "MinSize": "Tree",
               "ForStump": false,
-              "Chance": 0.1,
-              "Id": "Lumisteria.MtVapius_BlackChanterelle",
+              "Id": "Lumisteria.MtVapius_WoodBuff",
+              "ItemId": "(O)388",
+              "MinStack": 5,
+              "MaxStack": 10,
+            },
+            {
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+              "MinSize": "Tree",
+              "ForStump": false,
+              "Chance": 0.4,
+              "Id": "Lumisteria.MtVapius_BlackChanterelleBuff",
               "ItemId": "(O)Lumisteria.MtVapius_BlackChanterelle",
               "MinStack": 1,
               "MaxStack": 3,
             },
             {
               "MinSize": "Tree",
+              "ForStump": false,
+              "Chance": 1,
+              "Id": "Lumisteria.MtVapius_BlackChanterelle",
+              "ItemId": "(O)Lumisteria.MtVapius_BlackChanterelle",
+              "MinStack": 2,
+              "MaxStack": 5,
+            },
+            {
+              "MinSize": "Tree",
               "ForStump": true,
-              "Chance": 0.1,
+              "Chance": 0.3,
               "Id": "Lumisteria.MtVapius_BlackChanterelle2",
               "ItemId": "(O)Lumisteria.MtVapius_BlackChanterelle",
               "MinStack": 1,
@@ -599,6 +720,12 @@
           ],
           "ShakeItems": [
             {
+              "Id": "Lumisteria.MtVapius_BlackChanterelleTreeSeedBuff",
+              "ItemId": "(O)Lumisteria.MtVapius_BlackChanterelleTreeSeed",
+              "Chance": 0.08,
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+            },
+            {
               "Condition": "PLAYER_HAS_PROFESSION Current 12",
               "Id": "Lumisteria.MtVapius_StellarGooseEggBonus",
               "ItemId": "(O)Lumisteria.MtVapius_StellarGooseEgg",
@@ -610,9 +737,6 @@
               "Chance": 0.01,
             },
           ],
-          "CustomFields": {
-				  "UIInfoSuite.ExtendedData/DisplayName": "{{i18n:MtVapiusWildTreeBlackChanterelleTreeName}}"
-				},
         },
         "Lumisteria.MtVapius.SkyshardPineTree": {
           "Textures": [
@@ -633,9 +757,13 @@
               "Texture": "Mods\\Lumisteria.MtVapius\\skyshardpinetree_winter"
             },
           ],
-          "SeedPlantable": false,
+          "SeedItemId": "(O)Lumisteria.MtVapius_SkyshardPineTreeSeed",
+          "SeedPlantable": true,
           "GrowthChance": 0.1,
           "FertilizedGrowthChance": 1,
+          "SeedSpreadChance ": 0.00,
+          "SeedOnShakeChance ": 0.00,
+          "SeedOnChopChance": 0.50,
           "DropWoodOnChop": true,
           "DropHardwoodOnLumberChop": true,
           "IsLeafy": false,
@@ -645,7 +773,39 @@
           "AllowWoodpeckers": false,
           "UseAlternateSpriteWhenSeedReady": false,
           "UseAlternateSpriteWhenNotShaken": false,
+          "CustomFields": {
+				  "UIInfoSuite.ExtendedData/DisplayName": "{{i18n:MtVapiusWildTreeSkyshardTreeName}}"
+				},
           "ChopItems": [
+            {
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+              "MinSize": "Tree",
+              "ForStump": false,
+              "Id": "Lumisteria.MtVapius_WoodBuff",
+              "ItemId": "(O)388",
+              "MinStack": 5,
+              "MaxStack": 10,
+            },
+            {
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+              "MinSize": "Tree",
+              "ForStump": false,
+              "Chance": 0.4,
+              "Id": "Lumisteria.MtVapius_BlackChanterelleBuff",
+              "ItemId": "(O)Lumisteria.MtVapius_BlackChanterelle",
+              "MinStack": 1,
+              "MaxStack": 3,
+            },
+            {
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+              "MinSize": "Tree",
+              "ForStump": false,
+              "Chance": 0.1,
+              "Id": "Lumisteria.MtVapius_FireQuartzBuff",
+              "ItemId": "(O)82",
+              "MinStack": 1,
+              "MaxStack": 3,
+            },
             {
               "MinSize": "Tree",
               "ForStump": false,
@@ -655,6 +815,16 @@
               "ItemId": "(O)Lumisteria.MtVapius_BlackChanterelle",
               "MinStack": 1,
               "MaxStack": 2,
+            },
+            {
+              "Condition": "PLAYER_HAS_PROFESSION Current 12",
+              "MinSize": "Tree",
+              "ForStump": false,
+              "Chance": 0.4,
+              "Id": "Lumisteria.MtVapius_Wood_Forester",
+              "ItemId": "388",
+              "MinStack": 2,
+              "MaxStack": 4,
             },
             {
               "MinSize": "Tree",
@@ -743,6 +913,30 @@
           ],
           "ShakeItems": [
             {
+              "Id": "Lumisteria.MtVapius_SkyshardPineTreeSeedBuff",
+              "ItemId": "(O)Lumisteria.MtVapius_SkyshardPineTreeSeed",
+              "Chance": 0.5,
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_FireQuartzBuff",
+              "ItemId": "(O)82",
+              "Chance": 0.2,
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_SolarEssenceBuff",
+              "ItemId": "(O)768",
+              "Chance": 0.1,
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+            },
+            {
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+              "Id": "Lumisteria.MtVapius_StellarGooseEggBuff",
+              "ItemId": "(O)Lumisteria.MtVapius_StellarGooseEgg",
+              "Chance": 0.05,
+            },
+            {
               "Condition": "PLAYER_HAS_PROFESSION Current 12",
               "Id": "Lumisteria.MtVapius_StellarGooseEggBonus",
               "ItemId": "(O)Lumisteria.MtVapius_StellarGooseEgg",
@@ -755,16 +949,191 @@
             },
           ],
           "GrowsMoss": true,
-          "CustomFields": {
-				  "UIInfoSuite.ExtendedData/DisplayName": "{{i18n:MtVapiusWildTreeSkyshardTreeName}}"
-				},
         },
+        "Lumisteria.MtVapius.StoneTree": {
+          "Textures": [
+            {
+              "Season": "spring",
+              "Texture": "Mods\\Lumisteria.MtVapius\\stonetree_spring"
+            },
+            {
+              "Season": "summer",
+              "Texture": "Mods\\Lumisteria.MtVapius\\stonetree_summer"
+            },
+            {
+              "Season": "fall",
+              "Texture": "Mods\\Lumisteria.MtVapius\\stonetree_fall"
+            },
+            {
+              "Season": "winter",
+              "Texture": "Mods\\Lumisteria.MtVapius\\stonetree_winter"
+            },
+          ],
+          //"SeedItemId": "(O)Lumisteria.SkyshardPineTreeSeed",
+          "SeedPlantable": false,
+          "GrowthChance": 0.1,
+          "FertilizedGrowthChance": 1,
+          "DropWoodOnChop": true,
+          "DropHardwoodOnLumberChop": true,
+          "IsLeafy": false,
+          "IsLeafyInWinter": false,
+          "GrowsInWinter": false,
+          "IsStumpDuringWinter": false,
+          "AllowWoodpeckers": false,
+          "UseAlternateSpriteWhenSeedReady": false,
+          "UseAlternateSpriteWhenNotShaken": false,
+          "CustomFields": {
+				  "UIInfoSuite.ExtendedData/DisplayName": "{{i18n:MtVapiusWildTreeStoneTreeName}}"
+				},
+          "ChopItems": [
+            {
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+              "MinSize": "Tree",
+              "ForStump": false,
+              "Id": "Lumisteria.MtVapius_WoodBuff",
+              "ItemId": "(O)388",
+              "MinStack": 3,
+              "MaxStack": 8,
+            },
+            {
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+              "MinSize": "Tree",
+              "ForStump": false,
+              "Id": "Lumisteria.MtVapius_StoneBuff",
+              "ItemId": "(O)390",
+              "MinStack": 3,
+              "MaxStack": 8,
+            },
+            {
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+              "MinSize": "Tree",
+              "ForStump": false,
+              "Chance": 0.2,
+              "Id": "Lumisteria.MtVapius_BlackGeodeBuff",
+              "ItemId": "(O)Lumisteria.MtVapius_BlackGeode",
+              "MinStack": 1,
+              "MaxStack": 3,
+            },
+            {
+              "MinSize": "Tree",
+              "ForStump": false,
+              "Chance": 1,
+              "Id": "Lumisteria.MtVapius_Stone",
+              "ItemId": "390",
+              "MinStack": 2,
+              "MaxStack": 4,
+            },
+            {
+              "MinSize": "Tree",
+              "ForStump": false,
+			  "Condition": "SYNCED_CHOICE tick lumisteria.mtvapius_stonetree 1 3 1",
+              "Id": "Lumisteria.MtVapius_ExtraStone",
+              "ItemId": "390",
+              "MinStack": 2,
+              "MaxStack": 4,
+            },
+            {
+              "MinSize": "Tree",
+              "ForStump": false,
+			  "Condition": "SYNCED_CHOICE tick lumisteria.mtvapius_stonetree 1 3 2",
+              "Id": "Lumisteria.MtVapius_ExtraWood",
+              "ItemId": "388",
+              "MinStack": 6,
+              "MaxStack": 8,
+            },
+            {
+              "MinSize": "Tree",
+              "ForStump": false,
+			  "Condition": "SYNCED_CHOICE tick lumisteria.mtvapius_stonetree 1 3 3",
+              "Id": "Lumisteria.MtVapius_ExtraCoal",
+              "ItemId": "382",
+              "MinStack": 2,
+              "MaxStack": 6,
+            },
+            {
+              "Condition": "PLAYER_HAS_PROFESSION Current 12",
+              "MinSize": "Tree",
+              "ForStump": false,
+              "Chance": 0.4,
+              "Id": "Lumisteria.MtVapius_Wood_Forester",
+              "ItemId": "388",
+              "MinStack": 2,
+              "MaxStack": 4,
+            },
+            {
+              "MinSize": "Tree",
+              "ForStump": false,
+              "Chance": 0.1,
+              "Id": "Lumisteria.MtVapius_BlackGeode",
+              "ItemId": "(O)Lumisteria.MtVapius_BlackGeode",
+              "MinStack": 1,
+              "MaxStack": 2,
+            },
+          ],
+          "TapItems": [
+            {
+              "DaysUntilReady": 5,
+              "Chance": 0.3,
+              "Condition": "PLAYER_HAS_PROFESSION Current 15",
+              "Id": "Lumisteria.MtVapius_TapperBonus",
+              "ItemId": "(O)Lumisteria.MtVapius_BlackGeode",
+              "MinStack": 3,
+              "MaxStack": 4,
+            },
+            {
+              "DaysUntilReady": 5,
+              "Chance": 0.2,
+              "Id": "Lumisteria.MtVapius_BlackGeodeRare",
+              "ItemId": "(O)Lumisteria.MtVapius_BlackGeode",
+              "MinStack": 1,
+            },
+            {
+              "DaysUntilReady": 5,
+              "Chance": 0.3,
+              "Id": "Lumisteria.MtVapius_VoidEssenceRare",
+              "ItemId": "(O)769",
+              "MinStack": 8,
+            },
+            {
+              "DaysUntilReady": 5,
+              "Chance": 1.0,
+              "Id": "Lumisteria.MtVapius_Default",
+              "ItemId": "(O)390",
+              "MinStack": 20
+            }
+          ],
+          "ShakeItems": [
+            {
+              "Id": "Lumisteria.MtVapius_VoidEssence",
+              "ItemId": "(O)769",
+              "Chance": 0.6,
+            },
+            {
+              "Id": "Lumisteria.MtVapius_ClassicGeode",
+              "ItemId": "(O)535",
+              "Chance": 0.15,
+            },
+            {
+              "Id": "Lumisteria.MtVapius_Stone",
+              "ItemId": "(O)390",
+              "Chance": 0.05,
+            },
+            {
+              "Id": "Lumisteria.MtVapius_StoneBuff",
+              "ItemId": "(O)390",
+              "Chance": 0.05,
+              "Condition": "PLAYER_HAS_BUFF Current Lumisteria.MtVapius_Junimo02",
+            },
+          ],
+          "GrowsMoss": true,
+        },
+  
       }
     },
     /* add item  images*/
     {
       "Action": "Load",
-      "Target": "Mods/Lumisteria.MtVapius/birchtree_spring, Mods/Lumisteria.MtVapius/birchtree_summer, Mods/Lumisteria.MtVapius/birchtree_fall, Mods/Lumisteria.MtVapius/birchtree_winter, Mods/Lumisteria.MtVapius/birchtree_spring_nest, Mods/Lumisteria.MtVapius/birchtree_summer_nest, Mods/Lumisteria.MtVapius/birchtree_fall_nest, Mods/Lumisteria.MtVapius/birchtree_winter_nest, Mods/Lumisteria.MtVapius/hazelnuttree_spring, Mods/Lumisteria.MtVapius/hazelnuttree_summer, Mods/Lumisteria.MtVapius/hazelnuttree_fall, Mods/Lumisteria.MtVapius/hazelnuttree_winter, Mods/Lumisteria.MtVapius/hazelnuttree_mushroom_spring, Mods/Lumisteria.MtVapius/hazelnuttree_mushroom_summer, Mods/Lumisteria.MtVapius/hazelnuttree_mushroom_fall, Mods/Lumisteria.MtVapius/hazelnuttree_mushroom_winter, Mods/Lumisteria.MtVapius/hazelnuttree_cornucopiamushroom_spring, Mods/Lumisteria.MtVapius/hazelnuttree_cornucopiamushroom_summer, Mods/Lumisteria.MtVapius/hazelnuttree_cornucopiamushroom_fall, Mods/Lumisteria.MtVapius/hazelnuttree_cornucopiamushroom_winter,Mods/Lumisteria.MtVapius/ambertree_spring, Mods/Lumisteria.MtVapius/ambertree_summer, Mods/Lumisteria.MtVapius/ambertree_fall, Mods/Lumisteria.MtVapius/ambertree_winter, Mods/Lumisteria.MtVapius/blackchanterelletree, Mods/Lumisteria.MtVapius/skyshardpinetree_spring, Mods/Lumisteria.MtVapius/skyshardpinetree_summer, Mods/Lumisteria.MtVapius/skyshardpinetree_fall, Mods/Lumisteria.MtVapius/skyshardpinetree_winter",
+      "Target": "Mods/Lumisteria.MtVapius/birchtree_spring, Mods/Lumisteria.MtVapius/birchtree_summer, Mods/Lumisteria.MtVapius/birchtree_fall, Mods/Lumisteria.MtVapius/birchtree_winter, Mods/Lumisteria.MtVapius/birchtree_spring_nest, Mods/Lumisteria.MtVapius/birchtree_summer_nest, Mods/Lumisteria.MtVapius/birchtree_fall_nest, Mods/Lumisteria.MtVapius/birchtree_winter_nest, Mods/Lumisteria.MtVapius/hazelnuttree_spring, Mods/Lumisteria.MtVapius/hazelnuttree_summer, Mods/Lumisteria.MtVapius/hazelnuttree_fall, Mods/Lumisteria.MtVapius/hazelnuttree_winter, Mods/Lumisteria.MtVapius/hazelnuttree_mushroom_spring, Mods/Lumisteria.MtVapius/hazelnuttree_mushroom_summer, Mods/Lumisteria.MtVapius/hazelnuttree_mushroom_fall, Mods/Lumisteria.MtVapius/hazelnuttree_mushroom_winter, Mods/Lumisteria.MtVapius/hazelnuttree_cornucopiamushroom_spring, Mods/Lumisteria.MtVapius/hazelnuttree_cornucopiamushroom_summer, Mods/Lumisteria.MtVapius/hazelnuttree_cornucopiamushroom_fall, Mods/Lumisteria.MtVapius/hazelnuttree_cornucopiamushroom_winter,Mods/Lumisteria.MtVapius/ambertree_spring, Mods/Lumisteria.MtVapius/ambertree_summer, Mods/Lumisteria.MtVapius/ambertree_fall, Mods/Lumisteria.MtVapius/ambertree_winter, Mods/Lumisteria.MtVapius/blackchanterelletree, Mods/Lumisteria.MtVapius/skyshardpinetree_spring, Mods/Lumisteria.MtVapius/skyshardpinetree_summer, Mods/Lumisteria.MtVapius/skyshardpinetree_fall, Mods/Lumisteria.MtVapius/skyshardpinetree_winter, Mods/Lumisteria.MtVapius/stonetree_spring, Mods/Lumisteria.MtVapius/stonetree_summer, Mods/Lumisteria.MtVapius/stonetree_fall, Mods/Lumisteria.MtVapius/stonetree_winter",
       "FromFile": "assets/images/trees/{{TargetWithoutPath}}.png"
     }
   ]

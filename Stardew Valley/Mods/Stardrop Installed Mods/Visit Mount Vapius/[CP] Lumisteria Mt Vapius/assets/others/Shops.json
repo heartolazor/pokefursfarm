@@ -15,7 +15,7 @@
           "ID": "Lumisteria.MtVapius_MoiraShop",
           "Owners": [
             {
-              "Condition": null,
+              "Condition": "TIME 900 1800",
               "Portrait": "Portraits/MoiraDuboisVMV",
               "Dialogues": [
                 {
@@ -33,6 +33,17 @@
               ],
               "Name": "AnyOrNone",
               "Id": "AnyOrNone"
+            },
+            {
+              "Condition": "TIME 600 850",
+              "Name": "AnyOrNone",
+              "Id": "OpenSoon",
+              "ClosedMessage": "{{i18n:MoiraShopOpenSoon}}"
+            },
+            {
+              "Name": "AnyOrNone",
+              "Id": "Closed",
+              "ClosedMessage": "{{i18n:MoiraShopClosed}}"
             }
           ],
           "VisualTheme": [
@@ -103,7 +114,16 @@
               "Id": "Lumisteria.MtVapius_MoiraShop.GrassStarter.PriceCoins",
               "ItemId": "(O)297",
               "TradeItemId": "Lumisteria.MtVapius_WeirdCoins",
-              "TradeItemAmount": 5,
+              "TradeItemAmount": 3,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_MoiraShop.BlueGrassStarter.PriceCoins",
+              "ItemId": "(O)BlueGrassStarter",
+              "Condition": "PLAYER_HEARTS Current MoiraDuboisVMV 2, !{{HamletProgress|contains={{Range: 0, 6}}}}",
+              "TradeItemId": "Lumisteria.MtVapius_WeirdCoins",
+              "TradeItemAmount": 8,
               "AvailableStock": 3,
               "AvailableStockLimit": "Player",
             },
@@ -597,22 +617,43 @@
               "TradeItemAmount": 1,
               "AvailableStock": "{{Round: {{Query:{{StockBasic}}/9}}}}",
             },
+            {
+              "Id": "Lumisteria.MtVapius_MoiraShop.Coins.Laceflower",
+              "ItemId": "Lumisteria.MtVapius_WeirdCoins",
+              "Condition": "SYNCED_CHOICE day lumisteria.moirashopartisan 1 3 1, DAY_OF_WEEK Saturday",
+              "MinStack": 2,
+              "MaxStack": 3,
+              "Price": 0,
+              "TradeItemID": "(O)Lumisteria.MtVapius_LaceFlower",
+              "TradeItemAmount": 1,
+              "AvailableStock": "{{Round: {{Query:{{StockBasic}}/9}}}}",
+            },
           ],
         },
         "Lumisteria.MtVapius_AsterShop": {
           "ID": "Lumisteria.MtVapius_AsterShop", //Saturday
           "Owners": [
             {
-              "Condition": null,
+              "Condition": "TIME 900 1800",
               "Portrait": "Portraits/AsterPellegrinVMV",
               "Dialogues": [
                 {
-                  "Condition": null,
                   "Dialogue": "{{i18n: AsterShop{{Random:01, 02, 03, 04, 05, 06, 07}}}}"
                 }
               ],
               "Name": "AnyOrNone",
               "Id": "AnyOrNone"
+            },
+            {
+              "Condition": "TIME 600 850",
+              "Name": "AnyOrNone",
+              "Id": "OpenSoon",
+              "ClosedMessage": "{{i18n:AsterShopOpenSoon}}"
+            },
+            {
+              "Name": "AnyOrNone",
+              "Id": "Closed",
+              "ClosedMessage": "{{i18n:AsterShopClosed}}"
             }
           ],
           "SalableItemTags": [
@@ -819,11 +860,13 @@
               "Id": "Lumisteria.MtVapius_AsterShop.MeadowMixedSeeds",
               "Condition": "{{HasMod |contains=Lumisteria.SereneMeadow}}, {{HasMod |contains=mistyspring.ItemExtensions}}",
               "ItemId": "(O)Lumisteria.SereneMeadow_MeadowMixedSeeds",
+              "MinStack": 1,
+              "MaxStack": 3,
               "AvailableStock": "{{Round: {{Query:{{StockBasic}}/9}}}}",
               "AvailableStockLimit": "Player",
               "MaxItems": "{{Round: {{Query:{{StockBasic}}/9}}}}",
               "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
-              "TradeItemAmount": 5,
+              "TradeItemAmount": 4,
             },
             {
               "Id": "Lumisteria.MtVapius_AsterShop.Coins.PricePinecone",
@@ -890,7 +933,7 @@
           ],
           "Owners": [
             {
-              "Condition": null,
+              "Condition": "TIME 900 1800",
               "Portrait": "Portraits/AbdonMadiVMV",
               "Dialogues": [
                 {
@@ -900,6 +943,17 @@
               ],
               "Name": "AnyOrNone",
               "Id": "AnyOrNone"
+            },
+            {
+              "Condition": "TIME 600 850",
+              "Name": "AnyOrNone",
+              "Id": "OpenSoon",
+              "ClosedMessage": "{{i18n:AbdonShopOpenSoon}}"
+            },
+            {
+              "Name": "AnyOrNone",
+              "Id": "Closed",
+              "ClosedMessage": "{{i18n:AbdonShopClosed}}"
             }
           ],
           "SalableItemTags": [
@@ -1530,7 +1584,7 @@
             },
             {
               "Condition": "TIME 600 850",
-              "Name": "AnyOrNone",
+              "Name": "Closed",
               "Id": "OpenSoon",
               "ClosedMessage": "{{i18n:HeliaShopOpenSoon}}"
             },
@@ -1558,6 +1612,15 @@
               "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
               "TradeItemAmount": 3,
               "AvailableStock": 1
+            },
+            {
+              "Id": "Lumisteria.MtVapius_HeliaShop.BigChest.PriceChest",
+              "ItemID": "(BC)BigChest",
+              "Condition": "!{{HamletProgress|contains={{Range: 0, 5}}}}",
+              "Price": 0,
+              "TradeItemID": "(BC)130",
+              "TradeItemAmount": 1,
+              "AvailableStock": "{{Round: {{Query:{{StockBasic}}/9}}}}",
             },
             {
               "Id": "Lumisteria.MtVapius_HeliaShop.Sprinkler.PriceCoins",
@@ -1771,12 +1834,21 @@
               "AvailableStock": 1
             },
             {
+              "Id": "Lumisteria.MtVapius_HeliaShop.CrabPot.PriceCoinsExpensive",
+              "ItemID": "(O)710", //Crab Pot
+              "Condition": "!PLAYER_FISHING_LEVEL Current 3, SYNCED_RANDOM day lumisteria.heliashop_crabpot 0.6",
+              "Price": 0,
+              "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
+              "TradeItemAmount": 20,
+              "AvailableStock": 1
+            },
+            {
               "Id": "Lumisteria.MtVapius_HeliaShop.CrabPot.PriceCoins",
               "ItemID": "(O)710", //Crab Pot
               "Condition": "PLAYER_FISHING_LEVEL Current 3, SYNCED_RANDOM day lumisteria.heliashop_crabpot 0.6",
               "Price": 0,
               "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
-              "TradeItemAmount": 20,
+              "TradeItemAmount": 9,
               "AvailableStock": 1
             },
             {
@@ -1892,7 +1964,7 @@
           "PriceModifiers": null,
           "Owners": [
             {
-              "Condition": null,
+              "Condition": "TIME 900 1800",
               "Portrait": "Portraits/DjamelVMV",
               "Dialogues": [
                 {
@@ -1902,6 +1974,17 @@
               ],
               "Name": "AnyOrNone",
               "Id": "AnyOrNone"
+            },
+            {
+              "Condition": "TIME 600 850",
+              "Name": "AnyOrNone",
+              "Id": "OpenSoon",
+              "ClosedMessage": "{{i18n:HeliaShopOpenSoon}}"
+            },
+            {
+              "Name": "AnyOrNone",
+              "Id": "Closed",
+              "ClosedMessage": "{{i18n:HeliaShopClosed}}"
             }
           ],
           "VisualTheme": [
@@ -2072,16 +2155,26 @@
           ],
           "Owners": [
             {
-              "Condition": null,
+              "Condition": "TIME 900 1800",
               "Portrait": "Portraits/NaveenFaycombeSereneVMV",
               "Dialogues": [
                 {
-                  "Condition": null,
                   "Dialogue": "{{i18n: NaveenShop{{Random:01, 02, 03, 04, 05, 06, 07}}}}"
                 }
               ],
               "Name": "AnyOrNone",
               "Id": "AnyOrNone"
+            },
+            {
+              "Condition": "TIME 600 850",
+              "Name": "AnyOrNone",
+              "Id": "OpenSoon",
+              "ClosedMessage": "{{i18n:NaveenShopOpenSoon}}"
+            },
+            {
+              "Name": "AnyOrNone",
+              "Id": "Closed",
+              "ClosedMessage": "{{i18n:NaveenShopClosed}}"
             }
           ],
           "Items": [
@@ -2484,7 +2577,7 @@
           ],
           "Owners": [
             {
-              "Condition": null,
+              "Condition": "TIME 900 1800",
               "Portrait": "Portraits/MariamFortinVMV",
               "Dialogues": [
                 {
@@ -2494,6 +2587,17 @@
               ],
               "Name": "AnyOrNone",
               "Id": "AnyOrNone"
+            },
+            {
+              "Condition": "TIME 600 850",
+              "Name": "AnyOrNone",
+              "Id": "OpenSoon",
+              "ClosedMessage": "{{i18n:MariamShopOpenSoon}}"
+            },
+            {
+              "Name": "AnyOrNone",
+              "Id": "Closed",
+              "ClosedMessage": "{{i18n:MariamShopClosed}}"
             }
           ],
           "Items": [
@@ -2741,6 +2845,16 @@
               "AvailableStock": 1
             },
             {
+              "Id": "Lumisteria.MtVapius_MariamShop.TreasureTotem.PriceCoins",
+              "ItemId": "(O)TreasureTotem",
+              "Condition": "MINE_LOWEST_LEVEL_REACHED 110, MUSEUM_DONATIONS 50, !{{HamletProgress|contains={{Range: 0, 5}}}}",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
+              "TradeItemAmount": 10,
+              "AvailableStock": 1
+            },
+            {
               "Id": "Lumisteria.MtVapius_MariamShop.Coins.PriceFriedMushroom",
               "ItemId": "Lumisteria.MtVapius_WeirdCoins",
               "Condition": "SYNCED_CHOICE day lumisteria.mariamshop_dish 1 4 1",
@@ -2972,7 +3086,6 @@
               "ItemID": "Lumisteria.MtVapius_TagetesSeeds",
               "Condition": "SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 1",
               "Price": 0,
-              "Price": 0,
               "TradeItemID": "Lumisteria.MtVapius_MoonPods",
               "TradeItemAmount": 1,
               "AvailableStock": 12,
@@ -2995,7 +3108,6 @@
               "ItemID": "Lumisteria.MtVapius_BlueMorningGloryStarter",
               "Condition": "SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 2",
               "Price": 0,
-              "Price": 0,
               "TradeItemID": "Lumisteria.MtVapius_MoonPods",
               "TradeItemAmount": 1,
               "AvailableStock": 12,
@@ -3006,7 +3118,6 @@
               "ID": "Lumisteria.MtVapius_JunimoShop.PinkMorningGloryStarter",
               "ItemID": "Lumisteria.MtVapius_PinkMorningGloryStarter",
               "Condition": "SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 3",
-              "Price": 0,
               "Price": 0,
               "TradeItemID": "Lumisteria.MtVapius_MoonPods",
               "TradeItemAmount": 1,
@@ -3198,22 +3309,62 @@
               "AvailableStock": 9
             },
             {
+              "ID": "Lumisteria.MtVapius_JunimoShop.ZenithFlowerSeeds",
+              "ItemID": "Lumisteria.MtVapius_ZenithFlowerSeeds",
+              "Condition": "SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 1, !PLAYER_HAS_MAIL Current {{ModId}}_ZenithFlowerSeeds",
+			  "ActionsOnPurchase": [
+					"AddMail Current {{ModId}}_ZenithFlowerSeeds received"
+				],
+              "Price": 0,
+              "TradeItemID": "Lumisteria.MtVapius_MoonPods",
+              "TradeItemAmount": 10,
+              "AvailableStock": 1,
+              "MinStack": 1,
+            },
+            {
+              "ID": "Lumisteria.MtVapius_JunimoShop.StellarSeeds",
+              "ItemID": "Lumisteria.MtVapius_StellarSeeds",
+			  "ActionsOnPurchase": [
+					"AddConversationTopic {{ModId}}_PurchasedStellarSeed 3"
+				],
+              "Condition": "!PLAYER_HAS_CONVERSATION_TOPIC Any {{ModId}}_PurchasedStellarSeed, PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Hamlet_StellarCrops02",
+              "Price": 0,
+              "TradeItemID": "259",
+              "TradeItemAmount": 3,
+              "AvailableStock": 1
+            },
+            {
               "ID": "Lumisteria.MtVapius_JunimoShop.RareFlowerSeeds",
               "ItemId": "RANDOM_ITEMS (O)",
-              "PerItemCondition": "ITEM_CONTEXT_TAG Target mt_vapius_rare_seeds",
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target mt_vapius_rare_flower_seeds",
 			  "ActionsOnPurchase": [
 					"AddConversationTopic {{ModId}}_PurchasedRareSeed 6"
 				],
-              "Condition": "!PLAYER_HAS_CONVERSATION_TOPIC Any {{ModId}}_PurchasedRareSeed, PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Cliff_ForageReturn",
+              "Condition": "!PLAYER_HAS_CONVERSATION_TOPIC Any {{ModId}}_PurchasedRareSeed, ANY \"PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Cliff_ForageReturn\" \"SYNCED_RANDOM day lumisteria.mtvapius_rareseeds 0.01 @addDailyLuck\"",
+              "Price": 0,
+              "TradeItemID": "Lumisteria.MtVapius_MoonPods",
+              "TradeItemAmount": 16,
+              "MaxItems": 1,
+              "AvailableStock": 1
+            },
+            {
+              "ID": "Lumisteria.MtVapius_JunimoShop.RareFlowerSeeds",
+              "ItemId": "RANDOM_ITEMS (O)",
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target mt_vapius_rare_flower_seeds",
+			  "ActionsOnPurchase": [
+					"AddConversationTopic {{ModId}}_PurchasedRareSeed 6"
+				],
+              "Condition": "!PLAYER_HAS_CONVERSATION_TOPIC Any {{ModId}}_PurchasedRareSeed, ANY \"PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Cliff_ForageReturn\" \"SYNCED_RANDOM day lumisteria.mtvapius_rareseeds 0.01 @addDailyLuck\"",
               "Price": 0,
               "TradeItemID": "(O)268", //Starfruit
               "TradeItemAmount": 2,
+              "MaxItems": 1,
               "AvailableStock": 1
             },
             {
               "ID": "Lumisteria.MtVapius_JunimoShop.CherrySapling",
               "ItemID": "(O)628",
-              "Condition": "PLAYER_FARMING_LEVEL Current 4, SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 1",
+              "Condition": "PLAYER_FARMING_LEVEL Current 4, ANY \"!{{HamletProgress|contains={{Range: 0, 8}}}}\" \"SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 1\"",
               "Price": 0,
               "TradeItemID": "(O)268", //Starfruit
               "TradeItemAmount": 3,
@@ -3222,7 +3373,7 @@
             {
               "ID": "Lumisteria.MtVapius_JunimoShop.ApricotSapling",
               "ItemID": "(O)629",
-              "Condition": "PLAYER_FARMING_LEVEL Current 4, SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 2",
+              "Condition": "PLAYER_FARMING_LEVEL Current 4, ANY \"!{{HamletProgress|contains={{Range: 0, 8}}}}\" \"SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 2\"",
               "Price": 0,
               "TradeItemID": "(O)268", //Starfruit
               "TradeItemAmount": 1,
@@ -3231,7 +3382,7 @@
             {
               "ID": "Lumisteria.MtVapius_JunimoShop.OrangeSapling",
               "ItemID": "(O)630",
-              "Condition": "PLAYER_FARMING_LEVEL Current 4, SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 3",
+              "Condition": "PLAYER_FARMING_LEVEL Current 4,  ANY \"!{{HamletProgress|contains={{Range: 0, 8}}}}\" \"SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 3\"",
               "Price": 0,
               "TradeItemID": "(O)268", //Starfruit
               "TradeItemAmount": 4,
@@ -3240,7 +3391,7 @@
             {
               "ID": "Lumisteria.MtVapius_JunimoShop.PeachSapling",
               "ItemID": "(O)631",
-              "Condition": "PLAYER_FARMING_LEVEL Current 4, SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 1",
+              "Condition": "PLAYER_FARMING_LEVEL Current 4,  ANY \"!{{HamletProgress|contains={{Range: 0, 8}}}}\" \"SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 1\"",
               "Price": 0,
               "TradeItemID": "(O)268", //Starfruit
               "TradeItemAmount": 6,
@@ -3249,7 +3400,7 @@
             {
               "ID": "Lumisteria.MtVapius_JunimoShop.PomegranateSapling",
               "ItemID": "(O)632",
-              "Condition": "PLAYER_FARMING_LEVEL Current 4, SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 2",
+              "Condition": "PLAYER_FARMING_LEVEL Current 4,  ANY \"!{{HamletProgress|contains={{Range: 0, 8}}}}\" \"SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 2\"",
               "Price": 0,
               "TradeItemID": "(O)268", //Starfruit
               "TradeItemAmount": 6,
@@ -3258,7 +3409,7 @@
             {
               "ID": "Lumisteria.MtVapius_JunimoShop.AppleSapling",
               "ItemID": "(O)633",
-              "Condition": "PLAYER_FARMING_LEVEL Current 4, SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 3",
+              "Condition": "PLAYER_FARMING_LEVEL Current 4,  ANY \"!{{HamletProgress|contains={{Range: 0, 8}}}}\" \"SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 3\"",
               "Price": 0,
               "TradeItemID": "(O)268", //Starfruit
               "TradeItemAmount": 4,
@@ -3267,7 +3418,7 @@
             {
               "ID": "Lumisteria.MtVapius_JunimoShop.FrostAppleSapling",
               "ItemID": "(O)Lumisteria.MtVapius_FrostAppleSapling",
-              "Condition": "PLAYER_FARMING_LEVEL Current 4, SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 1",
+              "Condition": "PLAYER_FARMING_LEVEL Current 4,  ANY \"!{{HamletProgress|contains={{Range: 0, 8}}}}\" \"SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 1\"",
               "Price": 0,
               "TradeItemID": "(O)268", //Starfruit
               "TradeItemAmount": 20,
@@ -3276,7 +3427,7 @@
             {
               "ID": "Lumisteria.MtVapius_JunimoShop.OliveSapling",
               "ItemID": "(O)Lumisteria.MtVapius_OliveSapling",
-              "Condition": "PLAYER_FARMING_LEVEL Current 4, SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 2",
+              "Condition": "PLAYER_FARMING_LEVEL Current 4,  ANY \"!{{HamletProgress|contains={{Range: 0, 8}}}}\" \"SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 2\"",
               "Price": 0,
               "TradeItemID": "(O)268", //Starfruit
               "TradeItemAmount": 20,
@@ -3285,7 +3436,7 @@
             {
               "ID": "Lumisteria.MtVapius_JunimoShop.GrapeSapling",
               "ItemID": "(O)Lumisteria.MtVapius_GrapeSapling",
-              "Condition": "PLAYER_FARMING_LEVEL Current 4, SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 3",
+              "Condition": "PLAYER_FARMING_LEVEL Current 4,  ANY \"!{{HamletProgress|contains={{Range: 0, 8}}}}\" \"SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 3\"",
               "Price": 0,
               "TradeItemID": "(O)268", //Starfruit
               "TradeItemAmount": 20,
@@ -3294,7 +3445,16 @@
             {
               "ID": "Lumisteria.MtVapius_JunimoShop.CasalotierSapling",
               "ItemID": "(O)Lumisteria.MtVapius_CasalotierSapling",
-              "Condition": "PLAYER_FARMING_LEVEL Current 4, SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 1",
+              "Condition": "PLAYER_FARMING_LEVEL Current 4,  ANY \"!{{HamletProgress|contains={{Range: 0, 8}}}}\" \"SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 1\"",
+              "Price": 0,
+              "TradeItemID": "(O)268", //Starfruit
+              "TradeItemAmount": 20,
+              "AvailableStock": "{{Round: {{Query:{{StockBasic}}/9}}}}",
+            },
+            {
+              "ID": "Lumisteria.MtVapius_JunimoShop.VoidCitrusSapling",
+              "ItemID": "(O)Lumisteria.MtVapius_VoidCitrusSapling",
+              "Condition": "PLAYER_FARMING_LEVEL Current 4,  ANY \"!{{HamletProgress|contains={{Range: 0, 8}}}}\" \"SYNCED_CHOICE day lumisteria.junimoshop_stock 1 3 1\"",
               "Price": 0,
               "TradeItemID": "(O)268", //Starfruit
               "TradeItemAmount": 20,
@@ -3399,7 +3559,6 @@
         },
         "Lumisteria.MtVapius_FelicityShop": {
           "ID": "Lumisteria.MtVapius_FelicityShop",
-          "PriceModifiers": null,
           "Owners": [
             {
               "Condition": "TIME 900 1800",
@@ -3468,6 +3627,45 @@
               "PerItemCondition": "ITEM_ID_PREFIX Target Lumisteria.MtVapius, ITEM_PRICE Target 101 300, ITEM_CATEGORY Target -75 -79 -81, ITEM_EDIBILITY Target",
               "MaxItems": "{{Random:1, 2}}",
               "AvailableStock": 2
+            },
+            {
+              "Id": "Lumisteria.MtVapius_FelicityShop.QualityCropsSpring.PriceCoins",
+              "RandomItemId": [
+                "(O)24",//parsnip
+                "(O)188",//green bean
+                "(O)190",//cauli
+                "(O)192",//potato
+              ],
+			  "Quality": 2,
+              "Price": 1000,
+              "IgnoreShopPriceModifiers": true,
+              "AvailableStock": 5
+            },
+            {
+              "Id": "Lumisteria.MtVapius_FelicityShop.QualityCropsSummer.PriceCoins",
+              "RandomItemId": [
+                "(O)254",//melon
+                "(O)258",//blueberry
+                "(O)260",//hot Pepper
+                "(O)270",//corn
+              ],
+			  "Quality": 2,
+              "Price": 1000,
+              "IgnoreShopPriceModifiers": true,
+              "AvailableStock": 5
+            },
+            {
+              "Id": "Lumisteria.MtVapius_FelicityShop.QualityCropsFall.PriceCoins",
+              "RandomItemId": [
+                "(O)270",//corn
+                "(O)272",//eggplant
+                "(O)276",//pumpkin
+                "(O)280",//yam
+              ],
+			  "Quality": 2,
+              "Price": 1000,
+              "IgnoreShopPriceModifiers": true,
+              "AvailableStock": 5
             },
             {
               "Id": "Lumisteria.MtVapius_FelicityShop.RandomPlantLow.PriceCoin",
@@ -3772,8 +3970,695 @@
 			  },*/
               "AvailableStock": 1,
             },
+			{
+			  "Id": "{{ModID}}_MaelleShop.Recipes",
+				  "ItemId": "RANDOM_ITEMS (O)",
+				  "PerItemCondition": "ITEM_ID_PREFIX Target {{ModId}}, ITEM_CATEGORY Target -7",
+			"IsRecipe": true,
+			  "AvailableStock": 1,
+			  "AvailableStockLimit": "Global",
+			  "Price": 2000,
+			  "MaxItems": 3,
+			},
+			{
+			  "Id": "{{ModID}}_MaelleShop.SereneMeadowRecipes",
+              "Condition": "{{HasMod |contains=Lumisteria.SereneMeadow}}",
+				  "ItemId": "RANDOM_ITEMS (O)",
+				  "PerItemCondition": "ITEM_ID_PREFIX Target Lumisteria.SereneMeadow, ITEM_CATEGORY Target -7",
+			"IsRecipe": true,
+			  "AvailableStock": 1,
+			  "AvailableStockLimit": "Global",
+			  "Price": 2000,
+			  "MaxItems": 3,
+			},
           ]
         },
+        "Lumisteria.MtVapius_LodgeShop": {
+          "ID": "Lumisteria.MtVapius_LodgeShop", 
+          "PriceModifiers": [
+            {
+              "Modification": "Add",
+              "Amount": 100
+            },
+            {
+              "Modification": "Multiply",
+              "Amount": 1.2
+            }
+          ],
+          "Owners": [
+            {
+              //"Portrait": "Portraits/MariamFortinVMV",
+              "Condition": "TIME 1100 1700, DAY_OF_WEEK Wed Fri",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n: MariamShop{{Random:01, 02, 03, 04, 05, 06, 07}}}}"
+                }
+              ],
+              "Name": "AnyOrNone",
+              "Id": "AnyOrNone"
+            },
+            {
+              "Condition": "TIME 600 1050",
+              "Name": "AnyOrNone",
+              "Id": "OpenSoon",
+              "ClosedMessage": "{{i18n:LodgeShopOpenSoon}}"
+            },
+            {
+              "Name": "AnyOrNone",
+              "Id": "Closed",
+              "ClosedMessage": "{{i18n:LodgeShopClosed}}"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.Artifact",
+              "ItemId": "RANDOM_ITEMS (O)",
+              "PerItemCondition": "ITEM_OBJECT_TYPE Target Arch, ANY \"ITEM_ID_PREFIX Target Lumisteria.MtVapius\" \"ITEM_NUMERIC_ID Target 1\"",
+              "Price": -1,
+              "AvailableStock": 1,
+              "MaxItems": "{{Round: {{Query:{{StockBasic}}/9}}}}",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.Artifact2",
+              "Condition": "MUSEUM_DONATIONS 65",
+              "ItemId": "RANDOM_ITEMS (O)",
+              "PerItemCondition": "ITEM_OBJECT_TYPE Target Arch, ANY \"ITEM_ID_PREFIX Target Lumisteria.MtVapius\" \"ITEM_NUMERIC_ID Target 1\"",
+              "Price": -1,
+              "AvailableStock": 1,
+              "MaxItems": 3,
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.Bomb.PriceCoins",
+              "ItemId": "(O)287",
+              "Condition": "MUSEUM_DONATIONS 25",
+              "MinStack": 1,
+              "MaxStack": 3,
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
+              "TradeItemAmount": 2,
+              "AvailableStock": "{{StockBasic}}",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.BookI.PriceCoins",
+              "RandomItemId": [
+                "Lumisteria.MtVapius_FarmingBook01",
+                "Lumisteria.MtVapius_MiningBook01",
+                "Lumisteria.MtVapius_CombatBook01",
+                "Lumisteria.MtVapius_FishingBook01",
+                "Lumisteria.MtVapius_ForagingBook01",
+              ],
+              "Condition": "MUSEUM_DONATIONS 15, SYNCED_RANDOM day lumisteria.Lodgeshop_book 0.3 @addDailyLuck, MINE_LOWEST_LEVEL_REACHED 40",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
+              "TradeItemAmount": 5,
+              "AvailableStock": "{{Round: {{Query:{{StockBasic}}/9}}}}",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.BookII.PriceCoins",
+              "RandomItemId": [
+                "Lumisteria.MtVapius_FarmingBook02",
+                "Lumisteria.MtVapius_MiningBook02",
+                "Lumisteria.MtVapius_CombatBook02",
+                "Lumisteria.MtVapius_FishingBook02",
+                "Lumisteria.MtVapius_ForagingBook02",
+              ],
+              "Condition": "MUSEUM_DONATIONS 45, SYNCED_RANDOM day lumisteria.Lodgeshop_book 0.2 @addDailyLuck, MINE_LOWEST_LEVEL_REACHED 70",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
+              "TradeItemAmount": 10,
+              "AvailableStock": 1,
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.BookIII.PriceCoins",
+              "RandomItemId": [
+                "Lumisteria.MtVapius_FarmingBook03",
+                "Lumisteria.MtVapius_MiningBook03",
+                "Lumisteria.MtVapius_CombatBook03",
+                "Lumisteria.MtVapius_FishingBook03",
+                "Lumisteria.MtVapius_ForagingBook03",
+              ],
+              "Condition": "MUSEUM_DONATIONS 55, SYNCED_RANDOM day lumisteria.Lodgeshop_book 0.1 @addDailyLuck, MINE_LOWEST_LEVEL_REACHED 110",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
+              "TradeItemAmount": 15,
+              "AvailableStock": 1,
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.Tentkit.PriceCoins",
+              "ItemId": "(O)TentKit",
+              "Condition": "MUSEUM_DONATIONS 25",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
+              "TradeItemAmount": 6,
+              "AvailableStock": "{{StockBasic}}",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.Staircase.PriceCoins",
+              "ItemId": "(BC)71",
+              "Condition": "MUSEUM_DONATIONS 35",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
+              "TradeItemAmount": 3,
+              "AvailableStock": "{{StockBasic}}",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.Espresso.PriceCoins",
+              "ItemId": "(O)253",
+              "Condition": "MUSEUM_DONATIONS 45",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
+              "TradeItemAmount": 8,
+              "AvailableStock": "{{StockBasic}}",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.SquidInkRavioli.PriceCoins",
+              "ItemId": "(O)921",
+              "Condition": "MUSEUM_DONATIONS 75",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
+              "TradeItemAmount": 4,
+              "AvailableStock": 3
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.ArtifactTrove.PriceMysteryBox",
+              "ItemId": "(O)Lumisteria.MtVapius_Treasures_ArtifactTrove",
+              "Condition": "MUSEUM_DONATIONS 85",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "MysteryBox",
+              "TradeItemAmount": 4,
+              "AvailableStock": 3
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.ArtifactTrove.PriceGoldenMysteryBox",
+              "ItemId": "(O)Lumisteria.MtVapius_Treasures_ArtifactTrove",
+              "Condition": "MUSEUM_DONATIONS 85",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "GoldenMysteryBox",
+              "TradeItemAmount": 1,
+              "AvailableStock": 3
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.Scroll1",
+              "ItemId": "(O)96",
+              "Condition": "MINE_LOWEST_LEVEL_REACHED 20, SYNCED_CHOICE day lumisteria.Lodgeshop_scroll 1 4 1",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "(O)97",
+              "AvailableStock": 1
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.Scroll2",
+              "ItemId": "(O)97",
+              "Condition": "MINE_LOWEST_LEVEL_REACHED 30, SYNCED_CHOICE day lumisteria.Lodgeshop_scroll 1 4 2",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "(O)99",
+              "AvailableStock": 1
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.Scroll3",
+              "ItemId": "(O)98",
+              "Condition": "MINE_LOWEST_LEVEL_REACHED 40, SYNCED_CHOICE day lumisteria.Lodgeshop_scroll 1 4 3",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "(O)96",
+              "AvailableStock": 1
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.Scroll4",
+              "ItemId": "(O)99",
+              "Condition": "MINE_LOWEST_LEVEL_REACHED 50, SYNCED_CHOICE day lumisteria.Lodgeshop_scroll 1 4 4",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "(O)98",
+              "AvailableStock": 1
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.OwlCarving.PriceCoins",
+              "ItemId": "(O)Lumisteria.MtVapius_OwlCarving",
+              "Condition": "MINE_LOWEST_LEVEL_REACHED 30",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
+              "TradeItemAmount": 6,
+              "AvailableStock": 3
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.JunimoCarving.PriceCoins",
+              "ItemId": "(O)Lumisteria.MtVapius_JunimoCarving",
+              "Condition": "MINE_LOWEST_LEVEL_REACHED 60, PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_ForestTrailPond",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
+              "TradeItemAmount": 8,
+              "AvailableStock": 1
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.WarpTotemMountains.PriceCoins",
+              "ItemId": "(O)689",
+              "Condition": "MINE_LOWEST_LEVEL_REACHED 30",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
+              "TradeItemAmount": 1,
+              "AvailableStock": 3
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.WarpTotemFarm.PriceCoins",
+              "ItemId": "(O)688",
+              "Condition": "MINE_LOWEST_LEVEL_REACHED 50",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
+              "TradeItemAmount": 2,
+              "AvailableStock": 3
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.WarpTotemBeach.PriceCoins",
+              "ItemId": "(O)690",
+              "Condition": "MINE_LOWEST_LEVEL_REACHED 70",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
+              "TradeItemAmount": 3,
+              "AvailableStock": 3
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.WarpTotemDesert.PriceCoins",
+              "ItemId": "(O)261",
+              "Condition": "MINE_LOWEST_LEVEL_REACHED 90, !{{HamletProgress|contains={{Range: 0, 3}}}}",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
+              "TradeItemAmount": 6,
+              "AvailableStock": 1
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.OwlCarvingRecipe.PriceCoins",
+              "ItemId": "(O)Lumisteria.MtVapius_OwlCarving",
+              "IsRecipe": true,
+              "Price": 1000,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
+              "TradeItemAmount": 10,
+              "AvailableStock": 1
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.TreasureTotem.PriceCoins",
+              "ItemId": "(O)TreasureTotem",
+              "Condition": "MINE_LOWEST_LEVEL_REACHED 121, MUSEUM_DONATIONS 65, !{{HamletProgress|contains={{Range: 0, 5}}}}",
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "Lumisteria.MtVapius_WeirdCoins",
+              "TradeItemAmount": 10,
+              "AvailableStock": 1
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.Coins.PriceFriedMushroom",
+              "ItemId": "Lumisteria.MtVapius_WeirdCoins",
+              "Condition": "SYNCED_CHOICE day lumisteria.Lodgeshop_dish 1 4 1",
+              "MinStack": 10,
+              "MaxStack": 13,
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "(O)205",
+              "TradeItemAmount": 1,
+              "AvailableStock": 3
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.Coins.PriceRootsPlater",
+              "ItemId": "Lumisteria.MtVapius_WeirdCoins",
+              "Condition": "SYNCED_CHOICE day lumisteria.Lodgeshop_dish 1 4 2",
+              "MinStack": 10,
+              "MaxStack": 14,
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "(O)244",
+              "TradeItemAmount": 1,
+              "AvailableStock": 3
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.Coins.PricePumpkinSoup",
+              "ItemId": "Lumisteria.MtVapius_WeirdCoins",
+              "Condition": "SYNCED_CHOICE day lumisteria.Lodgeshop_dish 1 4 3",
+              "MinStack": 15,
+              "MaxStack": 20,
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "(O)236",
+              "TradeItemAmount": 1,
+              "AvailableStock": 3
+            },
+            {
+              "Id": "Lumisteria.MtVapius_LodgeShop.Coins.PriceSpicyEel",
+              "ItemId": "Lumisteria.MtVapius_WeirdCoins",
+              "Condition": "SYNCED_CHOICE day lumisteria.Lodgeshop_dish 1 4 4",
+              "MinStack": 15,
+              "MaxStack": 22,
+              "Price": 0,
+              "IgnoreShopPriceModifiers": true,
+              "TradeItemID": "(O)226",
+              "TradeItemAmount": 1,
+              "AvailableStock": 3
+            },
+          ]
+        },
+        "Lumisteria.MtVapius_MoiraShopFair": {
+          "ID": "Lumisteria.MtVapius_MoiraShopFair",
+          "Owners": [
+            {
+              "Portrait": "Portraits/MoiraDuboisVMV",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n: MoiraShopFair}}"
+                },
+              ],
+              "Name": "AnyOrNone",
+              "Id": "AnyOrNone"
+            },
+          ],
+          "VisualTheme": [
+            {
+              "WindowBorderTexture": "Mods\\Lumisteria.MtVapius\\UI",
+              "WindowBorderSourceRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 18,
+                "Height": 18
+              },
+              "ItemRowBackgroundTexture": "Mods\\Lumisteria.MtVapius\\UI",
+              "ItemRowBackgroundSourceRect": {
+                "X": 18,
+                "Y": 0,
+                "Width": 15,
+                "Height": 15
+              },
+              "ItemIconBackgroundTexture": "Mods\\Lumisteria.MtVapius\\UI",
+              "ItemIconBackgroundSourceRect": {
+                "X": 33,
+                "Y": 0,
+                "Width": 18,
+                "Height": 18
+              },
+            }
+          ],
+          "SalableItemTags": [
+            "category_greens",
+            "category_vegetable",
+            "category_fruits",
+            "category_milk",
+            "category_artisan_goods",
+            "category_egg",
+            "category_cooking",
+            "category_ingredients",
+            "category_fish",
+          ],
+          "PriceModifiers": null,
+          "Items": [
+            {
+              "Price": 400,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Id": "Lumisteria.MtVapius_MoiraShopFair.RandomPrideBanner",
+              "ItemId": "RANDOM_ITEMS (F)",
+              "IsRecipe": false,
+              "PerItemCondition": "ITEM_ID_PREFIX Target Lumisteria.MtVapius_PrideBanner",
+              "MaxItems": 2,
+            },
+            {
+              "Price": 0,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Id": "Lumisteria.MtVapius_MoiraShopFair.RandomDishFree",
+              "ItemId": "RANDOM_ITEMS (O)",
+              "IsRecipe": false,
+              "PerItemCondition": "ITEM_ID_PREFIX Target Lumisteria.MtVapius_Cooking_",
+              "MaxItems": "1",
+            },
+			{
+			  "Id": "{{ModID}}_MoiraShopFair.Recipes",
+				  "ItemId": "RANDOM_ITEMS (O)",
+				  "PerItemCondition": "ITEM_ID_PREFIX Target {{ModId}}, ITEM_CATEGORY Target -7",
+			"IsRecipe": true,
+			  "AvailableStock": 1,
+			  "AvailableStockLimit": "Global",
+			  "Price": 750,
+			  "MaxItems": 6,
+			},
+            {
+              "Id": "Lumisteria.MtVapius_MoiraShopFair.MaturingShelves",
+              "ItemID": "(BC)Lumisteria.MtVapius_MaturingShelves",
+              "Price": 1000,
+              "AvailableStock": 3,
+            },
+            {
+              "Id": "Lumisteria.MtVapius_MoiraShopFair.Hay",
+              "ItemId": "(O)178",
+              "Price": 60,
+              "AvailableStock": 50,
+              "AvailableStockLimit": "Player",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_MoiraShopFair.BlueGrassStarter",
+              "ItemId": "(O)BlueGrassStarter",
+              "Condition": "PLAYER_HEARTS Current MoiraDuboisVMV 2, !{{HamletProgress|contains={{Range: 0, 6}}}}",
+              "Price": 600,
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Player",
+            },
+            {
+              "Price": -1,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Id": "Lumisteria.MtVapius_MoiraShopFair.EweMilk",
+              "ItemId": "Lumisteria.MtVapius_EweMilk",
+              "IsRecipe": false,
+            },
+            {
+              "Price": -1,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Id": "Lumisteria.MtVapius_MoiraShopFair.EweCheese",
+              "ItemId": "Lumisteria.MtVapius_EweCheese",
+              "IsRecipe": false,
+            },
+            {
+              "Price": -1,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Id": "Lumisteria.MtVapius_MoiraShopFair.RandomDish",
+              "ItemId": "RANDOM_ITEMS (O)",
+              "IsRecipe": false,
+              "PerItemCondition": "ITEM_ID_PREFIX Target Lumisteria.MtVapius_Cooking_",
+              "MaxItems": "1",
+            },
+            {
+              "Price": -1,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Id": "Lumisteria.MtVapius_MoiraShopFair.RandomDish2",
+              "ItemId": "RANDOM_ITEMS (O)",
+              "AvoidRepeat": true,
+              "IsRecipe": false,
+              "PerItemCondition": "ITEM_ID_PREFIX Target Lumisteria.MtVapius_Cooking_",
+              "MaxItems": "{{Round: {{Query:{{StockBasic}}/3}}}}",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_MoiraShopFair.RandomEgg",
+              "ItemId": "RANDOM_ITEMS (O)",
+              "AvailableStock": 3,
+              "AvailableStockLimit": "Global",
+              "MaxItems": "{{Round: {{Query:{{StockBasic}}/9}}}}",
+              "Price": -1,
+              "PerItemCondition": "ITEM_NUMERIC_ID Target 2 789, ITEM_CATEGORY Target -5",
+              "IgnoreShopPriceModifiers": false,
+              "PriceModifiers": [
+                {
+                  "Modification": "Multiply",
+                  "RandomAmount": [
+                    0.5,
+                    0.8,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            {
+              "Id": "Lumisteria.MtVapius_MoiraShopFair.RandomMilk",
+              "ItemId": "RANDOM_ITEMS (O)",
+              "AvailableStock": 2,
+              "AvailableStockLimit": "Global",
+              "MaxItems": "{{Round: {{Query:{{StockBasic}}/9}}}}",
+              "Price": -1,
+              "PerItemCondition": "ITEM_NUMERIC_ID Target 2 789, ITEM_CATEGORY Target -6",
+              "IgnoreShopPriceModifiers": false,
+              "PriceModifiers": [
+                {
+                  "Modification": "Multiply",
+                  "RandomAmount": [
+                    0.5,
+                    0.8,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+          ],
+        },
+        "Lumisteria.MtVapius_NaveenShopFair": {
+          "ID": "Lumisteria.MtVapius_NaveenShopFair",
+          "PriceModifiers": [
+            {
+              "Modification": "Multiply",
+              "Amount": 0.7
+            }
+          ],
+          "Owners": [
+            {
+              "Portrait": "Portraits/NaveenFaycombeSereneVMV",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n: NaveenShopFair}}"
+                }
+              ],
+              "Name": "AnyOrNone",
+              "Id": "AnyOrNone"
+            },
+          ],
+          "Items": [
+            {
+              "Id": "Lumisteria.MtVapius_NaveenShopFair.Gems",
+              "RandomItemId": [
+                "Lumisteria.MtVapius_Amber",
+                "Lumisteria.MtVapius_Demantoide",
+                "Lumisteria.MtVapius_Carnelian",
+                "Lumisteria.MtVapius_Turquoise",
+                "Lumisteria.MtVapius_Garnet",
+              ],
+              "Price": -1,
+              "AvailableStock": 5,
+            },
+            {
+              "Id": "Lumisteria.MtVapius_NaveenShopFair.Gems2",
+              "RandomItemId": [
+                "Lumisteria.MtVapius_Amber",
+                "Lumisteria.MtVapius_Demantoide",
+                "Lumisteria.MtVapius_Carnelian",
+                "Lumisteria.MtVapius_Turquoise",
+                "Lumisteria.MtVapius_Garnet",
+                "Lumisteria.MtVapius_Morganite",
+                "Lumisteria.MtVapius_Heliodor",
+                "Lumisteria.MtVapius_Labradorite",
+              ],
+              "Price": -1,
+              "AvailableStock": "{{Round: {{Query:{{StockBasic}}/3}}}}",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_NaveenShopFair.AnyGem",
+              "ItemId": "RANDOM_ITEMS (O)",
+              "PerItemCondition": "ITEM_CATEGORY Target -2, ANY \"ITEM_ID_PREFIX Target Lumisteria.MtVapius\" \"ITEM_NUMERIC_ID Target 1\" \"ITEM_ID_PREFIX Target DTZ.DowntownZuzuCP\" \"ITEM_CONTEXT_TAG Target sbv_common_mineral\"",
+              "Price": -1,
+              "AvailableStock": 2,
+              "MaxItems": "{{Round: {{Query:{{StockBasic}}/3}}}}",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_NaveenShopFair.BlackGeode",
+              "ItemID": "Lumisteria.MtVapius_BlackGeode",
+              "Price": -1,
+              "AvailableStock": 10
+            },
+            {
+              "Id": "Lumisteria.MtVapius_NaveenShopFair.AnyMineral",
+              "ItemId": "RANDOM_ITEMS (O)",
+              "PerItemCondition": "ITEM_CATEGORY Target -12, ANY \"ITEM_ID_PREFIX Target Lumisteria.MtVapius\" \"ITEM_NUMERIC_ID Target 1\" \"ITEM_ID_PREFIX Target DTZ.DowntownZuzuCP\" \"ITEM_CONTEXT_TAG Target sbv_common_mineral\"",
+              "Price": -1,
+              "AvailableStock": "{{Round: {{Query:{{StockBasic}}/9}}}}",
+              "MaxItems": 3,
+            },
+            {
+              "Id": "Lumisteria.MtVapius_NaveenShopFair.AnyEarring",
+              "ItemId": "RANDOM_ITEMS (O)",
+              "PerItemCondition": "ITEM_ID_PREFIX Target Lumisteria.MtVapius_Earrings_",
+              "Price": -1,
+              "AvailableStock": 1,
+              "MaxItems": 1,
+            },
+          ]
+        },
+        "Lumisteria.MtVapius_HeliaShopFair": {
+          "ID": "Lumisteria.MtVapius_HeliaShopFair", 
+          "Owners": [
+            {
+              "Portrait": "Portraits/HeliaDiamantiVMV",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n: HeliaShopFair}}"
+                },
+              ],
+              "Name": "AnyOrNone",
+              "Id": "AnyOrNone"
+            },
+          ],
+          "Items": [
+            {
+              "Id": "Lumisteria.MtVapius_HeliaShopFair.CompostBin",
+              "ItemID": "(BC)Lumisteria.MtVapius_CompostBin",
+              "Price": 400,
+              "AvailableStock": 1
+            },
+            {
+              "Id": "Lumisteria.MtVapius_HeliaShopFair.GardenPot",
+              "ItemID": "(BC)62", //Garden Pot
+              "Price": 600,
+              "AvailableStock": 1
+            },
+            {
+              "Id": "Lumisteria.MtVapius_HeliaShopFair.InsectHotel",
+              "ItemID": "Lumisteria.MtVapius_InsectHotel",
+              "Price": 1000,
+              "AvailableStock": 1
+            },
+            {
+              "Id": "Lumisteria.MtVapius_HeliaShopFair.MaturingShelves",
+              "ItemID": "(BC)Lumisteria.MtVapius_MaturingShelves",
+              "Price": 1000,
+              "AvailableStock": 1
+            },
+            {
+              "Id": "Lumisteria.MtVapius_HeliaShopFair.CandyMaker",
+              "ItemID": "Lumisteria.MtVapius_CandyMaker",
+              "Price": 1000,
+              "AvailableStock": 1
+            },
+            {
+              "Id": "Lumisteria.MtVapius_HeliaShopFair.GemPolisher",
+              "ItemID": "Lumisteria.MtVapius_GemPolisher",
+              "Price": 2000,
+              "AvailableStock": 1
+            },
+            {
+              "Id": "Lumisteria.MtVapius_HeliaShopFair.JewelerWorkshop",
+              "ItemID": "Lumisteria.MtVapius_JewelerWorkshop",
+              "Price": 2000,
+              "AvailableStock": 1,
+            },
+          ]
+        },
+
+
+ 
       }
     },
     {
@@ -4291,6 +5176,27 @@
           "Id": "Lumisteria.MtVapius_Cooking_CreamAndStrawberries",
           "ItemId": "Lumisteria.MtVapius_Cooking_CreamAndStrawberries",
           "Condition": "RANDOM 0.3",
+        },
+      },
+    },
+    {
+      "LogName": "Editing Bookseller Shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "Bookseller",
+        "Items"
+      ],
+      "Entries": {
+        "{{ModId}}_Bookseller.Recipes": {
+          "Id": "{{ModID}}_Bookseller.Recipes",
+              "ItemId": "RANDOM_ITEMS (O)",
+              "PerItemCondition": "ITEM_ID_PREFIX Target {{ModId}}, ITEM_CATEGORY Target -7",
+        "IsRecipe": true,
+          "AvailableStock": 1,
+          "AvailableStockLimit": "Global",
+          "Price": 2000,
+          "MaxItems": 3,
         },
       },
     },

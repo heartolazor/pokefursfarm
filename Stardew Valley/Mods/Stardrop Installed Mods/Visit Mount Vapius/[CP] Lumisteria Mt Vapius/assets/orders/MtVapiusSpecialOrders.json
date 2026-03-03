@@ -1566,6 +1566,46 @@
             },
           ]
         },
+        "Lumisteria.MtVapiusSpecialOrders.MtVapiusFishesSmall": {
+          "Name": "[Lumisteria.MtVapiusSpecialOrders.MtVapiusFishesSmall_Name]",
+          "Requester": "Pam",
+          "Duration": "TwoWeeks",
+          "Repeatable": "False",
+          "RequiredTags": "",
+          "OrderType": "Esca.EMP/MtVapiusBoard",
+          "SpecialRule": "",
+          "Text": "[Lumisteria.MtVapiusSpecialOrders.MtVapiusFishesSmall_Text]",
+          "Objectives": [
+            {
+              "Type": "Collect",
+              "Text": "[Lumisteria.MtVapiusSpecialOrders.MtVapiusFishesSmall_Objective_0_Text]",
+              "RequiredCount": "5",
+              "Data": {
+                "AcceptedContextTags": "mt_vapius, category_fish"
+              }
+            },
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": {
+                "Amount": "200"
+              }
+            },
+            {
+              "Type": "Friendship",
+              "Data": {}
+            },
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "Lumisteria.MtVapiusSpecialOrders.MtVapiusFishesSmallMail",
+                "NoLetter": "false"
+              }
+            }
+          ]
+        },
+		
       }
     }
   ]

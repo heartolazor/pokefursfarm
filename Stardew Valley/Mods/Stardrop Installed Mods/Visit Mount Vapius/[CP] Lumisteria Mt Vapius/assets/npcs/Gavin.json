@@ -6,22 +6,70 @@
       "Target": "Portraits/GavinPommerelVMV, Characters/GavinPommerelVMV",
       "FromFile": "assets/npcs/{{Target}}.png"
     },
-    /*{
+    {
+      "LogName": "Gavin Flower Dance Sprites",
+      "Action": "Load",
+      "Target": "Characters/GavinPommerelVMV_FlowerDance",
+      "FromFile": "assets/npcs/Characters/GavinPommerelVMVExtra/FlowerDance.png",
+    },
+    {
+      "LogName": "Gavin Flower Dance Portraits",
+      "Action": "Load",
+      "Target": "Portraits/GavinPommerelVMV_FlowerDance",
+      "FromFile": "assets/npcs/Portraits/GavinPommerelVMVExtra/FlowerDance.png",
+    },
+    {
+      "LogName": "Gavin Spring Sprites",
+      "Action": "Load",
+      "Target": "Characters/GavinPommerelVMV_Spring",
+      "FromFile": "assets/npcs/Characters/GavinPommerelVMVExtra/Spring.png",
+    },
+    {
+      "LogName": "Gavin Spring Portraits",
+      "Action": "Load",
+      "Target": "Portraits/GavinPommerelVMV_Spring",
+      "FromFile": "assets/npcs/Portraits/GavinPommerelVMVExtra/Spring.png",
+    },
+    {
+      "LogName": "Gavin Fall Sprites",
+      "Action": "Load",
+      "Target": "Characters/GavinPommerelVMV_Fall",
+      "FromFile": "assets/npcs/Characters/GavinPommerelVMVExtra/Fall.png",
+    },
+    {
+      "LogName": "Gavin Fall Portraits",
+      "Action": "Load",
+      "Target": "Portraits/GavinPommerelVMV_Fall",
+      "FromFile": "assets/npcs/Portraits/GavinPommerelVMVExtra/Fall.png",
+    },
+    {
+      "LogName": "Gavin Winter Sprites",
+      "Action": "Load",
+      "Target": "Characters/GavinPommerelVMV_Winter",
+      "FromFile": "assets/npcs/Characters/GavinPommerelVMVExtra/Winter.png",
+    },
+    {
+      "LogName": "Gavin Winter Portraits",
+      "Action": "Load",
+      "Target": "Portraits/GavinPommerelVMV_Winter",
+      "FromFile": "assets/npcs/Portraits/GavinPommerelVMVExtra/Winter.png",
+    },
+    {
       "LogName": "Gavin Pommerel Dispositions",
       "Action": "EditData",
       "Target": "Data/Characters",
       "Entries": {
         "GavinPommerelVMV": {
           "DisplayName": "{{i18n: GavinDisplayName}}",
-          "BirthSeason": "summer",
-          "BirthDay": 20,
+          "BirthSeason": "spring",
+          "BirthDay": 21,
           "HomeRegion": "Other",
           "Gender": "Male",
           "Age": "Adult",
           "Manner": "Neutral",
           "SocialAnxiety": "Neutral",
           "Optimism": "Neutral",
-          "CanBeRomanced": false,
+          "CanBeRomanced": true,
           "SocialTab": "UnknownUntilMet",
           "IntroductionsQuest": false,
           "PerfectionScore": true,
@@ -29,15 +77,58 @@
           "FriendsAndFamily": {
             "MariamFortinVMV": "",
           },
-          "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Lake_Mariam_2H",
+          "UnlockConditions": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_GavinReturn",
           "SpawnIfMissing": true,
 			"Appearance": [
+			  {
+				"Id": "Lumisteria.MtVapiusGavinFlowerDance",
+				"Condition": "IS_EVENT festival_spring24",
+				"Portrait": "Portraits/GavinPommerelVMV_FlowerDance",
+				"Sprite": "Characters/GavinPommerelVMV_FlowerDance",
+				"IsIslandAttire": false,
+				"Precedence": -1000,
+				"Weight": 1
+			  },
+			  {
+				"Id": "Lumisteria.MtVapiusGavinSpring",
+				"Condition": "LOCATION_SEASON Here Spring, PLAYER_HEARTS Current GavinPommerelVMV 2",
+				"Sprite": "Characters/GavinPommerelVMV_Spring",
+				"Portrait": "Portraits/GavinPommerelVMV_Spring",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 1
+			  },
+			  {
+				"Id": "Lumisteria.MtVapiusGavinFall",
+				"Condition": "LOCATION_SEASON Here Fall, PLAYER_HEARTS Current GavinPommerelVMV 2",
+				"Sprite": "Characters/GavinPommerelVMV_Fall",
+				"Portrait": "Portraits/GavinPommerelVMV_Fall",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 1
+			  },
+			  {
+				"Id": "Lumisteria.MtVapiusGavinWinter",
+				"Condition": "LOCATION_SEASON Here Winter, PLAYER_HEARTS Current GavinPommerelVMV 2",
+				"Sprite": "Characters/GavinPommerelVMV_Winter",
+				"Portrait": "Portraits/GavinPommerelVMV_Winter",
+				"IsIslandAttire": false,
+				"Precedence": -100,
+				"Weight": 1
+			  },
 			],
 		  "Home": [
 				{
+					"Id": "Gavin House",
+					"Location": "Lumisteria.MtVapius_GavinHouse",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Lodge_Gavin6HFollowUp",
+					"Tile": { "X": 10, "Y": 16 },
+					"Direction": "down"
+				},
+				{
 					"Id": "Default",
-					"Location": "Lumisteria.MtVapius_Inn",
-					"Tile": { "X": 38, "Y": 37 },
+					"Location": "Lumisteria.MtVapius_LodgeIndoor",
+					"Tile": { "X": 6, "Y": 9 },
 					"Direction": "down"
 				}
 			],
@@ -46,16 +137,82 @@
             "Y": 32
           },
           "Breather": true,
+          "FlowerDanceCanDance": true,
         },
       },
-    },*/
-    /*
+    },
+    {
+      "LogName": "Editing Friend and family",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [
+        "GavinPommerelVMV",
+        "FriendsAndFamily"
+      ],
+      "Entries": {
+		  
+		  "Clint": "",
+      },
+      "When": {
+        "query: {{Hearts:GavinPommerelVMV}} >= 3": true
+      }
+    },
+    {
+      "LogName": "Editing Friend and family",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [
+        "GavinPommerelVMV",
+        "FriendsAndFamily"
+      ],
+      "Entries": {
+		  
+		  "MaddyPellegrinVMV": "",
+      },
+      "When": {
+        "query: {{Hearts:GavinPommerelVMV}} >= 7": true,
+        "query: {{Hearts:MaddyPellegrinVMV}} >= 5": true,
+      }
+    },
+    {
+      "LogName": "Editing Friend and family",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [
+        "GavinPommerelVMV",
+        "FriendsAndFamily"
+      ],
+      "Entries": {
+		  
+		  "HeliaDiamantiVMV": "",
+      },
+      "When": {
+        "query: {{Hearts:GavinPommerelVMV}} >= 6": true,
+        "query: {{Hearts:HeliaDiamantiVMV}} >= 6": true,
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/GavinPommerelVMV/Schedule.json"
+    },
+    {
       "LogName": "Gavin - Gift Taste",
       "Action": "EditData",
       "Target": "Data/NPCGiftTastes",
       "Entries": {
-        "GavinDuboisVMV": "{{i18n: GavinGiftLoved{{GiftAnswerGavin}}}}/Wildflour.SASS_Avalon_Mist_Flower/{{i18n: GavinGiftLiked{{GiftAnswerGavin}}}}/TODOLIKED/{{i18n: GavinGiftDislike{{GiftAnswerGavin}}}}/TODODISLIKED/{{i18n: GavinGiftHate{{GiftAnswerGavin}}}}/TODOHATE/{{i18n: GavinGiftNeutral{{GiftAnswerGavin}}}}/TODONEUTRAL/",
+        "GavinPommerelVMV": "{{i18n: GavinGiftLoved{{GiftAnswerGavin}}}}/Wildflour.SASS_Avalon_Mist_Flower 109 Book_Bombs Lumisteria.MtVapius_Treasures_FragmentMask Lumisteria.SereneMeadow_ForgetMeNot/{{i18n: GavinGiftLiked{{GiftAnswerGavin}}}}/116 SkillBook_4/{{i18n: GavinGiftDislike{{GiftAnswerGavin}}}}/205/{{i18n: GavinGiftHate{{GiftAnswerGavin}}}}/mushroom_item 404 422/{{i18n: GavinGiftNeutral{{GiftAnswerGavin}}}}/768/",
       },
-    },*/
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/GavinPommerelVMV",
+      "FromFile": "assets/npcs/BlankDialogue.json"
+    },
+    //Include dialogue for token.
+    {
+      "Action": "Include",
+      "FromFile": "assets/npcs/GavinPommerelVMV/Dialogue.json"
+    },
   ]
 }

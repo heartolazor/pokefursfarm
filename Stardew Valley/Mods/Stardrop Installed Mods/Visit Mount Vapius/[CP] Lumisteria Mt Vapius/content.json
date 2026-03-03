@@ -59,6 +59,18 @@
 			"AllowValues": "7, 8, 9, 10, 11, 12",
 			"Default": "12"
 		},
+		"Level7FruitTreeBonusChance": {
+			"AllowValues": "0.0, 0.25, 0.5, 0.75, 1",
+			"Default": "0.25"
+		},
+		"Level10FruitTreeBonusChance": {
+			"AllowValues": "0.0, 0.25, 0.5, 0.75, 1",
+			"Default": "0.5"
+		},
+		"Level13FruitTreeBonusChance": {
+			"AllowValues": "0.0, 0.25, 0.5, 0.75, 1",
+			"Default": " 0.75"
+		},
 	},
 	"DynamicTokens": [
 		{
@@ -184,6 +196,17 @@
 			"Value": "Friend",
 			"When": {
 				"Hearts:NaveenFaycombeSereneVMV": "{{Range: 5, 14}}",
+			}
+		},
+		{
+			"Name": "GiftAnswerGavin",
+			"Value": "Distant",
+		},
+		{
+			"Name": "GiftAnswerGavin",
+			"Value": "Friend",
+			"When": {
+				"Hearts:GavinPommerelVMV": "{{Range: 5, 14}}",
 			}
 		},
 		{
@@ -348,6 +371,20 @@
 			"Value": "{{query: {{HamletProgress}} + 1}}",
 			"When": {
 				"HasFlag: anyPlayer": "Gil_Lumisteria.MtVapius_Ghosts",
+			}
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"HasFlag: anyPlayer": "Lumisteria.MtVapius_NaturalReserve_RewardMail01",
+			}
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"HasFlag: anyPlayer": "Lumisteria.MtVapius_NaturalReserve_RewardMail02",
 			}
 		},
 		{
@@ -583,6 +620,18 @@
 			"Target": "Maps/Lumisteria_MtVapius_TemporaryForestWedding",
 			"FromFile": "Assets/LumisteriaMtVapiusTemporaryForestWedding.tmx",
 		},
+		{
+			"LogName": "Lumisteria Mt Vapius All Season Tilesheet",
+			"Action": "Load",
+			"Target": "Maps/lumisteria_mtvapius_c_allseasons",
+			"FromFile": "assets/tilesheets/{{TargetWithoutPath}}.png",
+		},
+		{
+			"LogName": "Lumisteria Mt Vapius Festival",
+			"Action": "Load",
+			"Target": "Maps/lumisteria_mtvapius_festival",
+			"FromFile": "assets/tilesheets/{{TargetWithoutPath}}.png",
+		},
 		//Snow spring/fall
 		{
 			"LogName": "Lumisteria Mt Vapius Snow",
@@ -665,6 +714,12 @@
 		{
 			"Action": "Include",
 			"FromFile": "Assets/others/Map.json",
+		},
+		//Buffs
+		{
+			"LogName": "Buffs",
+			"Action": "Include",
+			"FromFile": "Assets/items/Buffs.json",
 		},
 		//Objects
 		{
@@ -768,6 +823,13 @@
 			"Action": "Include",
 			"FromFile": "Assets/items/WildTrees.json",
 		},
+		//MushroomLogCauldron
+		{
+			"LogName": "MushroomLogCauldron",
+			"Action": "Include",
+			"FromFile": "Assets/items/MushroomLogCauldron.json",
+		},
+		
 		//Ores
 		{
 			"LogName": "Ores",
@@ -815,6 +877,19 @@
 		{
 			"Action": "Include",
 			"FromFile": "Assets/orders/MtVapiusSpecialOrdersStrings.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Assets/orders/MtVapiusSpecialOrdersTriggers.json",
+		},
+		//Museum stuff
+		{
+			"Action": "Include",
+			"FromFile": "Assets/orders/MtVapiusMuseumContextTag.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Assets/orders/MtVapiusMuseum.json",
 		},
 		//Animals
 		{
@@ -1048,6 +1123,14 @@
 			"FromFile": "Assets/items/SecretNotes.json",
 			"When": {
 				"HasMod |contains=ichortower.SecretNoteFramework": "true",
+			}
+		},
+		//Cloths and Colors
+		{
+			"Action": "Include",
+			"FromFile": "Assets/others/ClothColorCompat.json",
+			"When": {
+				"HasMod |contains=selph.TextileExpansion": "true",
 			}
 		},
 		

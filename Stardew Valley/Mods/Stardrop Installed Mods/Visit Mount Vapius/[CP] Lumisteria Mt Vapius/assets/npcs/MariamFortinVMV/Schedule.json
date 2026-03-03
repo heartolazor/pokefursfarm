@@ -11,11 +11,32 @@
       "Action": "EditData",
       "Target": "Characters/schedules/MariamFortinVMV",
       "Entries": {
+		"GreenRain": "610 Lumisteria.MtVapius_Inn 19 38 2/2200 Lumisteria.MtVapius_Lodge 13 7 2",
         "Tue": "a900 Lumisteria.MtVapius_Hamlet 23 65 2/1220 Lumisteria.MtVapius_Hamlet 34 84 2/1440 Lumisteria.MtVapius_Hamlet 23 65 2/1900 Lumisteria.MtVapius_Lodge 13 7 2",
+        "Sat": "900 Lumisteria.MtVapius_ForestCrystalLake 23 19 2/1200 Lumisteria.MtVapius_ForestCrystalLake 13 20 2 square_3_5/1700 Lumisteria.MtVapius_Inn 2 29 2/2200 Lumisteria.MtVapius_Lodge 17 8 2",
         "spring": "900 Lumisteria.MtVapius_ForestCrystalLake 23 19 2/1200 Lumisteria.MtVapius_ForestCrystalLake 13 20 2 square_3_5/1800 Lumisteria.MtVapius_Lodge 17 8 2",
         "summer": "800 Lumisteria.MtVapius_ForestCrystalLake 23 19 2/1030 Lumisteria.MtVapius_ForestCrystalLake 13 20 2 square_3_5/1600 Lumisteria.MtVapius_ForestCrystalLake 6 15 2/1800 Lumisteria.MtVapius_Lodge 17 8 2",
 		"winter": "1000 Lumisteria.MtVapius_ForestCrystalLake 22 40 2 square_5_7/1730 Lumisteria.MtVapius_Lodge 17 8 2",
 
+      }
+    },
+    {
+      "LogName": "Gavin Back Schedules",
+      "Action": "EditData",
+      "Target": "Characters/schedules/MariamFortinVMV",
+      "Entries": {
+		"GreenRain": "610 Lumisteria.MtVapius_Inn 19 38 2/2200 Lumisteria.MtVapius_LodgeIndoor 6 8 1",
+        "Tue": "a900 Lumisteria.MtVapius_Hamlet 23 65 2/1220 Lumisteria.MtVapius_Hamlet 34 84 2/1440 Lumisteria.MtVapius_Hamlet 23 65 2/1900 Lumisteria.MtVapius_Lodge 13 7 2/2200 Lumisteria.MtVapius_LodgeIndoor 6 8 1",
+        "Wed": "a900 Lumisteria.MtVapius_LodgeIndoor 2 7 2/1700 Lumisteria.MtVapius_Clearing 20 10 2/2000 Lumisteria.MtVapius_Lodge 13 7 2/2200 Lumisteria.MtVapius_LodgeIndoor 6 8 1",
+        "Fri": "a900 Lumisteria.MtVapius_LodgeIndoor 2 7 2/1700 Lumisteria.MtVapius_Clearing 20 10 2/2000 Lumisteria.MtVapius_Lodge 13 7 2/2200 Lumisteria.MtVapius_LodgeIndoor 6 8 1",
+        "Sat": "900 Lumisteria.MtVapius_ForestCrystalLake 23 19 2/1200 Lumisteria.MtVapius_ForestCrystalLake 13 20 2 square_3_5/1630 Lumisteria.MtVapius_Inn 2 29 2/2200 Lumisteria.MtVapius_LodgeIndoor 6 8 1",
+        "spring": "900 Lumisteria.MtVapius_ForestCrystalLake 23 19 2/1200 Lumisteria.MtVapius_ForestCrystalLake 13 20 2 square_3_5/1800 Lumisteria.MtVapius_Lodge 17 8 2/2200 Lumisteria.MtVapius_LodgeIndoor 6 8 1",
+        "summer": "800 Lumisteria.MtVapius_ForestCrystalLake 23 19 2/1030 Lumisteria.MtVapius_ForestCrystalLake 13 20 2 square_3_5/1600 Lumisteria.MtVapius_ForestCrystalLake 6 15 2/1800 Lumisteria.MtVapius_Lodge 17 8 2/2200 Lumisteria.MtVapius_LodgeIndoor 6 8 1",
+		"winter": "1000 Lumisteria.MtVapius_ForestCrystalLake 22 40 2 square_5_7/1730 Lumisteria.MtVapius_Lodge 17 8 2/2200 Lumisteria.MtVapius_LodgeIndoor 6 8 1",
+      },
+      "When":
+      {   
+		"HasFlag: anyPlayer": "Lumisteria.MtVapius_GavinReturn",
       }
     },
     {
@@ -35,8 +56,8 @@
       "Action": "EditData",
       "Target": "Characters/schedules/MariamFortinVMV",
       "Entries": {
-        "12": "000 AdventureGuild 11 14 0/900 Mine 23 5 2 square_2_2/1200 Mountains 43 6 2/1800 AdventureGuild 11 14 0/2300 AdventureGuild 10 4 2",
-        "26": "000 AdventureGuild 11 14 0/900 Mine 23 5 2 square_2_2/1200 Mountains 43 6 2/1800 AdventureGuild 11 14 0/2300 AdventureGuild 10 4 2",
+        "12": "000 AdventureGuild 11 14 0/900 Mine 23 5 2 square_2_2/1200 Mountain 43 6 2/1800 AdventureGuild 11 14 0/2300 AdventureGuild 10 4 2",
+        "26": "000 AdventureGuild 11 14 0/900 Mine 23 5 2 square_2_2/1200 Mountain 43 6 2/1800 AdventureGuild 11 14 0/2300 AdventureGuild 10 4 2",
       },
       "When":
       {   

@@ -17,7 +17,7 @@
           "DisplayName": "{{i18n: AdelaideDisplayName}}",
           "BirthSeason": "winter",
           "BirthDay": 5,
-          "HomeRegion": "Other",
+          "HomeRegion": "Lumisteria.MtVapius_Main",
           "Gender": "Female",
           "Age": "Adult",
           "Manner": "Polite",
@@ -50,6 +50,15 @@
 				"IsIslandAttire": false,
 				"Precedence": -100,
 				"Weight": 0
+			  },
+			  {
+				"Id": "Lumisteria.MtVapiusAdelaideFlowerDance",
+				"Condition": "IS_EVENT festival_spring24",
+				"Portrait": "Portraits/AdelaideRosierVMV_FlowerDance",
+				"Sprite": "Characters/AdelaideRosierVMV_FlowerDance",
+				"IsIslandAttire": false,
+				"Precedence": -1000,
+				"Weight": 1
 			  },
 			],
 		  "Home": [
@@ -102,6 +111,18 @@
       }
     },
     {
+      "LogName": "Adelaide Flower Dance Portraits",
+      "Action": "Load",
+      "Target": "Portraits/AdelaideRosierVMV_FlowerDance",
+      "FromFile": "assets/npcs/Portraits/AdelaideRosierVMVExtra/FlowerDance.png",
+    },
+    {
+      "LogName": "Adelaide Flower Dance Sprites",
+      "Action": "Load",
+      "Target": "Characters/AdelaideRosierVMV_FlowerDance",
+      "FromFile": "assets/npcs/Characters/AdelaideRosierVMVExtra/FlowerDance.png",
+    },
+    {
       "Action": "Include",
       "FromFile": "assets/npcs/AdelaideRosierVMV/Schedule.json"
     },
@@ -110,7 +131,7 @@
       "Action": "EditData",
       "Target": "Data/NPCGiftTastes",
       "Entries": {
-        "AdelaideRosierVMV": "{{i18n: AdelaideGiftLoved{{GiftAnswerAdelaide}}}}/445 340 348 614 231 Lumisteria.MtVapius_Treasures_RareStamp slimerrain.uncleirohapprovedteacp_Jasmine_Tea slimerrain.uncleirohapprovedteacp_Barley_Tea/{{i18n: AdelaideGiftLiked{{GiftAnswerAdelaide}}}}/-81/{{i18n: AdelaideGiftDislike{{GiftAnswerAdelaide}}}}/30/{{i18n: AdelaideGiftHate{{GiftAnswerAdelaide}}}}/206 213 224 241/{{i18n: AdelaideGiftNeutral{{GiftAnswerAdelaide}}}}/-4/",
+        "AdelaideRosierVMV": "{{i18n: AdelaideGiftLoved{{GiftAnswerAdelaide}}}}/445 340 348 614 231 Lumisteria.MtVapius_Treasures_RareStamp slimerrain.uncleirohapprovedteacp_Jasmine_Tea slimerrain.uncleirohapprovedteacp_Barley_Tea/{{i18n: AdelaideGiftLiked{{GiftAnswerAdelaide}}}}/-81 stamp_item/{{i18n: AdelaideGiftDislike{{GiftAnswerAdelaide}}}}/30/{{i18n: AdelaideGiftHate{{GiftAnswerAdelaide}}}}/206 213 224 241/{{i18n: AdelaideGiftNeutral{{GiftAnswerAdelaide}}}}/-4/",
       },
     },
     {

@@ -1,0 +1,19 @@
+{
+  "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "Lumisteria.MtVapiusFishesSmallOrderTrigger": {
+                    "Id": "Lumisteria.MtVapiusFishesSmallOrderTrigger",
+					"Condition": "ANY \"SEASON spring, DAY_OF_MONTH 15 16 17 18 19 20, PLAYER_HAS_SEEN_EVENT Current Lumisteria.MtVapius_Arrival\" \"SEASON Summer, DAY_OF_MONTH 1 2 3 4 5 6, PLAYER_HAS_SEEN_EVENT Current Lumisteria.MtVapius_Arrival\" \"SEASON Summer, DAY_OF_MONTH 15 16 17 18 19 20, PLAYER_HAS_SEEN_EVENT Current Lumisteria.MtVapius_Arrival\"",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "AddConversationTopic Lumisteria.MtVapiusSpecialOrders.MtVapiusFishChallenge 6",
+                        "AddMail Current Lumisteria.MtVapiusSpecialOrders.MtVapiusFishChallengeMail now"
+                    ]
+                },
+            }
+        },
+  ]
+}

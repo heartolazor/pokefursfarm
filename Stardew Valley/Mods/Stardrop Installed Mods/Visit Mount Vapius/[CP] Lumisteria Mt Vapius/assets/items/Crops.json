@@ -756,8 +756,10 @@
 				},
 				"Lumisteria.MtVapius_StellarSeeds": {
 					"Seasons": [
+						"spring",
 						"summer",
 						"fall",
+						"winter",
 					],
 					"DaysInPhase": [
 						1,
@@ -835,14 +837,14 @@
 					"PlantableLocationRules": [
 						{
 							"Id": "Lumisteria.MtVapius_DenyNotSkilledSummer",
-							"Condition": "LOCATION_SEASON Here summer, !PLAYER_FARMING_LEVEL Current 10, !LOCATION_CONTEXT Here Island, !LOCATION_NAME Greenhouse",
+							"Condition": "LOCATION_SEASON Here summer, !PLAYER_FARMING_LEVEL Current 10, !LOCATION_CONTEXT Here Island, !LOCATION_NAME Here Greenhouse",
 							"PlantedIn": "Any",
 							"Result": "Deny",
 							"DeniedMessage": "{{i18n: MtVapiusBlueCloverSeeds_DenyMessage}}"
 						},
 						{
 							"Id": "Lumisteria.MtVapius_DenyFall",
-							"Condition": "LOCATION_SEASON Here Fall, !LOCATION_CONTEXT Here Island, !LOCATION_NAME Greenhouse",
+							"Condition": "LOCATION_SEASON Here Fall, !LOCATION_CONTEXT Here Island, !LOCATION_NAME Here Greenhouse",
 							"PlantedIn": "Any",
 							"Result": "Deny",
 							"DeniedMessage": "{{i18n: MtVapiusBlueCloverSeeds_DenyFallMessage}}"
@@ -858,6 +860,29 @@
 					"HarvestMaxIncreasePerFarmingLevel": 0.0,
 					"Texture": "Mods\\Lumisteria.MtVapius\\Crops",
 					"SpriteIndex": 32
+				},
+				"Lumisteria.MtVapius_ZenithFlowerSeeds": {
+					"Seasons": [
+						"spring",
+						"summer",
+						"fall",
+					],
+					"DaysInPhase": [
+						3,
+						5,
+						2,
+						2,
+					],
+					"RegrowDays": -1,
+					"IsRaised": false,
+					"HarvestItemId": "Lumisteria.MtVapius_ZenithFlower",
+					"HarvestMethod": "Grab",
+					"ExtraHarvestChance": 0.0,
+					"HarvestMinStack": 1,
+					"HarvestMaxStack": 1,
+					"HarvestMaxIncreasePerFarmingLevel": 0.0,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Crops",
+					"SpriteIndex": 33
 				},
 			}
 		},
@@ -1310,7 +1335,7 @@
 						"Y": 2
 					},
 					"Health": 3,
-					"Chance": 0.07,
+					"Chance": 0.01,
 				},
 				"Lumisteria.MtVapius_GiantConstellatedWatermelon": {
 					"FromItemId": "(O)Lumisteria.MtVapius_ConstellatedWatermelon",
@@ -1386,7 +1411,7 @@
 						"Y": 3
 					},
 					"Health": 4,
-					"Chance": 0.02,
+					"Chance": 0.01,
 				},
 				"Lumisteria.MtVapius_MediumPoppy": {
 					"FromItemId": "(O)376",
@@ -1462,7 +1487,45 @@
 						"Y": 2
 					},
 					"Health": 3,
-					"Chance": 0.01,
+					"Chance": 0.008,
+				},
+				"Lumisteria.MtVapius_GiantGalaxyFruit": {
+					"FromItemId": "(O)Lumisteria.MtVapius_GalaxyFruit",
+					"HarvestItems": [
+						{
+							"Chance": 1.0,
+							"Id": "Lumisteria.MtVapius_GalaxyFruit",
+							"ItemId": "(O)Lumisteria.MtVapius_GalaxyFruit",
+							"MinStack": 10,
+							"MaxStack": 16,
+						},
+						{
+							"Chance": 1.0,
+							"Id": "Lumisteria.MtVapius_GalaxyFruit_Iridium",
+							"ItemId": "(O)Lumisteria.MtVapius_GalaxyFruit",
+							"Quality": 4,
+							"MinStack": 2,
+							"MaxStack": 3,
+						},
+						{
+							"Chance": 1.0,
+							"Id": "Lumisteria.MtVapius_GalaxySeeds",
+							"ItemId": "(O)Lumisteria.MtVapius_GalaxySeeds",
+							"MinStack": 2,
+							"MaxStack": 6,
+						},
+					],
+					"Texture": "Mods\\Lumisteria.MtVapius\\GiantCrops",
+					"TexturePosition": {
+						"X": 224,
+						"Y": 48
+					},
+					"TileSize": {
+						"X": 2,
+						"Y": 3
+					},
+					"Health": 4,
+					"Chance": 0.009,
 				},
 			}
 		},
@@ -1513,45 +1576,42 @@
 			"Action": "EditData",
 			"Target": "Mods/mistyspring.ItemExtensions/MixedSeeds",
 			"Entries": {
-				/*"Lumisteria.MtVapius_StellarSeeds": [
+				"Lumisteria.MtVapius_StellarSeeds": [
 					{
 						"ItemId": "Lumisteria.MtVapius_NightMiscanthusSeeds", //spring fall
-						"Weight": 10
 					},
 					{
 						"ItemId": "Lumisteria.MtVapius_MoonPodsSeeds", //summer
-						"Weight": 10
 					},
 					{
 						"ItemId": "Lumisteria.MtVapius_SunrootSeeds", //fall
-						"Weight": 5
 					},
 					{
 						"ItemId": "Lumisteria.MtVapius_CosmosSeeds", //fall
-						"Weight": 5
 					},
 					{
 						"ItemId": "Lumisteria.MtVapius_CloudFeatherSeeds", //winter
-						"Weight": 5
+					},
+					{
+						"ItemId": "Lumisteria.MtVapius_ZenithFlowerSeeds", //spring summer fall
 					},
 					{
 						"ItemId": "Lumisteria.MtVapius_ConstellatedWatermelonSeeds", //summer
 						"Condition": "DAY_OF_MONTH 1 2 3 4 5 6 7",
-						"Weight": 2
 					},
 					{
 						"ItemId": "Lumisteria.MtVapius_StarShapedFlowerSeeds", //winter spring
-						"Condition": "DAY_OF_MONTH 1 2 3 4 5 6 7",
+						"Condition": "ANY \"SEASON Winter\" \"DAY_OF_MONTH 1 2 3 4 5 6 7\"",
 					},
 					{
 						"ItemId": "Lumisteria.MtVapius_CometRootsSeeds", //spring
-						"Condition": "!SEASON Summer"
+						"Condition": "ANY \"SEASON Spring\" \"DAY_OF_MONTH 1 2 3 4 5 6 7\""
 					},
 					{
 						"ItemId": "Lumisteria.MtVapius_GalaxySeeds", //fall winter
 						"Condition": "DAY_OF_MONTH 1 2 3 4 5 6 7",
 					},
-				],*/
+				],
 				"Lumisteria.MtVapius_WildVapiusSeeds": [
 					{
 						"ItemId": "Lumisteria.MtVapius_TagetesSeeds", //spring summer
@@ -1658,6 +1718,9 @@
 						"ItemId": "Lumisteria.MtVapius_NeralbaneSeeds", //winter
 						"Condition": "DAY_OF_MONTH 1 2 3 4 5 6 7",
 					},
+					{
+						"ItemId": "Lumisteria.MtVapius_ZenithFlowerSeeds", //spring summer fall
+					},
 				],
 				"Lumisteria.MtVapius_MountainMeadowSeeds": [
 					{
@@ -1706,6 +1769,9 @@
 					{
 						"ItemId": "Lumisteria.MtVapius_NeralbaneSeeds", //winter
 					},
+					{
+						"ItemId": "Lumisteria.MtVapius_ZenithFlowerSeeds", //spring summer fall
+					},
 				]
 			}
 		},
@@ -1714,9 +1780,9 @@
 			"Target": "spacechase0.SpaceCore/CropExtensionData",
 			"Entries": {
 				"Lumisteria.MtVapius_MoonPodsSeeds": {
-                    "ExperienceGained": 8,
 					"YieldOverrides": {
 						"5": {
+							"ExperienceGained": 8,
 							"IgnoreDefaultDrops": false,
 							"Drops": [
 								{
@@ -1734,9 +1800,9 @@
 					}
 				},
 				"Lumisteria.MtVapius_NightMiscanthusSeeds": {
-                    "ExperienceGained": 8,
 					"YieldOverrides": {
 						"5": {
+                    "ExperienceGained": 8,
 							"IgnoreDefaultDrops": false,
 							"Drops": [
 								{
@@ -1754,9 +1820,9 @@
 					}
 				},
 				"Lumisteria.MtVapius_CosmosSeeds": {
-                    "ExperienceGained": 14,
 					"YieldOverrides": {
 						"5": {
+                    "ExperienceGained": 14,
 							"IgnoreDefaultDrops": false,
 							"Drops": [
 								{
@@ -1777,9 +1843,9 @@
 					}
 				},
 				"Lumisteria.MtVapius_FireBeansStarter": {
-                    "ExperienceGained": 14,
 					"YieldOverrides": {
 						"5": {
+                    "ExperienceGained": 14,
 							"IgnoreDefaultDrops": false,
 							"RegrowDays": 3,
 							"Drops": [
@@ -1793,30 +1859,40 @@
 					}
 				},
 				"486": {
-                    "ExperienceGained": 45,
 					"YieldOverrides": {
 						"5": {
+                    "ExperienceGained": 45,
 							"IgnoreDefaultDrops": false,
 							"Drops": [
 								{
 									"Id": "Lumisteria.MtVapius_GalaxySeeds",
 									"ItemId": "(O)Lumisteria.MtVapius_GalaxySeeds",
-									"PerItemCondition": "RANDOM 0.1, NEARBY_CROPS 2 431, ",
+									"PerItemCondition": "RANDOM 0.1, NEARBY_CROPS 2 431",
+								},
+								{
+									"Id": "Lumisteria.MtVapius_GalaxySeeds",
+									"ItemId": "(O)Lumisteria.MtVapius_GalaxySeeds",
+									"PerItemCondition": "RANDOM 0.04",
 								},
 							]
 						}
 					}
 				},
 				"431": {
-                    "ExperienceGained": 14,
 					"YieldOverrides": {
 						"4": {
+                    "ExperienceGained": 14,
 							"IgnoreDefaultDrops": false,
 							"Drops": [
 								{
 									"Id": "Lumisteria.MtVapius_GalaxySeeds",
 									"ItemId": "(O)Lumisteria.MtVapius_GalaxySeeds",
 									"PerItemCondition": "RANDOM 0.1, NEARBY_CROPS 2 486",
+								},
+								{
+									"Id": "Lumisteria.MtVapius_GalaxySeeds",
+									"ItemId": "(O)Lumisteria.MtVapius_GalaxySeeds",
+									"PerItemCondition": "RANDOM 0.02",
 								},
 								{
 									"Id": "Lumisteria.MtVapius_SunflowerSeeds",
@@ -1827,9 +1903,9 @@
 					}
 				},
 				"Lumisteria.MtVapius_RyeSeeds": {
-                    "ExperienceGained": 7,
 					"YieldOverrides": {
 						"4": {
+                    "ExperienceGained": 7,
 							"IgnoreDefaultDrops": false,
 							"Drops": [
 								{
@@ -1849,9 +1925,9 @@
 					}
 				},
 				"Lumisteria.MtVapius_SunrootSeeds": {
-                    "ExperienceGained": 14,
 					"YieldOverrides": {
 						"5": {
+                    "ExperienceGained": 14,
 							"IgnoreDefaultDrops": false,
 							"RegrowDays": 4,
 							"Drops": [
@@ -1865,9 +1941,9 @@
 					}
 				},
 				"Lumisteria.MtVapius_StarShapedFlowerSeeds": {
-                    "ExperienceGained": 38,
 					"YieldOverrides": {
 						"5": {
+                    "ExperienceGained": 38,
 							"IgnoreDefaultDrops": false,
 							"Drops": [
 								{
@@ -1888,6 +1964,7 @@
 				"486": {
 					"YieldOverrides": {
 						"5": {
+                    "ExperienceGained": 45,
 							"IgnoreDefaultDrops": false,
 							"RegrowDays": "{{StarfruitRegrowDayCompat}}",
 							"Drops": [

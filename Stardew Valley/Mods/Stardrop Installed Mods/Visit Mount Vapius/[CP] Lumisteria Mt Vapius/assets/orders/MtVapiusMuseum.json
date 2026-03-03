@@ -1,0 +1,489 @@
+{
+	"Changes": [
+		{
+			"Target": "Mods/{{ModId}}/Books",
+			"Action": "Load",
+			"FromFile": "assets/images/items/{{TargetWithoutPath}}.png"
+		},
+		{
+			"Target": "Data/Objects",
+			"Action": "EditData",
+			"Entries": {
+				"{{ModId}}_Book_TrainStation": {
+					"Name": "Train Station Book",
+					"DisplayName": "[LocalizedText Strings\\Objects:LostBook_Name]",
+					"Description": "[LocalizedText Strings\\Objects:LostBook_Description]{{i18n: MtVapiusLostBookGeneric_Description_Translated}}",
+					"Type": "asdf",
+					"Category": 0,
+					"Price": 1,
+					"Texture": "Mods\\{{ModId}}\\Books",
+					"SpriteIndex": 0,
+					"Edibility": -300,
+					"ExcludeFromShippingCollection": true,
+				},
+				"{{ModId}}_Book_NaturalReserve": {
+					"Name": "Reserve Book",
+					"DisplayName": "[LocalizedText Strings\\Objects:LostBook_Name]",
+					"Description": "[LocalizedText Strings\\Objects:LostBook_Description]{{i18n: MtVapiusLostBookGeneric_Description_Translated}}",
+					"Type": "asdf",
+					"Category": 0,
+					"Price": 1,
+					"Texture": "Mods\\{{ModId}}\\Books",
+					"SpriteIndex": 1,
+					"Edibility": -300,
+					"ExcludeFromShippingCollection": true,
+				},
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Spiderbuttons.CMF/Museums",
+			"Entries": {
+				"{{ModId}}_TrainStationIndoor": {
+					"Id": "{{ModId}}_TrainStationIndoor",
+					"ShowDonationHint": true,
+					"OverrideDescription": false,
+					"DonationRequirements": [],
+				},
+				"{{ModId}}_NaturalReserveIndoor": {
+					"Id": "{{ModId}}_NaturalReserveIndoor",
+					"ShowDonationHint": true,
+					"OverrideDescription": false,
+					"DonationRequirements": [
+						{
+							"Id": "{{ModId}}_NaturalReserve_DonationTags",
+							"ContextTags": [
+								"mt_vapius_reserve_donatable"
+							],
+						}
+					],
+					"Rewards": [
+						{
+							"Id": "{{ModId}}_NaturalReserve_Reward00",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_Reward00Requirement",
+									"Count": 1
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_Reward00Item",
+									"ItemId": "(O)368",
+									"MinStack": 6,
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_Reward01",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_Reward01Requirement",
+									"Count": 4
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_Reward01Item",
+									"ItemId": "(O)Lumisteria.MtVapius_OwlCarving",
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_Reward02",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_Reward02Requirement",
+									"Count": 10
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_Reward02Item",
+									"ItemId": "(BC)Dehydrator",
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_Reward03",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_Reward03Requirement",
+									"Count": 15
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_Reward03Item",
+									"ItemId": "(BC)Lumisteria.MtVapius_MaturingShelves",
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_Reward04",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_Reward04Requirement",
+									"Count": 22
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_Reward04Item",
+									"ItemId": "(O)PurpleBook",
+									"MinStack": 3
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_Reward05",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_Reward05Requirement",
+									"Count": 30
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_Reward05Item",
+									"ItemId": "(O)Lumisteria.MtVapius_Treasures_ArtifactTrove",
+									"MinStack": 5
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_Reward06",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_Reward06Requirement",
+									"Count": 40
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_Reward06Item",
+									"ItemId": "(O)Lumisteria.MtVapius_WeirdCoins",
+									"MinStack": 40
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_Reward07",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_Reward07Requirement",
+									"Count": 50
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_Reward07Item",
+									"ItemId": "(O)279",
+									"MinStack": 3
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_Reward08",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_Reward08Requirement",
+									"Count": 60
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_Reward08Item",
+									"ItemId": "(O)StardropTea",
+									"MinStack": 1
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_RewardAll",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardAllRequirement",
+									"Count": 64
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardAllItem",
+									"ItemId": "(O)Lumisteria.MtVapius_LarimarSapling",
+									"MinStack": 3
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_RewardVapius00",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardVapius00Requirement",
+									"ContextTags": [
+										"mt_vapius"
+									],
+									"Count": 2
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardVapius00Item",
+									"ItemId": "(O)Lumisteria.MtVapius_WildVapiusSeeds",
+									"MinStack": 3,
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_RewardVapius01",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardVapius01Requirement",
+									"ContextTags": [
+										"mt_vapius"
+									],
+									"Count": 5
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardVapius01Item",
+									"ItemId": "(O)645",
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_RewardVapius02",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardVapius02Requirement",
+									"ContextTags": [
+										"mt_vapius"
+									],
+									"Count": 8
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardVapius02Item",
+									"ItemId": "(BC)208",
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_RewardVapius03",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardVapius03Requirement",
+									"ContextTags": [
+										"mt_vapius"
+									],
+									"Count": 12
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardVapius03Item",
+									"ItemId": "(O)PrizeTicket",
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_RewardVapius04",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardVapius04Requirement",
+									"ContextTags": [
+										"mt_vapius"
+									],
+									"Count": 16
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardVapius04Item",
+									"ItemId": "(F)Lumisteria.MtVapius_FurnitureVarious_JunimoSatchel",
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_RewardVapius05",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardVapius05Requirement",
+									"ContextTags": [
+										"mt_vapius"
+									],
+									"Count": 20
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardVapius05Item",
+									"ItemId": "(O)TreasureTotem",
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_RewardVapius06",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardVapius06Requirement",
+									"ContextTags": [
+										"mt_vapius"
+									],
+									"Count": 25
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardVapius06Item",
+									"ItemId": "(BC)Lumisteria.MtVapius_CandyMaker",
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_RewardSpecial00",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardSpecial00Requirement",
+									"ContextTags": [
+										"edible_mushroom"
+									],
+									"Count": 5
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardSpecial00Item",
+									"ItemId": "(BC)MushroomLog",
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_RewardSpecial01",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardSpecial01Requirement",
+									"ContextTags": [
+										"flower_item"
+									],
+									"Count": 12
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardSpecial01Item",
+									"ItemId": "(BC)Lumisteria.MtVapius_InsectHotel",
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_RewardSpecial02",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardSpecial02Requirement",
+									"ItemIds": [
+										"(O)Lumisteria.MtVapius_PixieBell"
+									],
+									"Count": 1
+								}
+							],
+							"RewardItems": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardSpecial02Item",
+									"ItemId": "(O)872",
+									"MinStack": 5,
+								}
+							]
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_RewardFlag01",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardFlag01Requirement",
+									"Count": 22
+								}
+							],
+							"Action": "AddMail Current Lumisteria.MtVapius_NaturalReserve_RewardMail01 tomorrow"
+						},
+						{
+							"Id": "{{ModId}}_NaturalReserve_RewardFlag02",
+							"Requirements": [
+								{
+									"Id": "{{ModId}}_NaturalReserve_RewardFlag02Requirement",
+									"Count": 44
+								}
+							],
+							"Action": "AddMail Current Lumisteria.MtVapius_NaturalReserve_RewardMail02 tomorrow"
+						},
+					],
+					"Strings": {
+						"OnDonation": "{{i18n: MtVapiusNatureReserveDonation}}",
+						"OnMilestone": "{{i18n: MtVapiusNatureReserveMilestone}}",
+						"OnCompletion": "{{i18n: MtVapiusNatureReserveCompletion}}",
+						"MenuDonate": "{{i18n: MtVapiusNatureReserveDonate}}",
+						"MenuCollect": "{{i18n: MtVapiusNatureReserveCollect}}",
+						"MenuRearrange": "{{i18n: MtVapiusNatureReserveRearrange}}",
+						"MenuRetrieve": "{{i18n: MtVapiusNatureReserveRetrieve}}",
+						"Busy_Owner": "{{i18n: MtVapiusNatureReserveBusy}}",
+						"Busy_NoOwner": "{{i18n: MtVapiusNatureReserveBusy}}",
+						"MuseumComplete_Owner": "{{i18n: MtVapiusNatureReserveComplete}}",
+						"MuseumComplete_NoOwner": "{{i18n: MtVapiusNatureReserveComplete}}",
+						"NothingToDonate_Owner": "{{i18n: MtVapiusNatureReserveNothingToDonate}}",
+						"NothingToDonate_NoOwner": "{{i18n: MtVapiusNatureReserveNothingToDonate}}",
+						"NoDonations_Owner": "{{i18n: MtVapiusNatureReserveNoDonation}}",
+						"NoDonations_NoOwner": "{{i18n: MtVapiusNatureReserveNoDonation}}",
+						"CanBeDonated": "{{i18n: MtVapiusNatureReserveCanBeDonated}}",
+					}
+				},
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Spiderbuttons.CMF/LostBooks",
+			"Entries": {
+				"{{ModId}}_TrainStationIndoor": [
+					{
+						"Id": "{{ModId}}_TrainStation_Books",
+						"ItemId": "(O){{ModId}}_Book_TrainStation",
+						"ReceiveText": "{{i18n: MtVapiusLostBookTrainStation}}",
+						"MissingText": "{{i18n: MtVapiusLostBookTrainStationMissing}}",
+						"Entries": [
+							{
+								"Id": "{{ModId}}_TrainStation_Book01",
+								"Text": "{{i18n: MtVapiusLostBookTrainStationBook01}}"
+							},
+							{
+								"Id": "{{ModId}}_TrainStation_Book02",
+								"Text": "{{i18n: MtVapiusLostBookTrainStationBook02}}"
+							},
+							{
+								"Id": "{{ModId}}_TrainStation_Book03",
+								"Text": "{{i18n: MtVapiusLostBookTrainStationBook03}}"
+							},
+						]
+					}
+				],
+				"{{ModId}}_NaturalReserveIndoor": [
+					{
+						"Id": "{{ModId}}_NaturalReserve_Books",
+						"ItemId": "(O){{ModId}}_Book_NaturalReserve",
+						"ReceiveText": "{{i18n: MtVapiusLostBookNaturalReserve}}",
+						"MissingText": "{{i18n: MtVapiusLostBookNaturalReserveMissing}}",
+						"Entries": [
+							{
+								"Id": "{{ModId}}_NaturalReserve_Book01",
+								"Text": "{{i18n: MtVapiusLostBookNaturalReserveBook01}}"
+							},
+							{
+								"Id": "{{ModId}}_NaturalReserve_Book02",
+								"Text": "{{i18n: MtVapiusLostBookNaturalReserveBook02}}"
+							},
+						]
+					}
+				]
+			}
+		}
+	]
+}

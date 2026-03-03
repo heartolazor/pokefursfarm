@@ -11,18 +11,23 @@
       "Action": "EditData",
       "Target": "Characters/schedules/HeliaDiamantiVMV",
       "Entries": {
-        "Sat": "a900 Lumisteria.MtVapius_Hamlet 40 85 2 square_3_0/1300 Lumisteria.MtVapius_Hamlet 34 86 2/1500 Lumisteria.MtVapius_Hamlet 40 85 2/1800 Lumisteria.MtVapius_Inn 9 29 2/2300 Lumisteria.MtVapius_Faycombe 22 16 2",
-        "spring": "900 Lumisteria.MtVapius_Faycombe 28 15 2/1800 Lumisteria.MtVapius_Faycombe 33 26 2/2300 Lumisteria.MtVapius_Faycombe 22 16 2",
+        "Sat": "a900 Lumisteria.MtVapius_Hamlet 40 85 2 square_3_0/1300 Lumisteria.MtVapius_Hamlet 34 86 2/1500 Lumisteria.MtVapius_Hamlet 40 85 2/1730 Lumisteria.MtVapius_Inn 9 29 2/2230 Lumisteria.MtVapius_Faycombe 22 16 2/2400 Lumisteria.MtVapius_HeliaHouse 3 16 0",
+        "spring": "1200 Lumisteria.MtVapius_Faycombe 28 15 2/1800 Lumisteria.MtVapius_Faycombe 33 26 2/2000 Lumisteria.MtVapius_HeliaHouse 28 4 0/2230 Lumisteria.MtVapius_Faycombe 22 16 2/2400 Lumisteria.MtVapius_HeliaHouse 3 16 0",
       }
     },
     {
       "LogName": "Conditional Schedules",
       "Action": "EditData",
       "Target": "Characters/schedules/HeliaDiamantiVMV",
-      "Entries": {
-		"summer_14": "600 ScienceHouse 6 4 2/800 ScienceHouse 6 5 2/1200 Mountains 6 30 1/1400 ScienceHouse 6 5 2/2000 Lumisteria.MtVapius_Faycombe 33 26 2/2300 Lumisteria.MtVapius_Faycombe 22 16 2",
-		"winter_14": "600 ScienceHouse 6 4 2/800 ScienceHouse 6 5 2/900 Mountains 6 30 1/1000 CommunityCenter 18 27 3/1600 ScienceHouse 6 5 2/2000 Lumisteria.MtVapius_Faycombe 33 26 2/2300 Lumisteria.MtVapius_Faycombe 22 16 2",
-		"CommunityCenter_Replacement": "ScienceHouse 1 19 1",
+      "Entries": {			  
+		"spring_14": "000 ScienceHouse  6 4 2/800 ScienceHouse 6 5 2/1000 ScienceHouse 16 18 1/1400 Town 106 29 2/1800 ScienceHouse 6 5 2/2230 Lumisteria.MtVapius_HeliaHouse 28 4 0/2400 Lumisteria.MtVapius_HeliaHouse 3 16 0",
+		"spring_28": "000 ScienceHouse  6 4 2/800 ScienceHouse 6 5 2/1000 ScienceHouse 16 18 1/1400 Town 106 29 2/1800 ScienceHouse 6 5 2/2230 Lumisteria.MtVapius_HeliaHouse 28 4 0/2400 Lumisteria.MtVapius_HeliaHouse 3 16 0",
+		"summer_14": "000 ScienceHouse 6 4 2/800 ScienceHouse 6 5 2/1200 Mountains 6 30 1/1400 ScienceHouse 6 5 2/2000 Lumisteria.MtVapius_Faycombe 33 26 2/2230 Lumisteria.MtVapius_HeliaHouse 28 4 0/2400 Lumisteria.MtVapius_HeliaHouse 3 16 0",
+		"summer_28": "000 ScienceHouse 6 4 2/800 ScienceHouse 6 5 2/1200 Mountains 6 30 1/1400 ScienceHouse 6 5 2/2000 Lumisteria.MtVapius_Faycombe 33 26 2/2230 Lumisteria.MtVapius_HeliaHouse 28 4 0/2400 Lumisteria.MtVapius_HeliaHouse 3 16 0",
+		"fall_14": "000 ScienceHouse  6 4 2/800 ScienceHouse 6 5 2/1000 ScienceHouse 16 18 1/1400 Town 106 29 2/1800 ScienceHouse 6 5 2/2230 Lumisteria.MtVapius_HeliaHouse 28 4 0/2400 Lumisteria.MtVapius_HeliaHouse 3 16 0",
+		"fall_28": "000 ScienceHouse  6 4 2/800 ScienceHouse 6 5 2/1000 ScienceHouse 16 18 1/1400 Town 106 29 2/1800 ScienceHouse 6 5 2/2230 Lumisteria.MtVapius_HeliaHouse 28 4 0/2400 Lumisteria.MtVapius_HeliaHouse 3 16 0",
+		"winter_14": "000 ScienceHouse 6 4 2/800 ScienceHouse 6 5 2/900 Mountains 6 30 1/1030 ScienceHouse 1 19 1/1600 ScienceHouse 6 5 2/2000 Lumisteria.MtVapius_Faycombe 33 26 2/2230 Lumisteria.MtVapius_HeliaHouse 28 4 0/2400 Lumisteria.MtVapius_HeliaHouse 3 16 0",
+		"winter_28": "000 ScienceHouse 6 4 2/800 ScienceHouse 6 5 2/900 Mountains 6 30 1/1030 ScienceHouse 1 19 1/1600 ScienceHouse 6 5 2/2000 Lumisteria.MtVapius_Faycombe 33 26 2/2230 Lumisteria.MtVapius_HeliaHouse 28 4 0/2400 Lumisteria.MtVapius_HeliaHouse 3 16 0",
 
       },
       "When":
@@ -34,10 +39,26 @@
       "LogName": "Conditional Schedules",
       "Action": "EditData",
       "Target": "Characters/schedules/HeliaDiamantiVMV",
+      "Entries": {  
+		"winter_14": "000 ScienceHouse 6 4 2/800 ScienceHouse 6 5 2/900 Mountains 6 30 1/1030 CommunityCenter 18 27 3/1600 ScienceHouse 6 5 2/2000 Lumisteria.MtVapius_Faycombe 33 26 2/2230 Lumisteria.MtVapius_HeliaHouse 28 4 0/2400 Lumisteria.MtVapius_HeliaHouse 3 16 0",
+		"winter_28": "000 ScienceHouse 6 4 2/800 ScienceHouse 6 5 2/900 Mountains 6 30 1/1030 CommunityCenter 18 27 3/1600 ScienceHouse 6 5 2/2000 Lumisteria.MtVapius_Faycombe 33 26 2/2230 Lumisteria.MtVapius_HeliaHouse 28 4 0/2400 Lumisteria.MtVapius_HeliaHouse 3 16 0",
+		"CommunityCenter_Replacement": "ScienceHouse 1 19 1",
+
+      },
+      "When":
+      {   
+		"HasFlag: anyPlayer": "DLX.Bundles.Lumisteria.MtVapius_BusBundle",
+		"IsCommunityCenterComplete": true,
+      }
+    },
+    {
+      "LogName": "Conditional Schedules",
+      "Action": "EditData",
+      "Target": "Characters/schedules/HeliaDiamantiVMV",
       "Entries": {
-        "winter_Mon": "900 Lumisteria.MtVapius_Faycombe 28 15 2/1500 Saloon 17 20 2/2300 Lumisteria.MtVapius_Faycombe 22 16 2",
-        "summer_Mon": "900 Lumisteria.MtVapius_Faycombe 28 15 2/1100 Town 27 36 3/2300 Lumisteria.MtVapius_Faycombe 22 16 2",
-        "fall_Mon": "900 Lumisteria.MtVapius_Faycombe 28 15 2/1100 Town 45 100 2/2300 Lumisteria.MtVapius_Faycombe 22 16 2",
+        "winter_Mon": "1200 Lumisteria.MtVapius_Faycombe 28 15 2/1500 Saloon 17 20 2/2230 Lumisteria.MtVapius_HeliaHouse 28 4 0/2400 Lumisteria.MtVapius_HeliaHouse 3 16 0",
+        "summer_Mon": "1200 Lumisteria.MtVapius_Faycombe 28 15 2/1100 Town 27 36 3/2230 Lumisteria.MtVapius_Faycombe 22 16 2/2400 Lumisteria.MtVapius_HeliaHouse 3 16 0",
+        "fall_Mon": "1200 Lumisteria.MtVapius_Faycombe 28 15 2/1100 Town 45 100 2/2230 Lumisteria.MtVapius_HeliaHouse 28 4 0/2400 Lumisteria.MtVapius_HeliaHouse 3 16 0",
 
       },
       "When":
