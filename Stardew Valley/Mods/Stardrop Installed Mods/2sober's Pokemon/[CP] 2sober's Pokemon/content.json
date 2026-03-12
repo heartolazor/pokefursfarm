@@ -54,6 +54,110 @@
             }
         },
 		{
+            "LogName": "Load data for Lucario (Lucario)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Lucario": {
+                    "DisplayName": "{{i18n:Lucario.DisplayName}}",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 3000,
+                    "ShopTexture": "Animals/relaexo.SlowlaxFarm-Lucario Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "RequiredBuilding": "Barn",
+                    "ShopDisplayName": "{{i18n:Lucario.ShopDisplayName}}",
+                    "ShopDescription": "{{i18n:Lucario.ShopDescription}}",
+                    "DaysToMature": "0",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "296"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "410"
+                        }
+                    ],
+                    "DaysToProduce": "3",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+                    "Sound": null,
+                    "BabySound": null,
+                    "Texture": "Animals/relaexo.SlowlaxFarm-Lucario",
+                    "HarvestedTexture": "Animals/relaexo.SlowlaxFarm-Lucario",
+					"UseFlippedRightForLeft": true,
+                    "SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"SellPrice": 500,
+                    "ShowInSummitCredits": true
+                }
+            }
+        },
+		{
+            "LogName": "Load data for Espurr (Espurr)",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Espurr": {
+                    "DisplayName": "{{i18n:Espurr.DisplayName}}",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 3000,
+                    "ShopTexture": "Animals/relaexo.SlowlaxFarm-Espurr Icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+                    "RequiredBuilding": "Barn",
+                    "ShopDisplayName": "{{i18n:Espurr.ShopDisplayName}}",
+                    "ShopDescription": "{{i18n:Espurr.ShopDescription}}",
+                    "DaysToMature": "0",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "156"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "561"
+                        }
+                    ],
+                    "DaysToProduce": "3",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+                    "Sound": null,
+                    "BabySound": null,
+                    "Texture": "Animals/relaexo.SlowlaxFarm-Espurr",
+                    "HarvestedTexture": "Animals/relaexo.SlowlaxFarm-Espurr",
+					"UseFlippedRightForLeft": true,
+                    "SpriteWidth": "32",
+                    "SpriteHeight": "32",
+					"SellPrice": 500,
+                    "ShowInSummitCredits": true
+                }
+            }
+        },
+		{
             "LogName": "Load data for Psyduck (Psyduck)",
             "Action": "EditData",
             "Target": "Data/FarmAnimals",
@@ -319,11 +423,35 @@
             "Target": "Animals/relaexo.SlowlaxFarm-Munchlax Icon",
             "FromFile": "assets/animal_shop_munchlax.png"
         },
+		{
+            "LogName": "Load shopIcon for Lucario",
+            "Action": "Load",
+            "Target": "Animals/relaexo.SlowlaxFarm-Lucario Icon",
+            "FromFile": "assets/animal_shop_lucario.png"
+        },
+		{
+            "LogName": "Load shopIcon for Espurr",
+            "Action": "Load",
+            "Target": "Animals/relaexo.SlowlaxFarm-Espurr Icon",
+            "FromFile": "assets/animal_shop_Espurr.png"
+        },
         {
             "LogName": "Load adultSprite for Munchlax",
             "Action": "Load",
             "Target": "Animals/relaexo.SlowlaxFarm-Munchlax",
             "FromFile": "assets/Munchlax.png"
+        },
+		{
+            "LogName": "Load adultSprite for Lucario",
+            "Action": "Load",
+            "Target": "Animals/relaexo.SlowlaxFarm-Lucario",
+            "FromFile": "assets/Lucario.png"
+        },
+		{
+            "LogName": "Load adultSprite for Espurr",
+            "Action": "Load",
+            "Target": "Animals/relaexo.SlowlaxFarm-Espurr",
+            "FromFile": "assets/espurr.png"
         },
 		{
             "LogName": "Load shopIcon for Psyduck",

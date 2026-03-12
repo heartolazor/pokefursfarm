@@ -1,0 +1,189 @@
+{
+  "Name": "Antenna (Curled, SkinTone)",
+
+	// FRONT
+  "FrontAccessory": {
+	"DrawOrderOverride": {
+		"Preposition": "Before",
+		"AppearanceType": "Sleeves"
+	},
+    "DrawAfterPlayer": true,
+    "ColorMasks": [
+		[ 56, 56, 56 ],
+		[ 114, 110, 100 ],
+		[ 212, 208, 197 ]
+    ],
+    "DisableSkinGrayscale": true,
+    "SkinToneMasks": {
+		"LightTone": [ 144, 144, 144 ],
+		"MediumTone": [ 121, 121, 121 ],
+		"DarkTone": [ 73, 73, 73 ]
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 3
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      },
+      {
+        "Frame": 1,
+        "Duration": 100
+      },
+      {
+        "Frame": 0,
+        "Duration": 100
+      },
+      {
+        "Frame": 1,
+        "Duration": 100
+      },
+    ]
+  },
+
+	// RIGHT
+  "RightAccessory": {
+    "ColorMasks": [
+		[ 56, 56, 56 ],
+		[ 114, 110, 100 ],
+		[ 212, 208, 197 ]
+    ],
+    "DisableSkinGrayscale": true,
+    "SkinToneMasks": {
+		"LightTone": [ 144, 144, 144 ],
+		"MediumTone": [ 121, 121, 121 ],
+		"DarkTone": [ 73, 73, 73 ]
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": 1,
+      "Y": 3
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 100
+      },
+      {
+        "Frame": 1,
+        "Duration": 100
+      },
+      {
+        "Frame": 2,
+        "Duration": 100
+      },
+      {
+        "Frame": 3,
+        "Duration": 100
+      }
+    ]
+  },
+
+	// LEFT
+  "LeftAccessory": {
+    "ColorMasks": [
+		[ 56, 56, 56 ],
+		[ 114, 110, 100 ],
+		[ 212, 208, 197 ]
+    ],
+    "DisableSkinGrayscale": true,
+    "SkinToneMasks": {
+		"LightTone": [ 144, 144, 144 ],
+		"MediumTone": [ 121, 121, 121 ],
+		"DarkTone": [ 73, 73, 73 ]
+    },
+    "Flipped": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": -1,
+      "Y": 3
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 100
+      },
+      {
+        "Frame": 1,
+        "Duration": 100
+      },
+      {
+        "Frame": 2,
+        "Duration": 100
+      },
+      {
+        "Frame": 3,
+        "Duration": 100
+      }
+    ]
+  },
+
+	// BACK
+  "BackAccessory": {
+    "ColorMasks": [
+		[ 56, 56, 56 ],
+		[ 114, 110, 100 ],
+		[ 212, 208, 197 ]
+    ],
+    "DisableSkinGrayscale": true,
+    "SkinToneMasks": {
+		"LightTone": [ 144, 144, 144 ],
+		"MediumTone": [ 121, 121, 121 ],
+		"DarkTone": [ 73, 73, 73 ]
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 2
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      },
+      {
+        "Frame": 1,
+        "Duration": 100
+      },
+      {
+        "Frame": 0,
+        "Duration": 100
+      },
+      {
+        "Frame": 1,
+        "Duration": 100
+      },
+    ]
+  }
+}
