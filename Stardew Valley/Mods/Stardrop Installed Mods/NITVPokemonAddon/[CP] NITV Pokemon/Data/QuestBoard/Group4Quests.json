@@ -1,0 +1,163 @@
+{
+    "Changes": [
+
+      {
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "NITVQuest.Pokemon4ThreeDays": {
+          "Name": "[PkmnDifficulty2]",
+          "Requester": "Spiritomb",
+          "OrderType": "NITVPokemonSO",
+          "Condition": "PLAYER_HEARTS Any Spiritomb 3, SEASON spring",
+          "Duration": "ThreeDays",
+          "Repeatable": true,
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "Text": "[PkmnCreatureCollectText]",
+          "RandomizedElements": [
+            {
+              "Name": "PkmnSpecies",
+              "Values": [
+                { "Value": "Text|Lotad|Tags|id_(o)natinvalley.creature.lotad_swim" },
+                { "Value": "Text|Wurmple|Tags|id_(o)natinvalley.creature.wurmple_bush" },
+                { "Value": "Text|Bulbasaur|Tags|id_(o)natinvalley.creature.bulbasaur_roam" },
+                { "Value": "Text|Buneary|Tags|id_(o)natinvalley.creature.buneary_roam" },
+                { "Value": "Text|Cottonee|Tags|id_(o)natinvalley.creature.cottonee_roam" },
+                { "Value": "Text|Skiddo|Tags|id_(o)natinvalley.creature.skiddo_roam" },
+                { "Value": "Text|Bounsweet|Tags|id_(o)natinvalley.creature.bounsweet_grass" },
+                { "Value": "Text|Chikorita|Tags|id_(o)natinvalley.creature.chikorita_grass" },
+                { "Value": "Text|Scyther|Tags|id_(o)natinvalley.creature.scyther_grass" },
+                { "Value": "Text|Sewaddle|Tags|id_(o)natinvalley.creature.sewaddle_grass" },
+                { "Value": "Text|Tangela|Tags|id_(o)natinvalley.creature.tangela_grass" },
+                { "Value": "Text|Budew|Tags|id_(o)natinvalley.creature.budew_flowers" },
+                { "Value": "Text|Comfey|Tags|id_(o)natinvalley.creature.comfey_flowers" },
+                { "Value": "Text|Cherubi|Tags|id_(o)natinvalley.creature.cherubi_crops" },
+                { "Value": "Text|Petilil|Tags|id_(o)natinvalley.creature.petilil_crops" },
+                { "Value": "Text|Combee|Tags|id_(o)natinvalley.creature.combee_treechop" },
+                { "Value": "Text|Pineco|Tags|id_(o)natinvalley.creature.pineco_treechop" },
+                { "Value": "Text|Bunnelby|Tags|id_(o)natinvalley.creature.bunnelby_stone" }
+              ]
+            },
+            {
+              "Name": "Count",
+              "Values": [
+                { "Value": "3" }, { "Value": "4" }, { "Value": "5" }, { "Value": "6" }
+              ]
+            }
+          ],
+          "Objectives": [
+            {
+              "Type": "Collect",
+              "Text": "[PkmnCreatureCollectObj0Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "AcceptedContextTags": "{PkmnSpecies:Tags}"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[PkmnCreatureCollectObj1Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "DropBox": "PokePC",
+                "DropBoxGameLocation": "NatValleyOutsideInsec",
+                "DropBoxIndicatorLocation": "10 16",
+                "AcceptedContextTags": "{PkmnSpecies:Tags}"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": { "Amount": "19999" }
+            },
+            {
+              "Type": "Friendship",
+              "Data": {
+                  "Amount": "100",
+                  "TargetName": "Spiritomb"
+              }
+            }
+          ]
+        },
+        "NITVQuest.Pokemon4Weekly": {
+          "Name": "[PkmnDifficulty3]",
+          "Requester": "Spiritomb",
+          "OrderType": "NITVPokemonSO",
+          "Condition": "PLAYER_HEARTS Any Spiritomb 3, SEASON spring",
+          "Duration": "Week",
+          "Repeatable": true,
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "Text": "[PkmnCreatureCollectText]",
+          "RandomizedElements": [
+            {
+              "Name": "PkmnSpecies",
+              "Values": [
+                { "Value": "Text|Lotad|Tags|id_(o)natinvalley.creature.lotad_swim" },
+                { "Value": "Text|Wurmple|Tags|id_(o)natinvalley.creature.wurmple_bush" },
+                { "Value": "Text|Bulbasaur|Tags|id_(o)natinvalley.creature.bulbasaur_roam" },
+                { "Value": "Text|Buneary|Tags|id_(o)natinvalley.creature.buneary_roam" },
+                { "Value": "Text|Cottonee|Tags|id_(o)natinvalley.creature.cottonee_roam" },
+                { "Value": "Text|Skiddo|Tags|id_(o)natinvalley.creature.skiddo_roam" },
+                { "Value": "Text|Bounsweet|Tags|id_(o)natinvalley.creature.bounsweet_grass" },
+                { "Value": "Text|Chikorita|Tags|id_(o)natinvalley.creature.chikorita_grass" },
+                { "Value": "Text|Scyther|Tags|id_(o)natinvalley.creature.scyther_grass" },
+                { "Value": "Text|Sewaddle|Tags|id_(o)natinvalley.creature.sewaddle_grass" },
+                { "Value": "Text|Tangela|Tags|id_(o)natinvalley.creature.tangela_grass" },
+                { "Value": "Text|Budew|Tags|id_(o)natinvalley.creature.budew_flowers" },
+                { "Value": "Text|Comfey|Tags|id_(o)natinvalley.creature.comfey_flowers" },
+                { "Value": "Text|Cherubi|Tags|id_(o)natinvalley.creature.cherubi_crops" },
+                { "Value": "Text|Petilil|Tags|id_(o)natinvalley.creature.petilil_crops" },
+                { "Value": "Text|Combee|Tags|id_(o)natinvalley.creature.combee_treechop" },
+                { "Value": "Text|Pineco|Tags|id_(o)natinvalley.creature.pineco_treechop" },
+                { "Value": "Text|Bunnelby|Tags|id_(o)natinvalley.creature.bunnelby_stone" }
+              ]
+            },
+            {
+              "Name": "Count",
+              "Values": [
+                { "Value": "10" }, { "Value": "11" }, { "Value": "12" }
+              ]
+            }
+          ],
+          "Objectives": [
+            {
+              "Type": "Collect",
+              "Text": "[PkmnCreatureCollectObj0Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "AcceptedContextTags": "{PkmnSpecies:Tags}"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[PkmnCreatureCollectObj1Text]",
+              "RequiredCount": "{Count}",
+              "Data": {
+                "DropBox": "PokePC",
+                "DropBoxGameLocation": "NatValleyOutsideInsec",
+                "DropBoxIndicatorLocation": "10 16",
+                "AcceptedContextTags": "{PkmnSpecies:Tags}"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": { "Amount": "34999" }
+            },
+            {
+              "Type": "Friendship",
+              "Data": {
+                  "Amount": "150",
+                  "TargetName": "Spiritomb"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -6,11 +6,7 @@
           "AllowValues": "true, false",
           "Default": "true",
           "Section": "Recommended for Pokemon Trinkets"
-      }/*,
-      "PokemonXanEnablePacifist": {
-        "AllowValues": "true, false",
-        "Default": "false"
-      }*/
+      }
     },
 
   "Changes": [                    
@@ -321,6 +317,11 @@
 
     {
       "Action": "Include",
+      "FromFile": "Data/QuestBoard/Group4Quests.json"
+    },
+
+    {
+      "Action": "Include",
       "FromFile": "Data/Trinkets/TrinketTinkerData.json",
       "When": { "HasMod": "mushymato.TrinketTinker" }
     },
@@ -454,6 +455,11 @@
     {
       "Action": "Include",
       "FromFile": "Data/PokeGroups/PokeGroupXmas.json"
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/PokeGroups/PokeGroupSpring2026.json"
     }
 
 

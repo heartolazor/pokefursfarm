@@ -1,5 +1,5 @@
 {
-  "Format": "2.6.0",
+  "Format": "2.8.0",
 
 
     "ConfigSchema": {
@@ -21,6 +21,12 @@
         "AllowValues": "Off, Green, Quarry, Springs, Cove, Fantasy",
         "Default": "Off",
         "Section": "Ts_AFC_S_FarmCavePack"
+      },
+
+      "Ts_AFC_XiddavFC_CaveType": { //Xiddav's Farm Caveの設定
+        "AllowValues": "Default, Dark, Desert, Dino, Lava, Quarry, Dangerous, DarkDanger, DesertDanger, LavaDanger, LavaDark, LavaDarkDangerous",
+        "Default": "Default",
+        "Section": "Ts_AFC_S_XiddavFC"
       },
 
       "Ts_AFC_HFCV_CaveType": { //Hippo'sFarmCaveVarietyの設定
@@ -46,6 +52,71 @@
       }
 
     },//▼"ConfigSchema"の終了▼
+
+
+    "DynamicTokens": [
+
+    //●以下、「FarmCave側のワープ位置」用トークン
+      {
+        "Name": "DT_warp_FC_IN_Y",
+        "Value": "3",
+        "When": {
+          "Ts_AFC_XiddavFC_CaveType": "Default"
+        }
+      },
+      {
+        "Name": "DT_warp_FC_IN_Y",
+        "Value": "-1",
+        "When": {
+          "Ts_AFC_XiddavFC_CaveType": "Dark, Desert, Dino, Lava, Quarry, Dangerous, DarkDanger, DesertDanger, LavaDanger, LavaDark, LavaDarkDangerous"
+        }
+      },
+      {
+        "Name": "DT_warp_FC_OUT_Y",
+        "Value": "14",
+        "When": {
+          "Ts_AFC_XiddavFC_CaveType": "Default"
+        }
+      },
+      {
+        "Name": "DT_warp_FC_OUT_Y",
+        "Value": "15",
+        "When": {
+          "Ts_AFC_XiddavFC_CaveType": "Dark, Desert, Dino, Lava, Quarry, Dangerous, DarkDanger, DesertDanger, LavaDanger, LavaDark, LavaDarkDangerous"
+        }
+      },
+
+    //●以下、「AddFarmCave側のワープ位置」用トークン
+      {
+        "Name": "DT_warp_AdFC_IN_Y",
+        "Value": "15",
+        "When": {
+          "Ts_AFC_XiddavFC_CaveType": "Default"
+        }
+      },
+      {
+        "Name": "DT_warp_AdFC_IN_Y",
+        "Value": "16",
+        "When": {
+          "Ts_AFC_XiddavFC_CaveType": "Dark, Desert, Dino, Lava, Quarry, Dangerous, DarkDanger, DesertDanger, LavaDanger, LavaDark, LavaDarkDangerous"
+        }
+      },
+      {
+        "Name": "DT_warp_AdFC_OUT_Y",
+        "Value": "4",
+        "When": {
+          "Ts_AFC_XiddavFC_CaveType": "Default"
+        }
+      },
+      {
+        "Name": "DT_warp_AdFC_OUT_Y",
+        "Value": "1",
+        "When": {
+          "Ts_AFC_XiddavFC_CaveType": "Dark, Desert, Dino, Lava, Quarry, Dangerous, DarkDanger, DesertDanger, LavaDanger, LavaDark, LavaDarkDangerous"
+        }
+      }
+
+    ],//▼"DynamicTokens"の終了▼
 
 
     "CustomLocations": [
@@ -79,12 +150,20 @@
         "FromFile": "assets/png/{{TargetWithoutPath}}.png",
         "When": { "HasMod": "Kurimiu.PlantableFarmcave" }
       },
+      {
+        "Action": "Load",
+        "Target": "Maps/z_AdditionalFarmCave_XiddavFC",
+        "FromFile": "assets/png/z_AdditionalFarmCave_XiddavFC.png",
+        "When": { "HasMod": "Xiddav.FarmCave" }
+      },
 
 
   //★★★ 共通項目(日光、ジュニモ、メッセージ、メール＆トリガー)の編集 ★★★
 
     //●日光の追加
       {
+        "LogName": "日光の追加",
+        "Priority": "Late",
         "Action": "EditMap",
         "Target": "Maps/Custom_AdditionalFarmCave",
         "FromFile": "assets/tmx/AdditionalFarmCave_sunlight.tmx",
@@ -99,6 +178,7 @@
     //●夜のジュニモ追加
       {
         "Action": "EditMap",
+        "Priority": "Late",
         "Target": "Maps/Custom_AdditionalFarmCave",
         "FromFile": "assets/tmx/AdditionalFarmCave_nightjunimo.tmx",
         "ToArea": { "X": 4, "Y": 7, "Width": 3, "Height": 1 },
@@ -112,6 +192,7 @@
     //●日光の追加 2
       {
         "Action": "EditMap",
+        "Priority": "Late",
         "Target": "Maps/Custom_AdditionalFarmCave2",
         "FromFile": "assets/tmx/AdditionalFarmCave_sunlight.tmx",
         "ToArea": { "X": 6, "Y": 0, "Width": 13, "Height": 12 },
@@ -126,6 +207,7 @@
     //●夜のジュニモ追加 2
       {
         "Action": "EditMap",
+        "Priority": "Late",
         "Target": "Maps/Custom_AdditionalFarmCave2",
         "FromFile": "assets/tmx/AdditionalFarmCave_nightjunimo.tmx",
         "ToArea": { "X": 4, "Y": 7, "Width": 3, "Height": 1 },
@@ -187,7 +269,8 @@
           "HasMod |contains=neuralwiles.HiddenSpringFarmCave": "false",
           "HasMod |contains=Wildflour.Hippo_Cliffside_FarmCave": "false",
           "HasMod |contains=Kurimiu.PlantableFarmcave": "false",
-          "HasMod |contains=crystalinerose.FarmCaves": "false"
+          "HasMod |contains=crystalinerose.FarmCaves": "false",
+          "HasMod |contains=Xiddav.FarmCave": "false"
         }
       },
 
@@ -359,6 +442,14 @@
           "Ts_AFC_EnableThisMod": "true",
           "HasMod": "crystalinerose.FarmCaves",
           "Ts_AFC_CRFCP_CaveType": "Fantasy"
+        }
+      },
+      {
+        "Action": "Include",
+        "FromFile": "assets/json/Mod_08_XiddavFarmCave.json",
+        "When": {
+          "Ts_AFC_EnableThisMod": "true",
+          "HasMod": "Xiddav.FarmCave"
         }
       }
 
