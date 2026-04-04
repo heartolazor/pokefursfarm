@@ -1222,6 +1222,28 @@
 				"HasMod|contains=paulsteele.fse": true
 			}
 		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Priority": "Late +1",
+			"TargetField": [
+				"(BC)15",
+				"OutputRules",
+				"Cornucopia_PickleSpears",
+				"Triggers",
+				"#1"
+			],
+			"Entries": {
+				"RequiredCount": 3
+			},
+			"When": {
+				"HasMod|contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasMod|contains=ZoeyHoshi.SVEForageCrops": true,
+				"Spiderbuttons.CMCT/Config: ZoeyHoshi.SVEForageCrops, CornucopiaCompat": true,
+				"HasMod|contains=Cornucopia.MoreCrops": true,
+				"Sell Prices & Adjustments": true
+			}
+		},
 		// Cask Aging Multiplier
 		{
 			"Action": "EditData",
@@ -1758,10 +1780,11 @@
 				]
 			},
 			"When": {
-				"Artisan Goods Processing": "On"
+				"Artisan Goods Processing": "On",
+				"HasMod|contains=DaLion.Professions": false
 			}
 		},
-		/*{
+		{
 			"Action": "EditData",
 			"Target": "Data/Machines",
 			"TargetField": [
@@ -1846,7 +1869,7 @@
 				"HasMod|contains=DaLion.Professions": true,
 				"Spiderbuttons.CMCT/Config: DaLion.Professions, ImmersiveDairyYield": true
 			}
-		},*/
+		},
 		{
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -1942,10 +1965,11 @@
 				]
 			},
 			"When": {
-				"Artisan Goods Processing": "On"
+				"Artisan Goods Processing": "On",
+				"HasMod|contains=DaLion.Professions": false
 			}
 		},
-		/*{
+		{
 			"Action": "EditData",
 			"Target": "Data/Machines",
 			"TargetField": [
@@ -2060,7 +2084,7 @@
 				"HasMod|contains=DaLion.Professions": true,
 				"Spiderbuttons.CMCT/Config: DaLion.Professions, ImmersiveDairyYield": false
 			}
-		},*/
+		},
 		{
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -5178,10 +5202,11 @@
 				]
 			},
 			"When": {
-				"Artisan Goods Processing|contains=Off": "false"
+				"Artisan Goods Processing|contains=Off": "false",
+				"HasMod|contains=DaLion.Professions": false
 			}
 		},
-	/*	{
+		{
 			"Action": "EditData",
 			"Target": "Data/Machines",
 			"TargetField": [
@@ -5266,7 +5291,7 @@
 				"HasMod|contains=DaLion.Professions": true,
 				"Spiderbuttons.CMCT/Config: DaLion.Professions, ImmersiveDairyYield": true
 			}
-		},*/
+		},
 		{
 			"Action": "EditData",
 			"Target": "Data/Machines",

@@ -168,16 +168,6 @@
 				"Target": [
 				  "Fields",
 				  "Dwarf",
-				  1
-				],
-				"Value": "{{ModId}}_Candy_Button",
-				"Delimiter": " "
-			  },
-			  {
-				"Operation": "Append",
-				"Target": [
-				  "Fields",
-				  "Dwarf",
 				  3
 				],
 				"Value": "magical_mushroom_item",
@@ -1186,25 +1176,6 @@
 				  1
 				],
 				"Value": "{{ModId}}_Rustgill",
-				"Delimiter": " "
-			  }
-			]
-		  },
-		  {
-			"Action": "EditData",
-			"Target": "Data/NPCGiftTastes",
-			"LogName": "Gift tastes: NaveenFaycombeSereneVMV",
-			"Priority":"Late",
-			"When":{"HasMod: |contains=Lumisteria.MtVapius":true},
-			"TextOperations": [
-			  {
-				"Operation": "Append",
-				"Target": [
-				  "Fields",
-				  "NaveenFaycombeSereneVMV",
-				  1
-				],
-				"Value": "{{ModId}}_Candy_Button",
 				"Delimiter": " "
 			  }
 			]

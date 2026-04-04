@@ -1073,10 +1073,11 @@
 				]
 			},
 			"When": {
-				"Artisan Goods Processing": "On"
+				"Artisan Goods Processing": "On",
+				"HasMod|contains=DaLion.Professions": false
 			}
 		},
-		/*{ // Cheese Press - Large Goat Milk (No WoL)
+		{ // Cheese Press - Large Goat Milk (No WoL)
 			"Action": "EditData",
 			"Target": "Data/Machines",
 			"TargetField": [
@@ -1115,8 +1116,8 @@
 			},
 			"When": {
 				"Artisan Goods Processing": "On",
-				"Spiderbuttons.CMCT/Config: DaLion.Professions, ImmersiveDairyYield": false,
-				"HasMod|contains=DaLion.Professions": true
+				"HasMod|contains=DaLion.Professions": true,
+				"Spiderbuttons.CMCT/Config: DaLion.Professions, ImmersiveDairyYield": false
 			}
 		},
 		{ // Cheese Press - Large Goat Milk (WoL)
@@ -1161,7 +1162,7 @@
 				"HasMod|contains=DaLion.Professions": true,
 				"Spiderbuttons.CMCT/Config: DaLion.Professions, ImmersiveDairyYield": true
 			}
-		},*/
+		},
 		{ // Cheese Press - Milk
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -1195,7 +1196,7 @@
 				"Artisan Goods Processing": "On"
 			}
 		},
-		{ // Cheese Press - Large Milk
+		{ // Cheese Press - Large Milk (No WoL)
 			"Action": "EditData",
 			"Target": "Data/Machines",
 			"TargetField": [
@@ -1233,10 +1234,11 @@
 				]
 			},
 			"When": {
-				"Artisan Goods Processing": "On"
+				"Artisan Goods Processing": "On",
+				"HasMod|contains=DaLion.Professions": false
 			}
 		},
-		/*{ // Cheese Press - Large Milk (No WoL)
+		{ // Cheese Press - Large Milk (No WoL)
 			"Action": "EditData",
 			"Target": "Data/Machines",
 			"TargetField": [
@@ -1321,7 +1323,7 @@
 				"HasMod|contains=DaLion.Professions": true,
 				"Spiderbuttons.CMCT/Config: DaLion.Professions, ImmersiveDairyYield": true
 			}
-		},*/
+		},
 		{ // Oil Maker - Corn
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -1624,10 +1626,11 @@
 				]
 			},
 			"When": {
-				"Artisan Goods Processing": "On"
+				"Artisan Goods Processing": "On",
+				"HasMod|contains=DaLion.Professions": false
 			}
 		},
-	/*	{ // Mayonnaise Machine - Large Egg (No WoL)
+		{ // Mayonnaise Machine - Large Egg (No WoL)
 			"Action": "EditData",
 			"Target": "Data/Machines",
 			"TargetField": [
@@ -1712,7 +1715,7 @@
 				"HasMod|contains=DaLion.Professions": true,
 				"Spiderbuttons.CMCT/Config: DaLion.Professions, ImmersiveDairyYield": true
 			}
-		},*/
+		},
 		{ // Mayonnaise Machine - Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",

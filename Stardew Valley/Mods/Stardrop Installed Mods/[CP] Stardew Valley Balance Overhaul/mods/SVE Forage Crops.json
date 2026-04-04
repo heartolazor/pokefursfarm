@@ -248,28 +248,6 @@
 			"When": {
 				"Limited Stock": true
 			}
-		},
-		{
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"Priority": "Late +1",
-			"TargetField": [
-				"(BC)15",
-				"OutputRules",
-				"Cornucopia_PickleSpears",
-				"Triggers",
-				"#1"
-			],
-			"Entries": {
-				"RequiredCount": 3
-			},
-			"When": {
-				"HasMod|contains=FlashShifter.StardewValleyExpandedCP": true,
-				"Spiderbuttons.CMCT/Config: ZoeyHoshi.SVEForageCrops, CornucopiaCompat": true,
-				"HasMod|contains=Cornucopia.MoreCrops": true,
-				"HasMod|contains=Cornucopia.Artisan Machines": true,
-				"Sell Prices & Adjustments": true
-			}
 		}
 	]
 }

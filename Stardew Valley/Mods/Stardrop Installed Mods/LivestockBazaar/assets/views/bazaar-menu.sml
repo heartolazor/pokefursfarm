@@ -52,7 +52,7 @@
             <image sprite={@mushymato.LivestockBazaar/sprites/cursors:organize} layout="30px 36px" margin="9,8" +hover:scale="1.2" +transition:scale="100ms EaseInSine"/>
           </panel>
           <textinput layout="stretch 48px" margin="0,2,0,0" text={<>NameFilter}/>
-          <panel focusable="true" margin="4,0,0,0" left-click=|ShowAnimalManage()| tooltip={#GUI.AnimalManage.Title}>
+          <panel *if={~BazaarContextMain.HasAnyBuildings} focusable="true" margin="4,0,0,0" left-click=|ShowAnimalManage()| tooltip={#GUI.AnimalManage.Title}>
             <image sprite={@mushymato.LivestockBazaar/sprites/cursors2:dotdotdot} layout="48px 48px"/>
             <image sprite={@mushymato.LivestockBazaar/sprites/springobjects:hay} layout="32px 32px" margin="8,8,8,8" +hover:scale="1.2" +transition:scale="100ms EaseInSine"/>
           </panel>
@@ -80,7 +80,7 @@
             <image margin="0,12" layout="48px 48px" sprite={:TradeItem} />
             <image margin="12,0" layout="48px 48px" sprite={:TradeItem} />
           </panel>
-          <label layout="content 48px" text={TotalCurrency} font="dialogue" max-lines="1" />
+          <label layout="content 48px" font="dialogue" max-lines="1" focusable="true" text={TotalCurrency}/>
         </lane>
         <infobox tint={AnimTint}>
           <lane *if={HasSkin} layout="stretch content" orientation="horizontal" margin="0,-48,0,0" horizontal-content-alignment="middle" z-index="2">
@@ -153,7 +153,7 @@
 
 <template name="infobox">
   <lane layout="content[256..] stretch" orientation="vertical" horizontal-content-alignment="middle">
-      <image layout="content content[64..]" fit="Contain" horizontal-alignment="middle" vertical-alignment="end"
+      <image layout="content content[64..]" fit="Contain" horizontal-alignment="middle" vertical-alignment="end" 
       tint={&tint} sprite={AnimSprite} sprite-effects={AnimFlip} />
     <outlet/>
   </lane>
