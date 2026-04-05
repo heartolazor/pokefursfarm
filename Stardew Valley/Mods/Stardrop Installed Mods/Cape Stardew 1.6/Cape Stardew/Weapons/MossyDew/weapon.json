@@ -20,8 +20,8 @@
           "Precision": 85,
           "Defense": 0,
           "AreaOfEffect": 0,
-          "CritChance": 0.04,
-          "CritMultiplier": 0.02,
+          "CritChance": 0.03,
+"CritMultiplier": 3.0,
           "CanPurchase": false,
           "Projectiles": [
             {
@@ -65,8 +65,8 @@
           "Precision": 75,
           "Defense": 0,
           "AreaOfEffect": 0,
-          "CritChance": 0.04,
-          "CritMultiplier": 0.01,
+          "CritChance": 0.03,
+"CritMultiplier": 3.0,
           "CanPurchase": false
         }
       },
@@ -113,8 +113,8 @@
           "Precision": 85,
           "Defense": 0,
           "AreaOfEffect": 0,
-          "CritChance": 0.08,
-          "CritMultiplier": 1.2,
+          "CritChance": 0.05,
+"CritMultiplier": 3.2,
           "CanPurchase": false,
           "Projectiles": [
             {
@@ -159,8 +159,8 @@
           "Precision": 85,
           "Defense": 0,
           "AreaOfEffect": 0,
-          "CritChance": 0.08,
-          "CritMultiplier": 1.2,
+         "CritChance": 0.05,
+"CritMultiplier": 3.2,
           "CanPurchase": false
         }
       },
@@ -169,6 +169,84 @@
 "WeaponsBalance": "Stronger"
 }
     },
+
+
+  {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Cape.MossyDewBlade": {
+          "Texture": "Mods/CapeStardew/Weapons/MossyDew",
+          "SpriteIndex": 0,
+          "Name": "MossyDew",
+          "DisplayName": "{{i18n:Mossydew-Blade_Translated}}",
+          "Description": "{{i18n:Mossydew-Blade_Description_Translated}}",
+          "Type": "3",
+          "Category": -98,
+          "Price": 6500,
+          "MinDamage": 60,
+          "MaxDamage": 80,
+          "Knockback": 0.3,
+          "Speed": 2,
+          "Precision": 75,
+          "Defense": 0,
+          "AreaOfEffect": 0,
+          "CritChance": 0.02,
+          "CritMultiplier": 3.0,
+          "CanPurchase": false,
+          "Projectiles": [
+            {
+              "Id": "mossydew_projectile1",
+              "Damage": 25,
+              "Explodes": false,
+              "Bounces": 1,
+              "MaxDistance": 8,
+              "Velocity": 10,
+              "RotationVelocity": 12,
+              "TailLength": 3,
+              "FireSound": "wand",
+              "CollisionSound": "slimeHit",
+              "SpriteIndex": 7
+            }
+          ]
+        }
+      },
+      "When": {
+        "WeaponsBalance": "Vanilla",
+        "MossyDewProjectile": "On"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Cape.MossyDewBlade": {
+          "Texture": "Mods/CapeStardew/Weapons/MossyDew",
+          "SpriteIndex": 0,
+          "Name": "MossyDew",
+          "DisplayName": "{{i18n:Mossydew-Blade_Translated}}",
+          "Description": "{{i18n:Mossydew-Blade_Description_Translated}}",
+          "Type": "3",
+          "Category": -98,
+          "Price": 6500,
+          "MinDamage": 60,
+          "MaxDamage": 80,
+          "Knockback": 0.3,
+          "Speed": 2,
+          "Precision": 75,
+          "Defense": 0,
+          "AreaOfEffect": 0,
+          "CritChance": 0.02,
+          "CritMultiplier": 3.0,
+          "CanPurchase": false
+        }
+      },
+      "When": {
+        "WeaponsBalance": "Vanilla",
+        "MossyDewProjectile": "Off"
+      }
+    }
    
 
 

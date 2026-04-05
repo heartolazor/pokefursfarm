@@ -20,8 +20,8 @@
                     "Precision": 80,
                     "Defense": 0,
                     "AreaOfEffect": 0,
-                    "CritChance": 0.7,
-                    "CritMultiplier": 0.01,
+                   "CritChance": 0.08,
+"CritMultiplier": 3.2,
                     "CanPurchase": false,
 "Projectiles": [
                         {
@@ -90,8 +90,8 @@
                     "Precision": 80,
                     "Defense": 0,
                     "AreaOfEffect": 0,
-                    "CritChance": 0.13,
-                    "CritMultiplier": 1.1,
+                    "CritChance": 0.08,
+"CritMultiplier": 3.2,
                     "CanPurchase": false,
 "Projectiles": [
                         {
@@ -159,8 +159,8 @@
                     "Precision": 80,
                     "Defense": 0,
                     "AreaOfEffect": 0,
-                    "CritChance": 0.13,
-                    "CritMultiplier": 1.1,
+                    "CritChance": 0.08,
+"CritMultiplier": 3.2,
                     "CanPurchase": false,
 		
 		},
@@ -202,8 +202,8 @@
                     "Precision": 98,
                     "Defense": 0,
                     "AreaOfEffect": 0,
-                    "CritChance": 0.13,
-                    "CritMultiplier": 1.1,
+                   "CritChance": 0.10,
+"CritMultiplier": 3.5,
                     "CanPurchase": false,
 "Projectiles": [
                         {
@@ -272,8 +272,8 @@
                     "Precision": 98,
                     "Defense": 0,
                     "AreaOfEffect": 0,
-                    "CritChance": 0.13,
-                    "CritMultiplier": 1.1,
+                    "CritChance": 0.10,
+"CritMultiplier": 3.5,
                     "CanPurchase": false,
 "Projectiles": [
                         {
@@ -341,8 +341,8 @@
                     "Precision": 98,
                     "Defense": 0,
                     "AreaOfEffect": 0,
-                    "CritChance": 0.13,
-                    "CritMultiplier": 1.1,
+                    "CritChance": 0.10,
+"CritMultiplier": 3.5,
                     "CanPurchase": false,
 		
 		},
@@ -352,6 +352,84 @@
 "WeaponsBalance": "Stronger"
         },
 },
+
+
+ {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Cape.ShadowStrikeBlade": {
+          "Texture": "Mods/CapeStardew/Weapons/Shadow Strike Blade",
+          "SpriteIndex": 0,
+          "Name": "Shadow Strike Blade",
+          "DisplayName": "{{i18n:Shadow-Strike-Blade_Translated}}",
+          "Description": "{{i18n:Shadow-Strike-Blade_Description_Translated}}",
+          "Type": "3",
+          "Category": -98,
+          "Price": 8000,
+          "MinDamage": 75,
+          "MaxDamage": 95,
+          "Knockback": 0.4,
+          "Speed": 6,
+          "Precision": 80,
+          "Defense": 0,
+          "AreaOfEffect": 0,
+          "CritChance": 0.03,
+          "CritMultiplier": 3.0,
+          "CanPurchase": false,
+          "Projectiles": [
+            {
+              "Id": "shadowstrike_projectile1",
+              "Damage": 35,
+              "Explodes": true,
+              "Bounces": 0,
+              "MaxDistance": 10,
+              "Velocity": 12,
+              "RotationVelocity": 20,
+              "TailLength": 4,
+              "FireSound": "flameSpell",
+              "CollisionSound": "shadowDie",
+              "SpriteIndex": 3
+            }
+          ]
+        }
+      },
+      "When": {
+        "WeaponsBalance": "Vanilla",
+        "ShadowStrikeProjectile": "on"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Cape.ShadowStrikeBlade": {
+          "Texture": "Mods/CapeStardew/Weapons/Shadow Strike Blade",
+          "SpriteIndex": 0,
+          "Name": "Shadow Strike Blade",
+          "DisplayName": "{{i18n:Shadow-Strike-Blade_Translated}}",
+          "Description": "{{i18n:Shadow-Strike-Blade_Description_Translated}}",
+          "Type": "3",
+          "Category": -98,
+          "Price": 8000,
+          "MinDamage": 75,
+          "MaxDamage": 95,
+          "Knockback": 0.4,
+          "Speed": 6,
+          "Precision": 80,
+          "Defense": 0,
+          "AreaOfEffect": 0,
+          "CritChance": 0.03,
+          "CritMultiplier": 3.0,
+          "CanPurchase": false
+        }
+      },
+      "When": {
+        "WeaponsBalance": "Vanilla",
+        "ShadowStrikeProjectile": "off"
+      }
+    }
 
     ]
 }

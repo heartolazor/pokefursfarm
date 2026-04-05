@@ -25,7 +25,7 @@
             pointer-enter=|~BazaarContextMain.HandleHoverLivestock(this)|
             pointer-leave=|~BazaarContextMain.HandleHoverLivestock()|
             left-click=|~BazaarContextMain.HandleSelectLivestock(this)| >
-            <panel layout="160px 144px" horizontal-content-alignment="middle" focusable="true">
+            <panel layout="160px 144px" horizontal-content-alignment="middle" focusable="true" screen-read={:ShopScreenRead}>
               <image layout="content 64px" margin="0,8" sprite={:ShopIcon} opacity={:ShopIconOpacity} tint={:ShopIconTint} />
               <lane layout="stretch 64px" margin="0,88" orientation="horizontal" opacity={:ShopIconOpacity}>
                 <image layout="48px 48px" sprite={:TradeItem} />
@@ -51,7 +51,7 @@
             <image sprite={@mushymato.LivestockBazaar/sprites/cursors2:dotdotdot} layout="48px 48px"/>
             <image sprite={@mushymato.LivestockBazaar/sprites/cursors:organize} layout="30px 36px" margin="9,8" +hover:scale="1.2" +transition:scale="100ms EaseInSine"/>
           </panel>
-          <textinput layout="stretch 48px" margin="0,2,0,0" text={<>NameFilter}/>
+          <textinput layout="stretch 48px" margin="0,2,0,0" text={<>NameFilter} placeholder={#GUI.Search}/>
           <panel *if={~BazaarContextMain.HasAnyBuildings} focusable="true" margin="4,0,0,0" left-click=|ShowAnimalManage()| tooltip={#GUI.AnimalManage.Title}>
             <image sprite={@mushymato.LivestockBazaar/sprites/cursors2:dotdotdot} layout="48px 48px"/>
             <image sprite={@mushymato.LivestockBazaar/sprites/springobjects:hay} layout="32px 32px" margin="8,8,8,8" +hover:scale="1.2" +transition:scale="100ms EaseInSine"/>
@@ -92,14 +92,15 @@
           </lane>
           <label text={PurchaseLivestockName} margin="0,4" font="dialogue"/>
           <lane orientation="horizontal" margin="0,16">
-            <textinput layout="196px 48px" text={<>BuyName}/>
+            <textinput layout="196px 48px" text={<>BuyName} screen-read={#GUI.ScreenRead.AnimalName}/>
             <image sprite={@mushymato.LivestockBazaar/sprites/cursors:dice} layout="32px 32px" margin="8" focusable="true"
               left-click=|RandomizeBuyName()| />
           </lane>
           <button layout="content[256..] content" margin="8,0"
             opacity={~BazaarContextMain.ReadyToPurchaseOpacity}
             hover-background={@Mods/StardewUI/Sprites/ButtonLight}
-            left-click=|~BazaarContextMain.HandlePurchaseAnimal()| >
+            left-click=|~BazaarContextMain.HandlePurchaseAnimal()|
+            screen-read={:PurchaseScreenRead} >
             <lane orientation="vertical" horizontal-content-alignment="start">
               <label layout="content content" text={#GUI.PurchaseButton} font="small"/>
               <lane orientation="horizontal" horizontal-content-alignment="end">
@@ -120,12 +121,13 @@
           <lane orientation="vertical">
             <grid *if={:HasAltPurchase} margin="8" item-layout="length: 96+" horizontal-item-alignment="middle" >
               <frame *repeat={:AltPurchase} focusable="true"
-                left-click=|~BazaarLivestockEntry.HandleSelectedPurchase(this)| >
+                left-click=|~BazaarLivestockEntry.HandleSelectedPurchase(this)|
+                screen-read={:LivestockName} >
                 <image fit="Contain" horizontal-alignment="middle" sprite={:SpriteIcon} opacity={IconOpacity}/>
               </frame>
             </grid>
             <lane padding="8" *repeat={:~BazaarContextMain.BazaarLocationEntries} layout="stretch content" orientation="vertical">
-              <banner padding="8" text={:LocationName}/>
+              <banner padding="8" text={:LocationName} focusable="true"/>
               <grid layout="stretch content" item-layout="length:164">
                 <frame *repeat={:ValidLivestockBuildings}
                   background={:~BazaarContextMain.Theme_ItemRowBackground}

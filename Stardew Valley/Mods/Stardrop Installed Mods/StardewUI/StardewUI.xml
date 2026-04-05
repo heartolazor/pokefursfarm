@@ -217,7 +217,16 @@
         <member name="P:StardewUI.Framework.Api.DocumentViewMenu.CloseAction">
             <inheritdoc />
         </member>
+        <member name="P:StardewUI.Framework.Api.DocumentViewMenu.OpenSound">
+            <inheritdoc />
+        </member>
         <member name="P:StardewUI.Framework.Api.DocumentViewMenu.CloseSound">
+            <inheritdoc />
+        </member>
+        <member name="P:StardewUI.Framework.Api.DocumentViewMenu.NavigateSound">
+            <inheritdoc />
+        </member>
+        <member name="P:StardewUI.Framework.Api.DocumentViewMenu.HideHUD">
             <inheritdoc />
         </member>
         <member name="P:StardewUI.Framework.Api.DocumentViewMenu.Menu">
@@ -356,6 +365,9 @@
             <inheritdoc />
         </member>
         <member name="M:StardewUI.Framework.Api.ViewEngine.PreloadModels(System.Type[])">
+            <inheritdoc />
+        </member>
+        <member name="M:StardewUI.Framework.Api.ViewEngine.PreloadModels(System.Int32,System.Type[])">
             <inheritdoc />
         </member>
         <member name="M:StardewUI.Framework.Api.ViewEngine.RegisterCustomData(System.String,System.String)">
@@ -2998,6 +3010,18 @@
         <member name="M:StardewUI.Framework.Converters.EnumNameConverterFactory.TryGetConverter``2(StardewUI.Framework.Converters.IValueConverter{``0,``1}@)">
             <inheritdoc />
         </member>
+        <member name="T:StardewUI.Framework.Converters.LookupAnythingHoveredItemConverter">
+            <summary>Convert <see cref="T:StardewValley.Item"/> to <see cref="T:StardewUI.ModIntegration.LookupAnythingHoveredSubject"/></summary>
+        </member>
+        <member name="M:StardewUI.Framework.Converters.LookupAnythingHoveredItemConverter.Convert(StardewValley.Item)">
+            <inheritdoc />
+        </member>
+        <member name="T:StardewUI.Framework.Converters.LookupAnythingHoveredNpcConverter">
+            <summary>Convert <see cref="T:StardewValley.NPC"/> to <see cref="T:StardewUI.ModIntegration.LookupAnythingHoveredSubject"/></summary>
+        </member>
+        <member name="M:StardewUI.Framework.Converters.LookupAnythingHoveredNpcConverter.Convert(StardewValley.NPC)">
+            <inheritdoc />
+        </member>
         <member name="T:StardewUI.Framework.Converters.IdentityValueConverterFactory">
             <summary>
             Factory that automatically implements identity conversions, where the source and destination type are the same.
@@ -3094,6 +3118,18 @@
             <param name="addonFactories">Converter factories registered by add-ons, in order of priority. All add-on
             factories are considered after the standard conversions, but before fallback conversions (duck-type,
             ToString).</param>
+        </member>
+        <member name="T:StardewUI.Framework.Converters.ScreenReadableStringConverter">
+            <summary>Converts a string to <see cref="T:StardewUI.ModIntegration.ScreenReadableData"/></summary>
+        </member>
+        <member name="M:StardewUI.Framework.Converters.ScreenReadableStringConverter.Convert(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:StardewUI.Framework.Converters.ScreenReadableInterfaceConverter">
+            <summary>Converts a general <see cref="T:StardewValley.Menus.IScreenReadable"/> to <see cref="T:StardewUI.ModIntegration.ScreenReadableData"/></summary>
+        </member>
+        <member name="M:StardewUI.Framework.Converters.ScreenReadableInterfaceConverter.Convert(StardewValley.Menus.IScreenReadable)">
+            <inheritdoc />
         </member>
         <member name="T:StardewUI.Framework.Converters.ItemSpriteConverter">
             <summary>
@@ -3433,6 +3469,9 @@
             </summary>
             <param name="field">The reflected field.</param>
         </member>
+        <member name="M:StardewUI.Framework.Descriptors.ExpressionFieldDescriptor`2.GetUntypedValue(System.Object)">
+            <inheritdoc />
+        </member>
         <member name="M:StardewUI.Framework.Descriptors.ExpressionFieldDescriptor`2.GetValue(System.Object)">
             <inheritdoc />
         </member>
@@ -3685,6 +3724,18 @@
             The property's value type.
             </summary>
         </member>
+        <member name="M:StardewUI.Framework.Descriptors.IPropertyDescriptor.GetUntypedValue(System.Object)">
+            <summary>
+            Reads the current property value as an <see cref="T:System.Object"/>.
+            </summary>
+            <remarks>
+            This method may be less efficient than <see cref="M:StardewUI.Framework.Descriptors.IPropertyDescriptor`1.GetValue(System.Object)"/> and should only be
+            used in situations where the actual property type cannot be known ahead of time and therefore the cost of
+            dynamically creating generic types/methods would be higher.
+            </remarks>
+            <param name="source">An instance of the property's <see cref="P:StardewUI.Framework.Descriptors.IMemberDescriptor.DeclaringType"/>.</param>
+            <returns>The current property value.</returns>
+        </member>
         <member name="T:StardewUI.Framework.Descriptors.IPropertyDescriptor`1">
             <summary>
             Describes a single property on a bindable object (i.e. a view) and provides methods to read or write the value.
@@ -3819,6 +3870,9 @@
             <inheritdoc />
         </member>
         <member name="P:StardewUI.Framework.Descriptors.LazyExpressionFieldDescriptor`1.ValueType">
+            <inheritdoc />
+        </member>
+        <member name="M:StardewUI.Framework.Descriptors.LazyExpressionFieldDescriptor`1.GetUntypedValue(System.Object)">
             <inheritdoc />
         </member>
         <member name="M:StardewUI.Framework.Descriptors.LazyExpressionFieldDescriptor`1.GetValue(System.Object)">
@@ -3958,6 +4012,9 @@
         <member name="P:StardewUI.Framework.Descriptors.PrecompiledPropertyDescriptor`2.ValueType">
             <inheritdoc />
         </member>
+        <member name="M:StardewUI.Framework.Descriptors.PrecompiledPropertyDescriptor`2.GetUntypedValue(System.Object)">
+            <inheritdoc />
+        </member>
         <member name="M:StardewUI.Framework.Descriptors.PrecompiledPropertyDescriptor`2.GetValue(System.Object)">
             <inheritdoc />
         </member>
@@ -4054,7 +4111,7 @@
             Reflection has the quickest setup time of available methods, but the slowest overall access/write time.
             </remarks>
             <typeparam name="TValue">The field's value type.</typeparam>
-            <param name="field">The reflected field.</param>
+            <param name="field">The reflected @field.</param>
         </member>
         <member name="M:StardewUI.Framework.Descriptors.ReflectionFieldDescriptor`1.#ctor(System.Reflection.FieldInfo)">
             <summary>
@@ -4064,7 +4121,7 @@
             Reflection has the quickest setup time of available methods, but the slowest overall access/write time.
             </remarks>
             <typeparam name="TValue">The field's value type.</typeparam>
-            <param name="field">The reflected field.</param>
+            <param name="field">The reflected @field.</param>
         </member>
         <member name="P:StardewUI.Framework.Descriptors.ReflectionFieldDescriptor`1.CanRead">
             <inheritdoc />
@@ -4088,6 +4145,9 @@
             <inheritdoc />
         </member>
         <member name="P:StardewUI.Framework.Descriptors.ReflectionFieldDescriptor`1.ValueType">
+            <inheritdoc />
+        </member>
+        <member name="M:StardewUI.Framework.Descriptors.ReflectionFieldDescriptor`1.GetUntypedValue(System.Object)">
             <inheritdoc />
         </member>
         <member name="M:StardewUI.Framework.Descriptors.ReflectionFieldDescriptor`1.GetValue(System.Object)">
@@ -4303,6 +4363,9 @@
         <member name="M:StardewUI.Framework.Descriptors.ReflectionPropertyDescriptor`2.GetHashCode">
             <inheritdoc />
         </member>
+        <member name="M:StardewUI.Framework.Descriptors.ReflectionPropertyDescriptor`2.GetUntypedValue(System.Object)">
+            <inheritdoc />
+        </member>
         <member name="M:StardewUI.Framework.Descriptors.ReflectionPropertyDescriptor`2.GetValue(System.Object)">
             <inheritdoc />
         </member>
@@ -4403,6 +4466,9 @@
             <inheritdoc />
         </member>
         <member name="P:StardewUI.Framework.Descriptors.ThisPropertyDescriptor`1.ValueType">
+            <inheritdoc />
+        </member>
+        <member name="M:StardewUI.Framework.Descriptors.ThisPropertyDescriptor`1.GetUntypedValue(System.Object)">
             <inheritdoc />
         </member>
         <member name="M:StardewUI.Framework.Descriptors.ThisPropertyDescriptor`1.GetValue(System.Object)">
@@ -4874,15 +4940,6 @@
             <see cref="P:StardewUI.Framework.Dom.SAttribute.ValueType"/> cannot be used in an <see cref="T:StardewUI.Framework.Dom.SArgument"/>, i.e. because there is no equivalent
             argument behavior.</exception>
         </member>
-        <member name="M:StardewUI.Framework.Dom.SAttribute.WithNameAndType(System.String,StardewUI.Framework.Grammar.AttributeType)">
-            <summary>
-            Creates a copy of this attribute with a different <see cref="P:StardewUI.Framework.Dom.SAttribute.Name"/> and <see cref="P:StardewUI.Framework.Dom.SAttribute.Type"/>, and all other
-            properties the same.
-            </summary>
-            <param name="name">The new attribute name.</param>
-            <param name="type">The new attribute type.</param>
-            <returns>The renamed attribute.</returns>
-        </member>
         <member name="T:StardewUI.Framework.Dom.Document">
             <summary>
             A standalone StarML document.
@@ -5133,7 +5190,7 @@
             Parses a node from the current state of a document reader.
             </summary>
             <param name="reader">The reader state, represent the content and current position.</param>
-            <returns></returns>
+            <returns>Null if no next tag is read</returns>
             <exception cref="T:StardewUI.Framework.Grammar.ParserException">Thrown when any invalid markup is encountered.</exception>
         </member>
         <member name="T:StardewUI.Framework.Dom.TemplateNodeTransformer">
@@ -5344,6 +5401,26 @@
             <summary>
             A read-only binding which obtains the value from a named game asset.
             </summary>
+        </member>
+        <member name="F:StardewUI.Framework.Grammar.AttributeValueType.AssetInputBinding">
+            <summary>
+            A one-way data binding which obtains the value from the context data and uses it as the asset name for a
+            subsequent asset binding.
+            </summary>
+            <remarks>
+            Combines an outer <see cref="F:StardewUI.Framework.Grammar.AttributeValueType.AssetBinding"/> with an inner <see cref="F:StardewUI.Framework.Grammar.AttributeValueType.InputBinding"/>.
+            </remarks>
+        </member>
+        <member name="F:StardewUI.Framework.Grammar.AttributeValueType.AssetOneTimeBinding">
+            <summary>
+            A one-way data binding which obtains only the initial value from the context data and uses it as the asset name
+            for a subsequent asset binding.
+            </summary>
+            <remarks>
+            This has the same relation to <see cref="F:StardewUI.Framework.Grammar.AttributeValueType.AssetInputBinding"/> as <see cref="F:StardewUI.Framework.Grammar.AttributeValueType.OneTimeBinding"/> does to
+            <see cref="F:StardewUI.Framework.Grammar.AttributeValueType.InputBinding"/>. The binding will ignore changes to the model, but will still reflect changes to the
+            underlying game asset if it is invalidated by the content pipeline.
+            </remarks>
         </member>
         <member name="F:StardewUI.Framework.Grammar.AttributeValueType.TranslationBinding">
             <summary>
@@ -5987,6 +6064,25 @@
             and/or binding to a very complex model for the first time. Preloading can perform this work in the background
             instead of causing latency when opening the menu.
             </remarks>
+            <remarks>
+            The default max depth to traverse is 2, use <see cref="M:StardewUI.Framework.IViewEngine.PreloadModels(System.Int32,System.Type[])"/> to customize max depth.
+            </remarks>
+            <param name="types">The types that the mod expects to use as context.</param>
+        </member>
+        <member name="M:StardewUI.Framework.IViewEngine.PreloadModels(System.Int32,System.Type[])">
+            <summary>
+            Declares that the specified context types will be used as either direct arguments or subproperties in one or
+            more subsequent <c>CreateMenu</c> or <c>CreateDrawable</c> APIs, and instructs the framework to begin inspecting
+            those types and optimizing for later use.
+            This overload allows you to change max depth of traversal.
+            <c>(unofficial-mushymato)</c>
+            </summary>
+            <remarks>
+            Data binding to mod-defined types uses reflection, which can become expensive when loading a very complex menu
+            and/or binding to a very complex model for the first time. Preloading can perform this work in the background
+            instead of causing latency when opening the menu.
+            </remarks>
+            <param name="maxDepth">How many layers to traverse down in types, use -1 for unlimited.</param>
             <param name="types">The types that the mod expects to use as context.</param>
         </member>
         <member name="M:StardewUI.Framework.IViewEngine.RegisterCustomData(System.String,System.String)">
@@ -6116,9 +6212,23 @@
             This setting is primarily intended for submenus and makes them behave more like overlays.
             </remarks>
         </member>
+        <member name="P:StardewUI.Framework.IMenuController.OpenSound">
+            <summary>
+            Sound to play one tick after this menu becomes active.
+            Default "bigSelect".
+            <c>(unofficial-mushymato)</c>
+            </summary>
+        </member>
         <member name="P:StardewUI.Framework.IMenuController.CloseSound">
             <summary>
             Sound to play when closing the menu.
+            </summary>
+        </member>
+        <member name="P:StardewUI.Framework.IMenuController.NavigateSound">
+            <summary>
+            Sound to play when navigating the menu (gamepad or scrolling).
+            Default "shiny4".
+            <c>(unofficial-mushymato)</c>
             </summary>
         </member>
         <member name="P:StardewUI.Framework.IMenuController.DimmingAmount">
@@ -6129,6 +6239,12 @@
             The default dimming is appropriate for most menus, but if the menu is being drawn as a delegate of some other
             macro-menu, then it can be lowered or removed (set to <c>0</c>) entirely.
             </remarks>
+        </member>
+        <member name="P:StardewUI.Framework.IMenuController.HideHUD">
+            <summary>
+            Whether to hide the game HUD while menu is active.
+            <c>(unofficial-mushymato)</c>
+            </summary>
         </member>
         <member name="P:StardewUI.Framework.IMenuController.Menu">
             <summary>
@@ -6320,16 +6436,16 @@
             </summary>
             <typeparam name="T">The type of asset to retrieve.</typeparam>
             <param name="cache">Asset cache used to obtain current value/status.</param>
-            <param name="name">The asset name/path as it would be supplied to SMAPI in
+            <param name="nameSource">Secondary source that provides the name of the asset as it would be supplied to SMAPI in
             <see cref="M:StardewModdingAPI.IGameContentHelper.Load``1(System.String)"/>.</param>
         </member>
-        <member name="M:StardewUI.Framework.Sources.AssetValueSource`1.#ctor(StardewUI.Framework.Content.IAssetCache,System.String)">
+        <member name="M:StardewUI.Framework.Sources.AssetValueSource`1.#ctor(StardewUI.Framework.Content.IAssetCache,StardewUI.Framework.Sources.IValueSource{System.String})">
             <summary>
             Value source that looks up an asset registered with SMAPI's content manager.
             </summary>
             <typeparam name="T">The type of asset to retrieve.</typeparam>
             <param name="cache">Asset cache used to obtain current value/status.</param>
-            <param name="name">The asset name/path as it would be supplied to SMAPI in
+            <param name="nameSource">Secondary source that provides the name of the asset as it would be supplied to SMAPI in
             <see cref="M:StardewModdingAPI.IGameContentHelper.Load``1(System.String)"/>.</param>
         </member>
         <member name="P:StardewUI.Framework.Sources.AssetValueSource`1.CanRead">
@@ -6346,6 +6462,14 @@
         </member>
         <member name="P:StardewUI.Framework.Sources.AssetValueSource`1.ValueType">
             <inheritdoc />
+        </member>
+        <member name="M:StardewUI.Framework.Sources.AssetValueSource`1.#ctor(StardewUI.Framework.Content.IAssetCache,System.String)">
+            <summary>
+            Initializes an <see cref="T:StardewUI.Framework.Sources.AssetValueSource`1"/> instance using a constant asset name.
+            </summary>
+            <param name="cache">Asset cache used to obtain current value/status.</param>
+            <param name="name">The asset name/path as it would be supplied to SMAPI in
+            <see cref="M:StardewModdingAPI.IGameContentHelper.Load``1(System.String)"/>.</param>
         </member>
         <member name="M:StardewUI.Framework.Sources.AssetValueSource`1.Dispose">
             <inheritdoc />
@@ -6388,6 +6512,45 @@
             As implemented on <see cref="T:StardewUI.Framework.Sources.ConstantValueSource`1"/>, always returns <c>false</c> as there can never be any
             change that requires an update.
             </remarks>
+        </member>
+        <member name="T:StardewUI.Framework.Sources.ContextPathValueSource`1">
+            <summary>
+            Value source that obtains its value from a property path, starting from some root data and traversing the list of
+            properties to reach the final value.
+            </summary>
+            <typeparam name="T">The return type of the context property, i.e. at the end of the path.</typeparam>
+        </member>
+        <member name="P:StardewUI.Framework.Sources.ContextPathValueSource`1.CanRead">
+            <inheritdoc />
+        </member>
+        <member name="P:StardewUI.Framework.Sources.ContextPathValueSource`1.CanWrite">
+            <inheritdoc />
+        </member>
+        <member name="P:StardewUI.Framework.Sources.ContextPathValueSource`1.DisplayName">
+            <inheritdoc />
+        </member>
+        <member name="P:StardewUI.Framework.Sources.ContextPathValueSource`1.Value">
+            <inheritdoc />
+        </member>
+        <member name="P:StardewUI.Framework.Sources.ContextPathValueSource`1.ValueType">
+            <inheritdoc />
+        </member>
+        <member name="M:StardewUI.Framework.Sources.ContextPathValueSource`1.#ctor(StardewUI.Framework.Binding.BindingContext,StardewUI.Framework.Descriptors.IPropertyDescriptor[],System.Boolean)">
+            <summary>
+            Initializes a new <see cref="T:StardewUI.Framework.Sources.ContextPathValueSource`1"/> using the specified context and property sequence.
+            </summary>
+            <param name="context">Context used for the data binding.</param>
+            <param name="properties">Array of properties to traverse, in order. Equivalent to a nested C# accessor
+            expression such as "Foo.Bar.Baz".</param>
+            <param name="allowUpdates">Whether or not to allow <see cref="M:StardewUI.Framework.Sources.ContextPathValueSource`1.Update(System.Boolean)"/> to read a new value. <c>false</c>
+            prevents all updates and makes the source read only one time.</param>
+            <exception cref="T:System.ArgumentException">Thrown when the <paramref name="properties"/> array is empty.</exception>
+        </member>
+        <member name="M:StardewUI.Framework.Sources.ContextPathValueSource`1.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="M:StardewUI.Framework.Sources.ContextPathValueSource`1.Update(System.Boolean)">
+            <inheritdoc />
         </member>
         <member name="T:StardewUI.Framework.Sources.ContextPropertyValueSource`1">
             <summary>
@@ -6587,6 +6750,39 @@
             Gets the current value obtained from the most recent <see cref="M:StardewUI.Framework.Sources.IValueSource.Update(System.Boolean)"/>, or writes a new value
             when set.
             </summary>
+        </member>
+        <member name="T:StardewUI.Framework.Sources.NullValueSource`1">
+            <summary>
+            Value source that always provides a null/default value, and does not allow writing.
+            </summary>
+            <remarks>
+            Can be used in place of a real <see cref="T:StardewUI.Framework.Sources.IValueSource`1"/> when no data is available, e.g. when a complex binding
+            is attempted when a <c>null</c> value is at the root, and therefore the destination type cannot be determined.
+            </remarks>
+            <typeparam name="T">The return type of the context property.</typeparam>
+        </member>
+        <member name="F:StardewUI.Framework.Sources.NullValueSource`1.Instance">
+            <summary>
+            Immutable default instance of a <see cref="T:StardewUI.Framework.Sources.NullValueSource`1"/>.
+            </summary>
+        </member>
+        <member name="P:StardewUI.Framework.Sources.NullValueSource`1.CanRead">
+            <inheritdoc />
+        </member>
+        <member name="P:StardewUI.Framework.Sources.NullValueSource`1.CanWrite">
+            <inheritdoc />
+        </member>
+        <member name="P:StardewUI.Framework.Sources.NullValueSource`1.DisplayName">
+            <inheritdoc />
+        </member>
+        <member name="P:StardewUI.Framework.Sources.NullValueSource`1.Value">
+            <inheritdoc />
+        </member>
+        <member name="P:StardewUI.Framework.Sources.NullValueSource`1.ValueType">
+            <inheritdoc />
+        </member>
+        <member name="M:StardewUI.Framework.Sources.NullValueSource`1.Update(System.Boolean)">
+            <inheritdoc />
         </member>
         <member name="T:StardewUI.Framework.Sources.TranslationValueSource">
             <summary>
@@ -6964,6 +7160,9 @@
             <see cref="T:Microsoft.Xna.Framework.Graphics.SpriteFont"/>s and often used for top-level headings/menu titles.
             </remarks>
         </member>
+        <member name="M:StardewUI.Widgets.Banner.#ctor">
+            <summary>Construct a banner</summary>
+        </member>
         <member name="P:StardewUI.Widgets.Banner.Background">
             <summary>
             Background sprite (including border) to draw underneath the text.
@@ -6983,6 +7182,11 @@
         <member name="P:StardewUI.Widgets.Banner.Text">
             <summary>
             The text to display within the banner.
+            </summary>
+        </member>
+        <member name="P:StardewUI.Widgets.Banner.Color">
+            <summary>
+            The text color.
             </summary>
         </member>
         <member name="P:StardewUI.Widgets.Banner.TextShadowAlpha">
@@ -7074,6 +7278,18 @@
             <summary>
             Margin to add outside the button.
             </summary>
+        </member>
+        <member name="P:StardewUI.Widgets.Button.Padding">
+            <summary>
+            Padding to add inside the button.
+            This is actually the padding of the inner frame instead of the panel.
+            </summary>
+        </member>
+        <member name="P:StardewUI.Widgets.Button.HorizontalContentAlignment">
+            <inheritdoc cref="P:StardewUI.Widgets.Panel.HorizontalContentAlignment" />
+        </member>
+        <member name="P:StardewUI.Widgets.Button.VerticalContentAlignment">
+            <inheritdoc cref="P:StardewUI.Widgets.Panel.VerticalContentAlignment" />
         </member>
         <member name="P:StardewUI.Widgets.Button.ShadowVisible">
             <summary>
@@ -7595,6 +7811,9 @@
             A view that renders a read-only text string.
             </summary>
         </member>
+        <member name="M:StardewUI.Widgets.Label.#ctor">
+            <summary>Construct a label</summary>
+        </member>
         <member name="M:StardewUI.Widgets.Label.Simple(System.String,Microsoft.Xna.Framework.Graphics.SpriteFont,System.Nullable{Microsoft.Xna.Framework.Color},System.Int32)">
             <summary>
             Creates a typical, simple run of 1-line text using content sizing.
@@ -8112,6 +8331,18 @@
             The <see cref="P:StardewUI.Widgets.Scrollbar.UpSprite" /> used for the scrollbar.
             </summary>
         </member>
+        <member name="P:StardewUI.Widgets.ScrollableView.ScrollStep">
+            <summary>
+            The <see cref="P:StardewUI.Widgets.ScrollContainer.ScrollStep" /> of the scrollable view.
+            <c>(unofficial-mushymato)</c>
+            </summary>
+        </member>
+        <member name="P:StardewUI.Widgets.ScrollableView.Progress">
+            <summary>
+            The <see cref="P:StardewUI.Widgets.Scrollbar.Progress" /> of the scrollable view.
+            <c>(unofficial-mushymato)</c>
+            </summary>
+        </member>
         <member name="M:StardewUI.Widgets.ScrollableView.OnWheel(StardewUI.Events.WheelEventArgs)">
             <inheritdoc />
         </member>
@@ -8131,6 +8362,14 @@
             <summary>
             The scroll container that this <see cref="T:StardewUI.Widgets.Scrollbar"/> controls.
             </summary>
+        </member>
+        <member name="E:StardewUI.Widgets.Scrollbar.ScrollChanged">
+            <summary>
+            Event raised when any aspect of the scrolling changes.
+            </summary>
+            <remarks>
+            This serves to bubble <see cref="E:StardewUI.Widgets.ScrollContainer.ScrollChanged"/> up to <see cref="T:StardewUI.Widgets.ScrollableView"/>
+            </remarks>
         </member>
         <member name="P:StardewUI.Widgets.Scrollbar.DownSprite">
             <summary>
@@ -8167,6 +8406,15 @@
             Sprite to draw for the up arrow, or left arrow in horizontal orientation.
             </summary>
         </member>
+        <member name="P:StardewUI.Widgets.Scrollbar.Progress">
+            <summary>
+            The progress of scrollbar, equal to <see cref="P:StardewUI.Widgets.ScrollContainer.ScrollOffset"/> / <see cref="P:StardewUI.Widgets.ScrollContainer.ScrollSize"/>.
+            Setting this via bindings will potentially change the scroll position next tick.
+            </summary>
+        </member>
+        <member name="F:StardewUI.Widgets.Scrollbar.progressSetDebounce">
+            <summary>Update <see cref="P:StardewUI.Widgets.ScrollContainer.ScrollOffset"/> using this value next tick without.</summary>
+        </member>
         <member name="M:StardewUI.Widgets.Scrollbar.SyncPosition">
             <summary>
             Forces an immediate sync of the thumb position with the associated container.
@@ -8174,6 +8422,9 @@
             <remarks>
             This is typically automatic and should only need to be called in rare situations.
             </remarks>
+        </member>
+        <member name="M:StardewUI.Widgets.Scrollbar.OnUpdate(System.TimeSpan)">
+            <inheritdoc/>
         </member>
         <member name="M:StardewUI.Widgets.Scrollbar.CreateView">
             <inheritdoc />
@@ -8236,6 +8487,12 @@
         <member name="P:StardewUI.Widgets.ScrollContainer.ScrollOffset">
             <summary>
             The current scroll position along the <see cref="P:StardewUI.Widgets.ScrollContainer.Orientation"/> axis.
+            </summary>
+        </member>
+        <member name="M:StardewUI.Widgets.ScrollContainer.SetScrollOffsetNoDirty(System.Single)">
+            <summary>
+            Set <see cref="P:StardewUI.Widgets.ScrollContainer.ScrollOffset"/> without marking it as dirty.
+            Using this means <see cref="E:StardewUI.Widgets.ScrollContainer.ScrollChanged"/> will not be raised.
             </summary>
         </member>
         <member name="P:StardewUI.Widgets.ScrollContainer.ScrollSize">
@@ -9197,6 +9454,12 @@
             <inheritdoc />
         </member>
         <member name="P:StardewUI.Widgets.DecoratorView`1.ZIndex">
+            <inheritdoc />
+        </member>
+        <member name="P:StardewUI.Widgets.DecoratorView`1.HoveredSubject">
+            <inheritdoc />
+        </member>
+        <member name="P:StardewUI.Widgets.DecoratorView`1.ScreenRead">
             <inheritdoc />
         </member>
         <member name="E:StardewUI.Widgets.DecoratorView`1.ButtonPress">
@@ -13241,6 +13504,20 @@
             Z order for this view within its direct parent. Higher indices draw later (on top).
             </summary>
         </member>
+        <member name="P:StardewUI.IView.HoveredSubject">
+            <summary>
+            When Lookup Anything (Pathoschild.LookupAnything) is loaded,
+            this <see cref="T:StardewValley.Object"/> or <see cref="T:StardewValley.NPC"/> subject is given to lookup anything for it's menu.
+            <c>(unofficial-mushymato)</c>
+            </summary>
+        </member>
+        <member name="P:StardewUI.IView.ScreenRead">
+            <summary>
+            When a screen reader mod (shoaib.stardewaccess) is loaded,
+            this element will be announced by the screen reader using this value.
+            <c>(unofficial-mushymato)</c>
+            </summary>
+        </member>
         <member name="M:StardewUI.IView.ContainsPoint(Microsoft.Xna.Framework.Vector2)">
             <summary>
             Checks if a given point, relative to the view's origin, is within its bounds.
@@ -13968,6 +14245,7 @@
             <param name="wasParentDirty">Whether this measurement is being done because the parent's layout already changed
             and therefore a reposition is always required (<c>true</c>), or whether to reposition only if the floating
             element's internal layout has changed (<c>false</c>).</param>
+            <returns><c>true</c> if the element was updated or repositioned, otherwise <c>false</c>.</returns>
         </member>
         <member name="T:StardewUI.Layout.FloatingPosition">
             <summary>
@@ -14709,6 +14987,126 @@
             be hidden when the menu is in this state.
             </remarks>
         </member>
+        <member name="T:StardewUI.ModIntegration.LookupAnythingIntegration">
+            <summary>Manages lookup anything integration</summary>
+        </member>
+        <member name="P:StardewUI.ModIntegration.LookupAnythingIntegration.IsLoaded">
+            <summary>Whether Lookup Anything is loaded</summary>
+        </member>
+        <member name="M:StardewUI.ModIntegration.LookupAnythingIntegration.Initialize(StardewModdingAPI.IModHelper)">
+            <summary>Initialize lookup anything integration</summary>
+        </member>
+        <member name="M:StardewUI.ModIntegration.LookupAnythingIntegration.SetSubject(StardewUI.ViewChild[])">
+            <summary>
+            Find the final hovered subject in a view hover path, and set that to the top level view menu.
+            </summary>
+            <param name="path">Sequence of all elements, and their relative positions, that the mouse coordinates are
+            currently within.</param>
+        </member>
+        <member name="T:StardewUI.ModIntegration.LookupAnythingHoveredSubject">
+            <summary>The lookup anything hovered subject to supply to <see cref="T:StardewUI.ViewMenu"/></summary>
+        </member>
+        <member name="M:StardewUI.ModIntegration.LookupAnythingHoveredSubject.#ctor(StardewValley.Item,StardewValley.NPC)">
+            <summary>The lookup anything hovered subject to supply to <see cref="T:StardewUI.ViewMenu"/></summary>
+        </member>
+        <member name="T:StardewUI.ModIntegration.LookupAnythingHoveredItemConverter">
+            <summary>Convert <see cref="T:StardewValley.Item"/> to <see cref="T:StardewUI.ModIntegration.LookupAnythingHoveredSubject"/></summary>
+        </member>
+        <member name="M:StardewUI.ModIntegration.LookupAnythingHoveredItemConverter.Convert(StardewValley.Item)">
+            <inheritdoc />
+        </member>
+        <member name="T:StardewUI.ModIntegration.LookupAnythingHoveredNpcConverter">
+            <summary>Convert <see cref="T:StardewValley.NPC"/> to <see cref="T:StardewUI.ModIntegration.LookupAnythingHoveredSubject"/></summary>
+        </member>
+        <member name="M:StardewUI.ModIntegration.LookupAnythingHoveredNpcConverter.Convert(StardewValley.NPC)">
+            <inheritdoc />
+        </member>
+        <member name="T:StardewUI.ModIntegration.IStardewAccessApi">
+            <summary>stardew access API</summary>
+        </member>
+        <member name="M:StardewUI.ModIntegration.IStardewAccessApi.SayMenuElement(StardewValley.Menus.IScreenReadable,System.Boolean)">
+            <summary>
+            Speaks the content of the given element while using the menu query to prevent speaking multiple times in the menu.
+            </summary>
+            <param name="element">The element to be spoken.</param>
+            <param name="interrupt">Whether to skip the currently speaking text or not.</param>
+            <returns>true if the element was spoken otherwise false.</returns>
+        </member>
+        <member name="M:StardewUI.ModIntegration.IStardewAccessApi.Translate(System.String,System.Object,System.String,System.Boolean)">
+            <summary>Translate some text using Stardew Access translations</summary>
+            <param name="translationKey"></param>
+            <param name="tokens"></param>
+            <param name="translationCategory"></param>
+            <param name="disableWarning"></param>
+            <returns></returns>
+        </member>
+        <member name="T:StardewUI.ModIntegration.StardewAccessIntegration">
+            <summary>Manages Stardew Access (shoaib.stardewaccess) integration</summary>
+        </member>
+        <member name="P:StardewUI.ModIntegration.StardewAccessIntegration.Api">
+            <summary>Stardew Access API instance</summary>
+        </member>
+        <member name="M:StardewUI.ModIntegration.StardewAccessIntegration.Initialize(StardewModdingAPI.IModHelper)">
+            <summary>Initialize lookup anything integration</summary>
+        </member>
+        <member name="M:StardewUI.ModIntegration.StardewAccessIntegration.SayHoveredMenuElement(StardewUI.ViewChild[])">
+            <summary>Say the currently hovered menu element using <see cref="M:StardewUI.ModIntegration.IStardewAccessApi.SayMenuElement(StardewValley.Menus.IScreenReadable,System.Boolean)"/></summary>
+            <param name="path">Sequence of all elements, and their relative positions, that the mouse coordinates are
+            currently within.</param>
+        </member>
+        <member name="M:StardewUI.ModIntegration.StardewAccessIntegration.MakeScreenReadDelegated(System.Func{System.String,System.String},System.Int32)">
+            <summary>
+            Make a <see cref="T:StardewUI.ModIntegration.ScreenReadableData"/> with a particular text delegate.
+            </summary>
+            <param name="textDelegate">Text delegate used to modify the inner text</param>
+            <param name="precedence"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StardewUI.ModIntegration.StardewAccessIntegration.MakeScreenReadTranslated(System.String,System.Func{System.String,System.Object},System.Int32)">
+            <summary>Make a <see cref="T:StardewUI.ModIntegration.ScreenReadableData"/> using translated text from Stardew Access</summary>
+            <param name="translationKey">Stardew Access translation key</param>
+            <param name="getTokens">Delegate that takes a string and returns translation tokens</param>
+            <param name="precedence"></param>
+            <returns></returns>
+        </member>
+        <member name="T:StardewUI.ModIntegration.ScreenReadableData">
+            <summary>
+            A screen readable bit of text.
+            Although <see cref="T:StardewValley.Menus.IScreenReadable"/> is a vanilla interface, it does nothing
+            by itself and will be used with screen reader mods.
+            </summary>
+        </member>
+        <member name="M:StardewUI.ModIntegration.ScreenReadableData.#ctor">
+            <summary>
+            A screen readable bit of text.
+            Although <see cref="T:StardewValley.Menus.IScreenReadable"/> is a vanilla interface, it does nothing
+            by itself and will be used with screen reader mods.
+            </summary>
+        </member>
+        <member name="F:StardewUI.ModIntegration.ScreenReadableData.screenReaderTextInner">
+            <summary>Backing field of <see cref="P:StardewUI.ModIntegration.ScreenReadableData.ScreenReaderText"/></summary>
+        </member>
+        <member name="P:StardewUI.ModIntegration.ScreenReadableData.ScreenReaderText">
+            <inheritdoc />
+        </member>
+        <member name="P:StardewUI.ModIntegration.ScreenReadableData.ScreenReaderDescription">
+            <inheritdoc />
+        </member>
+        <member name="P:StardewUI.ModIntegration.ScreenReadableData.ScreenReaderIgnore">
+            <inheritdoc />
+        </member>
+        <member name="P:StardewUI.ModIntegration.ScreenReadableData.Precedence">
+            <summary>
+            How prioritized this screen reader element is.
+            The lowest precedence element will be read,
+            even if the hover path has more specific elements.
+            Custom screen read fields should use negative values.
+            while screen read fields set by the View should have value 0 or greater.
+            </summary>
+        </member>
+        <member name="P:StardewUI.ModIntegration.ScreenReadableData.ScreenReaderTextDelegate">
+            <summary>A delegate used to modify </summary>
+        </member>
         <member name="T:StardewUI.Overlays.FullScreenOverlay">
             <summary>
             Base class for an overlay meant to take up the full screen.
@@ -15434,6 +15832,12 @@
             Z order for this view within its direct parent. Higher indices draw later (on top).
             </summary>
         </member>
+        <member name="P:StardewUI.View.HoveredSubject">
+            <inheritdoc />
+        </member>
+        <member name="P:StardewUI.View.ScreenRead">
+            <inheritdoc />
+        </member>
         <member name="P:StardewUI.View.HandlesOpacity">
             <summary>
             Whether the specific view type handles its own opacity.
@@ -15957,6 +16361,12 @@
             ignore <see cref="P:StardewUI.IView.IsFocusable"/>.</param>
             <returns></returns>
         </member>
+        <member name="M:StardewUI.ViewExtensions.ViewPathEquals(StardewUI.ViewChild[],StardewUI.ViewChild[])">
+            <summary>Assert that 2 arrays of <see cref="T:StardewUI.ViewChild"/> are the same path</summary>
+            <param name="pathA">This view path</param>
+            <param name="pathB">The other view path to compare</param>
+            <returns>Equality</returns>
+        </member>
         <member name="T:StardewUI.ViewMenu">
             <summary>
             Generic menu implementation based on a root <see cref="T:StardewUI.IView"/>.
@@ -16010,6 +16420,12 @@
             <see cref="P:StardewUI.ViewMenu.CursorAttachment"/> is set that would overlap.
             </remarks>
         </member>
+        <member name="F:StardewUI.ViewMenu.hoveredItem">
+            <summary>Lookup Anything: special conventional hovered item field</summary>
+        </member>
+        <member name="F:StardewUI.ViewMenu.hoveredNpc">
+            <summary>Lookup Anything: special conventional hovered NPC field</summary>
+        </member>
         <member name="P:StardewUI.ViewMenu.View">
             <summary>
             The view to display with this menu.
@@ -16024,6 +16440,15 @@
             Gutters effectively shrink the viewport for both measurement (size calculation) and layout (centering) by
             clipping the screen edges.
             </remarks>
+        </member>
+        <member name="F:StardewUI.ViewMenu.openSound">
+            <summary>Sound to play when this menu becomes active</summary>
+        </member>
+        <member name="F:StardewUI.ViewMenu.navigateSound">
+            <summary>Sound to play when navigtion occurs</summary>
+        </member>
+        <member name="F:StardewUI.ViewMenu.hideHUD">
+            <summary>Whether to hide HUD when menu becomes active, and restore it afterwards</summary>
         </member>
         <member name="M:StardewUI.ViewMenu.#ctor(StardewUI.Layout.Edges,System.Boolean)">
             <summary>

@@ -1570,7 +1570,8 @@
 						},
 						{
 							"Type": "ContextTag",
-							"Value": "sugar_item",
+							"Value": "sugar_item, !maple_syrup_item",
+							"ContextTagsRequireAll": true,
 							"Amount": 1,
 							"OverrideText": "[LocalizedText 6480.flexiblecooking/i18n:Ingredient_SugarAny]",
 							"OverrideTexturePath": "Maps/springobjects",
@@ -2905,7 +2906,8 @@
 					"Ingredients": [
 						{
 							"Type": "ContextTag",
-							"Value": "coffee_item",
+							"Value": "coffee_item, !id_o_253",
+							"ContextTagsRequireAll": true,
 							"Amount": 3,
 							"OverrideText": "[LocalizedText 6480.flexiblecooking/i18n:Indicator [EscapedText [LocalizedText Strings/Objects:Coffee_Name]]]",
 							"OverrideTexturePath": "Maps/springobjects",

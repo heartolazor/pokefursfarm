@@ -1,62 +1,34 @@
 {
 "Changes": [
 
+    //
 
- {
-            "Action": "EditData",
-            "Target": "Data/Buffs",
-            "When": {
-            "RingBuffsGlow": "true",
-            },
-             "Entries": {
-    "dreamy.kickitspot_AshenPromise": {
-          "DisplayName": "{{i18n:Ashen-Promise-Buff_Name}}",
-          "Description": "{{i18n:Ashen-Promise-Buff_Description}}",
+    {
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "When": { "RingBuffsGlow": "true", "RingsBalance": "Vanilla" },
+      "Entries": {
+        "dreamy.kickitspot_OakBlessing": {
+          "DisplayName": "{{i18n:Sky-Oak-Buff_Name}}",
+          "Description": "{{i18n:Sky-Oak-Buff_Description}}",
           "Duration": -2,
-        "GlowColor": "Orange",
-        "IconTexture": "Mods/CapeStardew/Objects/AshenBuffIcon",
-        "IconSpriteIndex": 0,
-        "Effects": {
-            "MaxStamina": 3,
-            "Defense": 4,
-	    "Attack": 4,
-        },
-    }
-}
-},
-///buffconfigurator//
- {
-            "Action": "EditData",
-            "Target": "Data/Buffs",
-            "When": {
-            "RingBuffsGlow": "true",
-            },
-             "Entries": {
-    "dreamy.kickitspot_ArcaneCharm": {
-        "DisplayName": "{{i18n:Arcane-Charm-Buff_Name}}",
-        "Description": "{{i18n:Arcane-Charm-Buff_Description}}",
-        "Duration": -2,
-        "GlowColor": "Cyan",
-        "IconTexture": "Mods/CapeStardew/Objects/ArcaneBuffIcon",
-        "IconSpriteIndex": 0,
-        "Effects": {
-            "MaxStamina": 4,
-            "Defense": 4,
-	    "Attack": 5,
-	    "MagneticRadius": 3
-	    
-            
+          "GlowColor": "Blue",
+          "IconTexture": "Mods/CapeStardew/Objects/SkyOakBuffIcon",
+          "IconSpriteIndex": 0,
+          "Effects": {
+            "LuckLevel": 1,
+            "Defense": 1,
+            "Speed": 1
+          }
         }
-    }
-}
-},
- {
-            "Action": "EditData",
-            "Target": "Data/Buffs",
-            "When": {
-            "RingBuffsGlow": "true",
-            },
-             "Entries": {
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "When": { "RingBuffsGlow": "true", "RingsBalance": "Vanilla" },
+      "Entries": {
         "dreamy.kickitspot_PetalGrace": {
           "DisplayName": "{{i18n:Silver-Petal-Buff_Name}}",
           "Description": "{{i18n:Silver-Petal-Buff_Description}}",
@@ -65,21 +37,65 @@
           "IconTexture": "Mods/CapeStardew/Objects/SilverPetalBuffIcon",
           "IconSpriteIndex": 0,
           "Effects": {
-            "LuckLevel": 2,
-            "MaxStamina": 5,
-	    "MagneticRadius": 3
+            "LuckLevel": 1,
+            "MaxStamina": 2,
+            "MagneticRadius": 1
           }
         },
-}
+      },
 },
 
-{
-            "Action": "EditData",
-            "Target": "Data/Buffs",
-            "When": {
-            "RingBuffsGlow": "true",
-            },
-            "Entries": {
+    {
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "When": { "RingBuffsGlow": "true", "RingsBalance": "Vanilla" },
+      "Entries": {
+        "dreamy.kickitspot_ArcaneCharm": {
+          "DisplayName": "{{i18n:Arcane-Charm-Buff_Name}}",
+          "Description": "{{i18n:Arcane-Charm-Buff_Description}}",
+          "Duration": -2,
+          "GlowColor": "Cyan",
+          "IconTexture": "Mods/CapeStardew/Objects/ArcaneBuffIcon",
+          "IconSpriteIndex": 0,
+          "Effects": {
+            "MaxStamina": 2,
+            "Defense": 2,
+            "Attack": 2,
+            "MagneticRadius": 1
+          }
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "When": { "RingBuffsGlow": "true", "RingsBalance": "Vanilla" },
+      "Entries": {
+        "dreamy.kickitspot_AshenPromise": {
+          "DisplayName": "{{i18n:Ashen-Promise-Buff_Name}}",
+          "Description": "{{i18n:Ashen-Promise-Buff_Description}}",
+          "Duration": -2,
+          "GlowColor": "Orange",
+          "IconTexture": "Mods/CapeStardew/Objects/AshenBuffIcon",
+          "IconSpriteIndex": 0,
+          "Effects": {
+            "MaxStamina": 1,
+            "Defense": 2,
+            "Attack": 2
+          }
+        }
+      }
+    },
+
+    // 
+
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "When": { "RingBuffsGlow": "true", "RingsBalance": "Stronger" },
+      "Entries": {
         "dreamy.kickitspot_OakBlessing": {
           "DisplayName": "{{i18n:Sky-Oak-Buff_Name}}",
           "Description": "{{i18n:Sky-Oak-Buff_Description}}",
@@ -90,12 +106,76 @@
           "Effects": {
             "LuckLevel": 3,
             "Defense": 3,
-	    "Speed": 3,
+            "Speed": 3
           }
         }
       }
     },
 
+    {
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "When": { "RingBuffsGlow": "true", "RingsBalance": "Stronger" },
+      "Entries": {
+        "dreamy.kickitspot_PetalGrace": {
+          "DisplayName": "{{i18n:Silver-Petal-Buff_Name}}",
+          "Description": "{{i18n:Silver-Petal-Buff_Description}}",
+          "Duration": -2,
+          "GlowColor": "Pink",
+          "IconTexture": "Mods/CapeStardew/Objects/SilverPetalBuffIcon",
+          "IconSpriteIndex": 0,
+          "Effects": {
+            "LuckLevel": 2,
+            "MaxStamina": 5,
+            "MagneticRadius": 3
+          }
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "When": { "RingBuffsGlow": "true", "RingsBalance": "Stronger" },
+      "Entries": {
+        "dreamy.kickitspot_ArcaneCharm": {
+          "DisplayName": "{{i18n:Arcane-Charm-Buff_Name}}",
+          "Description": "{{i18n:Arcane-Charm-Buff_Description}}",
+          "Duration": -2,
+          "GlowColor": "Cyan",
+          "IconTexture": "Mods/CapeStardew/Objects/ArcaneBuffIcon",
+          "IconSpriteIndex": 0,
+          "Effects": {
+            "MaxStamina": 4,
+            "Defense": 4,
+            "Attack": 5,
+            "MagneticRadius": 3
+          }
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "When": { "RingBuffsGlow": "true", "RingsBalance": "Stronger" },
+      "Entries": {
+        "dreamy.kickitspot_AshenPromise": {
+          "DisplayName": "{{i18n:Ashen-Promise-Buff_Name}}",
+          "Description": "{{i18n:Ashen-Promise-Buff_Description}}",
+          "Duration": -2,
+          "GlowColor": "Orange",
+          "IconTexture": "Mods/CapeStardew/Objects/AshenBuffIcon",
+          "IconSpriteIndex": 0,
+          "Effects": {
+            "MaxStamina": 3,
+            "Defense": 4,
+            "Attack": 4
+          }
+        },
+},
+},
+      
 {
     "Action": "Load",
     "Target": "Mods/CapeStardew/Objects/ArcaneBuffIcon",
@@ -117,97 +197,202 @@
     "Target": "Mods/CapeStardew/Objects/AshenBuffIcon",
     "FromFile": "Objects/Endless Ember/BuffIcon.png"
 },
- //ArcaneCharm//
-             {
-            "Action": "EditData",
-            "Target": "Data/Buffs",
-"When": {
-            "RingBuffsGlow": "false",
-            },
-            "Entries": {
+ 
+
+///
+// =========================
+// ARCANE CHARM
+// =========================
+{
+  "Action": "EditData",
+  "Target": "Data/Buffs",
+  "When": {
+    "RingBuffsGlow": "false",
+    "RingsBalance": "Vanilla"
+  },
+  "Entries": {
     "dreamy.kickitspot_ArcaneCharm": {
-        "DisplayName": "{{i18n:Arcane-Charm-Buff_Name}}",
-        "Description": "{{i18n:Arcane-Charm-Buff_Description}}",
-        "Duration": -2,
-        "IconTexture": "Mods/CapeStardew/Objects/ArcaneBuffIcon",
-        "IconSpriteIndex": 0,
-        "Effects": {
-            "MaxStamina": 4,
-            "Defense": 4,
-	    "Attack": 5,
-	    "MagneticRadius": 3
-	    
-            
-        }
+      "DisplayName": "{{i18n:Arcane-Charm-Buff_Name}}",
+      "Description": "{{i18n:Arcane-Charm-Buff_Description}}",
+      "Duration": -2,
+      "IconTexture": "Mods/CapeStardew/Objects/ArcaneBuffIcon",
+      "IconSpriteIndex": 0,
+      "Effects": {
+        "MaxStamina": 2,
+        "Defense": 2,
+        "Attack": 2,
+        "MagneticRadius": 1
+      }
     }
-}
-            },
-  //PetalGrace//
-    {
-      "Action": "EditData",
-      "Target": "Data/Buffs",
-"When": {
-            "RingBuffsGlow": "false",
-            },
-      "Entries": {
-        "dreamy.kickitspot_PetalGrace": {
-          "DisplayName": "{{i18n:Silver-Petal-Buff_Name}}",
-          "Description": "{{i18n:Silver-Petal-Buff_Description}}",
-          "Duration": -2,
-          "IconTexture": "Mods/CapeStardew/Objects/SilverPetalBuffIcon",
-          "IconSpriteIndex": 0,
-          "Effects": {
-            "LuckLevel": 2,
-            "MaxStamina": 5,
-	    "MagneticRadius": 3
-          }
-        },
-}
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Buffs",
+  "When": {
+    "RingBuffsGlow": "false",
+    "RingsBalance": "Stronger"
+  },
+  "Entries": {
+    "dreamy.kickitspot_ArcaneCharm": {
+      "DisplayName": "{{i18n:Arcane-Charm-Buff_Name}}",
+      "Description": "{{i18n:Arcane-Charm-Buff_Description}}",
+      "Duration": -2,
+      "IconTexture": "Mods/CapeStardew/Objects/ArcaneBuffIcon",
+      "IconSpriteIndex": 0,
+      "Effects": {
+        "MaxStamina": 4,
+        "Defense": 4,
+        "Attack": 5,
+        "MagneticRadius": 3
+      }
+    }
+  }
 },
 
-///OakBlessing//
- {
-      "Action": "EditData",
-      "Target": "Data/Buffs",
-"When": {
-            "RingBuffsGlow": "false",
-            },
-      "Entries": {
-        "dreamy.kickitspot_OakBlessing": {
-          "DisplayName": "{{i18n:Sky-Oak-Buff_Name}}",
-          "Description": "{{i18n:Sky-Oak-Buff_Description}}",
-          "Duration": -2,
-          "IconTexture": "Mods/CapeStardew/Objects/SkyOakBuffIcon",
-          "IconSpriteIndex": 0,
-          "Effects": {
-            "LuckLevel": 3,
-            "Defense": 3,
-	    "Speed": 3,
-          }
-        }
-      }
-    },
+// =========================
+//  PETAL GRACE
+// =========================
 {
-      "Action": "EditData",
-      "Target": "Data/Buffs",
-"When": {
-            "RingBuffsGlow": "false",
-            },
-      "Entries": {
-        "dreamy.kickitspot_AshenPromise": {
-          "DisplayName": "{{i18n:Ashen-Promise-Buff_Name}}",
-          "Description": "{{i18n:Ashen-Promise-Buff_Description}}",
-          "Duration": -2,
-          "IconTexture": "Mods/CapeStardew/Objects/AshenBuffIcon",
-          "IconSpriteIndex": 0,
-          "Effects": {
-            "MaxStamina": 3,
-            "Defense": 4,
-	    "Attack": 4,
-          }
-        }
+  "Action": "EditData",
+  "Target": "Data/Buffs",
+  "When": {
+    "RingBuffsGlow": "false",
+    "RingsBalance": "Vanilla"
+  },
+  "Entries": {
+    "dreamy.kickitspot_PetalGrace": {
+      "DisplayName": "{{i18n:Silver-Petal-Buff_Name}}",
+      "Description": "{{i18n:Silver-Petal-Buff_Description}}",
+      "Duration": -2,
+      "IconTexture": "Mods/CapeStardew/Objects/SilverPetalBuffIcon",
+      "IconSpriteIndex": 0,
+      "Effects": {
+        "LuckLevel": 1,
+        "MaxStamina": 2,
+        "MagneticRadius": 1
       }
-    },
+    }
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Buffs",
+  "When": {
+    "RingBuffsGlow": "false",
+    "RingsBalance": "Stronger"
+  },
+  "Entries": {
+    "dreamy.kickitspot_PetalGrace": {
+      "DisplayName": "{{i18n:Silver-Petal-Buff_Name}}",
+      "Description": "{{i18n:Silver-Petal-Buff_Description}}",
+      "Duration": -2,
+      "IconTexture": "Mods/CapeStardew/Objects/SilverPetalBuffIcon",
+      "IconSpriteIndex": 0,
+      "Effects": {
+        "LuckLevel": 2,
+        "MaxStamina": 5,
+        "MagneticRadius": 3
+      }
+    }
+  }
+},
+
+// =========================
+// OAK BLESSING
+// =========================
+{
+  "Action": "EditData",
+  "Target": "Data/Buffs",
+  "When": {
+    "RingBuffsGlow": "false",
+    "RingsBalance": "Vanilla"
+  },
+  "Entries": {
+    "dreamy.kickitspot_OakBlessing": {
+      "DisplayName": "{{i18n:Sky-Oak-Buff_Name}}",
+      "Description": "{{i18n:Sky-Oak-Buff_Description}}",
+      "Duration": -2,
+      "IconTexture": "Mods/CapeStardew/Objects/SkyOakBuffIcon",
+      "IconSpriteIndex": 0,
+      "Effects": {
+        "LuckLevel": 1,
+        "Defense": 1,
+        "Speed": 1
+      }
+    }
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Buffs",
+  "When": {
+    "RingBuffsGlow": "false",
+    "RingsBalance": "Stronger"
+  },
+  "Entries": {
+    "dreamy.kickitspot_OakBlessing": {
+      "DisplayName": "{{i18n:Sky-Oak-Buff_Name}}",
+      "Description": "{{i18n:Sky-Oak-Buff_Description}}",
+      "Duration": -2,
+      "IconTexture": "Mods/CapeStardew/Objects/SkyOakBuffIcon",
+      "IconSpriteIndex": 0,
+      "Effects": {
+        "LuckLevel": 3,
+        "Defense": 3,
+        "Speed": 3
+      }
+    }
+  }
+},
+
+// =========================
+// ASHEN PROMISE
+// =========================
+{
+  "Action": "EditData",
+  "Target": "Data/Buffs",
+  "When": {
+    "RingBuffsGlow": "false",
+    "RingsBalance": "Vanilla"
+  },
+  "Entries": {
+    "dreamy.kickitspot_AshenPromise": {
+      "DisplayName": "{{i18n:Ashen-Promise-Buff_Name}}",
+      "Description": "{{i18n:Ashen-Promise-Buff_Description}}",
+      "Duration": -2,
+      "IconTexture": "Mods/CapeStardew/Objects/AshenBuffIcon",
+      "IconSpriteIndex": 0,
+      "Effects": {
+        "MaxStamina": 1,
+        "Defense": 2,
+        "Attack": 2
+      }
+    }
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Buffs",
+  "When": {
+    "RingBuffsGlow": "false",
+    "RingsBalance": "Stronger"
+  },
+  "Entries": {
+    "dreamy.kickitspot_AshenPromise": {
+      "DisplayName": "{{i18n:Ashen-Promise-Buff_Name}}",
+      "Description": "{{i18n:Ashen-Promise-Buff_Description}}",
+      "Duration": -2,
+      "IconTexture": "Mods/CapeStardew/Objects/AshenBuffIcon",
+      "IconSpriteIndex": 0,
+      "Effects": {
+        "MaxStamina": 3,
+        "Defense": 4,
+        "Attack": 4
+      }
+    }
+  }
+},
 
 
 ///GoldPocketWatchBuff//
@@ -223,14 +408,13 @@
         "IconSpriteIndex": 0,
         "Effects": {
            "WeaponPrecisionMultiplier": 0.1,
-   "WeaponSpeedMultiplier": 0.1,
 "KnockbackMultiplier": 0.1
         },
   "CustomFields": {
           "dreamy.kickitspot/WatchState": "off"
         },
 
-      },
+      }
 }
 },
 
@@ -246,14 +430,14 @@
         "IconSpriteIndex": 0,
         "Effects": {
         "WeaponPrecisionMultiplier": 0.1,
-  "WeaponSpeedMultiplier": 0.1,
+  "WeaponSpeedMultiplier": 0.05,
 "Immunity": 1,
         },
 
 "CustomFields": {
           "dreamy.kickitspot/WatchState": "alarm_on",
           "dreamy.kickitspot/AlarmBoostTier": "1"
-        },
+        }
 
       }
     }

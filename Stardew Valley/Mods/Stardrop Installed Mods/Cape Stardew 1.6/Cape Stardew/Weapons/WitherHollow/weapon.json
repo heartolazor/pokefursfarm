@@ -20,8 +20,8 @@
           "Precision": 85,
           "Defense": 0,
           "AreaOfEffect": 0,
-          "CritChance": 0.7,
-          "CritMultiplier": 0.02,
+          "CritChance": 0.04,
+"CritMultiplier": 3.0,
           "CanPurchase": false,
           "Projectiles": [
             {
@@ -66,8 +66,8 @@
           "Precision": 85,
           "Defense": 0,
           "AreaOfEffect": 0,
-          "CritChance": 0.13,
-          "CritMultiplier": 1.0,
+         "CritChance": 0.04,
+"CritMultiplier": 3.0,
           "CanPurchase": false,
         }
       },
@@ -108,8 +108,8 @@
           "Precision": 95,
           "Defense": 0,
           "AreaOfEffect": 0,
-          "CritChance": 0.13,
-          "CritMultiplier": 1.0,
+          "CritChance": 0.06,
+"CritMultiplier": 3.3,
           "CanPurchase": false,
           "Projectiles": [
             {
@@ -155,8 +155,8 @@
           "Precision": 95,
           "Defense": 0,
           "AreaOfEffect": 0,
-          "CritChance": 0.13,
-          "CritMultiplier": 1.0,
+          "CritChance": 0.06,
+"CritMultiplier": 3.3,
           "CanPurchase": false,
         }
       },
@@ -165,5 +165,84 @@
 "WeaponsBalance": "Stronger" 
  }
     },
+
+
+
+ {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Cape.WitherHollow": {
+          "Texture": "Mods/CapeStardew/Weapons/WitherHollow",
+          "SpriteIndex": 0,
+          "Name": "WitherHollow",
+          "DisplayName": "{{i18n:WitherHollow-Blade_Translated}}",
+          "Description": "{{i18n:WitherHollow-Blade_Description_Translated}}",
+          "Type": "3",
+          "Category": -98,
+          "Price": 7000,
+          "MinDamage": 70,
+          "MaxDamage": 90,
+          "Knockback": 0.4,
+          "Speed": 2,
+          "Precision": 85,
+          "Defense": 1,
+          "AreaOfEffect": 0,
+          "CritChance": 0.03,
+          "CritMultiplier": 3.0,
+          "CanPurchase": false,
+          "Projectiles": [
+            {
+              "Id": "witherhollow_projectile1",
+              "Damage": 25,
+              "Explodes": false,
+              "Bounces": 1,
+              "MaxDistance": 9,
+              "Velocity": 10,
+              "RotationVelocity": 12,
+              "TailLength": 3,
+              "FireSound": "",
+              "CollisionSound": "cursed_mannequin",
+              "SpriteIndex": 5
+            }
+          ]
+        }
+      },
+      "When": {
+        "WeaponsBalance": "Vanilla",
+        "WitherHollowProjectile": "On"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Cape.WitherHollow": {
+          "Texture": "Mods/CapeStardew/Weapons/WitherHollow",
+          "SpriteIndex": 0,
+          "Name": "WitherHollow",
+          "DisplayName": "{{i18n:WitherHollow-Blade_Translated}}",
+          "Description": "{{i18n:WitherHollow-Blade_Description_Translated}}",
+          "Type": "3",
+          "Category": -98,
+          "Price": 7000,
+          "MinDamage": 70,
+          "MaxDamage": 90,
+          "Knockback": 0.4,
+          "Speed": 2,
+          "Precision": 85,
+          "Defense": 1,
+          "AreaOfEffect": 0,
+          "CritChance": 0.03,
+          "CritMultiplier": 3.0,
+          "CanPurchase": false
+        }
+      },
+      "When": {
+        "WeaponsBalance": "Vanilla",
+        "WitherHollowProjectile": "Off"
+      }
+    }
   ]
 }
